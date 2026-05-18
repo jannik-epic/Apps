@@ -1,0 +1,287 @@
+name: Provision Entra User or Group
+
+on:
+  workflow_dispatch:
+    inputs:
+      object_kind:
+        description: 'Directory object to create or update'
+        required: true
+        type: choice
+        default: 'group'
+        options:
+          - 'group'
+          - 'user'
+      display_name:
+        description: 'Display name for the user or group'
+        required: true
+        type: string
+      description:
+        description: 'Group description (optional)'
+        required: false
+        type: string
+      mail_nickname:
+        description: 'Mail nickname / alias. Auto-generated when empty.'
+        required: false
+        type: string
+      user_principal_name:
+        description: 'Required for users, e.g. name@contoso.com'
+        required: false
+        type: string
+      given_name:
+        description: 'User given name (optional)'
+        required: false
+        type: string
+      surname:
+        description: 'User surname (optional)'
+        required: false
+        type: string
+      job_title:
+        description: 'User job title (optional)'
+        required: false
+        type: string
+      department:
+        description: 'User department (optional)'
+        required: false
+        type: string
+      usage_location:
+        description: 'User usage location, e.g. DE or US (optional)'
+        required: false
+        type: string
+      account_enabled:
+        description: 'Enable newly created or existing user'
+        required: false
+        type: boolean
+        default: true
+      force_password_change:
+        description: 'Force password change on first sign-in for new users'
+        required: false
+        type: boolean
+        default: true
+      dry_run:
+        description: 'Plan only; do not write to Entra ID'
+        required: false
+        type: boolean
+        default: false
+      request_context_b64:
+        description: 'Base64 encoded Modern Dev Mgmt request context'
+        required: false
+        type: string
+
+env:
+  AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
+  AZURE_CLIENT_ID: '35d6529f-ddc6-4bba-8d22-11c136f0f400'
+  GRAPH_BASE: 'https://graph.microsoft.com/v1.0'
+
+jobs:
+  provision-directory-object:
+    name: Provision directory object
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Azure Login using OIDC
+        uses: azure/login@v3
+        with:
+          tenant-id: ${{ env.AZURE_TENANT_ID }}
+          client-id: ${{ env.AZURE_CLIENT_ID }}
+          allow-no-subscriptions: true
+
+      - name: Get Microsoft Graph token
+        shell: bash
+        run: |
+          set -euo pipefail
+          token="$(az account get-access-token --resource https://graph.microsoft.com --query accessToken -o tsv)"
+          echo "::add-mask::$token"
+          echo "GRAPH_TOKEN=$token" >> "$GITHUB_ENV"
+
+      - name: Create or update object
+        id: provision
+        shell: pwsh
+        env:
+          INPUT_OBJECT_KIND: ${{ github.event.inputs.object_kind }}
+          INPUT_DISPLAY_NAME: ${{ github.event.inputs.display_name }}
+          INPUT_DESCRIPTION: ${{ github.event.inputs.description }}
+          INPUT_MAIL_NICKNAME: ${{ github.event.inputs.mail_nickname }}
+          INPUT_USER_PRINCIPAL_NAME: ${{ github.event.inputs.user_principal_name }}
+          INPUT_GIVEN_NAME: ${{ github.event.inputs.given_name }}
+          INPUT_SURNAME: ${{ github.event.inputs.surname }}
+          INPUT_JOB_TITLE: ${{ github.event.inputs.job_title }}
+          INPUT_DEPARTMENT: ${{ github.event.inputs.department }}
+          INPUT_USAGE_LOCATION: ${{ github.event.inputs.usage_location }}
+          INPUT_ACCOUNT_ENABLED: ${{ github.event.inputs.account_enabled }}
+          INPUT_FORCE_PASSWORD_CHANGE: ${{ github.event.inputs.force_password_change }}
+          INPUT_DRY_RUN: ${{ github.event.inputs.dry_run }}
+          INPUT_REQUEST_CONTEXT_B64: ${{ github.event.inputs.request_context_b64 }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $GraphBase = $env:GRAPH_BASE.TrimEnd('/')
+          $objectKind = ([string]$env:INPUT_OBJECT_KIND).Trim().ToLowerInvariant()
+          $displayName = ([string]$env:INPUT_DISPLAY_NAME).Trim()
+          $description = ([string]$env:INPUT_DESCRIPTION).Trim()
+          $userPrincipalName = ([string]$env:INPUT_USER_PRINCIPAL_NAME).Trim().ToLowerInvariant()
+          $accountEnabledRaw = ([string]$env:INPUT_ACCOUNT_ENABLED).Trim().ToLowerInvariant()
+          $forcePasswordChangeRaw = ([string]$env:INPUT_FORCE_PASSWORD_CHANGE).Trim().ToLowerInvariant()
+          $dryRunRaw = ([string]$env:INPUT_DRY_RUN).Trim().ToLowerInvariant()
+          if (-not $accountEnabledRaw) { $accountEnabledRaw = 'true' }
+          if (-not $forcePasswordChangeRaw) { $forcePasswordChangeRaw = 'true' }
+          if (-not $dryRunRaw) { $dryRunRaw = 'false' }
+          $accountEnabled = ($accountEnabledRaw -ne 'false')
+          $forcePasswordChange = ($forcePasswordChangeRaw -ne 'false')
+          $dryRun = ($dryRunRaw -eq 'true')
+
+          if (-not $env:GRAPH_TOKEN) { throw 'GRAPH_TOKEN is missing.' }
+          if ($objectKind -ne 'group' -and $objectKind -ne 'user') { throw 'object_kind must be group or user.' }
+          if (-not $displayName) { throw 'display_name is required.' }
+          if ($objectKind -eq 'user' -and -not $userPrincipalName) { throw 'user_principal_name is required for user provisioning.' }
+
+          function ConvertTo-MailNickname {
+            param([string]$Value, [string]$Fallback)
+            $source = $Value
+            if ([string]::IsNullOrWhiteSpace($source)) { $source = $Fallback }
+            $slug = ($source.ToLowerInvariant() -replace '[^a-z0-9._-]', '-').Trim('-')
+            if ([string]::IsNullOrWhiteSpace($slug)) { $slug = 'modern-dev-mgmt' }
+            if ($slug.Length -gt 64) { $slug = $slug.Substring(0, 64).Trim('-') }
+            return $slug
+          }
+
+          function Invoke-GraphJson {
+            param([string]$Method, [string]$Uri, [object]$Body = $null)
+            $headers = @{
+              Authorization = "Bearer $env:GRAPH_TOKEN"
+              'Content-Type' = 'application/json'
+            }
+            $params = @{
+              Method = $Method
+              Uri = $Uri
+              Headers = $headers
+              TimeoutSec = 60
+            }
+            if ($null -ne $Body) {
+              $params.Body = ($Body | ConvertTo-Json -Depth 20)
+            }
+            return Invoke-RestMethod @params
+          }
+
+          function Get-GraphStatusCode {
+            param([object]$ErrorRecord)
+            if ($ErrorRecord.Exception.Response -and $ErrorRecord.Exception.Response.StatusCode) {
+              return [int]$ErrorRecord.Exception.Response.StatusCode
+            }
+            return 0
+          }
+
+          function Find-User {
+            param([string]$Upn)
+            $escaped = [System.Uri]::EscapeDataString($Upn)
+            try {
+              return Invoke-GraphJson -Method 'GET' -Uri ($GraphBase + '/users/' + $escaped + '?$select=id,displayName,userPrincipalName')
+            } catch {
+              if ((Get-GraphStatusCode $_) -eq 404) { return $null }
+              throw
+            }
+          }
+
+          function Find-GroupByMailNickname {
+            param([string]$MailNickname)
+            $escapedNick = $MailNickname.Replace("'", "''")
+            $filter = [System.Uri]::EscapeDataString("mailEnabled eq false and securityEnabled eq true and mailNickname eq '$escapedNick'")
+            $response = Invoke-GraphJson -Method 'GET' -Uri ($GraphBase + '/groups?$filter=' + $filter + '&$select=id,displayName,mailNickname&$top=1')
+            return @($response.value)[0]
+          }
+
+          $fallbackNickname = $displayName
+          if ($objectKind -eq 'user') { $fallbackNickname = ($userPrincipalName -split '@')[0] }
+          $mailNickname = ConvertTo-MailNickname -Value $env:INPUT_MAIL_NICKNAME -Fallback $fallbackNickname
+          $action = 'planned'
+          $objectId = ''
+          $objectUpn = ''
+          $note = ''
+
+          if ($objectKind -eq 'group') {
+            $existing = Find-GroupByMailNickname -MailNickname $mailNickname
+            if ($existing) {
+              $action = if ($dryRun) { 'would update' } else { 'updated' }
+              $objectId = $existing.id
+              if (-not $dryRun) {
+                $patch = @{ displayName = $displayName }
+                if ($description) { $patch.description = $description }
+                Invoke-GraphJson -Method 'PATCH' -Uri ($GraphBase + '/groups/' + $existing.id) -Body $patch | Out-Null
+              }
+            } else {
+              $action = if ($dryRun) { 'would create' } else { 'created' }
+              if (-not $dryRun) {
+                $body = @{
+                  displayName = $displayName
+                  mailEnabled = $false
+                  mailNickname = $mailNickname
+                  securityEnabled = $true
+                }
+                if ($description) { $body.description = $description }
+                $created = Invoke-GraphJson -Method 'POST' -Uri ($GraphBase + '/groups') -Body $body
+                $objectId = $created.id
+              }
+            }
+          } else {
+            $existing = Find-User -Upn $userPrincipalName
+            $patch = @{
+              displayName = $displayName
+              accountEnabled = $accountEnabled
+            }
+            if ($env:INPUT_GIVEN_NAME) { $patch.givenName = $env:INPUT_GIVEN_NAME.Trim() }
+            if ($env:INPUT_SURNAME) { $patch.surname = $env:INPUT_SURNAME.Trim() }
+            if ($env:INPUT_JOB_TITLE) { $patch.jobTitle = $env:INPUT_JOB_TITLE.Trim() }
+            if ($env:INPUT_DEPARTMENT) { $patch.department = $env:INPUT_DEPARTMENT.Trim() }
+            if ($env:INPUT_USAGE_LOCATION) { $patch.usageLocation = $env:INPUT_USAGE_LOCATION.Trim().ToUpperInvariant() }
+            if ($existing) {
+              $action = if ($dryRun) { 'would update' } else { 'updated' }
+              $objectId = $existing.id
+              $objectUpn = $existing.userPrincipalName
+              if (-not $dryRun) {
+                Invoke-GraphJson -Method 'PATCH' -Uri ($GraphBase + '/users/' + [System.Uri]::EscapeDataString($userPrincipalName)) -Body $patch | Out-Null
+              }
+            } else {
+              $action = if ($dryRun) { 'would create' } else { 'created' }
+              $objectUpn = $userPrincipalName
+              if (-not $dryRun) {
+                $tempPassword = ('Mdm!' + [Guid]::NewGuid().ToString('N') + 'aA9!')
+                Write-Host "::add-mask::$tempPassword"
+                $body = $patch.Clone()
+                $body.mailNickname = $mailNickname
+                $body.userPrincipalName = $userPrincipalName
+                $body.passwordProfile = @{
+                  password = $tempPassword
+                  forceChangePasswordNextSignIn = $forcePasswordChange
+                }
+                $created = Invoke-GraphJson -Method 'POST' -Uri ($GraphBase + '/users') -Body $body
+                $objectId = $created.id
+                $note = 'Temporary password generated and masked. Reset it in Entra before handover.'
+              }
+            }
+          }
+
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "object_kind=$objectKind"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "object_id=$objectId"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "action=$action"
+
+          $summary = @(
+            '# Modern Dev Mgmt directory provisioning',
+            '',
+            '| Field | Value |',
+            '| --- | --- |',
+            "| Tenant ID | $env:AZURE_TENANT_ID |",
+            "| Object kind | $objectKind |",
+            "| Display name | $displayName |",
+            "| Mail nickname | $mailNickname |",
+            "| User principal name | $objectUpn |",
+            "| Action | $action |",
+            "| Object ID | $objectId |",
+            "| Dry run | $dryRun |"
+          )
+          if ($note) { $summary += "| Note | $note |" }
+          if ($env:INPUT_REQUEST_CONTEXT_B64) { $summary += "| Request context | provided |" }
+          $summary | Add-Content -Path $env:GITHUB_STEP_SUMMARY
