@@ -49,10 +49,29 @@ param(
     [string]$PackageSource = "Winget",
 
     [Parameter(Mandatory = $false)]
-    [string]$PackageNotes
+    [string]$PackageNotes,
+
+    [Parameter(Mandatory = $false)]
+    [ValidateSet('x86','x64','arm64','x64-arm64','x86-x64-arm64')]
+    [string]$Architecture = 'x64'
 )
 
 $ErrorActionPreference = "Stop"
+
+# Map workflow architecture choice -> Intune Win32LobApp applicableArchitectures
+# Accepts a single value (x86 | x64 | arm64) or hyphenated multi-arch combos
+# (x64-arm64, x86-x64-arm64) and emits the comma-separated Graph enum string.
+function Resolve-ApplicableArchitectures {
+    param([string]$Value)
+    switch ($Value) {
+        'x86'             { return 'x86' }
+        'x64'             { return 'x64' }
+        'arm64'           { return 'arm64' }
+        'x64-arm64'       { return 'x64,arm64' }
+        'x86-x64-arm64'   { return 'x86,x64,arm64' }
+        default           { return 'x64' }
+    }
+}
 
 function Set-WorkflowOutput {
     param([string]$Name, [string]$Value)
@@ -401,7 +420,7 @@ try {
             runAsAccount = $InstallContext
             deviceRestartBehavior = 'basedOnReturnCode'
         }
-        applicableArchitectures = 'x64'
+        applicableArchitectures = (Resolve-ApplicableArchitectures -Value $Architecture)
         minimumSupportedWindowsRelease = '1607'
         rules = @(
             @{
