@@ -241,6 +241,18 @@ jobs:
           $packageSourceLabel = if ($packageSource -eq "msstore") { "Microsoft Store via WinGet" } else { "WinGet" }
           $publisher = $env:APP_PUBLISHER
           if (-not $publisher) { $publisher = "${{ steps.winget_info.outputs.publisher }}" }
+          $architecture = "x64"
+          $contextB64 = "${{ github.event.inputs.modern_dev_mgmt_context_b64 }}"
+          if ($contextB64) {
+            try {
+              $rawContext = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String(($contextB64 -replace '\s+', '')))
+              $context = $rawContext | ConvertFrom-Json
+              if ($context.architecture) { $architecture = [string]$context.architecture }
+              elseif ($context.package -and $context.package.architecture) { $architecture = [string]$context.package.architecture }
+            } catch {
+              Write-Warning "Could not parse Modern Dev Mgmt context architecture, using x64"
+            }
+          }
           $params = @{
             AccessToken = "${{ steps.get_token.outputs.access_token }}"
             PackageId = "${{ github.event.inputs.package_id }}"
@@ -251,6 +263,7 @@ jobs:
             DryRun = ("${{ github.event.inputs.dry_run }}" -eq "true")
             IntuneApiUrl = "$env:INTUNE_API_URL"
             PackageSource = $packageSourceLabel
+            Architecture = $architecture
           }
           if ("${{ github.event.inputs.app_name }}") {
             $params.AppName = "${{ github.event.inputs.app_name }}"
@@ -292,6 +305,18 @@ jobs:
           if (-not $baseName) { $baseName = "${{ github.event.inputs.package_id }}" }
           $publisher = $env:APP_PUBLISHER
           if (-not $publisher) { $publisher = "${{ steps.winget_info.outputs.publisher }}" }
+          $architecture = "x64"
+          $contextB64 = "${{ github.event.inputs.modern_dev_mgmt_context_b64 }}"
+          if ($contextB64) {
+            try {
+              $rawContext = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String(($contextB64 -replace '\s+', '')))
+              $context = $rawContext | ConvertFrom-Json
+              if ($context.architecture) { $architecture = [string]$context.architecture }
+              elseif ($context.package -and $context.package.architecture) { $architecture = [string]$context.package.architecture }
+            } catch {
+              Write-Warning "Could not parse Modern Dev Mgmt context architecture, using x64"
+            }
+          }
           $params = @{
             AccessToken = "${{ steps.get_token.outputs.access_token }}"
             PackageId = "${{ github.event.inputs.package_id }}"
@@ -304,6 +329,7 @@ jobs:
             IntuneApiUrl = "$env:INTUNE_API_URL"
             PackageSource = "Winget update-only companion"
             PackageNotes = "Modern Dev Mgmt Update-Only Required companion. Primary Intune app: ${{ steps.create_app.outputs.app_id }}. Workflow: ${{ github.run_id }}."
+            Architecture = $architecture
           }
           if ("${{ github.event.inputs.app_description }}") {
             $params.AppDescription = "${{ github.event.inputs.app_description }} (Update-Only Required companion)"
