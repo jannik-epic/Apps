@@ -1,0 +1,125 @@
+name: Scan upstream package versions
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Scan upstream versions
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ ! -f catalog_apps_managed.json ]; then
+            echo "::warning::catalog_apps_managed.json missing — nothing to scan"
+            echo '{"results":[]}' > "partial-${{ matrix.os }}.json"
+            exit 0
+          fi
+          node - <<'NODE'
+          const { execSync } = require('child_process');
+          const fs = require('fs');
+          const os = process.platform === 'win32' ? 'windows' : 'macos';
+          const apps = JSON.parse(fs.readFileSync('catalog_apps_managed.json','utf8'));
+          const results = [];
+          function bump(from, to) {
+            if (!from || !to) return null;
+            const a = String(from).split('.').map(n=>parseInt(n,10));
+            const b = String(to).split('.').map(n=>parseInt(n,10));
+            if ((b[0]||0) > (a[0]||0)) return 'major';
+            if ((b[1]||0) > (a[1]||0)) return 'minor';
+            if ((b[2]||0) > (a[2]||0)) return 'patch';
+            return null;
+          }
+          for (const a of apps) {
+            const wantOs = a.source === 'homebrew' ? 'macos' : 'windows';
+            if (wantOs !== os) continue;
+            let latest = null, notes = null;
+            try {
+              if (a.source === 'winget' || a.source === 'msstore') {
+                const wingetSource = a.source === 'msstore' ? 'msstore' : 'winget';
+                const out = execSync('winget show "' + a.package_id + '" --source ' + wingetSource + ' --accept-source-agreements', { encoding: 'utf8' });
+                const m = out.match(/Version[^:]*:\s*(\S+)/);
+                latest = m ? m[1] : null;
+                const h = out.match(/Homepage[^:]*:\s*(\S+)/);
+                notes = h ? h[1] : null;
+              } else {
+                const out = execSync('brew info --json=v2 --cask ' + a.package_id, { encoding: 'utf8' });
+                const j = JSON.parse(out);
+                const c = (j.casks || [])[0] || (j.formulae || [])[0];
+                latest = c ? c.version : null;
+                notes = c ? (c.homepage || null) : null;
+              }
+            } catch (e) {
+              console.error('scan failed for', a.package_id, e.message);
+            }
+            results.push({
+              appId: a.id,
+              packageManager: a.source,
+              packageId: a.package_id,
+              currentDeployedVersion: a.version_deployed || null,
+              latestUpstreamVersion: latest,
+              hasUpdate: !!(latest && a.version_deployed && latest !== a.version_deployed),
+              bumpType: bump(a.version_deployed, latest),
+              releaseNotesUrl: notes,
+            });
+          }
+          fs.writeFileSync('partial-' + os + '.json', JSON.stringify({ os, results }));
+          NODE
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: scan-${{ matrix.os }}
+          path: partial-*.json
+          if-no-files-found: ignore
+
+  aggregate:
+    needs: scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+      - name: Merge and commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const all = [];
+          for (const dir of fs.readdirSync('artifacts')) {
+            for (const f of fs.readdirSync(path.join('artifacts', dir))) {
+              const j = JSON.parse(fs.readFileSync(path.join('artifacts', dir, f), 'utf8'));
+              all.push(...(j.results || []));
+            }
+          }
+          fs.writeFileSync('patch-analysis.json', JSON.stringify({
+            scannedAt: new Date().toISOString(),
+            results: all,
+          }, null, 2));
+          NODE
+          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git add patch-analysis.json
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: refresh patch-analysis.json"
+            git pull --rebase origin "${GITHUB_REF_NAME:-main}"
+            git push
+          fi
