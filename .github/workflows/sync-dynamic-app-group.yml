@@ -1,0 +1,307 @@
+name: Sync Modern Dev Mgmt Radar Group
+
+on:
+  workflow_dispatch:
+    inputs:
+      dynamic_group_id:
+        description: 'Modern Dev Mgmt dynamic app group id'
+        required: true
+        type: string
+      entra_group_id:
+        description: 'Target Entra security group id'
+        required: true
+        type: string
+      target_version:
+        description: 'Version considered current by Modern Dev Mgmt'
+        required: false
+        type: string
+      outdated_device_ids_json:
+        description: 'JSON array of Intune device ids that should be members'
+        required: false
+        type: string
+        default: '[]'
+      current_device_ids_json:
+        description: 'JSON array of Intune device ids that should be removed if present'
+        required: false
+        type: string
+        default: '[]'
+      auto_populate:
+        description: 'Add outdated devices to the Entra group'
+        required: false
+        type: boolean
+        default: true
+      auto_remove_on_success:
+        description: 'Remove current devices from the Entra group'
+        required: false
+        type: boolean
+        default: true
+      dry_run:
+        description: 'Resolve and diff membership without writing Graph changes'
+        required: false
+        type: boolean
+        default: false
+      modern_dev_mgmt_context_b64:
+        description: 'Base64 encoded Modern Dev Mgmt Radar sync context'
+        required: false
+        type: string
+
+env:
+  AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
+  AZURE_CLIENT_ID: '35d6529f-ddc6-4bba-8d22-11c136f0f400'
+  GRAPH_BASE: 'https://graph.microsoft.com/v1.0'
+  REQUIRED_GRAPH_PERMISSIONS: 'Group.ReadWrite.All,Directory.Read.All'
+
+permissions:
+  id-token: write
+  contents: write
+
+jobs:
+  sync-radar-group:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Azure Login using OIDC
+        uses: azure/login@v3
+        with:
+          tenant-id: ${{ env.AZURE_TENANT_ID }}
+          client-id: ${{ env.AZURE_CLIENT_ID }}
+          allow-no-subscriptions: true
+
+      - name: Get Microsoft Graph token
+        id: graph_token
+        shell: pwsh
+        run: |
+          $token = (az account get-access-token --resource https://graph.microsoft.com --query accessToken -o tsv)
+          if (-not $token) {
+            Write-Error "Failed to acquire Microsoft Graph access token"
+            exit 1
+          }
+          echo "::add-mask::$token"
+          echo "access_token=$token" >> $env:GITHUB_OUTPUT
+
+      - name: Sync Radar group membership
+        shell: pwsh
+        env:
+          GRAPH_TOKEN: ${{ steps.graph_token.outputs.access_token }}
+          DYNAMIC_GROUP_ID: ${{ github.event.inputs.dynamic_group_id }}
+          ENTRA_GROUP_ID: ${{ github.event.inputs.entra_group_id }}
+          TARGET_VERSION: ${{ github.event.inputs.target_version }}
+          OUTDATED_DEVICE_IDS_JSON: ${{ github.event.inputs.outdated_device_ids_json }}
+          CURRENT_DEVICE_IDS_JSON: ${{ github.event.inputs.current_device_ids_json }}
+          AUTO_POPULATE: ${{ github.event.inputs.auto_populate }}
+          AUTO_REMOVE_ON_SUCCESS: ${{ github.event.inputs.auto_remove_on_success }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          MODERN_DEVMGMT_CONTEXT_B64: ${{ github.event.inputs.modern_dev_mgmt_context_b64 }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $GraphBase = $env:GRAPH_BASE.TrimEnd('/')
+          $Headers = @{
+            Authorization = "Bearer $($env:GRAPH_TOKEN)"
+            'Content-Type' = 'application/json'
+          }
+
+          function Invoke-GraphJson {
+            param(
+              [Parameter(Mandatory = $true)][string]$Method,
+              [Parameter(Mandatory = $true)][string]$Uri,
+              [object]$Body = $null
+            )
+            try {
+              if ($null -ne $Body) {
+                $json = $Body | ConvertTo-Json -Depth 10
+                return Invoke-RestMethod -Method $Method -Uri $Uri -Headers $Headers -Body $json
+              }
+              return Invoke-RestMethod -Method $Method -Uri $Uri -Headers $Headers
+            } catch {
+              $message = $_.Exception.Message
+              try {
+                $stream = $_.Exception.Response.GetResponseStream()
+                if ($stream) {
+                  $reader = [System.IO.StreamReader]::new($stream)
+                  $body = $reader.ReadToEnd()
+                  if ($body) { $message = "$message $body" }
+                }
+              } catch {}
+              throw $message
+            }
+          }
+
+          function Read-JsonArray {
+            param([string]$Json)
+            if ([string]::IsNullOrWhiteSpace($Json)) { return @() }
+            $parsed = $Json | ConvertFrom-Json
+            if ($null -eq $parsed) { return @() }
+            if ($parsed -is [array]) { return @($parsed) }
+            return @($parsed)
+          }
+
+          function Resolve-DeviceObjectIds {
+            param([string[]]$DeviceIds)
+            $resolved = @()
+            $skipped = @()
+            foreach ($deviceId in $DeviceIds) {
+              if ([string]::IsNullOrWhiteSpace($deviceId)) { continue }
+              $escaped = $deviceId.Replace("'", "''")
+              $filter = [System.Uri]::EscapeDataString("deviceId eq '$escaped'")
+              $uri = "$GraphBase/devices?%24filter=$filter&%24select=id,deviceId,displayName&%24top=1"
+              try {
+                $response = Invoke-GraphJson -Method 'GET' -Uri $uri
+                $device = @($response.value)[0]
+                if ($device -and $device.id) {
+                  $resolved += [pscustomobject]@{
+                    intuneDeviceId = $deviceId
+                    entraObjectId = [string]$device.id
+                    displayName = $device.displayName
+                  }
+                } else {
+                  $skipped += [pscustomobject]@{ deviceId = $deviceId; reason = 'No matching Entra device object' }
+                }
+              } catch {
+                $skipped += [pscustomobject]@{ deviceId = $deviceId; reason = [string]$_ }
+              }
+            }
+            return [pscustomobject]@{ resolved = $resolved; skipped = $skipped }
+          }
+
+          function Get-GroupMemberIds {
+            param([string]$GroupId)
+            $ids = @()
+            $encodedGroup = [System.Uri]::EscapeDataString($GroupId)
+            $next = "$GraphBase/groups/$encodedGroup/members?%24select=id&%24top=999"
+            while ($next) {
+              $page = Invoke-GraphJson -Method 'GET' -Uri $next
+              foreach ($member in @($page.value)) {
+                if ($member.id) { $ids += [string]$member.id }
+              }
+              $next = $page.'@odata.nextLink'
+            }
+            return $ids
+          }
+
+          function Add-GroupMember {
+            param([string]$GroupId, [string]$ObjectId)
+            $encodedGroup = [System.Uri]::EscapeDataString($GroupId)
+            $body = @{ '@odata.id' = "$GraphBase/directoryObjects/$ObjectId" }
+            try {
+              $uri = $GraphBase + '/groups/' + $encodedGroup + '/members/$ref'
+              Invoke-GraphJson -Method 'POST' -Uri $uri -Body $body | Out-Null
+              return $true
+            } catch {
+              $text = [string]$_
+              if ($text -match 'ReferenceAlreadyExists|already exist') { return $false }
+              throw
+            }
+          }
+
+          function Remove-GroupMember {
+            param([string]$GroupId, [string]$ObjectId)
+            $encodedGroup = [System.Uri]::EscapeDataString($GroupId)
+            $encodedObject = [System.Uri]::EscapeDataString($ObjectId)
+            try {
+              $uri = $GraphBase + '/groups/' + $encodedGroup + '/members/' + $encodedObject + '/$ref'
+              Invoke-GraphJson -Method 'DELETE' -Uri $uri | Out-Null
+              return $true
+            } catch {
+              $text = [string]$_
+              if ($text -match '404|Request_ResourceNotFound|does not exist') { return $false }
+              throw
+            }
+          }
+
+          $outdatedDeviceIds = [string[]](Read-JsonArray $env:OUTDATED_DEVICE_IDS_JSON)
+          $currentDeviceIds = [string[]](Read-JsonArray $env:CURRENT_DEVICE_IDS_JSON)
+          $autoPopulate = "$($env:AUTO_POPULATE)".ToLowerInvariant() -eq 'true'
+          $autoRemove = "$($env:AUTO_REMOVE_ON_SUCCESS)".ToLowerInvariant() -eq 'true'
+          $dryRun = "$($env:DRY_RUN)".ToLowerInvariant() -eq 'true'
+
+          $outdatedResolution = Resolve-DeviceObjectIds -DeviceIds $outdatedDeviceIds
+          $currentResolution = Resolve-DeviceObjectIds -DeviceIds $currentDeviceIds
+          $desiredIds = [System.Collections.Generic.HashSet[string]]::new()
+          foreach ($entry in @($outdatedResolution.resolved)) { [void]$desiredIds.Add([string]$entry.entraObjectId) }
+          $currentIds = [System.Collections.Generic.HashSet[string]]::new()
+          foreach ($entry in @($currentResolution.resolved)) { [void]$currentIds.Add([string]$entry.entraObjectId) }
+
+          $memberIds = [System.Collections.Generic.HashSet[string]]::new()
+          foreach ($memberId in (Get-GroupMemberIds -GroupId $env:ENTRA_GROUP_ID)) { [void]$memberIds.Add([string]$memberId) }
+
+          $added = @()
+          $removed = @()
+          $skipped = @()
+          $skipped += @($outdatedResolution.skipped)
+          $skipped += @($currentResolution.skipped)
+
+          if ($autoPopulate) {
+            foreach ($objectId in $desiredIds) {
+              if ($memberIds.Contains($objectId)) { continue }
+              if ($dryRun) {
+                $added += $objectId
+              } elseif (Add-GroupMember -GroupId $env:ENTRA_GROUP_ID -ObjectId $objectId) {
+                $added += $objectId
+              }
+            }
+          }
+
+          if ($autoRemove) {
+            foreach ($memberId in $memberIds) {
+              if ($desiredIds.Contains($memberId)) { continue }
+              if (-not $currentIds.Contains($memberId)) { continue }
+              if ($dryRun) {
+                $removed += $memberId
+              } elseif (Remove-GroupMember -GroupId $env:ENTRA_GROUP_ID -ObjectId $memberId) {
+                $removed += $memberId
+              }
+            }
+          }
+
+          $context = $null
+          if ($env:MODERN_DEVMGMT_CONTEXT_B64) {
+            try {
+              $contextJson = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($env:MODERN_DEVMGMT_CONTEXT_B64))
+              $context = $contextJson | ConvertFrom-Json
+            } catch {
+              Write-Warning "Could not decode Modern Dev Mgmt context: $($_.Exception.Message)"
+            }
+          }
+
+          $result = [ordered]@{
+            workflowRunId = "${{ github.run_id }}"
+            workflow = "sync-dynamic-app-group.yml"
+            dynamicGroupId = $env:DYNAMIC_GROUP_ID
+            entraGroupId = $env:ENTRA_GROUP_ID
+            targetVersion = $env:TARGET_VERSION
+            dryRun = $dryRun
+            autoPopulate = $autoPopulate
+            autoRemoveOnSuccess = $autoRemove
+            outdatedDeviceCount = $outdatedDeviceIds.Count
+            currentDeviceCount = $currentDeviceIds.Count
+            resolvedOutdatedCount = @($outdatedResolution.resolved).Count
+            resolvedCurrentCount = @($currentResolution.resolved).Count
+            addedCount = $added.Count
+            removedCount = $removed.Count
+            skipped = $skipped
+            context = $context
+            createdAt = (Get-Date).ToUniversalTime().ToString("o")
+          }
+
+          $result | ConvertTo-Json -Depth 10 | Tee-Object -Variable ResultJson
+          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git pull --rebase
+          $runDir = ".modern-dev-mgmt/runs"
+          $groupDir = ".modern-dev-mgmt/dynamic-groups"
+          New-Item -ItemType Directory -Force -Path $runDir, $groupDir | Out-Null
+          $resultPath = "$groupDir/$($env:DYNAMIC_GROUP_ID).json"
+          $runPath = "$runDir/${{ github.run_id }}.json"
+          $ResultJson | Set-Content -Path $resultPath -Encoding UTF8
+          $ResultJson | Set-Content -Path $runPath -Encoding UTF8
+          git add $resultPath $runPath
+          git diff --cached --quiet
+          if ($LASTEXITCODE -ne 0) {
+            git commit -m "chore: record Modern Dev Mgmt Radar sync ${{ github.run_id }}"
+            git pull --rebase origin "${{ github.ref_name }}"
+            git push
+          } else {
+            Write-Host "no changes"
+          }
