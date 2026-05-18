@@ -1,16 +1,6 @@
 {
-  "scannedAt": "2026-05-18T13:03:11.897Z",
+  "scannedAt": "2026-05-18T14:30:57.966Z",
   "results": [
-    {
-      "appId": 180,
-      "packageManager": "winget",
-      "packageId": "Microsoft.Sysinternals.Autoruns",
-      "currentDeployedVersion": "2026.409.2145.0",
-      "latestUpstreamVersion": "14.20",
-      "hasUpdate": true,
-      "bumpType": null,
-      "releaseNotesUrl": "https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns"
-    },
     {
       "appId": 4128,
       "packageManager": "winget",
@@ -72,24 +62,14 @@
       "releaseNotesUrl": "https://obsproject.com/"
     },
     {
-      "appId": 8476,
-      "packageManager": "winget",
-      "packageId": "Microsoft.WindowsTerminal",
+      "appId": 64080,
+      "packageManager": "msstore",
+      "packageId": "9N0DX20HK701",
       "currentDeployedVersion": "3001.24.10921.0",
-      "latestUpstreamVersion": "1.24.11321.0",
-      "hasUpdate": true,
-      "bumpType": "patch",
-      "releaseNotesUrl": "https://docs.microsoft.com/windows/terminal"
-    },
-    {
-      "appId": 8656,
-      "packageManager": "winget",
-      "packageId": "Microsoft.XMLNotepad",
-      "currentDeployedVersion": "11.2512.29.0",
-      "latestUpstreamVersion": "2.9.0.21",
+      "latestUpstreamVersion": "Unknown",
       "hasUpdate": true,
       "bumpType": null,
-      "releaseNotesUrl": "https://microsoft.github.io/XmlNotepad/"
+      "releaseNotesUrl": null
     },
     {
       "appId": 76090,
