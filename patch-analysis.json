@@ -1,6 +1,36 @@
 {
-  "scannedAt": "2026-05-18T14:38:48.664Z",
+  "scannedAt": "2026-05-18T15:30:54.714Z",
   "results": [
+    {
+      "appId": 2395,
+      "packageManager": "winget",
+      "packageId": "Git.Git",
+      "currentDeployedVersion": "2.39.2",
+      "latestUpstreamVersion": "2.54.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://gitforwindows.org/"
+    },
+    {
+      "appId": 2409,
+      "packageManager": "winget",
+      "packageId": "GitHub.cli",
+      "currentDeployedVersion": "2.24.3",
+      "latestUpstreamVersion": "2.92.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://cli.github.com/"
+    },
+    {
+      "appId": 2411,
+      "packageManager": "winget",
+      "packageId": "GitHub.GitHubDesktop",
+      "currentDeployedVersion": "3.2.0",
+      "latestUpstreamVersion": "3.5.8",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://github.com/apps/desktop"
+    },
     {
       "appId": 4128,
       "packageManager": "winget",
@@ -52,6 +82,16 @@
       "releaseNotesUrl": "https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist"
     },
     {
+      "appId": 4387,
+      "packageManager": "winget",
+      "packageId": "Microsoft.VisualStudioCode",
+      "currentDeployedVersion": "1.76.2",
+      "latestUpstreamVersion": "1.119.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://code.visualstudio.com"
+    },
+    {
       "appId": 4972,
       "packageManager": "winget",
       "packageId": "OBSProject.OBSStudio",
@@ -60,6 +100,16 @@
       "hasUpdate": true,
       "bumpType": "minor",
       "releaseNotesUrl": "https://obsproject.com/"
+    },
+    {
+      "appId": 5631,
+      "packageManager": "winget",
+      "packageId": "Microsoft.PowerShell",
+      "currentDeployedVersion": "7.3.3.0",
+      "latestUpstreamVersion": "7.6.1.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://microsoft.com/PowerShell"
     },
     {
       "appId": 64080,
