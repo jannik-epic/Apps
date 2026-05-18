@@ -1,0 +1,163 @@
+name: Check Intune inventory coverage
+
+on:
+  schedule:
+    - cron: '15 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: write
+
+env:
+  AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
+  AZURE_CLIENT_ID: '35d6529f-ddc6-4bba-8d22-11c136f0f400'
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Azure Login using OIDC
+        uses: azure/login@v3
+        with:
+          tenant-id: ${{ env.AZURE_TENANT_ID }}
+          client-id: ${{ env.AZURE_CLIENT_ID }}
+          allow-no-subscriptions: true
+
+      - name: Acquire Microsoft Graph token
+        id: graph_token
+        shell: bash
+        run: |
+          set -euo pipefail
+          token=$(az account get-access-token --resource https://graph.microsoft.com/ --query accessToken -o tsv)
+          echo "::add-mask::$token"
+          echo "GRAPH_TOKEN=$token" >> "$GITHUB_ENV"
+
+      - name: Validate Microsoft Graph application permissions
+        shell: bash
+        run: |
+          set -euo pipefail
+          node - <<'NODE'
+          const token = process.env.GRAPH_TOKEN || '';
+          const required = [
+            'DeviceManagementManagedDevices.Read.All',
+            'DeviceManagementApps.ReadWrite.All',
+          ];
+          function decodeJwtPayload(jwt) {
+            const payload = jwt.split('.')[1];
+            if (!payload) throw new Error('Microsoft Graph token is not a JWT access token.');
+            return JSON.parse(Buffer.from(payload.replace(/-/g, '+').replace(/_/g, '/'), 'base64').toString('utf8'));
+          }
+          const claims = decodeJwtPayload(token);
+          const roles = new Set(Array.isArray(claims.roles) ? claims.roles : []);
+          const missing = required.filter((role) => !roles.has(role));
+          if (missing.length) {
+            console.error('Missing Microsoft Graph application roles on the GitHub deployment app:');
+            for (const role of missing) console.error('- ' + role);
+            console.error('Open Modern Dev Mgmt > Setup CI/CD > Permissions Validation, prepare permissions, then grant tenant-wide admin consent.');
+            process.exit(1);
+          }
+          console.log('Graph application roles validated: ' + required.join(', '));
+          NODE
+
+      - name: Build unmanaged-app coverage report
+        shell: bash
+        run: |
+          set -euo pipefail
+          node - <<'NODE'
+          const fs = require('fs');
+          const graph = 'https://graph.microsoft.com/v1.0';
+          const token = process.env.GRAPH_TOKEN;
+          const systemApp = /^(android($|\.)|com\.android\.|com\.google\.android\.|android\.overlay\.|android\.auto_generated|com\.samsung\.android\.|com\.huawei\.|com\.xiaomi\.|com\.oppo\.|com\.vivo\.|com\.oneplus\.|com\.qualcomm\.|com\.mediatek\.)/i;
+          function norm(v) {
+            return String(v || '')
+              .replace(/([a-z])([A-Z])/g, '$1 $2')
+              .toLowerCase()
+              .replace(/[._/\\-]+/g, ' ')
+              .replace(/\b(v?\d{1,4}(?:\.\d+){1,5})\b/g, ' ')
+              .replace(/\s+/g, ' ')
+              .trim();
+          }
+          function tokens(v) {
+            return new Set(norm(v).split(' ').filter(t => t.length > 1 && !/^\d+$/.test(t)));
+          }
+          function score(a, b) {
+            const an = norm(a.displayName);
+            const bn = norm(b.displayName);
+            if (!an || !bn) return 0;
+            if (an === bn) return 1;
+            const at = tokens(a.displayName);
+            const bt = tokens(b.displayName);
+            let common = 0;
+            for (const t of at) if (bt.has(t)) common++;
+            const overlap = common / Math.max(at.size || 1, bt.size || 1);
+            const pub = a.publisher && b.publisher && norm(a.publisher) === norm(b.publisher) ? 0.2 : 0;
+            if (an.includes(bn) || bn.includes(an)) return 0.9 + pub;
+            return overlap >= 0.72 ? overlap + pub : 0;
+          }
+          async function all(url) {
+            const rows = [];
+            while (url) {
+              const res = await fetch(url, { headers: { authorization: `Bearer ${token}` } });
+              if (!res.ok) throw new Error(`${res.status} ${res.statusText}: ${await res.text()}`);
+              const data = await res.json();
+              rows.push(...(data.value || []));
+              url = data['@odata.nextLink'];
+            }
+            return rows;
+          }
+          (async () => {
+            const detectedRaw = await all(`${graph}/deviceManagement/detectedApps?$top=200&$select=id,displayName,version,publisher,platform,deviceCount`);
+            const managed = await all(`${graph}/deviceAppManagement/mobileApps?$top=200&$select=id,displayName,publisher`);
+            const detected = detectedRaw.filter(app => app.displayName && !systemApp.test(app.displayName) && !systemApp.test(app.publisher || '') && !/android|ios/i.test(app.platform || ''));
+            const unmanaged = [];
+            const managedRows = [];
+            for (const app of detected) {
+              const best = managed.map(m => ({ app: m, score: score(app, m) })).sort((a,b) => b.score - a.score)[0];
+              if (best && best.score >= 0.86) {
+                managedRows.push({ ...app, managedIntuneAppId: best.app.id, managedDisplayName: best.app.displayName, confidence: best.score });
+              } else {
+                unmanaged.push(app);
+              }
+            }
+            const report = {
+              generatedAt: new Date().toISOString(),
+              detectedInScope: detected.length,
+              managedCovered: managedRows.length,
+              unmanaged: unmanaged.map(app => ({
+                id: app.id,
+                displayName: app.displayName,
+                publisher: app.publisher || null,
+                version: app.version || null,
+                platform: app.platform || null,
+                deviceCount: app.deviceCount || 0,
+              })),
+              managed: managedRows,
+            };
+            fs.writeFileSync('intune-inventory-coverage.json', JSON.stringify(report, null, 2));
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `# Intune inventory coverage\n\nDetected in scope: ${report.detectedInScope}\n\nManaged: ${report.managedCovered}\n\nUnmanaged: ${report.unmanaged.length}\n`);
+            if (report.unmanaged.length > 0) {
+              console.log('Unmanaged discovered apps:');
+              for (const app of report.unmanaged.slice(0, 50)) console.log(`- ${app.displayName} (${app.publisher || 'unknown'}) on ${app.deviceCount || 0} devices`);
+            }
+          })().catch(err => { console.error(err); process.exit(1); });
+          NODE
+
+      - name: Commit report
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git add intune-inventory-coverage.json
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: refresh Intune inventory coverage"
+            git pull --rebase origin "${GITHUB_REF_NAME:-main}"
+            git push
+          fi
