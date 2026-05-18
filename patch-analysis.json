@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-18T11:45:04.509Z",
+  "scannedAt": "2026-05-18T12:01:11.265Z",
   "results": [
     {
       "appId": 4128,
@@ -60,16 +60,6 @@
       "hasUpdate": true,
       "bumpType": "minor",
       "releaseNotesUrl": "https://obsproject.com/"
-    },
-    {
-      "appId": 5618,
-      "packageManager": "winget",
-      "packageId": "Microsoft.PowerAutomateDesktop",
-      "currentDeployedVersion": "11.2604.143.0",
-      "latestUpstreamVersion": "2.68.00237.26118",
-      "hasUpdate": true,
-      "bumpType": "patch",
-      "releaseNotesUrl": "https://learn.microsoft.com/power-automate/desktop-flows/introduction"
     },
     {
       "appId": 8476,
