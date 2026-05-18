@@ -1,0 +1,45 @@
+{
+  "scannedAt": "2026-05-18T09:00:48.271Z",
+  "results": [
+    {
+      "appId": 4128,
+      "packageManager": "winget",
+      "packageId": "Microsoft.Office",
+      "currentDeployedVersion": "16.0.19929.20106",
+      "latestUpstreamVersion": "16.0.19929.20090",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": "https://www.office.com/"
+    },
+    {
+      "appId": 4379,
+      "packageManager": "winget",
+      "packageId": "Microsoft.VCRedist.2015+.x64",
+      "currentDeployedVersion": "14.44.35211.0",
+      "latestUpstreamVersion": "14.51.36231.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist"
+    },
+    {
+      "appId": 4381,
+      "packageManager": "winget",
+      "packageId": "Microsoft.VCRedist.2015+.x86",
+      "currentDeployedVersion": "14.44.35211.0",
+      "latestUpstreamVersion": "14.51.36231.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist"
+    },
+    {
+      "appId": 8476,
+      "packageManager": "winget",
+      "packageId": "Microsoft.WindowsTerminal",
+      "currentDeployedVersion": "3001.24.10921.0",
+      "latestUpstreamVersion": "1.24.11321.0",
+      "hasUpdate": true,
+      "bumpType": "patch",
+      "releaseNotesUrl": "https://docs.microsoft.com/windows/terminal"
+    }
+  ]
+}
