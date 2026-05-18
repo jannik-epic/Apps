@@ -61,5 +61,14 @@
     "os": "windows",
     "version_deployed": "3001.24.10921.0",
     "pin_version": null
+  },
+  {
+    "id": 76090,
+    "source": "msstore",
+    "package_id": "9NFTCH6J7FHV",
+    "name": "Microsoft.PowerAutomateDesktop",
+    "os": "windows",
+    "version_deployed": "11.2604.143.0",
+    "pin_version": null
   }
 ]
