@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-18T12:01:11.265Z",
+  "scannedAt": "2026-05-18T12:30:46.668Z",
   "results": [
     {
       "appId": 4128,
@@ -70,6 +70,16 @@
       "hasUpdate": true,
       "bumpType": "patch",
       "releaseNotesUrl": "https://docs.microsoft.com/windows/terminal"
+    },
+    {
+      "appId": 76090,
+      "packageManager": "msstore",
+      "packageId": "9NFTCH6J7FHV",
+      "currentDeployedVersion": "11.2604.143.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
     }
   ]
 }
