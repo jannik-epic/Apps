@@ -1,5 +1,14 @@
 [
   {
+    "id": 180,
+    "source": "winget",
+    "package_id": "Microsoft.Sysinternals.Autoruns",
+    "name": "Autoruns",
+    "os": "windows",
+    "version_deployed": "2026.409.2145.0",
+    "pin_version": null
+  },
+  {
     "id": 4128,
     "source": "winget",
     "package_id": "Microsoft.Office",
@@ -60,6 +69,15 @@
     "name": "Windows Terminal",
     "os": "windows",
     "version_deployed": "3001.24.10921.0",
+    "pin_version": null
+  },
+  {
+    "id": 8656,
+    "source": "winget",
+    "package_id": "Microsoft.XMLNotepad",
+    "name": "XML Notepad",
+    "os": "windows",
+    "version_deployed": "11.2512.29.0",
     "pin_version": null
   },
   {
