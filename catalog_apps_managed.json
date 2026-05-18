@@ -9,6 +9,24 @@
     "pin_version": null
   },
   {
+    "id": 4171,
+    "source": "winget",
+    "package_id": "Microsoft.Edge",
+    "name": "Microsoft Edge",
+    "os": "windows",
+    "version_deployed": "147.0.3912.98",
+    "pin_version": null
+  },
+  {
+    "id": 4191,
+    "source": "winget",
+    "package_id": "Microsoft.OneDrive",
+    "name": "Microsoft OneDrive",
+    "os": "windows",
+    "version_deployed": "26.063.0405.0002",
+    "pin_version": null
+  },
+  {
     "id": 4379,
     "source": "winget",
     "package_id": "Microsoft.VCRedist.2015+.x64",
@@ -24,6 +42,24 @@
     "name": "Microsoft Visual C++ 2015-2022 Redistributable (x86)",
     "os": "windows",
     "version_deployed": "14.44.35211.0",
+    "pin_version": null
+  },
+  {
+    "id": 4972,
+    "source": "winget",
+    "package_id": "OBSProject.OBSStudio",
+    "name": "OBS Studio",
+    "os": "windows",
+    "version_deployed": "32.0.1",
+    "pin_version": null
+  },
+  {
+    "id": 5618,
+    "source": "winget",
+    "package_id": "Microsoft.PowerAutomateDesktop",
+    "name": "Power Automate for desktop",
+    "os": "windows",
+    "version_deployed": "11.2604.143.0",
     "pin_version": null
   },
   {
