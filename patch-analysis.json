@@ -1,6 +1,16 @@
 {
-  "scannedAt": "2026-05-18T12:30:46.668Z",
+  "scannedAt": "2026-05-18T13:00:46.512Z",
   "results": [
+    {
+      "appId": 180,
+      "packageManager": "winget",
+      "packageId": "Microsoft.Sysinternals.Autoruns",
+      "currentDeployedVersion": "2026.409.2145.0",
+      "latestUpstreamVersion": "14.20",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": "https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns"
+    },
     {
       "appId": 4128,
       "packageManager": "winget",
@@ -70,6 +80,16 @@
       "hasUpdate": true,
       "bumpType": "patch",
       "releaseNotesUrl": "https://docs.microsoft.com/windows/terminal"
+    },
+    {
+      "appId": 8656,
+      "packageManager": "winget",
+      "packageId": "Microsoft.XMLNotepad",
+      "currentDeployedVersion": "11.2512.29.0",
+      "latestUpstreamVersion": "2.9.0.21",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": "https://microsoft.github.io/XmlNotepad/"
     },
     {
       "appId": 76090,
