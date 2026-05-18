@@ -54,15 +54,6 @@
     "pin_version": null
   },
   {
-    "id": 5618,
-    "source": "winget",
-    "package_id": "Microsoft.PowerAutomateDesktop",
-    "name": "Power Automate for desktop",
-    "os": "windows",
-    "version_deployed": "11.2604.143.0",
-    "pin_version": null
-  },
-  {
     "id": 8476,
     "source": "winget",
     "package_id": "Microsoft.WindowsTerminal",
