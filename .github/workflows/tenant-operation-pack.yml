@@ -1,0 +1,343 @@
+name: Run Tenant Operation Pack
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation_kind:
+        description: 'Tenant operation pack to run'
+        required: true
+        type: choice
+        default: 'full_tenant_inventory'
+        options:
+          - full_tenant_inventory
+          - identity_management
+          - tenant_administration
+          - security_compliance
+          - intune_endpoint
+          - teams_sharepoint
+          - email_exchange
+          - reports_tools
+      dry_run:
+        description: 'Read-only planning mode. This workflow never writes to Microsoft 365.'
+        required: false
+        type: boolean
+        default: true
+      commit_evidence:
+        description: 'Commit generated JSON/CSV evidence into .modern-dev-mgmt/tenant-operations'
+        required: false
+        type: boolean
+        default: true
+      notes:
+        description: 'Optional request notes from Modern Dev Mgmt'
+        required: false
+        type: string
+      request_context_b64:
+        description: 'Base64 encoded Modern Dev Mgmt request context'
+        required: false
+        type: string
+
+env:
+  AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
+  AZURE_CLIENT_ID: '35d6529f-ddc6-4bba-8d22-11c136f0f400'
+  GRAPH_BASE: 'https://graph.microsoft.com/v1.0'
+  GRAPH_BETA_BASE: 'https://graph.microsoft.com/beta'
+
+jobs:
+  tenant-operation:
+    name: Run tenant operation pack
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Azure Login using OIDC
+        uses: azure/login@v3
+        with:
+          tenant-id: ${{ env.AZURE_TENANT_ID }}
+          client-id: ${{ env.AZURE_CLIENT_ID }}
+          allow-no-subscriptions: true
+
+      - name: Get Microsoft Graph token
+        shell: bash
+        run: |
+          set -euo pipefail
+          token="$(az account get-access-token --resource https://graph.microsoft.com --query accessToken -o tsv)"
+          if [[ -z "$token" ]]; then
+            echo "::error::Failed to acquire Microsoft Graph access token"
+            exit 1
+          fi
+          echo "::add-mask::$token"
+          echo "GRAPH_TOKEN=$token" >> "$GITHUB_ENV"
+
+      - name: Collect tenant evidence
+        id: collect
+        shell: pwsh
+        env:
+          INPUT_OPERATION_KIND: ${{ github.event.inputs.operation_kind }}
+          INPUT_DRY_RUN: ${{ github.event.inputs.dry_run }}
+          INPUT_COMMIT_EVIDENCE: ${{ github.event.inputs.commit_evidence }}
+          INPUT_NOTES: ${{ github.event.inputs.notes }}
+          INPUT_REQUEST_CONTEXT_B64: ${{ github.event.inputs.request_context_b64 }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          if (-not $env:GRAPH_TOKEN) { throw 'GRAPH_TOKEN is missing.' }
+
+          $operationKind = ([string]$env:INPUT_OPERATION_KIND).Trim().ToLowerInvariant()
+          if (-not $operationKind) { $operationKind = 'full_tenant_inventory' }
+          $dryRun = ([string]$env:INPUT_DRY_RUN).Trim().ToLowerInvariant() -eq 'true'
+          $commitEvidence = ([string]$env:INPUT_COMMIT_EVIDENCE).Trim().ToLowerInvariant() -ne 'false'
+          $outDir = ".modern-dev-mgmt/tenant-operations/${{ github.run_id }}"
+          New-Item -ItemType Directory -Force -Path $outDir | Out-Null
+
+          $warnings = New-Object System.Collections.Generic.List[string]
+          $limitations = New-Object System.Collections.Generic.List[object]
+          $GraphBase = $env:GRAPH_BASE.TrimEnd('/')
+          $GraphBetaBase = $env:GRAPH_BETA_BASE.TrimEnd('/')
+          $headers = @{
+            Authorization = "Bearer $env:GRAPH_TOKEN"
+            'Content-Type' = 'application/json'
+          }
+
+          $capabilityMap = @(
+            [ordered]@{ pack = 'identity_management'; functions = @('Users','Risky Users','Groups','Group Templates','Devices','Deleted Items','Roles','JIT Admin','JIT Admin Templates','Vacation Mode','Offboarding Wizard','MFA Report','Inactive Users','Sign-in Report','AAD Connect Report','Risk Detections') },
+            [ordered]@{ pack = 'tenant_administration'; functions = @('Tenants','Alert Configuration','Audit Logs','Enterprise Apps','App Registrations','Secure Score','App Consent Requests','Authentication Methods','Partner Relationships','Domains','GDAP Management','Standards Management','Best Practice Analyser','Domains Analyser','Conditional Access Policies','CA Vacation Mode','CA Templates','Named Locations','License Report','CSP License Report','Consented Applications','Graph Office Reports','Manage Tenant') },
+            [ordered]@{ pack = 'security_compliance'; functions = @('Incidents','Alerts','MDO Alerts','Check Alerts','Defender Status','Defender Deployment','Vulnerabilities','Device Compliance','MDE Onboarding','Safe Links Policies','Safe Links Templates','Purview DLP','Retention','Sensitivity Labels','Sensitive Information Types') },
+            [ordered]@{ pack = 'intune_endpoint'; functions = @('Applications','Application Queue','Application Templates','Autopilot Devices','Add Autopilot Device','Autopilot Profiles','Enrollment Status Pages','Managed Devices','Configuration Policies','Compliance Policies','App Protection Policies','Policy Templates','Reusable Settings','Reusable Settings Templates','Assignment Filters','Assignment Filter Templates','Scripts','Analytics Device Score','Work From Anywhere','Autopilot Deployments','Discovered Apps') },
+            [ordered]@{ pack = 'teams_sharepoint'; functions = @('OneDrive','SharePoint Sites','Teams','Teams Activity','Business Voice') },
+            [ordered]@{ pack = 'email_exchange'; functions = @('Mailboxes','Deleted Mailboxes','Mailbox Rules','Contacts','Contact Templates','Quarantine','Restricted Users','Tenant Allow Block Lists','Retention Policies Tags','Transport Rules','Transport Templates','Connectors','Connector Templates','Spam Filter','Connection Filter','Quarantine Policies','Equipment','Rooms','Room Lists','Mailbox Statistics','Mailbox Activity','Mailbox CAS Settings','Mailbox Permissions','Calendar Permissions','Mailbox Forwarding','Anti-Phishing Filters','Malware Filters','Safe Attachments Filters','Shared Mailbox Enabled Account','ActiveSync Devices','Global Address List') },
+            [ordered]@{ pack = 'reports_tools'; functions = @('Graph Explorer','Tenant Lookup','Application Approval','Individual Domain Check','IP Database','Message Trace','Message Viewer','Mailbox Restores','Compare Policies','Dark Web Tools','Breach Lookup','Report Builder','Custom Tests','Template Library','Community Repositories','Scheduler','Application Settings','Logbook','Setup Wizard','Integrations','Custom Data','Advanced Tenant Mode','Exchange Cmdlets','Timers','Table Maintenance','Diagnostics') }
+          )
+
+          function Should-Run {
+            param([string]$Pack)
+            return $operationKind -eq 'full_tenant_inventory' -or $operationKind -eq $Pack
+          }
+
+          function Add-Limitation {
+            param([string]$Area, [string]$Reason, [string]$FollowUp = '')
+            $limitations.Add([ordered]@{ area = $Area; reason = $Reason; followUp = $FollowUp }) | Out-Null
+          }
+
+          function Save-Json {
+            param([string]$Name, [object]$Data)
+            $target = Join-Path $outDir $Name
+            $parent = Split-Path -Parent $target
+            if ($parent) { New-Item -ItemType Directory -Force -Path $parent | Out-Null }
+            $Data | ConvertTo-Json -Depth 30 | Set-Content -Path $target -Encoding UTF8
+          }
+
+          function Save-Text {
+            param([string]$Name, [string]$Data)
+            $target = Join-Path $outDir $Name
+            $parent = Split-Path -Parent $target
+            if ($parent) { New-Item -ItemType Directory -Force -Path $parent | Out-Null }
+            $Data | Set-Content -Path $target -Encoding UTF8
+          }
+
+          function Graph-ErrorMessage {
+            param([object]$ErrorRecord)
+            $message = $ErrorRecord.Exception.Message
+            if ($ErrorRecord.ErrorDetails -and $ErrorRecord.ErrorDetails.Message) {
+              $message = $ErrorRecord.ErrorDetails.Message
+            }
+            return $message
+          }
+
+          function Invoke-GraphJson {
+            param([string]$Uri, [string]$Label, [string]$Method = 'GET', [object]$Body = $null)
+            try {
+              $params = @{ Method = $Method; Uri = $Uri; Headers = $headers; TimeoutSec = 90 }
+              if ($null -ne $Body) { $params.Body = ($Body | ConvertTo-Json -Depth 20) }
+              return Invoke-RestMethod @params
+            } catch {
+              $warnings.Add("$Label unavailable: $(Graph-ErrorMessage $_)") | Out-Null
+              return $null
+            }
+          }
+
+          function Invoke-GraphCollection {
+            param([string]$Uri, [string]$Label)
+            $items = New-Object System.Collections.Generic.List[object]
+            $next = $Uri
+            while ($next) {
+              $response = Invoke-GraphJson -Uri $next -Label $Label
+              if ($null -eq $response) { break }
+              if ($response.value -is [array]) {
+                foreach ($item in $response.value) { $items.Add($item) | Out-Null }
+              } elseif ($response.value) {
+                $items.Add($response.value) | Out-Null
+              } else {
+                $items.Add($response) | Out-Null
+              }
+              $next = $response.'@odata.nextLink'
+            }
+            return @($items)
+          }
+
+          function Save-GraphCollection {
+            param([string]$Name, [string]$Uri, [string]$Label)
+            $rows = Invoke-GraphCollection -Uri $Uri -Label $Label
+            Save-Json -Name $Name -Data $rows
+            return $rows.Count
+          }
+
+          function Save-GraphRaw {
+            param([string]$Name, [string]$Uri, [string]$Label)
+            try {
+              $response = Invoke-WebRequest -Uri $Uri -Headers $headers -Method GET -TimeoutSec 90
+              Save-Text -Name $Name -Data ([string]$response.Content)
+              return $true
+            } catch {
+              $warnings.Add("$Label unavailable: $(Graph-ErrorMessage $_)") | Out-Null
+              return $false
+            }
+          }
+
+          function Save-HuntingQuery {
+            param([string]$Name, [string]$Query, [string]$Label)
+            $response = Invoke-GraphJson -Uri "$GraphBase/security/runHuntingQuery" -Label $Label -Method 'POST' -Body @{ Query = $Query }
+            if ($response -and $response.results) {
+              Save-Json -Name $Name -Data $response.results
+              return @($response.results).Count
+            }
+            Save-Json -Name $Name -Data @()
+            return 0
+          }
+
+          $counts = [ordered]@{}
+          Save-Json -Name 'capability-map.json' -Data $capabilityMap
+
+          if (Should-Run 'identity_management') {
+            $counts.identityUsers = Save-GraphCollection -Name 'identity/users.json' -Uri "$GraphBetaBase/users?%24select=id,displayName,userPrincipalName,mail,accountEnabled,userType,createdDateTime,signInActivity&%24top=999" -Label 'Identity users'
+            $counts.identityGroups = Save-GraphCollection -Name 'identity/groups.json' -Uri "$GraphBase/groups?%24select=id,displayName,mailEnabled,securityEnabled,groupTypes,membershipRule,createdDateTime&%24top=999" -Label 'Identity groups'
+            $counts.directoryRoles = Save-GraphCollection -Name 'identity/directory-roles.json' -Uri "$GraphBase/directoryRoles?%24expand=members" -Label 'Directory roles'
+            $counts.deletedUsers = Save-GraphCollection -Name 'identity/deleted-users.json' -Uri "$GraphBase/directory/deletedItems/microsoft.graph.user?%24top=999" -Label 'Deleted users'
+            $counts.signIns = Save-GraphCollection -Name 'identity/sign-ins.json' -Uri "$GraphBase/auditLogs/signIns?%24top=100" -Label 'Sign-ins'
+            $counts.riskyUsers = Save-GraphCollection -Name 'identity/risky-users.json' -Uri "$GraphBase/identityProtection/riskyUsers?%24top=100" -Label 'Risky users'
+          }
+
+          if (Should-Run 'tenant_administration') {
+            $counts.organizations = Save-GraphCollection -Name 'tenant/organization.json' -Uri "$GraphBase/organization" -Label 'Organization'
+            $counts.domains = Save-GraphCollection -Name 'tenant/domains.json' -Uri "$GraphBase/domains?%24top=999" -Label 'Domains'
+            $counts.skus = Save-GraphCollection -Name 'tenant/subscribed-skus.json' -Uri "$GraphBase/subscribedSkus" -Label 'Subscribed SKUs'
+            $counts.enterpriseApps = Save-GraphCollection -Name 'tenant/service-principals.json' -Uri "$GraphBase/servicePrincipals?%24select=id,displayName,appId,accountEnabled,servicePrincipalType&%24top=999" -Label 'Enterprise applications'
+            $counts.appConsent = Save-GraphCollection -Name 'tenant/oauth2-permission-grants.json' -Uri "$GraphBase/oauth2PermissionGrants?%24top=999" -Label 'OAuth2 permission grants'
+            $counts.secureScores = Save-GraphCollection -Name 'tenant/secure-scores.json' -Uri "$GraphBase/security/secureScores?%24top=10" -Label 'Secure scores'
+            $counts.serviceHealth = Save-GraphCollection -Name 'tenant/service-health.json' -Uri "$GraphBase/admin/serviceAnnouncement/healthOverviews?%24top=200" -Label 'Service health'
+            Add-Limitation -Area 'Tenant standards writeback' -Reason 'This workflow captures evidence and drift inputs. Applying standards or templates should remain a separate reviewed write workflow.' -FollowUp 'Use a future tenant-remediation workflow with explicit approvals.'
+          }
+
+          if (Should-Run 'security_compliance') {
+            $counts.incidents = Save-GraphCollection -Name 'security/incidents.json' -Uri "$GraphBase/security/incidents?%24top=100" -Label 'Security incidents'
+            $counts.alerts = Save-GraphCollection -Name 'security/alerts.json' -Uri "$GraphBase/security/alerts_v2?%24top=100" -Label 'Security alerts'
+            $counts.deviceCompliance = Save-GraphCollection -Name 'security/device-compliance-policies.json' -Uri "$GraphBetaBase/deviceManagement/deviceCompliancePolicies?%24top=200" -Label 'Device compliance policies'
+            Add-Limitation -Area 'Mail security policy writeback' -Reason 'Several Exchange Online Protection and Defender for Office settings require Exchange Online PowerShell or dedicated Security APIs.' -FollowUp 'Run a separate Exchange app-only workflow after certificate-based Exchange permissions are configured.'
+          }
+
+          if (Should-Run 'intune_endpoint') {
+            $counts.mobileApps = Save-GraphCollection -Name 'intune/mobile-apps.json' -Uri "$GraphBetaBase/deviceAppManagement/mobileApps?%24top=999&%24expand=assignments" -Label 'Intune mobile apps'
+            $counts.managedDevices = Save-GraphCollection -Name 'intune/managed-devices.json' -Uri "$GraphBetaBase/deviceManagement/managedDevices?%24top=999" -Label 'Managed devices'
+            $counts.configPolicies = Save-GraphCollection -Name 'intune/configuration-policies.json' -Uri "$GraphBetaBase/deviceManagement/configurationPolicies?%24top=200" -Label 'Configuration policies'
+            $counts.deviceConfigurations = Save-GraphCollection -Name 'intune/device-configurations.json' -Uri "$GraphBetaBase/deviceManagement/deviceConfigurations?%24top=200" -Label 'Device configurations'
+            $counts.compliancePolicies = Save-GraphCollection -Name 'intune/compliance-policies.json' -Uri "$GraphBetaBase/deviceManagement/deviceCompliancePolicies?%24top=200" -Label 'Compliance policies'
+            $counts.appProtectionPolicies = Save-GraphCollection -Name 'intune/app-protection-policies.json' -Uri "$GraphBetaBase/deviceAppManagement/managedAppPolicies?%24top=200" -Label 'App protection policies'
+            $counts.autopilotDevices = Save-GraphCollection -Name 'intune/autopilot-devices.json' -Uri "$GraphBetaBase/deviceManagement/windowsAutopilotDeviceIdentities?%24top=999" -Label 'Autopilot devices'
+            $counts.enrollmentStatusPages = Save-GraphCollection -Name 'intune/enrollment-status-pages.json' -Uri "$GraphBetaBase/deviceManagement/deviceEnrollmentConfigurations?%24top=200" -Label 'Enrollment status pages'
+            $counts.assignmentFilters = Save-GraphCollection -Name 'intune/assignment-filters.json' -Uri "$GraphBetaBase/deviceManagement/assignmentFilters?%24top=200" -Label 'Assignment filters'
+            $counts.remediationScripts = Save-GraphCollection -Name 'intune/remediation-scripts.json' -Uri "$GraphBetaBase/deviceManagement/deviceHealthScripts?%24top=200&%24expand=assignments" -Label 'Remediation scripts'
+            $counts.defenderVulnerabilities = Save-HuntingQuery -Name 'intune/defender-vulnerabilities.json' -Label 'Defender vulnerability inventory' -Query "DeviceTvmSoftwareInventory | summarize ExposedDevices=dcount(DeviceId) by SoftwareName, SoftwareVendor, OSPlatform | join kind=leftouter (DeviceTvmSoftwareVulnerabilities | summarize Weaknesses=dcount(CveId) by SoftwareName, SoftwareVendor) on SoftwareName, SoftwareVendor | project SoftwareName, SoftwareVendor, OSPlatform, Weaknesses=coalesce(Weaknesses, 0), ExposedDevices | order by Weaknesses desc, ExposedDevices desc"
+          }
+
+          if (Should-Run 'teams_sharepoint') {
+            $counts.teamsGroups = Save-GraphCollection -Name 'teams-sharepoint/teams-groups.json' -Uri "$GraphBase/groups?%24filter=resourceProvisioningOptions/Any(x:x eq 'Team')&%24select=id,displayName,mail,visibility,createdDateTime&%24top=999" -Label 'Teams groups'
+            $counts.m365Groups = Save-GraphCollection -Name 'teams-sharepoint/m365-groups.json' -Uri "$GraphBase/groups?%24filter=groupTypes/any(c:c eq 'Unified')&%24select=id,displayName,mail,visibility,createdDateTime&%24top=999" -Label 'Microsoft 365 groups'
+            $counts.sharePointSites = Save-GraphCollection -Name 'teams-sharepoint/sharepoint-sites.json' -Uri "$GraphBase/sites?search=*&%24top=200" -Label 'SharePoint sites'
+            Add-Limitation -Area 'OneDrive detail inventory' -Reason 'Tenant-wide OneDrive content and quota details require additional SharePoint/Sites permissions and should be isolated from app-packaging workflow scopes.' -FollowUp 'Add Sites.Read.All/Sites.FullControl.All only in tenants that need SharePoint evidence.'
+          }
+
+          if (Should-Run 'email_exchange') {
+            $counts.mailEnabledUsers = Save-GraphCollection -Name 'email-exchange/mail-enabled-users.json' -Uri "$GraphBase/users?%24select=id,displayName,userPrincipalName,mail,proxyAddresses,accountEnabled&%24top=999" -Label 'Mail-enabled users'
+            $counts.mailGroups = Save-GraphCollection -Name 'email-exchange/mail-enabled-groups.json' -Uri "$GraphBase/groups?%24filter=mailEnabled eq true&%24select=id,displayName,mail,mailEnabled,securityEnabled,groupTypes&%24top=999" -Label 'Mail-enabled groups'
+            Save-Json -Name 'email-exchange/limitations.json' -Data @(
+              [ordered]@{ function = 'Transport rules'; reason = 'Exchange transport configuration is not represented by the Microsoft Graph app roles used by this workflow.' },
+              [ordered]@{ function = 'Spam/Malware/Safe Attachments policies'; reason = 'Defender for Office and Exchange policy surfaces require Exchange Online PowerShell or dedicated Security APIs.' },
+              [ordered]@{ function = 'Quarantine and message trace'; reason = 'Operational mail-flow evidence should run in a separate Exchange workflow with explicit Exchange permissions.' }
+            )
+          }
+
+          if (Should-Run 'reports_tools') {
+            $counts.officeActiveUsersCsv = if (Save-GraphRaw -Name 'reports/office-active-users-d7.csv' -Uri "$GraphBase/reports/getOffice365ActiveUserDetail(period='D7')" -Label 'Office active users report') { 1 } else { 0 }
+            $counts.mailboxUsageCsv = if (Save-GraphRaw -Name 'reports/mailbox-usage-d7.csv' -Uri "$GraphBase/reports/getMailboxUsageDetail(period='D7')" -Label 'Mailbox usage report') { 1 } else { 0 }
+            $counts.auditDirectory = Save-GraphCollection -Name 'reports/directory-audits.json' -Uri "$GraphBase/auditLogs/directoryAudits?%24top=100" -Label 'Directory audit logs'
+            Add-Limitation -Area 'External lookup tools' -Reason 'Breach, dark-web, GeoIP, and community-template functions need external providers. This workflow only runs Microsoft Graph and repository-backed evidence.' -FollowUp 'Wire external providers through Modern Dev Mgmt integrations before dispatching from tenant repos.'
+          }
+
+          $manifest = [ordered]@{
+            source = 'modern-dev-mgmt'
+            workflowRunId = '${{ github.run_id }}'
+            repository = '${{ github.repository }}'
+            tenantId = $env:AZURE_TENANT_ID
+            operationKind = $operationKind
+            dryRun = $dryRun
+            commitEvidence = $commitEvidence
+            notes = $env:INPUT_NOTES
+            requestedAt = (Get-Date).ToUniversalTime().ToString('o')
+            counts = $counts
+          }
+          if ($env:INPUT_REQUEST_CONTEXT_B64) { $manifest.requestContextProvided = $true }
+          Save-Json -Name 'manifest.json' -Data $manifest
+          Save-Json -Name 'warnings.json' -Data @($warnings)
+          Save-Json -Name 'limitations.json' -Data @($limitations)
+
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "out_dir=$outDir"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "commit_evidence=$commitEvidence"
+
+          $summary = @(
+            '# Modern Dev Mgmt tenant operation pack',
+            '',
+            '| Field | Value |',
+            '| --- | --- |',
+            "| Tenant ID | $env:AZURE_TENANT_ID |",
+            "| Operation | $operationKind |",
+            "| Dry run | $dryRun |",
+            "| Evidence directory | $outDir |",
+            "| Warning count | $($warnings.Count) |",
+            "| Limitation count | $($limitations.Count) |"
+          )
+          $summary += ''
+          $summary += '## Counts'
+          foreach ($entry in $counts.GetEnumerator()) { $summary += "- $($entry.Key): $($entry.Value)" }
+          if ($warnings.Count) {
+            $summary += ''
+            $summary += '## Warnings'
+            foreach ($warning in @($warnings | Select-Object -First 20)) { $summary += "- $warning" }
+          }
+          $summary | Add-Content -Path $env:GITHUB_STEP_SUMMARY
+
+      - name: Upload operation evidence
+        uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: tenant-operation-${{ github.run_id }}
+          path: ${{ steps.collect.outputs.out_dir }}
+          if-no-files-found: warn
+
+      - name: Commit operation evidence
+        if: ${{ steps.collect.outputs.commit_evidence == 'True' || steps.collect.outputs.commit_evidence == 'true' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git add "${{ steps.collect.outputs.out_dir }}"
+          if git diff --cached --quiet; then
+            echo "No tenant operation evidence changes to commit."
+          else
+            git commit -m "chore: record tenant operation ${{ github.run_id }}"
+            git pull --rebase origin "${GITHUB_REF_NAME:-main}"
+            git push
+          fi
