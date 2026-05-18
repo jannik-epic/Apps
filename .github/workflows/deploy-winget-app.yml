@@ -119,16 +119,6 @@ on:
         description: 'Modern Dev Mgmt wave name for this deployment (informational)'
         required: false
         type: string
-      assignment_esp_blocking:
-        # Forwarded by the deploy paths when an assignment template enables
-        # Block-Enrollment-Until-Installed (ESP). The workflow echoes it for
-        # audit; the actual Autopilot profile PATCH is done by the app via
-        # Graph after the mobileApp + assignment write completes.
-        description: 'true when the app should block enrollment until installed (ESP)'
-        required: false
-        default: 'false'
-        type: string
-
 env:
   AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
   AZURE_CLIENT_ID: '35d6529f-ddc6-4bba-8d22-11c136f0f400'

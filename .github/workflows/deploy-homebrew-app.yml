@@ -68,16 +68,6 @@ on:
         description: 'Modern Dev Mgmt wave name for this deployment (informational)'
         required: false
         type: string
-      assignment_esp_blocking:
-        # Forwarded by the deploy paths when an assignment template enables
-        # Block-Enrollment-Until-Installed (ESP). The workflow echoes it for
-        # audit; the actual Autopilot profile PATCH is done by the app via
-        # Graph after the mobileApp + assignment write completes.
-        description: 'true when the app should block enrollment until installed (ESP)'
-        required: false
-        default: 'false'
-        type: string
-
 env:
   AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
   AZURE_CLIENT_ID: '35d6529f-ddc6-4bba-8d22-11c136f0f400'
@@ -116,7 +106,7 @@ jobs:
           echo "INTUNE_ACCESS_TOKEN=$token" >> "$GITHUB_ENV"
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: '3.x'
 
@@ -319,21 +309,28 @@ jobs:
           fi
 
       - name: Summary
+        env:
+          PACKAGE_ID: ${{ github.event.inputs.package_id }}
+          APP_NAME: ${{ github.event.inputs.app_name }}
         run: |
-          echo "✅ Homebrew package ${{ github.event.inputs.package_id }} deployed to Intune." >> $GITHUB_STEP_SUMMARY
-          if [ -n "${{ github.event.inputs.app_name }}" ]; then
-            echo "📱 App Name: ${{ github.event.inputs.app_name }}" >> $GITHUB_STEP_SUMMARY
-          fi
-          if [ -f "output/${{ github.event.inputs.package_id }}_footprint_report.txt" ]; then
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "## 📊 App Footprint Report" >> $GITHUB_STEP_SUMMARY
-            echo '```' >> $GITHUB_STEP_SUMMARY
-            head -n 50 "output/${{ github.event.inputs.package_id }}_footprint_report.txt" >> $GITHUB_STEP_SUMMARY
-            echo '```' >> $GITHUB_STEP_SUMMARY
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "📥 Download the full report from the workflow artifacts:" >> $GITHUB_STEP_SUMMARY
-            if [ -f "output/${{ github.event.inputs.package_id }}_footprint_report.pdf" ]; then
-              echo "- 📄 PDF version available" >> $GITHUB_STEP_SUMMARY
+          {
+            echo "✅ Homebrew package ${PACKAGE_ID} deployed to Intune."
+            if [ -n "${APP_NAME}" ]; then
+              echo "📱 App Name: ${APP_NAME}"
             fi
-            echo "- 📝 Text version available" >> $GITHUB_STEP_SUMMARY
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ -f "output/${PACKAGE_ID}_footprint_report.txt" ]; then
+            {
+              echo ""
+              echo "## 📊 App Footprint Report"
+              echo '```'
+              head -n 50 "output/${PACKAGE_ID}_footprint_report.txt"
+              echo '```'
+              echo ""
+              echo "📥 Download the full report from the workflow artifacts:"
+              if [ -f "output/${PACKAGE_ID}_footprint_report.pdf" ]; then
+                echo "- 📄 PDF version available"
+              fi
+              echo "- 📝 Text version available"
+            } >> "$GITHUB_STEP_SUMMARY"
           fi
