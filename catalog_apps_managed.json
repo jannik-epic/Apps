@@ -1,5 +1,32 @@
 [
   {
+    "id": 2395,
+    "source": "winget",
+    "package_id": "Git.Git",
+    "name": "Git",
+    "os": "windows",
+    "version_deployed": "2.39.2",
+    "pin_version": null
+  },
+  {
+    "id": 2409,
+    "source": "winget",
+    "package_id": "GitHub.cli",
+    "name": "GitHub CLI",
+    "os": "windows",
+    "version_deployed": "2.24.3",
+    "pin_version": null
+  },
+  {
+    "id": 2411,
+    "source": "winget",
+    "package_id": "GitHub.GitHubDesktop",
+    "name": "GitHub Desktop",
+    "os": "windows",
+    "version_deployed": "3.2.0",
+    "pin_version": null
+  },
+  {
     "id": 4128,
     "source": "winget",
     "package_id": "Microsoft.Office",
@@ -45,12 +72,30 @@
     "pin_version": null
   },
   {
+    "id": 4387,
+    "source": "winget",
+    "package_id": "Microsoft.VisualStudioCode",
+    "name": "Microsoft Visual Studio Code",
+    "os": "windows",
+    "version_deployed": "1.76.2",
+    "pin_version": null
+  },
+  {
     "id": 4972,
     "source": "winget",
     "package_id": "OBSProject.OBSStudio",
     "name": "OBS Studio",
     "os": "windows",
     "version_deployed": "32.0.1",
+    "pin_version": null
+  },
+  {
+    "id": 5631,
+    "source": "winget",
+    "package_id": "Microsoft.PowerShell",
+    "name": "PowerShell",
+    "os": "windows",
+    "version_deployed": "7.3.3.0",
     "pin_version": null
   },
   {
