@@ -285,6 +285,9 @@ jobs:
           set -euo pipefail
           git config user.email "actions@github.com"
           git config user.name "github-actions[bot]"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git stash push --include-untracked --message "workflow artifacts before persistence" >/dev/null || true
+          fi
           git pull --rebase
           mkdir -p .modern-dev-mgmt/runs
           node - <<'NODE'
