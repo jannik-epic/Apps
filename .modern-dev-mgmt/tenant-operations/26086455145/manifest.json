@@ -1,0 +1,19 @@
+{
+  "source": "modern-dev-mgmt",
+  "workflowRunId": "26086455145",
+  "repository": "jannik-epic/Apps",
+  "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "operationKind": "identity_management",
+  "dryRun": true,
+  "commitEvidence": true,
+  "notes": "PackageFlow Apps E2E identity evidence after provision smoke",
+  "requestedAt": "2026-05-19T08:46:21.7481420Z",
+  "counts": {
+    "identityUsers": 0,
+    "identityGroups": 149,
+    "directoryRoles": 64,
+    "deletedUsers": 0,
+    "signIns": 0,
+    "riskyUsers": 0
+  }
+}

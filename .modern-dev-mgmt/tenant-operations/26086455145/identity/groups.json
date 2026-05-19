@@ -1,0 +1,1493 @@
+[
+  {
+    "id": "01a74918-503f-424e-a04e-daedea8ed318",
+    "displayName": "AAD_SEC_AS_INTUNE-Insider Preview Ring Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-08-22T11:46:56Z"
+  },
+  {
+    "id": "0573e285-c20e-47ac-bdf8-18081917d1a3",
+    "displayName": "M365 Schulungsteam",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2023-06-12T12:52:25Z"
+  },
+  {
+    "id": "07c6a852-9830-4531-bc92-e65de45809f7",
+    "displayName": "AAD_SEC_DU_INTUNE-PRODUCTION Users",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(user.employeeId -notContains \"INTEGRATION\") and (user.userPrincipalName -notMatch \"adm*.*\") and (user.userType -eq \"Member\")",
+    "createdDateTime": "2022-05-05T06:15:53Z"
+  },
+  {
+    "id": "0f6f8a93-0c1e-4da3-b3c0-794b1d63b965",
+    "displayName": "[EXT]-Test-Stephan",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2023-05-26T12:33:52Z"
+  },
+  {
+    "id": "11f906ac-c8ea-4f83-b92c-0a927651ece1",
+    "displayName": "AAD_SEC_DU_INTUNE-SCEPMAN",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-06-27T05:17:50Z"
+  },
+  {
+    "id": "12e59aed-3610-40c4-a28d-29bcfa93f966",
+    "displayName": "Testing AVE 01",
+    "mailEnabled": true,
+    "securityEnabled": true,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2023-05-04T15:19:00Z"
+  },
+  {
+    "id": "1331bb2b-19e8-4196-b07c-64637edd4123",
+    "displayName": "AAD_SEC_AS_ROL-Az Global Reader Bicep",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2024-05-31T08:08:14Z"
+  },
+  {
+    "id": "13c33d27-e61d-406b-b50b-b10e065d1651",
+    "displayName": "AAD_SEC_AS_PER-VM User Login",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2023-11-09T13:52:32Z"
+  },
+  {
+    "id": "18cb3311-e2f3-4384-b596-e8eacb5c819a",
+    "displayName": "EPIC-MozillaFirefox-MozillaFirefox-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-06-11T05:56:16Z"
+  },
+  {
+    "id": "18d5aa14-61e0-477f-b056-0b8f637702a2",
+    "displayName": "AAD_SEC_AS_Intune-AVD VMs",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2023-11-14T13:40:55Z"
+  },
+  {
+    "id": "1a313391-9598-4ee1-95b4-b62dd42db4a5",
+    "displayName": "pp-ITPROD-AdminMaker",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-02-26T09:18:09Z"
+  },
+  {
+    "id": "1e9c56bc-83ce-49ec-9453-ec21515ba050",
+    "displayName": "E-Mail Waiver Demo",
+    "mailEnabled": true,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-04-24T07:08:46Z"
+  },
+  {
+    "id": "24681346-376f-482e-9c43-c9ca7c3a769d",
+    "displayName": "Test COE Admins",
+    "mailEnabled": true,
+    "securityEnabled": true,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-10-03T14:18:49Z"
+  },
+  {
+    "id": "25467832-f1df-47a2-8e8b-3560861c8645",
+    "displayName": "Test COE Users",
+    "mailEnabled": true,
+    "securityEnabled": true,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-10-03T14:20:10Z"
+  },
+  {
+    "id": "255f9924-5e8a-4f93-9e79-18a8f06ccc48",
+    "displayName": "AAD_SEC_AS_CAC-Exclude from Force compliant Devices Notebook",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-08-22T11:46:55Z"
+  },
+  {
+    "id": "26a44f63-856f-4d74-8862-ac8a8027bb07",
+    "displayName": "Hans [Prj]",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-28T04:55:56Z"
+  },
+  {
+    "id": "288b4dff-49ec-45bc-83fc-b521cc15763d",
+    "displayName": "Marcel [Prj]",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-28T04:51:33Z"
+  },
+  {
+    "id": "28d9c353-1e2f-4727-8840-65d0696e7630",
+    "displayName": "Azure ATP epicfusionlabs Administrators",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-06-28T09:27:32Z"
+  },
+  {
+    "id": "2abca86f-0d2b-4ed3-a707-3ca0f52bc67d",
+    "displayName": "Verwaltung und Support [Org]",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-28T05:30:15Z"
+  },
+  {
+    "id": "2bb94da7-8527-40a6-9510-4d5bb908c7ae",
+    "displayName": "Access Review Beispiel Team 2",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-10-29T07:53:15Z"
+  },
+  {
+    "id": "2bd2eaae-60e7-4500-8579-f985da8a00ea",
+    "displayName": "M365 Training",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-05-23T05:40:41Z"
+  },
+  {
+    "id": "2d30e693-b44d-48d9-b035-7a6049e0943d",
+    "displayName": "Sanche Test",
+    "mailEnabled": true,
+    "securityEnabled": true,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2023-12-05T10:09:48Z"
+  },
+  {
+    "id": "2e930713-b6bd-4b63-b92c-f80dac810099",
+    "displayName": "Test COE Makers",
+    "mailEnabled": true,
+    "securityEnabled": true,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-10-03T14:19:43Z"
+  },
+  {
+    "id": "3282e71d-73ba-4d94-b74e-f88b04415a71",
+    "displayName": "MA-Managers",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-02-17T13:14:55Z"
+  },
+  {
+    "id": "3720c485-9c36-442f-9e85-f043738b491c",
+    "displayName": "AAD_SEC_AS_CAC-Exclude from MFA",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-11-21T07:45:37Z"
+  },
+  {
+    "id": "37542626-d402-4584-80ea-6b1ecf55f6ee",
+    "displayName": "AAD_SEC_AS_CAC-Exclude Legacy Protocol Policy",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-11-21T07:45:36Z"
+  },
+  {
+    "id": "37aa45d5-60f1-435b-9c7a-f7acf2089e06",
+    "displayName": "Technik [Org]",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-28T05:30:30Z"
+  },
+  {
+    "id": "38691173-0809-4f1e-ab10-75d05bae4225",
+    "displayName": "AAD_SEC_AS_CAC-Emergency Accounts",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-11-21T07:45:36Z"
+  },
+  {
+    "id": "38ef9c67-5968-4dc3-a1db-cd594d104d15",
+    "displayName": "Azure ATP epicfusionlabs Users",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-06-28T09:27:32Z"
+  },
+  {
+    "id": "3c40d569-c106-49f7-a797-3c0bbba40035",
+    "displayName": "Daniel [Prj]",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-28T04:56:21Z"
+  },
+  {
+    "id": "3fc6eea6-7ea5-48d4-8d84-f0e5c79b4164",
+    "displayName": " AAD_SEC_AS-Test DPA",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-05-06T11:25:23Z"
+  },
+  {
+    "id": "40ebd007-9b08-4296-a820-03ea59027058",
+    "displayName": "T-PRJ-TEST5",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2026-03-02T09:47:40Z"
+  },
+  {
+    "id": "44a61ad8-943b-41c3-964a-e71fa0d36722",
+    "displayName": "AAD_SEC_AS_CAC-Exclude from Force compliant Devices Mobile",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-08-22T11:46:55Z"
+  },
+  {
+    "id": "48e4171a-75a1-47da-9323-230c4928016e",
+    "displayName": "AAD_SEC_DD_INTUNE-Broad Ring Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.devicePhysicalIDs -any _ -contains \"[ZTDId]\")",
+    "createdDateTime": "2022-08-22T11:46:56Z"
+  },
+  {
+    "id": "48f56772-3f8a-41cd-b48e-855f9ba7c891",
+    "displayName": "Test B2B Collab",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2025-10-01T06:14:08Z"
+  },
+  {
+    "id": "4a699af0-8f3b-457c-885e-45d1a834eaec",
+    "displayName": "HR-Admins",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-02-17T08:16:29Z"
+  },
+  {
+    "id": "4cde4bc3-00d6-49ec-b97c-df9c498a9f1b",
+    "displayName": "MFH Grünaustrasse",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-10-15T17:13:51Z"
+  },
+  {
+    "id": "4d42c717-db7a-42ed-b49c-2b08fc16c389",
+    "displayName": "GG_SCCM_Supporter",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2021-08-13T15:16:19Z"
+  },
+  {
+    "id": "4fa262e0-6e8a-4afe-a86b-147899c1359c",
+    "displayName": "AAD_SEC_AS_INTUNE-Fast Ring Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-11-21T07:45:38Z"
+  },
+  {
+    "id": "523c579d-da48-4b3a-9e29-c3962410ce5c",
+    "displayName": "AAD_SEC_AS_SensitivityLabelTest",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-04-01T06:26:53Z"
+  },
+  {
+    "id": "53610259-8515-40f5-9eb7-e2fb6192d3e9",
+    "displayName": "Demo E-Mail Waiver",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2026-04-24T06:54:22Z"
+  },
+  {
+    "id": "55a37c4e-466e-4d40-b5d2-780a805ccee4",
+    "displayName": "Test Purview Disposition Manager",
+    "mailEnabled": true,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-05-28T06:54:08Z"
+  },
+  {
+    "id": "563a9fca-11cf-4bcc-b5cd-c8ff4a929d2a",
+    "displayName": "AAD_SEC_AS_LIC-M365 Copilot",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-06-15T11:43:04Z"
+  },
+  {
+    "id": "57f73b15-34ca-42c1-bcde-d9bceffd951f",
+    "displayName": "TestmitneuenEinstellungenKarin",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2023-09-20T15:17:55Z"
+  },
+  {
+    "id": "58bb75e5-502f-400b-a587-de5e6e153b27",
+    "displayName": "Group for Answers in Viva Engage – DO NOT DELETE 19722878977",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2025-04-22T07:34:30Z"
+  },
+  {
+    "id": "58f7ea36-b169-473e-a5f6-414f67051229",
+    "displayName": "Access Review Beispiel Team 1",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-10-29T07:52:31Z"
+  },
+  {
+    "id": "58ff1af7-bc54-40e3-a35e-4d554b2bcbf1",
+    "displayName": "t-prj-asd",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2026-03-02T10:11:24Z"
+  },
+  {
+    "id": "5a3c958c-aac1-44d4-80e3-12db95571d6d",
+    "displayName": "Robopack-Screenpresso-Compatible_X64-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-22T07:29:54Z"
+  },
+  {
+    "id": "5a95859d-d161-4f93-a385-666d98f7e2d0",
+    "displayName": "AAD_SEC_AS_INTUNE-Integration Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-05-04T06:36:18Z"
+  },
+  {
+    "id": "5abf5416-3667-4360-827f-c9dd8d81b4d6",
+    "displayName": "GG_SCCM_Admins",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2021-08-13T15:16:19Z"
+  },
+  {
+    "id": "5ba1be6f-d4e2-40d8-a053-1e395e740fae",
+    "displayName": "(TEL) Playground",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2025-11-24T14:09:23Z"
+  },
+  {
+    "id": "5c0b49d4-df32-448d-9f31-d6cd2f657b1a",
+    "displayName": "Test Use Case 1 Vontobel",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2025-03-19T12:04:15Z"
+  },
+  {
+    "id": "5ec69e07-cfbb-49d3-b07d-bd16150b4241",
+    "displayName": "AAD_SEC_AS_PP_DEMO_DEV_Admins",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2024-07-15T15:41:32Z"
+  },
+  {
+    "id": "60b382eb-2501-4749-8e71-c508b45efb17",
+    "displayName": "SG_Teams_Creators",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-24T14:24:18Z"
+  },
+  {
+    "id": "6126da20-269c-4351-b487-69c3a0968f28",
+    "displayName": "(TEL) HR & Recruiting",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2025-11-24T14:10:18Z"
+  },
+  {
+    "id": "61ba0214-c295-4744-b3f1-d90201df15c0",
+    "displayName": "ADS_SEC_AS_PER-FileShare AVD FSLogix",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2023-11-14T13:00:34Z"
+  },
+  {
+    "id": "62c3768d-3c67-4ad0-9cd5-d00820053efc",
+    "displayName": "Andreas [Prj]",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-28T04:56:33Z"
+  },
+  {
+    "id": "62cc56c0-5761-4af8-a3c4-e0e2c667a9ce",
+    "displayName": "AAD_SEC_DD_INTUNE-Autopilot",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.devicePhysicalIDs -any _ -contains \"[ZTDId]\")",
+    "createdDateTime": "2022-05-04T16:15:40Z"
+  },
+  {
+    "id": "636bdfef-777c-4e68-8ef8-e5e33d06ece9",
+    "displayName": "EPIC-RemoteDesktop-RemoteDesktop-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-10-21T06:38:24Z"
+  },
+  {
+    "id": "6390f1e1-ef85-4c6d-a4f1-27d6c3f7fd94",
+    "displayName": "AAD DC Administrators",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-01T07:39:45Z"
+  },
+  {
+    "id": "65df59ca-d214-48e7-b684-680b1825c684",
+    "displayName": "AAD_SEC_AS_PER-Teams Creator",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2023-01-30T07:03:28Z"
+  },
+  {
+    "id": "67618c9b-8186-4fa0-828b-ca91b8cb6099",
+    "displayName": "AAD_SEC_DD_INTUNE-iOS Devices BYOD",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.deviceOwnership -eq \"Personal\") and ((device.deviceOSType -eq \"IPad\") or (device.deviceOSType -eq \"IPhone\"))",
+    "createdDateTime": "2022-08-22T11:46:52Z"
+  },
+  {
+    "id": "67b9fdb1-5303-4ed0-845c-fa8beb39364b",
+    "displayName": "73201072.00 Ruchackerstrasse 2-16, 4542 Luterbach-PRJ",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-06-27T08:40:49Z"
+  },
+  {
+    "id": "6892fd64-9b1f-433f-8d4a-9aecd80993ad",
+    "displayName": " GS-LastPassUsers online",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2021-08-11T10:38:06Z"
+  },
+  {
+    "id": "6ab3b759-c233-48f8-8228-c578cfd02e80",
+    "displayName": "AAD_SEC_DD_INTUNE-VirtualMachines",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.deviceModel -eq \"Virtual Machine\") -or (device.deviceModel -eq \"VMware Virtual Platform\") -or (device.deviceModel -eq \"VMware7,1\")",
+    "createdDateTime": "2021-06-13T12:29:01Z"
+  },
+  {
+    "id": "6acff8ae-d964-4641-a590-cf3bfc54c4c3",
+    "displayName": "Power BI Group",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-06-02T13:55:48Z"
+  },
+  {
+    "id": "704b968e-af70-44a8-bf47-a46718097099",
+    "displayName": "Projekt Z - mit Externen",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-10-15T17:14:50Z"
+  },
+  {
+    "id": "748dfcd9-66cc-4516-b536-0820e29b700d",
+    "displayName": "AAD_SEC_AS_INTUNE-Autopilot SelfDeploy",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-08-22T11:46:53Z"
+  },
+  {
+    "id": "7572894a-86a2-4e84-b857-93eefb5d94c2",
+    "displayName": "AAD_SEC_AS_CAC-Exclude from Force Compliant Device for MFA registration",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-08-22T11:46:54Z"
+  },
+  {
+    "id": "7582d198-6e53-4918-912e-1a07b71b6e94",
+    "displayName": "Nachhaltigkeitsprogramm 2025",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-10-20T16:36:25Z"
+  },
+  {
+    "id": "7692ec75-618e-4e50-bb2f-cb8dcb30a020",
+    "displayName": "Org Team Creation Template",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-18T19:29:23Z"
+  },
+  {
+    "id": "77beb16b-ca5e-4b20-a34f-0ce409437004",
+    "displayName": "Prj Team Creation Template",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-24T15:17:17Z"
+  },
+  {
+    "id": "78457cce-6400-4167-a811-facd86adf8df",
+    "displayName": "PackageFlow Apps E2E Provision Smoke 20260519-1045",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-05-19T08:45:27Z"
+  },
+  {
+    "id": "7bc710fe-6a24-48de-a8e1-8c313af30970",
+    "displayName": "FFR_MIP_SuperUser_Test",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-11-19T13:22:27Z"
+  },
+  {
+    "id": "7ed8b2fa-35e5-44eb-a9c8-9ebc6664b19b",
+    "displayName": "Testing AVE 02",
+    "mailEnabled": true,
+    "securityEnabled": true,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2023-05-04T15:19:16Z"
+  },
+  {
+    "id": "808c22e9-02cc-4939-a553-4ca9c5b11293",
+    "displayName": "Robopack-Notepad++-Compatible_X64-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-22T07:28:38Z"
+  },
+  {
+    "id": "83466ab1-fd92-4004-9cb1-743c430800ec",
+    "displayName": "AAD_SEC_AS_ROL-Az Global Owner Bicep",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2024-05-31T08:08:12Z"
+  },
+  {
+    "id": "838c16b0-afbb-4277-9d4a-9c50900d1aba",
+    "displayName": "[KDE] Customer Support",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2025-11-24T14:10:25Z"
+  },
+  {
+    "id": "856f703f-8855-4f84-8d2e-d653089fe262",
+    "displayName": "DSD002",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-11-21T09:02:29Z"
+  },
+  {
+    "id": "8b8e816c-a5ce-4c07-9cab-c509db9d245a",
+    "displayName": "AAD_SEC_AS_CAC-Exclude from Force MFA for Admins Roles",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-08-22T11:46:54Z"
+  },
+  {
+    "id": "8b9a6d6c-2399-40b9-8f0b-fc9f298ac534",
+    "displayName": "AAD_SEC_AS_CAC-Exclude from MFA enforcement on Browers",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-08-22T11:46:54Z"
+  },
+  {
+    "id": "8ba3f1b4-529c-42d2-bb95-b4c7bcd545b6",
+    "displayName": "AAD_SEC_AS_ROL-EF Global Admins",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-12-02T22:04:20Z"
+  },
+  {
+    "id": "8d9baab7-6bde-461e-81be-2f7472305f8e",
+    "displayName": "Bauprojekte",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-06-27T08:36:02Z"
+  },
+  {
+    "id": "8ef6693b-fdcb-4868-be90-878a75e4f515",
+    "displayName": "Naseema [Prj]",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-28T04:56:04Z"
+  },
+  {
+    "id": "8efcbb32-cc20-4adc-ac9b-419339324c14",
+    "displayName": "AAD_SEC_AS_ROL-SuperAdmin",
+    "mailEnabled": true,
+    "securityEnabled": true,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2026-05-04T09:48:59Z"
+  },
+  {
+    "id": "92b0bd5d-a3df-48e6-841d-0328aa3f0f4e",
+    "displayName": "(ORG) Customer Support",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2025-11-24T14:10:51Z"
+  },
+  {
+    "id": "94c75d05-eb76-4898-9174-383ccbde4b4d",
+    "displayName": "Autopilot Self",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2021-11-30T12:34:08Z"
+  },
+  {
+    "id": "9658d80e-f53a-49bf-bea8-e88094c13e50",
+    "displayName": "AnyoneTest",
+    "mailEnabled": true,
+    "securityEnabled": true,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2023-05-16T11:49:21Z"
+  },
+  {
+    "id": "96cce544-e07a-45b6-a1c2-4391525763d5",
+    "displayName": "Robopack-MicrosoftAzureCLI-Compatible_X64-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-22T07:28:40Z"
+  },
+  {
+    "id": "96e94f0d-3bb3-4b8a-81cb-86c8bf56ef73",
+    "displayName": "SyncTest",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2023-09-20T14:49:22Z"
+  },
+  {
+    "id": "98ea1625-fe17-4bc8-b0de-c90b0d83bd0e",
+    "displayName": "GS-M365E5",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-23T13:47:52Z"
+  },
+  {
+    "id": "9adf4a44-d5a9-4bb0-b263-8048ced9ba5c",
+    "displayName": "SG_AzureContributors",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-03-19T14:01:59Z"
+  },
+  {
+    "id": "9b881c38-8ed0-454a-94e6-f6846ac86dcf",
+    "displayName": "A1 Anhänger-GB10-TRH",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2026-02-27T09:02:06Z"
+  },
+  {
+    "id": "9be62e02-c686-49aa-b5f1-6c3b98537e81",
+    "displayName": "AAD_SEC_DU_INTUNE-All Users with Intune License",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "USER.ASSIGNEDPLANS -ANY (ASSIGNEDPLAN.SERVICEPLANID -EQ \"c1ec4a95-1f05-45b3-a911-aa3fa01094f5\" -and assignedPlan.capabilityStatus -ne \"Disabled\")",
+    "createdDateTime": "2022-05-05T07:25:20Z"
+  },
+  {
+    "id": "a222a189-af72-4507-85ab-5cae973b5c80",
+    "displayName": "GS-LastPassUsers",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2021-06-24T20:07:30Z"
+  },
+  {
+    "id": "a92914fe-87d0-4d17-8410-2714c650539f",
+    "displayName": "AAD_SEC_AS_ROL-EF Admins",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2023-01-20T16:37:26Z"
+  },
+  {
+    "id": "ade7d95c-cfad-45e9-a175-52c8cab55872",
+    "displayName": "MLDC_Test_AVD_Access",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-30T06:45:44Z"
+  },
+  {
+    "id": "b105e976-a780-4694-9717-a4c73f64f421",
+    "displayName": "AAD_SEC_DD_INTUNE-iOS Devices Company Owned",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.deviceOwnership -eq \"Company\") and ((device.deviceOSType -eq \"iPad\") or (device.deviceOSType -eq \"iPhone\"))",
+    "createdDateTime": "2022-08-22T11:46:53Z"
+  },
+  {
+    "id": "b11253d3-ae9f-4196-8861-52c8fd689501",
+    "displayName": "AAD_SEC_DU_CAC-SharedPasskeys",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(user.userPrincipalName -notStartsWith \"admin\")",
+    "createdDateTime": "2026-03-12T06:53:27Z"
+  },
+  {
+    "id": "b22ae5c3-3af5-4732-b18d-0e6b89399d16",
+    "displayName": "GBI-ORG",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-08-27T11:37:35Z"
+  },
+  {
+    "id": "b232f57c-5d49-4610-bb2c-e2c14a0b5c6d",
+    "displayName": "Robopack-OmnissaHorizonClient-Compatible_X64-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-22T07:28:57Z"
+  },
+  {
+    "id": "b324ad8a-4194-4216-88e2-35bc7af7fe7e",
+    "displayName": "Robopack-PowerAutomate-Compatible_X64-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-10-22T12:31:09Z"
+  },
+  {
+    "id": "b6e2a9ed-9c70-44fa-bd4d-a2b9f82295fe",
+    "displayName": "AAD_SEC_AS_INTUNE-PRODUCTION Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-05-05T06:20:09Z"
+  },
+  {
+    "id": "b81b70f8-6071-4a95-b4bd-645594015e72",
+    "displayName": "AAD_SEC_DU_INTUNE-INTEGRATION Users",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "((user.extensionAttribute4 -contains \"INTEGRATION\") or (user.employeeId -contains \"INTEGRATION\")) and (user.userPrincipalName -notMatch \"adm*.*\") and (user.userType -eq \"Member\")",
+    "createdDateTime": "2022-05-04T06:33:36Z"
+  },
+  {
+    "id": "b89b3176-d539-4233-8a63-481ddecf1458",
+    "displayName": "All Company",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-04-03T19:31:16Z"
+  },
+  {
+    "id": "b9150b94-e4ac-43e1-b90a-0dce1e916832",
+    "displayName": "AAD_SEC_AS_ROL-Az Global Contributor Bicep",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2024-05-31T08:08:13Z"
+  },
+  {
+    "id": "b98c587f-5169-455c-a474-ad76b7088d36",
+    "displayName": "[EXT]-Mein Test neues Release [Archive]",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2023-05-17T19:39:13Z"
+  },
+  {
+    "id": "b9deb885-54d8-4667-be3c-35dffa94a7c2",
+    "displayName": "DSD001",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-11-21T09:02:03Z"
+  },
+  {
+    "id": "bb7bd8b2-0509-465d-9956-c02a2b0db963",
+    "displayName": "T-PRJ-Test",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2026-03-02T09:47:06Z"
+  },
+  {
+    "id": "bc8cd479-3325-4c45-81a8-aa6f9ba4876d",
+    "displayName": "73201574.00 Rötistrasse 9, 4532 Feldbrunnen-St. Niklaus",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-09-10T06:00:53Z"
+  },
+  {
+    "id": "bd5f6752-298b-47dc-a8ea-84672b1b59dd",
+    "displayName": "SG_M365E5",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-03-08T17:40:29Z"
+  },
+  {
+    "id": "c1addbe1-4286-4d0f-9dac-7b9f15c0455a",
+    "displayName": "AAD_SEC_AS_PP_DEMO_DEV_Admins_Makers",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2024-07-15T15:50:11Z"
+  },
+  {
+    "id": "c1b4345e-637b-483e-8142-d048b93b6b7f",
+    "displayName": "AAD_SEC_AS_INTUNE-First Ring Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-11-21T07:45:38Z"
+  },
+  {
+    "id": "c1c72198-abc1-46a4-b196-ad42611816f9",
+    "displayName": "TestVerknüpfung",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2023-09-20T14:52:20Z"
+  },
+  {
+    "id": "c318e1f5-b167-47e9-b994-8c23f125c52f",
+    "displayName": "Migration 2025 - PRJ",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2025-11-24T14:09:51Z"
+  },
+  {
+    "id": "c56cb31a-c416-4ac5-a49f-0a0c30b2aeab",
+    "displayName": "GS-LastPassAdmins",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2021-06-24T20:07:30Z"
+  },
+  {
+    "id": "cbaaf0ba-b8b6-46df-9903-8b89d8663993",
+    "displayName": "Conditional Access: Risky sign-in multifactor authentication (a4ea6c0f-b8fb-4d29-91f1-9f8cf0601e98)",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-02-12T18:58:43Z"
+  },
+  {
+    "id": "cc2b7c74-aa80-4952-88d2-e1265c289094",
+    "displayName": "MLDC_AVD_Operator",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-30T06:46:35Z"
+  },
+  {
+    "id": "cc84a7ab-4c0b-4062-9388-21094ba373b2",
+    "displayName": "Baustelle Bern Trafo [Prj]",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-24T16:02:38Z"
+  },
+  {
+    "id": "cd5e043a-7c94-4230-b58f-2b7d3a501be6",
+    "displayName": "AAD_SEC_DD_INTUNE-Android Devices BYOD",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.deviceOSType -contains \"Android\") and (device.deviceOwnership -eq \"Personal\")",
+    "createdDateTime": "2022-08-22T11:46:51Z"
+  },
+  {
+    "id": "d0ea16e7-2a47-4a32-ba14-5237b0272ae3",
+    "displayName": "Produktion [Org]",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-28T05:30:25Z"
+  },
+  {
+    "id": "d1ea0a19-6c66-4af5-928c-d365cfdbf2c2",
+    "displayName": "TeamsArchivierung",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2023-06-08T14:03:36Z"
+  },
+  {
+    "id": "d2dfdb81-8b42-4e1e-9190-ddc3ee4acc30",
+    "displayName": "Purview DLP browser protection - excluded users",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-01-21T07:56:51Z"
+  },
+  {
+    "id": "d3f6e6de-43d5-4d08-a783-4003cdf750d2",
+    "displayName": "[EXT]-Test-External",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2023-05-31T19:19:42Z"
+  },
+  {
+    "id": "d797bf67-8f87-4f2e-9c26-353e22cfc788",
+    "displayName": "pp-ITPROD-Admin",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-02-26T09:18:29Z"
+  },
+  {
+    "id": "d8f7c7d7-3558-4384-88a8-79ee73014fff",
+    "displayName": "SG_TeamsManager_Pilot",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-24T14:36:28Z"
+  },
+  {
+    "id": "dab461ae-979a-4a4d-a13c-0718c85b7993",
+    "displayName": "AAD_SEC_AS_PER-MFA Default SMS",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-07-22T06:45:44Z"
+  },
+  {
+    "id": "dce39cfb-c8cd-4c4b-8dd3-342b2d1be733",
+    "displayName": "AAD_SEC_AS_PP_DEMO_DEV_Users",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2024-07-15T15:49:24Z"
+  },
+  {
+    "id": "de2b70cd-ea55-47d1-8350-675ac61a22fc",
+    "displayName": "Test Use Case 1 Vontobel 2.0",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2025-03-19T12:39:59Z"
+  },
+  {
+    "id": "dfd5c81f-b801-42d7-b2e2-b7d6e7f364fe",
+    "displayName": "Azure ATP epicfusionlabs Viewers",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-06-28T09:27:32Z"
+  },
+  {
+    "id": "e09b606f-4dd6-40fd-ab32-a0cb67ff001f",
+    "displayName": "EPIC-MicrosoftVisualStudioCode-MicrosoftVisualStudioCode-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-06-11T07:50:37Z"
+  },
+  {
+    "id": "e35fd5c3-60f2-4fd6-b76f-65d43aad5131",
+    "displayName": "Akquisition-GRP",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-09-09T05:38:36Z"
+  },
+  {
+    "id": "e37cad1d-acc6-49e6-8809-6b4911b03797",
+    "displayName": "Remo [Prj]",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-28T04:56:27Z"
+  },
+  {
+    "id": "e4f03fc6-0702-4583-9561-0b0c662ac22e",
+    "displayName": "AAD_SEC_AS_PP_DEMO_DEV_Makers",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2024-07-15T15:49:01Z"
+  },
+  {
+    "id": "e6390f7d-431c-4ba0-9817-9317f6be33ca",
+    "displayName": "Sharepoint User",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-02-12T18:44:30Z"
+  },
+  {
+    "id": "e68f27cb-a1ce-4151-a1c4-1273e220fa29",
+    "displayName": "DSD003",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-11-21T09:03:08Z"
+  },
+  {
+    "id": "e7a5322b-3073-477e-82b6-f890e2766910",
+    "displayName": "Kundendossier-Burgdorf-TRH",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2026-02-27T09:05:40Z"
+  },
+  {
+    "id": "e8a44b22-9bde-4fc1-b209-6828ddd43ae5",
+    "displayName": "Dominik [Prj]",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2021-05-28T04:56:14Z"
+  },
+  {
+    "id": "eb3cfa6c-62ff-4fb3-a740-95aa08679b7f",
+    "displayName": "Marketing Projekte Intern",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-10-15T17:10:36Z"
+  },
+  {
+    "id": "eb64a83b-0332-465b-a3ad-9a4b768b9cfb",
+    "displayName": "T-prj-test12354",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2026-03-02T10:12:20Z"
+  },
+  {
+    "id": "ec8e5b26-55d8-4d37-9b72-032bdcb71e4f",
+    "displayName": "AAD_SEC_DD_INTUNE-Android Devices Company Owned",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.deviceOSType -contains \"Android\") and (device.deviceOwnership -ne \"Personal\")",
+    "createdDateTime": "2022-08-22T11:46:52Z"
+  },
+  {
+    "id": "ee331122-6610-49b3-8742-00f58b717171",
+    "displayName": "AAD_SEC_DU_CAC-DeviceBoundPasskey",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(user.userPrincipalName -startsWith \"admin\")",
+    "createdDateTime": "2026-03-12T06:51:30Z"
+  },
+  {
+    "id": "f1bee488-9f07-4479-8cad-baa4f666062f",
+    "displayName": "Purview DLP browser protection - included users",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-01-21T07:56:47Z"
+  },
+  {
+    "id": "f4a3ca36-380c-47ae-bbd7-a38fc8722e3d",
+    "displayName": "AAD_SEC_DD_INTUNE-macOS Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.deviceOSType -contains \"macOS\") or (device.deviceOSType -contains \"OS X\") or (device.deviceOSType -contains \"MacMDM\")",
+    "createdDateTime": "2022-08-22T11:46:55Z"
+  },
+  {
+    "id": "f70d748e-fbc2-4b56-a0e4-68482247f906",
+    "displayName": "Simon Project",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2022-01-26T12:12:45Z"
+  },
+  {
+    "id": "f80ed236-694a-4935-aaf8-f46d33f11938",
+    "displayName": "Robopack-Greenshot-Compatible_X64-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-10-22T12:27:42Z"
+  },
+  {
+    "id": "f93d3e56-de6e-4cbf-9041-c67be076b6d4",
+    "displayName": "HR-Managers",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-05-04T09:27:30Z"
+  },
+  {
+    "id": "fd8533f8-9689-4e2c-9ca0-8bf377c9f97f",
+    "displayName": "Robopack-PowerShell-Compatible_X64-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-22T07:28:46Z"
+  },
+  {
+    "id": "fdb43d49-dd68-448b-a420-be54713f0b23",
+    "displayName": "SG_AzureOwners",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-03-19T14:00:02Z"
+  }
+]
