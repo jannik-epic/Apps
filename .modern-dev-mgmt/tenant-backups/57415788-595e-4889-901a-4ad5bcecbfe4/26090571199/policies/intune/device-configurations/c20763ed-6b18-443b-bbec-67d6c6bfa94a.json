@@ -1,0 +1,35 @@
+{
+  "@odata.type": "#microsoft.graph.macOSCustomConfiguration",
+  "id": "c20763ed-6b18-443b-bbec-67d6c6bfa94a",
+  "lastModifiedDateTime": "2023-09-23T11:45:53.1656113Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2023-09-23T11:45:53.1656113Z",
+  "description": null,
+  "displayName": "EPIC_DCP_DEV_MAC-MDATP Netfilter",
+  "version": 1,
+  "payloadName": "EPIC_DCP_DEV_MAC-MDATP Netfilter",
+  "payloadFileName": "netfilter.xml",
+  "payload": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBwbGlzdCBQVUJMSUMgIi0vL0FwcGxlLy9EVEQgUExJU1QgMS4wLy9FTiIgImh0dHA6Ly93d3cuYXBwbGUuY29tL0RURHMvUHJvcGVydHlMaXN0LTEuMC5kdGQiPg0KPHBsaXN0IHZlcnNpb249IjEiPg0KPGRpY3Q+DQo8a2V5PlBheWxvYWRVVUlEPC9rZXk+DQo8c3RyaW5nPjFBODUzRERCLTM3QUItNEQ0Ri1CNzRELTE1MTk3RkVGNjQyMzwvc3RyaW5nPg0KPGtleT5QYXlsb2FkVHlwZTwva2V5Pg0KPHN0cmluZz5Db25maWd1cmF0aW9uPC9zdHJpbmc+DQo8a2V5PlBheWxvYWRPcmdhbml6YXRpb248L2tleT4NCjxzdHJpbmc+TWljcm9zb2Z0IENvcnBvcmF0aW9uPC9zdHJpbmc+DQo8a2V5PlBheWxvYWRJZGVudGlmaWVyPC9rZXk+DQo8c3RyaW5nPjFBODUzRERCLTM3QUItNEQ0Ri1CNzRELTE1MTk3RkVGNjQyMzwvc3RyaW5nPg0KPGtleT5QYXlsb2FkRGlzcGxheU5hbWU8L2tleT4NCjxzdHJpbmc+RGVmZW5kZXIgLSBOZXR3b3JrIEZpbHRlcjwvc3RyaW5nPg0KPGtleT5QYXlsb2FkRGVzY3JpcHRpb248L2tleT4NCjxzdHJpbmcvPg0KPGtleT5QYXlsb2FkVmVyc2lvbjwva2V5Pg0KPGludGVnZXI+MTwvaW50ZWdlcj4NCjxrZXk+UGF5bG9hZEVuYWJsZWQ8L2tleT4NCjx0cnVlLz4NCjxrZXk+UGF5bG9hZFJlbW92YWxEaXNhbGxvd2VkPC9rZXk+DQo8dHJ1ZS8+DQo8a2V5PlBheWxvYWRTY29wZTwva2V5Pg0KPHN0cmluZz5TeXN0ZW08L3N0cmluZz4NCjxrZXk+UGF5bG9hZENvbnRlbnQ8L2tleT4NCjxhcnJheT4NCjxkaWN0Pg0KPGtleT5GaWx0ZXJEYXRhUHJvdmlkZXJCdW5kbGVJZGVudGlmaWVyPC9rZXk+DQo8c3RyaW5nPmNvbS5taWNyb3NvZnQud2Rhdi5uZXRleHQ8L3N0cmluZz4NCjxrZXk+RmlsdGVyRGF0YVByb3ZpZGVyRGVzaWduYXRlZFJlcXVpcmVtZW50PC9rZXk+DQo8c3RyaW5nPmlkZW50aWZpZXIgImNvbS5taWNyb3NvZnQud2Rhdi5uZXRleHQiIGFuZCBhbmNob3IgYXBwbGUgZ2VuZXJpYyBhbmQgY2VydGlmaWNhdGUgMVtmaWVsZC4xLjIuODQwLjExMzYzNS4xMDAuNi4yLjZdIC8qIGV4aXN0cyAqLyBhbmQgY2VydGlmaWNhdGUgbGVhZltmaWVsZC4xLjIuODQwLjExMzYzNS4xMDAuNi4xLjEzXSAvKiBleGlzdHMgKi8gYW5kIGNlcnRpZmljYXRlIGxlYWZbc3ViamVjdC5PVV0gPSBVQkY4VDM0Nkc5PC9zdHJpbmc+DQo8a2V5PkZpbHRlckdyYWRlPC9rZXk+DQo8c3RyaW5nPmluc3BlY3Rvcjwvc3RyaW5nPg0KPGtleT5GaWx0ZXJQYWNrZXRzPC9rZXk+DQo8ZmFsc2UvPg0KPGtleT5GaWx0ZXJTb2NrZXRzPC9rZXk+DQo8dHJ1ZS8+DQo8a2V5PkZpbHRlclR5cGU8L2tleT4NCjxzdHJpbmc+UGx1Z2luPC9zdHJpbmc+DQo8a2V5PlBheWxvYWREaXNwbGF5TmFtZTwva2V5Pg0KPHN0cmluZz5XZWIgQ29udGVudCBGaWx0ZXIgUGF5bG9hZDwvc3RyaW5nPg0KPGtleT5QYXlsb2FkSWRlbnRpZmllcjwva2V5Pg0KPHN0cmluZz4yODNGNEJGMC03ODhBLTQ0MzUtOUI2Mi0zRTAwODk2MzU4RDc8L3N0cmluZz4NCjxrZXk+UGF5bG9hZE9yZ2FuaXphdGlvbjwva2V5Pg0KPHN0cmluZz5KQU1GIFNvZnR3YXJlPC9zdHJpbmc+DQo8a2V5PlBheWxvYWRUeXBlPC9rZXk+DQo8c3RyaW5nPmNvbS5hcHBsZS53ZWJjb250ZW50LWZpbHRlcjwvc3RyaW5nPg0KPGtleT5QYXlsb2FkVVVJRDwva2V5Pg0KPHN0cmluZz4yODNGNEJGMC03ODhBLTQ0MzUtOUI2Mi0zRTAwODk2MzU4RDc8L3N0cmluZz4NCjxrZXk+UGF5bG9hZFZlcnNpb248L2tleT4NCjxpbnRlZ2VyPjE8L2ludGVnZXI+DQo8a2V5PlBsdWdpbkJ1bmRsZUlEPC9rZXk+DQo8c3RyaW5nPmNvbS5taWNyb3NvZnQud2Rhdjwvc3RyaW5nPg0KPGtleT5Vc2VyRGVmaW5lZE5hbWU8L2tleT4NCjxzdHJpbmc+TWljcm9zb2Z0IERlZmVuZGVyIENvbnRlbnQgRmlsdGVyPC9zdHJpbmc+DQo8L2RpY3Q+DQo8L2FycmF5Pg0KPC9kaWN0Pg0KPC9wbGlzdD4=",
+  "deploymentChannel": "deviceChannel",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('c20763ed-6b18-443b-bbec-67d6c6bfa94a')/microsoft.graph.macOSCustomConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "c20763ed-6b18-443b-bbec-67d6c6bfa94a_f4a3ca36-380c-47ae-bbd7-a38fc8722e3d",
+      "source": "direct",
+      "sourceId": "c20763ed-6b18-443b-bbec-67d6c6bfa94a",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "f4a3ca36-380c-47ae-bbd7-a38fc8722e3d"
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb_48e4171a-75a1-47da-9323-230c4928016e",
+    "source": "direct",
+    "sourceId": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb",
+    "intent": "apply",
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "48e4171a-75a1-47da-9323-230c4928016e"
+    }
+  },
+  {
+    "id": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb_4fa262e0-6e8a-4afe-a86b-147899c1359c",
+    "source": "direct",
+    "sourceId": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb",
+    "intent": "apply",
+    "target": {
+      "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "4fa262e0-6e8a-4afe-a86b-147899c1359c"
+    }
+  },
+  {
+    "id": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb_c1b4345e-637b-483e-8142-d048b93b6b7f",
+    "source": "direct",
+    "sourceId": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb",
+    "intent": "apply",
+    "target": {
+      "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "c1b4345e-637b-483e-8142-d048b93b6b7f"
+    }
+  },
+  {
+    "id": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb_01a74918-503f-424e-a04e-daedea8ed318",
+    "source": "direct",
+    "sourceId": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb",
+    "intent": "apply",
+    "target": {
+      "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "01a74918-503f-424e-a04e-daedea8ed318"
+    }
+  }
+]

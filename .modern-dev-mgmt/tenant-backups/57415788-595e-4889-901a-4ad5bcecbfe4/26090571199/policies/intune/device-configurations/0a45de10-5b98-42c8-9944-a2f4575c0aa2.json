@@ -1,0 +1,34 @@
+{
+  "@odata.type": "#microsoft.graph.windows81TrustedRootCertificate",
+  "id": "0a45de10-5b98-42c8-9944-a2f4575c0aa2",
+  "lastModifiedDateTime": "2025-06-27T05:16:59.2744979Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-08-22T11:47:52.9644027Z",
+  "description": "Replace the Certificate after Import",
+  "displayName": "EPIC_DCP_DEV_MIX-Trusted Root Certificate",
+  "version": 3,
+  "trustedRootCertificate": "MIID7TCCAtWgAwIBAgIQebft48ZuSYqEK/HxpsI90DANBgkqhkiG9w0BAQsFADBdMQ8wDQYDVQQKEwZteS1vcmcxLTArBgNVBAsTJDU3NDE1Nzg4LTU5NWUtNDg4OS05MDFhLTRhZDViY2VjYmZlNDEbMBkGA1UEAxMSU0NFUG1hbi1Sb290LUNBLVYxMB4XDTI1MDYyNjE1MjYxNFoXDTM1MDYyNjE1MzYxNFowXTEPMA0GA1UEChMGbXktb3JnMS0wKwYDVQQLEyQ1NzQxNTc4OC01OTVlLTQ4ODktOTAxYS00YWQ1YmNlY2JmZTQxGzAZBgNVBAMTElNDRVBtYW4tUm9vdC1DQS1WMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALYab1UPBtACLvGkXzyNGHXMaAWM/ULNESc14gexlKaW+aEX0satXcwugvtfvq5c9OFSHxkU91JJumhlPf9dRx6ezLsKMOhE15BnwHnmtEHFwiE/zJoLg3D4df8jWqA/a+TWYPHV+1+SjVu+6tkcOiuEfmVNE1CPw91J2zGcrt6mQqF8WAmV/7lEKH1GfvSuzvGenfKj09CGxlNx3QDqKjxGz1+ycnW6TNB6Ua6tRvxh9hnHGFmyl1HK90IepoPoosANJG8/nZeVeRj2xSeVDlAtGIAHdBHMBaQTdngbYMpW2JxJaxtGkvROxPOD6pHf4upq1m052K7xnl82wdFaN9MCAwEAAaOBqDCBpTAOBgNVHQ8BAf8EBAMCAaYwDwYDVR0TAQH/BAUwAwEB/zBCBgNVHSUEOzA5BgRVHSUABggrBgEFBQcDAgYIKwYBBQUHAwEGBysGAQUCAwUGCisGAQQBgjcUAgIGCCsGAQUFBwMJMB8GA1UdIwQYMBaAFFi3wWUZjMdAhwH2WadPfMI7vHy8MB0GA1UdDgQWBBRYt8FlGYzHQIcB9lmnT3zCO7x8vDANBgkqhkiG9w0BAQsFAAOCAQEAcPIhqMJ87rOyWd/BmQcjd39XIy92Ad6nz03Nn5TZ8B82XlijnmYhKoN6QP0mGAFSN8Vslm8k8HAnIi+10xdaVk5EN0CuoVL/6jQvMpNTaIih86WWjK3a7WGAHNoFS1/UnU7B/lsX2sYOoeeggM0SgsKGFNYwpU1ifMAwc2iL/LQXS1E5b8Rz/kGMLOMqMHZku6QmwQhmf4Kgnp/L7bKJQoYWOAQa2JerZK/QIoDui57D7lgTi6nXnjtn6DQ+ubYQtUCIwvRblQIBR8lCQTZwhOc3a2ugn65g3b5Oy+mq1A62Nw+NJwgbhqX/ZS9RUJS6mnF0ccISwBoQ1LZxfVRQHQ==",
+  "certFileName": "scepman-root.cer",
+  "destinationStore": "computerCertStoreRoot",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('0a45de10-5b98-42c8-9944-a2f4575c0aa2')/microsoft.graph.windows81TrustedRootCertificate/assignments",
+  "assignments": [
+    {
+      "id": "0a45de10-5b98-42c8-9944-a2f4575c0aa2_11f906ac-c8ea-4f83-b92c-0a927651ece1",
+      "source": "direct",
+      "sourceId": "0a45de10-5b98-42c8-9944-a2f4575c0aa2",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "11f906ac-c8ea-4f83-b92c-0a927651ece1"
+      }
+    }
+  ]
+}

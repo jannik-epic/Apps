@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2025-07-29T07:34:00.1080552Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2025-08-05T12:45:07.2598816Z",
+  "name": "BASE-EPICLAB_DCP_DEV_AVD-SmartScreen Settings",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 6,
+  "technologies": "mdm",
+  "id": "fc83ed33-de90-4314-97d3-02a0286daef5",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('fc83ed33-de90-4314-97d3-02a0286daef5')/assignments",
+  "assignments": []
+}
