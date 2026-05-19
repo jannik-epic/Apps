@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-19T03:44:26.761Z",
+  "scannedAt": "2026-05-19T04:30:41.324Z",
   "results": [
     {
       "appId": 2395,
@@ -119,6 +119,16 @@
       "latestUpstreamVersion": "Unknown",
       "hasUpdate": true,
       "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 64084,
+      "packageManager": "msstore",
+      "packageId": "XPDP273C0XHQH2",
+      "currentDeployedVersion": "26.0.0.1",
+      "latestUpstreamVersion": "26.001.21563",
+      "hasUpdate": true,
+      "bumpType": "minor",
       "releaseNotesUrl": null
     },
     {
