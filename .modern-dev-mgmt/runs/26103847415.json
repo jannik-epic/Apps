@@ -1,0 +1,14 @@
+{
+  "workflowRunId": "26103847415",
+  "workflow": "apply-wave-assignment.yml",
+  "patchRunId": "",
+  "waveRunId": "",
+  "waveId": "",
+  "waveName": "",
+  "intuneAppId": "24d0107e-fa0a-451b-b230-81cd352e9b53",
+  "dryRun": true,
+  "status": "success",
+  "assignmentSummary": null,
+  "context": null,
+  "createdAt": "2026-05-19T14:29:44.7780468Z"
+}
