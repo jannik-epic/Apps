@@ -1,0 +1,439 @@
+name: Tenant Policy Restore
+
+on:
+  workflow_dispatch:
+    inputs:
+      backup_ref:
+        description: 'Path to the backup snapshot inside the repo (.modern-dev-mgmt/tenant-backups/<tenantId>/<backupId>)'
+        required: true
+        type: string
+      restore_plan_b64:
+        description: 'Base64 encoded JSON restore plan (policies to apply)'
+        required: true
+        type: string
+      mode:
+        description: 'Restore mode'
+        required: true
+        type: choice
+        default: 'dry_run'
+        options:
+          - dry_run
+          - apply_disabled
+          - apply_enabled
+      conflict_strategy:
+        description: 'How to handle existing objects with the same display name'
+        required: false
+        type: choice
+        default: 'create_new'
+        options:
+          - create_new
+          - skip_existing
+      include_assignments:
+        description: 'Apply assignments from the snapshot'
+        required: false
+        type: boolean
+        default: true
+      include_groups:
+        description: 'Create/patch groups referenced in assignments'
+        required: false
+        type: boolean
+        default: true
+      commit_result:
+        description: 'Commit the restore evidence into the repo'
+        required: false
+        type: boolean
+        default: true
+      request_context_b64:
+        description: 'Base64 encoded Modern Dev Mgmt request context'
+        required: false
+        type: string
+
+env:
+  AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
+  AZURE_BACKUP_CLIENT_ID: 'b8574bb9-c5c3-435e-8b66-25129b622ec9'
+  GRAPH_BASE: 'https://graph.microsoft.com/v1.0'
+  GRAPH_BETA_BASE: 'https://graph.microsoft.com/beta'
+
+jobs:
+  tenant-policy-restore:
+    name: Restore tenant policies
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Azure Login (backup app reg, OIDC)
+        uses: azure/login@v3
+        with:
+          tenant-id: ${{ env.AZURE_TENANT_ID }}
+          client-id: ${{ env.AZURE_BACKUP_CLIENT_ID }}
+          allow-no-subscriptions: true
+
+      - name: Get Microsoft Graph token
+        shell: bash
+        run: |
+          set -euo pipefail
+          token="$(az account get-access-token --resource https://graph.microsoft.com --query accessToken -o tsv)"
+          if [[ -z "$token" ]]; then
+            echo "::error::Failed to acquire Microsoft Graph access token."
+            exit 1
+          fi
+          echo "::add-mask::$token"
+          echo "GRAPH_TOKEN=$token" >> "$GITHUB_ENV"
+
+      - name: Apply restore plan
+        id: restore
+        shell: pwsh
+        env:
+          INPUT_BACKUP_REF: ${{ github.event.inputs.backup_ref }}
+          INPUT_RESTORE_PLAN_B64: ${{ github.event.inputs.restore_plan_b64 }}
+          INPUT_MODE: ${{ github.event.inputs.mode }}
+          INPUT_CONFLICT_STRATEGY: ${{ github.event.inputs.conflict_strategy }}
+          INPUT_INCLUDE_ASSIGNMENTS: ${{ github.event.inputs.include_assignments }}
+          INPUT_INCLUDE_GROUPS: ${{ github.event.inputs.include_groups }}
+          INPUT_COMMIT_RESULT: ${{ github.event.inputs.commit_result }}
+          INPUT_REQUEST_CONTEXT_B64: ${{ github.event.inputs.request_context_b64 }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          if (-not $env:GRAPH_TOKEN) { throw 'GRAPH_TOKEN missing.' }
+
+          $mode = ([string]$env:INPUT_MODE).Trim().ToLowerInvariant()
+          if ($mode -notin @('dry_run','apply_disabled','apply_enabled')) {
+            throw "Unsupported mode '$mode'. Use dry_run, apply_disabled, or apply_enabled."
+          }
+          $conflict = ([string]$env:INPUT_CONFLICT_STRATEGY).Trim().ToLowerInvariant()
+          if (-not $conflict) { $conflict = 'create_new' }
+          $includeAssignments = ([string]$env:INPUT_INCLUDE_ASSIGNMENTS).Trim().ToLowerInvariant() -ne 'false'
+          $includeGroups = ([string]$env:INPUT_INCLUDE_GROUPS).Trim().ToLowerInvariant() -ne 'false'
+          $commitResult = ([string]$env:INPUT_COMMIT_RESULT).Trim().ToLowerInvariant() -ne 'false'
+          $backupRef = ([string]$env:INPUT_BACKUP_REF).Trim()
+          if (-not $backupRef) { throw 'backup_ref is required' }
+          if (-not (Test-Path $backupRef)) { throw "backup_ref '$backupRef' does not exist in the repository" }
+
+          $planJson = $null
+          if (-not [string]::IsNullOrWhiteSpace($env:INPUT_RESTORE_PLAN_B64)) {
+            try {
+              $bytes = [Convert]::FromBase64String(($env:INPUT_RESTORE_PLAN_B64 -replace '\s+',''))
+              $planJson = [System.Text.Encoding]::UTF8.GetString($bytes)
+            } catch {
+              throw "restore_plan_b64 is not valid base64: $($_.Exception.Message)"
+            }
+          }
+          if (-not $planJson) { throw 'restore_plan_b64 is required' }
+          $plan = $planJson | ConvertFrom-Json
+          if (-not $plan.policies) { throw 'Restore plan has no policies array.' }
+
+          $runId = "${{ github.run_id }}"
+          $outDir = ".modern-dev-mgmt/restore-runs/$runId"
+          New-Item -ItemType Directory -Force -Path $outDir | Out-Null
+
+          $GraphBase = $env:GRAPH_BASE.TrimEnd('/')
+          $GraphBetaBase = $env:GRAPH_BETA_BASE.TrimEnd('/')
+          $headers = @{
+            Authorization = "Bearer $env:GRAPH_TOKEN"
+            'Content-Type' = 'application/json'
+          }
+
+          $warnings = New-Object System.Collections.Generic.List[string]
+          $logs = New-Object System.Collections.Generic.List[object]
+          $applied = New-Object System.Collections.Generic.List[object]
+          $skipped = New-Object System.Collections.Generic.List[object]
+          $failed = New-Object System.Collections.Generic.List[object]
+          $groupMapping = @{}
+
+          $restoreSpecsJson = '[{"key":"conditional-access-policies","policyType":"ConditionalAccessPolicy","label":"Conditional Access policies","group":"conditional-access","graphBase":"beta","readPath":"identity/conditionalAccess/policies","supportsExpandAssignments":false,"singleton":false,"subdir":"conditional-access/policies"},{"key":"named-locations","policyType":"NamedLocation","label":"Named locations","group":"conditional-access","graphBase":"beta","readPath":"identity/conditionalAccess/namedLocations","supportsExpandAssignments":false,"singleton":false,"subdir":"conditional-access/named-locations"},{"key":"authentication-strengths","policyType":"AuthenticationStrengthPolicy","label":"Authentication strength policies","group":"conditional-access","graphBase":"beta","readPath":"identity/conditionalAccess/authenticationStrength/policies","supportsExpandAssignments":false,"singleton":false,"subdir":"conditional-access/authentication-strengths"},{"key":"authentication-contexts","policyType":"AuthenticationContextClassReference","label":"Authentication context class references","group":"conditional-access","graphBase":"beta","readPath":"identity/conditionalAccess/authenticationContextClassReferences","supportsExpandAssignments":false,"singleton":false,"subdir":"conditional-access/authentication-contexts"},{"key":"authorization-policy","policyType":"AuthorizationPolicy","label":"Authorization policy (tenant defaults)","group":"tenant","graphBase":"beta","readPath":"policies/authorizationPolicy","supportsExpandAssignments":false,"singleton":true,"subdir":"tenant/authorization-policy"},{"key":"device-registration-policy","policyType":"DeviceRegistrationPolicy","label":"Device registration policy","group":"tenant","graphBase":"beta","readPath":"policies/deviceRegistrationPolicy","supportsExpandAssignments":false,"singleton":true,"subdir":"tenant/device-registration-policy"},{"key":"configuration-policies","policyType":"DeviceManagementConfigurationPolicy","label":"Settings catalog (configuration policies)","group":"intune-config","graphBase":"beta","readPath":"deviceManagement/configurationPolicies","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/configuration-policies"},{"key":"device-configurations","policyType":"DeviceConfiguration","label":"Device configurations","group":"intune-config","graphBase":"beta","readPath":"deviceManagement/deviceConfigurations","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/device-configurations"},{"key":"group-policy-configurations","policyType":"GroupPolicyConfiguration","label":"Group policy (ADMX) configurations","group":"intune-config","graphBase":"beta","readPath":"deviceManagement/groupPolicyConfigurations","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/group-policy-configurations"},{"key":"device-management-intents","policyType":"DeviceManagementIntent","label":"Device management intents (Endpoint Security)","group":"intune-config","graphBase":"beta","readPath":"deviceManagement/intents","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/intents"},{"key":"compliance-policies","policyType":"DeviceCompliancePolicy","label":"Compliance policies","group":"intune-compliance","graphBase":"beta","readPath":"deviceManagement/deviceCompliancePolicies","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/compliance-policies"},{"key":"mobile-apps","policyType":"MobileApp","label":"Mobile apps (Intune apps)","group":"intune-apps","graphBase":"beta","readPath":"deviceAppManagement/mobileApps","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/mobile-apps"},{"key":"managed-app-policies","policyType":"ManagedAppPolicy","label":"App protection policies (MAM)","group":"intune-apps","graphBase":"beta","readPath":"deviceAppManagement/managedAppPolicies","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/managed-app-policies"},{"key":"targeted-managed-app-configurations","policyType":"TargetedManagedAppConfiguration","label":"App configuration policies","group":"intune-apps","graphBase":"beta","readPath":"deviceAppManagement/targetedManagedAppConfigurations","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/targeted-managed-app-configurations"},{"key":"policy-sets","policyType":"PolicySet","label":"Policy sets","group":"intune-apps","graphBase":"beta","readPath":"deviceAppManagement/policySets","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/policy-sets"},{"key":"device-management-scripts","policyType":"DeviceManagementScript","label":"PowerShell scripts","group":"intune-scripts","graphBase":"beta","readPath":"deviceManagement/deviceManagementScripts","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/scripts/device-management-scripts"},{"key":"device-health-scripts","policyType":"DeviceHealthScript","label":"Remediation (health) scripts","group":"intune-scripts","graphBase":"beta","readPath":"deviceManagement/deviceHealthScripts","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/scripts/device-health-scripts"},{"key":"device-compliance-scripts","policyType":"DeviceComplianceScript","label":"Custom compliance scripts","group":"intune-scripts","graphBase":"beta","readPath":"deviceManagement/deviceComplianceScripts","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/scripts/device-compliance-scripts"},{"key":"enrollment-configurations","policyType":"DeviceEnrollmentConfiguration","label":"Enrollment status pages + configurations","group":"intune-enrollment","graphBase":"beta","readPath":"deviceManagement/deviceEnrollmentConfigurations","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/enrollment-configurations"},{"key":"autopilot-deployment-profiles","policyType":"WindowsAutopilotDeploymentProfile","label":"Autopilot deployment profiles","group":"intune-enrollment","graphBase":"beta","readPath":"deviceManagement/windowsAutopilotDeploymentProfiles","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/autopilot-deployment-profiles"},{"key":"assignment-filters","policyType":"DeviceAndAppManagementAssignmentFilter","label":"Assignment filters","group":"intune-enrollment","graphBase":"beta","readPath":"deviceManagement/assignmentFilters","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/assignment-filters"},{"key":"feature-update-profiles","policyType":"WindowsFeatureUpdateProfile","label":"Windows feature update profiles","group":"intune-updates","graphBase":"beta","readPath":"deviceManagement/windowsFeatureUpdateProfiles","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/feature-update-profiles"},{"key":"driver-update-profiles","policyType":"WindowsDriverUpdateProfile","label":"Windows driver update profiles","group":"intune-updates","graphBase":"beta","readPath":"deviceManagement/windowsDriverUpdateProfiles","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/driver-update-profiles"},{"key":"device-categories","policyType":"DeviceCategory","label":"Device categories","group":"intune-management","graphBase":"beta","readPath":"deviceManagement/deviceCategories","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/device-categories"},{"key":"role-definitions","policyType":"RoleDefinition","label":"Intune role definitions","group":"intune-management","graphBase":"beta","readPath":"deviceManagement/roleDefinitions","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/role-definitions"},{"key":"terms-and-conditions","policyType":"TermsAndConditions","label":"Terms and conditions","group":"intune-management","graphBase":"beta","readPath":"deviceManagement/termsAndConditions","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/terms-and-conditions"},{"key":"notification-message-templates","policyType":"NotificationMessageTemplate","label":"Notification message templates","group":"intune-management","graphBase":"beta","readPath":"deviceManagement/notificationMessageTemplates","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/notification-message-templates"},{"key":"intune-branding-profiles","policyType":"IntuneBrandingProfile","label":"Company Portal branding profiles","group":"intune-management","graphBase":"beta","readPath":"deviceManagement/intuneBrandingProfiles","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/branding-profiles"},{"key":"cloud-pc-provisioning-policies","policyType":"CloudPcProvisioningPolicy","label":"Cloud PC provisioning policies","group":"cloud-pc","graphBase":"beta","readPath":"deviceManagement/virtualEndpoint/provisioningPolicies","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/cloud-pc/provisioning-policies"},{"key":"cloud-pc-on-premises-connections","policyType":"CloudPcOnPremisesConnection","label":"Cloud PC on-premises connections","group":"cloud-pc","graphBase":"beta","readPath":"deviceManagement/virtualEndpoint/onPremisesConnections","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/cloud-pc/on-premises-connections"},{"key":"cloud-pc-device-images","policyType":"CloudPcDeviceImage","label":"Cloud PC device images","group":"cloud-pc","graphBase":"beta","readPath":"deviceManagement/virtualEndpoint/deviceImages","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/cloud-pc/device-images"},{"key":"service-principals","policyType":"ServicePrincipal","label":"Service principals (Enterprise apps) — large dataset","group":"tenant","graphBase":"v1.0","readPath":"servicePrincipals?$select=id,appId,displayName,accountEnabled,appRoleAssignmentRequired,tags","supportsExpandAssignments":false,"singleton":false,"subdir":"tenant/service-principals"}]'
+          $restoreSpecs = $restoreSpecsJson | ConvertFrom-Json
+          $endpointMap = @{}
+          $singletonMap = @{}
+          $assignViaAssignMap = @{}
+          foreach ($spec in $restoreSpecs) {
+            $base = if ($spec.graphBase -eq 'beta') { $GraphBetaBase } else { $GraphBase }
+            $path = $spec.readPath
+            if ($spec.PSObject.Properties.Match('writePath').Count -gt 0 -and $spec.writePath) {
+              $path = $spec.writePath
+            }
+            $cleanPath = ($path -split '?')[0]
+            $endpointMap[$spec.policyType] = "$base/$cleanPath"
+            if ($spec.singleton) { $singletonMap[$spec.policyType] = $true }
+            # Default to using {id}/assign for write-back of assignments — matches
+            # softwareCentral's default. Specific types can override per-spec.
+            $assignViaAssignMap[$spec.policyType] = $true
+          }
+          function Endpoint-For {
+            param([string]$Type)
+            if ($endpointMap.ContainsKey($Type)) { return $endpointMap[$Type] }
+            return $null
+          }
+
+          function Normalize-Policy {
+            param([object]$Raw, [string]$Type)
+            $copy = $Raw | ConvertTo-Json -Depth 40 | ConvertFrom-Json
+            foreach ($prop in @('id','createdDateTime','lastModifiedDateTime','version','modifiedDateTime','@odata.context','@odata.id','@odata.type','@odata.etag','isAssigned','roleScopeTagIds','assignmentStatus','deviceStatusOverview','userStatusOverview','platformType')) {
+              if ($null -ne $copy.PSObject.Properties[$prop]) {
+                try { $copy.PSObject.Properties.Remove($prop) | Out-Null } catch {}
+              }
+            }
+            if ($Type -eq 'ConditionalAccessPolicy') {
+              if ($null -ne $copy.PSObject.Properties['state']) {
+                if ($mode -ne 'apply_enabled') {
+                  $copy.state = 'disabled'
+                }
+              } else {
+                $copy | Add-Member -NotePropertyName state -NotePropertyValue 'disabled' -Force
+              }
+            }
+            return $copy
+          }
+
+          function Find-Existing-ByName {
+            param([string]$Endpoint, [string]$DisplayName)
+            if (-not $DisplayName) { return $null }
+            try {
+              $escaped = $DisplayName.Replace("'", "''")
+              $resp = Invoke-RestMethod -Method GET -Uri "$Endpoint?$filter=displayName eq '$escaped'&$top=1" -Headers $headers -TimeoutSec 60
+              if ($resp.value -and @($resp.value).Count -gt 0) { return $resp.value[0] }
+            } catch {}
+            return $null
+          }
+
+          function Resolve-Group {
+            param([string]$OriginalId)
+            if ($groupMapping.ContainsKey($OriginalId)) { return $groupMapping[$OriginalId] }
+
+            try {
+              $existing = Invoke-RestMethod -Method GET -Uri "$GraphBase/groups/$OriginalId" -Headers $headers -TimeoutSec 60
+              if ($existing -and $existing.id) {
+                $groupMapping[$OriginalId] = $existing.id
+                return $existing.id
+              }
+            } catch {}
+
+            $groupPath = Join-Path $backupRef "groups/$($OriginalId -replace '[^a-zA-Z0-9._-]','_').json"
+            if (-not (Test-Path $groupPath)) {
+              $warnings.Add("Group $OriginalId referenced by an assignment is not in the snapshot. Skipping.") | Out-Null
+              $groupMapping[$OriginalId] = $null
+              return $null
+            }
+            $groupRecord = Get-Content -Path $groupPath -Raw | ConvertFrom-Json
+            $byName = Find-Existing-ByName -Endpoint "$GraphBase/groups" -DisplayName $groupRecord.name
+            if ($byName) {
+              $groupMapping[$OriginalId] = $byName.id
+              return $byName.id
+            }
+
+            if ($mode -eq 'dry_run') {
+              $groupMapping[$OriginalId] = $null
+              return $null
+            }
+
+            $createBody = [ordered]@{
+              displayName = $groupRecord.name
+              description = $groupRecord.description
+              mailEnabled = $false
+              mailNickname = if ($groupRecord.mailNickname) { $groupRecord.mailNickname } else { 'mdm-restore-' + [Guid]::NewGuid().ToString('N').Substring(0,12) }
+              securityEnabled = $true
+            }
+            try {
+              $created = Invoke-RestMethod -Method POST -Uri "$GraphBase/groups" -Headers $headers -Body ($createBody | ConvertTo-Json -Depth 10) -TimeoutSec 60
+              $groupMapping[$OriginalId] = $created.id
+              return $created.id
+            } catch {
+              $warnings.Add("Failed to recreate group $OriginalId ($($groupRecord.name)): $($_.Exception.Message)") | Out-Null
+              $groupMapping[$OriginalId] = $null
+              return $null
+            }
+          }
+
+          foreach ($entry in @($plan.policies)) {
+            $policyType = [string]$entry.policyType
+            $endpoint = Endpoint-For -Type $policyType
+            $pathRel = [string]$entry.path
+            $logEntry = [ordered]@{
+              backupPolicyId = $entry.backupPolicyId
+              policyType = $policyType
+              path = $pathRel
+              status = 'pending'
+            }
+
+            if (-not $endpoint) {
+              $logEntry.status = 'skipped'
+              $logEntry.reason = "PolicyType '$policyType' is not yet supported by the restore engine."
+              $skipped.Add($logEntry) | Out-Null
+              continue
+            }
+            $fullPath = Join-Path $backupRef $pathRel
+            if (-not (Test-Path $fullPath)) {
+              $logEntry.status = 'failed'
+              $logEntry.reason = "Snapshot file not found: $pathRel"
+              $failed.Add($logEntry) | Out-Null
+              continue
+            }
+            $raw = Get-Content -Path $fullPath -Raw | ConvertFrom-Json
+            $normalized = Normalize-Policy -Raw $raw -Type $policyType
+
+            if ($conflict -eq 'skip_existing') {
+              $duplicate = Find-Existing-ByName -Endpoint $endpoint -DisplayName $normalized.displayName
+              if ($duplicate) {
+                $logEntry.status = 'skipped'
+                $logEntry.reason = "Existing object with displayName '$($normalized.displayName)' already exists in target tenant (id $($duplicate.id))."
+                $logEntry.targetId = $duplicate.id
+                $skipped.Add($logEntry) | Out-Null
+                continue
+              }
+            }
+
+            if ($mode -eq 'dry_run') {
+              $logEntry.status = 'planned'
+              $logEntry.targetEndpoint = $endpoint
+              $applied.Add($logEntry) | Out-Null
+              continue
+            }
+
+            try {
+              $isSingleton = $singletonMap.ContainsKey($policyType) -and $singletonMap[$policyType]
+              if ($isSingleton) {
+                # Singleton tenant policies (e.g. authorizationPolicy) require PATCH
+                # against the resource itself rather than POST to create.
+                Invoke-RestMethod -Method PATCH -Uri $endpoint -Headers $headers -Body ($normalized | ConvertTo-Json -Depth 40) -TimeoutSec 120 | Out-Null
+                $logEntry.status = 'applied'
+                $logEntry.targetId = $policyType
+                $logEntry.targetEndpoint = $endpoint
+                $logEntry.singleton = $true
+                $applied.Add($logEntry) | Out-Null
+                continue
+              }
+              $created = Invoke-RestMethod -Method POST -Uri $endpoint -Headers $headers -Body ($normalized | ConvertTo-Json -Depth 40) -TimeoutSec 120
+              $logEntry.status = 'applied'
+              $logEntry.targetId = $created.id
+              $logEntry.targetEndpoint = $endpoint
+              if ($policyType -eq 'ConditionalAccessPolicy' -and $mode -ne 'apply_enabled') {
+                $logEntry.appliedState = 'disabled'
+              }
+              $applied.Add($logEntry) | Out-Null
+
+              if ($includeAssignments) {
+                $assignmentsPath = Join-Path $backupRef ("assignments/" + ($entry.backupPolicyId -replace '[^a-zA-Z0-9._-]','_') + '.assignments.json')
+                if (Test-Path $assignmentsPath) {
+                  $assignments = Get-Content -Path $assignmentsPath -Raw | ConvertFrom-Json
+                  $remapped = New-Object System.Collections.Generic.List[object]
+                  foreach ($assignment in @($assignments)) {
+                    $copy = $assignment | ConvertTo-Json -Depth 30 | ConvertFrom-Json
+                    if ($null -ne $copy.PSObject.Properties['id']) {
+                      try { $copy.PSObject.Properties.Remove('id') | Out-Null } catch {}
+                    }
+                    if ($copy.target -and $copy.target.groupId) {
+                      if ($includeGroups) {
+                        $newId = Resolve-Group -OriginalId ([string]$copy.target.groupId)
+                        if ($newId) {
+                          $copy.target.groupId = $newId
+                        } else {
+                          continue
+                        }
+                      } else {
+                        $warnings.Add("Skipping assignment to group $($copy.target.groupId) because include_groups=false") | Out-Null
+                        continue
+                      }
+                    }
+                    $remapped.Add($copy) | Out-Null
+                  }
+                  if ($remapped.Count -gt 0) {
+                    $assignUri = "$endpoint/$($created.id)/assign"
+                    try {
+                      Invoke-RestMethod -Method POST -Uri $assignUri -Headers $headers -Body (@{ assignments = $remapped } | ConvertTo-Json -Depth 30) -TimeoutSec 120 | Out-Null
+                      $logEntry.assignmentCount = $remapped.Count
+                    } catch {
+                      $warnings.Add("Failed to apply assignments for $($created.id): $($_.Exception.Message)") | Out-Null
+                    }
+                  }
+                }
+              }
+            } catch {
+              $logEntry.status = 'failed'
+              $logEntry.reason = $_.Exception.Message
+              $failed.Add($logEntry) | Out-Null
+            }
+          }
+
+          $manifest = [ordered]@{
+            schemaVersion = 1
+            source = 'modern-dev-mgmt'
+            tenantId = $env:AZURE_TENANT_ID
+            backupRef = $backupRef
+            mode = $mode
+            conflictStrategy = $conflict
+            includeAssignments = $includeAssignments
+            includeGroups = $includeGroups
+            startedAt = (Get-Date).ToUniversalTime().ToString('o')
+            workflowRunId = $runId
+            repository = '${{ github.repository }}'
+            counts = [ordered]@{
+              total = @($plan.policies).Count
+              applied = $applied.Count
+              skipped = $skipped.Count
+              failed = $failed.Count
+            }
+            groupMapping = $groupMapping
+            warningCount = $warnings.Count
+          }
+
+          $manifest | ConvertTo-Json -Depth 30 | Set-Content -Path (Join-Path $outDir 'manifest.json') -Encoding UTF8
+          $plan | ConvertTo-Json -Depth 30 | Set-Content -Path (Join-Path $outDir 'plan.json') -Encoding UTF8
+          @{ applied = @($applied.ToArray()); skipped = @($skipped.ToArray()); failed = @($failed.ToArray()); warnings = @($warnings.ToArray()) } | ConvertTo-Json -Depth 30 | Set-Content -Path (Join-Path $outDir 'result.json') -Encoding UTF8
+
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "out_dir=$outDir"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "applied=$($applied.Count)"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "skipped=$($skipped.Count)"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "failed=$($failed.Count)"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "warnings=$($warnings.Count)"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "commit_result=$commitResult"
+
+          $summary = @(
+            '# Tenant Policy Restore',
+            '',
+            "Mode: $mode",
+            "Backup ref: `$backupRef`",
+            "Applied: $($applied.Count) | Skipped: $($skipped.Count) | Failed: $($failed.Count) | Warnings: $($warnings.Count)"
+          )
+          if ($warnings.Count) {
+            $summary += ''
+            $summary += '## Warnings'
+            foreach ($warning in @($warnings.ToArray() | Select-Object -First 20)) { $summary += "- $warning" }
+          }
+          if ($failed.Count) {
+            $summary += ''
+            $summary += '## Failed'
+            foreach ($entry in @($failed | Select-Object -First 20)) { $summary += "- $($entry.policyType) $($entry.backupPolicyId): $($entry.reason)" }
+          }
+          $summary | Add-Content -Path $env:GITHUB_STEP_SUMMARY
+
+          if ($failed.Count -gt 0 -and $mode -ne 'dry_run') {
+            throw "$($failed.Count) policy restore operations failed; see result.json"
+          }
+
+      - name: Upload restore evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: tenant-policy-restore-${{ github.run_id }}
+          path: ${{ steps.restore.outputs.out_dir }}
+          if-no-files-found: warn
+
+      - name: Commit restore evidence
+        if: ${{ steps.restore.outputs.commit_result == 'True' || steps.restore.outputs.commit_result == 'true' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git add "${{ steps.restore.outputs.out_dir }}"
+          if git diff --cached --quiet; then
+            echo "No restore evidence changes to commit."
+          else
+            git commit -m "chore(restore): tenant policy restore ${{ github.run_id }}"
+            git pull --rebase origin "${GITHUB_REF_NAME:-main}"
+            git push
+          fi
