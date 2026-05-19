@@ -1,0 +1,25 @@
+{
+  "source": "modern-dev-mgmt",
+  "workflowRunId": "26088986177",
+  "repository": "jannik-epic/Apps",
+  "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "operationKind": "intune_endpoint",
+  "dryRun": true,
+  "commitEvidence": true,
+  "notes": "PackageFlow Apps E2E Intune verification after smoke deployments",
+  "requestedAt": "2026-05-19T09:38:50.7396866Z",
+  "counts": {
+    "mobileApps": 78,
+    "mobileAppDetails": 78,
+    "managedDevices": 1,
+    "configPolicies": 51,
+    "deviceConfigurations": 49,
+    "compliancePolicies": 8,
+    "appProtectionPolicies": 8,
+    "autopilotDevices": 17,
+    "enrollmentStatusPages": 13,
+    "assignmentFilters": 8,
+    "remediationScripts": 4,
+    "defenderVulnerabilities": 51
+  }
+}

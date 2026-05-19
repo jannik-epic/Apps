@@ -1,0 +1,461 @@
+[
+  {
+    "SoftwareName": "windows_server_2019",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 491,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 3
+  },
+  {
+    "SoftwareName": "windows_11",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 60,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "azure_connected_machine_agent",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 10,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 2
+  },
+  {
+    "SoftwareName": "openssl",
+    "SoftwareVendor": "openssl",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 6,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 3
+  },
+  {
+    "SoftwareName": "openssl",
+    "SoftwareVendor": "openssl",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 6,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "tools",
+    "SoftwareVendor": "vmware",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 2,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "virtual_machine_firmware",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 3
+  },
+  {
+    "SoftwareName": ".net_framework",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 3
+  },
+  {
+    "SoftwareName": "windows_defender",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 3
+  },
+  {
+    "SoftwareName": "defender_security_intelligence_updates",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 3
+  },
+  {
+    "SoftwareName": "defender_for_endpoint",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 3
+  },
+  {
+    "SoftwareName": "defender_antimalware_platform",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 3
+  },
+  {
+    "SoftwareName": "chrome",
+    "SoftwareVendor": "google",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 2
+  },
+  {
+    "SoftwareName": "microsoft_idfix",
+    "SoftwareVendor": "microsoft_fasttrack_open_source",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 2
+  },
+  {
+    "SoftwareName": "office_16_click-to-run_localization_component",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "microsoft_teams_meeting_add-in_for_microsoft_office",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "site24x7_windows_agent",
+    "SoftwareVendor": "zohocorp",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "windows_assessment_and_deployment_kit",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "microsoft_entra_connect_health_agent_package",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "microsoft_azure_active_directory_application_proxy_connector",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "microsoft_azure_ad_connect_agent_updater",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "microsoft_sql_server_2012_command_line_utilities_",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "microsoft_entra_connect_health_agent",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "microsoft_azure_ad_application_proxy_connector_updater",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "microsoft_entra_connect_synchronization_services",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "microsoft_sql_server_2012_native_client_",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "microsoft_command_line_utilities_15_for_sql_server",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "microsoft_entra_connect_sync",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "azure_advanced_threat_protection_sensor",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "office_16_click-to-run_extensibility_component",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": ".net_framework",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "edge_chromium-based",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "visual_c++",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "purview_information_protection",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "onedrive",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "acrobat_dc",
+    "SoftwareVendor": "adobe",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "obs_studio",
+    "SoftwareVendor": "obs-server",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "windows_defender",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "defender_security_intelligence_updates",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "defender_for_endpoint",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "defender_antimalware_platform",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "microsoft_intune_management_extension",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "xz_utils",
+    "SoftwareVendor": "tukaani",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "microsoft_365_apps_for_enterprise_-_de-de",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "office",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "Windows11",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "edge_chromium-based",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "visual_c++",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "chrome_remote_desktop_host",
+    "SoftwareVendor": "google",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "odbc",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "sql_server_localdb",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  },
+  {
+    "SoftwareName": "oledb",
+    "SoftwareVendor": "microsoft",
+    "OSPlatform": "WindowsServer2019",
+    "Weaknesses@odata.type": "#Int64",
+    "Weaknesses": 0,
+    "ExposedDevices@odata.type": "#Int64",
+    "ExposedDevices": 1
+  }
+]

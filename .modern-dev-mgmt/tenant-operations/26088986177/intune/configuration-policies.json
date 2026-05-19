@@ -1,0 +1,1073 @@
+[
+  {
+    "createdDateTime": "2025-07-29T07:34:00.1080552Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2025-08-05T12:45:07.2598816Z",
+    "name": "BASE-EPICLAB_DCP_DEV_AVD-SmartScreen Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 6,
+    "technologies": "mdm",
+    "id": "fc83ed33-de90-4314-97d3-02a0286daef5",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2025-07-29T07:34:01.598923Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2025-08-05T13:11:54.7323611Z",
+    "name": "BASE-EPICLAB_DCP_DEV_WIN-801.1X WLAN",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 2,
+    "technologies": "mdm",
+    "id": "60f4e6fd-8601-4f66-8559-0835bf4ec638",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2025-07-29T07:33:58.6030957Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2025-08-13T14:56:45.7682051Z",
+    "name": "BASE-EPICLAB_DCP_DEV_WIN-DeviceLock",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 62,
+    "technologies": "mdm",
+    "id": "33fc9de8-f955-454d-ac92-1acb2bb929c7",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2025-07-29T07:33:59.1350906Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2025-08-13T14:11:58.5013656Z",
+    "name": "BASE-EPICLAB_DCP_DEV_WIN-Disable Microsoft Store",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 10,
+    "technologies": "mdm",
+    "id": "54b435b4-09da-414e-8a0c-9199f595a94b",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2025-08-05T13:04:57.2003329Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2025-08-05T13:06:38.7362112Z",
+    "name": "BASE-EPICLAB_DCP_DEV_WIN-Edge Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 33,
+    "technologies": "mdm",
+    "id": "abb48986-61da-42f7-ae58-50c6a60091c8",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2022-08-22T11:47:15.8836768Z",
+    "creationSource": null,
+    "description": "Settings to change after import:\n- AAD Tennant Domain Name\n- Default File Assosications (if required)\n- Trusted Site Zones\n- CommercialID (Admin Templates)",
+    "lastModifiedDateTime": "2025-08-13T15:11:40.6663449Z",
+    "name": "BASE-EPICLAB_DCP_DEV_WIN-OS Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 51,
+    "technologies": "mdm",
+    "id": "16360bf3-fa7c-4ac5-b0bc-9244f5fb96d5",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2025-07-29T07:33:55.170363Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2025-08-13T08:42:48.6523534Z",
+    "name": "BASE-EPICLAB_DCP_DEV_WIN-SecBaseline Administrative Template",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 260,
+    "technologies": "mdm",
+    "id": "9fba8d56-6115-492e-abda-ece3876a246e",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2025-07-29T07:33:55.6933327Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2025-08-13T08:50:25.4721075Z",
+    "name": "BASE-EPICLAB_SEC_DEV_WIN-Auditing",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 27,
+    "technologies": "mdm",
+    "id": "59ee6658-ef36-4bbb-abba-b475431b824d",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2025-08-13T08:00:28.078765Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2025-08-13T08:54:16.3467345Z",
+    "name": "BASE-EPICLAB_SEC_DEV_WIN-Bitlocker Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 11,
+    "technologies": "mdm",
+    "id": "c9e56acb-2ffd-4f2f-98f6-bbaf910278aa",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2025-07-29T07:33:57.661278Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2025-08-06T08:25:44.0205915Z",
+    "name": "BASE-EPICLAB_SEC_DEV_WIN-Firewall Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 4,
+    "technologies": "mdm",
+    "id": "5c674aff-39cf-4006-a8c0-8ebca194b40c",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2025-07-29T07:33:56.5206138Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2025-08-13T15:01:39.5876855Z",
+    "name": "BASE-EPICLAB_SEC_DEV_WIN-Windows Defender Antivirus Settings ",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 37,
+    "technologies": "mdm",
+    "id": "a9e8d28a-5603-4318-adb6-75567eff98fb",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2026-01-16T07:12:17.1301226Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2026-01-16T07:12:17.1301226Z",
+    "name": "COOKER-MDE",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 30,
+    "technologies": "mdm,microsoftSense",
+    "id": "51489889-03c6-43d3-a510-119a403b19b8",
+    "templateReference": {
+      "templateId": "804339ad-1553-4478-a742-138fb5807418_1",
+      "templateFamily": "endpointSecurityAntivirus",
+      "templateDisplayName": "Microsoft Defender Antivirus",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2026-01-16T07:08:37.7154876Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2026-01-16T07:08:37.7154876Z",
+    "name": "COOKER-SECURITY EXPERIENCE",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 2,
+    "technologies": "mdm,microsoftSense",
+    "id": "30b9f0d5-98cf-4444-9353-da2c286b3f93",
+    "templateReference": {
+      "templateId": "d948ff9b-99cb-4ee0-8012-1fbc09685377_1",
+      "templateFamily": "endpointSecurityAntivirus",
+      "templateDisplayName": "Windows Security Experience",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2026-01-21T07:57:05.422353Z",
+    "creationSource": null,
+    "description": "This policy is automatically created and updated to include the users scoped in DLP policies targeting unmanaged generative AI apps in the browser. It blocks users from sharing sensitive marked data to unmanaged generative AI apps through browsers other than Edge. Apps that aren't covered by these protections can still be accessed using either Edge or Chrome.",
+    "lastModifiedDateTime": "2026-01-21T07:57:05.422353Z",
+    "name": "Edge policy to block use of unmanaged GenAI apps in browsers where in-browser protections don’t apply",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm",
+    "id": "621f6c57-7fd2-42a7-bf81-93c206636ca5",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-01-30T07:03:30.5283221Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-01-30T07:03:30.5283221Z",
+    "name": "EPIC_DCP_DEV_WIN-Edge Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 28,
+    "technologies": "mdm",
+    "id": "7a449bb8-78e8-49ea-b3d6-33ae3267162c",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-01-30T07:03:30.6377282Z",
+    "creationSource": null,
+    "description": "Settings to change after import:\n- Trusted Locations\n- Workgroup Templates Path",
+    "lastModifiedDateTime": "2026-04-02T09:24:37.3058983Z",
+    "name": "EPIC_DCP_DEV_WIN-Office 365 Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 14,
+    "technologies": "mdm",
+    "id": "1736b932-b04b-4a9b-9d5e-9827395d7f91",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-01-30T07:03:30.4923675Z",
+    "creationSource": null,
+    "description": "Settings to change after import:\n- Tennant ID",
+    "lastModifiedDateTime": "2023-01-30T07:03:30.4923675Z",
+    "name": "EPIC_DCP_DEV_WIN-OneDrive Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 4,
+    "technologies": "mdm",
+    "id": "56e0eb82-90d5-4337-a8f8-dbd3c93d1353",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-01-30T07:03:30.5626234Z",
+    "creationSource": null,
+    "description": "Settings to change after import:\n- AAD Tennant Domain Name\n- Default File Assosications (if required)\n- Trusted Site Zones\n- CommercialID (Admin Templates)",
+    "lastModifiedDateTime": "2023-01-30T07:03:30.5626234Z",
+    "name": "EPIC_DCP_DEV_WIN-OS Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 21,
+    "technologies": "mdm",
+    "id": "37dfe8c0-b6c4-4a3d-8266-7ee54a0b40e9",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2022-11-21T07:45:38.784823Z",
+    "creationSource": null,
+    "description": "Enhanced Phishing Protection",
+    "lastModifiedDateTime": "2022-11-21T07:45:38.784823Z",
+    "name": "EPIC_DCP_DEV_WIN-SmartScreen Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 4,
+    "technologies": "mdm",
+    "id": "57e149b2-3590-4e0e-ae68-e590c010081c",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-11-24T13:31:42.8623908Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-11-24T13:31:42.8623908Z",
+    "name": "EPIC_LAB_DCP_DEV_AVD-OS Customize Setting",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 52,
+    "technologies": "mdm",
+    "id": "0cc5c57e-813d-49b5-b4ab-0ec583239033",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-12-05T21:07:27.3141901Z",
+    "creationSource": "Migration_DI_7a79b9f5-0d05-4771-9798-555403c4a13c",
+    "description": null,
+    "lastModifiedDateTime": "2023-12-05T21:07:27.3141901Z",
+    "name": "EPIC_SEC_DEV_WIN-App and Brower Isolation Edge Enable",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 2,
+    "technologies": "mdm",
+    "id": "6014041f-9c52-4dc6-a519-50e8a72800c8",
+    "templateReference": {
+      "templateId": "9f667e40-8f3c-4f88-80d8-457f16906315_1",
+      "templateFamily": "endpointSecurityAttackSurfaceReduction",
+      "templateDisplayName": "App and Browser Isolation",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-01-30T07:03:30.6094816Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-03-17T15:56:38.0644818Z",
+    "name": "EPIC_SEC_DEV_WIN-Attack Surface Reduction Rules",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm,microsoftSense",
+    "id": "28dd98de-9145-4af0-9807-632e4426f64c",
+    "templateReference": {
+      "templateId": "e8c053d6-9f95-42b1-a7f1-ebfd71c67a4b_1",
+      "templateFamily": "endpointSecurityAttackSurfaceReduction",
+      "templateDisplayName": "Attack Surface Reduction Rules",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-06-09T07:01:50.6314538Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-06-09T07:01:50.6314538Z",
+    "name": "EPIC_SEC_DEV_WIN-Endpoint Detection and Response Settings Auto",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm,microsoftSense",
+    "id": "8fd4fbe3-a30f-4e71-bb91-ffa5438f6c1f",
+    "templateReference": {
+      "templateId": "0385b795-0f2f-44ac-8602-9f65bf6adede_1",
+      "templateFamily": "endpointSecurityEndpointDetectionAndResponse",
+      "templateDisplayName": "Endpoint detection and response",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-01-30T07:03:30.5126903Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-01-30T07:03:30.5126903Z",
+    "name": "EPIC_SEC_DEV_WIN-Exploit Protection",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 2,
+    "technologies": "mdm",
+    "id": "67a633e9-f64f-41c0-8676-3b9c5f72ae74",
+    "templateReference": {
+      "templateId": "d02f2162-fcac-48db-9b7b-b0a3f160d2c2_1",
+      "templateFamily": "endpointSecurityAttackSurfaceReduction",
+      "templateDisplayName": "Exploit Protection",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-01-30T07:03:30.4748811Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-06-09T07:01:50.5770521Z",
+    "name": "EPIC_SEC_DEV_WIN-Firewall Rules",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm,microsoftSense",
+    "id": "a257555f-c2dc-4082-86b8-ccfe65cb2000",
+    "templateReference": {
+      "templateId": "19c8aa67-f286-4861-9aa0-f23541d31680_1",
+      "templateFamily": "endpointSecurityFirewall",
+      "templateDisplayName": "Windows Firewall Rules",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-01-30T07:03:30.4591687Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-01-30T07:03:30.4591687Z",
+    "name": "EPIC_SEC_DEV_WIN-Firewall Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 4,
+    "technologies": "mdm,microsoftSense",
+    "id": "6b5aa336-fbfe-4269-93c4-3c33a89b082f",
+    "templateReference": {
+      "templateId": "6078910e-d808-4a9f-a51d-1b8a7bacb7c0_1",
+      "templateFamily": "endpointSecurityFirewall",
+      "templateDisplayName": "Windows Firewall",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2026-05-06T11:24:16.2191397Z",
+    "creationSource": null,
+    "description": "DPA",
+    "lastModifiedDateTime": "2026-05-06T11:24:16.2191397Z",
+    "name": "EPIC_SEC_DEV_WIN-Quick Machine recovery Test",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm",
+    "id": "c5280546-50a1-4e8d-9053-d408621bf1cb",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-01-30T07:03:30.4501848Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-01-30T07:03:30.4501848Z",
+    "name": "EPIC_SEC_DEV_WIN-Windows Defender Antivirus Exclusions",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 3,
+    "technologies": "mdm,microsoftSense",
+    "id": "9d03d343-6aac-49c3-86b6-7745abe466b9",
+    "templateReference": {
+      "templateId": "45fea5e9-280d-4da1-9792-fb5736da0ca9_1",
+      "templateFamily": "endpointSecurityAntivirus",
+      "templateDisplayName": "Microsoft Defender Antivirus exclusions",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-01-30T07:03:30.5021781Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-03-17T15:56:38.4381058Z",
+    "name": "EPIC_SEC_DEV_WIN-Windows Defender Antivirus Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 28,
+    "technologies": "mdm,microsoftSense",
+    "id": "ef5dcb78-88c0-4749-962b-5b19da253147",
+    "templateReference": {
+      "templateId": "804339ad-1553-4478-a742-138fb5807418_1",
+      "templateFamily": "endpointSecurityAntivirus",
+      "templateDisplayName": "Microsoft Defender Antivirus",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-11-16T12:23:33.5473843Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-11-16T14:26:30.9728373Z",
+    "name": "EPICLAB_DCP__DEV_AVD-Edge-Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 18,
+    "technologies": "mdm",
+    "id": "b7318b77-c752-45a2-9447-68f9ab8cde73",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-11-14T09:51:04.1884089Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-11-16T12:24:47.3167116Z",
+    "name": "EPICLAB_DCP__DEV_AVD-Remote Desktop Session Host",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 12,
+    "technologies": "mdm",
+    "id": "26533d51-2bab-4542-b8cb-2af530e215b9",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-11-17T07:53:56.3144507Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-11-17T07:53:56.3144507Z",
+    "name": "EPICLAB_DCP__DEV_AVD-Windows Update",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 7,
+    "technologies": "mdm",
+    "id": "12c938c1-cb9f-4145-8575-ae1678d60e05",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-11-16T12:37:34.5925609Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-11-27T12:18:02.1175776Z",
+    "name": "EPICLAB_DCP__USR_AVD-Office 365 Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 11,
+    "technologies": "mdm",
+    "id": "e057dd07-935f-46a1-956a-9982acaf58b1",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-11-16T12:08:59.0621974Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-11-16T14:57:37.7186425Z",
+    "name": "EPICLAB_DCP_DEV_AVD-OneDriveSetting",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 6,
+    "technologies": "mdm",
+    "id": "eb0162c2-f50a-4caf-9fe3-4a5e3cfcd64a",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-11-20T15:07:27.3043476Z",
+    "creationSource": null,
+    "description": "Test Policy Import für AVD",
+    "lastModifiedDateTime": "2023-11-27T07:37:29.235564Z",
+    "name": "EPICLAB_DCP_DEV_AVD-OS Cutomize Setting",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 79,
+    "technologies": "mdm",
+    "id": "0690b63f-eddf-4eeb-b4b2-055f0acb7f51",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-11-16T12:44:49.1223918Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-11-27T07:18:37.7356661Z",
+    "name": "EPICLAB_DCP_DEV_AVD-OS Settings Personalized",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 10,
+    "technologies": "mdm",
+    "id": "b8f45612-09ba-4e26-9e97-9708f8cf15f1",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-11-17T07:39:35.8031337Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-11-17T07:39:35.8031337Z",
+    "name": "EPICLAB_DCP_DEV_AVD-Security Baseline",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 49,
+    "technologies": "mdm",
+    "id": "2c2382e1-74a4-41b9-a193-5b966cdaf87f",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-11-16T12:49:05.5630839Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-11-16T12:49:05.5630839Z",
+    "name": "EPICLAB_DCP_DEV_AVD-SmartScreen Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 4,
+    "technologies": "mdm",
+    "id": "bda24915-3fc1-4569-8157-8086666204c7",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2022-08-22T11:47:13.0623239Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2022-08-22T11:55:58.5530057Z",
+    "name": "EPICLAB_DCP_DEV_WIN-Edge Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 28,
+    "technologies": "mdm",
+    "id": "718c98f4-ac04-44bf-b5cb-ca8e3bf9e389",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-11-27T12:15:58.4176261Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-11-27T12:15:58.4176261Z",
+    "name": "EPICLAB_DCP_USR_AVD-OS Cutomize Setting",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm",
+    "id": "bcd33bd2-4cf9-4f2b-913f-6857bc00d3d9",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2022-08-22T11:47:14.1053553Z",
+    "creationSource": null,
+    "description": "Settings to change after import:\n- Trusted Locations\n- Workgroup Templates Path",
+    "lastModifiedDateTime": "2022-08-22T12:03:43.1306999Z",
+    "name": "EPICLABS_DCP_DEV_WIN-Office 365 Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 13,
+    "technologies": "mdm",
+    "id": "3ab8d03c-5f93-44ee-b288-9cc6bb1640b3",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2022-08-22T11:47:14.9126676Z",
+    "creationSource": null,
+    "description": "Settings to change after import:\n- Tennant ID",
+    "lastModifiedDateTime": "2022-08-22T12:04:36.3765182Z",
+    "name": "EPICLABS_DCP_DEV_WIN-OneDrive Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 4,
+    "technologies": "mdm",
+    "id": "3dc7eb90-5270-4886-97cb-a595b38aaca7",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2025-08-05T12:39:00.1097514Z",
+    "creationSource": null,
+    "description": "Settings to change after import:\n- AAD Tennant Domain Name\n- Default File Assosications (if required)\n- Trusted Site Zones\n- CommercialID (Admin Templates)",
+    "lastModifiedDateTime": "2025-08-05T12:39:00.1097514Z",
+    "name": "EPICLABS_DCP_DEV_WIN-OS Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 21,
+    "technologies": "mdm",
+    "id": "33c88ff3-7049-4f96-b8fb-a208cadf2ec6",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-11-16T13:38:58.8568144Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-11-16T13:38:58.8568144Z",
+    "name": "EPICLABS_SEC_DEV_AVD-Windows Defender Antivirus Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 27,
+    "technologies": "mdm,microsoftSense",
+    "id": "f916d431-9608-475f-809e-efe74a1aac38",
+    "templateReference": {
+      "templateId": "804339ad-1553-4478-a742-138fb5807418_1",
+      "templateFamily": "endpointSecurityAntivirus",
+      "templateDisplayName": "Microsoft Defender Antivirus",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-12-05T21:21:36.6686275Z",
+    "creationSource": "Migration_DI_6b1d8a24-6799-4b00-b18b-5fd638bd29cb",
+    "description": null,
+    "lastModifiedDateTime": "2023-12-05T21:21:36.6686275Z",
+    "name": "EPICLABS_SEC_DEV_WIN-App and Brower Isolation Edge Enable",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 2,
+    "technologies": "mdm",
+    "id": "c88f8b86-34ff-497d-9381-cefb53f18426",
+    "templateReference": {
+      "templateId": "9f667e40-8f3c-4f88-80d8-457f16906315_1",
+      "templateFamily": "endpointSecurityAttackSurfaceReduction",
+      "templateDisplayName": "App and Browser Isolation",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2022-08-22T11:47:16.7728025Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2022-08-22T12:43:54.0182445Z",
+    "name": "EPICLABS_SEC_DEV_WIN-Attack Surface Reduction Rules",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm,microsoftSense",
+    "id": "8c3627f3-cb55-4521-a7fb-af9c219f75a0",
+    "templateReference": {
+      "templateId": "e8c053d6-9f95-42b1-a7f1-ebfd71c67a4b_1",
+      "templateFamily": "endpointSecurityAttackSurfaceReduction",
+      "templateDisplayName": "Attack Surface Reduction Rules",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2022-08-22T11:47:17.5528383Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2022-08-22T12:44:10.2894922Z",
+    "name": "EPICLABS_SEC_DEV_WIN-Exploit Protection",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 2,
+    "technologies": "mdm",
+    "id": "8fb259e0-7ca0-4cbf-a7c5-99654cbc0e76",
+    "templateReference": {
+      "templateId": "d02f2162-fcac-48db-9b7b-b0a3f160d2c2_1",
+      "templateFamily": "endpointSecurityAttackSurfaceReduction",
+      "templateDisplayName": "Exploit Protection",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2022-08-22T11:47:18.2586807Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2022-08-22T12:20:40.8467112Z",
+    "name": "EPICLABS_SEC_DEV_WIN-Firewall Rules",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm,microsoftSense",
+    "id": "a3365800-5bee-4e7b-b370-e3473c1b0b76",
+    "templateReference": {
+      "templateId": "19c8aa67-f286-4861-9aa0-f23541d31680_1",
+      "templateFamily": "endpointSecurityFirewall",
+      "templateDisplayName": "Windows Firewall Rules",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2022-08-22T11:47:18.9793707Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2022-08-22T12:20:58.75251Z",
+    "name": "EPICLABS_SEC_DEV_WIN-Firewall Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 4,
+    "technologies": "mdm,microsoftSense",
+    "id": "8a015838-83be-4b31-8804-803a011457c3",
+    "templateReference": {
+      "templateId": "6078910e-d808-4a9f-a51d-1b8a7bacb7c0_1",
+      "templateFamily": "endpointSecurityFirewall",
+      "templateDisplayName": "Windows Firewall",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2022-08-22T11:47:19.7971587Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2022-08-22T12:18:51.2135762Z",
+    "name": "EPICLABS_SEC_DEV_WIN-Windows Defender Antivirus Exclusions",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 3,
+    "technologies": "mdm,microsoftSense",
+    "id": "f4bb166f-6da1-4541-a580-2891290251a9",
+    "templateReference": {
+      "templateId": "45fea5e9-280d-4da1-9792-fb5736da0ca9_1",
+      "templateFamily": "endpointSecurityAntivirus",
+      "templateDisplayName": "Microsoft Defender Antivirus exclusions",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2022-08-22T11:47:20.8966702Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2022-08-22T12:20:05.0250756Z",
+    "name": "EPICLABS_SEC_DEV_WIN-Windows Defender Antivirus Settings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 28,
+    "technologies": "mdm,microsoftSense",
+    "id": "6b5b9468-f9b7-4e36-9c47-2f0a87699403",
+    "templateReference": {
+      "templateId": "804339ad-1553-4478-a742-138fb5807418_1",
+      "templateFamily": "endpointSecurityAntivirus",
+      "templateDisplayName": "Microsoft Defender Antivirus",
+      "templateDisplayVersion": "Version 1"
+    }
+  }
+]

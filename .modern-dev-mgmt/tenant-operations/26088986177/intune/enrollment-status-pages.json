@@ -1,0 +1,395 @@
+[
+  {
+    "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
+    "id": "04aa34c4-0729-4bfc-b133-b9d9122877ad_PlatformRestrictions",
+    "displayName": "Intune Mobility Allowed",
+    "description": "Allow to enroll mobile devices:\n- Android Enterprise\n- iOS/iPadOS\n- Der Rest gemäss \"Standard\" für Alle Benutzer",
+    "priority": 1,
+    "createdDateTime": "2021-05-18T15:29:39.8136769Z",
+    "lastModifiedDateTime": "2021-05-18T15:29:39.8136769Z",
+    "version": 4,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "deviceEnrollmentConfigurationType": "platformRestrictions",
+    "visionOSRestriction": null,
+    "tvosRestriction": null,
+    "iosRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "windowsRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "windowsHomeSkuRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "windowsMobileRestriction": {
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "androidRestriction": {
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "androidForWorkRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "macRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "macOSRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    }
+  },
+  {
+    "@odata.type": "#microsoft.graph.deviceEnrollmentLimitConfiguration",
+    "id": "2bc38f11-2e00-42c6-90ec-0d57b639b381_Limit",
+    "displayName": "EPICLABS_EDR_USR_ALL-Enroll Device Limit 15",
+    "description": "",
+    "priority": 2,
+    "createdDateTime": "2022-05-04T16:16:46.0738139Z",
+    "lastModifiedDateTime": "2023-01-30T07:03:33.4367041Z",
+    "version": 6,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "deviceEnrollmentConfigurationType": "limit",
+    "limit": 15
+  },
+  {
+    "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+    "id": "36bae30a-aba0-4fb4-a0e3-8e7e60d103d7_SinglePlatformRestriction",
+    "displayName": "EPIC_EDR_USR_WIN-Block personally owned devices",
+    "description": "",
+    "priority": 1,
+    "createdDateTime": "2022-08-22T11:48:15.4867191Z",
+    "lastModifiedDateTime": "2023-03-13T23:43:02.6882866Z",
+    "version": 5,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+    "platformType": "windows",
+    "platformRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    }
+  },
+  {
+    "@odata.type": "#microsoft.graph.deviceEnrollmentLimitConfiguration",
+    "id": "61de1ff5-959b-4764-9251-cdd730ce6b97_DefaultLimit",
+    "displayName": "All users and all devices",
+    "description": "This is the default Device Limit Restriction applied with the lowest priority to all users regardless of group membership.",
+    "priority": 0,
+    "createdDateTime": "0001-01-01T00:00:00Z",
+    "lastModifiedDateTime": "2025-07-10T08:46:19Z",
+    "version": 0,
+    "roleScopeTagIds": [],
+    "deviceEnrollmentConfigurationType": "limit",
+    "limit": 15
+  },
+  {
+    "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
+    "id": "61de1ff5-959b-4764-9251-cdd730ce6b97_DefaultPlatformRestrictions",
+    "displayName": "All users and all devices",
+    "description": "This is the default Device Type Restriction applied with the lowest priority to all users regardless of group membership.",
+    "priority": 0,
+    "createdDateTime": "0001-01-01T00:00:00Z",
+    "lastModifiedDateTime": "2025-07-10T08:46:19Z",
+    "version": 0,
+    "roleScopeTagIds": [],
+    "deviceEnrollmentConfigurationType": "platformRestrictions",
+    "iosRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": "",
+      "osMaximumVersion": "",
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "windowsRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": "",
+      "osMaximumVersion": "",
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "windowsHomeSkuRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "windowsMobileRestriction": {
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": "",
+      "osMaximumVersion": "",
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "androidRestriction": {
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": "",
+      "osMaximumVersion": "",
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "androidForWorkRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": "",
+      "osMaximumVersion": "",
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "macRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "macOSRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "visionOSRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    },
+    "tvosRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    }
+  },
+  {
+    "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
+    "id": "61de1ff5-959b-4764-9251-cdd730ce6b97_DefaultWindows10EnrollmentCompletionPageConfiguration",
+    "displayName": "All users and all devices",
+    "description": "This is the default enrollment status screen configuration applied with the lowest priority to all users and all devices regardless of group membership.",
+    "priority": 0,
+    "createdDateTime": "0001-01-01T00:00:00Z",
+    "lastModifiedDateTime": "2025-07-10T08:46:19Z",
+    "version": 0,
+    "roleScopeTagIds": [],
+    "deviceEnrollmentConfigurationType": "windows10EnrollmentCompletionPageConfiguration",
+    "showInstallationProgress": true,
+    "blockDeviceSetupRetryByUser": true,
+    "allowDeviceResetOnInstallFailure": false,
+    "allowLogCollectionOnInstallFailure": true,
+    "customErrorMessage": "",
+    "installProgressTimeoutInMinutes": 120,
+    "allowDeviceUseOnInstallFailure": false,
+    "selectedMobileAppIds": [],
+    "allowNonBlockingAppInstallation": false,
+    "installQualityUpdates": false,
+    "trackInstallProgressForAutopilotOnly": true,
+    "disableUserStatusTrackingAfterFirstUser": true
+  },
+  {
+    "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
+    "id": "61de1ff5-959b-4764-9251-cdd730ce6b97_DefaultWindowsHelloForBusiness",
+    "displayName": "All users and all devices",
+    "description": "This is the default Windows Hello for Business configuration applied with the lowest priority to all users regardless of group membership.",
+    "priority": 0,
+    "createdDateTime": "0001-01-01T00:00:00Z",
+    "lastModifiedDateTime": "2025-07-10T08:46:19Z",
+    "version": 0,
+    "roleScopeTagIds": [],
+    "deviceEnrollmentConfigurationType": "windowsHelloForBusiness",
+    "pinMinimumLength": 6,
+    "pinMaximumLength": 127,
+    "pinUppercaseCharactersUsage": "disallowed",
+    "pinLowercaseCharactersUsage": "disallowed",
+    "pinSpecialCharactersUsage": "disallowed",
+    "state": "notConfigured",
+    "securityDeviceRequired": true,
+    "unlockWithBiometricsEnabled": true,
+    "remotePassportEnabled": true,
+    "pinPreviousBlockCount": 5,
+    "pinExpirationInDays": 41,
+    "enhancedBiometricsState": "enabled",
+    "securityKeyForSignIn": "notConfigured",
+    "enhancedSignInSecurity": 0
+  },
+  {
+    "@odata.type": "#microsoft.graph.windowsRestoreDeviceEnrollmentConfiguration",
+    "id": "61de1ff5-959b-4764-9251-cdd730ce6b97_WindowsRestore",
+    "displayName": "All users and all devices",
+    "description": "This is the default Windows Restore configuration applied with the lowest priority to all users and all devices regardless of group membership.",
+    "priority": 0,
+    "createdDateTime": "0001-01-01T00:00:00Z",
+    "lastModifiedDateTime": "2025-07-10T08:46:19Z",
+    "version": 0,
+    "roleScopeTagIds": [],
+    "deviceEnrollmentConfigurationType": "windowsRestore",
+    "state": "notConfigured"
+  },
+  {
+    "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+    "id": "65a10a57-0c65-48e6-a857-1af196870a59_SinglePlatformRestriction",
+    "displayName": "EPIC_EDR_USR_MAC-Allow personally owned devices",
+    "description": "",
+    "priority": 1,
+    "createdDateTime": "2022-05-04T16:17:54.190991Z",
+    "lastModifiedDateTime": "2023-09-23T11:45:52.6913463Z",
+    "version": 6,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+    "platformType": "mac",
+    "platformRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    }
+  },
+  {
+    "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+    "id": "7f7eaf36-8b04-4f3e-ad3d-61e6c58e0d0e_SinglePlatformRestriction",
+    "displayName": "EPIC_EDR_USR_AOS-Android Enterprise",
+    "description": "",
+    "priority": 1,
+    "createdDateTime": "2022-05-04T16:16:47.0790807Z",
+    "lastModifiedDateTime": "2023-03-13T23:43:00.9637968Z",
+    "version": 4,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+    "platformType": "android",
+    "platformRestriction": {
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    }
+  },
+  {
+    "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+    "id": "b085bb8a-5c93-410e-8f0b-5ef33f0b19a2_SinglePlatformRestriction",
+    "displayName": "EPIC_EDR_USR_IOS-Apple Mobile Devices",
+    "description": "",
+    "priority": 1,
+    "createdDateTime": "2022-08-22T11:48:15.7999195Z",
+    "lastModifiedDateTime": "2023-03-13T23:43:03.4983788Z",
+    "version": 5,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+    "platformType": "ios",
+    "platformRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    }
+  },
+  {
+    "@odata.type": "#microsoft.graph.deviceEnrollmentLimitConfiguration",
+    "id": "cda5e7d2-417c-4d39-b1e6-b289e7b9a5c5_Limit",
+    "displayName": "EPIC_EDR_USR_ALL-Enroll Device Limit 15",
+    "description": "",
+    "priority": 1,
+    "createdDateTime": "2023-01-30T07:03:31.347217Z",
+    "lastModifiedDateTime": "2023-01-30T07:03:33.4367041Z",
+    "version": 2,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "deviceEnrollmentConfigurationType": "limit",
+    "limit": 15
+  },
+  {
+    "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+    "id": "d65b8963-85ac-483a-a1ce-82b2509bc038_SinglePlatformRestriction",
+    "displayName": "EPIC_EDR_USR_AOS-Android Enterprise",
+    "description": "",
+    "priority": 1,
+    "createdDateTime": "2023-01-30T07:03:30.5840375Z",
+    "lastModifiedDateTime": "2023-01-30T07:03:30.5840375Z",
+    "version": 1,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+    "platformType": "androidForWork",
+    "platformRestriction": {
+      "platformBlocked": false,
+      "personalDeviceEnrollmentBlocked": false,
+      "osMinimumVersion": null,
+      "osMaximumVersion": null,
+      "blockedManufacturers": [],
+      "blockedSkus": []
+    }
+  }
+]
