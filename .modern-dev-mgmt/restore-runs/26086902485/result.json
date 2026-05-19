@@ -1,0 +1,14 @@
+{
+  "applied": [
+    {
+      "backupPolicyId": "authorizationPolicy",
+      "policyType": "AuthorizationPolicy",
+      "path": "policies/tenant/authorization-policy/_singleton.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/policies/authorizationPolicy"
+    }
+  ],
+  "skipped": [],
+  "warnings": [],
+  "failed": []
+}

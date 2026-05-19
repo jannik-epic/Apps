@@ -1,0 +1,9 @@
+{
+  "policies": [
+    {
+      "policyType": "AuthorizationPolicy",
+      "backupPolicyId": "authorizationPolicy",
+      "path": "policies/tenant/authorization-policy/_singleton.json"
+    }
+  ]
+}
