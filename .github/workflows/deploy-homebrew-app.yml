@@ -318,7 +318,10 @@ jobs:
             fs.writeFileSync(`.modern-dev-mgmt/patch-runs/${context.patchRunId}.json`, JSON.stringify(result, null, 2));
           }
           NODE
-          git add ".modern-dev-mgmt/runs/${GITHUB_RUN_ID}.json" .modern-dev-mgmt/patch-runs || true
+          git add ".modern-dev-mgmt/runs/${GITHUB_RUN_ID}.json"
+          if [ -d .modern-dev-mgmt/patch-runs ]; then
+            git add .modern-dev-mgmt/patch-runs
+          fi
           if git diff --cached --quiet; then
             echo "no changes"
           else
