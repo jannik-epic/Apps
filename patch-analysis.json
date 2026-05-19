@@ -1,4 +1,145 @@
 {
-  "scannedAt": "2026-05-19T13:52:50.197Z",
-  "results": []
+  "scannedAt": "2026-05-19T14:01:00.612Z",
+  "results": [
+    {
+      "appId": 2395,
+      "packageManager": "winget",
+      "packageId": "Git.Git",
+      "currentDeployedVersion": "2.39.2",
+      "latestUpstreamVersion": "2.54.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://gitforwindows.org/"
+    },
+    {
+      "appId": 2409,
+      "packageManager": "winget",
+      "packageId": "GitHub.cli",
+      "currentDeployedVersion": "2.24.3",
+      "latestUpstreamVersion": "2.92.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://cli.github.com/"
+    },
+    {
+      "appId": 2411,
+      "packageManager": "winget",
+      "packageId": "GitHub.GitHubDesktop",
+      "currentDeployedVersion": "3.2.0",
+      "latestUpstreamVersion": "3.5.8",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://github.com/apps/desktop"
+    },
+    {
+      "appId": 4128,
+      "packageManager": "winget",
+      "packageId": "Microsoft.Office",
+      "currentDeployedVersion": "16.0.19929.20106",
+      "latestUpstreamVersion": "16.0.19929.20090",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": "https://www.office.com/"
+    },
+    {
+      "appId": 4171,
+      "packageManager": "winget",
+      "packageId": "Microsoft.Edge",
+      "currentDeployedVersion": "147.0.3912.98",
+      "latestUpstreamVersion": "148.0.3967.54",
+      "hasUpdate": true,
+      "bumpType": "major",
+      "releaseNotesUrl": "https://www.microsoft.com/en-us/edge"
+    },
+    {
+      "appId": 4191,
+      "packageManager": "winget",
+      "packageId": "Microsoft.OneDrive",
+      "currentDeployedVersion": "26.063.0405.0002",
+      "latestUpstreamVersion": "26.063.0405.0002",
+      "hasUpdate": false,
+      "bumpType": null,
+      "releaseNotesUrl": "https://www.microsoft.com/microsoft-365/onedrive/download"
+    },
+    {
+      "appId": 4379,
+      "packageManager": "winget",
+      "packageId": "Microsoft.VCRedist.2015+.x64",
+      "currentDeployedVersion": "14.44.35211.0",
+      "latestUpstreamVersion": "14.51.36231.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist"
+    },
+    {
+      "appId": 4381,
+      "packageManager": "winget",
+      "packageId": "Microsoft.VCRedist.2015+.x86",
+      "currentDeployedVersion": "14.44.35211.0",
+      "latestUpstreamVersion": "14.51.36231.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist"
+    },
+    {
+      "appId": 4387,
+      "packageManager": "winget",
+      "packageId": "Microsoft.VisualStudioCode",
+      "currentDeployedVersion": "1.76.2",
+      "latestUpstreamVersion": "1.119.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://code.visualstudio.com"
+    },
+    {
+      "appId": 4972,
+      "packageManager": "winget",
+      "packageId": "OBSProject.OBSStudio",
+      "currentDeployedVersion": "32.0.1",
+      "latestUpstreamVersion": "32.1.2",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://obsproject.com/"
+    },
+    {
+      "appId": 5631,
+      "packageManager": "winget",
+      "packageId": "Microsoft.PowerShell",
+      "currentDeployedVersion": "7.3.3.0",
+      "latestUpstreamVersion": "7.6.1.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://microsoft.com/PowerShell"
+    },
+    {
+      "appId": 64080,
+      "packageManager": "msstore",
+      "packageId": "9N0DX20HK701",
+      "currentDeployedVersion": "3001.24.10921.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 64084,
+      "packageManager": "msstore",
+      "packageId": "XPDP273C0XHQH2",
+      "currentDeployedVersion": "26.0.0.1",
+      "latestUpstreamVersion": "26.001.21563",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 76090,
+      "packageManager": "msstore",
+      "packageId": "9NFTCH6J7FHV",
+      "currentDeployedVersion": "11.2604.143.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    }
+  ]
 }
