@@ -1,0 +1,12 @@
+{
+  "workflowRunId": "26087090541",
+  "workflow": "deploy-winget-app.yml",
+  "packageManager": "winget",
+  "packageId": "Notepad++.Notepad++",
+  "appId": "ccedd0cb-7a11-4724-a86d-bfd300e1d840",
+  "updateOnlyAppId": "",
+  "appName": "PackageFlow Apps E2E Winget Smoke 2026-05-19",
+  "status": "success",
+  "createdAt": "2026-05-19T08:59:32.8677874Z",
+  "context": null
+}
