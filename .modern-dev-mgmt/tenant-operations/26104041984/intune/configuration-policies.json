@@ -1,0 +1,296 @@
+[
+  {
+    "createdDateTime": "2023-11-11T16:36:51.1154214Z",
+    "creationSource": null,
+    "description": "Purpose: Enforce silent BitLocker encryption on all corporate Windows 11 devices to meet ISO 27001 data-at-rest requirements\nScope: Windows Kios devices\nOwner: Jannik Reinhard — Epic Fusion, reviewed quarterly\nLast reviewed: 2025-01-15 — JIRA-4521 — changed min PIN length from 4 to 6 digits",
+    "lastModifiedDateTime": "2026-03-07T08:04:38.0197608Z",
+    "name": "Application Control",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm",
+    "id": "371271e9-4b52-4311-9563-09d46a224379",
+    "templateReference": {
+      "templateId": "4321b946-b76b-4450-8afd-769c08b16ffc_1",
+      "templateFamily": "endpointSecurityApplicationControl",
+      "templateDisplayName": "App Control for Business",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-11-11T16:28:13.2768814Z",
+    "creationSource": null,
+    "description": "Block everything",
+    "lastModifiedDateTime": "2023-11-11T16:28:13.2768814Z",
+    "name": "Attack Surface Reduction",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 2,
+    "technologies": "mdm,microsoftSense",
+    "id": "00c85710-5fe7-4268-bb42-f9c0abc42546",
+    "templateReference": {
+      "templateId": "e8c053d6-9f95-42b1-a7f1-ebfd71c67a4b_1",
+      "templateFamily": "endpointSecurityAttackSurfaceReduction",
+      "templateDisplayName": "Attack Surface Reduction Rules",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2024-05-18T03:12:26.171134Z",
+    "creationSource": "Migration_DI_2c0da3bf-0220-440d-8537-670939cdd1fc",
+    "description": "Encrypts drives to 256bit",
+    "lastModifiedDateTime": "2024-05-18T03:12:26.171134Z",
+    "name": "BitLocker Encryption",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 6,
+    "technologies": "mdm",
+    "id": "e64e76ef-08b6-48ab-8d39-737a4244535a",
+    "templateReference": {
+      "templateId": "46ddfc50-d10f-4867-b852-9434254b3bff_1",
+      "templateFamily": "endpointSecurityDiskEncryption",
+      "templateDisplayName": "BitLocker",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-11-18T11:56:08.252317Z",
+    "creationSource": null,
+    "description": "Elevation Settings Policy",
+    "lastModifiedDateTime": "2023-11-18T11:56:08.252317Z",
+    "name": "Elevation Settings Policy",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm,endpointPrivilegeManagement",
+    "id": "333ea185-af37-4cf3-8849-121c4dcb0bd1",
+    "templateReference": {
+      "templateId": "e7dcaba4-959b-46ed-88f0-16ba39b14fd8_1",
+      "templateFamily": "endpointSecurityEndpointPrivilegeManagement",
+      "templateDisplayName": "Elevation settings policy",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-11-11T16:32:15.1289889Z",
+    "creationSource": null,
+    "description": "Enable and Rename account",
+    "lastModifiedDateTime": "2023-11-11T16:32:15.1289889Z",
+    "name": "Enable Administrator Account",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 2,
+    "technologies": "mdm",
+    "id": "d81d8fa4-0634-4507-ad1d-e2f221df7734",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2025-11-26T07:19:25.3249405Z",
+    "creationSource": null,
+    "description": "Generated PolicyAgent Description",
+    "lastModifiedDateTime": "2025-11-26T07:19:25.3249405Z",
+    "name": "Generated PolicyAgent Policy",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm",
+    "id": "6dddcb00-d7a8-4a67-809d-ad14946a9c18",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-11-11T16:32:17.0816922Z",
+    "creationSource": null,
+    "description": "Uses lapsadmin created via custom OMA-URI policy",
+    "lastModifiedDateTime": "2023-11-11T16:32:17.0816922Z",
+    "name": "LAPS Config",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 5,
+    "technologies": "mdm",
+    "id": "96a1eb7a-2ce5-4e17-8ce9-f3352fc31443",
+    "templateReference": {
+      "templateId": "adc46e5a-f4aa-4ff6-aeff-4f27bc525796_1",
+      "templateFamily": "endpointSecurityAccountProtection",
+      "templateDisplayName": "Local admin password solution (Windows LAPS)",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-04-16T09:59:32.8188164Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-04-16T09:59:32.8188164Z",
+    "name": "Linux-InstallVsCode",
+    "platforms": "linux",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 4,
+    "technologies": "linuxMdm",
+    "id": "a040bac3-254b-4207-afe1-390e78108b9a",
+    "templateReference": {
+      "templateId": "92439f26-2b30-4503-8429-6d40f7e172dd_1",
+      "templateFamily": "deviceConfigurationScripts",
+      "templateDisplayName": "Custom Configuration",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-11-26T16:48:50.5788616Z",
+    "creationSource": null,
+    "description": "Baseline settings for macOS devices",
+    "lastModifiedDateTime": "2023-11-26T16:48:50.5788616Z",
+    "name": "macOS Settings",
+    "platforms": "macOS",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 4,
+    "technologies": "mdm,appleRemoteManagement",
+    "id": "f492097c-49cc-4399-a4ee-f0527a60d79b",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  },
+  {
+    "createdDateTime": "2023-11-16T17:40:41.7509997Z",
+    "creationSource": null,
+    "description": "Turn off notifications evenings and weekends",
+    "lastModifiedDateTime": "2023-11-16T17:40:41.7509997Z",
+    "name": "Quiet Time - Evenings Weekends",
+    "platforms": "android,iOS",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 3,
+    "technologies": "exchangeOnline",
+    "id": "0fc3530a-7427-40c8-97e3-829476fa5103",
+    "templateReference": {
+      "templateId": "2479e1bb-612c-4b98-96b0-157f334143dd_1",
+      "templateFamily": "appQuietTime",
+      "templateDisplayName": "Days of the week",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-03-04T11:09:13.5849062Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-08-02T16:28:50.3694968Z",
+    "name": "Users_WIN_CreateLocalAdmin",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm",
+    "id": "76baa39a-51d8-4183-bf10-14e17cf90a64",
+    "templateReference": {
+      "templateId": "22968f54-45fa-486c-848e-f8224aa69772_1",
+      "templateFamily": "endpointSecurityAccountProtection",
+      "templateDisplayName": "Local user group membership",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-03-25T10:28:24.8644437Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-03-26T06:36:33.3311824Z",
+    "name": "WIN-EPM-ElevationSettings",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm,endpointPrivilegeManagement",
+    "id": "6f78ee95-ef1d-40c7-b5b8-d9cb58b2035f",
+    "templateReference": {
+      "templateId": "e7dcaba4-959b-46ed-88f0-16ba39b14fd8_1",
+      "templateFamily": "endpointSecurityEndpointPrivilegeManagement",
+      "templateDisplayName": "Elevation settings policy",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2023-10-13T03:10:57.0653281Z",
+    "creationSource": "Migration_DI_2afa538c-ca49-4acd-aa70-c35cbd088402",
+    "description": "Windows 10 firewall rules",
+    "lastModifiedDateTime": "2023-10-13T03:10:57.0653281Z",
+    "name": "WIN_Default_Firewall_RuleSet",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm,microsoftSense",
+    "id": "54f574c6-c293-4650-aff0-05ff9e1715cb",
+    "templateReference": {
+      "templateId": "19c8aa67-f286-4861-9aa0-f23541d31680_1",
+      "templateFamily": "endpointSecurityFirewall",
+      "templateDisplayName": "Windows Firewall Rules",
+      "templateDisplayVersion": "Version 1"
+    }
+  },
+  {
+    "createdDateTime": "2022-11-20T10:58:52.917533Z",
+    "creationSource": null,
+    "description": "",
+    "lastModifiedDateTime": "2023-03-03T17:13:17.6550392Z",
+    "name": "z_WIN_Allow_OrganizationalMessages",
+    "platforms": "windows10",
+    "priorityMetaData": null,
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settingCount": 1,
+    "technologies": "mdm",
+    "id": "1cf62902-c672-46e4-8c0f-6117db40dfbf",
+    "templateReference": {
+      "templateId": "",
+      "templateFamily": "none",
+      "templateDisplayName": null,
+      "templateDisplayVersion": null
+    }
+  }
+]

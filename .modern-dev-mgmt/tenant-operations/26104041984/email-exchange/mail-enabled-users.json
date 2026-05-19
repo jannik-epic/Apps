@@ -1,0 +1,65 @@
+[
+  {
+    "id": "f5606efd-cb94-49f2-a7e2-aff1005d8a29",
+    "displayName": "Audi",
+    "userPrincipalName": "Audi@moderndevmgmt.onmicrosoft.com",
+    "mail": "Audi@moderndevmgmt.onmicrosoft.com",
+    "proxyAddresses": [
+      "SMTP:Audi@moderndevmgmt.onmicrosoft.com"
+    ],
+    "accountEnabled": true
+  },
+  {
+    "id": "8873bc1d-9402-46bf-bdb9-1f898f257e62",
+    "displayName": "BMW",
+    "userPrincipalName": "BMW@moderndevmgmt.onmicrosoft.com",
+    "mail": "BMW@moderndevmgmt.onmicrosoft.com",
+    "proxyAddresses": [
+      "SMTP:BMW@moderndevmgmt.onmicrosoft.com"
+    ],
+    "accountEnabled": true
+  },
+  {
+    "id": "ae76b8df-e17b-4425-b44d-db5a33f01055",
+    "displayName": "Epic (Admin)",
+    "userPrincipalName": "Epic@ModernDevMgmt.onmicrosoft.com",
+    "mail": "Epic@ModernDevMgmt.onmicrosoft.com",
+    "proxyAddresses": [
+      "SMTP:Epic@ModernDevMgmt.onmicrosoft.com"
+    ],
+    "accountEnabled": true
+  },
+  {
+    "id": "1b205d22-7cac-485f-9b43-11d7bba1641e",
+    "displayName": "Jannik Reinhard",
+    "userPrincipalName": "Jannik@ModernDevMgmt.onmicrosoft.com",
+    "mail": "Jannik@ModernDevMgmt.onmicrosoft.com",
+    "proxyAddresses": [
+      "SMTP:Jannik@ModernDevMgmt.onmicrosoft.com"
+    ],
+    "accountEnabled": true
+  },
+  {
+    "id": "13950b84-218e-4227-b4db-744f340b45a8",
+    "displayName": "Jannik Reinhard (Admin)",
+    "userPrincipalName": "JannikReinhard@ModernDevMgmt.onmicrosoft.com",
+    "mail": "JannikReinhard@ModernDevMgmt.onmicrosoft.com",
+    "proxyAddresses": [
+      "smtp:JannikReinhard@jannikreinhard.onmicrosoft.com",
+      "SMTP:JannikReinhard@ModernDevMgmt.onmicrosoft.com",
+      "smtp:yn2s0@05z3n.onmicrosoft.com",
+      "smtp:JannikReinhard@05z3n.onmicrosoft.com"
+    ],
+    "accountEnabled": true
+  },
+  {
+    "id": "43fc69a1-69f2-45d0-a5da-83187380f031",
+    "displayName": "Mercedes",
+    "userPrincipalName": "Mercedes@moderndevmgmt.onmicrosoft.com",
+    "mail": "Mercedes@moderndevmgmt.onmicrosoft.com",
+    "proxyAddresses": [
+      "SMTP:Mercedes@moderndevmgmt.onmicrosoft.com"
+    ],
+    "accountEnabled": true
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "function": "Transport rules",
+    "reason": "Exchange transport configuration is not represented by the Microsoft Graph app roles used by this workflow."
+  },
+  {
+    "function": "Spam/Malware/Safe Attachments policies",
+    "reason": "Defender for Office and Exchange policy surfaces require Exchange Online PowerShell or dedicated Security APIs."
+  },
+  {
+    "function": "Quarantine and message trace",
+    "reason": "Operational mail-flow evidence should run in a separate Exchange workflow with explicit Exchange permissions."
+  }
+]

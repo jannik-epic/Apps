@@ -1,0 +1,74 @@
+[
+  {
+    "authenticationType": "Managed",
+    "availabilityStatus": null,
+    "id": "05z3n.onmicrosoft.com",
+    "isAdminManaged": true,
+    "isDefault": false,
+    "isInitial": false,
+    "isRoot": true,
+    "isVerified": true,
+    "supportedServices": [
+      "Email",
+      "OfficeCommunicationsOnline",
+      "MoeraDomain"
+    ],
+    "passwordValidityPeriodInDays": 2147483647,
+    "passwordNotificationWindowInDays": 14,
+    "state": null
+  },
+  {
+    "authenticationType": "Managed",
+    "availabilityStatus": null,
+    "id": "jannikreinhard.onmicrosoft.com",
+    "isAdminManaged": true,
+    "isDefault": false,
+    "isInitial": false,
+    "isRoot": true,
+    "isVerified": true,
+    "supportedServices": [
+      "Email",
+      "OfficeCommunicationsOnline",
+      "MoeraDomain"
+    ],
+    "passwordValidityPeriodInDays": 2147483647,
+    "passwordNotificationWindowInDays": 14,
+    "state": null
+  },
+  {
+    "authenticationType": "Managed",
+    "availabilityStatus": null,
+    "id": "ModernDevManagement.onmicrosoft.com",
+    "isAdminManaged": true,
+    "isDefault": false,
+    "isInitial": false,
+    "isRoot": true,
+    "isVerified": true,
+    "supportedServices": [
+      "Email",
+      "OfficeCommunicationsOnline",
+      "MoeraDomain"
+    ],
+    "passwordValidityPeriodInDays": 2147483647,
+    "passwordNotificationWindowInDays": 14,
+    "state": null
+  },
+  {
+    "authenticationType": "Managed",
+    "availabilityStatus": null,
+    "id": "ModernDevMgmt.onmicrosoft.com",
+    "isAdminManaged": true,
+    "isDefault": true,
+    "isInitial": true,
+    "isRoot": true,
+    "isVerified": true,
+    "supportedServices": [
+      "Email",
+      "OfficeCommunicationsOnline",
+      "MoeraDomain"
+    ],
+    "passwordValidityPeriodInDays": 2147483647,
+    "passwordNotificationWindowInDays": 14,
+    "state": null
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "4a58b157-d6bf-499e-8ca0-e5db1bce9b4a",
+    "displayName": "Test_DistributionGroup",
+    "mail": "Test_DG@ModernDevMgmt.onmicrosoft.com",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": []
+  },
+  {
+    "id": "48af6afa-966e-4502-bc0f-57ef7f29a7f6",
+    "displayName": "All Company",
+    "mail": "allcompany@ModernDevMgmt.onmicrosoft.com",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ]
+  },
+  {
+    "id": "60183a35-dad6-4eb7-989d-93b58ac9eb16",
+    "displayName": "Notifications",
+    "mail": "Notifications@ModernDevMgmt.onmicrosoft.com",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ]
+  }
+]

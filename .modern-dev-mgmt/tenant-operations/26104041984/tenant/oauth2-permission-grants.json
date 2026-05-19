@@ -1,0 +1,698 @@
+[
+  {
+    "clientId": "cc1b23d5-bbfa-49bb-9ec8-1515a1298118",
+    "consentType": "AllPrincipals",
+    "id": "1SMbzPq7u0meyBUVoSmBGPdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "SensitivityLabel.Read TeamsTab.Create AppCatalog.Read.All AppCatalog.Submit Channel.ReadBasic.All EduAssignments.ReadBasic EduRoster.ReadBasic Files.Read.All Files.ReadWrite.All Group.Read.All People.Read People.Read.All Presence.Read.All TeamsAppInstallation.ReadWriteSelfForTeam User.Read User.ReadBasic.All Tasks.ReadWrite Group-Conversation.ReadWrite.All Team.ReadBasic.All Channel.Create TeamsAppInstallation.ReadWriteForTeam Sites.Read.All PrinterShare.ReadBasic.All PrintJob.Create PrintJob.ReadBasic FileStorageContainer.Selected Calendars.Read Files.Read GroupMember.Read.All InformationProtectionPolicy.Read ChatMember.Read"
+  },
+  {
+    "clientId": "cc1b23d5-bbfa-49bb-9ec8-1515a1298118",
+    "consentType": "AllPrincipals",
+    "id": "1SMbzPq7u0meyBUVoSmBGFNNJdO6IO1EmzKMBMr4w-c",
+    "principalId": null,
+    "resourceId": "d3254d53-20ba-44ed-9b32-8c04caf8c3e7",
+    "scope": "Files.ReadWrite.All TermStore.ReadWrite.All Sites.ReadWrite.All Sites.FullControl.All"
+  },
+  {
+    "clientId": "cc1b23d5-bbfa-49bb-9ec8-1515a1298118",
+    "consentType": "AllPrincipals",
+    "id": "1SMbzPq7u0meyBUVoSmBGGZyP_zvkdhIozegiDfygl4",
+    "principalId": null,
+    "resourceId": "fc3f7266-91ef-48d8-a337-a08837f2825e",
+    "scope": "user_impersonation"
+  },
+  {
+    "clientId": "cc1b23d5-bbfa-49bb-9ec8-1515a1298118",
+    "consentType": "AllPrincipals",
+    "id": "1SMbzPq7u0meyBUVoSmBGGw99Uz1syNLprtspgFlOdM",
+    "principalId": null,
+    "resourceId": "4cf53d6c-b3f5-4b23-a6bb-6ca6016539d3",
+    "scope": "user_impersonation"
+  },
+  {
+    "clientId": "cc1b23d5-bbfa-49bb-9ec8-1515a1298118",
+    "consentType": "AllPrincipals",
+    "id": "1SMbzPq7u0meyBUVoSmBGAkys3afnxZJmLAX7b8EIa8",
+    "principalId": null,
+    "resourceId": "76b33209-9f9f-4916-98b0-17edbf0421af",
+    "scope": "MLModel.Execute.All Report.Read.All UserState.ReadWrite.All Dataset.Read.All"
+  },
+  {
+    "clientId": "cc1b23d5-bbfa-49bb-9ec8-1515a1298118",
+    "consentType": "AllPrincipals",
+    "id": "1SMbzPq7u0meyBUVoSmBGP7PkYg1g71JsGFgl79dBbk",
+    "principalId": null,
+    "resourceId": "8891cffe-8335-49bd-b061-6097bf5d05b9",
+    "scope": "Sites.FullControl.All ExternalConnection.ReadWrite.All"
+  },
+  {
+    "clientId": "cc1b23d5-bbfa-49bb-9ec8-1515a1298118",
+    "consentType": "AllPrincipals",
+    "id": "1SMbzPq7u0meyBUVoSmBGMeRBGZQYadIkS7_knz_0iU",
+    "principalId": null,
+    "resourceId": "660491c7-6150-48a7-912e-ff927cffd225",
+    "scope": "Calendars.Read User.Read User.ReadBasic.All"
+  },
+  {
+    "clientId": "cc1b23d5-bbfa-49bb-9ec8-1515a1298118",
+    "consentType": "AllPrincipals",
+    "id": "1SMbzPq7u0meyBUVoSmBGHxEPTNSfrFGiBEzqv8zArQ",
+    "principalId": null,
+    "resourceId": "333d447c-7e52-46b1-8811-33aaff3302b4",
+    "scope": "Forms.ReadWrite"
+  },
+  {
+    "clientId": "ddf5f39c-d6cd-4cbb-9408-0d1149d11be5",
+    "consentType": "AllPrincipals",
+    "id": "nPP13c3Wu0yUCA0RSdEb5fdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "ChannelMessage.Send Directory.AccessAsUser.All Directory.ReadWrite.All Files.ReadWrite Organization.ReadWrite.All User.ReadWrite"
+  },
+  {
+    "clientId": "c3d6acf0-6c7b-402a-bf30-7a2026af33ac",
+    "consentType": "AllPrincipals",
+    "id": "8KzWw3tsKkC_MHogJq8zrPdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "Directory.Read.All Mail.Send Sites.FullControl.All Sites.Read.All User.Read"
+  },
+  {
+    "clientId": "c3d6acf0-6c7b-402a-bf30-7a2026af33ac",
+    "consentType": "AllPrincipals",
+    "id": "8KzWw3tsKkC_MHogJq8zrFNNJdO6IO1EmzKMBMr4w-c",
+    "principalId": null,
+    "resourceId": "d3254d53-20ba-44ed-9b32-8c04caf8c3e7",
+    "scope": "AllSites.FullControl TermStore.ReadWrite.All"
+  },
+  {
+    "clientId": "43b129e3-62d2-4592-b8ab-3f831894a78e",
+    "consentType": "AllPrincipals",
+    "id": "4ymxQ9JikkW4qz-DGJSnjkHymgwnW6ZDiCY8XkrHvTg",
+    "principalId": null,
+    "resourceId": "0c9af241-5b27-43a6-8826-3c5e4ac7bd38",
+    "scope": "User.Read Group.Read.All"
+  },
+  {
+    "clientId": "43b129e3-62d2-4592-b8ab-3f831894a78e",
+    "consentType": "AllPrincipals",
+    "id": "4ymxQ9JikkW4qz-DGJSnjvdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementRBAC.ReadWrite.All DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementServiceConfig.ReadWrite.All Group.ReadWrite.All Directory.Read.All openid"
+  },
+  {
+    "clientId": "ad59c412-a7a0-4845-875b-a584350954bc",
+    "consentType": "Principal",
+    "id": "EsRZraCnRUiHW6WENQlUvPdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read.All User.Read Group.ReadWrite.All Device.Read.All DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All openid profile offline_access Group.Read.All DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementApps.Read.All DeviceManagementConfiguration.Read.All DeviceManagementManagedDevices.Read.All Application.Read.All AppRoleAssignment.ReadWrite.All RoleManagement.ReadWrite.Directory DeviceManagementServiceConfig.ReadWrite.All Device.ReadWrite.All GroupMember.ReadWrite.All Mail.Read Directory.Read.All Policy.Read.All Reports.Read.All DirectoryRecommendations.Read.All PrivilegedAccess.Read.AzureAD IdentityRiskEvent.Read.All DeviceManagementRBAC.Read.All Application.ReadWrite.All Directory.ReadWrite.All DeviceManagementServiceConfig.Read.All"
+  },
+  {
+    "clientId": "ad59c412-a7a0-4845-875b-a584350954bc",
+    "consentType": "Principal",
+    "id": "EsRZraCnRUiHW6WENQlUvPdddDeXUvVJtfPT6iUgc64iXSAbrHxfSJtDEde7oWQe",
+    "principalId": "1b205d22-7cac-485f-9b43-11d7bba1641e",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read openid profile offline_access"
+  },
+  {
+    "clientId": "e8d01662-fdee-40d9-829c-1360af88defb",
+    "consentType": "AllPrincipals",
+    "id": "YhbQ6O792UCCnBNgr4je-_dddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "Chat.Read Mail.Read DeviceManagementRBAC.Read.All DeviceManagementServiceConfig.Read.All MailboxSettings.ReadWrite Notes.ReadWrite.All Reports.Read.All Sites.ReadWrite.All User.Read User.ReadWrite User.ReadBasic.All User.ReadWrite.All Group.ReadWrite.All Mail.ReadWrite Calendars.ReadWrite Contacts.ReadWrite Files.ReadWrite.All openid profile IdentityRiskEvent.Read.All People.Read Place.Read Presence.Read Presence.Read.All PrintJob.ReadBasic Chat.ReadBasic Tasks.ReadWrite PrinterShare.ReadBasic.All PrintJob.Create"
+  },
+  {
+    "clientId": "e8d01662-fdee-40d9-829c-1360af88defb",
+    "consentType": "Principal",
+    "id": "YhbQ6O792UCCnBNgr4je-_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " openid profile User.Read offline_access DeviceManagementManagedDevices.Read.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementConfiguration.Read.All Group.Read.All Device.Read.All Group.ReadWrite.All DeviceManagementApps.Read.All DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All Policy.Read.All DeviceManagementServiceConfig.Read.All Directory.Read.All DeviceManagementManagedDevices.PrivilegedOperations.All Mail.Send"
+  },
+  {
+    "clientId": "4d71a1f8-c1bd-4553-9980-eb7c9ac004a7",
+    "consentType": "Principal",
+    "id": "-KFxTb3BU0WZgOt8msAEp_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " offline_access openid EWS.AccessAsUser.All"
+  },
+  {
+    "clientId": "220dc19a-da20-43dd-8828-166d3d21a48e",
+    "consentType": "Principal",
+    "id": "msENIiDa3UOIKBZtPSGkjvdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " openid profile"
+  },
+  {
+    "clientId": "348579d5-9be2-4e90-a99b-8925f453cc64",
+    "consentType": "AllPrincipals",
+    "id": "1XmFNOKbkE6pm4kl9FPMZPdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read"
+  },
+  {
+    "clientId": "75acb690-952c-42de-b975-385091a4a8b4",
+    "consentType": "AllPrincipals",
+    "id": "kLasdSyV3kK5dThQkaSotPdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read"
+  },
+  {
+    "clientId": "75acb690-952c-42de-b975-385091a4a8b4",
+    "consentType": "Principal",
+    "id": "kLasdSyV3kK5dThQkaSotPdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.ReadBasic.All offline_access openid profile"
+  },
+  {
+    "clientId": "819ccaa0-72a0-4ac6-9d7a-fe3ca3a5a85b",
+    "consentType": "Principal",
+    "id": "oMqcgaByxkqdev48o6WoW_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " openid profile email"
+  },
+  {
+    "clientId": "0ae18fe1-f504-437b-b825-e3355135c4a3",
+    "consentType": "AllPrincipals",
+    "id": "4Y_hCgT1e0O4JeM1UTXEo_dddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "DeviceManagementConfiguration.Read.All DeviceManagementApps.Read.All DeviceManagementManagedDevices.Read.All Device.Read User.Read Group.Read.All Directory.Read.All Directory.ReadWrite.All"
+  },
+  {
+    "clientId": "0ae18fe1-f504-437b-b825-e3355135c4a3",
+    "consentType": "Principal",
+    "id": "4Y_hCgT1e0O4JeM1UTXEo_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " openid profile offline_access"
+  },
+  {
+    "clientId": "8db84f71-a6e8-4580-8787-4844187c51d8",
+    "consentType": "AllPrincipals",
+    "id": "cU-4jeimgEWHh0hEGHxR2PdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "Mail.ReadWrite User.Read"
+  },
+  {
+    "clientId": "8db84f71-a6e8-4580-8787-4844187c51d8",
+    "consentType": "Principal",
+    "id": "cU-4jeimgEWHh0hEGHxR2PdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read"
+  },
+  {
+    "clientId": "29392785-b288-4d66-ab34-40aa8c722b3d",
+    "consentType": "Principal",
+    "id": "hSc5KYiyZk2rNECqjHIrPfdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " openid offline_access profile User.Read User.ReadBasic.All"
+  },
+  {
+    "clientId": "1c4210af-c020-4f23-b469-e6aa7745399c",
+    "consentType": "Principal",
+    "id": "rxBCHCDAI0-0aeaqd0U5nPdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read offline_access"
+  },
+  {
+    "clientId": "465e6d0c-f8fa-4258-8c02-2e61b86a04e1",
+    "consentType": "AllPrincipals",
+    "id": "DG1eRvr4WEKMAi5huGoE4fdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "openid profile User.Read"
+  },
+  {
+    "clientId": "ab95702d-d534-4d81-b6ae-32696d0e821e",
+    "consentType": "AllPrincipals",
+    "id": "LXCVqzTVgU22rjJpbQ6CHvdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "DeviceManagementApps.ReadWrite.All DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementManagedDevices.ReadWrite.All Group.ReadWrite.All User.Read"
+  },
+  {
+    "clientId": "7a8dd21c-4647-440d-ab6f-b9a9a9cfcc13",
+    "consentType": "AllPrincipals",
+    "id": "HNKNekdGDUSrb7mpqc_ME_dddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "DeviceManagementApps.ReadWrite.All Organization.Read.All User.Read"
+  },
+  {
+    "clientId": "7a8dd21c-4647-440d-ab6f-b9a9a9cfcc13",
+    "consentType": "Principal",
+    "id": "HNKNekdGDUSrb7mpqc_ME_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read Organization.Read.All openid profile offline_access"
+  },
+  {
+    "clientId": "c864cd3f-38bc-4408-89e6-ccfd22614af7",
+    "consentType": "Principal",
+    "id": "P81kyLw4CESJ5sz9ImFK9_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " openid offline_access profile User.Read"
+  },
+  {
+    "clientId": "b8f491e2-acdd-4e29-8ec6-07b3801ad67b",
+    "consentType": "Principal",
+    "id": "4pH0uN2sKU6OxgezgBrWe_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read openid profile offline_access DeviceManagementManagedDevices.Read.All DeviceManagementConfiguration.Read.All DeviceManagementApps.Read.All DeviceManagementServiceConfig.Read.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All"
+  },
+  {
+    "clientId": "2541ae95-a477-48d4-8a0a-1a85d2b14db9",
+    "consentType": "AllPrincipals",
+    "id": "la5BJXek1EiKChqF0rFNuZWVkRh73hNLk9Z8LfYbWI8",
+    "principalId": null,
+    "resourceId": "18919595-de7b-4b13-93d6-7c2df61b588f",
+    "scope": "user_impersonation"
+  },
+  {
+    "clientId": "2541ae95-a477-48d4-8a0a-1a85d2b14db9",
+    "consentType": "Principal",
+    "id": "la5BJXek1EiKChqF0rFNuZWVkRh73hNLk9Z8LfYbWI-EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "18919595-de7b-4b13-93d6-7c2df61b588f",
+    "scope": " user_impersonation"
+  },
+  {
+    "clientId": "2541ae95-a477-48d4-8a0a-1a85d2b14db9",
+    "consentType": "Principal",
+    "id": "la5BJXek1EiKChqF0rFNuZWVkRh73hNLk9Z8LfYbWI_fuHaue-ElRLRN21oz8BBV",
+    "principalId": "ae76b8df-e17b-4425-b44d-db5a33f01055",
+    "resourceId": "18919595-de7b-4b13-93d6-7c2df61b588f",
+    "scope": " user_impersonation"
+  },
+  {
+    "clientId": "2541ae95-a477-48d4-8a0a-1a85d2b14db9",
+    "consentType": "AllPrincipals",
+    "id": "la5BJXek1EiKChqF0rFNufdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "BitlockerKey.ReadBasic.All SecurityActions.Read.All SecurityAlert.Read.All SecurityIncident.Read.All ThreatIndicators.Read.All User.Read Application.Read.All Policy.Read.All Organization.Read.All Agreement.Read.All DeviceLocalCredential.Read.All ThreatIndicators.ReadWrite.OwnedBy ChannelMessage.Send"
+  },
+  {
+    "clientId": "2541ae95-a477-48d4-8a0a-1a85d2b14db9",
+    "consentType": "Principal",
+    "id": "la5BJXek1EiKChqF0rFNufdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementServiceConfig.ReadWrite.All DeviceManagementRBAC.ReadWrite.All Directory.Read.All Group.ReadWrite.All SecurityEvents.Read.All Mail.Send ChannelMessage.Send openid profile offline_access SecurityAlert.Read.All SecurityIncident.Read.All SecurityActions.Read.All ThreatIndicators.ReadWrite.OwnedBy DeviceManagementManagedDevices.PrivilegedOperations.All DeviceLocalCredential.Read.All Application.ReadWrite.All AppRoleAssignment.ReadWrite.All DeviceManagementScripts.Read.All"
+  },
+  {
+    "clientId": "2541ae95-a477-48d4-8a0a-1a85d2b14db9",
+    "consentType": "Principal",
+    "id": "la5BJXek1EiKChqF0rFNufdddDeXUvVJtfPT6iUgc67fuHaue-ElRLRN21oz8BBV",
+    "principalId": "ae76b8df-e17b-4425-b44d-db5a33f01055",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementServiceConfig.ReadWrite.All DeviceManagementRBAC.ReadWrite.All Directory.Read.All Group.ReadWrite.All SecurityEvents.Read.All Mail.Send ChannelMessage.Send openid profile offline_access SecurityAlert.Read.All SecurityIncident.Read.All SecurityActions.Read.All ThreatIndicators.ReadWrite.OwnedBy"
+  },
+  {
+    "clientId": "e2178eed-0f7e-449d-b3c2-8e3e886334c4",
+    "consentType": "AllPrincipals",
+    "id": "7Y4X4n4PnUSzwo4-iGM0xPdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "Organization.Read.All User.Read User.ReadBasic.All"
+  },
+  {
+    "clientId": "e2178eed-0f7e-449d-b3c2-8e3e886334c4",
+    "consentType": "Principal",
+    "id": "7Y4X4n4PnUSzwo4-iGM0xPdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " openid profile offline_access User.Read.All User.Read RoleAssignmentSchedule.ReadWrite.Directory Policy.ReadWrite.ConditionalAccess Policy.Read.All Organization.ReadWrite.All Group.ReadWrite.All Domain.ReadWrite.All Directory.Read.All DeviceManagementServiceConfig.ReadWrite.All DeviceManagementRBAC.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementApps.ReadWrite.All CloudPC.ReadWrite.All"
+  },
+  {
+    "clientId": "5f28d0bc-b2be-4934-90b6-6f1730b9d8e4",
+    "consentType": "AllPrincipals",
+    "id": "vNAoX76yNEmQtm8XMLnY5JWVkRh73hNLk9Z8LfYbWI8",
+    "principalId": null,
+    "resourceId": "18919595-de7b-4b13-93d6-7c2df61b588f",
+    "scope": " user_impersonation"
+  },
+  {
+    "clientId": "5f28d0bc-b2be-4934-90b6-6f1730b9d8e4",
+    "consentType": "Principal",
+    "id": "vNAoX76yNEmQtm8XMLnY5JWVkRh73hNLk9Z8LfYbWI-EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "18919595-de7b-4b13-93d6-7c2df61b588f",
+    "scope": " user_impersonation"
+  },
+  {
+    "clientId": "5f28d0bc-b2be-4934-90b6-6f1730b9d8e4",
+    "consentType": "Principal",
+    "id": "vNAoX76yNEmQtm8XMLnY5JWVkRh73hNLk9Z8LfYbWI_fuHaue-ElRLRN21oz8BBV",
+    "principalId": "ae76b8df-e17b-4425-b44d-db5a33f01055",
+    "resourceId": "18919595-de7b-4b13-93d6-7c2df61b588f",
+    "scope": " user_impersonation"
+  },
+  {
+    "clientId": "5f28d0bc-b2be-4934-90b6-6f1730b9d8e4",
+    "consentType": "AllPrincipals",
+    "id": "vNAoX76yNEmQtm8XMLnY5PdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read User.ReadBasic.All DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementServiceConfig.ReadWrite.All DeviceManagementRBAC.ReadWrite.All Directory.Read.All Group.ReadWrite.All SecurityEvents.Read.All SecurityAlert.Read.All SecurityIncident.Read.All SecurityActions.Read.All ThreatIndicators.ReadWrite.OwnedBy Mail.Send ChannelMessage.Send openid profile offline_access DeviceManagementManagedDevices.PrivilegedOperations.All"
+  },
+  {
+    "clientId": "5f28d0bc-b2be-4934-90b6-6f1730b9d8e4",
+    "consentType": "Principal",
+    "id": "vNAoX76yNEmQtm8XMLnY5PdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementServiceConfig.ReadWrite.All DeviceManagementRBAC.ReadWrite.All Directory.Read.All Group.ReadWrite.All SecurityEvents.Read.All Mail.Send ChannelMessage.Send openid profile offline_access SecurityAlert.Read.All SecurityIncident.Read.All SecurityActions.Read.All ThreatIndicators.ReadWrite.OwnedBy DeviceManagementManagedDevices.PrivilegedOperations.All"
+  },
+  {
+    "clientId": "5f28d0bc-b2be-4934-90b6-6f1730b9d8e4",
+    "consentType": "Principal",
+    "id": "vNAoX76yNEmQtm8XMLnY5PdddDeXUvVJtfPT6iUgc67fuHaue-ElRLRN21oz8BBV",
+    "principalId": "ae76b8df-e17b-4425-b44d-db5a33f01055",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementServiceConfig.ReadWrite.All DeviceManagementRBAC.ReadWrite.All Directory.Read.All Group.ReadWrite.All SecurityEvents.Read.All Mail.Send ChannelMessage.Send openid profile offline_access"
+  },
+  {
+    "clientId": "a17a7c29-7cca-4eb4-955a-6fab93e4a89a",
+    "consentType": "Principal",
+    "id": "KXx6ocp8tE6VWm-rk-SomvdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read"
+  },
+  {
+    "clientId": "33b04d97-941f-4bed-a010-684ed3c0effa",
+    "consentType": "AllPrincipals",
+    "id": "l02wMx-U7UugEGhO08Dv-vdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read"
+  },
+  {
+    "clientId": "5a24bf61-deb4-40c3-a6ad-de2bc4a61846",
+    "consentType": "Principal",
+    "id": "Yb8kWrTew0Cmrd4rxKYYRvdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " openid profile offline_access email"
+  },
+  {
+    "clientId": "6ebb9843-0a66-414f-a8b5-eba998946ac7",
+    "consentType": "Principal",
+    "id": "Q5i7bmYKT0GoteupmJRqx5WVkRh73hNLk9Z8LfYbWI-EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "18919595-de7b-4b13-93d6-7c2df61b588f",
+    "scope": " user_impersonation"
+  },
+  {
+    "clientId": "6ebb9843-0a66-414f-a8b5-eba998946ac7",
+    "consentType": "Principal",
+    "id": "Q5i7bmYKT0GoteupmJRqx5WVkRh73hNLk9Z8LfYbWI_fuHaue-ElRLRN21oz8BBV",
+    "principalId": "ae76b8df-e17b-4425-b44d-db5a33f01055",
+    "resourceId": "18919595-de7b-4b13-93d6-7c2df61b588f",
+    "scope": " user_impersonation"
+  },
+  {
+    "clientId": "6ebb9843-0a66-414f-a8b5-eba998946ac7",
+    "consentType": "AllPrincipals",
+    "id": "Q5i7bmYKT0GoteupmJRqx_dddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementServiceConfig.ReadWrite.All DeviceManagementRBAC.ReadWrite.All DeviceManagementScripts.Read.All Directory.Read.All Application.ReadWrite.All AppRoleAssignment.ReadWrite.All Group.ReadWrite.All SecurityEvents.Read.All SecurityAlert.Read.All SecurityIncident.Read.All SecurityActions.Read.All ThreatIndicators.ReadWrite.OwnedBy Mail.Send ChannelMessage.Send DeviceLocalCredential.Read.All Organization.Read.All Policy.Read.All BitlockerKey.ReadBasic.All Agreement.Read.All ThreatIndicators.Read.All"
+  },
+  {
+    "clientId": "6ebb9843-0a66-414f-a8b5-eba998946ac7",
+    "consentType": "Principal",
+    "id": "Q5i7bmYKT0GoteupmJRqx_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementServiceConfig.ReadWrite.All DeviceManagementRBAC.ReadWrite.All DeviceManagementScripts.Read.All Directory.Read.All Application.ReadWrite.All AppRoleAssignment.ReadWrite.All Group.ReadWrite.All SecurityEvents.Read.All SecurityAlert.Read.All SecurityIncident.Read.All SecurityActions.Read.All ThreatIndicators.ReadWrite.OwnedBy Mail.Send ChannelMessage.Send DeviceLocalCredential.Read.All openid profile offline_access"
+  },
+  {
+    "clientId": "6ebb9843-0a66-414f-a8b5-eba998946ac7",
+    "consentType": "Principal",
+    "id": "Q5i7bmYKT0GoteupmJRqx_dddDeXUvVJtfPT6iUgc67fuHaue-ElRLRN21oz8BBV",
+    "principalId": "ae76b8df-e17b-4425-b44d-db5a33f01055",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementServiceConfig.ReadWrite.All DeviceManagementRBAC.ReadWrite.All DeviceManagementScripts.Read.All Directory.Read.All Application.ReadWrite.All AppRoleAssignment.ReadWrite.All Group.ReadWrite.All SecurityEvents.Read.All SecurityAlert.Read.All SecurityIncident.Read.All SecurityActions.Read.All ThreatIndicators.ReadWrite.OwnedBy Mail.Send ChannelMessage.Send DeviceLocalCredential.Read.All openid profile offline_access"
+  },
+  {
+    "clientId": "744a5a51-b761-4d77-94fb-502cb12d11e0",
+    "consentType": "AllPrincipals",
+    "id": "UVpKdGG3d02U-1AssS0R4PdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read User.ReadBasic.All profile"
+  },
+  {
+    "clientId": "e33b4e75-0cd7-4d92-a10c-ce41bbd259ef",
+    "consentType": "Principal",
+    "id": "dU4749cMkk2hDM5Bu9JZ7_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " openid email profile User.Read"
+  },
+  {
+    "clientId": "e6b3e2c0-6c3a-483a-80e5-00309b469fbc",
+    "consentType": "AllPrincipals",
+    "id": "wOKz5jpsOkiA5QAwm0afvPdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "Application.Read.All openid"
+  },
+  {
+    "clientId": "e6b3e2c0-6c3a-483a-80e5-00309b469fbc",
+    "consentType": "Principal",
+    "id": "wOKz5jpsOkiA5QAwm0afvPdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read.All Directory.Read.All Policy.Read.All RoleManagement.Read.All Application.Read.All Organization.Read.All UserAuthenticationMethod.Read.All Policy.Read.ConditionalAccess AuditLog.Read.All openid profile offline_access SecurityEvents.Read.All"
+  },
+  {
+    "clientId": "16efed81-f236-43d6-a293-65c225f8dac9",
+    "consentType": "AllPrincipals",
+    "id": "ge3vFjby1kOik2XCJfjayfdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read openid profile email"
+  },
+  {
+    "clientId": "16efed81-f236-43d6-a293-65c225f8dac9",
+    "consentType": "Principal",
+    "id": "ge3vFjby1kOik2XCJfjayfdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read openid profile email offline_access"
+  },
+  {
+    "clientId": "16efed81-f236-43d6-a293-65c225f8dac9",
+    "consentType": "AllPrincipals",
+    "id": "ge3vFjby1kOik2XCJfjaybnNWBH0lVhNnCEPwPjFQtQ",
+    "principalId": null,
+    "resourceId": "1158cdb9-95f4-4d58-9c21-0fc0f8c542d4",
+    "scope": "access_as_user"
+  },
+  {
+    "clientId": "ae747da8-5ecf-4eb1-9e09-31a03ffa2940",
+    "consentType": "AllPrincipals",
+    "id": "qH10rs9esU6eCTGgP_opQPdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read User.ReadBasic.All profile"
+  },
+  {
+    "clientId": "4b3b368c-4c49-4b53-aea7-57af57d354df",
+    "consentType": "Principal",
+    "id": "jDY7S0lMU0uup1evV9NU3_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read openid profile email offline_access DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All Directory.Read.All"
+  },
+  {
+    "clientId": "9009eea5-ff57-4d1e-ab37-e6244b7da6cb",
+    "consentType": "AllPrincipals",
+    "id": "pe4JkFf_Hk2rN-YkS32my_dddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read ChatMessage.Send Chat.ReadWrite offline_access"
+  },
+  {
+    "clientId": "9009eea5-ff57-4d1e-ab37-e6244b7da6cb",
+    "consentType": "Principal",
+    "id": "pe4JkFf_Hk2rN-YkS32my_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " openid offline_access User.ReadWrite.All Group.ReadWrite.All Chat.ReadWrite ChannelMessage.Read.All"
+  },
+  {
+    "clientId": "d13f97b4-8b5f-4a1e-b8c9-cf9e5d95e29f",
+    "consentType": "AllPrincipals",
+    "id": "tJc_0V-LHkq4yc-eXZXin_dddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read Mail.Read Mail.Send Mail.ReadWrite Calendars.Read Calendars.ReadWrite Contacts.Read Tasks.ReadWrite Files.Read.All Sites.Read.All Chat.Read DeviceManagementManagedDevices.Read.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementApps.Read.All DeviceManagementApps.ReadWrite.All DeviceManagementServiceConfig.Read.All DeviceManagementServiceConfig.ReadWrite.All Group.Read.All Directory.AccessAsUser.All Domain.Read.All email Group.ReadWrite.All Mail.Read.Shared MailboxSettings.Read offline_access openid People.Read profile ServiceHealth.Read.All ServiceMessage.Read.All Tasks.Read TeamsTab.ReadWrite.All User.Read.All User.ReadBasic.All User.ReadWrite User.ReadWrite.All"
+  },
+  {
+    "clientId": "d13f97b4-8b5f-4a1e-b8c9-cf9e5d95e29f",
+    "consentType": "Principal",
+    "id": "tJc_0V-LHkq4yc-eXZXin_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read openid profile email offline_access Calendars.Read Calendars.ReadWrite Mail.Read MailboxSettings.Read ServiceHealth.Read.All ServiceMessage.Read.All Files.Read.All Files.ReadWrite.All Sites.Read.All Sites.ReadWrite.All User.ReadBasic.All Team.ReadBasic.All Channel.ReadBasic.All Tasks.Read Tasks.ReadWrite"
+  },
+  {
+    "clientId": "d13f97b4-8b5f-4a1e-b8c9-cf9e5d95e29f",
+    "consentType": "AllPrincipals",
+    "id": "tJc_0V-LHkq4yc-eXZXinwDSadmkyqNBjzE3f99yWac",
+    "principalId": null,
+    "resourceId": "d969d200-caa4-41a3-8f31-377fdf7259a7",
+    "scope": "user_impersonation"
+  },
+  {
+    "clientId": "f533e95c-ddfc-4400-8d33-59cf5f7c05de",
+    "consentType": "AllPrincipals",
+    "id": "XOkz9fzdAESNM1nPX3wF3vdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "DeviceManagementManagedDevices.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementApps.Read.All DeviceManagementApps.ReadWrite.All DeviceManagementServiceConfig.Read.All Mail.Send User.Read offline_access openid profile AuditLog.Read.All DeviceManagementConfiguration.Read.All DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementManagedDevices.Read.All DeviceManagementRBAC.Read.All"
+  },
+  {
+    "clientId": "f533e95c-ddfc-4400-8d33-59cf5f7c05de",
+    "consentType": "Principal",
+    "id": "XOkz9fzdAESNM1nPX3wF3vdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " DeviceManagementApps.Read.All DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.Read.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementManagedDevices.Read.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementRBAC.Read.All DeviceManagementServiceConfig.Read.All Mail.Send User.Read offline_access openid profile"
+  },
+  {
+    "clientId": "59be90fc-c795-438a-85a6-932797d2a39f",
+    "consentType": "Principal",
+    "id": "_JC-WZXHikOFppMnl9Kjn_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " openid profile email offline_access User.Read Calendars.Read Calendars.ReadWrite Mail.Read Mail.Send Mail.ReadWrite MailboxSettings.Read Contacts.Read ServiceHealth.Read.All ServiceMessage.Read.All Files.Read.All Files.ReadWrite.All Sites.Read.All Sites.ReadWrite.All User.ReadBasic.All Team.ReadBasic.All Channel.ReadBasic.All Chat.Read Tasks.Read Tasks.ReadWrite DeviceManagementManagedDevices.Read.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementConfiguration.Read.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementApps.Read.All DeviceManagementApps.ReadWrite.All DeviceManagementServiceConfig.Read.All DeviceManagementServiceConfig.ReadWrite.All DeviceManagementRBAC.Read.All Group.Read.All Device.Read.All Mail.Read.Shared Mail.ReadWrite.Shared Mail.Send.Shared"
+  },
+  {
+    "clientId": "59be90fc-c795-438a-85a6-932797d2a39f",
+    "consentType": "Principal",
+    "id": "_JC-WZXHikOFppMnl9KjnwDSadmkyqNBjzE3f99yWaeEC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "d969d200-caa4-41a3-8f31-377fdf7259a7",
+    "scope": " user_impersonation"
+  },
+  {
+    "clientId": "21421628-962c-4a14-b449-55a8a1fc9eaa",
+    "consentType": "AllPrincipals",
+    "id": "KBZCISyWFEq0SVWoofyeqvdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "AuditLog.Read.All DeviceManagementManagedDevices.Read.All Directory.Read.All IdentityRiskyUser.Read.All Policy.Read.All SecurityEvents.Read.All User.Read"
+  },
+  {
+    "clientId": "21421628-962c-4a14-b449-55a8a1fc9eaa",
+    "consentType": "Principal",
+    "id": "KBZCISyWFEq0SVWoofyeqvdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " openid profile offline_access User.Read Directory.Read.All DeviceManagementManagedDevices.Read.All IdentityRiskyUser.Read.All AuditLog.Read.All Policy.Read.All SecurityEvents.Read.All Organization.Read.All Group.Read.All RoleManagement.Read.Directory SharePointTenantSettings.Read.All"
+  },
+  {
+    "clientId": "3ab7b14d-ae61-4568-8896-1c014c03ba1d",
+    "consentType": "AllPrincipals",
+    "id": "TbG3OmGuaEWIlhwBTAO6HfdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read"
+  },
+  {
+    "clientId": "0b766ca7-6b5d-4331-a647-718562b6193d",
+    "consentType": "Principal",
+    "id": "p2x2C11rMUOmR3GFYrYZPZWVkRh73hNLk9Z8LfYbWI-EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "18919595-de7b-4b13-93d6-7c2df61b588f",
+    "scope": " user_impersonation"
+  },
+  {
+    "clientId": "0b766ca7-6b5d-4331-a647-718562b6193d",
+    "consentType": "Principal",
+    "id": "p2x2C11rMUOmR3GFYrYZPfdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read Directory.Read.All Organization.Read.All Group.Read.All DeviceManagementManagedDevices.Read.All DeviceManagementConfiguration.Read.All DeviceManagementApps.Read.All DeviceManagementServiceConfig.Read.All IdentityRiskyUser.Read.All AuditLog.Read.All Policy.Read.All SecurityEvents.Read.All RoleManagement.Read.Directory SharePointTenantSettings.Read.All openid profile offline_access DeviceManagementRBAC.Read.All RoleManagement.Read.All RoleManagementPolicy.Read.Directory Reports.Read.All DelegatedAdminRelationship.Read.All CrossTenantInformation.ReadBasic.All"
+  },
+  {
+    "clientId": "04742be1-202e-4ea5-b092-2ed818e1291a",
+    "consentType": "AllPrincipals",
+    "id": "4St0BC4gpU6wki7YGOEpGvdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "profile Calendars.Read.Shared openid Calendars.Read Mail.Read Files.ReadWrite Mail.Read.Shared Files.ReadWrite.All MailboxSettings.Read User.Read"
+  },
+  {
+    "clientId": "c336d8c8-95ea-4e30-8a84-54d772b78826",
+    "consentType": "AllPrincipals",
+    "id": "yNg2w-qVME6KhFTXcreIJvdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read openid profile email offline_access"
+  },
+  {
+    "clientId": "755bdcf0-0e5c-48ca-a5e1-da68b934d3af",
+    "consentType": "AllPrincipals",
+    "id": "8NxbdVwOykil4dpouTTTr_dddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "ChannelMessage.Read.All User.Read"
+  },
+  {
+    "clientId": "755bdcf0-0e5c-48ca-a5e1-da68b934d3af",
+    "consentType": "Principal",
+    "id": "8NxbdVwOykil4dpouTTTr_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " openid offline_access User.ReadWrite.All Group.ReadWrite.All Chat.ReadWrite ChannelMessage.Read.All"
+  },
+  {
+    "clientId": "83d3b8a0-4fa3-426b-82af-92e45801c134",
+    "consentType": "AllPrincipals",
+    "id": "oLjTg6NPa0KCr5LkWAHBNPdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.Read.All Directory.Read.All Application.ReadWrite.All openid profile email offline_access DeviceManagementServiceConfig.Read.All DeviceManagementScripts.Read.All ThreatHunting.Read.All Group.Read.All Group.ReadWrite.All User.ReadWrite.All AppRoleAssignment.ReadWrite.All CloudPC.ReadWrite.All DeviceManagementServiceConfig.ReadWrite.All Policy.Read.All Policy.ReadWrite.ConditionalAccess User.Read.All"
+  },
+  {
+    "clientId": "83d3b8a0-4fa3-426b-82af-92e45801c134",
+    "consentType": "Principal",
+    "id": "oLjTg6NPa0KCr5LkWAHBNPdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+    "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": " User.Read openid profile email offline_access DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.Read.All Directory.Read.All Application.ReadWrite.All"
+  },
+  {
+    "clientId": "56f046c8-2e44-4f7b-b599-e1c5f3b77714",
+    "consentType": "AllPrincipals",
+    "id": "yEbwVkQue0-1meHF87d3FPdddDeXUvVJtfPT6iUgc64",
+    "principalId": null,
+    "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+    "scope": "User.Read openid profile email offline_access DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.Read.All Directory.Read.All Application.ReadWrite.All Group.Read.All AppRoleAssignment.ReadWrite.All Group.ReadWrite.All DeviceManagementServiceConfig.Read.All DeviceManagementScripts.Read.All ThreatHunting.Read.All User.ReadWrite.All"
+  }
+]

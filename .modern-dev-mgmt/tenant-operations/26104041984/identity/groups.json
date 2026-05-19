@@ -1,0 +1,883 @@
+[
+  {
+    "id": "01bb9933-8755-46fe-a2ef-1f66a4f1aa47",
+    "displayName": "Google Chrome_OnDemand",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-10-24T08:51:02Z"
+  },
+  {
+    "id": "025aaafa-77e2-421b-983e-0f4f508cfa19",
+    "displayName": "All_Devices_Custom-user",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-30T18:48:13Z"
+  },
+  {
+    "id": "035c1acb-a187-483b-88f9-a1d19df5ca72",
+    "displayName": "All-Users - Wave 2",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-23T09:13:48Z"
+  },
+  {
+    "id": "08d0d078-0752-4106-a75e-6cd9ee51acb8",
+    "displayName": "Exclude_Block_Legacy_Authenticatie",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-07-26T17:17:09Z"
+  },
+  {
+    "id": "08fec63d-d02e-47a5-8df7-04aa2a645425",
+    "displayName": "All_Licenses_E5 - Wave 2",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-09T07:38:09Z"
+  },
+  {
+    "id": "1419287d-7aa8-4024-9c0d-fcda4812a973",
+    "displayName": "APP-Greenshot-Available",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2024-10-12T07:30:40Z"
+  },
+  {
+    "id": "153bc38e-82c4-425f-af1e-672f5c84e042",
+    "displayName": "Windows_All_Devices_Microsoft Corporation",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-08-27T15:22:13Z"
+  },
+  {
+    "id": "1774c9f9-0868-4abe-a174-8866525d6fc9",
+    "displayName": "All Company-device-user",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-30T18:54:42Z"
+  },
+  {
+    "id": "1e26c223-796b-4e5c-a050-f04fce7067b6",
+    "displayName": "Android_All_Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.deviceOSType -eq \"AndroidEnterprise\")",
+    "createdDateTime": "2022-07-26T17:35:59Z"
+  },
+  {
+    "id": "269152eb-de26-4be1-a14c-3f98e2af35c6",
+    "displayName": "All_Licenses_E5 - Wave 3",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-28T18:44:12Z"
+  },
+  {
+    "id": "28a142fb-5b66-4593-9639-f5ee35125d15",
+    "displayName": "Windows_All_Devices - Wave 1",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-23T09:13:30Z"
+  },
+  {
+    "id": "2a4a3066-43cf-427a-8d56-81ef0e7c1448",
+    "displayName": "Windows11_All_Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.deviceOSVersion -startsWith \"10.0.2\")",
+    "createdDateTime": "2022-07-27T07:10:48Z"
+  },
+  {
+    "id": "2d62c320-0471-4c4a-b009-e423e0dc284d",
+    "displayName": "All-Users",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(user.surname -ne \" 0\")",
+    "createdDateTime": "2022-07-27T17:05:56Z"
+  },
+  {
+    "id": "2f88fe69-fec7-4fac-a0a0-34781bf22e35",
+    "displayName": "Windows_All_Devices - Wave 1",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-23T09:13:38Z"
+  },
+  {
+    "id": "31056128-3936-4cff-9069-b789748571f2",
+    "displayName": "Patch-my-pc_OnDemand",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-06-27T14:54:07Z"
+  },
+  {
+    "id": "3499203c-be92-4064-ba24-1d168f864b47",
+    "displayName": "Windows_Autopilot_Standard_static",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-07-27T05:51:44Z"
+  },
+  {
+    "id": "36d198fa-9151-43ac-aef6-7188cccd2b98",
+    "displayName": "Windows_Autopilot_Standard_dyn",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.devicePhysicalIds -any _ -eq \"[OrderID]:Standard_Profile\")",
+    "createdDateTime": "2022-07-27T05:51:03Z"
+  },
+  {
+    "id": "36f978fe-fded-4b66-ae64-e80a9d3db553",
+    "displayName": "All_Devices_Custom - Wave 2",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-08T04:24:20Z"
+  },
+  {
+    "id": "371038f5-2867-4c8a-940a-f51112271212",
+    "displayName": "Windows_All_Devices - Wave 3",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-23T09:13:32Z"
+  },
+  {
+    "id": "44827e3e-4853-4903-a663-f7bb8f131582",
+    "displayName": "All_Devices_Custom - Wave 3",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-08T04:24:21Z"
+  },
+  {
+    "id": "44a33923-ceeb-41a4-85a2-1c5e1898e55c",
+    "displayName": "All_Administrator-device",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-28T05:34:14Z"
+  },
+  {
+    "id": "45885005-f0c7-4349-a8e8-f79c99eac6e5",
+    "displayName": "Robopack-GoogleChrome-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-11-04T06:02:15Z"
+  },
+  {
+    "id": "48af6afa-966e-4502-bc0f-57ef7f29a7f6",
+    "displayName": "All Company",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-05-17T18:15:18Z"
+  },
+  {
+    "id": "49f6160e-edf0-4dff-b3fb-70492df20d7c",
+    "displayName": "All_Devices_Custom - Wave 1",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-08T04:24:19Z"
+  },
+  {
+    "id": "4a58b157-d6bf-499e-8ca0-e5db1bce9b4a",
+    "displayName": "Test_DistributionGroup",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-10-27T18:40:31Z"
+  },
+  {
+    "id": "4b2e00f1-904b-4067-a459-1369adab75d2",
+    "displayName": "All Company-device",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-30T18:33:54Z"
+  },
+  {
+    "id": "4c4253ea-8827-4698-92e4-eaa60720b6e3",
+    "displayName": "Exclude_Require_MAM_Approved_app_Onlyexchange",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-07-26T17:17:07Z"
+  },
+  {
+    "id": "4d24546b-7504-4fbf-b591-0e553b4d1c82",
+    "displayName": "Exclude_Require_MDM_Managed_devices_mobile_access",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-07-26T17:17:05Z"
+  },
+  {
+    "id": "5532256c-0c4b-4f9b-b016-7aa7ece2f822",
+    "displayName": "Robopack-Greenshot-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2024-10-12T07:30:41Z"
+  },
+  {
+    "id": "569bb557-eba9-4c47-89ab-34d0c078f4f1",
+    "displayName": "APP-Snagit2025-Available",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-19T09:11:26Z"
+  },
+  {
+    "id": "56f9f04b-50bf-49ee-9f1f-d9e7fc59f722",
+    "displayName": "Microsoft Teams_OnDemand",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-06-27T14:52:58Z"
+  },
+  {
+    "id": "59403a10-6a3a-4615-bf85-60447e01a02f",
+    "displayName": "All_Licenses_E5 - Wave 2-device",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-30T18:48:00Z"
+  },
+  {
+    "id": "5eb8869a-df45-4e9f-9947-43109e061649",
+    "displayName": "All_Licenses_E5 - Wave 3",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-19T20:58:05Z"
+  },
+  {
+    "id": "5f0bfefe-0815-4330-a788-bc9231ab9aad",
+    "displayName": "MACOS_All_Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.deviceManufacturer -eq \"Apple\")",
+    "createdDateTime": "2022-07-28T18:06:14Z"
+  },
+  {
+    "id": "5fc4497e-e5ea-42a7-9f81-bbe276f4df98",
+    "displayName": "MAA_Administrators",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-12-18T08:37:48Z"
+  },
+  {
+    "id": "60183a35-dad6-4eb7-989d-93b58ac9eb16",
+    "displayName": "Notifications",
+    "mailEnabled": true,
+    "securityEnabled": false,
+    "groupTypes": [
+      "Unified"
+    ],
+    "membershipRule": null,
+    "createdDateTime": "2024-10-13T10:39:10Z"
+  },
+  {
+    "id": "6051a4b9-73e5-42be-bade-4027c96c1870",
+    "displayName": "Visual Studio Code_OnDemand",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-06-27T14:54:44Z"
+  },
+  {
+    "id": "64628107-6e86-4e3a-b6d9-deefdd89e25d",
+    "displayName": "All_Administrator",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-07-26T15:03:53Z"
+  },
+  {
+    "id": "69130a41-67a9-402f-ac7c-c54b35005fc0",
+    "displayName": "MDM-Greenfoot-Available",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-05-13T12:44:40Z"
+  },
+  {
+    "id": "694be884-c145-4471-b8ce-3b3e83a418de",
+    "displayName": "MDM-Greenfoot-Uninstall",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-05-13T12:44:40Z"
+  },
+  {
+    "id": "6e7dbe40-b28e-4188-99b0-66cb2253ba30",
+    "displayName": "Azure ATP moderndevmgmt Administrators",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-08-16T18:28:39Z"
+  },
+  {
+    "id": "7050e427-bcb8-4444-abfb-f88aec6fdcfb",
+    "displayName": "All_Test_Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2023-07-30T14:25:28Z"
+  },
+  {
+    "id": "71ce233a-7a03-4a10-8b1e-e7e3da7c3080",
+    "displayName": "APP-GoogleChrome-Available",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-11-04T06:02:14Z"
+  },
+  {
+    "id": "775e4031-772b-4723-babf-781fb2d66331",
+    "displayName": "MDM-1Password CLI-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-05-13T12:59:36Z"
+  },
+  {
+    "id": "7d772e65-65a5-4be7-bf0b-4b729a85cd04",
+    "displayName": "Chocolatey_OnDemand",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-06-28T09:25:51Z"
+  },
+  {
+    "id": "7ed2de04-c912-46b2-b770-51e0aff9e540",
+    "displayName": "Android_All_KioskDevices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.enrollmentProfileName -match \"Android_Kiosk_EnrollmentToken\")",
+    "createdDateTime": "2022-07-27T07:10:42Z"
+  },
+  {
+    "id": "8147d441-acef-4c5d-a0e5-f49e7d16b34e",
+    "displayName": "All_HelpDeskOperators",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2023-03-04T11:58:01Z"
+  },
+  {
+    "id": "831f76e2-2de2-4852-be44-7fbae0731be0",
+    "displayName": "All_Devices_Custom - Wave 1-user",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-28T18:45:04Z"
+  },
+  {
+    "id": "85d8466c-374f-454d-886b-4d240113e943",
+    "displayName": "Robopack-Snagit2025-Uninstall",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-19T09:11:28Z"
+  },
+  {
+    "id": "8913e9df-f718-40fc-97d5-c5af3876444f",
+    "displayName": "Windows_All_Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.deviceOSType -contains \"Windows\")",
+    "createdDateTime": "2022-07-26T17:17:03Z"
+  },
+  {
+    "id": "8928b4c3-7cdc-4379-8bcf-a55c4850ea6c",
+    "displayName": "All_Users_Custom",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(user.extensionAttribute15 -notStartsWith \"nul\")",
+    "createdDateTime": "2022-07-26T17:26:44Z"
+  },
+  {
+    "id": "8996a297-3cd6-4ae6-a5a7-03556de633fe",
+    "displayName": "All-Users - Wave 3",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-23T09:13:49Z"
+  },
+  {
+    "id": "8aa66b9c-d2bb-491f-acf4-4277590265cc",
+    "displayName": "Exclude_Block_Require_trusted_countries",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-07-26T17:17:10Z"
+  },
+  {
+    "id": "8aadaec5-0179-45d3-8202-f46e780bdc38",
+    "displayName": "Windows_All_Devices - Wave 2",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-23T09:13:39Z"
+  },
+  {
+    "id": "8f25edcb-4fe9-4d85-bd16-383fe25019db",
+    "displayName": "AllMyDevices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-11-26T07:42:43Z"
+  },
+  {
+    "id": "9229b116-e380-40cc-ab52-e92360b53c49",
+    "displayName": "All_VMs",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.deviceModel -eq \"Virtual Machine\")",
+    "createdDateTime": "2024-05-12T15:43:14Z"
+  },
+  {
+    "id": "94229010-1b7c-4a86-995f-9861fb2dafd0",
+    "displayName": "Windows_Autopilot_Kiosk_dyn",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.devicePhysicalIds -any _ -eq \"[OrderID]:Kiosk_Profile\")",
+    "createdDateTime": "2022-07-27T07:22:26Z"
+  },
+  {
+    "id": "9778d485-41da-40b3-ba75-0338d3709461",
+    "displayName": "Exclude_Block_activesync",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-07-26T17:17:09Z"
+  },
+  {
+    "id": "9c7e7774-ce91-4524-ac2c-802c7cec7e19",
+    "displayName": "Cmtrace_OnDemand",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-06-27T14:55:30Z"
+  },
+  {
+    "id": "9ee8545f-c7d2-4cd5-a0e4-11b088d16555",
+    "displayName": "All_Licenses_E5 - Wave 1",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-09T07:38:09Z"
+  },
+  {
+    "id": "a5a06730-3965-46e8-9c3f-9ac6b5a2704a",
+    "displayName": "Windows_All_Devices - Wave 2",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-23T09:13:31Z"
+  },
+  {
+    "id": "a9583d43-9caa-4d28-9889-02787440cb51",
+    "displayName": "All Company-device-user",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-30T19:12:37Z"
+  },
+  {
+    "id": "ae1dd731-811f-4344-8980-37faff3d7c72",
+    "displayName": "Test123",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2023-11-11T16:26:00Z"
+  },
+  {
+    "id": "b8f76049-d667-40e5-8c8a-309059281fa7",
+    "displayName": "Robopack-Greenshot-Uninstall",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2024-10-12T07:30:41Z"
+  },
+  {
+    "id": "b9db8c06-b91b-46dd-881d-3670e586522d",
+    "displayName": "All_Licenses_E5 - Wave 2",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-28T18:44:11Z"
+  },
+  {
+    "id": "ba787d00-c06e-4389-8b37-6147cdca5d9f",
+    "displayName": "MDM-Greenfoot-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-05-13T12:44:39Z"
+  },
+  {
+    "id": "c0e99cb3-9c54-428a-8a95-f6d6d13a808b",
+    "displayName": "Windows_All_Devices - Wave 3",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-23T09:13:40Z"
+  },
+  {
+    "id": "c1714633-fb46-4d75-bc2b-cbc75d38e4a9",
+    "displayName": "All_Devices_Custom - Wave 3-user",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-30T18:47:37Z"
+  },
+  {
+    "id": "c44aabc3-8c84-43f0-8a0f-7b8137d539c4",
+    "displayName": "Exclude_Block_exchangeDownloads_Nonmanaged_devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-07-26T17:17:08Z"
+  },
+  {
+    "id": "c57705d3-43fe-4cb3-9426-a3d92f0ecc30",
+    "displayName": "All_Licenses_E5",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-07-26T15:08:44Z"
+  },
+  {
+    "id": "c77d9e7b-9837-40f4-9a58-6384f908cfe3",
+    "displayName": "Azure ATP moderndevmgmt Users",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-08-16T18:28:39Z"
+  },
+  {
+    "id": "c94f7ecc-809f-4800-b2e0-76e7704e08bf",
+    "displayName": "All_Licenses_E5 - Wave 3",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-19T13:33:14Z"
+  },
+  {
+    "id": "ca5921dc-b33c-4324-8b55-3b7eceb1db55",
+    "displayName": "All-Users - Wave 1",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-23T09:13:48Z"
+  },
+  {
+    "id": "cc1e8dc7-91bb-4647-a19f-e4d7e4b0ee54",
+    "displayName": "Greenshot_OnDemand",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-06-28T09:41:10Z"
+  },
+  {
+    "id": "ce150351-933b-4b14-b375-678680291824",
+    "displayName": "Robopack-Snagit2025-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-19T09:11:27Z"
+  },
+  {
+    "id": "cefc2e47-c41a-494f-93f8-d3b20a9e9762",
+    "displayName": "All_Licenses_E5 - Wave 1",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-19T13:33:13Z"
+  },
+  {
+    "id": "d18ce0ac-deb4-4148-840a-7668113fae4e",
+    "displayName": "All_Licenses_E5 - Wave 2",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-19T20:58:05Z"
+  },
+  {
+    "id": "d37ae30d-91e3-4b28-8ca2-7200a5c40735",
+    "displayName": "All_Prod_Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2023-07-30T14:25:39Z"
+  },
+  {
+    "id": "d798710b-6fa0-406d-a05b-474c8ef1027c",
+    "displayName": "MDM-1Password CLI-Available",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-05-13T12:59:37Z"
+  },
+  {
+    "id": "d8e0c364-592f-4ab0-ba5a-f204be5a3ac7",
+    "displayName": "Exclude_Require_MDM_Managed_devices_Windows_Mac",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-07-26T17:17:05Z"
+  },
+  {
+    "id": "d8eeba94-8503-43be-8764-85625c30b104",
+    "displayName": "All Company-device",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-30T19:51:53Z"
+  },
+  {
+    "id": "e0d0c684-bba4-4b84-98af-dceef4bb4ac5",
+    "displayName": "All_Devices_Custom",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "membershipRule": "(device.displayName -notStartsWith \"nul\")",
+    "createdDateTime": "2022-07-26T17:28:13Z"
+  },
+  {
+    "id": "e3a45b45-345e-4cc6-aaec-8a88775d4e1f",
+    "displayName": "All_Licenses_E5 - Wave 2",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-19T13:33:14Z"
+  },
+  {
+    "id": "e4aba5eb-defb-4e76-9278-d528c009f044",
+    "displayName": "All_Devices_Custom - Wave 1-user",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-28T05:33:40Z"
+  },
+  {
+    "id": "e6d02be6-4cce-4e16-a2e0-6d46c6fc3b3b",
+    "displayName": "Linux_All_Devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2023-04-16T09:28:33Z"
+  },
+  {
+    "id": "ee305b08-82ea-4a83-abe7-bac206ae1757",
+    "displayName": "All_Devices_Custom - Wave 1-user",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-28T05:33:37Z"
+  },
+  {
+    "id": "eed1c82f-32a2-4ca1-88bc-7e5b3ffd3a1f",
+    "displayName": "Exclude_Require_MAM_Approved_app_Exceptexchange",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-07-26T17:17:07Z"
+  },
+  {
+    "id": "efdb0247-cad7-4222-b7e5-a48680554150",
+    "displayName": "MDM-1Password CLI-Uninstall",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2026-05-13T12:59:37Z"
+  },
+  {
+    "id": "f00a4fca-fc7b-40ea-b984-ca7024d35461",
+    "displayName": "Azure ATP moderndevmgmt Viewers",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-08-16T18:28:39Z"
+  },
+  {
+    "id": "f15aac54-141e-4409-abfd-1e4d39e0096f",
+    "displayName": "Exclude_Require_MFA_Weblogin_Nonmanaged_devices",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2022-07-26T17:17:06Z"
+  },
+  {
+    "id": "f18b9ca4-8b5f-4bd5-a256-50b091a3f6bb",
+    "displayName": "All_Licenses_E5 - Wave 1",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-19T20:58:04Z"
+  },
+  {
+    "id": "f2c689b8-9b91-4bbb-96d1-11fcd6f6869a",
+    "displayName": "All_Licenses_E5 - Wave 1",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-07-28T18:44:11Z"
+  },
+  {
+    "id": "f470d232-6d7a-485d-b813-d81c78db3fa0",
+    "displayName": "All_Licenses_E5 - Wave 3",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-09T07:38:10Z"
+  },
+  {
+    "id": "fa228dfd-3860-4570-99be-09ccc9e6f5e6",
+    "displayName": "Robopack-MicrosoftCopilot-Compatible_X64-Required",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-08-19T09:21:46Z"
+  },
+  {
+    "id": "fb8aa91f-38fe-4e68-986e-6cc4421da925",
+    "displayName": "Robopack-GoogleChrome-Uninstall",
+    "mailEnabled": false,
+    "securityEnabled": true,
+    "groupTypes": [],
+    "membershipRule": null,
+    "createdDateTime": "2025-11-04T06:02:16Z"
+  }
+]

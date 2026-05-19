@@ -1,0 +1,16 @@
+[
+  {
+    "id": "48af6afa-966e-4502-bc0f-57ef7f29a7f6",
+    "displayName": "All Company",
+    "mail": "allcompany@ModernDevMgmt.onmicrosoft.com",
+    "visibility": "Public",
+    "createdDateTime": "2024-05-17T18:15:18Z"
+  },
+  {
+    "id": "60183a35-dad6-4eb7-989d-93b58ac9eb16",
+    "displayName": "Notifications",
+    "mail": "Notifications@ModernDevMgmt.onmicrosoft.com",
+    "visibility": "Private",
+    "createdDateTime": "2024-10-13T10:39:10Z"
+  }
+]

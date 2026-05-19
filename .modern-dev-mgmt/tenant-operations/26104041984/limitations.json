@@ -1,0 +1,22 @@
+[
+  {
+    "area": "Tenant standards writeback",
+    "reason": "This workflow captures evidence and drift inputs. Applying standards or templates should remain a separate reviewed write workflow.",
+    "followUp": "Use a future tenant-remediation workflow with explicit approvals."
+  },
+  {
+    "area": "Mail security policy writeback",
+    "reason": "Several Exchange Online Protection and Defender for Office settings require Exchange Online PowerShell or dedicated Security APIs.",
+    "followUp": "Run a separate Exchange app-only workflow after certificate-based Exchange permissions are configured."
+  },
+  {
+    "area": "OneDrive detail inventory",
+    "reason": "Tenant-wide OneDrive content and quota details require additional SharePoint/Sites permissions and should be isolated from app-packaging workflow scopes.",
+    "followUp": "Add Sites.Read.All/Sites.FullControl.All only in tenants that need SharePoint evidence."
+  },
+  {
+    "area": "External lookup tools",
+    "reason": "Breach, dark-web, GeoIP, and community-template functions need external providers. This workflow only runs Microsoft Graph and repository-backed evidence.",
+    "followUp": "Wire external providers through Modern Dev Mgmt integrations before dispatching from tenant repos."
+  }
+]

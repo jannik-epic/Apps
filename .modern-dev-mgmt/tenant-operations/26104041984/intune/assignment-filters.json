@@ -1,0 +1,380 @@
+[
+  {
+    "id": "b6c484b8-1537-491a-b0da-f2855a6bdc9f",
+    "createdDateTime": "2023-11-16T17:15:12.7207953Z",
+    "lastModifiedDateTime": "2023-11-16T17:15:12.7207953Z",
+    "displayName": "ACME Only",
+    "description": "ACME Only Devices",
+    "platform": "windows10AndLater",
+    "rule": "(device.deviceOwnership -eq \"Corporate\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "7e8959a1-14aa-418d-a851-f4c546a26666",
+    "createdDateTime": "2022-10-29T07:39:24.6687733Z",
+    "lastModifiedDateTime": "2022-10-29T07:39:24.6687733Z",
+    "displayName": "Android-CorporateDevcies",
+    "description": "",
+    "platform": "windows10AndLater",
+    "rule": "(device.deviceCategory  -eq \"Sales department\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "ad05df61-31b1-4b4e-a9cb-a242029a585f",
+    "createdDateTime": "2022-10-29T07:40:28.3844851Z",
+    "lastModifiedDateTime": "2022-10-29T07:40:28.3844851Z",
+    "displayName": "Android-CorporateDevices",
+    "description": "",
+    "platform": "androidForWork",
+    "rule": "(device.deviceOwnership -eq \"Corporate\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "0db4df88-4e67-4fb4-ab34-0dbe6f2fe594",
+    "createdDateTime": "2022-07-27T07:56:23.2256641Z",
+    "lastModifiedDateTime": "2022-07-27T07:56:23.2256641Z",
+    "displayName": "Filter_AllCloudPCs",
+    "description": "All Microsoft365 devices",
+    "platform": "windows10AndLater",
+    "rule": "(device.model -contains \"CloudPC\") or (device.model -contains \"Cloud PC\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "32d6ad75-9a6a-456d-95b2-b239451e4dd8",
+    "createdDateTime": "2022-07-27T07:56:30.6847076Z",
+    "lastModifiedDateTime": "2022-07-27T07:56:30.6847076Z",
+    "displayName": "Filter_AllCorporateDevices",
+    "description": "All corporate W10 and later devices",
+    "platform": "windows10AndLater",
+    "rule": "(device.deviceOwnership -eq \"Corporate\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "60fd76fd-1db2-4fab-9ec8-f46e07469c9d",
+    "createdDateTime": "2022-07-27T07:56:37.2629575Z",
+    "lastModifiedDateTime": "2022-07-27T07:56:37.2629575Z",
+    "displayName": "Filter_AllPersonalDevices",
+    "description": "All personal W10 and later devices",
+    "platform": "windows10AndLater",
+    "rule": "(device.deviceOwnership -eq \"Personal\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "14de8152-ad2f-4daf-98c3-fd8cd66ed94e",
+    "createdDateTime": "2022-07-27T07:56:43.8142051Z",
+    "lastModifiedDateTime": "2022-07-27T07:56:43.8142051Z",
+    "displayName": "Filter_AllSkuEducation",
+    "description": "All devices with SKU Education",
+    "platform": "windows10AndLater",
+    "rule": "(device.operatingSystemSKU  -eq \"Education\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "7dd82ccd-353c-49b4-b90f-2eb83f90e8ea",
+    "createdDateTime": "2022-07-27T07:56:50.1589165Z",
+    "lastModifiedDateTime": "2022-07-27T07:56:50.1589165Z",
+    "displayName": "Filter_AllSkuEnterprise",
+    "description": "All devices with SKU Enterprise",
+    "platform": "windows10AndLater",
+    "rule": "(device.operatingSystemSKU  -eq \"Enterprise\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "6367356c-bd65-410e-9c3f-0c2283256993",
+    "createdDateTime": "2022-07-27T07:56:56.611079Z",
+    "lastModifiedDateTime": "2022-07-27T07:56:56.611079Z",
+    "displayName": "Filter_AllSkuHolographic",
+    "description": "All devices with SKU Holographic",
+    "platform": "windows10AndLater",
+    "rule": "(device.operatingSystemSKU  -eq \"Holographic\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "72262d53-1b08-4d5a-b4c9-938291b5ba4e",
+    "createdDateTime": "2022-07-27T07:57:03.211315Z",
+    "lastModifiedDateTime": "2022-07-27T07:57:03.211315Z",
+    "displayName": "Filter_AllSkuIoTEnterprise",
+    "description": "All devices with SKU IoTEnterprise",
+    "platform": "windows10AndLater",
+    "rule": "(device.operatingSystemSKU  -eq \"IoTEnterprise\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "f5927e06-06ea-4ec6-91e3-f35b1fba3361",
+    "createdDateTime": "2022-07-27T07:57:11.8327228Z",
+    "lastModifiedDateTime": "2022-07-27T07:57:11.8327228Z",
+    "displayName": "Filter_AllSkuProfessional",
+    "description": "All devices with SKU Professional",
+    "platform": "windows10AndLater",
+    "rule": "(device.operatingSystemSKU  -eq \"Professional\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "83c1e63b-84a0-427e-9e7d-b49045df920d",
+    "createdDateTime": "2022-07-27T07:57:18.8185893Z",
+    "lastModifiedDateTime": "2022-07-27T07:57:18.8185893Z",
+    "displayName": "Filter_AllWindows10",
+    "description": "All Windows 10 devices",
+    "platform": "windows10AndLater",
+    "rule": "(device.osVersion -startsWith \"10.0.1\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "a5042169-499d-4367-a985-bd0c864745d2",
+    "createdDateTime": "2022-07-27T07:57:25.1684989Z",
+    "lastModifiedDateTime": "2022-07-27T07:57:25.1684989Z",
+    "displayName": "Filter_AllWindows11",
+    "description": "All Windows 11 devices",
+    "platform": "windows10AndLater",
+    "rule": "(device.osVersion -startsWith \"10.0.22\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "4c312009-99d2-487a-a10a-c2721fa7e1cb",
+    "createdDateTime": "2022-07-27T07:57:31.2363988Z",
+    "lastModifiedDateTime": "2022-07-27T07:57:31.2363988Z",
+    "displayName": "Filter_AllWindows8.1",
+    "description": "All Windows 8.1 devices",
+    "platform": "windows10AndLater",
+    "rule": "(device.osVersion -startsWith \"6.3\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "895af7e6-df82-4ea6-9ecf-b89c3ba0bd13",
+    "createdDateTime": "2022-07-27T07:57:42.1102201Z",
+    "lastModifiedDateTime": "2022-07-27T07:57:42.1102201Z",
+    "displayName": "Filter_CategoryHRDepartment",
+    "description": "All device with category HR department",
+    "platform": "windows10AndLater",
+    "rule": "(device.deviceCategory  -eq \"HR department\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "5601d8b4-0d4d-42d9-9fa2-bbde438a19a6",
+    "createdDateTime": "2022-07-27T07:58:01.6671415Z",
+    "lastModifiedDateTime": "2022-07-27T07:58:01.6671415Z",
+    "displayName": "Filter_CategoryPurchasingDepartment",
+    "description": "All device with category Purchasing department",
+    "platform": "windows10AndLater",
+    "rule": "(device.deviceCategory  -eq \"Purchasing department\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "13cbbdbb-d6fc-4da8-949a-4c4785fed822",
+    "createdDateTime": "2022-07-27T07:58:16.0946832Z",
+    "lastModifiedDateTime": "2022-07-27T07:58:16.0946832Z",
+    "displayName": "Filter_CategorySalesDepartment",
+    "description": "All device with category Sales department",
+    "platform": "windows10AndLater",
+    "rule": "(device.deviceCategory  -eq \"Sales department\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "72ecb8d2-3c16-40bb-bb9f-14256d2cfa65",
+    "createdDateTime": "2022-11-23T08:00:01.2684644Z",
+    "lastModifiedDateTime": "2022-11-23T08:00:01.2684644Z",
+    "displayName": "Test",
+    "description": "",
+    "platform": "windows10AndLater",
+    "rule": "(device.enrollmentProfileName -eq \" Standard_Enrollment_Profile\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "eb72d099-5f7d-496d-957f-202c6be7129a",
+    "createdDateTime": "2022-07-27T07:58:50.9794951Z",
+    "lastModifiedDateTime": "2022-07-27T07:58:50.9794951Z",
+    "displayName": "old1",
+    "description": "All devcies with enrollment profileKioskPc",
+    "platform": "windows10AndLater",
+    "rule": "(device.enrollmentProfileName -eq \"KioskPc\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "0bf57c9c-0384-45c4-8ca7-ac7d9c61e3aa",
+    "createdDateTime": "2022-10-22T21:49:31.1821108Z",
+    "lastModifiedDateTime": "2022-10-22T21:49:31.2290032Z",
+    "displayName": "old10",
+    "description": "All Microsoft365 devices",
+    "platform": "windows10AndLater",
+    "rule": "(device.model -contains \"Cloud PC\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "3e412192-e46b-49cc-8460-ef35dbe30c97",
+    "createdDateTime": "2022-07-27T07:59:00.9815423Z",
+    "lastModifiedDateTime": "2022-07-27T07:59:00.9815423Z",
+    "displayName": "old2",
+    "description": "",
+    "platform": "windows10AndLater",
+    "rule": "(device.operatingSystemSKU -eq \"Enterprise\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "ffc4abb4-de23-436a-adc7-362a85f2f100",
+    "createdDateTime": "2022-07-27T07:59:08.1486187Z",
+    "lastModifiedDateTime": "2022-07-27T07:59:08.1486187Z",
+    "displayName": "old3",
+    "description": "",
+    "platform": "windows10AndLater",
+    "rule": "(device.osVersion -startsWith \"10.0.2\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "fac98a7a-461a-4cc8-b4d9-9808f62770e8",
+    "createdDateTime": "2022-07-27T07:59:32.4250022Z",
+    "lastModifiedDateTime": "2022-07-27T07:59:32.4250022Z",
+    "displayName": "old5",
+    "description": "",
+    "platform": "windows10AndLater",
+    "rule": "(device.deviceCategory  -eq \"HR department\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "42da0581-6658-48df-8965-814cceaa2bf4",
+    "createdDateTime": "2022-07-27T07:59:23.8993371Z",
+    "lastModifiedDateTime": "2022-07-27T07:59:23.8993371Z",
+    "displayName": "old6",
+    "description": "",
+    "platform": "windows10AndLater",
+    "rule": "(device.deviceCategory  -eq \"Purchasing department\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "1a9d00f3-79f5-4d60-8cfe-b20e0f5b9dd7",
+    "createdDateTime": "2022-07-27T07:59:41.0643528Z",
+    "lastModifiedDateTime": "2022-07-27T07:59:41.0643528Z",
+    "displayName": "old7",
+    "description": "",
+    "platform": "windows10AndLater",
+    "rule": "(device.enrollmentProfileName -contains \"Reinstall\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "82ab1704-e2e2-4b0f-a226-cc2355c13db5",
+    "createdDateTime": "2022-07-27T07:59:48.4063257Z",
+    "lastModifiedDateTime": "2022-07-27T07:59:48.4063257Z",
+    "displayName": "old8",
+    "description": "",
+    "platform": "windows10AndLater",
+    "rule": "(device.model -startsWith \"Test\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  },
+  {
+    "id": "01740cee-11b4-4688-8632-e01f0e86fd4b",
+    "createdDateTime": "2022-07-27T07:59:57.698553Z",
+    "lastModifiedDateTime": "2022-07-27T07:59:57.698553Z",
+    "displayName": "old9",
+    "description": "All devcies with enrollment profileStandard Enrollment",
+    "platform": "windows10AndLater",
+    "rule": "(device.enrollmentProfileName -eq \"Standard Enrollment\")",
+    "roleScopeTags": [
+      "0"
+    ],
+    "assignmentFilterManagementType": "devices",
+    "payloads": []
+  }
+]
