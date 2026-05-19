@@ -1,0 +1,32 @@
+{
+  "workflowRunId": "26107708839",
+  "workflow": "deploy-winget-app.yml",
+  "packageManager": "winget",
+  "packageId": "9WZDNCRDHSCP",
+  "appId": "7d56c272-8291-45c5-9d73-906fa794fdab",
+  "updateOnlyAppId": "",
+  "appName": "Green Health",
+  "status": "success",
+  "createdAt": "2026-05-19T15:35:53.0600894Z",
+  "context": {
+    "source": "catalog.deploy",
+    "targetTenantId": 289,
+    "targetTenantName": "ModernDevMgmt.onmicrosoft.com",
+    "repo": "jannik-epic/Apps",
+    "workflowFile": "deploy-winget-app.yml",
+    "catalog": {
+      "catalogAppId": 54575,
+      "source": "msstore",
+      "packageId": "9WZDNCRDHSCP",
+      "name": "Green Health",
+      "version": "latest",
+      "publisher": "kenzone"
+    },
+    "createUpdateOnly": false,
+    "appSettingId": null,
+    "appSettingVariables": [],
+    "assignmentTemplateId": null,
+    "dryRun": false,
+    "createdAt": "2026-05-19T15:34:57.683Z"
+  }
+}
