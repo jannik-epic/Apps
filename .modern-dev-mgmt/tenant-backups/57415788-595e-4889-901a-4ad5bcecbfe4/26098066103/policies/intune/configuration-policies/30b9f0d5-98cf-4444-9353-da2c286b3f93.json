@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2026-01-16T07:08:37.7154876Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2026-01-16T07:08:37.7154876Z",
+  "name": "COOKER-SECURITY EXPERIENCE",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 2,
+  "technologies": "mdm,microsoftSense",
+  "id": "30b9f0d5-98cf-4444-9353-da2c286b3f93",
+  "templateReference": {
+    "templateId": "d948ff9b-99cb-4ee0-8012-1fbc09685377_1",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Windows Security Experience",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('30b9f0d5-98cf-4444-9353-da2c286b3f93')/assignments",
+  "assignments": []
+}

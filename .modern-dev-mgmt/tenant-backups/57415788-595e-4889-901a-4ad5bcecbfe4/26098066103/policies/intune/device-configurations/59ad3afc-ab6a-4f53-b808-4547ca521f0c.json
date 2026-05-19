@@ -1,0 +1,55 @@
+{
+  "@odata.type": "#microsoft.graph.macOSEndpointProtectionConfiguration",
+  "id": "59ad3afc-ab6a-4f53-b808-4547ca521f0c",
+  "lastModifiedDateTime": "2023-09-23T11:45:55.8961725Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-08-22T11:47:41.7644216Z",
+  "description": "FileVault and Firewall Configuration Profile",
+  "displayName": "EPIC_DCP_DEV_MAC-Endpoint Protection",
+  "version": 2,
+  "gatekeeperAllowedAppSource": "notConfigured",
+  "gatekeeperBlockOverride": false,
+  "firewallEnabled": true,
+  "firewallBlockAllIncoming": false,
+  "firewallEnableStealthMode": false,
+  "fileVaultEnabled": true,
+  "fileVaultSelectedRecoveryKeyTypes": "personalRecoveryKey",
+  "fileVaultInstitutionalRecoveryKeyCertificate": null,
+  "fileVaultInstitutionalRecoveryKeyCertificateFileName": null,
+  "fileVaultPersonalRecoveryKeyHelpMessage": "Bitte den Recovery Key eingeben",
+  "fileVaultAllowDeferralUntilSignOut": true,
+  "fileVaultNumberOfTimesUserCanIgnore": 1,
+  "fileVaultDisablePromptAtSignOut": true,
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 3,
+  "fileVaultHidePersonalRecoveryKey": true,
+  "advancedThreatProtectionRealTime": "notConfigured",
+  "advancedThreatProtectionCloudDelivered": "notConfigured",
+  "advancedThreatProtectionAutomaticSampleSubmission": "notConfigured",
+  "advancedThreatProtectionDiagnosticDataCollection": "notConfigured",
+  "advancedThreatProtectionExcludedFolders": [],
+  "advancedThreatProtectionExcludedFiles": [],
+  "advancedThreatProtectionExcludedExtensions": [],
+  "advancedThreatProtectionExcludedProcesses": [],
+  "firewallApplications": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('59ad3afc-ab6a-4f53-b808-4547ca521f0c')/microsoft.graph.macOSEndpointProtectionConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "59ad3afc-ab6a-4f53-b808-4547ca521f0c_f4a3ca36-380c-47ae-bbd7-a38fc8722e3d",
+      "source": "direct",
+      "sourceId": "59ad3afc-ab6a-4f53-b808-4547ca521f0c",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "f4a3ca36-380c-47ae-bbd7-a38fc8722e3d"
+      }
+    }
+  ]
+}

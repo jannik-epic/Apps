@@ -1,0 +1,37 @@
+{
+  "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
+  "id": "61de1ff5-959b-4764-9251-cdd730ce6b97_DefaultWindows10EnrollmentCompletionPageConfiguration",
+  "displayName": "All users and all devices",
+  "description": "This is the default enrollment status screen configuration applied with the lowest priority to all users and all devices regardless of group membership.",
+  "priority": 0,
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastModifiedDateTime": "2025-07-10T08:46:19Z",
+  "version": 0,
+  "roleScopeTagIds": [],
+  "deviceEnrollmentConfigurationType": "windows10EnrollmentCompletionPageConfiguration",
+  "showInstallationProgress": true,
+  "blockDeviceSetupRetryByUser": true,
+  "allowDeviceResetOnInstallFailure": false,
+  "allowLogCollectionOnInstallFailure": true,
+  "customErrorMessage": "",
+  "installProgressTimeoutInMinutes": 120,
+  "allowDeviceUseOnInstallFailure": false,
+  "selectedMobileAppIds": [],
+  "allowNonBlockingAppInstallation": false,
+  "installQualityUpdates": false,
+  "trackInstallProgressForAutopilotOnly": true,
+  "disableUserStatusTrackingAfterFirstUser": true,
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceEnrollmentConfigurations('61de1ff5-959b-4764-9251-cdd730ce6b97_DefaultWindows10EnrollmentCompletionPageConfiguration')/microsoft.graph.windows10EnrollmentCompletionPageConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "61de1ff5-959b-4764-9251-cdd730ce6b97_DefaultWindows10EnrollmentCompletionPageConfiguration",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    }
+  ]
+}

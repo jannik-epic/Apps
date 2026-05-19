@@ -1,0 +1,108 @@
+{
+  "@odata.type": "#microsoft.graph.win32LobApp",
+  "id": "340bb2d5-2f46-49b7-a766-0a2dc88c8245",
+  "displayName": "Microsoft Azure CLI",
+  "description": "The Azure command-line interface (Azure CLI) is a set of commands used to create and manage Azure resources. The Azure CLI is available across Azure services and is designed to get you working quickly with Azure, with an emphasis on automation.\n",
+  "publisher": "Microsoft Corporation",
+  "largeIcon": null,
+  "createdDateTime": "2026-02-05T10:35:34.8408941Z",
+  "lastModifiedDateTime": "2026-02-05T10:35:34.8408941Z",
+  "isFeatured": false,
+  "privacyInformationUrl": null,
+  "informationUrl": "https://docs.microsoft.com/en-us/cli/azure/",
+  "owner": null,
+  "developer": "robopack.com",
+  "notes": null,
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 0,
+  "committedContentVersion": "1",
+  "fileName": "Microsoft.AzureCLI.2.83.0.X64.intunewin",
+  "size": 68686736,
+  "installCommandLine": "Deploy-Application.exe -DeployMode Silent",
+  "uninstallCommandLine": "Deploy-Application.exe Uninstall -DeployMode Silent",
+  "applicableArchitectures": "x86,x64",
+  "allowedArchitectures": null,
+  "minimumFreeDiskSpaceInMB": null,
+  "minimumMemoryInMB": null,
+  "minimumNumberOfProcessors": null,
+  "minimumCpuSpeedInMHz": null,
+  "msiInformation": null,
+  "setupFilePath": "Microsoft.AzureCLI.2.83.0.X64.msi",
+  "minimumSupportedWindowsRelease": "1607",
+  "displayVersion": "2.83.0",
+  "allowAvailableUninstall": false,
+  "activeInstallScript": null,
+  "activeUninstallScript": null,
+  "minimumSupportedOperatingSystem": {
+    "v8_0": false,
+    "v8_1": false,
+    "v10_0": false,
+    "v10_1607": true,
+    "v10_1703": false,
+    "v10_1709": false,
+    "v10_1803": false,
+    "v10_1809": false,
+    "v10_1903": false,
+    "v10_1909": false,
+    "v10_2004": false,
+    "v10_2H20": false,
+    "v10_21H1": false
+  },
+  "detectionRules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppProductCodeDetection",
+      "productCode": "{19007AFE-AF2E-4320-9269-E4ED92B73B20}",
+      "productVersionOperator": "equal",
+      "productVersion": "2.83.0"
+    }
+  ],
+  "requirementRules": [],
+  "rules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppProductCodeRule",
+      "ruleType": "detection",
+      "productCode": "{19007AFE-AF2E-4320-9269-E4ED92B73B20}",
+      "productVersionOperator": "equal",
+      "productVersion": "2.83.0"
+    }
+  ],
+  "installExperience": {
+    "runAsAccount": "system",
+    "maxRunTimeInMinutes": 60,
+    "deviceRestartBehavior": "suppress"
+  },
+  "returnCodes": [
+    {
+      "returnCode": 0,
+      "type": "success"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('340bb2d5-2f46-49b7-a766-0a2dc88c8245')/microsoft.graph.win32LobApp/assignments",
+  "assignments": [
+    {
+      "id": "96cce544-e07a-45b6-a1c2-4391525763d5_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "96cce544-e07a-45b6-a1c2-4391525763d5"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null,
+        "deliveryOptimizationPriority": "notConfigured",
+        "autoUpdateSettings": null
+      }
+    }
+  ]
+}
