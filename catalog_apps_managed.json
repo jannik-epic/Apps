@@ -108,6 +108,15 @@
     "pin_version": null
   },
   {
+    "id": 64084,
+    "source": "msstore",
+    "package_id": "XPDP273C0XHQH2",
+    "name": "Adobe Acrobat Reader DC",
+    "os": "windows",
+    "version_deployed": "26.0.0.1",
+    "pin_version": null
+  },
+  {
     "id": 76090,
     "source": "msstore",
     "package_id": "9NFTCH6J7FHV",
