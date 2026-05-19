@@ -246,7 +246,7 @@ jobs:
             foreach ($mobileApp in @($mobileApps)) {
               if (-not $mobileApp.id) { continue }
               $escapedAppId = ([string]$mobileApp.id).Replace("'", "''")
-              $detail = Invoke-GraphJson -Uri "$GraphBetaBase/deviceAppManagement/mobileApps('$escapedAppId')?%24select=id,displayName,publisher,largeIcon,committedContentVersion" -Label "Intune mobile app detail $($mobileApp.displayName)"
+              $detail = Invoke-GraphJson -Uri "$GraphBetaBase/deviceAppManagement/mobileApps('$escapedAppId')?%24select=id,displayName,publisher,largeIcon" -Label "Intune mobile app detail $($mobileApp.displayName)"
               if ($detail) { $mobileAppDetails.Add($detail) | Out-Null }
             }
             Save-Json -Name 'intune/mobile-app-details.json' -Data @($mobileAppDetails.ToArray())
