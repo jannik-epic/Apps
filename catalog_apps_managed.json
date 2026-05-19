@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "id": 6450,
+    "source": "winget",
+    "package_id": "Canva.Canva",
+    "name": "Canva",
+    "os": "windows",
+    "version_deployed": "1.101.0",
+    "pin_version": null
+  },
+  {
+    "id": 8522,
+    "source": "winget",
+    "package_id": "Greenshot.Greenshot",
+    "name": "Greenshot",
+    "os": "windows",
+    "version_deployed": "1.2.10.6",
+    "pin_version": null
+  },
+  {
+    "id": 9410,
+    "source": "winget",
+    "package_id": "JetBrains.dotPeek",
+    "name": "JetBrains dotPeek",
+    "os": "windows",
+    "version_deployed": "2024.2.3",
+    "pin_version": null
+  },
+  {
+    "id": 10517,
+    "source": "winget",
+    "package_id": "Microsoft.Edge",
+    "name": "Microsoft Edge",
+    "os": "windows",
+    "version_deployed": "133.0.3065.69",
+    "pin_version": null
+  },
+  {
+    "id": 10563,
+    "source": "winget",
+    "package_id": "Microsoft.OneDrive",
+    "name": "Microsoft OneDrive",
+    "os": "windows",
+    "version_deployed": "24.221.1103.0003",
+    "pin_version": null
+  },
+  {
+    "id": 10616,
+    "source": "winget",
+    "package_id": "Microsoft.VisualStudioCode",
+    "name": "Microsoft Visual Studio Code",
+    "os": "windows",
+    "version_deployed": "1.87.2",
+    "pin_version": null
+  },
+  {
+    "id": 12065,
+    "source": "winget",
+    "package_id": "Python.Launcher",
+    "name": "Python Launcher",
+    "os": "windows",
+    "version_deployed": "3.11.8150.0",
+    "pin_version": null
+  },
+  {
+    "id": 13184,
+    "source": "winget",
+    "package_id": "Spice.SpiceWebDAVd",
+    "name": "Spice webdavd",
+    "os": "windows",
+    "version_deployed": "2.5.0",
+    "pin_version": null
+  },
+  {
+    "id": 22120,
+    "source": "winget",
+    "package_id": "Microsoft.Edge.Beta",
+    "name": "Microsoft Edge Beta",
+    "os": "windows",
+    "version_deployed": "134.0.3124.8",
+    "pin_version": null
+  },
+  {
+    "id": 36100,
+    "source": "winget",
+    "package_id": "Microsoft.VCRedist.2015+.arm64",
+    "name": "Microsoft Visual C++ 2015-2022 Redistributable",
+    "os": "windows",
+    "version_deployed": "14.30.30704.0",
+    "pin_version": null
+  }
+]
