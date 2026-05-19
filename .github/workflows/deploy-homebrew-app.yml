@@ -138,14 +138,30 @@ jobs:
 
       - name: Generate App Footprint Report
         if: ${{ github.event.inputs.dry_run != 'true' }}
-        timeout-minutes: 20
+        timeout-minutes: 7
         shell: bash
         run: |
           set -euo pipefail
           echo "📊 Generating app footprint analysis..."
-          python3 tools/analyze_app_footprint.py \
-            --cask "${{ github.event.inputs.package_id }}" \
-            --output "output/${{ github.event.inputs.package_id }}_footprint_report.txt" || true
+          python3 - <<'PY'
+          import subprocess
+          import sys
+
+          cmd = [
+              sys.executable,
+              "tools/analyze_app_footprint.py",
+              "--cask",
+              "${{ github.event.inputs.package_id }}",
+              "--output",
+              "output/${{ github.event.inputs.package_id }}_footprint_report.txt",
+          ]
+          try:
+              completed = subprocess.run(cmd, timeout=300)
+              if completed.returncode != 0:
+                  print(f"::warning::Footprint report exited with code {completed.returncode}; continuing with packaging.")
+          except subprocess.TimeoutExpired:
+              print("::warning::Footprint report timed out after 300 seconds; continuing with packaging.")
+          PY
 
           if [ -f "output/${{ github.event.inputs.package_id }}_footprint_report.txt" ]; then
             echo "✅ Footprint report generated successfully"
