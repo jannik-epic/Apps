@@ -10,8 +10,8 @@ permissions:
   contents: write
 
 env:
-  AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
-  AZURE_CLIENT_ID: '35d6529f-ddc6-4bba-8d22-11c136f0f400'
+  AZURE_TENANT_ID: 'f849cde7-f11d-4ef5-a31d-7fca98b21bf5'
+  AZURE_CLIENT_ID: 'a34f2806-b6f7-4d11-98f6-b32894396ca8'
 
 jobs:
   coverage:
