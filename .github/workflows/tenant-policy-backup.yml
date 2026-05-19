@@ -1,0 +1,366 @@
+name: Tenant Policy Backup
+
+on:
+  workflow_dispatch:
+    inputs:
+      include_types:
+        description: 'Comma-separated policy-type keys to include. Use "all" or leave empty for the default safe set.'
+        required: false
+        type: string
+        default: 'conditional-access-policies,named-locations,authentication-strengths,authentication-contexts,authorization-policy,device-registration-policy,configuration-policies,device-configurations,group-policy-configurations,compliance-policies,device-management-scripts,device-health-scripts,device-compliance-scripts,device-management-intents,mobile-apps,managed-app-policies,targeted-managed-app-configurations,assignment-filters,enrollment-configurations,autopilot-deployment-profiles,feature-update-profiles,driver-update-profiles,device-categories,policy-sets,terms-and-conditions,role-definitions,notification-message-templates,intune-branding-profiles,cloud-pc-provisioning-policies,cloud-pc-on-premises-connections,cloud-pc-device-images'
+      backup_scope:
+        description: 'Coarse scope preset (legacy). Overridden when include_types is set.'
+        required: false
+        type: choice
+        default: 'full'
+        options:
+          - full
+          - intune_only
+          - conditional_access_only
+          - custom
+      include_assignments:
+        description: 'Include policy assignments in the snapshot'
+        required: false
+        type: boolean
+        default: true
+      include_groups:
+        description: 'Include Entra groups referenced by assignments'
+        required: false
+        type: boolean
+        default: true
+      commit_snapshot:
+        description: 'Commit the snapshot into .modern-dev-mgmt/tenant-backups'
+        required: false
+        type: boolean
+        default: true
+      backup_label:
+        description: 'Optional human label for this backup'
+        required: false
+        type: string
+      request_context_b64:
+        description: 'Base64 encoded Modern Dev Mgmt request context'
+        required: false
+        type: string
+
+env:
+  AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
+  AZURE_BACKUP_CLIENT_ID: 'b8574bb9-c5c3-435e-8b66-25129b622ec9'
+  GRAPH_BASE: 'https://graph.microsoft.com/v1.0'
+  GRAPH_BETA_BASE: 'https://graph.microsoft.com/beta'
+
+jobs:
+  tenant-policy-backup:
+    name: Snapshot tenant policies
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Azure Login (backup app reg, OIDC)
+        uses: azure/login@v3
+        with:
+          tenant-id: ${{ env.AZURE_TENANT_ID }}
+          client-id: ${{ env.AZURE_BACKUP_CLIENT_ID }}
+          allow-no-subscriptions: true
+
+      - name: Get Microsoft Graph token
+        shell: bash
+        run: |
+          set -euo pipefail
+          token="$(az account get-access-token --resource https://graph.microsoft.com --query accessToken -o tsv)"
+          if [[ -z "$token" ]]; then
+            echo "::error::Failed to acquire Microsoft Graph access token. Confirm the backup app reg has admin consent and the federated credential is registered."
+            exit 1
+          fi
+          echo "::add-mask::$token"
+          echo "GRAPH_TOKEN=$token" >> "$GITHUB_ENV"
+
+      - name: Snapshot tenant policies
+        id: snapshot
+        shell: pwsh
+        env:
+          INPUT_SCOPE: ${{ github.event.inputs.backup_scope }}
+          INPUT_INCLUDE_TYPES: ${{ github.event.inputs.include_types }}
+          INPUT_INCLUDE_ASSIGNMENTS: ${{ github.event.inputs.include_assignments }}
+          INPUT_INCLUDE_GROUPS: ${{ github.event.inputs.include_groups }}
+          INPUT_COMMIT_SNAPSHOT: ${{ github.event.inputs.commit_snapshot }}
+          INPUT_BACKUP_LABEL: ${{ github.event.inputs.backup_label }}
+          INPUT_REQUEST_CONTEXT_B64: ${{ github.event.inputs.request_context_b64 }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          if (-not $env:GRAPH_TOKEN) { throw 'GRAPH_TOKEN missing.' }
+
+          $scope = ([string]$env:INPUT_SCOPE).Trim().ToLowerInvariant()
+          if (-not $scope) { $scope = 'full' }
+          $includeAssignments = ([string]$env:INPUT_INCLUDE_ASSIGNMENTS).Trim().ToLowerInvariant() -ne 'false'
+          $includeGroups = ([string]$env:INPUT_INCLUDE_GROUPS).Trim().ToLowerInvariant() -ne 'false'
+          $commitSnapshot = ([string]$env:INPUT_COMMIT_SNAPSHOT).Trim().ToLowerInvariant() -ne 'false'
+
+          $allSpecs = '[{"key":"conditional-access-policies","policyType":"ConditionalAccessPolicy","label":"Conditional Access policies","group":"conditional-access","graphBase":"beta","readPath":"identity/conditionalAccess/policies","supportsExpandAssignments":false,"singleton":false,"subdir":"conditional-access/policies"},{"key":"named-locations","policyType":"NamedLocation","label":"Named locations","group":"conditional-access","graphBase":"beta","readPath":"identity/conditionalAccess/namedLocations","supportsExpandAssignments":false,"singleton":false,"subdir":"conditional-access/named-locations"},{"key":"authentication-strengths","policyType":"AuthenticationStrengthPolicy","label":"Authentication strength policies","group":"conditional-access","graphBase":"beta","readPath":"identity/conditionalAccess/authenticationStrength/policies","supportsExpandAssignments":false,"singleton":false,"subdir":"conditional-access/authentication-strengths"},{"key":"authentication-contexts","policyType":"AuthenticationContextClassReference","label":"Authentication context class references","group":"conditional-access","graphBase":"beta","readPath":"identity/conditionalAccess/authenticationContextClassReferences","supportsExpandAssignments":false,"singleton":false,"subdir":"conditional-access/authentication-contexts"},{"key":"authorization-policy","policyType":"AuthorizationPolicy","label":"Authorization policy (tenant defaults)","group":"tenant","graphBase":"beta","readPath":"policies/authorizationPolicy","supportsExpandAssignments":false,"singleton":true,"subdir":"tenant/authorization-policy"},{"key":"device-registration-policy","policyType":"DeviceRegistrationPolicy","label":"Device registration policy","group":"tenant","graphBase":"beta","readPath":"policies/deviceRegistrationPolicy","supportsExpandAssignments":false,"singleton":true,"subdir":"tenant/device-registration-policy"},{"key":"configuration-policies","policyType":"DeviceManagementConfigurationPolicy","label":"Settings catalog (configuration policies)","group":"intune-config","graphBase":"beta","readPath":"deviceManagement/configurationPolicies","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/configuration-policies"},{"key":"device-configurations","policyType":"DeviceConfiguration","label":"Device configurations","group":"intune-config","graphBase":"beta","readPath":"deviceManagement/deviceConfigurations","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/device-configurations"},{"key":"group-policy-configurations","policyType":"GroupPolicyConfiguration","label":"Group policy (ADMX) configurations","group":"intune-config","graphBase":"beta","readPath":"deviceManagement/groupPolicyConfigurations","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/group-policy-configurations"},{"key":"device-management-intents","policyType":"DeviceManagementIntent","label":"Device management intents (Endpoint Security)","group":"intune-config","graphBase":"beta","readPath":"deviceManagement/intents","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/intents"},{"key":"compliance-policies","policyType":"DeviceCompliancePolicy","label":"Compliance policies","group":"intune-compliance","graphBase":"beta","readPath":"deviceManagement/deviceCompliancePolicies","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/compliance-policies"},{"key":"mobile-apps","policyType":"MobileApp","label":"Mobile apps (Intune apps)","group":"intune-apps","graphBase":"beta","readPath":"deviceAppManagement/mobileApps","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/mobile-apps"},{"key":"managed-app-policies","policyType":"ManagedAppPolicy","label":"App protection policies (MAM)","group":"intune-apps","graphBase":"beta","readPath":"deviceAppManagement/managedAppPolicies","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/managed-app-policies"},{"key":"targeted-managed-app-configurations","policyType":"TargetedManagedAppConfiguration","label":"App configuration policies","group":"intune-apps","graphBase":"beta","readPath":"deviceAppManagement/targetedManagedAppConfigurations","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/targeted-managed-app-configurations"},{"key":"policy-sets","policyType":"PolicySet","label":"Policy sets","group":"intune-apps","graphBase":"beta","readPath":"deviceAppManagement/policySets","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/policy-sets"},{"key":"device-management-scripts","policyType":"DeviceManagementScript","label":"PowerShell scripts","group":"intune-scripts","graphBase":"beta","readPath":"deviceManagement/deviceManagementScripts","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/scripts/device-management-scripts"},{"key":"device-health-scripts","policyType":"DeviceHealthScript","label":"Remediation (health) scripts","group":"intune-scripts","graphBase":"beta","readPath":"deviceManagement/deviceHealthScripts","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/scripts/device-health-scripts"},{"key":"device-compliance-scripts","policyType":"DeviceComplianceScript","label":"Custom compliance scripts","group":"intune-scripts","graphBase":"beta","readPath":"deviceManagement/deviceComplianceScripts","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/scripts/device-compliance-scripts"},{"key":"enrollment-configurations","policyType":"DeviceEnrollmentConfiguration","label":"Enrollment status pages + configurations","group":"intune-enrollment","graphBase":"beta","readPath":"deviceManagement/deviceEnrollmentConfigurations","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/enrollment-configurations"},{"key":"autopilot-deployment-profiles","policyType":"WindowsAutopilotDeploymentProfile","label":"Autopilot deployment profiles","group":"intune-enrollment","graphBase":"beta","readPath":"deviceManagement/windowsAutopilotDeploymentProfiles","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/autopilot-deployment-profiles"},{"key":"assignment-filters","policyType":"DeviceAndAppManagementAssignmentFilter","label":"Assignment filters","group":"intune-enrollment","graphBase":"beta","readPath":"deviceManagement/assignmentFilters","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/assignment-filters"},{"key":"feature-update-profiles","policyType":"WindowsFeatureUpdateProfile","label":"Windows feature update profiles","group":"intune-updates","graphBase":"beta","readPath":"deviceManagement/windowsFeatureUpdateProfiles","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/feature-update-profiles"},{"key":"driver-update-profiles","policyType":"WindowsDriverUpdateProfile","label":"Windows driver update profiles","group":"intune-updates","graphBase":"beta","readPath":"deviceManagement/windowsDriverUpdateProfiles","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/driver-update-profiles"},{"key":"device-categories","policyType":"DeviceCategory","label":"Device categories","group":"intune-management","graphBase":"beta","readPath":"deviceManagement/deviceCategories","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/device-categories"},{"key":"role-definitions","policyType":"RoleDefinition","label":"Intune role definitions","group":"intune-management","graphBase":"beta","readPath":"deviceManagement/roleDefinitions","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/role-definitions"},{"key":"terms-and-conditions","policyType":"TermsAndConditions","label":"Terms and conditions","group":"intune-management","graphBase":"beta","readPath":"deviceManagement/termsAndConditions","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/terms-and-conditions"},{"key":"notification-message-templates","policyType":"NotificationMessageTemplate","label":"Notification message templates","group":"intune-management","graphBase":"beta","readPath":"deviceManagement/notificationMessageTemplates","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/notification-message-templates"},{"key":"intune-branding-profiles","policyType":"IntuneBrandingProfile","label":"Company Portal branding profiles","group":"intune-management","graphBase":"beta","readPath":"deviceManagement/intuneBrandingProfiles","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/branding-profiles"},{"key":"cloud-pc-provisioning-policies","policyType":"CloudPcProvisioningPolicy","label":"Cloud PC provisioning policies","group":"cloud-pc","graphBase":"beta","readPath":"deviceManagement/virtualEndpoint/provisioningPolicies","supportsExpandAssignments":true,"singleton":false,"subdir":"intune/cloud-pc/provisioning-policies"},{"key":"cloud-pc-on-premises-connections","policyType":"CloudPcOnPremisesConnection","label":"Cloud PC on-premises connections","group":"cloud-pc","graphBase":"beta","readPath":"deviceManagement/virtualEndpoint/onPremisesConnections","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/cloud-pc/on-premises-connections"},{"key":"cloud-pc-device-images","policyType":"CloudPcDeviceImage","label":"Cloud PC device images","group":"cloud-pc","graphBase":"beta","readPath":"deviceManagement/virtualEndpoint/deviceImages","supportsExpandAssignments":false,"singleton":false,"subdir":"intune/cloud-pc/device-images"},{"key":"service-principals","policyType":"ServicePrincipal","label":"Service principals (Enterprise apps) — large dataset","group":"tenant","graphBase":"v1.0","readPath":"servicePrincipals?$select=id,appId,displayName,accountEnabled,appRoleAssignmentRequired,tags","supportsExpandAssignments":false,"singleton":false,"subdir":"tenant/service-principals"}]' | ConvertFrom-Json
+          $rawIncludeTypes = ([string]$env:INPUT_INCLUDE_TYPES).Trim()
+          if (-not $rawIncludeTypes) {
+            switch ($scope) {
+              'intune_only' { $includedKeys = ($allSpecs | Where-Object { $_.group -like 'intune-*' -or $_.group -eq 'cloud-pc' } | ForEach-Object { $_.key }) }
+              'conditional_access_only' { $includedKeys = ($allSpecs | Where-Object { $_.group -eq 'conditional-access' } | ForEach-Object { $_.key }) }
+              default { $includedKeys = ('conditional-access-policies,named-locations,authentication-strengths,authentication-contexts,authorization-policy,device-registration-policy,configuration-policies,device-configurations,group-policy-configurations,compliance-policies,device-management-scripts,device-health-scripts,device-compliance-scripts,device-management-intents,mobile-apps,managed-app-policies,targeted-managed-app-configurations,assignment-filters,enrollment-configurations,autopilot-deployment-profiles,feature-update-profiles,driver-update-profiles,device-categories,policy-sets,terms-and-conditions,role-definitions,notification-message-templates,intune-branding-profiles,cloud-pc-provisioning-policies,cloud-pc-on-premises-connections,cloud-pc-device-images' -split ',') | ForEach-Object { $_.Trim() } | Where-Object { $_ } }
+            }
+          } elseif ($rawIncludeTypes.ToLowerInvariant() -eq 'all') {
+            $includedKeys = $allSpecs | ForEach-Object { $_.key }
+          } else {
+            $includedKeys = ($rawIncludeTypes -split ',') | ForEach-Object { $_.Trim() } | Where-Object { $_ }
+          }
+          $includedSet = New-Object 'System.Collections.Generic.HashSet[string]'
+          foreach ($k in @($includedKeys)) { [void]$includedSet.Add($k.ToLowerInvariant()) }
+          $selectedSpecs = @($allSpecs | Where-Object { $includedSet.Contains($_.key.ToLowerInvariant()) })
+
+          $backupId = "${{ github.run_id }}"
+          $tenantId = $env:AZURE_TENANT_ID
+          $outDir = ".modern-dev-mgmt/tenant-backups/$tenantId/$backupId"
+          New-Item -ItemType Directory -Force -Path $outDir | Out-Null
+          New-Item -ItemType Directory -Force -Path (Join-Path $outDir 'assignments') | Out-Null
+          New-Item -ItemType Directory -Force -Path (Join-Path $outDir 'groups') | Out-Null
+          New-Item -ItemType Directory -Force -Path (Join-Path $outDir 'raw/graph-responses') | Out-Null
+          foreach ($spec in $selectedSpecs) {
+            $dir = Join-Path $outDir (Join-Path 'policies' $spec.subdir)
+            New-Item -ItemType Directory -Force -Path $dir | Out-Null
+          }
+
+          $warnings = New-Object System.Collections.Generic.List[string]
+          $limitations = New-Object System.Collections.Generic.List[object]
+          $GraphBase = $env:GRAPH_BASE.TrimEnd('/')
+          $GraphBetaBase = $env:GRAPH_BETA_BASE.TrimEnd('/')
+          $headers = @{
+            Authorization = "Bearer $env:GRAPH_TOKEN"
+            'Content-Type' = 'application/json'
+          }
+
+          function Graph-ErrorMessage {
+            param([object]$ErrorRecord)
+            $message = $ErrorRecord.Exception.Message
+            if ($ErrorRecord.ErrorDetails -and $ErrorRecord.ErrorDetails.Message) {
+              $message = $ErrorRecord.ErrorDetails.Message
+            }
+            return $message
+          }
+
+          function Invoke-GraphJson {
+            param([string]$Uri, [string]$Label, [string]$Method = 'GET', [object]$Body = $null)
+            try {
+              $params = @{ Method = $Method; Uri = $Uri; Headers = $headers; TimeoutSec = 120 }
+              if ($null -ne $Body) { $params.Body = ($Body | ConvertTo-Json -Depth 30) }
+              return Invoke-RestMethod @params
+            } catch {
+              $warnings.Add("$Label unavailable: $(Graph-ErrorMessage $_)") | Out-Null
+              return $null
+            }
+          }
+
+          function Invoke-GraphCollection {
+            param([string]$Uri, [string]$Label)
+            $items = New-Object System.Collections.Generic.List[object]
+            $next = $Uri
+            while ($next) {
+              $response = Invoke-GraphJson -Uri $next -Label $Label
+              if ($null -eq $response) { break }
+              if ($response.value -is [array]) {
+                foreach ($item in $response.value) { $items.Add($item) | Out-Null }
+              } elseif ($response.value) {
+                $items.Add($response.value) | Out-Null
+              } else {
+                $items.Add($response) | Out-Null
+              }
+              $next = $response.'@odata.nextLink'
+            }
+            return @($items)
+          }
+
+          function Save-Json {
+            param([string]$Path, [object]$Data)
+            $target = Join-Path $outDir $Path
+            $parent = Split-Path -Parent $target
+            if ($parent) { New-Item -ItemType Directory -Force -Path $parent | Out-Null }
+            $Data | ConvertTo-Json -Depth 40 | Set-Content -Path $target -Encoding UTF8
+          }
+
+          function Sanitize-Id {
+            param([string]$Value)
+            if (-not $Value) { return 'unknown' }
+            return ($Value -replace '[^a-zA-Z0-9._-]', '_')
+          }
+
+          function Save-PolicyArray {
+            param([string]$Subdir, [string]$Label, [array]$Items, [bool]$ExpandAssignments = $false)
+            $count = 0
+            $expandedAssignments = 0
+            foreach ($item in $Items) {
+              if ($null -eq $item) { continue }
+              $rawId = if ($item.id) { [string]$item.id } else { [string]$item.'@odata.etag' }
+              if (-not $rawId) { continue }
+              $safe = Sanitize-Id $rawId
+              Save-Json -Path ("policies/$Subdir/$safe.json") -Data $item
+              if ($ExpandAssignments -and $item.assignments) {
+                Save-Json -Path ("assignments/$safe.assignments.json") -Data $item.assignments
+                $expandedAssignments += @($item.assignments).Count
+              }
+              $count++
+            }
+            return @{ count = $count; assignments = $expandedAssignments }
+          }
+
+          $manifestCounts = [ordered]@{}
+          foreach ($spec in $allSpecs) { $manifestCounts[$spec.key] = 0 }
+          $manifestCounts['assignments'] = 0
+          $manifestCounts['groups'] = 0
+
+          foreach ($spec in $selectedSpecs) {
+            $base = if ($spec.graphBase -eq 'beta') { $GraphBetaBase } else { $GraphBase }
+            $expand = if ($includeAssignments -and $spec.supportsExpandAssignments) { '?$expand=assignments' } else { '' }
+            $uri = "$base/$($spec.readPath)$expand"
+            if ($spec.singleton) {
+              $obj = Invoke-GraphJson -Uri $uri -Label $spec.label
+              if ($obj) {
+                Save-Json -Path ("policies/$($spec.subdir)/_singleton.json") -Data $obj
+                $manifestCounts[$spec.key] = 1
+              }
+              continue
+            }
+            $items = Invoke-GraphCollection -Uri $uri -Label $spec.label
+            $result = Save-PolicyArray -Subdir $spec.subdir -Label $spec.label -Items $items -ExpandAssignments ($includeAssignments -and $spec.supportsExpandAssignments)
+            $manifestCounts[$spec.key] = $result.count
+            $manifestCounts['assignments'] = [int]$manifestCounts['assignments'] + [int]$result.assignments
+          }
+
+          # Group resolution
+          if ($includeGroups) {
+            $groupIds = New-Object System.Collections.Generic.HashSet[string]
+            foreach ($file in Get-ChildItem -Path (Join-Path $outDir 'assignments') -Filter '*.json' -ErrorAction SilentlyContinue) {
+              try {
+                $rows = Get-Content -Path $file.FullName -Raw | ConvertFrom-Json
+                foreach ($row in @($rows)) {
+                  $target = $row.target
+                  if ($target -and $target.groupId) {
+                    [void]$groupIds.Add([string]$target.groupId)
+                  }
+                }
+              } catch {
+                $warnings.Add("Failed to parse assignments file $($file.Name): $($_.Exception.Message)") | Out-Null
+              }
+            }
+
+            foreach ($gid in $groupIds) {
+              $safe = Sanitize-Id $gid
+              $group = Invoke-GraphJson -Uri "$GraphBase/groups/$gid" -Label "Group $gid"
+              if ($null -eq $group) { continue }
+              $members = Invoke-GraphCollection -Uri "$GraphBase/groups/$gid/members?$select=id,displayName,userPrincipalName" -Label "Group members $gid"
+              $payload = [ordered]@{
+                originalGroupId = $gid
+                name = $group.displayName
+                description = $group.description
+                mailNickname = $group.mailNickname
+                rawJson = $group
+                memberIds = @($members | ForEach-Object { $_.id })
+              }
+              Save-Json -Path "groups/$safe.json" -Data $payload
+              $manifestCounts.groups++
+            }
+          } else {
+            $limitations.Add([ordered]@{ area = 'groups'; reason = 'include_groups was set to false; assignments referencing groups will not have rawJson on restore.'; followUp = 'Re-run backup with include_groups=true to recover full restore fidelity.' }) | Out-Null
+          }
+
+          $manifest = [ordered]@{
+            schemaVersion = 1
+            source = 'modern-dev-mgmt'
+            tenantId = $tenantId
+            backupId = $backupId
+            workflowRunId = '${{ github.run_id }}'
+            repository = '${{ github.repository }}'
+            scope = $scope
+            includedTypes = @($selectedSpecs | ForEach-Object { $_.key })
+            label = $env:INPUT_BACKUP_LABEL
+            includeAssignments = $includeAssignments
+            includeGroups = $includeGroups
+            createdAt = (Get-Date).ToUniversalTime().ToString('o')
+            graphBase = $GraphBase
+            graphBetaBase = $GraphBetaBase
+            counts = $manifestCounts
+            warningCount = $warnings.Count
+            limitationCount = $limitations.Count
+          }
+          if ($env:INPUT_REQUEST_CONTEXT_B64) { $manifest.requestContextProvided = $true }
+          Save-Json -Path 'manifest.json' -Data $manifest
+          Save-Json -Path 'warnings.json' -Data @($warnings.ToArray())
+          Save-Json -Path 'limitations.json' -Data @($limitations.ToArray())
+
+          $latestPath = ".modern-dev-mgmt/tenant-backups/$tenantId/latest.json"
+          $latest = [ordered]@{
+            backupId = $backupId
+            tenantId = $tenantId
+            snapshotPath = $outDir
+            createdAt = $manifest.createdAt
+            workflowRunId = $manifest.workflowRunId
+            counts = $manifestCounts
+            scope = $scope
+          }
+          $latest | ConvertTo-Json -Depth 20 | Set-Content -Path $latestPath -Encoding UTF8
+
+          $totalPolicies = 0
+          foreach ($entry in $manifestCounts.GetEnumerator()) {
+            if ($entry.Key -in @('assignments','groups')) { continue }
+            $totalPolicies += [int]$entry.Value
+          }
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "snapshot_dir=$outDir"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "latest_path=$latestPath"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "backup_id=$backupId"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "policy_count=$totalPolicies"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "assignment_count=$($manifestCounts.assignments)"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "group_count=$($manifestCounts.groups)"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "warning_count=$($warnings.Count)"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "commit_snapshot=$commitSnapshot"
+
+          $summary = @(
+            '# Tenant Policy Backup',
+            '',
+            "Backup ID: `$backupId`",
+            "Snapshot path: `$outDir`",
+            "Scope: $scope",
+            '',
+            '| Object | Count |',
+            '| --- | --- |'
+          )
+          foreach ($entry in $manifestCounts.GetEnumerator()) {
+            $summary += "| $($entry.Key) | $($entry.Value) |"
+          }
+          if ($warnings.Count) {
+            $summary += ''
+            $summary += "## Warnings ($($warnings.Count))"
+            foreach ($warning in @($warnings.ToArray() | Select-Object -First 20)) { $summary += "- $warning" }
+          }
+          $summary | Add-Content -Path $env:GITHUB_STEP_SUMMARY
+
+      - name: Upload backup artifact
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: tenant-policy-backup-${{ github.run_id }}
+          path: ${{ steps.snapshot.outputs.snapshot_dir }}
+          if-no-files-found: warn
+
+      - name: Commit backup snapshot
+        if: ${{ steps.snapshot.outputs.commit_snapshot == 'True' || steps.snapshot.outputs.commit_snapshot == 'true' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git add "${{ steps.snapshot.outputs.snapshot_dir }}" "${{ steps.snapshot.outputs.latest_path }}"
+          if git diff --cached --quiet; then
+            echo "No tenant policy backup changes to commit."
+          else
+            git commit -m "chore(backup): tenant policy snapshot ${{ steps.snapshot.outputs.backup_id }}"
+            git pull --rebase origin "${GITHUB_REF_NAME:-main}"
+            git push
+          fi
