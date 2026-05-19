@@ -100,363 +100,9 @@ jobs:
           $includeGroups = ([string]$env:INPUT_INCLUDE_GROUPS).Trim().ToLowerInvariant() -ne 'false'
           $commitSnapshot = ([string]$env:INPUT_COMMIT_SNAPSHOT).Trim().ToLowerInvariant() -ne 'false'
 
-          $allSpecsJson = @'
-          [
-            {
-              "key": "conditional-access-policies",
-              "policyType": "ConditionalAccessPolicy",
-              "label": "Conditional Access policies",
-              "group": "conditional-access",
-              "graphBase": "beta",
-              "readPath": "identity/conditionalAccess/policies",
-              "supportsExpandAssignments": false,
-              "singleton": false,
-              "subdir": "conditional-access/policies"
-            },
-            {
-              "key": "named-locations",
-              "policyType": "NamedLocation",
-              "label": "Named locations",
-              "group": "conditional-access",
-              "graphBase": "beta",
-              "readPath": "identity/conditionalAccess/namedLocations",
-              "supportsExpandAssignments": false,
-              "singleton": false,
-              "subdir": "conditional-access/named-locations"
-            },
-            {
-              "key": "authentication-strengths",
-              "policyType": "AuthenticationStrengthPolicy",
-              "label": "Authentication strength policies",
-              "group": "conditional-access",
-              "graphBase": "beta",
-              "readPath": "identity/conditionalAccess/authenticationStrength/policies",
-              "supportsExpandAssignments": false,
-              "singleton": false,
-              "subdir": "conditional-access/authentication-strengths"
-            },
-            {
-              "key": "authentication-contexts",
-              "policyType": "AuthenticationContextClassReference",
-              "label": "Authentication context class references",
-              "group": "conditional-access",
-              "graphBase": "beta",
-              "readPath": "identity/conditionalAccess/authenticationContextClassReferences",
-              "supportsExpandAssignments": false,
-              "singleton": false,
-              "subdir": "conditional-access/authentication-contexts"
-            },
-            {
-              "key": "authorization-policy",
-              "policyType": "AuthorizationPolicy",
-              "label": "Authorization policy (tenant defaults)",
-              "group": "tenant",
-              "graphBase": "beta",
-              "readPath": "policies/authorizationPolicy",
-              "supportsExpandAssignments": false,
-              "singleton": true,
-              "subdir": "tenant/authorization-policy"
-            },
-            {
-              "key": "device-registration-policy",
-              "policyType": "DeviceRegistrationPolicy",
-              "label": "Device registration policy",
-              "group": "tenant",
-              "graphBase": "beta",
-              "readPath": "policies/deviceRegistrationPolicy",
-              "supportsExpandAssignments": false,
-              "singleton": true,
-              "subdir": "tenant/device-registration-policy"
-            },
-            {
-              "key": "configuration-policies",
-              "policyType": "DeviceManagementConfigurationPolicy",
-              "label": "Settings catalog (configuration policies)",
-              "group": "intune-config",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/configurationPolicies",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/configuration-policies"
-            },
-            {
-              "key": "device-configurations",
-              "policyType": "DeviceConfiguration",
-              "label": "Device configurations",
-              "group": "intune-config",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/deviceConfigurations",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/device-configurations"
-            },
-            {
-              "key": "group-policy-configurations",
-              "policyType": "GroupPolicyConfiguration",
-              "label": "Group policy (ADMX) configurations",
-              "group": "intune-config",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/groupPolicyConfigurations",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/group-policy-configurations"
-            },
-            {
-              "key": "device-management-intents",
-              "policyType": "DeviceManagementIntent",
-              "label": "Device management intents (Endpoint Security)",
-              "group": "intune-config",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/intents",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/intents"
-            },
-            {
-              "key": "compliance-policies",
-              "policyType": "DeviceCompliancePolicy",
-              "label": "Compliance policies",
-              "group": "intune-compliance",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/deviceCompliancePolicies",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/compliance-policies"
-            },
-            {
-              "key": "mobile-apps",
-              "policyType": "MobileApp",
-              "label": "Mobile apps (Intune apps)",
-              "group": "intune-apps",
-              "graphBase": "beta",
-              "readPath": "deviceAppManagement/mobileApps",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/mobile-apps"
-            },
-            {
-              "key": "managed-app-policies",
-              "policyType": "ManagedAppPolicy",
-              "label": "App protection policies (MAM)",
-              "group": "intune-apps",
-              "graphBase": "beta",
-              "readPath": "deviceAppManagement/managedAppPolicies",
-              "supportsExpandAssignments": false,
-              "singleton": false,
-              "subdir": "intune/managed-app-policies"
-            },
-            {
-              "key": "targeted-managed-app-configurations",
-              "policyType": "TargetedManagedAppConfiguration",
-              "label": "App configuration policies",
-              "group": "intune-apps",
-              "graphBase": "beta",
-              "readPath": "deviceAppManagement/targetedManagedAppConfigurations",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/targeted-managed-app-configurations"
-            },
-            {
-              "key": "policy-sets",
-              "policyType": "PolicySet",
-              "label": "Policy sets",
-              "group": "intune-apps",
-              "graphBase": "beta",
-              "readPath": "deviceAppManagement/policySets",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/policy-sets"
-            },
-            {
-              "key": "device-management-scripts",
-              "policyType": "DeviceManagementScript",
-              "label": "PowerShell scripts",
-              "group": "intune-scripts",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/deviceManagementScripts",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/scripts/device-management-scripts"
-            },
-            {
-              "key": "device-health-scripts",
-              "policyType": "DeviceHealthScript",
-              "label": "Remediation (health) scripts",
-              "group": "intune-scripts",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/deviceHealthScripts",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/scripts/device-health-scripts"
-            },
-            {
-              "key": "device-compliance-scripts",
-              "policyType": "DeviceComplianceScript",
-              "label": "Custom compliance scripts",
-              "group": "intune-scripts",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/deviceComplianceScripts",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/scripts/device-compliance-scripts"
-            },
-            {
-              "key": "enrollment-configurations",
-              "policyType": "DeviceEnrollmentConfiguration",
-              "label": "Enrollment status pages + configurations",
-              "group": "intune-enrollment",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/deviceEnrollmentConfigurations",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/enrollment-configurations"
-            },
-            {
-              "key": "autopilot-deployment-profiles",
-              "policyType": "WindowsAutopilotDeploymentProfile",
-              "label": "Autopilot deployment profiles",
-              "group": "intune-enrollment",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/windowsAutopilotDeploymentProfiles",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/autopilot-deployment-profiles"
-            },
-            {
-              "key": "assignment-filters",
-              "policyType": "DeviceAndAppManagementAssignmentFilter",
-              "label": "Assignment filters",
-              "group": "intune-enrollment",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/assignmentFilters",
-              "supportsExpandAssignments": false,
-              "singleton": false,
-              "subdir": "intune/assignment-filters"
-            },
-            {
-              "key": "feature-update-profiles",
-              "policyType": "WindowsFeatureUpdateProfile",
-              "label": "Windows feature update profiles",
-              "group": "intune-updates",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/windowsFeatureUpdateProfiles",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/feature-update-profiles"
-            },
-            {
-              "key": "driver-update-profiles",
-              "policyType": "WindowsDriverUpdateProfile",
-              "label": "Windows driver update profiles",
-              "group": "intune-updates",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/windowsDriverUpdateProfiles",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/driver-update-profiles"
-            },
-            {
-              "key": "device-categories",
-              "policyType": "DeviceCategory",
-              "label": "Device categories",
-              "group": "intune-management",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/deviceCategories",
-              "supportsExpandAssignments": false,
-              "singleton": false,
-              "subdir": "intune/device-categories"
-            },
-            {
-              "key": "role-definitions",
-              "policyType": "RoleDefinition",
-              "label": "Intune role definitions",
-              "group": "intune-management",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/roleDefinitions",
-              "supportsExpandAssignments": false,
-              "singleton": false,
-              "subdir": "intune/role-definitions"
-            },
-            {
-              "key": "terms-and-conditions",
-              "policyType": "TermsAndConditions",
-              "label": "Terms and conditions",
-              "group": "intune-management",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/termsAndConditions",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/terms-and-conditions"
-            },
-            {
-              "key": "notification-message-templates",
-              "policyType": "NotificationMessageTemplate",
-              "label": "Notification message templates",
-              "group": "intune-management",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/notificationMessageTemplates",
-              "supportsExpandAssignments": false,
-              "singleton": false,
-              "subdir": "intune/notification-message-templates"
-            },
-            {
-              "key": "intune-branding-profiles",
-              "policyType": "IntuneBrandingProfile",
-              "label": "Company Portal branding profiles",
-              "group": "intune-management",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/intuneBrandingProfiles",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/branding-profiles"
-            },
-            {
-              "key": "cloud-pc-provisioning-policies",
-              "policyType": "CloudPcProvisioningPolicy",
-              "label": "Cloud PC provisioning policies",
-              "group": "cloud-pc",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/virtualEndpoint/provisioningPolicies",
-              "supportsExpandAssignments": true,
-              "singleton": false,
-              "subdir": "intune/cloud-pc/provisioning-policies"
-            },
-            {
-              "key": "cloud-pc-on-premises-connections",
-              "policyType": "CloudPcOnPremisesConnection",
-              "label": "Cloud PC on-premises connections",
-              "group": "cloud-pc",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/virtualEndpoint/onPremisesConnections",
-              "supportsExpandAssignments": false,
-              "singleton": false,
-              "subdir": "intune/cloud-pc/on-premises-connections"
-            },
-            {
-              "key": "cloud-pc-device-images",
-              "policyType": "CloudPcDeviceImage",
-              "label": "Cloud PC device images",
-              "group": "cloud-pc",
-              "graphBase": "beta",
-              "readPath": "deviceManagement/virtualEndpoint/deviceImages",
-              "supportsExpandAssignments": false,
-              "singleton": false,
-              "subdir": "intune/cloud-pc/device-images"
-            },
-            {
-              "key": "service-principals",
-              "policyType": "ServicePrincipal",
-              "label": "Service principals (Enterprise apps) — large dataset",
-              "group": "tenant",
-              "graphBase": "v1.0",
-              "readPath": "servicePrincipals?$select=id,appId,displayName,accountEnabled,appRoleAssignmentRequired,tags",
-              "supportsExpandAssignments": false,
-              "singleton": false,
-              "subdir": "tenant/service-principals"
-            }
-          ]
-          '@
-          $allSpecs = $allSpecsJson | ConvertFrom-Json
+          $policyTypesPath = 'scripts/tenant-policy-types.json'
+          if (-not (Test-Path $policyTypesPath)) { throw "Policy type catalog missing: $policyTypesPath" }
+          $allSpecs = Get-Content -Path $policyTypesPath -Raw | ConvertFrom-Json
           $rawIncludeTypes = ([string]$env:INPUT_INCLUDE_TYPES).Trim()
           if (-not $rawIncludeTypes) {
             switch ($scope) {
@@ -473,10 +119,15 @@ jobs:
           foreach ($k in @($includedKeys)) { [void]$includedSet.Add($k.ToLowerInvariant()) }
           $selectedSpecs = @($allSpecs | Where-Object { $includedSet.Contains($_.key.ToLowerInvariant()) })
 
-          $backupId = "${{ github.run_id }}"
+          # GitHub auto-exposes the run id as $env:GITHUB_RUN_ID. Using the
+          # env var instead of an inline GitHub expression inside the run block
+          # keeps the workflow under GitHub's 21000-char expression length
+          # limit (see https://github.com/actions/runner/issues/2347).
+          $backupId = $env:GITHUB_RUN_ID
           $tenantId = $env:AZURE_TENANT_ID
           $outDir = ".modern-dev-mgmt/tenant-backups/$tenantId/$backupId"
           New-Item -ItemType Directory -Force -Path $outDir | Out-Null
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "snapshot_dir=$outDir"
           New-Item -ItemType Directory -Force -Path (Join-Path $outDir 'assignments') | Out-Null
           New-Item -ItemType Directory -Force -Path (Join-Path $outDir 'groups') | Out-Null
           New-Item -ItemType Directory -Force -Path (Join-Path $outDir 'raw/graph-responses') | Out-Null
@@ -632,8 +283,8 @@ jobs:
             source = 'modern-dev-mgmt'
             tenantId = $tenantId
             backupId = $backupId
-            workflowRunId = '${{ github.run_id }}'
-            repository = '${{ github.repository }}'
+            workflowRunId = $env:GITHUB_RUN_ID
+            repository = $env:GITHUB_REPOSITORY
             scope = $scope
             includedTypes = @($selectedSpecs | ForEach-Object { $_.key })
             label = $env:INPUT_BACKUP_LABEL
@@ -668,7 +319,6 @@ jobs:
             if ($entry.Key -in @('assignments','groups')) { continue }
             $totalPolicies += [int]$entry.Value
           }
-          Add-Content -Path $env:GITHUB_OUTPUT -Value "snapshot_dir=$outDir"
           Add-Content -Path $env:GITHUB_OUTPUT -Value "latest_path=$latestPath"
           Add-Content -Path $env:GITHUB_OUTPUT -Value "backup_id=$backupId"
           Add-Content -Path $env:GITHUB_OUTPUT -Value "policy_count=$totalPolicies"
@@ -680,8 +330,8 @@ jobs:
           $summary = @(
             '# Tenant Policy Backup',
             '',
-            "Backup ID: `$backupId`",
-            "Snapshot path: `$outDir`",
+            "Backup ID: $backupId",
+            "Snapshot path: $outDir",
             "Scope: $scope",
             '',
             '| Object | Count |',
