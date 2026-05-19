@@ -1,0 +1,150 @@
+{
+  "@odata.type": "#microsoft.graph.win32LobApp",
+  "id": "916da66d-05f1-45b8-876c-e1e322a44e66",
+  "displayName": "Snagit 2025",
+  "description": "Snagit helps you quickly share information in a way that's easy to understand. Capture your screen and camera, add additional context and move work forward faster.",
+  "publisher": "TechSmith Corporation",
+  "largeIcon": null,
+  "createdDateTime": "2025-08-19T09:10:32Z",
+  "lastModifiedDateTime": "2025-08-19T09:10:32Z",
+  "isFeatured": false,
+  "privacyInformationUrl": "https://www.techsmith.com/privacy-policy.html",
+  "informationUrl": "https://www.techsmith.com/screen-capture.html",
+  "owner": null,
+  "developer": "robopack.com",
+  "notes": null,
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "committedContentVersion": "1",
+  "fileName": "TechSmith.Snagit.2025.25.3.0.X64.intunewin",
+  "size": 628189872,
+  "installCommandLine": "Deploy-Application.exe -DeployMode Silent",
+  "uninstallCommandLine": "Deploy-Application.exe Uninstall -DeployMode Silent",
+  "applicableArchitectures": "x86,x64",
+  "allowedArchitectures": null,
+  "minimumFreeDiskSpaceInMB": null,
+  "minimumMemoryInMB": null,
+  "minimumNumberOfProcessors": null,
+  "minimumCpuSpeedInMHz": null,
+  "msiInformation": null,
+  "setupFilePath": "TechSmith.Snagit.2025.25.3.0.X64.msi",
+  "minimumSupportedWindowsRelease": "1607",
+  "displayVersion": "25.3.0",
+  "allowAvailableUninstall": false,
+  "activeInstallScript": null,
+  "activeUninstallScript": null,
+  "minimumSupportedOperatingSystem": {
+    "v8_0": false,
+    "v8_1": false,
+    "v10_0": false,
+    "v10_1607": true,
+    "v10_1703": false,
+    "v10_1709": false,
+    "v10_1803": false,
+    "v10_1809": false,
+    "v10_1903": false,
+    "v10_1909": false,
+    "v10_2004": false,
+    "v10_2H20": false,
+    "v10_21H1": false
+  },
+  "detectionRules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppProductCodeDetection",
+      "productCode": "{F9C1721E-CC44-40D8-A112-2DDC01AA5C9B}",
+      "productVersionOperator": "greaterThanOrEqual",
+      "productVersion": "25.3.0"
+    }
+  ],
+  "requirementRules": [],
+  "rules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppProductCodeRule",
+      "ruleType": "detection",
+      "productCode": "{F9C1721E-CC44-40D8-A112-2DDC01AA5C9B}",
+      "productVersionOperator": "greaterThanOrEqual",
+      "productVersion": "25.3.0"
+    }
+  ],
+  "installExperience": {
+    "runAsAccount": "system",
+    "maxRunTimeInMinutes": 60,
+    "deviceRestartBehavior": "suppress"
+  },
+  "returnCodes": [
+    {
+      "returnCode": 0,
+      "type": "success"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('916da66d-05f1-45b8-876c-e1e322a44e66')/microsoft.graph.win32LobApp/assignments",
+  "assignments": [
+    {
+      "id": "569bb557-eba9-4c47-89ab-34d0c078f4f1_0_0",
+      "intent": "available",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "569bb557-eba9-4c47-89ab-34d0c078f4f1"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null,
+        "deliveryOptimizationPriority": "notConfigured",
+        "autoUpdateSettings": {
+          "autoUpdateSupersededAppsState": "enabled"
+        }
+      }
+    },
+    {
+      "id": "ce150351-933b-4b14-b375-678680291824_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "ce150351-933b-4b14-b375-678680291824"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null,
+        "deliveryOptimizationPriority": "notConfigured",
+        "autoUpdateSettings": null
+      }
+    },
+    {
+      "id": "85d8466c-374f-454d-886b-4d240113e943_2_0",
+      "intent": "uninstall",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "85d8466c-374f-454d-886b-4d240113e943"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null,
+        "deliveryOptimizationPriority": "notConfigured",
+        "autoUpdateSettings": null
+      }
+    }
+  ]
+}

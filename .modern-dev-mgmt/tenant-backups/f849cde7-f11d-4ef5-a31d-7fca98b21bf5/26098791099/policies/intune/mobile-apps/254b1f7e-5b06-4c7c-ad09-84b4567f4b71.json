@@ -1,0 +1,179 @@
+{
+  "@odata.type": "#microsoft.graph.iosStoreApp",
+  "id": "254b1f7e-5b06-4c7c-ad09-84b4567f4b71",
+  "displayName": "Adobe Acrobat Reader PDF Maker",
+  "description": "Do you need to work with documents on the go? Get the Adobe Acrobat Reader mobile app, the world's most trusted PDF viewer, with more than 635 million installs. Store your files online and read PDF files anywhere with this leading, free PDF reader and file manager. You can also view, share, annotate, and add e-signatures to PDF documents.\n\nSubscribe to Adobe Acrobat if you need a PDF editor to edit text and images, a PDF converter to export to and from PDF, or more advanced features to create PDFs, combine PDF documents, organize PDFs, and more.\n\nVIEW AND PRINT PDFs\n. Open and view PDFs with the free Adobe PDF viewer app.\n. Choose Single Page or Continuous scroll mode. \n. Help save battery with dark mode.\n. Print documents directly from your device.\n\nREAD PDFs MORE EASILY\n. Get the best PDF reading experience with Liquid Mode. \n. Content in your PDF document reflows to fit your screen.\n. Use the Liquid Mode outline for quick navigation. \n. Search to find text fast in your PDF documents. \n\nSHARE PDFs AND COLLABORATE\n. Share files for commenting or viewing.\n. Collect comments from multiple people in one file online.\n. Speed document reviews by responding to each other's comments.\n. Receive activity notifications for files you've shared.\n\nANNOTATE PDFs\n. Add PDF notes and comments, including sticky notes and highlights.\n. Write on PDF documents by adding text or drawings. \n. Share a file with others to collect all comments in one place. \n\nEDIT PDFs\n. Subscribe to edit text and images directly in your PDF.\n. Fix a typo or add a paragraph with the paid PDF editor feature. \n. Add, delete, or rotate an image with your upgraded Acrobat PDF app.\n\nFILL AND SIGN FORMS\n. Easily fill in PDF forms with the form filler feature.\n. E-sign documents using your finger or stylus. \n\nSTORE AND MANAGE FILES\n. Sign in to your free account to store and access files across devices.\n. Access all your files by linking online storage accounts, like Microsoft OneDrive, Dropbox, or Google Drive. \n. Star files to quickly open your most important or favorite documents. \n\nCONNECT TO GOOGLE DRIVE\n. Connect your Google Drive account to access PDFs and other files with ease.\n. View, share, and star Google Drive files directly in Acrobat Reader.\n. Create, edit, combine, compress, and export Google Drive files with a subscription.\n\nWORK WITH SCANNED DOCUMENTS\n. Access scanned PDFs that you've captured using the free Adobe Scan app. \n. Open your scans in Adobe Acrobat Reader to fill, sign, comment, and share. \n\nIN-APP PURCHASE\nSubscribe for even more PDF power. Subscriptions work across mobile and web. \n. Edit text and images right in your PDF document (mobile only).\n. Combine files into one PDF file and organize pages. \n. Create PDF files from documents or images. \n. Export PDFs to Microsoft Word, Excel, or PowerPoint.\n. Compress PDF files to reduce file size.\n. Protect PDF documents by adding passwords.\n\nThe Acrobat Reader mobile app is designed to work with customers who have Enterprise Mobility Management (EMM) enabled. \n\nTerms & Conditions: Your use of this application is governed by the Adobe General Terms of Use (https://adobe.com/go/terms_linkfree_en and the Adobe Privacy Policy (http://www.adobe.com/go/privacy_policy_linkfree_en).\n\nDo Not Sell My Personal Information: https://www.adobe.com/privacy/ca-rights.html\n\nThe Adobe Acrobat Reader PDF creator and document editor app puts your office in your pocket. View, annotate, fill, sign, and share PDF files with the free Adobe PDF reader. Convert JPG files to PDF format, create and sign fillable PDF forms, and add your e-signature to shared documents. Working with PDF documents has never been so easy.",
+  "publisher": "Adobe Inc.",
+  "largeIcon": null,
+  "createdDateTime": "2022-07-26T18:02:21Z",
+  "lastModifiedDateTime": "2024-08-05T06:34:17Z",
+  "isFeatured": false,
+  "privacyInformationUrl": "",
+  "informationUrl": null,
+  "owner": "",
+  "developer": "",
+  "notes": "",
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "bundleId": "com.adobe.Adobe-Reader",
+  "appStoreUrl": "https://apps.apple.com/us/app/adobe-acrobat-reader-pdf-maker/id469337564?uo=4",
+  "applicableDeviceType": {
+    "iPad": true,
+    "iPhoneAndIPod": true
+  },
+  "minimumSupportedOperatingSystem": {
+    "v8_0": true,
+    "v9_0": false,
+    "v10_0": false,
+    "v11_0": false,
+    "v12_0": false,
+    "v13_0": false,
+    "v14_0": false,
+    "v15_0": false,
+    "v16_0": false,
+    "v17_0": false,
+    "v18_0": false,
+    "v26_0": false
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('254b1f7e-5b06-4c7c-ad09-84b4567f4b71')/microsoft.graph.iosStoreApp/assignments",
+  "assignments": [
+    {
+      "id": "3d923179-dc8e-48e6-a9ac-1eb056f2b975_0_0",
+      "intent": "available",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "3d923179-dc8e-48e6-a9ac-1eb056f2b975"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+        "vpnConfigurationId": null,
+        "uninstallOnDeviceRemoval": null,
+        "isRemovable": null,
+        "preventManagedAppBackup": null
+      }
+    },
+    {
+      "id": "0eae8eb2-18cc-4953-be2c-d326eff1d41b_0_0",
+      "intent": "available",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "0eae8eb2-18cc-4953-be2c-d326eff1d41b"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+        "vpnConfigurationId": null,
+        "uninstallOnDeviceRemoval": null,
+        "isRemovable": null,
+        "preventManagedAppBackup": null
+      }
+    },
+    {
+      "id": "78fdd29b-00f5-4706-9357-7bfa2b1bf1d3_0_0",
+      "intent": "available",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "78fdd29b-00f5-4706-9357-7bfa2b1bf1d3"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+        "vpnConfigurationId": null,
+        "uninstallOnDeviceRemoval": null,
+        "isRemovable": null,
+        "preventManagedAppBackup": null
+      }
+    },
+    {
+      "id": "c3ddfbc4-53a3-45d5-948d-f143c85edf80_0_0",
+      "intent": "available",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "c3ddfbc4-53a3-45d5-948d-f143c85edf80"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+        "vpnConfigurationId": null,
+        "uninstallOnDeviceRemoval": null,
+        "isRemovable": null,
+        "preventManagedAppBackup": null
+      }
+    },
+    {
+      "id": "94e07e4a-e3b7-4113-a9d0-11d21e80c4d7_0_0",
+      "intent": "available",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "94e07e4a-e3b7-4113-a9d0-11d21e80c4d7"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+        "vpnConfigurationId": null,
+        "uninstallOnDeviceRemoval": null,
+        "isRemovable": null,
+        "preventManagedAppBackup": null
+      }
+    },
+    {
+      "id": "dc5b0e15-9d0a-44ad-b0dc-f3569aac6ad8_0_0",
+      "intent": "available",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "dc5b0e15-9d0a-44ad-b0dc-f3569aac6ad8"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+        "vpnConfigurationId": null,
+        "uninstallOnDeviceRemoval": null,
+        "isRemovable": null,
+        "preventManagedAppBackup": null
+      }
+    },
+    {
+      "id": "e8fa2d63-4410-4235-bf19-2087feb3a8d1_0_0",
+      "intent": "available",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "e8fa2d63-4410-4235-bf19-2087feb3a8d1"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+        "vpnConfigurationId": null,
+        "uninstallOnDeviceRemoval": null,
+        "isRemovable": null,
+        "preventManagedAppBackup": null
+      }
+    }
+  ]
+}

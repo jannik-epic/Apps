@@ -1,0 +1,14 @@
+{
+  "id": "42da0581-6658-48df-8965-814cceaa2bf4",
+  "createdDateTime": "2022-07-27T07:59:23.8993371Z",
+  "lastModifiedDateTime": "2022-07-27T07:59:23.8993371Z",
+  "displayName": "old6",
+  "description": "",
+  "platform": "windows10AndLater",
+  "rule": "(device.deviceCategory  -eq \"Purchasing department\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

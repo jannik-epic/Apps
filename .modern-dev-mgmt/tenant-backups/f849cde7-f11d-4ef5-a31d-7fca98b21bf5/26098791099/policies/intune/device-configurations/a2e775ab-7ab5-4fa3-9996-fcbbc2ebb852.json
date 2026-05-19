@@ -1,0 +1,21 @@
+{
+  "@odata.type": "#microsoft.graph.windows81TrustedRootCertificate",
+  "id": "a2e775ab-7ab5-4fa3-9996-fcbbc2ebb852",
+  "lastModifiedDateTime": "2025-12-10T00:28:18.1221439Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2025-12-10T00:27:53.201273Z",
+  "description": null,
+  "displayName": "WIN_Cloud PKI Root CA Trust",
+  "version": 2,
+  "trustedRootCertificate": "MIIFpDCCA4ygAwIBAgIRAMW7dr1sH262q/tiyA43nqUwDQYJKoZIhvcNAQENBQAwTzELMAkGA1UEBhMCREUxDDAKBgNVBAgMA1JMUDEPMA0GA1UECgwGSmFubmlrMSEwHwYDVQQDDBhKYW5uaWsgQ2xvdWQgUEtJIFJvb3QgQ0EwHhcNMjUxMjEwMDAxMzQ5WhcNMzAxMjEwMDAxMzQ5WjBPMQswCQYDVQQGEwJERTEMMAoGA1UECAwDUkxQMQ8wDQYDVQQKDAZKYW5uaWsxITAfBgNVBAMMGEphbm5payBDbG91ZCBQS0kgUm9vdCBDQTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBANcUOyX7hCZw9Irb/4SDrJWlaqNVm2hoJMinFsCs6YkJgyo54nvrzq2P/gX0QIIxgfRW6tyBreUunhIbR+Mmp35fb/5zpavcWEiEizVHF4eJuxvu3vWVwna+c7S4cEpIQm98O9c8R5GINemu+daT+5d6ZWoUXf5z5W49N/WLeHWj+d/W2185E1k6uikZ19WlgPbtDHC12YNNVJN2W45Jc136XnTlkR+5ve5zdiMxU2l2nueGL11bJXzMiSXQcfPIyQnkbCA+Xnb2FnUhxk/tuYMwDZYG8dFS/Ju5aiFPcLZ609ze90+QKfNpdBhuXLysHpmTvnZXWLAHqyh2IcTvE9PPlHpLvTzi8lJQv/MBtbcMGkWv0yMKXQPdaLXFAu4S+++TxB1TqZ/GhTDksu9avzT9mRfeji+Yz3Ac2ZIxJ8rGmS4eHxNhdQvSdXDeOElUqDqOgFXULP5nsQNPp5I4fUVLmLxhlbEG0LFJZTYnwnQQPqc0XqMwOq9+0+8U2oG0Jpw6vrEGN6XoUbInJCPFJHZLM/0shwia9j8008+YMvJiD0dmG/l/SSnkUXubJlc7/2/z5/FV+lm2VEAYZGxP3GTOzf1u3nwIkjDitvMZoe4wPTTBN6GEmnIP5z6R7Z6IaQd3D4+g2InLZ3JXVwopfPrs5oWZ7BNpGIei3KK668hZAgMBAAGjezB5MBIGA1UdEwEB/wQIMAYBAf8CAQEwDgYDVR0PAQH/BAQDAgGGMBMGA1UdJQQMMAoGCCsGAQUFBwMCMB0GA1UdDgQWBBQk9DPma25xrVXKB7SWNGDrqTmvQjAfBgNVHSMEGDAWgBQk9DPma25xrVXKB7SWNGDrqTmvQjANBgkqhkiG9w0BAQ0FAAOCAgEAK2lZ4DeevQV/D4RoUJ674+mMTLfxEWHGOIkFTVohBKP9d7sXI7sxMiuHZnD7QaGWoSdHe/sodQ+7YAObHRK8p5dFj891yZ7pJp9XJeExuDUlZQ2A7lvmMqGfQiCvpmEeJZ8KjIL8YXfsdGA8xbOy6JzZEQDstTW/iCmsvIi0tC5kN4ghz3cBvduCgvyP1+rD6fZtRnTIeI0ydxFuCTydrjv1rB/IVz0qh3ObYNKvf2B0pKZzyD6GFNej2Rer3K14jqGduplIx8XMns+SEvHpCezmz3DdvEF/RBrkbYG/w9hwRFgjthsw27oHvTzn5cXrqWxs59bgIf5hv83JEvxEvGls6km0qfsckQsegt0nAc1iqtK5m3MmNcW4UsGL026e8pc5amctcWofjlzNIGCEq0aEkL+n9Qn5A/cI4PJSdIW9gOMJptGkCA/4eB+EfCJhmBUAe/WDGplrEUH/xZUdEzIzGXPOJsnW1SZQBd0PBnoUWXjPVgUY6v9RMkDEZuVOLTsLv/vxTyrMpRd6bcgH0R5YUZuxSIHXauPLazulXU7Hwrb8XI8T0HKJylEmPdnzUMFwdaqubMTqTuGLKtL+8gTrdwSDjZKhsjFeUTJVIUoLIkG9Mlwm9BIZYrvnkEvqpbI4Lo/4A9tBOsoYERySCaGJFO/QdYGSrzsYbPYF/Hs=",
+  "certFileName": "Jannik Cloud PKI Root CA.cer",
+  "destinationStore": "computerCertStoreIntermediate",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('a2e775ab-7ab5-4fa3-9996-fcbbc2ebb852')/microsoft.graph.windows81TrustedRootCertificate/assignments",
+  "assignments": []
+}

@@ -1,0 +1,65 @@
+{
+  "@odata.type": "#microsoft.graph.iosStoreApp",
+  "id": "3ec6a5cd-8589-4070-8c34-032b1d327344",
+  "displayName": "Microsoft Teams",
+  "description": "Microsoft Teams is your hub for teamwork, which brings together everything a team needs: chat and threaded conversations, meetings & video conferencing, calling, content collaboration with the power of Microsoft 365 applications, and the ability to create and integrate apps and workflows that your business relies on.\n\nYou can now also use Microsoft Teams to manage your personal life - chat, make plans, share shopping lists, tasks and even your location, coordinate events with fellow club or family members and make decisions quickly. Teams provides a single hub to help you stay connected, get organized and bring balance to your entire life.\n\nEasily?move between your work and personal account to stay organized?throughout the day. Whether you're sprinting towards a deadline or helping your kids with their homework, Teams can help you achieve more.\n\nConnect & Communicate\n. Chat 1-1, use group messages or dedicated channels to communicate with the entire team**\n. HD audio and video calls for scheduled face-to-face meetings from almost anywhere**\n. Mention individual team members, or the whole team at once, to get your colleagues' attention**\n. To-do lists, calendars, and cloud storage access right in group chats\n. Personal chats, documents, & files can be securely accessed \n\nOrganize Your Whole Life\n. File sharing & editing on the go makes managing your work projects a breeze**\n. Intelligent search finds documents, spreadsheets, & photos in chats and team conversations ** \n. Custom notifications give you control to stay focus on what matters most** \n. Work calendar & personal calendar both in one app\n. Group dashboards to view important items, shared locations, & upcoming tasks within a group chat\n\nSafety & Security\n. Enterprise-level security and compliance you expect from Microsoft 365** \n. Location sharing to let colleagues, friends and family know where you are*\n. Storage in the Safe where you and your group can store, access, and share important data like passwords, frequent flier miles or your hotel reward number\n\n*Must be enabled and active\n\n**Commercial features of this app require a paid Microsoft 365 commercial subscription, or a trial subscription of Microsoft Teams for work. If you're not sure about your company's subscription or the services you have access to, visit Office.com/Teams to learn more or contact your IT department.\n\nBy downloading Teams, you agree to the license (see aka.ms/eulateamsmobile) and privacy terms (see aka.ms/privacy). For support or feedback, email us at mtiosapp@microsoft.com. EU Contract Summary: aka.ms/EUContractSummary",
+  "publisher": "Microsoft Corporation",
+  "largeIcon": null,
+  "createdDateTime": "2022-07-26T18:02:20Z",
+  "lastModifiedDateTime": "2022-07-26T18:02:20Z",
+  "isFeatured": false,
+  "privacyInformationUrl": "",
+  "informationUrl": null,
+  "owner": "",
+  "developer": "",
+  "notes": "",
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "bundleId": "com.microsoft.skype.teams",
+  "appStoreUrl": "https://apps.apple.com/us/app/microsoft-teams/id1113153706?uo=4",
+  "applicableDeviceType": {
+    "iPad": true,
+    "iPhoneAndIPod": true
+  },
+  "minimumSupportedOperatingSystem": {
+    "v8_0": true,
+    "v9_0": false,
+    "v10_0": false,
+    "v11_0": false,
+    "v12_0": false,
+    "v13_0": false,
+    "v14_0": false,
+    "v15_0": false,
+    "v16_0": false,
+    "v17_0": false,
+    "v18_0": false,
+    "v26_0": false
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('3ec6a5cd-8589-4070-8c34-032b1d327344')/microsoft.graph.iosStoreApp/assignments",
+  "assignments": [
+    {
+      "id": "56f9f04b-50bf-49ee-9f1f-d9e7fc59f722_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "56f9f04b-50bf-49ee-9f1f-d9e7fc59f722"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+        "vpnConfigurationId": null,
+        "uninstallOnDeviceRemoval": null,
+        "isRemovable": null,
+        "preventManagedAppBackup": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "@odata.type": "#microsoft.graph.iosCompliancePolicy",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "id": "ce87a318-4172-402a-9109-f2735bf45124",
+  "createdDateTime": "2023-11-26T17:14:25.4520897Z",
+  "description": "iOS Compliance Policy",
+  "lastModifiedDateTime": "2023-11-26T17:14:25.4520897Z",
+  "displayName": "iOS Compliance",
+  "version": 1,
+  "passcodeBlockSimple": true,
+  "passcodeExpirationDays": 30,
+  "passcodeMinimumLength": 6,
+  "passcodeMinutesOfInactivityBeforeLock": 0,
+  "passcodeMinutesOfInactivityBeforeScreenTimeout": 2,
+  "passcodePreviousPasscodeBlockCount": 3,
+  "passcodeMinimumCharacterSetCount": 1,
+  "passcodeRequiredType": "alphanumeric",
+  "passcodeRequired": true,
+  "osMinimumVersion": null,
+  "osMaximumVersion": null,
+  "osMinimumBuildVersion": null,
+  "osMaximumBuildVersion": null,
+  "securityBlockJailbrokenDevices": true,
+  "deviceThreatProtectionEnabled": false,
+  "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+  "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
+  "managedEmailProfileRequired": true,
+  "restrictedApps": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceCompliancePolicies('ce87a318-4172-402a-9109-f2735bf45124')/microsoft.graph.iosCompliancePolicy/assignments",
+  "assignments": [
+    {
+      "id": "ce87a318-4172-402a-9109-f2735bf45124_ae1dd731-811f-4344-8980-37faff3d7c72",
+      "source": "direct",
+      "sourceId": "ce87a318-4172-402a-9109-f2735bf45124",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "ae1dd731-811f-4344-8980-37faff3d7c72"
+      }
+    }
+  ]
+}

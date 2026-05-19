@@ -1,0 +1,53 @@
+{
+  "originalGroupId": "36d198fa-9151-43ac-aef6-7188cccd2b98",
+  "name": "Windows_Autopilot_Standard_dyn",
+  "description": null,
+  "mailNickname": "e18fd457-d",
+  "rawJson": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "id": "36d198fa-9151-43ac-aef6-7188cccd2b98",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2022-07-27T05:51:03Z",
+    "creationOptions": [],
+    "description": null,
+    "displayName": "Windows_Autopilot_Standard_dyn",
+    "expirationDateTime": null,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "infoCatalogs": [],
+    "isAssignableToRole": null,
+    "mail": null,
+    "mailEnabled": false,
+    "mailNickname": "e18fd457-d",
+    "membershipRule": "(device.devicePhysicalIds -any _ -eq \"[OrderID]:Standard_Profile\")",
+    "membershipRuleProcessingState": "On",
+    "onPremisesDomainName": null,
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": null,
+    "preferredLanguage": null,
+    "proxyAddresses": [],
+    "renewedDateTime": "2022-07-27T05:51:03Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": true,
+    "securityIdentifier": "S-1-12-1-919705850-1135382865-2289170094-2553007564",
+    "theme": null,
+    "uniqueName": null,
+    "visibility": null,
+    "onPremisesProvisioningErrors": [],
+    "serviceProvisioningErrors": []
+  },
+  "memberIds": [
+    "55cc829a-84b2-49c7-bd0a-a75055ac5b47",
+    "892f5073-bbb3-4283-91f1-f8c7c9774f9c",
+    "006876fd-c96d-41d0-9164-c4dad559936e",
+    "be24b26b-bc0d-4725-814e-fb1214118968",
+    "6ab5ff46-b135-43ef-b1b3-f52b0c387aae"
+  ]
+}

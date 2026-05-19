@@ -1,0 +1,11 @@
+{
+  "id": "a6f60238-6b9c-4b4e-a1da-d18adc7d654e",
+  "lastModifiedDateTime": "2023-11-16T17:27:58Z",
+  "displayName": "EnrollmentNotificationInternalMEO",
+  "description": null,
+  "defaultLocale": "en-us",
+  "brandingOptions": "includeCompanyLogo,includeCompanyName,includeContactInformation,includeCompanyPortalLink,includeDeviceDetails",
+  "roleScopeTagIds": [
+    "0"
+  ]
+}

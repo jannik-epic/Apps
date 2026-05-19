@@ -1,0 +1,34 @@
+{
+  "createdDateTime": "2023-11-26T16:48:50.5788616Z",
+  "creationSource": null,
+  "description": "Baseline settings for macOS devices",
+  "lastModifiedDateTime": "2023-11-26T16:48:50.5788616Z",
+  "name": "macOS Settings",
+  "platforms": "macOS",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 4,
+  "technologies": "mdm,appleRemoteManagement",
+  "id": "f492097c-49cc-4399-a4ee-f0527a60d79b",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('f492097c-49cc-4399-a4ee-f0527a60d79b')/assignments",
+  "assignments": [
+    {
+      "id": "f492097c-49cc-4399-a4ee-f0527a60d79b_adadadad-808e-44e2-905a-0b7873a8a531",
+      "source": "direct",
+      "sourceId": "f492097c-49cc-4399-a4ee-f0527a60d79b",
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    }
+  ]
+}

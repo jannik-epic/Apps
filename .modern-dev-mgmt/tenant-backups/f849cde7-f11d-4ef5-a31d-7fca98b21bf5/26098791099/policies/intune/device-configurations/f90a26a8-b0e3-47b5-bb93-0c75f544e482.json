@@ -1,0 +1,29 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+  "id": "f90a26a8-b0e3-47b5-bb93-0c75f544e482",
+  "lastModifiedDateTime": "2022-07-27T07:49:10.3515047Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-27T07:34:00.709069Z",
+  "description": null,
+  "displayName": "z_WIN_Test_LoginRestriction",
+  "version": 3,
+  "omaSettings": [
+    {
+      "@odata.type": "#microsoft.graph.omaSettingString",
+      "displayName": "LocalLoginRestriction",
+      "description": null,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/UserRights/AllowLocalLogOn",
+      "secretReferenceValueId": "9e3c3837-3799-48c9-a33a-29bbad054d12_f90a26a8-b0e3-47b5-bb93-0c75f544e482_8db246d1-a47e-45bc-bb6d-d93f2f1b2cd9",
+      "isEncrypted": true,
+      "value": "****"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('f90a26a8-b0e3-47b5-bb93-0c75f544e482')/microsoft.graph.windows10CustomConfiguration/assignments",
+  "assignments": []
+}

@@ -1,0 +1,50 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+  "id": "04efe444-b31b-487a-9b49-d4e17173ce9c",
+  "lastModifiedDateTime": "2023-10-30T17:54:14.8431465Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-26T19:05:33.9104326Z",
+  "description": "",
+  "displayName": "WIN_Default_ChromeSettings",
+  "version": 5,
+  "omaSettings": [
+    {
+      "@odata.type": "#microsoft.graph.omaSettingString",
+      "displayName": "Forcefully Install extensions:",
+      "description": null,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist",
+      "secretReferenceValueId": "9e3c3837-3799-48c9-a33a-29bbad054d12_04efe444-b31b-487a-9b49-d4e17173ce9c_30056456-6d57-4906-a79c-5abb4676dd4a",
+      "isEncrypted": true,
+      "value": "****"
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingString",
+      "displayName": "DefaultNotificationsSetting",
+      "description": null,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~ContentSettings/DefaultNotificationsSetting",
+      "secretReferenceValueId": "9e3c3837-3799-48c9-a33a-29bbad054d12_04efe444-b31b-487a-9b49-d4e17173ce9c_926537ea-b17a-4023-8ee6-2e8dc7a822fd",
+      "isEncrypted": true,
+      "value": "****"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('04efe444-b31b-487a-9b49-d4e17173ce9c')/microsoft.graph.windows10CustomConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "04efe444-b31b-487a-9b49-d4e17173ce9c_adadadad-808e-44e2-905a-0b7873a8a531",
+      "source": "direct",
+      "sourceId": "04efe444-b31b-487a-9b49-d4e17173ce9c",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    }
+  ]
+}

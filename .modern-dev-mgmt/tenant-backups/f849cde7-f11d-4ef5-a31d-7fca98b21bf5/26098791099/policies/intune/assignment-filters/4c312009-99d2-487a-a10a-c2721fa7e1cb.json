@@ -1,0 +1,14 @@
+{
+  "id": "4c312009-99d2-487a-a10a-c2721fa7e1cb",
+  "createdDateTime": "2022-07-27T07:57:31.2363988Z",
+  "lastModifiedDateTime": "2022-07-27T07:57:31.2363988Z",
+  "displayName": "Filter_AllWindows8.1",
+  "description": "All Windows 8.1 devices",
+  "platform": "windows10AndLater",
+  "rule": "(device.osVersion -startsWith \"6.3\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

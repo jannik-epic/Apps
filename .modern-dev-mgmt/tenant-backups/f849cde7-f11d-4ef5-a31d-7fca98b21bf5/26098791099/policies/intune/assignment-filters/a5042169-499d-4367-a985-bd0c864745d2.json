@@ -1,0 +1,14 @@
+{
+  "id": "a5042169-499d-4367-a985-bd0c864745d2",
+  "createdDateTime": "2022-07-27T07:57:25.1684989Z",
+  "lastModifiedDateTime": "2022-07-27T07:57:25.1684989Z",
+  "displayName": "Filter_AllWindows11",
+  "description": "All Windows 11 devices",
+  "platform": "windows10AndLater",
+  "rule": "(device.osVersion -startsWith \"10.0.22\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

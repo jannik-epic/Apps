@@ -1,0 +1,24 @@
+{
+  "createdDateTime": "2022-07-26T18:59:31.0533333Z",
+  "displayName": "WIN_Default_ActivateOnedrive",
+  "description": "",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "policyConfigurationIngestionType": "builtIn",
+  "id": "86bd5f36-f5be-4d0e-a4e5-14bb7d8c7b24",
+  "lastModifiedDateTime": "2022-07-27T07:42:38.4664365Z",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/groupPolicyConfigurations('86bd5f36-f5be-4d0e-a4e5-14bb7d8c7b24')/assignments",
+  "assignments": [
+    {
+      "id": "86bd5f36-f5be-4d0e-a4e5-14bb7d8c7b24_8913e9df-f718-40fc-97d5-c5af3876444f",
+      "lastModifiedDateTime": "2022-07-27T07:42:38.8355375Z",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "8913e9df-f718-40fc-97d5-c5af3876444f"
+      }
+    }
+  ]
+}

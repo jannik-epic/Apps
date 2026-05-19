@@ -1,0 +1,29 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+  "id": "08529c7b-8368-46f6-83c8-d286147fc086",
+  "lastModifiedDateTime": "2022-07-27T19:26:27.6022704Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-26T19:05:34.9804838Z",
+  "description": null,
+  "displayName": "z_WIN_Test_DisableInternetExplorer",
+  "version": 5,
+  "omaSettings": [
+    {
+      "@odata.type": "#microsoft.graph.omaSettingString",
+      "displayName": "Block IE App Access",
+      "description": null,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/InternetExplorer/DisableInternetExplorerApp",
+      "secretReferenceValueId": "9e3c3837-3799-48c9-a33a-29bbad054d12_08529c7b-8368-46f6-83c8-d286147fc086_4f351fc5-2e04-4b99-993a-39a57e4d6b3a",
+      "isEncrypted": true,
+      "value": "****"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('08529c7b-8368-46f6-83c8-d286147fc086')/microsoft.graph.windows10CustomConfiguration/assignments",
+  "assignments": []
+}

@@ -1,0 +1,49 @@
+{
+  "originalGroupId": "7ed2de04-c912-46b2-b770-51e0aff9e540",
+  "name": "Android_All_KioskDevices",
+  "description": null,
+  "mailNickname": "3fb9c761-7",
+  "rawJson": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "id": "7ed2de04-c912-46b2-b770-51e0aff9e540",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2022-07-27T07:10:42Z",
+    "creationOptions": [],
+    "description": null,
+    "displayName": "Android_All_KioskDevices",
+    "expirationDateTime": null,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "infoCatalogs": [],
+    "isAssignableToRole": null,
+    "mail": null,
+    "mailEnabled": false,
+    "mailNickname": "3fb9c761-7",
+    "membershipRule": "(device.enrollmentProfileName -match \"Android_Kiosk_EnrollmentToken\")",
+    "membershipRuleProcessingState": "On",
+    "onPremisesDomainName": null,
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": null,
+    "preferredLanguage": null,
+    "proxyAddresses": [],
+    "renewedDateTime": "2022-07-27T07:10:42Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": true,
+    "securityIdentifier": "S-1-12-1-2127748612-1186122002-3763433655-1088813487",
+    "theme": null,
+    "uniqueName": null,
+    "visibility": null,
+    "onPremisesProvisioningErrors": [],
+    "serviceProvisioningErrors": []
+  },
+  "memberIds": [
+    "d36ec84d-7eb1-4903-8f78-812e373ab3fa"
+  ]
+}

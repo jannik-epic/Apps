@@ -1,0 +1,24 @@
+{
+  "createdDateTime": "2022-07-27T07:10:49.4666666Z",
+  "displayName": "WIN_Default_InstallWebViewer2",
+  "description": "",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "policyConfigurationIngestionType": "builtIn",
+  "id": "4d803c5c-8bbc-473a-b977-7e817c17e3b4",
+  "lastModifiedDateTime": "2022-07-27T07:44:39.3100877Z",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/groupPolicyConfigurations('4d803c5c-8bbc-473a-b977-7e817c17e3b4')/assignments",
+  "assignments": [
+    {
+      "id": "4d803c5c-8bbc-473a-b977-7e817c17e3b4_8913e9df-f718-40fc-97d5-c5af3876444f",
+      "lastModifiedDateTime": "2022-07-27T07:44:39.7640414Z",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "8913e9df-f718-40fc-97d5-c5af3876444f"
+      }
+    }
+  ]
+}

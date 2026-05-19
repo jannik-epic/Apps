@@ -1,0 +1,34 @@
+{
+  "createdDateTime": "2023-11-11T16:32:17.0816922Z",
+  "creationSource": null,
+  "description": "Uses lapsadmin created via custom OMA-URI policy",
+  "lastModifiedDateTime": "2023-11-11T16:32:17.0816922Z",
+  "name": "LAPS Config",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 5,
+  "technologies": "mdm",
+  "id": "96a1eb7a-2ce5-4e17-8ce9-f3352fc31443",
+  "templateReference": {
+    "templateId": "adc46e5a-f4aa-4ff6-aeff-4f27bc525796_1",
+    "templateFamily": "endpointSecurityAccountProtection",
+    "templateDisplayName": "Local admin password solution (Windows LAPS)",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('96a1eb7a-2ce5-4e17-8ce9-f3352fc31443')/assignments",
+  "assignments": [
+    {
+      "id": "96a1eb7a-2ce5-4e17-8ce9-f3352fc31443_adadadad-808e-44e2-905a-0b7873a8a531",
+      "source": "direct",
+      "sourceId": "96a1eb7a-2ce5-4e17-8ce9-f3352fc31443",
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "efc458b1-1242-4bae-8fed-11a07bb3de3d",
+  "displayName": "Users_EnableSecurityKeysSign-in ",
+  "description": null,
+  "isAssigned": true,
+  "isMigratingToConfigurationPolicy": null,
+  "lastModifiedDateTime": "2022-07-27T07:55:22.4234961Z",
+  "templateId": "0f2b5d70-d4e9-4156-8c16-1397eb6c54a5",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('efc458b1-1242-4bae-8fed-11a07bb3de3d')/assignments",
+  "assignments": []
+}
