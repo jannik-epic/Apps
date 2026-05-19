@@ -1,0 +1,32 @@
+{
+  "workflowRunId": "26098524588",
+  "workflow": "deploy-winget-app.yml",
+  "packageManager": "winget",
+  "packageId": "XPDC23GGN6K3HS",
+  "appId": "24d0107e-fa0a-451b-b230-81cd352e9b53",
+  "updateOnlyAppId": "",
+  "appName": "Little Green Button",
+  "status": "success",
+  "createdAt": "2026-05-19T12:55:57.7965056Z",
+  "context": {
+    "source": "catalog.deploy",
+    "targetTenantId": 289,
+    "targetTenantName": "ModernDevMgmt.onmicrosoft.com",
+    "repo": "jannik-epic/Apps",
+    "workflowFile": "deploy-winget-app.yml",
+    "catalog": {
+      "catalogAppId": 26868,
+      "source": "msstore",
+      "packageId": "XPDC23GGN6K3HS",
+      "name": "Little Green Button",
+      "version": "3.16.9000",
+      "publisher": "Little Green Button"
+    },
+    "createUpdateOnly": false,
+    "appSettingId": null,
+    "appSettingVariables": [],
+    "assignmentTemplateId": null,
+    "dryRun": false,
+    "createdAt": "2026-05-19T12:55:05.063Z"
+  }
+}
