@@ -15,7 +15,7 @@ Write-Host "Fetching information for package: $PackageId from source: $PackageSo
 # Search for the package using winget
 $searchResult = winget search --id $PackageId --source $PackageSource --exact --accept-source-agreements | Out-String
 
-if ($searchResult.IndexOf($PackageId, [System.StringComparison]::OrdinalIgnoreCase) -ge 0) {
+if ($searchResult -match $PackageId) {
     Write-Host "Package found in source: $PackageSource"
 
     # Get package details
