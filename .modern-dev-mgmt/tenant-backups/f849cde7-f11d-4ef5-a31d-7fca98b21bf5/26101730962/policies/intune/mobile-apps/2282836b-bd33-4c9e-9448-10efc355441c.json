@@ -1,0 +1,71 @@
+{
+  "@odata.type": "#microsoft.graph.winGetApp",
+  "id": "2282836b-bd33-4c9e-9448-10efc355441c",
+  "displayName": "Bitwarden",
+  "description": "New ^New This app does not currently support Windows 10 S.\n \nBitwarden, Inc. is the parent company of 8bit Solutions LLC.\n\nBitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.\n\nPassword theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.\n\nSecurity experts recommend that you use a different, randomly generated password for every account that you create. But how do you manage all those passwords? Bitwarden makes it easy for you to create, store, and access your passwords.\n\nBitwarden stores all of your logins in an encrypted vault that syncs across all of your devices. Since it's fully encrypted before it ever leaves your device, only you have access to your data. Not even the team at Bitwarden can read your data, even if we wanted to. Your data is sealed with AES-256 bit encryption, salted hashing, and PBKDF2 SHA-256.\n\nBitwarden is 100% open source software. The source code for Bitwarden is hosted on GitHub and everyone is free to review, audit, and contribute to the Bitwarden codebase.",
+  "publisher": "8bit Solutions LLC",
+  "largeIcon": null,
+  "createdDateTime": "2023-07-30T14:18:15Z",
+  "lastModifiedDateTime": "2024-07-27T18:16:38Z",
+  "isFeatured": false,
+  "privacyInformationUrl": "https://bitwarden.com/privacy/",
+  "informationUrl": null,
+  "owner": "",
+  "developer": "",
+  "notes": "",
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "manifestHash": null,
+  "packageIdentifier": "9PJSDV0VPK04",
+  "installExperience": {
+    "runAsAccount": "user"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('2282836b-bd33-4c9e-9448-10efc355441c')/microsoft.graph.winGetApp/assignments",
+  "assignments": [
+    {
+      "id": "acacacac-9df4-4c7d-9d50-4ef0226f57a9_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.winGetAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": {
+          "useLocalTime": false,
+          "deadlineDateTime": "2025-07-31T00:00:00Z"
+        }
+      }
+    },
+    {
+      "id": "adadadad-808e-44e2-905a-0b7873a8a531_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.winGetAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": {
+          "useLocalTime": false,
+          "deadlineDateTime": "2025-07-08T00:00:00Z"
+        }
+      }
+    }
+  ]
+}

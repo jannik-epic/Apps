@@ -1,0 +1,55 @@
+{
+  "@odata.type": "#microsoft.graph.macOSEndpointProtectionConfiguration",
+  "id": "0a0fbd52-7c8e-48b8-878b-0e94e2181e11",
+  "lastModifiedDateTime": "2022-07-27T07:41:17.4998658Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-27T07:33:44.0232096Z",
+  "description": null,
+  "displayName": "MacOS_Default_ActivateFileVaut",
+  "version": 2,
+  "gatekeeperAllowedAppSource": "notConfigured",
+  "gatekeeperBlockOverride": false,
+  "firewallEnabled": false,
+  "firewallBlockAllIncoming": false,
+  "firewallEnableStealthMode": false,
+  "fileVaultEnabled": true,
+  "fileVaultSelectedRecoveryKeyTypes": "personalRecoveryKey",
+  "fileVaultInstitutionalRecoveryKeyCertificate": null,
+  "fileVaultInstitutionalRecoveryKeyCertificateFileName": null,
+  "fileVaultPersonalRecoveryKeyHelpMessage": "You can retrieve the personal recovery key for your macOS device from the Microsoft Intune app, Company Portal website, or Company Portal apps for Android and iOS/iPadOS. The Support cannot access recovery keys that belong to personal devices",
+  "fileVaultAllowDeferralUntilSignOut": true,
+  "fileVaultNumberOfTimesUserCanIgnore": 2,
+  "fileVaultDisablePromptAtSignOut": true,
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 6,
+  "fileVaultHidePersonalRecoveryKey": true,
+  "advancedThreatProtectionRealTime": "notConfigured",
+  "advancedThreatProtectionCloudDelivered": "notConfigured",
+  "advancedThreatProtectionAutomaticSampleSubmission": "notConfigured",
+  "advancedThreatProtectionDiagnosticDataCollection": "notConfigured",
+  "advancedThreatProtectionExcludedFolders": [],
+  "advancedThreatProtectionExcludedFiles": [],
+  "advancedThreatProtectionExcludedExtensions": [],
+  "advancedThreatProtectionExcludedProcesses": [],
+  "firewallApplications": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('0a0fbd52-7c8e-48b8-878b-0e94e2181e11')/microsoft.graph.macOSEndpointProtectionConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "0a0fbd52-7c8e-48b8-878b-0e94e2181e11_5f0bfefe-0815-4330-a788-bc9231ab9aad",
+      "source": "direct",
+      "sourceId": "0a0fbd52-7c8e-48b8-878b-0e94e2181e11",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "5f0bfefe-0815-4330-a788-bc9231ab9aad"
+      }
+    }
+  ]
+}

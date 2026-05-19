@@ -1,0 +1,14 @@
+{
+  "id": "60fd76fd-1db2-4fab-9ec8-f46e07469c9d",
+  "createdDateTime": "2022-07-27T07:56:37.2629575Z",
+  "lastModifiedDateTime": "2022-07-27T07:56:37.2629575Z",
+  "displayName": "Filter_AllPersonalDevices",
+  "description": "All personal W10 and later devices",
+  "platform": "windows10AndLater",
+  "rule": "(device.deviceOwnership -eq \"Personal\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

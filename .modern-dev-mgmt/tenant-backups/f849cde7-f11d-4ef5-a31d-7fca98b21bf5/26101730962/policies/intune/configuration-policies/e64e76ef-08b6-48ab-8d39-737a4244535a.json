@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2024-05-18T03:12:26.171134Z",
+  "creationSource": "Migration_DI_2c0da3bf-0220-440d-8537-670939cdd1fc",
+  "description": "Encrypts drives to 256bit",
+  "lastModifiedDateTime": "2024-05-18T03:12:26.171134Z",
+  "name": "BitLocker Encryption",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 6,
+  "technologies": "mdm",
+  "id": "e64e76ef-08b6-48ab-8d39-737a4244535a",
+  "templateReference": {
+    "templateId": "46ddfc50-d10f-4867-b852-9434254b3bff_1",
+    "templateFamily": "endpointSecurityDiskEncryption",
+    "templateDisplayName": "BitLocker",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('e64e76ef-08b6-48ab-8d39-737a4244535a')/assignments",
+  "assignments": []
+}

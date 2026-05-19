@@ -1,0 +1,49 @@
+{
+  "originalGroupId": "5f0bfefe-0815-4330-a788-bc9231ab9aad",
+  "name": "MACOS_All_Devices",
+  "description": null,
+  "mailNickname": "7e3f37b8-8",
+  "rawJson": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "id": "5f0bfefe-0815-4330-a788-bc9231ab9aad",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2022-07-28T18:06:14Z",
+    "creationOptions": [],
+    "description": null,
+    "displayName": "MACOS_All_Devices",
+    "expirationDateTime": null,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "infoCatalogs": [],
+    "isAssignableToRole": null,
+    "mail": null,
+    "mailEnabled": false,
+    "mailNickname": "7e3f37b8-8",
+    "membershipRule": "(device.deviceManufacturer -eq \"Apple\")",
+    "membershipRuleProcessingState": "On",
+    "onPremisesDomainName": null,
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": null,
+    "preferredLanguage": null,
+    "proxyAddresses": [],
+    "renewedDateTime": "2022-07-28T18:06:14Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": true,
+    "securityIdentifier": "S-1-12-1-1594621694-1127221269-2461829287-2912594737",
+    "theme": null,
+    "uniqueName": null,
+    "visibility": null,
+    "onPremisesProvisioningErrors": [],
+    "serviceProvisioningErrors": []
+  },
+  "memberIds": [
+    "eef5c6b9-b04f-454a-86e1-62539dd63794"
+  ]
+}

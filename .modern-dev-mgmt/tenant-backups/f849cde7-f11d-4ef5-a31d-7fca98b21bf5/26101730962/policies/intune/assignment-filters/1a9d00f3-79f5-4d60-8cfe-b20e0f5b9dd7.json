@@ -1,0 +1,14 @@
+{
+  "id": "1a9d00f3-79f5-4d60-8cfe-b20e0f5b9dd7",
+  "createdDateTime": "2022-07-27T07:59:41.0643528Z",
+  "lastModifiedDateTime": "2022-07-27T07:59:41.0643528Z",
+  "displayName": "old7",
+  "description": "",
+  "platform": "windows10AndLater",
+  "rule": "(device.enrollmentProfileName -contains \"Reinstall\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

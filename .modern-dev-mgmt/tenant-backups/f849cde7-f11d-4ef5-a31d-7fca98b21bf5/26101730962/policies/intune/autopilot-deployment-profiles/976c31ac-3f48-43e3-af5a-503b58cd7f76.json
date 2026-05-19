@@ -1,0 +1,62 @@
+{
+  "@odata.type": "#microsoft.graph.azureADWindowsAutopilotDeploymentProfile",
+  "id": "976c31ac-3f48-43e3-af5a-503b58cd7f76",
+  "displayName": "Standard_Enrollment_Profile",
+  "description": "Autopilot Default Profile",
+  "language": "os-default",
+  "locale": "os-default",
+  "createdDateTime": "2022-07-26T17:17:12.2736413Z",
+  "lastModifiedDateTime": "2022-07-27T05:49:07.4311155Z",
+  "enrollmentStatusScreenSettings": null,
+  "extractHardwareHash": false,
+  "hardwareHashExtractionEnabled": false,
+  "deviceNameTemplate": "T%SERIAL%",
+  "deviceType": "windowsPc",
+  "enableWhiteGlove": true,
+  "preprovisioningAllowed": true,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "managementServiceAppId": null,
+  "outOfBoxExperienceSettings": {
+    "hidePrivacySettings": true,
+    "hideEULA": true,
+    "userType": "standard",
+    "deviceUsageType": "singleUser",
+    "skipKeyboardSelectionPage": false,
+    "hideEscapeLink": true
+  },
+  "outOfBoxExperienceSetting": {
+    "privacySettingsHidden": true,
+    "eulaHidden": true,
+    "userType": "standard",
+    "deviceUsageType": "singleUser",
+    "keyboardSelectionPageSkipped": false,
+    "escapeLinkHidden": true
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/windowsAutopilotDeploymentProfiles('976c31ac-3f48-43e3-af5a-503b58cd7f76')/microsoft.graph.azureADWindowsAutopilotDeploymentProfile/assignments",
+  "assignments": [
+    {
+      "id": "976c31ac-3f48-43e3-af5a-503b58cd7f76_3499203c-be92-4064-ba24-1d168f864b47_0",
+      "source": "direct",
+      "sourceId": "976c31ac-3f48-43e3-af5a-503b58cd7f76",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "3499203c-be92-4064-ba24-1d168f864b47"
+      }
+    },
+    {
+      "id": "976c31ac-3f48-43e3-af5a-503b58cd7f76_36d198fa-9151-43ac-aef6-7188cccd2b98_0",
+      "source": "direct",
+      "sourceId": "976c31ac-3f48-43e3-af5a-503b58cd7f76",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "36d198fa-9151-43ac-aef6-7188cccd2b98"
+      }
+    }
+  ]
+}

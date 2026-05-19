@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2023-11-11T16:36:51.1154214Z",
+  "creationSource": null,
+  "description": "Purpose: Enforce silent BitLocker encryption on all corporate Windows 11 devices to meet ISO 27001 data-at-rest requirements\nScope: Windows Kios devices\nOwner: Jannik Reinhard — Epic Fusion, reviewed quarterly\nLast reviewed: 2025-01-15 — JIRA-4521 — changed min PIN length from 4 to 6 digits",
+  "lastModifiedDateTime": "2026-03-07T08:04:38.0197608Z",
+  "name": "Application Control",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm",
+  "id": "371271e9-4b52-4311-9563-09d46a224379",
+  "templateReference": {
+    "templateId": "4321b946-b76b-4450-8afd-769c08b16ffc_1",
+    "templateFamily": "endpointSecurityApplicationControl",
+    "templateDisplayName": "App Control for Business",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('371271e9-4b52-4311-9563-09d46a224379')/assignments",
+  "assignments": []
+}

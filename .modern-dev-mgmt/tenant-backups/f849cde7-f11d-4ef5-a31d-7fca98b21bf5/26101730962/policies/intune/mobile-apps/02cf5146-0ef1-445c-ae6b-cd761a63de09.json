@@ -1,0 +1,210 @@
+{
+  "@odata.type": "#microsoft.graph.win32LobApp",
+  "id": "02cf5146-0ef1-445c-ae6b-cd761a63de09",
+  "displayName": "Chocolatey",
+  "description": "install.ps1",
+  "publisher": "chocolatey",
+  "largeIcon": null,
+  "createdDateTime": "2022-07-27T18:20:52Z",
+  "lastModifiedDateTime": "2022-07-27T18:20:52Z",
+  "isFeatured": false,
+  "privacyInformationUrl": "",
+  "informationUrl": "https://docs.chocolatey.org/en-us/third-party-integrations/intune/",
+  "owner": "",
+  "developer": "",
+  "notes": "",
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "committedContentVersion": "1",
+  "fileName": "install.intunewin",
+  "size": 352,
+  "installCommandLine": "powershell.exe -executionpolicy bypass .\\install.ps1",
+  "uninstallCommandLine": "powershell.exe -executionpolicy bypass .\\uninstall.ps1",
+  "applicableArchitectures": "x86,x64",
+  "allowedArchitectures": null,
+  "minimumFreeDiskSpaceInMB": null,
+  "minimumMemoryInMB": null,
+  "minimumNumberOfProcessors": null,
+  "minimumCpuSpeedInMHz": null,
+  "msiInformation": null,
+  "setupFilePath": "install.ps1",
+  "minimumSupportedWindowsRelease": "1607",
+  "displayVersion": "",
+  "allowAvailableUninstall": false,
+  "activeInstallScript": null,
+  "activeUninstallScript": null,
+  "minimumSupportedOperatingSystem": {
+    "v8_0": false,
+    "v8_1": false,
+    "v10_0": false,
+    "v10_1607": true,
+    "v10_1703": false,
+    "v10_1709": false,
+    "v10_1803": false,
+    "v10_1809": false,
+    "v10_1903": false,
+    "v10_1909": false,
+    "v10_2004": false,
+    "v10_2H20": false,
+    "v10_21H1": false
+  },
+  "detectionRules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppFileSystemDetection",
+      "path": "C:\\ProgramData\\",
+      "fileOrFolderName": "chocolatey",
+      "check32BitOn64System": true,
+      "detectionType": "exists",
+      "operator": "notConfigured",
+      "detectionValue": null
+    }
+  ],
+  "requirementRules": [],
+  "rules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppFileSystemRule",
+      "ruleType": "detection",
+      "path": "C:\\ProgramData\\",
+      "fileOrFolderName": "chocolatey",
+      "check32BitOn64System": true,
+      "operationType": "exists",
+      "operator": "notConfigured",
+      "comparisonValue": null
+    }
+  ],
+  "installExperience": {
+    "runAsAccount": "system",
+    "maxRunTimeInMinutes": 60,
+    "deviceRestartBehavior": "allow"
+  },
+  "returnCodes": [
+    {
+      "returnCode": 0,
+      "type": "success"
+    },
+    {
+      "returnCode": 1707,
+      "type": "success"
+    },
+    {
+      "returnCode": 3010,
+      "type": "softReboot"
+    },
+    {
+      "returnCode": 1641,
+      "type": "hardReboot"
+    },
+    {
+      "returnCode": 1618,
+      "type": "retry"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('02cf5146-0ef1-445c-ae6b-cd761a63de09')/microsoft.graph.win32LobApp/assignments",
+  "assignments": [
+    {
+      "id": "7d772e65-65a5-4be7-bf0b-4b729a85cd04_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "7d772e65-65a5-4be7-bf0b-4b729a85cd04"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null,
+        "deliveryOptimizationPriority": "notConfigured",
+        "autoUpdateSettings": null
+      }
+    },
+    {
+      "id": "49f6160e-edf0-4dff-b3fb-70492df20d7c_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "49f6160e-edf0-4dff-b3fb-70492df20d7c"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null,
+        "deliveryOptimizationPriority": "notConfigured",
+        "autoUpdateSettings": null
+      }
+    },
+    {
+      "id": "f18b9ca4-8b5f-4bd5-a256-50b091a3f6bb_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "f18b9ca4-8b5f-4bd5-a256-50b091a3f6bb"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null,
+        "deliveryOptimizationPriority": "notConfigured",
+        "autoUpdateSettings": null
+      }
+    },
+    {
+      "id": "d18ce0ac-deb4-4148-840a-7668113fae4e_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "d18ce0ac-deb4-4148-840a-7668113fae4e"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null,
+        "deliveryOptimizationPriority": "notConfigured",
+        "autoUpdateSettings": null
+      }
+    },
+    {
+      "id": "f2c689b8-9b91-4bbb-96d1-11fcd6f6869a_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "f2c689b8-9b91-4bbb-96d1-11fcd6f6869a"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null,
+        "deliveryOptimizationPriority": "notConfigured",
+        "autoUpdateSettings": null
+      }
+    }
+  ]
+}

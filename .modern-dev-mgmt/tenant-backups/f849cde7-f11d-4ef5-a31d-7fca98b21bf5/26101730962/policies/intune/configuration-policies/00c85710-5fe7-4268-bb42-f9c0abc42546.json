@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2023-11-11T16:28:13.2768814Z",
+  "creationSource": null,
+  "description": "Block everything",
+  "lastModifiedDateTime": "2023-11-11T16:28:13.2768814Z",
+  "name": "Attack Surface Reduction",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 2,
+  "technologies": "mdm,microsoftSense",
+  "id": "00c85710-5fe7-4268-bb42-f9c0abc42546",
+  "templateReference": {
+    "templateId": "e8c053d6-9f95-42b1-a7f1-ebfd71c67a4b_1",
+    "templateFamily": "endpointSecurityAttackSurfaceReduction",
+    "templateDisplayName": "Attack Surface Reduction Rules",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('00c85710-5fe7-4268-bb42-f9c0abc42546')/assignments",
+  "assignments": [
+    {
+      "id": "00c85710-5fe7-4268-bb42-f9c0abc42546_ae1dd731-811f-4344-8980-37faff3d7c72",
+      "source": "direct",
+      "sourceId": "00c85710-5fe7-4268-bb42-f9c0abc42546",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "ae1dd731-811f-4344-8980-37faff3d7c72"
+      }
+    }
+  ]
+}

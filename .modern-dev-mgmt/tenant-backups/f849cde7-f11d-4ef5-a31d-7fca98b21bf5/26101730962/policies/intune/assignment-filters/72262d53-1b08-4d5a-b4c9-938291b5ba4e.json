@@ -1,0 +1,14 @@
+{
+  "id": "72262d53-1b08-4d5a-b4c9-938291b5ba4e",
+  "createdDateTime": "2022-07-27T07:57:03.211315Z",
+  "lastModifiedDateTime": "2022-07-27T07:57:03.211315Z",
+  "displayName": "Filter_AllSkuIoTEnterprise",
+  "description": "All devices with SKU IoTEnterprise",
+  "platform": "windows10AndLater",
+  "rule": "(device.operatingSystemSKU  -eq \"IoTEnterprise\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

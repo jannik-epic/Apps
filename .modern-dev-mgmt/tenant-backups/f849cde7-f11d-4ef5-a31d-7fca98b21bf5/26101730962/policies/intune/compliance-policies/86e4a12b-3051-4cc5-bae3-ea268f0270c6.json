@@ -1,0 +1,63 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "id": "86e4a12b-3051-4cc5-bae3-ea268f0270c6",
+  "createdDateTime": "2023-11-26T17:13:10.9476876Z",
+  "description": "Windows Compliance Policy using GUI settings",
+  "lastModifiedDateTime": "2023-11-26T17:13:10.9476876Z",
+  "displayName": "Windows Compliance Policy",
+  "version": 1,
+  "passwordRequired": false,
+  "passwordBlockSimple": false,
+  "passwordRequiredToUnlockFromIdle": false,
+  "passwordMinutesOfInactivityBeforeLock": null,
+  "passwordExpirationDays": null,
+  "passwordMinimumLength": null,
+  "passwordMinimumCharacterSetCount": null,
+  "passwordRequiredType": "deviceDefault",
+  "passwordPreviousPasswordBlockCount": null,
+  "requireHealthyDeviceReport": false,
+  "osMinimumVersion": null,
+  "osMaximumVersion": null,
+  "mobileOsMinimumVersion": null,
+  "mobileOsMaximumVersion": null,
+  "earlyLaunchAntiMalwareDriverEnabled": false,
+  "bitLockerEnabled": true,
+  "secureBootEnabled": true,
+  "codeIntegrityEnabled": true,
+  "memoryIntegrityEnabled": false,
+  "kernelDmaProtectionEnabled": false,
+  "virtualizationBasedSecurityEnabled": false,
+  "firmwareProtectionEnabled": false,
+  "storageRequireEncryption": false,
+  "activeFirewallRequired": true,
+  "defenderEnabled": true,
+  "defenderVersion": null,
+  "signatureOutOfDate": true,
+  "rtpEnabled": true,
+  "antivirusRequired": true,
+  "antiSpywareRequired": true,
+  "deviceThreatProtectionEnabled": false,
+  "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+  "configurationManagerComplianceRequired": false,
+  "tpmRequired": true,
+  "deviceCompliancePolicyScript": null,
+  "validOperatingSystemBuildRanges": [],
+  "wslDistributions": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceCompliancePolicies('86e4a12b-3051-4cc5-bae3-ea268f0270c6')/microsoft.graph.windows10CompliancePolicy/assignments",
+  "assignments": [
+    {
+      "id": "86e4a12b-3051-4cc5-bae3-ea268f0270c6_ae1dd731-811f-4344-8980-37faff3d7c72",
+      "source": "direct",
+      "sourceId": "86e4a12b-3051-4cc5-bae3-ea268f0270c6",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "ae1dd731-811f-4344-8980-37faff3d7c72"
+      }
+    }
+  ]
+}
