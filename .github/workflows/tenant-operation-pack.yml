@@ -175,7 +175,7 @@ jobs:
               }
               $next = $response.'@odata.nextLink'
             }
-            return @($items)
+            return @($items.ToArray())
           }
 
           function Save-GraphCollection {
@@ -239,7 +239,18 @@ jobs:
           }
 
           if (Should-Run 'intune_endpoint') {
-            $counts.mobileApps = Save-GraphCollection -Name 'intune/mobile-apps.json' -Uri "$GraphBetaBase/deviceAppManagement/mobileApps?%24top=999&%24expand=assignments" -Label 'Intune mobile apps'
+            $mobileApps = Invoke-GraphCollection -Uri "$GraphBetaBase/deviceAppManagement/mobileApps?%24top=999&%24expand=assignments" -Label 'Intune mobile apps'
+            Save-Json -Name 'intune/mobile-apps.json' -Data @($mobileApps)
+            $counts.mobileApps = @($mobileApps).Count
+            $mobileAppDetails = New-Object System.Collections.Generic.List[object]
+            foreach ($mobileApp in @($mobileApps)) {
+              if (-not $mobileApp.id) { continue }
+              $escapedAppId = ([string]$mobileApp.id).Replace("'", "''")
+              $detail = Invoke-GraphJson -Uri "$GraphBetaBase/deviceAppManagement/mobileApps('$escapedAppId')?%24select=id,displayName,publisher,largeIcon,committedContentVersion" -Label "Intune mobile app detail $($mobileApp.displayName)"
+              if ($detail) { $mobileAppDetails.Add($detail) | Out-Null }
+            }
+            Save-Json -Name 'intune/mobile-app-details.json' -Data @($mobileAppDetails.ToArray())
+            $counts.mobileAppDetails = $mobileAppDetails.Count
             $counts.managedDevices = Save-GraphCollection -Name 'intune/managed-devices.json' -Uri "$GraphBetaBase/deviceManagement/managedDevices?%24top=999" -Label 'Managed devices'
             $counts.configPolicies = Save-GraphCollection -Name 'intune/configuration-policies.json' -Uri "$GraphBetaBase/deviceManagement/configurationPolicies?%24top=200" -Label 'Configuration policies'
             $counts.deviceConfigurations = Save-GraphCollection -Name 'intune/device-configurations.json' -Uri "$GraphBetaBase/deviceManagement/deviceConfigurations?%24top=200" -Label 'Device configurations'
@@ -290,8 +301,8 @@ jobs:
           }
           if ($env:INPUT_REQUEST_CONTEXT_B64) { $manifest.requestContextProvided = $true }
           Save-Json -Name 'manifest.json' -Data $manifest
-          Save-Json -Name 'warnings.json' -Data @($warnings)
-          Save-Json -Name 'limitations.json' -Data @($limitations)
+          Save-Json -Name 'warnings.json' -Data @($warnings.ToArray())
+          Save-Json -Name 'limitations.json' -Data @($limitations.ToArray())
 
           Add-Content -Path $env:GITHUB_OUTPUT -Value "out_dir=$outDir"
           Add-Content -Path $env:GITHUB_OUTPUT -Value "commit_evidence=$commitEvidence"
@@ -314,7 +325,7 @@ jobs:
           if ($warnings.Count) {
             $summary += ''
             $summary += '## Warnings'
-            foreach ($warning in @($warnings | Select-Object -First 20)) { $summary += "- $warning" }
+            foreach ($warning in @($warnings.ToArray() | Select-Object -First 20)) { $summary += "- $warning" }
           }
           $summary | Add-Content -Path $env:GITHUB_STEP_SUMMARY
 
@@ -323,7 +334,7 @@ jobs:
         if: always()
         with:
           name: tenant-operation-${{ github.run_id }}
-          path: ${{ steps.collect.outputs.out_dir }}
+          path: .modern-dev-mgmt/tenant-operations/${{ github.run_id }}
           if-no-files-found: warn
 
       - name: Commit operation evidence
