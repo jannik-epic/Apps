@@ -182,7 +182,7 @@ jobs:
               }
               $next = $response.'@odata.nextLink'
             }
-            return @($items)
+            return @($items.ToArray())
           }
 
           function Save-Json {
