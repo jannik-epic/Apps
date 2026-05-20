@@ -15,10 +15,6 @@ on:
         options:
           - 'winget'
           - 'msstore'
-      package_name:
-        description: 'Package display name (optional compatibility input)'
-        required: false
-        type: string
       version:
         description: 'Requested version or latest'
         required: false
@@ -32,6 +28,10 @@ on:
           - 'x86'
           - 'x64'
           - 'arm64'
+      installer_url:
+        description: 'Direct download URL (overrides winget manifest). Pipeline downloads + packages this binary into the .intunewin. Filename + silent args inferred from URL/extension; encode overrides as a single "url|filename|silentArgs" pipe-separated string when needed.'
+        required: false
+        type: string
       validation_enabled:
         description: 'Run install/detection/uninstall + footprint diff in the runner before uploading to Intune'
         required: false
@@ -164,12 +164,13 @@ jobs:
 
       - name: Resolve and download installer binary (offline package)
         id: resolve_installer
-        # Try the offline path for BOTH winget and msstore. Free msstore apps
-        # download fine via 'winget download --source msstore'; licensed/paid
-        # Store apps will fail at this step and the workflow will fall back to
-        # the legacy winget-client wrapper (continue-on-error so we don't kill
-        # the run when an msstore download is rights-restricted). The 5-minute
-        # cap prevents Store-side hangs when entitlements are required.
+        # Resolves the installer binary from one of three sources, in order of
+        # preference: (a) explicit installer_url input (vendor download link
+        # outside winget/msstore), (b) winget manifest, (c) msstore manifest
+        # via 'winget download --source msstore'. Licensed Store apps fail at
+        # the manifest stage; the workflow then falls back to the legacy
+        # winget-client install path so the deploy still completes (just
+        # without VM validation / footprint diff).
         if: ${{ github.event.inputs.dry_run != 'true' || true }}
         timeout-minutes: 5
         shell: pwsh
@@ -182,13 +183,35 @@ jobs:
           if (-not $version) { $version = "${{ steps.winget_info.outputs.version }}" }
           $source = "${{ github.event.inputs.package_source || 'winget' }}"
           $stagingDir = Join-Path $PWD 'winget-installer-files'
+          $installerUrl = "${{ github.event.inputs.installer_url }}"
           try {
-            ./scripts/winget/Download-WingetInstaller.ps1 `
-              -PackageId "${{ github.event.inputs.package_id }}" `
-              -Version $version `
-              -PackageSource $source `
-              -Architecture $arch `
-              -OutputDirectory $stagingDir
+            if ($installerUrl) {
+              # URL path: download arbitrary vendor link and produce the same
+              # installer-metadata.json shape so the rest of the offline
+              # pipeline (Generate scripts, VM validation, Intune upload)
+              # runs unchanged. Filename + silent args may be encoded as
+              # "url|filename|silentArgs" pipe-separated string.
+              $urlParts = $installerUrl -split '\|', 3
+              $url = $urlParts[0]
+              $fname = if ($urlParts.Count -ge 2) { $urlParts[1] } else { '' }
+              $silentArgs = if ($urlParts.Count -ge 3) { $urlParts[2] } else { '' }
+              $urlArgs = @{
+                InstallerUrl = $url
+                OutputDirectory = $stagingDir
+                Version = $version
+              }
+              if ($fname)      { $urlArgs.Filename = $fname }
+              if ($silentArgs) { $urlArgs.SilentArgsOverride = $silentArgs }
+              ./scripts/common/Download-InstallerFromUrl.ps1 @urlArgs
+              Add-Content -Path $env:GITHUB_OUTPUT -Value "url_mode=true"
+            } else {
+              ./scripts/winget/Download-WingetInstaller.ps1 `
+                -PackageId "${{ github.event.inputs.package_id }}" `
+                -Version $version `
+                -PackageSource $source `
+                -Architecture $arch `
+                -OutputDirectory $stagingDir
+            }
             $metadataPath = Join-Path $stagingDir 'installer-metadata.json'
             if (Test-Path -LiteralPath $metadataPath) {
               Add-Content -Path $env:GITHUB_OUTPUT -Value "metadata_path=$metadataPath"
