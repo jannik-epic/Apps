@@ -53,7 +53,10 @@ param(
 
     [Parameter(Mandatory = $false)]
     [ValidateSet('x86','x64','arm64','x64-arm64','x86-x64-arm64')]
-    [string]$Architecture = 'x64'
+    [string]$Architecture = 'x64',
+
+    [Parameter(Mandatory = $false)]
+    [string]$InstallerMetadataPath
 )
 
 $ErrorActionPreference = "Stop"
@@ -382,6 +385,21 @@ if (-not $Publisher) {
 
 $appId = $null
 
+# Load offline installer metadata produced by Download-WingetInstaller.ps1 (if any).
+# Presence of this metadata flips the deployment from "wraps winget client" to
+# "ships the actual installer binary" and lets us emit a native ProductCode
+# detection rule for MSI packages.
+$offlineMetadata = $null
+if ($InstallerMetadataPath -and (Test-Path -LiteralPath $InstallerMetadataPath -PathType Leaf)) {
+    try {
+        $offlineMetadata = Get-Content -LiteralPath $InstallerMetadataPath -Raw | ConvertFrom-Json
+        Write-Host "Loaded offline installer metadata from $InstallerMetadataPath ($($offlineMetadata.installerType), productCode=$($offlineMetadata.productCode))"
+    } catch {
+        Write-Warning "Could not parse installer metadata at $InstallerMetadataPath -- falling back to script-rule detection: $($_.Exception.Message)"
+        $offlineMetadata = $null
+    }
+}
+
 try {
     $sourceDir = New-WingetPackageSource
     $intuneWinPath = New-IntuneWinPackage -SourceDir $sourceDir
@@ -405,6 +423,25 @@ try {
         "Package ID: $PackageId`nInstalled via: $PackageSource`nInstall Method: $InstallContext`nUsing PSADT-compatible script hooks: $UsePSADT`nDeployed via: GitHub Actions"
     }
 
+    $returnCodes = @(
+        @{ returnCode = 0; type = 'success' }
+        @{ returnCode = 1707; type = 'success' }
+        @{ returnCode = 1641; type = 'hardReboot' }
+        @{ returnCode = 3010; type = 'softReboot' }
+        @{ returnCode = 1618; type = 'retry' }
+    )
+    if ($offlineMetadata -and $offlineMetadata.successExitCodes) {
+        $seen = [System.Collections.Generic.HashSet[int]]::new()
+        foreach ($rc in $returnCodes) { [void]$seen.Add([int]$rc.returnCode) }
+        foreach ($extra in $offlineMetadata.successExitCodes) {
+            $code = [int]$extra
+            if (-not $seen.Contains($code)) {
+                $returnCodes += ,(@{ returnCode = $code; type = 'success' })
+                [void]$seen.Add($code)
+            }
+        }
+    }
+
     $appData = @{
         '@odata.type' = '#microsoft.graph.win32LobApp'
         displayName = $AppName
@@ -423,23 +460,31 @@ try {
         applicableArchitectures = (Resolve-ApplicableArchitectures -Value $Architecture)
         minimumSupportedWindowsRelease = '1607'
         rules = @(
-            @{
-                '@odata.type' = '#microsoft.graph.win32LobAppPowerShellScriptRule'
-                ruleType = 'detection'
-                enforceSignatureCheck = $false
-                runAs32Bit = $false
-                operationType = 'notConfigured'
-                operator = 'notConfigured'
-                scriptContent = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($detectionScript))
-            }
+            (
+                # Prefer a native ProductCode detection rule when offline metadata
+                # gave us a real MSI product code: it is faster and survives
+                # PowerShell ExecutionPolicy quirks on locked-down endpoints.
+                if ($offlineMetadata -and $offlineMetadata.productCode -and ($offlineMetadata.installerType -in @('msi','wix','burn'))) {
+                    @{
+                        '@odata.type' = '#microsoft.graph.win32LobAppProductCodeRule'
+                        ruleType = 'detection'
+                        productCode = [string]$offlineMetadata.productCode
+                        productVersionOperator = 'notConfigured'
+                    }
+                } else {
+                    @{
+                        '@odata.type' = '#microsoft.graph.win32LobAppPowerShellScriptRule'
+                        ruleType = 'detection'
+                        enforceSignatureCheck = $false
+                        runAs32Bit = $false
+                        operationType = 'notConfigured'
+                        operator = 'notConfigured'
+                        scriptContent = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($detectionScript))
+                    }
+                }
+            )
         )
-        returnCodes = @(
-            @{ returnCode = 0; type = 'success' }
-            @{ returnCode = 1707; type = 'success' }
-            @{ returnCode = 1641; type = 'hardReboot' }
-            @{ returnCode = 3010; type = 'softReboot' }
-            @{ returnCode = 1618; type = 'retry' }
-        )
+        returnCodes = $returnCodes
         notes = $notes
     }
     $iconPayload = Convert-AppIconBase64ToPayload -Value $AppIconBase64
