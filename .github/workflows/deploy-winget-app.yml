@@ -246,6 +246,25 @@ jobs:
           ./scripts/winget/Generate-InstallationScripts.ps1 @params
         shell: pwsh
 
+      - name: Stage PSADT v4 toolkit
+        id: stage_psadt
+        if: ${{ github.event.inputs.use_psadt == 'true' && steps.resolve_installer.outputs.offline == 'true' }}
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          $ErrorActionPreference = 'Continue'
+          $stagingDir = "${{ steps.resolve_installer.outputs.staging_dir }}"
+          if (-not $stagingDir -or -not (Test-Path -LiteralPath $stagingDir)) {
+            Write-Host "::warning::No offline staging dir; skipping PSADT toolkit stage."
+            exit 0
+          }
+          try {
+            ./scripts/common/Stage-PSADTv4.ps1 -StagingDir $stagingDir
+            Add-Content -Path $env:GITHUB_OUTPUT -Value "psadt_staged=true"
+          } catch {
+            Write-Host "::warning::PSADT v4 download failed: $($_.Exception.Message). Falling back to plain Start-Process install."
+          }
+
       - name: Inject Show-ADTInstallationWelcome -CloseApps prologue
         if: ${{ github.event.inputs.apps_to_close != '' }}
         shell: pwsh
