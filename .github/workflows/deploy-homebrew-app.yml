@@ -297,9 +297,9 @@ jobs:
           if [[ -n "$APP_NAME" ]]; then ARGS+=(--display-name "$APP_NAME"); fi
           if [[ -n "$APP_DESCRIPTION" ]]; then ARGS+=(--description "$APP_DESCRIPTION"); fi
           if [[ -n "$APP_PUBLISHER" ]]; then ARGS+=(--publisher "$APP_PUBLISHER"); fi
-          if [[ -n "$VERSION" ]]; then ARGS+=(--version "$VERSION"); fi
-          python3 tools/intune_packager.py "${ARGS[@]}" || \
-            python3 tools/intune_packager.py --cask "url-$(date +%s)" --pkg-file "$PKG_PATH" --output-dir output "${ARGS[@]:2}"
+          # intune_packager exposes --app-version (not --version) for custom packages.
+          if [[ -n "$VERSION" ]]; then ARGS+=(--app-version "$VERSION"); fi
+          python3 tools/intune_packager.py "${ARGS[@]}"
 
       - name: Package and upload to Intune
         id: package_upload
