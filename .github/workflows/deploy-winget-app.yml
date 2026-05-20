@@ -661,6 +661,14 @@ jobs:
           if (Test-Path -LiteralPath ".modern-dev-mgmt/validation/leftovers.json") {
             try { $leftovers = Get-Content -LiteralPath ".modern-dev-mgmt/validation/leftovers.json" -Raw | ConvertFrom-Json } catch {}
           }
+          # Pull installer manifest metadata too so the UI's App Documentation
+          # tab can show real install/uninstall commands + product code.
+          $installerMeta = $null
+          if (Test-Path -LiteralPath "winget-installer-files/installer-metadata.json") {
+            try {
+              $installerMeta = Get-Content -LiteralPath "winget-installer-files/installer-metadata.json" -Raw | ConvertFrom-Json
+            } catch {}
+          }
           $result = [ordered]@{
             workflowRunId = "${{ github.run_id }}"
             workflow = "deploy-winget-app.yml"
@@ -675,6 +683,7 @@ jobs:
             validation = $validation
             footprint = $footprint
             leftovers = $leftovers
+            installer = $installerMeta
           }
           $result | ConvertTo-Json -Depth 12 | Set-Content -Path "$runDir/${{ github.run_id }}.json" -Encoding UTF8
           git add "$runDir/${{ github.run_id }}.json"
