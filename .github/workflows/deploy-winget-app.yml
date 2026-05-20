@@ -616,6 +616,19 @@ jobs:
               Write-Warning "Could not parse validation report: $($_.Exception.Message)"
             }
           }
+          # Capture last 200 lines of each transcript so the UI can show what
+          # actually went wrong without forcing the user to download artifacts.
+          function Get-LogTail([string]$Path, [int]$N = 200) {
+            if (-not (Test-Path -LiteralPath $Path)) { return $null }
+            try {
+              $lines = Get-Content -LiteralPath $Path -Tail $N -ErrorAction Stop
+              return ($lines -join [Environment]::NewLine)
+            } catch { return $null }
+          }
+          if ($validation) {
+            $validation | Add-Member -NotePropertyName installLogTail   -NotePropertyValue (Get-LogTail '.modern-dev-mgmt/validation/install.log')   -Force
+            $validation | Add-Member -NotePropertyName uninstallLogTail -NotePropertyValue (Get-LogTail '.modern-dev-mgmt/validation/uninstall.log') -Force
+          }
           $footprint = $null
           if (Test-Path -LiteralPath ".modern-dev-mgmt/validation/footprint.json") {
             try { $footprint = Get-Content -LiteralPath ".modern-dev-mgmt/validation/footprint.json" -Raw | ConvertFrom-Json } catch {}
