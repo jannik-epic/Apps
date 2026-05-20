@@ -285,7 +285,10 @@ jobs:
         run: |
           $ErrorActionPreference = 'Stop'
           New-Item -ItemType Directory -Force -Path .modern-dev-mgmt/validation | Out-Null
-          ./scripts/common/Capture-WindowsFootprint.ps1 -OutputPath .modern-dev-mgmt/validation/before.json
+          # ARP-only baseline: a list of currently-installed apps. Fast (no
+          # file system walk). The after-install snapshot will only enumerate
+          # files under the NEW ARP entry's InstallLocation.
+          ./scripts/common/Capture-WindowsFootprint.ps1 -OutputPath .modern-dev-mgmt/validation/before.json -Mode arp
           Add-Content -Path $env:GITHUB_OUTPUT -Value "baseline_path=.modern-dev-mgmt/validation/before.json"
 
       - name: VM validation — install (offline package)
@@ -340,7 +343,13 @@ jobs:
         if: ${{ github.event.inputs.validation_enabled != 'false' && steps.resolve_installer.outputs.offline == 'true' && steps.validate_install.outcome == 'success' }}
         shell: pwsh
         run: |
-          ./scripts/common/Capture-WindowsFootprint.ps1 -OutputPath .modern-dev-mgmt/validation/after-install.json
+          # 'full' mode + BaselinePath: enumerates files ONLY under the new
+          # ARP entry's InstallLocation (skip everything that was already on
+          # the runner). Brings post-install snapshot from minutes to seconds.
+          ./scripts/common/Capture-WindowsFootprint.ps1 `
+            -OutputPath .modern-dev-mgmt/validation/after-install.json `
+            -Mode full `
+            -BaselinePath .modern-dev-mgmt/validation/before.json
           ./scripts/common/Diff-WindowsFootprint.ps1 `
             -BeforePath .modern-dev-mgmt/validation/before.json `
             -AfterPath  .modern-dev-mgmt/validation/after-install.json `
@@ -370,10 +379,16 @@ jobs:
 
       - name: VM validation — leftover diff
         id: validate_leftovers
-        if: ${{ github.event.inputs.validation_enabled != 'false' && steps.resolve_installer.outputs.offline == 'true' && steps.validate_uninstall.outcome == 'success' }}
+        # Run even if uninstall failed so "Left after uninstall" surfaces the
+        # leftover files for the UI (matches Robopack's "0 files, 0 KB - 0%"
+        # vs. "leftover" rows). Only skip if validation was disabled entirely.
+        if: ${{ always() && github.event.inputs.validation_enabled != 'false' && steps.resolve_installer.outputs.offline == 'true' && steps.validate_install.outcome == 'success' }}
         shell: pwsh
         run: |
-          ./scripts/common/Capture-WindowsFootprint.ps1 -OutputPath .modern-dev-mgmt/validation/after-uninstall.json
+          ./scripts/common/Capture-WindowsFootprint.ps1 `
+            -OutputPath .modern-dev-mgmt/validation/after-uninstall.json `
+            -Mode full `
+            -BaselinePath .modern-dev-mgmt/validation/before.json
           ./scripts/common/Diff-WindowsFootprint.ps1 `
             -BeforePath .modern-dev-mgmt/validation/before.json `
             -AfterPath  .modern-dev-mgmt/validation/after-uninstall.json `
