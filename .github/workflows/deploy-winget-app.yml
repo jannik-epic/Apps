@@ -164,31 +164,40 @@ jobs:
 
       - name: Resolve and download installer binary (offline package)
         id: resolve_installer
-        if: ${{ (github.event.inputs.package_source || 'winget') == 'winget' }}
+        # Try the offline path for BOTH winget and msstore. Free msstore apps
+        # download fine via 'winget download --source msstore'; licensed/paid
+        # Store apps will fail at this step and the workflow will fall back to
+        # the legacy winget-client wrapper (continue-on-error so we don't kill
+        # the run when an msstore download is rights-restricted).
+        if: ${{ github.event.inputs.dry_run != 'true' || true }}
         shell: pwsh
+        continue-on-error: true
         run: |
           $ErrorActionPreference = 'Stop'
           $arch = "${{ github.event.inputs.installer_architecture }}"
           if (-not $arch) { $arch = 'x64' }
           $version = "${{ github.event.inputs.version }}"
           if (-not $version) { $version = "${{ steps.winget_info.outputs.version }}" }
-          # The pipeline downloads the actual MSI/EXE/MSIX from the manifest and
-          # stages it under winget-installer-files/Files/ so the .intunewin is
-          # fully self-contained — the target device must NOT need winget.
+          $source = "${{ github.event.inputs.package_source || 'winget' }}"
           $stagingDir = Join-Path $PWD 'winget-installer-files'
-          ./scripts/winget/Download-WingetInstaller.ps1 `
-            -PackageId "${{ github.event.inputs.package_id }}" `
-            -Version $version `
-            -PackageSource 'winget' `
-            -Architecture $arch `
-            -OutputDirectory $stagingDir
-          $metadataPath = Join-Path $stagingDir 'installer-metadata.json'
-          if (-not (Test-Path -LiteralPath $metadataPath)) {
-            throw "installer-metadata.json was not produced at $metadataPath"
+          try {
+            ./scripts/winget/Download-WingetInstaller.ps1 `
+              -PackageId "${{ github.event.inputs.package_id }}" `
+              -Version $version `
+              -PackageSource $source `
+              -Architecture $arch `
+              -OutputDirectory $stagingDir
+            $metadataPath = Join-Path $stagingDir 'installer-metadata.json'
+            if (Test-Path -LiteralPath $metadataPath) {
+              Add-Content -Path $env:GITHUB_OUTPUT -Value "metadata_path=$metadataPath"
+              Add-Content -Path $env:GITHUB_OUTPUT -Value "staging_dir=$stagingDir"
+              Add-Content -Path $env:GITHUB_OUTPUT -Value "offline=true"
+            } else {
+              Write-Host "::warning::Offline installer metadata missing; falling back to runtime install path."
+            }
+          } catch {
+            Write-Host "::warning::Offline installer download failed ($($_.Exception.Message)); falling back to runtime install path."
           }
-          Add-Content -Path $env:GITHUB_OUTPUT -Value "metadata_path=$metadataPath"
-          Add-Content -Path $env:GITHUB_OUTPUT -Value "staging_dir=$stagingDir"
-          Add-Content -Path $env:GITHUB_OUTPUT -Value "offline=true"
 
       - name: Generate Installation Scripts
         id: generate_scripts
