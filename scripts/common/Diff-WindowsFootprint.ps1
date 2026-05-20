@@ -47,7 +47,11 @@ function Diff-ById {
         $id = ($KeyFields | ForEach-Object { [string]$a.$_ }) -join '|'
         if (-not $set.Contains($id)) { $delta.Add($a) | Out-Null }
     }
-    return ,$delta.ToArray()
+    # Use the typed array cast to keep ConvertTo-Json output stable: with
+    # comma-prefix on a 0-element List the JSON serialiser emitted [[]] instead
+    # of []. Casting the result to [object[]] yields a real JSON array for
+    # both empty and populated cases.
+    return [object[]]$delta.ToArray()
 }
 
 $fileDelta     = Diff-ById -Before $before.files    -After $after.files    -KeyFields @('path')
