@@ -1,0 +1,98 @@
+{
+  "workflowRunId": "26158799529",
+  "workflow": "deploy-winget-app.yml",
+  "packageManager": "winget",
+  "packageId": "Notion.NotionCalendar",
+  "appId": "87f128df-af63-4587-bb73-58fe0fcad65f",
+  "updateOnlyAppId": "",
+  "appName": "Notion Calendar",
+  "status": "success",
+  "createdAt": "2026-05-20T11:13:42.1806358Z",
+  "context": {
+    "source": "catalog.deploy",
+    "targetTenantId": 289,
+    "targetTenantName": "ModernDevMgmt.onmicrosoft.com",
+    "repo": "jannik-epic/Apps",
+    "workflowFile": "deploy-winget-app.yml",
+    "catalog": {
+      "catalogAppId": 11281,
+      "source": "winget",
+      "packageId": "Notion.NotionCalendar",
+      "name": "Notion Calendar",
+      "version": "1.133.0",
+      "publisher": "Notion Labs, Inc."
+    },
+    "createUpdateOnly": false,
+    "appSettingId": null,
+    "appSettingVariables": [],
+    "assignmentTemplateId": null,
+    "dryRun": false,
+    "createdAt": "2026-05-20T11:12:06.893Z"
+  },
+  "validation": {
+    "installExitCode": 0,
+    "detectionExitCode": 0,
+    "uninstallExitCode": 1,
+    "installOutcome": "success",
+    "detectionOutcome": "success",
+    "uninstallOutcome": "failure",
+    "footprintAvailable": true,
+    "leftoversAvailable": true,
+    "installLogPath": ".modern-dev-mgmt/validation/install.log",
+    "uninstallLogPath": ".modern-dev-mgmt/validation/uninstall.log",
+    "installLogTail": "**********************\r\nPowerShell transcript start\r\nStart time: 20260520111243\r\nUsername: runnervmp4gaq\\runneradmin\r\nRunAs User: runnervmp4gaq\\runneradmin\r\nConfiguration Name: \r\nMachine: runnervmp4gaq (Microsoft Windows NT 10.0.26100.0)\r\nHost Application: C:\\Program Files\\PowerShell\\7\\pwsh.dll -command . 'D:\\a\\_temp\\56f5a3c0-fd28-4f61-9ad9-1acce0f79e8f.ps1'\r\nProcess ID: 872\r\nPSVersion: 7.4.15\r\nPSEdition: Core\r\nGitCommitId: 7.4.15\r\nOS: Microsoft Windows 10.0.26100\r\nPlatform: Win32NT\r\nPSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0\r\nPSRemotingProtocolVersion: 2.3\r\nSerializationVersion: 1.1.0.1\r\nWSManStackVersion: 3.0\r\n**********************\r\n\r\n**********************\r\nPowerShell transcript end\r\nEnd time: 20260520111253\r\n**********************",
+    "uninstallLogTail": "**********************\r\nPowerShell transcript start\r\nStart time: 20260520111255\r\nUsername: runnervmp4gaq\\runneradmin\r\nRunAs User: runnervmp4gaq\\runneradmin\r\nConfiguration Name: \r\nMachine: runnervmp4gaq (Microsoft Windows NT 10.0.26100.0)\r\nHost Application: C:\\Program Files\\PowerShell\\7\\pwsh.dll -command . 'D:\\a\\_temp\\62151f12-5c15-42a8-9efd-58ba409b08d4.ps1'\r\nProcess ID: 8904\r\nPSVersion: 7.4.15\r\nPSEdition: Core\r\nGitCommitId: 7.4.15\r\nOS: Microsoft Windows 10.0.26100\r\nPlatform: Win32NT\r\nPSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0\r\nPSRemotingProtocolVersion: 2.3\r\nSerializationVersion: 1.1.0.1\r\nWSManStackVersion: 3.0\r\n**********************\r\n\r\n**********************\r\nPowerShell transcript end\r\nEnd time: 20260520111255\r\n**********************"
+  },
+  "footprint": {
+    "files": [
+      []
+    ],
+    "registry": [],
+    "arp": [
+      {
+        "key": "6a2b5ac5-fa29-5b18-8c83-673211e963c6",
+        "displayName": "Notion Calendar 1.133.0",
+        "publisher": "Notion Labs, Inc.",
+        "displayVersion": "1.133.0",
+        "installLocation": "",
+        "uninstallString": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\notion-calendar-web\\Uninstall Notion Calendar.exe\" /currentuser",
+        "quietUninstallString": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\notion-calendar-web\\Uninstall Notion Calendar.exe\" /currentuser /S",
+        "estimatedSize": 331246
+      }
+    ],
+    "summary": {
+      "fileCount": 1,
+      "totalFileSize": 0,
+      "registryValueCount": 0,
+      "arpEntries": 1
+    },
+    "beforeCapturedAt": "2026-05-20T11:12:42.6946272Z",
+    "afterCapturedAt": "2026-05-20T11:12:54.3748542Z"
+  },
+  "leftovers": {
+    "files": [
+      []
+    ],
+    "registry": [],
+    "arp": [
+      {
+        "key": "6a2b5ac5-fa29-5b18-8c83-673211e963c6",
+        "displayName": "Notion Calendar 1.133.0",
+        "publisher": "Notion Labs, Inc.",
+        "displayVersion": "1.133.0",
+        "installLocation": "",
+        "uninstallString": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\notion-calendar-web\\Uninstall Notion Calendar.exe\" /currentuser",
+        "quietUninstallString": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\notion-calendar-web\\Uninstall Notion Calendar.exe\" /currentuser /S",
+        "estimatedSize": 331246
+      }
+    ],
+    "summary": {
+      "fileCount": 1,
+      "totalFileSize": 0,
+      "registryValueCount": 0,
+      "arpEntries": 1
+    },
+    "beforeCapturedAt": "2026-05-20T11:12:42.6946272Z",
+    "afterCapturedAt": "2026-05-20T11:12:56.1492259Z"
+  }
+}
