@@ -154,6 +154,8 @@ jobs:
               "${{ github.event.inputs.package_id }}",
               "--output",
               "output/${{ github.event.inputs.package_id }}_footprint_report.txt",
+              "--json-output",
+              ".modern-dev-mgmt/validation/footprint.json",
           ]
           try:
               completed = subprocess.run(cmd, timeout=300)
@@ -301,6 +303,15 @@ jobs:
               console.warn('Could not decode Modern Dev Mgmt context:', error.message);
             }
           }
+          let footprint = null;
+          try {
+            const fpPath = '.modern-dev-mgmt/validation/footprint.json';
+            if (fs.existsSync(fpPath)) {
+              footprint = JSON.parse(fs.readFileSync(fpPath, 'utf8'));
+            }
+          } catch (err) {
+            console.warn('Could not load homebrew footprint JSON:', err.message);
+          }
           const result = {
             workflowRunId: runId,
             workflow: 'deploy-homebrew-app.yml',
@@ -311,6 +322,7 @@ jobs:
             status: 'success',
             createdAt: new Date().toISOString(),
             context,
+            footprint,
           };
           fs.writeFileSync(`.modern-dev-mgmt/runs/${runId}.json`, JSON.stringify(result, null, 2));
           if (context && context.patchRunId) {
