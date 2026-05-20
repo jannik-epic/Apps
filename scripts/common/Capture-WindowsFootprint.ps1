@@ -1,44 +1,47 @@
-# sandbox-footprint.ps1
+# Capture-WindowsFootprint.ps1
 #
-# Captures a snapshot of Windows system state for app-footprint comparisons.
-# Designed to be invoked by the sandbox runner before install, after install,
-# and after uninstall. The runner then diffs the three snapshots to produce
-# `footprint_diff` (files+registry added by install) and `leftover_diff` (items
-# still present after uninstall).
+# Lightweight snapshot for the deploy pipeline's footprint diff. Earlier
+# versions walked the entire ProgramFiles/AppData tree which took 5+ minutes
+# on GitHub-hosted Windows runners (Visual Studio, Android SDK, dotnet etc.
+# = 200k+ files). Robopack's approach is smarter: use the ARP (Add/Remove
+# Programs) registry as the authoritative "what's installed" source. After
+# install, the NEW ARP entry tells us the InstallLocation, and we enumerate
+# only THAT directory for the per-file footprint.
 #
-# A snapshot is a single JSON file with this shape:
+# Modes:
+#   -Mode arp        : ARP entries + key registry blocks. ~5 seconds total.
+#                       The "before" snapshot uses this; very fast.
+#   -Mode full       : ARP + ALL files under the install-location of every
+#                       ARP entry (post-install snapshot uses this — only one
+#                       directory, since we know which ARP entry was added).
+#
+# Snapshot shape (matches before-/after-/leftovers schema):
 #   {
-#     "capturedAt": "2026-05-20T13:45:00Z",
-#     "files":    [ { "path": "[{ProgramFilesX64}]\\Greenshot\\Greenshot.exe",
-#                     "size": 262144, "lastWriteTime": "2026-03-20T13:45:00Z",
-#                     "version": "1.3.315.16907" }, ... ],
-#     "registry": [ { "hive": "HKLM",
-#                     "key": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Greenshot_is1",
-#                     "name": "DisplayVersion", "type": "String", "data": "1.3.315" }, ... ],
-#     "arp":      [ { "key": "Greenshot_is1", "displayName": "Greenshot 1.3.315",
-#                     "publisher": "Greenshot", "displayVersion": "1.3.315" } ]
+#     "capturedAt": "...",
+#     "files":    [ { path, size, lastWriteTime, version }, ... ],
+#     "registry": [ { hive, key, name, type, data }, ... ],
+#     "arp":      [ { key, displayName, publisher, displayVersion,
+#                     installLocation, uninstallString,
+#                     quietUninstallString, estimatedSize }, ... ]
 #   }
-#
-# All filesystem paths are normalized to portable templates so two devices with
-# different drive layouts produce comparable footprints:
-#   C:\Program Files\...       → [{ProgramFilesX64}]\...
-#   C:\Program Files (x86)\... → [{ProgramFilesX86}]\...
-#   C:\ProgramData\...         → [{CommonAppData}]\...
-#   C:\Users\<u>\AppData\Local → [{LocalAppData}]\...
-#   C:\Users\<u>\AppData\Roaming → [{AppData}]\...
-#
-# Defaults to a bounded depth + maximum entries to avoid blowing up CI minutes
-# on enormous installs (e.g. SAP, Visual Studio).
 
 param(
     [Parameter(Mandatory = $true)]
     [string]$OutputPath,
 
     [Parameter(Mandatory = $false)]
-    [int]$MaxFiles = 80000,
+    [ValidateSet('arp','full')]
+    [string]$Mode = 'arp',
 
     [Parameter(Mandatory = $false)]
-    [int]$MaxRegistryValues = 20000
+    [int]$MaxFilesPerInstall = 5000,
+
+    # When set, in 'full' mode we only enumerate files for ARP entries that
+    # don't exist in the baseline snapshot — i.e. only the newly-installed
+    # app's footprint, not the entire pre-existing inventory of every
+    # tool already on the runner.
+    [Parameter(Mandatory = $false)]
+    [string]$BaselinePath
 )
 
 $ErrorActionPreference = 'Continue'
@@ -46,9 +49,11 @@ $ErrorActionPreference = 'Continue'
 function ConvertTo-PortablePath {
     param([string]$Path)
     if (-not $Path) { return $Path }
+    # Order matters: ProgramFilesX86 must be checked before ProgramFiles
+    # because the x86 path is a string-prefix of itself on English Windows.
     $candidates = @(
-        @{ Pattern = ([Environment]::GetFolderPath('ProgramFiles'));      Token = '[{ProgramFilesX64}]' }
         @{ Pattern = ([Environment]::GetFolderPath('ProgramFilesX86'));   Token = '[{ProgramFilesX86}]' }
+        @{ Pattern = ([Environment]::GetFolderPath('ProgramFiles'));      Token = '[{ProgramFilesX64}]' }
         @{ Pattern = ([Environment]::GetFolderPath('CommonProgramFiles'));Token = '[{CommonProgramFiles}]' }
         @{ Pattern = "$env:ProgramData";                                  Token = '[{CommonAppData}]' }
         @{ Pattern = "$env:LocalAppData";                                 Token = '[{LocalAppData}]' }
@@ -64,146 +69,6 @@ function ConvertTo-PortablePath {
     return $Path
 }
 
-function Get-FileSnapshot {
-    param([string[]]$Roots, [int]$MaxItems, [string[]]$SkipPrefixes)
-    # Manual DFS with directory-level skip: EnumerateFiles(AllDirectories)
-    # walks INTO skipped trees anyway. By pruning at the directory level we
-    # avoid stat'ing 100k+ files inside Visual Studio / Android SDK / dotnet.
-    $items = New-Object System.Collections.Generic.List[object]
-    $skipPrefixesLower = @()
-    foreach ($p in $SkipPrefixes) {
-        if ($p) { $skipPrefixesLower += ,($p.TrimEnd('\').ToLowerInvariant()) }
-    }
-    $shouldSkip = {
-        param([string]$dir)
-        $lower = $dir.ToLowerInvariant()
-        foreach ($prefix in $skipPrefixesLower) {
-            if ($lower -eq $prefix -or $lower.StartsWith($prefix + '\')) { return $true }
-        }
-        return $false
-    }
-    $stack = New-Object System.Collections.Generic.Stack[string]
-    foreach ($root in $Roots) {
-        if (-not $root -or -not (Test-Path -LiteralPath $root)) { continue }
-        $stack.Push($root)
-    }
-    while ($stack.Count -gt 0 -and $items.Count -lt $MaxItems) {
-        $dir = $stack.Pop()
-        if (& $shouldSkip $dir) { continue }
-        # Files at this level.
-        try {
-            $files = [System.IO.Directory]::EnumerateFiles($dir, '*', [System.IO.SearchOption]::TopDirectoryOnly)
-            foreach ($file in $files) {
-                if ($items.Count -ge $MaxItems) { break }
-                try {
-                    $info = [System.IO.FileInfo]::new($file)
-                    $version = $null
-                    $ext = $info.Extension.ToLowerInvariant()
-                    if ($ext -in @('.exe','.dll','.sys','.ocx')) {
-                        try {
-                            $vi = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($file)
-                            $version = $vi.FileVersion
-                        } catch {}
-                    }
-                    $items.Add([ordered]@{
-                        path          = (ConvertTo-PortablePath $file)
-                        size          = [int64]$info.Length
-                        lastWriteTime = $info.LastWriteTimeUtc.ToString('o')
-                        version       = $version
-                    }) | Out-Null
-                } catch {
-                    # File vanished or ACL denied — skip without breaking enum.
-                }
-            }
-        } catch {
-            # Read-protected dir — skip.
-        }
-        # Subdirectories (push only if not in skip list).
-        try {
-            $subs = [System.IO.Directory]::EnumerateDirectories($dir, '*', [System.IO.SearchOption]::TopDirectoryOnly)
-            foreach ($sub in $subs) {
-                if (-not (& $shouldSkip $sub)) { $stack.Push($sub) }
-            }
-        } catch {}
-    }
-    return ,$items.ToArray()
-}
-
-function Get-RegistrySnapshot {
-    param(
-        [object[]]$Roots,
-        [int]$MaxValues,
-        [int]$MaxDepth = 4,
-        [string[]]$SkipKeyPatterns = @()
-    )
-    # Iterative BFS using .NET registry API — much faster than Get-ChildItem
-    # -Recurse on registry hives, and we can bound depth + skip noisy subtrees
-    # (Microsoft, .NET, Visual Studio) that dominate HKLM\SOFTWARE on a runner.
-    $items = New-Object System.Collections.Generic.List[object]
-    $skipRegex = @()
-    foreach ($p in $SkipKeyPatterns) { if ($p) { $skipRegex += [regex]$p } }
-
-    foreach ($root in $Roots) {
-        $hiveLabel = $root.Hive
-        $rootKeyName = $root.Key
-        $hiveRoot = switch ($hiveLabel) {
-            'HKLM' { [Microsoft.Win32.Registry]::LocalMachine }
-            'HKCU' { [Microsoft.Win32.Registry]::CurrentUser }
-            'HKCR' { [Microsoft.Win32.Registry]::ClassesRoot }
-            'HKU'  { [Microsoft.Win32.Registry]::Users }
-            default { $null }
-        }
-        if (-not $hiveRoot) { continue }
-        $startKey = if ($rootKeyName) {
-            try { $hiveRoot.OpenSubKey($rootKeyName, $false) } catch { $null }
-        } else { $hiveRoot }
-        if (-not $startKey) { continue }
-
-        # Stack of (RegistryKey, portablePath, depth).
-        $stack = New-Object System.Collections.Generic.Stack[object]
-        $stack.Push(@($startKey, "${hiveLabel}\${rootKeyName}".TrimEnd('\'), 0))
-
-        while ($stack.Count -gt 0) {
-            if ($items.Count -ge $MaxValues) { break }
-            $entry = $stack.Pop()
-            $key = $entry[0]; $portable = $entry[1]; $depth = $entry[2]
-            try {
-                foreach ($valName in $key.GetValueNames()) {
-                    if ($items.Count -ge $MaxValues) { break }
-                    try {
-                        $valueData = $key.GetValue($valName, '')
-                        $kind = $key.GetValueKind($valName).ToString()
-                        $items.Add([ordered]@{
-                            hive = $hiveLabel
-                            key  = $portable
-                            name = if ($valName) { $valName } else { '(default)' }
-                            type = $kind
-                            data = [string]$valueData
-                        }) | Out-Null
-                    } catch {}
-                }
-                if ($depth -lt $MaxDepth) {
-                    foreach ($subName in $key.GetSubKeyNames()) {
-                        $childPath = "$portable\$subName"
-                        $skip = $false
-                        foreach ($rx in $skipRegex) {
-                            if ($rx.IsMatch($childPath)) { $skip = $true; break }
-                        }
-                        if ($skip) { continue }
-                        try {
-                            $child = $key.OpenSubKey($subName, $false)
-                            if ($child) { $stack.Push(@($child, $childPath, $depth + 1)) }
-                        } catch {}
-                    }
-                }
-            } catch {}
-            if ($key -ne $startKey) { try { $key.Close() } catch {} }
-        }
-        try { $startKey.Close() } catch {}
-    }
-    return ,$items.ToArray()
-}
-
 function Get-ArpSnapshot {
     $arp = New-Object System.Collections.Generic.List[object]
     $keys = @(
@@ -216,86 +81,122 @@ function Get-ArpSnapshot {
         Get-ChildItem -LiteralPath $k -ErrorAction SilentlyContinue | ForEach-Object {
             $props = Get-ItemProperty -LiteralPath $_.PSPath -ErrorAction SilentlyContinue
             if (-not $props) { return }
+            # Filter out empty/system entries that pollute the diff.
+            if (-not $props.DisplayName -and -not $props.UninstallString) { return }
+            $sizeText = [string]$props.EstimatedSize
+            $size = 0
+            if ($sizeText -match '^\d+$') { $size = [int64]$sizeText }
             $arp.Add([ordered]@{
-                key            = $_.PSChildName
-                displayName    = [string]$props.DisplayName
-                publisher      = [string]$props.Publisher
-                displayVersion = [string]$props.DisplayVersion
-                installLocation = [string]$props.InstallLocation
-                uninstallString = [string]$props.UninstallString
+                key                  = $_.PSChildName
+                displayName          = [string]$props.DisplayName
+                publisher            = [string]$props.Publisher
+                displayVersion       = [string]$props.DisplayVersion
+                installLocation      = [string]$props.InstallLocation
+                uninstallString      = [string]$props.UninstallString
                 quietUninstallString = [string]$props.QuietUninstallString
-                estimatedSize  = [int64]([double]([string]$props.EstimatedSize))
+                estimatedSize        = $size
             }) | Out-Null
         }
     }
     return ,$arp.ToArray()
 }
 
-$fileRoots = @(
-    [Environment]::GetFolderPath('ProgramFiles'),
-    [Environment]::GetFolderPath('ProgramFilesX86'),
-    "$env:ProgramData",
-    "$env:LocalAppData",
-    "$env:AppData"
-)
-# GitHub-hosted Windows runners ship with ~200k pre-installed files (Visual
-# Studio, dotnet SDKs, hosted-tool-caches, package-manager caches). Excluding
-# these system trees brings baseline snapshot time from ~6 min down to ~30 s
-# without losing fidelity: app installs rarely touch them, and any that do
-# would show as ARP/registry footprint anyway.
-$fileSkipPrefixes = @(
-    (Join-Path $env:ProgramFiles 'Microsoft Visual Studio'),
-    (Join-Path $env:ProgramFiles 'dotnet'),
-    (Join-Path $env:ProgramFiles 'PowerShell'),
-    (Join-Path $env:ProgramFiles 'Android'),
-    (Join-Path $env:ProgramFiles 'Java'),
-    (Join-Path $env:ProgramFiles 'CMake'),
-    (Join-Path $env:ProgramFiles 'WindowsApps'),
-    (Join-Path ${env:ProgramFiles(x86)} 'Microsoft Visual Studio'),
-    (Join-Path ${env:ProgramFiles(x86)} 'Microsoft SDKs'),
-    (Join-Path ${env:ProgramFiles(x86)} 'Windows Kits'),
-    (Join-Path ${env:ProgramFiles(x86)} 'Android'),
-    (Join-Path ${env:ProgramFiles(x86)} 'Microsoft'),
-    (Join-Path $env:ProgramData 'Microsoft\Windows Defender'),
-    (Join-Path $env:ProgramData 'chocolatey'),
-    (Join-Path $env:ProgramData 'Package Cache'),
-    (Join-Path $env:LocalAppData 'Microsoft\Edge'),
-    (Join-Path $env:LocalAppData 'Microsoft\Windows'),
-    (Join-Path $env:LocalAppData 'Programs\Microsoft VS Code'),
-    (Join-Path $env:LocalAppData 'Temp'),
-    (Join-Path $env:AppData 'Microsoft'),
-    'C:\hostedtoolcache',
-    'C:\npm',
-    'C:\Modules',
-    'C:\tools'
-)
-
-$registryRoots = @(
-    @{ Hive = 'HKLM'; Key = 'SOFTWARE' },
-    @{ Hive = 'HKLM'; Key = 'SOFTWARE\WOW6432Node' },
-    @{ Hive = 'HKCU'; Key = 'SOFTWARE' }
-    # HKCR is intentionally skipped — it's mostly file-extension and CLSID
-    # associations that are not meaningful for app-footprint diffing on a
-    # GitHub runner with thousands of pre-registered handlers.
-)
-
-# Subkey paths that are pure system noise on the GitHub runner; skipping them
-# brings the registry snapshot from ~5 min to <30 s. App installs that register
-# under Microsoft (e.g. Microsoft\Edge plugins) are still captured under their
-# own publisher key elsewhere.
-$registrySkipPatterns = @(
-    '\\Microsoft\\(Cryptography|Windows NT|EnterpriseCertificates|Active Setup|Internet Explorer|Edge|Office|VisualStudio|\.NETFramework|DotNETFramework)',
-    '\\Wow6432Node\\Microsoft\\(Cryptography|Windows NT|VisualStudio|\.NETFramework)',
-    '\\Classes\\(CLSID|TypeLib|Interface|AppID)',
-    '\\Policies\\Microsoft\\'
-)
-
-$snapshot = [ordered]@{
-    capturedAt = (Get-Date).ToUniversalTime().ToString('o')
-    files      = (Get-FileSnapshot -Roots $fileRoots -MaxItems $MaxFiles -SkipPrefixes $fileSkipPrefixes)
-    registry   = (Get-RegistrySnapshot -Roots $registryRoots -MaxValues $MaxRegistryValues -MaxDepth 5 -SkipKeyPatterns $registrySkipPatterns)
-    arp        = (Get-ArpSnapshot)
+function Get-InstallLocationFiles {
+    param([string]$InstallLocation, [int]$MaxItems)
+    if (-not $InstallLocation -or -not (Test-Path -LiteralPath $InstallLocation)) { return @() }
+    $items = New-Object System.Collections.Generic.List[object]
+    try {
+        $files = [System.IO.Directory]::EnumerateFiles($InstallLocation, '*', [System.IO.SearchOption]::AllDirectories)
+        foreach ($f in $files) {
+            if ($items.Count -ge $MaxItems) { break }
+            try {
+                $info = [System.IO.FileInfo]::new($f)
+                $version = $null
+                $ext = $info.Extension.ToLowerInvariant()
+                if ($ext -in @('.exe','.dll','.sys','.ocx')) {
+                    try {
+                        $vi = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($f)
+                        $version = $vi.FileVersion
+                    } catch {}
+                }
+                $items.Add([ordered]@{
+                    path          = (ConvertTo-PortablePath $f)
+                    size          = [int64]$info.Length
+                    lastWriteTime = $info.LastWriteTimeUtc.ToString('o')
+                    version       = $version
+                }) | Out-Null
+            } catch {}
+        }
+    } catch {}
+    return ,$items.ToArray()
 }
 
-$snapshot | ConvertTo-Json -Depth 12 -Compress | Set-Content -LiteralPath $OutputPath -Encoding UTF8
-Write-Host "Snapshot written to $OutputPath ($($snapshot.files.Count) files, $($snapshot.registry.Count) registry values, $($snapshot.arp.Count) ARP entries)"
+# Get the Run / RunOnce + Services entries — small but high-signal for the
+# footprint (apps that auto-start or register a service).
+function Get-AutoRunRegistrySnapshot {
+    $items = New-Object System.Collections.Generic.List[object]
+    $autorunKeys = @(
+        @{ Hive = 'HKLM'; Path = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run' },
+        @{ Hive = 'HKLM'; Path = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce' },
+        @{ Hive = 'HKCU'; Path = 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run' },
+        @{ Hive = 'HKLM'; Path = 'HKLM:\SYSTEM\CurrentControlSet\Services' }
+    )
+    foreach ($k in $autorunKeys) {
+        if (-not (Test-Path -LiteralPath $k.Path)) { continue }
+        try {
+            $key = Get-Item -LiteralPath $k.Path -ErrorAction Stop
+            foreach ($valName in $key.GetValueNames()) {
+                try {
+                    $val = $key.GetValue($valName, '')
+                    $kind = $key.GetValueKind($valName).ToString()
+                    $portable = $key.Name -replace '^HKEY_LOCAL_MACHINE\\', 'HKLM\' -replace '^HKEY_CURRENT_USER\\', 'HKCU\'
+                    $items.Add([ordered]@{
+                        hive = $k.Hive
+                        key  = $portable
+                        name = if ($valName) { $valName } else { '(default)' }
+                        type = $kind
+                        data = [string]$val
+                    }) | Out-Null
+                } catch {}
+            }
+        } catch {}
+    }
+    return ,$items.ToArray()
+}
+
+$result = [ordered]@{
+    capturedAt = (Get-Date).ToUniversalTime().ToString('o')
+    mode       = $Mode
+    arp        = (Get-ArpSnapshot)
+    registry   = (Get-AutoRunRegistrySnapshot)
+    files      = @()
+}
+
+if ($Mode -eq 'full') {
+    # Build the set of ARP keys that existed in the baseline so we only walk
+    # NEW installs (huge speedup vs. walking every pre-installed tool's dir).
+    $baselineArpKeys = [System.Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
+    if ($BaselinePath -and (Test-Path -LiteralPath $BaselinePath)) {
+        try {
+            $baseline = Get-Content -LiteralPath $BaselinePath -Raw | ConvertFrom-Json
+            foreach ($e in @($baseline.arp)) {
+                if ($e.key) { [void]$baselineArpKeys.Add([string]$e.key) }
+            }
+        } catch {
+            Write-Warning "Could not parse baseline at $BaselinePath -- enumerating files for ALL ARP entries: $($_.Exception.Message)"
+        }
+    }
+
+    $files = New-Object System.Collections.Generic.List[object]
+    foreach ($entry in $result.arp) {
+        if (-not $entry.installLocation) { continue }
+        if ($baselineArpKeys.Count -gt 0 -and $baselineArpKeys.Contains([string]$entry.key)) { continue }
+        foreach ($f in Get-InstallLocationFiles -InstallLocation $entry.installLocation -MaxItems $MaxFilesPerInstall) {
+            $files.Add($f) | Out-Null
+        }
+    }
+    $result.files = ,$files.ToArray()
+}
+
+$result | ConvertTo-Json -Depth 12 -Compress | Set-Content -LiteralPath $OutputPath -Encoding UTF8
+Write-Host "Snapshot ($Mode) written to $OutputPath ($($result.arp.Count) ARP, $($result.files.Count) files, $($result.registry.Count) autorun reg values)"
