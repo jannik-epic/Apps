@@ -164,7 +164,13 @@ jobs:
           # If DMG, mount + locate inner .pkg or .app.
           EXT="${FNAME_PART##*.}"
           if [[ "$EXT" == "dmg" ]]; then
-            MOUNT_POINT="$(hdiutil attach "custom-files/$FNAME_PART" -nobrowse -quiet | tail -n1 | awk '{print $NF}')"
+            # -plist gives parseable output even with -quiet suppressed. Pull
+            # the first system-entity mount-point (the volume root).
+            MOUNT_POINT="$(hdiutil attach "custom-files/$FNAME_PART" -nobrowse -noverify -noautoopen -plist | python3 -c "import plistlib,sys; d=plistlib.loads(sys.stdin.buffer.read()); print(next((e['mount-point'] for e in d.get('system-entities',[]) if 'mount-point' in e), ''))")"
+            if [[ -z "$MOUNT_POINT" || ! -d "$MOUNT_POINT" ]]; then
+              echo "::error::DMG attach failed (mount point not detected)"
+              exit 1
+            fi
             echo "DMG mounted at $MOUNT_POINT"
             ls -la "$MOUNT_POINT"
             # Prefer .pkg, fall back to .app.
