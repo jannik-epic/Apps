@@ -345,12 +345,65 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Analyze macOS app footprint")
     parser.add_argument("--cask", required=True, help="Homebrew cask ID")
     parser.add_argument("--output", default="footprint-report.txt", help="Output report path")
+    parser.add_argument(
+        "--json-output",
+        default=None,
+        help=(
+            "Optional JSON path for the Robopack-style footprint payload "
+            "(matches the schema consumed by the desktop app's App Documentation tab)."
+        ),
+    )
 
     args = parser.parse_args()
 
     try:
         footprint = analyze_cask_footprint(args.cask)
         generate_report(footprint, Path(args.output))
+        if args.json_output:
+            # Map macOS footprint to the shared schema used by the Windows
+            # pipeline so the catalog:documentation IPC returns a consistent
+            # shape regardless of source. Paths are templated to be portable
+            # across devices (Applications, LaunchAgents etc).
+            json_path = Path(args.json_output)
+            json_payload = {
+                "files": [
+                    {
+                        "path": f.path,
+                        "size": f.size,
+                        "lastWriteTime": None,
+                        "version": None,
+                    }
+                    for f in footprint.files
+                ],
+                "registry": [],  # macOS has no registry — keep key for schema parity
+                "arp": [
+                    {
+                        "key": footprint.bundle_id,
+                        "displayName": footprint.app_name,
+                        "publisher": footprint.publisher,
+                        "displayVersion": footprint.version,
+                        "installLocation": "/Applications",
+                        "uninstallString": f"brew uninstall --cask {args.cask}",
+                        "quietUninstallString": f"brew uninstall --cask {args.cask}",
+                        "estimatedSize": footprint.installed_size,
+                    }
+                ],
+                "summary": {
+                    "fileCount": footprint.total_files,
+                    "totalFileSize": footprint.installed_size,
+                    "registryValueCount": 0,
+                    "arpEntries": 1,
+                },
+                "launchAgents": footprint.launch_agents,
+                "launchDaemons": footprint.launch_daemons,
+                "preferences": footprint.preferences,
+                "applicationSupport": footprint.application_support,
+                "leftoversFileCount": footprint.files_left_after_uninstall,
+                "leftoversTotalSize": footprint.size_left_after_uninstall,
+            }
+            json_path.parent.mkdir(parents=True, exist_ok=True)
+            json_path.write_text(json.dumps(json_payload, indent=2), encoding="utf-8")
+            LOGGER.info("JSON footprint written to %s", json_path)
         print(f"\n✅ Footprint analysis complete!")
         print(f"📊 Report: {args.output}")
         print(f"📦 Size: {format_size(footprint.installed_size)}")
