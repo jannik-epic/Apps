@@ -290,10 +290,22 @@ jobs:
           set -euo pipefail
           git config user.email "actions@github.com"
           git config user.name "github-actions[bot]"
+          # Cache validation artifacts before git stash so the persist step's
+          # JS body can still read them after stash + rebase. analyze_app_footprint
+          # writes untracked files under .modern-dev-mgmt/validation/ that
+          # the stash --include-untracked otherwise removes.
+          if [[ -d .modern-dev-mgmt/validation ]]; then
+            mkdir -p /tmp/validation-cache
+            cp -r .modern-dev-mgmt/validation/. /tmp/validation-cache/ || true
+          fi
           if [[ -n "$(git status --porcelain)" ]]; then
             git stash push --include-untracked --message "workflow artifacts before persistence" >/dev/null || true
           fi
           git pull --rebase
+          if [[ -d /tmp/validation-cache ]]; then
+            mkdir -p .modern-dev-mgmt/validation
+            cp -r /tmp/validation-cache/. .modern-dev-mgmt/validation/ || true
+          fi
           mkdir -p .modern-dev-mgmt/runs
           node - <<'NODE'
           const fs = require('fs');
