@@ -35,7 +35,7 @@ param(
     [string]$OutputPath,
 
     [Parameter(Mandatory = $false)]
-    [int]$MaxFiles = 20000,
+    [int]$MaxFiles = 80000,
 
     [Parameter(Mandatory = $false)]
     [int]$MaxRegistryValues = 20000
@@ -235,11 +235,18 @@ $fileSkipPrefixes = @(
     (Join-Path $env:ProgramFiles 'Microsoft Visual Studio'),
     (Join-Path $env:ProgramFiles 'dotnet'),
     (Join-Path $env:ProgramFiles 'PowerShell'),
+    (Join-Path $env:ProgramFiles 'Android'),
+    (Join-Path $env:ProgramFiles 'Java'),
+    (Join-Path $env:ProgramFiles 'CMake'),
+    (Join-Path $env:ProgramFiles 'WindowsApps'),
     (Join-Path ${env:ProgramFiles(x86)} 'Microsoft Visual Studio'),
     (Join-Path ${env:ProgramFiles(x86)} 'Microsoft SDKs'),
     (Join-Path ${env:ProgramFiles(x86)} 'Windows Kits'),
+    (Join-Path ${env:ProgramFiles(x86)} 'Android'),
+    (Join-Path ${env:ProgramFiles(x86)} 'Microsoft'),
     (Join-Path $env:ProgramData 'Microsoft\Windows Defender'),
     (Join-Path $env:ProgramData 'chocolatey'),
+    (Join-Path $env:ProgramData 'Package Cache'),
     (Join-Path $env:LocalAppData 'Microsoft\Edge'),
     (Join-Path $env:LocalAppData 'Microsoft\Windows'),
     (Join-Path $env:LocalAppData 'Programs\Microsoft VS Code'),
@@ -247,7 +254,8 @@ $fileSkipPrefixes = @(
     (Join-Path $env:AppData 'Microsoft'),
     'C:\hostedtoolcache',
     'C:\npm',
-    'C:\Modules'
+    'C:\Modules',
+    'C:\tools'
 )
 
 $registryRoots = @(
