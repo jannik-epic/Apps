@@ -1,5 +1,14 @@
 [
   {
+    "id": 803,
+    "source": "winget",
+    "package_id": "Canva.Canva",
+    "name": "Canva",
+    "os": "windows",
+    "version_deployed": "1.101.0",
+    "pin_version": null
+  },
+  {
     "id": 2395,
     "source": "winget",
     "package_id": "Git.Git",
@@ -27,6 +36,15 @@
     "pin_version": null
   },
   {
+    "id": 2564,
+    "source": "winget",
+    "package_id": "Greenshot.Greenshot",
+    "name": "Greenshot",
+    "os": "windows",
+    "version_deployed": "1.2.10.6",
+    "pin_version": null
+  },
+  {
     "id": 4128,
     "source": "winget",
     "package_id": "Microsoft.Office",
@@ -42,6 +60,15 @@
     "name": "Microsoft Edge",
     "os": "windows",
     "version_deployed": "147.0.3912.98",
+    "pin_version": null
+  },
+  {
+    "id": 4173,
+    "source": "winget",
+    "package_id": "Microsoft.Edge.Beta",
+    "name": "Microsoft Edge Beta",
+    "os": "windows",
+    "version_deployed": "134.0.3124.8",
     "pin_version": null
   },
   {
@@ -77,7 +104,7 @@
     "package_id": "Microsoft.VisualStudioCode",
     "name": "Microsoft Visual Studio Code",
     "os": "windows",
-    "version_deployed": "1.76.2",
+    "version_deployed": "1.87.2",
     "pin_version": null
   },
   {
@@ -96,6 +123,24 @@
     "name": "PowerShell",
     "os": "windows",
     "version_deployed": "7.3.3.0",
+    "pin_version": null
+  },
+  {
+    "id": 5933,
+    "source": "winget",
+    "package_id": "VinaySajip.PythonLauncher",
+    "name": "Python Launcher",
+    "os": "windows",
+    "version_deployed": "3.11.8150.0",
+    "pin_version": null
+  },
+  {
+    "id": 6991,
+    "source": "winget",
+    "package_id": "Spice.SpiceWebDAVd",
+    "name": "Spice webdavd",
+    "os": "windows",
+    "version_deployed": "2.5.0",
     "pin_version": null
   },
   {
