@@ -66,29 +66,35 @@ function ConvertTo-PortablePath {
 
 function Get-FileSnapshot {
     param([string[]]$Roots, [int]$MaxItems, [string[]]$SkipPrefixes)
-    # Use lazy enumeration (Directory.EnumerateFiles) so we stop as soon as we
-    # hit MaxItems instead of materializing the whole tree first. On a fresh
-    # GitHub-hosted Windows runner the system trees contain ~200k files; a naive
-    # Get-ChildItem -Recurse on ProgramFiles alone takes 5+ minutes.
+    # Manual DFS with directory-level skip: EnumerateFiles(AllDirectories)
+    # walks INTO skipped trees anyway. By pruning at the directory level we
+    # avoid stat'ing 100k+ files inside Visual Studio / Android SDK / dotnet.
     $items = New-Object System.Collections.Generic.List[object]
     $skipPrefixesLower = @()
     foreach ($p in $SkipPrefixes) {
         if ($p) { $skipPrefixesLower += ,($p.TrimEnd('\').ToLowerInvariant()) }
     }
+    $shouldSkip = {
+        param([string]$dir)
+        $lower = $dir.ToLowerInvariant()
+        foreach ($prefix in $skipPrefixesLower) {
+            if ($lower -eq $prefix -or $lower.StartsWith($prefix + '\')) { return $true }
+        }
+        return $false
+    }
+    $stack = New-Object System.Collections.Generic.Stack[string]
     foreach ($root in $Roots) {
         if (-not $root -or -not (Test-Path -LiteralPath $root)) { continue }
+        $stack.Push($root)
+    }
+    while ($stack.Count -gt 0 -and $items.Count -lt $MaxItems) {
+        $dir = $stack.Pop()
+        if (& $shouldSkip $dir) { continue }
+        # Files at this level.
         try {
-            $enum = [System.IO.Directory]::EnumerateFiles(
-                $root, '*', [System.IO.SearchOption]::AllDirectories
-            )
-            foreach ($file in $enum) {
+            $files = [System.IO.Directory]::EnumerateFiles($dir, '*', [System.IO.SearchOption]::TopDirectoryOnly)
+            foreach ($file in $files) {
                 if ($items.Count -ge $MaxItems) { break }
-                $lower = $file.ToLowerInvariant()
-                $skip = $false
-                foreach ($prefix in $skipPrefixesLower) {
-                    if ($lower.StartsWith($prefix)) { $skip = $true; break }
-                }
-                if ($skip) { continue }
                 try {
                     $info = [System.IO.FileInfo]::new($file)
                     $version = $null
@@ -106,13 +112,19 @@ function Get-FileSnapshot {
                         version       = $version
                     }) | Out-Null
                 } catch {
-                    # File vanished or ACL denied between enumeration and stat.
+                    # File vanished or ACL denied — skip without breaking enum.
                 }
             }
         } catch {
-            # Swallow root-level errors — partial snapshots still feed the diff.
+            # Read-protected dir — skip.
         }
-        if ($items.Count -ge $MaxItems) { break }
+        # Subdirectories (push only if not in skip list).
+        try {
+            $subs = [System.IO.Directory]::EnumerateDirectories($dir, '*', [System.IO.SearchOption]::TopDirectoryOnly)
+            foreach ($sub in $subs) {
+                if (-not (& $shouldSkip $sub)) { $stack.Push($sub) }
+            }
+        } catch {}
     }
     return ,$items.ToArray()
 }
