@@ -4,8 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       package_id:
-        description: 'Homebrew Cask token (e.g., google-chrome)'
-        required: true
+        description: 'Homebrew Cask token (e.g., google-chrome) — required unless installer_url is set'
+        required: false
+        type: string
+      installer_url:
+        description: 'Direct macOS download URL (.dmg or .pkg). Overrides brew install path — pipeline downloads + uploads the binary directly. Optional pipe form: "url|filename".'
+        required: false
         type: string
       package_name:
         description: 'Package display name (optional compatibility input)'
@@ -121,6 +125,7 @@ jobs:
         run: chmod +x tools/intune_packager.py
 
       - name: Prepare Homebrew environment
+        if: ${{ github.event.inputs.installer_url == '' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -136,8 +141,62 @@ jobs:
           brew update || true
           brew doctor || true
 
+      - name: Download installer from URL (direct vendor link)
+        id: url_download
+        if: ${{ github.event.inputs.installer_url != '' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          URL_INPUT="${{ github.event.inputs.installer_url }}"
+          # Optional pipe form: "url|filename"
+          URL="${URL_INPUT%%|*}"
+          FNAME_PART="${URL_INPUT#*|}"
+          if [[ "$FNAME_PART" == "$URL_INPUT" ]]; then FNAME_PART=""; fi
+          # Infer filename from URL if not provided.
+          if [[ -z "$FNAME_PART" ]]; then FNAME_PART="$(basename "${URL%%\?*}")"; fi
+          mkdir -p custom-files
+          echo "Downloading $URL → custom-files/$FNAME_PART"
+          curl -L -o "custom-files/$FNAME_PART" "$URL"
+          ls -la custom-files/
+          # Persist for downstream steps
+          echo "filename=$FNAME_PART" >> "$GITHUB_OUTPUT"
+          echo "filepath=custom-files/$FNAME_PART" >> "$GITHUB_OUTPUT"
+          # If DMG, mount + locate inner .pkg or .app.
+          EXT="${FNAME_PART##*.}"
+          if [[ "$EXT" == "dmg" ]]; then
+            MOUNT_POINT="$(hdiutil attach "custom-files/$FNAME_PART" -nobrowse -quiet | tail -n1 | awk '{print $NF}')"
+            echo "DMG mounted at $MOUNT_POINT"
+            ls -la "$MOUNT_POINT"
+            # Prefer .pkg, fall back to .app.
+            INNER_PKG="$(find "$MOUNT_POINT" -maxdepth 2 -name '*.pkg' | head -n 1 || true)"
+            INNER_APP="$(find "$MOUNT_POINT" -maxdepth 2 -name '*.app' | head -n 1 || true)"
+            if [[ -n "$INNER_PKG" ]]; then
+              cp -R "$INNER_PKG" custom-files/
+              echo "extracted_pkg=custom-files/$(basename "$INNER_PKG")" >> "$GITHUB_OUTPUT"
+            elif [[ -n "$INNER_APP" ]]; then
+              cp -R "$INNER_APP" custom-files/
+              echo "extracted_app=custom-files/$(basename "$INNER_APP")" >> "$GITHUB_OUTPUT"
+              # Build a temporary .pkg around the .app so intune_packager can upload it.
+              APP_NAME="$(basename "$INNER_APP" .app)"
+              IDENTIFIER="com.modern-dev-mgmt.$(echo "$APP_NAME" | tr '[:upper:] ' '[:lower:]-')"
+              pkgbuild --root "custom-files/$(basename "$INNER_APP")/.." \
+                       --component-plist /dev/null \
+                       --identifier "$IDENTIFIER" \
+                       --version "${{ github.event.inputs.version }}" \
+                       --install-location "/Applications" \
+                       "custom-files/${APP_NAME}.pkg" || \
+                pkgbuild --component "custom-files/$(basename "$INNER_APP")" \
+                         --identifier "$IDENTIFIER" \
+                         --version "${{ github.event.inputs.version }}" \
+                         --install-location "/Applications" \
+                         "custom-files/${APP_NAME}.pkg"
+              echo "extracted_pkg=custom-files/${APP_NAME}.pkg" >> "$GITHUB_OUTPUT"
+            fi
+            hdiutil detach "$MOUNT_POINT" -quiet || true
+          fi
+
       - name: Generate App Footprint Report
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ github.event.inputs.dry_run != 'true' && github.event.inputs.installer_url == '' }}
         timeout-minutes: 7
         shell: bash
         run: |
@@ -194,16 +253,52 @@ jobs:
           fi
 
       - name: Validate Homebrew cask metadata
-        if: ${{ github.event.inputs.dry_run == 'true' }}
+        if: ${{ github.event.inputs.dry_run == 'true' && github.event.inputs.installer_url == '' }}
         shell: bash
         run: |
           set -euo pipefail
           export HOMEBREW_NO_AUTO_UPDATE=1
           brew info --cask --json=v2 "${{ github.event.inputs.package_id }}" | python3 -c "import json,sys; data=json.load(sys.stdin); casks=data.get('casks') or []; sys.exit('No Homebrew cask metadata returned') if not casks else print('Validated cask:', casks[0].get('token') or casks[0].get('full_token') or '${{ github.event.inputs.package_id }}')"
 
+      - name: Upload URL-downloaded package to Intune
+        id: url_upload
+        if: ${{ github.event.inputs.installer_url != '' && github.event.inputs.dry_run != 'true' }}
+        shell: bash
+        env:
+          INTUNE_TENANT_ID: '${{ env.INTUNE_TENANT_ID }}'
+          INTUNE_CLIENT_ID: '${{ env.INTUNE_CLIENT_ID }}'
+          INTUNE_ACCESS_TOKEN: '${{ env.INTUNE_ACCESS_TOKEN }}'
+          INTUNE_CLIENT_SECRET: '${{ secrets.INTUNE_CLIENT_SECRET }}'
+          APP_NAME: '${{ github.event.inputs.app_name }}'
+          APP_DESCRIPTION: '${{ github.event.inputs.app_description }}'
+          APP_PUBLISHER: '${{ github.event.inputs.app_publisher }}'
+          VERSION: '${{ github.event.inputs.version }}'
+        run: |
+          set -euo pipefail
+          # Pick the .pkg if the DMG-mount step extracted one; else use the
+          # downloaded file directly (for vendor .pkg URLs).
+          PKG_PATH=""
+          if [[ -n "${{ steps.url_download.outputs.extracted_pkg }}" ]]; then
+            PKG_PATH="${{ steps.url_download.outputs.extracted_pkg }}"
+          else
+            PKG_PATH="${{ steps.url_download.outputs.filepath }}"
+          fi
+          if [[ ! -f "$PKG_PATH" ]]; then
+            echo "::error::No .pkg found to upload (got '$PKG_PATH')" >&2
+            exit 1
+          fi
+          mkdir -p output
+          ARGS=(--pkg-file "$PKG_PATH" --output-dir output)
+          if [[ -n "$APP_NAME" ]]; then ARGS+=(--display-name "$APP_NAME"); fi
+          if [[ -n "$APP_DESCRIPTION" ]]; then ARGS+=(--description "$APP_DESCRIPTION"); fi
+          if [[ -n "$APP_PUBLISHER" ]]; then ARGS+=(--publisher "$APP_PUBLISHER"); fi
+          if [[ -n "$VERSION" ]]; then ARGS+=(--version "$VERSION"); fi
+          python3 tools/intune_packager.py "${ARGS[@]}" || \
+            python3 tools/intune_packager.py --cask "url-$(date +%s)" --pkg-file "$PKG_PATH" --output-dir output "${ARGS[@]:2}"
+
       - name: Package and upload to Intune
         id: package_upload
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ github.event.inputs.dry_run != 'true' && github.event.inputs.installer_url == '' }}
         shell: bash
         env:
           INTUNE_TENANT_ID: '${{ env.INTUNE_TENANT_ID }}'
