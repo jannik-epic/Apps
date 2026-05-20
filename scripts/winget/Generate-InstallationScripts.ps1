@@ -40,7 +40,10 @@ param(
     [string]$PreInstallScriptBase64,
 
     [Parameter(Mandatory = $false)]
-    [string]$PostInstallScriptBase64
+    [string]$PostInstallScriptBase64,
+
+    [Parameter(Mandatory = $false)]
+    [string]$InstallerMetadataPath
 )
 
 function Decode-Base64Utf8 {
@@ -67,7 +70,211 @@ $preInstallBlock = Decode-Base64Utf8 $PreInstallScriptBase64
 $postInstallBlock = Decode-Base64Utf8 $PostInstallScriptBase64
 $customDetectionFromBase64 = Decode-Base64Utf8 $CustomDetectionScriptBase64
 
-if ($UsePSADT) {
+# ---------------------------------------------------------------------------
+# Offline-install branch: when a winget manifest has been resolved server-side
+# (Download-WingetInstaller.ps1 wrote installer-metadata.json + Files/<binary>),
+# we generate scripts that invoke the actual installer binary. The target
+# device never needs winget; the .intunewin carries everything required.
+# ---------------------------------------------------------------------------
+$offlineMetadata = $null
+if ($InstallerMetadataPath -and (Test-Path -LiteralPath $InstallerMetadataPath -PathType Leaf)) {
+    try {
+        $offlineMetadata = Get-Content -LiteralPath $InstallerMetadataPath -Raw | ConvertFrom-Json
+    } catch {
+        Write-Warning "Could not parse installer metadata at $InstallerMetadataPath -- falling back to winget-client mode: $($_.Exception.Message)"
+        $offlineMetadata = $null
+    }
+}
+
+if ($offlineMetadata -and $offlineMetadata.fileName) {
+    $installerFile = [string]$offlineMetadata.fileName
+    $installerTypeLc = ([string]$offlineMetadata.installerType).ToLowerInvariant()
+    $silentArgs = [string]$offlineMetadata.silentArgs
+    $silentUninstallArgs = [string]$offlineMetadata.silentUninstallArgs
+    $productCode = [string]$offlineMetadata.productCode
+    $resolvedScope = [string]$offlineMetadata.scope
+
+    $isMsi    = ($installerTypeLc -eq 'msi') -or ($installerTypeLc -eq 'wix') -or ($installerTypeLc -eq 'burn')
+    $isMsix   = ($installerTypeLc -eq 'msix') -or ($installerTypeLc -eq 'appx')
+
+    # The Intune client extracts the .intunewin into a working directory and
+    # invokes our scripts with that directory as the working directory; $PSScriptRoot
+    # is the same directory as install_script.ps1, so Files/ is reliably colocated.
+    $installInvocation = if ($isMsi) {
+        @"
+    `$installerPath = Join-Path `$PSScriptRoot 'Files\$installerFile'
+    if (-not (Test-Path -LiteralPath `$installerPath -PathType Leaf)) {
+        throw "Installer binary missing at `$installerPath"
+    }
+    `$msiArgs = @('/i', `$installerPath) + ('$silentArgs' -split ' ' | Where-Object { `$_ })
+    `$process = Start-Process -FilePath 'msiexec.exe' -ArgumentList `$msiArgs -Wait -PassThru -WindowStyle Hidden
+    if (`$process.ExitCode -notin @(0,1641,3010,1707)) {
+        throw "msiexec exited with code `$(`$process.ExitCode)"
+    }
+"@
+    } elseif ($isMsix) {
+        @"
+    `$installerPath = Join-Path `$PSScriptRoot 'Files\$installerFile'
+    if (-not (Test-Path -LiteralPath `$installerPath -PathType Leaf)) {
+        throw "Installer binary missing at `$installerPath"
+    }
+    Add-AppxProvisionedPackage -Online -PackagePath `$installerPath -SkipLicense | Out-Null
+"@
+    } else {
+        # EXE-family (nullsoft/inno/wix/burn-as-exe/generic): run the binary
+        # with the manifest-resolved silent switch.
+        @"
+    `$installerPath = Join-Path `$PSScriptRoot 'Files\$installerFile'
+    if (-not (Test-Path -LiteralPath `$installerPath -PathType Leaf)) {
+        throw "Installer binary missing at `$installerPath"
+    }
+    `$exeArgs = ('$silentArgs' -split ' ' | Where-Object { `$_ })
+    `$process = Start-Process -FilePath `$installerPath -ArgumentList `$exeArgs -Wait -PassThru -WindowStyle Hidden
+    if (`$process.ExitCode -notin @(0,1641,3010)) {
+        throw "Installer exited with code `$(`$process.ExitCode)"
+    }
+"@
+    }
+
+    $uninstallInvocation = if ($isMsi -and $productCode) {
+        @"
+try {
+    `$msiArgs = @('/x', '$productCode') + ('$silentUninstallArgs' -split ' ' | Where-Object { `$_ })
+    `$process = Start-Process -FilePath 'msiexec.exe' -ArgumentList `$msiArgs -Wait -PassThru -WindowStyle Hidden
+    exit `$process.ExitCode
+} catch {
+    Write-Error `$_.Exception.Message
+    exit 1
+}
+"@
+    } elseif ($isMsix -and $offlineMetadata.packageFamilyName) {
+        @"
+try {
+    Remove-AppxProvisionedPackage -Online -PackageName '$($offlineMetadata.packageFamilyName)' -ErrorAction SilentlyContinue | Out-Null
+    Get-AppxPackage -AllUsers -Name '$($offlineMetadata.packageFamilyName -replace '_.*','')*' -ErrorAction SilentlyContinue |
+        ForEach-Object { Remove-AppxPackage -AllUsers -Package `$_.PackageFullName -ErrorAction SilentlyContinue }
+    exit 0
+} catch {
+    Write-Error `$_.Exception.Message
+    exit 1
+}
+"@
+    } else {
+        # Best-effort EXE uninstall via registry QuietUninstallString.
+        @"
+try {
+    `$uninstallKeys = @(
+        'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall',
+        'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall'
+    )
+    foreach (`$key in `$uninstallKeys) {
+        Get-ChildItem -Path `$key -ErrorAction SilentlyContinue | ForEach-Object {
+            `$props = Get-ItemProperty -Path `$_.PSPath -ErrorAction SilentlyContinue
+            if (`$props.DisplayName -like "*$AppName*" -and (`$props.Publisher -like "*$Publisher*" -or -not '$Publisher')) {
+                `$cmd = if (`$props.QuietUninstallString) { `$props.QuietUninstallString } else { `$props.UninstallString }
+                if (`$cmd) {
+                    cmd.exe /c `$cmd '$silentUninstallArgs' | Out-Null
+                    exit `$LASTEXITCODE
+                }
+            }
+        }
+    }
+    Write-Error "Could not find an uninstall command for $AppName"
+    exit 1
+} catch {
+    Write-Error `$_.Exception.Message
+    exit 1
+}
+"@
+    }
+
+    $installScript = @"
+## Modern Dev Mgmt offline Win32 deployment script
+## App Name  - $AppName
+## Publisher - $Publisher
+## Version   - $Version
+## Installer - $installerFile ($installerTypeLc, silent args: $silentArgs)
+
+[CmdletBinding()]
+Param (
+    [Parameter(Mandatory = `$false)]
+    [ValidateSet('Install','Uninstall','Repair')]
+    [String]`$DeploymentType = 'Install'
+)
+
+`$ErrorActionPreference = 'Stop'
+`$installPhase = 'Initialization'
+
+Try {
+    Set-ExecutionPolicy -ExecutionPolicy 'ByPass' -Scope 'Process' -Force -ErrorAction 'Stop'
+
+    If (`$DeploymentType -ine 'Uninstall' -and `$DeploymentType -ine 'Repair') {
+        `$installPhase = 'Pre-Installation'
+        # __MODERNDEVMGMT_PRE_INSTALL__
+
+        `$installPhase = 'Installation'
+$installInvocation
+
+        `$installPhase = 'Post-Installation'
+        # __MODERNDEVMGMT_POST_INSTALL__
+    }
+
+    exit 0
+}
+Catch {
+    Write-Error "Deployment failed in phase [`$installPhase]: `$(`$_.Exception.Message)"
+    exit 1
+}
+"@
+
+    $uninstallScript = $uninstallInvocation
+
+    # Detection: ProductCode rule for MSI is preferred (Create-IntuneApplication
+    # will replace the script rule if it sees productCode in metadata); we still
+    # emit a detection script as a fallback / for non-MSI types.
+    $offlineDefaultDetectionScript = if ($isMsi -and $productCode) {
+        @"
+try {
+    `$key = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$productCode"
+    `$key32 = "HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$productCode"
+    if ((Test-Path `$key) -or (Test-Path `$key32)) {
+        Write-Output "$AppName is installed"
+        exit 0
+    }
+    Write-Output "$AppName is not installed"
+    exit 1
+} catch {
+    Write-Error `$_.Exception.Message
+    exit 1
+}
+"@
+    } else {
+        @"
+try {
+    `$uninstallKeys = @(
+        'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall',
+        'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall',
+        'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall'
+    )
+    foreach (`$key in `$uninstallKeys) {
+        `$apps = Get-ChildItem -Path `$key -ErrorAction SilentlyContinue
+        foreach (`$app in `$apps) {
+            `$props = Get-ItemProperty -Path `$app.PSPath -ErrorAction SilentlyContinue
+            if (`$props.DisplayName -like "*$AppName*" -and (`$props.Publisher -like "*$Publisher*" -or -not '$Publisher')) {
+                Write-Output "$AppName is installed (Registry)"
+                exit 0
+            }
+        }
+    }
+    Write-Output "$AppName is not installed"
+    exit 1
+} catch {
+    Write-Error `$_.Exception.Message
+    exit 1
+}
+"@
+    }
+} elseif ($UsePSADT) {
     # Generate a self-contained PowerShell deployment script with PSADT-style
     # phases. The customer workflow packages this script into a .intunewin
     # directly, so it must not depend on a toolkit folder that is not present
@@ -183,8 +390,13 @@ if ($uninstallScriptOverride) {
     $uninstallScript = $uninstallScriptOverride
 }
 
-# Detection script
+# Detection script — caller overrides win; offline metadata supplies a smart
+# default (ProductCode for MSI, registry-publisher for EXE); legacy winget-list
+# fallback is used only when no other source is available.
 $detectionScript = if ($customDetectionFromBase64) { $customDetectionFromBase64 } else { $CustomDetectionScript }
+if (-not $detectionScript -and $offlineDefaultDetectionScript) {
+    $detectionScript = $offlineDefaultDetectionScript
+}
 if (-not $detectionScript) {
     $detectionScript = @"
 # Detection script for $AppName
