@@ -168,8 +168,10 @@ jobs:
         # download fine via 'winget download --source msstore'; licensed/paid
         # Store apps will fail at this step and the workflow will fall back to
         # the legacy winget-client wrapper (continue-on-error so we don't kill
-        # the run when an msstore download is rights-restricted).
+        # the run when an msstore download is rights-restricted). The 5-minute
+        # cap prevents Store-side hangs when entitlements are required.
         if: ${{ github.event.inputs.dry_run != 'true' || true }}
+        timeout-minutes: 5
         shell: pwsh
         continue-on-error: true
         run: |
