@@ -401,6 +401,144 @@ jobs:
             if (Test-Path -LiteralPath $pfxPath) { Remove-Item -LiteralPath $pfxPath -Force }
           }
 
+      - name: VM validation — baseline snapshot
+        id: validate_baseline
+        if: ${{ github.event.inputs.validation_enabled != 'false' }}
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path .modern-dev-mgmt/validation | Out-Null
+          ./scripts/common/Capture-WindowsFootprint.ps1 -OutputPath .modern-dev-mgmt/validation/before.json -Mode arp
+
+      - name: VM validation — install (custom package)
+        id: validate_install
+        if: ${{ github.event.inputs.validation_enabled != 'false' }}
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          $ErrorActionPreference = 'Continue'
+          $workspace = $PWD.Path
+          $stageDir = Join-Path $workspace 'validation-stage'
+          $validationDir = Join-Path $workspace '.modern-dev-mgmt/validation'
+          New-Item -ItemType Directory -Force -Path $stageDir | Out-Null
+          New-Item -ItemType Directory -Force -Path $validationDir | Out-Null
+          # Generated scripts live in CWD; the installer asset is under custom-files/.
+          foreach ($f in @('install_script.ps1','uninstall_script.ps1','detection_script.ps1','Deploy-Application.ps1')) {
+            if (Test-Path -LiteralPath $f) { Copy-Item $f "$stageDir/" -Force }
+          }
+          if (Test-Path -LiteralPath 'custom-files') {
+            Copy-Item 'custom-files' "$stageDir/Files" -Recurse -Force
+          }
+          $installLog = Join-Path $validationDir 'install.log'
+          $installScript = Join-Path $stageDir 'install_script.ps1'
+          Start-Transcript -Path $installLog -Force | Out-Null
+          $exit = 0
+          try {
+            & powershell.exe -ExecutionPolicy Bypass -NoProfile -File $installScript
+            $exit = $LASTEXITCODE
+          } catch {
+            $exit = 1
+            Write-Host "Install threw: $($_.Exception.Message)"
+          }
+          Stop-Transcript | Out-Null
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "install_exit_code=$exit"
+
+      - name: VM validation — detection
+        id: validate_detection
+        if: ${{ github.event.inputs.validation_enabled != 'false' && steps.validate_install.outcome == 'success' }}
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          $detect = Join-Path $PWD.Path 'validation-stage/detection_script.ps1'
+          if (Test-Path -LiteralPath $detect) {
+            & powershell.exe -ExecutionPolicy Bypass -NoProfile -File $detect
+            Add-Content -Path $env:GITHUB_OUTPUT -Value "detection_exit_code=$LASTEXITCODE"
+          } else {
+            Add-Content -Path $env:GITHUB_OUTPUT -Value "detection_exit_code=0"
+          }
+
+      - name: VM validation — after-install snapshot + footprint diff
+        if: ${{ github.event.inputs.validation_enabled != 'false' && steps.validate_install.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          ./scripts/common/Capture-WindowsFootprint.ps1 `
+            -OutputPath .modern-dev-mgmt/validation/after-install.json `
+            -Mode full `
+            -BaselinePath .modern-dev-mgmt/validation/before.json
+          ./scripts/common/Diff-WindowsFootprint.ps1 `
+            -BeforePath .modern-dev-mgmt/validation/before.json `
+            -AfterPath  .modern-dev-mgmt/validation/after-install.json `
+            -OutputPath .modern-dev-mgmt/validation/footprint.json
+
+      - name: VM validation — uninstall
+        id: validate_uninstall
+        if: ${{ github.event.inputs.validation_enabled != 'false' && steps.validate_install.outcome == 'success' }}
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          $uninstall = Join-Path $PWD.Path 'validation-stage/uninstall_script.ps1'
+          $uninstallLog = Join-Path $PWD.Path '.modern-dev-mgmt/validation/uninstall.log'
+          Start-Transcript -Path $uninstallLog -Force | Out-Null
+          $exit = 0
+          try {
+            & powershell.exe -ExecutionPolicy Bypass -NoProfile -File $uninstall
+            $exit = $LASTEXITCODE
+          } catch {
+            $exit = 1
+            Write-Host "Uninstall threw: $($_.Exception.Message)"
+          }
+          Stop-Transcript | Out-Null
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "uninstall_exit_code=$exit"
+
+      - name: VM validation — leftover diff
+        if: ${{ always() && github.event.inputs.validation_enabled != 'false' && steps.validate_install.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          ./scripts/common/Capture-WindowsFootprint.ps1 `
+            -OutputPath .modern-dev-mgmt/validation/after-uninstall.json `
+            -Mode full `
+            -BaselinePath .modern-dev-mgmt/validation/before.json
+          ./scripts/common/Diff-WindowsFootprint.ps1 `
+            -BeforePath .modern-dev-mgmt/validation/before.json `
+            -AfterPath  .modern-dev-mgmt/validation/after-uninstall.json `
+            -OutputPath .modern-dev-mgmt/validation/leftovers.json
+
+      - name: VM validation — assemble report
+        if: ${{ github.event.inputs.validation_enabled != 'false' }}
+        shell: pwsh
+        env:
+          INSTALL_EXIT:   ${{ steps.validate_install.outputs.install_exit_code }}
+          DETECT_EXIT:    ${{ steps.validate_detection.outputs.detection_exit_code }}
+          UNINSTALL_EXIT: ${{ steps.validate_uninstall.outputs.uninstall_exit_code }}
+          INSTALL_OUTCOME:   ${{ steps.validate_install.outcome }}
+          DETECT_OUTCOME:    ${{ steps.validate_detection.outcome }}
+          UNINSTALL_OUTCOME: ${{ steps.validate_uninstall.outcome }}
+        run: |
+          function ParseInt($s) { if ($s -and $s -match '^-?\d+$') { return [int]$s } else { return $null } }
+          $report = [ordered]@{
+            installExitCode    = ParseInt $env:INSTALL_EXIT
+            detectionExitCode  = ParseInt $env:DETECT_EXIT
+            uninstallExitCode  = ParseInt $env:UNINSTALL_EXIT
+            installOutcome     = $env:INSTALL_OUTCOME
+            detectionOutcome   = $env:DETECT_OUTCOME
+            uninstallOutcome   = $env:UNINSTALL_OUTCOME
+            footprintAvailable = (Test-Path '.modern-dev-mgmt/validation/footprint.json')
+            leftoversAvailable = (Test-Path '.modern-dev-mgmt/validation/leftovers.json')
+          }
+          $report | ConvertTo-Json -Depth 8 | Set-Content '.modern-dev-mgmt/validation/report.json' -Encoding UTF8
+          if ($env:INSTALL_OUTCOME -ne 'success') {
+            Write-Host "::error::Custom-package install failed in validation runner — aborting Intune upload."
+            exit 1
+          }
+
+      - name: VM validation — upload artifacts
+        if: ${{ always() && github.event.inputs.validation_enabled != 'false' }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: validation-${{ github.run_id }}
+          path: .modern-dev-mgmt/validation/
+          if-no-files-found: ignore
+          retention-days: 14
+
       - name: Create Intune application
         id: create_app
         shell: powershell
