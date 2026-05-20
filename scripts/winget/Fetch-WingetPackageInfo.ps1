@@ -12,14 +12,17 @@ param(
 
 Write-Host "Fetching information for package: $PackageId from source: $PackageSource"
 
-# Search for the package using winget
-$searchResult = winget search --id $PackageId --source $PackageSource --exact --accept-source-agreements | Out-String
+# `winget search` treats the id as a regex on some runner builds, which
+# crashes on legitimate package ids that contain regex metacharacters such
+# as `Notepad++.Notepad++` ("Nested quantifier '+'") or anything with `.`
+# or `(`. Skip the pre-check and go straight to `winget show`, which uses
+# an exact lookup. If the package id is invalid winget will exit non-zero
+# and we fall through to the "not found" branch with a clean error.
+$showResult = winget show --id $PackageId --source $PackageSource --accept-source-agreements 2>&1 | Out-String
+$showExit = $LASTEXITCODE
 
-if ($searchResult.IndexOf($PackageId, [System.StringComparison]::OrdinalIgnoreCase) -ge 0) {
+if ($showExit -eq 0 -and $showResult -match "Publisher:|Version:") {
     Write-Host "Package found in source: $PackageSource"
-
-    # Get package details
-    $showResult = winget show --id $PackageId --source $PackageSource --accept-source-agreements | Out-String
 
     # Extract information
     $publisher = ""
