@@ -1,6 +1,6 @@
 [
   {
-    "id": 803,
+    "id": 6450,
     "source": "winget",
     "package_id": "Canva.Canva",
     "name": "Canva",
@@ -9,34 +9,7 @@
     "pin_version": null
   },
   {
-    "id": 2395,
-    "source": "winget",
-    "package_id": "Git.Git",
-    "name": "Git",
-    "os": "windows",
-    "version_deployed": "2.39.2",
-    "pin_version": null
-  },
-  {
-    "id": 2409,
-    "source": "winget",
-    "package_id": "GitHub.cli",
-    "name": "GitHub CLI",
-    "os": "windows",
-    "version_deployed": "2.24.3",
-    "pin_version": null
-  },
-  {
-    "id": 2411,
-    "source": "winget",
-    "package_id": "GitHub.GitHubDesktop",
-    "name": "GitHub Desktop",
-    "os": "windows",
-    "version_deployed": "3.2.0",
-    "pin_version": null
-  },
-  {
-    "id": 2564,
+    "id": 8522,
     "source": "winget",
     "package_id": "Greenshot.Greenshot",
     "name": "Greenshot",
@@ -45,61 +18,43 @@
     "pin_version": null
   },
   {
-    "id": 4128,
+    "id": 9410,
     "source": "winget",
-    "package_id": "Microsoft.Office",
-    "name": "Microsoft 365 Apps for enterprise",
+    "package_id": "JetBrains.dotPeek",
+    "name": "JetBrains dotPeek",
     "os": "windows",
-    "version_deployed": "16.0.19929.20106",
+    "version_deployed": "2024.2.3",
     "pin_version": null
   },
   {
-    "id": 4171,
+    "id": 10517,
     "source": "winget",
     "package_id": "Microsoft.Edge",
     "name": "Microsoft Edge",
     "os": "windows",
-    "version_deployed": "147.0.3912.98",
+    "version_deployed": "133.0.3065.69",
     "pin_version": null
   },
   {
-    "id": 4173,
-    "source": "winget",
-    "package_id": "Microsoft.Edge.Beta",
-    "name": "Microsoft Edge Beta",
-    "os": "windows",
-    "version_deployed": "134.0.3124.8",
-    "pin_version": null
-  },
-  {
-    "id": 4191,
+    "id": 10563,
     "source": "winget",
     "package_id": "Microsoft.OneDrive",
     "name": "Microsoft OneDrive",
     "os": "windows",
-    "version_deployed": "26.063.0405.0002",
+    "version_deployed": "24.221.1103.0003",
     "pin_version": null
   },
   {
-    "id": 4379,
+    "id": 10606,
     "source": "winget",
-    "package_id": "Microsoft.VCRedist.2015+.x64",
-    "name": "Microsoft Visual C++ 2015-2022 Redistributable (x64)",
+    "package_id": "Microsoft.Teams",
+    "name": "Microsoft Teams",
     "os": "windows",
-    "version_deployed": "14.44.35211.0",
+    "version_deployed": "26106.1906.4665.7308",
     "pin_version": null
   },
   {
-    "id": 4381,
-    "source": "winget",
-    "package_id": "Microsoft.VCRedist.2015+.x86",
-    "name": "Microsoft Visual C++ 2015-2022 Redistributable (x86)",
-    "os": "windows",
-    "version_deployed": "14.44.35211.0",
-    "pin_version": null
-  },
-  {
-    "id": 4387,
+    "id": 10616,
     "source": "winget",
     "package_id": "Microsoft.VisualStudioCode",
     "name": "Microsoft Visual Studio Code",
@@ -108,34 +63,34 @@
     "pin_version": null
   },
   {
-    "id": 4972,
+    "id": 11280,
     "source": "winget",
-    "package_id": "OBSProject.OBSStudio",
-    "name": "OBS Studio",
+    "package_id": "Notion.Notion",
+    "name": "Notion",
     "os": "windows",
-    "version_deployed": "32.0.1",
+    "version_deployed": "7.14.0",
     "pin_version": null
   },
   {
-    "id": 5631,
+    "id": 12065,
     "source": "winget",
-    "package_id": "Microsoft.PowerShell",
-    "name": "PowerShell",
-    "os": "windows",
-    "version_deployed": "7.3.3.0",
-    "pin_version": null
-  },
-  {
-    "id": 5933,
-    "source": "winget",
-    "package_id": "VinaySajip.PythonLauncher",
+    "package_id": "Python.Launcher",
     "name": "Python Launcher",
     "os": "windows",
     "version_deployed": "3.11.8150.0",
     "pin_version": null
   },
   {
-    "id": 6991,
+    "id": 12962,
+    "source": "winget",
+    "package_id": "SlackTechnologies.Slack",
+    "name": "Slack",
+    "os": "windows",
+    "version_deployed": "4.50.121",
+    "pin_version": null
+  },
+  {
+    "id": 13184,
     "source": "winget",
     "package_id": "Spice.SpiceWebDAVd",
     "name": "Spice webdavd",
@@ -144,30 +99,39 @@
     "pin_version": null
   },
   {
-    "id": 64080,
-    "source": "msstore",
-    "package_id": "9N0DX20HK701",
-    "name": "Windows Terminal",
+    "id": 15226,
+    "source": "winget",
+    "package_id": "Zoom.Zoom",
+    "name": "Zoom Workplace",
     "os": "windows",
-    "version_deployed": "3001.24.10921.0",
+    "version_deployed": "7.0.38856",
     "pin_version": null
   },
   {
-    "id": 64084,
-    "source": "msstore",
-    "package_id": "XPDP273C0XHQH2",
-    "name": "Adobe Acrobat Reader DC",
+    "id": 22097,
+    "source": "winget",
+    "package_id": "Microsoft.Office",
+    "name": "Microsoft 365 Apps for enterprise",
     "os": "windows",
-    "version_deployed": "26.0.0.1",
+    "version_deployed": "16.0.16130.20218",
     "pin_version": null
   },
   {
-    "id": 76090,
-    "source": "msstore",
-    "package_id": "9NFTCH6J7FHV",
-    "name": "Microsoft.PowerAutomateDesktop",
+    "id": 22120,
+    "source": "winget",
+    "package_id": "Microsoft.Edge.Beta",
+    "name": "Microsoft Edge Beta",
     "os": "windows",
-    "version_deployed": "11.2604.143.0",
+    "version_deployed": "134.0.3124.8",
+    "pin_version": null
+  },
+  {
+    "id": 36100,
+    "source": "winget",
+    "package_id": "Microsoft.VCRedist.2015+.arm64",
+    "name": "Microsoft Visual C++ 2015-2022 Redistributable",
+    "os": "windows",
+    "version_deployed": "14.30.30704.0",
     "pin_version": null
   }
 ]
