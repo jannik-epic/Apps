@@ -76,7 +76,10 @@ $downloadArgs = @(
     "--accept-source-agreements",
     "--architecture", $Architecture
 )
-if ($Version) {
+if ($Version -and $Version -notin @('latest','Latest','LATEST','')) {
+    # 'latest' is not a real winget version selector — passing it as
+    # --version causes winget to literally search for a version called
+    # "latest" and fail (exit -1978335209). Omit instead.
     $downloadArgs += @("--version", $Version)
 }
 
