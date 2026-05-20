@@ -62,18 +62,14 @@ New-Item -ItemType Directory -Force -Path $filesDir | Out-Null
 $downloadDir = Join-Path $OutputDirectory "winget-download"
 New-Item -ItemType Directory -Force -Path $downloadDir | Out-Null
 
-# Build the winget download command. msstore packages are not handled here:
-# they require Store licensing and a different Intune app type. Caller should
-# branch on PackageSource and fall back to the legacy winget-install wrapper
-# for msstore until a proper Microsoft Store app pipeline is in place.
-if ($PackageSource -ne "winget") {
-    throw "Download-WingetInstaller only supports source 'winget'; got '$PackageSource'. The legacy install-time winget wrapper is used for msstore packages."
-}
-
+# msstore packages can be downloaded with `winget download --source msstore`
+# for free MSIX/AppX bundles. Licensed/paid Store apps will fail at download
+# time — the caller should detect the failure and fall back to the legacy
+# winget-install wrapper (or the native Intune Microsoft Store app type).
 $downloadArgs = @(
     "download",
     "--id", $PackageId,
-    "--source", "winget",
+    "--source", $PackageSource,
     "--exact",
     "--download-directory", $downloadDir,
     "--accept-package-agreements",
