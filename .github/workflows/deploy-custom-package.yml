@@ -670,6 +670,29 @@ jobs:
               Write-Warning "Could not decode Modern Dev Mgmt context: $($_.Exception.Message)"
             }
           }
+          # Same pattern as winget persist step: surface the validation report
+          # + footprint + leftovers + install/uninstall log tails so the App
+          # Documentation tab can render the Robopack-style page.
+          $validation = $null
+          if (Test-Path -LiteralPath '.modern-dev-mgmt/validation/report.json') {
+            try { $validation = Get-Content -LiteralPath '.modern-dev-mgmt/validation/report.json' -Raw | ConvertFrom-Json } catch {}
+          }
+          function _LogTail([string]$Path,[int]$N=200) {
+            if (-not (Test-Path -LiteralPath $Path)) { return $null }
+            try { (Get-Content -LiteralPath $Path -Tail $N -ErrorAction Stop) -join [Environment]::NewLine } catch { $null }
+          }
+          if ($validation) {
+            $validation | Add-Member -NotePropertyName installLogTail   -NotePropertyValue (_LogTail '.modern-dev-mgmt/validation/install.log')   -Force
+            $validation | Add-Member -NotePropertyName uninstallLogTail -NotePropertyValue (_LogTail '.modern-dev-mgmt/validation/uninstall.log') -Force
+          }
+          $footprint = $null
+          if (Test-Path -LiteralPath '.modern-dev-mgmt/validation/footprint.json') {
+            try { $footprint = Get-Content -LiteralPath '.modern-dev-mgmt/validation/footprint.json' -Raw | ConvertFrom-Json } catch {}
+          }
+          $leftovers = $null
+          if (Test-Path -LiteralPath '.modern-dev-mgmt/validation/leftovers.json') {
+            try { $leftovers = Get-Content -LiteralPath '.modern-dev-mgmt/validation/leftovers.json' -Raw | ConvertFrom-Json } catch {}
+          }
           $result = [ordered]@{
             workflowRunId = "${{ github.run_id }}"
             workflow = "deploy-custom-package.yml"
@@ -683,6 +706,9 @@ jobs:
             assetName = "${{ github.event.inputs.asset_name }}"
             createdAt = (Get-Date).ToUniversalTime().ToString("o")
             context = $context
+            validation = $validation
+            footprint = $footprint
+            leftovers = $leftovers
           }
           $result | ConvertTo-Json -Depth 8 | Set-Content -Path "$runDir/${{ github.run_id }}.json" -Encoding UTF8
           git add "$runDir/${{ github.run_id }}.json"
