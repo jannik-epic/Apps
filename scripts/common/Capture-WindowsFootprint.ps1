@@ -187,15 +187,45 @@ if ($Mode -eq 'full') {
         }
     }
 
+    function Resolve-InstallLocation {
+        param([object]$Entry)
+        if ($Entry.installLocation -and (Test-Path -LiteralPath $Entry.installLocation -PathType Container)) {
+            return [string]$Entry.installLocation
+        }
+        # Fallback 1: dirname of the uninstall executable (NSIS/Squirrel/Inno
+        # apps frequently leave InstallLocation blank but put unins000.exe or
+        # Uninstall.exe next to their files).
+        foreach ($candidate in @($Entry.uninstallString, $Entry.quietUninstallString)) {
+            if (-not $candidate) { continue }
+            $exePath = [string]$candidate
+            # Strip leading double-quote and trailing args.
+            if ($exePath.StartsWith('"')) {
+                $closing = $exePath.IndexOf('"', 1)
+                if ($closing -gt 0) { $exePath = $exePath.Substring(1, $closing - 1) }
+            } else {
+                $space = $exePath.IndexOf(' ')
+                if ($space -gt 0) { $exePath = $exePath.Substring(0, $space) }
+            }
+            try {
+                $parent = Split-Path -Parent $exePath -ErrorAction Stop
+                if ($parent -and (Test-Path -LiteralPath $parent -PathType Container)) {
+                    return $parent
+                }
+            } catch {}
+        }
+        return $null
+    }
+
     $files = New-Object System.Collections.Generic.List[object]
     foreach ($entry in $result.arp) {
-        if (-not $entry.installLocation) { continue }
         if ($baselineArpKeys.Count -gt 0 -and $baselineArpKeys.Contains([string]$entry.key)) { continue }
-        foreach ($f in Get-InstallLocationFiles -InstallLocation $entry.installLocation -MaxItems $MaxFilesPerInstall) {
+        $location = Resolve-InstallLocation -Entry $entry
+        if (-not $location) { continue }
+        foreach ($f in Get-InstallLocationFiles -InstallLocation $location -MaxItems $MaxFilesPerInstall) {
             $files.Add($f) | Out-Null
         }
     }
-    $result.files = ,$files.ToArray()
+    $result.files = [object[]]$files.ToArray()
 }
 
 $result | ConvertTo-Json -Depth 12 -Compress | Set-Content -LiteralPath $OutputPath -Encoding UTF8
