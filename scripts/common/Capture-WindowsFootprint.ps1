@@ -65,28 +65,54 @@ function ConvertTo-PortablePath {
 }
 
 function Get-FileSnapshot {
-    param([string[]]$Roots, [int]$MaxItems)
+    param([string[]]$Roots, [int]$MaxItems, [string[]]$SkipPrefixes)
+    # Use lazy enumeration (Directory.EnumerateFiles) so we stop as soon as we
+    # hit MaxItems instead of materializing the whole tree first. On a fresh
+    # GitHub-hosted Windows runner the system trees contain ~200k files; a naive
+    # Get-ChildItem -Recurse on ProgramFiles alone takes 5+ minutes.
     $items = New-Object System.Collections.Generic.List[object]
+    $skipPrefixesLower = @()
+    foreach ($p in $SkipPrefixes) {
+        if ($p) { $skipPrefixesLower += ,($p.TrimEnd('\').ToLowerInvariant()) }
+    }
     foreach ($root in $Roots) {
         if (-not $root -or -not (Test-Path -LiteralPath $root)) { continue }
         try {
-            Get-ChildItem -LiteralPath $root -Recurse -File -Force -ErrorAction SilentlyContinue |
-                ForEach-Object {
-                    if ($items.Count -ge $MaxItems) { return }
+            $enum = [System.IO.Directory]::EnumerateFiles(
+                $root, '*', [System.IO.SearchOption]::AllDirectories
+            )
+            foreach ($file in $enum) {
+                if ($items.Count -ge $MaxItems) { break }
+                $lower = $file.ToLowerInvariant()
+                $skip = $false
+                foreach ($prefix in $skipPrefixesLower) {
+                    if ($lower.StartsWith($prefix)) { $skip = $true; break }
+                }
+                if ($skip) { continue }
+                try {
+                    $info = [System.IO.FileInfo]::new($file)
                     $version = $null
-                    if ($_.Extension -in @('.exe','.dll','.sys','.ocx')) {
-                        try { $version = $_.VersionInfo.FileVersion } catch { $version = $null }
+                    $ext = $info.Extension.ToLowerInvariant()
+                    if ($ext -in @('.exe','.dll','.sys','.ocx')) {
+                        try {
+                            $vi = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($file)
+                            $version = $vi.FileVersion
+                        } catch {}
                     }
                     $items.Add([ordered]@{
-                        path          = (ConvertTo-PortablePath $_.FullName)
-                        size          = [int64]$_.Length
-                        lastWriteTime = $_.LastWriteTimeUtc.ToString('o')
+                        path          = (ConvertTo-PortablePath $file)
+                        size          = [int64]$info.Length
+                        lastWriteTime = $info.LastWriteTimeUtc.ToString('o')
                         version       = $version
                     }) | Out-Null
+                } catch {
+                    # File vanished or ACL denied between enumeration and stat.
                 }
+            }
         } catch {
-            # Swallow — partial snapshots are still useful for diff.
+            # Swallow root-level errors — partial snapshots still feed the diff.
         }
+        if ($items.Count -ge $MaxItems) { break }
     }
     return ,$items.ToArray()
 }
@@ -172,6 +198,29 @@ $fileRoots = @(
     "$env:LocalAppData",
     "$env:AppData"
 )
+# GitHub-hosted Windows runners ship with ~200k pre-installed files (Visual
+# Studio, dotnet SDKs, hosted-tool-caches, package-manager caches). Excluding
+# these system trees brings baseline snapshot time from ~6 min down to ~30 s
+# without losing fidelity: app installs rarely touch them, and any that do
+# would show as ARP/registry footprint anyway.
+$fileSkipPrefixes = @(
+    (Join-Path $env:ProgramFiles 'Microsoft Visual Studio'),
+    (Join-Path $env:ProgramFiles 'dotnet'),
+    (Join-Path $env:ProgramFiles 'PowerShell'),
+    (Join-Path ${env:ProgramFiles(x86)} 'Microsoft Visual Studio'),
+    (Join-Path ${env:ProgramFiles(x86)} 'Microsoft SDKs'),
+    (Join-Path ${env:ProgramFiles(x86)} 'Windows Kits'),
+    (Join-Path $env:ProgramData 'Microsoft\Windows Defender'),
+    (Join-Path $env:ProgramData 'chocolatey'),
+    (Join-Path $env:LocalAppData 'Microsoft\Edge'),
+    (Join-Path $env:LocalAppData 'Microsoft\Windows'),
+    (Join-Path $env:LocalAppData 'Programs\Microsoft VS Code'),
+    (Join-Path $env:LocalAppData 'Temp'),
+    (Join-Path $env:AppData 'Microsoft'),
+    'C:\hostedtoolcache',
+    'C:\npm',
+    'C:\Modules'
+)
 
 $registryRoots = @(
     @{ Hive = 'HKLM'; Key = 'SOFTWARE'; Path = 'HKLM:\SOFTWARE' },
@@ -186,7 +235,7 @@ if (-not (Get-PSDrive -Name HKCR -ErrorAction SilentlyContinue)) {
 
 $snapshot = [ordered]@{
     capturedAt = (Get-Date).ToUniversalTime().ToString('o')
-    files      = (Get-FileSnapshot -Roots $fileRoots -MaxItems $MaxFiles)
+    files      = (Get-FileSnapshot -Roots $fileRoots -MaxItems $MaxFiles -SkipPrefixes $fileSkipPrefixes)
     registry   = (Get-RegistrySnapshot -Roots $registryRoots -MaxValues $MaxRegistryValues)
     arp        = (Get-ArpSnapshot)
 }
