@@ -118,48 +118,76 @@ function Get-FileSnapshot {
 }
 
 function Get-RegistrySnapshot {
-    param([object[]]$Roots, [int]$MaxValues)
+    param(
+        [object[]]$Roots,
+        [int]$MaxValues,
+        [int]$MaxDepth = 4,
+        [string[]]$SkipKeyPatterns = @()
+    )
+    # Iterative BFS using .NET registry API — much faster than Get-ChildItem
+    # -Recurse on registry hives, and we can bound depth + skip noisy subtrees
+    # (Microsoft, .NET, Visual Studio) that dominate HKLM\SOFTWARE on a runner.
     $items = New-Object System.Collections.Generic.List[object]
+    $skipRegex = @()
+    foreach ($p in $SkipKeyPatterns) { if ($p) { $skipRegex += [regex]$p } }
+
     foreach ($root in $Roots) {
         $hiveLabel = $root.Hive
-        $relativeKey = $root.Key
-        $providerPath = $root.Path
-        if (-not (Test-Path -LiteralPath $providerPath)) { continue }
-        try {
-            Get-ChildItem -LiteralPath $providerPath -Recurse -ErrorAction SilentlyContinue |
-                ForEach-Object {
-                    if ($items.Count -ge $MaxValues) { return }
-                    $key = $_
-                    $subKey = $key.PSPath
+        $rootKeyName = $root.Key
+        $hiveRoot = switch ($hiveLabel) {
+            'HKLM' { [Microsoft.Win32.Registry]::LocalMachine }
+            'HKCU' { [Microsoft.Win32.Registry]::CurrentUser }
+            'HKCR' { [Microsoft.Win32.Registry]::ClassesRoot }
+            'HKU'  { [Microsoft.Win32.Registry]::Users }
+            default { $null }
+        }
+        if (-not $hiveRoot) { continue }
+        $startKey = if ($rootKeyName) {
+            try { $hiveRoot.OpenSubKey($rootKeyName, $false) } catch { $null }
+        } else { $hiveRoot }
+        if (-not $startKey) { continue }
+
+        # Stack of (RegistryKey, portablePath, depth).
+        $stack = New-Object System.Collections.Generic.Stack[object]
+        $stack.Push(@($startKey, "${hiveLabel}\${rootKeyName}".TrimEnd('\'), 0))
+
+        while ($stack.Count -gt 0) {
+            if ($items.Count -ge $MaxValues) { break }
+            $entry = $stack.Pop()
+            $key = $entry[0]; $portable = $entry[1]; $depth = $entry[2]
+            try {
+                foreach ($valName in $key.GetValueNames()) {
+                    if ($items.Count -ge $MaxValues) { break }
                     try {
-                        $props = Get-ItemProperty -LiteralPath $subKey -ErrorAction SilentlyContinue
-                        if ($null -eq $props) { return }
-                        # Compute the relative key path under the hive label.
-                        $keyName = $key.Name
-                        $hivePrefix = ($key.PSDrive.Name + ':')
-                        $portable = $keyName -replace ('^' + [regex]::Escape($key.PSDrive.Root)), $hivePrefix
-                        $portable = $portable -replace ('^' + [regex]::Escape($hivePrefix)), ($hiveLabel + '\')
-                        $props.PSObject.Properties |
-                            Where-Object { $_.Name -notlike 'PS*' } |
-                            ForEach-Object {
-                                if ($items.Count -ge $MaxValues) { return }
-                                $valueName = if ($_.Name -eq '(default)') { '(default)' } else { $_.Name }
-                                $valueData = try { [string]$_.Value } catch { '' }
-                                $valueType = try {
-                                    (Get-ItemPropertyValue -LiteralPath $subKey -Name $_.Name -ErrorAction Stop |
-                                        ForEach-Object { $_.GetType().Name })
-                                } catch { 'String' }
-                                $items.Add([ordered]@{
-                                    hive = $hiveLabel
-                                    key  = $portable
-                                    name = $valueName
-                                    type = $valueType
-                                    data = $valueData
-                                }) | Out-Null
-                            }
+                        $valueData = $key.GetValue($valName, '')
+                        $kind = $key.GetValueKind($valName).ToString()
+                        $items.Add([ordered]@{
+                            hive = $hiveLabel
+                            key  = $portable
+                            name = if ($valName) { $valName } else { '(default)' }
+                            type = $kind
+                            data = [string]$valueData
+                        }) | Out-Null
                     } catch {}
                 }
-        } catch {}
+                if ($depth -lt $MaxDepth) {
+                    foreach ($subName in $key.GetSubKeyNames()) {
+                        $childPath = "$portable\$subName"
+                        $skip = $false
+                        foreach ($rx in $skipRegex) {
+                            if ($rx.IsMatch($childPath)) { $skip = $true; break }
+                        }
+                        if ($skip) { continue }
+                        try {
+                            $child = $key.OpenSubKey($subName, $false)
+                            if ($child) { $stack.Push(@($child, $childPath, $depth + 1)) }
+                        } catch {}
+                    }
+                }
+            } catch {}
+            if ($key -ne $startKey) { try { $key.Close() } catch {} }
+        }
+        try { $startKey.Close() } catch {}
     }
     return ,$items.ToArray()
 }
@@ -223,20 +251,29 @@ $fileSkipPrefixes = @(
 )
 
 $registryRoots = @(
-    @{ Hive = 'HKLM'; Key = 'SOFTWARE'; Path = 'HKLM:\SOFTWARE' },
-    @{ Hive = 'HKLM'; Key = 'SOFTWARE\WOW6432Node'; Path = 'HKLM:\SOFTWARE\WOW6432Node' },
-    @{ Hive = 'HKCU'; Key = 'SOFTWARE'; Path = 'HKCU:\SOFTWARE' },
-    @{ Hive = 'HKCR'; Key = ''; Path = 'HKCR:\' }
+    @{ Hive = 'HKLM'; Key = 'SOFTWARE' },
+    @{ Hive = 'HKLM'; Key = 'SOFTWARE\WOW6432Node' },
+    @{ Hive = 'HKCU'; Key = 'SOFTWARE' }
+    # HKCR is intentionally skipped — it's mostly file-extension and CLSID
+    # associations that are not meaningful for app-footprint diffing on a
+    # GitHub runner with thousands of pre-registered handlers.
 )
 
-if (-not (Get-PSDrive -Name HKCR -ErrorAction SilentlyContinue)) {
-    New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT | Out-Null
-}
+# Subkey paths that are pure system noise on the GitHub runner; skipping them
+# brings the registry snapshot from ~5 min to <30 s. App installs that register
+# under Microsoft (e.g. Microsoft\Edge plugins) are still captured under their
+# own publisher key elsewhere.
+$registrySkipPatterns = @(
+    '\\Microsoft\\(Cryptography|Windows NT|EnterpriseCertificates|Active Setup|Internet Explorer|Edge|Office|VisualStudio|\.NETFramework|DotNETFramework)',
+    '\\Wow6432Node\\Microsoft\\(Cryptography|Windows NT|VisualStudio|\.NETFramework)',
+    '\\Classes\\(CLSID|TypeLib|Interface|AppID)',
+    '\\Policies\\Microsoft\\'
+)
 
 $snapshot = [ordered]@{
     capturedAt = (Get-Date).ToUniversalTime().ToString('o')
     files      = (Get-FileSnapshot -Roots $fileRoots -MaxItems $MaxFiles -SkipPrefixes $fileSkipPrefixes)
-    registry   = (Get-RegistrySnapshot -Roots $registryRoots -MaxValues $MaxRegistryValues)
+    registry   = (Get-RegistrySnapshot -Roots $registryRoots -MaxValues $MaxRegistryValues -MaxDepth 5 -SkipKeyPatterns $registrySkipPatterns)
     arp        = (Get-ArpSnapshot)
 }
 
