@@ -182,21 +182,20 @@ jobs:
             elif [[ -n "$INNER_APP" ]]; then
               cp -R "$INNER_APP" custom-files/
               echo "extracted_app=custom-files/$(basename "$INNER_APP")" >> "$GITHUB_OUTPUT"
-              # Build a temporary .pkg around the .app so intune_packager can upload it.
+              # Build a temporary .pkg around the .app. Use a sanitised, no-space
+              # output filename so downstream steps (intune_packager, upload)
+              # don't have to deal with quoting issues.
               APP_NAME="$(basename "$INNER_APP" .app)"
+              SAFE_NAME="$(echo "$APP_NAME" | tr ' ' '-')"
               IDENTIFIER="com.modern-dev-mgmt.$(echo "$APP_NAME" | tr '[:upper:] ' '[:lower:]-')"
-              pkgbuild --root "custom-files/$(basename "$INNER_APP")/.." \
-                       --component-plist /dev/null \
+              PKG_OUT="$PWD/custom-files/${SAFE_NAME}.pkg"
+              pkgbuild --component "custom-files/$(basename "$INNER_APP")" \
                        --identifier "$IDENTIFIER" \
                        --version "${{ github.event.inputs.version }}" \
                        --install-location "/Applications" \
-                       "custom-files/${APP_NAME}.pkg" || \
-                pkgbuild --component "custom-files/$(basename "$INNER_APP")" \
-                         --identifier "$IDENTIFIER" \
-                         --version "${{ github.event.inputs.version }}" \
-                         --install-location "/Applications" \
-                         "custom-files/${APP_NAME}.pkg"
-              echo "extracted_pkg=custom-files/${APP_NAME}.pkg" >> "$GITHUB_OUTPUT"
+                       "$PKG_OUT"
+              ls -la "$PKG_OUT"
+              echo "extracted_pkg=$PKG_OUT" >> "$GITHUB_OUTPUT"
             fi
             hdiutil detach "$MOUNT_POINT" -quiet || true
           fi
