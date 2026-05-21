@@ -15,6 +15,10 @@ on:
         options:
           - 'winget'
           - 'msstore'
+      package_name:
+        description: 'Package display name (informational, matches the catalog/Apps name)'
+        required: false
+        type: string
       version:
         description: 'Requested version or latest'
         required: false
@@ -71,10 +75,6 @@ on:
         required: true
         type: boolean
         default: true
-      detection_script:
-        description: 'Custom detection script (optional)'
-        required: false
-        type: string
       detection_script_b64:
         description: 'Base64 encoded custom detection script (optional)'
         required: false
@@ -246,9 +246,6 @@ jobs:
           }
           if ("${{ github.event.inputs.app_name }}") {
             $params.AppName = "${{ github.event.inputs.app_name }}"
-          }
-          if ("${{ github.event.inputs.detection_script }}") {
-            $params.CustomDetectionScript = "${{ github.event.inputs.detection_script }}"
           }
           if ($env:DETECTION_SCRIPT_B64) {
             $params.CustomDetectionScriptBase64 = $env:DETECTION_SCRIPT_B64
