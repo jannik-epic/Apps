@@ -1,0 +1,26 @@
+{
+  "files": [
+    []
+  ],
+  "registry": [],
+  "arp": [
+    {
+      "key": "6a2b5ac5-fa29-5b18-8c83-673211e963c6",
+      "displayName": "Notion Calendar 1.133.0",
+      "publisher": "Notion Labs, Inc.",
+      "displayVersion": "1.133.0",
+      "installLocation": "",
+      "uninstallString": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\notion-calendar-web\\Uninstall Notion Calendar.exe\" /currentuser",
+      "quietUninstallString": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\notion-calendar-web\\Uninstall Notion Calendar.exe\" /currentuser /S",
+      "estimatedSize": 331246
+    }
+  ],
+  "summary": {
+    "fileCount": 1,
+    "totalFileSize": 0,
+    "registryValueCount": 0,
+    "arpEntries": 1
+  },
+  "beforeCapturedAt": "2026-05-20T11:12:42.6946272Z",
+  "afterCapturedAt": "2026-05-20T11:12:54.3748542Z"
+}
