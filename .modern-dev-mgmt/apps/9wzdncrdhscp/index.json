@@ -1,0 +1,20 @@
+{
+  "slug": "9wzdncrdhscp",
+  "displayName": "Green Health",
+  "versions": [
+    {
+      "version": "latest",
+      "runs": [
+        {
+          "workflowRunId": "26107708839",
+          "createdAt": "2026-05-19T15:35:53.060Z",
+          "intuneAppId": "7d56c272-8291-45c5-9d73-906fa794fdab",
+          "catalogAppId": 54575,
+          "patchRunId": null,
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-22T06:16:05.071Z"
+}
