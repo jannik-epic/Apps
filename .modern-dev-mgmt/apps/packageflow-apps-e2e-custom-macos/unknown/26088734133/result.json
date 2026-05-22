@@ -1,0 +1,11 @@
+{
+  "workflowRunId": "26088734133",
+  "workflow": "deploy-custom-macos-package.yml",
+  "packageManager": "custom-macos",
+  "packageId": "packageflow-apps-e2e-custom-macos",
+  "appId": "711fee81-7113-423e-9b32-b1cc31bea180",
+  "appName": "PackageFlow Apps E2E Custom macOS Smoke 2026-05-19 1.0.0",
+  "status": "success",
+  "createdAt": "2026-05-19T09:32:48.784Z",
+  "context": null
+}
