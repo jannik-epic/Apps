@@ -1,0 +1,713 @@
+{
+  "files": [
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/CodeResources",
+      "size": 1947,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework",
+      "size": 156185728,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+      "size": 1016624,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libEGL.dylib",
+      "size": 245120,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libGLESv2.dylib",
+      "size": 7286480,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+      "size": 2113648,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib",
+      "size": 16725712,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/vk_swiftshader_icd.json",
+      "size": 110,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/Info.plist",
+      "size": 922,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/MainMenu.nib",
+      "size": 2005,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/af.lproj/locale.pak",
+      "size": 531021,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/am.lproj/locale.pak",
+      "size": 858641,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ar.lproj/locale.pak",
+      "size": 939934,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bg.lproj/locale.pak",
+      "size": 978939,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bn.lproj/locale.pak",
+      "size": 1261869,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ca.lproj/locale.pak",
+      "size": 596183,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/chrome_100_percent.pak",
+      "size": 103111,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/chrome_200_percent.pak",
+      "size": 160667,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/cs.lproj/locale.pak",
+      "size": 614540,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/da.lproj/locale.pak",
+      "size": 556154,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/de.lproj/locale.pak",
+      "size": 593596,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/el.lproj/locale.pak",
+      "size": 1071342,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en.lproj/locale.pak",
+      "size": 489042,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en_GB.lproj/locale.pak",
+      "size": 484243,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es.lproj/locale.pak",
+      "size": 586696,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es_419.lproj/locale.pak",
+      "size": 587528,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/et.lproj/locale.pak",
+      "size": 534450,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fa.lproj/locale.pak",
+      "size": 872522,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fi.lproj/locale.pak",
+      "size": 545197,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fil.lproj/locale.pak",
+      "size": 617115,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fr.lproj/locale.pak",
+      "size": 634361,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/gu.lproj/locale.pak",
+      "size": 1241012,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/he.lproj/locale.pak",
+      "size": 765890,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hi.lproj/locale.pak",
+      "size": 1309453,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hr.lproj/locale.pak",
+      "size": 592386,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hu.lproj/locale.pak",
+      "size": 638421,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/icudtl.dat",
+      "size": 10468208,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/id.lproj/locale.pak",
+      "size": 528644,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/it.lproj/locale.pak",
+      "size": 578341,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ja.lproj/locale.pak",
+      "size": 703930,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/kn.lproj/locale.pak",
+      "size": 1418270,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ko.lproj/locale.pak",
+      "size": 595538,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lt.lproj/locale.pak",
+      "size": 642318,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lv.lproj/locale.pak",
+      "size": 641012,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ml.lproj/locale.pak",
+      "size": 1476027,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/mr.lproj/locale.pak",
+      "size": 1215781,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ms.lproj/locale.pak",
+      "size": 553599,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nb.lproj/locale.pak",
+      "size": 534979,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nl.lproj/locale.pak",
+      "size": 553776,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pl.lproj/locale.pak",
+      "size": 616827,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_BR.lproj/locale.pak",
+      "size": 579226,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_PT.lproj/locale.pak",
+      "size": 583332,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/resources.pak",
+      "size": 5756768,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ro.lproj/locale.pak",
+      "size": 603827,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ru.lproj/locale.pak",
+      "size": 991949,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sk.lproj/locale.pak",
+      "size": 624261,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sl.lproj/locale.pak",
+      "size": 599490,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sr.lproj/locale.pak",
+      "size": 920418,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sv.lproj/locale.pak",
+      "size": 538691,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sw.lproj/locale.pak",
+      "size": 569956,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ta.lproj/locale.pak",
+      "size": 1464223,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/te.lproj/locale.pak",
+      "size": 1354294,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/th.lproj/locale.pak",
+      "size": 1136480,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/tr.lproj/locale.pak",
+      "size": 579662,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/uk.lproj/locale.pak",
+      "size": 993152,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ur.lproj/locale.pak",
+      "size": 866245,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/v8_context_snapshot.arm64.bin",
+      "size": 687473,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/vi.lproj/locale.pak",
+      "size": 686502,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN.lproj/locale.pak",
+      "size": 494804,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW.lproj/locale.pak",
+      "size": 488985,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Electron Framework.framework/Versions/A/_CodeSignature/CodeResources",
+      "size": 24519,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Mantle.framework/Versions/A/Mantle",
+      "size": 108208,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Mantle.framework/Versions/A/Resources/Info.plist",
+      "size": 1020,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Mantle.framework/Versions/A/_CodeSignature/CodeResources",
+      "size": 2442,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper (GPU).app/Contents/Info.plist",
+      "size": 1219,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper (GPU).app/Contents/MacOS/Notion Calendar Helper (GPU)",
+      "size": 121904,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper (GPU).app/Contents/PkgInfo",
+      "size": 8,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper (GPU).app/Contents/_CodeSignature/CodeResources",
+      "size": 2200,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper (Plugin).app/Contents/Info.plist",
+      "size": 1228,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper (Plugin).app/Contents/MacOS/Notion Calendar Helper (Plugin)",
+      "size": 122080,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper (Plugin).app/Contents/PkgInfo",
+      "size": 8,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper (Plugin).app/Contents/_CodeSignature/CodeResources",
+      "size": 2200,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper (Renderer).app/Contents/Info.plist",
+      "size": 1234,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper (Renderer).app/Contents/MacOS/Notion Calendar Helper (Renderer)",
+      "size": 121904,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper (Renderer).app/Contents/PkgInfo",
+      "size": 8,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper (Renderer).app/Contents/_CodeSignature/CodeResources",
+      "size": 2200,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper.app/Contents/Info.plist",
+      "size": 1194,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper.app/Contents/MacOS/Notion Calendar Helper",
+      "size": 122544,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper.app/Contents/PkgInfo",
+      "size": 8,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Notion Calendar Helper.app/Contents/_CodeSignature/CodeResources",
+      "size": 2200,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC",
+      "size": 391392,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/Resources/Info.plist",
+      "size": 1140,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/_CodeSignature/CodeResources",
+      "size": 2442,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/Info.plist",
+      "size": 1177,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt",
+      "size": 145600,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel",
+      "size": 164256,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Frameworks/Squirrel.framework/Versions/A/_CodeSignature/CodeResources",
+      "size": 2660,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Info.plist",
+      "size": 4334,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/MacOS/Notion Calendar",
+      "size": 69888,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/PkgInfo",
+      "size": 8,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Resources/Assets.car",
+      "size": 504152,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Resources/app-update.yml",
+      "size": 126,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Resources/app.asar",
+      "size": 58274811,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Resources/electron.icns",
+      "size": 232195,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/Resources/todesktop-runtime-config.json",
+      "size": 44,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Applications/Notion Calendar.app/Contents/_CodeSignature/CodeResources",
+      "size": 6822,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Users/runner/Library/Caches/Homebrew/downloads/b836c0ad387c2bf6634712b6574912f985beacb6c16802f0dc10eef2382f0533--Notion Calendar-darwin-arm64-1.133.0.zip",
+      "size": 110905905,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Users/runner/Library/Caches/com.apple.amsengagementd/fsCachedData/28BBEF6F-2F42-4E35-BEEF-563CC1CEB5C7",
+      "size": 109989,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Users/runner/Library/Caches/com.apple.amsengagementd/fsCachedData/28FBCEBA-7F2A-49CB-9152-E16420580145",
+      "size": 54286,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Users/runner/Library/Caches/com.apple.amsengagementd/fsCachedData/9339C344-4A20-4426-A93B-20E8E665D3A7",
+      "size": 89368,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Users/runner/Library/Caches/com.apple.amsengagementd/fsCachedData/954BED6F-9DE0-4CE6-BCB1-089F0E296E11",
+      "size": 92149,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Users/runner/Library/Caches/com.apple.amsengagementd/fsCachedData/9A4D4BD0-A735-4932-8EB6-1CADC78453F1",
+      "size": 89661,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Users/runner/Library/Caches/com.apple.amsengagementd/fsCachedData/EF67C37B-3484-4A07-8505-B1BC2DD4A641",
+      "size": 89360,
+      "lastWriteTime": null,
+      "version": null
+    },
+    {
+      "path": "/Users/runner/Library/Caches/com.apple.helpd/fsCachedData/0919A023-67FB-4AEA-B2EA-21C9486C7EB3.tmp",
+      "size": 76234,
+      "lastWriteTime": null,
+      "version": null
+    }
+  ],
+  "registry": [],
+  "arp": [
+    {
+      "key": "com.cron.electron",
+      "displayName": "Notion Calendar",
+      "publisher": "homebrew",
+      "displayVersion": "1.133.0",
+      "installLocation": "/Applications",
+      "uninstallString": "brew uninstall --cask notion-calendar",
+      "quietUninstallString": "brew uninstall --cask notion-calendar",
+      "estimatedSize": 414735924
+    }
+  ],
+  "summary": {
+    "fileCount": 114,
+    "totalFileSize": 414735924,
+    "registryValueCount": 0,
+    "arpEntries": 1
+  },
+  "launchAgents": [],
+  "launchDaemons": [],
+  "preferences": [],
+  "applicationSupport": [],
+  "leftoversFileCount": 7,
+  "leftoversTotalSize": 111430718
+}
