@@ -1,0 +1,44 @@
+{
+  "slug": "notion-calendar",
+  "displayName": "Notion Calendar",
+  "versions": [
+    {
+      "version": "1.133.0",
+      "runs": [
+        {
+          "workflowRunId": "26176832217",
+          "createdAt": "2026-05-20T16:54:22.771Z",
+          "intuneAppId": "6ff7de3f-d69b-495f-b593-facb1e69a922",
+          "catalogAppId": 2917,
+          "patchRunId": null,
+          "status": "success"
+        },
+        {
+          "workflowRunId": "26162152367",
+          "createdAt": "2026-05-20T12:26:00.619Z",
+          "intuneAppId": "6bc68207-172f-4f69-9214-5ff10892637b",
+          "catalogAppId": 2917,
+          "patchRunId": null,
+          "status": "success"
+        },
+        {
+          "workflowRunId": "26161614715",
+          "createdAt": "2026-05-20T12:17:27.039Z",
+          "intuneAppId": "e0a49ab2-7e30-4472-8d0c-789545c9699d",
+          "catalogAppId": 2917,
+          "patchRunId": null,
+          "status": "success"
+        },
+        {
+          "workflowRunId": "26161222222",
+          "createdAt": "2026-05-20T12:08:05.897Z",
+          "intuneAppId": "77303633-6195-44ed-a0f7-1460ec886a72",
+          "catalogAppId": 2917,
+          "patchRunId": null,
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-22T06:16:11.785Z"
+}
