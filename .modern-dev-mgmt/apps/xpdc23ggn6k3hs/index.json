@@ -1,0 +1,28 @@
+{
+  "slug": "xpdc23ggn6k3hs",
+  "displayName": "Little Green Button",
+  "versions": [
+    {
+      "version": "3.16.9000",
+      "runs": [
+        {
+          "workflowRunId": "26245795178",
+          "createdAt": "2026-05-21T18:39:15.792Z",
+          "intuneAppId": "52ea5947-b313-49b2-bd5d-0f16c5c9c6e3",
+          "catalogAppId": 64093,
+          "patchRunId": null,
+          "status": "success"
+        },
+        {
+          "workflowRunId": "26098524588",
+          "createdAt": "2026-05-19T12:55:57.796Z",
+          "intuneAppId": "24d0107e-fa0a-451b-b230-81cd352e9b53",
+          "catalogAppId": 26868,
+          "patchRunId": null,
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-22T06:16:02.918Z"
+}
