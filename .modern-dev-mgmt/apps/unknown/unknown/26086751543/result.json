@@ -1,0 +1,19 @@
+{
+  "workflowRunId": "26086751543",
+  "workflow": "sync-dynamic-app-group.yml",
+  "dynamicGroupId": "packageflow-apps-e2e-dynamic-20260519",
+  "entraGroupId": "78457cce-6400-4167-a811-facd86adf8df",
+  "targetVersion": "1.0.0",
+  "dryRun": false,
+  "autoPopulate": true,
+  "autoRemoveOnSuccess": true,
+  "outdatedDeviceCount": 0,
+  "currentDeviceCount": 0,
+  "resolvedOutdatedCount": 0,
+  "resolvedCurrentCount": 0,
+  "addedCount": 0,
+  "removedCount": 0,
+  "skipped": [],
+  "context": null,
+  "createdAt": "2026-05-19T08:52:19.2920421Z"
+}
