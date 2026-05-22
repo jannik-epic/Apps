@@ -138,6 +138,39 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Resolve target Azure tenant from Modern Dev Mgmt context
+        shell: bash
+        env:
+          MODERN_DEVMGMT_CONTEXT_B64: ${{ github.event.inputs.modern_dev_mgmt_context_b64 }}
+        run: |
+          # The desktop app's catalog deploy passes targetAzureTenantId +
+          # targetAzureClientId inside the b64-encoded context blob. When two
+          # tenants share the same GitHub repo this is the only mechanism that
+          # routes OIDC to the right Azure tenant per dispatch — the YAML env
+          # defaults are baked at provisioning time and can only point at one
+          # tenant.
+          if [[ -z "${MODERN_DEVMGMT_CONTEXT_B64:-}" ]]; then
+            echo "no Modern Dev Mgmt context — keeping default AZURE_TENANT_ID/CLIENT_ID"
+            exit 0
+          fi
+          decoded="$(printf '%s' "$MODERN_DEVMGMT_CONTEXT_B64" | base64 --decode 2>/dev/null || true)"
+          if [[ -z "$decoded" ]]; then
+            echo "::warning::could not base64-decode modern_dev_mgmt_context_b64; using YAML defaults"
+            exit 0
+          fi
+          tenant="$(printf '%s' "$decoded" | jq -r '.targetAzureTenantId // ""' 2>/dev/null || true)"
+          client="$(printf '%s' "$decoded" | jq -r '.targetAzureClientId // ""' 2>/dev/null || true)"
+          if [[ -n "$tenant" ]]; then
+            echo "AZURE_TENANT_ID=$tenant" >> "$GITHUB_ENV"
+            echo "INTUNE_TENANT_ID=$tenant" >> "$GITHUB_ENV"
+            echo "resolved AZURE_TENANT_ID=$tenant"
+          fi
+          if [[ -n "$client" ]]; then
+            echo "AZURE_CLIENT_ID=$client" >> "$GITHUB_ENV"
+            echo "INTUNE_CLIENT_ID=$client" >> "$GITHUB_ENV"
+            echo "resolved AZURE_CLIENT_ID=$client"
+          fi
+
       - name: Azure Login using OIDC
         uses: azure/login@v3
         with:
