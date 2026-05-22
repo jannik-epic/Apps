@@ -1,0 +1,14 @@
+{
+  "workflowRunId": "26087154050",
+  "workflow": "deploy-custom-package.yml",
+  "packageManager": "custom",
+  "packageId": "packageflow-apps-e2e-custom-windows",
+  "appId": "70ea8bb5-27da-4d7c-b321-3ca5d0286af5",
+  "updateOnlyAppId": "",
+  "appName": "PackageFlow Apps E2E Custom Windows Smoke 2026-05-19",
+  "status": "success",
+  "releaseTag": "e2e-smoke-2026-05-19",
+  "assetName": "packageflow-e2e-smoke.exe",
+  "createdAt": "2026-05-19T09:01:13.4620456Z",
+  "context": null
+}
