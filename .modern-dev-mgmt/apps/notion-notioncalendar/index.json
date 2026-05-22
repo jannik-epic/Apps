@@ -22,7 +22,20 @@
           "status": "success"
         }
       ]
+    },
+    {
+      "version": "unknown",
+      "runs": [
+        {
+          "workflowRunId": "26158799529",
+          "createdAt": "2026-05-20T11:13:42.1806358Z",
+          "intuneAppId": null,
+          "catalogAppId": null,
+          "patchRunId": null,
+          "status": "success"
+        }
+      ]
     }
   ],
-  "updatedAt": "2026-05-22T06:16:09.462Z"
+  "updatedAt": "2026-05-22T06:48:19.051Z"
 }
