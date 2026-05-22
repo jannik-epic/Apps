@@ -1,0 +1,12 @@
+{
+  "installExitCode": 0,
+  "detectionExitCode": 1,
+  "uninstallExitCode": 0,
+  "installOutcome": "success",
+  "detectionOutcome": "failure",
+  "uninstallOutcome": "success",
+  "footprintAvailable": true,
+  "leftoversAvailable": true,
+  "installLogPath": ".modern-dev-mgmt/validation/install.log",
+  "uninstallLogPath": ".modern-dev-mgmt/validation/uninstall.log"
+}

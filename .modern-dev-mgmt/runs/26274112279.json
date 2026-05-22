@@ -1,0 +1,94 @@
+{
+  "workflowRunId": "26274112279",
+  "workflow": "deploy-winget-app.yml",
+  "packageManager": "winget",
+  "packageId": "Anthropic.Claude",
+  "appId": "e19e37c6-cdc8-45fe-9fc5-b9d06323f90c",
+  "updateOnlyAppId": "",
+  "appName": "Claude",
+  "status": "success",
+  "createdAt": "2026-05-22T07:20:58.7795350Z",
+  "context": {
+    "source": "catalog.deploy",
+    "targetTenantId": 2,
+    "targetTenantName": "epicfusionlabs.com",
+    "targetAzureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+    "targetAzureClientId": "35d6529f-ddc6-4bba-8d22-11c136f0f400",
+    "repo": "jannik-epic/Apps",
+    "workflowFile": "deploy-winget-app.yml",
+    "catalog": {
+      "catalogAppId": 108627,
+      "source": "winget",
+      "packageId": "Anthropic.Claude",
+      "name": "Claude",
+      "version": "1.8555.0",
+      "publisher": "anthropicpbc"
+    },
+    "createUpdateOnly": false,
+    "appSettingId": null,
+    "appSettingVariables": [],
+    "assignmentTemplateId": 3,
+    "dryRun": false,
+    "createdAt": "2026-05-22T07:18:07.072Z"
+  },
+  "validation": {
+    "installExitCode": 0,
+    "detectionExitCode": 1,
+    "uninstallExitCode": 0,
+    "installOutcome": "success",
+    "detectionOutcome": "failure",
+    "uninstallOutcome": "success",
+    "footprintAvailable": true,
+    "leftoversAvailable": true,
+    "installLogPath": ".modern-dev-mgmt/validation/install.log",
+    "uninstallLogPath": ".modern-dev-mgmt/validation/uninstall.log",
+    "installLogTail": "**********************\r\nPowerShell transcript start\r\nStart time: 20260522071855\r\nUsername: runnervmqq1k9\\runneradmin\r\nRunAs User: runnervmqq1k9\\runneradmin\r\nConfiguration Name: \r\nMachine: runnervmqq1k9 (Microsoft Windows NT 10.0.26100.0)\r\nHost Application: C:\\Program Files\\PowerShell\\7\\pwsh.dll -command . 'D:\\a\\_temp\\099657a0-9713-4a80-8984-5507c5f58ad3.ps1'\r\nProcess ID: 7228\r\nPSVersion: 7.4.15\r\nPSEdition: Core\r\nGitCommitId: 7.4.15\r\nOS: Microsoft Windows 10.0.26100\r\nPlatform: Win32NT\r\nPSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0\r\nPSRemotingProtocolVersion: 2.3\r\nSerializationVersion: 1.1.0.1\r\nWSManStackVersion: 3.0\r\n**********************\r\n\r\n**********************\r\nPowerShell transcript end\r\nEnd time: 20260522071857\r\n**********************",
+    "uninstallLogTail": "**********************\r\nPowerShell transcript start\r\nStart time: 20260522071904\r\nUsername: runnervmqq1k9\\runneradmin\r\nRunAs User: runnervmqq1k9\\runneradmin\r\nConfiguration Name: \r\nMachine: runnervmqq1k9 (Microsoft Windows NT 10.0.26100.0)\r\nHost Application: C:\\Program Files\\PowerShell\\7\\pwsh.dll -command . 'D:\\a\\_temp\\26b84218-52c8-4558-ab68-08ae4856e8a7.ps1'\r\nProcess ID: 3484\r\nPSVersion: 7.4.15\r\nPSEdition: Core\r\nGitCommitId: 7.4.15\r\nOS: Microsoft Windows 10.0.26100\r\nPlatform: Win32NT\r\nPSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0\r\nPSRemotingProtocolVersion: 2.3\r\nSerializationVersion: 1.1.0.1\r\nWSManStackVersion: 3.0\r\n**********************\r\n\r\n**********************\r\nPowerShell transcript end\r\nEnd time: 20260522071905\r\n**********************"
+  },
+  "footprint": {
+    "files": null,
+    "registry": null,
+    "arp": null,
+    "summary": {
+      "fileCount": 0,
+      "totalFileSize": 0,
+      "registryValueCount": 0,
+      "arpEntries": 0
+    },
+    "beforeCapturedAt": "2026-05-22T07:18:54.8081229Z",
+    "afterCapturedAt": "2026-05-22T07:19:03.6937879Z"
+  },
+  "leftovers": {
+    "files": null,
+    "registry": null,
+    "arp": null,
+    "summary": {
+      "fileCount": 0,
+      "totalFileSize": 0,
+      "registryValueCount": 0,
+      "arpEntries": 0
+    },
+    "beforeCapturedAt": "2026-05-22T07:18:54.8081229Z",
+    "afterCapturedAt": "2026-05-22T07:19:10.7333338Z"
+  },
+  "installer": {
+    "fileName": "Claude_1.8555.0_User_X64_exe_en-US.exe",
+    "sha256": "1ffb0e08f6b38a21c24db029529f96337bdb63bf5d84305353de7bf334c831ed",
+    "installerType": "exe",
+    "nestedInstallerType": null,
+    "installerLocale": "",
+    "architecture": "x64",
+    "scope": "user",
+    "silentArgs": "--silent",
+    "silentUninstallArgs": "--silent",
+    "productCode": "AnthropicClaude",
+    "packageFamilyName": "",
+    "successExitCodes": [
+      0,
+      1641,
+      3010
+    ],
+    "version": "1.8555.0",
+    "sourceManifestName": "Claude_1.8555.0_User_X64_exe_en-US.yaml"
+  }
+}
