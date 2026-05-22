@@ -1,0 +1,20 @@
+{
+  "slug": "rectangle",
+  "displayName": "PackageFlow Apps E2E Homebrew Evidence Smoke 2026-05-19",
+  "versions": [
+    {
+      "version": "unknown",
+      "runs": [
+        {
+          "workflowRunId": "26088422757",
+          "createdAt": "2026-05-19T09:31:30.736Z",
+          "intuneAppId": "10725a70-9634-470e-850f-dd4ce84d2077",
+          "catalogAppId": null,
+          "patchRunId": null,
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-22T06:15:58.664Z"
+}
