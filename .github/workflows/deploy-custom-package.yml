@@ -701,6 +701,7 @@ jobs:
             appId = "${{ steps.create_app.outputs.app_id }}"
             updateOnlyAppId = "${{ steps.create_update_only_app.outputs.app_id }}"
             appName = "${{ steps.create_app.outputs.app_name }}"
+            appVersion = "${{ github.event.inputs.app_version }}"
             status = "success"
             releaseTag = "${{ github.event.inputs.release_tag }}"
             assetName = "${{ github.event.inputs.asset_name }}"
@@ -710,11 +711,150 @@ jobs:
             footprint = $footprint
             leftovers = $leftovers
           }
-          $result | ConvertTo-Json -Depth 8 | Set-Content -Path "$runDir/${{ github.run_id }}.json" -Encoding UTF8
+          $resultJson = $result | ConvertTo-Json -Depth 8
+          $resultJson | Set-Content -Path "$runDir/${{ github.run_id }}.json" -Encoding UTF8
           git add "$runDir/${{ github.run_id }}.json"
+          # ---- Per-app docs layout (mirrors app-docs-layout.ts) ----
+          function _Slugify([string]$Value) {
+            if ([string]::IsNullOrWhiteSpace($Value)) { return '_unknown' }
+            $lower = $Value.ToLowerInvariant()
+            $dashed = [System.Text.RegularExpressions.Regex]::Replace($lower, '[^a-z0-9]+', '-')
+            $trimmed = $dashed.Trim('-')
+            if ([string]::IsNullOrEmpty($trimmed)) { return '_unknown' }
+            return $trimmed
+          }
+          function _NormalizeVersion([string]$Value) {
+            if ([string]::IsNullOrWhiteSpace($Value)) { return 'unknown' }
+            $cleaned = [System.Text.RegularExpressions.Regex]::Replace($Value.Trim(), '[^A-Za-z0-9._-]+', '-').Trim('-')
+            if ([string]::IsNullOrEmpty($cleaned)) { return 'unknown' }
+            return $cleaned
+          }
+          $slugCandidates = @(
+            $result.packageId,
+            $result.appName,
+            $(if ($context) { $context.packageId } else { $null }),
+            $(if ($context) { $context.appName } else { $null })
+          )
+          $appSlug = '_unknown'
+          foreach ($cand in $slugCandidates) {
+            if ($cand) {
+              $candidate = _Slugify ([string]$cand)
+              if ($candidate -ne '_unknown') { $appSlug = $candidate; break }
+            }
+          }
+          $versionCandidates = @(
+            $result.appVersion,
+            $(if ($context) { $context.targetVersion } else { $null }),
+            $(if ($context) { $context.version } else { $null }),
+            $result.version
+          )
+          $appVersion = 'unknown'
+          foreach ($cand in $versionCandidates) {
+            if ($cand) {
+              $candidate = _NormalizeVersion ([string]$cand)
+              if ($candidate -ne 'unknown') { $appVersion = $candidate; break }
+            }
+          }
+          $runIdRaw = "${{ github.run_id }}"
+          $safeRunId = [System.Text.RegularExpressions.Regex]::Replace($runIdRaw, '[^A-Za-z0-9._-]+', '')
+          $appDir = ".modern-dev-mgmt/apps/$appSlug"
+          $versionDir = "$appDir/$appVersion"
+          $perRunDir = "$versionDir/$safeRunId"
+          New-Item -ItemType Directory -Force -Path $perRunDir | Out-Null
+          $resultJson | Set-Content -Path "$perRunDir/result.json" -Encoding UTF8
+          foreach ($pair in @(
+            @{ src = '.modern-dev-mgmt/validation/install.log';   dst = "$perRunDir/install.log" },
+            @{ src = '.modern-dev-mgmt/validation/uninstall.log'; dst = "$perRunDir/uninstall.log" },
+            @{ src = '.modern-dev-mgmt/validation/footprint.json';dst = "$perRunDir/footprint.json" },
+            @{ src = '.modern-dev-mgmt/validation/leftovers.json';dst = "$perRunDir/leftovers.json" },
+            @{ src = '.modern-dev-mgmt/validation/report.json';   dst = "$perRunDir/report.json" }
+          )) {
+            if (Test-Path -LiteralPath $pair.src) {
+              Copy-Item -LiteralPath $pair.src -Destination $pair.dst -Force
+            }
+          }
+          $createdAt = $result.createdAt
+          $intuneAppId = $result.appId
+          $catalogAppId = $null
+          $patchRunId = $null
+          if ($context) {
+            if ($context.PSObject.Properties.Match('catalogAppId').Count -gt 0) { $catalogAppId = $context.catalogAppId }
+            if ($context.PSObject.Properties.Match('patchRunId').Count -gt 0) { $patchRunId = $context.patchRunId }
+          }
+          $latestPointer = [ordered]@{
+            workflowRunId = $safeRunId
+            createdAt     = $createdAt
+            intuneAppId   = $intuneAppId
+            catalogAppId  = $catalogAppId
+          }
+          ($latestPointer | ConvertTo-Json -Depth 4) | Set-Content -Path "$versionDir/latest.json" -Encoding UTF8
+          $displayName = $result.appName
+          $indexPath = "$appDir/index.json"
+          $index = $null
+          if (Test-Path -LiteralPath $indexPath) {
+            try { $index = Get-Content -LiteralPath $indexPath -Raw | ConvertFrom-Json } catch { $index = $null }
+          }
+          $indexVersions = @()
+          if ($index -and $index.versions) {
+            foreach ($v in $index.versions) {
+              $runsCopy = @()
+              if ($v.runs) {
+                foreach ($r in $v.runs) {
+                  $runsCopy += [ordered]@{
+                    workflowRunId = [string]$r.workflowRunId
+                    createdAt     = $r.createdAt
+                    intuneAppId   = $r.intuneAppId
+                    catalogAppId  = $r.catalogAppId
+                    patchRunId    = $r.patchRunId
+                    status        = $r.status
+                  }
+                }
+              }
+              $indexVersions += [ordered]@{ version = [string]$v.version; runs = $runsCopy }
+            }
+          }
+          $newRunEntry = [ordered]@{
+            workflowRunId = $safeRunId
+            createdAt     = $createdAt
+            intuneAppId   = $intuneAppId
+            catalogAppId  = $catalogAppId
+            patchRunId    = $patchRunId
+            status        = $result.status
+          }
+          $found = $false
+          for ($i = 0; $i -lt $indexVersions.Count; $i++) {
+            if ($indexVersions[$i].version -eq $appVersion) {
+              $found = $true
+              $filteredRuns = @()
+              foreach ($r in $indexVersions[$i].runs) {
+                if ([string]$r.workflowRunId -ne $safeRunId) { $filteredRuns += $r }
+              }
+              $filteredRuns += $newRunEntry
+              $indexVersions[$i].runs = $filteredRuns
+              break
+            }
+          }
+          if (-not $found) {
+            $indexVersions += [ordered]@{ version = $appVersion; runs = @($newRunEntry) }
+          }
+          $sortedVersions = $indexVersions | Sort-Object @{ Expression = {
+            $maxCreated = ''
+            foreach ($r in $_.runs) {
+              if ($r.createdAt -and ([string]$r.createdAt) -gt $maxCreated) { $maxCreated = [string]$r.createdAt }
+            }
+            $maxCreated
+          }; Descending = $true }, @{ Expression = { $_.version }; Descending = $true }
+          $indexOut = [ordered]@{
+            slug        = $appSlug
+            displayName = $displayName
+            versions    = @($sortedVersions)
+            updatedAt   = (Get-Date).ToUniversalTime().ToString('o')
+          }
+          ($indexOut | ConvertTo-Json -Depth 10) | Set-Content -Path $indexPath -Encoding UTF8
+          git add $appDir
           git diff --cached --quiet
           if ($LASTEXITCODE -ne 0) {
-            git commit -m "chore: record Modern Dev Mgmt custom run ${{ github.run_id }}"
+            git commit -m "chore: record Modern Dev Mgmt custom run ${{ github.run_id }} (per-app docs)"
             git pull --rebase origin "${{ github.ref_name }}"
             git push
           } else {
