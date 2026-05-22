@@ -1,0 +1,92 @@
+{
+  "workflowRunId": "26272229778",
+  "workflow": "deploy-winget-app.yml",
+  "packageManager": "winget",
+  "packageId": "Anthropic.ClaudeCode",
+  "appId": "e598bbfa-e92e-4a70-ac91-1886a10c664e",
+  "updateOnlyAppId": "",
+  "appName": "Claude Code",
+  "status": "success",
+  "createdAt": "2026-05-22T06:31:16.0113482Z",
+  "context": {
+    "source": "catalog.deploy",
+    "targetTenantId": 2,
+    "targetTenantName": "epicfusionlabs.com",
+    "repo": "jannik-epic/Apps",
+    "workflowFile": "deploy-winget-app.yml",
+    "catalog": {
+      "catalogAppId": 108573,
+      "source": "winget",
+      "packageId": "Anthropic.ClaudeCode",
+      "name": "Claude Code",
+      "version": "2.1.146",
+      "publisher": "Anthropic"
+    },
+    "createUpdateOnly": false,
+    "appSettingId": null,
+    "appSettingVariables": [],
+    "assignmentTemplateId": null,
+    "dryRun": false,
+    "createdAt": "2026-05-22T06:29:20.328Z"
+  },
+  "validation": {
+    "installExitCode": 0,
+    "detectionExitCode": 1,
+    "uninstallExitCode": 0,
+    "installOutcome": "success",
+    "detectionOutcome": "failure",
+    "uninstallOutcome": "success",
+    "footprintAvailable": true,
+    "leftoversAvailable": true,
+    "installLogPath": ".modern-dev-mgmt/validation/install.log",
+    "uninstallLogPath": ".modern-dev-mgmt/validation/uninstall.log",
+    "installLogTail": "**********************\r\nPowerShell transcript start\r\nStart time: 20260522063007\r\nUsername: runnervmqq1k9\\runneradmin\r\nRunAs User: runnervmqq1k9\\runneradmin\r\nConfiguration Name: \r\nMachine: runnervmqq1k9 (Microsoft Windows NT 10.0.26100.0)\r\nHost Application: C:\\Program Files\\PowerShell\\7\\pwsh.dll -command . 'D:\\a\\_temp\\3787fb6c-00ff-46ed-85b4-04e313f580b2.ps1'\r\nProcess ID: 5568\r\nPSVersion: 7.4.15\r\nPSEdition: Core\r\nGitCommitId: 7.4.15\r\nOS: Microsoft Windows 10.0.26100\r\nPlatform: Win32NT\r\nPSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0\r\nPSRemotingProtocolVersion: 2.3\r\nSerializationVersion: 1.1.0.1\r\nWSManStackVersion: 3.0\r\n**********************\r\n\r\n**********************\r\nPowerShell transcript end\r\nEnd time: 20260522063008\r\n**********************",
+    "uninstallLogTail": "**********************\r\nPowerShell transcript start\r\nStart time: 20260522063016\r\nUsername: runnervmqq1k9\\runneradmin\r\nRunAs User: runnervmqq1k9\\runneradmin\r\nConfiguration Name: \r\nMachine: runnervmqq1k9 (Microsoft Windows NT 10.0.26100.0)\r\nHost Application: C:\\Program Files\\PowerShell\\7\\pwsh.dll -command . 'D:\\a\\_temp\\91703a3d-fc22-41ad-88c9-f3e92e6abff5.ps1'\r\nProcess ID: 4368\r\nPSVersion: 7.4.15\r\nPSEdition: Core\r\nGitCommitId: 7.4.15\r\nOS: Microsoft Windows 10.0.26100\r\nPlatform: Win32NT\r\nPSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0\r\nPSRemotingProtocolVersion: 2.3\r\nSerializationVersion: 1.1.0.1\r\nWSManStackVersion: 3.0\r\n**********************\r\n\r\n**********************\r\nPowerShell transcript end\r\nEnd time: 20260522063017\r\n**********************"
+  },
+  "footprint": {
+    "files": null,
+    "registry": null,
+    "arp": null,
+    "summary": {
+      "fileCount": 0,
+      "totalFileSize": 0,
+      "registryValueCount": 0,
+      "arpEntries": 0
+    },
+    "beforeCapturedAt": "2026-05-22T06:30:06.5784891Z",
+    "afterCapturedAt": "2026-05-22T06:30:15.541364Z"
+  },
+  "leftovers": {
+    "files": null,
+    "registry": null,
+    "arp": null,
+    "summary": {
+      "fileCount": 0,
+      "totalFileSize": 0,
+      "registryValueCount": 0,
+      "arpEntries": 0
+    },
+    "beforeCapturedAt": "2026-05-22T06:30:06.5784891Z",
+    "afterCapturedAt": "2026-05-22T06:30:17.5637949Z"
+  },
+  "installer": {
+    "fileName": "Claude Code_2.1.146_X64_portable_en-US.exe",
+    "sha256": "b585bbaf085554757b627e5ed87aa5c153abb90ef408fb43b0311453b72e8bc2",
+    "installerType": "portable",
+    "nestedInstallerType": null,
+    "installerLocale": "",
+    "architecture": "x64",
+    "scope": "",
+    "silentArgs": "/S",
+    "silentUninstallArgs": "/S",
+    "productCode": "",
+    "packageFamilyName": "",
+    "successExitCodes": [
+      0,
+      1641,
+      3010
+    ],
+    "version": "2.1.146",
+    "sourceManifestName": "Claude Code_2.1.146_X64_portable_en-US.yaml"
+  }
+}

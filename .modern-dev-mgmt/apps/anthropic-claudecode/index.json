@@ -1,0 +1,20 @@
+{
+  "slug": "anthropic-claudecode",
+  "displayName": "Claude Code",
+  "versions": [
+    {
+      "version": "2.1.146",
+      "runs": [
+        {
+          "workflowRunId": "26272229778",
+          "createdAt": "2026-05-22T06:31:16.0113482Z",
+          "intuneAppId": "e598bbfa-e92e-4a70-ac91-1886a10c664e",
+          "catalogAppId": null,
+          "patchRunId": null,
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-22T06:31:16.1319243Z"
+}
