@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-22T02:17:02.925Z",
+  "scannedAt": "2026-05-22T02:30:54.174Z",
   "results": [
     {
       "appId": 803,
@@ -15,30 +15,30 @@
       "appId": 2395,
       "packageManager": "winget",
       "packageId": "Git.Git",
-      "currentDeployedVersion": "2.39.2",
+      "currentDeployedVersion": "2.54.0",
       "latestUpstreamVersion": "2.54.0",
-      "hasUpdate": true,
-      "bumpType": "minor",
+      "hasUpdate": false,
+      "bumpType": null,
       "releaseNotesUrl": "https://gitforwindows.org/"
     },
     {
       "appId": 2409,
       "packageManager": "winget",
       "packageId": "GitHub.cli",
-      "currentDeployedVersion": "2.24.3",
+      "currentDeployedVersion": "2.92.0",
       "latestUpstreamVersion": "2.92.0",
-      "hasUpdate": true,
-      "bumpType": "minor",
+      "hasUpdate": false,
+      "bumpType": null,
       "releaseNotesUrl": "https://cli.github.com/"
     },
     {
       "appId": 2411,
       "packageManager": "winget",
       "packageId": "GitHub.GitHubDesktop",
-      "currentDeployedVersion": "3.2.0",
+      "currentDeployedVersion": "3.5.9",
       "latestUpstreamVersion": "3.5.9",
-      "hasUpdate": true,
-      "bumpType": "minor",
+      "hasUpdate": false,
+      "bumpType": null,
       "releaseNotesUrl": "https://github.com/apps/desktop"
     },
     {
@@ -135,10 +135,10 @@
       "appId": 5631,
       "packageManager": "winget",
       "packageId": "Microsoft.PowerShell",
-      "currentDeployedVersion": "7.3.3.0",
+      "currentDeployedVersion": "7.6.2.0",
       "latestUpstreamVersion": "7.6.2.0",
-      "hasUpdate": true,
-      "bumpType": "minor",
+      "hasUpdate": false,
+      "bumpType": null,
       "releaseNotesUrl": "https://microsoft.com/PowerShell"
     },
     {
@@ -187,6 +187,66 @@
       "packageId": "9NFTCH6J7FHV",
       "currentDeployedVersion": "11.2604.143.0",
       "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 113049,
+      "packageManager": "winget",
+      "packageId": "JetBrains.dotPeek",
+      "currentDeployedVersion": "2024.2.3",
+      "latestUpstreamVersion": "2026.1.2",
+      "hasUpdate": true,
+      "bumpType": "major",
+      "releaseNotesUrl": "https://www.jetbrains.com/profiler/"
+    },
+    {
+      "appId": 114158,
+      "packageManager": "winget",
+      "packageId": "Microsoft.Gaming.GDK",
+      "currentDeployedVersion": "2604.1001.9.0",
+      "latestUpstreamVersion": "2604.1.7839",
+      "hasUpdate": true,
+      "bumpType": "patch",
+      "releaseNotesUrl": "https://github.com/microsoft/GDK/releases"
+    },
+    {
+      "appId": 114190,
+      "packageManager": "winget",
+      "packageId": "Microsoft.MakeBingYourSearchEngine",
+      "currentDeployedVersion": "2022.1.43.0",
+      "latestUpstreamVersion": "1.7.57.1",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://www.microsoft.com/en-gb/download/details.aspx?id=41702"
+    },
+    {
+      "appId": 114227,
+      "packageManager": "winget",
+      "packageId": "Microsoft.PurviewInformationProtection",
+      "currentDeployedVersion": "3.2.57.0",
+      "latestUpstreamVersion": "3.2.57.0",
+      "hasUpdate": false,
+      "bumpType": null,
+      "releaseNotesUrl": "https://www.microsoft.com/en-us/download/details.aspx?id=53018"
+    },
+    {
+      "appId": 114306,
+      "packageManager": "winget",
+      "packageId": "Microsoft.VCRedist.2015+.arm64",
+      "currentDeployedVersion": "14.30.30704.0",
+      "latestUpstreamVersion": "14.51.36231.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist"
+    },
+    {
+      "appId": 118346,
+      "packageManager": "winget",
+      "packageId": "VMware.SpringToolSuite",
+      "currentDeployedVersion": "13.0.1.0",
+      "latestUpstreamVersion": "5.0.1.e4.38.0",
       "hasUpdate": true,
       "bumpType": null,
       "releaseNotesUrl": null
