@@ -248,6 +248,7 @@ jobs:
           APP_ID: ${{ steps.package_upload.outputs.app_id }}
           APP_NAME: ${{ steps.package_upload.outputs.app_name }}
           PACKAGE_ID: ${{ github.event.inputs.package_id }}
+          APP_VERSION: ${{ github.event.inputs.app_version }}
           MODERN_DEVMGMT_CONTEXT_B64: ${{ github.event.inputs.modern_dev_mgmt_context_b64 }}
         run: |
           set -euo pipefail
@@ -288,17 +289,134 @@ jobs:
             packageId: process.env.PACKAGE_ID || null,
             appId: process.env.APP_ID || null,
             appName: process.env.APP_NAME || process.env.PACKAGE_ID || null,
+            appVersion: process.env.APP_VERSION || null,
             status: 'success',
             createdAt: new Date().toISOString(),
             context,
           };
-          fs.writeFileSync(`.modern-dev-mgmt/runs/${runId}.json`, JSON.stringify(result, null, 2));
+          const resultJson = JSON.stringify(result, null, 2);
+          fs.writeFileSync(`.modern-dev-mgmt/runs/${runId}.json`, resultJson);
+          if (context && context.patchRunId) {
+            fs.mkdirSync('.modern-dev-mgmt/patch-runs', { recursive: true });
+            fs.writeFileSync(`.modern-dev-mgmt/patch-runs/${context.patchRunId}.json`, resultJson);
+          }
+          // ---- Per-app docs layout (mirrors app-docs-layout.ts) ----
+          function slugifyApp(value) {
+            if (!value) return '_unknown';
+            const lowered = String(value).normalize('NFKD').toLowerCase();
+            const ascii = lowered.replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+            return ascii || '_unknown';
+          }
+          function normalizeVersion(value) {
+            if (!value) return 'unknown';
+            const cleaned = String(value).trim().replace(/[^A-Za-z0-9._\-]+/g, '-').replace(/^-+|-+$/g, '');
+            return cleaned || 'unknown';
+          }
+          const slugCandidates = [
+            result.packageId,
+            result.appName,
+            context && context.packageId,
+            context && context.appName,
+          ];
+          let appSlug = '_unknown';
+          for (const c of slugCandidates) {
+            const s = slugifyApp(c);
+            if (s !== '_unknown') { appSlug = s; break; }
+          }
+          const versionCandidates = [
+            result.appVersion,
+            context && context.targetVersion,
+            context && context.version,
+            result.version,
+          ];
+          let appVersion = 'unknown';
+          for (const c of versionCandidates) {
+            const v = normalizeVersion(c);
+            if (v !== 'unknown') { appVersion = v; break; }
+          }
+          const safeRunId = String(runId).replace(/[^A-Za-z0-9._-]+/g, '');
+          const appDir = `.modern-dev-mgmt/apps/${appSlug}`;
+          const versionDir = `${appDir}/${appVersion}`;
+          const perRunDir = `${versionDir}/${safeRunId}`;
+          fs.mkdirSync(perRunDir, { recursive: true });
+          fs.writeFileSync(`${perRunDir}/result.json`, resultJson);
+          const copies = [
+            ['.modern-dev-mgmt/validation/install.log',    `${perRunDir}/install.log`],
+            ['.modern-dev-mgmt/validation/uninstall.log',  `${perRunDir}/uninstall.log`],
+            ['.modern-dev-mgmt/validation/footprint.json', `${perRunDir}/footprint.json`],
+            ['.modern-dev-mgmt/validation/leftovers.json', `${perRunDir}/leftovers.json`],
+            ['.modern-dev-mgmt/validation/report.json',    `${perRunDir}/report.json`],
+          ];
+          for (const [src, dst] of copies) {
+            try { if (fs.existsSync(src)) fs.copyFileSync(src, dst); } catch (e) { /* ignore */ }
+          }
+          const createdAt = result.createdAt;
+          const intuneAppId = result.appId || null;
+          const catalogAppId = (context && context.catalogAppId != null) ? context.catalogAppId : null;
+          const patchRunId = (context && context.patchRunId != null) ? context.patchRunId : null;
+          const latestPointer = {
+            workflowRunId: safeRunId,
+            createdAt,
+            intuneAppId,
+            catalogAppId,
+          };
+          fs.writeFileSync(`${versionDir}/latest.json`, JSON.stringify(latestPointer, null, 2));
+          const indexPath = `${appDir}/index.json`;
+          let index = null;
+          if (fs.existsSync(indexPath)) {
+            try { index = JSON.parse(fs.readFileSync(indexPath, 'utf8')); } catch (e) { index = null; }
+          }
+          const versions = (index && Array.isArray(index.versions)) ? index.versions.map(function (v) { return ({
+            version: String(v.version),
+            runs: Array.isArray(v.runs) ? v.runs.map(function (r) { return ({
+              workflowRunId: String(r.workflowRunId),
+              createdAt: r.createdAt || null,
+              intuneAppId: r.intuneAppId || null,
+              catalogAppId: r.catalogAppId != null ? r.catalogAppId : null,
+              patchRunId: r.patchRunId != null ? r.patchRunId : null,
+              status: r.status || null,
+            }); }) : [],
+          }); }) : [];
+          const newRun = {
+            workflowRunId: safeRunId,
+            createdAt,
+            intuneAppId,
+            catalogAppId,
+            patchRunId,
+            status: result.status || null,
+          };
+          let target = versions.find(function (v) { return v.version === appVersion; });
+          if (!target) {
+            target = { version: appVersion, runs: [] };
+            versions.push(target);
+          }
+          target.runs = target.runs.filter(function (r) { return r.workflowRunId !== safeRunId; });
+          target.runs.push(newRun);
+          versions.sort(function (a, b) {
+            const aMax = a.runs.reduce(function (acc, r) { return (r.createdAt && r.createdAt > acc) ? r.createdAt : acc; }, '');
+            const bMax = b.runs.reduce(function (acc, r) { return (r.createdAt && r.createdAt > acc) ? r.createdAt : acc; }, '');
+            if (aMax !== bMax) return bMax.localeCompare(aMax);
+            return b.version.localeCompare(a.version);
+          });
+          const indexOut = {
+            slug: appSlug,
+            displayName: result.appName || null,
+            versions,
+            updatedAt: new Date().toISOString(),
+          };
+          fs.writeFileSync(indexPath, JSON.stringify(indexOut, null, 2));
           NODE
           git add ".modern-dev-mgmt/runs/${GITHUB_RUN_ID}.json"
+          if [ -d .modern-dev-mgmt/patch-runs ]; then
+            git add .modern-dev-mgmt/patch-runs
+          fi
+          if [ -d .modern-dev-mgmt/apps ]; then
+            git add .modern-dev-mgmt/apps
+          fi
           if git diff --cached --quiet; then
             echo "no changes"
           else
-            git commit -m "chore: record Modern Dev Mgmt macOS custom run ${GITHUB_RUN_ID}"
+            git commit -m "chore: record Modern Dev Mgmt macOS custom run ${GITHUB_RUN_ID} (per-app docs)"
             git pull --rebase origin "${GITHUB_REF_NAME:-main}"
             git push
           fi
