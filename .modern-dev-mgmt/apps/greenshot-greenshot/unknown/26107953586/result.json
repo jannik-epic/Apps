@@ -1,0 +1,36 @@
+{
+  "workflowRunId": "26107953586",
+  "workflow": "deploy-winget-app.yml",
+  "packageManager": "winget",
+  "packageId": "Greenshot.Greenshot",
+  "appId": "1f4b0209-e744-4de6-810e-b716e2e4c1b9",
+  "updateOnlyAppId": "",
+  "appName": "Greenshot",
+  "status": "success",
+  "createdAt": "2026-05-19T15:40:00.6822122Z",
+  "context": {
+    "source": "patch.trigger",
+    "patchRunId": 42,
+    "targetTenantId": 289,
+    "targetTenantName": "ModernDevMgmt.onmicrosoft.com",
+    "repo": "jannik-epic/Apps",
+    "workflowFile": "deploy-winget-app.yml",
+    "catalog": {
+      "catalogAppId": 8522,
+      "source": "winget",
+      "packageId": "Greenshot.Greenshot",
+      "name": "Greenshot",
+      "publisher": "Greenshot",
+      "fromVersion": "1.3.315",
+      "toVersion": "1.3.315"
+    },
+    "architecture": "x64",
+    "wave": null,
+    "runSandbox": false,
+    "dryRun": false,
+    "assignmentTemplate": null,
+    "appSetting": null,
+    "changeNote": "CVE remediation: CVE-SMOKE-EXACT-1779019685384-n7rv1s (CRITICAL)",
+    "createdAt": "2026-05-19T15:39:10.057Z"
+  }
+}
