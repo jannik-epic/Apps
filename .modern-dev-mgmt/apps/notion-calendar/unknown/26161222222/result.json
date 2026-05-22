@@ -1,0 +1,32 @@
+{
+  "workflowRunId": "26161222222",
+  "workflow": "deploy-homebrew-app.yml",
+  "packageManager": "homebrew",
+  "packageId": "notion-calendar",
+  "appId": "77303633-6195-44ed-a0f7-1460ec886a72",
+  "appName": "Notion Calendar",
+  "status": "success",
+  "createdAt": "2026-05-20T12:08:05.897Z",
+  "context": {
+    "source": "catalog.deploy",
+    "targetTenantId": 289,
+    "targetTenantName": "ModernDevMgmt.onmicrosoft.com",
+    "repo": "jannik-epic/Apps",
+    "workflowFile": "deploy-homebrew-app.yml",
+    "catalog": {
+      "catalogAppId": 2917,
+      "source": "homebrew",
+      "packageId": "notion-calendar",
+      "name": "Notion Calendar",
+      "version": "1.133.0",
+      "publisher": "Calendar for professionals"
+    },
+    "createUpdateOnly": false,
+    "appSettingId": null,
+    "appSettingVariables": [],
+    "assignmentTemplateId": null,
+    "dryRun": false,
+    "createdAt": "2026-05-20T12:02:17.946Z"
+  },
+  "footprint": null
+}
