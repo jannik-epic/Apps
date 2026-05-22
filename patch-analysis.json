@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-22T01:22:54.759Z",
+  "scannedAt": "2026-05-22T02:17:02.925Z",
   "results": [
     {
       "appId": 803,
@@ -136,7 +136,7 @@
       "packageManager": "winget",
       "packageId": "Microsoft.PowerShell",
       "currentDeployedVersion": "7.3.3.0",
-      "latestUpstreamVersion": "7.6.1.0",
+      "latestUpstreamVersion": "7.6.2.0",
       "hasUpdate": true,
       "bumpType": "minor",
       "releaseNotesUrl": "https://microsoft.com/PowerShell"
