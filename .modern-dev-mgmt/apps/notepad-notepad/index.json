@@ -1,0 +1,28 @@
+{
+  "slug": "notepad-notepad",
+  "displayName": "PackageFlow Apps E2E Winget Smoke 2026-05-19",
+  "versions": [
+    {
+      "version": "unknown",
+      "runs": [
+        {
+          "workflowRunId": "26103842000",
+          "createdAt": "2026-05-19T14:30:06.658Z",
+          "intuneAppId": "ab2aacbb-052e-4b57-bbf4-3395c3b3730f",
+          "catalogAppId": null,
+          "patchRunId": null,
+          "status": "success"
+        },
+        {
+          "workflowRunId": "26087090541",
+          "createdAt": "2026-05-19T08:59:32.867Z",
+          "intuneAppId": "ccedd0cb-7a11-4724-a86d-bfd300e1d840",
+          "catalogAppId": null,
+          "patchRunId": null,
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-22T06:15:54.078Z"
+}
