@@ -1,0 +1,20 @@
+{
+  "slug": "packageflow-apps-e2e-custom-windows",
+  "displayName": "PackageFlow Apps E2E Custom Windows Smoke 2026-05-19",
+  "versions": [
+    {
+      "version": "unknown",
+      "runs": [
+        {
+          "workflowRunId": "26087154050",
+          "createdAt": "2026-05-19T09:01:13.462Z",
+          "intuneAppId": "70ea8bb5-27da-4d7c-b321-3ca5d0286af5",
+          "catalogAppId": null,
+          "patchRunId": null,
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-22T06:15:56.405Z"
+}
