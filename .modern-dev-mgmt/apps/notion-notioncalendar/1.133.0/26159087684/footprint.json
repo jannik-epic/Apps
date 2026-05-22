@@ -1,0 +1,485 @@
+{
+  "files": [
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\chrome_100_percent.pak",
+      "size": 151599,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\chrome_200_percent.pak",
+      "size": 228644,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\d3dcompiler_47.dll",
+      "size": 4922680,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": "10.0.22621.2428 (WinBuild.160101.0800)"
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\ffmpeg.dll",
+      "size": 2944824,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\icudtl.dat",
+      "size": 10468208,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\libEGL.dll",
+      "size": 508728,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": "2.1.23876 git hash: fffbc739779a"
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\libGLESv2.dll",
+      "size": 8432440,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": "2.1.23876 git hash: fffbc739779a"
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\LICENSE",
+      "size": 1096,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\LICENSES.chromium.html",
+      "size": 9099045,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\Notion Calendar.exe",
+      "size": 188636984,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": "1.133.0"
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\resources.pak",
+      "size": 5755347,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\snapshot_blob.bin",
+      "size": 316538,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\Uninstall Notion Calendar.exe",
+      "size": 154992,
+      "lastWriteTime": "2026-04-17T17:17:54Z",
+      "version": "1.133.0"
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\v8_context_snapshot.bin",
+      "size": 687473,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\version",
+      "size": 6,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\vk_swiftshader.dll",
+      "size": 5548344,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": "5.0.0"
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\vk_swiftshader_icd.json",
+      "size": 106,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\vulkan-1.dll",
+      "size": 910648,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": "Vulkan Loader - Dev Build"
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\af.pak",
+      "size": 533447,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\am.pak",
+      "size": 861018,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\ar.pak",
+      "size": 943328,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\bg.pak",
+      "size": 982837,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\bn.pak",
+      "size": 1267393,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\ca.pak",
+      "size": 598906,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\cs.pak",
+      "size": 616999,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\da.pak",
+      "size": 558857,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\de.pak",
+      "size": 596603,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\el.pak",
+      "size": 1076241,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\en-GB.pak",
+      "size": 485863,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\en-US.pak",
+      "size": 490357,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\es-419.pak",
+      "size": 589665,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\es.pak",
+      "size": 589262,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\et.pak",
+      "size": 536344,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\fa.pak",
+      "size": 876052,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\fi.pak",
+      "size": 547257,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\fil.pak",
+      "size": 618874,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\fr.pak",
+      "size": 637410,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\gu.pak",
+      "size": 1247893,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\he.pak",
+      "size": 769462,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\hi.pak",
+      "size": 1316106,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\hr.pak",
+      "size": 594995,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\hu.pak",
+      "size": 640919,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\id.pak",
+      "size": 529396,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\it.pak",
+      "size": 581014,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\ja.pak",
+      "size": 708098,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\kn.pak",
+      "size": 1423981,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\ko.pak",
+      "size": 599182,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\lt.pak",
+      "size": 644262,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\lv.pak",
+      "size": 643311,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\ml.pak",
+      "size": 1481376,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\mr.pak",
+      "size": 1222180,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\ms.pak",
+      "size": 554824,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\nb.pak",
+      "size": 537826,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\nl.pak",
+      "size": 556267,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\pl.pak",
+      "size": 619274,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\pt-BR.pak",
+      "size": 581655,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\pt-PT.pak",
+      "size": 585546,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\ro.pak",
+      "size": 606335,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\ru.pak",
+      "size": 996315,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\sk.pak",
+      "size": 626605,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\sl.pak",
+      "size": 601837,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\sr.pak",
+      "size": 924863,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\sv.pak",
+      "size": 541022,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\sw.pak",
+      "size": 570564,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\ta.pak",
+      "size": 1468553,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\te.pak",
+      "size": 1359260,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\th.pak",
+      "size": 1142673,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\tr.pak",
+      "size": 581275,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\uk.pak",
+      "size": 996432,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\ur.pak",
+      "size": 870809,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\vi.pak",
+      "size": 689418,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\zh-CN.pak",
+      "size": 496505,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\locales\\zh-TW.pak",
+      "size": 491017,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\resources\\app-update.yml",
+      "size": 126,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\resources\\app.asar",
+      "size": 58252299,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\resources\\elevate.exe",
+      "size": 123192,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": "1, 0, 0, 2894"
+    },
+    {
+      "path": "[{LocalAppData}]\\Programs\\notion-calendar-web\\resources\\todesktop-runtime-config.json",
+      "size": 44,
+      "lastWriteTime": "2026-04-17T17:17:48Z",
+      "version": null
+    }
+  ],
+  "registry": null,
+  "arp": {
+    "key": "6a2b5ac5-fa29-5b18-8c83-673211e963c6",
+    "displayName": "Notion Calendar 1.133.0",
+    "publisher": "Notion Labs, Inc.",
+    "displayVersion": "1.133.0",
+    "installLocation": "",
+    "uninstallString": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\notion-calendar-web\\Uninstall Notion Calendar.exe\" /currentuser",
+    "quietUninstallString": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\notion-calendar-web\\Uninstall Notion Calendar.exe\" /currentuser /S",
+    "estimatedSize": 331246
+  },
+  "summary": {
+    "fileCount": 77,
+    "totalFileSize": 339351126,
+    "registryValueCount": 0,
+    "arpEntries": 1
+  },
+  "beforeCapturedAt": "2026-05-20T11:18:42.8082283Z",
+  "afterCapturedAt": "2026-05-20T11:18:57.4909207Z"
+}
