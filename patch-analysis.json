@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-23T11:27:21.429Z",
+  "scannedAt": "2026-05-23T12:00:58.845Z",
   "results": [
     {
       "appId": 803,
@@ -15,30 +15,30 @@
       "appId": 2395,
       "packageManager": "winget",
       "packageId": "Git.Git",
-      "currentDeployedVersion": "2.54.0",
+      "currentDeployedVersion": "2.39.2",
       "latestUpstreamVersion": "2.54.0",
-      "hasUpdate": false,
-      "bumpType": null,
+      "hasUpdate": true,
+      "bumpType": "minor",
       "releaseNotesUrl": "https://gitforwindows.org/"
     },
     {
       "appId": 2409,
       "packageManager": "winget",
       "packageId": "GitHub.cli",
-      "currentDeployedVersion": "2.92.0",
+      "currentDeployedVersion": "2.24.3",
       "latestUpstreamVersion": "2.92.0",
-      "hasUpdate": false,
-      "bumpType": null,
+      "hasUpdate": true,
+      "bumpType": "minor",
       "releaseNotesUrl": "https://cli.github.com/"
     },
     {
       "appId": 2411,
       "packageManager": "winget",
       "packageId": "GitHub.GitHubDesktop",
-      "currentDeployedVersion": "3.5.9",
+      "currentDeployedVersion": "3.2.0",
       "latestUpstreamVersion": "3.5.10",
       "hasUpdate": true,
-      "bumpType": "patch",
+      "bumpType": "minor",
       "releaseNotesUrl": "https://github.com/apps/desktop"
     },
     {
@@ -135,10 +135,10 @@
       "appId": 5631,
       "packageManager": "winget",
       "packageId": "Microsoft.PowerShell",
-      "currentDeployedVersion": "7.6.2.0",
+      "currentDeployedVersion": "7.3.3.0",
       "latestUpstreamVersion": "7.6.2.0",
-      "hasUpdate": false,
-      "bumpType": null,
+      "hasUpdate": true,
+      "bumpType": "minor",
       "releaseNotesUrl": "https://microsoft.com/PowerShell"
     },
     {
