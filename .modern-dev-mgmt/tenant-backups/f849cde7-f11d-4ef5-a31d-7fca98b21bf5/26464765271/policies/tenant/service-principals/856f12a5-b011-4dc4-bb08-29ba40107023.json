@@ -1,0 +1,11 @@
+{
+  "id": "856f12a5-b011-4dc4-bb08-29ba40107023",
+  "appId": "1459b1f6-7a5b-4300-93a2-44b4a651759f",
+  "displayName": "Azure Container Apps Arc - Control Plane",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

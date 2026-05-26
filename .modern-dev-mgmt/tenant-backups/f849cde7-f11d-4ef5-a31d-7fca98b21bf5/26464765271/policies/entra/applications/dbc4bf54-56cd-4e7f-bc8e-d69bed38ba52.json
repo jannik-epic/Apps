@@ -1,0 +1,74 @@
+{
+  "id": "dbc4bf54-56cd-4e7f-bc8e-d69bed38ba52",
+  "appId": "79e5908a-dcae-429c-bd7c-585b13284db2",
+  "displayName": "BigBrother-Security-Dashboard",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-10-17T06:09:10Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": [
+      "http://localhost:3000"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Scope"
+        },
+        {
+          "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+          "type": "Scope"
+        },
+        {
+          "id": "246dd0d5-5bd0-4def-940b-0421030a5b68",
+          "type": "Scope"
+        },
+        {
+          "id": "c7fbd983-d9aa-4fa7-84b8-17382c103bc4",
+          "type": "Scope"
+        },
+        {
+          "id": "c79f8feb-a9db-4090-85f9-90d820caa0eb",
+          "type": "Scope"
+        },
+        {
+          "id": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
+          "type": "Scope"
+        },
+        {
+          "id": "38d9df27-64da-44fd-b7c5-a6fbac20248f",
+          "type": "Scope"
+        },
+        {
+          "id": "37f7f235-527c-4136-accd-4a02d197296e",
+          "type": "Scope"
+        },
+        {
+          "id": "b0afded3-3588-46d8-8b3d-9842eff778da",
+          "type": "Scope"
+        },
+        {
+          "id": "e4c9e354-4dc5-45b8-9e7c-e1393b0b1a20",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

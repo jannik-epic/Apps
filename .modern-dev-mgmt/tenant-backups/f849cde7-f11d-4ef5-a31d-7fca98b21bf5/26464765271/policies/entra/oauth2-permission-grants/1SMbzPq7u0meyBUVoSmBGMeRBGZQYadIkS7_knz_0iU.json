@@ -1,0 +1,8 @@
+{
+  "clientId": "cc1b23d5-bbfa-49bb-9ec8-1515a1298118",
+  "consentType": "AllPrincipals",
+  "id": "1SMbzPq7u0meyBUVoSmBGMeRBGZQYadIkS7_knz_0iU",
+  "principalId": null,
+  "resourceId": "660491c7-6150-48a7-912e-ff927cffd225",
+  "scope": "Calendars.Read User.Read User.ReadBasic.All"
+}

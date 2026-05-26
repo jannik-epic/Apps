@@ -1,0 +1,12 @@
+{
+  "id": "57d96ec0-3286-4819-84a4-f44076b50ef2",
+  "appId": "d99ebd2c-7667-48c7-a145-04212409f9e5",
+  "displayName": "AzureTerraform",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

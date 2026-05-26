@@ -1,0 +1,11 @@
+{
+  "id": "a37348ab-cd65-4089-a800-c62ff4f591e5",
+  "appId": "7df0a125-d3be-4c96-aa54-591f83ff541c",
+  "displayName": "Microsoft Flow Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

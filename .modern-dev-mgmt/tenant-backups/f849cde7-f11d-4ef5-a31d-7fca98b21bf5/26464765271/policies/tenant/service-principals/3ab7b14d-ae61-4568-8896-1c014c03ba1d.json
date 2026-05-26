@@ -1,0 +1,10 @@
+{
+  "id": "3ab7b14d-ae61-4568-8896-1c014c03ba1d",
+  "appId": "447d3988-ceee-4713-90fa-eef7fb51cb71",
+  "displayName": "TenantManager MSP",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

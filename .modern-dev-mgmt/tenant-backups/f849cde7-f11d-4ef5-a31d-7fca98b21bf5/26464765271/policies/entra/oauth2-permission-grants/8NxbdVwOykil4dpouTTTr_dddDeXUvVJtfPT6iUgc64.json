@@ -1,0 +1,8 @@
+{
+  "clientId": "755bdcf0-0e5c-48ca-a5e1-da68b934d3af",
+  "consentType": "AllPrincipals",
+  "id": "8NxbdVwOykil4dpouTTTr_dddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "ChannelMessage.Read.All User.Read"
+}

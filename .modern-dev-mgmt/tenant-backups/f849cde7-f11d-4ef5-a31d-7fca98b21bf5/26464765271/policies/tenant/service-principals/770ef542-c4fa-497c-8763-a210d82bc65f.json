@@ -1,0 +1,11 @@
+{
+  "id": "770ef542-c4fa-497c-8763-a210d82bc65f",
+  "appId": "09abbdfd-ed23-44ee-a2d9-a627aa1c90f3",
+  "displayName": "ProjectWorkManagement",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

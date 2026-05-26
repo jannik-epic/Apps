@@ -1,0 +1,11 @@
+{
+  "id": "65f4639b-01e1-4d50-8728-dcd0a47cb940",
+  "appId": "29f411f1-b2cf-4043-8ac8-2185d7316811",
+  "displayName": "Azure Iot Hub Publisher App",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

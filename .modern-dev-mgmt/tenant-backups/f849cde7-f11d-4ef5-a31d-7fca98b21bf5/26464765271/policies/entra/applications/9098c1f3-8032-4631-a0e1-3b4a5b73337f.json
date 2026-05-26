@@ -1,0 +1,40 @@
+{
+  "id": "9098c1f3-8032-4631-a0e1-3b4a5b73337f",
+  "appId": "a6f7b7fb-ad80-4051-ad03-48f9dca6e78c",
+  "displayName": "Agent Tool API",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-11-12T12:25:45Z",
+  "identifierUris": [
+    "api://a6f7b7fb-ad80-4051-ad03-48f9dca6e78c"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": [
+    {
+      "allowedMemberTypes": [
+        "Application"
+      ],
+      "description": "Allow service-to-service access to Agent Tool API",
+      "displayName": "Service Access",
+      "id": "db72229a-0c2c-4d7c-abfd-95673dbc78a1",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Service.Access"
+    }
+  ]
+}

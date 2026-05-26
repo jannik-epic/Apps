@@ -1,0 +1,11 @@
+{
+  "id": "fc3f7266-91ef-48d8-a337-a08837f2825e",
+  "appId": "475226c6-020e-4fb2-8a90-7a972cbfc1d4",
+  "displayName": "PowerApps Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

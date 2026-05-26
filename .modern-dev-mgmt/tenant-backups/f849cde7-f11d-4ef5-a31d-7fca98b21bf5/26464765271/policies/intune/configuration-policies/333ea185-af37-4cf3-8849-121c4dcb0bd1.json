@@ -1,0 +1,34 @@
+{
+  "createdDateTime": "2023-11-18T11:56:08.252317Z",
+  "creationSource": null,
+  "description": "Elevation Settings Policy",
+  "lastModifiedDateTime": "2023-11-18T11:56:08.252317Z",
+  "name": "Elevation Settings Policy",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm,endpointPrivilegeManagement",
+  "id": "333ea185-af37-4cf3-8849-121c4dcb0bd1",
+  "templateReference": {
+    "templateId": "e7dcaba4-959b-46ed-88f0-16ba39b14fd8_1",
+    "templateFamily": "endpointSecurityEndpointPrivilegeManagement",
+    "templateDisplayName": "Elevation settings policy",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('333ea185-af37-4cf3-8849-121c4dcb0bd1')/assignments",
+  "assignments": [
+    {
+      "id": "333ea185-af37-4cf3-8849-121c4dcb0bd1_acacacac-9df4-4c7d-9d50-4ef0226f57a9",
+      "source": "direct",
+      "sourceId": "333ea185-af37-4cf3-8849-121c4dcb0bd1",
+      "target": {
+        "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    }
+  ]
+}

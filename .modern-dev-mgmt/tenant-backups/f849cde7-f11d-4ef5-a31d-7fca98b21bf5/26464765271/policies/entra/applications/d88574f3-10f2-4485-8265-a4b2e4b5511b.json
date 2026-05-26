@@ -1,0 +1,26 @@
+{
+  "id": "d88574f3-10f2-4485-8265-a4b2e4b5511b",
+  "appId": "057ffe2c-824c-4013-8f25-b8625735e955",
+  "displayName": "TOOL-DailyDocs-ModernDevMgmt-Pipeline",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-03-18T07:21:49Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

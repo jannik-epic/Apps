@@ -1,0 +1,13 @@
+{
+  "id": "41510fbe-d036-4645-9b4d-12e4b59651b9",
+  "displayName": "jannik-Standard-PC-Q35-ICH9-2009",
+  "deviceId": "475fc9c6-eb01-411f-86af-30dd384f535e",
+  "accountEnabled": false,
+  "operatingSystem": "Linux",
+  "operatingSystemVersion": "Ubuntu 22.04.1 LTS",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": false,
+  "isManaged": false,
+  "registrationDateTime": "2022-11-06T15:47:19Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "3d9aecb3-9aff-48c9-b5fd-6470b4a3edfc",
+  "appId": "51b6191a-b045-44cf-8277-ee37c9fb5a06",
+  "displayName": "Compute Image Registry",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

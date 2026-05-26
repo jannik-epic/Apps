@@ -1,0 +1,8 @@
+{
+  "id": "1a996de9-886a-4218-8a6d-d0c2dc07ef5f",
+  "appId": "a3c2c8ab-1afb-40d4-894b-3221cb54cd57",
+  "displayName": "MacManagement Intune Automation",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "ca0bc55d-1d4a-41a1-9502-d5adb1a8ec2c",
+  "appId": "7f0d9978-eb2a-4974-88bd-f22a3006fe17",
+  "displayName": "Intune DiagnosticService",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "340ee82f-3467-461d-85f0-adb91a4a9e4d",
+  "appId": "9bb724a5-4639-438c-969b-e184b2b1e264",
+  "displayName": "KaizalaActionsPlatform",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

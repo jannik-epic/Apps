@@ -1,0 +1,8 @@
+{
+  "id": "170fba78-e80f-4f04-b125-2392d41229c0",
+  "appId": "93625bc8-bfe2-437a-97e0-3d0060024faa",
+  "displayName": "Microsoft password reset service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

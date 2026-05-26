@@ -1,0 +1,11 @@
+{
+  "id": "9778d485-41da-40b3-ba75-0338d3709461",
+  "displayName": "Exclude_Block_activesync",
+  "description": "Exclude_Block_activesync",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "Exclude_Block_activesync",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-07-26T17:17:09Z"
+}

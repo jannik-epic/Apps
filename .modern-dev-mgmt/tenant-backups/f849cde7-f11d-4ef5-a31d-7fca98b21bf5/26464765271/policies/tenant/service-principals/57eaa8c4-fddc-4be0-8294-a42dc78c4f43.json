@@ -1,0 +1,8 @@
+{
+  "id": "57eaa8c4-fddc-4be0-8294-a42dc78c4f43",
+  "appId": "609d2f62-527f-4451-bfd2-ac2c7850822c",
+  "displayName": "Azure Kubernetes Service - Fleet RP",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

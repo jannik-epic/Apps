@@ -1,0 +1,11 @@
+{
+  "id": "1734fec6-e05c-44a3-b489-751eb59c23cd",
+  "appId": "2cfc91a4-7baa-4a8f-a6c9-5f3d279060b8",
+  "displayName": "Azure Application Change Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

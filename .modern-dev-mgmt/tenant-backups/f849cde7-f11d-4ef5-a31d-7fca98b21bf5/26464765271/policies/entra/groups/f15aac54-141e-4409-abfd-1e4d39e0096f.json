@@ -1,0 +1,11 @@
+{
+  "id": "f15aac54-141e-4409-abfd-1e4d39e0096f",
+  "displayName": "Exclude_Require_MFA_Weblogin_Nonmanaged_devices",
+  "description": "Exclude_Require_MFA_Weblogin_Nonmanaged_devices",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "Exclude_Require_MFA_Weblogin_Nonmanaged_devices",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-07-26T17:17:06Z"
+}

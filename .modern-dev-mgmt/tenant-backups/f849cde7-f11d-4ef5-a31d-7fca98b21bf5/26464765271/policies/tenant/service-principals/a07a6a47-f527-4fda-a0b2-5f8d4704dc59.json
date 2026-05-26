@@ -1,0 +1,8 @@
+{
+  "id": "a07a6a47-f527-4fda-a0b2-5f8d4704dc59",
+  "appId": "4c1a3aed-b389-4824-99b0-514c07906851",
+  "displayName": "Intune DeviceCheckIn ConfidentialClient",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

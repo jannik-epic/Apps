@@ -1,0 +1,11 @@
+{
+  "id": "44827e3e-4853-4903-a663-f7bb8f131582",
+  "displayName": "All_Devices_Custom - Wave 3",
+  "description": "Wave 3 deployment group for All_Devices_Custom",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "wave-3-1751948660959",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-07-08T04:24:21Z"
+}

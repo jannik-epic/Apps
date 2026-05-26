@@ -1,0 +1,8 @@
+{
+  "clientId": "d13f97b4-8b5f-4a1e-b8c9-cf9e5d95e29f",
+  "consentType": "Principal",
+  "id": "tJc_0V-LHkq4yc-eXZXin_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+  "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": " User.Read openid profile email offline_access Calendars.Read Calendars.ReadWrite Mail.Read MailboxSettings.Read ServiceHealth.Read.All ServiceMessage.Read.All Files.Read.All Files.ReadWrite.All Sites.Read.All Sites.ReadWrite.All User.ReadBasic.All Team.ReadBasic.All Channel.ReadBasic.All Tasks.Read Tasks.ReadWrite"
+}

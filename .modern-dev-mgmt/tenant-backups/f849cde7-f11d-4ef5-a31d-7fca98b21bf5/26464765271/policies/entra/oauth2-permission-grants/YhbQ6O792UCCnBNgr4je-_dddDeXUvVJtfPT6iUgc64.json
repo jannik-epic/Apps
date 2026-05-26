@@ -1,0 +1,8 @@
+{
+  "clientId": "e8d01662-fdee-40d9-829c-1360af88defb",
+  "consentType": "AllPrincipals",
+  "id": "YhbQ6O792UCCnBNgr4je-_dddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "Chat.Read Mail.Read DeviceManagementRBAC.Read.All DeviceManagementServiceConfig.Read.All MailboxSettings.ReadWrite Notes.ReadWrite.All Reports.Read.All Sites.ReadWrite.All User.Read User.ReadWrite User.ReadBasic.All User.ReadWrite.All Group.ReadWrite.All Mail.ReadWrite Calendars.ReadWrite Contacts.ReadWrite Files.ReadWrite.All openid profile IdentityRiskEvent.Read.All People.Read Place.Read Presence.Read Presence.Read.All PrintJob.ReadBasic Chat.ReadBasic Tasks.ReadWrite PrinterShare.ReadBasic.All PrintJob.Create"
+}

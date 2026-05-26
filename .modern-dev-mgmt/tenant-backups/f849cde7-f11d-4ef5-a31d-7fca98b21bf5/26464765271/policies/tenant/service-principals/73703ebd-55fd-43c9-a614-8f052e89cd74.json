@@ -1,0 +1,12 @@
+{
+  "id": "73703ebd-55fd-43c9-a614-8f052e89cd74",
+  "appId": "949eebbd-6fe4-4eb5-a25e-a9bf12d6b96e",
+  "displayName": "Microsoft Sentinel Situational Awareness Workspace Access",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

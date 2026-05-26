@@ -1,0 +1,11 @@
+{
+  "id": "08d0d078-0752-4106-a75e-6cd9ee51acb8",
+  "displayName": "Exclude_Block_Legacy_Authenticatie",
+  "description": "Exclude_Block_Legacy_Authenticatie",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "Exclude_Block_Legacy_Authenticatie",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-07-26T17:17:09Z"
+}

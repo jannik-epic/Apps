@@ -1,0 +1,11 @@
+{
+  "id": "fbc6dba5-9859-4dc5-82d8-ca3b3ec81160",
+  "appId": "f2c304cf-8e7e-4c3f-8164-16299ad9d272",
+  "displayName": "Azure Management Groups",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

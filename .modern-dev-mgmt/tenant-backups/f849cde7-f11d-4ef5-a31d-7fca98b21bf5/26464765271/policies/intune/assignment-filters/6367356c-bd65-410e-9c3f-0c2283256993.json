@@ -1,0 +1,14 @@
+{
+  "id": "6367356c-bd65-410e-9c3f-0c2283256993",
+  "createdDateTime": "2022-07-27T07:56:56.611079Z",
+  "lastModifiedDateTime": "2022-07-27T07:56:56.611079Z",
+  "displayName": "Filter_AllSkuHolographic",
+  "description": "All devices with SKU Holographic",
+  "platform": "windows10AndLater",
+  "rule": "(device.operatingSystemSKU  -eq \"Holographic\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

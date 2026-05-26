@@ -1,0 +1,11 @@
+{
+  "id": "69130a41-67a9-402f-ac7c-c54b35005fc0",
+  "displayName": "MDM-Greenfoot-Available",
+  "description": "Modern Dev Mgmt available assignment group for Greenfoot.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "mdm-greenfoot-available-b81a0e",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-05-13T12:44:40Z"
+}

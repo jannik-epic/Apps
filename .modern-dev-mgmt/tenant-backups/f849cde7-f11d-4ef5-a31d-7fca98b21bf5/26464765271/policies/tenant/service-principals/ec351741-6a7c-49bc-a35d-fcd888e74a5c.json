@@ -1,0 +1,8 @@
+{
+  "id": "ec351741-6a7c-49bc-a35d-fcd888e74a5c",
+  "appId": "6608bce8-e060-4e82-bfd2-67ed4f60262f",
+  "displayName": "AML Inferencing Frontdoor",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

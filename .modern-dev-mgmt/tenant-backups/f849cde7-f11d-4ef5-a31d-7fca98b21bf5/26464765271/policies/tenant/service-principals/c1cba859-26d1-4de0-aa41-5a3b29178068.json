@@ -1,0 +1,8 @@
+{
+  "id": "c1cba859-26d1-4de0-aa41-5a3b29178068",
+  "appId": "35ffadb3-7fc1-497e-b61b-381d28e744cc",
+  "displayName": "Azure App Configuration",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

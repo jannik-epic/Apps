@@ -1,0 +1,39 @@
+{
+  "id": "mdo_spam_notifications_only_for_admins",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spam-policies-configure?view=o365-worldwide&tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Apps",
+  "title": "Ensure Exchange Online Spam Policies are set to notify administrators",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p><strong>To set the Exchange Online Spam Policies:</strong></p> <ol> <li>Navigate to <em>Microsoft 365 Defender</em> <a href=\"https://security.microsoft.com\">https://security.microsoft.com</a>.</li> <li>Click to <em>expand Email &amp; collaboration</em> select <em>Policies &amp; rules</em>.</li> <li>On the Policies &amp; rules page, under Polices select <em>Anti-spam</em>.</li> <li>Click on the <em>Anti-spam outbound policy (default)</em>.</li> <li>Select <em>Edit protection settings</em> then under <em>Notifications</em></li> <li>Check<em> Send a copy of outbound messages that exceed these limits to these users and groups</em> then enter the desired email addresses.</li> <li>Check <em>Notify these users and groups if a sender is blocked due to sending outbound spam</em> then enter the desired email addresses.</li> <li>Click <em>Save</em>.</li> </ol> <p><br /><strong>To set the Exchange Online Spam Policies using PowerShell:</strong></p> <ol> <li>Connect to Exchange Online using <em>Connect-ExchangeOnline</em>.</li> <li>Run the following PowerShell command:</li> </ol> <table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"> <tbody> <tr> <td style=\"width: 100%;\"> <p>$BccEmailAddress = @(\"INSERT-EMAIL\")<br />$NotifyEmailAddress = @(\"INSERT-EMAIL\")</p> <p>Set-HostedOutboundSpamFilterPolicy -Identity Default -<br />BccSuspiciousOutboundAdditionalRecipients $BccEmailAddress -<br />BccSuspiciousOutboundMail $true -NotifyOutboundSpam $true -<br />NotifyOutboundSpamRecipients $NotifyEmailAddress</p> </td> </tr> </tbody> </table>",
+  "remediationImpact": "If the recommendation is applied, group owners could receive more access requests than usual, especially regarding groups originally meant to be public.",
+  "service": "MDO",
+  "threats": [
+    "Data Exfiltration",
+    "Password Cracking",
+    "Account breach"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

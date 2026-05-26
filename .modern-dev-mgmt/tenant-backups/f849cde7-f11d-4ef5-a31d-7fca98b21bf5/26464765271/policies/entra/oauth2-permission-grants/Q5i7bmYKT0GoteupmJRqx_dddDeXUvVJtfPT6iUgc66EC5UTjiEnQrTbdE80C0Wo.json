@@ -1,0 +1,8 @@
+{
+  "clientId": "6ebb9843-0a66-414f-a8b5-eba998946ac7",
+  "consentType": "Principal",
+  "id": "Q5i7bmYKT0GoteupmJRqx_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+  "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": " User.Read DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementServiceConfig.ReadWrite.All DeviceManagementRBAC.ReadWrite.All DeviceManagementScripts.Read.All Directory.Read.All Application.ReadWrite.All AppRoleAssignment.ReadWrite.All Group.ReadWrite.All SecurityEvents.Read.All SecurityAlert.Read.All SecurityIncident.Read.All SecurityActions.Read.All ThreatIndicators.ReadWrite.OwnedBy Mail.Send ChannelMessage.Send DeviceLocalCredential.Read.All openid profile offline_access"
+}

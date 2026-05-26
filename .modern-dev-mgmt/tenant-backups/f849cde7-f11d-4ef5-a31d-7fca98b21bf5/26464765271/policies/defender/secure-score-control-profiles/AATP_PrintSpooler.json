@@ -1,0 +1,35 @@
+{
+  "id": "AATP_PrintSpooler",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2123723",
+  "controlCategory": "Identity",
+  "title": "Disable Print spooler service on domain controllers",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 67,
+  "remediation": "1. Review this security control list of exposed entities to discover which of your domain controllers has the Print spooler service enabled.<br> 2. Take appropriate action on the at-risk domain controllers and actively remove the Print spooler service either manually, through group policy or other types of remote commands.  Make sure to investigate your Print spooler settings, configurations and dependencies before disabling this service and preventing active printing workflows. <br> To achieve a full score, you must remediate all exposed entities.",
+  "remediationImpact": "Stopping the print spooler service will prevent printing directly from domain controllers or the running of orphaned printers published to Active Directory.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

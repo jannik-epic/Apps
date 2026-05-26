@@ -1,0 +1,108 @@
+{
+  "id": "2f9661da-9272-4655-8033-c8575858cd11",
+  "appId": "cf108af6-eb42-4d13-8edf-654d71ccc0ae",
+  "displayName": "n8n new",
+  "signInAudience": "AzureADMultipleOrgs",
+  "createdDateTime": "2026-05-05T17:01:10Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "http://localhost:5678/rest/oauth2-credential/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "http://localhost:5678/rest/oauth2-credential/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "767156cb-16ae-4d10-8f8b-41b657c8c8c8",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "7b2449af-6ccd-4f4d-9f78-e550c193f0d1",
+          "type": "Role"
+        },
+        {
+          "id": "6b7d71aa-70aa-4810-a8d9-5d9fb2830017",
+          "type": "Role"
+        },
+        {
+          "id": "2280dda6-0bfd-44ee-a2f4-cb867cfc4c1e",
+          "type": "Role"
+        },
+        {
+          "id": "9492366f-7969-46a4-8d15-ed1a20078fff",
+          "type": "Role"
+        },
+        {
+          "id": "0c0bf378-bf22-4481-8f81-9e89a9b4960a",
+          "type": "Role"
+        },
+        {
+          "id": "59a6b24b-4225-4393-8165-ebaec5f55d7a",
+          "type": "Role"
+        },
+        {
+          "id": "5b567255-7703-4780-807c-7be8301ae99b",
+          "type": "Role"
+        },
+        {
+          "id": "195d4079-d4a8-4f33-b71b-c9f2ee6fa78b",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "6d004c19-cc42-41ea-8888-cce2fc5bd2c5",
+          "type": "Role"
+        },
+        {
+          "id": "fbcd29d2-fcca-4405-aded-518d457caae4",
+          "type": "Role"
+        },
+        {
+          "id": "d13f72ca-a275-4b96-b789-48ebcc4da984",
+          "type": "Role"
+        },
+        {
+          "id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+          "type": "Role"
+        },
+        {
+          "id": "9bff6588-13f2-4c48-bbf2-ddab62256b36",
+          "type": "Role"
+        },
+        {
+          "id": "20d37865-089c-4dee-8c41-6967602d4ac8",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "13cbbdbb-d6fc-4da8-949a-4c4785fed822",
+  "createdDateTime": "2022-07-27T07:58:16.0946832Z",
+  "lastModifiedDateTime": "2022-07-27T07:58:16.0946832Z",
+  "displayName": "Filter_CategorySalesDepartment",
+  "description": "All device with category Sales department",
+  "platform": "windows10AndLater",
+  "rule": "(device.deviceCategory  -eq \"Sales department\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

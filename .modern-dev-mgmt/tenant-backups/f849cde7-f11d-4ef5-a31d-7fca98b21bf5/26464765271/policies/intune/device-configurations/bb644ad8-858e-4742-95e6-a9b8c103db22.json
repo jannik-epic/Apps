@@ -1,0 +1,43 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+  "id": "bb644ad8-858e-4742-95e6-a9b8c103db22",
+  "lastModifiedDateTime": "2022-07-27T07:47:39.5720532Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-27T07:34:03.4439123Z",
+  "description": null,
+  "displayName": "WIN_Default_RemoveTeamsIcon",
+  "version": 3,
+  "omaSettings": [
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "displayName": "RemoveTeamsIcon",
+      "description": null,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/Experience/ConfigureChatIcon",
+      "secretReferenceValueId": null,
+      "isEncrypted": false,
+      "value": 3,
+      "isReadOnly": false
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('bb644ad8-858e-4742-95e6-a9b8c103db22')/microsoft.graph.windows10CustomConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "bb644ad8-858e-4742-95e6-a9b8c103db22_2a4a3066-43cf-427a-8d56-81ef0e7c1448",
+      "source": "direct",
+      "sourceId": "bb644ad8-858e-4742-95e6-a9b8c103db22",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "2a4a3066-43cf-427a-8d56-81ef0e7c1448"
+      }
+    }
+  ]
+}

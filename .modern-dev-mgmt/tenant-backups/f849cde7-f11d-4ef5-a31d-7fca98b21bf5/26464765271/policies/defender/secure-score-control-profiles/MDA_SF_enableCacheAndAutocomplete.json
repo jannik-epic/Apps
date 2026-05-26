@@ -1,0 +1,35 @@
+{
+  "id": "MDA_SF_enableCacheAndAutocomplete",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://help.salesforce.com/s/articleView?id=sf.admin_sessions.htm&type=5",
+  "controlCategory": "Identity",
+  "title": "Disable Caching and Autocomplete on Login Page via Session settings",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 4.0,
+  "rank": 10,
+  "remediation": "1. From <b>Setup</b>, in the <b>Quick Find</b> box, enter <b>Session Settings</b>, then select <b>Session Settings</b>.<br>2. Uncheck <b>Enable caching and autocomplete on login page</b>.",
+  "remediationImpact": "If enabled, after initial login, usernames are automatically populated into the <b>Username</b> field on the login page. If the user selects <b>Remember me</b> on the login page, the username persists after the session expires or the user logs out. The username also displays on the Switcher.",
+  "service": "MDA_SF",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

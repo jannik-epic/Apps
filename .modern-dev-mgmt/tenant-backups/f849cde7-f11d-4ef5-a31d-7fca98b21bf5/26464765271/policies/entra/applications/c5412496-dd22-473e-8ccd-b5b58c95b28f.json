@@ -1,0 +1,43 @@
+{
+  "id": "c5412496-dd22-473e-8ccd-b5b58c95b28f",
+  "appId": "31cccfcf-63d7-4c78-8d96-ce76b877718b",
+  "displayName": "Test",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2023-07-21T11:04:50Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://google.de"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://google.de",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

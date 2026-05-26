@@ -1,0 +1,10 @@
+{
+  "id": "29392785-b288-4d66-ab34-40aa8c722b3d",
+  "appId": "0cb9beec-207e-4288-8080-d8f61d344c39",
+  "displayName": "intunebotjr",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

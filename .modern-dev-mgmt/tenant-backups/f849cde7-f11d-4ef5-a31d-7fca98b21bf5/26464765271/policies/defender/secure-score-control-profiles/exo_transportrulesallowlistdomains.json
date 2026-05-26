@@ -1,0 +1,37 @@
+{
+  "id": "exo_transportrulesallowlistdomains",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://admin.exchange.microsoft.com/#/transportrules",
+  "controlCategory": "Apps",
+  "title": "Ensure Spam confidence level (SCL) is configured in mail transport rules with specific domains",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 128,
+  "remediation": "<p>To modify SCL in mail transport rules so they do not allow any specific domains:</p> <ol> <li>Navigate to&nbsp;<em>Exchange admin center</em>&nbsp;<a href=\"https://admin.exchange.microsoft.com/\">https://admin.exchange.microsoft.com</a>.</li> <li>Click to expand&nbsp;<em>Mail Flow</em>&nbsp;and then select&nbsp;<em>Rules</em>.</li> <li><em>For each rule that allows specific domains, set the&nbsp;spam confident level (SCL)&nbsp;to 0 or greater.</em> <ul> <li><em>In \"Do the following\" section, select \"Modify the message properties\" and \"set the spam confidence level (SCL)\" and set to at least 0 (specifying the action for this domain, read more in the references attached below,&nbsp;<strong>some options may entirely block mail from this domain</strong>).</em></li> </ul> </li> </ol> <p>References:</p> <ol> <li><a href=\"https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spam-spam-confidence-level-scl-about?view=o365-worldwide\">Spam confidence level | Microsoft Learn</a></li> <li><a href=\"https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices\">Best practices for configuring mail flow rules in Exchange Online | Microsoft Learn</a></li> <li><a href=\"https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules\">Mail flow rules (transport rules) in Exchange Online | Microsoft Learn</a></li> </ol>",
+  "remediationImpact": "Care should be taken before implementation to ensure there is no business need for case-by-case allow-listing. Modifying allow-listed domains could affect incoming mail flow to an organization although modern systems sending legitimate mail should have no issue with this. Note - While specifying the action for each domain, some options may entirely block mail from this domain",
+  "service": "EXO",
+  "threats": [
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

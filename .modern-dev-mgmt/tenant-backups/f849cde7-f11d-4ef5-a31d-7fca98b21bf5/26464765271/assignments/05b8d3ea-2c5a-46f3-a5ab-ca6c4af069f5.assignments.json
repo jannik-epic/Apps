@@ -1,0 +1,20 @@
+{
+  "id": "01bb9933-8755-46fe-a2ef-1f66a4f1aa47_1_0",
+  "intent": "required",
+  "source": "direct",
+  "sourceId": null,
+  "target": {
+    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": null,
+    "deviceAndAppManagementAssignmentFilterType": "none",
+    "groupId": "01bb9933-8755-46fe-a2ef-1f66a4f1aa47"
+  },
+  "settings": {
+    "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+    "notifications": "showAll",
+    "restartSettings": null,
+    "installTimeSettings": null,
+    "deliveryOptimizationPriority": "notConfigured",
+    "autoUpdateSettings": null
+  }
+}

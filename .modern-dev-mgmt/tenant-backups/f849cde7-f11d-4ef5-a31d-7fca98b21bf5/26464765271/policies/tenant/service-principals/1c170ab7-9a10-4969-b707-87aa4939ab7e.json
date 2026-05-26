@@ -1,0 +1,11 @@
+{
+  "id": "1c170ab7-9a10-4969-b707-87aa4939ab7e",
+  "appId": "fbc197b7-9e9c-4f98-823f-93cb1cb554e6",
+  "displayName": "Capacity ",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

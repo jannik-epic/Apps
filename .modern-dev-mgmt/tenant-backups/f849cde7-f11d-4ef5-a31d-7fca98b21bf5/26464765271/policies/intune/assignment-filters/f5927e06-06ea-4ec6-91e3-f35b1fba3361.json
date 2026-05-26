@@ -1,0 +1,14 @@
+{
+  "id": "f5927e06-06ea-4ec6-91e3-f35b1fba3361",
+  "createdDateTime": "2022-07-27T07:57:11.8327228Z",
+  "lastModifiedDateTime": "2022-07-27T07:57:11.8327228Z",
+  "displayName": "Filter_AllSkuProfessional",
+  "description": "All devices with SKU Professional",
+  "platform": "windows10AndLater",
+  "rule": "(device.operatingSystemSKU  -eq \"Professional\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

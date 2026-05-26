@@ -1,0 +1,35 @@
+{
+  "id": "mdo_similaruserssafetytips",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/antiphishing?tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Apps",
+  "title": "Enable the user impersonation safety tip",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 128,
+  "remediation": "\r\n    Ensure that all users have an assigned anti-phishing policy with the &lsquo;<strong>Enable users to protect&rsquo;</strong> and &lsquo;<strong>Show user impersonation safety tip&rsquo;</strong> options enabled, by either updating your existing policies or creating new ones. \r\n    ",
+  "remediationImpact": "Unknown",
+  "service": "MDO",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

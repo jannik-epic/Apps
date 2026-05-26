@@ -1,0 +1,11 @@
+{
+  "id": "8996a297-3cd6-4ae6-a5a7-03556de633fe",
+  "displayName": "All-Users - Wave 3",
+  "description": "Wave 3 deployment group for All-Users",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "wave-3-1755940429444",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-08-23T09:13:49Z"
+}

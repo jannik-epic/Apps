@@ -1,0 +1,26 @@
+{
+  "id": "3edaf663-341e-4475-9f94-5c398ef6c070",
+  "description": "Can create and manage trust framework policies in the Identity Experience Framework (IEF).",
+  "displayName": "B2C IEF Policy Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "3edaf663-341e-4475-9f94-5c398ef6c070",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/b2cTrustFrameworkPolicy/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('3edaf663-341e-4475-9f94-5c398ef6c070')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

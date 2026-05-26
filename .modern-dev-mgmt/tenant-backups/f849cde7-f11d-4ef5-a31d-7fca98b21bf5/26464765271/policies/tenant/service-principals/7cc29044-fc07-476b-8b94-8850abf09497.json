@@ -1,0 +1,8 @@
+{
+  "id": "7cc29044-fc07-476b-8b94-8850abf09497",
+  "appId": "6b4ca80b-9ebd-4ea7-a96d-476e1cd63681",
+  "displayName": "Intune Automation - prod",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

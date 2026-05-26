@@ -1,0 +1,44 @@
+{
+  "id": "c9b205d7-52ba-4d1d-84c6-a88c05fcf0ed",
+  "appId": "572d9f63-c5d2-4e8b-8485-cc2b1d5c3003",
+  "displayName": "Intune AI Chat - prod",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-01T07:52:34Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": "https://p-app-aichat-wes-001.azurewebsites.net",
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "7438b122-aefc-4978-80ed-43db9fcc7715",
+          "type": "Role"
+        },
+        {
+          "id": "5b567255-7703-4780-807c-7be8301ae99b",
+          "type": "Role"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

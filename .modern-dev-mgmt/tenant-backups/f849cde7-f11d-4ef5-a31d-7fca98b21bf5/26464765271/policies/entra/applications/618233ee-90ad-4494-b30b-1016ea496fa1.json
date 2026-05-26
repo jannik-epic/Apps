@@ -1,0 +1,72 @@
+{
+  "id": "618233ee-90ad-4494-b30b-1016ea496fa1",
+  "appId": "b77edb2c-9198-4289-a8e4-3432c0df15b8",
+  "displayName": "test",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-05-30T12:45:55Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "78145de6-330d-4800-a6ce-494ff2d33d07",
+          "type": "Role"
+        },
+        {
+          "id": "9241abd9-d0e6-425a-bd4f-47ba86e767a4",
+          "type": "Role"
+        },
+        {
+          "id": "2f51be20-0bb4-4fed-bf7b-db946066c75e",
+          "type": "Role"
+        },
+        {
+          "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+          "type": "Role"
+        },
+        {
+          "id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
+          "type": "Role"
+        },
+        {
+          "id": "06b708a9-e830-4db3-a914-8e69da51d44f",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": [
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "fff",
+      "displayName": "user.admin",
+      "id": "cb5ffccf-46af-4e9d-9b6a-dcd0e56a82d3",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "user.admin"
+    }
+  ]
+}

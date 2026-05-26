@@ -1,0 +1,8 @@
+{
+  "id": "1eb4f52b-9564-4e6b-beb8-b6aa0d1cdb99",
+  "appId": "b8cf62f3-7cc7-4e32-ab3a-41370ef0cfcf",
+  "displayName": "Azure Machine Learning Services Asset Notification",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

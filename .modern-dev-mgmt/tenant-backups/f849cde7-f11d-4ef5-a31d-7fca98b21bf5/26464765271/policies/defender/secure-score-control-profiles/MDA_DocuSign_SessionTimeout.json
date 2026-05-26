@@ -1,0 +1,38 @@
+{
+  "id": "MDA_DocuSign_SessionTimeout",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://support.docusign.com/s/document-item?language=en_US&rsc_301&bundleId=pik1583277475390&topicId=tuw1583277327743.html&_LANG=enus",
+  "controlCategory": "Identity",
+  "title": "Enable session timeout for web users",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 6.0,
+  "rank": 10,
+  "remediation": "<p>In DocuSign dashboard -</p> <ol> <li>Go to <strong>Account &gt; Security setting</strong> in the side panel.</li> <li>Set &quot;<strong>Web App Session Timeout (minutes)</strong>&quot; up to 120 minutes.</li> <li>Set &quot;<strong>Mobile App Session Timeout (minutes)</strong>&quot; up to 120 minutes.</li> <li>&quot; <strong>Suppress In Session Certificate Enforcement</strong>&quot; option must be set to <em>false</em>.</li> </ol>",
+  "remediationImpact": "This setting enforce session timeout for all DocuSign web users.",
+  "service": "MDA_DocuSign",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

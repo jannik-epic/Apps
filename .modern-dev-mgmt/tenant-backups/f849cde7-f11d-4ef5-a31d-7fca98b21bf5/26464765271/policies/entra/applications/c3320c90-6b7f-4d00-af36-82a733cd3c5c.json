@@ -1,0 +1,38 @@
+{
+  "id": "c3320c90-6b7f-4d00-af36-82a733cd3c5c",
+  "appId": "d89dd557-44fa-459a-9f4c-c9b9daf975f5",
+  "displayName": "IntuneDashboard",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-21T16:33:04Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": [
+      "http://localhost:3000"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

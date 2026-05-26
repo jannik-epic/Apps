@@ -1,0 +1,12 @@
+{
+  "id": "52d1c896-3335-4f97-97c0-718e5cd55bcc",
+  "appId": "a766fecb-91ef-4d42-8bd3-41a61b3eb0e5",
+  "displayName": "AzS VIS Prod App",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

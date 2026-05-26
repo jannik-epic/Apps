@@ -1,0 +1,12 @@
+{
+  "id": "b5461445-6b76-4fb8-ac1d-3cfe61eb9473",
+  "appId": "40c49ff3-c6ae-436d-b28e-b8e268841980",
+  "displayName": "Microsoft Azure Network Copilot",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

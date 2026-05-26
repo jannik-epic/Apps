@@ -1,0 +1,41 @@
+[
+  {
+    "id": "adadadad-808e-44e2-905a-0b7873a8a531_1_0",
+    "intent": "required",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+      "notifications": "showAll",
+      "restartSettings": null,
+      "installTimeSettings": null,
+      "deliveryOptimizationPriority": "notConfigured",
+      "autoUpdateSettings": null
+    }
+  },
+  {
+    "id": "9c7e7774-ce91-4524-ac2c-802c7cec7e19_1_0",
+    "intent": "required",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "9c7e7774-ce91-4524-ac2c-802c7cec7e19"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+      "notifications": "showAll",
+      "restartSettings": null,
+      "installTimeSettings": null,
+      "deliveryOptimizationPriority": "notConfigured",
+      "autoUpdateSettings": null
+    }
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "093c1e98-2ead-47d6-b435-cf9f261c6bc6",
+  "appId": "341b7f3d-69b3-47f9-9ce7-5b7f4945fdbd",
+  "displayName": "Azure Support - Network Watcher",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

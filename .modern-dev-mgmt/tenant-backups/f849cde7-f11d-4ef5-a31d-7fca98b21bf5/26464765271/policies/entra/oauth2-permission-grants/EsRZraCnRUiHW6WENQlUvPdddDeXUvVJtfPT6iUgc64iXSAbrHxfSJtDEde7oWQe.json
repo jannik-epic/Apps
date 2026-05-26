@@ -1,0 +1,8 @@
+{
+  "clientId": "ad59c412-a7a0-4845-875b-a584350954bc",
+  "consentType": "Principal",
+  "id": "EsRZraCnRUiHW6WENQlUvPdddDeXUvVJtfPT6iUgc64iXSAbrHxfSJtDEde7oWQe",
+  "principalId": "1b205d22-7cac-485f-9b43-11d7bba1641e",
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": " User.Read openid profile offline_access"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "cf505126-0fb5-428e-b4e6-3d3d8b9c7c86",
+  "appId": "76c7f279-7959-468f-8943-3954880e0d8c",
+  "displayName": "Azure SQL Managed Instance to Microsoft.Network",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

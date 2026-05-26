@@ -1,0 +1,8 @@
+{
+  "id": "46d6be73-1341-44eb-b296-23c52fc8d38f",
+  "appId": "a164aee5-7d0a-46bb-9404-37421d58bdf7",
+  "displayName": "Microsoft Teams AuthSvc",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "7d772e65-65a5-4be7-bf0b-4b729a85cd04",
+  "displayName": "Chocolatey_OnDemand",
+  "description": "On-demand group for Chocolatey",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "chocolateyondemand",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-06-28T09:25:51Z"
+}

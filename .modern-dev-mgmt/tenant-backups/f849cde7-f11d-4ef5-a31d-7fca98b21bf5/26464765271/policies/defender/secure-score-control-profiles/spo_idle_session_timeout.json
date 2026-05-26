@@ -1,0 +1,35 @@
+{
+  "id": "spo_idle_session_timeout",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2185071",
+  "controlCategory": "Identity",
+  "title": "Sign out inactive users in SharePoint Online",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 128,
+  "remediation": "\r\n\t\t\tIn the Microsoft 365 Admin Center:\r\n            <br/>\r\n            1. Go to <strong>SharePoint Admin Center > Policies > Access control -> Idle session sign-out</strong>.\r\n            <br/>\r\n            2. Turn on &ldquo;<strong>Sign out inactive users automatically</strong>&rdquo;\r\n            <br/>\r\n            3. Set a desired time for automatic sign-out and prior notice to users\r\n\t\t",
+  "remediationImpact": "When a user is inactive in SharePoint and OneDrive for a period of time that you specify, a notification message will appear. If users don't select &ldquo;Continue&rdquo;, they're automatically signed out.",
+  "service": "SPO",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

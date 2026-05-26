@@ -1,0 +1,35 @@
+{
+  "id": "meeting_autoadmitusers_v1",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://admin.teams.microsoft.com/policies/meetings",
+  "controlCategory": "Apps",
+  "title": "Only invited users should be automatically admitted to Teams meetings",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 2.0,
+  "rank": 0,
+  "remediation": "<ol> <li>Log into <a href=\"https://admin.teams.microsoft.com/\" target=\"_blank\">Microsoft Teams admin center</a></li>   <li>In the left navigation, go to <b> Meetings > Meeting Policies </b> </li> <li>Under Manage Policies, select a group/direct policy</li> <li>Under the Meeting join and lobby section, toggle \"Who can bypass the lobby\" to <b>\"People who were invited\"</b></li> <li>You’ll need to change this setting for each group/direct policy</li> </ol> ",
+  "remediationImpact": "Unknown",
+  "service": "MS Teams",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "2e45fe4f-e7d5-413b-997b-6eb19bee9f59",
+  "appId": "f1346770-5b25-470b-88bd-d5744ab7952c",
+  "displayName": "Intune Autopilot ConfidentialClient",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

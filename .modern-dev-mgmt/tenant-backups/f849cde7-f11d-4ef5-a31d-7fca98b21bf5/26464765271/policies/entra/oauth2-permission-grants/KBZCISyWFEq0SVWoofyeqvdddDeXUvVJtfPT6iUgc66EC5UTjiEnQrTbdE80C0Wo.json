@@ -1,0 +1,8 @@
+{
+  "clientId": "21421628-962c-4a14-b449-55a8a1fc9eaa",
+  "consentType": "Principal",
+  "id": "KBZCISyWFEq0SVWoofyeqvdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+  "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": " openid profile offline_access User.Read Directory.Read.All DeviceManagementManagedDevices.Read.All IdentityRiskyUser.Read.All AuditLog.Read.All Policy.Read.All SecurityEvents.Read.All Organization.Read.All Group.Read.All RoleManagement.Read.Directory SharePointTenantSettings.Read.All"
+}

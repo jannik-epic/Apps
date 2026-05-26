@@ -1,0 +1,11 @@
+{
+  "id": "b8f491e2-acdd-4e29-8ec6-07b3801ad67b",
+  "appId": "d89dd557-44fa-459a-9f4c-c9b9daf975f5",
+  "displayName": "IntuneDashboard",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

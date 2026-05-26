@@ -1,0 +1,11 @@
+{
+  "id": "8b08efa4-5a1b-440a-9071-0f78a66773dd",
+  "appId": "509e4652-da8d-478d-a730-e9d4a1996ca4",
+  "displayName": "Azure Resource Graph",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

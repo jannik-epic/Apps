@@ -1,0 +1,35 @@
+{
+  "id": "AATP_ADCSMisconfiguredCertificateAuthorityAcl",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://aka.ms/mdiesc7",
+  "controlCategory": "Identity",
+  "title": "Edit misconfigured Certificate Authority ACL (ESC7)",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "Identify the misconfigured ACL entry (for example - “Manage CA” permission granted to the “authenticated users” built-in group) and remove any unnecessary permissions granting built-in groups “Mange CA” or/and “Manage certificates” permissions.",
+  "remediationImpact": "The impact of a misconfigured ACL varies based on the type of ACL applied. If an unprivileged user holds the \"Manage Certificates\" right, they can approve pending certificate requests without manager approval. With the \"Manage CA\" right, they can modify CA settings, such as adding the \"User specifies SAN\" flag, leading to a complete domain compromise.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "high",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

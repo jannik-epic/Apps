@@ -1,0 +1,11 @@
+{
+  "id": "9c7e7774-ce91-4524-ac2c-802c7cec7e19",
+  "displayName": "Cmtrace_OnDemand",
+  "description": "On-demand group for Cmtrace",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "cmtraceondemand",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-06-27T14:55:30Z"
+}

@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2023-10-13T03:10:57.0653281Z",
+  "creationSource": "Migration_DI_2afa538c-ca49-4acd-aa70-c35cbd088402",
+  "description": "Windows 10 firewall rules",
+  "lastModifiedDateTime": "2023-10-13T03:10:57.0653281Z",
+  "name": "WIN_Default_Firewall_RuleSet",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm,microsoftSense",
+  "id": "54f574c6-c293-4650-aff0-05ff9e1715cb",
+  "templateReference": {
+    "templateId": "19c8aa67-f286-4861-9aa0-f23541d31680_1",
+    "templateFamily": "endpointSecurityFirewall",
+    "templateDisplayName": "Windows Firewall Rules",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('54f574c6-c293-4650-aff0-05ff9e1715cb')/assignments",
+  "assignments": []
+}

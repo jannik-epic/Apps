@@ -1,0 +1,11 @@
+{
+  "id": "909da0fa-0b02-417c-8349-8829379849af",
+  "appId": "0000001b-0000-0000-c000-000000000000",
+  "displayName": "Microsoft Power BI Information Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "9896734e-b628-4b62-b5a7-8b49e854be33",
+  "appId": "00000005-0000-0ff1-ce00-000000000000",
+  "displayName": "Viva Engage",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

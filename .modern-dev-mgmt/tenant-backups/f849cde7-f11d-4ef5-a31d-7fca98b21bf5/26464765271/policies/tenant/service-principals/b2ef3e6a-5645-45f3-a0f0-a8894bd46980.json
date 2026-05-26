@@ -1,0 +1,11 @@
+{
+  "id": "b2ef3e6a-5645-45f3-a0f0-a8894bd46980",
+  "appId": "905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba",
+  "displayName": "Sway",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
+  "id": "344d63d9-d40a-4b4c-96bf-3fce433d6f7c",
+  "lastModifiedDateTime": "2026-03-05T06:20:12.5096253Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-27T07:33:48.9241297Z",
+  "description": "## MacOS_Default_ActivateSso\n\n**Type:** Device Configuration  \n**Platform:** macOS\n\n### Description\nEnables the macOS Azure AD Single Sign-On extension to provide seamless sign-on on targeted macOS devices. The policy configures browser_sso_interaction_enabled = 1 to allow the SSO extension to interact with browsers and disable_explicit_app_prompt = 1 to suppress explicit prompts when apps request SSO tokens; shared device mode is disabled (per-user SSO). No bundle ID access control list is defined, so there are no explicit app allow/deny entries configured. All other device feature settings (content caching, power controls, login window text, etc.) remain at their defaults/not configured.",
+  "displayName": "MacOS_Default_ActivateSso",
+  "version": 3,
+  "adminShowHostInfo": false,
+  "loginWindowText": null,
+  "authorizedUsersListHidden": false,
+  "authorizedUsersListHideLocalUsers": false,
+  "authorizedUsersListHideMobileAccounts": false,
+  "authorizedUsersListIncludeNetworkUsers": false,
+  "authorizedUsersListHideAdminUsers": false,
+  "authorizedUsersListShowOtherManagedUsers": false,
+  "shutDownDisabled": false,
+  "restartDisabled": false,
+  "sleepDisabled": false,
+  "consoleAccessDisabled": false,
+  "shutDownDisabledWhileLoggedIn": false,
+  "restartDisabledWhileLoggedIn": false,
+  "powerOffDisabledWhileLoggedIn": false,
+  "logOutDisabledWhileLoggedIn": false,
+  "screenLockDisableImmediate": false,
+  "singleSignOnExtension": null,
+  "contentCachingEnabled": false,
+  "contentCachingType": "notConfigured",
+  "contentCachingMaxSizeBytes": null,
+  "contentCachingDataPath": null,
+  "contentCachingDisableConnectionSharing": false,
+  "contentCachingForceConnectionSharing": false,
+  "contentCachingClientPolicy": "notConfigured",
+  "contentCachingPeerPolicy": "notConfigured",
+  "contentCachingParentSelectionPolicy": "notConfigured",
+  "contentCachingParents": [],
+  "contentCachingLogClientIdentities": false,
+  "contentCachingBlockDeletion": false,
+  "contentCachingShowAlerts": false,
+  "contentCachingKeepAwake": false,
+  "contentCachingPort": null,
+  "airPrintDestinations": [],
+  "autoLaunchItems": [],
+  "associatedDomains": [],
+  "appAssociatedDomains": [],
+  "macOSSingleSignOnExtension": {
+    "@odata.type": "#microsoft.graph.macOSAzureAdSingleSignOnExtension",
+    "enableSharedDeviceMode": false,
+    "bundleIdAccessControlList": [],
+    "configurations": [
+      {
+        "@odata.type": "#microsoft.graph.keyIntegerValuePair",
+        "key": "browser_sso_interaction_enabled",
+        "value": 1
+      },
+      {
+        "@odata.type": "#microsoft.graph.keyIntegerValuePair",
+        "key": "disable_explicit_app_prompt",
+        "value": 1
+      }
+    ]
+  },
+  "contentCachingClientListenRanges": [],
+  "contentCachingPeerListenRanges": [],
+  "contentCachingPeerFilterRanges": [],
+  "contentCachingPublicRanges": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('344d63d9-d40a-4b4c-96bf-3fce433d6f7c')/microsoft.graph.macOSDeviceFeaturesConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "344d63d9-d40a-4b4c-96bf-3fce433d6f7c_5f0bfefe-0815-4330-a788-bc9231ab9aad",
+      "source": "direct",
+      "sourceId": "344d63d9-d40a-4b4c-96bf-3fce433d6f7c",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "5f0bfefe-0815-4330-a788-bc9231ab9aad"
+      }
+    }
+  ]
+}

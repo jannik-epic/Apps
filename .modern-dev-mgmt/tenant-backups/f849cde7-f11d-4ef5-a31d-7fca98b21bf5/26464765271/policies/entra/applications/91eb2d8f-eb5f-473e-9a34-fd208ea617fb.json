@@ -1,0 +1,43 @@
+{
+  "id": "91eb2d8f-eb5f-473e-9a34-fd208ea617fb",
+  "appId": "993639d0-d1bb-4921-b126-304a5e3bef52",
+  "displayName": "N8N",
+  "signInAudience": "PersonalMicrosoftAccount",
+  "createdDateTime": "2025-06-25T08:07:23Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "http://localhost:5000/api/auth/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "http://localhost:5000/api/auth/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

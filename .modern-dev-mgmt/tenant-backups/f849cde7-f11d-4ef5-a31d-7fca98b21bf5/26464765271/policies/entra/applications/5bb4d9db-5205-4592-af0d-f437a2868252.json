@@ -1,0 +1,26 @@
+{
+  "id": "5bb4d9db-5205-4592-af0d-f437a2868252",
+  "appId": "af711909-9b51-437d-80e9-75d74f4a04f8",
+  "displayName": "ModernDeviceManagement-Epic-63f0db25-4774-4495-a2ba-820e90eb7c98",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-07-23T12:14:14Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

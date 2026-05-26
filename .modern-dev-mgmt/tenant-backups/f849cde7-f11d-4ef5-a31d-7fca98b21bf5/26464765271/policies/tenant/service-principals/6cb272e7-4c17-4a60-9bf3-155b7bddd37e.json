@@ -1,0 +1,11 @@
+{
+  "id": "6cb272e7-4c17-4a60-9bf3-155b7bddd37e",
+  "appId": "57c03486-2540-499a-b9b9-8b8ecf8df3d9",
+  "displayName": "GPT Device Troubleshooter",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

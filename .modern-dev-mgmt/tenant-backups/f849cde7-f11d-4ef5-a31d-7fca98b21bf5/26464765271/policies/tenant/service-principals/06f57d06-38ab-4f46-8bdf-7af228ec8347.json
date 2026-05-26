@@ -1,0 +1,8 @@
+{
+  "id": "06f57d06-38ab-4f46-8bdf-7af228ec8347",
+  "appId": "6bb8e274-af5d-4df2-98a3-4fd78b4cafd9",
+  "displayName": "Azure Container Instance Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

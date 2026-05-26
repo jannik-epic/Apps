@@ -1,0 +1,14 @@
+{
+  "id": "99bc1fd9-e406-4e64-a0a4-58f5b6271c35",
+  "displayName": "WIN-Bitlocker",
+  "description": null,
+  "isAssigned": true,
+  "isMigratingToConfigurationPolicy": null,
+  "lastModifiedDateTime": "2022-08-01T11:19:12.784352Z",
+  "templateId": "d1174162-1dd2-4976-affc-6667049ab0ae",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('99bc1fd9-e406-4e64-a0a4-58f5b6271c35')/assignments",
+  "assignments": []
+}

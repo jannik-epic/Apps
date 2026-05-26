@@ -1,0 +1,11 @@
+{
+  "id": "4705dcab-281e-4b5b-b462-667e57abda44",
+  "appId": "6b11041d-54a2-4c4f-96a2-6053efe46d8b",
+  "displayName": "HoloLens Camera Roll Upload",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

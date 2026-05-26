@@ -1,0 +1,35 @@
+{
+  "id": "mdo_bulkspamaction",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/antispam?tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Apps",
+  "title": "Set action to take on bulk spam detection",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 128,
+  "remediation": "<p>Ensure that all users have an assigned inbound anti-spam policy with the &lsquo;<strong>Bulk complaint level (BCL) met or exceeded</strong>&rsquo; option set to &ldquo;Move message to Junk Email folder&rdquo;, by either updating your existing policies or creating new ones.</p>",
+  "remediationImpact": "Unknown",
+  "service": "MDO",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

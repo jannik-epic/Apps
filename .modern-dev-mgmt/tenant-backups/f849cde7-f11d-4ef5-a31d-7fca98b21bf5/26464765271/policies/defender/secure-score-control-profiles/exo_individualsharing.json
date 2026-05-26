@@ -1,0 +1,35 @@
+{
+  "id": "exo_individualsharing",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://admin.exchange.microsoft.com/#/sharing",
+  "controlCategory": "Apps",
+  "title": "Ensure 'External sharing' of calendars is not available",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 128,
+  "remediation": "<ol>\r\n<li>In the <a href=\"https://admin.exchange.microsoft.com/\">Microsoft 365 Exchange admin center</a>, go to&nbsp;<strong>Organization &gt; Sharing.</strong></li>\r\n<li>Under <strong>Individual Sharing</strong>, make sure <span style=\"text-decoration: underline;\"><strong>all policies</strong></span> are unticked.</li>\r\n</ol>",
+  "remediationImpact": "Unknown",
+  "service": "EXO",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

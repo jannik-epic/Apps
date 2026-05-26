@@ -1,0 +1,11 @@
+{
+  "id": "d8e0c364-592f-4ab0-ba5a-f204be5a3ac7",
+  "displayName": "Exclude_Require_MDM_Managed_devices_Windows_Mac",
+  "description": "Exclude_Require_MDM_Managed_devices_Windows_Mac",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "Exclude_Require_MDM_Managed",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-07-26T17:17:05Z"
+}

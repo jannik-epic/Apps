@@ -1,0 +1,14 @@
+{
+  "id": "0db4df88-4e67-4fb4-ab34-0dbe6f2fe594",
+  "createdDateTime": "2022-07-27T07:56:23.2256641Z",
+  "lastModifiedDateTime": "2022-07-27T07:56:23.2256641Z",
+  "displayName": "Filter_AllCloudPCs",
+  "description": "All Microsoft365 devices",
+  "platform": "windows10AndLater",
+  "rule": "(device.model -contains \"CloudPC\") or (device.model -contains \"Cloud PC\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

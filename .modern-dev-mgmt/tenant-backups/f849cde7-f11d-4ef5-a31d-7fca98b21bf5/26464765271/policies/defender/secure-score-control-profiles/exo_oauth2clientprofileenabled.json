@@ -1,0 +1,38 @@
+{
+  "id": "exo_oauth2clientprofileenabled",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online?redirectSourcePath=%252fen-us%252farticle%252fenable-or-disable-modern-authentication-in-exchange-online-58018196-f918-49cd-8238-56f57f38d662",
+  "controlCategory": "Identity",
+  "title": "Ensure modern authentication for Exchange Online is enabled",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p>To enable modern authentication, use the Exchange Online PowerShell Module:</p> <ol> <li>Run the Microsoft Exchange Online PowerShell Module.</li> <li>Connect to Exchange Online using \"Connect-ExchangeOnline.\"</li> <li>Run the following PowerShell command: <em>Set-OrganizationConfig -OAuth2ClientProfileEnabled $True</em></li> </ol>",
+  "remediationImpact": "Users of older email clients, such as Outlook 2013 and Outlook 2016, will no longer be able to authenticate to Exchange using Basic Authentication, which will necessitate migration to modern authentication practices.",
+  "service": "EXO",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

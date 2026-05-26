@@ -1,0 +1,11 @@
+{
+  "id": "69588e00-b1de-4c1a-9704-f55740250ded",
+  "appId": "89d10474-74af-4874-99a7-c23c2f643083",
+  "displayName": "Azure Iot Hub",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "ba46434c-975c-4146-83fe-a0040dbc21b0",
+  "appId": "e931d89a-1751-46a0-b9e9-1a159b95d62e",
+  "displayName": "DeploymentApüps",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2024-06-02T14:45:29Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "http://localhost:8501/"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "http://localhost:8501/",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "7b3f05d5-f68c-4b8d-8c59-a2ecd12f24af",
+          "type": "Scope"
+        },
+        {
+          "id": "3404d2bf-2b13-457e-a330-c24615765193",
+          "type": "Scope"
+        },
+        {
+          "id": "44642bfe-8385-4adc-8fc6-fe3cb2c375c3",
+          "type": "Scope"
+        },
+        {
+          "id": "4e46008b-f24c-477d-8fff-7bb4ec7aafe0",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

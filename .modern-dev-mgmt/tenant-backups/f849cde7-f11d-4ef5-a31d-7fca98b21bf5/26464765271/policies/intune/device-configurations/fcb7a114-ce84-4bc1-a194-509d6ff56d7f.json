@@ -1,0 +1,93 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+  "id": "fcb7a114-ce84-4bc1-a194-509d6ff56d7f",
+  "lastModifiedDateTime": "2022-07-27T07:45:53.5390684Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-26T19:04:06.9379907Z",
+  "description": "",
+  "displayName": "WIN_Default_Storagesense",
+  "version": 4,
+  "omaSettings": [
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "displayName": "Enable_storagesense",
+      "description": null,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/Storage/AllowStorageSenseGlobal",
+      "secretReferenceValueId": null,
+      "isEncrypted": false,
+      "value": 1,
+      "isReadOnly": false
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "displayName": "AllowStorageSenseTemporaryFilesCleanup",
+      "description": null,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/Storage/AllowStorageSenseTemporaryFilesCleanup",
+      "secretReferenceValueId": null,
+      "isEncrypted": false,
+      "value": 1,
+      "isReadOnly": false
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "displayName": "ConfigStorageSenseCloudContentDehydrationThreshold",
+      "description": null,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/Storage/ConfigStorageSenseCloudContentDehydrationThreshold",
+      "secretReferenceValueId": null,
+      "isEncrypted": false,
+      "value": 30,
+      "isReadOnly": false
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "displayName": "ConfigStorageSenseDownloadsCleanupThreshold",
+      "description": null,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/Storage/ConfigStorageSenseDownloadsCleanupThreshold",
+      "secretReferenceValueId": null,
+      "isEncrypted": false,
+      "value": 90,
+      "isReadOnly": false
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "displayName": "ConfigStorageSenseRecycleBinCleanupThreshold",
+      "description": null,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/Storage/ConfigStorageSenseRecycleBinCleanupThreshold",
+      "secretReferenceValueId": null,
+      "isEncrypted": false,
+      "value": 7,
+      "isReadOnly": false
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "displayName": "ConfigStorageSenseGlobalCadence",
+      "description": null,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/Storage/ConfigStorageSenseGlobalCadence",
+      "secretReferenceValueId": null,
+      "isEncrypted": false,
+      "value": 7,
+      "isReadOnly": false
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('fcb7a114-ce84-4bc1-a194-509d6ff56d7f')/microsoft.graph.windows10CustomConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "fcb7a114-ce84-4bc1-a194-509d6ff56d7f_8913e9df-f718-40fc-97d5-c5af3876444f",
+      "source": "direct",
+      "sourceId": "fcb7a114-ce84-4bc1-a194-509d6ff56d7f",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "8913e9df-f718-40fc-97d5-c5af3876444f"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "3bd03e82-e5ee-4ade-80d3-8d28f644aa55",
+  "appId": "87749df4-7ccf-48f8-aa87-704bad0e0e16",
+  "displayName": "Microsoft Teams - Device Admin Agent",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

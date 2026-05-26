@@ -1,0 +1,11 @@
+{
+  "id": "97c22553-a38d-4cca-9069-e73a6aa81166",
+  "appId": "8338dec2-e1b3-48f7-8438-20c30a534458",
+  "displayName": "ViewPoint",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

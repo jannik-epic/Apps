@@ -1,0 +1,10 @@
+{
+  "id": "935d288e-82b8-458b-a67d-7a448cdc7881",
+  "appId": "78e7bc61-0fab-4d35-8387-09a8d2f5a59d",
+  "displayName": "Yggdrasil",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

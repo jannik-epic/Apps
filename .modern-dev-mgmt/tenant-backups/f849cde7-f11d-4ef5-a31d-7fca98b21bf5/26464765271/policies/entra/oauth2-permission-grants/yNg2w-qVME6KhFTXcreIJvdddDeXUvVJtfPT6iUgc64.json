@@ -1,0 +1,8 @@
+{
+  "clientId": "c336d8c8-95ea-4e30-8a84-54d772b78826",
+  "consentType": "AllPrincipals",
+  "id": "yNg2w-qVME6KhFTXcreIJvdddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "User.Read openid profile email offline_access"
+}

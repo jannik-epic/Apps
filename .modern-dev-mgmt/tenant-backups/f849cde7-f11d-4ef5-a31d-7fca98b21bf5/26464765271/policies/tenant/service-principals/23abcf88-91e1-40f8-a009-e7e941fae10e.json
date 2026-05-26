@@ -1,0 +1,12 @@
+{
+  "id": "23abcf88-91e1-40f8-a009-e7e941fae10e",
+  "appId": "59f0a04a-b322-4310-adc9-39ac41e9631e",
+  "displayName": "Azure SRE Agent",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

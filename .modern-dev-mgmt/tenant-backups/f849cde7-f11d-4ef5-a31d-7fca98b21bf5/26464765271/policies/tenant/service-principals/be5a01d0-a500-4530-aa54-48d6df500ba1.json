@@ -1,0 +1,12 @@
+{
+  "id": "be5a01d0-a500-4530-aa54-48d6df500ba1",
+  "appId": "657f5199-9902-4e65-bfba-5a92f98ee882",
+  "displayName": "Cosmos DB Fleet Analytics",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

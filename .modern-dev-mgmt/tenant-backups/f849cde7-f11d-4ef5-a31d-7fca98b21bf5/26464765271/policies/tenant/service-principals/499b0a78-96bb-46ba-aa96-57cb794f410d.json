@@ -1,0 +1,11 @@
+{
+  "id": "499b0a78-96bb-46ba-aa96-57cb794f410d",
+  "appId": "4660504c-45b3-4674-a709-71951a6b0763",
+  "displayName": "Microsoft Invitation Acceptance Portal",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

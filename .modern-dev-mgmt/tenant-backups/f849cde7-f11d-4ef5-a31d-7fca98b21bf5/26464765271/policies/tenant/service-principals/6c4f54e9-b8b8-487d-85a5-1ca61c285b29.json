@@ -1,0 +1,11 @@
+{
+  "id": "6c4f54e9-b8b8-487d-85a5-1ca61c285b29",
+  "appId": "2a486b53-dbd2-49c0-a2bc-278bdfc30833",
+  "displayName": "Cortana at Work Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

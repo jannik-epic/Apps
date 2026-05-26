@@ -1,0 +1,11 @@
+{
+  "id": "3ea8361d-4abf-4298-8571-2c1d39914faa",
+  "appId": "328fd23b-de6e-462c-9433-e207470a5727",
+  "displayName": "NFV Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

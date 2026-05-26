@@ -1,0 +1,38 @@
+{
+  "id": "mip_search_auditlog",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/microsoft-365/compliance/audit-log-enable-disable?view=o365-worldwide&tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Apps",
+  "title": "Ensure Microsoft 365 audit log search is Enabled",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p>To enable Microsoft 365 audit log search, use the Microsoft 365 Admin Center:</p> <ol> <li>Log in as an administrator</li> <li>Navigate to the <em>Microsoft Purview compliance portal</em> by going to https://compliance.office.com&nbsp;</li> <li>Under <em>Solutions</em>, select <em>Audit</em>.&nbsp;</li> <li>Click <em>Start recording user and admin activity </em>next to the informatin warning at the top.&nbsp;</li> <li>Click <em>Yes </em>on the dialog box to confirm.</li> </ol> <p>To enable Microsoft 365 audit log search via Exchange Online PowerShell:</p> <ol> <li>Connect to Exchange Online using &quot;Connect-ExchangeOnline&quot;&nbsp;</li> <li>Run the following PowerShell command:&nbsp;</li> </ol> <p>Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true</p> <p><br></p>",
+  "remediationImpact": "None.",
+  "service": "MIP",
+  "threats": [
+    "Data Exfiltration",
+    "Account breach"
+  ],
+  "tier": "Core",
+  "userImpact": null,
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

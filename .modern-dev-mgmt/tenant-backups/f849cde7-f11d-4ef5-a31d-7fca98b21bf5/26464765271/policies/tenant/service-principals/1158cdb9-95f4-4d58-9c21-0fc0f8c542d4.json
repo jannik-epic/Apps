@@ -1,0 +1,12 @@
+{
+  "id": "1158cdb9-95f4-4d58-9c21-0fc0f8c542d4",
+  "appId": "250dbce8-5a23-4e9b-95f4-dfff05f8df41",
+  "displayName": "Self-Service Client - prod",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "client-app",
+    "self-service",
+    "prod"
+  ]
+}

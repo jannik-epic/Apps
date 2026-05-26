@@ -1,0 +1,28 @@
+{
+  "id": "e48398e2-f4bb-4074-8f31-4586725e205b",
+  "description": "Review, approve, or reject new organizational messages for delivery in the Microsoft 365 admin center before they are sent to users.",
+  "displayName": "Organizational Messages Approver",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "e48398e2-f4bb-4074-8f31-4586725e205b",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.office365.organizationalMessages/allEntities/allProperties/read",
+        "microsoft.office365.organizationalMessages/allEntities/allProperties/update",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('e48398e2-f4bb-4074-8f31-4586725e205b')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "00319d25-d9f9-4f3d-81b0-bef7458631d1",
+  "appId": "18af356b-c4fd-4f52-9899-d09d21397ab7",
+  "displayName": "Office365DirectorySynchronizationService",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

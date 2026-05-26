@@ -1,0 +1,14 @@
+{
+  "id": "82ab1704-e2e2-4b0f-a226-cc2355c13db5",
+  "createdDateTime": "2022-07-27T07:59:48.4063257Z",
+  "lastModifiedDateTime": "2022-07-27T07:59:48.4063257Z",
+  "displayName": "old8",
+  "description": "",
+  "platform": "windows10AndLater",
+  "rule": "(device.model -startsWith \"Test\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "f926b71d-ea0e-4117-b42a-5031fc4f590b",
+  "appId": "00000004-0000-0ff1-ce00-000000000000",
+  "displayName": "Skype for Business Online",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "MDA_SNOW_userCookieMaxLifeSpanInDays",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/security/reference/absolute-session-timeout.html",
+  "controlCategory": "Identity",
+  "title": "Enable absolute session timeout",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 4.0,
+  "rank": 10,
+  "remediation": "<p>Set the following property &apos;glide.ui.user_cookie.max_life_span_in_days&apos; below 180.</p> <p>For setting ServiceNow properties, see <a href='https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/reference-pages/task/t_AddAPropertyUsingSysPropsList.html'>Add system property documentation</a>.</p>",
+  "remediationImpact": "Forcing the user to relogin after specific days.",
+  "service": "MDA_SNOW",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

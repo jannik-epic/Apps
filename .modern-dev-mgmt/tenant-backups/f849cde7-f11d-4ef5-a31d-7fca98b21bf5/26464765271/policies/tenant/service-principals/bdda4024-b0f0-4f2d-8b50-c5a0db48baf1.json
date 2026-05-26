@@ -1,0 +1,8 @@
+{
+  "id": "bdda4024-b0f0-4f2d-8b50-c5a0db48baf1",
+  "appId": "7865c1d2-f040-46cc-875f-831a1ef6a28a",
+  "displayName": "Azure HDInsight Cluster API",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

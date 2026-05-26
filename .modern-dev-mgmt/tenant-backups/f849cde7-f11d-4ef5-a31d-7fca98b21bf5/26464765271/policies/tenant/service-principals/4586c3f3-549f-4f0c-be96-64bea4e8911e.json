@@ -1,0 +1,11 @@
+{
+  "id": "4586c3f3-549f-4f0c-be96-64bea4e8911e",
+  "appId": "b9a92e36-2cf8-4f4e-bcb3-9d99e00e14ab",
+  "displayName": "Compute Recommendation Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

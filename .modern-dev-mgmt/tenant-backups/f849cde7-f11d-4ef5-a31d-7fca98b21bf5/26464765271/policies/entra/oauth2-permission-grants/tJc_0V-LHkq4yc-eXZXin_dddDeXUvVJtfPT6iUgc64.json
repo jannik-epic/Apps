@@ -1,0 +1,8 @@
+{
+  "clientId": "d13f97b4-8b5f-4a1e-b8c9-cf9e5d95e29f",
+  "consentType": "AllPrincipals",
+  "id": "tJc_0V-LHkq4yc-eXZXin_dddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "User.Read Mail.Read Mail.Send Mail.ReadWrite Calendars.Read Calendars.ReadWrite Contacts.Read Tasks.ReadWrite Files.Read.All Sites.Read.All Chat.Read DeviceManagementManagedDevices.Read.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementApps.Read.All DeviceManagementApps.ReadWrite.All DeviceManagementServiceConfig.Read.All DeviceManagementServiceConfig.ReadWrite.All Group.Read.All Directory.AccessAsUser.All Domain.Read.All email Group.ReadWrite.All Mail.Read.Shared MailboxSettings.Read offline_access openid People.Read profile ServiceHealth.Read.All ServiceMessage.Read.All Tasks.Read TeamsTab.ReadWrite.All User.Read.All User.ReadBasic.All User.ReadWrite User.ReadWrite.All"
+}

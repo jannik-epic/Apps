@@ -1,0 +1,10 @@
+{
+  "id": "2f65929e-09b7-403b-ad43-ea3b7d6019ea",
+  "appId": "257601fd-462f-4a21-b623-7f719f0f90f4",
+  "displayName": "Centralized Deployment",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

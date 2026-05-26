@@ -1,0 +1,11 @@
+{
+  "id": "cff89f9b-62bf-466d-ba72-c8d4056a7141",
+  "appId": "b1379a75-ce5e-4fa3-80c6-89bb39bf646c",
+  "displayName": "Microsoft Teams Chat Aggregator",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "b8936992-d502-40f7-87dc-2c3292dc7ced",
+  "appId": "b2cc270f-563e-4d8a-af47-f00963a71dcd",
+  "displayName": "OneProfile Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "579cc7d5-83dd-4840-87a4-0ae612f60c1a",
+  "appId": "6204c1d1-4712-4c46-a7d9-3ed63d992682",
+  "displayName": "Microsoft Flow Portal",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

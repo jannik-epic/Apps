@@ -1,0 +1,14 @@
+{
+  "id": "8d8f1ddc-439b-4f5f-afa8-90dfc09a354e",
+  "displayName": "WIN_Default_AttackSurfaceReduction",
+  "description": null,
+  "isAssigned": false,
+  "isMigratingToConfigurationPolicy": true,
+  "lastModifiedDateTime": "2022-07-27T07:54:48.3109547Z",
+  "templateId": "0e237410-1367-4844-bd7f-15fb0f08943b",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('8d8f1ddc-439b-4f5f-afa8-90dfc09a354e')/assignments",
+  "assignments": []
+}

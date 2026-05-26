@@ -1,0 +1,13 @@
+{
+  "id": "5235a0bb-2d69-438f-8b04-90d7e4fc4d31",
+  "displayName": "iPhone 13",
+  "deviceId": "9872f45c-ac40-427d-842c-5960fcce2530",
+  "accountEnabled": true,
+  "operatingSystem": "iOS",
+  "operatingSystemVersion": "17.1.1",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2022-09-02T21:04:05Z"
+}

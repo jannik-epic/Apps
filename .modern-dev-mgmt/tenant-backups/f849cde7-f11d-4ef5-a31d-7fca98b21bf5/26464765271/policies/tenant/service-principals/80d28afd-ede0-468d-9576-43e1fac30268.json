@@ -1,0 +1,8 @@
+{
+  "id": "80d28afd-ede0-468d-9576-43e1fac30268",
+  "appId": "1dcb1bc7-c721-498e-b2fa-bcddcea44171",
+  "displayName": "Microsoft Azure Authorization Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "44a33923-ceeb-41a4-85a2-1c5e1898e55c",
+  "displayName": "All_Administrator-device",
+  "description": "Device group converted from user group: All_Administrator",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "AllAdministratordevice",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-07-28T05:34:14Z"
+}

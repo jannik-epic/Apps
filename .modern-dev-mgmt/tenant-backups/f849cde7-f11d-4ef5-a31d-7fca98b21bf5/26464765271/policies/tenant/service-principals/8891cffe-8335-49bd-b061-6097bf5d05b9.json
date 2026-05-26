@@ -1,0 +1,10 @@
+{
+  "id": "8891cffe-8335-49bd-b061-6097bf5d05b9",
+  "appId": "56c1da01-2129-48f7-9355-af6d59d42766",
+  "displayName": "Graph Connector Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}
