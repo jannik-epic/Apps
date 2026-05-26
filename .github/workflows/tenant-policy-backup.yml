@@ -7,7 +7,7 @@ on:
         description: 'Comma-separated policy-type keys to include. Use "all" or leave empty for the default safe set.'
         required: false
         type: string
-        default: 'conditional-access-policies,named-locations,authentication-strengths,authentication-contexts,authorization-policy,device-registration-policy,configuration-policies,device-configurations,group-policy-configurations,compliance-policies,device-management-scripts,device-health-scripts,device-compliance-scripts,device-management-intents,mobile-apps,managed-app-policies,targeted-managed-app-configurations,assignment-filters,enrollment-configurations,autopilot-deployment-profiles,feature-update-profiles,driver-update-profiles,device-categories,policy-sets,terms-and-conditions,role-definitions,notification-message-templates,intune-branding-profiles,cloud-pc-provisioning-policies,cloud-pc-on-premises-connections,cloud-pc-device-images'
+        default: 'conditional-access-policies,named-locations,authentication-strengths,authentication-contexts,authorization-policy,device-registration-policy,entra-organization,entra-domains,entra-groups,entra-administrative-units,entra-applications,entra-oauth2-permission-grants,entra-directory-roles,entra-directory-role-definitions,entra-directory-role-assignments,authentication-methods-policy,app-management-policies,defender-secure-score-control-profiles,configuration-policies,device-configurations,group-policy-configurations,compliance-policies,device-management-scripts,device-health-scripts,device-compliance-scripts,device-management-intents,mobile-apps,managed-app-policies,targeted-managed-app-configurations,assignment-filters,enrollment-configurations,autopilot-deployment-profiles,feature-update-profiles,driver-update-profiles,device-categories,policy-sets,terms-and-conditions,role-definitions,notification-message-templates,intune-branding-profiles,cloud-pc-provisioning-policies,cloud-pc-on-premises-connections,cloud-pc-device-images'
       backup_scope:
         description: 'Coarse scope preset (legacy). Overridden when include_types is set.'
         required: false
@@ -108,7 +108,7 @@ jobs:
             switch ($scope) {
               'intune_only' { $includedKeys = ($allSpecs | Where-Object { $_.group -like 'intune-*' -or $_.group -eq 'cloud-pc' } | ForEach-Object { $_.key }) }
               'conditional_access_only' { $includedKeys = ($allSpecs | Where-Object { $_.group -eq 'conditional-access' } | ForEach-Object { $_.key }) }
-              default { $includedKeys = ('conditional-access-policies,named-locations,authentication-strengths,authentication-contexts,authorization-policy,device-registration-policy,configuration-policies,device-configurations,group-policy-configurations,compliance-policies,device-management-scripts,device-health-scripts,device-compliance-scripts,device-management-intents,mobile-apps,managed-app-policies,targeted-managed-app-configurations,assignment-filters,enrollment-configurations,autopilot-deployment-profiles,feature-update-profiles,driver-update-profiles,device-categories,policy-sets,terms-and-conditions,role-definitions,notification-message-templates,intune-branding-profiles,cloud-pc-provisioning-policies,cloud-pc-on-premises-connections,cloud-pc-device-images' -split ',') | ForEach-Object { $_.Trim() } | Where-Object { $_ } }
+              default { $includedKeys = ('conditional-access-policies,named-locations,authentication-strengths,authentication-contexts,authorization-policy,device-registration-policy,entra-organization,entra-domains,entra-groups,entra-administrative-units,entra-applications,entra-oauth2-permission-grants,entra-directory-roles,entra-directory-role-definitions,entra-directory-role-assignments,authentication-methods-policy,app-management-policies,defender-secure-score-control-profiles,configuration-policies,device-configurations,group-policy-configurations,compliance-policies,device-management-scripts,device-health-scripts,device-compliance-scripts,device-management-intents,mobile-apps,managed-app-policies,targeted-managed-app-configurations,assignment-filters,enrollment-configurations,autopilot-deployment-profiles,feature-update-profiles,driver-update-profiles,device-categories,policy-sets,terms-and-conditions,role-definitions,notification-message-templates,intune-branding-profiles,cloud-pc-provisioning-policies,cloud-pc-on-premises-connections,cloud-pc-device-images' -split ',') | ForEach-Object { $_.Trim() } | Where-Object { $_ } }
             }
           } elseif ($rawIncludeTypes.ToLowerInvariant() -eq 'all') {
             $includedKeys = $allSpecs | ForEach-Object { $_.key }
@@ -138,6 +138,7 @@ jobs:
 
           $warnings = New-Object System.Collections.Generic.List[string]
           $limitations = New-Object System.Collections.Generic.List[object]
+          $manifestPolicies = New-Object System.Collections.Generic.List[object]
           $GraphBase = $env:GRAPH_BASE.TrimEnd('/')
           $GraphBetaBase = $env:GRAPH_BETA_BASE.TrimEnd('/')
           $headers = @{
@@ -199,8 +200,19 @@ jobs:
             return ($Value -replace '[^a-zA-Z0-9._-]', '_')
           }
 
+          function Get-PolicyDisplayName {
+            param([object]$Item)
+            foreach ($key in @('displayName','name','policyName','profileName','title')) {
+              $prop = if ($Item) { $Item.PSObject.Properties[$key] } else { $null }
+              if ($prop -and $prop.Value) {
+                return [string]$prop.Value
+              }
+            }
+            return $null
+          }
+
           function Save-PolicyArray {
-            param([string]$Subdir, [string]$Label, [array]$Items, [bool]$ExpandAssignments = $false)
+            param([string]$Subdir, [string]$PolicyType, [string]$Label, [array]$Items, [bool]$ExpandAssignments = $false, [bool]$Restorable = $true)
             $count = 0
             $expandedAssignments = 0
             foreach ($item in $Items) {
@@ -208,7 +220,15 @@ jobs:
               $rawId = if ($item.id) { [string]$item.id } else { [string]$item.'@odata.etag' }
               if (-not $rawId) { continue }
               $safe = Sanitize-Id $rawId
-              Save-Json -Path ("policies/$Subdir/$safe.json") -Data $item
+              $policyPath = "policies/$Subdir/$safe.json"
+              Save-Json -Path $policyPath -Data $item
+              $manifestPolicies.Add([ordered]@{
+                policyType = $PolicyType
+                path = $policyPath
+                backupPolicyId = $rawId
+                displayName = Get-PolicyDisplayName -Item $item
+                restorable = $Restorable
+              }) | Out-Null
               if ($ExpandAssignments -and $item.assignments) {
                 Save-Json -Path ("assignments/$safe.assignments.json") -Data $item.assignments
                 $expandedAssignments += @($item.assignments).Count
@@ -225,18 +245,28 @@ jobs:
 
           foreach ($spec in $selectedSpecs) {
             $base = if ($spec.graphBase -eq 'beta') { $GraphBetaBase } else { $GraphBase }
+            $restorable = $true
+            if ($spec.PSObject.Properties.Match('restorable').Count -gt 0) { $restorable = [bool]$spec.restorable }
             $expand = if ($includeAssignments -and $spec.supportsExpandAssignments) { '?$expand=assignments' } else { '' }
             $uri = "$base/$($spec.readPath)$expand"
             if ($spec.singleton) {
               $obj = Invoke-GraphJson -Uri $uri -Label $spec.label
               if ($obj) {
-                Save-Json -Path ("policies/$($spec.subdir)/_singleton.json") -Data $obj
+                $policyPath = "policies/$($spec.subdir)/_singleton.json"
+                Save-Json -Path $policyPath -Data $obj
+                $manifestPolicies.Add([ordered]@{
+                  policyType = $spec.policyType
+                  path = $policyPath
+                  backupPolicyId = "$($spec.policyType)-singleton"
+                  displayName = Get-PolicyDisplayName -Item $obj
+                  restorable = $restorable
+                }) | Out-Null
                 $manifestCounts[$spec.key] = 1
               }
               continue
             }
             $items = Invoke-GraphCollection -Uri $uri -Label $spec.label
-            $result = Save-PolicyArray -Subdir $spec.subdir -Label $spec.label -Items $items -ExpandAssignments ($includeAssignments -and $spec.supportsExpandAssignments)
+            $result = Save-PolicyArray -Subdir $spec.subdir -PolicyType $spec.policyType -Label $spec.label -Items $items -ExpandAssignments ($includeAssignments -and $spec.supportsExpandAssignments) -Restorable $restorable
             $manifestCounts[$spec.key] = $result.count
             $manifestCounts['assignments'] = [int]$manifestCounts['assignments'] + [int]$result.assignments
           }
@@ -296,6 +326,7 @@ jobs:
             counts = $manifestCounts
             warningCount = $warnings.Count
             limitationCount = $limitations.Count
+            policies = @($manifestPolicies.ToArray())
           }
           if ($env:INPUT_REQUEST_CONTEXT_B64) { $manifest.requestContextProvided = $true }
           Save-Json -Path 'manifest.json' -Data $manifest
