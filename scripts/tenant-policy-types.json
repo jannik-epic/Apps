@@ -7,7 +7,9 @@
     "graphBase": "beta",
     "readPath": "identity/conditionalAccess/policies",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "conditional-access/policies"
   },
   {
@@ -18,7 +20,9 @@
     "graphBase": "beta",
     "readPath": "identity/conditionalAccess/namedLocations",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "conditional-access/named-locations"
   },
   {
@@ -28,8 +32,11 @@
     "group": "conditional-access",
     "graphBase": "beta",
     "readPath": "identity/conditionalAccess/authenticationStrength/policies",
+    "writePath": "identity/conditionalAccess/authenticationStrength/policies",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "conditional-access/authentication-strengths"
   },
   {
@@ -40,7 +47,9 @@
     "graphBase": "beta",
     "readPath": "identity/conditionalAccess/authenticationContextClassReferences",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "conditional-access/authentication-contexts"
   },
   {
@@ -50,9 +59,13 @@
     "group": "tenant",
     "graphBase": "beta",
     "readPath": "policies/authorizationPolicy",
+    "writePath": "policies/authorizationPolicy/authorizationPolicy",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": true,
-    "subdir": "tenant/authorization-policy"
+    "restorable": true,
+    "subdir": "tenant/authorization-policy",
+    "notes": "Singleton tenant policy; restore writes via PATCH."
   },
   {
     "key": "device-registration-policy",
@@ -62,8 +75,208 @@
     "graphBase": "beta",
     "readPath": "policies/deviceRegistrationPolicy",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": true,
+    "restorable": true,
     "subdir": "tenant/device-registration-policy"
+  },
+  {
+    "key": "entra-organization",
+    "policyType": "EntraOrganization",
+    "label": "Organization profile",
+    "group": "entra-directory",
+    "graphBase": "v1.0",
+    "readPath": "organization",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/organization"
+  },
+  {
+    "key": "entra-domains",
+    "policyType": "EntraDomain",
+    "label": "Verified domains",
+    "group": "entra-directory",
+    "graphBase": "v1.0",
+    "readPath": "domains",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/domains"
+  },
+  {
+    "key": "entra-users",
+    "policyType": "EntraUser",
+    "label": "Users (selected directory metadata)",
+    "group": "entra-directory",
+    "graphBase": "v1.0",
+    "readPath": "users?$select=id,displayName,userPrincipalName,mail,accountEnabled,userType,createdDateTime,department,jobTitle,usageLocation",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/users",
+    "notes": "High-volume and privacy-sensitive; opt in when user inventory belongs in the snapshot."
+  },
+  {
+    "key": "entra-groups",
+    "policyType": "EntraGroup",
+    "label": "Groups (directory inventory)",
+    "group": "entra-directory",
+    "graphBase": "v1.0",
+    "readPath": "groups?$select=id,displayName,description,mailEnabled,securityEnabled,mailNickname,groupTypes,visibility,createdDateTime",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/groups"
+  },
+  {
+    "key": "entra-devices",
+    "policyType": "EntraDevice",
+    "label": "Devices (selected directory metadata)",
+    "group": "entra-directory",
+    "graphBase": "v1.0",
+    "readPath": "devices?$select=id,displayName,deviceId,accountEnabled,operatingSystem,operatingSystemVersion,trustType,profileType,isCompliant,isManaged,registrationDateTime",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/devices",
+    "notes": "High-volume device inventory; opt in for full directory state comparisons."
+  },
+  {
+    "key": "entra-administrative-units",
+    "policyType": "EntraAdministrativeUnit",
+    "label": "Administrative units",
+    "group": "entra-directory",
+    "graphBase": "beta",
+    "readPath": "directory/administrativeUnits?$select=id,displayName,description,visibility,membershipType,membershipRule,membershipRuleProcessingState",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/administrative-units"
+  },
+  {
+    "key": "entra-applications",
+    "policyType": "EntraApplication",
+    "label": "App registrations",
+    "group": "entra-applications",
+    "graphBase": "v1.0",
+    "readPath": "applications?$select=id,appId,displayName,signInAudience,createdDateTime,web,spa,publicClient,requiredResourceAccess,appRoles,identifierUris",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/applications"
+  },
+  {
+    "key": "entra-oauth2-permission-grants",
+    "policyType": "EntraOAuth2PermissionGrant",
+    "label": "OAuth2 delegated permission grants",
+    "group": "entra-applications",
+    "graphBase": "v1.0",
+    "readPath": "oauth2PermissionGrants",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/oauth2-permission-grants"
+  },
+  {
+    "key": "app-management-policies",
+    "policyType": "AppManagementPolicy",
+    "label": "Application management policies",
+    "group": "entra-applications",
+    "graphBase": "beta",
+    "readPath": "policies/appManagementPolicies",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/app-management-policies"
+  },
+  {
+    "key": "entra-directory-roles",
+    "policyType": "EntraDirectoryRole",
+    "label": "Directory roles",
+    "group": "entra-governance",
+    "graphBase": "v1.0",
+    "readPath": "directoryRoles",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/directory-roles"
+  },
+  {
+    "key": "entra-directory-role-definitions",
+    "policyType": "EntraDirectoryRoleDefinition",
+    "label": "Directory role definitions",
+    "group": "entra-governance",
+    "graphBase": "v1.0",
+    "readPath": "roleManagement/directory/roleDefinitions",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/directory-role-definitions"
+  },
+  {
+    "key": "entra-directory-role-assignments",
+    "policyType": "EntraDirectoryRoleAssignment",
+    "label": "Directory role assignments",
+    "group": "entra-governance",
+    "graphBase": "v1.0",
+    "readPath": "roleManagement/directory/roleAssignments",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/directory-role-assignments"
+  },
+  {
+    "key": "authentication-methods-policy",
+    "policyType": "AuthenticationMethodsPolicy",
+    "label": "Authentication methods policy",
+    "group": "entra-governance",
+    "graphBase": "beta",
+    "readPath": "policies/authenticationMethodsPolicy",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": true,
+    "restorable": false,
+    "subdir": "entra/authentication-methods-policy"
+  },
+  {
+    "key": "defender-secure-score-control-profiles",
+    "policyType": "DefenderSecureScoreControlProfile",
+    "label": "Defender secure score control profiles",
+    "group": "defender",
+    "graphBase": "v1.0",
+    "readPath": "security/secureScoreControlProfiles",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "defender/secure-score-control-profiles"
+  },
+  {
+    "key": "defender-secure-scores",
+    "policyType": "DefenderSecureScore",
+    "label": "Defender secure score snapshots",
+    "group": "defender",
+    "graphBase": "v1.0",
+    "readPath": "security/secureScores?$top=5",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "defender/secure-scores",
+    "notes": "Evidence snapshot for drift/audit, not a restore target."
   },
   {
     "key": "configuration-policies",
@@ -73,7 +286,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/configurationPolicies",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/configuration-policies"
   },
   {
@@ -84,7 +299,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/deviceConfigurations",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/device-configurations"
   },
   {
@@ -95,7 +312,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/groupPolicyConfigurations",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/group-policy-configurations"
   },
   {
@@ -106,7 +325,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/intents",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/intents"
   },
   {
@@ -117,7 +338,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/deviceCompliancePolicies",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/compliance-policies"
   },
   {
@@ -128,7 +351,9 @@
     "graphBase": "beta",
     "readPath": "deviceAppManagement/mobileApps",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/mobile-apps"
   },
   {
@@ -139,7 +364,9 @@
     "graphBase": "beta",
     "readPath": "deviceAppManagement/managedAppPolicies",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/managed-app-policies"
   },
   {
@@ -150,7 +377,9 @@
     "graphBase": "beta",
     "readPath": "deviceAppManagement/targetedManagedAppConfigurations",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/targeted-managed-app-configurations"
   },
   {
@@ -161,7 +390,9 @@
     "graphBase": "beta",
     "readPath": "deviceAppManagement/policySets",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/policy-sets"
   },
   {
@@ -172,7 +403,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/deviceManagementScripts",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/scripts/device-management-scripts"
   },
   {
@@ -183,7 +416,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/deviceHealthScripts",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/scripts/device-health-scripts"
   },
   {
@@ -194,7 +429,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/deviceComplianceScripts",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/scripts/device-compliance-scripts"
   },
   {
@@ -205,7 +442,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/deviceEnrollmentConfigurations",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/enrollment-configurations"
   },
   {
@@ -216,7 +455,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/windowsAutopilotDeploymentProfiles",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/autopilot-deployment-profiles"
   },
   {
@@ -227,7 +468,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/assignmentFilters",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/assignment-filters"
   },
   {
@@ -238,7 +481,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/windowsFeatureUpdateProfiles",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/feature-update-profiles"
   },
   {
@@ -249,7 +494,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/windowsDriverUpdateProfiles",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/driver-update-profiles"
   },
   {
@@ -260,7 +507,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/deviceCategories",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/device-categories"
   },
   {
@@ -271,7 +520,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/roleDefinitions",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/role-definitions"
   },
   {
@@ -282,7 +533,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/termsAndConditions",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/terms-and-conditions"
   },
   {
@@ -293,7 +546,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/notificationMessageTemplates",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/notification-message-templates"
   },
   {
@@ -304,7 +559,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/intuneBrandingProfiles",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/branding-profiles"
   },
   {
@@ -315,7 +572,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/virtualEndpoint/provisioningPolicies",
     "supportsExpandAssignments": true,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/cloud-pc/provisioning-policies"
   },
   {
@@ -326,7 +585,9 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/virtualEndpoint/onPremisesConnections",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/cloud-pc/on-premises-connections"
   },
   {
@@ -337,18 +598,23 @@
     "graphBase": "beta",
     "readPath": "deviceManagement/virtualEndpoint/deviceImages",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": false,
+    "restorable": true,
     "subdir": "intune/cloud-pc/device-images"
   },
   {
     "key": "service-principals",
     "policyType": "ServicePrincipal",
     "label": "Service principals (Enterprise apps) — large dataset",
-    "group": "tenant",
+    "group": "entra-applications",
     "graphBase": "v1.0",
     "readPath": "servicePrincipals?$select=id,appId,displayName,accountEnabled,appRoleAssignmentRequired,tags",
     "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
     "singleton": false,
-    "subdir": "tenant/service-principals"
+    "restorable": false,
+    "subdir": "tenant/service-principals",
+    "notes": "Disabled by default — opt in only when you actually need it."
   }
 ]
