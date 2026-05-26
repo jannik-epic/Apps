@@ -1,0 +1,38 @@
+{
+  "id": "aad_sign_in_freq_session_timeout",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://aad.portal.azure.com/#view/Microsoft_AAD_ConditionalAccess/PolicyBlade",
+  "controlCategory": "Identity",
+  "title": "Ensure Sign-in frequency is enabled and browser sessions are not persistent for Administrative users",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 10,
+  "remediation": "<p><strong>To configure Sign-in frequency and browser sessions persistence for Administrative users:</strong></p> <ol> <li>Navigate to <em>Microsoft Entra admin center</em> <a href=\"https://entra.microsoft.com/\">https://entra.microsoft.com/</a>.</li><li>Click to <em>Protection</em> &gt; <em>Conditional Access</em>.</li> <li>Click <em>New policy</em></li> <li>Click <em>Users and groups</em></li> <li>Under <strong>Include</strong> select <em>Select users and groups</em> and then select <em>Directory roles</em>.</li> <li>At a minimum, select the roles in the section below:</li> <li>Go to <em>Target resources</em>&nbsp;&gt; <em>Cloud apps</em> &gt; <em>Include</em> &gt; s<em>elect All cloud apps (and don't exclude any apps)</em>.</li> <li>Under <em>Access controls</em> &gt; <em>Grant</em> &gt; select <em>Grant access</em> &gt; check <em>Require multi-factor authentication</em> (and nothing else).</li> <li>Under <em>Session</em> select <em>Sign-in frequency</em> and set to at most<em> 4 hours</em> for E3 tenants. E5 tenants with PIM can be set to a maximum value of <em>24 hours</em>.</li> <li>Check <em>Persistent browser session</em> then select <em>Never persistent</em> in the drop-down menu.</li> <li>For <em>Enable Policy</em> select <em>On</em> and click <em>Save</em></li> </ol> <p><br /><strong>At minimum these directory roles should be included for MFA:</strong></p> <ul> <li>Application administrator</li> <li>Authentication administrator</li> <li>Billing administrator</li> <li>Cloud application administrator</li> <li>Conditional Access administrator</li> <li>Exchange administrator</li> <li>Global administrator</li> <li>Global reader</li> <li>Helpdesk administrator</li> <li>Password administrator</li> <li>Privileged authentication administrator</li> <li>Privileged role administrator</li> <li>Security administrator</li> <li>SharePoint administrator</li> <li>User administrator</li> </ul>",
+  "remediationImpact": "None.",
+  "service": "AzureAD",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": null,
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

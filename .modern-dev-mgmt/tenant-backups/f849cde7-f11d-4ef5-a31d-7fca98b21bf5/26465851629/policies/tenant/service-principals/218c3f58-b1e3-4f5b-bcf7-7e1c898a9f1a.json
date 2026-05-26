@@ -1,0 +1,11 @@
+{
+  "id": "218c3f58-b1e3-4f5b-bcf7-7e1c898a9f1a",
+  "appId": "8c59ead7-d703-4a27-9e55-c96a0054c8d2",
+  "displayName": "My Profile",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

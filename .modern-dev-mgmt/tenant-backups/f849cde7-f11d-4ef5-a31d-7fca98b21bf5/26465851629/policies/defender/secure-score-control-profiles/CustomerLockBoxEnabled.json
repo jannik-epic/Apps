@@ -1,0 +1,39 @@
+{
+  "id": "CustomerLockBoxEnabled",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2095515",
+  "controlCategory": "Apps",
+  "title": "Ensure the customer lockbox feature is enabled",
+  "deprecated": false,
+  "implementationCost": "Moderate",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 127,
+  "remediation": " Turn on customer lockbox by: <br> 1. Using a work or school account that has either the global administrator or the Customer Lockbox access approver role assigned, go to https://admin.microsoft.com and sign in. <br> 2. Choose Settings > Org Settings. <br> 3. Select Security & Privacy > Customer Lockbox > Edit, and then move the toggle to On or Off to turn the feature on or off. <br>",
+  "remediationImpact": "Until the request is approved, the Microsoft engineer will not be granted access to customer data.",
+  "service": "EXO",
+  "threats": [
+    "Data Exfiltration",
+    "Data Deletion",
+    "Data Spillage"
+  ],
+  "tier": "Advanced",
+  "userImpact": "Moderate",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

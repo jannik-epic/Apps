@@ -1,0 +1,14 @@
+{
+  "id": "ffc4abb4-de23-436a-adc7-362a85f2f100",
+  "createdDateTime": "2022-07-27T07:59:08.1486187Z",
+  "lastModifiedDateTime": "2022-07-27T07:59:08.1486187Z",
+  "displayName": "old3",
+  "description": "",
+  "platform": "windows10AndLater",
+  "rule": "(device.osVersion -startsWith \"10.0.2\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

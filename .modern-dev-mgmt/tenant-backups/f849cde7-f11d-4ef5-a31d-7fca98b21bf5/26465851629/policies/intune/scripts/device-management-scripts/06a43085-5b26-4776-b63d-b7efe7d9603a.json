@@ -1,0 +1,17 @@
+{
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "id": "06a43085-5b26-4776-b63d-b7efe7d9603a",
+  "displayName": "WIN_Default_Script_CompanyPortalSystemTrayIcon",
+  "description": "",
+  "scriptContent": null,
+  "createdDateTime": "2022-07-27T08:04:31.8441463Z",
+  "lastModifiedDateTime": "2023-07-30T14:22:04.0318901Z",
+  "runAsAccount": "system",
+  "fileName": "Deploy-IntuneSystemtrayScript.ps1",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceManagementScripts('06a43085-5b26-4776-b63d-b7efe7d9603a')/assignments",
+  "assignments": []
+}

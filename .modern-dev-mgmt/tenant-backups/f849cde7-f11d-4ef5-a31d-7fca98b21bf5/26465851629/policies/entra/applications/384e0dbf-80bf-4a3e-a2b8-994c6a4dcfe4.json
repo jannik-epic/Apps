@@ -1,0 +1,26 @@
+{
+  "id": "384e0dbf-80bf-4a3e-a2b8-994c6a4dcfe4",
+  "appId": "0de78ff7-f059-4356-b505-8a64981f2e4d",
+  "displayName": "DeviceTroubleshooter (Power Virtual Agents)",
+  "signInAudience": "AzureADMultipleOrgs",
+  "createdDateTime": "2023-07-22T09:33:08Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

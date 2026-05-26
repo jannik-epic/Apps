@@ -1,0 +1,10 @@
+{
+  "id": "a5839a28-c212-4884-a867-deb2fcba6d6b",
+  "appId": "4743e56d-572f-4993-895a-38797244b41f",
+  "displayName": "Modern Dev Mgmt Backup — ModernDevMgmt.onmicrosoft.com",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

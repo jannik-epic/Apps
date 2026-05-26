@@ -1,0 +1,11 @@
+{
+  "id": "831f76e2-2de2-4852-be44-7fbae0731be0",
+  "displayName": "All_Devices_Custom - Wave 1-user",
+  "description": "User group converted from device group: All_Devices_Custom - Wave 1",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "AllDevicesCustomWave1user",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-07-28T18:45:04Z"
+}

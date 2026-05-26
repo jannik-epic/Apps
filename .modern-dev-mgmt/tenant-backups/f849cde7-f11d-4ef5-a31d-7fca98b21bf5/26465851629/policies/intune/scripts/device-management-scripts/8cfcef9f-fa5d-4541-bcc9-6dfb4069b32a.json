@@ -1,0 +1,17 @@
+{
+  "enforceSignatureCheck": false,
+  "runAs32Bit": false,
+  "id": "8cfcef9f-fa5d-4541-bcc9-6dfb4069b32a",
+  "displayName": "WIN_Default_Script_TimeService",
+  "description": "Windows10_TimeService",
+  "scriptContent": null,
+  "createdDateTime": "2022-07-26T19:13:27.5771899Z",
+  "lastModifiedDateTime": "2022-07-27T08:06:10.4985686Z",
+  "runAsAccount": "system",
+  "fileName": "Windows10_TimeService.ps1",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceManagementScripts('8cfcef9f-fa5d-4541-bcc9-6dfb4069b32a')/assignments",
+  "assignments": []
+}

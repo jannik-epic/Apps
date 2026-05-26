@@ -1,0 +1,36 @@
+{
+  "id": "15e817fb-8b3d-43b7-af41-ab8154ea6cec",
+  "appId": "1c894818-a042-4684-afe9-a61d2cb47a3f",
+  "displayName": "Self-Service API Client",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-11-12T12:26:15Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "a6f7b7fb-ad80-4051-ad03-48f9dca6e78c",
+      "resourceAccess": [
+        {
+          "id": "db72229a-0c2c-4d7c-abfd-95673dbc78a1",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

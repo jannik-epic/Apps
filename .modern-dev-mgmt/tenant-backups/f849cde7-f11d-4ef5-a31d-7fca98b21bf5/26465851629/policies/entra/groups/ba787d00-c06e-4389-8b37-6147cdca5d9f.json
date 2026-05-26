@@ -1,0 +1,11 @@
+{
+  "id": "ba787d00-c06e-4389-8b37-6147cdca5d9f",
+  "displayName": "MDM-Greenfoot-Required",
+  "description": "Modern Dev Mgmt required assignment group for Greenfoot.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "mdm-greenfoot-required-524f51",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-05-13T12:44:39Z"
+}

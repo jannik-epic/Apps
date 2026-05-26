@@ -1,0 +1,24 @@
+{
+  "id": "8380bc6d-69d6-456c-8a3a-8b9e9524a17c",
+  "publisher": "Jannik Reinhard",
+  "version": "1",
+  "displayName": "WIN_Rem_CleanupDisk",
+  "description": "",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2022-07-27T08:00:10.8229717Z",
+  "lastModifiedDateTime": "2022-07-27T08:02:07.0468477Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('8380bc6d-69d6-456c-8a3a-8b9e9524a17c')/assignments",
+  "assignments": []
+}

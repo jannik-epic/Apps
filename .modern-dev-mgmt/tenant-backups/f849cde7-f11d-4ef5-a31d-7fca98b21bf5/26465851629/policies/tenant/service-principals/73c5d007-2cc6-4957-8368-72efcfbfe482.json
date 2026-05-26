@@ -1,0 +1,8 @@
+{
+  "id": "73c5d007-2cc6-4957-8368-72efcfbfe482",
+  "appId": "05d97c70-cb7c-4e66-8138-d5ca7c59d206",
+  "displayName": "Azure Edge Zones storage backend",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

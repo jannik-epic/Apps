@@ -1,0 +1,8 @@
+{
+  "id": "00158a37-9a89-4a7f-b6af-81f31914b150",
+  "appId": "c505e273-0ba0-47e7-a0bd-f48042b4524d",
+  "displayName": "AzureBackup_WBCM_Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

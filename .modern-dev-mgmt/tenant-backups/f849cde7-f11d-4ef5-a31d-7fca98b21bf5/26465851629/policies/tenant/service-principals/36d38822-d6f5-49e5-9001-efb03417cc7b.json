@@ -1,0 +1,11 @@
+{
+  "id": "36d38822-d6f5-49e5-9001-efb03417cc7b",
+  "appId": "bff9c460-ab16-4e9e-8e08-a18e1756d86e",
+  "displayName": "Terraform-Github",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

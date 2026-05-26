@@ -1,0 +1,48 @@
+{
+  "@odata.type": "#microsoft.graph.winGetApp",
+  "id": "80606c51-206c-4fee-aa63-00e3bee0a2d7",
+  "displayName": "Power BI",
+  "description": "Stay on top of your critical business insights and uncover the power of your data, immediately, without any setup required.",
+  "publisher": "Microsoft Corporation",
+  "largeIcon": null,
+  "createdDateTime": "2022-12-11T10:00:44Z",
+  "lastModifiedDateTime": "2022-12-11T10:00:44Z",
+  "isFeatured": false,
+  "privacyInformationUrl": "http://go.microsoft.com/fwlink/p/?LinkId=282053",
+  "informationUrl": null,
+  "owner": "",
+  "developer": "",
+  "notes": "",
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "manifestHash": null,
+  "packageIdentifier": "9NBLGGGZLXN1",
+  "installExperience": {
+    "runAsAccount": "user"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('80606c51-206c-4fee-aa63-00e3bee0a2d7')/microsoft.graph.winGetApp/assignments",
+  "assignments": [
+    {
+      "id": "adadadad-808e-44e2-905a-0b7873a8a531_0_0",
+      "intent": "available",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.winGetAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null
+      }
+    }
+  ]
+}

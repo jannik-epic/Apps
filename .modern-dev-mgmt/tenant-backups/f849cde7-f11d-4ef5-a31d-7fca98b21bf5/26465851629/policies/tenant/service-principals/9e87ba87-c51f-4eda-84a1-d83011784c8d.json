@@ -1,0 +1,11 @@
+{
+  "id": "9e87ba87-c51f-4eda-84a1-d83011784c8d",
+  "appId": "5d661950-3475-41cd-a2c3-d671a3162bc1",
+  "displayName": "Microsoft Outlook",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

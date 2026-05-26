@@ -1,0 +1,141 @@
+{
+  "id": "aff9ce8d-3b02-4283-aa13-4d545cb2881e",
+  "appId": "4106b9db-169a-402d-af8f-4c02ba054cf3",
+  "displayName": "M365DSC-Pipeline-Automation",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-11-05T15:34:17Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "http://localhost"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "http://localhost",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+          "type": "Role"
+        },
+        {
+          "id": "62a82d76-70ea-41e2-9197-370581804d09",
+          "type": "Role"
+        },
+        {
+          "id": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
+          "type": "Role"
+        },
+        {
+          "id": "bf7b1a76-6e77-406b-b258-bf5c7720e98f",
+          "type": "Role"
+        },
+        {
+          "id": "01c0a623-fc9b-48e9-b794-0756f8e8f067",
+          "type": "Role"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        },
+        {
+          "id": "b185aa14-d8d2-42c1-a685-0f5596613624",
+          "type": "Role"
+        },
+        {
+          "id": "19b94e34-907c-4f43-bde9-38b1909ed408",
+          "type": "Role"
+        },
+        {
+          "id": "2a60023f-3219-47ad-baa4-40e17cd02a1d",
+          "type": "Role"
+        },
+        {
+          "id": "483bed4a-2ad3-4361-a73b-c83ccdbdc53c",
+          "type": "Role"
+        },
+        {
+          "id": "5b567255-7703-4780-807c-7be8301ae99b",
+          "type": "Role"
+        },
+        {
+          "id": "dbb9058a-0e50-45d7-ae91-66909b5d4664",
+          "type": "Role"
+        },
+        {
+          "id": "2f3e6f8c-093b-4c57-a58b-ba5ce494a169",
+          "type": "Role"
+        },
+        {
+          "id": "546168c3-1183-4281-9491-fafb24dea37e",
+          "type": "Role"
+        },
+        {
+          "id": "9e3f62cf-ca93-4989-b6ce-bf83c28f9fe8",
+          "type": "Role"
+        },
+        {
+          "id": "246dd0d5-5bd0-4def-940b-0421030a5b68",
+          "type": "Role"
+        },
+        {
+          "id": "9a5d68dd-52b0-4cc2-bd40-abcf44ac3a30",
+          "type": "Role"
+        },
+        {
+          "id": "242607bd-1d2c-432c-82eb-bdb27baa23ab",
+          "type": "Role"
+        },
+        {
+          "id": "bdd80a03-d9bc-451d-b7c4-ce7c63fe3c8f",
+          "type": "Role"
+        },
+        {
+          "id": "98830695-27a2-44f7-8c18-0c3ebc9698f6",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000002-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "dc50a0fb-09a3-484d-be87-e023b12c6440",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+          "type": "Role"
+        },
+        {
+          "id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

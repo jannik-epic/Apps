@@ -1,0 +1,12 @@
+{
+  "id": "3e2c5205-b1be-42fc-8af7-36783771a1eb",
+  "appId": "0e282aa8-2770-4b6c-8cf8-fac26e9ebe1f",
+  "displayName": "Sherlock",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

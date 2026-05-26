@@ -1,0 +1,42 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+  "id": "aa2b1060-4783-401c-8320-87034ae82df0",
+  "lastModifiedDateTime": "2022-07-27T07:43:29.6974328Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-26T19:04:03.9711722Z",
+  "description": "Windows10_ConfigureTimeZone",
+  "displayName": "WIN_Default_ConfigureTimeZone",
+  "version": 4,
+  "omaSettings": [
+    {
+      "@odata.type": "#microsoft.graph.omaSettingString",
+      "displayName": "Configure Time Zone",
+      "description": null,
+      "omaUri": "./Device/Vendor/MSFT/Policy/Config/TimeLanguageSettings/ConfigureTimeZone",
+      "secretReferenceValueId": "9e3c3837-3799-48c9-a33a-29bbad054d12_aa2b1060-4783-401c-8320-87034ae82df0_d1498cf8-d2b3-4bcf-888f-f68bcb217059",
+      "isEncrypted": true,
+      "value": "****"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('aa2b1060-4783-401c-8320-87034ae82df0')/microsoft.graph.windows10CustomConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "aa2b1060-4783-401c-8320-87034ae82df0_8913e9df-f718-40fc-97d5-c5af3876444f",
+      "source": "direct",
+      "sourceId": "aa2b1060-4783-401c-8320-87034ae82df0",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "8913e9df-f718-40fc-97d5-c5af3876444f"
+      }
+    }
+  ]
+}

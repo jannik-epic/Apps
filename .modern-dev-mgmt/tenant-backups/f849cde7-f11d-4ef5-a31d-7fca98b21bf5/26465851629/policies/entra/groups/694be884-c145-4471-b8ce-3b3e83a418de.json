@@ -1,0 +1,11 @@
+{
+  "id": "694be884-c145-4471-b8ce-3b3e83a418de",
+  "displayName": "MDM-Greenfoot-Uninstall",
+  "description": "Modern Dev Mgmt uninstall assignment group for Greenfoot.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "mdm-greenfoot-uninstall-b84a9e",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-05-13T12:44:40Z"
+}

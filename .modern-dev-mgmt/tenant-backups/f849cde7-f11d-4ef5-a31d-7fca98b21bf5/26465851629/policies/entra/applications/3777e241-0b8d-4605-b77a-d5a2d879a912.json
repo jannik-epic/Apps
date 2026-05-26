@@ -1,0 +1,47 @@
+{
+  "id": "3777e241-0b8d-4605-b77a-d5a2d879a912",
+  "appId": "fb62b715-9135-442b-947f-2148ca589e1e",
+  "displayName": "Test",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2023-11-12T19:26:07Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "http://localhost:8000/auth/oauth/azure-ad/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "http://localhost:8000/auth/oauth/azure-ad/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "024d486e-b451-40bb-833d-3e66d98c5c73",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

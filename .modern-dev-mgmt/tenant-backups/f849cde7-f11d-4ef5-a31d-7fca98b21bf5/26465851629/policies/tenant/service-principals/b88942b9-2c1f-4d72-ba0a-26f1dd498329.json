@@ -1,0 +1,8 @@
+{
+  "id": "b88942b9-2c1f-4d72-ba0a-26f1dd498329",
+  "appId": "7bf610f7-ecaf-43a2-9dbc-33b14314d6fe",
+  "displayName": "Microsoft.SecurityDevOps Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

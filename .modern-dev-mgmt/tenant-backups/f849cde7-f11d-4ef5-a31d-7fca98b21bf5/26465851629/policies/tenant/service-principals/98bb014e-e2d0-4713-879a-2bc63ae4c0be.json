@@ -1,0 +1,12 @@
+{
+  "id": "98bb014e-e2d0-4713-879a-2bc63ae4c0be",
+  "appId": "ecafc2d9-cf1a-49a7-b60f-e44e34a988d2",
+  "displayName": "Azure CosmosDB for PostgreSQL Microsoft EntraId",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "f533e95c-ddfc-4400-8d33-59cf5f7c05de",
+  "appId": "754a4a9b-bba5-48fb-a5e8-e32b538d31fb",
+  "displayName": "intune-agent",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

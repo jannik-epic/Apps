@@ -1,0 +1,12 @@
+{
+  "id": "60b38cfe-0617-4513-a9e4-c9b0f32a1c76",
+  "appId": "4200f961-ba28-4b7b-84f5-090d974ca00c",
+  "displayName": "Azure Billing Benefits application Prod",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

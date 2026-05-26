@@ -1,0 +1,11 @@
+{
+  "id": "c44aabc3-8c84-43f0-8a0f-7b8137d539c4",
+  "displayName": "Exclude_Block_exchangeDownloads_Nonmanaged_devices",
+  "description": "Exclude_Block_exchangeDownloads_Nonmanaged_devices",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "Exclude_Block_exchangeDownloads_Nonmanaged_devices",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-07-26T17:17:08Z"
+}

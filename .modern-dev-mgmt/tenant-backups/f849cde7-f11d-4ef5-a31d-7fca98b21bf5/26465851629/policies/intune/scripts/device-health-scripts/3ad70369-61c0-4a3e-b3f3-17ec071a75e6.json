@@ -1,0 +1,24 @@
+{
+  "id": "3ad70369-61c0-4a3e-b3f3-17ec071a75e6",
+  "publisher": null,
+  "version": "1",
+  "displayName": "0   Template",
+  "description": ">",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2025-07-02T13:54:50.1308258Z",
+  "lastModifiedDateTime": "2025-07-02T13:54:50.1308258Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('3ad70369-61c0-4a3e-b3f3-17ec071a75e6')/assignments",
+  "assignments": []
+}

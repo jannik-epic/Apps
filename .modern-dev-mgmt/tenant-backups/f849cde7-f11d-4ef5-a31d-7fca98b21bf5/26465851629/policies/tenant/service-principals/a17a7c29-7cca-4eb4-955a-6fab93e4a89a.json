@@ -1,0 +1,10 @@
+{
+  "id": "a17a7c29-7cca-4eb4-955a-6fab93e4a89a",
+  "appId": "84bd1e48-f14c-488a-aff1-a1dd54bc7b94",
+  "displayName": "Sessionize.com",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

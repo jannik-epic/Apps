@@ -1,0 +1,11 @@
+{
+  "id": "2541ae95-a477-48d4-8a0a-1a85d2b14db9",
+  "appId": "34bb00bd-a5e6-4dc0-81e5-612cd9d59eb3",
+  "displayName": "INtuneApp",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

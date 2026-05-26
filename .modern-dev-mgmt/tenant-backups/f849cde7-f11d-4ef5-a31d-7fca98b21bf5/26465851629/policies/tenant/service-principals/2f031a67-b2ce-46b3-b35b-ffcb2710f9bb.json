@@ -1,0 +1,8 @@
+{
+  "id": "2f031a67-b2ce-46b3-b35b-ffcb2710f9bb",
+  "appId": "61c50b89-703d-431d-8d80-1e8618748775",
+  "displayName": "Azure Machine Learning OpenAI",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

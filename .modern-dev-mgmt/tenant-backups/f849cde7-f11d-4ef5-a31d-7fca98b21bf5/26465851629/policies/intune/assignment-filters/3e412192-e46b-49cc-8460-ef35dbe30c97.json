@@ -1,0 +1,14 @@
+{
+  "id": "3e412192-e46b-49cc-8460-ef35dbe30c97",
+  "createdDateTime": "2022-07-27T07:59:00.9815423Z",
+  "lastModifiedDateTime": "2022-07-27T07:59:00.9815423Z",
+  "displayName": "old2",
+  "description": "",
+  "platform": "windows10AndLater",
+  "rule": "(device.operatingSystemSKU -eq \"Enterprise\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

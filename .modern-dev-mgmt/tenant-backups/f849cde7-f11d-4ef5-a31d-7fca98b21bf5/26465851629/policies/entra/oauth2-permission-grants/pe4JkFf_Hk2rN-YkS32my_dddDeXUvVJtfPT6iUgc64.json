@@ -1,0 +1,8 @@
+{
+  "clientId": "9009eea5-ff57-4d1e-ab37-e6244b7da6cb",
+  "consentType": "AllPrincipals",
+  "id": "pe4JkFf_Hk2rN-YkS32my_dddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "User.Read ChatMessage.Send Chat.ReadWrite offline_access"
+}

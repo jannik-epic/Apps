@@ -1,0 +1,11 @@
+{
+  "id": "59403a10-6a3a-4615-bf85-60447e01a02f",
+  "displayName": "All_Licenses_E5 - Wave 2-device",
+  "description": "Device group converted from user group: All_Licenses_E5 - Wave 2",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "AllLicensesE5Wave2device",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-07-30T18:48:00Z"
+}

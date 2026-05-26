@@ -1,0 +1,10 @@
+{
+  "id": "7df9c044-01c3-4c56-84ba-51c312616f7b",
+  "appId": "374b2a64-3b6b-436b-934c-b820eacca870",
+  "displayName": "Azure Media Services",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient"
+  ]
+}

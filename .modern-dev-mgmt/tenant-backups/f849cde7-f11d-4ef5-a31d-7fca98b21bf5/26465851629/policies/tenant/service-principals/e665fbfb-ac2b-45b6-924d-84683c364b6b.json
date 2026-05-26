@@ -1,0 +1,12 @@
+{
+  "id": "e665fbfb-ac2b-45b6-924d-84683c364b6b",
+  "appId": "e807d0e2-91da-40d6-8cee-e33c91a0b051",
+  "displayName": "PROD Microsoft Defender For Cloud Athena",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

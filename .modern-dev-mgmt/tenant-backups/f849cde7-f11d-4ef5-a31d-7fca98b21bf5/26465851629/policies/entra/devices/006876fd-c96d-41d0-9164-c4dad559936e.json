@@ -1,0 +1,13 @@
+{
+  "id": "006876fd-c96d-41d0-9164-c4dad559936e",
+  "displayName": "T71720422239288",
+  "deviceId": "9746c5be-6a1c-4d8c-bfb7-8f824df41846",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.22621.525",
+  "trustType": "AzureAd",
+  "profileType": "RegisteredDevice",
+  "isCompliant": false,
+  "isManaged": false,
+  "registrationDateTime": "2024-01-01T11:16:09Z"
+}

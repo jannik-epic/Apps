@@ -1,0 +1,35 @@
+{
+  "id": "AATP_KerberosDelegations",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2123722",
+  "controlCategory": "Identity",
+  "title": "Modify unsecure Kerberos delegations to prevent impersonation",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 67,
+  "remediation": "1. Review this security control list of exposed entities to discover which of your non-domain controller entities are configured for unsecure Kerberos delegation. <br> 2. Take appropriate action on those at-risk users, such as removing their unconstrained attribute or changing it to a more secure constrained delegation. <br> To achieve a full score, you must remediate all exposed entities.",
+  "remediationImpact": "A user or an application that relies on these types of unsecure kerberos configurations may stop functioning.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

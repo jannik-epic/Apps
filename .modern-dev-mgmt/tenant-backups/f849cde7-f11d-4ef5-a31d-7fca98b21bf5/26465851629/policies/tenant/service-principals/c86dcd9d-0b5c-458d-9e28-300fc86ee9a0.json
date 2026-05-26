@@ -1,0 +1,11 @@
+{
+  "id": "c86dcd9d-0b5c-458d-9e28-300fc86ee9a0",
+  "appId": "bf9fc203-c1ff-4fd4-878b-323642e462ec",
+  "displayName": "Jarvis Transaction Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

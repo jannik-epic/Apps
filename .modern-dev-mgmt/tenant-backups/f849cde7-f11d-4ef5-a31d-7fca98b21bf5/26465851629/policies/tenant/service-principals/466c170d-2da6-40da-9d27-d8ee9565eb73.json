@@ -1,0 +1,8 @@
+{
+  "id": "466c170d-2da6-40da-9d27-d8ee9565eb73",
+  "appId": "366cbfa5-46b3-47fb-9d70-55fb923b4833",
+  "displayName": "Azure Spring Cloud Service Runtime Auth",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

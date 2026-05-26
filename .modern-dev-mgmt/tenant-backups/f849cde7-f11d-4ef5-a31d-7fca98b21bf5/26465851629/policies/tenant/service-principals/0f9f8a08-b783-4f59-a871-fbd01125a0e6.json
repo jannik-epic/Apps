@@ -1,0 +1,12 @@
+{
+  "id": "0f9f8a08-b783-4f59-a871-fbd01125a0e6",
+  "appId": "d0ef82bb-244a-4458-9eb4-24a9f093f2c4",
+  "displayName": "Defender for Cloud - Private Link Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

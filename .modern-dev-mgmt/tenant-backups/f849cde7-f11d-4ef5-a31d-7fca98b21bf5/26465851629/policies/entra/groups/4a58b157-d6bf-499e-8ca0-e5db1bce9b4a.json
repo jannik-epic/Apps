@@ -1,0 +1,11 @@
+{
+  "id": "4a58b157-d6bf-499e-8ca0-e5db1bce9b4a",
+  "displayName": "Test_DistributionGroup",
+  "description": "Test_DistributionGroup",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "Test_DG",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-10-27T18:40:31Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "c1f0acf3-2f4a-46a1-8757-517511a1c352",
+  "appId": "69f824fb-034b-40e0-a027-498a9ecda85e",
+  "displayName": "Streamlit",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

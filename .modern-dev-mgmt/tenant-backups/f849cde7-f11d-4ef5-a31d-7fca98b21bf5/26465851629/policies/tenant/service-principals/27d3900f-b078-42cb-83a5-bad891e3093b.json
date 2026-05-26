@@ -1,0 +1,13 @@
+{
+  "id": "27d3900f-b078-42cb-83a5-bad891e3093b",
+  "appId": "3c31d730-a768-4286-a972-43e9b83601cd",
+  "displayName": "Demeter.WorkerRole",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient",
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

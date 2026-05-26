@@ -1,0 +1,13 @@
+{
+  "id": "9229b116-e380-40cc-ab52-e92360b53c49",
+  "displayName": "All_VMs",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "c797be16-7",
+  "groupTypes": [
+    "DynamicMembership"
+  ],
+  "visibility": null,
+  "createdDateTime": "2024-05-12T15:43:14Z"
+}

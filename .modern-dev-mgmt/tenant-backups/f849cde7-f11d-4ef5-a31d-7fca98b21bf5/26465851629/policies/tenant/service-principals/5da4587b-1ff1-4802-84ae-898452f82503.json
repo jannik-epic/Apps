@@ -1,0 +1,12 @@
+{
+  "id": "5da4587b-1ff1-4802-84ae-898452f82503",
+  "appId": "c476eb34-4c94-43bc-97fc-94ede0534615",
+  "displayName": "Azure Update Manager",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

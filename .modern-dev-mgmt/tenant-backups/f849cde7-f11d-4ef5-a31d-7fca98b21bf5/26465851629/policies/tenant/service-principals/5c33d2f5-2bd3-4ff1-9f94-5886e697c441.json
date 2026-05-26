@@ -1,0 +1,11 @@
+{
+  "id": "5c33d2f5-2bd3-4ff1-9f94-5886e697c441",
+  "appId": "7b7531ad-5926-4f2d-8a1d-38495ad33e17",
+  "displayName": "Azure Advanced Threat Protection",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

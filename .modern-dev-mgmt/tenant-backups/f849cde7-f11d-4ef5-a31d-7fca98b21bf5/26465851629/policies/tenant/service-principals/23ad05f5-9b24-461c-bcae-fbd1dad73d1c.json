@@ -1,0 +1,12 @@
+{
+  "id": "23ad05f5-9b24-461c-bcae-fbd1dad73d1c",
+  "appId": "d66e9e8e-53a4-420c-866d-5bb39aaea675",
+  "displayName": "networkcopilotRP",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

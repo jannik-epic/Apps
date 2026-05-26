@@ -1,0 +1,12 @@
+{
+  "id": "ca5ef855-766b-4f66-b5e9-f28578173640",
+  "appId": "080765e3-9336-4461-b934-310acccb907d",
+  "displayName": "Defender for Storage Advanced Threat Protection Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

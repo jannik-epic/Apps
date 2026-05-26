@@ -1,0 +1,12 @@
+{
+  "id": "2a4ad736-2db4-400b-bcae-be677f9862e2",
+  "appId": "132709ba-1394-4eb6-a565-e62a83ca14f9",
+  "displayName": "RedisEnterprise Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

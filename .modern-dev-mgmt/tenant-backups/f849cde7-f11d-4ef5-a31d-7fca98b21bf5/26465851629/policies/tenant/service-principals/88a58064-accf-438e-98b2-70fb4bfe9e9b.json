@@ -1,0 +1,12 @@
+{
+  "id": "88a58064-accf-438e-98b2-70fb4bfe9e9b",
+  "appId": "0858ddce-8fca-4479-929b-4504feeed95e",
+  "displayName": "Microsoft Defender for Cloud Apps MIP Server",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

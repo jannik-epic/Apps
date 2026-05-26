@@ -1,0 +1,14 @@
+{
+  "id": "07cfc2b0-ee54-46ff-a6c7-2dc684a6c285",
+  "displayName": "guzk",
+  "description": null,
+  "isAssigned": false,
+  "isMigratingToConfigurationPolicy": null,
+  "lastModifiedDateTime": "2023-08-13T09:51:50.7887916Z",
+  "templateId": "034ccd46-190c-4afc-adf1-ad7cc11262eb",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('07cfc2b0-ee54-46ff-a6c7-2dc684a6c285')/assignments",
+  "assignments": []
+}

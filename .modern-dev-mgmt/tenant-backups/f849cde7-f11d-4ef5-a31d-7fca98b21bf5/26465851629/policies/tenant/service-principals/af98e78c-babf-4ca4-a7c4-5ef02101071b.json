@@ -1,0 +1,10 @@
+{
+  "id": "af98e78c-babf-4ca4-a7c4-5ef02101071b",
+  "appId": "80ccca67-54bd-44ab-8625-4b79c4dc7775",
+  "displayName": "Microsoft 365 Security and Compliance Center",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

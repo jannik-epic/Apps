@@ -1,0 +1,10 @@
+{
+  "id": "e6b3e2c0-6c3a-483a-80e5-00309b469fbc",
+  "appId": "79e5908a-dcae-429c-bd7c-585b13284db2",
+  "displayName": "BigBrother-Security-Dashboard",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

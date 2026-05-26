@@ -1,0 +1,10 @@
+{
+  "id": "d8c98a78-edc6-4701-bacd-44b6bbff2e51",
+  "appId": "e9b154d0-7658-433b-bb25-6b8e0a8a7c59",
+  "displayName": "Outlook Lite",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

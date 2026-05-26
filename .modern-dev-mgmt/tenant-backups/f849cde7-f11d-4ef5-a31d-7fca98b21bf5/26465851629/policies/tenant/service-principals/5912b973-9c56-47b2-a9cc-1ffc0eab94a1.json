@@ -1,0 +1,11 @@
+{
+  "id": "5912b973-9c56-47b2-a9cc-1ffc0eab94a1",
+  "appId": "7c33bfcb-8d33-48d6-8e60-dc6404003489",
+  "displayName": "Network Watcher",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

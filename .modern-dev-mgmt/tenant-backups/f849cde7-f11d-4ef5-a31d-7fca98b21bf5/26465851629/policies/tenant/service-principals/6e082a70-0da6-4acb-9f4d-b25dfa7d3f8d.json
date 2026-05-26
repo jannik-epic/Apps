@@ -1,0 +1,11 @@
+{
+  "id": "6e082a70-0da6-4acb-9f4d-b25dfa7d3f8d",
+  "appId": "557c67cf-c916-4293-8373-d584996f60ae",
+  "displayName": "Configuration Manager Microservice",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

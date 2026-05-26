@@ -1,0 +1,10 @@
+{
+  "id": "1c4210af-c020-4f23-b469-e6aa7745399c",
+  "appId": "b672062f-e269-46d2-9cde-a2f165b9fe29",
+  "displayName": "msteams-bot-msgraph-azbot-local",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "01740cee-11b4-4688-8632-e01f0e86fd4b",
+  "createdDateTime": "2022-07-27T07:59:57.698553Z",
+  "lastModifiedDateTime": "2022-07-27T07:59:57.698553Z",
+  "displayName": "old9",
+  "description": "All devcies with enrollment profileStandard Enrollment",
+  "platform": "windows10AndLater",
+  "rule": "(device.enrollmentProfileName -eq \"Standard Enrollment\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "1bd214c2-9f58-438f-81df-babc49d2f6cc",
+  "appId": "dbc36ae1-c097-4df9-8d94-343c3d091a76",
+  "displayName": "Service Encryption",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

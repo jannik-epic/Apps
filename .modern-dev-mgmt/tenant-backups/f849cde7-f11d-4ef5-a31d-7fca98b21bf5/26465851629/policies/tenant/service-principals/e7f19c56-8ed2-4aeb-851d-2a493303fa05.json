@@ -1,0 +1,11 @@
+{
+  "id": "e7f19c56-8ed2-4aeb-851d-2a493303fa05",
+  "appId": "c7ddd9b4-5172-4e28-bd29-1e0792947d18",
+  "displayName": "Microsoft Mixed Reality",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "12601d1b-9679-4630-a4b4-3b15f44a3c19",
+  "displayName": "WIN-DRIVERUPDATE-PREPILOT",
+  "description": "",
+  "approvalType": "automatic",
+  "deviceReporting": 0,
+  "newUpdates": 0,
+  "deploymentDeferralInDays": 1,
+  "createdDateTime": "2023-07-23T08:34:40.9472224Z",
+  "lastModifiedDateTime": "2023-07-23T08:34:40.9472224Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "inventorySyncStatus": null,
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/windowsDriverUpdateProfiles('12601d1b-9679-4630-a4b4-3b15f44a3c19')/assignments",
+  "assignments": []
+}

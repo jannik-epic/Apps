@@ -1,0 +1,8 @@
+{
+  "clientId": "e6b3e2c0-6c3a-483a-80e5-00309b469fbc",
+  "consentType": "Principal",
+  "id": "wOKz5jpsOkiA5QAwm0afvPdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+  "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": " User.Read.All Directory.Read.All Policy.Read.All RoleManagement.Read.All Application.Read.All Organization.Read.All UserAuthenticationMethod.Read.All Policy.Read.ConditionalAccess AuditLog.Read.All openid profile offline_access SecurityEvents.Read.All"
+}

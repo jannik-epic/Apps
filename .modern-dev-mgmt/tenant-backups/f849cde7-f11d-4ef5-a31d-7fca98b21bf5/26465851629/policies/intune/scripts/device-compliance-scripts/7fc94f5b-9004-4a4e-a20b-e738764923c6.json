@@ -1,0 +1,31 @@
+{
+  "id": "7fc94f5b-9004-4a4e-a20b-e738764923c6",
+  "publisher": "",
+  "version": "1",
+  "displayName": "WIN-CustomCopmlianceScript-AvStorage",
+  "description": "",
+  "detectionScriptContent": null,
+  "createdDateTime": "2023-08-11T09:31:35.2609375Z",
+  "lastModifiedDateTime": "2023-08-11T09:31:35.2609375Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": false,
+  "platform": "windows10",
+  "roleScopeTagIds": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceComplianceScripts('7fc94f5b-9004-4a4e-a20b-e738764923c6')/assignments",
+  "assignments": [
+    {
+      "id": "7fc94f5b-9004-4a4e-a20b-e738764923c6:adadadad-808e-44e2-905a-0b7873a8a531",
+      "runRemediationScript": false,
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      },
+      "runSchedule": {
+        "@odata.type": "#microsoft.graph.deviceHealthScriptHourlySchedule",
+        "interval": 8
+      }
+    }
+  ]
+}

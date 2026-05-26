@@ -1,0 +1,11 @@
+{
+  "id": "8875ac81-204b-42c0-9e97-40a6a1c05da6",
+  "appId": "8f41dc7c-542c-4bdd-8eb3-e60543f607ca",
+  "displayName": "Microsoft Device Directory Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableRequestingTenantedPassthroughTokens",
+    "disableAcceptingTenantedPassthroughTokens"
+  ]
+}

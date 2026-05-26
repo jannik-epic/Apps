@@ -1,0 +1,35 @@
+{
+  "id": "AATP_ADCSCertificateTemplateArbitraryAppPolicies",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2296922",
+  "controlCategory": "Identity",
+  "title": "Prevent Certificate Enrollment with arbitrary Application Policies (ESC15)",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "1. Identify the vulnerable certificate templates:<br>-Remove enrollment permission for unprivileged users.<br>-Disable the “Supply in the request” option.<br>2. Identify the AD CS servers which are vulnerable to CVE-2024-49019 and apply the relevant patch.",
+  "remediationImpact": "Vulnerable certificate template allows non-privileged users to issue a certificate that can be used for authenticating as high-privileged user.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

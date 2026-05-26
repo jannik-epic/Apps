@@ -1,0 +1,11 @@
+{
+  "id": "87be4521-7a7c-48a6-9951-28d13be9dd6c",
+  "appId": "4c4f550b-42b2-4a16-93f9-fdb9e01bb6ed",
+  "displayName": "Targeted Messaging Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableRequestingTenantedPassthroughTokens",
+    "disableAcceptingTenantedPassthroughTokens"
+  ]
+}

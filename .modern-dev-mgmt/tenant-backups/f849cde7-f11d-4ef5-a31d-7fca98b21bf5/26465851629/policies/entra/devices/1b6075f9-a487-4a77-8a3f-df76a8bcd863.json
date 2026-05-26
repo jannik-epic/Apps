@@ -1,0 +1,13 @@
+{
+  "id": "1b6075f9-a487-4a77-8a3f-df76a8bcd863",
+  "displayName": "CPC79UP87C2L0G8",
+  "deviceId": "1c5783b2-d3b9-4c0c-8a25-5f9b41116a25",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.22631.4751",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2025-03-02T08:01:48Z"
+}

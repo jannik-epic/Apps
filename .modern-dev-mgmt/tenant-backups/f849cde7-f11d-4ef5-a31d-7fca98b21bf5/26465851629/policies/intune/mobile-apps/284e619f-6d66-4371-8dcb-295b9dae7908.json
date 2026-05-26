@@ -1,0 +1,52 @@
+{
+  "@odata.type": "#microsoft.graph.androidManagedStoreApp",
+  "id": "284e619f-6d66-4371-8dcb-295b9dae7908",
+  "displayName": "Fully Kiosk Browser & Lockdown",
+  "description": "Fullscreen Kiosk Browser and App Launcher for Kiosk Mode & Digital Signages",
+  "publisher": "Fully Factory Kiosk Solutions",
+  "largeIcon": null,
+  "createdDateTime": "2022-07-29T06:13:38Z",
+  "lastModifiedDateTime": "2024-04-07T10:23:36Z",
+  "isFeatured": false,
+  "privacyInformationUrl": null,
+  "informationUrl": "https://play.google.com/store/apps/details?id=de.ozerov.fully",
+  "owner": null,
+  "developer": null,
+  "notes": null,
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "packageId": "de.ozerov.fully",
+  "appIdentifier": "de.ozerov.fully",
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 0,
+  "appStoreUrl": "https://play.google.com/store/apps/details?id=de.ozerov.fully&hl=en-IE",
+  "isPrivate": false,
+  "isSystemApp": false,
+  "supportsOemConfig": false,
+  "appTracks": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('284e619f-6d66-4371-8dcb-295b9dae7908')/microsoft.graph.androidManagedStoreApp/assignments",
+  "assignments": [
+    {
+      "id": "7ed2de04-c912-46b2-b770-51e0aff9e540_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "7ed2de04-c912-46b2-b770-51e0aff9e540"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.androidManagedStoreAppAssignmentSettings",
+        "androidManagedStoreAppTrackIds": [],
+        "autoUpdateMode": "default"
+      }
+    }
+  ]
+}

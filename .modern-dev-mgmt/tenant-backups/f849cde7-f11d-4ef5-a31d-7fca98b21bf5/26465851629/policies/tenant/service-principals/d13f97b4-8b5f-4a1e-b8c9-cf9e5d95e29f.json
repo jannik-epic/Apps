@@ -1,0 +1,10 @@
+{
+  "id": "d13f97b4-8b5f-4a1e-b8c9-cf9e5d95e29f",
+  "appId": "c833bc56-111b-4cc8-b778-188ea8ea9249",
+  "displayName": "Agent Tool - Web SPA",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

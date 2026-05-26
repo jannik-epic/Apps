@@ -1,0 +1,11 @@
+{
+  "id": "4ed84458-8a0d-41b4-9e25-39786e370b67",
+  "appId": "cfa8b339-82a2-471a-a3c9-0fc0be7a4093",
+  "displayName": "Azure Key Vault",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

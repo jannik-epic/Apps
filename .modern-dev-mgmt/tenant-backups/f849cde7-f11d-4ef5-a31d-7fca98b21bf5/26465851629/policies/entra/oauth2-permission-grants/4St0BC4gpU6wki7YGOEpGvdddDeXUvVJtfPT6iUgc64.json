@@ -1,0 +1,8 @@
+{
+  "clientId": "04742be1-202e-4ea5-b092-2ed818e1291a",
+  "consentType": "AllPrincipals",
+  "id": "4St0BC4gpU6wki7YGOEpGvdddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "profile Calendars.Read.Shared openid Calendars.Read Mail.Read Files.ReadWrite Mail.Read.Shared Files.ReadWrite.All MailboxSettings.Read User.Read"
+}

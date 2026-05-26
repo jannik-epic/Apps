@@ -1,0 +1,11 @@
+{
+  "id": "775e4031-772b-4723-babf-781fb2d66331",
+  "displayName": "MDM-1Password CLI-Required",
+  "description": "Modern Dev Mgmt required assignment group for 1Password CLI.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "mdm-1password-cli-required-096b2a",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-05-13T12:59:36Z"
+}

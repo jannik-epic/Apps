@@ -1,0 +1,10 @@
+{
+  "id": "90a916d2-57bc-4804-a6df-0e7511e449f6",
+  "appId": "fc68d9e5-1f76-45ef-99aa-214805418498",
+  "displayName": "Azure AD Identity Protection",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient"
+  ]
+}

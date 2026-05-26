@@ -1,0 +1,35 @@
+{
+  "id": "mdo_bulkthreshold",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/antispam?tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Apps",
+  "title": "Set the email bulk complaint level (BCL) threshold to be 6 or lower",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 128,
+  "remediation": "<p>Ensure that all users have an assigned inbound anti-spam policy with the &lsquo;<strong>Bulk email spam action</strong>&rsquo; option enabled and the &lsquo;<strong>Bulk email threshold</strong>&rsquo; option set to 6 or lower, by either updating your existing policies or creating new ones.</p>",
+  "remediationImpact": "Unknown",
+  "service": "MDO",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

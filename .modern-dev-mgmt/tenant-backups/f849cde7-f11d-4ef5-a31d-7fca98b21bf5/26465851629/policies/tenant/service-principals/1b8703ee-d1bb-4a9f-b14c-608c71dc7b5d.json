@@ -1,0 +1,11 @@
+{
+  "id": "1b8703ee-d1bb-4a9f-b14c-608c71dc7b5d",
+  "appId": "9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7",
+  "displayName": "Bing",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "1654cbf4-02af-4aa0-8be5-3280b28fcbb9",
+  "appId": "944f0bd1-117b-4b1c-af26-804ed95e767e",
+  "displayName": "Media Analysis and Transformation Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

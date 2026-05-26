@@ -1,0 +1,11 @@
+{
+  "id": "7a2f2fb0-b8f5-4a35-8091-be1dcea320d4",
+  "appId": "f8f7a2aa-e116-4ba6-8aea-ca162cfa310d",
+  "displayName": "Microsoft Graph Connectors Core",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

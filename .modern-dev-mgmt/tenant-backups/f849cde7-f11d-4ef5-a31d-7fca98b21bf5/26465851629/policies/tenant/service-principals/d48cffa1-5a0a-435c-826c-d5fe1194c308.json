@@ -1,0 +1,12 @@
+{
+  "id": "d48cffa1-5a0a-435c-826c-d5fe1194c308",
+  "appId": "af7c72b5-1a61-4bf3-958b-4e51e1ddfbe8",
+  "displayName": "MRMapsProd",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

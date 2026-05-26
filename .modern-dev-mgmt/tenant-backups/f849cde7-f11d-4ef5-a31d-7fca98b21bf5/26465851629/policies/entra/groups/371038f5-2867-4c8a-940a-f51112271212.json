@@ -1,0 +1,11 @@
+{
+  "id": "371038f5-2867-4c8a-940a-f51112271212",
+  "displayName": "Windows_All_Devices - Wave 3",
+  "description": "Wave 3 deployment group for Windows_All_Devices",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "wave-3-1755940412269",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-08-23T09:13:32Z"
+}

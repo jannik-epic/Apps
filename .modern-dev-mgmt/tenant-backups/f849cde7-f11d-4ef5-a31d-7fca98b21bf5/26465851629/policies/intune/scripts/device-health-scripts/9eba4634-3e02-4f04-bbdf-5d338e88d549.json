@@ -1,0 +1,24 @@
+{
+  "id": "9eba4634-3e02-4f04-bbdf-5d338e88d549",
+  "publisher": "Jannik Reinhard",
+  "version": "1",
+  "displayName": "WIN_Rem_CheckPendingReboot",
+  "description": "",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2022-07-27T08:00:09.537451Z",
+  "lastModifiedDateTime": "2022-07-27T08:01:56.6810756Z",
+  "runAsAccount": "user",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('9eba4634-3e02-4f04-bbdf-5d338e88d549')/assignments",
+  "assignments": []
+}

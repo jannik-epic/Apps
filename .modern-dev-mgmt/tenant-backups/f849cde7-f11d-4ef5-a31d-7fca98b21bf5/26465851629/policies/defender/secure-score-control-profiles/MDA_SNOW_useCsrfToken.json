@@ -1,0 +1,38 @@
+{
+  "id": "MDA_SNOW_useCsrfToken",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/security/reference/anti-csrf-token.html",
+  "controlCategory": "Identity",
+  "title": "Enable anti-CSRF token",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 6.0,
+  "rank": 10,
+  "remediation": "<p>Set the following property &apos;glide.security.use_csrf_token&apos; as true.</p> <p>For setting ServiceNow properties, see <a href='https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/reference-pages/task/t_AddAPropertyUsingSysPropsList.html'>Add system property documentation</a>.</p>",
+  "remediationImpact": "This remediation enables an extra validation step before the instance user submits a write request to the instance. Every write request contains a CSRF token (i.e a validation/CSRF ID tied to the user session). When the user session expires, the secure token expires with it.",
+  "service": "MDA_SNOW",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "e10a941a-59a1-4761-8110-64cb39595b83",
+  "appId": "3cf468b4-12a0-43cd-aa3f-3f39210d14cf",
+  "displayName": "Quota Service Core - ARM Client",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

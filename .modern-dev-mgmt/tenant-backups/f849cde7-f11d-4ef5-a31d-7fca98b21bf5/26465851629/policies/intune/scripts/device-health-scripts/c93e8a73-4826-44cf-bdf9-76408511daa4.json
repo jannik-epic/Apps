@@ -1,0 +1,24 @@
+{
+  "id": "c93e8a73-4826-44cf-bdf9-76408511daa4",
+  "publisher": "Jannik Reinhard",
+  "version": "1",
+  "displayName": "WIN_Det_GetManufacture",
+  "description": "",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2022-08-27T11:07:05.4609201Z",
+  "lastModifiedDateTime": "2022-08-27T11:07:05.4609201Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('c93e8a73-4826-44cf-bdf9-76408511daa4')/assignments",
+  "assignments": []
+}

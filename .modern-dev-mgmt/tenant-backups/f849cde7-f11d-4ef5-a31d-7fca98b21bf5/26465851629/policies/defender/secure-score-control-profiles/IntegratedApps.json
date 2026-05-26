@@ -1,0 +1,38 @@
+{
+  "id": "IntegratedApps",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2119526",
+  "controlCategory": "Identity",
+  "title": "Ensure user consent to apps accessing company data on their behalf is not allowed",
+  "deprecated": false,
+  "implementationCost": "Low",
+  "lastModifiedDateTime": null,
+  "maxScore": 4.0,
+  "rank": 35,
+  "remediation": "<ol><li>Go to Microsoft Entra ID &gt; Enterprise applications &gt; Consent and permissions. <a href=\"https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/UserSettings\">Go to Consent and permissions</a>&nbsp;</li><li>Select &ldquo;Allow user consent for apps from verified publishers, for selected permissions (Recommended)&ldquo; to follow Microsoft&rsquo;s best practice. <a href=\"https://docs.microsoft.com/azure/active-directory/manage-apps/consent-and-permissions-overview\">Learn more</a>&nbsp;</li><li>Configure the low-impact permissions that users are allowed to consent to. Click &ldquo;Select permissions to classify as low impact&rdquo;. <a href=\"https://docs.microsoft.com/azure/active-directory/manage-apps/configure-permission-classifications?tabs=azure-portal\">Learn more</a>&nbsp;</li><li>Optionally, you can help your users to consent to apps that require admin consent by setting up the admin consent workflow. This step is recommended but not required to get full score. <a href=\"https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow\">Learn how to configure the admin consent workflow</a>&nbsp;</li></ol>",
+  "remediationImpact": "When the consent policy is triggered, users cannot consent to unreliable apps. However, if the admin consent request is configured, it gives admins a secure way to review apps before granting access.",
+  "service": "AzureAD",
+  "threats": [
+    "Data Exfiltration",
+    "Data Spillage"
+  ],
+  "tier": "Defense In Depth",
+  "userImpact": "Moderate",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

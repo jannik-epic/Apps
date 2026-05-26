@@ -1,0 +1,10 @@
+{
+  "id": "00dedd2d-38f8-40a2-a741-53a0c2228560",
+  "appId": "8bea2130-23a1-4c09-acfb-637a9fb7c157",
+  "displayName": "M365 Pillar Diagnostics Service API",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

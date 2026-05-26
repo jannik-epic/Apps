@@ -1,0 +1,11 @@
+{
+  "id": "9e3a1eab-7150-47fb-b7f1-80e59c491ae6",
+  "appId": "80369ed6-5f11-4dd9-bef3-692475845e77",
+  "displayName": "Microsoft.EventHubs",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

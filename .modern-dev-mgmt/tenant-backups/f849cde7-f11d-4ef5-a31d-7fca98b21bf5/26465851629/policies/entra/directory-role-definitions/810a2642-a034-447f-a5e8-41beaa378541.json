@@ -1,0 +1,40 @@
+{
+  "id": "810a2642-a034-447f-a5e8-41beaa378541",
+  "description": "Manage all aspects of the Yammer service.",
+  "displayName": "Yammer Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "810a2642-a034-447f-a5e8-41beaa378541",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/groups/hiddenMembers/read",
+        "microsoft.directory/groups.unified/assignedLabels/update",
+        "microsoft.directory/groups.unified/basic/update",
+        "microsoft.directory/groups.unified/create",
+        "microsoft.directory/groups.unified/delete",
+        "microsoft.directory/groups.unified/members/update",
+        "microsoft.directory/groups.unified/owners/update",
+        "microsoft.directory/groups.unified/restore",
+        "microsoft.office365.messageCenter/messages/read",
+        "microsoft.office365.network/performance/allProperties/read",
+        "microsoft.office365.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.usageReports/allEntities/allProperties/read",
+        "microsoft.office365.webPortal/allEntities/standard/read",
+        "microsoft.office365.yammer/allEntities/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('810a2642-a034-447f-a5e8-41beaa378541')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

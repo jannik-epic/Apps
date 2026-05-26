@@ -1,0 +1,38 @@
+{
+  "id": "MDA_SNOW_authRequiredJson2",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/security/reference/basic-auth-jsonv2-requests.html",
+  "controlCategory": "Identity",
+  "title": "Enable enforcing JSONv2 requests with basic authorization",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 10,
+  "remediation": "<p>Set the following property &apos;glide.basicauth.required.jsonv2&apos; as true.</p> <p>For setting ServiceNow properties, see <a href='https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/reference-pages/task/t_AddAPropertyUsingSysPropsList.html'>Add system property documentation</a>.</p>",
+  "remediationImpact": "<p>1. It performs authentication while retrieving data from tables/pages in the form of JSON data on the instance.<br>2. It restricts any guest users who are currently accessing this data.<br>3. Create an account for a user who needs access to this content, with the necessary access control permissions.</p>",
+  "service": "MDA_SNOW",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

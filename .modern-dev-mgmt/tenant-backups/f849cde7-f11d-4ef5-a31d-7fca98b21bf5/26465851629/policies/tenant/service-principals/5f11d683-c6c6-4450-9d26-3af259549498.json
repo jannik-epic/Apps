@@ -1,0 +1,8 @@
+{
+  "id": "5f11d683-c6c6-4450-9d26-3af259549498",
+  "appId": "cb43afba-eb6b-4cef-bf00-758b6c233beb",
+  "displayName": "Azure OSSRDBMS MySQL Flexible Server BYOK",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "7a30da5b-2326-4412-9a67-6b4b7c9ac877",
+  "appId": "507bc9da-c4e2-40cb-96a7-ac90df92685c",
+  "displayName": "Office 365 Reports",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

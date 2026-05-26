@@ -1,0 +1,30 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+  "id": "40246e11-8c3e-46ad-8f70-a33e828feabf",
+  "lastModifiedDateTime": "2022-07-27T19:26:44.7494209Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-26T19:05:32.1875283Z",
+  "description": "",
+  "displayName": "z_WIN_Test_AzureAd_AllowPasswordreset",
+  "version": 3,
+  "omaSettings": [
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "displayName": "ResetPasswordLink",
+      "description": null,
+      "omaUri": "./Vendor/MSFT/Policy/Config/Authentication/AllowAadPasswordReset",
+      "secretReferenceValueId": null,
+      "isEncrypted": false,
+      "value": 1,
+      "isReadOnly": false
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('40246e11-8c3e-46ad-8f70-a33e828feabf')/microsoft.graph.windows10CustomConfiguration/assignments",
+  "assignments": []
+}

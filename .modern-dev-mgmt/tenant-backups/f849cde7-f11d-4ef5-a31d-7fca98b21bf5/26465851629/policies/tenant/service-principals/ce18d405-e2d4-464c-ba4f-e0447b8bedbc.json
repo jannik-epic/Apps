@@ -1,0 +1,11 @@
+{
+  "id": "ce18d405-e2d4-464c-ba4f-e0447b8bedbc",
+  "appId": "1e3e4475-288f-4018-a376-df66fd7fac5f",
+  "displayName": "NetworkTrafficAnalyticsService",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

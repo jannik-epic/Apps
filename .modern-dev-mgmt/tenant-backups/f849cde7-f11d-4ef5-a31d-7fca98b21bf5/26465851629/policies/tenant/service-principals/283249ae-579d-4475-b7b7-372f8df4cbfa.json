@@ -1,0 +1,12 @@
+{
+  "id": "283249ae-579d-4475-b7b7-372f8df4cbfa",
+  "appId": "c4bd54e4-c607-435b-8a5a-0d61edff7554",
+  "displayName": "Intune Mobile Application Management Client",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

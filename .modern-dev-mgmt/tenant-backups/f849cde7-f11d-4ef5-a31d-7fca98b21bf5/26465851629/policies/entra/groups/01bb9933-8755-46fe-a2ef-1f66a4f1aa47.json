@@ -1,0 +1,11 @@
+{
+  "id": "01bb9933-8755-46fe-a2ef-1f66a4f1aa47",
+  "displayName": "Google Chrome_OnDemand",
+  "description": "On-demand group for Google Chrome",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "GoogleChromeOnDemand",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-10-24T08:51:02Z"
+}

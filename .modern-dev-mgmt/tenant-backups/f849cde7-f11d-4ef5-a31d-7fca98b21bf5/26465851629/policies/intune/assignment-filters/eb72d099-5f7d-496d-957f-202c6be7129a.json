@@ -1,0 +1,14 @@
+{
+  "id": "eb72d099-5f7d-496d-957f-202c6be7129a",
+  "createdDateTime": "2022-07-27T07:58:50.9794951Z",
+  "lastModifiedDateTime": "2022-07-27T07:58:50.9794951Z",
+  "displayName": "old1",
+  "description": "All devcies with enrollment profileKioskPc",
+  "platform": "windows10AndLater",
+  "rule": "(device.enrollmentProfileName -eq \"KioskPc\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

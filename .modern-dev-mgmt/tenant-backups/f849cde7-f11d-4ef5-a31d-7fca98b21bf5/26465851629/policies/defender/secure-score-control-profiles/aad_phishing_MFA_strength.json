@@ -1,0 +1,39 @@
+{
+  "id": "aad_phishing_MFA_strength",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy",
+  "controlCategory": "Identity",
+  "title": "Ensure 'Phishing-resistant MFA strength' is required for Administrators",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 10,
+  "remediation": "<p>To create a phishing-resistant MFA CA policy for users in administrative roles:</p> <ol> <li>Navigate to the <strong>Microsoft Entra ID admin center</strong> <a href=\"https://entra.microsoft.com\">https://entra.microsoft.com</a>.</li> <li>Click to expand <strong>Microsoft Entra ID</strong> &gt; <strong>Applications</strong> select <strong>Enterprise Applications</strong>.</li> <li>Under <strong>Security</strong>, select <strong>Conditional Access</strong>.</li> <li>Click <strong>New policy</strong>.</li> <li>Go to <strong>Users</strong> &gt; <strong>Users and groups</strong> &gt; <strong>Include</strong> &gt; Select<strong> users and groups</strong> &gt; <strong>Directory roles</strong></li> <li>Add at least the <strong>Directory roles</strong> listed after these steps.</li> <li>Select<strong> Cloud apps or actions</strong> &gt;<strong> All cloud apps</strong> (and don't exclude any apps).</li> <li><strong>Grant</strong> &gt; <strong>Grant Access</strong> with <strong>Require authentication strength (Preview)</strong>: <strong>Phishing-resistant MFA</strong></li> <li>Click '<strong>Select</strong>'</li> <li>Set <strong>Enable policy</strong> to <strong>Report-only</strong> and click <strong>Create</strong></li> </ol> <p>At minimum these directory roles should be included for the policy:</p> <ul> <li>Application administrator</li> <li>Authentication administrator</li> <li>Billing administrator</li> <li>Cloud application administrator</li> <li>Conditional Access administrator</li> <li>Exchange administrator</li> <li>Global administrator</li> <li>Global reader</li> <li>Helpdesk administrator</li> <li>Password administrator</li> <li>Privileged authentication administrator</li> <li>Privileged role administrator</li> <li>Security administrator</li> <li>SharePoint administrator</li> <li>User administrator</li> </ul> <p><strong>WARNING</strong>: Ensure administrators are pre-registered with strong authentication before enforcing the policy. After which the policy must be set to &ldquo;On&rdquo;.</p>",
+  "remediationImpact": "If administrators aren't pre-registered for a strong authentication method prior to a conditional access policy is created then a condition could occur where a user can't register for strong authentication because they don't meet the conditional access policy requirements, and therefore are prevented from signing in.",
+  "service": "AzureAD",
+  "threats": [
+    "Data Exfiltration",
+    "Password Cracking",
+    "Account breach"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

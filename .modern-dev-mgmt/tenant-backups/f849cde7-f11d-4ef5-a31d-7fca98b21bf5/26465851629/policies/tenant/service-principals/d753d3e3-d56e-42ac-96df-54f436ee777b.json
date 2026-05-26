@@ -1,0 +1,12 @@
+{
+  "id": "d753d3e3-d56e-42ac-96df-54f436ee777b",
+  "appId": "4730902d-4371-4615-ba76-e99be524bd44",
+  "displayName": "AKS Trust domain",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}
