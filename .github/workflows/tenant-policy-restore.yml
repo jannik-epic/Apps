@@ -152,6 +152,7 @@ jobs:
           $endpointMap = @{}
           $singletonMap = @{}
           $assignViaAssignMap = @{}
+          $restorableMap = @{}
           foreach ($spec in $restoreSpecs) {
             $base = if ($spec.graphBase -eq 'beta') { $GraphBetaBase } else { $GraphBase }
             $path = $spec.readPath
@@ -161,6 +162,7 @@ jobs:
             $cleanPath = $path.Split('?')[0]
             $endpointMap[$spec.policyType] = "$base/$cleanPath"
             if ($spec.singleton) { $singletonMap[$spec.policyType] = $true }
+            $restorableMap[$spec.policyType] = if ($spec.PSObject.Properties.Match('restorable').Count -gt 0) { [bool]$spec.restorable } else { $true }
             # Default to using {id}/assign for write-back of assignments — matches
             # softwareCentral's default. Specific types can override per-spec.
             $assignViaAssignMap[$spec.policyType] = $true
@@ -264,6 +266,12 @@ jobs:
             if (-not $endpoint) {
               $logEntry.status = 'skipped'
               $logEntry.reason = "PolicyType '$policyType' is not yet supported by the restore engine."
+              $skipped.Add($logEntry) | Out-Null
+              continue
+            }
+            if ($restorableMap.ContainsKey($policyType) -and -not $restorableMap[$policyType]) {
+              $logEntry.status = 'skipped'
+              $logEntry.reason = "PolicyType '$policyType' is backup-only and is not supported by the restore engine."
               $skipped.Add($logEntry) | Out-Null
               continue
             }
