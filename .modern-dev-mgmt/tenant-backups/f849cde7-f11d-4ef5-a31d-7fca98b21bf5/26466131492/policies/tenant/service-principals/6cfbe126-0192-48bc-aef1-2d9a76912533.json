@@ -1,0 +1,11 @@
+{
+  "id": "6cfbe126-0192-48bc-aef1-2d9a76912533",
+  "appId": "c39c9bac-9d1f-4dfb-aa29-27f6365e5cb7",
+  "displayName": "Azure Advisor",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

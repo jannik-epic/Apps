@@ -1,0 +1,24 @@
+{
+  "createdDateTime": "2022-07-26T18:59:29.2166666Z",
+  "displayName": "WIN_Default_EventlogSize",
+  "description": "",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "policyConfigurationIngestionType": "builtIn",
+  "id": "200ccbb3-f92d-4c79-b1b4-3b5316ae08a8",
+  "lastModifiedDateTime": "2022-07-27T07:44:47.450695Z",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/groupPolicyConfigurations('200ccbb3-f92d-4c79-b1b4-3b5316ae08a8')/assignments",
+  "assignments": [
+    {
+      "id": "200ccbb3-f92d-4c79-b1b4-3b5316ae08a8_8913e9df-f718-40fc-97d5-c5af3876444f",
+      "lastModifiedDateTime": "2022-07-27T07:44:47.7472734Z",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "8913e9df-f718-40fc-97d5-c5af3876444f"
+      }
+    }
+  ]
+}

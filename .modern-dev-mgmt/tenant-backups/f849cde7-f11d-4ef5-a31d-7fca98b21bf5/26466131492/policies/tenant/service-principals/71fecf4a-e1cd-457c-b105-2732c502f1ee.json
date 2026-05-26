@@ -1,0 +1,12 @@
+{
+  "id": "71fecf4a-e1cd-457c-b105-2732c502f1ee",
+  "appId": "5dc48733-b5df-475c-a49b-fa307ef00853",
+  "displayName": "Internet resources with Global Secure Access",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

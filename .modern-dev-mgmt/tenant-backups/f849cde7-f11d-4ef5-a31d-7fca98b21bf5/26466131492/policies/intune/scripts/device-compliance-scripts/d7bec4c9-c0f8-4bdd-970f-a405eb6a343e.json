@@ -1,0 +1,17 @@
+{
+  "id": "d7bec4c9-c0f8-4bdd-970f-a405eb6a343e",
+  "publisher": "",
+  "version": "1",
+  "displayName": "MMS-Demo",
+  "description": "",
+  "detectionScriptContent": null,
+  "createdDateTime": "2023-11-01T17:34:52.8639382Z",
+  "lastModifiedDateTime": "2023-11-01T17:34:52.8639382Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": false,
+  "platform": "windows10",
+  "roleScopeTagIds": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceComplianceScripts('d7bec4c9-c0f8-4bdd-970f-a405eb6a343e')/assignments",
+  "assignments": []
+}

@@ -1,0 +1,8 @@
+{
+  "clientId": "4b3b368c-4c49-4b53-aea7-57af57d354df",
+  "consentType": "Principal",
+  "id": "jDY7S0lMU0uup1evV9NU3_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+  "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": " User.Read openid profile email offline_access DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All Directory.Read.All"
+}

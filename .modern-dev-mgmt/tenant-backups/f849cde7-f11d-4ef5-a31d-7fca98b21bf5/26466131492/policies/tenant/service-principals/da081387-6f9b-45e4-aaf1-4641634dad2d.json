@@ -1,0 +1,8 @@
+{
+  "id": "da081387-6f9b-45e4-aaf1-4641634dad2d",
+  "appId": "e933bd07-d2ee-4f1d-933c-3752b819567b",
+  "displayName": "Azure Monitor Control Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

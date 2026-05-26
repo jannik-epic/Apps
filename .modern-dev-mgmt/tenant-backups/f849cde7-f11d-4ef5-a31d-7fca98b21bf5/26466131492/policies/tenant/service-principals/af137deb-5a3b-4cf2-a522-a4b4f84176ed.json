@@ -1,0 +1,11 @@
+{
+  "id": "af137deb-5a3b-4cf2-a522-a4b4f84176ed",
+  "appId": "c161e42e-d4df-4a3d-9b42-e7a3c31f59d4",
+  "displayName": "Microsoft Intune API",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

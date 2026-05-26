@@ -1,0 +1,35 @@
+{
+  "id": "AATP_UnsecureAccount",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2123364",
+  "controlCategory": "Identity",
+  "title": "Resolve unsecure account attributes",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 67,
+  "remediation": "1. Review this security control list of exposed entities that has unsecure account attributes.<br> 2. Take appropriate action on those entities by removing their unsecure settings. <br> To achieve a full score, you must remediate all exposed entities.",
+  "remediationImpact": "A user or an application that relies on these types of unsecure account configurations may stop functioning.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

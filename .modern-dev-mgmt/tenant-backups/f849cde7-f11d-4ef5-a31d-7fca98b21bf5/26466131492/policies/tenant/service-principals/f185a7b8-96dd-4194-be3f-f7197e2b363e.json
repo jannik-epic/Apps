@@ -1,0 +1,12 @@
+{
+  "id": "f185a7b8-96dd-4194-be3f-f7197e2b363e",
+  "appId": "3471ca03-f150-4759-88e6-0bfc97daf723",
+  "displayName": "OneCert-AzureDns-Prod",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

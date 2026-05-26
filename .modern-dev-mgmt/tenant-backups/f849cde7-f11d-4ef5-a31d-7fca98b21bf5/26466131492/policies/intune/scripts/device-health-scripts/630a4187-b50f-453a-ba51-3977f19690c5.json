@@ -1,0 +1,24 @@
+{
+  "id": "630a4187-b50f-453a-ba51-3977f19690c5",
+  "publisher": "Jannik Reinhard",
+  "version": "1",
+  "displayName": "WIN_Rem_MakeSpeedtest",
+  "description": "",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2022-07-27T08:00:11.8413808Z",
+  "lastModifiedDateTime": "2022-07-27T08:00:48.8241515Z",
+  "runAsAccount": "user",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('630a4187-b50f-453a-ba51-3977f19690c5')/assignments",
+  "assignments": []
+}

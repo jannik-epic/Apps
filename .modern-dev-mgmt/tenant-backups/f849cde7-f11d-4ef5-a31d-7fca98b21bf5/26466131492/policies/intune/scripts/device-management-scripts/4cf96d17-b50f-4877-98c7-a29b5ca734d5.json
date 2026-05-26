@@ -1,0 +1,17 @@
+{
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "id": "4cf96d17-b50f-4877-98c7-a29b5ca734d5",
+  "displayName": "WIN_Default_Script_MapNetworkDrive",
+  "description": "",
+  "scriptContent": null,
+  "createdDateTime": "2022-07-27T08:04:32.6912909Z",
+  "lastModifiedDateTime": "2023-07-30T14:21:51.0806302Z",
+  "runAsAccount": "user",
+  "fileName": "Set-MapNetworkDrive.ps1",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceManagementScripts('4cf96d17-b50f-4877-98c7-a29b5ca734d5')/assignments",
+  "assignments": []
+}

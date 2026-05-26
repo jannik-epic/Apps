@@ -1,0 +1,36 @@
+{
+  "id": "0180d2c0-c247-4173-aa2a-3a52e8911c27",
+  "appId": "bff9c460-ab16-4e9e-8e08-a18e1756d86e",
+  "displayName": "Terraform-Github",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-04-13T08:05:25Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

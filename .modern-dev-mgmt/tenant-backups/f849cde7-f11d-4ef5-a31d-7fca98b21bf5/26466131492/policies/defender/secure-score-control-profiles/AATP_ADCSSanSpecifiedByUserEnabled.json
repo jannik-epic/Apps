@@ -1,0 +1,35 @@
+{
+  "id": "AATP_ADCSSanSpecifiedByUserEnabled",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://aka.ms/mdiesc6",
+  "controlCategory": "Identity",
+  "title": "Edit vulnerable Certificate Authority setting (ESC6)",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "To disable “user specifying SAN” setting, execute the following command and then restart the certsvc service:\r\ncertutil -setreg policy\\EditFlags -EDITF_ATTRIBUTESUBJECTALTNAME2\r\nnet stop certsvc & net start certsvc",
+  "remediationImpact": "When this setting is activated on the Certificate Authority server and an unprivileged user can enroll a certificate template (which is available by default), such users can enroll a certificate valid for any user, including administrators, resulting in full domain compromise.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "high",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

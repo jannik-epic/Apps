@@ -1,0 +1,14 @@
+{
+  "id": "52d22793-54a3-4788-b150-476d3bc6f4b1",
+  "displayName": "W10-DefenderBaseline",
+  "description": null,
+  "isAssigned": false,
+  "isMigratingToConfigurationPolicy": null,
+  "lastModifiedDateTime": "2022-07-27T07:52:37.9707994Z",
+  "templateId": "2209e067-9c8c-462e-9981-5a8c79165dcc",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('52d22793-54a3-4788-b150-476d3bc6f4b1')/assignments",
+  "assignments": []
+}

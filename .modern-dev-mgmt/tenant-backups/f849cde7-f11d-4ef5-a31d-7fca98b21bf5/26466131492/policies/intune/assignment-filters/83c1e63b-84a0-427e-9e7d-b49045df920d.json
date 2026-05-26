@@ -1,0 +1,14 @@
+{
+  "id": "83c1e63b-84a0-427e-9e7d-b49045df920d",
+  "createdDateTime": "2022-07-27T07:57:18.8185893Z",
+  "lastModifiedDateTime": "2022-07-27T07:57:18.8185893Z",
+  "displayName": "Filter_AllWindows10",
+  "description": "All Windows 10 devices",
+  "platform": "windows10AndLater",
+  "rule": "(device.osVersion -startsWith \"10.0.1\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

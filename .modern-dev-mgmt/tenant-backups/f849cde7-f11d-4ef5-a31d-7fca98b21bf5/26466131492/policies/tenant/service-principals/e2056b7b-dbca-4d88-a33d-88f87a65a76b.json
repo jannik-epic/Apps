@@ -1,0 +1,8 @@
+{
+  "id": "e2056b7b-dbca-4d88-a33d-88f87a65a76b",
+  "appId": "fd14a986-6fe4-409a-883e-cdec1009cd54",
+  "displayName": "Intune Grouping and Targeting Client Prod",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "32f1f51e-a455-4b65-8dc0-0e62e4d0915a",
+  "publisher": "Jannik Reinhard",
+  "version": "1",
+  "displayName": "WIN_Det_GetSmartphoneReplacementTool",
+  "description": "",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2022-09-10T09:03:22.2077199Z",
+  "lastModifiedDateTime": "2022-09-10T09:03:22.2077199Z",
+  "runAsAccount": "user",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('32f1f51e-a455-4b65-8dc0-0e62e4d0915a')/assignments",
+  "assignments": []
+}

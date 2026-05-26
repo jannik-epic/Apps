@@ -1,0 +1,59 @@
+{
+  "id": "0e84a3a6-73d5-4067-a641-545b5dfd6614",
+  "appId": "47586cea-8ef1-4188-96c7-a0abfb8f7c83",
+  "displayName": "hrapp-prod-hrapp",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-10-31T13:01:37Z",
+  "identifierUris": [
+    "api://psthrappwebswn001.z1.web.core.windows.net/47586cea-8ef1-4188-96c7-a0abfb8f7c83"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": [
+      "https://psthrappwebswn001.z1.web.core.windows.net/",
+      "http://localhost:8080/admin-portal/",
+      "https://p-app-hrapp-swn-001.azurewebsites.net/.auth/login/aad/callback",
+      "https://psthrappwebswn001.z1.web.core.windows.net/auth/callback",
+      "https://psthrappwebswn001.z1.web.core.windows.net/mitarbeiter/",
+      "https://psthrappwebswn001.z1.web.core.windows.net/admin-portal/",
+      "https://p-app-hrapp-swn-001.azurewebsites.net/api/auth/callback",
+      "http://localhost:8080/mitarbeiter/"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+          "type": "Scope"
+        },
+        {
+          "id": "14dad69e-099b-42c9-810b-d002981feec1",
+          "type": "Scope"
+        },
+        {
+          "id": "b633e1c5-b582-4048-a93e-9f11b44c7e96",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "27460883-1df1-4691-b032-3b79643e5e63",
+  "description": "View product feedback, survey results, and reports to find training and communication opportunities.",
+  "displayName": "User Experience Success Manager",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "27460883-1df1-4691-b032-3b79643e5e63",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.commerce.billing/purchases/standard/read",
+        "microsoft.office365.messageCenter/messages/read",
+        "microsoft.office365.network/performance/allProperties/read",
+        "microsoft.office365.organizationalMessages/allEntities/allProperties/read",
+        "microsoft.office365.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.usageReports/allEntities/standard/read",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('27460883-1df1-4691-b032-3b79643e5e63')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": []
+}

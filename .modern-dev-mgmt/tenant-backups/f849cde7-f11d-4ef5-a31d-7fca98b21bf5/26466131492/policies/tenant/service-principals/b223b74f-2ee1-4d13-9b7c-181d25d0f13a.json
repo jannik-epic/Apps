@@ -1,0 +1,8 @@
+{
+  "id": "b223b74f-2ee1-4d13-9b7c-181d25d0f13a",
+  "appId": "9cb77803-d937-493e-9a3b-4b49de3f5a74",
+  "displayName": "Microsoft Intune Service Discovery",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

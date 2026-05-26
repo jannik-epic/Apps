@@ -1,0 +1,8 @@
+{
+  "id": "45c4a626-853e-4ec8-8baf-b3f7bde6f3ff",
+  "appId": "cdad765c-f191-43ba-b9f5-7aef392f811d",
+  "displayName": "Azure SignalR Service Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

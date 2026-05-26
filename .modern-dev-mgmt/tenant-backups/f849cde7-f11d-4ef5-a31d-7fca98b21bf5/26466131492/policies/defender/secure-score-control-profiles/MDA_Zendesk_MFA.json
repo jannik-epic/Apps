@@ -1,0 +1,39 @@
+{
+  "id": "MDA_Zendesk_MFA",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://support.zendesk.com/hc/en-us/articles/4408826974874",
+  "controlCategory": "Identity",
+  "title": "Enable and adopt two-factor authentication (2FA)",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 10,
+  "remediation": "<p><strong>To require two-factor authentication</strong></p> <ol> <li dir=\"ltr\">In&nbsp;<a href=\"https://support.zendesk.com/hc/en-us/articles/4581766374554#topic_hfg_dyz_1hb\" target=\"_blank\" rel=\"noopener\">Admin Center</a>, click&nbsp;<strong>Account</strong>&nbsp;in the sidebar, then select&nbsp;<strong>Security &gt; Advanced</strong>.</li> <li>On the&nbsp;<strong>Authentication</strong>&nbsp;tab, select&nbsp;<strong>Require two-factor authentication</strong>.</li> <li>Click&nbsp;<strong>Save</strong>.</li> </ol>",
+  "remediationImpact": "<p>Team members who haven't set up 2FA will be required to do so next time they sign in to Zendesk. Password-based authentication to the Zendesk API is disabled when 2FA is required. <p>Before enabling two-factor authentication, make sure you understand the following important considerations:</p> <ul> <li>You can use two-factor authentication on the Zendesk website or with the Zendesk iOS or Android apps. However, the Zendesk REST API doesn't currently support two-factor authentication. See&nbsp;<a href=\"https://developer.zendesk.com/documentation/ticketing/using-the-zendesk-api/using-the-api-with-2-factor-authentication-enabled\" target=\"_blank\" rel=\"noopener\">Using the API when 2-factor authentication is enabled</a>&nbsp;in the Developers guide.</li> <li>Requiring two-factor authentication disables password-based authentication to the Zendesk API.</li> </ul>",
+  "service": "MDA_Zendesk",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration",
+    "Password Cracking"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

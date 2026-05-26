@@ -1,0 +1,13 @@
+{
+  "id": "7ed2de04-c912-46b2-b770-51e0aff9e540",
+  "displayName": "Android_All_KioskDevices",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "3fb9c761-7",
+  "groupTypes": [
+    "DynamicMembership"
+  ],
+  "visibility": null,
+  "createdDateTime": "2022-07-27T07:10:42Z"
+}

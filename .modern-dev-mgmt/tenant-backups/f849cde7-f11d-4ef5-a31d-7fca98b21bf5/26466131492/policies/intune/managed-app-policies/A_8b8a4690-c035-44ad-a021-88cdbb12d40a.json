@@ -1,0 +1,38 @@
+{
+  "@odata.type": "#microsoft.graph.targetedManagedAppConfiguration",
+  "displayName": "Android_Kiosk_Edge",
+  "description": "",
+  "createdDateTime": "2022-07-27T08:10:52.0680418Z",
+  "lastModifiedDateTime": "2022-07-27T08:21:56Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "id": "A_8b8a4690-c035-44ad-a021-88cdbb12d40a",
+  "version": "\"7701f517-0000-0d00-0000-62e0f5a40000\"",
+  "deployedAppCount": 1,
+  "isAssigned": true,
+  "targetedAppManagementLevels": "unspecified",
+  "appGroupType": "selectedPublicApps",
+  "customSettings": [
+    {
+      "name": "com.microsoft.intune.mam.managedbrowser.enableKioskMode",
+      "value": "true"
+    },
+    {
+      "name": "com.microsoft.intune.mam.managedbrowser.AppProxyRedirection",
+      "value": "false"
+    },
+    {
+      "name": "com.microsoft.intune.mam.managedbrowser.homepage",
+      "value": "http://192.168.1.2:8123/lovelace/0"
+    },
+    {
+      "name": "com.microsoft.intune.mam.managedbrowser.bookmarks",
+      "value": "Homeassistant|http://192.168.1.2:8123/lovelace/0"
+    },
+    {
+      "name": "com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock",
+      "value": "true"
+    }
+  ]
+}

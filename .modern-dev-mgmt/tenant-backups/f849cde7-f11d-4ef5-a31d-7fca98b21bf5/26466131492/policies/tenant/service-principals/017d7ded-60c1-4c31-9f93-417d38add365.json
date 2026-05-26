@@ -1,0 +1,11 @@
+{
+  "id": "017d7ded-60c1-4c31-9f93-417d38add365",
+  "appId": "8ae6a0b1-a07f-4ec9-927a-afb8d39da81c",
+  "displayName": "Microsoft Device Management EMM API",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

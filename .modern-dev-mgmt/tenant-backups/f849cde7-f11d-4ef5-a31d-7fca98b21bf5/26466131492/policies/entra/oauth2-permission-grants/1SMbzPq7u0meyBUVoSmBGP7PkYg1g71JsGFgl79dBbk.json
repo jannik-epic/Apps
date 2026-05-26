@@ -1,0 +1,8 @@
+{
+  "clientId": "cc1b23d5-bbfa-49bb-9ec8-1515a1298118",
+  "consentType": "AllPrincipals",
+  "id": "1SMbzPq7u0meyBUVoSmBGP7PkYg1g71JsGFgl79dBbk",
+  "principalId": null,
+  "resourceId": "8891cffe-8335-49bd-b061-6097bf5d05b9",
+  "scope": "Sites.FullControl.All ExternalConnection.ReadWrite.All"
+}

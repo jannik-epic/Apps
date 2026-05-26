@@ -1,0 +1,11 @@
+{
+  "id": "f392845f-3bb9-494f-a74b-6138d7a1fc52",
+  "appId": "57084ef3-d413-4087-a28f-f6f3b1ad7786",
+  "displayName": "Branch Connect Web Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

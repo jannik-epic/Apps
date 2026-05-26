@@ -1,0 +1,38 @@
+{
+  "id": "UserRiskPolicy",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView",
+  "controlCategory": "Identity",
+  "title": "Enable Microsoft Entra ID Identity Protection user risk policies",
+  "deprecated": false,
+  "implementationCost": "Moderate",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 59,
+  "remediation": "<ol><li>To implement this recommendation, you need Microsoft Entra ID Premium P2 licenses. Check what Microsoft Entra ID license you have under &ldquo;Prerequisites&rdquo; in Microsoft Secure Score or <a href=\"https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview\">See your license type under \"Basic information\" in the Microsoft Entra ID Overview</a>&nbsp;</li><li>If you&rsquo;ve invested in Microsoft Entra ID Premium P2 licenses, you can create a Conditional Access policy from scratch or by using a template. Note: Classic Conditional Access policies aren&rsquo;t scored. Use the recommended steps to receive credit. <a href=\"https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user\">Follow these steps to create a Conditional Access policy from scratch or by using a template</a>&nbsp;</li><li>If you&rsquo;re not using Microsoft Entra ID Premium P2 licenses, we recommend you set the status for this action to &ldquo;Risk accepted&rdquo;.&nbsp;</li></ol>",
+  "remediationImpact": "When the policy triggers, access to the account will either be blocked or the user would be required to use multifactor authentication and change their password. Users who haven't registered MFA on their account will be blocked from accessing it. If account access is blocked, an admin would need to recover the account. Thus, it is important to configure the MFA registration policy for all users who are a part of the user risk policy to ensure that they have registered MFA.",
+  "service": "AzureAD",
+  "threats": [
+    "Password Cracking",
+    "Account Breach"
+  ],
+  "tier": "Advanced",
+  "userImpact": "Moderate",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

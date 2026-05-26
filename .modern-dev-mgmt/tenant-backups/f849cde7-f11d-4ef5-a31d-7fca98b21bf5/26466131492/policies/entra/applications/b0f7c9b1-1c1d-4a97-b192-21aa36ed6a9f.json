@@ -1,0 +1,33 @@
+{
+  "id": "b0f7c9b1-1c1d-4a97-b192-21aa36ed6a9f",
+  "appId": "86359da4-f677-4c01-9a37-644af2642f73",
+  "displayName": "testwebappjrai",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2024-11-03T08:07:07Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": "https://testwebappjrai.azurewebsites.net",
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://testwebappjrai.azurewebsites.net/.auth/login/aad/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://testwebappjrai.azurewebsites.net/.auth/login/aad/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dc822252-a345-4492-89ac-171b7c529a18",
+  "appId": "a85cf173-4192-42f8-81fa-777a763e6e2c",
+  "displayName": "Azure Virtual Desktop Client",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens",
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "AATP_Sensor",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2117505",
+  "controlCategory": "Identity",
+  "title": "Install Defender for Identity Sensor on all Domain Controllers",
+  "deprecated": false,
+  "implementationCost": "high",
+  "lastModifiedDateTime": null,
+  "maxScore": 4.0,
+  "rank": 60,
+  "remediation": "Go to the <a href='https://security.microsoft.com/settings/identities?tabid=onboarding' target='_blank'>activation page</a> in Settings, where you can view the discovered servers recommended for onboarding to the Defender for Identity new sensor. To see the sensors already installed in your environment, go to the <a href='https://security.microsoft.com/settings/identities?tabid=sensor' target='_blank'>sensor page</a>. <br/> You will be scored as a percentage of your deployment progress.",
+  "remediationImpact": "Unknown",
+  "service": "Azure ATP",
+  "threats": [
+    "Account Breach",
+    "Elevation of Privilege",
+    "Malicious Insider"
+  ],
+  "tier": "Core",
+  "userImpact": "low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

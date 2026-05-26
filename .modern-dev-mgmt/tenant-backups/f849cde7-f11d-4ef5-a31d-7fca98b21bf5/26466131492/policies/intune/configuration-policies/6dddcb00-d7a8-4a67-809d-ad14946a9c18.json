@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2025-11-26T07:19:25.3249405Z",
+  "creationSource": null,
+  "description": "Generated PolicyAgent Description",
+  "lastModifiedDateTime": "2025-11-26T07:19:25.3249405Z",
+  "name": "Generated PolicyAgent Policy",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm",
+  "id": "6dddcb00-d7a8-4a67-809d-ad14946a9c18",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('6dddcb00-d7a8-4a67-809d-ad14946a9c18')/assignments",
+  "assignments": []
+}

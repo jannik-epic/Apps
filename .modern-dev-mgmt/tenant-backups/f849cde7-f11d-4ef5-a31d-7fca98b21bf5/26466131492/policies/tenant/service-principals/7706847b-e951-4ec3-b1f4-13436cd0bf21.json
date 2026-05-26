@@ -1,0 +1,11 @@
+{
+  "id": "7706847b-e951-4ec3-b1f4-13436cd0bf21",
+  "appId": "8d605dfc-1a04-4da6-9be2-8426724af3f3",
+  "displayName": "Power Platform Authorization Service PROD",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

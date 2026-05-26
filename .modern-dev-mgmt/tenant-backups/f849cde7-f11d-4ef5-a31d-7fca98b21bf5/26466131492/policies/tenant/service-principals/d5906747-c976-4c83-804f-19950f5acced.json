@@ -1,0 +1,11 @@
+{
+  "id": "d5906747-c976-4c83-804f-19950f5acced",
+  "appId": "c4de86e3-e322-4889-a781-968c76b6b325",
+  "displayName": "Medeina Service PPE",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "6ea2a765-4ee6-4b4a-8690-d960a486d391",
+  "appId": "a3c2c8ab-1afb-40d4-894b-3221cb54cd57",
+  "displayName": "MacManagement Intune Automation",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-09-27T08:06:22Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "78145de6-330d-4800-a6ce-494ff2d33d07",
+          "type": "Role"
+        },
+        {
+          "id": "5ac13192-7ace-4fcf-b828-1a26f28068ee",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

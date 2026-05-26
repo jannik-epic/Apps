@@ -1,0 +1,19 @@
+[
+  {
+    "id": "7ed2de04-c912-46b2-b770-51e0aff9e540_1_0",
+    "intent": "required",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "7ed2de04-c912-46b2-b770-51e0aff9e540"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.androidManagedStoreAppAssignmentSettings",
+      "androidManagedStoreAppTrackIds": [],
+      "autoUpdateMode": "default"
+    }
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "clientId": "cc1b23d5-bbfa-49bb-9ec8-1515a1298118",
+  "consentType": "AllPrincipals",
+  "id": "1SMbzPq7u0meyBUVoSmBGPdddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "SensitivityLabel.Read TeamsTab.Create AppCatalog.Read.All AppCatalog.Submit Channel.ReadBasic.All EduAssignments.ReadBasic EduRoster.ReadBasic Files.Read.All Files.ReadWrite.All Group.Read.All People.Read People.Read.All Presence.Read.All TeamsAppInstallation.ReadWriteSelfForTeam User.Read User.ReadBasic.All Tasks.ReadWrite Group-Conversation.ReadWrite.All Team.ReadBasic.All Channel.Create TeamsAppInstallation.ReadWriteForTeam Sites.Read.All PrinterShare.ReadBasic.All PrintJob.Create PrintJob.ReadBasic FileStorageContainer.Selected Calendars.Read Files.Read GroupMember.Read.All InformationProtectionPolicy.Read ChatMember.Read"
+}

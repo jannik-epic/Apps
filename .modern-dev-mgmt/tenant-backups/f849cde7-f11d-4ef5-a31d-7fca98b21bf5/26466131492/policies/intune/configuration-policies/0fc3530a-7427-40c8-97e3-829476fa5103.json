@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2023-11-16T17:40:41.7509997Z",
+  "creationSource": null,
+  "description": "Turn off notifications evenings and weekends",
+  "lastModifiedDateTime": "2023-11-16T17:40:41.7509997Z",
+  "name": "Quiet Time - Evenings Weekends",
+  "platforms": "android,iOS",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 3,
+  "technologies": "exchangeOnline",
+  "id": "0fc3530a-7427-40c8-97e3-829476fa5103",
+  "templateReference": {
+    "templateId": "2479e1bb-612c-4b98-96b0-157f334143dd_1",
+    "templateFamily": "appQuietTime",
+    "templateDisplayName": "Days of the week",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('0fc3530a-7427-40c8-97e3-829476fa5103')/assignments",
+  "assignments": []
+}

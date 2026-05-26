@@ -1,0 +1,8 @@
+{
+  "id": "f16f7abd-6320-4443-982f-cdd37a607ebb",
+  "appId": "8edd93e1-2103-40b4-bd70-6e34e586362d",
+  "displayName": "Windows Azure Security Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,34 @@
+{
+  "createdDateTime": "2023-11-11T16:32:15.1289889Z",
+  "creationSource": null,
+  "description": "Enable and Rename account",
+  "lastModifiedDateTime": "2023-11-11T16:32:15.1289889Z",
+  "name": "Enable Administrator Account",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 2,
+  "technologies": "mdm",
+  "id": "d81d8fa4-0634-4507-ad1d-e2f221df7734",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('d81d8fa4-0634-4507-ad1d-e2f221df7734')/assignments",
+  "assignments": [
+    {
+      "id": "d81d8fa4-0634-4507-ad1d-e2f221df7734_adadadad-808e-44e2-905a-0b7873a8a531",
+      "source": "direct",
+      "sourceId": "d81d8fa4-0634-4507-ad1d-e2f221df7734",
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "enforceSignatureCheck": true,
+  "runAs32Bit": false,
+  "id": "5bf7ac13-247a-4221-a8d3-b368cf36e549",
+  "displayName": "Removes Bing News AppX package and stops Cortana running in search box",
+  "description": "PowerShell Device Script",
+  "scriptContent": null,
+  "createdDateTime": "2023-11-14T17:43:01.1326395Z",
+  "lastModifiedDateTime": "2023-11-14T17:43:01.1326395Z",
+  "runAsAccount": "system",
+  "fileName": "platform-script.ps1",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceManagementScripts('5bf7ac13-247a-4221-a8d3-b368cf36e549')/assignments",
+  "assignments": []
+}

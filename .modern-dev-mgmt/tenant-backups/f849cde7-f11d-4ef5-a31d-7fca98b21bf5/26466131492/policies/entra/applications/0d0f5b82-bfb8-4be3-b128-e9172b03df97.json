@@ -1,0 +1,67 @@
+{
+  "id": "0d0f5b82-bfb8-4be3-b128-e9172b03df97",
+  "appId": "e9d7a6b9-6ef9-447e-af96-f375825182be",
+  "displayName": "DeviceTroubleshooter",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2023-07-22T13:13:47Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://intdevtroub.azurewebsites.net/auth/redirect"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://intdevtroub.azurewebsites.net/auth/redirect",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "9a5d68dd-52b0-4cc2-bd40-abcf44ac3a30",
+          "type": "Role"
+        },
+        {
+          "id": "06b708a9-e830-4db3-a914-8e69da51d44f",
+          "type": "Role"
+        },
+        {
+          "id": "78145de6-330d-4800-a6ce-494ff2d33d07",
+          "type": "Role"
+        },
+        {
+          "id": "9241abd9-d0e6-425a-bd4f-47ba86e767a4",
+          "type": "Role"
+        },
+        {
+          "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+          "type": "Role"
+        },
+        {
+          "id": "bdfbf15f-ee85-4955-8675-146e8e5296b5",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

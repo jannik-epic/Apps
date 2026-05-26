@@ -1,0 +1,11 @@
+{
+  "id": "1eaf6be9-d8c2-4c63-8af0-d7df00eb6bea",
+  "appId": "cbff9545-769a-4b41-b76e-fbb069e8727e",
+  "displayName": "Microsoft Defender for Cloud Pricing Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

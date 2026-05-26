@@ -1,0 +1,11 @@
+{
+  "id": "e742040a-3753-49c5-b08c-6bc9dff1d074",
+  "appId": "b28ec8e1-950e-4bd0-b3d0-c1e93074b88b",
+  "displayName": "Azure Gallery RP",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

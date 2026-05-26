@@ -1,0 +1,12 @@
+{
+  "id": "d037e163-798a-4144-8c41-dd741391394e",
+  "appId": "6e2cffc9-52e7-4bfa-8155-be5c1dacd81c",
+  "displayName": "Microsoft Defender for Cloud Defender Kubernetes Agent",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

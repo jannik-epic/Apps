@@ -1,0 +1,35 @@
+{
+  "id": "AATP_StaleAccounts",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2335115",
+  "controlCategory": "Identity",
+  "title": "Remove stale Active Directory accounts",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "1. Review the list of exposed entities to discover which of your AD user accounts have not been used for an extended period. <br>2. If the account is no longer required, disable or delete it to eliminate unnecessary exposure.<br>To achieve a full score, you must remediate all exposed entities.",
+  "remediationImpact": "Stale accounts that remain active increase the organization’s exposure to potential compromise. If attackers gain access to one of these accounts, administrators may not detect unusual activity in time. Removing or disabling these accounts ensures that only active, monitored identities are maintained in the environment.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "medium",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

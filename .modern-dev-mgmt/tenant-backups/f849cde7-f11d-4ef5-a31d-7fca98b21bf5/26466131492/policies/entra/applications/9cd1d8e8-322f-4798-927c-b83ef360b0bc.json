@@ -1,0 +1,33 @@
+{
+  "id": "9cd1d8e8-322f-4798-927c-b83ef360b0bc",
+  "appId": "0cb9beec-207e-4288-8080-d8f61d344c39",
+  "displayName": "intunebotjr",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2024-01-29T09:10:07Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": "https://intunebotjr.azurewebsites.net",
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://intunebotjr.azurewebsites.net/.auth/login/aad/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://intunebotjr.azurewebsites.net/.auth/login/aad/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "e5449d28-bf08-4b4b-94d9-647b93f055c4",
+  "appId": "8f348934-64be-4bb2-bc16-c54c96789f43",
+  "displayName": "EDU Assignments",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

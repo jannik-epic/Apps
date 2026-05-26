@@ -1,0 +1,8 @@
+{
+  "clientId": "c3d6acf0-6c7b-402a-bf30-7a2026af33ac",
+  "consentType": "AllPrincipals",
+  "id": "8KzWw3tsKkC_MHogJq8zrPdddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "Directory.Read.All Mail.Send Sites.FullControl.All Sites.Read.All User.Read"
+}

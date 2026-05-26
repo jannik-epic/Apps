@@ -1,0 +1,14 @@
+{
+  "id": "0bf57c9c-0384-45c4-8ca7-ac7d9c61e3aa",
+  "createdDateTime": "2022-10-22T21:49:31.1821108Z",
+  "lastModifiedDateTime": "2022-10-22T21:49:31.2290032Z",
+  "displayName": "old10",
+  "description": "All Microsoft365 devices",
+  "platform": "windows10AndLater",
+  "rule": "(device.model -contains \"Cloud PC\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

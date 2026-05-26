@@ -1,0 +1,45 @@
+{
+  "id": "f4cbb6dc-9d59-4eb0-8732-7966efeda215",
+  "appId": "b672062f-e269-46d2-9cde-a2f165b9fe29",
+  "displayName": "msteams-bot-msgraph-azbot-local",
+  "signInAudience": "AzureADMultipleOrgs",
+  "createdDateTime": "2024-04-24T09:02:37Z",
+  "identifierUris": [
+    "api://kf9kb7d1-3978.euw.devtunnels.ms/botid-b672062f-e269-46d2-9cde-a2f165b9fe29"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://token.botframework.com/.auth/web/redirect"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://token.botframework.com/.auth/web/redirect",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

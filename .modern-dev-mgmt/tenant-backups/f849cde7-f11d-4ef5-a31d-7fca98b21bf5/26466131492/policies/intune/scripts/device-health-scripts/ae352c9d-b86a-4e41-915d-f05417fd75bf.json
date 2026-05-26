@@ -1,0 +1,24 @@
+{
+  "id": "ae352c9d-b86a-4e41-915d-f05417fd75bf",
+  "publisher": null,
+  "version": "1",
+  "displayName": "Add Winget App",
+  "description": ">",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2025-07-02T11:02:00.8935352Z",
+  "lastModifiedDateTime": "2025-07-02T11:02:00.8935352Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('ae352c9d-b86a-4e41-915d-f05417fd75bf')/assignments",
+  "assignments": []
+}

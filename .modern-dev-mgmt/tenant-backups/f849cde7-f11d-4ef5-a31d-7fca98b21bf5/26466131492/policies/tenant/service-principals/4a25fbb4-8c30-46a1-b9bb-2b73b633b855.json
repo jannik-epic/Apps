@@ -1,0 +1,12 @@
+{
+  "id": "4a25fbb4-8c30-46a1-b9bb-2b73b633b855",
+  "appId": "dc457883-bafe-4f8b-a333-29685e7eaa9e",
+  "displayName": "PPE-DataResidencyService",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

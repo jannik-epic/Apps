@@ -1,0 +1,14 @@
+{
+  "id": "32d6ad75-9a6a-456d-95b2-b239451e4dd8",
+  "createdDateTime": "2022-07-27T07:56:30.6847076Z",
+  "lastModifiedDateTime": "2022-07-27T07:56:30.6847076Z",
+  "displayName": "Filter_AllCorporateDevices",
+  "description": "All corporate W10 and later devices",
+  "platform": "windows10AndLater",
+  "rule": "(device.deviceOwnership -eq \"Corporate\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

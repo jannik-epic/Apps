@@ -1,0 +1,24 @@
+{
+  "id": "d9009d27-9840-45ec-8cd8-97a919f61137",
+  "publisher": "Jannik Reinhard",
+  "version": "1",
+  "displayName": "WIN_Rem_11ChangeTaskbarAllignment",
+  "description": "",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2022-07-27T08:00:15.444349Z",
+  "lastModifiedDateTime": "2022-07-27T08:01:18.2949802Z",
+  "runAsAccount": "user",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('d9009d27-9840-45ec-8cd8-97a919f61137')/assignments",
+  "assignments": []
+}

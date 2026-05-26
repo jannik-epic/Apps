@@ -1,0 +1,12 @@
+{
+  "id": "183f5808-010e-4acb-a525-bc826a14bcd3",
+  "appId": "ac6dbf5e-1087-4434-beb2-0ebf7bd1b883",
+  "displayName": "Microsoft Defender for Cloud Apps - Customer Experience",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

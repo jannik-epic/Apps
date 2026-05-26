@@ -1,0 +1,10 @@
+{
+  "id": "21421628-962c-4a14-b449-55a8a1fc9eaa",
+  "appId": "26d73bfd-ad1d-4195-bb68-f27dd3589fb1",
+  "displayName": "Maestro Report Viewer",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "9b4b3246-ab3e-4136-8bda-37f6419f815d",
+  "appId": "19686ca6-5324-4571-a231-77e026b0e06f",
+  "displayName": "Microsoft Command Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

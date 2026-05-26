@@ -1,0 +1,39 @@
+{
+  "id": "MDA_NetDocuments_SSO",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://support.netdocuments.com/s/article/205220410",
+  "controlCategory": "Identity",
+  "title": "Adopt SSO (Single sign on) in netDocuments",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 10,
+  "remediation": "<strong>How does an organization start using federated identity with NetDocuments?</strong></p> <ol> <li>In the upper-right corner, select your name &gt;&nbsp;<strong>Admin&nbsp;</strong>&gt; repository name. In the&nbsp;<strong>Navigation Pane</strong>, select&nbsp;<strong>Security Center&nbsp;</strong>&gt;&nbsp;<strong>Advanced Authentication</strong>.</li> <li>The Advanced Authentication Configuration page has a section titled Federated Identity. Choose the type of federated identity server you will use and configure it.</li> <li><strong>Note: In order to comply with this control, at least 80% of the users must be using SSO.</strong></li> </ol>",
+  "remediationImpact": "See learn more link.",
+  "service": "MDA_NetDocuments",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration",
+    "Password Cracking"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

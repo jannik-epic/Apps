@@ -1,0 +1,8 @@
+{
+  "clientId": "ddf5f39c-d6cd-4cbb-9408-0d1149d11be5",
+  "consentType": "AllPrincipals",
+  "id": "nPP13c3Wu0yUCA0RSdEb5fdddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "ChannelMessage.Send Directory.AccessAsUser.All Directory.ReadWrite.All Files.ReadWrite Organization.ReadWrite.All User.ReadWrite"
+}

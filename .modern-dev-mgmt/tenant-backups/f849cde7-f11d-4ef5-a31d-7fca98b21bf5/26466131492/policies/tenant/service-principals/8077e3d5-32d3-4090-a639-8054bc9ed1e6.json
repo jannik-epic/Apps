@@ -1,0 +1,8 @@
+{
+  "id": "8077e3d5-32d3-4090-a639-8054bc9ed1e6",
+  "appId": "e0ccf59d-5a20-4a87-a122-f42842cdb86a",
+  "displayName": "Microsoft Defender for Cloud Scanner Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

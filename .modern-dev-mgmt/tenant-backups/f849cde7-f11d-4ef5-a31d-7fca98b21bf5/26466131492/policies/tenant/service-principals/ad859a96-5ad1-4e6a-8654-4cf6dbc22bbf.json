@@ -1,0 +1,8 @@
+{
+  "id": "ad859a96-5ad1-4e6a-8654-4cf6dbc22bbf",
+  "appId": "50e95039-b200-4007-bc97-8d5790743a63",
+  "displayName": "Azure Virtual Desktop ARM Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

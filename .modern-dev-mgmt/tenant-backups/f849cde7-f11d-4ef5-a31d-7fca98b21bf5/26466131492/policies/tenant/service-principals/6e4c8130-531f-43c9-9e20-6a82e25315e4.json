@@ -1,0 +1,8 @@
+{
+  "id": "6e4c8130-531f-43c9-9e20-6a82e25315e4",
+  "appId": "607ece82-f922-494f-88b8-30effaf12214",
+  "displayName": "Azure Machine Learning Compute",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

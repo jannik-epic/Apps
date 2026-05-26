@@ -1,0 +1,11 @@
+{
+  "id": "6051a4b9-73e5-42be-bade-4027c96c1870",
+  "displayName": "Visual Studio Code_OnDemand",
+  "description": "On-demand group for Visual Studio Code",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "visualstudiocodeondemand",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-06-27T14:54:44Z"
+}

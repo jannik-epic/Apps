@@ -1,0 +1,8 @@
+{
+  "clientId": "21421628-962c-4a14-b449-55a8a1fc9eaa",
+  "consentType": "AllPrincipals",
+  "id": "KBZCISyWFEq0SVWoofyeqvdddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "AuditLog.Read.All DeviceManagementManagedDevices.Read.All Directory.Read.All IdentityRiskyUser.Read.All Policy.Read.All SecurityEvents.Read.All User.Read"
+}

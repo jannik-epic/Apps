@@ -1,0 +1,11 @@
+{
+  "id": "70cc009a-b9b9-4677-935b-7e4bb43a521e",
+  "appId": "c19490b5-c092-426f-b1a2-674b279d4975",
+  "displayName": "Bing Search APIs",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

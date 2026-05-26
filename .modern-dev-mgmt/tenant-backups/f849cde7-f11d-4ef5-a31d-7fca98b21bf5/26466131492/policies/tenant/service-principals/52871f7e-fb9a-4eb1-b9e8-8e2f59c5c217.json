@@ -1,0 +1,8 @@
+{
+  "id": "52871f7e-fb9a-4eb1-b9e8-8e2f59c5c217",
+  "appId": "08a2fc62-acdb-4198-8656-5a41a03192fa",
+  "displayName": "deny-priv-containers",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2023-04-16T09:59:32.8188164Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-04-16T09:59:32.8188164Z",
+  "name": "Linux-InstallVsCode",
+  "platforms": "linux",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 4,
+  "technologies": "linuxMdm",
+  "id": "a040bac3-254b-4207-afe1-390e78108b9a",
+  "templateReference": {
+    "templateId": "92439f26-2b30-4503-8429-6d40f7e172dd_1",
+    "templateFamily": "deviceConfigurationScripts",
+    "templateDisplayName": "Custom Configuration",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('a040bac3-254b-4207-afe1-390e78108b9a')/assignments",
+  "assignments": [
+    {
+      "id": "a040bac3-254b-4207-afe1-390e78108b9a_e6d02be6-4cce-4e16-a2e0-6d46c6fc3b3b",
+      "source": "direct",
+      "sourceId": "a040bac3-254b-4207-afe1-390e78108b9a",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "e6d02be6-4cce-4e16-a2e0-6d46c6fc3b3b"
+      }
+    }
+  ]
+}

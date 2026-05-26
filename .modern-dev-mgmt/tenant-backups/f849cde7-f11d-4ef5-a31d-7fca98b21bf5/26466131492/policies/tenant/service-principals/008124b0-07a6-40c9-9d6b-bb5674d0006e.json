@@ -1,0 +1,10 @@
+{
+  "id": "008124b0-07a6-40c9-9d6b-bb5674d0006e",
+  "appId": "224a7b82-46c9-4d6b-8db0-7360fb444681",
+  "displayName": "Microsoft Modern Contact Master",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

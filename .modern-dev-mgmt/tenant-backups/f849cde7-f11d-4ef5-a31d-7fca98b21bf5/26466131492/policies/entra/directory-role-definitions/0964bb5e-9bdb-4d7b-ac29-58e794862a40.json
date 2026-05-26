@@ -1,0 +1,30 @@
+{
+  "id": "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+  "description": "Can create and manage all aspects of Microsoft Search settings.",
+  "displayName": "Search Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.office365.messageCenter/messages/read",
+        "microsoft.office365.search/content/manage",
+        "microsoft.office365.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('0964bb5e-9bdb-4d7b-ac29-58e794862a40')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

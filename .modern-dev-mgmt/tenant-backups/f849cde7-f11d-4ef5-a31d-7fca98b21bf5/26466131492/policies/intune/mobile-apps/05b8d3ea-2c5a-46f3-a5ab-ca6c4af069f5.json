@@ -1,0 +1,108 @@
+{
+  "@odata.type": "#microsoft.graph.win32LobApp",
+  "id": "05b8d3ea-2c5a-46f3-a5ab-ca6c4af069f5",
+  "displayName": "Google Chrome",
+  "description": "Google Chrome",
+  "publisher": "Google LLC",
+  "largeIcon": null,
+  "createdDateTime": "2025-09-29T18:03:09Z",
+  "lastModifiedDateTime": "2025-09-29T18:03:09Z",
+  "isFeatured": false,
+  "privacyInformationUrl": "https://policies.google.com/privacy",
+  "informationUrl": "https://www.google.com/chrome/",
+  "owner": null,
+  "developer": "robopack.com",
+  "notes": null,
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "committedContentVersion": "1",
+  "fileName": "Google.Chrome.140.0.7339.208.X64.intunewin",
+  "size": 138759104,
+  "installCommandLine": "Deploy-Application.exe -DeployMode Silent",
+  "uninstallCommandLine": "Deploy-Application.exe Uninstall -DeployMode Silent",
+  "applicableArchitectures": "x86,x64",
+  "allowedArchitectures": null,
+  "minimumFreeDiskSpaceInMB": null,
+  "minimumMemoryInMB": null,
+  "minimumNumberOfProcessors": null,
+  "minimumCpuSpeedInMHz": null,
+  "msiInformation": null,
+  "setupFilePath": "Google.Chrome.140.0.7339.208.X64.msi",
+  "minimumSupportedWindowsRelease": "1607",
+  "displayVersion": "140.0.7339.208",
+  "allowAvailableUninstall": false,
+  "activeInstallScript": null,
+  "activeUninstallScript": null,
+  "minimumSupportedOperatingSystem": {
+    "v8_0": false,
+    "v8_1": false,
+    "v10_0": false,
+    "v10_1607": true,
+    "v10_1703": false,
+    "v10_1709": false,
+    "v10_1803": false,
+    "v10_1809": false,
+    "v10_1903": false,
+    "v10_1909": false,
+    "v10_2004": false,
+    "v10_2H20": false,
+    "v10_21H1": false
+  },
+  "detectionRules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppProductCodeDetection",
+      "productCode": "{4B124137-3E45-35F6-8B0B-A355449C6180}",
+      "productVersionOperator": "greaterThanOrEqual",
+      "productVersion": "140.0.7339.208"
+    }
+  ],
+  "requirementRules": [],
+  "rules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppProductCodeRule",
+      "ruleType": "detection",
+      "productCode": "{4B124137-3E45-35F6-8B0B-A355449C6180}",
+      "productVersionOperator": "greaterThanOrEqual",
+      "productVersion": "140.0.7339.208"
+    }
+  ],
+  "installExperience": {
+    "runAsAccount": "system",
+    "maxRunTimeInMinutes": 60,
+    "deviceRestartBehavior": "suppress"
+  },
+  "returnCodes": [
+    {
+      "returnCode": 0,
+      "type": "success"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('05b8d3ea-2c5a-46f3-a5ab-ca6c4af069f5')/microsoft.graph.win32LobApp/assignments",
+  "assignments": [
+    {
+      "id": "01bb9933-8755-46fe-a2ef-1f66a4f1aa47_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "01bb9933-8755-46fe-a2ef-1f66a4f1aa47"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null,
+        "deliveryOptimizationPriority": "notConfigured",
+        "autoUpdateSettings": null
+      }
+    }
+  ]
+}

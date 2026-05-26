@@ -1,0 +1,11 @@
+{
+  "id": "035c1acb-a187-483b-88f9-a1d19df5ca72",
+  "displayName": "All-Users - Wave 2",
+  "description": "Wave 2 deployment group for All-Users",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "wave-2-1755940428775",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-08-23T09:13:48Z"
+}

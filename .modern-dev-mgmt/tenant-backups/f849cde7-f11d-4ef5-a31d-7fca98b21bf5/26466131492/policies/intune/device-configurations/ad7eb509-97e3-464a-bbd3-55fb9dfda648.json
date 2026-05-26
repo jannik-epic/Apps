@@ -1,0 +1,70 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+  "id": "ad7eb509-97e3-464a-bbd3-55fb9dfda648",
+  "lastModifiedDateTime": "2022-07-27T07:43:17.8558106Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-26T19:04:05.032627Z",
+  "description": "",
+  "displayName": "WIN_Default_Applocker",
+  "version": 4,
+  "omaSettings": [
+    {
+      "@odata.type": "#microsoft.graph.omaSettingStringXml",
+      "displayName": "EXE",
+      "description": null,
+      "omaUri": "./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/EXEGroup/EXE/Policy",
+      "secretReferenceValueId": "9e3c3837-3799-48c9-a33a-29bbad054d12_ad7eb509-97e3-464a-bbd3-55fb9dfda648_651a3e7a-cca0-407b-b3bd-e6ce1b166369",
+      "isEncrypted": true,
+      "fileName": "exe.xml",
+      "value": "PGEvPg=="
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingStringXml",
+      "displayName": "MSI",
+      "description": null,
+      "omaUri": "./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/MSIGroup/MSI/Policy",
+      "secretReferenceValueId": "9e3c3837-3799-48c9-a33a-29bbad054d12_ad7eb509-97e3-464a-bbd3-55fb9dfda648_05d59e37-c294-4eef-89c1-5b5a39c79dd5",
+      "isEncrypted": true,
+      "fileName": "msi.xml",
+      "value": "PGEvPg=="
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingStringXml",
+      "displayName": "SCRIPTS",
+      "description": null,
+      "omaUri": "./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/ScriptGroup/Script/Policy",
+      "secretReferenceValueId": "9e3c3837-3799-48c9-a33a-29bbad054d12_ad7eb509-97e3-464a-bbd3-55fb9dfda648_c8d335e1-fbec-405f-83e8-5c7bfa001ee7",
+      "isEncrypted": true,
+      "fileName": "SCRIPT.xml",
+      "value": "PGEvPg=="
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingStringXml",
+      "displayName": " DLL",
+      "description": null,
+      "omaUri": "./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/DLLGroup/DLL/Policy",
+      "secretReferenceValueId": "9e3c3837-3799-48c9-a33a-29bbad054d12_ad7eb509-97e3-464a-bbd3-55fb9dfda648_3b955725-e62e-46be-8597-6ec1d10d4a75",
+      "isEncrypted": true,
+      "fileName": "dll.xml",
+      "value": "PGEvPg=="
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingStringXml",
+      "displayName": "StoreApps",
+      "description": null,
+      "omaUri": "./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/StoreAppsGroup/StoreApps/Policy",
+      "secretReferenceValueId": "9e3c3837-3799-48c9-a33a-29bbad054d12_ad7eb509-97e3-464a-bbd3-55fb9dfda648_1b5fc2f3-4de0-4e48-b546-9fa14e818536",
+      "isEncrypted": true,
+      "fileName": "storeapp.xml",
+      "value": "PGEvPg=="
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('ad7eb509-97e3-464a-bbd3-55fb9dfda648')/microsoft.graph.windows10CustomConfiguration/assignments",
+  "assignments": []
+}

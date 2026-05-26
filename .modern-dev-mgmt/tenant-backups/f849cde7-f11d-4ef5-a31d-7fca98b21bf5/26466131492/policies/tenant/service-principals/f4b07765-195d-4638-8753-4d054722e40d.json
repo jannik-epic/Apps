@@ -1,0 +1,11 @@
+{
+  "id": "f4b07765-195d-4638-8753-4d054722e40d",
+  "appId": "feff8b5b-97f3-4374-a16a-1911ae9e15e9",
+  "displayName": "Cloud Hybrid Search",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

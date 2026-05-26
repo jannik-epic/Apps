@@ -1,0 +1,8 @@
+{
+  "clientId": "43b129e3-62d2-4592-b8ab-3f831894a78e",
+  "consentType": "AllPrincipals",
+  "id": "4ymxQ9JikkW4qz-DGJSnjvdddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementRBAC.ReadWrite.All DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementServiceConfig.ReadWrite.All Group.ReadWrite.All Directory.Read.All openid"
+}

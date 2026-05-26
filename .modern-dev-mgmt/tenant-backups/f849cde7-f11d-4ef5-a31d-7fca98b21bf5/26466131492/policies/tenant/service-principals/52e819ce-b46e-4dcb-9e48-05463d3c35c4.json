@@ -1,0 +1,11 @@
+{
+  "id": "52e819ce-b46e-4dcb-9e48-05463d3c35c4",
+  "appId": "18a68b2c-873f-44c9-83f1-b19a31d4eb15",
+  "displayName": "janni-mcag2kxm-eastus2/projects/intuneAgent",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "AgentCreatedBy:Foundry",
+    "AgenticInstance"
+  ]
+}

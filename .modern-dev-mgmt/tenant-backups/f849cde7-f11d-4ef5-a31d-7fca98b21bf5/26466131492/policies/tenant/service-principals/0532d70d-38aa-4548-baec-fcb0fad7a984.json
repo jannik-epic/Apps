@@ -1,0 +1,8 @@
+{
+  "id": "0532d70d-38aa-4548-baec-fcb0fad7a984",
+  "appId": "0130cc9f-7ac5-4026-bd5f-80a08a54e6d9",
+  "displayName": "Azure Data Warehouse Polybase",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

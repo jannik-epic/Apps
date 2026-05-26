@@ -1,0 +1,11 @@
+{
+  "id": "153bc38e-82c4-425f-af1e-672f5c84e042",
+  "displayName": "Windows_All_Devices_Microsoft Corporation",
+  "description": "All Microsoft Corporation devices (auto created via azure automation)",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "NotSet",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-08-27T15:22:13Z"
+}

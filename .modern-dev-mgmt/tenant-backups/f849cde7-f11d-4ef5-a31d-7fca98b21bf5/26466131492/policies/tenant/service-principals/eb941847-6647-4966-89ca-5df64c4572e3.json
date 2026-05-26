@@ -1,0 +1,11 @@
+{
+  "id": "eb941847-6647-4966-89ca-5df64c4572e3",
+  "appId": "ec4ab00e-252a-4d10-9331-f07604cc13a6",
+  "displayName": "Intune RemoteAssistService PROD",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

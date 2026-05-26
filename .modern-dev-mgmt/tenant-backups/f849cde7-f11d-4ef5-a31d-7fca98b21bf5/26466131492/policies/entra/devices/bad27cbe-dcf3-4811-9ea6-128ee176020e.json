@@ -1,0 +1,13 @@
+{
+  "id": "bad27cbe-dcf3-4811-9ea6-128ee176020e",
+  "displayName": "jannik-Virtual-Machine",
+  "deviceId": "54e13b6a-7acd-4c85-b94a-b28e12c525ed",
+  "accountEnabled": true,
+  "operatingSystem": "Linux",
+  "operatingSystemVersion": "22.04",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": false,
+  "isManaged": false,
+  "registrationDateTime": "2023-10-03T12:32:55Z"
+}

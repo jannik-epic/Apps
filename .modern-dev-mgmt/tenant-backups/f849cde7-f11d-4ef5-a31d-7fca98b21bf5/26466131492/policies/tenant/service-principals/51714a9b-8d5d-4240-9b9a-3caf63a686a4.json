@@ -1,0 +1,8 @@
+{
+  "id": "51714a9b-8d5d-4240-9b9a-3caf63a686a4",
+  "appId": "372140e0-b3b7-4226-8ef9-d57986796201",
+  "displayName": "Azure Windows VM Sign-In",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

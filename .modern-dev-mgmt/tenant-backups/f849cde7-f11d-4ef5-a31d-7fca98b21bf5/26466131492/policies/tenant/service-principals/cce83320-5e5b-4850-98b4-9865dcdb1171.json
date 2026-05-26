@@ -1,0 +1,8 @@
+{
+  "id": "cce83320-5e5b-4850-98b4-9865dcdb1171",
+  "appId": "d8877f27-09c0-43aa-8113-40151dae8b14",
+  "displayName": "Microsoft Intune AndroidSync",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

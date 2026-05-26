@@ -1,0 +1,14 @@
+{
+  "id": "14de8152-ad2f-4daf-98c3-fd8cd66ed94e",
+  "createdDateTime": "2022-07-27T07:56:43.8142051Z",
+  "lastModifiedDateTime": "2022-07-27T07:56:43.8142051Z",
+  "displayName": "Filter_AllSkuEducation",
+  "description": "All devices with SKU Education",
+  "platform": "windows10AndLater",
+  "rule": "(device.operatingSystemSKU  -eq \"Education\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

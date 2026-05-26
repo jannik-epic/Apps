@@ -1,0 +1,48 @@
+{
+  "@odata.type": "#microsoft.graph.winGetApp",
+  "id": "4f8a0664-189a-4e09-872c-37e6ffe8682c",
+  "displayName": "Compact Log Viewer",
+  "description": "A developer utility to read, search & filter logs stored in the CLEF (Compact Log Event Format)\r\n\r\nAs opposed to reading JSON log files in a simple text editor, with this tool you are able to get an easy oversight to the number of errors & the quantity of each log level along with performing searches with filter expressions",
+  "publisher": "Warren Buckley",
+  "largeIcon": null,
+  "createdDateTime": "2024-09-08T08:31:58Z",
+  "lastModifiedDateTime": "2024-09-08T08:31:58Z",
+  "isFeatured": false,
+  "privacyInformationUrl": "https://github.com/warrenbuckley/Compact-Log-Format-Viewer/blob/dev/PRIVACY.md",
+  "informationUrl": null,
+  "owner": "",
+  "developer": "",
+  "notes": "",
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "manifestHash": null,
+  "packageIdentifier": "9N8RV8LKTXRJ",
+  "installExperience": {
+    "runAsAccount": "user"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('4f8a0664-189a-4e09-872c-37e6ffe8682c')/microsoft.graph.winGetApp/assignments",
+  "assignments": [
+    {
+      "id": "adadadad-808e-44e2-905a-0b7873a8a531_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.winGetAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null
+      }
+    }
+  ]
+}

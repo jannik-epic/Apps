@@ -1,0 +1,26 @@
+{
+  "id": "25a516ed-2fa0-40ea-a2d0-12923a21473a",
+  "description": "Customize sign in and sign up experiences for users by creating and managing custom authentication extensions.",
+  "displayName": "Authentication Extensibility Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "25a516ed-2fa0-40ea-a2d0-12923a21473a",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/customAuthenticationExtensions/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('25a516ed-2fa0-40ea-a2d0-12923a21473a')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

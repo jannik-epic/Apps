@@ -1,0 +1,8 @@
+{
+  "clientId": "755bdcf0-0e5c-48ca-a5e1-da68b934d3af",
+  "consentType": "Principal",
+  "id": "8NxbdVwOykil4dpouTTTr_dddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+  "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": " openid offline_access User.ReadWrite.All Group.ReadWrite.All Chat.ReadWrite ChannelMessage.Read.All"
+}

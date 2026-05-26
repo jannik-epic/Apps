@@ -1,0 +1,35 @@
+{
+  "id": "AATP_ADCSInsecureCertificateEnrollmentIisEndpoints",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://aka.ms/mdiesc8IIS",
+  "controlCategory": "Identity",
+  "title": "Edit insecure certificate enrollment IIS endpoints (ESC8)",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "For each endpoint, follow these steps:<br> 1. Determine whether the endpoint is necessary and in regular use. If it is not used, it is advisable to disable it.<br> 2. Deactivate NTLM and Negotiate authentication providers for the IIS endpoint.<br> 3. If NTLM cannot be disabled, enable \"Require SSL\" and \"Require Extended Protection\" for the IIS endpoint.<br>For more information, please refer to the security advisory in the \"Learn More\" section.",
+  "remediationImpact": "If the IIS endpoint allows NTLM authentication without enforcing protocol signing (HTTPS) or without enforcing Extended Protection for Authentication (EPA), it becomes vulnerable to NTLM relay attacks.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "medium",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

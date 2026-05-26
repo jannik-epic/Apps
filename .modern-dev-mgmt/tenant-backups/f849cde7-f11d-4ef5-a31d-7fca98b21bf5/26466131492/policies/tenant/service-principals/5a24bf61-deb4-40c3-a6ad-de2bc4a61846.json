@@ -1,0 +1,10 @@
+{
+  "id": "5a24bf61-deb4-40c3-a6ad-de2bc4a61846",
+  "appId": "d0f0a612-0d84-40e9-b860-789d3661c002",
+  "displayName": "TenantManager SSO",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

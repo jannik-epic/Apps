@@ -1,0 +1,11 @@
+{
+  "id": "890550a4-4e47-4d27-9e9a-e4b1548cd9f2",
+  "appId": "d4ebce55-015a-49b5-a083-c84d1797ae8c",
+  "displayName": "Microsoft Intune Enrollment",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

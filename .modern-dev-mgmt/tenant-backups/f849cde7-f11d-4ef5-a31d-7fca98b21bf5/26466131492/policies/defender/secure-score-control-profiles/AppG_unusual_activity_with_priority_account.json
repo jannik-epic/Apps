@@ -1,0 +1,35 @@
+{
+  "id": "AppG_unusual_activity_with_priority_account",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/cloudapps/app-governance?viewid=policies&objid=true&filter=%7B%22source%22:%5B%22Predefined%22%5D%7D",
+  "controlCategory": "Apps",
+  "title": "Regulate apps with priority account consent",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 10,
+  "remediation": "\r\n    In app governance, <u>open the predefined \"Unusual activity from an app with priority account consent\" policy</u> and activate it.\r\n    <br/>\r\n    <br/>\r\n    While you have the policy open, you can add an action to take on unused apps and add exceptions.\r\n  ",
+  "remediationImpact": "Unknown",
+  "service": "AppG",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "moderate",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

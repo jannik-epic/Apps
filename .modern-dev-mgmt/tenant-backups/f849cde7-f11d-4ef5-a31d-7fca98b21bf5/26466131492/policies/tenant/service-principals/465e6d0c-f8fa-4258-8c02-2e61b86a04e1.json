@@ -1,0 +1,11 @@
+{
+  "id": "465e6d0c-f8fa-4258-8c02-2e61b86a04e1",
+  "appId": "4489153c-5879-42b5-90b8-5e2de125d542",
+  "displayName": "MyCustomBot",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "beb03f86-d8c0-40d9-a25d-f0b09def7b3a",
+  "appId": "0c4f39d1-5160-468b-9bf4-dc727bda0a0d",
+  "displayName": "Moco-HubSpot-Graph-Connector",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-10-22T08:15:55Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "f431331c-49a6-499f-be1c-62af19c34a9d",
+          "type": "Role"
+        },
+        {
+          "id": "38c3d6ee-69ee-422f-b954-e17819665354",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

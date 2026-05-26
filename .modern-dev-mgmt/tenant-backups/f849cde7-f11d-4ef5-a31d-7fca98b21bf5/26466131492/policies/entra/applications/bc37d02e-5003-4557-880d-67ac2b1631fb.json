@@ -1,0 +1,33 @@
+{
+  "id": "bc37d02e-5003-4557-880d-67ac2b1631fb",
+  "appId": "84a13fa6-a298-4f40-92e2-fa5ffd4b7003",
+  "displayName": "testpijrslksdjgf",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-02-06T14:27:27Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": "https://testpijrslksdjgf.azurewebsites.net",
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://testpijrslksdjgf.azurewebsites.net/.auth/login/aad/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://testpijrslksdjgf.azurewebsites.net/.auth/login/aad/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

@@ -1,0 +1,8 @@
+{
+  "clientId": "f533e95c-ddfc-4400-8d33-59cf5f7c05de",
+  "consentType": "AllPrincipals",
+  "id": "XOkz9fzdAESNM1nPX3wF3vdddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "DeviceManagementManagedDevices.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementApps.Read.All DeviceManagementApps.ReadWrite.All DeviceManagementServiceConfig.Read.All Mail.Send User.Read offline_access openid profile AuditLog.Read.All DeviceManagementConfiguration.Read.All DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementManagedDevices.Read.All DeviceManagementRBAC.Read.All"
+}

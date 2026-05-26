@@ -1,0 +1,12 @@
+[
+  {
+    "id": "9e3c3837-3799-48c9-a33a-29bbad054d12_DefaultWindowsHelloForBusiness",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none"
+    }
+  }
+]

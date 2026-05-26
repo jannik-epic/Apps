@@ -1,0 +1,10 @@
+{
+  "id": "59be90fc-c795-438a-85a6-932797d2a39f",
+  "appId": "de8c1f84-e83a-4821-8247-c8d208589a52",
+  "displayName": "Frontier-Local-Frontend",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

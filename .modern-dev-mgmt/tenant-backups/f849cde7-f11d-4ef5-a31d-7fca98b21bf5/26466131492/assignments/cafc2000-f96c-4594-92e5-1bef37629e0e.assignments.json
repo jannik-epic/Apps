@@ -1,0 +1,12 @@
+[
+  {
+    "id": "cafc2000-f96c-4594-92e5-1bef37629e0e_acacacac-9df4-4c7d-9d50-4ef0226f57a9",
+    "source": "direct",
+    "sourceId": "cafc2000-f96c-4594-92e5-1bef37629e0e",
+    "target": {
+      "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none"
+    }
+  }
+]

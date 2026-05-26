@@ -1,0 +1,11 @@
+{
+  "id": "c433a6dd-8d0b-48e0-80ee-21a635386b11",
+  "lastModifiedDateTime": "2022-08-01T11:30:11Z",
+  "displayName": "Notification",
+  "description": null,
+  "defaultLocale": "en-us",
+  "brandingOptions": "includeCompanyLogo",
+  "roleScopeTagIds": [
+    "0"
+  ]
+}

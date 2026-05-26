@@ -1,0 +1,11 @@
+{
+  "id": "781db119-90d9-4b43-b90e-7390d772ca82",
+  "appId": "3c896ded-22c5-450f-91f6-3d1ef0848f6e",
+  "displayName": "WeveEngine",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

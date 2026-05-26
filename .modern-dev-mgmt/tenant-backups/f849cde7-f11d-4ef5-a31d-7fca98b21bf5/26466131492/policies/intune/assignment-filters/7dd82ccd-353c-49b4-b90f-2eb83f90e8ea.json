@@ -1,0 +1,14 @@
+{
+  "id": "7dd82ccd-353c-49b4-b90f-2eb83f90e8ea",
+  "createdDateTime": "2022-07-27T07:56:50.1589165Z",
+  "lastModifiedDateTime": "2022-07-27T07:56:50.1589165Z",
+  "displayName": "Filter_AllSkuEnterprise",
+  "description": "All devices with SKU Enterprise",
+  "platform": "windows10AndLater",
+  "rule": "(device.operatingSystemSKU  -eq \"Enterprise\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

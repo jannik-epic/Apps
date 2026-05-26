@@ -1,0 +1,13 @@
+{
+  "id": "45f4d292-3bbe-4e8d-bc01-09ba039e0109",
+  "appId": "6872b314-67ab-4a16-98e7-a663b0f772c3",
+  "displayName": "Office365 Shell SS-Server Default",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

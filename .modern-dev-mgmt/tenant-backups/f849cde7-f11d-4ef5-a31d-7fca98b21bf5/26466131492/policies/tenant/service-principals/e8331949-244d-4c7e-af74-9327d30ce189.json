@@ -1,0 +1,11 @@
+{
+  "id": "e8331949-244d-4c7e-af74-9327d30ce189",
+  "appId": "23c898c1-f7e8-41da-9501-f16571f8d097",
+  "displayName": "OCPS Checkin Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}
