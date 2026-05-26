@@ -155,14 +155,38 @@ jobs:
             return $message
           }
 
+          function Graph-ErrorCode {
+            param([object]$ErrorRecord)
+            if ($ErrorRecord.ErrorDetails -and $ErrorRecord.ErrorDetails.Message) {
+              try {
+                $body = $ErrorRecord.ErrorDetails.Message | ConvertFrom-Json
+                if ($body.error -and $body.error.code) { return [string]$body.error.code }
+              } catch {}
+            }
+            return $null
+          }
+
           function Invoke-GraphJson {
-            param([string]$Uri, [string]$Label, [string]$Method = 'GET', [object]$Body = $null)
+            param(
+              [string]$Uri,
+              [string]$Label,
+              [string]$Method = 'GET',
+              [object]$Body = $null,
+              [switch]$NotFoundAsLimitation,
+              [string]$LimitationArea = 'graph'
+            )
             try {
               $params = @{ Method = $Method; Uri = $Uri; Headers = $headers; TimeoutSec = 120 }
               if ($null -ne $Body) { $params.Body = ($Body | ConvertTo-Json -Depth 30) }
               return Invoke-RestMethod @params
             } catch {
-              $warnings.Add("$Label unavailable: $(Graph-ErrorMessage $_)") | Out-Null
+              $message = Graph-ErrorMessage $_
+              $code = Graph-ErrorCode $_
+              if ($NotFoundAsLimitation -and $code -eq 'Request_ResourceNotFound') {
+                $limitations.Add([ordered]@{ area = $LimitationArea; reason = "$Label does not exist or is no longer resolvable."; followUp = 'Review stale assignment targets in the source tenant.' }) | Out-Null
+              } else {
+                $warnings.Add("$Label unavailable: $message") | Out-Null
+              }
               return $null
             }
           }
@@ -290,7 +314,7 @@ jobs:
 
             foreach ($gid in $groupIds) {
               $safe = Sanitize-Id $gid
-              $group = Invoke-GraphJson -Uri "$GraphBase/groups/$gid" -Label "Group $gid"
+              $group = Invoke-GraphJson -Uri "$GraphBase/groups/$gid" -Label "Group $gid" -NotFoundAsLimitation -LimitationArea 'groups'
               if ($null -eq $group) { continue }
               $members = Invoke-GraphCollection -Uri "$GraphBase/groups/$gid/members?$select=id,displayName,userPrincipalName" -Label "Group members $gid"
               $payload = [ordered]@{
