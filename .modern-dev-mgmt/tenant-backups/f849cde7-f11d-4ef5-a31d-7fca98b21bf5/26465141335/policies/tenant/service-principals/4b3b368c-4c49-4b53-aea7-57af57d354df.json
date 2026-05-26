@@ -1,0 +1,10 @@
+{
+  "id": "4b3b368c-4c49-4b53-aea7-57af57d354df",
+  "appId": "6c5bca66-7db2-48f6-9ac5-1eb96084bdf3",
+  "displayName": "App Packaging Tool - Electron",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

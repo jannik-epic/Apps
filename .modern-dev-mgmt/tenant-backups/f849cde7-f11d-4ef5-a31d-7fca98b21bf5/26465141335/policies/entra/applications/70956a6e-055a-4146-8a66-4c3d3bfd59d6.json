@@ -1,0 +1,90 @@
+{
+  "id": "70956a6e-055a-4146-8a66-4c3d3bfd59d6",
+  "appId": "037cf247-2e3f-49c9-aa6a-81f3b8e5ff82",
+  "displayName": "DailyDocs",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-03-18T07:23:01Z",
+  "identifierUris": [
+    "api://app-dailydocs-int-we-01.azurewebsites.net/037cf247-2e3f-49c9-aa6a-81f3b8e5ff82"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://app-dailydocs-int-we-01.azurewebsites.net/.auth/login/aad/callback",
+      "https://placeholder.azurewebsites.net/.auth/login/aad/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://app-dailydocs-int-we-01.azurewebsites.net/.auth/login/aad/callback",
+        "index": null
+      },
+      {
+        "uri": "https://placeholder.azurewebsites.net/.auth/login/aad/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": [
+      "https://app-dailydocs-int-we-01.azurewebsites.net/meeting-viewer/",
+      "https://app-dailydocs-int-we-01.azurewebsites.net/daily-docs/taskpane.html",
+      "https://app-dailydocs-int-we-01.azurewebsites.net/daily-docs/save.html"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "14dad69e-099b-42c9-810b-d002981feec1",
+          "type": "Scope"
+        },
+        {
+          "id": "2b9c4092-424d-4249-948d-b43879977640",
+          "type": "Scope"
+        },
+        {
+          "id": "37f7f235-527c-4136-accd-4a02d197296e",
+          "type": "Scope"
+        },
+        {
+          "id": "465a38f9-76ea-45b9-9f34-9e8b0d4b0b42",
+          "type": "Scope"
+        },
+        {
+          "id": "570282fd-fa5c-430d-a7fd-fc8dc98a9dca",
+          "type": "Scope"
+        },
+        {
+          "id": "5c28f0bf-8a70-41f1-8ab2-9032436ddb65",
+          "type": "Scope"
+        },
+        {
+          "id": "7b9103a5-4610-446b-9670-80643382c1fa",
+          "type": "Scope"
+        },
+        {
+          "id": "863451e7-0667-486c-a5d6-d135439485f0",
+          "type": "Scope"
+        },
+        {
+          "id": "87f447af-9fa4-4c32-9dfa-4a57a73d18ce",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

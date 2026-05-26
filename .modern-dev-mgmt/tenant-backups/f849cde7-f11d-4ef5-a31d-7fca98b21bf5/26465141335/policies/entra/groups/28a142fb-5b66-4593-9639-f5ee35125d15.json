@@ -1,0 +1,11 @@
+{
+  "id": "28a142fb-5b66-4593-9639-f5ee35125d15",
+  "displayName": "Windows_All_Devices - Wave 1",
+  "description": "Wave 1 deployment group for Windows_All_Devices",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "wave-1-1755940410664",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-08-23T09:13:30Z"
+}

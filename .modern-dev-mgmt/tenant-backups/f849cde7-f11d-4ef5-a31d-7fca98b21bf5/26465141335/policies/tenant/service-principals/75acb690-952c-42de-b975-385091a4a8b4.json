@@ -1,0 +1,11 @@
+{
+  "id": "75acb690-952c-42de-b975-385091a4a8b4",
+  "appId": "e9d7a6b9-6ef9-447e-af96-f375825182be",
+  "displayName": "DeviceTroubleshooter",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

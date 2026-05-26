@@ -1,0 +1,11 @@
+{
+  "id": "eed1c82f-32a2-4ca1-88bc-7e5b3ffd3a1f",
+  "displayName": "Exclude_Require_MAM_Approved_app_Exceptexchange",
+  "description": "Exclude_Require_MAM_Approved_app_Exceptexchange",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "Exclude_Require_MAM_Approved_app_Exceptexchange",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-07-26T17:17:07Z"
+}

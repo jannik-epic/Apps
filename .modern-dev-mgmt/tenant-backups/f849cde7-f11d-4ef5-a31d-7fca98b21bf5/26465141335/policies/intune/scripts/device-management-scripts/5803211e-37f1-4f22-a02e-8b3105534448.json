@@ -1,0 +1,17 @@
+{
+  "enforceSignatureCheck": false,
+  "runAs32Bit": false,
+  "id": "5803211e-37f1-4f22-a02e-8b3105534448",
+  "displayName": "WIN_Default_Script_Hardening",
+  "description": "Windows10_Hardening",
+  "scriptContent": null,
+  "createdDateTime": "2022-07-26T19:13:24.8048097Z",
+  "lastModifiedDateTime": "2022-07-27T08:05:50.5350891Z",
+  "runAsAccount": "system",
+  "fileName": "Windows10_Hardening.ps1",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceManagementScripts('5803211e-37f1-4f22-a02e-8b3105534448')/assignments",
+  "assignments": []
+}

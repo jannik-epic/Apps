@@ -1,0 +1,10 @@
+{
+  "id": "44c27097-3d68-4145-aa34-af4525b68ab8",
+  "appId": "e8be65d6-d430-4289-a665-51bf2a194bda",
+  "displayName": "Microsoft 365 App Catalog Services",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

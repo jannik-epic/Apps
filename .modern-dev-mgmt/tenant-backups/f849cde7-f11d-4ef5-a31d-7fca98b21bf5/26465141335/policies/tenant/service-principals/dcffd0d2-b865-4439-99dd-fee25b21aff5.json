@@ -1,0 +1,11 @@
+{
+  "id": "dcffd0d2-b865-4439-99dd-fee25b21aff5",
+  "appId": "0947a342-ab4a-43be-93b3-b8243fc161e5",
+  "displayName": "Azure Data Factory",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

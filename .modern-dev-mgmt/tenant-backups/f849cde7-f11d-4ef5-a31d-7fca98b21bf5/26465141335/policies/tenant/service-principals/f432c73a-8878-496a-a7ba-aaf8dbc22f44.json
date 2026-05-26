@@ -1,0 +1,8 @@
+{
+  "id": "f432c73a-8878-496a-a7ba-aaf8dbc22f44",
+  "appId": "9e09aefc-b2e5-4d19-9f74-3e3e8b11a57b",
+  "displayName": "Microsoft Azure Synapse Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

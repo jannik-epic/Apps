@@ -1,0 +1,11 @@
+{
+  "id": "c280e88e-f2d5-42f4-893d-723eae4badf1",
+  "appId": "96231a05-34ce-4eb4-aa6a-70759cbb5e83",
+  "displayName": "MicrosoftAzureRedisCache",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

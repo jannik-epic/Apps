@@ -1,0 +1,12 @@
+{
+  "id": "cc898a2c-c9da-42f9-b645-f4c49f919f53",
+  "appId": "2d215f00-80d1-4f4b-a6c8-28080dfafc81",
+  "displayName": "Microsoft Authorization System Policy",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

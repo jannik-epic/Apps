@@ -1,0 +1,14 @@
+{
+  "id": "b6c484b8-1537-491a-b0da-f2855a6bdc9f",
+  "createdDateTime": "2023-11-16T17:15:12.7207953Z",
+  "lastModifiedDateTime": "2023-11-16T17:15:12.7207953Z",
+  "displayName": "ACME Only",
+  "description": "ACME Only Devices",
+  "platform": "windows10AndLater",
+  "rule": "(device.deviceOwnership -eq \"Corporate\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

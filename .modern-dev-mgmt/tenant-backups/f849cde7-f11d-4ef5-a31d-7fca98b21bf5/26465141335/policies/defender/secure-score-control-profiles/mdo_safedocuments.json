@@ -1,0 +1,35 @@
+{
+  "id": "mdo_safedocuments",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/safeattachmentv2?tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Apps",
+  "title": "Turn on Safe Documents for Office Clients",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 128,
+  "remediation": "<p>Ensure that the global tenant settings for &lsquo;<strong>Safe Attachments&rsquo;</strong> are configured as follows:</p>\r\n<ul>\r\n<li>&lsquo;Turn on Safe Documents for Office clients<strong>&rsquo; </strong>should be <strong>Turned On</strong></li>\r\n<li>&lsquo;Allow people to click through Protected View even if Safe Documents identified the file as malicious&rsquo; should be <strong>Turned Off</strong></li>\r\n</ul>",
+  "remediationImpact": "Unknown",
+  "service": "MDO",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

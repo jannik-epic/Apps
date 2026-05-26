@@ -1,0 +1,14 @@
+{
+  "id": "fac98a7a-461a-4cc8-b4d9-9808f62770e8",
+  "createdDateTime": "2022-07-27T07:59:32.4250022Z",
+  "lastModifiedDateTime": "2022-07-27T07:59:32.4250022Z",
+  "displayName": "old5",
+  "description": "",
+  "platform": "windows10AndLater",
+  "rule": "(device.deviceCategory  -eq \"HR department\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

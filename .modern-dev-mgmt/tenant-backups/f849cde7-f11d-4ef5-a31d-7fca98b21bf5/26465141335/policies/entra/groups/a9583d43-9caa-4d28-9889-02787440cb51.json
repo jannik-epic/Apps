@@ -1,0 +1,11 @@
+{
+  "id": "a9583d43-9caa-4d28-9889-02787440cb51",
+  "displayName": "All Company-device-user",
+  "description": "User group converted from device group: All Company-device",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "AllCompanydeviceuser",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-07-30T19:12:37Z"
+}

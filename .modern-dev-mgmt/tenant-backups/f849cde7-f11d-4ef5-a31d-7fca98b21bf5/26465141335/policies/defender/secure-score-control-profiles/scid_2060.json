@@ -1,0 +1,35 @@
+{
+  "id": "scid_2060",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/security-recommendations?recommendationId=sca-_-scid-2060&tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Device",
+  "title": "Set Microsoft Defender SmartScreen app and file checking to block or warn",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 9.0,
+  "rank": 114,
+  "remediation": "Within Microsoft 365 security, go to <b> <a href='https://security.microsoft.com/security-recommendations?recommendationId=sca-_-scid-2060' target='_blank'>Vulnerability management > Recommendations</a> </b>, read the relevant security recommendation and choose remediation or exception options.",
+  "remediationImpact": "Unknown",
+  "service": "MDATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

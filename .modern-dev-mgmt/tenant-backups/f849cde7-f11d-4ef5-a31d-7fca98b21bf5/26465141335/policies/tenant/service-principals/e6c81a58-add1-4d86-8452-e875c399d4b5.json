@@ -1,0 +1,11 @@
+{
+  "id": "e6c81a58-add1-4d86-8452-e875c399d4b5",
+  "appId": "354b5b6d-abd6-4736-9f51-1be80049b91f",
+  "displayName": "Microsoft Mobile Application Management Backend",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

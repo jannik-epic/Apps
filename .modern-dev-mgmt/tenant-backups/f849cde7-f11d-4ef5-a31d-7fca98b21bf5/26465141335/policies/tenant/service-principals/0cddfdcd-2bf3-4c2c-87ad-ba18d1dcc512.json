@@ -1,0 +1,11 @@
+{
+  "id": "0cddfdcd-2bf3-4c2c-87ad-ba18d1dcc512",
+  "appId": "cbfda01c-c883-45aa-aedc-e7a484615620",
+  "displayName": "Microsoft Windows AutoPilot Service API",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

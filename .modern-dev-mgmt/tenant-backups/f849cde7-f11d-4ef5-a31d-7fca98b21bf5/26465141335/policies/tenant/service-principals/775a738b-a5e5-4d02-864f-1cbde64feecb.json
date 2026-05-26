@@ -1,0 +1,8 @@
+{
+  "id": "775a738b-a5e5-4d02-864f-1cbde64feecb",
+  "appId": "bf87b2c3-2595-461f-8afd-4b778708765d",
+  "displayName": "intune-admin-task-monitor",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

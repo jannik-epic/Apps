@@ -1,0 +1,35 @@
+{
+  "id": "AATP_PwdLAPS",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2123725",
+  "controlCategory": "Identity",
+  "title": "Protect and manage local admin passwords with Microsoft LAPS",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 67,
+  "remediation": "1. Review this security control list of domains and devices not configured for Microsoft LAPS. <br> 2. Deploy Microsoft LAPS to actively manage the local administrator password of your devices. This is done through Active Directory along with Group Policy client- side extensions that will be installed on each Windows operating system. <br> To achieve a full score, you must remediate all exposed entities.",
+  "remediationImpact": "A user or an application that relies on local administrator passwords will need access to the LAPS UI to retrieve the current password for the local administrator account.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

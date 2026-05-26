@@ -1,0 +1,35 @@
+{
+  "id": "AATP_AccountsWithNonDefaultPrimaryGroup",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2282057",
+  "controlCategory": "Identity",
+  "title": "Accounts with non-default Primary Group ID",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "1. Review the list of exposed entities to discover which of your accounts have a suspicious primaryGroupId. <br>  2. Take appropriate action on those accounts by resetting their attribute to their default values or adding the member to the relevant group: <br> - user accounts: 513 (Domain Users) or 514 (Domain Guests) <br> - computer accounts: 515 (Domain Computers) <br> - domain controller accounts: 516 (Domain Controllers) <br> - read-only domain controller (RODC) accounts: 521 (Read-only Domain Controllers).  <br> To achieve the full score, remediate all exposed entities.",
+  "remediationImpact": "The primaryGroupId attribute of a user or computer account grants implicit membership to a group. Membership through this attribute does not appear in the list of group members in some interfaces. This attribute may be used as an attempt to hide group membership. It might be a stealthy way for an attacker to escalate privileges without triggering normal auditing for group membership changes.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

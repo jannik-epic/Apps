@@ -1,0 +1,12 @@
+{
+  "id": "206329f8-8aee-48c5-82ca-592a7675072c",
+  "appId": "35e5e31d-b3e8-442b-9a8d-2f81f46938cf",
+  "displayName": "Entra App Platform System Application",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

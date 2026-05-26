@@ -1,0 +1,15 @@
+{
+  "id": "d405c6df-0af8-4e3b-95e4-4d06e542189e",
+  "description": "Deprecated - Do Not Use.",
+  "displayName": "Device Users",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "d405c6df-0af8-4e3b-95e4-4d06e542189e",
+  "version": "1",
+  "rolePermissions": [],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('d405c6df-0af8-4e3b-95e4-4d06e542189e')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": []
+}

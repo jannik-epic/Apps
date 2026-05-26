@@ -1,0 +1,35 @@
+{
+  "id": "mdo_commonattachmentsfilter",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/antimalwarev2?tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Apps",
+  "title": "Ensure the Common Attachment Types Filter is enabled",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 128,
+  "remediation": "<p>Update your existing policies or create new ones to ensure that all users have an assigned anti-malware policy with the &lsquo;<strong>Enable common attachments filter</strong>&rsquo; option turned on .</p>",
+  "remediationImpact": "Unknown",
+  "service": "MDO",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

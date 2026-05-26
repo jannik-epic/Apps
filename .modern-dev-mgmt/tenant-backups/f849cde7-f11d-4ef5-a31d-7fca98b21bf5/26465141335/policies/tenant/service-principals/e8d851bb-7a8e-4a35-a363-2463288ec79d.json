@@ -1,0 +1,8 @@
+{
+  "id": "e8d851bb-7a8e-4a35-a363-2463288ec79d",
+  "appId": "00000007-0000-0ff1-ce00-000000000000",
+  "displayName": "Microsoft Exchange Online Protection",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

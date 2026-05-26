@@ -1,0 +1,11 @@
+{
+  "id": "b82db887-b7f5-4a13-89c8-32fcea1921fb",
+  "appId": "166f1b03-5b19-416f-a94b-1d7aa2d247dc",
+  "displayName": "Office Hive",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

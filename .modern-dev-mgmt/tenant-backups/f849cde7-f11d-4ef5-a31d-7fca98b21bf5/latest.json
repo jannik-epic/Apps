@@ -1,9 +1,9 @@
 {
-  "backupId": "26464765271",
+  "backupId": "26465141335",
   "tenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
-  "snapshotPath": ".modern-dev-mgmt/tenant-backups/f849cde7-f11d-4ef5-a31d-7fca98b21bf5/26464765271",
-  "createdAt": "2026-05-26T17:40:15.8909980Z",
-  "workflowRunId": "26464765271",
+  "snapshotPath": ".modern-dev-mgmt/tenant-backups/f849cde7-f11d-4ef5-a31d-7fca98b21bf5/26465141335",
+  "createdAt": "2026-05-26T17:47:58.2952675Z",
+  "workflowRunId": "26465141335",
   "counts": {
     "conditional-access-policies": 1,
     "named-locations": 0,
@@ -35,16 +35,16 @@
     "managed-app-policies": 5,
     "targeted-managed-app-configurations": 1,
     "policy-sets": 0,
-    "device-management-scripts": 0,
-    "device-health-scripts": 0,
-    "device-compliance-scripts": 0,
+    "device-management-scripts": 9,
+    "device-health-scripts": 16,
+    "device-compliance-scripts": 4,
     "enrollment-configurations": 5,
     "autopilot-deployment-profiles": 2,
     "assignment-filters": 27,
     "feature-update-profiles": 0,
     "driver-update-profiles": 1,
     "device-categories": 0,
-    "role-definitions": 0,
+    "role-definitions": 11,
     "terms-and-conditions": 0,
     "notification-message-templates": 4,
     "intune-branding-profiles": 1,
@@ -52,8 +52,8 @@
     "cloud-pc-on-premises-connections": 0,
     "cloud-pc-device-images": 0,
     "service-principals": 902,
-    "assignments": 106,
-    "groups": 28
+    "assignments": 111,
+    "groups": 29
   },
   "scope": "custom"
 }

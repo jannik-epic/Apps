@@ -1,0 +1,8 @@
+{
+  "clientId": "cc1b23d5-bbfa-49bb-9ec8-1515a1298118",
+  "consentType": "AllPrincipals",
+  "id": "1SMbzPq7u0meyBUVoSmBGFNNJdO6IO1EmzKMBMr4w-c",
+  "principalId": null,
+  "resourceId": "d3254d53-20ba-44ed-9b32-8c04caf8c3e7",
+  "scope": "Files.ReadWrite.All TermStore.ReadWrite.All Sites.ReadWrite.All Sites.FullControl.All"
+}

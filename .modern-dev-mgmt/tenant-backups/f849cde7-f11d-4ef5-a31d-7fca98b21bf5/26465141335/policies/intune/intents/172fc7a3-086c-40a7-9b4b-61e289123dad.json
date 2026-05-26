@@ -1,0 +1,14 @@
+{
+  "id": "172fc7a3-086c-40a7-9b4b-61e289123dad",
+  "displayName": "WIN-EdgeBaseline",
+  "description": null,
+  "isAssigned": false,
+  "isMigratingToConfigurationPolicy": null,
+  "lastModifiedDateTime": "2022-07-27T07:52:41.4242352Z",
+  "templateId": "a8d6fa0e-1e66-455b-bb51-8ce0dde1559e",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('172fc7a3-086c-40a7-9b4b-61e289123dad')/assignments",
+  "assignments": []
+}

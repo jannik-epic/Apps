@@ -1,0 +1,64 @@
+[
+  {
+    "id": "569bb557-eba9-4c47-89ab-34d0c078f4f1_0_0",
+    "intent": "available",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "569bb557-eba9-4c47-89ab-34d0c078f4f1"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+      "notifications": "showAll",
+      "restartSettings": null,
+      "installTimeSettings": null,
+      "deliveryOptimizationPriority": "notConfigured",
+      "autoUpdateSettings": {
+        "autoUpdateSupersededAppsState": "enabled"
+      }
+    }
+  },
+  {
+    "id": "ce150351-933b-4b14-b375-678680291824_1_0",
+    "intent": "required",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "ce150351-933b-4b14-b375-678680291824"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+      "notifications": "showAll",
+      "restartSettings": null,
+      "installTimeSettings": null,
+      "deliveryOptimizationPriority": "notConfigured",
+      "autoUpdateSettings": null
+    }
+  },
+  {
+    "id": "85d8466c-374f-454d-886b-4d240113e943_2_0",
+    "intent": "uninstall",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "85d8466c-374f-454d-886b-4d240113e943"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+      "notifications": "showAll",
+      "restartSettings": null,
+      "installTimeSettings": null,
+      "deliveryOptimizationPriority": "notConfigured",
+      "autoUpdateSettings": null
+    }
+  }
+]

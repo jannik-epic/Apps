@@ -1,0 +1,10 @@
+{
+  "id": "16efed81-f236-43d6-a293-65c225f8dac9",
+  "appId": "82ecab53-2351-49c3-8474-f51fe3e71a08",
+  "displayName": "Self-Service Client - prod",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

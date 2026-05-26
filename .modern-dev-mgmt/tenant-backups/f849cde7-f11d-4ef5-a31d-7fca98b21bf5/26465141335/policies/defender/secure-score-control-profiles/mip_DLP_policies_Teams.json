@@ -1,0 +1,37 @@
+{
+  "id": "mip_DLP_policies_Teams",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide&tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Apps",
+  "title": "Ensure DLP policies are enabled for Microsoft Teams",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p><strong>To enable DLP policies:</strong></p> <ol> <li>Navigate to <em>Microsoft Purview</em> compliance portal <a href=\"https://compliance.microsoft.com\">https://compliance.microsoft.com</a>.</li> <li>Under <em>Solutions</em> select <em>Data loss prevention</em> then <em>Policies</em>.</li> <li>Click <em>Policies</em> tab.</li> <li>Check <em>Default policy for Teams</em> then click <em>Edit policy</em>.</li> <li>The edit policy window will appear click Next</li> <li>At the <em>Choose locations to apply the policy</em> page, turn the status toggle to <em>On</em> for <em>Teams chat and channel messages </em>location and then click <em>Next</em>.</li> <li>On Customized advanced DLP rules page, ensure the <em>Default Teams DLP policy rule</em> Status is <em>On</em> and click <em>Next</em>.</li> <li>On the Policy mode page, select the radial for <em>Turn it on right away</em> and click <em>Next</em>.</li> <li>Review all the settings for the created policy on the Review your policy and create it page, and then click submit.</li> <li>Once the policy has been successfully submitted click Done.</li> </ol> <p><strong>Default Value:</strong> Enabled (On).</p> <p><strong>Note:</strong> To comply, the criteria is at least one configured policy.</p>",
+  "remediationImpact": "Enabling a Teams DLP policy will allow sensitive data in Teams channels or chat messages to be detected or blocked.",
+  "service": "MIP",
+  "threats": [
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

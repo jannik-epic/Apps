@@ -1,0 +1,11 @@
+{
+  "id": "8aa66b9c-d2bb-491f-acf4-4277590265cc",
+  "displayName": "Exclude_Block_Require_trusted_countries",
+  "description": "Exclude_Block_Require_trusted_countries",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "Exclude_Block_Require_trusted_countries",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-07-26T17:17:10Z"
+}

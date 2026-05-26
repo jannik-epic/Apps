@@ -1,0 +1,14 @@
+{
+  "id": "7e8959a1-14aa-418d-a851-f4c546a26666",
+  "createdDateTime": "2022-10-29T07:39:24.6687733Z",
+  "lastModifiedDateTime": "2022-10-29T07:39:24.6687733Z",
+  "displayName": "Android-CorporateDevcies",
+  "description": "",
+  "platform": "windows10AndLater",
+  "rule": "(device.deviceCategory  -eq \"Sales department\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

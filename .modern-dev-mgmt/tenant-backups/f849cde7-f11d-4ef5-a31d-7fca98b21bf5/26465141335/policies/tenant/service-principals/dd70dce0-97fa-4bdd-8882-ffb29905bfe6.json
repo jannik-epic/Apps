@@ -1,0 +1,8 @@
+{
+  "id": "dd70dce0-97fa-4bdd-8882-ffb29905bfe6",
+  "appId": "51133ff5-8e0d-4078-bcca-84fb7f905b64",
+  "displayName": "Microsoft Teams Mailhook",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

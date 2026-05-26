@@ -1,0 +1,67 @@
+{
+  "id": "b23568ee-8545-493e-accf-4ee0e56fede5",
+  "appId": "5af5ddf9-c7fa-4cdb-8de7-fac110b8aadf",
+  "displayName": "DeviceTroubAzure",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2023-08-20T06:53:41Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": [
+      "http://localhost:8501/login/callback",
+      "https://GPTDeviceTroubleshooter.azurewebsites.net/login/callback"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "f1493658-876a-4c87-8fa7-edb559b3476a",
+          "type": "Scope"
+        },
+        {
+          "id": "4edf5f54-4666-44af-9de9-0144fb4b6e8c",
+          "type": "Scope"
+        },
+        {
+          "id": "314874da-47d6-4978-88dc-cf0d37f0bb82",
+          "type": "Scope"
+        },
+        {
+          "id": "11d4cd79-5ba5-460f-803f-e22c8ab85ccd",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
+          "type": "Scope"
+        },
+        {
+          "id": "06da0dbc-49e2-44d2-8312-53f166ab848a",
+          "type": "Scope"
+        },
+        {
+          "id": "c5366453-9fb0-48a5-a156-24f0c49a4b84",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

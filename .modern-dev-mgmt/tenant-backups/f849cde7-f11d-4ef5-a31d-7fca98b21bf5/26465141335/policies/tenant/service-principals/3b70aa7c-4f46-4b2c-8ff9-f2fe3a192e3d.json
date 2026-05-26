@@ -1,0 +1,8 @@
+{
+  "id": "3b70aa7c-4f46-4b2c-8ff9-f2fe3a192e3d",
+  "appId": "a232010e-820c-4083-83bb-3ace5fc29d0b",
+  "displayName": "Azure Cosmos DB",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

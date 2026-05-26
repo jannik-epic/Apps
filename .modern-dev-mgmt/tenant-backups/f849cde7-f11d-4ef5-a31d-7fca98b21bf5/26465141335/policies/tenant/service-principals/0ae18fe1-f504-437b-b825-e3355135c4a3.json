@@ -1,0 +1,11 @@
+{
+  "id": "0ae18fe1-f504-437b-b825-e3355135c4a3",
+  "appId": "5af5ddf9-c7fa-4cdb-8de7-fac110b8aadf",
+  "displayName": "DeviceTroubAzure",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

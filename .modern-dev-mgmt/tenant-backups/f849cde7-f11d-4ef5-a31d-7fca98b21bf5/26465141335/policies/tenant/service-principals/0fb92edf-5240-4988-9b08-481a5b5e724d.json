@@ -1,0 +1,11 @@
+{
+  "id": "0fb92edf-5240-4988-9b08-481a5b5e724d",
+  "appId": "c4288165-6698-45ba-98a5-48ea7791fed3",
+  "displayName": "Azure Service Connector Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

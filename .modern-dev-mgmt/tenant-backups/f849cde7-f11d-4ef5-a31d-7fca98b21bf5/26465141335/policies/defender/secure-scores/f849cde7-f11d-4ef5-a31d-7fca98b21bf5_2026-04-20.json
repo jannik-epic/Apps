@@ -1,0 +1,639 @@
+{
+  "id": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5_2026-04-20",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "activeUserCount": 6,
+  "createdDateTime": "2026-04-20T00:00:00Z",
+  "currentScore": 150.67,
+  "enabledServices": [
+    "HasAADP1",
+    "HasAADP2",
+    "HasOCAS",
+    "HasMCAS",
+    "HasAATP",
+    "HasCLB",
+    "HasMDOP1",
+    "HasMDOP2",
+    "HasEXOP2",
+    "HasAIPP1",
+    "HasAIPP2",
+    "HasSPOP2"
+  ],
+  "licensedUserCount": 0,
+  "maxScore": 278.0,
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "averageComparativeScores": [
+    {
+      "basis": "AllTenants",
+      "averageScore": 50.99,
+      "appsScore": 47.36,
+      "appsScoreMax": 124.4,
+      "dataScore": 0.39,
+      "dataScoreMax": 5.25,
+      "deviceScore": 19.72,
+      "deviceScoreMax": 34.59,
+      "identityScore": 39.52,
+      "identityScoreMax": 63.34,
+      "infrastructureScore": 0.0,
+      "infrastructureScoreMax": 0.0
+    },
+    {
+      "basis": "TotalSeats",
+      "averageScore": 45.84,
+      "SeatSizeRangeLowerValue": "1",
+      "SeatSizeRangeUpperValue": "100",
+      "appsScore": 53.26,
+      "appsScoreMax": 145.57,
+      "dataScore": 0.33,
+      "dataScoreMax": 6.19,
+      "deviceScore": 13.86,
+      "deviceScoreMax": 24.59,
+      "identityScore": 37.83,
+      "identityScoreMax": 62.11,
+      "infrastructureScore": 0.0,
+      "infrastructureScoreMax": 0.0
+    }
+  ],
+  "controlScores": [
+    {
+      "controlCategory": "Apps",
+      "controlName": "meeting_restrictanonymousjoin_v1",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "current status: ",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "meeting_pstnusersbypasslobby_v1",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "meeting_externalrequestcontrol_v1",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "meeting_anonymousstartmeeting_v1",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "meeting_autoadmitusers_v1",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "meeting_designatedpresenter_v1",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "IntegratedApps",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "You have no user consent policy in place.",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "PWAgePolicyNew",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "Your current policy is set to never let passwords expire.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "SelfServicePasswordReset",
+      "description": null,
+      "score": 0.67,
+      "implementationStatus": "You have 0 of 0 users who don't have self-service password reset enabled.",
+      "scoreInPercentage": 67.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "BlockLegacyAuthentication",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "You have 0 of 0 users that don't have legacy authentication blocked.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "MFARegistrationV2",
+      "description": null,
+      "score": 9.0,
+      "implementationStatus": "You have 0 out of 0 users that aren’t registered with MFA.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AdminMFAV2",
+      "description": null,
+      "score": 10.0,
+      "implementationStatus": "You have 0 out of 0 users with administrative roles that aren’t registered and protected with MFA.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "SigninRiskPolicy",
+      "description": null,
+      "score": 7.0,
+      "implementationStatus": "You have 0 of 0 users that don't have the sign-in risky policy turned on.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "UserRiskPolicy",
+      "description": null,
+      "score": 7.0,
+      "implementationStatus": "You have 0 users out of 0 that do not have user risk policy enabled.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "OneAdmin",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "You currently have  global admins.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "RoleOverlap",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "You have  users with least privileged administrative roles.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "spo_idle_session_timeout",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "The setting is not compliant.",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "spo_legacy_auth",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "The setting is not compliant.",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "McasFirewallLogUpload",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Feature in place: .",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_DefenderForIdentityIsNotInstalled",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_atpprotection",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Data",
+      "controlName": "dlp_datalossprevention",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "exo_individualsharing",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_safedocuments",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_connectionfilter",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "There are allowed IP addresses in the connection filter policy",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Data",
+      "controlName": "mip_purviewlabelconsent",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "The setting was not enabled.",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "CustomerLockBoxEnabled",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Feature in place: .",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "exo_oauth2clientprofileenabled",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "Modern authentication for Exchange Online is enabled",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "exo_mailtipsenabled",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "MailTips for end users are disabled.",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "exo_transportrulesallowlistdomains",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "Spam confidence level (SCL) is not configured in mail transport rules with specific domain",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mip_search_auditlog",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "Microsoft 365 audit log search is enabled",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "exo_mailboxaudit",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Mailbox auditing for all users is disabled",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "exo_storageproviderrestricted",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Additional storage providers are restricted in Outlook on the web is not configured correctly. Please follow next steps to correctly configure the control.",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "exo_outlookaddins",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Installing Outlook add-ins configuration is disabled",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_zapspam",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_zapphish",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_zapmalware",
+      "description": null,
+      "score": 6.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_safeattachments",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_safelinksforemail",
+      "description": null,
+      "score": 9.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_commonattachmentsfilter",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Data",
+      "controlName": "mip_sensitivitylabelspolicies",
+      "description": null,
+      "score": 2.0,
+      "implementationStatus": "Policies were published on  of the  users",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Data",
+      "controlName": "mip_autosensitivitylabelspolicies",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Policies were published on  of the  users",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_highconfidencespamaction",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_phisspamacation",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_highconfidencephishaction",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_bulkspamaction",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_quarantineretentionperiod",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_allowedsenderscombined",
+      "description": null,
+      "score": 2.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_bulkthreshold",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_spamaction",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_autoforwardingmode",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_recipientexternallimitperhour",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_recipientinternallimitperhour",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_recipientlimitperday",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_thresholdreachedaction",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_enablemailboxintelligence",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_mailboxintelligenceprotection",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_mailboxintelligenceprotectionaction",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_enabledomainstoprotect",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_phishthresholdlevel",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_similardomainssafetytips",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_similaruserssafetytips",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_targeteddomainprotectionaction",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_targeteduserprotectionaction",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_targetedusersprotection",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_unusualcharacterssafetytips",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_spam_notifications_only_for_admins",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_safeattachmentpolicy",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_safelinksforOfficeApps",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_antiphishingpolicies",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_blockmailforward",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_AccountWithLeakedCredentials",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    }
+  ]
+}

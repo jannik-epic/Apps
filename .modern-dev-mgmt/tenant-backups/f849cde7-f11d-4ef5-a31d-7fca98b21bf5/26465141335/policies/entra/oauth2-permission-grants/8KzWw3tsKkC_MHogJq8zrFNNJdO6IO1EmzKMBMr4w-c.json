@@ -1,0 +1,8 @@
+{
+  "clientId": "c3d6acf0-6c7b-402a-bf30-7a2026af33ac",
+  "consentType": "AllPrincipals",
+  "id": "8KzWw3tsKkC_MHogJq8zrFNNJdO6IO1EmzKMBMr4w-c",
+  "principalId": null,
+  "resourceId": "d3254d53-20ba-44ed-9b32-8c04caf8c3e7",
+  "scope": "AllSites.FullControl TermStore.ReadWrite.All"
+}

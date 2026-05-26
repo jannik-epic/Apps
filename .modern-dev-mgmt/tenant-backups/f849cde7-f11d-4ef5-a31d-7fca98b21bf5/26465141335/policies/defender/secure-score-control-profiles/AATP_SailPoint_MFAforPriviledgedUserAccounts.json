@@ -1,0 +1,35 @@
+{
+  "id": "AATP_SailPoint_MFAforPriviledgedUserAccounts",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2335128",
+  "controlCategory": "Identity",
+  "title": "Assign multi-factor authentication for SailPoint privileged user accounts ",
+  "deprecated": false,
+  "implementationCost": "Low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "\r\n    1. Review the list of exposed entities to discover which of your SailPoint privileged user accounts do not have any MFA method assigned.  <br>\r\n    2. Assign and enforce a multi-factor authentication (MFA) method for all the privileged accounts. <br>\r\n    ",
+  "remediationImpact": "This report lists any SailPoint privileged accounts that do not have any multi-factor authentication (MFA) methods assigned. ",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Medium",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

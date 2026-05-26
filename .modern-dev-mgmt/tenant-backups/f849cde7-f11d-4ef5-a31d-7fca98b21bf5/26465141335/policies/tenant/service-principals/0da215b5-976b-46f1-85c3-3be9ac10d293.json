@@ -1,0 +1,12 @@
+{
+  "id": "0da215b5-976b-46f1-85c3-3be9ac10d293",
+  "appId": "7d3471e1-ec8b-4655-92f3-bb331362b5ae",
+  "displayName": "Azure Storage Actions Resource Provider Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

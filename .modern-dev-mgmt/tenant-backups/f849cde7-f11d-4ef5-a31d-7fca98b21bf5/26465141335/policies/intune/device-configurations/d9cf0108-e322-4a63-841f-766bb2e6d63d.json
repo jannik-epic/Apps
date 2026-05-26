@@ -1,0 +1,21 @@
+{
+  "@odata.type": "#microsoft.graph.macOSTrustedRootCertificate",
+  "id": "d9cf0108-e322-4a63-841f-766bb2e6d63d",
+  "lastModifiedDateTime": "2022-07-27T07:41:40.3392477Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-27T07:33:46.56398Z",
+  "description": null,
+  "displayName": "MacOS_Default_SCEPman_TrustedCertificate",
+  "version": 2,
+  "trustedRootCertificate": "MIIEBTCCAu2gAwIBAgIQCYbgkbBVT+297t/6WC+XOjANBgkqhkiG9w0BAQsFADBpMRswGQYDVQQKExJqYW5uaWtyZWluaGFyZC5jb20xLTArBgNVBAsTJGFkN2NiOGZkLTMzOWUtNDM4ZS04ZGI3LTAxNjg2OTdlMzNmMjEbMBkGA1UEAxMSU0NFUG1hbi1Sb290LUNBLVYxMB4XDTIyMDYxNzA5NTMxNVoXDTMyMDYxNzEwMDMxNVowaTEbMBkGA1UEChMSamFubmlrcmVpbmhhcmQuY29tMS0wKwYDVQQLEyRhZDdjYjhmZC0zMzllLTQzOGUtOGRiNy0wMTY4Njk3ZTMzZjIxGzAZBgNVBAMTElNDRVBtYW4tUm9vdC1DQS1WMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJtGT5P+q3OGi4++uU4uan/S27MHyTv1CVrtkAE2BTlGm7rpwK0zkc/WEpFDtRuRYBLcKlmXflcZRoZjIzpG+KLLZrG8Bm3b9IpzqmqRENGVuPrsCyRIV7f/NYBEKKs6bSPQAyj9HnrmypMizrCmRFWybe3zHx5gyHrOQHAuzVsPwo1zOQgRbadIRQXtumLXebV/iukkeCYN2CdWDp9UCJoYEu0LBGNFC8nHEpJYE39z02OsUJOvO4zEoQ80QkaMwoEmqmEoI+blsgSI8MFVabj9MwVum6wMRz3nTl8dP/fFLxrh5cuXb9EzKSRpX6m04RYkRLvQCw8ONf/xjSvG4mkCAwEAAaOBqDCBpTAOBgNVHQ8BAf8EBAMCAaYwDwYDVR0TAQH/BAUwAwEB/zBCBgNVHSUEOzA5BgRVHSUABggrBgEFBQcDAgYIKwYBBQUHAwEGBysGAQUCAwUGCisGAQQBgjcUAgIGCCsGAQUFBwMJMB8GA1UdIwQYMBaAFP1Nv+zSOrGZCs+jgfDsfiRSmIhqMB0GA1UdDgQWBBT9Tb/s0jqxmQrPo4Hw7H4kUpiIajANBgkqhkiG9w0BAQsFAAOCAQEAgNPKclcfanN6ldmBOZBiPjumMzTA04ZsFnEVb7pGiPrrp429CqDLVsS2q1fotI1NyH+mxUjd5bYI7NsCBVzxGIZl8ZxePNHQkURA0HvbmyTvkBtVbrv252WnRE9oeHn14lDMposIIKBi48xbophzxdfwl8314yOxTyOCMQtYKq23jkrBbCDeWTWuIld/D2t4S+UAtSFsMNOv3BzlkhCcm/aBgyT+2STJ7KpoYgoDyalxgJgmP0Ik0WOlHCkwlzk3r8u0c6PSQOkqVmh69qaE4vLXelfJiZGMI5mjgQg1aVvVYZTZQMv4dooomV+2MzIpTVGEQDX3pSZDDHSuQrRazg==",
+  "certFileName": "scepman-root.cer",
+  "deploymentChannel": null,
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('d9cf0108-e322-4a63-841f-766bb2e6d63d')/microsoft.graph.macOSTrustedRootCertificate/assignments",
+  "assignments": []
+}

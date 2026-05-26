@@ -1,0 +1,22 @@
+{
+  "id": "02a4e7e8-195a-4824-8044-08b3a7f2d555",
+  "publisher": "Microsoft",
+  "version": "7",
+  "displayName": "Restart stopped Office C2R svc",
+  "description": "If service is stopped, try to start it. If not auto-start, change to automatic.\r\nImportant since Win32 OPP won’t launch if C2R isn’t running.",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastModifiedDateTime": "2023-06-17T19:05:43.316229Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "roleScopeTagIds": [],
+  "isGlobalScript": true,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('02a4e7e8-195a-4824-8044-08b3a7f2d555')/assignments",
+  "assignments": []
+}

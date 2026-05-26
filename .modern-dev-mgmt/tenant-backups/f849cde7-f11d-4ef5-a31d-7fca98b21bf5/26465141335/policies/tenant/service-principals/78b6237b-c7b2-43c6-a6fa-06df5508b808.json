@@ -1,0 +1,12 @@
+{
+  "id": "78b6237b-c7b2-43c6-a6fa-06df5508b808",
+  "appId": "c08f52c9-8f03-4558-a0ea-9a4c878cf343",
+  "displayName": "Microsoft apps with Global Secure Access",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

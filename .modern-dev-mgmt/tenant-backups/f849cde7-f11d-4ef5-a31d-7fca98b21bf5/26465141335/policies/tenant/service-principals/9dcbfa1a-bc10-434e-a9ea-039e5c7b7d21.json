@@ -1,0 +1,10 @@
+{
+  "id": "9dcbfa1a-bc10-434e-a9ea-039e5c7b7d21",
+  "appId": "c9299480-c13a-49db-a7ae-cdfe54fe0313",
+  "displayName": "PowerApps-Advisor",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "scid_80",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/security-recommendations?recommendationId=sca-_-scid-80&tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Device",
+  "title": "Block Flash activation in Office documents",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 85,
+  "remediation": "Within Microsoft 365 security, go to <b> <a href='https://security.microsoft.com/security-recommendations?recommendationId=sca-_-scid-80' target='_blank'>Vulnerability management > Recommendations</a> </b>, read the relevant security recommendation and choose remediation or exception options.",
+  "remediationImpact": "Unknown",
+  "service": "MDATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

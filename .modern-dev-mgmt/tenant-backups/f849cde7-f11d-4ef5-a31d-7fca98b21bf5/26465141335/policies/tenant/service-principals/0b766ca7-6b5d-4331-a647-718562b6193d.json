@@ -1,0 +1,12 @@
+{
+  "id": "0b766ca7-6b5d-4331-a647-718562b6193d",
+  "appId": "d58cce36-3f4e-4a97-bd50-147c3d0a7256",
+  "displayName": "DEV - SecureLeaf",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "SecureLeaf",
+    "dev",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

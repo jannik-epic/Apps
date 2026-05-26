@@ -1,0 +1,8 @@
+{
+  "clientId": "2541ae95-a477-48d4-8a0a-1a85d2b14db9",
+  "consentType": "AllPrincipals",
+  "id": "la5BJXek1EiKChqF0rFNufdddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "BitlockerKey.ReadBasic.All SecurityActions.Read.All SecurityAlert.Read.All SecurityIncident.Read.All ThreatIndicators.Read.All User.Read Application.Read.All Policy.Read.All Organization.Read.All Agreement.Read.All DeviceLocalCredential.Read.All ThreatIndicators.ReadWrite.OwnedBy ChannelMessage.Send"
+}

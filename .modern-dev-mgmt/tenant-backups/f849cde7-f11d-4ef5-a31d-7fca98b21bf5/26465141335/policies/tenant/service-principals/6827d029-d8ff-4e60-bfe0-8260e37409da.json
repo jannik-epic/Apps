@@ -1,0 +1,10 @@
+{
+  "id": "6827d029-d8ff-4e60-bfe0-8260e37409da",
+  "appId": "7659f226-8344-4731-b758-a4d93238309c",
+  "displayName": "NewApp",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "9ddf93cc-6aab-4c2b-a0a8-5b37082f3215",
+  "appId": "8e0e8db5-b713-4e91-98e6-470fed0aa4c2",
+  "displayName": "Microsoft Azure Signup Portal",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

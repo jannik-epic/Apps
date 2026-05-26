@@ -1,0 +1,8 @@
+{
+  "clientId": "ad59c412-a7a0-4845-875b-a584350954bc",
+  "consentType": "Principal",
+  "id": "EsRZraCnRUiHW6WENQlUvPdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+  "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": " User.Read.All User.Read Group.ReadWrite.All Device.Read.All DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All openid profile offline_access Group.Read.All DeviceManagementManagedDevices.PrivilegedOperations.All DeviceManagementApps.Read.All DeviceManagementConfiguration.Read.All DeviceManagementManagedDevices.Read.All Application.Read.All AppRoleAssignment.ReadWrite.All RoleManagement.ReadWrite.Directory DeviceManagementServiceConfig.ReadWrite.All Device.ReadWrite.All GroupMember.ReadWrite.All Mail.Read Directory.Read.All Policy.Read.All Reports.Read.All DirectoryRecommendations.Read.All PrivilegedAccess.Read.AzureAD IdentityRiskEvent.Read.All DeviceManagementRBAC.Read.All Application.ReadWrite.All Directory.ReadWrite.All DeviceManagementServiceConfig.Read.All"
+}

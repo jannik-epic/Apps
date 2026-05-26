@@ -1,0 +1,11 @@
+{
+  "id": "b4499a50-f7fa-40a6-87a0-3ff13ab21b74",
+  "appId": "65c8bd9e-caac-4816-be98-0692f41191bc",
+  "displayName": "People Profile Event Proxy",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "eb2a1a5a-3599-41fa-9922-4f709fcf3768",
+  "appId": "47ee738b-3f1a-4fc7-ab11-37e4822b007e",
+  "displayName": "Azure AD Application Proxy",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

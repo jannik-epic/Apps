@@ -1,0 +1,11 @@
+{
+  "id": "6ebd3ce4-3fbe-44f8-a00c-1032a9b2ba35",
+  "appId": "d6fdaa33-e821-4211-83d0-cf74736489e1",
+  "displayName": "Microsoft Service Trust",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ad05df61-31b1-4b4e-a9cb-a242029a585f",
+  "createdDateTime": "2022-10-29T07:40:28.3844851Z",
+  "lastModifiedDateTime": "2022-10-29T07:40:28.3844851Z",
+  "displayName": "Android-CorporateDevices",
+  "description": "",
+  "platform": "androidForWork",
+  "rule": "(device.deviceOwnership -eq \"Corporate\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

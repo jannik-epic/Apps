@@ -1,0 +1,11 @@
+{
+  "id": "84c09c7f-9650-4ae3-b882-c5563f6fcfc6",
+  "appId": "0f698dd4-f011-4d23-a33e-b36416dcb1e6",
+  "displayName": "OfficeClientService",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

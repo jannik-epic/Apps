@@ -1,0 +1,40 @@
+{
+  "id": "MDA_SF_maxLoginAttempts",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://help.salesforce.com/s/articleView?id=sf.admin_password.htm&type=5",
+  "controlCategory": "Identity",
+  "title": "Maximum invalid login attempts",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 10,
+  "remediation": "1. From <b>Setup</b>, enter <b>Password Policies</b> in the <b>Quick Find</b> box, then select <b>Password Policies</b>.<br>2. Under <b>Maximum invalid login attempts</b>, select 3.",
+  "remediationImpact": "You users will be locked if they attemp to login with failure after 3 times.",
+  "service": "MDA_SF",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration",
+    "Data Deletion",
+    "Malicious Insider"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

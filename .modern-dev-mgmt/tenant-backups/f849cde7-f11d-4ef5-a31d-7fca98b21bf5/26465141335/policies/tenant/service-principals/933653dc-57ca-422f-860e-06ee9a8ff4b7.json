@@ -1,0 +1,11 @@
+{
+  "id": "933653dc-57ca-422f-860e-06ee9a8ff4b7",
+  "appId": "5861f7fb-5582-4c1a-83c0-fc5ffdb531a6",
+  "displayName": "Azure RBAC Data Plane",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

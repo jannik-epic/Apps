@@ -1,0 +1,11 @@
+{
+  "id": "6837e96d-8b96-4ba2-a419-66c513b62ad4",
+  "appId": "b77edb2c-9198-4289-a8e4-3432c0df15b8",
+  "displayName": "test",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

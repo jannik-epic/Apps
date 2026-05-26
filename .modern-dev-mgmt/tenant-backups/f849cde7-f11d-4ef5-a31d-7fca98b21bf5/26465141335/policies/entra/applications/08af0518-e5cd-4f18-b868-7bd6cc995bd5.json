@@ -1,0 +1,112 @@
+{
+  "id": "08af0518-e5cd-4f18-b868-7bd6cc995bd5",
+  "appId": "4743e56d-572f-4993-895a-38797244b41f",
+  "displayName": "Modern Dev Mgmt Backup — ModernDevMgmt.onmicrosoft.com",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-05-19T12:57:25Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "http://localhost:5175/",
+      "http://localhost:5174/"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "http://localhost:5175/",
+        "index": null
+      },
+      {
+        "uri": "http://localhost:5174/",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "78145de6-330d-4800-a6ce-494ff2d33d07",
+          "type": "Role"
+        },
+        {
+          "id": "9241abd9-d0e6-425a-bd4f-47ba86e767a4",
+          "type": "Role"
+        },
+        {
+          "id": "5ac13192-7ace-4fcf-b828-1a26f28068ee",
+          "type": "Role"
+        },
+        {
+          "id": "2f51be20-0bb4-4fed-bf7b-db946066c75e",
+          "type": "Role"
+        },
+        {
+          "id": "246dd0d5-5bd0-4def-940b-0421030a5b68",
+          "type": "Role"
+        },
+        {
+          "id": "01c0a623-fc9b-48e9-b794-0756f8e8f067",
+          "type": "Role"
+        },
+        {
+          "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+          "type": "Role"
+        },
+        {
+          "id": "62a82d76-70ea-41e2-9197-370581804d09",
+          "type": "Role"
+        },
+        {
+          "id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
+          "type": "Role"
+        },
+        {
+          "id": "3b4349e1-8cf5-45a3-95b7-69d1751d3e6a",
+          "type": "Role"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        },
+        {
+          "id": "7438b122-aefc-4978-80ed-43db9fcc7715",
+          "type": "Role"
+        },
+        {
+          "id": "483bed4a-2ad3-4361-a73b-c83ccdbdc53c",
+          "type": "Role"
+        },
+        {
+          "id": "bf394140-e372-4bf9-a898-299cfc7564e5",
+          "type": "Role"
+        },
+        {
+          "id": "dd98c7f5-2d42-42d3-a0e4-633161547251",
+          "type": "Role"
+        },
+        {
+          "id": "c7a5be92-2b3d-4540-8a67-c96dcaae8b43",
+          "type": "Role"
+        },
+        {
+          "id": "58ca0d9a-1575-47e1-a3cb-007ef2e4583b",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

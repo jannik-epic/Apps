@@ -1,0 +1,11 @@
+{
+  "id": "962786f6-5183-4208-8547-8eba95c57bec",
+  "appId": "6d057c82-a784-47ae-8d12-ca7b38cf06b4",
+  "displayName": "Networking-MNC",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

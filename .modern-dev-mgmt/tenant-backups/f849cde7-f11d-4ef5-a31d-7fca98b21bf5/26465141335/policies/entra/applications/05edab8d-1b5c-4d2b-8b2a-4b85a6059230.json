@@ -1,0 +1,110 @@
+{
+  "id": "05edab8d-1b5c-4d2b-8b2a-4b85a6059230",
+  "appId": "754a4a9b-bba5-48fb-a5e8-e32b538d31fb",
+  "displayName": "intune-agent",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-01-18T07:53:02Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://iaf-prod-alsm5xqigx6se.azurewebsites.net/auth/callback",
+      "https://iaf-test-pgmijucogv3mi.azurewebsites.net/auth/callback",
+      "https://localhost:8010/auth/callback",
+      "http://localhost:8010/auth/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": true,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://iaf-prod-alsm5xqigx6se.azurewebsites.net/auth/callback",
+        "index": null
+      },
+      {
+        "uri": "https://iaf-test-pgmijucogv3mi.azurewebsites.net/auth/callback",
+        "index": null
+      },
+      {
+        "uri": "https://localhost:8010/auth/callback",
+        "index": null
+      },
+      {
+        "uri": "http://localhost:8010/auth/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "314874da-47d6-4978-88dc-cf0d37f0571a",
+          "type": "Scope"
+        },
+        {
+          "id": "44642bfe-8385-4adc-8fc6-fe3cb2c375c3",
+          "type": "Scope"
+        },
+        {
+          "id": "3404d2bf-2b13-457e-a330-c24f0c4ab24d",
+          "type": "Scope"
+        },
+        {
+          "id": "f1493658-876a-4c87-8571-7b3e27ef4a6d",
+          "type": "Scope"
+        },
+        {
+          "id": "0883f392-0a7a-443d-8c76-16a6d39c7b63",
+          "type": "Scope"
+        },
+        {
+          "id": "4edf5f54-4666-44af-9de9-0144fb4b6e8c",
+          "type": "Scope"
+        },
+        {
+          "id": "7b3f05d5-f68c-4b8d-8c59-a2ecd12f24af",
+          "type": "Scope"
+        },
+        {
+          "id": "49f0cc30-024c-4f3c-ab88-9e413cd0c43f",
+          "type": "Scope"
+        },
+        {
+          "id": "8696daa5-bce5-4b2e-83f9-51b6defc4e1e",
+          "type": "Scope"
+        },
+        {
+          "id": "e383f46e-2787-4529-855e-0e479a3ffac0",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "7427e0e9-2fba-42fe-b0c0-848c9e6a8182",
+          "type": "Scope"
+        },
+        {
+          "id": "37f7f235-527c-4136-accd-4a02d197296e",
+          "type": "Scope"
+        },
+        {
+          "id": "14dad69e-099b-42c9-810b-d002981feec1",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

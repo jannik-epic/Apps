@@ -1,0 +1,35 @@
+{
+  "id": "mdo_targeteddomainprotectionaction",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/antiphishing?tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Apps",
+  "title": "Quarantine messages that are detected from impersonated domains",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 6.0,
+  "rank": 128,
+  "remediation": "\r\n    Ensure that all users have an assigned anti-phishing policy with the &lsquo;<strong>Enable domains to protect&rsquo;</strong>, &lsquo;<strong>Include domains I own&rsquo;</strong> and &lsquo;<strong>Include custom domains&rsquo;</strong> options enabled,\r\n    and the &lsquo;<strong>If message is detected as an impersonated domain&rsquo;</strong> option set to &lsquo;<strong>Quarantine the message&rsquo;</strong>, by either updating your existing policies or creating new ones. \r\n    ",
+  "remediationImpact": "Unknown",
+  "service": "MDO",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

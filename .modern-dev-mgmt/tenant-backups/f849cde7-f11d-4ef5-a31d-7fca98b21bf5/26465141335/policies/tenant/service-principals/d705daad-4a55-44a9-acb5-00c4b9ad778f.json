@@ -1,0 +1,11 @@
+{
+  "id": "d705daad-4a55-44a9-acb5-00c4b9ad778f",
+  "appId": "b8d56525-1fd0-4121-a640-e0ede64f74b5",
+  "displayName": "M365CommunicationCompliance",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

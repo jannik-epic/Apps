@@ -1,0 +1,24 @@
+{
+  "id": "6b58f6d6-5e75-45a5-a1ce-2b772c92d740",
+  "publisher": "Jannik Reinhard",
+  "version": "1",
+  "displayName": "WIN_Rem_ToastNotificationSurvey",
+  "description": "",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2022-07-27T08:00:12.9355256Z",
+  "lastModifiedDateTime": "2022-07-27T08:02:16.4485008Z",
+  "runAsAccount": "user",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('6b58f6d6-5e75-45a5-a1ce-2b772c92d740')/assignments",
+  "assignments": []
+}

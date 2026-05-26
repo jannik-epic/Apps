@@ -1,0 +1,30 @@
+{
+  "id": "b6a27b2b-f905-4b2e-81b5-0d90e0ef1fdb",
+  "description": "Manage all aspects of Microsoft Entra Backup, such as create recovery jobs and manage backup snapshots.",
+  "displayName": "Entra Backup Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "b6a27b2b-f905-4b2e-81b5-0d90e0ef1fdb",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/backup/preview/cancel",
+        "microsoft.directory/backup/preview/create",
+        "microsoft.directory/backup/recovery/cancel",
+        "microsoft.directory/backup/recovery/create",
+        "microsoft.directory/backup/standard/read"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('b6a27b2b-f905-4b2e-81b5-0d90e0ef1fdb')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

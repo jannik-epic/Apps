@@ -1,0 +1,44 @@
+{
+  "id": "d8bbc1f7-9835-4379-9276-1956042a4247",
+  "appId": "a5a73609-1b41-4e2d-b489-edbf6b7833ba",
+  "displayName": "landingzone-oidc-solutionselfserviceclient",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-10-28T13:58:51Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
+          "type": "Role"
+        },
+        {
+          "id": "06b708a9-e830-4db3-a914-8e69da51d44f",
+          "type": "Role"
+        },
+        {
+          "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

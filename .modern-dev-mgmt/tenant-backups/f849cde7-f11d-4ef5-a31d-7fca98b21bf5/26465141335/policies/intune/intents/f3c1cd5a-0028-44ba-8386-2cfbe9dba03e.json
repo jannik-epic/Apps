@@ -1,0 +1,14 @@
+{
+  "id": "f3c1cd5a-0028-44ba-8386-2cfbe9dba03e",
+  "displayName": "BitLocker Encryption",
+  "description": "Encrypts drives to 256bit",
+  "isAssigned": true,
+  "isMigratingToConfigurationPolicy": null,
+  "lastModifiedDateTime": "2023-11-11T16:26:29.9564779Z",
+  "templateId": "d1174162-1dd2-4976-affc-6667049ab0ae",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('f3c1cd5a-0028-44ba-8386-2cfbe9dba03e')/assignments",
+  "assignments": []
+}

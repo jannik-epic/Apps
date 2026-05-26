@@ -1,0 +1,11 @@
+{
+  "id": "f2cabb03-6f7b-4e58-9979-4c5b332541f9",
+  "appId": "98c8388a-4e86-424f-a176-d1288462816f",
+  "displayName": "Recommended",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

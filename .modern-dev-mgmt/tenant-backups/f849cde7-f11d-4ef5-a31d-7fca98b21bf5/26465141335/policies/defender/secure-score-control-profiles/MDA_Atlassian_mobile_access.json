@@ -1,0 +1,38 @@
+{
+  "id": "MDA_Atlassian_mobile_access",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://support.atlassian.com/security-and-access-policies/docs/mobile-policy-mam-security-controls-and-supported-apps/",
+  "controlCategory": "Identity",
+  "title": "Atlassian mobile app security - App access requirement",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 6.0,
+  "rank": 10,
+  "remediation": "<p>To set this policy:</p> <ol> <li>Go to Security and Mobile app policy in the Atlassian admin dashboard.</li> <li>Click on \"Create mobile app policy\" or \"edit\" (in case a policy already exists).</li> <li>Mark all the three options:</li> </ol> <ul> <li>Block compromised devices.</li> <li>Require data encryption.</li> <li>Require biometric authentication or a device passcode.</li> </ul> <ol start=\"4\"> <li>Note that all the three options must be checked in order to comply.</li> <li>Note that the 'minimum OS version' is not mandatory for this control, but the recommendation is to set it to the latest.</li> </ol>",
+  "remediationImpact": "See in learn more link.",
+  "service": "MDA_Atlassian",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

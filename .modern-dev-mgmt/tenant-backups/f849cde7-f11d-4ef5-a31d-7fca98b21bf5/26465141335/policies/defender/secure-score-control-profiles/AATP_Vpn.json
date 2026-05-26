@@ -1,0 +1,39 @@
+{
+  "id": "AATP_Vpn",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/settings/identities?tabid=radius",
+  "controlCategory": "Identity",
+  "title": "Configure VPN integration",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 63,
+  "remediation": "Go to the <a href='https://security.microsoft.com/settings/identities?tabid=radius' target='_blank'>Settings page</a> >, and configure the VPN radius accounting to enable VPN based detections.",
+  "remediationImpact": "Unknown",
+  "service": "Azure ATP",
+  "threats": [
+    "Account Breach",
+    "Elevation of Privilege",
+    "Malicious Insider"
+  ],
+  "tier": "Core",
+  "userImpact": "low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

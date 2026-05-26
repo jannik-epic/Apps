@@ -1,0 +1,11 @@
+{
+  "id": "348579d5-9be2-4e90-a99b-8925f453cc64",
+  "appId": "70ecaaf0-e362-4969-916f-7e7c9abae78c",
+  "displayName": "IntuneGraphFabric",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

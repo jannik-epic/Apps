@@ -1,0 +1,11 @@
+{
+  "id": "4d24546b-7504-4fbf-b591-0e553b4d1c82",
+  "displayName": "Exclude_Require_MDM_Managed_devices_mobile_access",
+  "description": "Exclude_Require_MDM_Managed_devices_mobile_access",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "Exclude_Require_MDM_Managed_devices_mobile_access",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-07-26T17:17:05Z"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "faaf8c43-44dd-468c-bb1f-a3afab8d8d32",
+  "publisher": null,
+  "version": "1",
+  "displayName": "[TEST] Device Inventory Collection Script",
+  "description": "Collects device inventory data and sends it to Azure Function (Test Deployment)",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2025-07-02T14:51:42.8202033Z",
+  "lastModifiedDateTime": "2025-07-02T14:51:42.8202033Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('faaf8c43-44dd-468c-bb1f-a3afab8d8d32')/assignments",
+  "assignments": []
+}

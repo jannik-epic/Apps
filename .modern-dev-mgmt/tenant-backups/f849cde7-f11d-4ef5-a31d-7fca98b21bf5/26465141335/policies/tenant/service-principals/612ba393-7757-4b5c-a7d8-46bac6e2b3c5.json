@@ -1,0 +1,11 @@
+{
+  "id": "612ba393-7757-4b5c-a7d8-46bac6e2b3c5",
+  "appId": "0f54b75d-4d29-4a92-80ae-106a60cd8f5d",
+  "displayName": "Teams User Engagement Profile Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

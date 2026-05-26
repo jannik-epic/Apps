@@ -1,0 +1,11 @@
+{
+  "id": "4c4253ea-8827-4698-92e4-eaa60720b6e3",
+  "displayName": "Exclude_Require_MAM_Approved_app_Onlyexchange",
+  "description": "Exclude_Require_MAM_Approved_app_Onlyexchange",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "Exclude_Require_MAM_Approved_app_Onlyexchange",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-07-26T17:17:07Z"
+}

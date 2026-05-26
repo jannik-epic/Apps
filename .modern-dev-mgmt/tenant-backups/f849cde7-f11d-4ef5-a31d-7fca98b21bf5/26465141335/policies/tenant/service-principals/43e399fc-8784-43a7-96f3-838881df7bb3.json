@@ -1,0 +1,11 @@
+{
+  "id": "43e399fc-8784-43a7-96f3-838881df7bb3",
+  "appId": "022907d3-0f1b-48f7-badc-1ba6abab6d66",
+  "displayName": "Azure SQL Database",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

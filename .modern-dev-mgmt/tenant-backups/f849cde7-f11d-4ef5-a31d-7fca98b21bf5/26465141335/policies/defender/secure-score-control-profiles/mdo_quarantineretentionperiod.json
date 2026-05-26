@@ -1,0 +1,35 @@
+{
+  "id": "mdo_quarantineretentionperiod",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/antispam?tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Apps",
+  "title": "Retain spam in quarantine for 30 days",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 128,
+  "remediation": "<p>Ensure that all users have an assigned inbound anti-spam policy with the &lsquo;<strong>Retain spam in quarantine for this many days</strong>&rsquo; option set to <strong>30</strong>, by either updating your existing policies or creating new ones.</p>",
+  "remediationImpact": "Unknown",
+  "service": "MDO",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

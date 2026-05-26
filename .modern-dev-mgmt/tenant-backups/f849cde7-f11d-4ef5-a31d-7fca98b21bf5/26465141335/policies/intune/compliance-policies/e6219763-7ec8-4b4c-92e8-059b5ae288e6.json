@@ -1,0 +1,51 @@
+{
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "id": "e6219763-7ec8-4b4c-92e8-059b5ae288e6",
+  "createdDateTime": "2023-11-26T17:13:43.6505097Z",
+  "description": "Android Compliance Policy for Fully Managed Devices",
+  "lastModifiedDateTime": "2023-11-26T17:13:43.6505097Z",
+  "displayName": "Android-Compliance-FullyManaged",
+  "version": 1,
+  "deviceThreatProtectionEnabled": false,
+  "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+  "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
+  "securityBlockJailbrokenDevices": false,
+  "securityRequireSafetyNetAttestationBasicIntegrity": true,
+  "securityRequireSafetyNetAttestationCertifiedDevice": true,
+  "osMinimumVersion": null,
+  "osMaximumVersion": null,
+  "minAndroidSecurityPatchLevel": null,
+  "passwordRequired": true,
+  "passwordMinimumLength": 6,
+  "passwordMinimumLetterCharacters": 6,
+  "passwordMinimumLowerCaseCharacters": 1,
+  "passwordMinimumNonLetterCharacters": 1,
+  "passwordMinimumNumericCharacters": 1,
+  "passwordMinimumSymbolCharacters": 1,
+  "passwordMinimumUpperCaseCharacters": 1,
+  "passwordRequiredType": "alphanumericWithSymbols",
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordExpirationDays": null,
+  "passwordPreviousPasswordCountToBlock": null,
+  "storageRequireEncryption": true,
+  "securityRequireIntuneAppIntegrity": null,
+  "requireNoPendingSystemUpdates": null,
+  "securityRequiredAndroidSafetyNetEvaluationType": null,
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceCompliancePolicies('e6219763-7ec8-4b4c-92e8-059b5ae288e6')/microsoft.graph.androidDeviceOwnerCompliancePolicy/assignments",
+  "assignments": [
+    {
+      "id": "e6219763-7ec8-4b4c-92e8-059b5ae288e6_ae1dd731-811f-4344-8980-37faff3d7c72",
+      "source": "direct",
+      "sourceId": "e6219763-7ec8-4b4c-92e8-059b5ae288e6",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "ae1dd731-811f-4344-8980-37faff3d7c72"
+      }
+    }
+  ]
+}

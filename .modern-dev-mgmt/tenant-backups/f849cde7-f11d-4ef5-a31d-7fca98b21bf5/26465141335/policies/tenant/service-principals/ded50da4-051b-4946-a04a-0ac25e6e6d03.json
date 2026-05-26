@@ -1,0 +1,8 @@
+{
+  "id": "ded50da4-051b-4946-a04a-0ac25e6e6d03",
+  "appId": "810dcf14-1858-4bf2-8134-4c369fa3235b",
+  "displayName": "Azure AD Identity Governance - Entitlement Management",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

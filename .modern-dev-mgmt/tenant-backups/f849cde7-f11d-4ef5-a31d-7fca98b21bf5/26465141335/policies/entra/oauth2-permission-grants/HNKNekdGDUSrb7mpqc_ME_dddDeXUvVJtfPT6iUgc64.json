@@ -1,0 +1,8 @@
+{
+  "clientId": "7a8dd21c-4647-440d-ab6f-b9a9a9cfcc13",
+  "consentType": "AllPrincipals",
+  "id": "HNKNekdGDUSrb7mpqc_ME_dddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "DeviceManagementApps.ReadWrite.All Organization.Read.All User.Read"
+}

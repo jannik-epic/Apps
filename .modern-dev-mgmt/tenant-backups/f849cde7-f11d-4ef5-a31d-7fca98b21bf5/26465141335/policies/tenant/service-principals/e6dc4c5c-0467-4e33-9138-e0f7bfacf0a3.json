@@ -1,0 +1,8 @@
+{
+  "id": "e6dc4c5c-0467-4e33-9138-e0f7bfacf0a3",
+  "appId": "12fb057d-b751-47cd-857c-f2934bb677b4",
+  "displayName": "Azure NetApp Files",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

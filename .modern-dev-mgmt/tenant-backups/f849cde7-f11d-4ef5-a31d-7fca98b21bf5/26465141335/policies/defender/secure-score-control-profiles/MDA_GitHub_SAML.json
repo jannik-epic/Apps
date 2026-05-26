@@ -1,0 +1,37 @@
+{
+  "id": "MDA_GitHub_SAML",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/using-saml-for-enterprise-iam/configuring-saml-single-sign-on-for-your-enterprise#enforcing-saml-single-sign-on-for-organizations-in-your-enterprise-account",
+  "controlCategory": "Identity",
+  "title": "Enable single sign on (SSO)",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p>On GitHub Enterprise organization page-</p> <ol> <li>Go to Settings &gt; Organization security</li> <li>Select <strong>Enable SAML authentication </strong></li> <li>Fill the fields with the values found in the Admin Portal</li> </ol>",
+  "remediationImpact": "This setting enforce Single Sing On (SSO) for all GitHub users.",
+  "service": "MDA_GitHub",
+  "threats": [
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

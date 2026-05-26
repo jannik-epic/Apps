@@ -1,0 +1,13 @@
+{
+  "id": "7fc94f5b-9004-4a4e-a20b-e738764923c6:adadadad-808e-44e2-905a-0b7873a8a531",
+  "runRemediationScript": false,
+  "target": {
+    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+    "deviceAndAppManagementAssignmentFilterType": "none"
+  },
+  "runSchedule": {
+    "@odata.type": "#microsoft.graph.deviceHealthScriptHourlySchedule",
+    "interval": 8
+  }
+}

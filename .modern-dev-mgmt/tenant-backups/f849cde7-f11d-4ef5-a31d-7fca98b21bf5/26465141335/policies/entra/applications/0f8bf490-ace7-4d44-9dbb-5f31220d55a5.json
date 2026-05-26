@@ -1,0 +1,58 @@
+{
+  "id": "0f8bf490-ace7-4d44-9dbb-5f31220d55a5",
+  "appId": "e637a5bd-bfac-4214-9291-8683c740557e",
+  "displayName": "moco-report-prod-teams-app",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-10-14T08:30:45Z",
+  "identifierUris": [
+    "api://dsttoolreportwebweu001.z6.web.core.windows.net/e637a5bd-bfac-4214-9291-8683c740557e"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://d-func-tool-report-weu-001.azurewebsites.net/api/auth/end",
+      "https://d-func-tool-report-weu-001.azurewebsites.net/.auth/login/aad/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": true,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://d-func-tool-report-weu-001.azurewebsites.net/api/auth/end",
+        "index": null
+      },
+      {
+        "uri": "https://d-func-tool-report-weu-001.azurewebsites.net/.auth/login/aad/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+          "type": "Scope"
+        },
+        {
+          "id": "14dad69e-099b-42c9-810b-d002981feec1",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

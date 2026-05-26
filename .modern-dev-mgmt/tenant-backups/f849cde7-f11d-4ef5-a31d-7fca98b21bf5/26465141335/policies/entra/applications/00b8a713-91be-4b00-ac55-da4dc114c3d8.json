@@ -1,0 +1,44 @@
+{
+  "id": "00b8a713-91be-4b00-ac55-da4dc114c3d8",
+  "appId": "d0006899-a0db-4959-9b38-0e85384a9015",
+  "displayName": "landingzone-oidc-toolapexdevicesmanager",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-10-01T08:19:26Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
+          "type": "Role"
+        },
+        {
+          "id": "06b708a9-e830-4db3-a914-8e69da51d44f",
+          "type": "Role"
+        },
+        {
+          "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

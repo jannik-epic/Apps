@@ -1,0 +1,135 @@
+[
+  {
+    "id": "3d923179-dc8e-48e6-a9ac-1eb056f2b975_0_0",
+    "intent": "available",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "3d923179-dc8e-48e6-a9ac-1eb056f2b975"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+      "vpnConfigurationId": null,
+      "uninstallOnDeviceRemoval": null,
+      "isRemovable": null,
+      "preventManagedAppBackup": null
+    }
+  },
+  {
+    "id": "0eae8eb2-18cc-4953-be2c-d326eff1d41b_0_0",
+    "intent": "available",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "0eae8eb2-18cc-4953-be2c-d326eff1d41b"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+      "vpnConfigurationId": null,
+      "uninstallOnDeviceRemoval": null,
+      "isRemovable": null,
+      "preventManagedAppBackup": null
+    }
+  },
+  {
+    "id": "78fdd29b-00f5-4706-9357-7bfa2b1bf1d3_0_0",
+    "intent": "available",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "78fdd29b-00f5-4706-9357-7bfa2b1bf1d3"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+      "vpnConfigurationId": null,
+      "uninstallOnDeviceRemoval": null,
+      "isRemovable": null,
+      "preventManagedAppBackup": null
+    }
+  },
+  {
+    "id": "c3ddfbc4-53a3-45d5-948d-f143c85edf80_0_0",
+    "intent": "available",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "c3ddfbc4-53a3-45d5-948d-f143c85edf80"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+      "vpnConfigurationId": null,
+      "uninstallOnDeviceRemoval": null,
+      "isRemovable": null,
+      "preventManagedAppBackup": null
+    }
+  },
+  {
+    "id": "94e07e4a-e3b7-4113-a9d0-11d21e80c4d7_0_0",
+    "intent": "available",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "94e07e4a-e3b7-4113-a9d0-11d21e80c4d7"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+      "vpnConfigurationId": null,
+      "uninstallOnDeviceRemoval": null,
+      "isRemovable": null,
+      "preventManagedAppBackup": null
+    }
+  },
+  {
+    "id": "dc5b0e15-9d0a-44ad-b0dc-f3569aac6ad8_0_0",
+    "intent": "available",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "dc5b0e15-9d0a-44ad-b0dc-f3569aac6ad8"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+      "vpnConfigurationId": null,
+      "uninstallOnDeviceRemoval": null,
+      "isRemovable": null,
+      "preventManagedAppBackup": null
+    }
+  },
+  {
+    "id": "e8fa2d63-4410-4235-bf19-2087feb3a8d1_0_0",
+    "intent": "available",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "e8fa2d63-4410-4235-bf19-2087feb3a8d1"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+      "vpnConfigurationId": null,
+      "uninstallOnDeviceRemoval": null,
+      "isRemovable": null,
+      "preventManagedAppBackup": null
+    }
+  }
+]

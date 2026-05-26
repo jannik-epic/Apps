@@ -1,0 +1,8 @@
+{
+  "id": "5a54d055-7325-42a6-bd52-5c548d987dd9",
+  "appId": "76c92352-c057-4cc2-9b1e-f34c32bc58bd",
+  "displayName": "Azure Container Registry Application",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

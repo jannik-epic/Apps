@@ -1,0 +1,11 @@
+{
+  "id": "0f276028-bfa5-4b9a-9c65-8cc2d0fe3bae",
+  "lastModifiedDateTime": "2023-11-26T17:08:28Z",
+  "displayName": "First Alert",
+  "description": null,
+  "defaultLocale": "en-gb",
+  "brandingOptions": "includeCompanyLogo,includeCompanyName,includeContactInformation",
+  "roleScopeTagIds": [
+    "0"
+  ]
+}

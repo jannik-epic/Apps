@@ -1,0 +1,40 @@
+{
+  "@odata.type": "#microsoft.graph.macOSSoftwareUpdateConfiguration",
+  "id": "e7a21abf-0f0e-4f55-b620-3c28dbe49e9e",
+  "lastModifiedDateTime": "2026-03-14T13:28:19.2604967Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2023-11-26T16:54:37.101326Z",
+  "description": "## macOS Updates\n\n**Type:** Device Configuration  \n**Platform:** macOS\n\n### Description\nThis macOS software update policy sets criticalUpdateBehavior to \"installASAP\" so critical fixes are installed as soon as available, and sets allOtherUpdateBehavior to \"installLater\" with maxUserDeferralsCount = 3 allowing users to defer non‑critical updates up to three times before enforcement. The updateScheduleType is \"alwaysUpdate\" with priority \"low\", and there are no custom maintenance windows or UTC offset defined (customUpdateTimeWindows is empty and updateTimeWindowUtcOffsetInMinutes is null), so updates are applied whenever available following a low‑priority cadence. FirmwareUpdateBehavior and ConfigDataUpdateBehavior remain at platform defaults, meaning firmware and configuration data updates follow macOS default handling; overall this reduces risk by immediately applying critical fixes while allowing limited user deferral for other updates.",
+  "displayName": "macOS Updates",
+  "version": 4,
+  "criticalUpdateBehavior": "installASAP",
+  "configDataUpdateBehavior": "default",
+  "firmwareUpdateBehavior": "default",
+  "allOtherUpdateBehavior": "installLater",
+  "updateScheduleType": "alwaysUpdate",
+  "updateTimeWindowUtcOffsetInMinutes": null,
+  "maxUserDeferralsCount": 3,
+  "priority": "low",
+  "customUpdateTimeWindows": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('e7a21abf-0f0e-4f55-b620-3c28dbe49e9e')/microsoft.graph.macOSSoftwareUpdateConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "e7a21abf-0f0e-4f55-b620-3c28dbe49e9e_ae1dd731-811f-4344-8980-37faff3d7c72",
+      "source": "direct",
+      "sourceId": "e7a21abf-0f0e-4f55-b620-3c28dbe49e9e",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "ae1dd731-811f-4344-8980-37faff3d7c72"
+      }
+    }
+  ]
+}

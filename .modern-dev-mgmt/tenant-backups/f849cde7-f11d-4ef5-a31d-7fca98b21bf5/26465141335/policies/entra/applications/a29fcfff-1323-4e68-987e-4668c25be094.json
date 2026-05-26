@@ -1,0 +1,53 @@
+{
+  "id": "a29fcfff-1323-4e68-987e-4668c25be094",
+  "appId": "4489153c-5879-42b5-90b8-5e2de125d542",
+  "displayName": "MyCustomBot",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2024-05-05T12:15:51Z",
+  "identifierUris": [
+    "api://botid-4489153c-5879-42b5-90b8-5e2de125d542"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://token.botframework.com/.auth/web/redirect"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": true,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://token.botframework.com/.auth/web/redirect",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "37f7f235-527c-4136-accd-4a02d197296e",
+          "type": "Scope"
+        },
+        {
+          "id": "14dad69e-099b-42c9-810b-d002981feec1",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

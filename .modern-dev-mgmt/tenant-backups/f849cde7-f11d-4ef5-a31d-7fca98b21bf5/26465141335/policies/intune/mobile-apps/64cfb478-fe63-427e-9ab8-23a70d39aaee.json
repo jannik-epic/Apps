@@ -1,0 +1,65 @@
+{
+  "@odata.type": "#microsoft.graph.winGetApp",
+  "id": "64cfb478-fe63-427e-9ab8-23a70d39aaee",
+  "displayName": "Canva",
+  "description": "Everything you love about Canva and more is now available in a beautiful Windows desktop app. Set yourself free from browser tab overload. With the Canva desktop app you now have a distraction free space to focus on your designs, keep all your work organized and collaborate effortlessly with your team. Try it today\n\nEverything you love about Canva and more is now available in a beautiful Windows desktop app. Set yourself free from browser tab overload. With the Canva desktop app you now have a distraction free space to focus on your designs, keep all your work organized and collaborate effortlessly with your team. Try it today\n\n\nWHY USE THE CANVA DESKTOP  APP?\nSave your browser for browsing and get yourself focused with a dedicated Canva desktop app. Check out these productivity boosting features;\n• No more browser tab overload, no searching for the Canva tab, no more distractions. \n• Easily launch the app from the Taskbar or Desktop.\n• Need to do something else? Just minimize the app and come back where you left off.\n•  Smart tabs - organize your designs or start a new one with our clever tab system\n•  Receive notifications through the Windows Notification Center.\n\nUSE CANVA FOR WORK\nJoin Fortune 500 companies who have bolstered their productivity and collaboration across their teams. \n• Workplace Templates allow you to stay on brand. From business plans, to pitch decks, training manuals, and status trackers, anyone can create a polished presentation.\n• Talking Presentations empowers remote-friendly presentations. Now teams can record a presenter video that accompanies each slide and helps land every point, every time.\n• Charts and Infographics simplify data storytelling. Visualize complex information with beautifully crafted infographics and animated charts; live data integrations coming soon\n• Collaborate with ease - Work together live in the same design.\n\nUSE CANVA FOR SOCIAL MEDIA\n• Instagram Story Editor, and Story highlights maker\n• Create Facebook Posts & Facebook Covers\n• Design Twitter banners, Youtube thumbnails all stream like a master with all new Twitch Kits.\n• Make cards, invitations, photo collages and even use Canva as a poster creator for any social media use\n• Create, Schedule and Publish directly to Instagram with Canva Pro. \n\nEDIT VIDEOS AND PHOTOS WITH CANVA\n•  Canva’s inbuilt photo and video maker gives you the power more sophisticated programs but is extremely easy to use\n• Adjust brightness, contrast, saturation, for the perfect look\n• Auto Focus for background blur & sharpen photo subject on your photos\n• Apply your style with aesthetic filters & effects (Retro, Pixelate, Liquify, etc.)\n• Add text to photos and videos\n• Wow your audience with professional video transitions plus add music and sound effects\"\n\nUPGRADE TO CANVA PRO\n• Bring your vision to life with premium templates, images, videos & graphics\n• Save time with tools like Background Remover, Magic Resize, and Content Planner\n• Design and grow an authentic brand with Brand Kit\n• Working with a team? Create faster, together, with Canva for Teams",
+  "publisher": "Canva",
+  "largeIcon": null,
+  "createdDateTime": "2023-07-30T14:15:45Z",
+  "lastModifiedDateTime": "2023-07-30T14:15:45Z",
+  "isFeatured": false,
+  "privacyInformationUrl": "https://www.canva.com/policies/privacy-policy/",
+  "informationUrl": null,
+  "owner": "",
+  "developer": "",
+  "notes": "",
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "manifestHash": null,
+  "packageIdentifier": "XP8K17RNMM8MTN",
+  "installExperience": {
+    "runAsAccount": "user"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('64cfb478-fe63-427e-9ab8-23a70d39aaee')/microsoft.graph.winGetApp/assignments",
+  "assignments": [
+    {
+      "id": "acacacac-9df4-4c7d-9d50-4ef0226f57a9_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.winGetAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null
+      }
+    },
+    {
+      "id": "adadadad-808e-44e2-905a-0b7873a8a531_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.winGetAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null
+      }
+    }
+  ]
+}

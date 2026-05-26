@@ -1,0 +1,17 @@
+{
+  "id": "96041805-b94e-48f2-84c2-2eedd46b19a8",
+  "publisher": "",
+  "version": "1",
+  "displayName": "Script",
+  "description": "",
+  "detectionScriptContent": null,
+  "createdDateTime": "2024-05-07T15:45:38.885737Z",
+  "lastModifiedDateTime": "2024-05-07T15:45:38.885737Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": false,
+  "platform": "windows10",
+  "roleScopeTagIds": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceComplianceScripts('96041805-b94e-48f2-84c2-2eedd46b19a8')/assignments",
+  "assignments": []
+}

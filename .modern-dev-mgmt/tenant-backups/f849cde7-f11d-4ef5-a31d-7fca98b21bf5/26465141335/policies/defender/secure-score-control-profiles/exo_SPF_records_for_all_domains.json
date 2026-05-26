@@ -1,0 +1,38 @@
+{
+  "id": "exo_SPF_records_for_all_domains",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide",
+  "controlCategory": "Apps",
+  "title": "Ensure that SPF records are published for all Exchange Domains",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 10,
+  "remediation": "<p>follow the instructions on&nbsp;<a href='https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide#create-or-update-your-spf-txt-record'>Set up SPF to help prevent spoofing - Office 365 | Microsoft Learn</a>&nbsp;</p>",
+  "remediationImpact": "None.",
+  "service": "EXO",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": null,
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

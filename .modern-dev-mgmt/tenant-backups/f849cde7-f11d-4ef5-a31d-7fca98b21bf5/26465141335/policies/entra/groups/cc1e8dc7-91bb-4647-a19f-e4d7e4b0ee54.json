@@ -1,0 +1,11 @@
+{
+  "id": "cc1e8dc7-91bb-4647-a19f-e4d7e4b0ee54",
+  "displayName": "Greenshot_OnDemand",
+  "description": "On-demand group for Greenshot",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "greenshotondemand",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-06-28T09:41:10Z"
+}

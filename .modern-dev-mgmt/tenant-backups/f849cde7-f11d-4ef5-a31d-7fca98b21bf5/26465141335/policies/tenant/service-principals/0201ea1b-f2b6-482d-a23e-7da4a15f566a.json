@@ -1,0 +1,11 @@
+{
+  "id": "0201ea1b-f2b6-482d-a23e-7da4a15f566a",
+  "appId": "43d9a9d3-c3ac-4170-bed8-a47d284a14be",
+  "displayName": "packageflow-ai/projects/intuneAgent",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "AgentCreatedBy:Foundry",
+    "AgenticInstance"
+  ]
+}

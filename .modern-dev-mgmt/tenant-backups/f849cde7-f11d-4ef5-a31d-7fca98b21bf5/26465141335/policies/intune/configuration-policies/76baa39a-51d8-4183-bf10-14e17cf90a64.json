@@ -1,0 +1,34 @@
+{
+  "createdDateTime": "2023-03-04T11:09:13.5849062Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-08-02T16:28:50.3694968Z",
+  "name": "Users_WIN_CreateLocalAdmin",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm",
+  "id": "76baa39a-51d8-4183-bf10-14e17cf90a64",
+  "templateReference": {
+    "templateId": "22968f54-45fa-486c-848e-f8224aa69772_1",
+    "templateFamily": "endpointSecurityAccountProtection",
+    "templateDisplayName": "Local user group membership",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('76baa39a-51d8-4183-bf10-14e17cf90a64')/assignments",
+  "assignments": [
+    {
+      "id": "76baa39a-51d8-4183-bf10-14e17cf90a64_adadadad-808e-44e2-905a-0b7873a8a531",
+      "source": "direct",
+      "sourceId": "76baa39a-51d8-4183-bf10-14e17cf90a64",
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    }
+  ]
+}

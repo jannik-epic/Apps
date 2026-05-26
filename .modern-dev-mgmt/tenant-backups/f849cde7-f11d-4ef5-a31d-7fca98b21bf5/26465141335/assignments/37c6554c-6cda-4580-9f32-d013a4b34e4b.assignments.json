@@ -1,0 +1,19 @@
+{
+  "id": "adadadad-808e-44e2-905a-0b7873a8a531_0_0",
+  "intent": "available",
+  "source": "direct",
+  "sourceId": null,
+  "target": {
+    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": null,
+    "deviceAndAppManagementAssignmentFilterType": "none"
+  },
+  "settings": {
+    "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+    "notifications": "showAll",
+    "restartSettings": null,
+    "installTimeSettings": null,
+    "deliveryOptimizationPriority": "foreground",
+    "autoUpdateSettings": null
+  }
+}

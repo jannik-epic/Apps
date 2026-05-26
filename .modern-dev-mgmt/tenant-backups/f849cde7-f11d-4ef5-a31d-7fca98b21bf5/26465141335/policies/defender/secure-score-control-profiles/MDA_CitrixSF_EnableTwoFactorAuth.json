@@ -1,0 +1,39 @@
+{
+  "id": "MDA_CitrixSF_EnableTwoFactorAuth",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://docs.citrix.com/en-us/sharefile/configure/admin-settings/security.html#two-step-verification",
+  "controlCategory": "Identity",
+  "title": "Enable multi-factor authentication (MFA)",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 10,
+  "remediation": "<p>In Citrix | Share file dashboard-</p> <ol> <li>Go to &quot;<strong>Settings&gt;Admin Settings</strong>&quot;.</li> <li>Go to &quot;<strong>Security&gt;Login &amp; Security Policy</strong>&quot;.</li> <li>In &quot;<strong>Two-step verification</strong>&quot; set the option on.</li> </ol>",
+  "remediationImpact": "This setting enforce multi factor authentication for all Citrix Share File users.",
+  "service": "MDA_CitrixSF",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration",
+    "Password Cracking"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

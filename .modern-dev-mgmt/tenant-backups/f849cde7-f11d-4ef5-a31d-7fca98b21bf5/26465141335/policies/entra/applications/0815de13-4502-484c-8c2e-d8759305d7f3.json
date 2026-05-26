@@ -1,0 +1,196 @@
+{
+  "id": "0815de13-4502-484c-8c2e-d8759305d7f3",
+  "appId": "aedc7a4d-b615-4056-a1e1-00ee2eb448ca",
+  "displayName": "apexdevicesmanager-prod",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-10-05T08:33:19Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://p-app-apexdevicesmanager-web-swn-002.azurewebsites.net/api/auth/consent-callback",
+      "https://p-app-apexdevicesmanager-web-swn-002.azurewebsites.net/api/auth/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": true,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://p-app-apexdevicesmanager-web-swn-002.azurewebsites.net/api/auth/consent-callback",
+        "index": null
+      },
+      {
+        "uri": "https://p-app-apexdevicesmanager-web-swn-002.azurewebsites.net/api/auth/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "78145de6-330d-4800-a6ce-494ff2d33d07",
+          "type": "Role"
+        },
+        {
+          "id": "9241abd9-d0e6-425a-bd4f-47ba86e767a4",
+          "type": "Role"
+        },
+        {
+          "id": "243333ab-4d21-40cb-a475-36241daa0842",
+          "type": "Role"
+        },
+        {
+          "id": "5b07b0dd-2377-4e44-a38d-703f09a0dc3c",
+          "type": "Role"
+        },
+        {
+          "id": "5ac13192-7ace-4fcf-b828-1a26f28068ee",
+          "type": "Role"
+        },
+        {
+          "id": "e330c4f0-4170-414e-a55a-2f022ec2b57b",
+          "type": "Role"
+        },
+        {
+          "id": "c7a5be92-2b3d-4540-8a67-c96dcaae8b43",
+          "type": "Role"
+        },
+        {
+          "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+          "type": "Role"
+        },
+        {
+          "id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
+          "type": "Role"
+        },
+        {
+          "id": "06b708a9-e830-4db3-a914-8e69da51d44f",
+          "type": "Role"
+        },
+        {
+          "id": "62a82d76-70ea-41e2-9197-370581804d09",
+          "type": "Role"
+        },
+        {
+          "id": "bf394140-e372-4bf9-a898-299cfc7564e5",
+          "type": "Role"
+        },
+        {
+          "id": "472e4a4d-bb4a-4026-98d1-0b0d74cb74a5",
+          "type": "Role"
+        },
+        {
+          "id": "45cc0394-e837-488b-a098-1918f48d186c",
+          "type": "Role"
+        },
+        {
+          "id": "5e0edab9-c148-49d0-b423-ac253e121825",
+          "type": "Role"
+        },
+        {
+          "id": "21792b6c-c986-4ffc-85de-df9da54b52fa",
+          "type": "Role"
+        },
+        {
+          "id": "b633e1c5-b582-4048-a93e-9f11b44c7e96",
+          "type": "Role"
+        },
+        {
+          "id": "884b599e-4d48-43a5-ba94-15c414d00588",
+          "type": "Role"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "7b3f05d5-f68c-4b8d-8c59-a2ecd12f24af",
+          "type": "Scope"
+        },
+        {
+          "id": "0883f392-0a7a-443d-8c76-16a6d39c7b63",
+          "type": "Scope"
+        },
+        {
+          "id": "44642bfe-8385-4adc-8fc6-fe3cb2c375c3",
+          "type": "Scope"
+        },
+        {
+          "id": "3404d2bf-2b13-457e-a330-c24615765193",
+          "type": "Scope"
+        },
+        {
+          "id": "662ed50a-ac44-4eef-ad86-62eed9be2a29",
+          "type": "Scope"
+        },
+        {
+          "id": "0c5e8a55-87a6-4556-93ab-adc52c4d862d",
+          "type": "Scope"
+        },
+        {
+          "id": "d32381d8-ee89-4220-9c83-b672aa68d404",
+          "type": "Scope"
+        },
+        {
+          "id": "06da0dbc-49e2-44d2-8312-53f166ab848a",
+          "type": "Scope"
+        },
+        {
+          "id": "bdfbf15f-ee85-4955-8675-146e8e5296b5",
+          "type": "Scope"
+        },
+        {
+          "id": "84bccea3-f856-4a8a-967b-dbe0a3d53a64",
+          "type": "Scope"
+        },
+        {
+          "id": "4e46008b-f24c-477d-8fff-7bb4ec7aafe0",
+          "type": "Scope"
+        },
+        {
+          "id": "64733abd-851e-478a-bffb-e47a14b18235",
+          "type": "Scope"
+        },
+        {
+          "id": "bc257fb8-46b4-4b15-8713-01e91bfbe4ea",
+          "type": "Scope"
+        },
+        {
+          "id": "b9abcc4f-94fc-4457-9141-d20ce80ec952",
+          "type": "Scope"
+        },
+        {
+          "id": "1638cddf-07a4-4de2-8645-69c96cacad73",
+          "type": "Scope"
+        },
+        {
+          "id": "91e7d36d-022a-490f-a748-f8e011357b42",
+          "type": "Scope"
+        },
+        {
+          "id": "e383f46e-2787-4529-855e-0e479a3ffac0",
+          "type": "Scope"
+        },
+        {
+          "id": "ebf0f66e-9fb1-49e4-a278-222f76911cf4",
+          "type": "Scope"
+        },
+        {
+          "id": "280b3b69-0437-44b1-bc20-3b2fca1ee3e9",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "e05050fc-6ddc-4450-b1bc-450f071e1025",
+  "appId": "7d74a5b0-4896-4d73-9c6b-fa5452b85ce4",
+  "displayName": "landingzone-oidc-tool-documentmanager",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-09-30T14:14:17Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
+          "type": "Role"
+        },
+        {
+          "id": "06b708a9-e830-4db3-a914-8e69da51d44f",
+          "type": "Role"
+        },
+        {
+          "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

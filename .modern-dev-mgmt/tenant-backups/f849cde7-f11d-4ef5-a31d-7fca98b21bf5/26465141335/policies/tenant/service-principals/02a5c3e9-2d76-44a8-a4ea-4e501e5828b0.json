@@ -1,0 +1,11 @@
+{
+  "id": "02a5c3e9-2d76-44a8-a4ea-4e501e5828b0",
+  "appId": "5b20c633-9a48-4a5f-95f6-dae91879051f",
+  "displayName": "Azure Information Protection",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

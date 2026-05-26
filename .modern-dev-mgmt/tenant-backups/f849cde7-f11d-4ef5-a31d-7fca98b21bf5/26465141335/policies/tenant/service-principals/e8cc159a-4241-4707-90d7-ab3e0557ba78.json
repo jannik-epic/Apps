@@ -1,0 +1,12 @@
+{
+  "id": "e8cc159a-4241-4707-90d7-ab3e0557ba78",
+  "appId": "89e7f920-bdc3-4e71-99e5-30d84827b610",
+  "displayName": "Dunloe Dataplane Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

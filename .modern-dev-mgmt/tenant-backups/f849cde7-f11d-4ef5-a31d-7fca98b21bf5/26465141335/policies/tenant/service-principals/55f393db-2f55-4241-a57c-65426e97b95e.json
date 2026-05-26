@@ -1,0 +1,11 @@
+{
+  "id": "55f393db-2f55-4241-a57c-65426e97b95e",
+  "appId": "ca0a114d-6fbc-46b3-90fa-2ec954794ddb",
+  "displayName": "Microsoft Device Management Checkin",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}
