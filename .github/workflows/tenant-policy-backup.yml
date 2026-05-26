@@ -393,11 +393,29 @@ jobs:
           set -euo pipefail
           git config user.email "actions@github.com"
           git config user.name "github-actions[bot]"
-          git add "${{ steps.snapshot.outputs.snapshot_dir }}" "${{ steps.snapshot.outputs.latest_path }}"
-          if git diff --cached --quiet; then
-            echo "No tenant policy backup changes to commit."
-          else
+          branch="${GITHUB_REF_NAME:-main}"
+          snapshot_dir="${{ steps.snapshot.outputs.snapshot_dir }}"
+          latest_path="${{ steps.snapshot.outputs.latest_path }}"
+          latest_tmp="$(mktemp)"
+          cp "$latest_path" "$latest_tmp"
+
+          for attempt in 1 2 3; do
+            git fetch origin "$branch"
+            git reset --hard "origin/$branch"
+            mkdir -p "$(dirname "$latest_path")"
+            cp "$latest_tmp" "$latest_path"
+            git add "$snapshot_dir" "$latest_path"
+            if git diff --cached --quiet; then
+              echo "No tenant policy backup changes to commit."
+              exit 0
+            fi
             git commit -m "chore(backup): tenant policy snapshot ${{ steps.snapshot.outputs.backup_id }}"
-            git pull --rebase origin "${GITHUB_REF_NAME:-main}"
-            git push
-          fi
+            if git push origin "HEAD:$branch"; then
+              exit 0
+            fi
+            echo "Push failed on attempt $attempt; refreshing from origin and retrying."
+            sleep $((attempt * 2))
+          done
+          echo "Failed to push tenant policy backup snapshot after 3 attempts." >&2
+          exit 1
+	
