@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-28T01:17:39.749Z",
+  "scannedAt": "2026-05-28T02:16:43.255Z",
   "results": [
     {
       "appId": 803,
@@ -26,7 +26,7 @@
       "packageManager": "winget",
       "packageId": "GitHub.cli",
       "currentDeployedVersion": "2.24.3",
-      "latestUpstreamVersion": "2.92.0",
+      "latestUpstreamVersion": "2.93.0",
       "hasUpdate": true,
       "bumpType": "minor",
       "releaseNotesUrl": "https://cli.github.com/"
