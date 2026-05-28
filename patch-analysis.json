@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-28T02:16:43.255Z",
+  "scannedAt": "2026-05-28T03:44:44.949Z",
   "results": [
     {
       "appId": 803,
@@ -66,7 +66,7 @@
       "packageManager": "winget",
       "packageId": "Microsoft.Edge",
       "currentDeployedVersion": "147.0.3912.98",
-      "latestUpstreamVersion": "148.0.3967.70",
+      "latestUpstreamVersion": "148.0.3967.83",
       "hasUpdate": true,
       "bumpType": "major",
       "releaseNotesUrl": "https://www.microsoft.com/en-us/edge"
@@ -86,7 +86,7 @@
       "packageManager": "winget",
       "packageId": "Microsoft.OneDrive",
       "currentDeployedVersion": "26.063.0405.0002",
-      "latestUpstreamVersion": "26.070.0414.0001",
+      "latestUpstreamVersion": "26.074.0420.0001",
       "hasUpdate": true,
       "bumpType": "minor",
       "releaseNotesUrl": "https://www.microsoft.com/microsoft-365/onedrive/download"
