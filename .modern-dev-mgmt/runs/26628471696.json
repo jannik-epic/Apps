@@ -1,0 +1,42 @@
+{
+  "workflowRunId": "26628471696",
+  "workflow": "deploy-winget-app.yml",
+  "packageManager": "winget",
+  "packageId": "Greenshot.Greenshot",
+  "appId": "9fe1b29b-8ebd-4a7a-96d2-7e11b08c42ee",
+  "updateOnlyAppId": "",
+  "appName": "Greenshot",
+  "status": "success",
+  "createdAt": "2026-05-29T09:05:59.9295736Z",
+  "context": {
+    "source": "patch.trigger",
+    "patchRunId": 33,
+    "targetTenantId": 2,
+    "targetTenantName": "epicfusionlabs.com",
+    "targetAzureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+    "targetAzureClientId": "35d6529f-ddc6-4bba-8d22-11c136f0f400",
+    "repo": "jannik-epic/Apps",
+    "workflowFile": "deploy-winget-app.yml",
+    "catalog": {
+      "catalogAppId": 2564,
+      "source": "winget",
+      "packageId": "Greenshot.Greenshot",
+      "name": "Greenshot",
+      "publisher": "Greenshot",
+      "fromVersion": "1.2.10.6",
+      "toVersion": "1.3.315"
+    },
+    "architecture": "x64",
+    "wave": null,
+    "runSandbox": false,
+    "dryRun": false,
+    "assignmentTemplate": null,
+    "appSetting": null,
+    "changeNote": "Auto patch detected by catalog-scan: 1.2.10.6 -> 1.3.315",
+    "createdAt": "2026-05-29T09:05:04.669Z"
+  },
+  "validation": null,
+  "footprint": null,
+  "leftovers": null,
+  "installer": null
+}

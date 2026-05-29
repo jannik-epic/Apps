@@ -12,9 +12,17 @@
           "catalogAppId": 8522,
           "patchRunId": 42,
           "status": "success"
+        },
+        {
+          "workflowRunId": "26628471696",
+          "createdAt": "2026-05-29T09:05:59.9295736Z",
+          "intuneAppId": "9fe1b29b-8ebd-4a7a-96d2-7e11b08c42ee",
+          "catalogAppId": null,
+          "patchRunId": 33,
+          "status": "success"
         }
       ]
     }
   ],
-  "updatedAt": "2026-05-22T06:16:07.296Z"
+  "updatedAt": "2026-05-29T09:06:00.2016713Z"
 }
