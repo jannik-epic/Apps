@@ -1,0 +1,20 @@
+{
+  "slug": "microsoft-vcredist-2015-x86",
+  "displayName": "Microsoft Visual C++ 2015-2022 Redistributable (x86)",
+  "versions": [
+    {
+      "version": "unknown",
+      "runs": [
+        {
+          "workflowRunId": "26629809544",
+          "createdAt": "2026-05-29T09:36:28.7092301Z",
+          "intuneAppId": "6396f957-09a5-46b7-93ff-a53e71540181",
+          "catalogAppId": null,
+          "patchRunId": 43,
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-29T09:36:29.1129633Z"
+}
