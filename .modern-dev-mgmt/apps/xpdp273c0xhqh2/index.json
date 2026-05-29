@@ -1,0 +1,20 @@
+{
+  "slug": "xpdp273c0xhqh2",
+  "displayName": "Adobe Acrobat Reader DC",
+  "versions": [
+    {
+      "version": "26.001.21563",
+      "runs": [
+        {
+          "workflowRunId": "26626921738",
+          "createdAt": "2026-05-29T08:40:40.5868998Z",
+          "intuneAppId": "4a89eec7-9b63-4dd2-8d94-5fda0959e302",
+          "catalogAppId": null,
+          "patchRunId": 8,
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-29T08:40:41.0808061Z"
+}
