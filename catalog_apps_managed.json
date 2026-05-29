@@ -165,7 +165,7 @@
     "id": 76090,
     "source": "msstore",
     "package_id": "9NFTCH6J7FHV",
-    "name": "Microsoft.PowerAutomateDesktop",
+    "name": "Power Automate",
     "os": "windows",
     "version_deployed": "11.2604.143.0",
     "pin_version": null
@@ -222,6 +222,141 @@
     "name": "Spring Tools for Eclipse",
     "os": "windows",
     "version_deployed": "13.0.1.0",
+    "pin_version": null
+  },
+  {
+    "id": 184768,
+    "source": "msstore",
+    "package_id": "9WZDNCRFHVN5",
+    "name": "Windows Calculator",
+    "os": "windows",
+    "version_deployed": "2021.2508.4.0",
+    "pin_version": null
+  },
+  {
+    "id": 184769,
+    "source": "msstore",
+    "package_id": "9MSMLRH6LZF3",
+    "name": "Windows Notepad",
+    "os": "windows",
+    "version_deployed": "11.2512.29.0",
+    "pin_version": null
+  },
+  {
+    "id": 184772,
+    "source": "msstore",
+    "package_id": "9WZDNCRFJBH4",
+    "name": "Microsoft Photos",
+    "os": "windows",
+    "version_deployed": "2026.11020.20001.0",
+    "pin_version": null
+  },
+  {
+    "id": 184773,
+    "source": "msstore",
+    "package_id": "9WZDNCRFJBBG",
+    "name": "Windows Camera",
+    "os": "windows",
+    "version_deployed": "2025.2510.2.0",
+    "pin_version": null
+  },
+  {
+    "id": 184774,
+    "source": "msstore",
+    "package_id": "9WZDNCRFHWKN",
+    "name": "Windows Sound Recorder",
+    "os": "windows",
+    "version_deployed": "2021.2512.0.0",
+    "pin_version": null
+  },
+  {
+    "id": 184775,
+    "source": "msstore",
+    "package_id": "9NBLGGH4QGHW",
+    "name": "Microsoft Sticky Notes",
+    "os": "windows",
+    "version_deployed": "6.1.5.0",
+    "pin_version": null
+  },
+  {
+    "id": 184776,
+    "source": "msstore",
+    "package_id": "9N95Q1ZZPMH4",
+    "name": "MPEG-2 Video Extension",
+    "os": "windows",
+    "version_deployed": "1.2.13.0",
+    "pin_version": null
+  },
+  {
+    "id": 184777,
+    "source": "msstore",
+    "package_id": "9NCTDW2W1BH8",
+    "name": "Raw Image Extension",
+    "os": "windows",
+    "version_deployed": "2.5.7.0",
+    "pin_version": null
+  },
+  {
+    "id": 184778,
+    "source": "msstore",
+    "package_id": "9MZ95KL8MR0L",
+    "name": "Snipping Tool",
+    "os": "windows",
+    "version_deployed": "2022.2602.47.0",
+    "pin_version": null
+  },
+  {
+    "id": 184784,
+    "source": "msstore",
+    "package_id": "9PCFS5B6T72H",
+    "name": "Paint",
+    "os": "windows",
+    "version_deployed": "11.2601.441.0",
+    "pin_version": null
+  },
+  {
+    "id": 184798,
+    "source": "msstore",
+    "package_id": "9NBLGGH5R558",
+    "name": "Microsoft To Do: Lists, Tasks & Reminders",
+    "os": "windows",
+    "version_deployed": "2.175.6901.0",
+    "pin_version": null
+  },
+  {
+    "id": 184799,
+    "source": "msstore",
+    "package_id": "9WZDNCRFJ3PT",
+    "name": "Windows Media Player",
+    "os": "windows",
+    "version_deployed": "11.2603.12.0",
+    "pin_version": null
+  },
+  {
+    "id": 184806,
+    "source": "msstore",
+    "package_id": "9WZDNCRFJ3Q2",
+    "name": "MSN Weather",
+    "os": "windows",
+    "version_deployed": "4.54.63040.0",
+    "pin_version": null
+  },
+  {
+    "id": 184808,
+    "source": "msstore",
+    "package_id": "9P1J8S7CCWWT",
+    "name": "Microsoft Clipchamp",
+    "os": "windows",
+    "version_deployed": "4.5.10520.0",
+    "pin_version": null
+  },
+  {
+    "id": 184809,
+    "source": "msstore",
+    "package_id": "9NRX63209R7B",
+    "name": "Outlook for Windows",
+    "os": "windows",
+    "version_deployed": "1.2026.317.100",
     "pin_version": null
   }
 ]
