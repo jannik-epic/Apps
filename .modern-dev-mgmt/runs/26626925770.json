@@ -1,0 +1,1042 @@
+{
+  "workflowRunId": "26626925770",
+  "workflow": "deploy-winget-app.yml",
+  "packageManager": "winget",
+  "packageId": "Canva.Canva",
+  "appId": "3016ba3b-e56f-4073-bf10-b4c0d3c724e6",
+  "updateOnlyAppId": "",
+  "appName": "Canva",
+  "status": "success",
+  "createdAt": "2026-05-29T08:33:35.5267099Z",
+  "context": {
+    "source": "patch.trigger",
+    "patchRunId": 9,
+    "targetTenantId": 2,
+    "targetTenantName": "epicfusionlabs.com",
+    "targetAzureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+    "targetAzureClientId": "35d6529f-ddc6-4bba-8d22-11c136f0f400",
+    "repo": "jannik-epic/Apps",
+    "workflowFile": "deploy-winget-app.yml",
+    "catalog": {
+      "catalogAppId": 803,
+      "source": "winget",
+      "packageId": "Canva.Canva",
+      "name": "Canva",
+      "publisher": "Canva Pty Ltd",
+      "fromVersion": "1.62.0",
+      "toVersion": "1.122.0"
+    },
+    "architecture": "x64",
+    "wave": null,
+    "runSandbox": false,
+    "dryRun": false,
+    "assignmentTemplate": null,
+    "appSetting": null,
+    "changeNote": "Auto patch detected by catalog-scan: 1.101.0 -> 1.122.0",
+    "createdAt": "2026-05-29T08:30:24.703Z"
+  },
+  "validation": {
+    "installExitCode": 0,
+    "detectionExitCode": 0,
+    "uninstallExitCode": 1,
+    "installOutcome": "success",
+    "detectionOutcome": "success",
+    "uninstallOutcome": "failure",
+    "footprintAvailable": true,
+    "leftoversAvailable": true,
+    "installLogPath": ".modern-dev-mgmt/validation/install.log",
+    "uninstallLogPath": ".modern-dev-mgmt/validation/uninstall.log",
+    "installLogTail": "**********************\r\nPowerShell transcript start\r\nStart time: 20260529083134\r\nUsername: runnervmlu3mh\\runneradmin\r\nRunAs User: runnervmlu3mh\\runneradmin\r\nConfiguration Name: \r\nMachine: runnervmlu3mh (Microsoft Windows NT 10.0.26100.0)\r\nHost Application: C:\\Program Files\\PowerShell\\7\\pwsh.dll -command . 'D:\\a\\_temp\\77250746-6cb5-455a-8733-e8ea907eea84.ps1'\r\nProcess ID: 8752\r\nPSVersion: 7.4.16\r\nPSEdition: Core\r\nGitCommitId: 7.4.16\r\nOS: Microsoft Windows 10.0.26100\r\nPlatform: Win32NT\r\nPSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0\r\nPSRemotingProtocolVersion: 2.3\r\nSerializationVersion: 1.1.0.1\r\nWSManStackVersion: 3.0\r\n**********************\r\n\r\n**********************\r\nPowerShell transcript end\r\nEnd time: 20260529083145\r\n**********************",
+    "uninstallLogTail": "**********************\r\nPowerShell transcript start\r\nStart time: 20260529083148\r\nUsername: runnervmlu3mh\\runneradmin\r\nRunAs User: runnervmlu3mh\\runneradmin\r\nConfiguration Name: \r\nMachine: runnervmlu3mh (Microsoft Windows NT 10.0.26100.0)\r\nHost Application: C:\\Program Files\\PowerShell\\7\\pwsh.dll -command . 'D:\\a\\_temp\\cd306b8c-7bc5-434e-80de-979e5ea3f9bf.ps1'\r\nProcess ID: 8100\r\nPSVersion: 7.4.16\r\nPSEdition: Core\r\nGitCommitId: 7.4.16\r\nOS: Microsoft Windows 10.0.26100\r\nPlatform: Win32NT\r\nPSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0\r\nPSRemotingProtocolVersion: 2.3\r\nSerializationVersion: 1.1.0.1\r\nWSManStackVersion: 3.0\r\n**********************\r\n\r\n**********************\r\nPowerShell transcript end\r\nEnd time: 20260529083149\r\n**********************"
+  },
+  "footprint": {
+    "files": [
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\Canva.exe",
+        "size": 223143808,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "1.122.0"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\chrome_100_percent.pak",
+        "size": 116089,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\chrome_200_percent.pak",
+        "size": 187558,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\d3dcompiler_47.dll",
+        "size": 4741480,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "10.0.26100.4654 (WinBuild.160101.0800)"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\dxcompiler.dll",
+        "size": 25664512,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "1.9.2602.0"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\dxil.dll",
+        "size": 1503600,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "101.7.2308.24"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\ffmpeg.dll",
+        "size": 3094528,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\icudtl.dat",
+        "size": 10822192,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\libEGL.dll",
+        "size": 520704,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "2.1.27040 git hash: e05753c6d05b"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\libGLESv2.dll",
+        "size": 7955968,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "2.1.27040 git hash: e05753c6d05b"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\LICENSE.electron.txt",
+        "size": 1096,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\LICENSES.chromium.html",
+        "size": 19472684,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\resources.pak",
+        "size": 6747458,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\snapshot_blob.bin",
+        "size": 341312,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\Uninstall Canva.exe",
+        "size": 553512,
+        "lastWriteTime": "2026-04-10T06:18:50Z",
+        "version": "1.122.0"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\v8_context_snapshot.bin",
+        "size": 715208,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\vk_swiftshader.dll",
+        "size": 5622272,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "5.0.0"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\vk_swiftshader_icd.json",
+        "size": 106,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\vulkan-1.dll",
+        "size": 952320,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "Vulkan Loader"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\af.pak",
+        "size": 610068,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\am.pak",
+        "size": 989422,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ar.pak",
+        "size": 1092139,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\bg.pak",
+        "size": 1129141,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\bn.pak",
+        "size": 1455564,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ca.pak",
+        "size": 686922,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\cs.pak",
+        "size": 713648,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\da.pak",
+        "size": 641791,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\de.pak",
+        "size": 688033,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\el.pak",
+        "size": 1242648,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\en-GB.pak",
+        "size": 555829,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\en-US.pak",
+        "size": 561952,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\es-419.pak",
+        "size": 677754,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\es.pak",
+        "size": 674534,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\et.pak",
+        "size": 616258,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\fa.pak",
+        "size": 1019810,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\fi.pak",
+        "size": 627059,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\fil.pak",
+        "size": 711392,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\fr.pak",
+        "size": 733234,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\gu.pak",
+        "size": 1438493,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\he.pak",
+        "size": 892281,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\hi.pak",
+        "size": 1522258,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\hr.pak",
+        "size": 686823,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\hu.pak",
+        "size": 734253,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\id.pak",
+        "size": 606925,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\it.pak",
+        "size": 663875,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ja.pak",
+        "size": 810156,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\kn.pak",
+        "size": 1650431,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ko.pak",
+        "size": 687122,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\lt.pak",
+        "size": 747090,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\lv.pak",
+        "size": 744264,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ml.pak",
+        "size": 1701114,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\mr.pak",
+        "size": 1408244,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ms.pak",
+        "size": 639524,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\nb.pak",
+        "size": 612810,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\nl.pak",
+        "size": 638214,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\pl.pak",
+        "size": 713188,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\pt-BR.pak",
+        "size": 668089,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\pt-PT.pak",
+        "size": 671742,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ro.pak",
+        "size": 697456,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ru.pak",
+        "size": 1156119,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\sk.pak",
+        "size": 725408,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\sl.pak",
+        "size": 694960,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\sr.pak",
+        "size": 1069017,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\sv.pak",
+        "size": 619828,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\sw.pak",
+        "size": 655719,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ta.pak",
+        "size": 1692149,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\te.pak",
+        "size": 1563818,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\th.pak",
+        "size": 1313236,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\tr.pak",
+        "size": 667359,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\uk.pak",
+        "size": 1164440,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ur.pak",
+        "size": 1004572,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\vi.pak",
+        "size": 792822,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\zh-CN.pak",
+        "size": 567475,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\zh-TW.pak",
+        "size": 560268,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\resources\\app-update.yml",
+        "size": 123,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\resources\\app.asar",
+        "size": 22574783,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      }
+    ],
+    "registry": {
+      "hive": "HKCU",
+      "key": "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "CanvaAutoLaunchAvailabilityCheckAgent",
+      "type": "String",
+      "data": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Canva\\Canva.exe\" --start-availability-check-agent"
+    },
+    "arp": {
+      "key": "3d0ba22d-e02b-5c6d-93a1-4e2a9af9c1f2",
+      "displayName": "Canva",
+      "publisher": "Canva Pty Ltd",
+      "displayVersion": "1.122.0",
+      "installLocation": "",
+      "uninstallString": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Canva\\Uninstall Canva.exe\" /currentuser",
+      "quietUninstallString": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Canva\\Uninstall Canva.exe\" /currentuser /S",
+      "estimatedSize": 685623
+    },
+    "summary": {
+      "fileCount": 76,
+      "totalFileSize": 383340053,
+      "registryValueCount": 1,
+      "arpEntries": 1
+    },
+    "beforeCapturedAt": "2026-05-29T08:31:33.6230305Z",
+    "afterCapturedAt": "2026-05-29T08:31:47.1410694Z"
+  },
+  "leftovers": {
+    "files": [
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\Canva.exe",
+        "size": 223143808,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "1.122.0"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\chrome_100_percent.pak",
+        "size": 116089,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\chrome_200_percent.pak",
+        "size": 187558,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\d3dcompiler_47.dll",
+        "size": 4741480,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "10.0.26100.4654 (WinBuild.160101.0800)"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\dxcompiler.dll",
+        "size": 25664512,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "1.9.2602.0"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\dxil.dll",
+        "size": 1503600,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "101.7.2308.24"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\ffmpeg.dll",
+        "size": 3094528,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\icudtl.dat",
+        "size": 10822192,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\libEGL.dll",
+        "size": 520704,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "2.1.27040 git hash: e05753c6d05b"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\libGLESv2.dll",
+        "size": 7955968,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "2.1.27040 git hash: e05753c6d05b"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\LICENSE.electron.txt",
+        "size": 1096,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\LICENSES.chromium.html",
+        "size": 19472684,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\resources.pak",
+        "size": 6747458,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\snapshot_blob.bin",
+        "size": 341312,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\Uninstall Canva.exe",
+        "size": 553512,
+        "lastWriteTime": "2026-04-10T06:18:50Z",
+        "version": "1.122.0"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\v8_context_snapshot.bin",
+        "size": 715208,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\vk_swiftshader.dll",
+        "size": 5622272,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "5.0.0"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\vk_swiftshader_icd.json",
+        "size": 106,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\vulkan-1.dll",
+        "size": 952320,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": "Vulkan Loader"
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\af.pak",
+        "size": 610068,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\am.pak",
+        "size": 989422,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ar.pak",
+        "size": 1092139,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\bg.pak",
+        "size": 1129141,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\bn.pak",
+        "size": 1455564,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ca.pak",
+        "size": 686922,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\cs.pak",
+        "size": 713648,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\da.pak",
+        "size": 641791,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\de.pak",
+        "size": 688033,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\el.pak",
+        "size": 1242648,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\en-GB.pak",
+        "size": 555829,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\en-US.pak",
+        "size": 561952,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\es-419.pak",
+        "size": 677754,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\es.pak",
+        "size": 674534,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\et.pak",
+        "size": 616258,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\fa.pak",
+        "size": 1019810,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\fi.pak",
+        "size": 627059,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\fil.pak",
+        "size": 711392,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\fr.pak",
+        "size": 733234,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\gu.pak",
+        "size": 1438493,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\he.pak",
+        "size": 892281,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\hi.pak",
+        "size": 1522258,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\hr.pak",
+        "size": 686823,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\hu.pak",
+        "size": 734253,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\id.pak",
+        "size": 606925,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\it.pak",
+        "size": 663875,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ja.pak",
+        "size": 810156,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\kn.pak",
+        "size": 1650431,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ko.pak",
+        "size": 687122,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\lt.pak",
+        "size": 747090,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\lv.pak",
+        "size": 744264,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ml.pak",
+        "size": 1701114,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\mr.pak",
+        "size": 1408244,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ms.pak",
+        "size": 639524,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\nb.pak",
+        "size": 612810,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\nl.pak",
+        "size": 638214,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\pl.pak",
+        "size": 713188,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\pt-BR.pak",
+        "size": 668089,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\pt-PT.pak",
+        "size": 671742,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ro.pak",
+        "size": 697456,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ru.pak",
+        "size": 1156119,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\sk.pak",
+        "size": 725408,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\sl.pak",
+        "size": 694960,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\sr.pak",
+        "size": 1069017,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\sv.pak",
+        "size": 619828,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\sw.pak",
+        "size": 655719,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ta.pak",
+        "size": 1692149,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\te.pak",
+        "size": 1563818,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\th.pak",
+        "size": 1313236,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\tr.pak",
+        "size": 667359,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\uk.pak",
+        "size": 1164440,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\ur.pak",
+        "size": 1004572,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\vi.pak",
+        "size": 792822,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\zh-CN.pak",
+        "size": 567475,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\locales\\zh-TW.pak",
+        "size": 560268,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\resources\\app-update.yml",
+        "size": 123,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      },
+      {
+        "path": "[{LocalAppData}]\\Programs\\Canva\\resources\\app.asar",
+        "size": 22574783,
+        "lastWriteTime": "2026-04-10T06:18:28Z",
+        "version": null
+      }
+    ],
+    "registry": {
+      "hive": "HKCU",
+      "key": "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "CanvaAutoLaunchAvailabilityCheckAgent",
+      "type": "String",
+      "data": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Canva\\Canva.exe\" --start-availability-check-agent"
+    },
+    "arp": {
+      "key": "3d0ba22d-e02b-5c6d-93a1-4e2a9af9c1f2",
+      "displayName": "Canva",
+      "publisher": "Canva Pty Ltd",
+      "displayVersion": "1.122.0",
+      "installLocation": "",
+      "uninstallString": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Canva\\Uninstall Canva.exe\" /currentuser",
+      "quietUninstallString": "\"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Canva\\Uninstall Canva.exe\" /currentuser /S",
+      "estimatedSize": 685623
+    },
+    "summary": {
+      "fileCount": 76,
+      "totalFileSize": 383340053,
+      "registryValueCount": 1,
+      "arpEntries": 1
+    },
+    "beforeCapturedAt": "2026-05-29T08:31:33.6230305Z",
+    "afterCapturedAt": "2026-05-29T08:31:49.9790114Z"
+  },
+  "installer": {
+    "fileName": "Canva_1.122.0_User_X64_nullsoft_en-US.exe",
+    "sha256": "fa0dec6c910cfa9944062f649671bb8b8293d79acc4d888578f4bd23e9446c92",
+    "installerType": "nullsoft",
+    "nestedInstallerType": null,
+    "installerLocale": "",
+    "architecture": "x64",
+    "scope": "user",
+    "silentArgs": "/S",
+    "silentUninstallArgs": "/S",
+    "productCode": "3d0ba22d-e02b-5c6d-93a1-4e2a9af9c1f2",
+    "packageFamilyName": "",
+    "successExitCodes": [
+      0,
+      1641,
+      3010
+    ],
+    "version": "1.122.0",
+    "sourceManifestName": "Canva_1.122.0_User_X64_nullsoft_en-US.yaml"
+  }
+}

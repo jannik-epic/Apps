@@ -1,0 +1,20 @@
+{
+  "slug": "canva-canva",
+  "displayName": "Canva",
+  "versions": [
+    {
+      "version": "1.122.0",
+      "runs": [
+        {
+          "workflowRunId": "26626925770",
+          "createdAt": "2026-05-29T08:33:35.5267099Z",
+          "intuneAppId": "3016ba3b-e56f-4073-bf10-b4c0d3c724e6",
+          "catalogAppId": null,
+          "patchRunId": 9,
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-29T08:33:35.7464002Z"
+}
