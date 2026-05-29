@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-05-29T09:46:22.731Z",
+  "scannedAt": "2026-05-29T10:31:27.408Z",
   "results": [
     {
       "appId": 803,
@@ -247,6 +247,156 @@
       "packageId": "VMware.SpringToolSuite",
       "currentDeployedVersion": "13.0.1.0",
       "latestUpstreamVersion": "5.0.1.e4.38.0",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184768,
+      "packageManager": "msstore",
+      "packageId": "9WZDNCRFHVN5",
+      "currentDeployedVersion": "2021.2508.4.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184769,
+      "packageManager": "msstore",
+      "packageId": "9MSMLRH6LZF3",
+      "currentDeployedVersion": "11.2512.29.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184772,
+      "packageManager": "msstore",
+      "packageId": "9WZDNCRFJBH4",
+      "currentDeployedVersion": "2026.11020.20001.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184773,
+      "packageManager": "msstore",
+      "packageId": "9WZDNCRFJBBG",
+      "currentDeployedVersion": "2025.2510.2.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184774,
+      "packageManager": "msstore",
+      "packageId": "9WZDNCRFHWKN",
+      "currentDeployedVersion": "2021.2512.0.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184775,
+      "packageManager": "msstore",
+      "packageId": "9NBLGGH4QGHW",
+      "currentDeployedVersion": "6.1.5.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184776,
+      "packageManager": "msstore",
+      "packageId": "9N95Q1ZZPMH4",
+      "currentDeployedVersion": "1.2.13.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184777,
+      "packageManager": "msstore",
+      "packageId": "9NCTDW2W1BH8",
+      "currentDeployedVersion": "2.5.7.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184778,
+      "packageManager": "msstore",
+      "packageId": "9MZ95KL8MR0L",
+      "currentDeployedVersion": "2022.2602.47.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184784,
+      "packageManager": "msstore",
+      "packageId": "9PCFS5B6T72H",
+      "currentDeployedVersion": "11.2601.441.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184798,
+      "packageManager": "msstore",
+      "packageId": "9NBLGGH5R558",
+      "currentDeployedVersion": "2.175.6901.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184799,
+      "packageManager": "msstore",
+      "packageId": "9WZDNCRFJ3PT",
+      "currentDeployedVersion": "11.2603.12.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184806,
+      "packageManager": "msstore",
+      "packageId": "9WZDNCRFJ3Q2",
+      "currentDeployedVersion": "4.54.63040.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184808,
+      "packageManager": "msstore",
+      "packageId": "9P1J8S7CCWWT",
+      "currentDeployedVersion": "4.5.10520.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 184809,
+      "packageManager": "msstore",
+      "packageId": "9NRX63209R7B",
+      "currentDeployedVersion": "1.2026.317.100",
+      "latestUpstreamVersion": "Unknown",
       "hasUpdate": true,
       "bumpType": null,
       "releaseNotesUrl": null
