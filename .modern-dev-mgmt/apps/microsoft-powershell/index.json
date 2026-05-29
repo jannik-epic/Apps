@@ -1,0 +1,20 @@
+{
+  "slug": "microsoft-powershell",
+  "displayName": "PowerShell",
+  "versions": [
+    {
+      "version": "7.6.2.0",
+      "runs": [
+        {
+          "workflowRunId": "26648014725",
+          "createdAt": "2026-05-29T16:10:40.0285755Z",
+          "intuneAppId": "ec9486f7-d9d9-4b65-85a9-8d6692d01d98",
+          "catalogAppId": null,
+          "patchRunId": 47,
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-29T16:10:40.2437105Z"
+}

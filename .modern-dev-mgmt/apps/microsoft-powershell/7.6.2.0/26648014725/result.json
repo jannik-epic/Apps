@@ -1,0 +1,98 @@
+{
+  "workflowRunId": "26648014725",
+  "workflow": "deploy-winget-app.yml",
+  "packageManager": "winget",
+  "packageId": "Microsoft.PowerShell",
+  "appId": "ec9486f7-d9d9-4b65-85a9-8d6692d01d98",
+  "updateOnlyAppId": "",
+  "appName": "PowerShell",
+  "status": "success",
+  "createdAt": "2026-05-29T16:10:40.0285755Z",
+  "context": {
+    "source": "patch.trigger",
+    "patchRunId": 47,
+    "targetTenantId": 2,
+    "targetTenantName": "epicfusionlabs.com",
+    "targetAzureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+    "targetAzureClientId": "35d6529f-ddc6-4bba-8d22-11c136f0f400",
+    "repo": "jannik-epic/Apps",
+    "workflowFile": "deploy-winget-app.yml",
+    "catalog": {
+      "catalogAppId": 5631,
+      "source": "winget",
+      "packageId": "Microsoft.PowerShell",
+      "name": "PowerShell",
+      "publisher": "Microsoft Corporation",
+      "fromVersion": "7.3.3.0",
+      "toVersion": "7.6.2.0"
+    },
+    "architecture": "x64",
+    "wave": null,
+    "runSandbox": false,
+    "dryRun": false,
+    "assignmentTemplate": null,
+    "appSetting": null,
+    "changeNote": "Auto patch detected by catalog-scan: 7.3.3.0 -> 7.6.2.0",
+    "createdAt": "2026-05-29T16:05:06.101Z"
+  },
+  "validation": {
+    "installExitCode": 0,
+    "detectionExitCode": 0,
+    "uninstallExitCode": 1,
+    "installOutcome": "success",
+    "detectionOutcome": "success",
+    "uninstallOutcome": "failure",
+    "footprintAvailable": true,
+    "leftoversAvailable": true,
+    "installLogPath": ".modern-dev-mgmt/validation/install.log",
+    "uninstallLogPath": ".modern-dev-mgmt/validation/uninstall.log",
+    "installLogTail": "**********************\r\nPowerShell transcript start\r\nStart time: 20260529160727\r\nUsername: runnervmlu3mh\\runneradmin\r\nRunAs User: runnervmlu3mh\\runneradmin\r\nConfiguration Name: \r\nMachine: runnervmlu3mh (Microsoft Windows NT 10.0.26100.0)\r\nHost Application: C:\\Program Files\\PowerShell\\7\\pwsh.dll -command . 'D:\\a\\_temp\\fc6bb898-3a4f-4126-b297-cf752b87fb63.ps1'\r\nProcess ID: 1952\r\nPSVersion: 7.4.16\r\nPSEdition: Core\r\nGitCommitId: 7.4.16\r\nOS: Microsoft Windows 10.0.26100\r\nPlatform: Win32NT\r\nPSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0\r\nPSRemotingProtocolVersion: 2.3\r\nSerializationVersion: 1.1.0.1\r\nWSManStackVersion: 3.0\r\n**********************\r\n\r\n**********************\r\nPowerShell transcript end\r\nEnd time: 20260529160748\r\n**********************",
+    "uninstallLogTail": "**********************\r\nPowerShell transcript start\r\nStart time: 20260529160751\r\nUsername: runnervmlu3mh\\runneradmin\r\nRunAs User: runnervmlu3mh\\runneradmin\r\nConfiguration Name: \r\nMachine: runnervmlu3mh (Microsoft Windows NT 10.0.26100.0)\r\nHost Application: C:\\Program Files\\PowerShell\\7\\pwsh.dll -command . 'D:\\a\\_temp\\02dca576-a7ac-4731-b3f0-a596d904a06b.ps1'\r\nProcess ID: 5980\r\nPSVersion: 7.4.16\r\nPSEdition: Core\r\nGitCommitId: 7.4.16\r\nOS: Microsoft Windows 10.0.26100\r\nPlatform: Win32NT\r\nPSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0\r\nPSRemotingProtocolVersion: 2.3\r\nSerializationVersion: 1.1.0.1\r\nWSManStackVersion: 3.0\r\n**********************\r\n\r\n**********************\r\nPowerShell transcript end\r\nEnd time: 20260529160752\r\n**********************"
+  },
+  "footprint": {
+    "files": null,
+    "registry": null,
+    "arp": null,
+    "summary": {
+      "fileCount": 0,
+      "totalFileSize": 0,
+      "registryValueCount": 0,
+      "arpEntries": 0
+    },
+    "beforeCapturedAt": "2026-05-29T16:07:26.0441342Z",
+    "afterCapturedAt": "2026-05-29T16:07:49.9720256Z"
+  },
+  "leftovers": {
+    "files": null,
+    "registry": null,
+    "arp": null,
+    "summary": {
+      "fileCount": 0,
+      "totalFileSize": 0,
+      "registryValueCount": 0,
+      "arpEntries": 0
+    },
+    "beforeCapturedAt": "2026-05-29T16:07:26.0441342Z",
+    "afterCapturedAt": "2026-05-29T16:07:52.9100838Z"
+  },
+  "installer": {
+    "fileName": "PowerShell_7.6.2.0_X64_msix_en-US.msix",
+    "sha256": "bec8adc3b3fd015ebda37b28706ffbaf285436db5311c41c127b46f0a9cbe7c9",
+    "installerType": "msix",
+    "nestedInstallerType": null,
+    "installerLocale": "",
+    "architecture": "x64",
+    "scope": "",
+    "silentArgs": "",
+    "silentUninstallArgs": "",
+    "productCode": "",
+    "packageFamilyName": "Microsoft.PowerShell_8wekyb3d8bbwe",
+    "successExitCodes": [
+      0,
+      1641,
+      3010
+    ],
+    "version": "7.6.2.0",
+    "sourceManifestName": "PowerShell_7.6.2.0_X64_msix_en-US.yaml"
+  }
+}
