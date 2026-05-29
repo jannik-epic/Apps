@@ -1,0 +1,20 @@
+{
+  "slug": "github-githubdesktop",
+  "displayName": "GitHub Desktop",
+  "versions": [
+    {
+      "version": "3.5.11",
+      "runs": [
+        {
+          "workflowRunId": "26628468883",
+          "createdAt": "2026-05-29T09:07:53.3381981Z",
+          "intuneAppId": "f672ecf7-b84c-403d-9f51-58c867a1268f",
+          "catalogAppId": null,
+          "patchRunId": 32,
+          "status": "success"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-29T09:07:53.6088206Z"
+}
