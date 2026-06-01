@@ -120,8 +120,8 @@ on:
         required: false
         type: string
 env:
-  AZURE_TENANT_ID: 'f849cde7-f11d-4ef5-a31d-7fca98b21bf5'
-  AZURE_CLIENT_ID: 'a34f2806-b6f7-4d11-98f6-b32894396ca8'
+  AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
+  AZURE_CLIENT_ID: '35d6529f-ddc6-4bba-8d22-11c136f0f400'
   INTUNE_API_URL: 'https://graph.microsoft.com/v1.0'
 
 permissions:
@@ -305,7 +305,7 @@ jobs:
           if (-not (Test-Path -LiteralPath `$installerPath -PathType Leaf)) { throw "Installer not found: `$installerPath" }
           $pre
           if ('$escapedEngine' -eq 'msi') {
-            `$arguments = "/i `"`$installerPath`" $escapedArgs"
+            `$arguments = ('/i "{0}" {1}' -f `$installerPath, '$escapedArgs').Trim()
             `$process = Start-Process -FilePath 'msiexec.exe' -ArgumentList `$arguments -Wait -PassThru -WindowStyle Hidden
           } else {
             `$process = Start-Process -FilePath `$installerPath -ArgumentList '$escapedArgs' -Wait -PassThru -WindowStyle Hidden
