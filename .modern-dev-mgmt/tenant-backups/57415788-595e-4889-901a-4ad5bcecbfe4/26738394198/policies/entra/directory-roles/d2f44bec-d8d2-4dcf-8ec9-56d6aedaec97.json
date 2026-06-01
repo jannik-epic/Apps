@@ -1,0 +1,7 @@
+{
+  "id": "d2f44bec-d8d2-4dcf-8ec9-56d6aedaec97",
+  "deletedDateTime": null,
+  "description": "Allowed to view, set and reset authentication method information for any non-admin user.",
+  "displayName": "Authentication Administrator",
+  "roleTemplateId": "c4e39bd9-1100-46d3-8c65-fb160da0071f"
+}

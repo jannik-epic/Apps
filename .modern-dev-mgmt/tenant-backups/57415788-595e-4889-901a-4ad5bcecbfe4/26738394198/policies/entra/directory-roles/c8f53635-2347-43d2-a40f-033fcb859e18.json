@@ -1,0 +1,7 @@
+{
+  "id": "c8f53635-2347-43d2-a40f-033fcb859e18",
+  "deletedDateTime": null,
+  "description": "Can invite guest users independent of the 'members can invite guests' setting.",
+  "displayName": "Guest Inviter",
+  "roleTemplateId": "95e79109-95c0-4d8e-aee3-d01accf2d47b"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "AATP_Ping_Dormant",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2325982",
+  "controlCategory": "Identity",
+  "title": "Remove stale PingOne privileged accounts",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "1. Review the list of exposed entities to discover which of your PingOne privileged user accounts have not been used for an extended period.<br> 2. If the account is no longer required, deactivate or remove it to eliminate unnecessary exposure.<br> To achieve a full score, you must remediate all exposed entities.",
+  "remediationImpact": "Stale privileged accounts represent a significant security risk, as they may become targets for unauthorized access or misuse without detection. Deactivating or removing unused privileged accounts ensures that only active, monitored users have access to critical administrative capabilities.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

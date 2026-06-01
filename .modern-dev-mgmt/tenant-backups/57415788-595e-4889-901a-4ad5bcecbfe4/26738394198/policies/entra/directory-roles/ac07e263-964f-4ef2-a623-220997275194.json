@@ -1,0 +1,7 @@
+{
+  "id": "ac07e263-964f-4ef2-a623-220997275194",
+  "deletedDateTime": null,
+  "description": "Can manage Conditional Access capabilities.",
+  "displayName": "Conditional Access Administrator",
+  "roleTemplateId": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9"
+}

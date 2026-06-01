@@ -1,0 +1,22 @@
+{
+  "id": "61dcf0ae-580d-4620-8b9a-8ce678ecc5ee",
+  "publisher": "Microsoft",
+  "version": "4",
+  "displayName": "Update stale Group Policies",
+  "description": "If GP refresh was > 7 days ago, then gpupdate. IT can customize the 7 day threshold. Important for reducing network-related helpdesk calls, since many network certs and configurations are delivered via GP.",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastModifiedDateTime": "2023-04-14T19:57:08.1598826Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "roleScopeTagIds": [],
+  "isGlobalScript": true,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('61dcf0ae-580d-4620-8b9a-8ce678ecc5ee')/assignments",
+  "assignments": []
+}

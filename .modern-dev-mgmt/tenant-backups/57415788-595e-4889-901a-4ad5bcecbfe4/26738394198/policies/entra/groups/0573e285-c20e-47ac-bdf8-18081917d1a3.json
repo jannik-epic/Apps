@@ -1,0 +1,13 @@
+{
+  "id": "0573e285-c20e-47ac-bdf8-18081917d1a3",
+  "displayName": "M365 Schulungsteam",
+  "description": "Test ",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "TestKarin",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2023-06-12T12:52:25Z"
+}

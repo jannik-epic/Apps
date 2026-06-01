@@ -1,0 +1,11 @@
+{
+  "id": "5a95859d-d161-4f93-a385-666d98f7e2d0",
+  "displayName": "AAD_SEC_AS_INTUNE-Integration Devices",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "804ff913-d",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-05-04T06:36:18Z"
+}

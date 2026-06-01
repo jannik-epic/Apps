@@ -1,0 +1,35 @@
+{
+  "id": "spo_legacy_auth",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2185071",
+  "controlCategory": "Identity",
+  "title": "Ensure modern authentication for SharePoint applications is required",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 128,
+  "remediation": "\r\n\t\t\tIn the Microsoft 365 Admin Center:\r\n            <br/>\r\n            1. Go to <strong>SharePoint Admin Center</strong>.\r\n            <br/>\r\n            2. Expand the <strong>Policies</strong> section then select <strong>Access control</strong>.\r\n\t\t\t<br/>\r\n            3. Select <strong>Apps that don't use modern authentication</strong>.\r\n\t\t\t<br/>\r\n            4. Select the radio button for <strong>Block access</strong>.\r\n            <br/>\r\n            5. Click <strong>Save</strong>.\r\n\t\t",
+  "remediationImpact": "Implementation of modern authentication for SharePoint will require users to authenticate to SharePoint using modern authentication. This may cause a minor impact to typical user behavior.",
+  "service": "SPO",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "mip_autosensitivitylabelspolicies",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://compliance.microsoft.com/informationprotection?viewid=autolabeling&tid=57415788-595e-4889-901a-4ad5bcecbfe4",
+  "controlCategory": "Data",
+  "title": "Ensure that Auto-labeling data classification policies are set up and used",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 129,
+  "remediation": "\r\n        <ol>\r\n  <li> Open Microsoft Purview compliance portal </li>\r\n  <li> Under <strong>Solutions</strong>, click <strong>Information protection</strong> </li>\r\n  <li> Click on <strong>Auto-Labeling</strong> tab </li>\r\n  <li> Ensure that an Auto-Labeling policy exists and is published accordingly </li>\r\n  <li> Make sure Auto-Labeling policies are published on all of your licensed users and group </li>\r\n</ol>\r\n    ",
+  "remediationImpact": "Unknown",
+  "service": "MIP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

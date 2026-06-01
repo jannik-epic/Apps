@@ -1,0 +1,26 @@
+{
+  "id": "b4e546f6-2695-4c10-b6a9-601c04cae5bb",
+  "appId": "e7ae0984-13e0-414c-9139-1c340c680f53",
+  "displayName": "CCE Test",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-02-25T15:49:25Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

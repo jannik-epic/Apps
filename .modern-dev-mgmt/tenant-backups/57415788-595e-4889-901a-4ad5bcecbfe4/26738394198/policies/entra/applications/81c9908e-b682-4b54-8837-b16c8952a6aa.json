@@ -1,0 +1,61 @@
+{
+  "id": "81c9908e-b682-4b54-8837-b16c8952a6aa",
+  "appId": "c7ba1303-eaec-4626-a3ab-9cba587b2a39",
+  "displayName": "PnP-Lab-EpicFusion",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-04-23T08:13:38Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": [
+      "ms-appx-web://microsoft.aad.brokerplugin/c7ba1303-eaec-4626-a3ab-9cba587b2a39",
+      "http://localhost",
+      "https://login.microsoftonline.com/common/oauth2/nativeclient"
+    ]
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "4e46008b-f24c-477d-8fff-7bb4ec7aafe0",
+          "type": "Scope"
+        },
+        {
+          "id": "204e0828-b5ca-4ad8-b9f3-f32a958e7cc4",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "59a198b5-0420-45a8-ae59-6da1cb640505",
+          "type": "Scope"
+        },
+        {
+          "id": "56680e0d-d2a3-4ae1-80d8-3c4f2100e3d0",
+          "type": "Scope"
+        },
+        {
+          "id": "82866913-39a9-4be7-8091-f4fa781088ae",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

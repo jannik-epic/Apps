@@ -1,0 +1,34 @@
+{
+  "@odata.type": "#microsoft.graph.windowsHealthMonitoringConfiguration",
+  "id": "d897b0d9-2556-4606-98f2-e88661875c1f",
+  "lastModifiedDateTime": "2022-08-22T11:56:25.379993Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-08-22T11:47:50.1971383Z",
+  "description": null,
+  "displayName": "EPICLAB_DCP_DEV_WIN-Health Monitoring",
+  "version": 2,
+  "allowDeviceHealthMonitoring": "enabled",
+  "configDeviceHealthMonitoringScope": "bootPerformance,windowsUpdates",
+  "configDeviceHealthMonitoringCustomScope": null,
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('d897b0d9-2556-4606-98f2-e88661875c1f')/microsoft.graph.windowsHealthMonitoringConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "d897b0d9-2556-4606-98f2-e88661875c1f_62cc56c0-5761-4af8-a3c4-e0e2c667a9ce",
+      "source": "direct",
+      "sourceId": "d897b0d9-2556-4606-98f2-e88661875c1f",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "62cc56c0-5761-4af8-a3c4-e0e2c667a9ce"
+      }
+    }
+  ]
+}

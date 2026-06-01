@@ -1,0 +1,14 @@
+{
+  "id": "203db0a1-3f33-480f-bf7a-7d414b301148",
+  "createdDateTime": "2023-06-07T13:02:28.2349527Z",
+  "lastModifiedDateTime": "2023-06-07T13:02:28.2349527Z",
+  "displayName": "Deployment Profile assigned",
+  "description": "",
+  "platform": "windows10AndLater",
+  "rule": "(device.enrollmentProfileName -startsWith \"EPIC_AEP_DEV_WIN_AAD\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

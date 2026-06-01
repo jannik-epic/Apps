@@ -1,0 +1,65 @@
+{
+  "id": "30dae2b8-d09d-4caf-bec6-2187ec4219c7",
+  "appId": "0ed888fd-c2c8-4fb0-b03e-06c6fef196fe",
+  "displayName": "hrapp-dev-hrapp",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-11-17T12:16:29Z",
+  "identifierUris": [
+    "api://dsthrappwebswn002.z1.web.core.windows.net/0ed888fd-c2c8-4fb0-b03e-06c6fef196fe"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": true,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": [
+      "http://localhost:8080/pre-onboarding/",
+      "http://localhost:8080/mitarbeiter/",
+      "http://localhost:8080/admin-portal/",
+      "https://dsthrappwebswn002.z1.web.core.windows.net/pre-onboarding/",
+      "https://dsthrappwebswn002.z1.web.core.windows.net/mitarbeiter/",
+      "https://dsthrappwebswn002.z1.web.core.windows.net/admin-portal/"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "14dad69e-099b-42c9-810b-d002981feec1",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+          "type": "Scope"
+        },
+        {
+          "id": "98830695-27a2-44f7-8c18-0c3ebc9698f6",
+          "type": "Role"
+        },
+        {
+          "id": "b633e1c5-b582-4048-a93e-9f11b44c7e96",
+          "type": "Role"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

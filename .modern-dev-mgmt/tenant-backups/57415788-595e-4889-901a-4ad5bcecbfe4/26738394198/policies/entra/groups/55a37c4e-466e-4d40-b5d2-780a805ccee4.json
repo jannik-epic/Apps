@@ -1,0 +1,11 @@
+{
+  "id": "55a37c4e-466e-4d40-b5d2-780a805ccee4",
+  "displayName": "Test Purview Disposition Manager",
+  "description": "Test Purview Disposition Manager",
+  "mailEnabled": true,
+  "securityEnabled": true,
+  "mailNickname": "purviewdispositionmanagers",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-05-28T06:54:08Z"
+}

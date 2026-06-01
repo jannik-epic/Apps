@@ -1,0 +1,28 @@
+{
+  "id": "3024e2a5-c714-4ce0-8e76-5fb398c12303",
+  "appId": "c839dd9e-41d7-442e-b1c7-b18c511e50c6",
+  "displayName": "FindTime",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2021-06-14T19:44:13Z",
+  "identifierUris": [
+    "https://epicfusionlabs.com/9c67763e-8fc9-49a7-9d51-b23a742d32bf"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

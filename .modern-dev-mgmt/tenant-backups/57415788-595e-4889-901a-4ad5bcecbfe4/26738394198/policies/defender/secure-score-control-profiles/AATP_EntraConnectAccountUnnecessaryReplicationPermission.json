@@ -1,0 +1,35 @@
+{
+  "id": "AATP_EntraConnectAccountUnnecessaryReplicationPermission",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://aka.ms/IspmEntraConnectReplicationPermissions",
+  "controlCategory": "Identity",
+  "title": "Remove unnecessary replication permissions for Entra Connect AD DS Connector Account",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 8.0,
+  "rank": 65,
+  "remediation": "1. Review the list of exposed entities to discover which of your AD DS Connector accounts have replication permissions.<br> 2. Take appropriate action on those accounts by removing their 'Replication Directory Changes' and 'Replication Directory Changes All' permissions. <br> For environments with multiple Entra Connect servers, it’s crucial to install sensors on each server to ensure Microsoft Defender for Identity can fully monitor your setup. It has been detected that your Entra Connect configuration does not utilize Password Hash Sync (PHS), which means that replication permissions are not necessary for the accounts in the Exposed Entities list.",
+  "remediationImpact": "By default, the Entra Connect account may have extensive permissions to ensure proper synchronization. If Password Hash Sync is not configured, it’s important to remove unnecessary permissions to reduce the potential attack surface.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "high",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

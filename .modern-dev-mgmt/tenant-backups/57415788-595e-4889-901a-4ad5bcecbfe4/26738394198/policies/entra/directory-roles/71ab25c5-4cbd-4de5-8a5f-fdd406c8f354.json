@@ -1,0 +1,7 @@
+{
+  "id": "71ab25c5-4cbd-4de5-8a5f-fdd406c8f354",
+  "deletedDateTime": null,
+  "description": "Can read and write basic directory information. For granting access to applications, not intended for users.",
+  "displayName": "Directory Writers",
+  "roleTemplateId": "9360feb5-f418-4baa-8175-e2a00bac4301"
+}

@@ -1,0 +1,8 @@
+{
+  "clientId": "46a189a9-07a4-4308-8f21-a31331bae0c3",
+  "consentType": "AllPrincipals",
+  "id": "qYmhRqQHCEOPIaMTMbrgwy1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": "Directory.AccessAsUser.All Group.ReadWrite.All offline_access openid profile email User.ReadWrite.All Directory.ReadWrite.All Presence.Read.All People.Read.All ChannelMember.ReadWrite.All TeamMember.ReadWrite.All"
+}

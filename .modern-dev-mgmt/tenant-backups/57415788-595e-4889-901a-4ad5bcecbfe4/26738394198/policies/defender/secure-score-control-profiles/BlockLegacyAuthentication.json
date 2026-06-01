@@ -1,0 +1,38 @@
+{
+  "id": "BlockLegacyAuthentication",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2095010",
+  "controlCategory": "Identity",
+  "title": "Enable Conditional Access policies to block legacy authentication",
+  "deprecated": false,
+  "implementationCost": "Moderate",
+  "lastModifiedDateTime": null,
+  "maxScore": 8.0,
+  "rank": 68,
+  "remediation": "<ol><li>We provide step-by-step guidance to select and enable the right method to block legacy authentication for your organization in the Microsoft 365 admin center (part of the MFA wizard). <a href=\"https://admin.microsoft.com/adminportal/home?Q=SecureScore#/featureexplorer/security/ConditionalAccess\">Go to the Microsoft 365 MFA wizard</a>&nbsp;</li><li>If you would like to perform the implementation yourself, first check what Microsoft Entra ID license you have under &ldquo;Prerequisites&rdquo; in Microsoft Secure Score or <a href=\"https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview\">see your license type under \"Basic information\" in the Microsoft Entra ID Overview</a>.&nbsp;</li><li>If you&rsquo;ve invested in Microsoft Entra ID Premium P1 or P2 licenses, you can create a Conditional Access policy from scratch or by using a template. <a href=\"https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy\">Follow these steps to create a Conditional Access policy from scratch or by using a template</a>&nbsp;</li><li>If you would like to perform the implementation yourself and you&rsquo;re using Microsoft Entra ID Free, turn on security defaults. Note: Security defaults and Conditional Access can&rsquo;t be used side by side. <a href=\"https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults\">Enable security defaults</a>&nbsp;</li></ol>",
+  "remediationImpact": "Users accessing apps that don't support modern authentication will no longer be able to access them with this policy enabled.",
+  "service": "AzureAD",
+  "threats": [
+    "Password Cracking",
+    "Account Breach"
+  ],
+  "tier": "Advanced",
+  "userImpact": "Moderate",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

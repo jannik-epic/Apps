@@ -1,0 +1,35 @@
+{
+  "id": "dlp_datalossprevention",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://compliance.microsoft.com/datalossprevention?tid=57415788-595e-4889-901a-4ad5bcecbfe4",
+  "controlCategory": "Data",
+  "title": "Ensure DLP policies are enabled",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 128,
+  "remediation": "\r\n    Ensure that at least one Microsoft 365 DLP policy exists in the <a href=\"https://compliance.microsoft.com/\">Microsoft 365 Compliance portal</a>\r\n    ",
+  "remediationImpact": "Unknown",
+  "service": "MIP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

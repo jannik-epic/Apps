@@ -1,0 +1,13 @@
+{
+  "id": "b98c587f-5169-455c-a474-ad76b7088d36",
+  "displayName": "[EXT]-Mein Test neues Release [Archive]",
+  "description": "[EXT]-Mein Test neues Release",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "EXT-MeinTestneuesRelease",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2023-05-17T19:39:13Z"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "73093de6-1068-47cf-971d-5415135a5c6b",
+  "createdDateTime": "2023-06-07T13:02:28.1853865Z",
+  "lastModifiedDateTime": "2023-06-07T13:02:28.1853865Z",
+  "displayName": "HP Devices",
+  "description": "",
+  "platform": "windows10AndLater",
+  "rule": "(device.manufacturer -contains \"HP\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

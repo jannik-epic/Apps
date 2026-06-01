@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2026-05-06T11:24:16.2191397Z",
+  "creationSource": null,
+  "description": "DPA",
+  "lastModifiedDateTime": "2026-05-06T11:24:16.2191397Z",
+  "name": "EPIC_SEC_DEV_WIN-Quick Machine recovery Test",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm",
+  "id": "c5280546-50a1-4e8d-9053-d408621bf1cb",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('c5280546-50a1-4e8d-9053-d408621bf1cb')/assignments",
+  "assignments": [
+    {
+      "id": "c5280546-50a1-4e8d-9053-d408621bf1cb_3fc6eea6-7ea5-48d4-8d84-f0e5c79b4164",
+      "source": "direct",
+      "sourceId": "c5280546-50a1-4e8d-9053-d408621bf1cb",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "3fc6eea6-7ea5-48d4-8d84-f0e5c79b4164"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "fdb43d49-dd68-448b-a420-be54713f0b23",
+  "displayName": "SG_AzureOwners",
+  "description": "Azure Owner",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "c7579dde-0",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-03-19T14:00:02Z"
+}

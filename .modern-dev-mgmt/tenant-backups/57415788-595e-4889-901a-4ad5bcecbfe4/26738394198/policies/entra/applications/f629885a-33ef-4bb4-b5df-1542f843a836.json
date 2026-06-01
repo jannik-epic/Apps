@@ -1,0 +1,106 @@
+{
+  "id": "f629885a-33ef-4bb4-b5df-1542f843a836",
+  "appId": "e59ccfb8-b488-4726-bc85-599ea6a30907",
+  "displayName": "IsoCheck",
+  "signInAudience": "AzureADMultipleOrgs",
+  "createdDateTime": "2026-02-12T11:11:38Z",
+  "identifierUris": [
+    "api://d-app-isocheck-web-swn-p0zq-001.azurewebsites.net/e59ccfb8-b488-4726-bc85-599ea6a30907",
+    "api://e59ccfb8-b488-4726-bc85-599ea6a30907"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "http://localhost:5173/.auth/login/aad/callback",
+      "https://isocheck-web.azurewebsites.net/.auth/login/aad/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "http://localhost:5173/.auth/login/aad/callback",
+        "index": null
+      },
+      {
+        "uri": "https://isocheck-web.azurewebsites.net/.auth/login/aad/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": [
+      "http://localhost:5173/onboarding/success",
+      "http://localhost:5173",
+      "https://d-app-isocheck-web-swn-p0zq-001.azurewebsites.net/onboarding/success",
+      "https://d-app-isocheck-web-swn-p0zq-001.azurewebsites.net"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "3afa6a7d-9b1a-42eb-948e-1650a849e176",
+          "type": "Role"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        },
+        {
+          "id": "b633e1c5-b582-4048-a93e-9f11b44c7e96",
+          "type": "Role"
+        },
+        {
+          "id": "332a536c-c7ef-4017-ab91-336970924f0d",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": [
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Employees can view and confirm their reading obligations.",
+      "displayName": "Employee",
+      "id": "d1e2f3a4-b5c6-7890-abcd-100000000003",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Employee"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Team leads can view their team members reading status.",
+      "displayName": "Teamlead",
+      "id": "d1e2f3a4-b5c6-7890-abcd-100000000002",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Teamlead"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "QM Administrators can manage all reading obligations and view reports.",
+      "displayName": "QM Admin",
+      "id": "d1e2f3a4-b5c6-7890-abcd-100000000001",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "QM.Admin"
+    }
+  ]
+}

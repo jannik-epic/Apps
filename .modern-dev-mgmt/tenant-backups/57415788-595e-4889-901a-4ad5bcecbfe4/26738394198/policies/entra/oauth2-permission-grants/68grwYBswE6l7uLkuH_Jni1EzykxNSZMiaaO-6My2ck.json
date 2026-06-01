@@ -1,0 +1,8 @@
+{
+  "clientId": "c12bc8eb-6c80-4ec0-a5ee-e2e4b87fc99e",
+  "consentType": "AllPrincipals",
+  "id": "68grwYBswE6l7uLkuH_Jni1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": "profile User.Read User.Read.All Calendars.Read Sites.Read.All GroupMember.ReadWrite.All Channel.Create Team.ReadBasic.All Channel.ReadBasic.All TeamMember.ReadWrite.All Team.Create TeamsTab.ReadWriteForTeam"
+}

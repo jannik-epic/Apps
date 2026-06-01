@@ -1,0 +1,37 @@
+{
+  "id": "aad_managed_approved_public_groups_only",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide#microsoft-365-groups",
+  "controlCategory": "Identity",
+  "title": "Ensure that only organizationally managed/approved public groups exist",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p>In the <strong>Microsoft 365 Administration&nbsp;</strong>portal, go to:</p><ol><li><strong>Teams &amp; groups -&gt;&nbsp;</strong><strong>Active teams &amp; groups</strong>.<strong>&nbsp;</strong></li><li>For each group, under <strong>Settings,&nbsp;</strong>make sure <strong>Privacy</strong> is set to &apos;<strong>Private</strong>&apos;.</li></ol><p><br></p>",
+  "remediationImpact": "If the recommendation is applied, group owners could receive more access requests than usual, especially regarding groups originally meant to be public.",
+  "service": "AzureAD",
+  "threats": [
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

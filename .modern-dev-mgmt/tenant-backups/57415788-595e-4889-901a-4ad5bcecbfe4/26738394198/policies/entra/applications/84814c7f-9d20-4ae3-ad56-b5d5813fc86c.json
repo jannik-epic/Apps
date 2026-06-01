@@ -1,0 +1,49 @@
+{
+  "id": "84814c7f-9d20-4ae3-ad56-b5d5813fc86c",
+  "appId": "37f8ef38-02c3-4936-ade8-95527d835aef",
+  "displayName": "LastPass Provisioning App",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2021-08-11T11:16:11Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": [
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "User",
+      "displayName": "User",
+      "id": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": null
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "msiam_access",
+      "displayName": "msiam_access",
+      "id": "b9632174-c057-4f7e-951b-be3adc52bfe6",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": null
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "eaff3a4e-8c20-4179-a33e-169f21f769bb",
+  "deletedDateTime": null,
+  "description": "Can reset passwords for non-administrators and Password Administrators.",
+  "displayName": "Password Administrator",
+  "roleTemplateId": "966707d0-3269-4727-9be2-8c3a10f19b9d"
+}

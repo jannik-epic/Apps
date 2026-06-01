@@ -1,0 +1,5 @@
+[
+  "Cloud PC provisioning policies unavailable: \n{\n  \"error\": {\n    \"code\": \"accessDenied\",\n    \"message\": \"Access is denied to the requested resource.\",\n    \"innerError\": {\n      \"date\": \"2026-06-01T06:13:27\",\n      \"request-id\": \"7bb52adc-0485-4c20-b636-e45535e68dbb\",\n      \"client-request-id\": \"7bb52adc-0485-4c20-b636-e45535e68dbb\"\n    }\n  }\n}",
+  "Cloud PC on-premises connections unavailable: \n{\n  \"error\": {\n    \"code\": \"accessDenied\",\n    \"message\": \"Access is denied to the requested resource.\",\n    \"innerError\": {\n      \"date\": \"2026-06-01T06:13:27\",\n      \"request-id\": \"9e361b60-0ed4-4294-bbc0-bec4d2b5c1b7\",\n      \"client-request-id\": \"9e361b60-0ed4-4294-bbc0-bec4d2b5c1b7\"\n    }\n  }\n}",
+  "Cloud PC device images unavailable: \n{\n  \"error\": {\n    \"code\": \"accessDenied\",\n    \"message\": \"Access is denied to the requested resource.\",\n    \"innerError\": {\n      \"date\": \"2026-06-01T06:13:27\",\n      \"request-id\": \"798f8dcc-162f-42a0-8f78-d54b461c95f5\",\n      \"client-request-id\": \"798f8dcc-162f-42a0-8f78-d54b461c95f5\"\n    }\n  }\n}"
+]

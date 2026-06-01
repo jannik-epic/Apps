@@ -1,0 +1,14 @@
+{
+  "id": "901ff710-fa1d-46fb-80f0-a411f8924f1f",
+  "createdDateTime": "2023-09-23T11:45:53.3796296Z",
+  "lastModifiedDateTime": "2023-09-23T11:45:53.3796296Z",
+  "displayName": "\"Name the Provisioning Profile\" Cloud PC devices",
+  "description": "A filter containing all **Provisioning Profile** Cloud PC devices",
+  "platform": "windows10AndLater",
+  "rule": "(device.enrollmentProfileName -eq \"Please Change\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

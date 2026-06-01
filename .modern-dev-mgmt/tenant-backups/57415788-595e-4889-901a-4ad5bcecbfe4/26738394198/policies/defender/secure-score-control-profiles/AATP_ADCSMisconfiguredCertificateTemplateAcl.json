@@ -1,0 +1,35 @@
+{
+  "id": "AATP_ADCSMisconfiguredCertificateTemplateAcl",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://aka.ms/mdiesc4ACL",
+  "controlCategory": "Identity",
+  "title": "Edit misconfigured certificate templates ACL (ESC4)",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "Identify the vulnerable certificate template, and remove overly permissive modifications permissions (e.g. WriteProperty), which allows any user to change the settings of that certificate template.",
+  "remediationImpact": "Badly configured modification permissions allows non-privileged user to modify the settings of the template, creating an artificial misconfiguration later used for privilege escalation.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "high",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

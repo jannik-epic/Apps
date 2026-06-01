@@ -1,0 +1,68 @@
+{
+  "id": "446f90b8-b917-4a8d-95dc-e53bf41bbafa",
+  "appId": "224beebd-0a84-4a91-9f05-65056e3d7aa6",
+  "displayName": "Powershell Automation",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2021-11-30T11:34:30Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "dc377aa6-52d8-4e23-b271-2a7ae04cedf3",
+          "type": "Role"
+        },
+        {
+          "id": "7a6ee1e7-141e-4cec-ae74-d9db155731ff",
+          "type": "Role"
+        },
+        {
+          "id": "2f51be20-0bb4-4fed-bf7b-db946066c75e",
+          "type": "Role"
+        },
+        {
+          "id": "06a5fe6d-c49d-46a7-b082-56b1b14103c7",
+          "type": "Role"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        },
+        {
+          "id": "5b567255-7703-4780-807c-7be8301ae99b",
+          "type": "Role"
+        },
+        {
+          "id": "dbaae8cf-10b5-4b86-a4a1-f871c94c6695",
+          "type": "Role"
+        },
+        {
+          "id": "7438b122-aefc-4978-80ed-43db9fcc7715",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

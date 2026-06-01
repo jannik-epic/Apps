@@ -1,0 +1,26 @@
+{
+  "id": "802700a8-2746-4c0f-b583-b799592c1d85",
+  "appId": "215f6570-286e-4b7b-a4c1-4e2711a5c0a7",
+  "displayName": "SCEPman-terraform",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-26T14:07:13Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

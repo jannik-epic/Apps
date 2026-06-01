@@ -1,0 +1,26 @@
+{
+  "@odata.type": "#microsoft.graph.windowsRestoreDeviceEnrollmentConfiguration",
+  "id": "61de1ff5-959b-4764-9251-cdd730ce6b97_WindowsRestore",
+  "displayName": "All users and all devices",
+  "description": "This is the default Windows Restore configuration applied with the lowest priority to all users and all devices regardless of group membership.",
+  "priority": 0,
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastModifiedDateTime": "2025-07-10T08:46:19Z",
+  "version": 0,
+  "roleScopeTagIds": [],
+  "deviceEnrollmentConfigurationType": "windowsRestore",
+  "state": "notConfigured",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceEnrollmentConfigurations('61de1ff5-959b-4764-9251-cdd730ce6b97_WindowsRestore')/microsoft.graph.windowsRestoreDeviceEnrollmentConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "61de1ff5-959b-4764-9251-cdd730ce6b97_WindowsRestore",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "b6e2a9ed-9c70-44fa-bd4d-a2b9f82295fe",
+  "displayName": "AAD_SEC_AS_INTUNE-PRODUCTION Devices",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "9b3ba406-9",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-05-05T06:20:09Z"
+}

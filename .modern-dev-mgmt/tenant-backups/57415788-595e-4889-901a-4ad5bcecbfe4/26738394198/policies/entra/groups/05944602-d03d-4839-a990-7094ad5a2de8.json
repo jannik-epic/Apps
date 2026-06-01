@@ -1,0 +1,13 @@
+{
+  "id": "05944602-d03d-4839-a990-7094ad5a2de8",
+  "displayName": "Test-Team Bauwerk",
+  "description": "Test-Team Bauwerk",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "testbauwerk",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2026-05-28T14:12:04Z"
+}

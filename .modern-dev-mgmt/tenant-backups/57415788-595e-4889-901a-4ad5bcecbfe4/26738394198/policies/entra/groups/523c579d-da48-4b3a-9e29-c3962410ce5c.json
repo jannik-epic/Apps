@@ -1,0 +1,11 @@
+{
+  "id": "523c579d-da48-4b3a-9e29-c3962410ce5c",
+  "displayName": "AAD_SEC_AS_SensitivityLabelTest",
+  "description": "TestCase CMA für Planner mit Sensitivity Label on",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "a59b8b43-5",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-04-01T06:26:53Z"
+}
