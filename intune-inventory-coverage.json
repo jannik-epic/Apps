@@ -1,128 +1,256 @@
 {
-  "generatedAt": "2026-06-01T04:00:23.027Z",
-  "detectedInScope": 12,
+  "generatedAt": "2026-06-01T05:54:57.568Z",
+  "detectedInScope": 28,
   "managedCovered": 8,
   "unmanaged": [
     {
-      "id": "0000563a2d7ae813b2bfa8b4147a3a7f7ca90000ffff",
-      "displayName": "Microsoft Edge Beta",
-      "publisher": "Microsoft Corporation",
-      "version": "134.0.3124.8",
+      "id": "000020a43c3b6c8a4ba6262e0b82dd117e9700000904",
+      "displayName": "Adobe Acrobat (64-bit)",
+      "publisher": "Adobe",
+      "version": "26.001.21563",
       "platform": "windows",
       "deviceCount": 1
     },
     {
-      "id": "0000b58087597ff1d073067a88733472ed9000000904",
+      "id": "dc30b3072421639bab31a4474c5f79832006012dc1f57590c80bb38a215aa30f",
+      "displayName": "AdobeAcrobatReaderCoreApp",
+      "publisher": "CN=Adobe Inc., OU=Adobe Inc., O=Adobe Inc., L=San Jose, S=ca, C=US, SERIALNUMBER=2748129, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Delaware, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "version": "26.0.0.1",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "f09ae076e673c7d9c50e64ccb32a4c6df52dde73d595975216a12a5b49c305b4",
+      "displayName": "AdobeSystemsIncorporated.AdobePhotoshopExpress",
+      "publisher": "CN=Adobe Inc., OU=\"Lightroom, Camera RAW\", O=Adobe Inc., L=San Jose, S=ca, C=US, SERIALNUMBER=2748129, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Delaware, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "version": "2026.505.951.0",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "b637c5a37fdff6eeca13a95d329bf1b44a0dc9905002067331f2ee78daeec0a3",
+      "displayName": "MSTeams",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "version": "26043.2016.4478.2773",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "000000747547f2db41ab6574a2fe8aaa9c8f0000ffff",
+      "displayName": "Microsoft 365 Apps for Enterprise - de-de",
+      "publisher": "Microsoft Corporation",
+      "version": "16.0.19929.20172",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "00005d16e973150a53062397e9dbb4367c620000ffff",
+      "displayName": "Microsoft 365 Apps for enterprise - en-gb",
+      "publisher": "Microsoft Corporation",
+      "version": "16.0.19929.20172",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "00008d252d5d1d0f0991b3c7e2576bc854870000ffff",
+      "displayName": "Microsoft 365 Apps for enterprise - en-us",
+      "publisher": "Microsoft Corporation",
+      "version": "16.0.19929.20172",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "0000127c2f312b57699d00d6625e8d1e63800000ffff",
+      "displayName": "Microsoft 365 Apps for enterprise - fr-fr",
+      "publisher": "Microsoft Corporation",
+      "version": "16.0.19929.20172",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "00001772c59429e8eb1b221f9505b58e40480000ffff",
+      "displayName": "Microsoft 365 Apps for enterprise - it-it",
+      "publisher": "Microsoft Corporation",
+      "version": "16.0.19929.20172",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "0000ac229cad48f954f6e38162b64e6aeacd00000904",
       "displayName": "Microsoft Intune Management Extension",
       "publisher": "Microsoft Corporation",
-      "version": "1.91.102.0",
+      "version": "1.101.109.0",
       "platform": "windows",
       "deviceCount": 1
     },
     {
-      "id": "0000f7fdd19940e11455a7d72bb91326eef800000904",
-      "displayName": "Spice webdavd 2.5 (ARM64)",
-      "publisher": "The Spice Project",
-      "version": "2.5.0",
+      "id": "00005db15c6254ae809b7f9191f3cc7dbe460000ffff",
+      "displayName": "Microsoft Purview Information Protection",
+      "publisher": "Microsoft Corporation",
+      "version": "3.2.57.0",
       "platform": "windows",
       "deviceCount": 1
     },
     {
-      "id": "00008131c9b7f859f0d59f9aa6e26c255bf30000ffff",
-      "displayName": "UTM Guest Tools 0.229",
-      "publisher": "Turing Software, LLC",
-      "version": "0.229",
+      "id": "8b01d761be6cadb67ce63cd9b13b55d4251d8241e04155fbb4cbb6b213b5653b",
+      "displayName": "Microsoft.Edge.GameAssist",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "version": "1.0.4019.0",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "eb6c0de48863fb1a5cdc76a474864d1b2aaddf92d7aff92c9182eea2f40888e7",
+      "displayName": "Microsoft.M365Companions",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "version": "2.2603.10000.0",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "e4346164b7aaeee2ed14456a9741c015e13f1dc44a5fd30d62d84049c79b50ea",
+      "displayName": "Microsoft.MicrosoftEdge.Stable",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "version": "147.0.3912.98",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "732640ba788f97f2d14de285f12a9b8bb96e6ec11e6f190664fb75fda7dc4e0a",
+      "displayName": "Microsoft.Office.ActionsServer",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "version": "16.0.19929.20172",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "817b741aa1ccf8d96f110afba1c9d123538efa830aa3c3c07e5d68caa0d5a998",
+      "displayName": "Microsoft.OfficePushNotificationUtility",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "version": "16.0.19929.20172",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "c4fc287a6d0df68ddb4b84c69c8aea7467a5c8782eb5b059d9adb61525d2439e",
+      "displayName": "Microsoft.Windows.DevHome",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "version": "0.1701.597.0",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "bda98d5e509e45f158db29688f3ea82b5ea32bcf92460bf0b0ac0a267d027515",
+      "displayName": "MicrosoftCorporationII.QuickAssist",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "version": "2025.331.2057.0",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "0000918cba1f5d007ca7b732760eec30372f00000904",
+      "displayName": "VMware Tools",
+      "publisher": "Broadcom Inc.",
+      "version": "13.0.1.0",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "ed4c3f1ddb96bd3862f16e40160088441560ad719bc115ff458729174d9d2bba",
+      "displayName": "aimgr",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "version": "0.20.47.0",
       "platform": "windows",
       "deviceCount": 1
     }
   ],
   "managed": [
     {
-      "id": "0000a1e4e19b8a12c64d127b40418678bd400000ffff",
-      "displayName": "Canva",
-      "version": "1.101.0",
-      "publisher": "Canva Pty Ltd",
-      "platform": "windows",
-      "deviceCount": 1,
-      "managedIntuneAppId": "7c1ad6c3-5be6-4cc1-bac7-58bcde244d55",
-      "managedDisplayName": "Canva",
-      "confidence": 1
-    },
-    {
-      "id": "0000e3e7177c6cee3ba0c9c0c59df0aadca10000ffff",
-      "displayName": "Greenshot 1.2.10.6",
-      "version": "1.2.10.6",
-      "publisher": "Greenshot",
-      "platform": "windows",
-      "deviceCount": 1,
-      "managedIntuneAppId": "f7da4a83-91a4-48c9-bf10-42fda56e3df9",
-      "managedDisplayName": "Greenshot",
-      "confidence": 1.1
-    },
-    {
-      "id": "000040760a1da722241e02c2691a39a658330000ffff",
-      "displayName": "JetBrains dotPeek 2024.2.3",
-      "version": "2024.2.3",
-      "publisher": "JetBrains s.r.o.",
-      "platform": "windows",
-      "deviceCount": 1,
-      "managedIntuneAppId": "a690af3a-4ba6-4bcc-815c-4abd15dfacdd",
-      "managedDisplayName": "JetBrains dotPeek",
-      "confidence": 0.9
-    },
-    {
-      "id": "0000000eae80474011f801ca0a8eee90fd350000ffff",
+      "id": "0000a7682cb141fc552b93e4342b3eab7b2f0000ffff",
       "displayName": "Microsoft Edge",
-      "version": "133.0.3065.69",
+      "version": "148.0.3967.70",
       "publisher": "Microsoft Corporation",
       "platform": "windows",
       "deviceCount": 1,
-      "managedIntuneAppId": "829ba40f-096a-4b17-8457-f5d9e7ccc2c6",
-      "managedDisplayName": "Microsoft Edge: Web Browser",
+      "managedIntuneAppId": "73f49c82-1902-438f-a988-77357a0bc8ea",
+      "managedDisplayName": "Microsoft Edge: KI-Browser",
       "confidence": 1.1
     },
     {
-      "id": "0000dfd251fd955b213ae88757f2eb39cc310000ffff",
+      "id": "0000cf87afadccbf05903c1988fd3a74081e0000ffff",
       "displayName": "Microsoft OneDrive",
-      "version": "24.221.1103.0003",
+      "version": "26.074.0420.0001",
       "publisher": "Microsoft Corporation",
       "platform": "windows",
       "deviceCount": 1,
-      "managedIntuneAppId": "316a1547-1659-437a-a565-03a50166dc14",
+      "managedIntuneAppId": "e83dd7ab-b6d2-48e8-a5bc-68b584fd3b62",
       "managedDisplayName": "Microsoft OneDrive",
       "confidence": 1
     },
     {
-      "id": "0000807901b5f8bfa2ab6712dfbfae7558080000ffff",
-      "displayName": "Microsoft Visual C++ 2022 Redistributable (Arm64) - 14.30.30704",
-      "version": "14.30.30704.0",
-      "publisher": "Microsoft Corporation",
+      "id": "00004b81d48221e7becb4de15e640592cb4a00000904",
+      "displayName": "Microsoft Teams Meeting Add-in for Microsoft Office",
+      "version": "1.26.02603",
+      "publisher": "Microsoft",
       "platform": "windows",
       "deviceCount": 1,
-      "managedIntuneAppId": "6bbf9c40-79c8-439f-bbc4-de36323f6d60",
-      "managedDisplayName": "Microsoft Visual C++ 2022 Redistributable (Arm64)",
+      "managedIntuneAppId": "090e75af-b620-40e8-b26a-9486bde32a62",
+      "managedDisplayName": "Microsoft Teams",
       "confidence": 0.9
     },
     {
-      "id": "00004149217d06b98a76ed65044b1509737e0000ffff",
-      "displayName": "Microsoft Visual Studio Code",
-      "version": "1.87.2",
+      "id": "00002e96ac03ed3ce3b16fbcb7f0627e67f90000ffff",
+      "displayName": "Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.44.35211",
+      "version": "14.44.35211.0",
       "publisher": "Microsoft Corporation",
       "platform": "windows",
       "deviceCount": 1,
-      "managedIntuneAppId": "5166d85f-1ce3-4100-b47f-6f64b6c3d32b",
-      "managedDisplayName": "Visual Studio Code",
+      "managedIntuneAppId": "6396f957-09a5-46b7-93ff-a53e71540181",
+      "managedDisplayName": "Microsoft Visual C++ 2015-2022 Redistributable (x86)",
+      "confidence": 1
+    },
+    {
+      "id": "0000ea448545d03145f01134afdf9efa72e60000ffff",
+      "displayName": "Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.44.35211",
+      "version": "14.44.35211.0",
+      "publisher": "Microsoft Corporation",
+      "platform": "windows",
+      "deviceCount": 1,
+      "managedIntuneAppId": "6396f957-09a5-46b7-93ff-a53e71540181",
+      "managedDisplayName": "Microsoft Visual C++ 2015-2022 Redistributable (x86)",
+      "confidence": 1.1
+    },
+    {
+      "id": "117add566c0b88a45bc5f6643e4f0187884e26889b67153a9f00c2858655e726",
+      "displayName": "Microsoft.OneDriveSync",
+      "version": "26074.420.1.0",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "platform": "windows",
+      "deviceCount": 1,
+      "managedIntuneAppId": "e83dd7ab-b6d2-48e8-a5bc-68b584fd3b62",
+      "managedDisplayName": "Microsoft OneDrive",
       "confidence": 0.9
     },
     {
-      "id": "0000e7387a04d8dd77217062900a6109109300000904",
-      "displayName": "Python Launcher",
-      "version": "3.11.8150.0",
-      "publisher": "Python Software Foundation",
+      "id": "d74eb3b64886b7974f7851944f2ec52ad777072c48dbfb91d65aaaddbe9f6304",
+      "displayName": "Microsoft.OutlookForWindows",
+      "version": "1.2026.428.200",
+      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
       "platform": "windows",
       "deviceCount": 1,
-      "managedIntuneAppId": "eff12961-5c7d-4df0-9145-27839a1af4ab",
-      "managedDisplayName": "Python Launcher",
+      "managedIntuneAppId": "c0bc0101-6369-4b59-9b48-789df42f4118",
+      "managedDisplayName": "Microsoft Outlook",
+      "confidence": 0.9
+    },
+    {
+      "id": "000082826b56352a7501d6ed28978cafb1e30000ffff",
+      "displayName": "OBS Studio",
+      "version": "32.0.1",
+      "publisher": "OBS Project",
+      "platform": "windows",
+      "deviceCount": 1,
+      "managedIntuneAppId": "51d55366-d6c4-4edc-bd5c-1269a4d4b3b1",
+      "managedDisplayName": "OBS Studio",
       "confidence": 1
     }
   ]
