@@ -1,0 +1,49 @@
+{
+  "@odata.type": "#microsoft.graph.macOSEnterpriseWiFiConfiguration",
+  "id": "a1aeb81b-c438-4da5-8e2c-8a3e1fdb6cff",
+  "lastModifiedDateTime": "2022-08-22T11:47:48.0236558Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-08-22T11:47:48.0236558Z",
+  "description": "WLAN Configuration",
+  "displayName": "EPIC_DCP_DEV_MAC-WLAN",
+  "version": 1,
+  "networkName": "481e2001-4cda-4c79-8717-2b533bfbdb17",
+  "ssid": "PleaseChange",
+  "connectAutomatically": true,
+  "connectWhenNetworkNameIsHidden": false,
+  "wiFiSecurityType": "wpaEnterprise",
+  "proxySettings": "none",
+  "proxyManualAddress": null,
+  "proxyManualPort": null,
+  "proxyAutomaticConfigurationUrl": null,
+  "deploymentChannel": null,
+  "wifiRequirePhysicalMacAddressEnabled": false,
+  "preSharedKey": null,
+  "eapType": "peap",
+  "eapFastConfiguration": null,
+  "trustedServerCertificateNames": [],
+  "authenticationMethod": "certificate",
+  "innerAuthenticationProtocolForEapTtls": null,
+  "outerIdentityPrivacyTemporaryValue": null,
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('a1aeb81b-c438-4da5-8e2c-8a3e1fdb6cff')/microsoft.graph.macOSEnterpriseWiFiConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "a1aeb81b-c438-4da5-8e2c-8a3e1fdb6cff_f4a3ca36-380c-47ae-bbd7-a38fc8722e3d",
+      "source": "direct",
+      "sourceId": "a1aeb81b-c438-4da5-8e2c-8a3e1fdb6cff",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "f4a3ca36-380c-47ae-bbd7-a38fc8722e3d"
+      }
+    }
+  ]
+}

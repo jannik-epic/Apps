@@ -1,0 +1,24 @@
+{
+  "id": "124577f8-48ed-456a-839f-13b419002e33",
+  "description": "Can read tenant governance relationships and relevant objects.",
+  "displayName": "Tenant Governance Relationship Reader",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "124577f8-48ed-456a-839f-13b419002e33",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('124577f8-48ed-456a-839f-13b419002e33')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "e64da816-4fb9-440a-ae4d-83b7758f73da",
+  "appId": "ba1d3db5-7ac9-4ca3-ad2d-aa0d8b30ed15",
+  "displayName": "SCEPman-api",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-26T15:31:57Z",
+  "identifierUris": [
+    "api://ba1d3db5-7ac9-4ca3-ad2d-aa0d8b30ed15"
+  ],
+  "web": {
+    "homePageUrl": "https://asp-scepman-epicflab.azurewebsites.net/",
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": [
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Request certificates via EST or the raw CSR API for your own devices or your own user account.",
+      "displayName": "CSR Self Service",
+      "id": "10f5f3b4-1e51-4df3-a336-a0362119cea5",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "CSR.SelfService"
+    },
+    {
+      "allowedMemberTypes": [
+        "Application"
+      ],
+      "description": "Request certificates via the raw CSR API with the caller being responsible for storing the certificates. Only used internally for SCEPman.",
+      "displayName": "Direct CSR Requesters",
+      "id": "1e03819e-a889-4363-84d7-abfcdfbf5fe1",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "CSR.Request.Direct"
+    },
+    {
+      "allowedMemberTypes": [
+        "Application"
+      ],
+      "description": "Request certificates via the raw CSR API that automatically stores issued certificates",
+      "displayName": "CSR DB Requesters",
+      "id": "dc9d32ff-b0d3-47ea-9c2c-cecb7b5af3cf",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "CSR.Request.Db"
+    },
+    {
+      "allowedMemberTypes": [
+        "Application"
+      ],
+      "description": "Request certificates via the raw CSR API. Only used internally for SCEPman.",
+      "displayName": "CSR Requesters",
+      "id": "894f7e59-c603-4544-b461-10cc60e10b63",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "CSR.Request"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "AATP_PrivilegedAccountsWithDelegationAllowed",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2282834",
+  "controlCategory": "Identity",
+  "title": "Ensure privileged accounts are not delegated",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "1. Review the list of exposed entities to discover which of your privileged user accounts don’t have the configuration flag \"this account is sensitive and cannot be delegated\". <br> 2. Take appropriate action on those accounts by setting the account's control flags to \"this account is sensitive and cannot be delegated\". This will prevent users from gaining access to the account and manipulating system settings. <br> 3. For device accounts, enable \"not delegated\" setting.  <br> <br> To achieve the full score, remediate all exposed entities.",
+  "remediationImpact": "If the sensitive flag is disabled, attackers could exploit Kerberos delegation to misuse privileged account credentials, leading to unauthorized access, lateral movement, and potential network-wide security breaches.\r\nSetting the sensitive flag on privileged user accounts will prevent users from gaining access to the account and manipulating system settings. For device accounts, setting them to \"not delegated\" is important to prevent it from being used in any delegation scenario, ensuring that credentials on this machine cannot be forwarded to access other services.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

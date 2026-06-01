@@ -1,0 +1,11 @@
+{
+  "id": "a92914fe-87d0-4d17-8410-2714c650539f",
+  "displayName": "AAD_SEC_AS_ROL-EF Admins",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "e6b2a277-1",
+  "groupTypes": [],
+  "visibility": "Private",
+  "createdDateTime": "2023-01-20T16:37:26Z"
+}

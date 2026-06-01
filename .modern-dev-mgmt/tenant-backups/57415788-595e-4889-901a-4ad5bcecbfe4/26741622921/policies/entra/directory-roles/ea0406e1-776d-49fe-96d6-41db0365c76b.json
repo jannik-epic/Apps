@@ -1,0 +1,7 @@
+{
+  "id": "ea0406e1-776d-49fe-96d6-41db0365c76b",
+  "deletedDateTime": null,
+  "description": "Allowed to view, set and reset authentication method information for any user (admin or non-admin).",
+  "displayName": "Privileged Authentication Administrator",
+  "roleTemplateId": "7be44c8a-adaf-4e2a-84d6-ab2649e08a13"
+}

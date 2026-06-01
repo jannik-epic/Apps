@@ -1,0 +1,7 @@
+{
+  "id": "65c1c6a5-d732-4b73-a921-ef87247f7477",
+  "deletedDateTime": null,
+  "description": "Security Administrator allows ability to read and manage security configuration and reports.",
+  "displayName": "Security Administrator",
+  "roleTemplateId": "194ae4cb-b126-40b2-bd5b-6091b380977d"
+}

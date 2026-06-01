@@ -1,0 +1,13 @@
+{
+  "id": "e35fd5c3-60f2-4fd6-b76f-65d43aad5131",
+  "displayName": "Akquisition-GRP",
+  "description": "Akquisition",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "Akquisition",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2024-09-09T05:38:36Z"
+}

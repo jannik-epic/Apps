@@ -1,0 +1,37 @@
+{
+  "id": "spo_external_users_sharing",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/microsoft-365/solutions/microsoft-365-guest-settings?view=o365-worldwide#sharepoint-and-onedrive-advanced-sharing-settings",
+  "controlCategory": "Identity",
+  "title": "Ensure that SharePoint guest users cannot share items they don't own",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p>To set SharePoint sharing settings, use the <strong>Microsoft 365 Admin Center</strong>:</p><ol><li>Under <strong>Admin centers </strong>select <strong>SharePoint</strong>.</li><li>Expand <strong>Policies </strong>then select <strong>Sharing</strong>.</li><li>Expand <strong>More external sharing </strong><strong>settings</strong>, uncheck <strong>Allow guests to share items they don&apos;t own</strong>.</li><li>Click <strong>Save</strong>.</li></ol>",
+  "remediationImpact": "Impact associated with this change is highly dependent upon current practices. If users do not regularly share with external parties, then minimal impact is likely. However, if users do regularly share with guests/externally, minimum impacts could occur as those external users will be unable to 're-share' content",
+  "service": "SPO",
+  "threats": [
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

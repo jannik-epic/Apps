@@ -1,0 +1,7 @@
+{
+  "id": "f48ce0ed-5c2f-467b-8725-3888c2248225",
+  "deletedDateTime": null,
+  "description": "Read everything in the Teams admin center, but not update anything.",
+  "displayName": "Teams Reader",
+  "roleTemplateId": "1076ac91-f3d9-41a7-a339-dcdf5f480acc"
+}

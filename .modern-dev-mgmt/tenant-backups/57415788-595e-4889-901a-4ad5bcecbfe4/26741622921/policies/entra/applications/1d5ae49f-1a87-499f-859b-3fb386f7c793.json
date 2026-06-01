@@ -1,0 +1,31 @@
+{
+  "id": "1d5ae49f-1a87-499f-859b-3fb386f7c793",
+  "appId": "122af87f-ee09-4d71-9e76-2f25b486d0b1",
+  "displayName": "SPS Asset Workspace",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-03-16T15:31:08Z",
+  "identifierUris": [
+    "api://122af87f-ee09-4d71-9e76-2f25b486d0b1"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": [
+      "http://localhost:4200",
+      "https://d-app-tool-sps-fe-swn-001.azurewebsites.net"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

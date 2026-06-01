@@ -1,0 +1,38 @@
+{
+  "id": "MDA_Zendesk_sessionexpiry",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://support.zendesk.com/hc/en-us/articles/4408832533274-Understanding-your-Zendesk-session-time",
+  "controlCategory": "Identity",
+  "title": "Enable session timeout for users",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 6.0,
+  "rank": 10,
+  "remediation": "<p><strong>To set an inactivity time-out period</strong></p> <ol> <li>In&nbsp;<a href=\"https://support.zendesk.com/hc/en-us/articles/4581766374554#topic_hfg_dyz_1hb\" target=\"_blank\" rel=\"noopener\">Admin Center</a>, click&nbsp;<strong>Account</strong>&nbsp;in the sidebar, then select&nbsp;<strong>Security &gt; Advanced</strong>.</li> <li>On the&nbsp;<strong>Authentication</strong>&nbsp;tab, select a session expiration period for team members and end users under&nbsp;<strong>Session expiration</strong>.</li> <li>Maximun valid value is <strong>2 hours</strong> for both.</li> <li>Click&nbsp;<strong>Save</strong>.</li> </ol>",
+  "remediationImpact": "There are other technical differences and edge cases, but the main idea is that if a user is active, they will never be signed out. If they are inactive, the session will last as long as configured.",
+  "service": "MDA_Zendesk",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

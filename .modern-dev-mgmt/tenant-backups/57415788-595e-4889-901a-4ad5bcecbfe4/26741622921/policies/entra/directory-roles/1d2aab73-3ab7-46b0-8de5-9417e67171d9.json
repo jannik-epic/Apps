@@ -1,0 +1,7 @@
+{
+  "id": "1d2aab73-3ab7-46b0-8de5-9417e67171d9",
+  "deletedDateTime": null,
+  "description": "Manages all aspects of Microsoft Fabric.",
+  "displayName": "Fabric Administrator",
+  "roleTemplateId": "a9ea8996-122f-4c74-9520-8edcd192826c"
+}

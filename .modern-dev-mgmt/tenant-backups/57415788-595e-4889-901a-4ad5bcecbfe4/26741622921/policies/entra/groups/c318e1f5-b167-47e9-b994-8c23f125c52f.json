@@ -1,0 +1,13 @@
+{
+  "id": "c318e1f5-b167-47e9-b994-8c23f125c52f",
+  "displayName": "Migration 2025 - PRJ",
+  "description": "Test Team for Renaming POC",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "msteams_367acf",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2025-11-24T14:09:51Z"
+}

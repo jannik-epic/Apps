@@ -1,0 +1,38 @@
+{
+  "id": "MDA_Dropbox_InactiveTimeoutMins",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://www.dropbox.com/help/business/web-session-control",
+  "controlCategory": "Identity",
+  "title": "Enable web session timeout for web users",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 6.0,
+  "rank": 10,
+  "remediation": "<p>How to require session policies for Dropbox users</p> <ol> <li><a href=\"https://www.dropbox.com/login\">Sign in to dropbox.com</a>&nbsp;with your admin credentials.</li> <li>Click&nbsp;<strong>Admin Console</strong>.</li> <li>Click&nbsp;<strong>Settings</strong>.</li> <li>Under&nbsp;<strong>Additional Settings</strong>,<strong>&nbsp;</strong>click <strong>Web session control</strong>.</li> <li>Set the setting next to <strong>Fixed session length</strong> to <strong>1 week or less</strong>.</li> <li>It is also suggested, but not mandatory for compliance, to set the setting next to <strong>Idle session length</strong> to <strong>30 minutes&nbsp;or less</strong>.</li> <li>Click&nbsp;<strong>Save changes</strong>.</li> </ol>",
+  "remediationImpact": "Once configured, some users may be automatically logged out and will be asked to log back in to Dropbox.",
+  "service": "MDA_Dropbox",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

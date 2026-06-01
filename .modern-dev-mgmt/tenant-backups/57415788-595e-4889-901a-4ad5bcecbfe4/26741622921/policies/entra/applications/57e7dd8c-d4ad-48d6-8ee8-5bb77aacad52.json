@@ -1,0 +1,55 @@
+{
+  "id": "57e7dd8c-d4ad-48d6-8ee8-5bb77aacad52",
+  "appId": "1a2f3c2f-299a-4527-bf8c-8ea0ce63ea7b",
+  "displayName": "ConnectSyncProvisioning_EFLMGT01_4f8e76437153",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-09-18T16:14:48Z",
+  "identifierUris": [
+    "api://57415788-595e-4889-901a-4ad5bcecbfe4/ConnectSyncProvisioning_4f8e76437153"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "93625bc8-bfe2-437a-97e0-3d0060024faa",
+      "resourceAccess": [
+        {
+          "id": "fc7e8088-95b5-453e-8bef-b17ecfec5ba3",
+          "type": "Role"
+        },
+        {
+          "id": "e006e431-a65b-4f3e-8808-77d29d4c5f1a",
+          "type": "Role"
+        },
+        {
+          "id": "69201c67-737b-4a20-8f16-e0c8c64e0b0e",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "6bf85cfa-ac8a-4be5-b5de-425a0d0dc016",
+      "resourceAccess": [
+        {
+          "id": "ab43b826-2c7a-4aff-9ecd-d0629d0ca6a9",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

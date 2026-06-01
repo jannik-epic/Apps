@@ -1,0 +1,37 @@
+{
+  "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+  "id": "b085bb8a-5c93-410e-8f0b-5ef33f0b19a2_SinglePlatformRestriction",
+  "displayName": "EPIC_EDR_USR_IOS-Apple Mobile Devices",
+  "description": "",
+  "priority": 1,
+  "createdDateTime": "2022-08-22T11:48:15.7999195Z",
+  "lastModifiedDateTime": "2023-03-13T23:43:03.4983788Z",
+  "version": 5,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+  "platformType": "ios",
+  "platformRestriction": {
+    "platformBlocked": false,
+    "personalDeviceEnrollmentBlocked": false,
+    "osMinimumVersion": null,
+    "osMaximumVersion": null,
+    "blockedManufacturers": [],
+    "blockedSkus": []
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceEnrollmentConfigurations('b085bb8a-5c93-410e-8f0b-5ef33f0b19a2_SinglePlatformRestriction')/microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "b085bb8a-5c93-410e-8f0b-5ef33f0b19a2_9be62e02-c686-49aa-b5f1-6c3b98537e81_b085bb8a-5c93-410e-8f0b-5ef33f0b19a2",
+      "source": "direct",
+      "sourceId": "b085bb8a-5c93-410e-8f0b-5ef33f0b19a2",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "9be62e02-c686-49aa-b5f1-6c3b98537e81"
+      }
+    }
+  ]
+}

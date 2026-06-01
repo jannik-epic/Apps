@@ -1,0 +1,64 @@
+{
+  "id": "9bcc1709-863b-4fbc-ad52-f89fc241179b",
+  "templateId": null,
+  "displayName": "CA205: Only allow mobile apps and desktop clients on MDM devices for O365",
+  "createdDateTime": "2025-12-11T09:32:27.7982598Z",
+  "modifiedDateTime": "2025-12-11T09:35:17.1510297Z",
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "exchangeActiveSync",
+      "browser",
+      "other"
+    ],
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "Office365"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [],
+      "excludeUsers": [],
+      "includeGroups": [
+        "9be62e02-c686-49aa-b5f1-6c3b98537e81"
+      ],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    },
+    "platforms": {
+      "includePlatforms": [
+        "android",
+        "iOS"
+      ],
+      "excludePlatforms": []
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('9bcc1709-863b-4fbc-ad52-f89fc241179b')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

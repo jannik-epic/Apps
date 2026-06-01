@@ -1,0 +1,7 @@
+{
+  "id": "54aaeee6-8465-440f-ab1a-6cefa3f741df",
+  "deletedDateTime": null,
+  "description": "Read the definition of custom security attributes.",
+  "displayName": "Attribute Definition Reader",
+  "roleTemplateId": "1d336d2c-4ae8-42ef-9711-b3604ce3fc2c"
+}

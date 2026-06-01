@@ -1,0 +1,13 @@
+{
+  "id": "2e930713-b6bd-4b63-b92c-f80dac810099",
+  "displayName": "Test COE Makers",
+  "description": "Test Group for Maker Persona Center of Excellence",
+  "mailEnabled": true,
+  "securityEnabled": true,
+  "mailNickname": "TestCOEMakers",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2024-10-03T14:19:43Z"
+}

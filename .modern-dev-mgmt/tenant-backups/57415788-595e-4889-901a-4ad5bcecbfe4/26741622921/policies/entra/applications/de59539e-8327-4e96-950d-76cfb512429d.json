@@ -1,0 +1,40 @@
+{
+  "id": "de59539e-8327-4e96-950d-76cfb512429d",
+  "appId": "f3b9f851-c59b-4f6c-8857-cc56707485c9",
+  "displayName": "adminsma-Bicep-57415788-595e-4889-901a-4ad5bcecbfe4",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2024-05-28T12:53:26Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "bf7b1a76-6e77-406b-b258-bf5c7720e98f",
+          "type": "Role"
+        },
+        {
+          "id": "5b567255-7703-4780-807c-7be8301ae99b",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

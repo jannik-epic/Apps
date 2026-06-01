@@ -1,0 +1,35 @@
+{
+  "id": "AATP_PrivilegedEntraIdAndActiveDirectoryAccounts",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2326797",
+  "controlCategory": "Identity",
+  "title": " Identify Entra ID privileged accounts that are also privileged in Active Directory",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 9.0,
+  "rank": 65,
+  "remediation": "1. Review each dual-privileged account and determine whether access is required in both environments. <br>2. Remove unnecessary privileges from either Entra ID or Active Directory to reduce exposure.<br>3. Consider separating cloud and on-prem roles across different accounts or implementing just-in-time access. <br>4. Use Entra Privileged Identity Management (PIM) to enforce approval of workflows and limit standing access.",
+  "remediationImpact": "A compromise of a user account that holds privileges in both Entra ID and Active Directory can result in both environments being fully compromised. These dual-privileged accounts provide attackers with a direct path to escalate control across cloud and on-prem resources, bypassing typical isolation boundaries. Identifying and reducing this overlap is critical to limiting blast radius and protecting your hybrid identity infrastructure.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

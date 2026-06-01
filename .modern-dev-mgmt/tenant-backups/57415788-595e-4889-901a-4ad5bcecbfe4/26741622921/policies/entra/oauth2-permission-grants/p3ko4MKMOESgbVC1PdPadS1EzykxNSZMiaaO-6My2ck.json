@@ -1,0 +1,8 @@
+{
+  "clientId": "e02879a7-8cc2-4438-a06d-50b53dd3da75",
+  "consentType": "AllPrincipals",
+  "id": "p3ko4MKMOESgbVC1PdPadS1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": "openid profile User.Read"
+}

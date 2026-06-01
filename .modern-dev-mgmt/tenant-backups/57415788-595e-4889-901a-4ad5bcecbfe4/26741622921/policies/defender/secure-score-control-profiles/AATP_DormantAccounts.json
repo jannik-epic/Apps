@@ -1,0 +1,35 @@
+{
+  "id": "AATP_DormantAccounts",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2123908",
+  "controlCategory": "Identity",
+  "title": "Remove dormant accounts from sensitive groups",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 67,
+  "remediation": "1. Review this security control list of exposed entities to discover which of your sensitive accounts are dormant..<br> 2. Take appropriate action on those entities by removing their privileged access rights or by deleting the account. <br> To achieve a full score, you must remediate all exposed entities.",
+  "remediationImpact": "A user or an application that relies on these dormant privileges may stop functioning.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

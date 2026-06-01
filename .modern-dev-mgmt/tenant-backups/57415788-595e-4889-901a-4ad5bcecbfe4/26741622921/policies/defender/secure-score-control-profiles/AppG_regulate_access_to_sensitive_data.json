@@ -1,0 +1,35 @@
+{
+  "id": "AppG_regulate_access_to_sensitive_data",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/cloudapps/app-governance?viewid=policies&objid=true&filter=%7B%22source%22:%5B%22Predefined%22%5D%7D",
+  "controlCategory": "Apps",
+  "title": "Regulate cloud app access to sensitive data",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 9,
+  "remediation": "\r\n    In app governance, <u>open the predefined policy \"Access to sensitive data\"</u> and activate it.\r\n    <br/>\r\n    <br/>\r\n    You can edit the predefined policy to specify an action and add exceptions.\r\n  ",
+  "remediationImpact": "Unknown",
+  "service": "AppG",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "moderate",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

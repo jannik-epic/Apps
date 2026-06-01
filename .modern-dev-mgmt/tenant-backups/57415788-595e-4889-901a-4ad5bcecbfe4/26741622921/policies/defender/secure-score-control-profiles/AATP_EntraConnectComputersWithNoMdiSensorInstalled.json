@@ -1,0 +1,35 @@
+{
+  "id": "AATP_EntraConnectComputersWithNoMdiSensorInstalled",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2304928",
+  "controlCategory": "Identity",
+  "title": "Install Defender for Identity Sensor on Entra Connect servers",
+  "deprecated": false,
+  "implementationCost": "High",
+  "lastModifiedDateTime": null,
+  "maxScore": 4.0,
+  "rank": 65,
+  "remediation": "Go to the <a href='https://aka.ms/mdi/sensor-deployment' target='_blank'>sensor page </a> in Settings, you can view the already installed sensors in your environment and download the install package to deploy them on your remaining servers.<br>For more details, see <a href='https://aka.ms/DeployMdiSensorOnYourIdentityInfrastructure' target='_blank'>Configure sensors for AD FS, AD CS, and Microsoft Entra Connect </a>.<br>You will be scored as a percentage of your deployment progress. ",
+  "remediationImpact": "This change has no known impact on your users.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

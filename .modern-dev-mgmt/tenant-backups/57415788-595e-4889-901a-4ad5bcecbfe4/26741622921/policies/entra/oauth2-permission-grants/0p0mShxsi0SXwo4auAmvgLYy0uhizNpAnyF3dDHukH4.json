@@ -1,0 +1,8 @@
+{
+  "clientId": "4a269dd2-6c1c-448b-97c2-8e1ab809af80",
+  "consentType": "AllPrincipals",
+  "id": "0p0mShxsi0SXwo4auAmvgLYy0uhizNpAnyF3dDHukH4",
+  "principalId": null,
+  "resourceId": "e8d232b6-cc62-40da-9f21-777431ee907e",
+  "scope": " AllSites.FullControl AllSites.Manage AllSites.Read AllSites.Write MyFiles.Read MyFiles.Write Sites.Search.All TermStore.Read.All TermStore.ReadWrite.All User.Read.All User.ReadWrite.All"
+}

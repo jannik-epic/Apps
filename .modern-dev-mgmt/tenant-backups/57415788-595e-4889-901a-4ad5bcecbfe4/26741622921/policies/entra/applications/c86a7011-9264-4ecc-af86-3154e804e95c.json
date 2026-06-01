@@ -1,0 +1,49 @@
+{
+  "id": "c86a7011-9264-4ecc-af86-3154e804e95c",
+  "appId": "b0e46e0e-c5f3-4a4c-829b-fd6b1eaa9be7",
+  "displayName": "SCEPman_APIEnrollment",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-07-08T14:08:42Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "ba1d3db5-7ac9-4ca3-ad2d-aa0d8b30ed15",
+      "resourceAccess": [
+        {
+          "id": "dc9d32ff-b0d3-47ea-9c2c-cecb7b5af3cf",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "9a5d68dd-52b0-4cc2-bd40-abcf44ac3a30",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

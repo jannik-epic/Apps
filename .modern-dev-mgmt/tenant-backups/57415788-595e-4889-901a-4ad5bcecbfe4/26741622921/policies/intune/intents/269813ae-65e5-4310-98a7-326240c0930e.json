@@ -1,0 +1,14 @@
+{
+  "id": "269813ae-65e5-4310-98a7-326240c0930e",
+  "displayName": "EPIC_SEC_DEV_WIN-Microsoft Edge baseline",
+  "description": null,
+  "isAssigned": true,
+  "isMigratingToConfigurationPolicy": null,
+  "lastModifiedDateTime": "2023-01-30T07:03:31.8037266Z",
+  "templateId": "a8d6fa0e-1e66-455b-bb51-8ce0dde1559e",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('269813ae-65e5-4310-98a7-326240c0930e')/assignments",
+  "assignments": []
+}

@@ -1,0 +1,70 @@
+{
+  "id": "4dc8b9dd-8c6f-4321-b255-bd921a17df7f",
+  "templateId": null,
+  "displayName": "CLOUD APPS: Office 365 | LOCATION: Any| DEVICE: Mobile | CLIENT: Client Apps | Force compliant Devices",
+  "createdDateTime": "2021-05-18T15:30:52.2802562Z",
+  "modifiedDateTime": null,
+  "state": "disabled",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "exchangeActiveSync",
+      "mobileAppsAndDesktopClients",
+      "other"
+    ],
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "Office365"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [
+        "d8e78037-e88c-4c90-8144-5d6d91ff42e6",
+        "GuestsOrExternalUsers"
+      ],
+      "includeGroups": [],
+      "excludeGroups": [
+        "de4b449b-cf85-4be5-9050-daf02929ae12"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    },
+    "platforms": {
+      "includePlatforms": [
+        "android",
+        "iOS",
+        "windowsPhone"
+      ],
+      "excludePlatforms": []
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "compliantDevice"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('4dc8b9dd-8c6f-4321-b255-bd921a17df7f')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

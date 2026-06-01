@@ -1,0 +1,8 @@
+{
+  "clientId": "f13c8b3a-0fcb-4ced-a106-367a01eb1b21",
+  "consentType": "Principal",
+  "id": "Oos88csP7UyhBjZ6AesbIS1EzykxNSZMiaaO-6My2clDzlvRzq9EQpYJTa30Pp2I",
+  "principalId": "d15bce43-afce-4244-9609-4dadf43e9d88",
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": " offline_access EAS.AccessAsUser.All"
+}

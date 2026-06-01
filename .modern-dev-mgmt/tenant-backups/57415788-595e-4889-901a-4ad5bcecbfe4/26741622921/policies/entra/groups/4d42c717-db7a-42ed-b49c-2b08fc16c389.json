@@ -1,0 +1,11 @@
+{
+  "id": "4d42c717-db7a-42ed-b49c-2b08fc16c389",
+  "displayName": "GG_SCCM_Supporter",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "GG_SCCM_Supporter",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2021-08-13T15:16:19Z"
+}

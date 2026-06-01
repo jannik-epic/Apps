@@ -1,0 +1,11 @@
+{
+  "id": "3090064e-5037-43a3-b0dd-5621348fe9c7",
+  "lastModifiedDateTime": "2022-08-22T11:46:59Z",
+  "displayName": "EPIC_COM_USR_AOS-Client Notification Reminder",
+  "description": null,
+  "defaultLocale": "de-de",
+  "brandingOptions": "includeCompanyLogo,includeCompanyName,includeContactInformation",
+  "roleScopeTagIds": [
+    "0"
+  ]
+}

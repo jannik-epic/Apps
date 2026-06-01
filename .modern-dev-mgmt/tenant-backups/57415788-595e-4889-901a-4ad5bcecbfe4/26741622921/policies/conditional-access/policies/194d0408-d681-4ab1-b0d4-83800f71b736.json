@@ -1,0 +1,67 @@
+{
+  "id": "194d0408-d681-4ab1-b0d4-83800f71b736",
+  "templateId": null,
+  "displayName": "Test Block",
+  "createdDateTime": "2025-07-10T08:18:43.8950306Z",
+  "modifiedDateTime": "2026-02-16T08:52:16.4169966Z",
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [
+        "c352c97b-29ca-4808-b0c8-2128c6d71f3f",
+        "61e22477-8afd-41e0-885f-a28ba897ba8f"
+      ],
+      "includeGroups": [],
+      "excludeGroups": [
+        "38691173-0809-4f1e-ab10-75d05bae4225"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    },
+    "platforms": {
+      "includePlatforms": [
+        "android",
+        "iOS"
+      ],
+      "excludePlatforms": []
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('194d0408-d681-4ab1-b0d4-83800f71b736')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

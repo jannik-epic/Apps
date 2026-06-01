@@ -1,0 +1,66 @@
+{
+  "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
+  "id": "9dee4104-1eee-4aa2-9cfb-93727441b896",
+  "lastModifiedDateTime": "2023-09-23T11:45:52.4736283Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-08-22T11:47:56.3952959Z",
+  "description": null,
+  "displayName": "EPIC_EMM_DEV_IOS-BYOD Device Features",
+  "version": 2,
+  "assetTagTemplate": null,
+  "contentFilterSettings": null,
+  "lockScreenFootnote": null,
+  "homeScreenGridWidth": null,
+  "homeScreenGridHeight": null,
+  "singleSignOnSettings": null,
+  "wallpaperDisplayLocation": "notConfigured",
+  "wallpaperImage": null,
+  "singleSignOnExtension": null,
+  "airPrintDestinations": [],
+  "homeScreenDockIcons": [],
+  "homeScreenPages": [],
+  "notificationSettings": [],
+  "iosSingleSignOnExtension": {
+    "@odata.type": "#microsoft.graph.iosAzureAdSingleSignOnExtension",
+    "enableSharedDeviceMode": false,
+    "bundleIdAccessControlList": [],
+    "configurations": [
+      {
+        "@odata.type": "#microsoft.graph.keyIntegerValuePair",
+        "key": "browser_sso_interaction_enabled",
+        "value": 1
+      },
+      {
+        "@odata.type": "#microsoft.graph.keyIntegerValuePair",
+        "key": "disable_explicit_app_prompt",
+        "value": 1
+      },
+      {
+        "@odata.type": "#microsoft.graph.keyStringValuePair",
+        "key": "AppPrefixAllowList",
+        "value": "com.microsoft.,com.apple."
+      }
+    ]
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('9dee4104-1eee-4aa2-9cfb-93727441b896')/microsoft.graph.iosDeviceFeaturesConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "9dee4104-1eee-4aa2-9cfb-93727441b896_67618c9b-8186-4fa0-828b-ca91b8cb6099",
+      "source": "direct",
+      "sourceId": "9dee4104-1eee-4aa2-9cfb-93727441b896",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "67618c9b-8186-4fa0-828b-ca91b8cb6099"
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "SigninRiskPolicy",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView",
+  "controlCategory": "Identity",
+  "title": "Enable Microsoft Entra ID Identity Protection sign-in risk policies",
+  "deprecated": false,
+  "implementationCost": "Moderate",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 58,
+  "remediation": "<ol><li>To implement this recommendation, you need Microsoft Entra ID Premium P2 licenses. Check what Microsoft Entra ID license you have under &ldquo;Prerequisites&rdquo; in Microsoft Secure Score or <a href=\"https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview\">See your license type under \"Basic information\" in the Microsoft Entra ID Overview</a>&nbsp;</li><li>If you&rsquo;ve invested in Microsoft Entra ID Premium P2 licenses, you can create a Conditional Access policy from scratch or by using a template. <a href=\"https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-risk\">Follow these steps to create a Conditional Access policy from scratch or by using a template</a>&nbsp;</li><li>If you&rsquo;re not using Microsoft Entra ID Premium P2 licenses, we recommend you set this action to &ldquo;Risk accepted&rdquo;.&nbsp;</li></ol>",
+  "remediationImpact": "When the policy triggers, the user will need MFA to access the account. If a user hasn't registered for MFA, they’re blocked from accessing their account. If account access is blocked, an admin would need to recover the account.",
+  "service": "AzureAD",
+  "threats": [
+    "Password Cracking",
+    "Account Breach"
+  ],
+  "tier": "Advanced",
+  "userImpact": "Moderate",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "748dfcd9-66cc-4516-b536-0820e29b700d",
+  "displayName": "AAD_SEC_AS_INTUNE-Autopilot SelfDeploy",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "a7d19f3e-0",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-08-22T11:46:53Z"
+}

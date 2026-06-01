@@ -1,0 +1,14 @@
+{
+  "id": "c9006c14-81bb-4e76-90ba-26ed486b804e",
+  "createdDateTime": "2023-09-23T11:45:53.2249071Z",
+  "lastModifiedDateTime": "2023-09-23T11:45:53.2249071Z",
+  "displayName": "All Cloud PCs",
+  "description": "A filter containing all Cloud PC devices",
+  "platform": "windows10AndLater",
+  "rule": "(device.model -contains \"Cloud PC\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

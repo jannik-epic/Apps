@@ -1,0 +1,13 @@
+{
+  "id": "856f703f-8855-4f84-8d2e-d653089fe262",
+  "displayName": "DSD002",
+  "description": " Test Flow Provisioning",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "DSD002",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2024-11-21T09:02:29Z"
+}

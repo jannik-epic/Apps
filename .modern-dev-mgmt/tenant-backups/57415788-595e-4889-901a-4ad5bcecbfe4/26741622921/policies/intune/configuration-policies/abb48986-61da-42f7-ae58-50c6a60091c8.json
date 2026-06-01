@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2025-08-05T13:04:57.2003329Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2025-08-05T13:06:38.7362112Z",
+  "name": "BASE-EPICLAB_DCP_DEV_WIN-Edge Settings",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 33,
+  "technologies": "mdm",
+  "id": "abb48986-61da-42f7-ae58-50c6a60091c8",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('abb48986-61da-42f7-ae58-50c6a60091c8')/assignments",
+  "assignments": []
+}
