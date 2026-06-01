@@ -49,8 +49,8 @@ on:
         type: string
 
 env:
-  AZURE_TENANT_ID: 'f849cde7-f11d-4ef5-a31d-7fca98b21bf5'
-  AZURE_BACKUP_CLIENT_ID: '4743e56d-572f-4993-895a-38797244b41f'
+  AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
+  AZURE_BACKUP_CLIENT_ID: 'b8574bb9-c5c3-435e-8b66-25129b622ec9'
   GRAPH_BASE: 'https://graph.microsoft.com/v1.0'
   GRAPH_BETA_BASE: 'https://graph.microsoft.com/beta'
 
@@ -65,6 +65,38 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
+
+      - name: Resolve destination Azure tenant from Modern Dev Mgmt context
+        shell: bash
+        env:
+          REQUEST_CONTEXT_B64: ${{ github.event.inputs.request_context_b64 }}
+        run: |
+          # Cross-tenant restore: a backup taken in one tenant can be restored
+          # into a different tenant that shares this same GitHub backup store.
+          # The desktop app passes targetAzureTenantId + targetAzureClientId in
+          # the request context so OIDC logs into the *destination* tenant via
+          # its own backup app registration. The YAML env defaults are baked at
+          # provisioning time and only point at the source tenant; without this
+          # override a cross-tenant restore would write into the wrong tenant.
+          if [[ -z "${REQUEST_CONTEXT_B64:-}" ]]; then
+            echo "no Modern Dev Mgmt context — keeping default AZURE_TENANT_ID/CLIENT_ID"
+            exit 0
+          fi
+          decoded="$(printf '%s' "$REQUEST_CONTEXT_B64" | base64 --decode 2>/dev/null || true)"
+          if [[ -z "$decoded" ]]; then
+            echo "::warning::could not base64-decode request_context_b64; using YAML defaults"
+            exit 0
+          fi
+          tenant="$(printf '%s' "$decoded" | jq -r '.targetAzureTenantId // ""' 2>/dev/null || true)"
+          client="$(printf '%s' "$decoded" | jq -r '.targetAzureClientId // ""' 2>/dev/null || true)"
+          if [[ -n "$tenant" ]]; then
+            echo "AZURE_TENANT_ID=$tenant" >> "$GITHUB_ENV"
+            echo "resolved AZURE_TENANT_ID=$tenant"
+          fi
+          if [[ -n "$client" ]]; then
+            echo "AZURE_BACKUP_CLIENT_ID=$client" >> "$GITHUB_ENV"
+            echo "resolved AZURE_BACKUP_CLIENT_ID=$client"
+          fi
 
       - name: Azure Login (backup app reg, OIDC)
         uses: azure/login@v3
