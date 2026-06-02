@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-06-02T03:02:01.407Z",
+  "scannedAt": "2026-06-02T04:31:01.146Z",
   "results": [
     {
       "appId": 803,
@@ -55,7 +55,7 @@
       "appId": 4128,
       "packageManager": "winget",
       "packageId": "Microsoft.Office",
-      "currentDeployedVersion": "16.0.19929.20106",
+      "currentDeployedVersion": "16.0.19929.20172",
       "latestUpstreamVersion": "16.0.19929.20090",
       "hasUpdate": true,
       "bumpType": null,
@@ -175,10 +175,10 @@
       "appId": 64084,
       "packageManager": "msstore",
       "packageId": "XPDP273C0XHQH2",
-      "currentDeployedVersion": "26.0.0.1",
+      "currentDeployedVersion": "26.001.21563",
       "latestUpstreamVersion": "26.001.21563",
-      "hasUpdate": true,
-      "bumpType": "minor",
+      "hasUpdate": false,
+      "bumpType": null,
       "releaseNotesUrl": null
     },
     {
@@ -395,7 +395,7 @@
       "appId": 184809,
       "packageManager": "msstore",
       "packageId": "9NRX63209R7B",
-      "currentDeployedVersion": "1.2026.317.100",
+      "currentDeployedVersion": "1.2026.428.200",
       "latestUpstreamVersion": "Unknown",
       "hasUpdate": true,
       "bumpType": null,
