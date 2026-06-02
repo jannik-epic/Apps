@@ -50,7 +50,7 @@
     "package_id": "Microsoft.Office",
     "name": "Microsoft 365 Apps for enterprise",
     "os": "windows",
-    "version_deployed": "16.0.19929.20106",
+    "version_deployed": "16.0.19929.20172",
     "pin_version": null
   },
   {
@@ -158,7 +158,7 @@
     "package_id": "XPDP273C0XHQH2",
     "name": "Adobe Acrobat Reader DC",
     "os": "windows",
-    "version_deployed": "26.0.0.1",
+    "version_deployed": "26.001.21563",
     "pin_version": null
   },
   {
@@ -356,7 +356,7 @@
     "package_id": "9NRX63209R7B",
     "name": "Outlook for Windows",
     "os": "windows",
-    "version_deployed": "1.2026.317.100",
+    "version_deployed": "1.2026.428.200",
     "pin_version": null
   }
 ]
