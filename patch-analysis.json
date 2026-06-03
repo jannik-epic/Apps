@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-06-03T03:02:19.536Z",
+  "scannedAt": "2026-06-03T05:10:25.507Z",
   "results": [
     {
       "appId": 803,
@@ -36,7 +36,7 @@
       "packageManager": "winget",
       "packageId": "GitHub.GitHubDesktop",
       "currentDeployedVersion": "3.2.0",
-      "latestUpstreamVersion": "3.5.11",
+      "latestUpstreamVersion": "3.5.12",
       "hasUpdate": true,
       "bumpType": "minor",
       "releaseNotesUrl": "https://github.com/apps/desktop"
