@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-06-04T04:01:06.470Z",
+  "scannedAt": "2026-06-04T04:31:01.343Z",
   "results": [
     {
       "appId": 803,
@@ -205,10 +205,10 @@
       "appId": 114158,
       "packageManager": "winget",
       "packageId": "Microsoft.Gaming.GDK",
-      "currentDeployedVersion": "2604.1001.9.0",
+      "currentDeployedVersion": "2505.900.9.0",
       "latestUpstreamVersion": "2604.1.7839",
       "hasUpdate": true,
-      "bumpType": "patch",
+      "bumpType": "major",
       "releaseNotesUrl": "https://github.com/microsoft/GDK/releases"
     },
     {
