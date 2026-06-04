@@ -230,7 +230,7 @@
     "package_id": "9WZDNCRFHVN5",
     "name": "Windows Calculator",
     "os": "windows",
-    "version_deployed": "2021.2508.4.0",
+    "version_deployed": "2021.2502.2.0",
     "pin_version": null
   },
   {
@@ -239,7 +239,7 @@
     "package_id": "9MSMLRH6LZF3",
     "name": "Windows Notepad",
     "os": "windows",
-    "version_deployed": "11.2512.29.0",
+    "version_deployed": "11.2604.5.0",
     "pin_version": null
   },
   {
@@ -248,7 +248,7 @@
     "package_id": "9WZDNCRFJBH4",
     "name": "Microsoft Photos",
     "os": "windows",
-    "version_deployed": "2026.11020.20001.0",
+    "version_deployed": "24.24070.23002.0",
     "pin_version": null
   },
   {
@@ -266,7 +266,7 @@
     "package_id": "9WZDNCRFHWKN",
     "name": "Windows Sound Recorder",
     "os": "windows",
-    "version_deployed": "2021.2512.0.0",
+    "version_deployed": "2021.2510.0.0",
     "pin_version": null
   },
   {
@@ -311,7 +311,7 @@
     "package_id": "9PCFS5B6T72H",
     "name": "Paint",
     "os": "windows",
-    "version_deployed": "11.2601.441.0",
+    "version_deployed": "11.2603.251.0",
     "pin_version": null
   },
   {
@@ -320,7 +320,7 @@
     "package_id": "9NBLGGH5R558",
     "name": "Microsoft To Do: Lists, Tasks & Reminders",
     "os": "windows",
-    "version_deployed": "2.175.6901.0",
+    "version_deployed": "2.153.5851.0",
     "pin_version": null
   },
   {
@@ -329,7 +329,7 @@
     "package_id": "9WZDNCRFJ3PT",
     "name": "Windows Media Player",
     "os": "windows",
-    "version_deployed": "11.2603.12.0",
+    "version_deployed": "11.2510.7.0",
     "pin_version": null
   },
   {
@@ -338,7 +338,7 @@
     "package_id": "9WZDNCRFJ3Q2",
     "name": "MSN Weather",
     "os": "windows",
-    "version_deployed": "4.54.63040.0",
+    "version_deployed": "4.54.63017.0",
     "pin_version": null
   },
   {
@@ -347,7 +347,7 @@
     "package_id": "9P1J8S7CCWWT",
     "name": "Microsoft Clipchamp",
     "os": "windows",
-    "version_deployed": "4.5.10520.0",
+    "version_deployed": "4.4.10720.0",
     "pin_version": null
   },
   {
