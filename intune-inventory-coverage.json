@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-03T05:55:24.366Z",
-  "detectedInScope": 81,
-  "managedCovered": 9,
+  "generatedAt": "2026-06-04T04:00:24.923Z",
+  "detectedInScope": 90,
+  "managedCovered": 11,
   "unmanaged": [
     {
       "id": "000020a43c3b6c8a4ba6262e0b82dd117e9700000904",
@@ -52,10 +52,26 @@
       "deviceCount": 1
     },
     {
+      "id": "00003fe67e2736c81f9f9decb057b8de80880000ffff",
+      "displayName": "Microsoft 365 Apps for Enterprise - de-de",
+      "publisher": "Microsoft Corporation",
+      "version": "16.0.20026.20112",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
       "id": "00005d16e973150a53062397e9dbb4367c620000ffff",
       "displayName": "Microsoft 365 Apps for enterprise - en-gb",
       "publisher": "Microsoft Corporation",
       "version": "16.0.19929.20172",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "000076dc5c02c42b24c3f02cb2b4f30a53990000ffff",
+      "displayName": "Microsoft 365 Apps for enterprise - en-us",
+      "publisher": "Microsoft Corporation",
+      "version": "16.0.20026.20112",
       "platform": "windows",
       "deviceCount": 1
     },
@@ -76,10 +92,50 @@
       "deviceCount": 1
     },
     {
+      "id": "000037d950c5c6ee448da30cac1e49e09df10000ffff",
+      "displayName": "Microsoft 365 Apps for enterprise - fr-fr",
+      "publisher": "Microsoft Corporation",
+      "version": "16.0.20026.20112",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
       "id": "00001772c59429e8eb1b221f9505b58e40480000ffff",
       "displayName": "Microsoft 365 Apps for enterprise - it-it",
       "publisher": "Microsoft Corporation",
       "version": "16.0.19929.20172",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "00007d558a64e855990e77eb10c1ef784aa00000ffff",
+      "displayName": "Microsoft 365 Apps for enterprise - it-it",
+      "publisher": "Microsoft Corporation",
+      "version": "16.0.20026.20112",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "000092a38f68abeb50c76a9069ed3e864a9d0000ffff",
+      "displayName": "Microsoft Edge Update",
+      "publisher": null,
+      "version": "1.3.237.7",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "0000a15952fe64e1fe0bdf57d820f9f1d9d20000ffff",
+      "displayName": "Microsoft Edge WebView2 Runtime",
+      "publisher": null,
+      "version": "148.0.3967.96",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "000000b6aaf98958c59c3ab2a65cd68196df00000904",
+      "displayName": "Microsoft Intune Management Extension",
+      "publisher": "Microsoft Corporation",
+      "version": "1.101.111.0",
       "platform": "windows",
       "deviceCount": 1
     },
@@ -593,6 +649,28 @@
       "confidence": 1.1
     },
     {
+      "id": "0000d222e891695bb46381dff738b672f9120000ffff",
+      "displayName": "Microsoft Edge",
+      "version": "148.0.3967.96",
+      "publisher": "Microsoft Corporation",
+      "platform": "windows",
+      "deviceCount": 1,
+      "managedIntuneAppId": "73f49c82-1902-438f-a988-77357a0bc8ea",
+      "managedDisplayName": "Microsoft Edge: KI-Browser",
+      "confidence": 1.1
+    },
+    {
+      "id": "0000a22d6be0079d0f5edb2f7d932b114f5c0000ffff",
+      "displayName": "Microsoft OneDrive",
+      "version": "26.084.0504.0007",
+      "publisher": "Microsoft Corporation",
+      "platform": "windows",
+      "deviceCount": 1,
+      "managedIntuneAppId": "e83dd7ab-b6d2-48e8-a5bc-68b584fd3b62",
+      "managedDisplayName": "Microsoft OneDrive",
+      "confidence": 1
+    },
+    {
       "id": "0000cf87afadccbf05903c1988fd3a74081e0000ffff",
       "displayName": "Microsoft OneDrive",
       "version": "26.074.0420.0001",
@@ -620,7 +698,7 @@
       "version": "14.44.35211.0",
       "publisher": "Microsoft Corporation",
       "platform": "windows",
-      "deviceCount": 1,
+      "deviceCount": 2,
       "managedIntuneAppId": "6396f957-09a5-46b7-93ff-a53e71540181",
       "managedDisplayName": "Microsoft Visual C++ 2015-2022 Redistributable (x86)",
       "confidence": 1
@@ -631,7 +709,7 @@
       "version": "14.44.35211.0",
       "publisher": "Microsoft Corporation",
       "platform": "windows",
-      "deviceCount": 1,
+      "deviceCount": 2,
       "managedIntuneAppId": "6396f957-09a5-46b7-93ff-a53e71540181",
       "managedDisplayName": "Microsoft Visual C++ 2015-2022 Redistributable (x86)",
       "confidence": 1.1
@@ -675,7 +753,7 @@
       "version": "32.0.1",
       "publisher": "OBS Project",
       "platform": "windows",
-      "deviceCount": 1,
+      "deviceCount": 2,
       "managedIntuneAppId": "51d55366-d6c4-4edc-bd5c-1269a4d4b3b1",
       "managedDisplayName": "OBS Studio",
       "confidence": 1
