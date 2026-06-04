@@ -185,7 +185,7 @@
     "package_id": "Microsoft.Gaming.GDK",
     "name": "April 2026 GDK Update 1",
     "os": "windows",
-    "version_deployed": "2604.1001.9.0",
+    "version_deployed": "2505.900.9.0",
     "pin_version": null
   },
   {
