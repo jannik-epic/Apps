@@ -1,0 +1,105 @@
+{
+  "applied": [
+    {
+      "backupPolicyId": "0720a99e-562b-4a77-83f0-9a7523fcf13e",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/0720a99e-562b-4a77-83f0-9a7523fcf13e.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories"
+    },
+    {
+      "backupPolicyId": "f1fc9fe2-728d-4867-9a72-a61e18f8c606",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/f1fc9fe2-728d-4867-9a72-a61e18f8c606.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories"
+    },
+    {
+      "backupPolicyId": "046e0b16-76ce-4b49-bf1b-1cc5bd94fb47",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/046e0b16-76ce-4b49-bf1b-1cc5bd94fb47.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories"
+    },
+    {
+      "backupPolicyId": "ed899483-3019-425e-a470-28e901b9790e",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/ed899483-3019-425e-a470-28e901b9790e.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories"
+    },
+    {
+      "backupPolicyId": "2b73ae71-12c8-49be-b462-3dae769ccd9d",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/2b73ae71-12c8-49be-b462-3dae769ccd9d.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories"
+    },
+    {
+      "backupPolicyId": "79bc98d4-7ddf-4841-9bc1-5c84a26d7ee8",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/79bc98d4-7ddf-4841-9bc1-5c84a26d7ee8.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories"
+    },
+    {
+      "backupPolicyId": "5dcd7a90-0306-4f09-a75d-6b97a243f04e",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/5dcd7a90-0306-4f09-a75d-6b97a243f04e.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories"
+    },
+    {
+      "backupPolicyId": "f79135dc-8e41-48c1-9a59-ab9a7259c38e",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/f79135dc-8e41-48c1-9a59-ab9a7259c38e.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories"
+    },
+    {
+      "backupPolicyId": "981deed8-6857-4e78-a50e-c3f61d312737",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/981deed8-6857-4e78-a50e-c3f61d312737.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories"
+    },
+    {
+      "backupPolicyId": "T_ec431371-e058-44a9-a41e-17a914adc6de",
+      "policyType": "IosManagedAppProtection",
+      "path": "policies/intune/ios-managed-app-protections/T_ec431371-e058-44a9-a41e-17a914adc6de.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections"
+    },
+    {
+      "backupPolicyId": "T_895a9b9a-695d-4e00-9e7d-656ffde32b1d",
+      "policyType": "IosManagedAppProtection",
+      "path": "policies/intune/ios-managed-app-protections/T_895a9b9a-695d-4e00-9e7d-656ffde32b1d.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections"
+    },
+    {
+      "backupPolicyId": "T_dbd17206-e893-4aa9-ac32-5e55a1989994",
+      "policyType": "IosManagedAppProtection",
+      "path": "policies/intune/ios-managed-app-protections/T_dbd17206-e893-4aa9-ac32-5e55a1989994.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections"
+    },
+    {
+      "backupPolicyId": "T_801d8658-da41-4ff0-a3e5-c40ad03fedb1",
+      "policyType": "IosManagedAppProtection",
+      "path": "policies/intune/ios-managed-app-protections/T_801d8658-da41-4ff0-a3e5-c40ad03fedb1.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections"
+    },
+    {
+      "backupPolicyId": "a41e182c-e6f6-4b24-8af3-48c13ee65496",
+      "policyType": "EntraCustomRoleDefinition",
+      "path": "policies/entra/custom-role-definitions/a41e182c-e6f6-4b24-8af3-48c13ee65496.json",
+      "status": "planned",
+      "targetEndpoint": "https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions"
+    }
+  ],
+  "warnings": [],
+  "failed": [],
+  "skipped": []
+}

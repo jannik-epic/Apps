@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "source": "modern-dev-mgmt",
+  "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "backupRef": ".modern-dev-mgmt/tenant-backups/57415788-595e-4889-901a-4ad5bcecbfe4/27024726898",
+  "mode": "dry_run",
+  "conflictStrategy": "create_new",
+  "includeAssignments": false,
+  "includeGroups": false,
+  "startedAt": "2026-06-05T15:54:53.2810068Z",
+  "workflowRunId": "27025269930",
+  "repository": "jannik-epic/Apps",
+  "counts": {
+    "total": 14,
+    "applied": 14,
+    "skipped": 0,
+    "failed": 0
+  },
+  "groupMapping": {},
+  "warningCount": 0
+}

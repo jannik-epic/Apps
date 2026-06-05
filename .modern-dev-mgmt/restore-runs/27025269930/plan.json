@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "restorePlanId": "dryrun-validation-0001",
+  "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "backupId": "27024726898",
+  "backupRef": ".modern-dev-mgmt/tenant-backups/57415788-595e-4889-901a-4ad5bcecbfe4/27024726898",
+  "mode": "dry_run",
+  "conflictStrategy": "create_new",
+  "includeAssignments": false,
+  "includeGroups": false,
+  "policies": [
+    {
+      "backupPolicyId": "0720a99e-562b-4a77-83f0-9a7523fcf13e",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/0720a99e-562b-4a77-83f0-9a7523fcf13e.json",
+      "assignments": "none",
+      "groups": "skip"
+    },
+    {
+      "backupPolicyId": "f1fc9fe2-728d-4867-9a72-a61e18f8c606",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/f1fc9fe2-728d-4867-9a72-a61e18f8c606.json",
+      "assignments": "none",
+      "groups": "skip"
+    },
+    {
+      "backupPolicyId": "046e0b16-76ce-4b49-bf1b-1cc5bd94fb47",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/046e0b16-76ce-4b49-bf1b-1cc5bd94fb47.json",
+      "assignments": "none",
+      "groups": "skip"
+    },
+    {
+      "backupPolicyId": "ed899483-3019-425e-a470-28e901b9790e",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/ed899483-3019-425e-a470-28e901b9790e.json",
+      "assignments": "none",
+      "groups": "skip"
+    },
+    {
+      "backupPolicyId": "2b73ae71-12c8-49be-b462-3dae769ccd9d",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/2b73ae71-12c8-49be-b462-3dae769ccd9d.json",
+      "assignments": "none",
+      "groups": "skip"
+    },
+    {
+      "backupPolicyId": "79bc98d4-7ddf-4841-9bc1-5c84a26d7ee8",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/79bc98d4-7ddf-4841-9bc1-5c84a26d7ee8.json",
+      "assignments": "none",
+      "groups": "skip"
+    },
+    {
+      "backupPolicyId": "5dcd7a90-0306-4f09-a75d-6b97a243f04e",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/5dcd7a90-0306-4f09-a75d-6b97a243f04e.json",
+      "assignments": "none",
+      "groups": "skip"
+    },
+    {
+      "backupPolicyId": "f79135dc-8e41-48c1-9a59-ab9a7259c38e",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/f79135dc-8e41-48c1-9a59-ab9a7259c38e.json",
+      "assignments": "none",
+      "groups": "skip"
+    },
+    {
+      "backupPolicyId": "981deed8-6857-4e78-a50e-c3f61d312737",
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/981deed8-6857-4e78-a50e-c3f61d312737.json",
+      "assignments": "none",
+      "groups": "skip"
+    },
+    {
+      "backupPolicyId": "T_ec431371-e058-44a9-a41e-17a914adc6de",
+      "policyType": "IosManagedAppProtection",
+      "path": "policies/intune/ios-managed-app-protections/T_ec431371-e058-44a9-a41e-17a914adc6de.json",
+      "assignments": "none",
+      "groups": "skip"
+    },
+    {
+      "backupPolicyId": "T_895a9b9a-695d-4e00-9e7d-656ffde32b1d",
+      "policyType": "IosManagedAppProtection",
+      "path": "policies/intune/ios-managed-app-protections/T_895a9b9a-695d-4e00-9e7d-656ffde32b1d.json",
+      "assignments": "none",
+      "groups": "skip"
+    },
+    {
+      "backupPolicyId": "T_dbd17206-e893-4aa9-ac32-5e55a1989994",
+      "policyType": "IosManagedAppProtection",
+      "path": "policies/intune/ios-managed-app-protections/T_dbd17206-e893-4aa9-ac32-5e55a1989994.json",
+      "assignments": "none",
+      "groups": "skip"
+    },
+    {
+      "backupPolicyId": "T_801d8658-da41-4ff0-a3e5-c40ad03fedb1",
+      "policyType": "IosManagedAppProtection",
+      "path": "policies/intune/ios-managed-app-protections/T_801d8658-da41-4ff0-a3e5-c40ad03fedb1.json",
+      "assignments": "none",
+      "groups": "skip"
+    },
+    {
+      "backupPolicyId": "a41e182c-e6f6-4b24-8af3-48c13ee65496",
+      "policyType": "EntraCustomRoleDefinition",
+      "path": "policies/entra/custom-role-definitions/a41e182c-e6f6-4b24-8af3-48c13ee65496.json",
+      "assignments": "none",
+      "groups": "skip"
+    }
+  ]
+}
