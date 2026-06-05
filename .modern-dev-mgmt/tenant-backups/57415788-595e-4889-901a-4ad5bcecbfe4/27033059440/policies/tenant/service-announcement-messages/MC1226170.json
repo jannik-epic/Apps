@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-02T23:00:10.793Z",
+  "endDateTime": "2027-02-02T23:00:10.747Z",
+  "lastModifiedDateTime": "2026-02-02T23:00:12.143Z",
+  "title": "Secure Boot status report in Windows Autopatch",
+  "id": "MC1226170",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

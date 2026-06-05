@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-14T23:16:05Z",
+  "endDateTime": "2026-07-20T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-18T16:24:36.067Z",
+  "title": "(Updated) Microsoft Teams: Automatic removal of EXIF data from shared images",
+  "id": "MC1217997",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

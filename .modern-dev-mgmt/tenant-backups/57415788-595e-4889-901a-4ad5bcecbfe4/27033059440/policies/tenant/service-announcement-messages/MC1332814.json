@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-02T22:07:58Z",
+  "endDateTime": "2026-07-23T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-02T22:08:07.61Z",
+  "title": "OneDrive mobile apps will no longer support SharePoint Server on‑premises sign-ins",
+  "id": "MC1332814",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft OneDrive"
+  ]
+}

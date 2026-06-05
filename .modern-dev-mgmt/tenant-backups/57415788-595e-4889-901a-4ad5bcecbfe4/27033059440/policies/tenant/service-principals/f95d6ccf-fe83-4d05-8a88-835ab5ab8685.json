@@ -1,0 +1,11 @@
+{
+  "id": "f95d6ccf-fe83-4d05-8a88-835ab5ab8685",
+  "appId": "7cd684f4-8a78-49b0-91ec-6a35d38739ba",
+  "displayName": "Azure Logic Apps",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

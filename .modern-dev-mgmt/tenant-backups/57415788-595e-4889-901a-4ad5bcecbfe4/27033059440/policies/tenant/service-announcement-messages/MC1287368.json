@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-21T22:50:22Z",
+  "endDateTime": "2026-06-22T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-28T17:59:27.06Z",
+  "title": "(Updated) Team site homepages will automatically collapse inactive News web parts",
+  "id": "MC1287368",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

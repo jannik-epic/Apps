@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-06T22:51:34Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-01T16:39:11.377Z",
+  "title": "(Updated) Microsoft Outlook: Copilot Chat available in shared and delegate mailboxes",
+  "id": "MC1246031",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

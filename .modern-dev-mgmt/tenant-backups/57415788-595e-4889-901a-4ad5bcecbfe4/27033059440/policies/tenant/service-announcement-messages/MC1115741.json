@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-15T17:01:16.23Z",
+  "endDateTime": "2026-07-15T17:01:16.183Z",
+  "lastModifiedDateTime": "2025-07-15T17:01:17.103Z",
+  "title": "Hotpatching now available for 64-bit Arm architecture",
+  "id": "MC1115741",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

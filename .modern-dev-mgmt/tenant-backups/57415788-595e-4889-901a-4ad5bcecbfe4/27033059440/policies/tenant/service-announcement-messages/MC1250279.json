@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-12T23:42:55Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-15T20:40:15.917Z",
+  "title": "(Updated) Microsoft 365 Copilot: Planner Agent rename and rollout to premium and basic plans",
+  "id": "MC1250279",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Planner",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

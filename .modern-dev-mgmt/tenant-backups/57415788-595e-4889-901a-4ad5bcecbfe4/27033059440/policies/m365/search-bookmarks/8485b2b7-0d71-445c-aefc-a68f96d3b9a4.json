@@ -1,0 +1,96 @@
+{
+  "displayName": "Microsoft Search in Bing explore",
+  "description": "Explore features of Microsoft Search in Bing.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "8485b2b7-0d71-445c-aefc-a68f96d3b9a4",
+  "webUrl": "https://www.bing.com/business/explore",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "bing for business",
+      "bing for business explore",
+      "bingforbusiness explore",
+      "microsoft search in bing",
+      "microsoft search in bing explore",
+      "microsoftsearchinbing explore",
+      "msb explore",
+      "bing for business erkunden",
+      "bingforbusiness erkunden",
+      "bing for business explorador",
+      "bingforbusiness explorador",
+      "bing for business explorer",
+      "bingforbusiness explorer",
+      "esplora bing for business",
+      "esplora bingforbusiness",
+      "bing for business エクスプローラー",
+      "bingforbusiness エクスプローラー",
+      "bing for business explorar",
+      "bingforbusiness explorar"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Bing for business erkunden",
+      "webUrl": null,
+      "description": "Erkunden Sie die Funktionen von Bing for business.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Explorar Bing for business",
+      "webUrl": null,
+      "description": "Explore las funciones de Bing for business",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Explorer les fonctionnalités de Bing for business.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Esplora Bing for business",
+      "webUrl": null,
+      "description": "Esplora le funzionalità di Bing for business.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "Bing for business エクスプローラー",
+      "webUrl": null,
+      "description": "Bing for businessの特徴を探索しましょう。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Bing for business explorar",
+      "webUrl": null,
+      "description": "Explore recursos do Bing for business",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

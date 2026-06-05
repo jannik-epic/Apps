@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-22T00:46:54Z",
+  "endDateTime": "2027-03-03T08:00:00Z",
+  "lastModifiedDateTime": "2026-01-28T17:09:23.54Z",
+  "title": "(Updated) Retirement notice: MDE and XDR Advanced Hunting APIs retiring; migrate to Microsoft Graph Security API",
+  "id": "MC1220762",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Defender XDR"
+  ]
+}

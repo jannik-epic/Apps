@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-14T23:17:56Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-18T17:11:09.513Z",
+  "title": "(Updated) Microsoft 365 Copilot: Structured document generation with Forms",
+  "id": "MC1218000",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

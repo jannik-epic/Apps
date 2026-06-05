@@ -1,0 +1,35 @@
+{
+  "id": "scid_5005",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/security-recommendations?recommendationId=sca-_-scid-5005&tid=57415788-595e-4889-901a-4ad5bcecbfe4",
+  "controlCategory": "Device",
+  "title": "Set 'Maximum password age' to '90 or fewer days, but not 0' in macOS",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 183,
+  "remediation": "Within Microsoft 365 security, go to <b> <a href='https://security.microsoft.com/security-recommendations?recommendationId=sca-_-scid-5005' target='_blank'>Vulnerability management > Recommendations</a> </b>, read the relevant security recommendation and choose remediation or exception options.",
+  "remediationImpact": "Unknown",
+  "service": "MDATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

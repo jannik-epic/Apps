@@ -1,0 +1,14 @@
+{
+  "startDateTime": "2025-11-21T00:17:08Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-26T00:02:25.113Z",
+  "title": "(Updated) Microsoft 365: Modern Access Request and Access Denied web page",
+  "id": "MC1188599",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft OneDrive",
+    "Microsoft 365 apps"
+  ]
+}

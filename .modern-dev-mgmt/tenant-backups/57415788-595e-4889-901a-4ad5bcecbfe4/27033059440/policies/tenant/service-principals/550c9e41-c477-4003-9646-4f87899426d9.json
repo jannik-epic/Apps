@@ -1,0 +1,10 @@
+{
+  "id": "550c9e41-c477-4003-9646-4f87899426d9",
+  "appId": "0cdb4d99-3ca8-4688-bb8b-201e1a710f3d",
+  "displayName": "Decisions Meeting Documents Manager",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "PrivateCatalogApp"
+  ]
+}

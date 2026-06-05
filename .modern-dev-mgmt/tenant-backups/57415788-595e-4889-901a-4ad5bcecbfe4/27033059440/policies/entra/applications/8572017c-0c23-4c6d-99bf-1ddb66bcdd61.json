@@ -1,0 +1,28 @@
+{
+  "id": "8572017c-0c23-4c6d-99bf-1ddb66bcdd61",
+  "appId": "79f159bf-10ef-461d-9eb4-06780f07f80e",
+  "displayName": "Decisions Meeting Secretary",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2021-09-20T19:19:56Z",
+  "identifierUris": [
+    "https://epicfusionlabs.com/a1db45ef-0d75-4773-b077-b5ee0d1ea191"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

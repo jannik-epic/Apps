@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-26T17:10:26Z",
+  "endDateTime": "2027-05-02T07:00:00Z",
+  "lastModifiedDateTime": "2026-02-26T17:14:33.063Z",
+  "title": "Create a presentation and add a slide with Copilot in PowerPoint moving to Agent Mode in the Copilot chat pane.",
+  "id": "MC1239724",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-09T13:36:17Z",
+  "endDateTime": "2026-06-09T13:36:17Z",
+  "lastModifiedDateTime": "2026-05-09T13:36:50.933Z",
+  "title": "Microsoft Dataverse – Service Update 9.2.26051.00000 for CHE",
+  "id": "MC1305169",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Dataverse"
+  ]
+}

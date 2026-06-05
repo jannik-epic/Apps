@@ -1,0 +1,11 @@
+{
+  "id": "a85c3120-e6c5-42f7-b60c-c36d98eb57d8",
+  "appId": "76cd24bf-a9fc-4344-b1dc-908275de6d6d",
+  "displayName": "Azure SQL Virtual Network to Network Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

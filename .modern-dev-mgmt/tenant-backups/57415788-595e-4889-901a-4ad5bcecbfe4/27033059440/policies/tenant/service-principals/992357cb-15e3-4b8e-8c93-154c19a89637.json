@@ -1,0 +1,14 @@
+{
+  "id": "992357cb-15e3-4b8e-8c93-154c19a89637",
+  "appId": "9d6ad87f-30e1-40d6-9ba1-6d6475f16a20",
+  "displayName": "Adaptive Card Gallery (Microsoft Copilot Studio)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "AgenticApp",
+    "AIAgentBuilder",
+    "AgentCreatedBy:CopilotStudio",
+    "AgenticInstance",
+    "power-virtual-agents-e37c38de-7963-d95d-88d1-dbfc124439fd"
+  ]
+}

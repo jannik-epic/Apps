@@ -1,0 +1,10 @@
+{
+  "id": "9e34f896-8a8e-47b6-924a-acc807ed507c",
+  "appId": "d67e3b63-ca41-4324-b3bf-e17180e8f245",
+  "displayName": "Daily Docs",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "PrivateCatalogApp"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "5cf42378-d67d-4f36-ba46-e8b86229381d",
+  "deletedDateTime": null,
+  "displayName": "Password Rule Settings",
+  "description": "\n        Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines\n        settings that can be used for managing tenant-wide password rule settings.\n      ",
+  "values": [
+    {
+      "name": "BannedPasswordCheckOnPremisesMode",
+      "type": "System.String",
+      "defaultValue": "Audit",
+      "description": "How should we enforce password policy check in on-premises system."
+    },
+    {
+      "name": "EnableBannedPasswordCheckOnPremises",
+      "type": "System.Boolean",
+      "defaultValue": "true",
+      "description": "Flag indicating if the banned password check is turned on or not for on-premises system."
+    },
+    {
+      "name": "EnableBannedPasswordCheck",
+      "type": "System.Boolean",
+      "defaultValue": "true",
+      "description": "Flag indicating if the banned password check for tenant specific banned password list is turned on or not."
+    },
+    {
+      "name": "LockoutDurationInSeconds",
+      "type": "System.Int32",
+      "defaultValue": "60",
+      "description": "The duration in seconds of the initial lockout period."
+    },
+    {
+      "name": "LockoutThreshold",
+      "type": "System.Int32",
+      "defaultValue": "10",
+      "description": "The number of failed login attempts before the first lockout period begins."
+    },
+    {
+      "name": "BannedPasswordList",
+      "type": "System.String",
+      "defaultValue": "",
+      "description": "A tab-delimited banned password list."
+    }
+  ]
+}

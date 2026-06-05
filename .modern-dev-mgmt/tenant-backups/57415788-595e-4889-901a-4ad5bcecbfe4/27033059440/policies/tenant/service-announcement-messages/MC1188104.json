@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-19T17:59:17.023Z",
+  "endDateTime": "2026-11-19T17:59:16.977Z",
+  "lastModifiedDateTime": "2025-11-19T17:59:18.607Z",
+  "title": "Windows announcements from Microsoft Ignite 2025",
+  "id": "MC1188104",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

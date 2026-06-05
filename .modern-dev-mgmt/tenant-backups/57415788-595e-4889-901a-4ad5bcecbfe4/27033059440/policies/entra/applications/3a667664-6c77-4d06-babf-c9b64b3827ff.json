@@ -1,0 +1,91 @@
+{
+  "id": "3a667664-6c77-4d06-babf-c9b64b3827ff",
+  "appId": "85459a04-9912-4354-a026-89d136b4f298",
+  "displayName": "TERRAFORM_UPDATE_66701479-8947-6c8a-a8c9-4770d02e4606",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-11-21T06:29:40Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://token.botframework.com/.auth/web/redirect",
+      "https://d-app-frontier-swn-001.azurewebsites.net/.auth/login/aad/callback",
+      "https://dstfrontierwebswn001.z1.web.core.windows.net/"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": true,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://token.botframework.com/.auth/web/redirect",
+        "index": null
+      },
+      {
+        "uri": "https://d-app-frontier-swn-001.azurewebsites.net/.auth/login/aad/callback",
+        "index": null
+      },
+      {
+        "uri": "https://dstfrontierwebswn001.z1.web.core.windows.net/",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": [
+      "https://dstfrontierwebswn001.z1.web.core.windows.net/login/"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+          "type": "Scope"
+        },
+        {
+          "id": "14dad69e-099b-42c9-810b-d002981feec1",
+          "type": "Scope"
+        },
+        {
+          "id": "64a6cdd6-aab1-4aaf-94b8-3cc8405e90d0",
+          "type": "Scope"
+        },
+        {
+          "id": "7427e0e9-2fba-42fe-b0c0-848c9e6a8182",
+          "type": "Scope"
+        },
+        {
+          "id": "37f7f235-527c-4136-accd-4a02d197296e",
+          "type": "Scope"
+        },
+        {
+          "id": "465a38f9-76ea-45b9-9f34-9e8b0d4b0b42",
+          "type": "Scope"
+        },
+        {
+          "id": "1ec239c2-d7c9-4623-a91a-a9775856bb36",
+          "type": "Scope"
+        },
+        {
+          "id": "570282fd-fa5c-430d-a7fd-fc8dc98a9dca",
+          "type": "Scope"
+        },
+        {
+          "id": "7b9103a5-4610-446b-9670-80643382c1fa",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-03T00:02:20Z",
+  "endDateTime": "2027-05-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-03T00:02:28.403Z",
+  "title": "Microsoft Teams Rooms on Android: License-based management updates for DM-synced devices",
+  "id": "MC1242781",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "displayName": "OneDrive for Business",
+  "description": "Store, sync, and share work files in the cloud using Microsoft OneDrive for Business. Collaborate on files without emailing attachments.",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "26364c77-d301-43bf-a6df-a484ce722855",
+  "webUrl": "https://onedrive.live.com/about/business",
+  "lastModifiedDateTime": "2021-05-16T11:26:08Z",
+  "keywords": {
+    "keywords": [
+      "my site",
+      "my",
+      "my sharepoint",
+      "one drive",
+      "mysite",
+      "onedrive",
+      "my onedrive",
+      "my onedrive for business",
+      "meine seite",
+      "meine",
+      "meine sharepoint",
+      "mein seite",
+      "mein onedrive",
+      "mein onedrive for business",
+      "mi",
+      "mi sharepoint",
+      "mi sitio",
+      "mi onedrive",
+      "mi onedrive for business",
+      "mon site",
+      "mon",
+      "mon sharepoint",
+      "monsite",
+      "mon onedrive",
+      "mon onedrive for business",
+      "il mio sito",
+      "mio",
+      "il mio sharepoint",
+      "ilmiosito",
+      "il mio onedrive",
+      "il mio onedrive for business",
+      "マイ",
+      "マイサイト",
+      "meu site",
+      "meu",
+      "meu sharepoint",
+      "meusite",
+      "meu onedrive",
+      "meu onedrive for business"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "OneDrive for Business",
+      "webUrl": null,
+      "description": "Speichern, synchronisieren und teilen Sie die Arbeitsdateien in der Cloud mit Microsoft OneDrive für Geschäftliches. Arbeiten Sie zusammen an Dateien ohne Emails zu versenden.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "OneDrive for Business",
+      "webUrl": null,
+      "description": "Almacene, sincronice y comparta archivos de trabajo en la nube usando Microsoft OneDrive para empresas. Colabore con archivos sin enviar archivos adjuntos.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "OneDrive for Business",
+      "webUrl": null,
+      "description": "Stockez, synchronisez et partagez des fichiers de travail dans le cloud à l'aide de Microsoft OneDrive for Business. Collaborez sur des fichiers sans envoyer de pièces jointes par courrier électronique.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "OneDrive for Business",
+      "webUrl": null,
+      "description": "Archivia, sincronizza e condividi i file di lavoro nel cloud utilizzando Microsoft OneDrive for Business. Collabora sui file senza inviare allegati tramite e-mail.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "OneDrive for Business",
+      "webUrl": null,
+      "description": "ビジネスのためにMicrosoft OneDriveを使ってワークファイルをクラウドに保存、同期、共有しましょう。Eメールの添付なしで、ファイルを共同作業しましょう。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "OneDrive for business",
+      "webUrl": null,
+      "description": "Armazene, sincronize e compartilhe arquivos de trabalho na nuvem usando Microsoft OneDrive para negócios. Colabore em arquivos sem enviar anexos",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

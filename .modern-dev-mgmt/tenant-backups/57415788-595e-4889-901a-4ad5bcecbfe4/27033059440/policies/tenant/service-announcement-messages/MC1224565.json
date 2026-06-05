@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-30T00:04:01Z",
+  "endDateTime": "2026-06-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-16T18:08:36.443Z",
+  "title": "(Updated) Trust DigiCert Global Root G2 certificate authority to avoid Exchange Online email disruption",
+  "id": "MC1224565",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-27T22:15:41Z",
+  "endDateTime": "2026-06-18T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-27T22:15:48.583Z",
+  "title": "Improved whiteboard saving behavior on Teams Rooms on Android with licensed user accounts",
+  "id": "MC1293481",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

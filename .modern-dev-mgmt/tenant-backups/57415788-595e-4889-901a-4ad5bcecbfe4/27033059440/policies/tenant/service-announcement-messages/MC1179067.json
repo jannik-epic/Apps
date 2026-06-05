@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-10-24T17:06:38.773Z",
+  "endDateTime": "2026-10-24T17:06:38.697Z",
+  "lastModifiedDateTime": "2025-10-24T17:06:39.803Z",
+  "title": "Policy-based removal of pre-installed Microsoft Store apps",
+  "id": "MC1179067",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

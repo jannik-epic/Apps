@@ -1,0 +1,132 @@
+{
+  "displayName": "IT Services",
+  "description": "How to contact helpdesk and find tools to resolve common tech issues.",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "00562109-f52a-4bac-95c7-fe34e07cf79e",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-12-10T11:25:12Z",
+  "keywords": {
+    "keywords": [
+      "it help",
+      "it helpdesk",
+      "it support",
+      "help desk",
+      "tech support",
+      "it",
+      "it services",
+      "helpdesk",
+      "tech help",
+      "technology support",
+      "school device",
+      "device setup",
+      "login help",
+      "can't log in",
+      "password reset",
+      "tech support hours",
+      "forgot password",
+      "school password",
+      "reset my password",
+      "tech faqs",
+      "device faqs",
+      "wifi locations",
+      "it-hilfe",
+      "it-beratung",
+      "it-support",
+      "beratung",
+      "technischer support",
+      "it-service",
+      "ayuda ti",
+      "servicio de ayuda ti",
+      "soporte ti",
+      "servicio de ayuda",
+      "soporte técnico",
+      "ti",
+      "servicios de ti",
+      "aide it",
+      "helpdesk it",
+      "support it",
+      "support technique",
+      "services it",
+      "guida it",
+      "supporto it",
+      "supporto tecnico",
+      "servizi it",
+      "itヘルプ",
+      "itヘルプデスク",
+      "itサポート",
+      "ヘルプデスク",
+      "技術サポート",
+      "itサービス",
+      "ajuda de ti",
+      "ti helpdesk",
+      "suporte de ti",
+      "suporte tecnológico",
+      "serviços de ti"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "IT-Dienstleistungen",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Servicios de TI",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Servcies IT",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Servizi IT",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "ITサービス",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Serviços de TI",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

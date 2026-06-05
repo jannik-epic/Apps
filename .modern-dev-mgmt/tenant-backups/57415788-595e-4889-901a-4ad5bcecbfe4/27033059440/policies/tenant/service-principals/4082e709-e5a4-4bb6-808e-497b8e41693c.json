@@ -1,0 +1,11 @@
+{
+  "id": "4082e709-e5a4-4bb6-808e-497b8e41693c",
+  "appId": "fc3d29d0-f9c5-40a5-8cbf-bbcfea79407f",
+  "displayName": "PP Governance Scanner",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

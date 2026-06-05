@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-16T21:03:14.053Z",
+  "endDateTime": "2027-03-16T21:03:14.05Z",
+  "lastModifiedDateTime": "2026-03-16T21:03:15.187Z",
+  "title": "Out-of-band hotpatch update released to address an issue affecting Bluetooth device visibility",
+  "id": "MC1253720",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-20T19:58:29.57Z",
+  "endDateTime": "2027-03-20T19:58:29.557Z",
+  "lastModifiedDateTime": "2026-03-20T19:58:32.383Z",
+  "title": "(Updated) Second deployment phase for Kerberos RC4 hardening begins with the April 2026 Windows security update",
+  "id": "MC1254512",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

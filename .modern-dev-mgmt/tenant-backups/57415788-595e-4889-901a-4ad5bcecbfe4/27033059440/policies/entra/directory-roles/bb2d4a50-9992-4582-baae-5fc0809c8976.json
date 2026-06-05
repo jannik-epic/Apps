@@ -1,0 +1,7 @@
+{
+  "id": "bb2d4a50-9992-4582-baae-5fc0809c8976",
+  "deletedDateTime": null,
+  "description": "Creates and manages security events.",
+  "displayName": "Security Operator",
+  "roleTemplateId": "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f"
+}

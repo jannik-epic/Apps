@@ -1,0 +1,13 @@
+{
+  "id": "838c16b0-afbb-4277-9d4a-9c50900d1aba",
+  "displayName": "[KDE] Customer Support",
+  "description": "Test Team for Renaming POC",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "msteams_9f61b2",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2025-11-24T14:10:25Z"
+}

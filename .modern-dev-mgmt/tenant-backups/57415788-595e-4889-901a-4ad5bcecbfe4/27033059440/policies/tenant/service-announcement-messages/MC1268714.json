@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-02T17:05:07.543Z",
+  "endDateTime": "2027-04-02T17:05:07.543Z",
+  "lastModifiedDateTime": "2026-04-02T17:05:09.193Z",
+  "title": "Enable Secure Boot certificate update status in the Windows Security app",
+  "id": "MC1268714",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

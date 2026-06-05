@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-10T17:09:17.07Z",
+  "endDateTime": "2027-03-10T17:09:17.01Z",
+  "lastModifiedDateTime": "2026-03-10T17:09:18.72Z",
+  "title": "The March 2026 Windows security update is now available",
+  "id": "MC1248239",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

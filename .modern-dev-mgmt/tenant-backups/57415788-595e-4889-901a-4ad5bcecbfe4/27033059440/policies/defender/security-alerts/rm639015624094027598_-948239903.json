@@ -1,0 +1,108 @@
+{
+  "id": "rm639015624094027598_-948239903",
+  "providerAlertId": "rm639015624094027598_-948239903",
+  "incidentId": "110",
+  "status": "new",
+  "severity": "medium",
+  "classification": null,
+  "determination": null,
+  "serviceSource": "microsoftDefenderForCloudApps",
+  "detectionSource": "microsoft365Defender",
+  "productName": "Microsoft Defender for Cloud Apps",
+  "detectorId": "xdr_AdminPrivilegeAssignedToNewUser",
+  "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "title": "Privileged Teams Administrator role assigned to a user",
+  "description": "A user account has been granted administrative privileges. This action may indicate a sign of unauthorized privilege escalation. It is recommended to verify the necessity of admin access. This behavior might indicates that an attacker have established persistence.",
+  "recommendedActions": "A. Validate the alert.\r\n1. Investigate the alerted user's recent behavior and assigned privileged roles.\r\n2. Verify activities where a user or application assigned admin rights to another user. \r\n\r\nB. Scope the incident. Find related accounts and devices in the incident graph.\r\n\r\nC. Contain and mitigate the breach. Decommission compromised accounts or reset passwords. Quarantine affected devices to prevent lateral movement.\r\n\r\nD. Contact your incident response team, or contact Microsoft support for investigation and remediation services.",
+  "category": "Persistence",
+  "categories": [
+    "InitialAccess",
+    "Persistence",
+    "PrivilegeEscalation",
+    "DefenseEvasion"
+  ],
+  "assignedTo": null,
+  "alertWebUrl": "https://security.microsoft.com/alerts/rm639015624094027598_-948239903?tid=57415788-595e-4889-901a-4ad5bcecbfe4",
+  "incidentWebUrl": "https://security.microsoft.com/incident2/110/overview?tid=57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actorDisplayName": null,
+  "threatDisplayName": null,
+  "threatFamilyName": null,
+  "mitreTechniques": [
+    "T1078.004"
+  ],
+  "createdDateTime": "2025-12-17T10:00:09.8766667Z",
+  "lastUpdateDateTime": "2025-12-17T10:00:11.6166667Z",
+  "resolvedDateTime": null,
+  "firstActivityDateTime": "2025-12-17T09:24:51Z",
+  "lastActivityDateTime": "2025-12-17T09:24:51Z",
+  "systemTags": [],
+  "alertPolicyId": null,
+  "investigationState": "unsupportedAlertType",
+  "comments": [],
+  "customDetails": {},
+  "evidence": [
+    {
+      "@odata.type": "#microsoft.graph.security.userEvidence",
+      "createdDateTime": "2025-12-17T10:00:10.04Z",
+      "verdict": "suspicious",
+      "remediationStatus": "none",
+      "remediationStatusDetails": null,
+      "roles": [
+        "compromised"
+      ],
+      "detailedRoles": [],
+      "tags": [],
+      "stream": null,
+      "userAccount": {
+        "accountName": null,
+        "domainName": null,
+        "userSid": null,
+        "azureAdUserId": "b4532276-9723-46d6-8698-004567c62a20",
+        "tenantId": null,
+        "userPrincipalName": null,
+        "displayName": null,
+        "activeDirectoryObjectGuid": null,
+        "resourceAccessEvents": []
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.security.userEvidence",
+      "createdDateTime": "2025-12-17T10:00:10.04Z",
+      "verdict": "suspicious",
+      "remediationStatus": "none",
+      "remediationStatusDetails": null,
+      "roles": [],
+      "detailedRoles": [],
+      "tags": [],
+      "stream": null,
+      "userAccount": {
+        "accountName": null,
+        "domainName": null,
+        "userSid": null,
+        "azureAdUserId": "81d3c730-4228-43d3-9493-e3e0897ed91c",
+        "tenantId": null,
+        "userPrincipalName": null,
+        "displayName": null,
+        "activeDirectoryObjectGuid": null,
+        "resourceAccessEvents": []
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.security.cloudApplicationEvidence",
+      "createdDateTime": "2025-12-17T10:00:10.04Z",
+      "verdict": "suspicious",
+      "remediationStatus": "none",
+      "remediationStatusDetails": null,
+      "roles": [],
+      "detailedRoles": [],
+      "tags": [],
+      "appId": 11161,
+      "displayName": "Microsoft 365",
+      "instanceId": null,
+      "instanceName": null,
+      "saasAppId": null,
+      "stream": null
+    }
+  ],
+  "additionalData": {}
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-06T21:37:57Z",
+  "endDateTime": "2026-07-27T21:37:00Z",
+  "lastModifiedDateTime": "2026-05-19T19:51:08.207Z",
+  "title": "Dynamics 365 Customer Service - Enable enhanced screen recording controls for admins",
+  "id": "MC1302880",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

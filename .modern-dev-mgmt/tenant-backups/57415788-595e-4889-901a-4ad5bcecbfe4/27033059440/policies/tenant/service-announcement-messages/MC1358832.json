@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-04T23:09:55Z",
+  "endDateTime": "2026-07-17T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-04T23:10:02.847Z",
+  "title": "Microsoft Secure Score: New recommendation to reduce inbound internet exposure",
+  "id": "MC1358832",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Defender XDR"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "beadba03-7309-4e57-ad99-21c9dc6cf645",
+  "displayName": "EPF-SD-425343T8",
+  "deviceId": "3a328380-e643-4a31-9c7c-f11cf7942eec",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.26200.7781",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2026-02-26T12:35:55Z"
+}

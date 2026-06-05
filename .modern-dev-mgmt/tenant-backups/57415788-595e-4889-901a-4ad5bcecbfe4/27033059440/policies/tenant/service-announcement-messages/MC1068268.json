@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-05-05T23:18:10Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-10T17:56:46.257Z",
+  "title": "(Updated) Account Switcher for Copilot Tab on iOS and Android",
+  "id": "MC1068268",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

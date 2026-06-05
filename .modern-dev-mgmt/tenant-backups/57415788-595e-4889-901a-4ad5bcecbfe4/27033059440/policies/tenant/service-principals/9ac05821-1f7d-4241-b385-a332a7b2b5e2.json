@@ -1,0 +1,12 @@
+{
+  "id": "9ac05821-1f7d-4241-b385-a332a7b2b5e2",
+  "appId": "60b2e7d5-a27f-426d-a6b1-acced0846fdf",
+  "displayName": "IpAddressManager",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "displayName": "Dynamics 365",
+  "description": "Dynamics 365 is a single platform from Microsoft that brings together your business apps (sales, service, operations, marketing, and finance) helping you run your business in a unified and intuitive way.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "b5e1a274-a3b5-4b12-972b-a357696e7cba",
+  "webUrl": "https://home.dynamics.com/?autolaunch=true",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "dynamics 365 online",
+      "dynamics 365 login"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Dynamics 365 ist eine einzelne Plattform von Microsoft, die Ihre Geschäftsanwendungen (Vertrieb, Service, Betrieb, Marketing und Finanzen) zusammenführt und Ihnen hilft, Ihr Geschäft auf einheitliche und intuitive Weise zu führen.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Dynamics 365 es una plataforma única de Microsoft que reúne sus aplicaciones comerciales (ventas, servicio, operaciones, marketing y finanzas) para ayudarlo a administrar su negocio de forma unificada e intuitiva",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Dynamics 365 est une plate-forme unique de Microsoft qui regroupe vos applications professionnelles (ventes, services, opérations, marketing et finances) et vous aide à gérer votre entreprise de manière unifiée et intuitive.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Dynamics 365 è una piattaforma unica di Microsoft che riunisce le tue app per il lavoro (vendite, servizi, operazioni, marketing e finanza) aiutandoti a gestire la tua attività in modo unificato e intuitivo.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Dynamics 365 は、統一感のある直感的な方法で、エンゲージメントを助けるビジネスアプリ（セールス、サービス、オペレーション、マーケティング、ファイナンス）を提供するMicrosoftからの単一のプラットホームです。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Dynamics 365 é uma plataforma única da Microsoft que reúne seus aplicativos empresariais (vendas, serviços, operações, marketing e finanças) ajudando você a administrar seu negócio de forma unificada e intuitiva",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

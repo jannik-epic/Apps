@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-10-10T16:59:19.017Z",
+  "endDateTime": "2026-10-10T16:59:18.97Z",
+  "lastModifiedDateTime": "2025-10-10T16:59:20.477Z",
+  "title": "30-Day Reminder: Windows 11, version 23H2 (Home and Pro editions) will reach end of servicing on November 11, 2025",
+  "id": "MC1169587",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "microsoft-user-default-allow-consent-apps",
+  "displayName": "Microsoft User Default Allow Consent Apps Policy",
+  "description": "Permissions consentable to specific apps based on Microsoft's current recommendations.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-user-default-allow-consent-apps')/includes",
+  "includes": [
+    {
+      "id": "055686de-63c8-42f0-9390-fc00379eff8e",
+      "permissionClassification": "all",
+      "permissionType": "delegated",
+      "resourceApplication": "00000003-0000-0000-c000-000000000000",
+      "permissions": [
+        "ff91d191-45a0-43fd-b837-bd682c4a0b0f",
+        "9769c687-087d-48ac-9cb3-c37dde652038",
+        "652390e4-393a-48de-9484-05f9b1212954",
+        "d7b7f2d9-0f45-4ea1-9d42-e50810c06991"
+      ],
+      "clientApplicationIds": [
+        "f8d98a96-0999-43f5-8af3-69971c7bb423",
+        "b50c1dbd-1855-4e54-b07c-d3c3029e93d3",
+        "e9a7fea1-1cc0-4cd9-a31b-9137ca5deedd",
+        "8acd33ea-7197-4a96-bc33-d7cc7101262f",
+        "2cee05de-2b8f-45a2-8289-2a06ca32c4c8",
+        "9e5f94bc-e8a4-4e73-b8be-63364c29d753"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    },
+    {
+      "id": "f564c7e2-00a8-4915-9b13-f9e51db5bdf5",
+      "permissionClassification": "all",
+      "permissionType": "delegated",
+      "resourceApplication": "00000002-0000-0ff1-ce00-000000000000",
+      "permissions": [
+        "266d2589-20b5-4f91-9a03-89247d1be8da",
+        "3b5f3d61-589b-4a3c-a359-5dd4b5ee5bd5",
+        "fb698133-92fa-453e-a9ed-688e10f2e5ac",
+        "195adc35-e27b-454b-a7ed-1ecdffa1c09f"
+      ],
+      "clientApplicationIds": [
+        "f8d98a96-0999-43f5-8af3-69971c7bb423",
+        "b50c1dbd-1855-4e54-b07c-d3c3029e93d3",
+        "e9a7fea1-1cc0-4cd9-a31b-9137ca5deedd",
+        "8acd33ea-7197-4a96-bc33-d7cc7101262f",
+        "2cee05de-2b8f-45a2-8289-2a06ca32c4c8",
+        "9e5f94bc-e8a4-4e73-b8be-63364c29d753"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    }
+  ],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-user-default-allow-consent-apps')/excludes",
+  "excludes": []
+}

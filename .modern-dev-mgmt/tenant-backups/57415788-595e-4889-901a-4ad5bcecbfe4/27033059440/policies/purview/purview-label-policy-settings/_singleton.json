@@ -1,0 +1,8 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/labelPolicySettings/$entity",
+  "id": "5236DB393C706F2A0634176886AA75115A8B15E331EC03F75FDEF1E84A9DA4AF57415788595E4889901A4AD5BCECBFE4",
+  "moreInfoUrl": "",
+  "isMandatory": true,
+  "isDowngradeJustificationRequired": true,
+  "defaultLabelId": null
+}

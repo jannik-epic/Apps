@@ -1,0 +1,8 @@
+{
+  "id": "f31e8faa-5642-4a79-8ff8-49f71e21f84d",
+  "appId": "737783af-b9a7-42aa-ada9-36b409351b15",
+  "displayName": "deny-priv-escalation",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

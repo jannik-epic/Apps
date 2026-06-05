@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-12-09T00:17:22Z",
+  "endDateTime": "2026-10-05T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-26T16:20:50.247Z",
+  "title": "(Updated) Microsoft Teams: Find SharePoint agents in Teams chats and Teams Store",
+  "id": "MC1193415",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "018403fc-1e79-42fc-94b3-183ec5e6c5c4",
+  "appId": "1f5530b3-261a-47a9-b357-ded261e17918",
+  "displayName": "Azure Multi-Factor Auth Connector",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

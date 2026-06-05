@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-30T23:50:24Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2025-11-25T19:38:22.357Z",
+  "title": "(Updated) External workbook links to blocked file types will be disabled by default",
+  "id": "MC1125497",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

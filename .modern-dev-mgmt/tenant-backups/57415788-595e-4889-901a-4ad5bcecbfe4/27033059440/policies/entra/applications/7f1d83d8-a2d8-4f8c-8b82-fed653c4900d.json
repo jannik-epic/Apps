@@ -1,0 +1,75 @@
+{
+  "id": "7f1d83d8-a2d8-4f8c-8b82-fed653c4900d",
+  "appId": "1bdb0b6c-de10-43f3-a01b-7a6a87c4d49c",
+  "displayName": "BLT-DMS",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-01-13T10:21:28Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://blt-dms-dev-gsxwmlojqnipw.azurewebsites.net/api/auth/callback/microsoft-entra-id",
+      "http://localhost:4000/api/auth/callback/microsoft-entra-id",
+      "http://localhost:3000/api/auth/callback/microsoft-entra-id",
+      "https://blt-dms.azurewebsites.net/api/auth/callback/azure-ad",
+      "http://localhost:3000/api/auth/callback/azure-ad"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://blt-dms-dev-gsxwmlojqnipw.azurewebsites.net/api/auth/callback/microsoft-entra-id",
+        "index": null
+      },
+      {
+        "uri": "http://localhost:4000/api/auth/callback/microsoft-entra-id",
+        "index": null
+      },
+      {
+        "uri": "http://localhost:3000/api/auth/callback/microsoft-entra-id",
+        "index": null
+      },
+      {
+        "uri": "https://blt-dms.azurewebsites.net/api/auth/callback/azure-ad",
+        "index": null
+      },
+      {
+        "uri": "http://localhost:3000/api/auth/callback/azure-ad",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "863451e7-0667-486c-a5d6-d135439485f0",
+          "type": "Scope"
+        },
+        {
+          "id": "89fe6a52-be36-487e-b7d8-d061c450a026",
+          "type": "Scope"
+        },
+        {
+          "id": "89fe6a52-be36-487e-b7d8-d061c450a026",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

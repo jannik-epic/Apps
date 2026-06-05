@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-19T22:26:23Z",
+  "endDateTime": "2026-06-09T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-19T22:26:34.063Z",
+  "title": "Microsoft 365 Copilot: Planner Agent available in Frontier",
+  "id": "MC1256306",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Planner",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

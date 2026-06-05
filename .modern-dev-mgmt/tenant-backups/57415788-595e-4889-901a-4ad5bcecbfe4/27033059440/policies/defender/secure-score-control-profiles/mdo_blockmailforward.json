@@ -1,0 +1,38 @@
+{
+  "id": "mdo_blockmailforward",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures?view=exchserver-2019&tid=57415788-595e-4889-901a-4ad5bcecbfe4",
+  "controlCategory": "Apps",
+  "title": "Ensure all forms of mail forwarding are blocked and/or disabled",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 10,
+  "remediation": "<p><strong>NOTE</strong>: In this control, remediation is carried out in two stages - Step 1 is manual and will not be monitored automatically by secure score, whereas Step 2 is monitored automatically:</p> <p><strong>STEP 1: Transport rules</strong></p> <p><strong>To alter the mail transport rules so they do not forward email to external domains, </strong><strong>use the Microsoft 365 Admin Center:</strong></p> <ol> <li>Select <em>Exchange</em> to open the Exchange admin center.</li> <li>Select <em>Mail Flow</em> then <em>Rules</em>.</li> <li>For each rule that redirects email to external domains, select the rule and click the 'Delete' icon.</li> </ol> <p><strong>To perform remediation you may also use the Exchange Online PowerShell </strong><br /><strong>Module:</strong></p> <ol> <li>Connect to Exchange Online user <em>Connect-ExchangeOnline</em>.</li> <li>Run the following PowerShell command:<br /><br /><em>Remove-TransportRule {RuleName}</em><br /><br /></li> <li>To verify this worked you may re-run the audit command as follows:<br /><br /><em>Get-TransportRule | Where-Object {$_.RedirectMessageTo -ne $null} | ft </em><br /><em>Name,RedirectMessageTo</em></li> </ol> <p><br /><strong>STEP 2: Anti-spam outbound policy</strong></p> <p><strong>Configure an anti-spam outbound policy:</strong></p> <ol> <li>Navigate to <em>Microsoft 365 Defender</em> <a href=\"https://security.microsoft.com/\">https://security.microsoft.com/</a></li> <li>Expand <em>E-mail &amp; collaboration</em> then select <em>Policies &amp; rules</em>.</li> <li>Select <em>Threat policies</em> &gt; <em>Anti-spam</em>.</li> <li>Select <em>Anti-spam outbound policy (default)</em></li> <li>Click <em>Edit protection settings</em></li> <li>Set <em>Automatic forwarding rules</em> dropdown to <em>Off - Forwarding is disabled</em> and click <em>Save</em></li> <li>Repeat steps 4-6 for any additional higher priority, custom policies.</li> </ol>",
+  "remediationImpact": "Care should be taken before implementation to ensure there is no business need for case-by-case auto-forwarding. Disabling auto-forwarding to remote domains will affect all users and in an organization. Any exclusions should be implemented based on organizational policy.",
+  "service": "MDO",
+  "threats": [
+    "Data Exfiltration",
+    "Account breach"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "@odata.type": "#microsoft.graph.securityBaselineTemplate",
+  "id": "e44c2ca3-2f9a-400a-a113-6cc88efd773d",
+  "displayName": "Endpoint detection and response",
+  "description": "Microsoft Defender for Endpoint endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats.",
+  "versionInfo": "2005",
+  "templateType": "securityTemplate",
+  "platformType": "windows10AndLater",
+  "publishedDateTime": "2019-09-20T00:00:00Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "412",
+  "status": "active",
+  "displayName": "Suspicious renaming of app with low consent rate",
+  "createdDateTime": "2026-05-05T07:55:49.2533333Z",
+  "lastUpdateDateTime": "2026-05-05T07:55:49.44Z",
+  "assignedTo": null,
+  "classification": "unknown",
+  "determination": "unknown",
+  "severity": "medium"
+}

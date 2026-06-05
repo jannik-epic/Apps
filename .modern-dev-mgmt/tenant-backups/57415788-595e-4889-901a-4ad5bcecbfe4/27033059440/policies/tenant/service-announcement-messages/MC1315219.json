@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-18T21:45:09Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-18T21:45:17.163Z",
+  "title": "Update to agents in SharePoint: Simpler launch experience and new site AI settings",
+  "id": "MC1315219",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

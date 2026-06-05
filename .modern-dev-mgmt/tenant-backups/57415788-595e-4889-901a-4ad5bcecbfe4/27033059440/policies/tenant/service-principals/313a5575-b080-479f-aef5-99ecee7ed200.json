@@ -1,0 +1,11 @@
+{
+  "id": "313a5575-b080-479f-aef5-99ecee7ed200",
+  "appId": "b8340c3b-9267-498f-b21a-15d5547fd85e",
+  "displayName": "Hyper-V Recovery Manager",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

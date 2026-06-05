@@ -1,0 +1,40 @@
+{
+  "id": "1785df8e-ba13-4b1a-a572-290a46685a8a",
+  "appId": "6d921bd6-ae1b-4abc-b68c-c9859d589b80",
+  "displayName": "CoE Admin Command Center (Admin EFU)",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-01-28T10:12:20Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "1b620472-6534-4fe6-9df2-4680e8aa28ec",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

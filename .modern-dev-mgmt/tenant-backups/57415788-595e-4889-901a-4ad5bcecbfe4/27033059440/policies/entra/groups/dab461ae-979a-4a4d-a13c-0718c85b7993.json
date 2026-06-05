@@ -1,0 +1,11 @@
+{
+  "id": "dab461ae-979a-4a4d-a13c-0718c85b7993",
+  "displayName": "AAD_SEC_AS_PER-MFA Default SMS",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "d93dbbe2-1",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-07-22T06:45:44Z"
+}

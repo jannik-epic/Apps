@@ -1,0 +1,38 @@
+{
+  "id": "MDA_Atlassian_mobile_dataprotection",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://support.atlassian.com/security-and-access-policies/docs/mobile-policy-mam-security-controls-and-supported-apps/",
+  "controlCategory": "Apps",
+  "title": "Atlassian mobile app security - App data protection",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 6.0,
+  "rank": 10,
+  "remediation": "<p>To set this policy:</p> <ol> <li>Go to Security and Mobile app policy in the Atlassian admin dashboard.</li> <li>Click on \"Create mobile app policy\" or \"edit\" (in case a policy already exists).</li> <li>Mark all the three options:</li> </ol> <ul> <li>Disable sharing, saving or backing up content from the mobile app.</li> <li>Disable screenshots and screen recording of the mobile app.</li> <li>Disable cutting or copying content from the mobile app.</li> </ul> <ol start=\"4\"> <li>Note that all the three options must be checked in order to comply.</li> </ol>",
+  "remediationImpact": "See in learn more link.",
+  "service": "MDA_Atlassian",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

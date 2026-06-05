@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-26T22:01:29.093Z",
+  "endDateTime": "2027-02-26T22:01:29.01Z",
+  "lastModifiedDateTime": "2026-02-26T22:01:30.343Z",
+  "title": "New Secure Boot update resources for Azure Virtual Desktop, Windows 365, and Microsoft Intune",
+  "id": "MC1239883",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-05T22:04:40Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-05T22:04:51.157Z",
+  "title": "Change Optics report for Exchange Online begins public preview",
+  "id": "MC1301802",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

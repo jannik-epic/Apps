@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-19T15:51:53Z",
+  "endDateTime": "2026-06-19T15:51:53Z",
+  "lastModifiedDateTime": "2026-05-19T15:52:42.283Z",
+  "title": "Dynamics 365 Sales - Get sales operations insights in Sales Research Agent",
+  "id": "MC1315879",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

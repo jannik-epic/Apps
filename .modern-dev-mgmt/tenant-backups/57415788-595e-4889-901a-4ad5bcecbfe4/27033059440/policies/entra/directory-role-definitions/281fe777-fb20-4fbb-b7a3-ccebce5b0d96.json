@@ -1,0 +1,36 @@
+{
+  "id": "281fe777-fb20-4fbb-b7a3-ccebce5b0d96",
+  "description": "Create and read warranty claims for Microsoft manufactured hardware, like Surface and HoloLens.",
+  "displayName": "Microsoft Hardware Warranty Specialist",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "281fe777-fb20-4fbb-b7a3-ccebce5b0d96",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.hardware.support/shippingAddress/allProperties/read",
+        "microsoft.hardware.support/warrantyClaims/createAsOwner",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    },
+    {
+      "allowedResourceActions": [
+        "microsoft.hardware.support/shippingStatus/allProperties/read",
+        "microsoft.hardware.support/warrantyClaims/allProperties/read"
+      ],
+      "condition": "$SubjectIsOwner"
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('281fe777-fb20-4fbb-b7a3-ccebce5b0d96')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

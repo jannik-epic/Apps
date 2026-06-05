@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "aa3222be-9ad8-4d72-9193-9bc23f7db290",
+  "appId": "aa3222be-9ad8-4d72-9193-9bc23f7db290",
+  "displayName": "test-ai-foundary-agents-proj-default-AgentIdentity",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

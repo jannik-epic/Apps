@@ -1,0 +1,13 @@
+{
+  "id": "acad474c-7a5f-464e-ad48-2448be311da2",
+  "displayName": "EPF-SD-YX0EF095",
+  "deviceId": "8d9d14ed-a0fc-4416-918f-ab5a0fa41976",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.26200.7392",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2026-01-14T17:23:14Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "992c4ce5-3b39-43cd-8bb7-a4d071e7b027",
+  "appId": "91bb937c-29c2-4275-982f-9465f0caf03d",
+  "displayName": "Microsoft.Relay",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

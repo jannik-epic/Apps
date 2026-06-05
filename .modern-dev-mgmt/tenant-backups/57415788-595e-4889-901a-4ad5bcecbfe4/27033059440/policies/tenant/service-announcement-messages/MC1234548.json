@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-18T18:29:19Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-28T20:09:17.683Z",
+  "title": "(Updated) Context preservation in Microsoft Teams",
+  "id": "MC1234548",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

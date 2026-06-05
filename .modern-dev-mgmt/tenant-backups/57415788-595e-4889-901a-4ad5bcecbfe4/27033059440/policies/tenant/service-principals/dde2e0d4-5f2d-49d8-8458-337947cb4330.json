@@ -1,0 +1,11 @@
+{
+  "id": "dde2e0d4-5f2d-49d8-8458-337947cb4330",
+  "appId": "d43713bc-9d9e-42bb-bd2e-57065cd374bf",
+  "displayName": "LastPass Login App",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

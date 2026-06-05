@@ -1,0 +1,84 @@
+{
+  "displayName": "Flow",
+  "description": "Automate tasks by integrating your favorite apps with Microsoft Flow. Make repetitive tasks easy with workflow automation.",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "c9f1589e-2994-49bb-b7ff-d6a5b5544119",
+  "webUrl": "https://flow.microsoft.com/",
+  "lastModifiedDateTime": "2021-12-10T11:25:12Z",
+  "keywords": {
+    "keywords": [
+      "flow online",
+      "flow login",
+      "power automate",
+      "microsoft flow",
+      "powerautomate",
+      "flow microsoft com",
+      "ms flow"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Automatisieren Sie Aufgaben, indem Sie Ihre Lieblingsapps in Microsoft Flow integrieren. Erleichtern Sie sich wiederkehrende Aufgaben mit der Arbeitsablaufautomatisierung.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Automatice las tareas integrando sus aplicaciones favoritas con Microsoft Flow. Facilite las tareas repetitivas con la automatización del flujo de trabajo.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Automatisez les tâches en intégrant vos applications préférées à Microsoft Flow. Simplifiez les tâches répétitives grâce à l'automatisation du workflow.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Automatizza le attività integrando le tue app preferite con Microsoft Flow. Semplifica le attività ripetitive con l'automazione del flusso di lavoro.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Microsoft Flowでお気に入りのアプリを統合して作業を自動化しましょう。ワークフローの自動化で反復作業を簡単にしましょう。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Automatize tarefas integrando seus aplicativos favoritos com Microsoft Flow. Torne tarefas repetitivas fáceis com a automação do fluxo de trabalho",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

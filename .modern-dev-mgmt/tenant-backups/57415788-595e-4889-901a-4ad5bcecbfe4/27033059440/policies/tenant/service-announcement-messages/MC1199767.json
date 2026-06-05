@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-12-18T23:41:21Z",
+  "endDateTime": "2026-07-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-21T22:59:29.1Z",
+  "title": "(Updated) Microsoft Teams: Select multiple messages to forward",
+  "id": "MC1199767",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

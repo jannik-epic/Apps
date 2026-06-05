@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-25T23:14:39Z",
+  "endDateTime": "2026-07-20T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-18T16:27:50.287Z",
+  "title": "(Updated) Microsoft Teams town halls now support backup Real-Time Messaging Protocol (RTMP) streams",
+  "id": "MC1261595",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-14T01:58:19Z",
+  "endDateTime": "2026-06-22T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-13T16:14:48.567Z",
+  "title": "(Updated) Microsoft Teams: Admin setting for simpler meeting passcodes (numeric‑only)",
+  "id": "MC1232096",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

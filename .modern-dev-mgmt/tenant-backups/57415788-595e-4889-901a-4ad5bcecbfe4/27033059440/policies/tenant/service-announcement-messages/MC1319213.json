@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-22T22:22:45Z",
+  "endDateTime": "2026-07-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-22T22:23:00.173Z",
+  "title": "Microsoft Teams: Proximity join support for presenters in Teams events from Teams Rooms on Windows and Android",
+  "id": "MC1319213",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

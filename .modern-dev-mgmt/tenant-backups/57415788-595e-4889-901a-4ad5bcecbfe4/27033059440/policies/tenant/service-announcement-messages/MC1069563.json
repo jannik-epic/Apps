@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-05-07T23:47:17Z",
+  "endDateTime": "2026-10-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-23T22:03:40.56Z",
+  "title": "Microsoft 365 admin center: Usage reports to manage metered consumption costs for Microsoft 365 Copilot Chat (preview)",
+  "id": "MC1069563",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

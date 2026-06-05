@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-21T16:19:55Z",
+  "endDateTime": "2026-08-16T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-21T16:20:03.13Z",
+  "title": "Microsoft Teams: Attend Microsoft webinars from Teams Rooms on Android",
+  "id": "MC1317839",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

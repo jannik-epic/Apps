@@ -1,0 +1,8 @@
+{
+  "clientId": "85d374fa-73a7-4545-be47-0a36fa51e474",
+  "consentType": "AllPrincipals",
+  "id": "-nTThadzRUW-Rwo2-lHkdENRIZhTNqNNl2nya8hiw0Y",
+  "principalId": null,
+  "resourceId": "98215143-3653-4da3-9769-f26bc862c346",
+  "scope": "Dataset.Read.All"
+}

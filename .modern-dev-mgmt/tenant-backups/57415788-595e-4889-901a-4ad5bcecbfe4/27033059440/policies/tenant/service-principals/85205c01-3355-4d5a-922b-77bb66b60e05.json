@@ -1,0 +1,11 @@
+{
+  "id": "85205c01-3355-4d5a-922b-77bb66b60e05",
+  "appId": "6d921bd6-ae1b-4abc-b68c-c9859d589b80",
+  "displayName": "CoE Admin Command Center (Admin EFU)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

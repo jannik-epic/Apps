@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-17T21:15:00Z",
+  "endDateTime": "2026-07-13T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-19T16:34:05.687Z",
+  "title": "(Updated) Microsoft Teams: Meeting organizers can automatically start transcription without recording",
+  "id": "MC1283816",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

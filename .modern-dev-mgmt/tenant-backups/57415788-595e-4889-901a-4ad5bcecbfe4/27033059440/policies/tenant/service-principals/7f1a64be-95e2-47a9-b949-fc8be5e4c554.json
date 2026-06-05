@@ -1,0 +1,8 @@
+{
+  "id": "7f1a64be-95e2-47a9-b949-fc8be5e4c554",
+  "appId": "00f82732-f451-4a01-918c-0e9896e784f9",
+  "displayName": "Skype for Business Application Configuration Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

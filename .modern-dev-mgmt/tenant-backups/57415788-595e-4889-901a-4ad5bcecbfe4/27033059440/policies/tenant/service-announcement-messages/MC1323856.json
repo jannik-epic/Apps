@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-27T13:04:00Z",
+  "endDateTime": "2026-06-27T13:04:00Z",
+  "lastModifiedDateTime": "2026-05-27T13:07:16.94Z",
+  "title": "Dynamics 365 Project Operations - Enable subcontractor vendor invoice matching to actuals",
+  "id": "MC1323856",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

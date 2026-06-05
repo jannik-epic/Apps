@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-13T17:47:39.137Z",
+  "endDateTime": "2027-04-13T17:47:39.137Z",
+  "lastModifiedDateTime": "2026-04-13T17:47:40.957Z",
+  "title": "Broader Windows Autopatch availability to Microsoft 365 Government Community Cloud (GCC)",
+  "id": "MC1278941",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "spo_external_sharing_managed",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/sharepoint/restricted-domains-sharing",
+  "controlCategory": "Apps",
+  "title": "Ensure SharePoint external sharing is managed through domain whitelist/blacklists",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p>To configure document sharing restrictions:</p> <ol> <li>Navigate to <em>SharePoint admin center</em> - <a href=\"https://admin.microsoft.com/sharepoint\">https://admin.microsoft.com/sharepoint</a>.</li> <li>Expand <em>Policies</em> then click <em>Sharing</em>.</li> <li>Expand <em>More external sharing settings</em> and check <em>Limit external sharing by domain</em>.</li> <li>Select <em>Add domains</em> to add a list of approved domains.</li> <li>Click <em>Save</em> at the bottom of the page.</li> </ol> <p>To configure document sharing restrictions using PowerShell:</p> <ol> <li>Connect to SharePoint Online using <em>Connect-SPOService</em>.</li> <li>Run the following PowerShell command:</li> </ol> <p>Set-SPOTenant -SharingDomainRestrictionMode AllowList -<br />SharingAllowedDomainList \"domain1.com domain2.com\"</p>",
+  "remediationImpact": "Enabling this feature will prevent users from sharing documents with domains outside of the organization unless allowed.",
+  "service": "SPO",
+  "threats": [
+    "Data Exfiltration",
+    "Account breach"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

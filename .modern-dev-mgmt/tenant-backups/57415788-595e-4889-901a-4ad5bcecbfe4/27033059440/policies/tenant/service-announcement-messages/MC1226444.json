@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-03T15:24:06Z",
+  "endDateTime": "2026-10-31T23:59:00Z",
+  "lastModifiedDateTime": "2026-04-01T04:20:23.163Z",
+  "title": "Power Platform admin center – Environments page updates",
+  "id": "MC1226444",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Power Platform"
+  ]
+}

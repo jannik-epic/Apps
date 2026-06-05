@@ -1,0 +1,14 @@
+{
+  "id": "898f1161-d651-43d1-805c-3b0b388a9fc2",
+  "deletedDateTime": null,
+  "displayName": "Custom Policy Settings",
+  "description": "\n        Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines\n        settings that can be used for managing tenant-wide custom policy settings.\n      ",
+  "values": [
+    {
+      "name": "CustomConditionalAccessPolicyUrl",
+      "type": "System.String",
+      "defaultValue": "",
+      "description": "Custom conditional access policy url."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T13:00:15Z",
+  "endDateTime": "2026-07-08T13:00:00Z",
+  "lastModifiedDateTime": "2026-05-28T13:35:15.013Z",
+  "title": "Dynamics 365 Sales - Accelerate Sales Opportunity Agent deployment with simplified admin configuration",
+  "id": "MC1324989",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

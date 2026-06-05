@@ -1,0 +1,85 @@
+{
+  "id": "57415788-595e-4889-901a-4ad5bcecbfe4_639dec6b-bb19-468b-871c-c5c441c4b0cb",
+  "skuId": "639dec6b-bb19-468b-871c-c5c441c4b0cb",
+  "skuPartNumber": "Microsoft_365_Copilot",
+  "consumedUnits": 3,
+  "capabilityStatus": "Enabled",
+  "prepaidUnits": {
+    "enabled": 3,
+    "suspended": 0,
+    "warning": 0,
+    "lockedOut": 0
+  },
+  "servicePlans": [
+    {
+      "servicePlanId": "ff7b261f-d98b-415b-827c-42a3fdf015af",
+      "servicePlanName": "WORKPLACE_ANALYTICS_INSIGHTS_BACKEND",
+      "servicePlanType": "WorkplaceAnalytics",
+      "provisioningStatus": "Success",
+      "appliesTo": "Company"
+    },
+    {
+      "servicePlanId": "b622badb-1b45-48d5-920f-4b27a2c0996c",
+      "servicePlanName": "WORKPLACE_ANALYTICS_INSIGHTS_USER",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "fe6c28b3-d468-44ea-bbd0-a10a5167435c",
+      "servicePlanName": "COPILOT_STUDIO_IN_COPILOT_FOR_M365",
+      "servicePlanType": "ccibotsprod",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "0aedf20c-091d-420b-aadf-30c042609612",
+      "servicePlanName": "M365_COPILOT_SHAREPOINT",
+      "servicePlanType": "SharePoint",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "82d30987-df9b-4486-b146-198b21d164c7",
+      "servicePlanName": "GRAPH_CONNECTORS_COPILOT",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "89f1c4c8-0878-40f7-804d-869c9128ab5d",
+      "servicePlanName": "M365_COPILOT_CONNECTORS",
+      "servicePlanType": "CRM",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "a62f8878-de10-42f3-b68f-6149a25ceb97",
+      "servicePlanName": "M365_COPILOT_APPS",
+      "servicePlanType": "MicrosoftOffice",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "b95945de-b3bd-46db-8437-f2beb6ea2347",
+      "servicePlanName": "M365_COPILOT_TEAMS",
+      "servicePlanType": "TeamspaceAPI",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "3f30311c-6b1e-48a4-ab79-725b469da960",
+      "servicePlanName": "M365_COPILOT_BUSINESS_CHAT",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "931e4a88-a67f-48b5-814f-16a5f1e6028d",
+      "servicePlanName": "M365_COPILOT_INTELLIGENT_SEARCH",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    }
+  ]
+}

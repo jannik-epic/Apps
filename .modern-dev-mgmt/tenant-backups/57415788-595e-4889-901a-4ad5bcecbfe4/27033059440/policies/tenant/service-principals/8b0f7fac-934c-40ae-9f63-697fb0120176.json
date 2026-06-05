@@ -1,0 +1,12 @@
+{
+  "id": "8b0f7fac-934c-40ae-9f63-697fb0120176",
+  "appId": "7fe3d988-4f3b-4f33-83bd-1fb921a35ed2",
+  "displayName": "PurviewRoleAssignmentMigrator",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "attributeSet": "FFRAS",
+  "description": null,
+  "id": "FFRAS_FFRA",
+  "isCollection": false,
+  "isSearchable": true,
+  "name": "FFRA",
+  "status": "Deprecated",
+  "type": "String",
+  "usePreDefinedValuesOnly": false
+}

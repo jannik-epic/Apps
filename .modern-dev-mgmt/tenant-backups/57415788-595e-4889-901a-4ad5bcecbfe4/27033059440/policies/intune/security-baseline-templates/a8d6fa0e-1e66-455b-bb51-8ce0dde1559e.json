@@ -1,0 +1,10 @@
+{
+  "@odata.type": "#microsoft.graph.securityBaselineTemplate",
+  "id": "a8d6fa0e-1e66-455b-bb51-8ce0dde1559e",
+  "displayName": "Microsoft Edge baseline",
+  "description": "Microsoft recommended settings for Microsoft Edge",
+  "versionInfo": "September 2020 (Edge version 85 and later)",
+  "templateType": "microsoftEdgeSecurityBaseline",
+  "platformType": "windows10AndLater",
+  "publishedDateTime": "2020-10-01T00:00:00Z"
+}

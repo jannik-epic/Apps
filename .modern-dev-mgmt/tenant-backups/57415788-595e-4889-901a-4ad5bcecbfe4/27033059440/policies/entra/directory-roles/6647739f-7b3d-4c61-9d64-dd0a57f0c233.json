@@ -1,0 +1,7 @@
+{
+  "id": "6647739f-7b3d-4c61-9d64-dd0a57f0c233",
+  "deletedDateTime": null,
+  "description": "Can create and manage all aspects of attack simulation campaigns.",
+  "displayName": "Attack Simulation Administrator",
+  "roleTemplateId": "c430b396-e693-46cc-96f3-db01bf8bb62a"
+}

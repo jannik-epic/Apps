@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentityBlueprintPrincipal",
+  "id": "1ad4219f-1eaa-403e-8d3d-1df119a6eb78",
+  "appId": "c123f1f3-d9cf-46bd-ac7c-3b4e91beca64",
+  "displayName": "Frontier Engine Blueprint",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

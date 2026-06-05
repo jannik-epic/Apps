@@ -1,0 +1,13 @@
+{
+  "id": "b22ae5c3-3af5-4732-b18d-0e6b89399d16",
+  "displayName": "GBI-ORG",
+  "description": "Description",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "GBIORG-TEAM",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2024-08-27T11:37:35Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "85d374fa-73a7-4545-be47-0a36fa51e474",
+  "appId": "31359c7f-bd7e-475c-86db-fdb8c937548e",
+  "displayName": "PnP Management Shell",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

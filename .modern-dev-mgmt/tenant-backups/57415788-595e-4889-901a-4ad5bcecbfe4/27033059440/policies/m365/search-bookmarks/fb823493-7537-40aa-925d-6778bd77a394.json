@@ -1,0 +1,106 @@
+{
+  "displayName": "Company Discounts",
+  "description": null,
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "fb823493-7537-40aa-925d-6778bd77a394",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "company discounts",
+      "my discounts",
+      "company store",
+      "company perks",
+      "employee discounts",
+      "descuentos de la compañía",
+      "mis descuentos",
+      "tienda de la compañía",
+      "beneficios de la compañía",
+      "descuentos para empleados",
+      "remises d'entreprise",
+      "mes réductions",
+      "boutique de l'entreprise",
+      "avantages de l'entreprise",
+      "réductions pour les employés",
+      "sconti aziendali",
+      "i miei sconti",
+      "negozio aziendale",
+      "incentivi aziendali",
+      "sconti dipendenti",
+      "会社割引",
+      "マイディスカウント",
+      "売店",
+      "会社特典",
+      "社員割引",
+      "descontos da companhia",
+      "meus descontos",
+      "loja da companhia",
+      "vantagens da empresa descontos de empregados"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Unternehmensrabatte",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Descuentos de la compañía",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Remises d'entreprise",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Sconti aziendali",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "会社割引",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Descontos da Companhia",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

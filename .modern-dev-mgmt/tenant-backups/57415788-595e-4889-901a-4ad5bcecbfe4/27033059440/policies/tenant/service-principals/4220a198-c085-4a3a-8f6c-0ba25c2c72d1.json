@@ -1,0 +1,8 @@
+{
+  "id": "4220a198-c085-4a3a-8f6c-0ba25c2c72d1",
+  "appId": "de926fbf-e23b-41f9-ae15-c943a9cfa630",
+  "displayName": "Microsoft Azure Authorization Private Link Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

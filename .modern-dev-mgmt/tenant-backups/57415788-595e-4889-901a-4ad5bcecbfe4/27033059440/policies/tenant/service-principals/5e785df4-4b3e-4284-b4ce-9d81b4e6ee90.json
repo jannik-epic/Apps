@@ -1,0 +1,11 @@
+{
+  "id": "5e785df4-4b3e-4284-b4ce-9d81b4e6ee90",
+  "appId": "5a128dfa-2ded-4deb-b088-fb73a9472488",
+  "displayName": "Microsoft Teams Analytics",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-26T23:45:54Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-23T16:27:32.243Z",
+  "title": "(Updated) Planner tab support for Shared and Private Channels in Microsoft Teams",
+  "id": "MC1262590",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Planner",
+    "Microsoft Teams"
+  ]
+}

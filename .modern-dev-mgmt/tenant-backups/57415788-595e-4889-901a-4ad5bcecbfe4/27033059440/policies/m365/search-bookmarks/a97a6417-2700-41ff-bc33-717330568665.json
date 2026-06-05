@@ -1,0 +1,82 @@
+{
+  "displayName": "Excel",
+  "description": "Collaborate for free with an online version of Microsoft Excel. Save spreadsheets in OneDrive. Share them with others and work together at the same time.",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "a97a6417-2700-41ff-bc33-717330568665",
+  "webUrl": "https://office.live.com/start/Excel.aspx?auth=2",
+  "lastModifiedDateTime": "2021-12-10T11:25:12Z",
+  "keywords": {
+    "keywords": [
+      "excel online",
+      "excel login",
+      "microsoft excel",
+      "online excel",
+      "excel online free"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Arbeiten Sie kostenlos mit den Onlineversionen von Microsoft Excel. Speichern Sie Tabellen in One Drive. Teilen Sie diese mit anderen und arbeiten Sie in derselben Zeit zusammen daran.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Colabora de forma gratuita con una versión en línea de Microsoft Excel. Guarda hojas de cálculo en OneDrive. Compártelas con otras personas y trabajen juntos al mismo tiempo.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Collaborez gratuitement avec une version en ligne de Microsoft Excel, enregistrez des feuilles de calcul dans OneDrive. Partagez-les avec d'autres personnes et travaillez ensemble en même temps.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Collabora gratuitamente con una versione online di Microsoft Excel. Salva i fogli di lavoro in OneDrive, condividili con gli altri e lavora insieme allo stesso tempo.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Microsoft Excelのオンラインバージョンで、無料で共同作業をしましょう。OneDriveにスプレッドシートを保存しましょう。みんなで共有し、一緒に作業をしましょう。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Colabore gratuitamente com uma versão online do Microsoft Excel. Guarde planilhas no OneDrive. Compartilhe-as com outros e trabalhem juntos ao mesmo tempo",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

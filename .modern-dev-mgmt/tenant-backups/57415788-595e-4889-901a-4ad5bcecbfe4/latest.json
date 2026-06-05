@@ -1,9 +1,9 @@
 {
-  "backupId": "27026149000",
+  "backupId": "27033059440",
   "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
-  "snapshotPath": ".modern-dev-mgmt/tenant-backups/57415788-595e-4889-901a-4ad5bcecbfe4/27026149000",
-  "createdAt": "2026-06-05T16:17:34.7497482Z",
-  "workflowRunId": "27026149000",
+  "snapshotPath": ".modern-dev-mgmt/tenant-backups/57415788-595e-4889-901a-4ad5bcecbfe4/27033059440",
+  "createdAt": "2026-06-05T18:39:25.5777557Z",
+  "workflowRunId": "27033059440",
   "counts": {
     "conditional-access-policies": 44,
     "named-locations": 2,
@@ -112,7 +112,7 @@
     "windows-autopilot-device-identities": 0,
     "windows-malware-information": 0,
     "teamwork-organization-settings": 1,
-    "teams-app-catalog-apps": 3252,
+    "teams-app-catalog-apps": 3253,
     "sharepoint-tenant-settings": 1,
     "m365-apps-installation-options": 1,
     "group-directory-settings": 3,
@@ -178,5 +178,5 @@
     "assignments": 144,
     "groups": 30
   },
-  "scope": "full"
+  "scope": "custom"
 }

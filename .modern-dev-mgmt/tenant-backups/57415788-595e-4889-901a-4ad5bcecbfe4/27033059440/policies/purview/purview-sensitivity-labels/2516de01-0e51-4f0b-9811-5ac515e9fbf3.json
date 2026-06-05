@@ -1,0 +1,17 @@
+{
+  "id": "2516de01-0e51-4f0b-9811-5ac515e9fbf3",
+  "name": "Non-Business",
+  "description": "Use this classification to identify personal, non-corporate data. This label does not imply privacy.",
+  "color": "",
+  "sensitivity": 0,
+  "tooltip": "Use this classification to identify personal, non-corporate data. This label does not imply privacy.",
+  "isActive": true,
+  "isAppliable": true,
+  "contentFormats": [
+    "file",
+    "email"
+  ],
+  "hasProtection": false,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('2516de01-0e51-4f0b-9811-5ac515e9fbf3')/parent/$entity",
+  "parent": null
+}

@@ -1,0 +1,79 @@
+{
+  "displayName": "Microsoft Intune",
+  "description": "Manage your cloud-based unified endpoint management platform.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "bf25d741-60b6-4a4a-957a-9a3d1f9685f7",
+  "webUrl": "https://endpoint.microsoft.com/",
+  "lastModifiedDateTime": "2023-04-13T23:39:56Z",
+  "keywords": {
+    "keywords": [
+      "intune portal",
+      "intune"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Verwalten Sie Ihre cloudbasierte Plattform für die einheitliche Endpunktverwaltung.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Administre su plataforma de administración de puntos de conexión unificada basada en la nube.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Gérez votre plateforme de gestion unifiée des points de terminaison basée sur le cloud.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Consente di gestire la tua piattaforma unificata di gestione degli endpoint basata sul cloud.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "クラウドベースの統合エンドポイント管理プラットフォームを管理します。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Gerencie sua plataforma unificada de gerenciamento de ponto de extremidade baseada em nuvem.",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

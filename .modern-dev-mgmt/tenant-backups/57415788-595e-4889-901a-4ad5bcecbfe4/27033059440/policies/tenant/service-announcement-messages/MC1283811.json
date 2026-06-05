@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-17T21:12:14Z",
+  "endDateTime": "2026-06-07T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-17T21:12:26.653Z",
+  "title": "First channel in new Microsoft Teams will default to threaded conversation layout",
+  "id": "MC1283811",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

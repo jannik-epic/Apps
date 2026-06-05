@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-21T23:30:59.633Z",
+  "endDateTime": "2027-05-21T23:30:59.633Z",
+  "lastModifiedDateTime": "2026-05-21T23:31:01.26Z",
+  "title": "Take action: Mitigation guidance updated with a new script for CVE 2026 45585",
+  "id": "MC1318295",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

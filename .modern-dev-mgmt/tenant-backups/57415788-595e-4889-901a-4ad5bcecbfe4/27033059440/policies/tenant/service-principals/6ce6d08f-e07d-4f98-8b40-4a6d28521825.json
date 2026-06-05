@@ -1,0 +1,12 @@
+{
+  "id": "6ce6d08f-e07d-4f98-8b40-4a6d28521825",
+  "appId": "11413461-f071-4513-802f-acbb00576ed3",
+  "displayName": "Azure Security Insights Content As Code",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "clientId": "5a16f8f3-df05-4b96-a3a7-195c1c5c54e7",
+  "consentType": "AllPrincipals",
+  "id": "8_gWWgXflkujpxlcHFxU50NRIZhTNqNNl2nya8hiw0Y",
+  "principalId": null,
+  "resourceId": "98215143-3653-4da3-9769-f26bc862c346",
+  "scope": " Tenant.ReadWrite.All Workspace.ReadWrite.All Capacity.Read.All Report.ReadWrite.All Dataset.ReadWrite.All"
+}

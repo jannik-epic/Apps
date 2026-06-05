@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-11T23:14:50Z",
+  "endDateTime": "2026-08-24T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-22T20:39:52.663Z",
+  "title": "(Updated) Outlook for Windows report retirement in the Exchange admin center",
+  "id": "MC1230889",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

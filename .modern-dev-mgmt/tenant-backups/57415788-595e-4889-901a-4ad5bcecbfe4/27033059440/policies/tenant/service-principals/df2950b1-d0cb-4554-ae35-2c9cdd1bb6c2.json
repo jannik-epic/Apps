@@ -1,0 +1,12 @@
+{
+  "id": "df2950b1-d0cb-4554-ae35-2c9cdd1bb6c2",
+  "appId": "81ca2f57-06b8-4597-9eee-ad8f700c5106",
+  "displayName": "MicrosoftEntraIDReputationManagementServices",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

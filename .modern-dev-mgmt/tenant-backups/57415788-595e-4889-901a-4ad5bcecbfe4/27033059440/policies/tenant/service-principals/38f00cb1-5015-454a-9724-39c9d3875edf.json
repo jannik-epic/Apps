@@ -1,0 +1,11 @@
+{
+  "id": "38f00cb1-5015-454a-9724-39c9d3875edf",
+  "appId": "02d2a314-8dbb-47d3-8a77-1677403097de",
+  "displayName": "Microsoft SaaS Hub Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

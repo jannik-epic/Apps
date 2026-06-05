@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-26T22:11:17Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-26T22:11:25.513Z",
+  "title": "Microsoft 365 Copilot: Planner agent general availability",
+  "id": "MC1323264",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Planner",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

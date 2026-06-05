@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-02T22:05:07Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-02T22:05:17.733Z",
+  "title": "Action required: Update Teams Rooms app to maintain PowerPoint Live functionality",
+  "id": "MC1332812",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "538e9c1e-0aaa-4d6f-bb9a-ccc72d45f074",
+  "appId": "589d5083-6f11-4d30-a62a-a4b316a14abf",
+  "displayName": "Azure Key Vault Managed HSM",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

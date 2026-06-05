@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-03T22:23:30Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-12T16:31:47.817Z",
+  "title": "(Updated) Microsoft Teams: New chat sections for muted and meeting chats",
+  "id": "MC1269864",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

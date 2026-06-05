@@ -1,0 +1,8 @@
+{
+  "id": "02c9bc98-4e45-475a-a85c-d7c1dd87c2a3",
+  "appId": "ce79fdc4-cd1d-4ea5-8139-e74d7dbe0bb7",
+  "displayName": "AAD Lifecycle Management",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

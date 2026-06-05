@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-02T13:48:16Z",
+  "endDateTime": "2026-07-02T13:48:16Z",
+  "lastModifiedDateTime": "2026-06-02T13:49:30.447Z",
+  "title": "Microsoft Dataverse - Enable semantic Dataverse data understanding for agentic use",
+  "id": "MC1331636",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Dataverse"
+  ]
+}

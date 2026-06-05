@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-09T17:01:38.62Z",
+  "endDateTime": "2027-04-09T17:01:38.62Z",
+  "lastModifiedDateTime": "2026-04-09T17:01:43.883Z",
+  "title": "Hardening administrative actions: Windows imaging, cloning, and auth workflows",
+  "id": "MC1275343",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

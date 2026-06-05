@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-12-29T22:48:48Z",
+  "endDateTime": "2026-07-13T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-19T16:21:35.117Z",
+  "title": "(Updated) Microsoft Office for the web: Apply sensitivity labels with user-defined permissions",
+  "id": "MC1208688",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft Purview"
+  ]
+}

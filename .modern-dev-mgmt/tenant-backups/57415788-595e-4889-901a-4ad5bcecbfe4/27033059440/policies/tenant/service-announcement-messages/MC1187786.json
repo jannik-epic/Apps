@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-18T20:40:32.1Z",
+  "endDateTime": "2026-11-18T20:40:32.037Z",
+  "lastModifiedDateTime": "2025-11-18T20:40:32.797Z",
+  "title": "An updated version of the November 2025 Scan Cab is available",
+  "id": "MC1187786",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

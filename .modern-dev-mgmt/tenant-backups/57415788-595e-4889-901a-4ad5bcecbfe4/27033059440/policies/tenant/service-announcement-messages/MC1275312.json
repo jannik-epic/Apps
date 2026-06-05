@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-09T16:06:40Z",
+  "endDateTime": "2026-09-21T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-26T16:29:31.72Z",
+  "title": "(Updated) Microsoft Teams: AI meeting recap without transcript to meet compliance policies",
+  "id": "MC1275312",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

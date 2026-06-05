@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T14:42:11Z",
+  "endDateTime": "2026-06-30T14:42:00Z",
+  "lastModifiedDateTime": "2026-05-19T20:11:50.167Z",
+  "title": "Microsoft Power Automate - Support for normalized schema import for data ingestion",
+  "id": "MC1296281",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Power Automate"
+  ]
+}

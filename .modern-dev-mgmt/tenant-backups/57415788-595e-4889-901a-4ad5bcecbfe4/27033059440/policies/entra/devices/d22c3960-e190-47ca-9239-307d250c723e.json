@@ -1,0 +1,13 @@
+{
+  "id": "d22c3960-e190-47ca-9239-307d250c723e",
+  "displayName": "templ-0",
+  "deviceId": "d811f057-aa5c-4972-a466-3fc1e6ecfd55",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.22631.2715",
+  "trustType": "AzureAd",
+  "profileType": "SecureVM",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2023-11-22T10:35:26Z"
+}

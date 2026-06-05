@@ -1,0 +1,9 @@
+{
+  "id": "8cc1ee20-bb1f-4da4-8806-6d1ab03744f6",
+  "displayName": "Android Compliance policy",
+  "description": "Mifo Android Compliance policy",
+  "versionInfo": "Version 1",
+  "templateType": "deviceConfigurationForOffice365",
+  "platformType": "android",
+  "publishedDateTime": "0001-01-01T00:00:00Z"
+}

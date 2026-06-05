@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-23T17:33:29.183Z",
+  "endDateTime": "2027-04-23T17:33:29.183Z",
+  "lastModifiedDateTime": "2026-04-23T17:33:30.31Z",
+  "title": "New IT admin policy: Remove Microsoft Copilot app",
+  "id": "MC1289507",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

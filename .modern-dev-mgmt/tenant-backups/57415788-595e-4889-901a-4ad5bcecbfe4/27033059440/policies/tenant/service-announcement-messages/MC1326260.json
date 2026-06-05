@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-29T16:58:23Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T16:58:29.163Z",
+  "title": "Microsoft Purview Data Security Triage Agent will include sensitive data remediation through Microsoft Teams",
+  "id": "MC1326260",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams",
+    "Microsoft Purview"
+  ]
+}

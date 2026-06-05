@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "04cbca79-b82f-43c0-b614-f55f77621c41",
+  "appId": "04cbca79-b82f-43c0-b614-f55f77621c41",
+  "displayName": "Ina (Intune)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

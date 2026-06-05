@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T20:06:53Z",
+  "endDateTime": "2026-06-28T20:06:53Z",
+  "lastModifiedDateTime": "2026-05-28T20:07:32.097Z",
+  "title": "Dynamics 365 Contact Center- Use representatives for commercial proactive engagement",
+  "id": "MC1325374",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

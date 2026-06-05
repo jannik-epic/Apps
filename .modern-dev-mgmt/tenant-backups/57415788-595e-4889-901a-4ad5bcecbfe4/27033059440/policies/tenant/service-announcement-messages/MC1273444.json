@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-07T23:25:13Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-22T22:33:14.75Z",
+  "title": "Microsoft Whiteboard content is now viewable in Microsoft Purview eDiscovery",
+  "id": "MC1273444",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

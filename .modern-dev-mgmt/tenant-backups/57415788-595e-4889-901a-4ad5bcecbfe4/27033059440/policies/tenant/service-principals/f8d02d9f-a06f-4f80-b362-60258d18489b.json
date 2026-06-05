@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "f8d02d9f-a06f-4f80-b362-60258d18489b",
+  "appId": "f8d02d9f-a06f-4f80-b362-60258d18489b",
+  "displayName": "Flo (Customer Support)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

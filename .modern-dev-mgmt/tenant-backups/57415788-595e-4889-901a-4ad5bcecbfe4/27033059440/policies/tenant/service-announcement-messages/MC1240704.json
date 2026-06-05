@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-27T22:10:37Z",
+  "endDateTime": "2026-11-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-27T21:52:41.04Z",
+  "title": "(Updated) Copilot entry point changes in Word and handoff to Agent in chat",
+  "id": "MC1240704",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

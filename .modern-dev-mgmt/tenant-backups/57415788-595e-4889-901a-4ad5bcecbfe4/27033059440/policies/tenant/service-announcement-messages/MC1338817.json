@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-03T22:45:57Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T22:46:07.033Z",
+  "title": "Microsoft Teams PowerShell: Web Account Manager (WAM) becomes the default authentication broker",
+  "id": "MC1338817",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

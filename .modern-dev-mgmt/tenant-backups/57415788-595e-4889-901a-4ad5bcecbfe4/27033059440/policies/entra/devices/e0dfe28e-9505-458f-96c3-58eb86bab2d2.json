@@ -1,0 +1,13 @@
+{
+  "id": "e0dfe28e-9505-458f-96c3-58eb86bab2d2",
+  "displayName": "EPF-SD-C22483FB",
+  "deviceId": "8969d60f-a6de-42a4-b8f8-c001aa25841b",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.22621.1105",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2023-02-02T12:36:25Z"
+}

@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "c8c22b1d-4fa4-436e-b20a-78be690a3804",
+  "appId": "c8c22b1d-4fa4-436e-b20a-78be690a3804",
+  "displayName": "Agent (Microsoft Copilot Studio)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

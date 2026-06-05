@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-12-01T18:14:50Z",
+  "endDateTime": "2026-07-13T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-10T23:03:16.877Z",
+  "title": "(Updated) New Microsoft Purview data security posture management experience",
+  "id": "MC1191257",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft Purview"
+  ]
+}

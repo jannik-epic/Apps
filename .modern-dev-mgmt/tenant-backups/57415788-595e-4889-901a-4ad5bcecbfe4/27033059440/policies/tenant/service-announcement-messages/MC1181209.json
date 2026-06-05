@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-10-29T00:22:25Z",
+  "endDateTime": "2027-12-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-03-25T19:21:49.157Z",
+  "title": "(Updated) [Reminder] Microsoft Teams Premium Self-Service Trials (Originally announced in MC670435)",
+  "id": "MC1181209",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

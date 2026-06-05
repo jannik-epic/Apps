@@ -1,0 +1,27 @@
+{
+  "id": "966707d0-3269-4727-9be2-8c3a10f19b9d",
+  "description": "Can reset passwords for non-administrators and Password Administrators.",
+  "displayName": "Password Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "966707d0-3269-4727-9be2-8c3a10f19b9d",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/users/password/update",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('966707d0-3269-4727-9be2-8c3a10f19b9d')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

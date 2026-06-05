@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2023-11-17T07:53:56.3144507Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-11-17T07:53:56.3144507Z",
+  "name": "EPICLAB_DCP__DEV_AVD-Windows Update",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 7,
+  "technologies": "mdm",
+  "id": "12c938c1-cb9f-4145-8575-ae1678d60e05",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('12c938c1-cb9f-4145-8575-ae1678d60e05')/assignments",
+  "assignments": [
+    {
+      "id": "12c938c1-cb9f-4145-8575-ae1678d60e05_18d5aa14-61e0-477f-b056-0b8f637702a2",
+      "source": "direct",
+      "sourceId": "12c938c1-cb9f-4145-8575-ae1678d60e05",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "18d5aa14-61e0-477f-b056-0b8f637702a2"
+      }
+    }
+  ]
+}

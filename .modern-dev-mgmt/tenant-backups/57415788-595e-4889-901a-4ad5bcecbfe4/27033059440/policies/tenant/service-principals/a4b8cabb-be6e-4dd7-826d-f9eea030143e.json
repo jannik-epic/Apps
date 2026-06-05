@@ -1,0 +1,12 @@
+{
+  "id": "a4b8cabb-be6e-4dd7-826d-f9eea030143e",
+  "appId": "0fc12b9a-5463-4b87-8f10-765fecb39990",
+  "displayName": "SQL Copilot PPE",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

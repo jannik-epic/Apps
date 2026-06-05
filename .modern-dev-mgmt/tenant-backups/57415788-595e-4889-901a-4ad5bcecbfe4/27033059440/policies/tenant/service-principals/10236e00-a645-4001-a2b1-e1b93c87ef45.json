@@ -1,0 +1,12 @@
+{
+  "id": "10236e00-a645-4001-a2b1-e1b93c87ef45",
+  "appId": "7442f35f-64b6-45b8-bbee-f069b75cd4f2",
+  "displayName": "Excel Online Business Connector",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

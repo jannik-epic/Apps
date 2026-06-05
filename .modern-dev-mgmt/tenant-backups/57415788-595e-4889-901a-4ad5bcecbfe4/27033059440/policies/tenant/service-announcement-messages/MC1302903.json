@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-06T22:51:21Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-06T22:51:41.6Z",
+  "title": "Teams meeting templates: Fundamentals and security upgrade",
+  "id": "MC1302903",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

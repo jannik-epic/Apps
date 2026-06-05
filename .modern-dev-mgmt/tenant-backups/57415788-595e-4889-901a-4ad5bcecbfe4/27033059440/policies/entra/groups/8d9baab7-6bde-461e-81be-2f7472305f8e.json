@@ -1,0 +1,13 @@
+{
+  "id": "8d9baab7-6bde-461e-81be-2f7472305f8e",
+  "displayName": "Bauprojekte",
+  "description": "xxx",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "Projekte",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2024-06-27T08:36:02Z"
+}

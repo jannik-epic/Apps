@@ -1,0 +1,11 @@
+{
+  "id": "60b382eb-2501-4749-8e71-c508b45efb17",
+  "displayName": "SG_Teams_Creators",
+  "description": "Allow Teams Creation for Group Members",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "76167a9d-f",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2021-05-24T14:24:18Z"
+}

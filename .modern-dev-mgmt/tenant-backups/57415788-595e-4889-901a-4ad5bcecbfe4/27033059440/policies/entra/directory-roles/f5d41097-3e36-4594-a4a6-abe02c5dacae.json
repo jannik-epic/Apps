@@ -1,0 +1,7 @@
+{
+  "id": "f5d41097-3e36-4594-a4a6-abe02c5dacae",
+  "deletedDateTime": null,
+  "description": "Can read and manage compliance configuration and reports in Microsoft Entra ID and Microsoft 365.",
+  "displayName": "Compliance Administrator",
+  "roleTemplateId": "17315797-102d-40b4-93e0-432062caca18"
+}

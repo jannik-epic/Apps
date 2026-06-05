@@ -1,0 +1,18 @@
+{
+  "executionFrequency": "PT0S",
+  "retryCount": 3,
+  "blockExecutionNotifications": false,
+  "id": "1ec92784-f98b-4e5a-bcf9-5ab83e07539c",
+  "displayName": "Company Portal - Install Shell Script",
+  "description": "13.06.2022 by SBA",
+  "scriptContent": null,
+  "createdDateTime": "2022-08-22T11:47:11.3047075Z",
+  "lastModifiedDateTime": "2022-08-22T11:47:11.3047075Z",
+  "runAsAccount": "system",
+  "fileName": "installCompanyPortal.sh",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceShellScripts('1ec92784-f98b-4e5a-bcf9-5ab83e07539c')/assignments",
+  "assignments": []
+}

@@ -1,0 +1,14 @@
+{
+  "startDateTime": "2026-04-16T21:20:17Z",
+  "endDateTime": "2026-12-01T08:00:00Z",
+  "lastModifiedDateTime": "2026-04-16T21:20:23.877Z",
+  "title": "Copilot entry point changes in Excel",
+  "id": "MC1282571",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

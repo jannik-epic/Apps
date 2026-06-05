@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-26T21:57:47Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-27T15:37:08.647Z",
+  "title": "Hotpatch-enabled devices will restart after installing the June 2026 Windows update",
+  "id": "MC1323247",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Windows Autopatch"
+  ]
+}

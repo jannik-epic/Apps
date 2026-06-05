@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-14T02:20:27Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-14T02:20:52.077Z",
+  "title": "Microsoft Purview: Insider Risk Management-AI app selection for Generative AI apps indicators",
+  "id": "MC1309841",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft Purview"
+  ]
+}

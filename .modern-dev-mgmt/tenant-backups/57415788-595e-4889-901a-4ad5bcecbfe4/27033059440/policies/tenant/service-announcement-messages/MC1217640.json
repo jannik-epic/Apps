@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-01-14T02:06:53Z",
+  "endDateTime": "2026-09-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-11T16:18:37.977Z",
+  "title": "Microsoft Purview | Information Protection - Content Explorer: Unscanned data and Classification History summary metrics",
+  "id": "MC1217640",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Purview"
+  ]
+}

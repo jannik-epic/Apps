@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-10T22:45:44Z",
+  "endDateTime": "2026-06-06T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-10T22:46:00.2Z",
+  "title": "Plan for Change: Windows Autopatch is enabling hotpatch updates by default",
+  "id": "MC1248388",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Intune",
+    "Windows Autopatch"
+  ]
+}

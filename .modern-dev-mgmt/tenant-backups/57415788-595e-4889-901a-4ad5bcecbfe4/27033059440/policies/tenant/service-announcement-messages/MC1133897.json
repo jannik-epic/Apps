@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-08-12T17:01:27.267Z",
+  "endDateTime": "2026-08-12T17:01:27.22Z",
+  "lastModifiedDateTime": "2025-08-12T17:01:27.953Z",
+  "title": "The August 2025 Windows security update is now available",
+  "id": "MC1133897",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

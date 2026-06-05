@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-01T22:48:06Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-01T22:48:32.817Z",
+  "title": "Agent Registry API transition to Agent 365",
+  "id": "MC1297981",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "c3a59481-1bf2-46ce-94b3-66eec07a8d60",
+  "profileName": "Default Branding profile.",
+  "profileDescription": null,
+  "isDefaultProfile": true,
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastModifiedDateTime": "2023-01-11T17:30:29Z",
+  "displayName": null,
+  "showLogo": false,
+  "showDisplayNameNextToLogo": true,
+  "themeColorLogo": null,
+  "lightBackgroundLogo": null,
+  "landingPageCustomizedImage": null,
+  "contactITName": null,
+  "contactITPhoneNumber": null,
+  "contactITEmailAddress": null,
+  "contactITNotes": null,
+  "onlineSupportSiteUrl": null,
+  "onlineSupportSiteName": null,
+  "privacyUrl": null,
+  "customPrivacyMessage": null,
+  "customCanSeePrivacyMessage": null,
+  "customCantSeePrivacyMessage": null,
+  "isRemoveDeviceDisabled": false,
+  "isFactoryResetDisabled": false,
+  "disableDeviceCategorySelection": false,
+  "showAzureADEnterpriseApps": false,
+  "showOfficeWebApps": false,
+  "showConfigurationManagerApps": true,
+  "enrollmentAvailability": "availableWithPrompts",
+  "disableClientTelemetry": false,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "themeColor": {
+    "r": 0,
+    "g": 114,
+    "b": 198
+  },
+  "companyPortalBlockedActions": [
+    {
+      "platform": "windows10AndLater",
+      "ownerType": "company",
+      "action": "remove"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intuneBrandingProfiles('c3a59481-1bf2-46ce-94b3-66eec07a8d60')/assignments",
+  "assignments": []
+}

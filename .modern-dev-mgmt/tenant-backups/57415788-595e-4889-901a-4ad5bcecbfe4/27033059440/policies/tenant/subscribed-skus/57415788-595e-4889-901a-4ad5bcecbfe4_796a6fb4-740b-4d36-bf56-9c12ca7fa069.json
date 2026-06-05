@@ -1,0 +1,99 @@
+{
+  "id": "57415788-595e-4889-901a-4ad5bcecbfe4_796a6fb4-740b-4d36-bf56-9c12ca7fa069",
+  "skuId": "796a6fb4-740b-4d36-bf56-9c12ca7fa069",
+  "skuPartNumber": "AGENT_365",
+  "consumedUnits": 2,
+  "capabilityStatus": "Enabled",
+  "prepaidUnits": {
+    "enabled": 2,
+    "suspended": 0,
+    "warning": 0,
+    "lockedOut": 0
+  },
+  "servicePlans": [
+    {
+      "servicePlanId": "27e196a4-8b80-4930-bd65-53fd28581878",
+      "servicePlanName": "ENTRA_NETWORK_CONTROLS_FOR_ASSISTIVE_AGENTS",
+      "servicePlanType": "GSAInternetAccessAgents",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "a9e85e05-1687-4958-8a4c-bdacda2943db",
+      "servicePlanName": "ENTRA_ID_GOV_FOR_ASSISTIVE_AGENTS",
+      "servicePlanType": "MicrosoftEntraIDGovernanceAgents",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "004ddfc0-c92f-4b0a-90c5-c60646299d71",
+      "servicePlanName": "INSIDER_RISK_MANAGEMENT_FOR_AGENTS",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "48478b49-91a1-4ded-94f0-066db80035ca",
+      "servicePlanName": "INFORMATION_PROTECTION_FOR_AGENTS",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "92cedcb2-3fb2-40b4-9df4-f9a5603d9631",
+      "servicePlanName": "EDISCOVERY_FOR_AGENTS",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "a1c15058-5559-4c1a-ba05-8040847f91bb",
+      "servicePlanName": "DEFENDER_FOR_AI",
+      "servicePlanType": "DefenderForAI",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "46d3c309-0ba7-461f-9d0e-eaca165794c2",
+      "servicePlanName": "DATA_LOSS_PREVENTION_FOR_AGENTS",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "30d56d35-9be2-41c1-b4b8-7a8d6f073152",
+      "servicePlanName": "DATA_LIFECYCLE_MANAGEMENT_FOR_AGENTS",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "d1f65d05-a302-4861-bd35-da8933ba7655",
+      "servicePlanName": "COMPLIANCE_MANAGER_FOR_AGENTS",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "135fe762-031a-4e79-bd3c-ac376addddec",
+      "servicePlanName": "COMMUNICATION_COMPLIANCE_FOR_AGENTS",
+      "servicePlanType": "M365CommunicationCompliance",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "6d9b0ae5-e6a0-4f04-991a-e5700fd84930",
+      "servicePlanName": "AUDIT_FOR_AGENTS",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "d0ce5ebb-9db0-491f-b780-8973a1d815fe",
+      "servicePlanName": "AGENT_365",
+      "servicePlanType": "maven-prod",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    }
+  ]
+}

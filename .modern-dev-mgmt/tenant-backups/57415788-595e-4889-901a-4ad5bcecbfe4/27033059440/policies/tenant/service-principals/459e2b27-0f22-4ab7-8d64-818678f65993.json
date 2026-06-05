@@ -1,0 +1,8 @@
+{
+  "id": "459e2b27-0f22-4ab7-8d64-818678f65993",
+  "appId": "cf32a0cc-373c-47c9-9156-0db11f6a6dfc",
+  "displayName": "Azure Virtual Machine Image Builder",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

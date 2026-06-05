@@ -1,0 +1,8 @@
+{
+  "id": "e3e6b888-6e85-4062-82b2-d3210ead69d2",
+  "appId": "546068c3-99b1-4890-8e93-c8aeadcfe56a",
+  "displayName": "Common Data Service - Azure Data Lake Storage",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

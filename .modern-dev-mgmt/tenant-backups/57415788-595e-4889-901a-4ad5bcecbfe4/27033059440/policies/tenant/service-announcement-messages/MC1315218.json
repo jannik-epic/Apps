@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-18T21:44:34Z",
+  "endDateTime": "2026-06-25T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-18T21:44:41.357Z",
+  "title": "SharePoint Pages: Heading 1 (H1) option now available in web part title areas",
+  "id": "MC1315218",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

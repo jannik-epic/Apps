@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "7daf361a-c9ae-47e7-9fc4-2bc992a741a2",
+  "appId": "7daf361a-c9ae-47e7-9fc4-2bc992a741a2",
+  "displayName": "Shield (Security)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

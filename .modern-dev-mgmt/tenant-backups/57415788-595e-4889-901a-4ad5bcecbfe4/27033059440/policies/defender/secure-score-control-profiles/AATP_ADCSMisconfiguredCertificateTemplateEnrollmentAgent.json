@@ -1,0 +1,35 @@
+{
+  "id": "AATP_ADCSMisconfiguredCertificateTemplateEnrollmentAgent",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://aka.ms/mdiesc3",
+  "controlCategory": "Identity",
+  "title": "Edit misconfigured enrollment agent certificate template (ESC3)",
+  "deprecated": false,
+  "implementationCost": "medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "Identify the vulnerable certificate template. Perform at least one of the following possible remediations:<br> 1.Remove enrollment agent EKU.<br> 2.Remove overly permissive enrollment permissions, which allows any user to enroll certificate based on that certificate template.<br> 3.Enable “CA certificate manager approval” requirement.",
+  "remediationImpact": "Each certificate template per AD CS servers with these settings may enable arbitrary certificates issuance ability by an adversary, leading to full domain compromise.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "high",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

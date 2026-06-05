@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-29T20:21:00Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T20:21:10.06Z",
+  "title": "Shared and delegate mailbox scheduling for events",
+  "id": "MC1326502",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

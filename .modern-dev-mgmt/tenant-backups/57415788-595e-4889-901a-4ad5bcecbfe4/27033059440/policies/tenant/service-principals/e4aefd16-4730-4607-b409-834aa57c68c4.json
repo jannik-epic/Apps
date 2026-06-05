@@ -1,0 +1,8 @@
+{
+  "id": "e4aefd16-4730-4607-b409-834aa57c68c4",
+  "appId": "f5aeb603-2a64-4f37-b9a8-b544f3542865",
+  "displayName": "Microsoft Teams RetentionHook Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-31T21:02:37.947Z",
+  "endDateTime": "2027-03-31T21:02:37.947Z",
+  "lastModifiedDateTime": "2026-03-31T21:02:42.237Z",
+  "title": "Take Action: Out-of-band update to address an issue affecting installation of the March 2026 non-security preview update",
+  "id": "MC1266857",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

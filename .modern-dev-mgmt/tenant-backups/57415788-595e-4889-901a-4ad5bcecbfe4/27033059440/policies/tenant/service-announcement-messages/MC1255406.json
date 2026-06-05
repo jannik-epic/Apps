@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-18T22:29:45Z",
+  "endDateTime": "2026-09-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-18T22:30:00.027Z",
+  "title": "Microsoft Purview | Data Security Triage Agent Summaries for DLP Alerts in Microsoft Defender XDR",
+  "id": "MC1255406",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Defender XDR",
+    "Microsoft Purview"
+  ]
+}

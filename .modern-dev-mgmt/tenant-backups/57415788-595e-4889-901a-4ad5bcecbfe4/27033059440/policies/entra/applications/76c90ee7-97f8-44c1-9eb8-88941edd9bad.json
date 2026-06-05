@@ -1,0 +1,116 @@
+{
+  "id": "76c90ee7-97f8-44c1-9eb8-88941edd9bad",
+  "appId": "257b5cb2-45fb-4b25-9d4a-10a4f166ed77",
+  "displayName": "Syskit Point Client",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-02T13:00:25Z",
+  "identifierUris": [
+    "api://epf-labs.syskit365.com/257b5cb2-45fb-4b25-9d4a-10a4f166ed77"
+  ],
+  "web": {
+    "homePageUrl": "https://www.syskit.com/_app-links/point/",
+    "logoutUrl": "https://epf-labs.syskit365.com/signout",
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": true,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": [
+      "https://epf-labs.syskit365.com/signin",
+      "https://epf-labs.syskit365.com/auth"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "475226c6-020e-4fb2-8a90-7a972cbfc1d4",
+      "resourceAccess": [
+        {
+          "id": "0eb56b90-a7b5-43b5-9402-8137a8083e90",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000002-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "ab4f2b77-0b06-4fc1-a9de-02113fc2ab7c",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "56680e0d-d2a3-4ae1-80d8-3c4f2100e3d0",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "0e263e50-5827-48a4-b97c-d940288653c7",
+          "type": "Scope"
+        },
+        {
+          "id": "4e46008b-f24c-477d-8fff-7bb4ec7aafe0",
+          "type": "Scope"
+        },
+        {
+          "id": "7427e0e9-2fba-42fe-b0c0-848c9e6a8182",
+          "type": "Scope"
+        },
+        {
+          "id": "37f7f235-527c-4136-accd-4a02d197296e",
+          "type": "Scope"
+        },
+        {
+          "id": "14dad69e-099b-42c9-810b-d002981feec1",
+          "type": "Scope"
+        },
+        {
+          "id": "64a6cdd6-aab1-4aaf-94b8-3cc8405e90d0",
+          "type": "Scope"
+        },
+        {
+          "id": "204e0828-b5ca-4ad8-b9f3-f32a958e7cc4",
+          "type": "Scope"
+        },
+        {
+          "id": "c5366453-9fb0-48a5-a156-24f0c49a4b84",
+          "type": "Scope"
+        },
+        {
+          "id": "9c7a330d-35b3-4aa1-963d-cb2b9f927841",
+          "type": "Scope"
+        },
+        {
+          "id": "a267235f-af13-44dc-8385-c1dc93023186",
+          "type": "Role"
+        },
+        {
+          "id": "b89f9189-71a5-4e70-b041-9887f0bc7e4a",
+          "type": "Scope"
+        },
+        {
+          "id": "0c3e411a-ce45-4cd1-8f30-f99a3efa7b11",
+          "type": "Scope"
+        },
+        {
+          "id": "4a06efd2-f825-4e34-813e-82a57b03d1ee",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

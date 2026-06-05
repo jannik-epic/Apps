@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-21T18:59:35Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-21T18:59:44.74Z",
+  "title": "Microsoft Teams: New search experience for cloud files in the file attach picker",
+  "id": "MC1318124",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

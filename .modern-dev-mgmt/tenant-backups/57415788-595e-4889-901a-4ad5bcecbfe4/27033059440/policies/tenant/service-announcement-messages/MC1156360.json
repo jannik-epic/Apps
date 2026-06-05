@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-09-20T05:08:09Z",
+  "endDateTime": "2026-08-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-04-09T16:09:41.573Z",
+  "title": "(Updated) Microsoft 365 Copilot: Copilot Chat for Teams Chats, Channels, Calling, and Meetings",
+  "id": "MC1156360",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

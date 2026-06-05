@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-04T01:21:32Z",
+  "endDateTime": "2026-10-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-07T19:44:32.743Z",
+  "title": "(Updated) Retirement of SharePoint One-Time Passcode (SPO OTP) and transition to Microsoft Entra B2B",
+  "id": "MC1243549",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft OneDrive"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "8ef6693b-fdcb-4868-be90-878a75e4f515",
+  "displayName": "Naseema [Prj]",
+  "description": "Naseema's Team",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "NaseemaPrj",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2021-05-28T04:56:04Z"
+}

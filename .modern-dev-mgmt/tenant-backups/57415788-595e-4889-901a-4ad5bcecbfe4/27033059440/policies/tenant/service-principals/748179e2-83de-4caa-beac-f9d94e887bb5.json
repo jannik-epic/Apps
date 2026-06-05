@@ -1,0 +1,12 @@
+{
+  "id": "748179e2-83de-4caa-beac-f9d94e887bb5",
+  "appId": "3e710f56-38f6-42a3-b32a-293205a5903c",
+  "displayName": "PowerPlatform-a365adminmcp-Connector",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-01T23:20:17Z",
+  "endDateTime": "2026-08-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-02T01:39:48.68Z",
+  "title": "Notice - Availability of Microsoft (no Teams) Suites in the EEA",
+  "id": "MC1330882",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

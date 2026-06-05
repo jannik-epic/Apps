@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-17T22:51:30Z",
+  "endDateTime": "2026-06-16T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-17T22:51:50.027Z",
+  "title": "Microsoft Purview compliance portal: Endpoint DLP classification support for Azure RMS–protected Office documents",
+  "id": "MC1254558",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

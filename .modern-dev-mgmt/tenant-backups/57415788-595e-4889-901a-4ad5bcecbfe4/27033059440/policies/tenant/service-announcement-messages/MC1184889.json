@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-11T18:02:07.663Z",
+  "endDateTime": "2026-11-11T18:02:07.603Z",
+  "lastModifiedDateTime": "2025-11-11T18:02:08.383Z",
+  "title": "The November 2025 Windows security update is now available",
+  "id": "MC1184889",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

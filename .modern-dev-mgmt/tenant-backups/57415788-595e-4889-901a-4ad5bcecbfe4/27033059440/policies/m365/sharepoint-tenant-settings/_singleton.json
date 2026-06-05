@@ -1,0 +1,40 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/sharepoint/settings/$entity",
+  "allowedDomainGuidsForSyncApp": [],
+  "availableManagedPathsForSiteCreation": [
+    "/sites/",
+    "/teams/"
+  ],
+  "deletedUserPersonalSiteRetentionPeriodInDays": 30,
+  "excludedFileExtensionsForSyncApp": [
+    "*."
+  ],
+  "imageTaggingOption": "basic",
+  "isCommentingOnSitePagesEnabled": true,
+  "isFileActivityNotificationEnabled": true,
+  "isLegacyAuthProtocolsEnabled": true,
+  "isLoopEnabled": false,
+  "isMacSyncAppEnabled": true,
+  "isResharingByExternalUsersEnabled": false,
+  "isSharePointMobileNotificationEnabled": true,
+  "isSharePointNewsfeedEnabled": false,
+  "isSiteCreationEnabled": true,
+  "isSiteCreationUIEnabled": true,
+  "isSitePagesCreationEnabled": true,
+  "isSitesStorageLimitAutomatic": false,
+  "isSyncButtonHiddenOnPersonalSite": false,
+  "isUnmanagedSyncAppForTenantRestricted": false,
+  "personalSiteDefaultStorageLimitInMB": 1048576,
+  "sharingAllowedDomainList": [],
+  "sharingBlockedDomainList": [],
+  "sharingCapability": "externalUserAndGuestSharing",
+  "sharingDomainRestrictionMode": "none",
+  "siteCreationDefaultManagedPath": "/sites/",
+  "siteCreationDefaultStorageLimitInMB": 26214400,
+  "tenantDefaultTimezone": "(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna",
+  "idleSessionSignOut": {
+    "isEnabled": false,
+    "warnAfterInSeconds": 0,
+    "signOutAfterInSeconds": 0
+  }
+}

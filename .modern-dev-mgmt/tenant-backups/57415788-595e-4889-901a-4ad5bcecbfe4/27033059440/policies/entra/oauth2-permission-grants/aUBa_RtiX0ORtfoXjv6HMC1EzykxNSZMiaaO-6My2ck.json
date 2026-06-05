@@ -1,0 +1,8 @@
+{
+  "clientId": "fd5a4069-621b-435f-91b5-fa178efe8730",
+  "consentType": "AllPrincipals",
+  "id": "aUBa_RtiX0ORtfoXjv6HMC1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": "Directory.Read.All Group.ReadWrite.All Mail.Send User.Read User.Read.All User.ReadBasic.All Group.Read.All offline_access openid"
+}

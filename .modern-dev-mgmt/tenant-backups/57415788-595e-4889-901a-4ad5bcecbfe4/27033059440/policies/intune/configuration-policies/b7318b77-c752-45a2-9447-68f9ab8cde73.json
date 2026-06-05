@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2023-11-16T12:23:33.5473843Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-11-16T14:26:30.9728373Z",
+  "name": "EPICLAB_DCP__DEV_AVD-Edge-Settings",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 18,
+  "technologies": "mdm",
+  "id": "b7318b77-c752-45a2-9447-68f9ab8cde73",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('b7318b77-c752-45a2-9447-68f9ab8cde73')/assignments",
+  "assignments": [
+    {
+      "id": "b7318b77-c752-45a2-9447-68f9ab8cde73_18d5aa14-61e0-477f-b056-0b8f637702a2",
+      "source": "direct",
+      "sourceId": "b7318b77-c752-45a2-9447-68f9ab8cde73",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "18d5aa14-61e0-477f-b056-0b8f637702a2"
+      }
+    }
+  ]
+}

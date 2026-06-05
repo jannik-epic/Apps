@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-30T17:15:40Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-15T23:22:04.457Z",
+  "title": "(Updated) Copilot Cowork now available in Frontier",
+  "id": "MC1265767",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

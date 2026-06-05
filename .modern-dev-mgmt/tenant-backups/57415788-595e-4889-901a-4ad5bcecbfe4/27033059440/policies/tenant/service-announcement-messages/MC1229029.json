@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-08T19:29:00Z",
+  "endDateTime": "2027-02-07T19:29:00Z",
+  "lastModifiedDateTime": "2026-02-08T02:21:45.357Z",
+  "title": "(Updated) Resolved: Power outage affecting Microsoft Store app installs and Windows update delivery",
+  "id": "MC1229029",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

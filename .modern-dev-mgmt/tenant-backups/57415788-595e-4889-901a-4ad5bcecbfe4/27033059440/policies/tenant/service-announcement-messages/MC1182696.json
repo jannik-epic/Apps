@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-04T00:40:23Z",
+  "endDateTime": "2027-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2025-11-04T00:41:10.213Z",
+  "title": "Microsoft Defender: Application Guard for Office is being removed",
+  "id": "MC1182696",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

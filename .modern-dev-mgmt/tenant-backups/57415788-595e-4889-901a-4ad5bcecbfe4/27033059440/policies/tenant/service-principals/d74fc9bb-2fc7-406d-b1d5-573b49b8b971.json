@@ -1,0 +1,8 @@
+{
+  "id": "d74fc9bb-2fc7-406d-b1d5-573b49b8b971",
+  "appId": "c161e42e-d4df-4a3d-9b42-e7a3c31f59d4",
+  "displayName": "Microsoft Intune API",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

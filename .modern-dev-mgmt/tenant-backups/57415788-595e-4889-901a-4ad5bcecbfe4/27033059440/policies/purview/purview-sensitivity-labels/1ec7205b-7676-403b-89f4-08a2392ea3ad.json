@@ -1,0 +1,31 @@
+{
+  "id": "1ec7205b-7676-403b-89f4-08a2392ea3ad",
+  "name": "Vertraulich – (MB intern)",
+  "description": "Die Informationssammlung enthält Informationen, die nur für einen bestimmten Personenkreis innerhalb der Migros Bank gedacht sind.",
+  "color": "",
+  "sensitivity": 15,
+  "tooltip": "Die Informationssammlung enthält Informationen, die nur für einen bestimmten Personenkreis innerhalb der Migros Bank gedacht sind.",
+  "isActive": true,
+  "isAppliable": true,
+  "contentFormats": [
+    "file"
+  ],
+  "hasProtection": false,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('1ec7205b-7676-403b-89f4-08a2392ea3ad')/parent/$entity",
+  "parent": {
+    "id": "09336b0c-1a84-4a6b-a7c1-f8326fbb6ca3",
+    "name": "Vertraulich",
+    "description": "Die Informationssammlung enthält Informationen, die nur für einen bestimmten Personenkreis gedacht sind",
+    "color": "",
+    "sensitivity": 15,
+    "tooltip": "Die Informationssammlung enthält Informationen, die nur für einen bestimmten Personenkreis gedacht sind",
+    "isActive": false,
+    "isAppliable": false,
+    "contentFormats": [
+      "file"
+    ],
+    "hasProtection": false,
+    "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('1ec7205b-7676-403b-89f4-08a2392ea3ad')/parent/parent/$entity",
+    "parent": null
+  }
+}

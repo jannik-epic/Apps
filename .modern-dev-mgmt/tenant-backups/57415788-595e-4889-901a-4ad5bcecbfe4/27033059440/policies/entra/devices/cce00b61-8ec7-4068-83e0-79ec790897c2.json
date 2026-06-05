@@ -1,0 +1,13 @@
+{
+  "id": "cce00b61-8ec7-4068-83e0-79ec790897c2",
+  "displayName": "9946-5257-3757-1121-5066-2868-75",
+  "deviceId": "a16a7ebf-4498-4879-8a9f-ac2c9e400e37",
+  "accountEnabled": false,
+  "operatingSystem": "Unknown",
+  "operatingSystemVersion": "Unknown",
+  "trustType": "AzureAd",
+  "profileType": "RegisteredDevice",
+  "isCompliant": false,
+  "isManaged": false,
+  "registrationDateTime": "2021-06-11T07:23:05Z"
+}

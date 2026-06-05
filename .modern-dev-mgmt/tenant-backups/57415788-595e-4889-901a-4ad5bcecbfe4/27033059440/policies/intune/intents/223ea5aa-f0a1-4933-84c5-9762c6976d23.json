@@ -1,0 +1,14 @@
+{
+  "id": "223ea5aa-f0a1-4933-84c5-9762c6976d23",
+  "displayName": "EPIC_SEC_DEV_WIN-Bitlocker Settings",
+  "description": null,
+  "isAssigned": true,
+  "isMigratingToConfigurationPolicy": null,
+  "lastModifiedDateTime": "2023-01-30T07:03:32.616275Z",
+  "templateId": "d1174162-1dd2-4976-affc-6667049ab0ae",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('223ea5aa-f0a1-4933-84c5-9762c6976d23')/assignments",
+  "assignments": []
+}

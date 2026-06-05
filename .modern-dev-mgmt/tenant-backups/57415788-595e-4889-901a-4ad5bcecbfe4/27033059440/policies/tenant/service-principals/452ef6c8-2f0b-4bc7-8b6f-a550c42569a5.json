@@ -1,0 +1,8 @@
+{
+  "id": "452ef6c8-2f0b-4bc7-8b6f-a550c42569a5",
+  "appId": "74cb6831-0dbb-4be1-8206-fd4df301cdc2",
+  "displayName": "Azure Service Fabric Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

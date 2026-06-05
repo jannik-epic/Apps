@@ -1,0 +1,11 @@
+{
+  "id": "5656dffd-1f0d-48e2-ae89-d6d73b8df136",
+  "appId": "9b975845-388f-4429-889e-eab1ef63949c",
+  "displayName": "Agent365Observability",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

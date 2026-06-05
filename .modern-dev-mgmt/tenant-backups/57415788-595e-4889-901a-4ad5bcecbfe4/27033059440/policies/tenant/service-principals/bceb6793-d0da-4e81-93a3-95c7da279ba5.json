@@ -1,0 +1,8 @@
+{
+  "id": "bceb6793-d0da-4e81-93a3-95c7da279ba5",
+  "appId": "19fb43a3-7e56-4db0-a60d-28fd721f00a7",
+  "displayName": "StorageAccounts/securityOperators/DefenderForStorageSecurityOperator",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

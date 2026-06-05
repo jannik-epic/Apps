@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-01T22:49:22Z",
+  "endDateTime": "2026-06-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-01T22:49:28.287Z",
+  "title": "Exchange admin dashboard adds provider list export for Actionable Messages",
+  "id": "MC1297983",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

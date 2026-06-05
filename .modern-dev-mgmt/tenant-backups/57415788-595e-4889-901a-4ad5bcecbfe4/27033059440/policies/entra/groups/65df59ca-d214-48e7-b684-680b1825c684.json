@@ -1,0 +1,11 @@
+{
+  "id": "65df59ca-d214-48e7-b684-680b1825c684",
+  "displayName": "AAD_SEC_AS_PER-Teams Creator",
+  "description": "| What does this do? | Creates a manually assigned group whose members are allowed to create Microsoft 365 groups. |\n| Why should you use this? | If you want a user to be able to create Microsoft 365 groups. |\n| What is the end-user impact? | Users in this group will be able to create Microsoft 365 groups. |\n| Learn more | [Manage who can create Microsoft 365 Groups](https://docs.microsoft.com/en-us/microsoft-365/solutions/manage-creation-of-groups?view=o365-worldwide) |",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "Baseline-GroupCreators",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2023-01-30T07:03:28Z"
+}

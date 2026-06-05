@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-22T22:24:13Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-26T14:39:38.8Z",
+  "title": "Microsoft Teams: In‑meeting toggle to turn Meeting AI on or off",
+  "id": "MC1319216",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

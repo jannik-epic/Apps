@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "d2269e66-753a-468e-9847-31f7ebc153b3",
+  "appId": "d2269e66-753a-468e-9847-31f7ebc153b3",
+  "displayName": "Lina (LinkedIn Creator)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

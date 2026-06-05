@@ -1,0 +1,26 @@
+{
+  "id": "0b00bede-4072-4d22-b441-e7df02a1ef63",
+  "description": "Trigger a password submit event for custom authentication.",
+  "displayName": "Authentication Extensibility Password Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "0b00bede-4072-4d22-b441-e7df02a1ef63",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/onPasswordSubmitCustomAuthenticationExtension/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('0b00bede-4072-4d22-b441-e7df02a1ef63')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

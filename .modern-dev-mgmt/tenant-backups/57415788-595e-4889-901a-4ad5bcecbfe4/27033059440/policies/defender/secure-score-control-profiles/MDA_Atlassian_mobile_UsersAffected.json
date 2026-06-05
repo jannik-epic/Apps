@@ -1,0 +1,38 @@
+{
+  "id": "MDA_Atlassian_mobile_UsersAffected",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://support.atlassian.com/security-and-access-policies/docs/mobile-policy-mam-security-controls-and-supported-apps/",
+  "controlCategory": "Identity",
+  "title": "Atlassian mobile app security - Users that are affected by policies",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p>To set this policy:</p> <ol> <li>Go to <em>Security</em> and <em>Mobile app policy</em> in the Atlassian admin dashboard.</li> <li>Click on \"<em>Create mobile app policy</em>\" or \"<em>edit</em>\" (in case a policy already exists).</li> <li>Set the policy to apply to \"<em>All users with access to your organization's products</em>\"</li> </ol>",
+  "remediationImpact": "If your policy applies to all users - both managed and unmanaged - within your organization, including any new users that are added after the policy is created.",
+  "service": "MDA_Atlassian",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

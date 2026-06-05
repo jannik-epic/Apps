@@ -1,0 +1,38 @@
+{
+  "id": "MDA_SNOW_highSecurity",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/security/reference/high-security-plugin.html",
+  "controlCategory": "Apps",
+  "title": "Enable high security plugin",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 10,
+  "remediation": "<ol><li>Navigate to <strong>System Applications</strong><abbr>&nbsp;&gt;&nbsp;</abbr><strong>All Available Applications</strong><abbr><strong>&nbsp;</strong>&gt;&nbsp;</abbr><strong>All</strong>.</li><li>Find the &apos;com.glide.high_security&apos; plugin using the filter criteria and search bar.&nbsp;</li><li>Click Install, and then in the Activate Plugin dialog box, click Activate.&nbsp;</li></ol>",
+  "remediationImpact": "This plugin enables several system security configurations, which may impact UI and functionality as well.",
+  "service": "MDA_SNOW",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

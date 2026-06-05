@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T14:21:56Z",
+  "endDateTime": "2026-06-30T14:21:00Z",
+  "lastModifiedDateTime": "2026-04-30T14:40:44.14Z",
+  "title": "Power Pages - Configure authentication with security agent",
+  "id": "MC1296255",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Power Platform"
+  ]
+}

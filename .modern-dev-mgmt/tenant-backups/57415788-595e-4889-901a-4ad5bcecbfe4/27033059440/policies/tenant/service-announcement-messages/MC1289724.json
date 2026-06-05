@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-23T22:37:56Z",
+  "endDateTime": "2026-08-10T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-19T16:18:03.827Z",
+  "title": "(Updated) Microsoft Teams: Sharing recap access",
+  "id": "MC1289724",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

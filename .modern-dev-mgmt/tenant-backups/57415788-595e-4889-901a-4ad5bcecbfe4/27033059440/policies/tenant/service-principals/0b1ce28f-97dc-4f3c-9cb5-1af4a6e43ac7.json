@@ -1,0 +1,13 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentityBlueprintPrincipal",
+  "id": "0b1ce28f-97dc-4f3c-9cb5-1af4a6e43ac7",
+  "appId": "25664c89-cea5-4ab6-b924-a54fd8a19ae0",
+  "displayName": "Microsoft Copilot Studio agent identity blueprint",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

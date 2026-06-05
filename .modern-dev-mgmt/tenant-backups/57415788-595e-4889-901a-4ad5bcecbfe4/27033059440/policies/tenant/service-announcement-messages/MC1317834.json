@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-21T16:13:45Z",
+  "endDateTime": "2026-07-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-21T16:14:12.37Z",
+  "title": "Microsoft Purview | Data Loss Prevention: Faster policy sync (2 hours to 30 minutes)",
+  "id": "MC1317834",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

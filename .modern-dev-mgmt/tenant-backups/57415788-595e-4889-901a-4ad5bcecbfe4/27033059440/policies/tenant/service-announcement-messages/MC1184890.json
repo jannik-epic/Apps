@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-11T18:02:07.663Z",
+  "endDateTime": "2026-11-11T18:02:07.663Z",
+  "lastModifiedDateTime": "2025-11-11T18:02:10.617Z",
+  "title": "Take Action: Out-of-band update to address ESU enrollment issue on Windows 10, version 22H2 devices",
+  "id": "MC1184890",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

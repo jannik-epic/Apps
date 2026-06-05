@@ -1,0 +1,11 @@
+{
+  "id": "4324182b-b834-414d-b4a9-3161a0dba898",
+  "appId": "d00b5d58-cae5-42ad-ae0a-5a2e6f7ee6c9",
+  "displayName": "Arc Token Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

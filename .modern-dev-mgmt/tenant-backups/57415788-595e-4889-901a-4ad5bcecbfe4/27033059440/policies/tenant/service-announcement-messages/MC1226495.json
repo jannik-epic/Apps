@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-03T18:07:37Z",
+  "endDateTime": "2027-03-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-02-03T18:07:58.813Z",
+  "title": "Microsoft Teams: Teams Live Events is retiring",
+  "id": "MC1226495",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

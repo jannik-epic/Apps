@@ -1,0 +1,12 @@
+{
+  "id": "c68bfa62-ff0a-4152-973f-539128aa8fc3",
+  "appId": "c89c853c-c6cc-4c84-bfd9-fcd7e1c50793",
+  "displayName": "IPSPipelinesProd",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

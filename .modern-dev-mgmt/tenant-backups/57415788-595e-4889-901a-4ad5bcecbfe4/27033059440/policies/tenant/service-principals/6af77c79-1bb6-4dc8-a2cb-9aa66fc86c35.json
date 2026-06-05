@@ -1,0 +1,10 @@
+{
+  "id": "6af77c79-1bb6-4dc8-a2cb-9aa66fc86c35",
+  "appId": "2a2fc0d2-c9ab-4e14-9d0b-79618085e85e",
+  "displayName": "ISOPlanner",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

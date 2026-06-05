@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-10-16T22:56:30Z",
+  "endDateTime": "2026-11-15T08:00:00Z",
+  "lastModifiedDateTime": "2025-10-16T22:56:37.03Z",
+  "title": "Microsoft SharePoint and OneDrive: General availability of tenant rename with no scale limitations",
+  "id": "MC1173930",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft OneDrive"
+  ]
+}

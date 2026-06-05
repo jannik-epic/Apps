@@ -1,0 +1,8 @@
+{
+  "id": "e8ead031-4685-4b87-8436-67a7fd32af20",
+  "appId": "2565bd9d-da50-47d4-8b85-4c97f669dc36",
+  "displayName": "Domain Controller Services",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "fb1ac1a0-74a4-4618-97f6-27150e4d8bd2",
+  "name": "Intern",
+  "description": "Die Informationssammlung enthält Informationen, welche grundsätzlich für Mitarbeitende der MB zugänglich sein sollen.",
+  "color": "",
+  "sensitivity": 14,
+  "tooltip": "Die Informationssammlung enthält Informationen, welche grundsätzlich für Mitarbeitende der MB zugänglich sein sollen.",
+  "isActive": true,
+  "isAppliable": true,
+  "contentFormats": [
+    "file"
+  ],
+  "hasProtection": false,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('fb1ac1a0-74a4-4618-97f6-27150e4d8bd2')/parent/$entity",
+  "parent": null
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-20T23:11:42Z",
+  "endDateTime": "2026-12-30T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-21T20:13:20.01Z",
+  "title": "(Updated) Microsoft Teams: A refreshed in-meeting experience with simpler controls and a smarter share panel",
+  "id": "MC1317197",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

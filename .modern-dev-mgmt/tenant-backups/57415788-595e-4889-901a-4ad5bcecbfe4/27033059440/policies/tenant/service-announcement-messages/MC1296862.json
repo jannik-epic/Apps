@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T22:53:46Z",
+  "endDateTime": "2026-06-30T22:53:00Z",
+  "lastModifiedDateTime": "2026-04-30T22:54:11.157Z",
+  "title": "Dynamics 365 Project Operations – Import projects in MPP files into existing projects",
+  "id": "MC1296862",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

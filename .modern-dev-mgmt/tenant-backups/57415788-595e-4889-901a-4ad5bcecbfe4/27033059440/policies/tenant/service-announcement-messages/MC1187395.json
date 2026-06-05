@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-17T23:51:22Z",
+  "endDateTime": "2026-06-30T08:00:00Z",
+  "lastModifiedDateTime": "2026-03-03T17:32:11.203Z",
+  "title": "(Updated) New \"Prepare\" button added to the \"Up Next\" card for Microsoft 365 Copilot users",
+  "id": "MC1187395",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

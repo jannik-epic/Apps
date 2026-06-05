@@ -1,0 +1,10 @@
+{
+  "@odata.type": "#microsoft.graph.securityBaselineTemplate",
+  "id": "d1174162-1dd2-4976-affc-6667049ab0ae",
+  "displayName": "BitLocker",
+  "description": "BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers. Did you know?  You can view the encryption status of all managed devices in the Encryption report (Devices - Monitor - Encryption Report) .   This includes status of encryption on the device, encryption readiness and any prerequisites missing or errors related to encryption on devices. ",
+  "versionInfo": "2106",
+  "templateType": "securityTemplate",
+  "platformType": "windows10AndLater",
+  "publishedDateTime": "2021-06-04T00:00:00Z"
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-01-30T00:33:10Z",
+  "endDateTime": "2027-05-28T07:00:00Z",
+  "lastModifiedDateTime": "2025-06-05T14:56:32.323Z",
+  "title": "(Updated) Microsoft Defender: Changes to Defender for Cloud Apps alerts",
+  "id": "MC992217",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Defender XDR"
+  ]
+}

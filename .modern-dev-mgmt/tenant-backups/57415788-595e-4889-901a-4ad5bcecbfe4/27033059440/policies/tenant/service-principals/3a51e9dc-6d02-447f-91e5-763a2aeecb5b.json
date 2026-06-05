@@ -1,0 +1,13 @@
+{
+  "id": "3a51e9dc-6d02-447f-91e5-763a2aeecb5b",
+  "appId": "a68e1e61-ad4f-45b6-897d-0a1ea8786345",
+  "displayName": "Office365 Shell WCSS-Server Default",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

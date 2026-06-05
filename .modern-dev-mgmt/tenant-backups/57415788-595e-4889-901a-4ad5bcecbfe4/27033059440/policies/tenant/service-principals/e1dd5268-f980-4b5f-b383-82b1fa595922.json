@@ -1,0 +1,8 @@
+{
+  "id": "e1dd5268-f980-4b5f-b383-82b1fa595922",
+  "appId": "603b8c59-ba28-40ff-83d1-408eee9a93e5",
+  "displayName": "Verifiable Credentials Issuer Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

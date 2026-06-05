@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2024-10-07T23:08:46Z",
+  "endDateTime": "2026-08-03T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-07T16:14:45.083Z",
+  "title": "(Updated) Microsoft Outlook: Automatically display automapped calendars",
+  "id": "MC906502",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 for the web",
+    "Microsoft 365 apps"
+  ]
+}

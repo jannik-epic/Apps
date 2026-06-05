@@ -1,0 +1,12 @@
+{
+  "id": "fea91a5e-27c9-4c6f-ac49-eb3013333707",
+  "lastHeartbeatDateTime": "0001-01-01T00:00:00Z",
+  "partnerState": "unknown",
+  "displayName": "BlackBerry UEM Azure Conditional Access",
+  "macOsOnboarded": false,
+  "androidOnboarded": false,
+  "iosOnboarded": false,
+  "macOsEnrollmentAssignments": [],
+  "androidEnrollmentAssignments": [],
+  "iosEnrollmentAssignments": []
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-18T18:47:40Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-28T15:50:09.473Z",
+  "title": "(Updated) Microsoft Teams: New controls for quick views in the chat list",
+  "id": "MC1234574",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

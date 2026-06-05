@@ -1,0 +1,14 @@
+{
+  "startDateTime": "2026-04-16T16:23:08Z",
+  "endDateTime": "2026-08-03T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-19T19:49:54.223Z",
+  "title": "Modernized Change Management for Microsoft 365",
+  "id": "MC1282306",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

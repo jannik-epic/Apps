@@ -1,0 +1,29 @@
+{
+  "id": "microsoft-dynamically-managed-permissions-for-chat",
+  "displayName": "Dynamically managed Microsoft policy for chat resource-specific consent",
+  "description": "Includes dynamically managed permissions allowed for chat resource-specific consent.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-dynamically-managed-permissions-for-chat')/includes",
+  "includes": [
+    {
+      "id": "feb0eaee-f52c-40bf-a932-4b6b86969877",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    }
+  ],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-dynamically-managed-permissions-for-chat')/excludes",
+  "excludes": []
+}

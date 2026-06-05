@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2023-12-05T21:07:27.3141901Z",
+  "creationSource": "Migration_DI_7a79b9f5-0d05-4771-9798-555403c4a13c",
+  "description": null,
+  "lastModifiedDateTime": "2023-12-05T21:07:27.3141901Z",
+  "name": "EPIC_SEC_DEV_WIN-App and Brower Isolation Edge Enable",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 2,
+  "technologies": "mdm",
+  "id": "6014041f-9c52-4dc6-a519-50e8a72800c8",
+  "templateReference": {
+    "templateId": "9f667e40-8f3c-4f88-80d8-457f16906315_1",
+    "templateFamily": "endpointSecurityAttackSurfaceReduction",
+    "templateDisplayName": "App and Browser Isolation",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('6014041f-9c52-4dc6-a519-50e8a72800c8')/assignments",
+  "assignments": [
+    {
+      "id": "6014041f-9c52-4dc6-a519-50e8a72800c8_62cc56c0-5761-4af8-a3c4-e0e2c667a9ce",
+      "source": "direct",
+      "sourceId": "6014041f-9c52-4dc6-a519-50e8a72800c8",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "62cc56c0-5761-4af8-a3c4-e0e2c667a9ce"
+      }
+    }
+  ]
+}

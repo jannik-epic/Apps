@@ -1,0 +1,8 @@
+{
+  "clientId": "ab871e53-384a-4e1a-a466-ab9e82ad743a",
+  "consentType": "AllPrincipals",
+  "id": "Ux6Hq0o4Gk6kZquegq10Oi1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": " openid profile User.Read offline_access Sites.Read.All Sites.ReadWrite.All PeopleSettings.ReadWrite.All"
+}

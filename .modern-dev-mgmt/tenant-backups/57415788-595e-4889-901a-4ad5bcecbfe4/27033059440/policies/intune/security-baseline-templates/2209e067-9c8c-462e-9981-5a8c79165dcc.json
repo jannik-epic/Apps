@@ -1,0 +1,10 @@
+{
+  "@odata.type": "#microsoft.graph.securityBaselineTemplate",
+  "id": "2209e067-9c8c-462e-9981-5a8c79165dcc",
+  "displayName": "Microsoft Defender for Endpoint baseline",
+  "description": "Microsoft Defender for Endpoint baseline as recommended by Microsoft",
+  "versionInfo": "Version 6",
+  "templateType": "advancedThreatProtectionSecurityBaseline",
+  "platformType": "windows10AndLater",
+  "publishedDateTime": "2020-12-09T00:00:00Z"
+}

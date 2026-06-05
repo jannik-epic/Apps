@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-15T23:14:41Z",
+  "endDateTime": "2026-08-17T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-26T16:16:42.067Z",
+  "title": "(Updated) Microsoft Teams: Digital signage support for Teams panels",
+  "id": "MC1311979",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

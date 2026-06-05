@@ -1,0 +1,10 @@
+{
+  "id": "a6daf68d-f4e3-4f5a-ba11-46f9e75a71b1",
+  "appId": "fe053c5f-3692-4f14-aef2-ee34fc081cae",
+  "displayName": "Azure API Connections",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-06T21:11:31Z",
+  "endDateTime": "2026-07-05T23:59:00Z",
+  "lastModifiedDateTime": "2026-05-06T21:17:48.857Z",
+  "title": "Dynamics 365 Project Operations – Use stocked products in resource-based deployments",
+  "id": "MC1302876",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

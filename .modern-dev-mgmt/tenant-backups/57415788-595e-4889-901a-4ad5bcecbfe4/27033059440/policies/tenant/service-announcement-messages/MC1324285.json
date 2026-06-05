@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-27T22:47:13Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-27T22:47:20.37Z",
+  "title": "Microsoft Defender XDR: Password protection account action buttons",
+  "id": "MC1324285",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Defender XDR"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "1daf1f53-96fd-495f-b8e2-b8c3d6c78530",
+  "appId": "00000014-0000-0000-c000-000000000000",
+  "displayName": "Microsoft.Azure.SyncFabric",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

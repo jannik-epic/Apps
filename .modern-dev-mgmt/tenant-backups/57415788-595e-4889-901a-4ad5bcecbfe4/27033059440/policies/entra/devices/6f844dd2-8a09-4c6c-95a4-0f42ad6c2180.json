@@ -1,0 +1,13 @@
+{
+  "id": "6f844dd2-8a09-4c6c-95a4-0f42ad6c2180",
+  "displayName": "iPhone von Sanche",
+  "deviceId": "c4f2e128-1d82-4b56-b646-509d3040f7b4",
+  "accountEnabled": true,
+  "operatingSystem": "IPhone",
+  "operatingSystemVersion": "16.6",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": false,
+  "isManaged": false,
+  "registrationDateTime": "2023-08-03T07:49:10Z"
+}

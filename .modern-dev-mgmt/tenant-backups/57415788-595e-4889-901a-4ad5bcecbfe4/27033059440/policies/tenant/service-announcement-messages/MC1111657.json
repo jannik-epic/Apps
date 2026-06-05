@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-08T17:02:38.38Z",
+  "endDateTime": "2026-07-08T17:02:38.38Z",
+  "lastModifiedDateTime": "2025-07-08T17:02:41.843Z",
+  "title": "Second phase for KB5057784: Protections for CVE-2025-26647 (Kerberos Authentication) begins today",
+  "id": "MC1111657",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

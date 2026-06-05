@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-10-16T00:11:07Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-06T19:32:03.233Z",
+  "title": "(Updated) Microsoft Copilot Analytics: Data export public preview for Copilot metrics in the Copilot dashboard",
+  "id": "MC1173208",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}
