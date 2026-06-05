@@ -112,7 +112,7 @@ function Ensure-ModernDevMgmtAssignmentGroup {
 
     $body = @{
         displayName = $DisplayName
-        description = if ($Description) { $Description } else { "Modern Dev Mgmt assignment group." }
+        description = if ($Description) { $Description } else { "Vanguard assignment group." }
         mailEnabled = $false
         mailNickname = New-ModernDevMgmtMailNickname -DisplayName $DisplayName
         securityEnabled = $true
