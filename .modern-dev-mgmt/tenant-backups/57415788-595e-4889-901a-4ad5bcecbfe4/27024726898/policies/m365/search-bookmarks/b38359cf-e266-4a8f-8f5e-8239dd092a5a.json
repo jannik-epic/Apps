@@ -1,0 +1,82 @@
+{
+  "displayName": "Global Partner Services Portal",
+  "description": "Access the Global Partner Services (GPS) portal.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "b38359cf-e266-4a8f-8f5e-8239dd092a5a",
+  "webUrl": "https://gpsinsights.microsoft.com/",
+  "lastModifiedDateTime": "2023-04-13T23:39:56Z",
+  "keywords": {
+    "keywords": [
+      "gpsinsights",
+      "partners",
+      "global partners",
+      "global partner services",
+      "partner services"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Global Partner Services-Portal",
+      "webUrl": null,
+      "description": "Greifen Sie auf das GPS-Portal (Global Partner Services) zu.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Portal de Global Partner Services",
+      "webUrl": null,
+      "description": "Acceda al portal de Global Partner Services (GPS).",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Portail des services Global Partner",
+      "webUrl": null,
+      "description": "Accédez au portail de services Global Partner (GPS).",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Portale Global Partner Services",
+      "webUrl": null,
+      "description": "Accedi al portale Global Partner Services (GPS).",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "グローバル パートナー サービス ポータル",
+      "webUrl": null,
+      "description": "グローバル パートナー サービス (GPS) ポータルにアクセスします。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Portal de Serviços de Parceiros Globais",
+      "webUrl": null,
+      "description": "Acesse o portal do GPS (Serviços de Parceiros Globais).",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

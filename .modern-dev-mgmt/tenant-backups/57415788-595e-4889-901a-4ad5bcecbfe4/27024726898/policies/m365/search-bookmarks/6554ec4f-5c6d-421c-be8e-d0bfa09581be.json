@@ -1,0 +1,41 @@
+{
+  "displayName": "Business Apps | Microsoft Power Apps",
+  "description": "Increase agility across your organization by rapidly building low-code apps that modernize processes and solve tough challenges.",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "6554ec4f-5c6d-421c-be8e-d0bfa09581be",
+  "webUrl": "https://powerapps.microsoft.com",
+  "lastModifiedDateTime": "2021-10-02T09:16:52Z",
+  "keywords": {
+    "keywords": [
+      "power apps",
+      "powerapps",
+      "ms power apps",
+      "microsoft power apps",
+      "app building",
+      "build app",
+      "build apps"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "displayName": "Outlook Web Access",
+  "description": "Manage your work email, calendar, and contacts with Outlook on the web (OWA).",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "38f0e06a-a246-44c3-ad5b-84f713b182c3",
+  "webUrl": "https://outlook.office365.com/owa/",
+  "lastModifiedDateTime": "2021-12-10T11:25:12Z",
+  "keywords": {
+    "keywords": [
+      "outlook",
+      "outlook email login",
+      "microsoft outlook",
+      "outlook sign in",
+      "microsoft outlook sign in",
+      "outlook 365",
+      "outlook email",
+      "outlook web access",
+      "outlook login",
+      "my work email",
+      "work email",
+      "outlook internetzugriff",
+      "meine arbeitsmail",
+      "arbeitsmail",
+      "outlook acceso web",
+      "mi email del trabajo",
+      "email del trabajo",
+      "outlook access web",
+      "mon email professionnel",
+      "email professionnel",
+      "modalità web per outlook",
+      "la mia email di lavoro",
+      "email di lavoro",
+      "outlook webアクセス",
+      "マイワークeメール",
+      "仕事の電子メール",
+      "outlook acesso online",
+      "meu email de trabalho",
+      "email de trabalho",
+      "outlook office com mail inbox",
+      "https outlook office com mail inbox"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Outlook Web-Zugang",
+      "webUrl": null,
+      "description": "Verwalten Sie Ihre geschäftlichen E-Mails, Kalender und Kontakte mit Outlook im Web (OWA).",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Acceso web Outlook",
+      "webUrl": null,
+      "description": "Administre su email, calendario y contactos de trabajo con Outlook en la web (OWA).",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "\"Gérez votre messagerie professionnelle, votre agenda et vos contacts avec Outlook sur le Web (OWA).\"",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Modalità web per Outlook",
+      "webUrl": null,
+      "description": "Gestisci la tua mail professionale, il tuo calendario e i contatti con Outlook sul web (OWA).",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "Outlook Webアクセス",
+      "webUrl": null,
+      "description": "Web (OWA)上のOutlookで、仕事の電子メール、カレンダー、連絡先を管理しましょう。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Outlook acesso online",
+      "webUrl": null,
+      "description": "Gerencie seu email, calendário e contatos do trabalho com Outlook na Internet (OWA)",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

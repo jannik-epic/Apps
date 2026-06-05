@@ -1,0 +1,12 @@
+[
+  {
+    "area": "groups",
+    "reason": "Group cb3ca96c-753a-4c72-b37b-62e99ca86aa4 does not exist or is no longer resolvable.",
+    "followUp": "Review stale assignment targets in the source tenant."
+  },
+  {
+    "area": "groups",
+    "reason": "Group 8595cdfd-3af9-4223-ac7a-25090417e9d5 does not exist or is no longer resolvable.",
+    "followUp": "Review stale assignment targets in the source tenant."
+  }
+]

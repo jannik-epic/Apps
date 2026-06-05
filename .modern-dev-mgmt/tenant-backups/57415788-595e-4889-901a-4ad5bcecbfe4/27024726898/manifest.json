@@ -1,0 +1,1184 @@
+{
+  "schemaVersion": 1,
+  "source": "modern-dev-mgmt",
+  "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "backupId": "27024726898",
+  "workflowRunId": "27024726898",
+  "repository": "jannik-epic/Apps",
+  "scope": "full",
+  "includedTypes": [
+    "mobile-app-categories",
+    "ios-managed-app-protections",
+    "android-managed-app-protections",
+    "windows-managed-app-protections",
+    "default-managed-app-protections",
+    "ios-lob-app-provisioning-configurations",
+    "wdac-supplemental-policies",
+    "enterprise-code-signing-certificates",
+    "vpp-tokens",
+    "resource-access-profiles",
+    "derived-credentials",
+    "ndes-connectors",
+    "device-management-settings",
+    "role-assignments",
+    "operation-approval-policies",
+    "android-device-owner-enrollment-profiles",
+    "dep-onboarding-settings",
+    "windows-autopilot-settings",
+    "apple-push-notification-certificate",
+    "android-managed-store-account-settings",
+    "cloud-pc-user-settings",
+    "cloud-pc-gallery-images",
+    "feature-rollout-policies",
+    "default-app-management-policy",
+    "authentication-flows-policy",
+    "app-proxy-connector-groups",
+    "multi-tenant-organization",
+    "deleted-items-groups",
+    "deleted-items-applications",
+    "entra-custom-role-definitions",
+    "pim-role-eligibility-schedule-requests",
+    "access-review-history-definitions",
+    "lifecycle-workflows",
+    "lifecycle-workflow-task-extensions",
+    "terms-of-use-agreements",
+    "identity-providers",
+    "delegated-admin-relationships",
+    "bitlocker-recovery-keys",
+    "laps-device-local-credentials",
+    "search-bookmarks",
+    "search-acronyms",
+    "search-qnas",
+    "booking-businesses",
+    "teams-team-templates",
+    "m365-backup-sharepoint-protection-policies",
+    "m365-backup-onedrive-protection-policies",
+    "m365-backup-exchange-protection-policies",
+    "universal-print-settings",
+    "universal-print-shares",
+    "network-access-forwarding-profiles",
+    "network-access-filtering-policies"
+  ],
+  "label": "post-consent-v2",
+  "includeAssignments": true,
+  "includeGroups": true,
+  "createdAt": "2026-06-05T15:45:07.8849975Z",
+  "graphBase": "https://graph.microsoft.com/v1.0",
+  "graphBetaBase": "https://graph.microsoft.com/beta",
+  "counts": {
+    "conditional-access-policies": 0,
+    "named-locations": 0,
+    "authentication-strengths": 0,
+    "authentication-contexts": 0,
+    "authorization-policy": 0,
+    "device-registration-policy": 0,
+    "entra-organization": 0,
+    "entra-domains": 0,
+    "entra-users": 0,
+    "entra-groups": 0,
+    "entra-devices": 0,
+    "entra-administrative-units": 0,
+    "entra-applications": 0,
+    "entra-oauth2-permission-grants": 0,
+    "app-management-policies": 0,
+    "entra-directory-roles": 0,
+    "entra-directory-role-definitions": 0,
+    "entra-directory-role-assignments": 0,
+    "authentication-methods-policy": 0,
+    "defender-secure-score-control-profiles": 0,
+    "defender-secure-scores": 0,
+    "configuration-policies": 0,
+    "device-configurations": 0,
+    "group-policy-configurations": 0,
+    "device-management-intents": 0,
+    "compliance-policies": 0,
+    "mobile-apps": 0,
+    "managed-app-policies": 0,
+    "targeted-managed-app-configurations": 0,
+    "policy-sets": 0,
+    "device-management-scripts": 0,
+    "device-health-scripts": 0,
+    "device-compliance-scripts": 0,
+    "enrollment-configurations": 0,
+    "autopilot-deployment-profiles": 0,
+    "assignment-filters": 0,
+    "feature-update-profiles": 0,
+    "driver-update-profiles": 0,
+    "device-categories": 0,
+    "role-definitions": 0,
+    "terms-and-conditions": 0,
+    "notification-message-templates": 0,
+    "intune-branding-profiles": 0,
+    "cloud-pc-provisioning-policies": 0,
+    "cloud-pc-on-premises-connections": 0,
+    "cloud-pc-device-images": 0,
+    "service-principals": 0,
+    "identity-security-defaults": 0,
+    "admin-consent-request-policy": 0,
+    "permission-grant-policies": 0,
+    "cross-tenant-access-policy-default": 0,
+    "cross-tenant-access-policy-partners": 0,
+    "external-identities-policy": 0,
+    "b2b-management-policy": 0,
+    "claims-mapping-policies": 0,
+    "home-realm-discovery-policies": 0,
+    "token-lifetime-policies": 0,
+    "activity-based-timeout-policies": 0,
+    "custom-authentication-extensions": 0,
+    "entitlement-access-packages": 0,
+    "entitlement-catalogs": 0,
+    "entitlement-assignment-policies": 0,
+    "entitlement-connected-organizations": 0,
+    "entitlement-management-settings": 0,
+    "access-review-definitions": 0,
+    "pim-role-management-policies": 0,
+    "pim-role-management-policy-assignments": 0,
+    "pim-role-eligibility-schedules": 0,
+    "custom-security-attribute-definitions": 0,
+    "attribute-sets": 0,
+    "group-lifecycle-policies": 0,
+    "security-alerts": 0,
+    "security-incidents": 0,
+    "security-ti-indicators": 0,
+    "security-detection-rules": 0,
+    "security-ti-articles": 0,
+    "security-intel-profiles": 0,
+    "intune-role-scope-tags": 0,
+    "purview-sensitivity-labels": 0,
+    "purview-label-policy-settings": 0,
+    "purview-ediscovery-cases": 0,
+    "purview-fileplan-authorities": 0,
+    "purview-fileplan-categories": 0,
+    "purview-fileplan-citations": 0,
+    "purview-fileplan-departments": 0,
+    "purview-fileplan-references": 0,
+    "windows-quality-update-profiles": 0,
+    "windows-quality-update-policies": 0,
+    "reusable-policy-settings": 0,
+    "device-shell-scripts": 0,
+    "mobile-app-configurations": 0,
+    "embedded-sim-activation-code-pools": 0,
+    "microsoft-tunnel-configurations": 0,
+    "microsoft-tunnel-sites": 0,
+    "mobile-threat-defense-connectors": 0,
+    "compliance-management-partners": 0,
+    "device-management-partners": 0,
+    "exchange-connectors": 0,
+    "data-sharing-consents": 0,
+    "macos-software-update-account-summaries": 0,
+    "windows-information-protection-policies": 0,
+    "mdm-windows-information-protection-policies": 0,
+    "group-policy-uploaded-definition-files": 0,
+    "security-baseline-templates": 0,
+    "windows-autopilot-device-identities": 0,
+    "windows-malware-information": 0,
+    "teamwork-organization-settings": 0,
+    "teams-app-catalog-apps": 0,
+    "sharepoint-tenant-settings": 0,
+    "m365-apps-installation-options": 0,
+    "group-directory-settings": 0,
+    "group-setting-templates": 0,
+    "people-profile-card-properties": 0,
+    "people-pronouns-settings": 0,
+    "people-item-insights-settings": 0,
+    "edge-internet-explorer-mode-site-lists": 0,
+    "service-announcement-messages": 0,
+    "service-announcement-health": 0,
+    "subscribed-skus": 0,
+    "mobile-app-categories": 9,
+    "ios-managed-app-protections": 4,
+    "android-managed-app-protections": 4,
+    "windows-managed-app-protections": 0,
+    "default-managed-app-protections": 0,
+    "ios-lob-app-provisioning-configurations": 0,
+    "wdac-supplemental-policies": 0,
+    "enterprise-code-signing-certificates": 0,
+    "vpp-tokens": 1,
+    "resource-access-profiles": 0,
+    "derived-credentials": 0,
+    "ndes-connectors": 1,
+    "device-management-settings": 1,
+    "role-assignments": 0,
+    "operation-approval-policies": 0,
+    "android-device-owner-enrollment-profiles": 1,
+    "dep-onboarding-settings": 1,
+    "windows-autopilot-settings": 1,
+    "apple-push-notification-certificate": 1,
+    "android-managed-store-account-settings": 1,
+    "cloud-pc-user-settings": 0,
+    "cloud-pc-gallery-images": 0,
+    "feature-rollout-policies": 0,
+    "default-app-management-policy": 1,
+    "authentication-flows-policy": 1,
+    "app-proxy-connector-groups": 1,
+    "multi-tenant-organization": 0,
+    "deleted-items-groups": 2,
+    "deleted-items-applications": 13,
+    "entra-custom-role-definitions": 1,
+    "pim-role-eligibility-schedule-requests": 0,
+    "access-review-history-definitions": 0,
+    "lifecycle-workflows": 0,
+    "lifecycle-workflow-task-extensions": 0,
+    "terms-of-use-agreements": 0,
+    "identity-providers": 3,
+    "delegated-admin-relationships": 0,
+    "bitlocker-recovery-keys": 11,
+    "laps-device-local-credentials": 0,
+    "search-bookmarks": 61,
+    "search-acronyms": 0,
+    "search-qnas": 0,
+    "booking-businesses": 0,
+    "teams-team-templates": 15,
+    "m365-backup-sharepoint-protection-policies": 0,
+    "m365-backup-onedrive-protection-policies": 0,
+    "m365-backup-exchange-protection-policies": 0,
+    "universal-print-settings": 0,
+    "universal-print-shares": 0,
+    "network-access-forwarding-profiles": 0,
+    "network-access-filtering-policies": 0,
+    "assignments": 8,
+    "groups": 3
+  },
+  "warningCount": 13,
+  "limitationCount": 2,
+  "policies": [
+    {
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/0720a99e-562b-4a77-83f0-9a7523fcf13e.json",
+      "backupPolicyId": "0720a99e-562b-4a77-83f0-9a7523fcf13e",
+      "displayName": "Other Apps",
+      "restorable": true
+    },
+    {
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/f1fc9fe2-728d-4867-9a72-a61e18f8c606.json",
+      "backupPolicyId": "f1fc9fe2-728d-4867-9a72-a61e18f8c606",
+      "displayName": "Books & Reference",
+      "restorable": true
+    },
+    {
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/046e0b16-76ce-4b49-bf1b-1cc5bd94fb47.json",
+      "backupPolicyId": "046e0b16-76ce-4b49-bf1b-1cc5bd94fb47",
+      "displayName": "Data Management",
+      "restorable": true
+    },
+    {
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/ed899483-3019-425e-a470-28e901b9790e.json",
+      "backupPolicyId": "ed899483-3019-425e-a470-28e901b9790e",
+      "displayName": "Productivity",
+      "restorable": true
+    },
+    {
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/2b73ae71-12c8-49be-b462-3dae769ccd9d.json",
+      "backupPolicyId": "2b73ae71-12c8-49be-b462-3dae769ccd9d",
+      "displayName": "Business",
+      "restorable": true
+    },
+    {
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/79bc98d4-7ddf-4841-9bc1-5c84a26d7ee8.json",
+      "backupPolicyId": "79bc98d4-7ddf-4841-9bc1-5c84a26d7ee8",
+      "displayName": "Development & Design",
+      "restorable": true
+    },
+    {
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/5dcd7a90-0306-4f09-a75d-6b97a243f04e.json",
+      "backupPolicyId": "5dcd7a90-0306-4f09-a75d-6b97a243f04e",
+      "displayName": "Photos & Media",
+      "restorable": true
+    },
+    {
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/f79135dc-8e41-48c1-9a59-ab9a7259c38e.json",
+      "backupPolicyId": "f79135dc-8e41-48c1-9a59-ab9a7259c38e",
+      "displayName": "Collaboration & Social",
+      "restorable": true
+    },
+    {
+      "policyType": "MobileAppCategory",
+      "path": "policies/intune/mobile-app-categories/981deed8-6857-4e78-a50e-c3f61d312737.json",
+      "backupPolicyId": "981deed8-6857-4e78-a50e-c3f61d312737",
+      "displayName": "Computer Management",
+      "restorable": true
+    },
+    {
+      "policyType": "IosManagedAppProtection",
+      "path": "policies/intune/ios-managed-app-protections/T_ec431371-e058-44a9-a41e-17a914adc6de.json",
+      "backupPolicyId": "T_ec431371-e058-44a9-a41e-17a914adc6de",
+      "displayName": "p-emm_iOS_AppProtection",
+      "restorable": true
+    },
+    {
+      "policyType": "IosManagedAppProtection",
+      "path": "policies/intune/ios-managed-app-protections/T_895a9b9a-695d-4e00-9e7d-656ffde32b1d.json",
+      "backupPolicyId": "T_895a9b9a-695d-4e00-9e7d-656ffde32b1d",
+      "displayName": "EPIC_EMM_DEV_IOS-BYOD App Protection",
+      "restorable": true
+    },
+    {
+      "policyType": "IosManagedAppProtection",
+      "path": "policies/intune/ios-managed-app-protections/T_dbd17206-e893-4aa9-ac32-5e55a1989994.json",
+      "backupPolicyId": "T_dbd17206-e893-4aa9-ac32-5e55a1989994",
+      "displayName": "i-emm_iOS_AppProtection",
+      "restorable": true
+    },
+    {
+      "policyType": "IosManagedAppProtection",
+      "path": "policies/intune/ios-managed-app-protections/T_801d8658-da41-4ff0-a3e5-c40ad03fedb1.json",
+      "backupPolicyId": "T_801d8658-da41-4ff0-a3e5-c40ad03fedb1",
+      "displayName": "EPIC_EMM_DEV_IOS-Company Owned Devices App Protection",
+      "restorable": true
+    },
+    {
+      "policyType": "AndroidManagedAppProtection",
+      "path": "policies/intune/android-managed-app-protections/T_11c82225-6bf7-4aab-a159-eb391d72fbc4.json",
+      "backupPolicyId": "T_11c82225-6bf7-4aab-a159-eb391d72fbc4",
+      "displayName": "p-emm_AndroidEnt_AppPortection",
+      "restorable": true
+    },
+    {
+      "policyType": "AndroidManagedAppProtection",
+      "path": "policies/intune/android-managed-app-protections/T_039db199-66ce-49a9-9430-e6f0323d3730.json",
+      "backupPolicyId": "T_039db199-66ce-49a9-9430-e6f0323d3730",
+      "displayName": "i-emm_AndroidEnt_AppPortection",
+      "restorable": true
+    },
+    {
+      "policyType": "AndroidManagedAppProtection",
+      "path": "policies/intune/android-managed-app-protections/T_cbf58d07-e9da-473f-8b14-e165a5b648b5.json",
+      "backupPolicyId": "T_cbf58d07-e9da-473f-8b14-e165a5b648b5",
+      "displayName": "EPIC_EMM_DEV_AOS-Company Owned Devices App Protection",
+      "restorable": true
+    },
+    {
+      "policyType": "AndroidManagedAppProtection",
+      "path": "policies/intune/android-managed-app-protections/T_e3c7ecae-ce88-4aee-9ed4-356ff668c490.json",
+      "backupPolicyId": "T_e3c7ecae-ce88-4aee-9ed4-356ff668c490",
+      "displayName": "EPIC_EMM_DEV_AOS-BYOD App Protection",
+      "restorable": true
+    },
+    {
+      "policyType": "VppToken",
+      "path": "policies/intune/vpp-tokens/27f353cf-a01c-49aa-aca9-44b3cbc59826.json",
+      "backupPolicyId": "27f353cf-a01c-49aa-aca9-44b3cbc59826",
+      "displayName": "Business Manager",
+      "restorable": false
+    },
+    {
+      "policyType": "NdesConnector",
+      "path": "policies/intune/ndes-connectors/7e452369-0d15-47bd-b32f-f0757d44832b.json",
+      "backupPolicyId": "7e452369-0d15-47bd-b32f-f0757d44832b",
+      "displayName": "PFX_connector_12/16/2024_3:59 PM",
+      "restorable": false
+    },
+    {
+      "policyType": "DeviceManagementSettings",
+      "path": "policies/intune/device-management-settings/_singleton.json",
+      "backupPolicyId": "DeviceManagementSettings-singleton",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "AndroidDeviceOwnerEnrollmentProfile",
+      "path": "policies/intune/android-device-owner-enrollment-profiles/6cdc7c9b-1113-4208-af07-079133da6934.json",
+      "backupPolicyId": "6cdc7c9b-1113-4208-af07-079133da6934",
+      "displayName": "Default enrollment profile for personally-owned work profile devices",
+      "restorable": true
+    },
+    {
+      "policyType": "DepOnboardingSetting",
+      "path": "policies/intune/dep-onboarding-settings/0e275483-88b9-4113-8a02-c24276e4bf1b.json",
+      "backupPolicyId": "0e275483-88b9-4113-8a02-c24276e4bf1b",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "WindowsAutopilotSettings",
+      "path": "policies/intune/windows-autopilot-settings/_singleton.json",
+      "backupPolicyId": "WindowsAutopilotSettings-singleton",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "ApplePushNotificationCertificate",
+      "path": "policies/intune/apple-push-notification-certificate/_singleton.json",
+      "backupPolicyId": "ApplePushNotificationCertificate-singleton",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "AndroidManagedStoreAccountEnterpriseSettings",
+      "path": "policies/intune/android-managed-store-account-settings/_singleton.json",
+      "backupPolicyId": "AndroidManagedStoreAccountEnterpriseSettings-singleton",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TenantAppManagementPolicy",
+      "path": "policies/entra/default-app-management-policy/_singleton.json",
+      "backupPolicyId": "TenantAppManagementPolicy-singleton",
+      "displayName": "Default app management tenant policy",
+      "restorable": true
+    },
+    {
+      "policyType": "AuthenticationFlowsPolicy",
+      "path": "policies/entra/authentication-flows-policy/_singleton.json",
+      "backupPolicyId": "AuthenticationFlowsPolicy-singleton",
+      "displayName": "Authentication flows policy",
+      "restorable": true
+    },
+    {
+      "policyType": "ConnectorGroup",
+      "path": "policies/entra/app-proxy-connector-groups/bafa3c2f-257f-4f2f-9f83-af87caddb3a8.json",
+      "backupPolicyId": "bafa3c2f-257f-4f2f-9f83-af87caddb3a8",
+      "displayName": "Default",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedGroup",
+      "path": "policies/entra/deleted-items-groups/9b881c38-8ed0-454a-94e6-f6846ac86dcf.json",
+      "backupPolicyId": "9b881c38-8ed0-454a-94e6-f6846ac86dcf",
+      "displayName": "A1 Anhänger-GB10-TRH",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedGroup",
+      "path": "policies/entra/deleted-items-groups/e7a5322b-3073-477e-82b6-f890e2766910.json",
+      "backupPolicyId": "e7a5322b-3073-477e-82b6-f890e2766910",
+      "displayName": "Kundendossier-Burgdorf-TRH",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedApplication",
+      "path": "policies/entra/deleted-items-applications/00ee8bea-8730-4b6d-95be-eb69c2eaf58b.json",
+      "backupPolicyId": "00ee8bea-8730-4b6d-95be-eb69c2eaf58b",
+      "displayName": "DailyDocs Temporary SPO Unlock 20260526182433",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedApplication",
+      "path": "policies/entra/deleted-items-applications/1db78c29-51a9-47ba-8758-31ef138cdd3e.json",
+      "backupPolicyId": "1db78c29-51a9-47ba-8758-31ef138cdd3e",
+      "displayName": "DailyDocs Temporary SPO Filter Scan 20260526183557",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedApplication",
+      "path": "policies/entra/deleted-items-applications/2c3bac2f-9152-4c89-8377-844d7b6ecf0e.json",
+      "backupPolicyId": "2c3bac2f-9152-4c89-8377-844d7b6ecf0e",
+      "displayName": "DailyDocs Temporary SPO Unlock 20260526182206",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedApplication",
+      "path": "policies/entra/deleted-items-applications/2e581353-a940-43e1-9363-ba2957fa0bf1.json",
+      "backupPolicyId": "2e581353-a940-43e1-9363-ba2957fa0bf1",
+      "displayName": "DailyDocs Temporary SPO NewPersonalSite 20260526184119",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedApplication",
+      "path": "policies/entra/deleted-items-applications/41072676-4339-4c64-9aff-da4725f97772.json",
+      "backupPolicyId": "41072676-4339-4c64-9aff-da4725f97772",
+      "displayName": "DailyDocs Temporary SPO PersonalSite 20260526183934",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedApplication",
+      "path": "policies/entra/deleted-items-applications/4a205ec5-be48-4f76-ac6b-eb0720387a6d.json",
+      "backupPolicyId": "4a205ec5-be48-4f76-ac6b-eb0720387a6d",
+      "displayName": "Daily Docs",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedApplication",
+      "path": "policies/entra/deleted-items-applications/501d1096-4511-4d78-8bdc-2216ca8f8e86.json",
+      "backupPolicyId": "501d1096-4511-4d78-8bdc-2216ca8f8e86",
+      "displayName": "DailyDocs Temporary SPO LockCycle 20260526184317",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedApplication",
+      "path": "policies/entra/deleted-items-applications/529051cb-cc5f-4bac-9f4f-ab2d5a08709f.json",
+      "backupPolicyId": "529051cb-cc5f-4bac-9f4f-ab2d5a08709f",
+      "displayName": "DailyDocs Temporary SPO Unlock 20260526182354",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedApplication",
+      "path": "policies/entra/deleted-items-applications/6dab6dad-055a-489b-b649-b555ac116598.json",
+      "backupPolicyId": "6dab6dad-055a-489b-b649-b555ac116598",
+      "displayName": "DailyDocs Temporary SPO Site Scan 20260526183213",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedApplication",
+      "path": "policies/entra/deleted-items-applications/a9b96ffb-469d-4168-8d1a-a4c675869f8c.json",
+      "backupPolicyId": "a9b96ffb-469d-4168-8d1a-a4c675869f8c",
+      "displayName": "DailyDocs Temporary SPO Detail 20260526183647",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedApplication",
+      "path": "policies/entra/deleted-items-applications/cf074134-873f-4afc-bee0-859a7d29d5d4.json",
+      "backupPolicyId": "cf074134-873f-4afc-bee0-859a7d29d5d4",
+      "displayName": "DailyDocs Temporary SPO Filter Scan 20260526183412",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedApplication",
+      "path": "policies/entra/deleted-items-applications/dff7a3fa-6129-40f9-a343-85bd7029fa65.json",
+      "backupPolicyId": "dff7a3fa-6129-40f9-a343-85bd7029fa65",
+      "displayName": "DailyDocs Temporary SPO Unlock Cert 20260526182629",
+      "restorable": false
+    },
+    {
+      "policyType": "DeletedApplication",
+      "path": "policies/entra/deleted-items-applications/f6fd2cc9-decf-4410-b7c0-c14831f13e06.json",
+      "backupPolicyId": "f6fd2cc9-decf-4410-b7c0-c14831f13e06",
+      "displayName": "DailyDocs Temporary SPO PersonalSite 20260526183748",
+      "restorable": false
+    },
+    {
+      "policyType": "EntraCustomRoleDefinition",
+      "path": "policies/entra/custom-role-definitions/a41e182c-e6f6-4b24-8af3-48c13ee65496.json",
+      "backupPolicyId": "a41e182c-e6f6-4b24-8af3-48c13ee65496",
+      "displayName": "TEST FFR",
+      "restorable": true
+    },
+    {
+      "policyType": "IdentityProviderBase",
+      "path": "policies/entra/identity-providers/AADSignup-OAUTH.json",
+      "backupPolicyId": "AADSignup-OAUTH",
+      "displayName": "Azure Active Directory Sign up",
+      "restorable": false
+    },
+    {
+      "policyType": "IdentityProviderBase",
+      "path": "policies/entra/identity-providers/EmailOtpSignup-OAUTH.json",
+      "backupPolicyId": "EmailOtpSignup-OAUTH",
+      "displayName": "Email One Time Passcode",
+      "restorable": false
+    },
+    {
+      "policyType": "IdentityProviderBase",
+      "path": "policies/entra/identity-providers/MSASignup-OAUTH.json",
+      "backupPolicyId": "MSASignup-OAUTH",
+      "displayName": "Microsoft Account",
+      "restorable": false
+    },
+    {
+      "policyType": "BitlockerRecoveryKey",
+      "path": "policies/entra/bitlocker-recovery-keys/27329a0d-4c4b-43d7-8084-6ddac523ed9a.json",
+      "backupPolicyId": "27329a0d-4c4b-43d7-8084-6ddac523ed9a",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "BitlockerRecoveryKey",
+      "path": "policies/entra/bitlocker-recovery-keys/8c58b21b-927a-428e-9eaf-b3a980789179.json",
+      "backupPolicyId": "8c58b21b-927a-428e-9eaf-b3a980789179",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "BitlockerRecoveryKey",
+      "path": "policies/entra/bitlocker-recovery-keys/7a19de6e-2901-40d7-a91d-aea2b8801fce.json",
+      "backupPolicyId": "7a19de6e-2901-40d7-a91d-aea2b8801fce",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "BitlockerRecoveryKey",
+      "path": "policies/entra/bitlocker-recovery-keys/2c19bcce-f16c-44e6-a6e8-154f3a76b7f4.json",
+      "backupPolicyId": "2c19bcce-f16c-44e6-a6e8-154f3a76b7f4",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "BitlockerRecoveryKey",
+      "path": "policies/entra/bitlocker-recovery-keys/4ddd0c84-6e96-411f-a0af-e7b9c04fd481.json",
+      "backupPolicyId": "4ddd0c84-6e96-411f-a0af-e7b9c04fd481",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "BitlockerRecoveryKey",
+      "path": "policies/entra/bitlocker-recovery-keys/a6abf7b3-803d-4748-ab89-904d9a47c594.json",
+      "backupPolicyId": "a6abf7b3-803d-4748-ab89-904d9a47c594",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "BitlockerRecoveryKey",
+      "path": "policies/entra/bitlocker-recovery-keys/0b7037d8-ec79-4dc9-b1d5-0c6d6d000f9a.json",
+      "backupPolicyId": "0b7037d8-ec79-4dc9-b1d5-0c6d6d000f9a",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "BitlockerRecoveryKey",
+      "path": "policies/entra/bitlocker-recovery-keys/587453f9-acff-462c-ad63-6b1da9c060db.json",
+      "backupPolicyId": "587453f9-acff-462c-ad63-6b1da9c060db",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "BitlockerRecoveryKey",
+      "path": "policies/entra/bitlocker-recovery-keys/0e5bf592-b849-4462-84f1-0fe1ce5d5473.json",
+      "backupPolicyId": "0e5bf592-b849-4462-84f1-0fe1ce5d5473",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "BitlockerRecoveryKey",
+      "path": "policies/entra/bitlocker-recovery-keys/54852b80-00b3-4885-b207-af9305033656.json",
+      "backupPolicyId": "54852b80-00b3-4885-b207-af9305033656",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "BitlockerRecoveryKey",
+      "path": "policies/entra/bitlocker-recovery-keys/6a2c7c22-fd1e-467f-9fe7-c3a31cc52ac8.json",
+      "backupPolicyId": "6a2c7c22-fd1e-467f-9fe7-c3a31cc52ac8",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/98311954-110c-4a02-a901-ea9cc0b3e24d.json",
+      "backupPolicyId": "98311954-110c-4a02-a901-ea9cc0b3e24d",
+      "displayName": "Record your Screen and Camera with Microsoft Stream",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/01a7b241-dfbe-4477-83dd-7b502092a5e4.json",
+      "backupPolicyId": "01a7b241-dfbe-4477-83dd-7b502092a5e4",
+      "displayName": "Microsoft To Do",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/2ae73fd4-e3ef-4471-b648-c5768e15ffab.json",
+      "backupPolicyId": "2ae73fd4-e3ef-4471-b648-c5768e15ffab",
+      "displayName": "Microsoft Forms",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/2c6fbe2e-91d8-436f-926d-6d03e2e2f3a5.json",
+      "backupPolicyId": "2c6fbe2e-91d8-436f-926d-6d03e2e2f3a5",
+      "displayName": "Microsoft Stream",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/451f5519-9e65-4692-b166-6b87c9837f92.json",
+      "backupPolicyId": "451f5519-9e65-4692-b166-6b87c9837f92",
+      "displayName": "MSX Insights",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/46376872-1e6f-404d-8fde-415c515a050b.json",
+      "backupPolicyId": "46376872-1e6f-404d-8fde-415c515a050b",
+      "displayName": "Azure Portal",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/6b3ef1f9-f368-48b6-94d0-53506bea0a81.json",
+      "backupPolicyId": "6b3ef1f9-f368-48b6-94d0-53506bea0a81",
+      "displayName": "My Sign Ins",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/7ef25a38-477a-4820-9a2b-da6494d3bc9c.json",
+      "backupPolicyId": "7ef25a38-477a-4820-9a2b-da6494d3bc9c",
+      "displayName": "Microsoft Whiteboard",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/82acfa67-ae7e-4662-88c2-1f2cee955feb.json",
+      "backupPolicyId": "82acfa67-ae7e-4662-88c2-1f2cee955feb",
+      "displayName": "Dynamics Business Central",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/a3ad5bb4-0753-455c-a745-15463a6d97e7.json",
+      "backupPolicyId": "a3ad5bb4-0753-455c-a745-15463a6d97e7",
+      "displayName": "Microsoft Partners",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/a93ce3a8-687f-4983-86a1-80c5e47d3e9e.json",
+      "backupPolicyId": "a93ce3a8-687f-4983-86a1-80c5e47d3e9e",
+      "displayName": "Microsoft Services Hub",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/b38359cf-e266-4a8f-8f5e-8239dd092a5a.json",
+      "backupPolicyId": "b38359cf-e266-4a8f-8f5e-8239dd092a5a",
+      "displayName": "Global Partner Services Portal",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/bf25d741-60b6-4a4a-957a-9a3d1f9685f7.json",
+      "backupPolicyId": "bf25d741-60b6-4a4a-957a-9a3d1f9685f7",
+      "displayName": "Microsoft Intune",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/c08506c5-6e4f-4aed-aa39-a286764f8114.json",
+      "backupPolicyId": "c08506c5-6e4f-4aed-aa39-a286764f8114",
+      "displayName": "My Account",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/d46b4112-0f40-4279-9e94-25cdcbb21739.json",
+      "backupPolicyId": "d46b4112-0f40-4279-9e94-25cdcbb21739",
+      "displayName": "Microsoft Project",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/e9e07b63-4d0e-4544-8e7f-75043c02474f.json",
+      "backupPolicyId": "e9e07b63-4d0e-4544-8e7f-75043c02474f",
+      "displayName": "Microsoft Community",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/f0018cfa-8e3f-479e-909b-391132a51f80.json",
+      "backupPolicyId": "f0018cfa-8e3f-479e-909b-391132a51f80",
+      "displayName": "Microsoft Defender",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/00562109-f52a-4bac-95c7-fe34e07cf79e.json",
+      "backupPolicyId": "00562109-f52a-4bac-95c7-fe34e07cf79e",
+      "displayName": "IT Services",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/0ca590e4-19d2-43fc-8695-0edbfbaddd55.json",
+      "backupPolicyId": "0ca590e4-19d2-43fc-8695-0edbfbaddd55",
+      "displayName": "Office Online",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/38f0e06a-a246-44c3-ad5b-84f713b182c3.json",
+      "backupPolicyId": "38f0e06a-a246-44c3-ad5b-84f713b182c3",
+      "displayName": "Outlook Web Access",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/3cca3caa-f3f3-4684-b92b-31a2cec1563c.json",
+      "backupPolicyId": "3cca3caa-f3f3-4684-b92b-31a2cec1563c",
+      "displayName": "PowerPoint",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/4bedac3d-26b8-448e-85df-b4f64c2aba58.json",
+      "backupPolicyId": "4bedac3d-26b8-448e-85df-b4f64c2aba58",
+      "displayName": "Word",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/76f5ee38-bf2f-4fcb-b388-9bc6fa4eab5e.json",
+      "backupPolicyId": "76f5ee38-bf2f-4fcb-b388-9bc6fa4eab5e",
+      "displayName": "Microsoft Edge",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/94405634-a169-4cf0-a89c-07278fd18eee.json",
+      "backupPolicyId": "94405634-a169-4cf0-a89c-07278fd18eee",
+      "displayName": "Microsoft Search Admin portal",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/a97a6417-2700-41ff-bc33-717330568665.json",
+      "backupPolicyId": "a97a6417-2700-41ff-bc33-717330568665",
+      "displayName": "Excel",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/b256147f-6cc0-42bf-98da-dc5d251a0345.json",
+      "backupPolicyId": "b256147f-6cc0-42bf-98da-dc5d251a0345",
+      "displayName": "Office 365 Admin Center",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/c9f1589e-2994-49bb-b7ff-d6a5b5544119.json",
+      "backupPolicyId": "c9f1589e-2994-49bb-b7ff-d6a5b5544119",
+      "displayName": "Flow",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/e506832f-924f-42a6-aa80-384b3e664e99.json",
+      "backupPolicyId": "e506832f-924f-42a6-aa80-384b3e664e99",
+      "displayName": "Office Install Site",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/6554ec4f-5c6d-421c-be8e-d0bfa09581be.json",
+      "backupPolicyId": "6554ec4f-5c6d-421c-be8e-d0bfa09581be",
+      "displayName": "Business Apps | Microsoft Power Apps",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/8991af93-c758-46cd-8bc3-f922e276deb6.json",
+      "backupPolicyId": "8991af93-c758-46cd-8bc3-f922e276deb6",
+      "displayName": "Azure Boards",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/24ba3cc1-8450-4831-a465-d1acd52e09a5.json",
+      "backupPolicyId": "24ba3cc1-8450-4831-a465-d1acd52e09a5",
+      "displayName": "Windows Help",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/26364c77-d301-43bf-a6df-a484ce722855.json",
+      "backupPolicyId": "26364c77-d301-43bf-a6df-a484ce722855",
+      "displayName": "OneDrive for Business",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/771340eb-db8f-4df0-8cb6-c51fecc47686.json",
+      "backupPolicyId": "771340eb-db8f-4df0-8cb6-c51fecc47686",
+      "displayName": "Microsoft Teams",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/14dcf673-9439-48af-82dd-fd5eb3db47b9.json",
+      "backupPolicyId": "14dcf673-9439-48af-82dd-fd5eb3db47b9",
+      "displayName": "Intranet",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/1bac7225-16ea-47d6-b5f7-faf546b8bb6e.json",
+      "backupPolicyId": "1bac7225-16ea-47d6-b5f7-faf546b8bb6e",
+      "displayName": "SharePoint",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/1f42862f-10fe-4072-b70d-87ffb82e0cb5.json",
+      "backupPolicyId": "1f42862f-10fe-4072-b70d-87ffb82e0cb5",
+      "displayName": "Social media",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/32b0bffd-c936-43fc-8b90-2b9ec58bcadd.json",
+      "backupPolicyId": "32b0bffd-c936-43fc-8b90-2b9ec58bcadd",
+      "displayName": "COVID-19 Resources",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/34eafbda-ed3b-4116-8e0e-2ff2b4e8f2d4.json",
+      "backupPolicyId": "34eafbda-ed3b-4116-8e0e-2ff2b4e8f2d4",
+      "displayName": "Expense",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/3d357720-be09-43a7-8855-f824a4487e97.json",
+      "backupPolicyId": "3d357720-be09-43a7-8855-f824a4487e97",
+      "displayName": "Facilities",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/43e39432-54d3-490e-83ab-0150a5704a21.json",
+      "backupPolicyId": "43e39432-54d3-490e-83ab-0150a5704a21",
+      "displayName": "Vacation",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/468b7b27-1957-4ea2-9289-06270115f019.json",
+      "backupPolicyId": "468b7b27-1957-4ea2-9289-06270115f019",
+      "displayName": "Careers",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/550a0724-97ff-4955-ba33-3f901a031990.json",
+      "backupPolicyId": "550a0724-97ff-4955-ba33-3f901a031990",
+      "displayName": "Transportation",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/559b19d9-68df-4e1f-82c0-cdd74753c540.json",
+      "backupPolicyId": "559b19d9-68df-4e1f-82c0-cdd74753c540",
+      "displayName": "Power BI",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/6a29fbe4-cdb9-47b7-be32-489e37b3e4de.json",
+      "backupPolicyId": "6a29fbe4-cdb9-47b7-be32-489e37b3e4de",
+      "displayName": "Adoption Kit",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/6eef8a1b-0582-4123-b5b1-c332e2be9550.json",
+      "backupPolicyId": "6eef8a1b-0582-4123-b5b1-c332e2be9550",
+      "displayName": "Philanthropy",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/741821ae-689c-4a01-a651-cc011cba7da6.json",
+      "backupPolicyId": "741821ae-689c-4a01-a651-cc011cba7da6",
+      "displayName": "Office 365 Help",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/8485b2b7-0d71-445c-aefc-a68f96d3b9a4.json",
+      "backupPolicyId": "8485b2b7-0d71-445c-aefc-a68f96d3b9a4",
+      "displayName": "Microsoft Search in Bing explore",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/898326aa-0e64-47b6-992d-9d53f70b900f.json",
+      "backupPolicyId": "898326aa-0e64-47b6-992d-9d53f70b900f",
+      "displayName": "Company Holidays",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/8cbf4964-a4b3-4b01-861b-9e123bc3981f.json",
+      "backupPolicyId": "8cbf4964-a4b3-4b01-861b-9e123bc3981f",
+      "displayName": "Microsoft Search in Bing Help",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/8d18ac98-155a-410e-8c29-fb57816694b9.json",
+      "backupPolicyId": "8d18ac98-155a-410e-8c29-fb57816694b9",
+      "displayName": "Dining",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/8fa712c2-dc5a-48c7-970a-b8f739ceb72e.json",
+      "backupPolicyId": "8fa712c2-dc5a-48c7-970a-b8f739ceb72e",
+      "displayName": "Travel",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/97cc39ce-5f73-44cb-9856-afdd1295681d.json",
+      "backupPolicyId": "97cc39ce-5f73-44cb-9856-afdd1295681d",
+      "displayName": "Purchase Order",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/a015d870-bbd1-4df1-86ce-3f64c1bed746.json",
+      "backupPolicyId": "a015d870-bbd1-4df1-86ce-3f64c1bed746",
+      "displayName": "Yammer",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/b5e1a274-a3b5-4b12-972b-a357696e7cba.json",
+      "backupPolicyId": "b5e1a274-a3b5-4b12-972b-a357696e7cba",
+      "displayName": "Dynamics 365",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/b75cf87a-8c39-4303-aae3-1c889443f390.json",
+      "backupPolicyId": "b75cf87a-8c39-4303-aae3-1c889443f390",
+      "displayName": "Microsoft Search",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/bef9a078-34e2-4944-a534-8dc814c28774.json",
+      "backupPolicyId": "bef9a078-34e2-4944-a534-8dc814c28774",
+      "displayName": "Self-Service Password Management",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/c002d465-4b72-478a-b004-3893030325e1.json",
+      "backupPolicyId": "c002d465-4b72-478a-b004-3893030325e1",
+      "displayName": "HR",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/cfbf902a-09f3-4938-a54a-2d55cd66586f.json",
+      "backupPolicyId": "cfbf902a-09f3-4938-a54a-2d55cd66586f",
+      "displayName": "Benefits",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/d21ccfd9-bbdb-482d-b840-716f76d97bad.json",
+      "backupPolicyId": "d21ccfd9-bbdb-482d-b840-716f76d97bad",
+      "displayName": "Paycheck",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/e762e0e1-2158-4c92-819e-dd82990bc207.json",
+      "backupPolicyId": "e762e0e1-2158-4c92-819e-dd82990bc207",
+      "displayName": "OneNote",
+      "restorable": true
+    },
+    {
+      "policyType": "SearchBookmark",
+      "path": "policies/m365/search-bookmarks/fb823493-7537-40aa-925d-6778bd77a394.json",
+      "backupPolicyId": "fb823493-7537-40aa-925d-6778bd77a394",
+      "displayName": "Company Discounts",
+      "restorable": true
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/com.microsoft.teams.template.ManageAProject.json",
+      "backupPolicyId": "com.microsoft.teams.template.ManageAProject",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/com.microsoft.teams.template.ManageAnEvent.json",
+      "backupPolicyId": "com.microsoft.teams.template.ManageAnEvent",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/com.microsoft.teams.template.OnboardEmployees.json",
+      "backupPolicyId": "com.microsoft.teams.template.OnboardEmployees",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/com.microsoft.teams.template.AdoptOffice365.json",
+      "backupPolicyId": "com.microsoft.teams.template.AdoptOffice365",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/com.microsoft.teams.template.OrganizeHelpDesk.json",
+      "backupPolicyId": "com.microsoft.teams.template.OrganizeHelpDesk",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/com.microsoft.teams.template.CoordinateIncidentResponse.json",
+      "backupPolicyId": "com.microsoft.teams.template.CoordinateIncidentResponse",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent.json",
+      "backupPolicyId": "com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/retailStore.json",
+      "backupPolicyId": "retailStore",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/com.microsoft.teams.template.CollaborateWithinABankBranch.json",
+      "backupPolicyId": "com.microsoft.teams.template.CollaborateWithinABankBranch",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/healthcareWard.json",
+      "backupPolicyId": "healthcareWard",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/healthcareHospital.json",
+      "backupPolicyId": "healthcareHospital",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/com.microsoft.teams.template.QualitySafety.json",
+      "backupPolicyId": "com.microsoft.teams.template.QualitySafety",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/retailManagerCollaboration.json",
+      "backupPolicyId": "retailManagerCollaboration",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/com.microsoft.teams.template.ManageVolunteers.json",
+      "backupPolicyId": "com.microsoft.teams.template.ManageVolunteers",
+      "displayName": null,
+      "restorable": false
+    },
+    {
+      "policyType": "TeamTemplate",
+      "path": "policies/m365/teams-team-templates/com.microsoft.teams.template.Frontline.json",
+      "backupPolicyId": "com.microsoft.teams.template.Frontline",
+      "displayName": null,
+      "restorable": false
+    }
+  ]
+}

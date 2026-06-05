@@ -1,0 +1,124 @@
+{
+  "displayName": "Company Holidays",
+  "description": "Find the list of our company holidays.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "898326aa-0e64-47b6-992d-9d53f70b900f",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "us paid holidays",
+      "holiday list",
+      "company holidays",
+      "india holidays",
+      "company holiday",
+      "holiday calendar",
+      "global holidays",
+      "paid days off",
+      "observed holidays",
+      "días festivos pagados en usa",
+      "lista de días festivos",
+      "días festivos de la compañía",
+      "días festivos en india",
+      "día festivo de la compañía",
+      "calendario de días festivos",
+      "días festivos internacionales",
+      "días festivos de pago",
+      "vacances payées aux etats-unis",
+      "liste de vacances",
+      "vacances d'entreprise",
+      "fêtes enen inde",
+      "calendrier de vacances",
+      "vacances globales",
+      "congés payés",
+      "vacanze pagate in us",
+      "lista vacanza",
+      "feste aziendali",
+      "vacanze in india",
+      "vacanze aziendali",
+      "calendario delle vacanze",
+      "giorni festivi",
+      "giorni di ferie pagati",
+      "米国の有給休暇",
+      "休日リスト",
+      "インドの休日",
+      "休業日",
+      "休日カレンダー",
+      "グローバルの休日",
+      "有給休暇",
+      "us feriados pagos",
+      "lista de feriados",
+      "feriados da companhia",
+      "feriados india",
+      "feriado da companhia",
+      "calendário de feriados",
+      "feriados mundiais",
+      "recessos pagos"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Betriebsferien",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Días festivos de la compañía",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Vacances de l'entreprise",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Vacanze in azienda",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "休業日",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Feriados da Companhia",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

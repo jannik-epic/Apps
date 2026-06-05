@@ -1,0 +1,42 @@
+{
+  "displayName": "Microsoft Search",
+  "description": "Save time when you're looking for work info—including files, people, sites, and more—with Microsoft Search.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "b75cf87a-8c39-4303-aae3-1c889443f390",
+  "webUrl": "https://www.bing.com/work/search?q=my+profile",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "microsoft search",
+      "microsoft search in bing",
+      "workplace search",
+      "work search",
+      "enterprise search",
+      "search work",
+      "internal search",
+      "company search"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

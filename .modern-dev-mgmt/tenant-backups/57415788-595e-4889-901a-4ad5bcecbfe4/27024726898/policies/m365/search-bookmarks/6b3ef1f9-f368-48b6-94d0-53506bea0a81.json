@@ -1,0 +1,78 @@
+{
+  "displayName": "My Sign Ins",
+  "description": "Check your sign ins and recent activity.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "6b3ef1f9-f368-48b6-94d0-53506bea0a81",
+  "webUrl": "https://mysignins.microsoft.com/",
+  "lastModifiedDateTime": "2023-04-13T23:39:56Z",
+  "keywords": {
+    "keywords": [
+      "mfa setup"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Meine Anmeldungen",
+      "webUrl": null,
+      "description": "Überprüfen Sie Ihre Anmeldungen und jüngsten Aktivitäten.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Mis inicios de sesión",
+      "webUrl": null,
+      "description": "Compruebe los inicios de sesión y la actividad reciente.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Mes connexions",
+      "webUrl": null,
+      "description": "Vérifiez vos connexions et vos activités récentes.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "I miei accessi",
+      "webUrl": null,
+      "description": "Permette di verificare l'attività e gli accessi recenti.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "マイ サインイン",
+      "webUrl": null,
+      "description": "サインインと最近のアクティビティを確認します。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Minhas Entradas",
+      "webUrl": null,
+      "description": "Verifique suas entradas e atividades recentes.",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

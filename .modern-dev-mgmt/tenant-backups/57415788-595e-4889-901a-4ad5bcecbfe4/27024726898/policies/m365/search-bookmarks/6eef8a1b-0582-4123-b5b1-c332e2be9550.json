@@ -1,0 +1,99 @@
+{
+  "displayName": "Philanthropy",
+  "description": null,
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "6eef8a1b-0582-4123-b5b1-c332e2be9550",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "company philanthropy program",
+      "social impact",
+      "make a donations",
+      "volunteer opportunities",
+      "programa de filantropía de la compañía",
+      "impacto social",
+      "hacer donaciones",
+      "oportunidades de voluntariado",
+      "programme philanthropique d'entreprise",
+      "impact social",
+      "faire un don",
+      "opportunités de bénévolat",
+      "programma di filantropia aziendale",
+      "impatto sociale",
+      "fai donazioni",
+      "opportunità di volontariato",
+      "会社の社会貢献プログラム",
+      "社会的影響",
+      "寄付を行う",
+      "ボランティアの機会",
+      "programa de filantropia da companhia",
+      "fazer doações"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Philantropie",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Filantropía",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Philanthropie",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Filantropia",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "社会貢献",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Filantropia",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "displayName": "Microsoft Search Admin portal",
+  "description": "Manage your organization's Microsoft Search results and permissions. Only authorized administrators can access this site.",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "94405634-a169-4cf0-a89c-07278fd18eee",
+  "webUrl": "https://admin.microsoft.com/",
+  "lastModifiedDateTime": "2021-12-10T11:25:12Z",
+  "keywords": {
+    "keywords": [
+      "bing for business admin portal",
+      "bing for business admin",
+      "bing for business admin login",
+      "b4b admin portal",
+      "b4b admin login",
+      "b4b admin log in",
+      "b4b admin",
+      "bingforbusiness admin portal",
+      "bingforbusiness admin",
+      "bingforbusiness admin login",
+      "bing at work admin portal",
+      "bing at work admin",
+      "bing for work admin",
+      "microsoft search in bing admin portal",
+      "microsoft search in bing admin",
+      "microsoft search in bing admin login",
+      "msb admin portal",
+      "msb admin login",
+      "msb admin",
+      "microsoftsearchinbing admin portal",
+      "microsoftsearchinbing admin",
+      "microsoftsearchinbing admin login",
+      "bing für die arbeit admin portal",
+      "bing für die arbeit admin",
+      "bing para el trabajo admin portal",
+      "bing para el trabajo admin",
+      "bing professionnel admin portal",
+      "bing professionnel admin",
+      "bing per il lavoro admin portal",
+      "bing per il lavoro admin",
+      "仕事用bing admin portal",
+      "仕事用bing admin",
+      "bing for work admin portal",
+      "bing para trabalho admin",
+      "microsoft search admin",
+      "microsoft search admin center",
+      "microsoft search admin portal",
+      "admin microsoft com login",
+      "microsoft admin center"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Verwalten Sie Ihre Bing for business Ergebnisse und Berechtigungen. Nur autorisierte Administratoren können auf diese Website zugreifen.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Gestione los resultados y permisos de Bing for business. Solo los administradores autorizados pueden acceder a este sitio.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "\"Gérez votre organisation des résultats et les autorisations de Bing for business.  Seuls les administrateurs autorisés peuvent accéder à ce site.\"",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Gestisci i risultati e le autorizzazioni aziendali della tua organizzazione Bing for business. Solo gli amministratori autorizzati possono accedere a questo sito.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "組織におけるBing for businessの結果と利用制限を管理ましょう。承認された管理者だけが、このサイトにアクセスできます。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Gerencie os resultados e as permissões de Bing for business para sua empresa. Só administradores autorizados podem acessar este site",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

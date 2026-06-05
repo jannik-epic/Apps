@@ -1,0 +1,91 @@
+{
+  "displayName": "OneNote",
+  "description": "OneNote Online is a browser-based viewing and editing app for your online notebooks. Take notes, and work with others online.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "e762e0e1-2158-4c92-819e-dd82990bc207",
+  "webUrl": "https://www.onenote.com/notebooks?auth=2",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "onenote online",
+      "onenote login",
+      "my work onenote",
+      "my notebooks",
+      "meine arbeit onenote",
+      "meine notizbücher",
+      "mi trabajo onenote",
+      "mis libros de anotación",
+      "mon onenote pour le travail",
+      "mes bloc-notes",
+      "il mio onenote per lavoro",
+      "il mio blocco appunti",
+      "meu trabalho onenote",
+      "minhas anotações"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "OneNote Online ist eine browserbasierte Anzeige- und Bearbeitungsanwendung für Ihre Online-Notizen. Erstellen Sie sich Notizen und arbeiten Sie online mit anderen zusammen.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "OneNote Online es una aplicación de visualización y edición para sus libros de anotaciones en línea. Tome notas y trabaje con otras personas en línea.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "OneNote Online est une application de visualisation et de modification basée sur un navigateur pour vos carnets de notes en ligne. Prenez des notes et travaillez en ligne avec d'autres utilisateurs.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "OneNote Online è un'applicazione di visualizzazione e modifica basata su browser per i tuoi appunti online. Prendi appunti e collabora con gli altri online.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "OneNote オンラインは、ブラウザベースの参照と編集のオンラインノートアプリです。ノートを取り、他の人とオンラインで仕事をしましょう。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "OneNote Online é um aplicativo de visualização e edição baseado em navegador para seus blocos de nota on-line. Tome notas e trabalhe com outros online",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

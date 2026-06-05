@@ -1,0 +1,83 @@
+{
+  "displayName": "PowerPoint",
+  "description": "Collaborate for free with an online version of Microsoft PowerPoint. Save presentations in OneDrive. Share them with others and work together at the same time.",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "3cca3caa-f3f3-4684-b92b-31a2cec1563c",
+  "webUrl": "https://office.live.com/start/PowerPoint.aspx?auth=2",
+  "lastModifiedDateTime": "2021-12-10T11:25:12Z",
+  "keywords": {
+    "keywords": [
+      "powerpoint online",
+      "powerpoint login",
+      "microsoft powerpoint",
+      "power point free",
+      "online powerpoint",
+      "microsoft powerpoint online"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Arbeiten Sie kostenlos mit den Onlineversionen von Microsoft Powerpoint. Speichern Sie Präsentationen in One Drive. Teilen Sie diese mit anderen und arbeiten Sie in derselben Zeit zusammen daran.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Colabore de forma gratuita con una versión en línea de Microsoft PowerPoint. Guarde las presentaciones en OneDrive. Compártalas con otras personas y trabajen juntos al mismo tiempo.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Collaborez gratuitement avec une version en ligne de Microsoft PowerPoint, sauvegardez des présentations dans OneDrive. Partagez-les avec d'autres et travaillez ensemble en même temps.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Collabora gratuitamente con una versione online di Microsoft PowerPoint, salva le presentazioni in OneDrive, condividili con gli altri e collabora insieme allo stesso tempo.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Microsoft PowerPointのオンラインバージョンで、無料で共同作業をしましょう。OneDriveにプレゼンテーションを保存しましょう。みんなで共有し、一緒に作業をしましょう。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Colabore gratuitamente com uma versão online do Microsoft PowerPoint. Guarde planilhas no OneDrive. Compartilhe-as com outros e trabalhem juntos ao mesmo tempo",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

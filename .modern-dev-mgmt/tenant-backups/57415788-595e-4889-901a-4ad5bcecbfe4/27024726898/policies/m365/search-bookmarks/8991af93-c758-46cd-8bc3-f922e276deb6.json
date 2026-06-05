@@ -1,0 +1,37 @@
+{
+  "displayName": "Azure Boards",
+  "description": "Increase agility across your organization by rapidly building low-code apps that modernize processes and solve tough challenges.",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "8991af93-c758-46cd-8bc3-f922e276deb6",
+  "webUrl": "https://azure.microsoft.com/services/devops/boards",
+  "lastModifiedDateTime": "2021-10-02T09:16:52Z",
+  "keywords": {
+    "keywords": [
+      "azure boards",
+      "azureboards",
+      "ms boards"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

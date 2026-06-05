@@ -1,0 +1,93 @@
+{
+  "displayName": "Windows Help",
+  "description": "Get help, support, and tutorials for Windows products?Windows 10, Windows 8.1, Windows 7, and Windows 10 Mobile.",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "24ba3cc1-8450-4831-a465-d1acd52e09a5",
+  "webUrl": "https://support.microsoft.com/products/windows",
+  "lastModifiedDateTime": "2021-05-16T11:26:08Z",
+  "keywords": {
+    "keywords": [
+      "windows support",
+      "windows help",
+      "windows 10 support",
+      "windows 10 help",
+      "windows hilfe",
+      "windows 10 hilfe",
+      "windows ayuda",
+      "windows 10 ayuda",
+      "windows aide",
+      "windows 10 aide",
+      "guida di windows",
+      "guida di windows 10",
+      "windows ヘルプ",
+      "windows 10 ヘルプ",
+      "windows ajuda",
+      "windows 10 ajuda"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Windows Hilfe",
+      "webUrl": null,
+      "description": "Erhalten Sie Hilfe, Unterstützung und Anleitungen für Windows-Produkte - Windows 10, Windows 8.1, Windows 7 und Windows 10 Mobile.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Ayuda Windows",
+      "webUrl": null,
+      "description": "Obtenga ayuda, soporte y tutoriales para productos de Windows—Windows 10, Windows 8.1, Windows 7 y Windows 10 Mobile.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Windows aide",
+      "webUrl": null,
+      "description": "Obtenez de l'aide, du support et des didacticiels pour les produits Windows: Windows 10, Windows 8.1, Windows 7 et Windows 10 Mobile.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Guida di Windows",
+      "webUrl": null,
+      "description": "Ottieni aiuto, supporto e guide per i prodotti Windows - Windows 10, Windows 8.1, Windows 7 e Windows 10 Mobile.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "Windows ヘルプ",
+      "webUrl": null,
+      "description": "WindowsプロダクトーWindows 10, Windows 8.1, Windows 7, Windows 10 Mobileのヘルプ、サポート、解説を入手しましょう。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Windows ajuda",
+      "webUrl": null,
+      "description": "Obter ajuda, suporte e tutoriais para produtos Windows - Windows 10, Windows 8.1, Windows 7 e Windows 10 Mobile",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

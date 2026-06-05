@@ -1,0 +1,45 @@
+{
+  "id": "e7a5322b-3073-477e-82b6-f890e2766910",
+  "deletedDateTime": "2026-05-28T13:58:07Z",
+  "classification": null,
+  "createdDateTime": "2026-02-27T09:05:40Z",
+  "creationOptions": [],
+  "description": "Kundendossier-Burgdorf-TRH",
+  "displayName": "Kundendossier-Burgdorf-TRH",
+  "expirationDateTime": null,
+  "groupTypes": [
+    "Unified"
+  ],
+  "infoCatalogs": [],
+  "isAssignableToRole": false,
+  "mail": "Kundendossier-Burgdorf-TRH@epicfusionlabs.com",
+  "mailEnabled": true,
+  "mailNickname": "Kundendossier-Burgdorf-TRH",
+  "membershipRule": null,
+  "membershipRuleProcessingState": null,
+  "onPremisesDomainName": null,
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesNetBiosName": null,
+  "onPremisesSamAccountName": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": null,
+  "preferredLanguage": null,
+  "proxyAddresses": [
+    "SPO:SPO_506558ae-2421-4599-a0b0-14744654003a@SPO_57415788-595e-4889-901a-4ad5bcecbfe4",
+    "smtp:Kundendossier-Burgdorf-TRH@epicfusionlabs.onmicrosoft.com",
+    "SMTP:Kundendossier-Burgdorf-TRH@epicfusionlabs.com"
+  ],
+  "renewedDateTime": "2026-02-27T09:05:40Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [
+    "Team"
+  ],
+  "securityEnabled": false,
+  "securityIdentifier": "S-1-12-1-3886363179-1199452275-2432218754-275347170",
+  "theme": null,
+  "uniqueName": null,
+  "visibility": "Private",
+  "onPremisesProvisioningErrors": [],
+  "serviceProvisioningErrors": []
+}

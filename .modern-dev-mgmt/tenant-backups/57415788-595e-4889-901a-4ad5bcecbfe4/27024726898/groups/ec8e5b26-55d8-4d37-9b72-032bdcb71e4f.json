@@ -1,0 +1,50 @@
+{
+  "originalGroupId": "ec8e5b26-55d8-4d37-9b72-032bdcb71e4f",
+  "name": "AAD_SEC_DD_INTUNE-Android Devices Company Owned",
+  "description": null,
+  "mailNickname": "8cd4211d-0",
+  "rawJson": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "id": "ec8e5b26-55d8-4d37-9b72-032bdcb71e4f",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2022-08-22T11:46:52Z",
+    "creationOptions": [],
+    "description": null,
+    "displayName": "AAD_SEC_DD_INTUNE-Android Devices Company Owned",
+    "expirationDateTime": null,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "infoCatalogs": [],
+    "isAssignableToRole": null,
+    "mail": null,
+    "mailEnabled": false,
+    "mailNickname": "8cd4211d-0",
+    "membershipRule": "(device.deviceOSType -contains \"Android\") and (device.deviceOwnership -ne \"Personal\")",
+    "membershipRuleProcessingState": "On",
+    "onPremisesDomainName": null,
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": null,
+    "preferredLanguage": null,
+    "proxyAddresses": [],
+    "renewedDateTime": "2022-08-22T11:46:52Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": true,
+    "securityIdentifier": "S-1-12-1-3968752422-1295472088-721646235-1327413212",
+    "theme": null,
+    "uniqueName": null,
+    "visibility": null,
+    "onPremisesProvisioningErrors": [],
+    "serviceProvisioningErrors": []
+  },
+  "memberIds": [
+    "f83859de-78fe-4531-973e-f6a692a16e05",
+    "7aafe0a3-aece-45a4-8148-029b0a01477c"
+  ]
+}

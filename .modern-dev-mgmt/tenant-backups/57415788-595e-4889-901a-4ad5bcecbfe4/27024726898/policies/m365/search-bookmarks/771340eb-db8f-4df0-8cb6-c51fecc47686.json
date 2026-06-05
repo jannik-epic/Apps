@@ -1,0 +1,94 @@
+{
+  "displayName": "Microsoft Teams",
+  "description": "Microsoft Teams is the chat-based workspace in Office 365 that integrates all the people, content, and tools your team needs to be more engaged and effective.",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "771340eb-db8f-4df0-8cb6-c51fecc47686",
+  "webUrl": "https://teams.microsoft.com/",
+  "lastModifiedDateTime": "2021-05-16T11:26:08Z",
+  "keywords": {
+    "keywords": [
+      "teams",
+      "microsoft teams",
+      "ms teams",
+      "teams microsoft",
+      "microsoft team",
+      "ms team",
+      "microsoft teams online",
+      "microsoft teams login",
+      "teams online",
+      "teams login",
+      "my teams",
+      "meine teams",
+      "mis teams",
+      "mes teams",
+      "il mio teams",
+      "マイ teams",
+      "meus teams"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Microsoft Teams ist der chatbasierte Arbeitsbereich in Office 365, der alle Personen, Inhalte und Werkzeuge integriert, die Ihr Team für mehr Einsatz und Effektivität benötigt.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Microsoft Teams es el espacio de trabajo basado en chat en Office 365 que integra a todas las personas, el contenido y las herramientas que su equipo necesita para ser más comprometido y efectivo.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Microsoft Teams est l'espace de travail basé sur le chat dans Office 365 qui intègre toutes les personnes, le contenu et les outils dont votre équipe a besoin pour être plus engagé et efficace.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Microsoft Teams è lo spazio di lavoro basato su chat in Office 365 che integra tutte le persone, i contenuti e gli strumenti necessari al tuo team per essere più impegnati ed efficaci.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Microsoft Teams は、人, コンテンツのすべてを統合するOffice 365にあるチャットベースのワークスペース、そしてより魅力的で効果的であることを必要とするチームのツールです。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Microsoft Teams é o espaço de trabalho baseado em bate-papo no Office 365 que integra todas as pessoas, conteúdos e ferramentas que sua equipe precisa para ser mais comprometida e efetiva",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}
