@@ -1,0 +1,48 @@
+{
+  "id": "microsoft-all-application-permissions-verified",
+  "displayName": "All application permissions, for client apps from verified publishers or this organization",
+  "description": "Includes all application permissions (app roles), for all APIs, for client applications from verified publishers or which were registered in this organization.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-verified')/includes",
+  "includes": [
+    {
+      "id": "c6b9e210-8bf5-446f-81bf-618f5a9cad09",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": true
+    },
+    {
+      "id": "13eda53f-4c56-4c8e-878c-6df6f1d331ee",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "57415788-595e-4889-901a-4ad5bcecbfe4"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    }
+  ],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-verified')/excludes",
+  "excludes": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "50f8f483-e006-40a1-89e7-e10160cb2da1",
+  "appId": "3900ac91-6e46-4c7a-9a3a-da271e14f1f0",
+  "displayName": "AzureArcOnboarding",
+  "signInAudience": "AzureADandPersonalMicrosoftAccount",
+  "createdDateTime": "2023-12-08T08:25:47Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

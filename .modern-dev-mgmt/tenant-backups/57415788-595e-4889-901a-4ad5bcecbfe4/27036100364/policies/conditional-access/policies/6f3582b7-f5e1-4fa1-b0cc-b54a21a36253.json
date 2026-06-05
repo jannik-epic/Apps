@@ -1,0 +1,58 @@
+{
+  "id": "6f3582b7-f5e1-4fa1-b0cc-b54a21a36253",
+  "templateId": null,
+  "displayName": "CA003: Require MFA for Azure management",
+  "createdDateTime": "2023-03-13T23:43:03.6055174Z",
+  "modifiedDateTime": "2026-02-16T08:53:32.8322458Z",
+  "state": "enabled",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "797f4846-ba00-4fd7-ba43-dac1f8f63013"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "38691173-0809-4f1e-ab10-75d05bae4225"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "mfa"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('6f3582b7-f5e1-4fa1-b0cc-b54a21a36253')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

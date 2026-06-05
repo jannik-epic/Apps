@@ -1,0 +1,14 @@
+{
+  "id": "49d8d37a-ecce-4b16-a0de-a0ed060bac49",
+  "displayName": "EPICLABS_SEC_DEV_WIN-Application Control",
+  "description": null,
+  "isAssigned": true,
+  "isMigratingToConfigurationPolicy": null,
+  "lastModifiedDateTime": "2022-08-22T12:43:41.2194628Z",
+  "templateId": "63be6324-e3c9-4c97-948a-e7f4b96f0f20",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('49d8d37a-ecce-4b16-a0de-a0ed060bac49')/assignments",
+  "assignments": []
+}

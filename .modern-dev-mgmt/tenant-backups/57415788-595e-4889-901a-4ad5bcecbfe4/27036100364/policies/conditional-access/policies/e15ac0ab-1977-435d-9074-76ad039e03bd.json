@@ -1,0 +1,77 @@
+{
+  "id": "e15ac0ab-1977-435d-9074-76ad039e03bd",
+  "templateId": null,
+  "displayName": "CLOUD APPS: Office 365 | LOCATION: Any | DEVICE: Windows and OSX | CLIENT: Client Apps | Block Not Compliant Devices",
+  "createdDateTime": "2022-05-04T16:16:57.2835608Z",
+  "modifiedDateTime": null,
+  "state": "disabled",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "exchangeActiveSync",
+      "mobileAppsAndDesktopClients",
+      "other"
+    ],
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "Office365"
+      ],
+      "excludeApplications": [
+        "d1ddf0e4-d672-4dae-b554-9d5bdfd93547"
+      ],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "a8008412-71ae-49ae-935e-2c3c47485a20"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    },
+    "platforms": {
+      "includePlatforms": [
+        "windows",
+        "macOS"
+      ],
+      "excludePlatforms": []
+    },
+    "devices": {
+      "includeDeviceStates": [],
+      "excludeDeviceStates": [],
+      "includeDevices": [],
+      "excludeDevices": [],
+      "deviceFilter": {
+        "mode": "exclude",
+        "rule": "device.isCompliant -eq True -or device.trustType -eq \"ServerAD\""
+      }
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('e15ac0ab-1977-435d-9074-76ad039e03bd')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

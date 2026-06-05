@@ -1,0 +1,14 @@
+{
+  "authenticationType": "Managed",
+  "availabilityStatus": null,
+  "id": "epicfusionlabs.mail.onmicrosoft.com",
+  "isAdminManaged": true,
+  "isDefault": false,
+  "isInitial": false,
+  "isRoot": true,
+  "isVerified": true,
+  "supportedServices": [],
+  "passwordValidityPeriodInDays": 2147483647,
+  "passwordNotificationWindowInDays": 14,
+  "state": null
+}

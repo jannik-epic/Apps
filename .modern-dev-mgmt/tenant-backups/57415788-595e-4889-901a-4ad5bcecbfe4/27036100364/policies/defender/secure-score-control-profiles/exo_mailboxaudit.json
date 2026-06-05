@@ -1,0 +1,38 @@
+{
+  "id": "exo_mailboxaudit",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/microsoft-365/compliance/audit-mailboxes?view=o365-worldwide",
+  "controlCategory": "Apps",
+  "title": "Ensure mailbox auditing for all users is Enabled",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p>To enable mailbox auditing for all users:</p> <ol> <li>Connect to Exchange Online using <em>Connect-ExchangeOnline</em>.</li> <li>Run the following PowerShell command:<br /><em>Set-OrganizationConfig -AuditDisabled $false</em></li> <li>For each unconfigured MailBox of type Resource Mailboxes, Public Folder Mailboxes or DiscoverySearch Mailbox run:<br /><em>Get-Mailbox -Filter \"Name -eq 'MailBox name'\" | Set-Mailbox -AuditEnabled $true</em></li> </ol>",
+  "remediationImpact": "Unknown",
+  "service": "EXO",
+  "threats": [
+    "Data Exfiltration",
+    "Account breach"
+  ],
+  "tier": "Core",
+  "userImpact": null,
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

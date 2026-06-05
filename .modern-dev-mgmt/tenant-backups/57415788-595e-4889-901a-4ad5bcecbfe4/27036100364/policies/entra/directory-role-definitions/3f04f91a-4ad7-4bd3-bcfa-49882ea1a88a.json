@@ -1,0 +1,24 @@
+{
+  "id": "3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+  "description": "Manage or purge data from Microsoft 365 when accessing from the Microsoft Purview portal.",
+  "displayName": "Purview Workload Content Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

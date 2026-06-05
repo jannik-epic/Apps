@@ -1,0 +1,55 @@
+{
+  "id": "d2562ede-74db-457e-a7b6-544e236ebb61",
+  "description": "Manage all aspects of Microsoft 365 Copilot and AI-related enterprise services in Microsoft 365.",
+  "displayName": "AI Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "d2562ede-74db-457e-a7b6-544e236ebb61",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.azure.serviceHealth/allEntities/allTasks",
+        "microsoft.azure.supportTickets/allEntities/allTasks",
+        "microsoft.directory/agentUsers/assignLicense",
+        "microsoft.directory/agentUsers/basic/update",
+        "microsoft.directory/agentUsers/create",
+        "microsoft.directory/agentUsers/delete",
+        "microsoft.directory/agentUsers/disable",
+        "microsoft.directory/agentUsers/enable",
+        "microsoft.directory/agentUsers/invalidateAllRefreshTokens",
+        "microsoft.directory/agentUsers/lifeCycleInfo/read",
+        "microsoft.directory/agentUsers/lifeCycleInfo/update",
+        "microsoft.directory/agentUsers/manager/update",
+        "microsoft.directory/agentUsers/photo/update",
+        "microsoft.directory/agentUsers/reprocessLicenseAssignment",
+        "microsoft.directory/agentUsers/restore",
+        "microsoft.directory/agentUsers/revokeSignInSessions",
+        "microsoft.directory/agentUsers/sponsors/update",
+        "microsoft.directory/agentUsers/usageLocation/update",
+        "microsoft.directory/agentUsers/userPrincipalName/update",
+        "microsoft.directory/entitlementManagement/allProperties/read",
+        "microsoft.directory/subscribedSkus/standard/read",
+        "microsoft.directory/users/allProperties/read",
+        "microsoft.office365.copilot/allEntities/allProperties/allTasks",
+        "microsoft.office365.messageCenter/messages/read",
+        "microsoft.office365.network/performance/allProperties/read",
+        "microsoft.office365.search/content/manage",
+        "microsoft.office365.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.usageReports/allEntities/allProperties/read",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('d2562ede-74db-457e-a7b6-544e236ebb61')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

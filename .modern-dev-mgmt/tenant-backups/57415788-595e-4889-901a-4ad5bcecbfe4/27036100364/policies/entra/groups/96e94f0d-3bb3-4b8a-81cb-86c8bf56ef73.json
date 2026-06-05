@@ -1,0 +1,13 @@
+{
+  "id": "96e94f0d-3bb3-4b8a-81cb-86c8bf56ef73",
+  "displayName": "SyncTest",
+  "description": "SyncTest",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "SyncTest",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2023-09-20T14:49:22Z"
+}

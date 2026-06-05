@@ -1,0 +1,26 @@
+{
+  "id": "4f3832bb-9b51-45c5-b761-0eef2e8ba7d9",
+  "appId": "bf9089fb-0862-41ac-be33-ff9dd2195770",
+  "displayName": "bot-test-epic",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-11-19T09:13:47Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

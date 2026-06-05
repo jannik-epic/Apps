@@ -1,0 +1,13 @@
+{
+  "id": "9658d80e-f53a-49bf-bea8-e88094c13e50",
+  "displayName": "AnyoneTest",
+  "description": "AnyoneTest",
+  "mailEnabled": true,
+  "securityEnabled": true,
+  "mailNickname": "AnyoneTest",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2023-05-16T11:49:21Z"
+}

@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2025-07-29T07:33:57.661278Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2025-08-06T08:25:44.0205915Z",
+  "name": "BASE-EPICLAB_SEC_DEV_WIN-Firewall Settings",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 4,
+  "technologies": "mdm",
+  "id": "5c674aff-39cf-4006-a8c0-8ebca194b40c",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('5c674aff-39cf-4006-a8c0-8ebca194b40c')/assignments",
+  "assignments": []
+}

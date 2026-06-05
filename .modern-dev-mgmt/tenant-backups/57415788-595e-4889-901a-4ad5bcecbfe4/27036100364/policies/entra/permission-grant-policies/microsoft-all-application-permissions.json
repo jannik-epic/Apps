@@ -1,0 +1,29 @@
+{
+  "id": "microsoft-all-application-permissions",
+  "displayName": "All application permissions, for any client app",
+  "description": "Includes all application permissions (app roles), for all APIs, for any client application.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions')/includes",
+  "includes": [
+    {
+      "id": "bddda1ec-0174-44d5-84e2-47fb0ac01595",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    }
+  ],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions')/excludes",
+  "excludes": []
+}

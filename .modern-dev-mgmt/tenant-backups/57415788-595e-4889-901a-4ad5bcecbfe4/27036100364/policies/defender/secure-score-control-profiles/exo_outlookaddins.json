@@ -1,0 +1,38 @@
+{
+  "id": "exo_outlookaddins",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://support.microsoft.com/en-us/topic/3rd-party-cloud-storage-services-supported-by-office-apps-fce12782-eccc-4cf5-8f4b-d1ebec513f72",
+  "controlCategory": "Apps",
+  "title": "Ensure users installing Outlook add-ins is not allowed",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p><strong>To prohibit users installing Outlook add-ins:</strong></p> <ol> <li>Navigate to <strong>Exchange admin center</strong> <a href=\"https://admin.exchange.microsoft.com\">https://admin.exchange.microsoft.com</a>.</li> <li>Click to expand <strong>Roles</strong> select <strong>User roles</strong>.</li> <li>Select <strong>Default Role Assignment Policy</strong>.</li> <li>In the properties pane on the right click on <strong>Manage permissions</strong>.</li> <li>Under Other roles uncheck <strong>My Custom Apps, My Marketplace Apps and My ReadWriteMailboxApps</strong>.</li> <li>Click <strong>Save changes</strong>.</li> </ol> <p><strong>Note</strong> - This security control will take into account only the default policy. It is suggested to set the above for all the policies.</p>",
+  "remediationImpact": "Implementing this change will impact both end users and administrators. End users will be unable to integrate third-party applications they desire, and administrators may receive requests to grant permission for necessary third-party apps</p>",
+  "service": "EXO",
+  "threats": [
+    "Data Exfiltration",
+    "Account breach"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

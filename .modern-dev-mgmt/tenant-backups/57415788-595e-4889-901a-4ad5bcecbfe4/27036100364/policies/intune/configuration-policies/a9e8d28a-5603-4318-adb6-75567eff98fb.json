@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2025-07-29T07:33:56.5206138Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2025-08-13T15:01:39.5876855Z",
+  "name": "BASE-EPICLAB_SEC_DEV_WIN-Windows Defender Antivirus Settings ",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 37,
+  "technologies": "mdm",
+  "id": "a9e8d28a-5603-4318-adb6-75567eff98fb",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('a9e8d28a-5603-4318-adb6-75567eff98fb')/assignments",
+  "assignments": []
+}

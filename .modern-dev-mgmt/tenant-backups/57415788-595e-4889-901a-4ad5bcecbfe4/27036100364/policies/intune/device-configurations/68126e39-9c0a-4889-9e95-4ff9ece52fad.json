@@ -1,0 +1,40 @@
+{
+  "@odata.type": "#microsoft.graph.windows81SCEPCertificateProfile",
+  "id": "68126e39-9c0a-4889-9e95-4ff9ece52fad",
+  "lastModifiedDateTime": "2022-08-22T11:48:02.4028554Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-08-22T11:47:49.0676908Z",
+  "description": "Settings to change after import:\n- SCEP URL\n- check Root Certificate",
+  "displayName": "EPIC_DCP_DEV_WIN-Device Certificate",
+  "version": 2,
+  "renewalThresholdPercentage": 20,
+  "keyStorageProvider": "useTpmKspOtherwiseUseSoftwareKsp",
+  "subjectNameFormat": "custom",
+  "subjectAlternativeNameType": "none",
+  "certificateValidityPeriodValue": 1,
+  "certificateValidityPeriodScale": "years",
+  "scepServerUrls": [
+    "https://intunendes.company.com/msappproxy.net/certsrv/mscep/mscep.dll"
+  ],
+  "subjectNameFormatString": "CN={{DeviceName}}",
+  "keyUsage": "keyEncipherment,digitalSignature",
+  "keySize": "size2048",
+  "hashAlgorithm": "sha2",
+  "subjectAlternativeNameFormatString": null,
+  "certificateStore": "machine",
+  "extendedKeyUsages": [
+    {
+      "name": "Client Authentication",
+      "objectIdentifier": "1.3.6.1.5.5.7.3.2"
+    }
+  ],
+  "customSubjectAlternativeNames": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('68126e39-9c0a-4889-9e95-4ff9ece52fad')/microsoft.graph.windows81SCEPCertificateProfile/assignments",
+  "assignments": []
+}

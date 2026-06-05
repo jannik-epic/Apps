@@ -1,0 +1,29 @@
+{
+  "id": "microsoft-user-default-legacy",
+  "displayName": "Default User Legacy Policy",
+  "description": "All delegated permissions that do not require admin consent as defined by the developer are consentable by member type users by default.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-user-default-legacy')/includes",
+  "includes": [
+    {
+      "id": "e008dda9-5521-4e9b-a941-744b3aa7a610",
+      "permissionClassification": "all",
+      "permissionType": "delegatedUserConsentable",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    }
+  ],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-user-default-legacy')/excludes",
+  "excludes": []
+}

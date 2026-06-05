@@ -1,0 +1,35 @@
+{
+  "id": "AATP_Okta_HighNumberOfNonSuperAdminPrivilegedUserAccounts",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2330700",
+  "controlCategory": "Identity",
+  "title": "High number of Okta accounts with privileged role assigned",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "Reduce the number of users assigned to other Administrator role to meet recommended best practices and ensure better control.",
+  "remediationImpact": "A high number of users with privileged roles increases the risk of misuse or unauthorized access to critical systems. By reducing the number of users assigned to roles such as Super Admin or Org Admin, organizations can better limit access to sensitive resources and reduce the attack surface. Maintaining a smaller, well-monitored set of privileged accounts ensures more effective governance and minimizes potential security vulnerabilities.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

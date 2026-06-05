@@ -1,0 +1,13 @@
+{
+  "id": "0f6f8a93-0c1e-4da3-b3c0-794b1d63b965",
+  "displayName": "[EXT]-Test-Stephan",
+  "description": "[EXT]-Test-Stephan",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "EXT-Test-Stephan",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2023-05-26T12:33:52Z"
+}

@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2023-01-30T07:03:30.4501848Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-01-30T07:03:30.4501848Z",
+  "name": "EPIC_SEC_DEV_WIN-Windows Defender Antivirus Exclusions",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 3,
+  "technologies": "mdm,microsoftSense",
+  "id": "9d03d343-6aac-49c3-86b6-7745abe466b9",
+  "templateReference": {
+    "templateId": "45fea5e9-280d-4da1-9792-fb5736da0ca9_1",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Microsoft Defender Antivirus exclusions",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('9d03d343-6aac-49c3-86b6-7745abe466b9')/assignments",
+  "assignments": [
+    {
+      "id": "9d03d343-6aac-49c3-86b6-7745abe466b9_62cc56c0-5761-4af8-a3c4-e0e2c667a9ce",
+      "source": "direct",
+      "sourceId": "9d03d343-6aac-49c3-86b6-7745abe466b9",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "62cc56c0-5761-4af8-a3c4-e0e2c667a9ce"
+      }
+    }
+  ]
+}

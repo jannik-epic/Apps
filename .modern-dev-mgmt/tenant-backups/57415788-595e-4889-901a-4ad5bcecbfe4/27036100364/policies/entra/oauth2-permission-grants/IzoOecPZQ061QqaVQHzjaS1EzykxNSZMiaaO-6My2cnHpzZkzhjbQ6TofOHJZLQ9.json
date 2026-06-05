@@ -1,0 +1,8 @@
+{
+  "clientId": "790e3a23-d9c3-4e43-b542-a695407ce369",
+  "consentType": "Principal",
+  "id": "IzoOecPZQ061QqaVQHzjaS1EzykxNSZMiaaO-6My2cnHpzZkzhjbQ6TofOHJZLQ9",
+  "principalId": "6436a7c7-18ce-43db-a4e8-7ce1c964b43d",
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": " openid profile email offline_access"
+}

@@ -1,0 +1,47 @@
+{
+  "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+  "id": "e95c9095-a8ef-42a7-9621-43774644fa09",
+  "targetedMobileApps": [
+    "aa33420e-b767-40f4-9964-9b9e9b214d76"
+  ],
+  "createdDateTime": "2021-05-18T15:29:52.2611549Z",
+  "description": "",
+  "lastModifiedDateTime": "2021-05-18T15:29:52.2611549Z",
+  "displayName": "p-emm_iOS_Outlook",
+  "version": 1,
+  "encodedSettingXml": null,
+  "settings": [
+    {
+      "appConfigKey": "com.microsoft.outlook.EmailProfile.AccountType",
+      "appConfigKeyType": "tokenType",
+      "appConfigKeyValue": "ModernAuth"
+    },
+    {
+      "appConfigKey": "com.microsoft.outlook.EmailProfile.EmailUPN",
+      "appConfigKeyType": "tokenType",
+      "appConfigKeyValue": "{{mail}}"
+    },
+    {
+      "appConfigKey": "com.microsoft.outlook.EmailProfile.EmailAddress",
+      "appConfigKeyType": "tokenType",
+      "appConfigKeyValue": "{{mail}}"
+    },
+    {
+      "appConfigKey": "IntuneMAMAllowedAccountsOnly",
+      "appConfigKeyType": "tokenType",
+      "appConfigKeyValue": "Enabled"
+    },
+    {
+      "appConfigKey": "IntuneMAMUPN",
+      "appConfigKeyType": "tokenType",
+      "appConfigKeyValue": "{{userprincipalname}}"
+    },
+    {
+      "appConfigKey": "com.microsoft.outlook.Mail.DefaultSignatureEnabled",
+      "appConfigKeyType": "tokenType",
+      "appConfigKeyValue": "false"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceAppManagement/mobileAppConfigurations('e95c9095-a8ef-42a7-9621-43774644fa09')/microsoft.graph.iosMobileAppConfiguration/assignments",
+  "assignments": []
+}

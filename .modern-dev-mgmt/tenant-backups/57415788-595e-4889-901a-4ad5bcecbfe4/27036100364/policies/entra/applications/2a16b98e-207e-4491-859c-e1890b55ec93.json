@@ -1,0 +1,123 @@
+{
+  "id": "2a16b98e-207e-4491-859c-e1890b55ec93",
+  "appId": "a1b88f3c-f08c-42d6-b87a-cf63e001d6f0",
+  "displayName": "Syskit Point Permissions Loader",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-02T13:00:38Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": "https://www.syskit.com/_app-links/point/",
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000002-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "dc50a0fb-09a3-484d-be87-e023b12c6440",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "c5393580-f805-4401-95e8-94b7a6ef2fc2",
+      "resourceAccess": [
+        {
+          "id": "594c1fb6-4f81-4475-ae41-0c394909246c",
+          "type": "Scope"
+        },
+        {
+          "id": "e2cea78f-e743-4d8f-a16a-75b629a038ae",
+          "type": "Scope"
+        },
+        {
+          "id": "594c1fb6-4f81-4475-ae41-0c394909246c",
+          "type": "Role"
+        },
+        {
+          "id": "e2cea78f-e743-4d8f-a16a-75b629a038ae",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+          "type": "Role"
+        },
+        {
+          "id": "62a82d76-70ea-41e2-9197-370581804d09",
+          "type": "Role"
+        },
+        {
+          "id": "230c1aed-a721-4c5d-9cb4-a90514e508ef",
+          "type": "Role"
+        },
+        {
+          "id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+          "type": "Role"
+        },
+        {
+          "id": "b0afded3-3588-46d8-8b3d-9842eff778da",
+          "type": "Role"
+        },
+        {
+          "id": "01d4889c-1287-42c6-ac1f-5d1e02578ef6",
+          "type": "Role"
+        },
+        {
+          "id": "19da66cb-0fb0-4390-b071-ebc76a349482",
+          "type": "Role"
+        },
+        {
+          "id": "3b55498e-47ec-484f-8136-9013221c06a9",
+          "type": "Role"
+        },
+        {
+          "id": "7b2449af-6ccd-4f4d-9f78-e550c193f0d1",
+          "type": "Role"
+        },
+        {
+          "id": "b633e1c5-b582-4048-a93e-9f11b44c7e96",
+          "type": "Role"
+        },
+        {
+          "id": "e2a3a72e-5f79-4c64-b1b1-878b674786c9",
+          "type": "Role"
+        },
+        {
+          "id": "dbaae8cf-10b5-4b86-a4a1-f871c94c6695",
+          "type": "Role"
+        },
+        {
+          "id": "9e3f62cf-ca93-4989-b6ce-bf83c28f9fe8",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

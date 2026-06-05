@@ -1,0 +1,35 @@
+{
+  "id": "AATP_ADCSCertificateTemplateEnrolementSuppliesSubject",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://aka.ms/mdiesc1",
+  "controlCategory": "Identity",
+  "title": "Prevent users to request a certificate valid for arbitrary users based on the certificate template (ESC1)",
+  "deprecated": false,
+  "implementationCost": "medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "Identify the vulnerable certificate template. Perform at least one of the following possible remediations:<br> 1. Disable the “Supply in the request” configuration.<br> 2. Remove EKU’s enabling user authentication (e.g Client Authentication).<br> 3.Remove overly permissive enrollment permissions, which allows any user to enroll certificate based on that certificate template.<br> 4.Enable “CA certificate manager approval” requirement.",
+  "remediationImpact": "Each certificate template per AD CS servers with these settings can lead to full domain compromise.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "high",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

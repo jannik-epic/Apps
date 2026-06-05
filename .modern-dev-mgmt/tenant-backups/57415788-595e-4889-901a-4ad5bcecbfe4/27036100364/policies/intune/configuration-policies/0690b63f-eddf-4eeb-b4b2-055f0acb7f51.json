@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2023-11-20T15:07:27.3043476Z",
+  "creationSource": null,
+  "description": "Test Policy Import für AVD",
+  "lastModifiedDateTime": "2023-11-27T07:37:29.235564Z",
+  "name": "EPICLAB_DCP_DEV_AVD-OS Cutomize Setting",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 79,
+  "technologies": "mdm",
+  "id": "0690b63f-eddf-4eeb-b4b2-055f0acb7f51",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('0690b63f-eddf-4eeb-b4b2-055f0acb7f51')/assignments",
+  "assignments": []
+}

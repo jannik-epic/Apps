@@ -1,0 +1,35 @@
+{
+  "id": "f7e24733-0b26-4ab1-b1ff-e44dd258d738",
+  "name": "External (Protected)",
+  "description": "Use this classification to identify and protect Confidential data that can be shared with approved parties outside the Organization.",
+  "color": "",
+  "sensitivity": 3,
+  "tooltip": "Use this classification to identify and protect Confidential data that can be shared with approved parties outside the Organization.",
+  "isActive": true,
+  "isAppliable": true,
+  "contentFormats": [
+    "file",
+    "email"
+  ],
+  "hasProtection": true,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('f7e24733-0b26-4ab1-b1ff-e44dd258d738')/parent/$entity",
+  "parent": {
+    "id": "a7ad2310-1588-4b99-9e27-8014dc662cf9",
+    "name": "Confidential",
+    "description": "Use this classification to identify and protect data which is sensitive, and which should be shared more carefully.",
+    "color": "",
+    "sensitivity": 3,
+    "tooltip": "Use this classification to identify and protect data which is sensitive, and which should be shared more carefully.",
+    "isActive": false,
+    "isAppliable": false,
+    "contentFormats": [
+      "file",
+      "email",
+      "site",
+      "unifiedgroup"
+    ],
+    "hasProtection": false,
+    "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('f7e24733-0b26-4ab1-b1ff-e44dd258d738')/parent/parent/$entity",
+    "parent": null
+  }
+}

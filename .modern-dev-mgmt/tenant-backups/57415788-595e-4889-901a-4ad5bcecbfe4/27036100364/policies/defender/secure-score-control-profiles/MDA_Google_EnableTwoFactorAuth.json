@@ -1,0 +1,38 @@
+{
+  "id": "MDA_Google_EnableTwoFactorAuth",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://support.google.com/a/answer/175197?hl=en&fl=1&sjid=9841521343371348963-NA",
+  "controlCategory": "Identity",
+  "title": "Enable multi-factor authentication (MFA)",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 10,
+  "remediation": "<p>Ensure password expiry <em>policy</em> for Google -</p> <ol> <li>Navigate to <em>Google admin center</em> - <a href=\"https://admin.google.com\">http://admin.google.com/</a></li> <li>Click <em>Security</em> &gt; <em>Password Management</em>.</li> <li>Chcek <em>Allow users to turn on 2-Step Verification</em>.</li> <li>Check&nbsp;<em>On</em> under&nbsp;<em>Enforcement</em>.</li> <li>Click <em>Save</em>.</li> </ol> <p>Follow steps 3-4 for every organizational unit.</p>",
+  "remediationImpact": "<p>Follow the <a href=\"https://support.google.com/a/answer/9176657?fl=1&amp;sjid=9841521343371348963-NA\" target=\"_blank\">guideline</a>.</p>",
+  "service": "MDA_Google",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

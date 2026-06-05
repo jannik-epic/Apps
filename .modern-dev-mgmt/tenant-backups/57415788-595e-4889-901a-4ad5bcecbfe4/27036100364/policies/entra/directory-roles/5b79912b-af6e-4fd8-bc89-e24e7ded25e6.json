@@ -1,0 +1,7 @@
+{
+  "id": "5b79912b-af6e-4fd8-bc89-e24e7ded25e6",
+  "deletedDateTime": null,
+  "description": "Can read security information and reports in Microsoft Entra ID and Office 365.",
+  "displayName": "Security Reader",
+  "roleTemplateId": "5d6b6bb7-de71-4623-b4af-96380a352509"
+}

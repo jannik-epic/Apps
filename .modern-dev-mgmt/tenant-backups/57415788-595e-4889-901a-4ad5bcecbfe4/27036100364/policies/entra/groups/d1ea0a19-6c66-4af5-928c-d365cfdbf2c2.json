@@ -1,0 +1,13 @@
+{
+  "id": "d1ea0a19-6c66-4af5-928c-d365cfdbf2c2",
+  "displayName": "TeamsArchivierung",
+  "description": "TeamsArchivierung",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "TeamsArchivierung",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2023-06-08T14:03:36Z"
+}

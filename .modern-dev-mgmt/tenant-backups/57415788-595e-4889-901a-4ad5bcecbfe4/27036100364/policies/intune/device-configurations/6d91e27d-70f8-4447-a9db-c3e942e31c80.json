@@ -1,0 +1,35 @@
+{
+  "@odata.type": "#microsoft.graph.macOSCustomConfiguration",
+  "id": "6d91e27d-70f8-4447-a9db-c3e942e31c80",
+  "lastModifiedDateTime": "2023-09-23T11:45:54.8384306Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2023-09-23T11:45:54.8384306Z",
+  "description": null,
+  "displayName": "EPIC_DCP_DEV_MAC-MDATP Background Services",
+  "version": 1,
+  "payloadName": "EPIC_DCP_DEV_MAC-MDATP Background Services",
+  "payloadFileName": "BackgroundServices.xml",
+  "payload": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBwbGlzdCBQVUJMSUMgIi0vL0FwcGxlLy9EVEQgUExJU1QgMS4wLy9FTiIgImh0dHA6Ly93d3cuYXBwbGUuY29tL0RURHMvUHJvcGVydHlMaXN0LTEuMC5kdGQiPg0KPHBsaXN0IHZlcnNpb249IjEiPg0KPGRpY3Q+DQo8a2V5PlBheWxvYWRVVUlEPC9rZXk+DQo8c3RyaW5nPjY5REQ5ODI1LTA2N0ItNEM2Qy04QjU0LUVEQTgzQzdGMTc5RDwvc3RyaW5nPg0KPGtleT5QYXlsb2FkVHlwZTwva2V5Pg0KPHN0cmluZz5Db25maWd1cmF0aW9uPC9zdHJpbmc+DQo8a2V5PlBheWxvYWRPcmdhbml6YXRpb248L2tleT4NCjxzdHJpbmc+TWljcm9zb2Z0IENvcnBvcmF0aW9uPC9zdHJpbmc+DQo8a2V5PlBheWxvYWRJZGVudGlmaWVyPC9rZXk+DQo8c3RyaW5nPjY5REQ5ODI1LTA2N0ItNEM2Qy04QjU0LUVEQTgzQzdGMTc5RDwvc3RyaW5nPg0KPGtleT5QYXlsb2FkRGlzcGxheU5hbWU8L2tleT4NCjxzdHJpbmc+QmFja2dyb3VuZCBTZXJ2aWNlIENvbmZpZ3VyYXRpb24gUHJvZmlsZTwvc3RyaW5nPg0KPGtleT5QYXlsb2FkRGVzY3JpcHRpb248L2tleT4NCjxzdHJpbmcvPg0KPGtleT5QYXlsb2FkVmVyc2lvbjwva2V5Pg0KPGludGVnZXI+MTwvaW50ZWdlcj4NCjxrZXk+UGF5bG9hZEVuYWJsZWQ8L2tleT4NCjx0cnVlLz4NCjxrZXk+UGF5bG9hZFJlbW92YWxEaXNhbGxvd2VkPC9rZXk+DQo8dHJ1ZS8+DQo8a2V5PlBheWxvYWRTY29wZTwva2V5Pg0KPHN0cmluZz5TeXN0ZW08L3N0cmluZz4NCjxrZXk+UGF5bG9hZENvbnRlbnQ8L2tleT4NCjxhcnJheT4NCjxkaWN0Pg0KPGtleT5QYXlsb2FkRGVzY3JpcHRpb248L2tleT4NCjxzdHJpbmc+QmFja2dyb3VuZCBTZXJ2aWNlIE1hbmFnZW1lbnQgZm9yIE1pY3Jvc29mdCBEZWZlbmRlcjwvc3RyaW5nPg0KPGtleT5QYXlsb2FkSWRlbnRpZmllcjwva2V5Pg0KPHN0cmluZz40REI5NjI3Ni0yMzEwLTQ0QzItQUUxMS1DNkU3NjFGQjAzMDQucHJpdmFjeS4wNDEwMjQ4MS1DMUYxLTQ0RjItQjU0OC1FMEI1NTQ4OTA0OTM8L3N0cmluZz4NCjxrZXk+UGF5bG9hZFVVSUQ8L2tleT4NCjxzdHJpbmc+QTlCRjhGQTktQ0VBMy00MkEyLUI4QzEtRTE5OThCODRDQkIwPC9zdHJpbmc+DQo8a2V5PlJ1bGVzPC9rZXk+DQo8YXJyYXk+DQo8ZGljdD4NCjxrZXk+UnVsZVR5cGU8L2tleT4NCjxzdHJpbmc+TGFiZWxQcmVmaXg8L3N0cmluZz4NCjxrZXk+UnVsZVZhbHVlPC9rZXk+DQo8c3RyaW5nPmNvbS5taWNyb3NvZnQuZnJlc25vPC9zdHJpbmc+DQo8L2RpY3Q+DQo8ZGljdD4NCjxrZXk+UnVsZVR5cGU8L2tleT4NCjxzdHJpbmc+TGFiZWxQcmVmaXg8L3N0cmluZz4NCjxrZXk+UnVsZVZhbHVlPC9rZXk+DQo8c3RyaW5nPmNvbS5taWNyb3NvZnQuZGxwPC9zdHJpbmc+DQo8L2RpY3Q+DQo8L2FycmF5Pg0KPGtleT5QYXlsb2FkVHlwZTwva2V5Pg0KPHN0cmluZz5jb20uYXBwbGUuc2VydmljZW1hbmFnZW1lbnQ8L3N0cmluZz4NCjxrZXk+UGF5bG9hZERpc3BsYXlOYW1lPC9rZXk+DQo8c3RyaW5nPkJhY2tncm91bmQgU2VydmljZSBNYW5hZ2VtZW50IGZvciBNaWNyb3NvZnQgRGVmZW5kZXI8L3N0cmluZz4NCjwvZGljdD4NCjwvYXJyYXk+DQo8L2RpY3Q+DQo8L3BsaXN0Pg==",
+  "deploymentChannel": "deviceChannel",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('6d91e27d-70f8-4447-a9db-c3e942e31c80')/microsoft.graph.macOSCustomConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "6d91e27d-70f8-4447-a9db-c3e942e31c80_f4a3ca36-380c-47ae-bbd7-a38fc8722e3d",
+      "source": "direct",
+      "sourceId": "6d91e27d-70f8-4447-a9db-c3e942e31c80",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "f4a3ca36-380c-47ae-bbd7-a38fc8722e3d"
+      }
+    }
+  ]
+}

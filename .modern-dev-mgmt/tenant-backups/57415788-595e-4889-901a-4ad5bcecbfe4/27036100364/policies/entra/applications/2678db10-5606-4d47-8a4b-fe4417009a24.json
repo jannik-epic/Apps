@@ -1,0 +1,45 @@
+{
+  "id": "2678db10-5606-4d47-8a4b-fe4417009a24",
+  "appId": "fe6d5d9e-6c0d-4193-b47d-59cf90a0f37b",
+  "displayName": "Microsoft 365 Management",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2024-10-03T15:11:36Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "c5393580-f805-4401-95e8-94b7a6ef2fc2",
+      "resourceAccess": [
+        {
+          "id": "594c1fb6-4f81-4475-ae41-0c394909246c",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

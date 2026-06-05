@@ -1,0 +1,13 @@
+{
+  "id": "58bb75e5-502f-400b-a587-de5e6e153b27",
+  "displayName": "Group for Answers in Viva Engage – DO NOT DELETE 19722878977",
+  "description": "Group that stores content and metadata for Answers in Viva Engage in network 19722878977. Deleting this this group will disrupt Answers in Viva Engage.",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "groupforanswersinvivaengagedonotdelete19722878977432",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Public",
+  "createdDateTime": "2025-04-22T07:34:30Z"
+}

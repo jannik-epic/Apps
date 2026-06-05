@@ -1,0 +1,11 @@
+{
+  "id": "7f1c6a22-3732-4826-a054-7bc4ecb8c364",
+  "displayName": "MDM-Claude Code-Required",
+  "description": "Modern Dev Mgmt required assignment group for Claude Code.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "mdm-claude-code-required-528762",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-05-26T10:56:43Z"
+}

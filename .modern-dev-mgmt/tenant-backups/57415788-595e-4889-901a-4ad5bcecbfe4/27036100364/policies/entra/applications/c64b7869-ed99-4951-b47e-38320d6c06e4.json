@@ -1,0 +1,27 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentityBlueprint",
+  "id": "c64b7869-ed99-4951-b47e-38320d6c06e4",
+  "appId": "c64b7869-ed99-4951-b47e-38320d6c06e4",
+  "displayName": "test-ai-foundary-agents-proj-default-AgentIdentityBlueprint",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-11-19T09:12:30Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}
