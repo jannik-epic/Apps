@@ -189,7 +189,7 @@ try {
     }
 
     $installScript = @"
-## Modern Dev Mgmt offline Win32 deployment script
+## Vanguard offline Win32 deployment script
 ## App Name  - $AppName
 ## Publisher - $Publisher
 ## Version   - $Version
@@ -280,7 +280,7 @@ try {
     # directly, so it must not depend on a toolkit folder that is not present
     # in the generated package.
     $installScript = @"
-## Modern Dev Mgmt Winget deployment script
+## Vanguard Winget deployment script
 ## App Name - $AppName
 ## Publisher - $Publisher
 ## Version - $Version
