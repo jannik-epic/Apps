@@ -28,11 +28,11 @@ on:
         type: boolean
         default: true
       notes:
-        description: 'Optional request notes from Modern Dev Mgmt'
+        description: 'Optional request notes from Vanguard'
         required: false
         type: string
       request_context_b64:
-        description: 'Base64 encoded Modern Dev Mgmt request context'
+        description: 'Base64 encoded Vanguard request context'
         required: false
         type: string
 
@@ -54,7 +54,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Resolve target Azure tenant from Modern Dev Mgmt context
+      - name: Resolve target Azure tenant from Vanguard context
         shell: bash
         env:
           MODERN_DEVMGMT_CONTEXT_B64: ${{ github.event.inputs.modern_dev_mgmt_context_b64 }}
@@ -66,7 +66,7 @@ jobs:
           # defaults are baked at provisioning time and can only point at one
           # tenant.
           if [[ -z "${MODERN_DEVMGMT_CONTEXT_B64:-}" ]]; then
-            echo "no Modern Dev Mgmt context — keeping default AZURE_TENANT_ID/CLIENT_ID"
+            echo "no Vanguard context — keeping default AZURE_TENANT_ID/CLIENT_ID"
             exit 0
           fi
           decoded="$(printf '%s' "$MODERN_DEVMGMT_CONTEXT_B64" | base64 --decode 2>/dev/null || true)"
@@ -317,7 +317,7 @@ jobs:
             $counts.officeActiveUsersCsv = if (Save-GraphRaw -Name 'reports/office-active-users-d7.csv' -Uri "$GraphBase/reports/getOffice365ActiveUserDetail(period='D7')" -Label 'Office active users report') { 1 } else { 0 }
             $counts.mailboxUsageCsv = if (Save-GraphRaw -Name 'reports/mailbox-usage-d7.csv' -Uri "$GraphBase/reports/getMailboxUsageDetail(period='D7')" -Label 'Mailbox usage report') { 1 } else { 0 }
             $counts.auditDirectory = Save-GraphCollection -Name 'reports/directory-audits.json' -Uri "$GraphBase/auditLogs/directoryAudits?%24top=100" -Label 'Directory audit logs'
-            Add-Limitation -Area 'External lookup tools' -Reason 'Breach, dark-web, GeoIP, and community-template functions need external providers. This workflow only runs Microsoft Graph and repository-backed evidence.' -FollowUp 'Wire external providers through Modern Dev Mgmt integrations before dispatching from tenant repos.'
+            Add-Limitation -Area 'External lookup tools' -Reason 'Breach, dark-web, GeoIP, and community-template functions need external providers. This workflow only runs Microsoft Graph and repository-backed evidence.' -FollowUp 'Wire external providers through Vanguard integrations before dispatching from tenant repos.'
           }
 
           $manifest = [ordered]@{
@@ -341,7 +341,7 @@ jobs:
           Add-Content -Path $env:GITHUB_OUTPUT -Value "commit_evidence=$commitEvidence"
 
           $summary = @(
-            '# Modern Dev Mgmt tenant operation pack',
+            '# Vanguard tenant operation pack',
             '',
             '| Field | Value |',
             '| --- | --- |',
