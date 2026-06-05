@@ -237,6 +237,39 @@ jobs:
             return $null
           }
 
+          # Description + a compact summary are written into the manifest so the
+          # app can render the full Backup Objects browser from one committed file
+          # instead of re-fetching every object (which exhausts GitHub rate limits
+          # on large backups).
+          function Get-PolicyDescription {
+            param([object]$Item)
+            foreach ($key in @('description','notes')) {
+              $prop = if ($Item) { $Item.PSObject.Properties[$key] } else { $null }
+              if ($prop -and ($prop.Value -is [string]) -and $prop.Value) {
+                return [string]$prop.Value
+              }
+            }
+            return $null
+          }
+
+          function Get-PolicySummary {
+            param([object]$Item)
+            if (-not $Item) { return $null }
+            $out = [ordered]@{}
+            foreach ($key in @('state','platforms','technologies','targetPlatforms','createdDateTime','lastModifiedDateTime','isAssigned','visibility','enabled')) {
+              $prop = $Item.PSObject.Properties[$key]
+              if ($prop -and $null -ne $prop.Value) { $out[$key] = $prop.Value }
+            }
+            $sc = $Item.PSObject.Properties['settingCount']
+            if ($sc -and ($sc.Value -is [int])) { $out['settingCount'] = [int]$sc.Value }
+            $asn = $Item.PSObject.Properties['assignments']
+            if ($asn -and $asn.Value) { $out['assignmentCount'] = @($asn.Value).Count }
+            $mem = $Item.PSObject.Properties['members']
+            if ($mem -and $mem.Value) { $out['memberCount'] = @($mem.Value).Count }
+            if ($out.Keys.Count -eq 0) { return $null }
+            return $out
+          }
+
           function Save-PolicyArray {
             param([string]$Subdir, [string]$PolicyType, [string]$Label, [array]$Items, [bool]$ExpandAssignments = $false, [bool]$Restorable = $true)
             $count = 0
@@ -253,6 +286,8 @@ jobs:
                 path = $policyPath
                 backupPolicyId = $rawId
                 displayName = Get-PolicyDisplayName -Item $item
+                description = Get-PolicyDescription -Item $item
+                summary = Get-PolicySummary -Item $item
                 restorable = $Restorable
               }) | Out-Null
               if ($ExpandAssignments -and $item.assignments) {
@@ -285,6 +320,8 @@ jobs:
                   path = $policyPath
                   backupPolicyId = "$($spec.policyType)-singleton"
                   displayName = Get-PolicyDisplayName -Item $obj
+                  description = Get-PolicyDescription -Item $obj
+                  summary = Get-PolicySummary -Item $obj
                   restorable = $restorable
                 }) | Out-Null
                 $manifestCounts[$spec.key] = 1
