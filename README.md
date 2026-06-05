@@ -26,16 +26,16 @@ This repository contains automated workflows for deploying applications to Micro
 
 ### 3. Custom Installer Deployment
 - **File**: `.github/workflows/deploy-custom-package.yml`
-- **Purpose**: Deploy uploaded Windows MSI/EXE installers from Modern Dev Mgmt release assets to Intune
+- **Purpose**: Deploy uploaded Windows MSI/EXE installers from Vanguard release assets to Intune
 - **Features**:
   - Downloads the uploaded installer from a tenant-repo GitHub release asset
   - Packages the installer together with generated install, uninstall and detection scripts
-  - Supports Modern Dev Mgmt app-setting script overrides through base64 workflow inputs
+  - Supports Vanguard app-setting script overrides through base64 workflow inputs
   - Applies assignment templates and writes auditable run state under `.modern-dev-mgmt/runs/`
 
 ### 4. Custom macOS Package Deployment
 - **File**: `.github/workflows/deploy-custom-macos-package.yml`
-- **Purpose**: Deploy uploaded macOS PKG/DMG installers from Modern Dev Mgmt release assets to Intune
+- **Purpose**: Deploy uploaded macOS PKG/DMG installers from Vanguard release assets to Intune
 - **Features**:
   - Downloads the uploaded PKG/DMG from a tenant-repo GitHub release asset
   - Converts DMGs containing an app bundle into a signed-package-ready PKG payload
@@ -48,7 +48,7 @@ This repository contains automated workflows for deploying applications to Micro
 - **Features**:
   - Runs every 30 minutes
   - Detects major, minor and patch updates
-  - Writes `patch-analysis.json` for Modern Dev Mgmt to ingest
+  - Writes `patch-analysis.json` for Vanguard to ingest
 
 ### 6. Intune Inventory Coverage
 - **File**: `.github/workflows/intune-inventory-coverage.yml`
@@ -64,7 +64,7 @@ This repository contains automated workflows for deploying applications to Micro
 - **Features**:
   - Uses the same Azure federated credential model as deployments
   - Writes auditable run and wave status files under `.modern-dev-mgmt/`
-  - Lets the Modern Dev Mgmt web UI monitor rollout progress without doing direct Intune writes
+  - Lets the Vanguard web UI monitor rollout progress without doing direct Intune writes
 
 ### 8. Radar Group Sync
 - **File**: `.github/workflows/sync-dynamic-app-group.yml`
@@ -76,7 +76,7 @@ This repository contains automated workflows for deploying applications to Micro
 
 ### 9. Directory Provisioning
 - **File**: `.github/workflows/provision-directory-object.yml`
-- **Purpose**: Create or update tenant Entra users and security groups from Modern Dev Mgmt
+- **Purpose**: Create or update tenant Entra users and security groups from Vanguard
 - **Features**:
   - Runs through the tenant repository and federated credential
   - Supports dry-run planning before writing to Entra ID
@@ -84,7 +84,7 @@ This repository contains automated workflows for deploying applications to Micro
 
 ### 10. Tenant Operation Packs
 - **File**: `.github/workflows/tenant-operation-pack.yml`
-- **Purpose**: Run read-side tenant administration packs from Modern Dev Mgmt while keeping Graph access inside the tenant repository
+- **Purpose**: Run read-side tenant administration packs from Vanguard while keeping Graph access inside the tenant repository
 - **Features**:
   - Covers identity, tenant administration, security, Intune, Teams/SharePoint, email/Exchange boundaries and reporting evidence
   - Writes JSON/CSV evidence under `.modern-dev-mgmt/tenant-operations/`
@@ -132,7 +132,7 @@ The following application permissions are required:
 - `DeviceManagementScripts.Read.All` - Read Intune remediation script and assignment evidence
 - `ThreatHunting.Read.All` - Read Defender advanced hunting evidence where available
 - `Directory.Read.All` - Read directory data
-- `Group.ReadWrite.All` - Create assignment backing groups from Modern Dev Mgmt
+- `Group.ReadWrite.All` - Create assignment backing groups from Vanguard
 - `User.ReadWrite.All` - Create or update users from tenant GitHub workflows
 - `Application.ReadWrite.All` - Manage application registrations
 - `AppRoleAssignment.ReadWrite.All` - Grant/administer application role assignments
@@ -145,7 +145,7 @@ The workflows provide detailed outputs including:
 - Deployment status
 - Generated scripts (install, uninstall, detection)
 - Links to the created application in Intune admin center
-- Modern Dev Mgmt run state under `.modern-dev-mgmt/runs/`
+- Vanguard run state under `.modern-dev-mgmt/runs/`
 - Patch and wave state under `.modern-dev-mgmt/patch-runs/` and `.modern-dev-mgmt/waves/`
 - Tenant operation evidence under `.modern-dev-mgmt/tenant-operations/`
 
