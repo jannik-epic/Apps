@@ -50,7 +50,7 @@
     "package_id": "Microsoft.Office",
     "name": "Microsoft 365 Apps for enterprise",
     "os": "windows",
-    "version_deployed": "16.0.19929.20172",
+    "version_deployed": "16.0.20026.20112",
     "pin_version": null
   },
   {
