@@ -44,7 +44,7 @@ on:
         type: boolean
         default: true
       request_context_b64:
-        description: 'Base64 encoded Modern Dev Mgmt request context'
+        description: 'Base64 encoded Vanguard request context'
         required: false
         type: string
 
@@ -66,7 +66,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Resolve destination Azure tenant from Modern Dev Mgmt context
+      - name: Resolve destination Azure tenant from Vanguard context
         shell: bash
         env:
           REQUEST_CONTEXT_B64: ${{ github.event.inputs.request_context_b64 }}
@@ -79,7 +79,7 @@ jobs:
           # provisioning time and only point at the source tenant; without this
           # override a cross-tenant restore would write into the wrong tenant.
           if [[ -z "${REQUEST_CONTEXT_B64:-}" ]]; then
-            echo "no Modern Dev Mgmt context — keeping default AZURE_TENANT_ID/CLIENT_ID"
+            echo "no Vanguard context — keeping default AZURE_TENANT_ID/CLIENT_ID"
             exit 0
           fi
           decoded="$(printf '%s' "$REQUEST_CONTEXT_B64" | base64 --decode 2>/dev/null || true)"
