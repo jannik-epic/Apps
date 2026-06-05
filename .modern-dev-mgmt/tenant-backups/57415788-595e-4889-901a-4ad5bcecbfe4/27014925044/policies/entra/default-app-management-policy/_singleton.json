@@ -1,0 +1,26 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/defaultAppManagementPolicy/$entity",
+  "id": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default app management tenant policy",
+  "description": "Default tenant policy that enforces app management restrictions on applications and service principals. To apply policy to targeted resources, create a new policy under appManagementPolicies collection.",
+  "isEnabled": true,
+  "applicationRestrictions": {
+    "passwordCredentials": [],
+    "keyCredentials": [],
+    "identifierUris": {
+      "nonDefaultUriAddition": null,
+      "uriAdditionWithoutUniqueTenantIdentifier": {
+        "state": "enabled",
+        "isStateSetByMicrosoft": true,
+        "restrictForAppsCreatedAfterDateTime": "0001-01-01T00:00:00Z",
+        "excludeAppsReceivingV2Tokens": true,
+        "excludeSaml": true,
+        "excludeActors": null
+      }
+    }
+  },
+  "servicePrincipalRestrictions": {
+    "passwordCredentials": [],
+    "keyCredentials": []
+  }
+}

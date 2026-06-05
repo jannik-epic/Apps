@@ -1,0 +1,46 @@
+{
+  "id": "9b881c38-8ed0-454a-94e6-f6846ac86dcf",
+  "deletedDateTime": "2026-05-28T13:51:26Z",
+  "classification": null,
+  "createdDateTime": "2026-02-27T09:02:06Z",
+  "creationOptions": [],
+  "description": "A1 Anhänger-GB10-TRH",
+  "displayName": "A1 Anhänger-GB10-TRH",
+  "expirationDateTime": null,
+  "groupTypes": [
+    "Unified"
+  ],
+  "infoCatalogs": [],
+  "isAssignableToRole": false,
+  "mail": "kundendossier-Bern-TRH@epicfusionlabs.com",
+  "mailEnabled": true,
+  "mailNickname": "kundendossier-Bern-TRH",
+  "membershipRule": null,
+  "membershipRuleProcessingState": null,
+  "onPremisesDomainName": null,
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesNetBiosName": null,
+  "onPremisesSamAccountName": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": null,
+  "preferredLanguage": null,
+  "proxyAddresses": [
+    "smtp:kundendossier-Bern-TRH@epicfusionlabs.onmicrosoft.com",
+    "SPO:SPO_fbe81018-9f45-4d30-bece-ac56e84b8139@SPO_57415788-595e-4889-901a-4ad5bcecbfe4",
+    "smtp:kundendossier-Bern-TRH89f@epicfusionlabs.onmicrosoft.com",
+    "SMTP:kundendossier-Bern-TRH@epicfusionlabs.com"
+  ],
+  "renewedDateTime": "2026-02-27T09:02:06Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [
+    "Team"
+  ],
+  "securityEnabled": false,
+  "securityIdentifier": "S-1-12-1-2609388600-1162514128-2230773396-3480078442",
+  "theme": null,
+  "uniqueName": null,
+  "visibility": "Private",
+  "onPremisesProvisioningErrors": [],
+  "serviceProvisioningErrors": []
+}

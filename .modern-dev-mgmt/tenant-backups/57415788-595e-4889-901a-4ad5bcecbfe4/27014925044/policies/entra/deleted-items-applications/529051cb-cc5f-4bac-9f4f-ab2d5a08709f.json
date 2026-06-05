@@ -1,0 +1,84 @@
+{
+  "id": "529051cb-cc5f-4bac-9f4f-ab2d5a08709f",
+  "deletedDateTime": "2026-05-26T18:24:12Z",
+  "appId": "d7a95d56-f260-4f13-bd87-31b0a942a750",
+  "applicationTemplateId": null,
+  "disabledByMicrosoftStatus": null,
+  "createdByAppId": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+  "createdDateTime": "2026-05-26T18:23:57Z",
+  "displayName": "DailyDocs Temporary SPO Unlock 20260526182354",
+  "description": null,
+  "groupMembershipClaims": null,
+  "identifierUris": [],
+  "isDeviceOnlyAuthSupported": null,
+  "isDisabled": null,
+  "isFallbackPublicClient": null,
+  "nativeAuthenticationApisEnabled": null,
+  "notes": null,
+  "publisherDomain": "epicfusionlabs.com",
+  "serviceManagementReference": null,
+  "signInAudience": "AzureADMyOrg",
+  "tags": [],
+  "tokenEncryptionKeyId": null,
+  "uniqueName": null,
+  "samlMetadataUrl": null,
+  "defaultRedirectUri": null,
+  "certification": null,
+  "optionalClaims": null,
+  "servicePrincipalLockConfiguration": null,
+  "requestSignatureVerification": null,
+  "addIns": [],
+  "api": {
+    "acceptMappedClaims": null,
+    "knownClientApplications": [],
+    "requestedAccessTokenVersion": null,
+    "oauth2PermissionScopes": [],
+    "preAuthorizedApplications": []
+  },
+  "appRoles": [],
+  "info": {
+    "logoUrl": null,
+    "marketingUrl": null,
+    "privacyStatementUrl": null,
+    "supportUrl": null,
+    "termsOfServiceUrl": null
+  },
+  "keyCredentials": [],
+  "parentalControlSettings": {
+    "countriesBlockedForMinors": [],
+    "legalAgeGroupRule": "Allow"
+  },
+  "passwordCredentials": [
+    {
+      "customKeyIdentifier": null,
+      "displayName": "temp-unlock",
+      "endDateTime": "2027-05-26T18:24:06Z",
+      "hint": "Gfo",
+      "keyId": "b2b9a767-0128-44d3-b372-e1b9a147eb3d",
+      "secretText": null,
+      "startDateTime": "2026-05-26T18:24:06Z"
+    }
+  ],
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "verifiedPublisher": {
+    "displayName": null,
+    "verifiedPublisherId": null,
+    "addedDateTime": null
+  },
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  }
+}
