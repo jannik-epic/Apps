@@ -1,9 +1,9 @@
 {
-  "backupId": "27015156551",
+  "backupId": "27015304847",
   "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
-  "snapshotPath": ".modern-dev-mgmt/tenant-backups/57415788-595e-4889-901a-4ad5bcecbfe4/27015156551",
-  "createdAt": "2026-06-05T12:36:19.4739379Z",
-  "workflowRunId": "27015156551",
+  "snapshotPath": ".modern-dev-mgmt/tenant-backups/57415788-595e-4889-901a-4ad5bcecbfe4/27015304847",
+  "createdAt": "2026-06-05T12:39:24.0987742Z",
+  "workflowRunId": "27015304847",
   "counts": {
     "conditional-access-policies": 0,
     "named-locations": 0,
@@ -168,7 +168,6 @@
     "search-qnas": 0,
     "booking-businesses": 0,
     "teams-team-templates": 0,
-    "teams-app-settings": 0,
     "m365-backup-sharepoint-protection-policies": 0,
     "m365-backup-onedrive-protection-policies": 0,
     "m365-backup-exchange-protection-policies": 0,

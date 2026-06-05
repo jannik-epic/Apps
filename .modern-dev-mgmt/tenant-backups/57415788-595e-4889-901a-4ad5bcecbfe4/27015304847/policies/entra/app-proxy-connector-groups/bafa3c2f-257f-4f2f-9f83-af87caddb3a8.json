@@ -1,0 +1,7 @@
+{
+  "id": "bafa3c2f-257f-4f2f-9f83-af87caddb3a8",
+  "name": "Default",
+  "region": "eur",
+  "connectorGroupType": "applicationProxy",
+  "isDefault": true
+}
