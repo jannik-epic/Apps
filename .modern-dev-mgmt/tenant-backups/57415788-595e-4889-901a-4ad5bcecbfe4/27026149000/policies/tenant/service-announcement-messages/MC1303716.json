@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-07T22:37:24Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-14T16:12:40.913Z",
+  "title": "(Updated) SharePoint News web part: New Filmstrip layout and multi-site news support",
+  "id": "MC1303716",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "5f486b95-8adb-45b3-8d72-0ef8ec9e2ff2",
+  "appId": "3b2fa68d-a091-48c9-95be-88d572e08fb7",
+  "displayName": "AzureBackupReporting",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

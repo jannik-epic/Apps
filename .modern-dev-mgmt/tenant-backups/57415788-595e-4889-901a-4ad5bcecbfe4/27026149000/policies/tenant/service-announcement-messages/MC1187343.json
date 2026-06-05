@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-18T20:40:32.1Z",
+  "endDateTime": "2026-11-18T20:40:32.1Z",
+  "lastModifiedDateTime": "2025-11-18T20:40:36.69Z",
+  "title": "(Update) New update to address issue affecting Windows 10 devices enrolled on Extended Security Updates (ESU)",
+  "id": "MC1187343",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

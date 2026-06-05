@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-03T05:15:53Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-03T05:16:08.49Z",
+  "title": "Microsoft Teams: Honor Windows “Do not disturb” setting",
+  "id": "MC1269215",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

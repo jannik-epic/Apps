@@ -1,0 +1,8 @@
+{
+  "id": "07fc3024-3cfd-4bae-aa88-acef0a0d5cde",
+  "appId": "c39c9bac-9d1f-4dfb-aa29-27f6365e5cb7",
+  "displayName": "Azure Advisor",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

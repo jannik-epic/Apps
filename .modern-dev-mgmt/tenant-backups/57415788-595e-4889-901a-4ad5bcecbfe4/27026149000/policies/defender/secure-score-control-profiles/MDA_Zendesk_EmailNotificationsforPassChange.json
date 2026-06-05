@@ -1,0 +1,38 @@
+{
+  "id": "MDA_Zendesk_EmailNotificationsforPassChange",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://support.zendesk.com/hc/en-us/articles/4408846853274-Managing-security-settings-in-Admin-Center#topic_a5b_q3v_gfb",
+  "controlCategory": "Identity",
+  "title": "Send a notification on password change for admins, agents, and end users",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p>To send password-change notifications</p> <ol> <li>In&nbsp;Admin Center, click <strong>Account</strong>&nbsp;in the sidebar, then select&nbsp;<strong>Security &gt; Advanced</strong>.</li> <li>On the&nbsp;<strong>Passwords</strong>&nbsp;tab, select&nbsp;<strong>Email notifications</strong>.</li> <li>Click&nbsp;<strong>Save</strong>.</li> </ol>",
+  "remediationImpact": "End users will get email notifications when their passwords change.",
+  "service": "MDA_Zendesk",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

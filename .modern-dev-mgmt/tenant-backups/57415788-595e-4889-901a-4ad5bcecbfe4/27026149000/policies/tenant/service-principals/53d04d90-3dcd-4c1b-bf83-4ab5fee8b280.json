@@ -1,0 +1,12 @@
+{
+  "id": "53d04d90-3dcd-4c1b-bf83-4ab5fee8b280",
+  "appId": "5bab4c7f-51c3-479b-a199-06b31afecc8f",
+  "displayName": "Gatekeeper Prod App",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

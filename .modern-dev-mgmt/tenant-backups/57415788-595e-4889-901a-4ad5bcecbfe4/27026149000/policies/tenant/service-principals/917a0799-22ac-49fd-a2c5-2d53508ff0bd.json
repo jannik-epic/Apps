@@ -1,0 +1,11 @@
+{
+  "id": "917a0799-22ac-49fd-a2c5-2d53508ff0bd",
+  "appId": "4eaa7769-3cf1-458c-a693-e9827e39cc95",
+  "displayName": "M365 Lighthouse API",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

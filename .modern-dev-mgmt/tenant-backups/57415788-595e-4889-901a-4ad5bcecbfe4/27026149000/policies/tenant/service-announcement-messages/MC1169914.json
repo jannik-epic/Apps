@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-10-11T01:17:07.87Z",
+  "endDateTime": "2026-10-11T01:17:07.76Z",
+  "lastModifiedDateTime": "2025-10-11T01:17:08.573Z",
+  "title": "Activation keys for Windows 10 Extended Security Update might be incorrect",
+  "id": "MC1169914",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

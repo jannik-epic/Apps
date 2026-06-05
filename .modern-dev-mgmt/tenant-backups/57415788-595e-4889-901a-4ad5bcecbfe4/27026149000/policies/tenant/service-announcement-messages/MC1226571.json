@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-03T23:00:05.15Z",
+  "endDateTime": "2027-02-03T23:00:05.073Z",
+  "lastModifiedDateTime": "2026-02-03T23:00:07.32Z",
+  "title": "Skill up on Windows at Technical Takeoff",
+  "id": "MC1226571",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

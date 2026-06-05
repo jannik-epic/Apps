@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-22T16:01:44Z",
+  "endDateTime": "2027-01-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-22T16:01:50.397Z",
+  "title": "Microsoft Viva Glint: Custom confidentiality statements",
+  "id": "MC1318856",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva"
+  ]
+}

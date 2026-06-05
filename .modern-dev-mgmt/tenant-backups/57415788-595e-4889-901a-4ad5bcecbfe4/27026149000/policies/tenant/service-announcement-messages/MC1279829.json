@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-14T17:03:33.137Z",
+  "endDateTime": "2027-04-14T17:03:33.137Z",
+  "lastModifiedDateTime": "2026-04-14T17:03:34.053Z",
+  "title": "The April 2026 Windows security update is now available",
+  "id": "MC1279829",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

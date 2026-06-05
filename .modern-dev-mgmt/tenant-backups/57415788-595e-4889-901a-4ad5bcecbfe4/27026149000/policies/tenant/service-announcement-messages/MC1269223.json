@@ -1,0 +1,14 @@
+{
+  "startDateTime": "2026-04-03T05:24:26Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-03T05:59:35.91Z",
+  "title": "Enabling Flex Routing in the EU and EFTA",
+  "id": "MC1269223",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

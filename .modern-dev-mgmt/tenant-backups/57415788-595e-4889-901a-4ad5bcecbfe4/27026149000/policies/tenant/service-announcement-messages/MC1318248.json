@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-21T21:35:39Z",
+  "endDateTime": "2026-08-24T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T17:46:15.27Z",
+  "title": "(Updated) Microsoft Purview | Data Security Posture Management: New data security agent in DSPM",
+  "id": "MC1318248",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

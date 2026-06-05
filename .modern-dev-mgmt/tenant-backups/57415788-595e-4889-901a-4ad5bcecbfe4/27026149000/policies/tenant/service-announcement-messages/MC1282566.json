@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-16T21:17:52Z",
+  "endDateTime": "2026-06-18T21:17:00Z",
+  "lastModifiedDateTime": "2026-04-16T21:18:35.637Z",
+  "title": "Power Apps - Enable online mode to access Dataverse for Canvas apps",
+  "id": "MC1282566",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Power Apps"
+  ]
+}

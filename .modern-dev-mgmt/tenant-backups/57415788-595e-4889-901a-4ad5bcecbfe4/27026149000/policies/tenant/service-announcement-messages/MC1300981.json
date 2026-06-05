@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-05T00:34:19Z",
+  "endDateTime": "2026-06-22T00:34:00Z",
+  "lastModifiedDateTime": "2026-05-05T00:40:50.113Z",
+  "title": "Power Apps - Dataverse Agent users with Microsoft Entra Agent ID",
+  "id": "MC1300981",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Power Apps"
+  ]
+}

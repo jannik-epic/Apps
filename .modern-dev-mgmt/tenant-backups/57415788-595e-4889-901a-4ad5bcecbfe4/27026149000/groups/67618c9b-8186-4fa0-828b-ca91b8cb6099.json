@@ -1,0 +1,50 @@
+{
+  "originalGroupId": "67618c9b-8186-4fa0-828b-ca91b8cb6099",
+  "name": "AAD_SEC_DD_INTUNE-iOS Devices BYOD",
+  "description": null,
+  "mailNickname": "9b6322e1-0",
+  "rawJson": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "id": "67618c9b-8186-4fa0-828b-ca91b8cb6099",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2022-08-22T11:46:52Z",
+    "creationOptions": [],
+    "description": null,
+    "displayName": "AAD_SEC_DD_INTUNE-iOS Devices BYOD",
+    "expirationDateTime": null,
+    "groupTypes": [
+      "DynamicMembership"
+    ],
+    "infoCatalogs": [],
+    "isAssignableToRole": null,
+    "mail": null,
+    "mailEnabled": false,
+    "mailNickname": "9b6322e1-0",
+    "membershipRule": "(device.deviceOwnership -eq \"Personal\") and ((device.deviceOSType -eq \"IPad\") or (device.deviceOSType -eq \"IPhone\"))",
+    "membershipRuleProcessingState": "On",
+    "onPremisesDomainName": null,
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": null,
+    "preferredLanguage": null,
+    "proxyAddresses": [],
+    "renewedDateTime": "2022-08-22T11:46:52Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": true,
+    "securityIdentifier": "S-1-12-1-1734446235-1335918982-2445970306-2573257656",
+    "theme": null,
+    "uniqueName": null,
+    "visibility": null,
+    "onPremisesProvisioningErrors": [],
+    "serviceProvisioningErrors": []
+  },
+  "memberIds": [
+    "7fa411b2-ef76-4035-b22f-a8401c5f5928",
+    "6f844dd2-8a09-4c6c-95a4-0f42ad6c2180"
+  ]
+}

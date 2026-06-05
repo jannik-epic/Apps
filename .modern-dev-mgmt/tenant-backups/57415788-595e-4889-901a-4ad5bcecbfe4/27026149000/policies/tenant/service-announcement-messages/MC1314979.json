@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-18T17:20:25Z",
+  "endDateTime": "2026-12-01T17:20:00Z",
+  "lastModifiedDateTime": "2026-05-18T17:24:57.583Z",
+  "title": "Microsoft Dataverse - Solution-aware tables and metadata in Dataverse now classified as file storage",
+  "id": "MC1314979",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Dataverse"
+  ]
+}

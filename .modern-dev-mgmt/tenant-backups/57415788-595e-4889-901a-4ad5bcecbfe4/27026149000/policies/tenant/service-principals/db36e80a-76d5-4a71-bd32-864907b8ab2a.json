@@ -1,0 +1,12 @@
+{
+  "id": "db36e80a-76d5-4a71-bd32-864907b8ab2a",
+  "appId": "7598ef18-a171-4c40-b5b2-9b6df5d67a21",
+  "displayName": "Defender for Cloud Apps - Power Platform Solution Deployer",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

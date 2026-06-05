@@ -1,0 +1,12 @@
+{
+  "id": "c5d30301-c9f2-48e6-af42-ea4ec1839edc",
+  "displayName": "devuser test",
+  "userPrincipalName": "devuser01@epicfusionlabs.com",
+  "mail": "devuser01@epicfusionlabs.com",
+  "accountEnabled": true,
+  "userType": "Member",
+  "createdDateTime": "2024-10-01T08:30:46Z",
+  "department": null,
+  "jobTitle": null,
+  "usageLocation": "CH"
+}

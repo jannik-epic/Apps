@@ -1,0 +1,27 @@
+{
+  "id": "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+  "description": "Can perform management related tasks on Teams certified devices.",
+  "displayName": "Teams Devices Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.office365.webPortal/allEntities/standard/read",
+        "microsoft.teams/devices/standard/read"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('3d762c5a-1b6c-493f-843e-55a3b42923d4')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

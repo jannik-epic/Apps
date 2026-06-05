@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-01T23:24:46Z",
+  "endDateTime": "2026-08-03T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-01T23:24:56.917Z",
+  "title": "Introducing dynamic tool discovery for MCP-based agents and connectors in Microsoft 365 Copilot",
+  "id": "MC1330889",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-08T22:46:01Z",
+  "endDateTime": "2026-07-19T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-08T22:47:06.627Z",
+  "title": "Microsoft Purview Insider Risk Management: View AI interaction messages for anonymized users",
+  "id": "MC1304292",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

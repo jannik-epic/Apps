@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-11T17:05:10.063Z",
+  "endDateTime": "2027-05-11T17:05:10.06Z",
+  "lastModifiedDateTime": "2026-05-11T17:05:11.723Z",
+  "title": "Configuring firewall and proxies for smooth Windows updates",
+  "id": "MC1307636",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-20T21:32:04Z",
+  "endDateTime": "2026-06-22T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-30T20:56:58.163Z",
+  "title": "(Updated) Microsoft 365 Copilot transition to the cloud.microsoft domain",
+  "id": "MC1286300",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

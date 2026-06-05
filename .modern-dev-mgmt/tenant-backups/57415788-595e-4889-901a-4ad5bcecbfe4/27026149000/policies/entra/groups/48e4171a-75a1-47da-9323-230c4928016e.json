@@ -1,0 +1,13 @@
+{
+  "id": "48e4171a-75a1-47da-9323-230c4928016e",
+  "displayName": "AAD_SEC_DD_INTUNE-Broad Ring Devices",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "c19564c3-2",
+  "groupTypes": [
+    "DynamicMembership"
+  ],
+  "visibility": null,
+  "createdDateTime": "2022-08-22T11:46:56Z"
+}

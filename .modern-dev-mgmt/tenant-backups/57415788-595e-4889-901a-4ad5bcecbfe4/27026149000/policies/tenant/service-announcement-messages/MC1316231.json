@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-19T22:03:31Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-02T17:10:47.197Z",
+  "title": "(Updated) Microsoft Teams: Front-of-room view control for Webinars and structured meetings in Teams Rooms on Android",
+  "id": "MC1316231",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

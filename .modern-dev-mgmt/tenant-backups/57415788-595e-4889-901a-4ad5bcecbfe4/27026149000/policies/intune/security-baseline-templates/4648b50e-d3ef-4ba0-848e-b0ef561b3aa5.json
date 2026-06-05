@@ -1,0 +1,10 @@
+{
+  "@odata.type": "#microsoft.graph.securityBaselineTemplate",
+  "id": "4648b50e-d3ef-4ba0-848e-b0ef561b3aa5",
+  "displayName": "Device control",
+  "description": "Microsoft recommends a layered approach to securing removable media, and Microsoft Defender for Endpoint provides multiple monitoring and control features to help prevent threats in unauthorized peripherals from compromising your devices.",
+  "versionInfo": "2011",
+  "templateType": "securityTemplate",
+  "platformType": "windows10AndLater",
+  "publishedDateTime": "2020-10-12T00:00:00Z"
+}

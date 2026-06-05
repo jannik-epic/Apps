@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-03T22:56:35Z",
+  "endDateTime": "2026-07-12T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T22:56:43.957Z",
+  "title": "Microsoft Teams: Town hall chat messages now support up to 500 characters",
+  "id": "MC1338829",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

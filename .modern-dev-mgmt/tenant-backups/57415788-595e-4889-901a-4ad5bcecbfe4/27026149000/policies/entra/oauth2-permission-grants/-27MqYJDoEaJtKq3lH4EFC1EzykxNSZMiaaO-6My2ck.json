@@ -1,0 +1,8 @@
+{
+  "clientId": "a9cc6efb-4382-46a0-89b4-aab7947e0414",
+  "consentType": "AllPrincipals",
+  "id": "-27MqYJDoEaJtKq3lH4EFC1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": "TeamsActivity.Send offline_access User.Invite.All User.Read User.Read.All Group.Read.All openid email profile GroupMember.ReadWrite.All TeamMember.ReadWrite.All TeamsAppInstallation.ReadForUser"
+}

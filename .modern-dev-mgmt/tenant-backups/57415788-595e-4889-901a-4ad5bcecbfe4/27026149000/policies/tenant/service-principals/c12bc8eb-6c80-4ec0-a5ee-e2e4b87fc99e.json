@@ -1,0 +1,10 @@
+{
+  "id": "c12bc8eb-6c80-4ec0-a5ee-e2e4b87fc99e",
+  "appId": "5ae4d705-5913-44a7-9769-24d2013a4d31",
+  "displayName": "[Teams App] ShareGate",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

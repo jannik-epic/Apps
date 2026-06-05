@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T16:18:38Z",
+  "endDateTime": "2026-06-13T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-30T16:18:48.983Z",
+  "title": "Microsoft Teams: Change of default file open preference",
+  "id": "MC1296482",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

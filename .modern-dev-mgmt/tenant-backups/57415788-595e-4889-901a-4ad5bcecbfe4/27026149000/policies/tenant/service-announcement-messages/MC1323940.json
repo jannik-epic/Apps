@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-27T17:08:26Z",
+  "endDateTime": "2026-06-27T17:08:26Z",
+  "lastModifiedDateTime": "2026-05-27T17:12:47.587Z",
+  "title": "Dynamics 365 Contact Center - Protect customer experience on direct inward dialing lines with overflow actions",
+  "id": "MC1323940",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

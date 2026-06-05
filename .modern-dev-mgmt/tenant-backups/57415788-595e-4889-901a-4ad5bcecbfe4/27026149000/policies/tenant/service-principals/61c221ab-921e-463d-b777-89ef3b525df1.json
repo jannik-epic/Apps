@@ -1,0 +1,10 @@
+{
+  "id": "61c221ab-921e-463d-b777-89ef3b525df1",
+  "appId": "b5ff67d6-3155-4fca-965a-59a3655c4476",
+  "displayName": "diagrams.net",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

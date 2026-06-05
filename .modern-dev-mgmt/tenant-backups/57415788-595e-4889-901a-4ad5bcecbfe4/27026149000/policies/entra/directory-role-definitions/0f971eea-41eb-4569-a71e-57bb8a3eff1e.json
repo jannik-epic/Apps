@@ -1,0 +1,26 @@
+{
+  "id": "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+  "description": "Can create and manage the attribute schema available to all user flows.",
+  "displayName": "External ID User Flow Attribute Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/b2cUserAttribute/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('0f971eea-41eb-4569-a71e-57bb8a3eff1e')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

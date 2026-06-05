@@ -1,0 +1,8 @@
+{
+  "id": "ea88f9ff-6576-4afe-8c8c-f00a3536c80e",
+  "appId": "75e725bf-66ce-4cea-9b9a-5c4caae57f33",
+  "displayName": "Azure API for DICOM",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

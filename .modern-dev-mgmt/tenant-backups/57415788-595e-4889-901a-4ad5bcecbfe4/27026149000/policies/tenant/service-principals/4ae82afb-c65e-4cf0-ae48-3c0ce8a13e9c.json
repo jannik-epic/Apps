@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "4ae82afb-c65e-4cf0-ae48-3c0ce8a13e9c",
+  "appId": "4ae82afb-c65e-4cf0-ae48-3c0ce8a13e9c",
+  "displayName": "Sentinel (Market Radar)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

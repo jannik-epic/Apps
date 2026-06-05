@@ -1,0 +1,28 @@
+{
+  "id": "f42252d9-5400-4d7b-b9ef-cc582dbb8577",
+  "description": "Read all aspects of Microsoft Entra Backup, such as list all preview jobs, recovery jobs, backup snapshots, and create preview jobs.",
+  "displayName": "Entra Backup Reader",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "f42252d9-5400-4d7b-b9ef-cc582dbb8577",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/backup/preview/cancel",
+        "microsoft.directory/backup/preview/create",
+        "microsoft.directory/backup/standard/read"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('f42252d9-5400-4d7b-b9ef-cc582dbb8577')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

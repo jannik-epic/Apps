@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-12T23:15:40Z",
+  "endDateTime": "2026-07-22T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-12T23:15:46.977Z",
+  "title": "Collect Diagnostics change to Get Diagnostics for Outlook Mobile and Mac",
+  "id": "MC1308855",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

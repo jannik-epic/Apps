@@ -1,0 +1,8 @@
+{
+  "id": "7e6c0095-17c2-47c5-8d4e-f06cff054ce6",
+  "appId": "00000001-0000-0000-c000-000000000000",
+  "displayName": "Azure ESTS Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

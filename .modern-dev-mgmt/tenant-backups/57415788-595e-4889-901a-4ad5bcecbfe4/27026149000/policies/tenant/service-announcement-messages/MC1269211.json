@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-03T05:13:19Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-04T19:13:50.607Z",
+  "title": "(Updated) Clearer RSVP selection in Outlook Mobile",
+  "id": "MC1269211",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

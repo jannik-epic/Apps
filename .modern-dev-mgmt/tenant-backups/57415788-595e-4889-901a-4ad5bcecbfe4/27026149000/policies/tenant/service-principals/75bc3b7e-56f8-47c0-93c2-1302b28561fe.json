@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "75bc3b7e-56f8-47c0-93c2-1302b28561fe",
+  "appId": "75bc3b7e-56f8-47c0-93c2-1302b28561fe",
+  "displayName": "Kim (Personal Assistant)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

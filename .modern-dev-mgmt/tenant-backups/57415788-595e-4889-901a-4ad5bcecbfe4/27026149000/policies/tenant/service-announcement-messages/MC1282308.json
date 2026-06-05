@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-16T16:25:52Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-16T18:21:42.053Z",
+  "title": "Message center post structure updates may require admin script changes",
+  "id": "MC1282308",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

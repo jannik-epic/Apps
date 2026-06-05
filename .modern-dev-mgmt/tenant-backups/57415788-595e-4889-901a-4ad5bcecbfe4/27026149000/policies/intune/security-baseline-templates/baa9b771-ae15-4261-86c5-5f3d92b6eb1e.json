@@ -1,0 +1,9 @@
+{
+  "id": "baa9b771-ae15-4261-86c5-5f3d92b6eb1e",
+  "displayName": "Windows 10 and later Compliance policy",
+  "description": "Mifo Windows 10 and later compliance policy",
+  "versionInfo": "Version 1",
+  "templateType": "deviceConfigurationForOffice365",
+  "platformType": "windows10AndLater",
+  "publishedDateTime": "2001-01-01T00:00:00Z"
+}

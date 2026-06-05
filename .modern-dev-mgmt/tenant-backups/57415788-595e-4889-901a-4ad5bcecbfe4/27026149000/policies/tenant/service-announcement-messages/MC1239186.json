@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-02-26T00:27:29Z",
+  "endDateTime": "2026-10-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-01T23:47:52.913Z",
+  "title": "(Updated) Microsoft 365 Copilot: Turn Copilot Pages into SharePoint News posts",
+  "id": "MC1239186",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

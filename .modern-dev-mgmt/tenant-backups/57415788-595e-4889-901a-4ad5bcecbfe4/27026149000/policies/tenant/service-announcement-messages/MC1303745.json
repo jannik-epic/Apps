@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-08T00:18:51Z",
+  "endDateTime": "2026-06-15T00:18:00Z",
+  "lastModifiedDateTime": "2026-05-08T00:19:20.89Z",
+  "title": "Microsoft Power Automate - Compare flow versions",
+  "id": "MC1303745",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Power Automate"
+  ]
+}

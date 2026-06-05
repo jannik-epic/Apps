@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-13T23:06:23Z",
+  "endDateTime": "2026-08-04T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-13T23:06:59.667Z",
+  "title": "Microsoft Purview | Data Loss Prevention - Enrich Defender alerts Graph API with DLP event data",
+  "id": "MC1309741",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

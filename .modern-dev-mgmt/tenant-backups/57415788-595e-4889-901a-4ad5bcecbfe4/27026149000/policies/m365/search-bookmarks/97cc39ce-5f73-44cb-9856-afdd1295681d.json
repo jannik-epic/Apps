@@ -1,0 +1,115 @@
+{
+  "displayName": "Purchase Order",
+  "description": "Find or create purchase orders, view recent requests, and get help and training.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "97cc39ce-5f73-44cb-9856-afdd1295681d",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "purchase order",
+      "my orders",
+      "view pending orders",
+      "place a purchase order",
+      "create a purchase order",
+      "view recent requests",
+      "po",
+      "mis pedidos",
+      "ver pedidos pendientes",
+      "colocar una orden de compra",
+      "crear una orden de compra",
+      "ver solicitudes recientes",
+      "orden de compra",
+      "commande d'achat",
+      "mes commandes",
+      "afficher les commandes en attente",
+      "passer une commande d'achat",
+      "créer une commande d'achat",
+      "afficher les demandes récentes",
+      "bon de commande",
+      "ordine di acquisto",
+      "i miei ordini",
+      "visualizzare gli ordini in sospeso",
+      "effettuare un ordine di acquisto",
+      "creare un ordine di acquisto",
+      "visualizzare richieste recenti",
+      "私の注文",
+      "未確定の注文を見る",
+      "注文を出す",
+      "注文を作成する",
+      "最近の請求を見る",
+      "注文",
+      "pedido de compra",
+      "meus pedidos",
+      "ver pedidos pendentes",
+      "fazer um pedido de compra",
+      "criar um pedido de compra",
+      "ver requisições recentes"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Bestellung",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Orden de compra",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Bon de commande",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Ordine di acquisto",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "注文",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Pedido de Compra",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

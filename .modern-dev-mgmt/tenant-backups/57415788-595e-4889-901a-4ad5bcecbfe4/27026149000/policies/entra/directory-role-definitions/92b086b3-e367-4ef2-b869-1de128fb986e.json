@@ -1,0 +1,28 @@
+{
+  "id": "92b086b3-e367-4ef2-b869-1de128fb986e",
+  "description": "Manage and configure all aspects of Microsoft Viva Goals.",
+  "displayName": "Viva Goals Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "92b086b3-e367-4ef2-b869-1de128fb986e",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read",
+        "microsoft.viva.goals/allEntities/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('92b086b3-e367-4ef2-b869-1de128fb986e')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "enforceSignatureCheck": false,
+  "runAs32Bit": false,
+  "id": "5fac22e1-37e2-4e26-948e-65e3dd0e1f15",
+  "displayName": "EPIC_SCR_DEV_WIN-Trigger Intune Sync",
+  "description": "",
+  "scriptContent": null,
+  "createdDateTime": "2023-06-09T07:01:50.4911151Z",
+  "lastModifiedDateTime": "2023-06-09T07:01:50.4911151Z",
+  "runAsAccount": "system",
+  "fileName": "TriggerSync.ps1",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceManagementScripts('5fac22e1-37e2-4e26-948e-65e3dd0e1f15')/assignments",
+  "assignments": [
+    {
+      "id": "5fac22e1-37e2-4e26-948e-65e3dd0e1f15:9be62e02-c686-49aa-b5f1-6c3b98537e81",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "9be62e02-c686-49aa-b5f1-6c3b98537e81"
+      }
+    }
+  ]
+}

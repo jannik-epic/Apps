@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-08T00:50:22Z",
+  "endDateTime": "2026-12-09T08:00:00Z",
+  "lastModifiedDateTime": "2026-01-08T01:19:45.83Z",
+  "title": "Microsoft 365 admin center multifactor authentication enforcement",
+  "id": "MC1215070",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

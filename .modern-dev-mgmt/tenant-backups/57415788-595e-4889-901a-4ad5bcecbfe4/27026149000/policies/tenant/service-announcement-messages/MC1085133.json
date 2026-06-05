@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-05-29T23:14:18Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-27T17:16:44.423Z",
+  "title": "(Updated) Microsoft Teams: Rule-based enablement of Microsoft 365 third-party apps in the Teams admin center",
+  "id": "MC1085133",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

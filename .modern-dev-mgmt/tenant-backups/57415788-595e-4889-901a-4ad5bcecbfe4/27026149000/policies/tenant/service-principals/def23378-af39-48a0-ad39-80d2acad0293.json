@@ -1,0 +1,12 @@
+{
+  "id": "def23378-af39-48a0-ad39-80d2acad0293",
+  "appId": "5011132f-12d7-4327-bf50-7c522b0144dd",
+  "displayName": "MDA AppG DCS",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

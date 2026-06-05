@@ -1,0 +1,8 @@
+{
+  "id": "b45102f2-13bc-4d9a-8493-bcfe88a86564",
+  "appId": "d2eb1fcd-1028-4265-abe6-04f5cd7d0ef1",
+  "displayName": "Containers/securityOperators/DefenderForContainersSecurityOperator",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

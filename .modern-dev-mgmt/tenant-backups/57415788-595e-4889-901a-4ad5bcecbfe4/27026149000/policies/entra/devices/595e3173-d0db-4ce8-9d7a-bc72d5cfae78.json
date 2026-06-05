@@ -1,0 +1,13 @@
+{
+  "id": "595e3173-d0db-4ce8-9d7a-bc72d5cfae78",
+  "displayName": "XYZ-SD-0D851FAF",
+  "deviceId": "e20959c5-be7d-4fcc-8260-9965cdb14b82",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.26200.8457",
+  "trustType": "AzureAd",
+  "profileType": "RegisteredDevice",
+  "isCompliant": true,
+  "isManaged": true,
+  "registrationDateTime": "2026-06-01T10:33:16Z"
+}

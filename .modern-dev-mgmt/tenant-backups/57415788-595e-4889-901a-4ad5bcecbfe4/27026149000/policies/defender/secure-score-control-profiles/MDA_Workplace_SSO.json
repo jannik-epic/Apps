@@ -1,0 +1,39 @@
+{
+  "id": "MDA_Workplace_SSO",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://www.workplace.com/resources/tech/authentication/sso",
+  "controlCategory": "Identity",
+  "title": "Adopt SSO (Single sign on) in Workplace by Meta",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 10,
+  "remediation": "<p>In order to enable SSO authentication in Workplace you will need to:</p> <ul> <li>Have access to your Identity Provider's configuration settings.</li> <li>Have a&nbsp;<strong>System Administrator</strong>&nbsp;role assigned in Workplace.</li> <li>Have a corresponding account in the Identity Provider with the same email as the Workplace user you are logged in with (i.e. which uses the same email address to authenticate both in Workplace and in the Identity Provider). This is essential to test SSO and complete Workplace configuration correctly.</li> </ul> <div class=\"step\"> <ol> <li class=\"step-desc\">In the&nbsp;<strong class=\"_6bfh\">Admin Panel</strong>, select&nbsp;<strong class=\"_6bfh\">Security</strong>.</li> <li class=\"step-desc\">Click on the <strong class=\"_6bfh\">Authentication</strong> tab.</li> <li class=\"step-desc\">Check the <strong class=\"_6bfh\">Single Sign-On (SSO)</strong> checkbox.</li> <li class=\"step-desc\">Click <strong class=\"_6bfh\">+Add New SSO Provider</strong>.</li> <li class=\"step-desc\">Type in the values provided by your Identity Provider into the relevant fields: SAML URL, SAML Issuer URL,&nbsp;SAML Logout Redirect (Optional),&nbsp;SAML Certificate.</li> <li class=\"step-desc\">Scroll to the bottom of the section and click the <strong class=\"_6bfh\">Test SSO</strong> button. This will result in a popup window appearing with your Identity Provider login page presented. Enter your credentials to authenticate.</li> <li class=\"step-desc\">Once the test has been completed successfully, scroll to the bottom of the page and click <strong class=\"_6bfh\">Save</strong> button.</li> <li class=\"step-desc\">If required, Configure SSO as the default authentication for new users by selecting <strong class=\"_6bfh\">SSO</strong>&nbsp;in the&nbsp;<strong class=\"_6bfh\">Default to new users</strong>&nbsp;drop-down.</li> </ol> <p>To comply with the control, the adoption rate must be above 80%.</p> </div>",
+  "remediationImpact": "None.",
+  "service": "MDA_Workplace",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration",
+    "Password Cracking"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

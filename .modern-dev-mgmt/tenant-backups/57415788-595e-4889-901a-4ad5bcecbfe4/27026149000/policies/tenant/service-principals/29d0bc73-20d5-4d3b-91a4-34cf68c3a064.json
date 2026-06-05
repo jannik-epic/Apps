@@ -1,0 +1,12 @@
+{
+  "id": "29d0bc73-20d5-4d3b-91a4-34cf68c3a064",
+  "appId": "3f6aecb4-6dbf-4e45-9141-440abdced562",
+  "displayName": "PROD Microsoft Defender For Cloud XDR",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

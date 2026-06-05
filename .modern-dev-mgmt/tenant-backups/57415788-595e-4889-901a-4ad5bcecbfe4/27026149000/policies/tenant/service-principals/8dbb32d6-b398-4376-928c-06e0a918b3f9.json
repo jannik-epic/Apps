@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentityBlueprintPrincipal",
+  "id": "8dbb32d6-b398-4376-928c-06e0a918b3f9",
+  "appId": "2df8998c-0ce2-4562-a1c1-3516e8f7f659",
+  "displayName": "test-ai-foundary-agents-proj-default-AgentIdentityBlueprint",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

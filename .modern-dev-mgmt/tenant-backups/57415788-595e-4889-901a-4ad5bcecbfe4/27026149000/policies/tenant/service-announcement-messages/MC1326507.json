@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-29T20:47:02Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T20:47:09.943Z",
+  "title": "SharePoint Pages: Updates to the Toolbox within the Content pane",
+  "id": "MC1326507",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

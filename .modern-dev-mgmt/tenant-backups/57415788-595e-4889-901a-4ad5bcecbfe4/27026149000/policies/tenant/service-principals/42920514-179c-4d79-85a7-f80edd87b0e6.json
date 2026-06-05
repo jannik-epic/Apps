@@ -1,0 +1,11 @@
+{
+  "id": "42920514-179c-4d79-85a7-f80edd87b0e6",
+  "appId": "409eb69a-5e20-4e1e-a8bf-c23300057950",
+  "displayName": "Azure Container Apps Arc - Data Plane",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

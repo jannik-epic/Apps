@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-06T22:06:03Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-06T22:06:24Z",
+  "title": "Top domain mail flow report in Exchange Online is retiring",
+  "id": "MC1272554",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

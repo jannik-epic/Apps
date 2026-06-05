@@ -1,0 +1,8 @@
+{
+  "id": "25908cc4-dc51-4adf-840f-1423945162a4",
+  "appId": "74bcdadc-2fdc-4bb3-8459-76d06952a0e9",
+  "displayName": "Microsoft Intune Web Company Portal",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

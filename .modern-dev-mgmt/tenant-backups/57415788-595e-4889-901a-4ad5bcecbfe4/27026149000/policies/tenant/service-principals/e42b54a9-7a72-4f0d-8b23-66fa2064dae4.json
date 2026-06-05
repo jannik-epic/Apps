@@ -1,0 +1,8 @@
+{
+  "id": "e42b54a9-7a72-4f0d-8b23-66fa2064dae4",
+  "appId": "981f26a1-7f43-403b-a875-f8b09b8cd720",
+  "displayName": "Azure Multi-Factor Auth Client",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

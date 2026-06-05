@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T16:19:11Z",
+  "endDateTime": "2026-06-07T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-30T16:19:19.95Z",
+  "title": "Teams Rooms Pro Management Portal: AI Assistant now available to all portal roles with RBAC-scoped data access",
+  "id": "MC1296484",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

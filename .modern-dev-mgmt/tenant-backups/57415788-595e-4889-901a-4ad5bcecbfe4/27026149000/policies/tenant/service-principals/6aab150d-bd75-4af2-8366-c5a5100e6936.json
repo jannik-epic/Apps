@@ -1,0 +1,11 @@
+{
+  "id": "6aab150d-bd75-4af2-8366-c5a5100e6936",
+  "appId": "8bdebf23-c0fe-4187-a378-717ad86f6a53",
+  "displayName": "ResourceHealthRP",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

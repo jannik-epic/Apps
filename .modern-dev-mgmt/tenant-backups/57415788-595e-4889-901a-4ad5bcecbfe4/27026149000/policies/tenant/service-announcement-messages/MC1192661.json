@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-12-06T00:16:04Z",
+  "endDateTime": "2027-05-15T07:00:00Z",
+  "lastModifiedDateTime": "2025-12-06T00:17:55.05Z",
+  "title": "Workspaces in Edge: Upcoming migration to improved architecture",
+  "id": "MC1192661",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

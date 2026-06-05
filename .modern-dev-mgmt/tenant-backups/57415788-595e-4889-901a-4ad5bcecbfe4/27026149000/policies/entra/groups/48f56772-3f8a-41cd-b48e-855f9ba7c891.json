@@ -1,0 +1,13 @@
+{
+  "id": "48f56772-3f8a-41cd-b48e-855f9ba7c891",
+  "displayName": "Test B2B Collab",
+  "description": "Create Samuel Mannhart 01.10.2025. Kann nach Rücksprache gelöscht werden.",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "TestB2BCollab",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2025-10-01T06:14:08Z"
+}

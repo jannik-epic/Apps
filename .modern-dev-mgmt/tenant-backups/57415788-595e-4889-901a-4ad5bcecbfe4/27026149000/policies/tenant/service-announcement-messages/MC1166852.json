@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-10-06T23:01:28Z",
+  "endDateTime": "2026-11-16T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-30T18:17:30.65Z",
+  "title": "(Updated) Microsoft Viva Copilot Analytics launches new agent dashboard",
+  "id": "MC1166852",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

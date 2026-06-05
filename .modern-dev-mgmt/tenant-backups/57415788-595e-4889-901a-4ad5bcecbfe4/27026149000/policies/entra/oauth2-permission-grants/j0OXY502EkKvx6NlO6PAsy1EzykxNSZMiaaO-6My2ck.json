@@ -1,0 +1,8 @@
+{
+  "clientId": "6397438f-369d-4212-afc7-a3653ba3c0b3",
+  "consentType": "AllPrincipals",
+  "id": "j0OXY502EkKvx6NlO6PAsy1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": "AccessReview.ReadWrite.All Policy.ReadWrite.DeviceConfiguration Agreement.ReadWrite.All Application.ReadWrite.All AppRoleAssignment.ReadWrite.All AuditLog.Read.All CustomSecAttributeDefinition.ReadWrite.All DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementRBAC.ReadWrite.All DeviceManagementServiceConfig.ReadWrite.All Directory.ReadWrite.All Domain.ReadWrite.All EntitlementManagement.ReadWrite.All Group.ReadWrite.All IdentityRiskyUser.Read.All OnPremDirectorySynchronization.ReadWrite.All Organization.ReadWrite.All Policy.Read.All Policy.ReadWrite.AccessReview Policy.ReadWrite.ApplicationConfiguration Policy.ReadWrite.AuthenticationFlows Policy.ReadWrite.AuthenticationMethod Policy.ReadWrite.Authorization Policy.ReadWrite.ConditionalAccess Policy.ReadWrite.ConsentRequest Policy.ReadWrite.CrossTenantAccess Policy.ReadWrite.FeatureRollout Policy.ReadWrite.PermissionGrant Policy.ReadWrite.TrustFramework RoleManagement.ReadWrite.Directory SharePointTenantSettings.ReadWrite.All Sites.ReadWrite.All TeamworkDevice.ReadWrite.All ThreatSubmissionPolicy.ReadWrite.All User.ReadWrite.All IdentityRiskEvent.ReadWrite.All Policy.ReadWrite.IdentityProtection"
+}

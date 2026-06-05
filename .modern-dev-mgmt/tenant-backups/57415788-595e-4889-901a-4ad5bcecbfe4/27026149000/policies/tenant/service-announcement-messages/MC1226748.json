@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-04T06:43:21Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-27T18:05:07.51Z",
+  "title": "Microsoft Purview | Posture Reports are now generally available",
+  "id": "MC1226748",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

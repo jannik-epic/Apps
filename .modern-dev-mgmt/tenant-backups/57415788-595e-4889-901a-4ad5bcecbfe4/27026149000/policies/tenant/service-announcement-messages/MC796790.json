@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2024-05-29T22:15:48Z",
+  "endDateTime": "2026-10-05T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-19T16:06:30.127Z",
+  "title": "M365 and Microsoft Teams: Unified management of app and agent availability in Teams, Outlook, and the Microsoft 365 app",
+  "id": "MC796790",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams",
+    "Microsoft 365 apps"
+  ]
+}

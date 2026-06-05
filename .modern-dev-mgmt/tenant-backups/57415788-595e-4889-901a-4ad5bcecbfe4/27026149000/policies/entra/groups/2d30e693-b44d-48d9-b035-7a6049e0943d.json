@@ -1,0 +1,13 @@
+{
+  "id": "2d30e693-b44d-48d9-b035-7a6049e0943d",
+  "displayName": "Sanche Test",
+  "description": "tesst gruppe",
+  "mailEnabled": true,
+  "securityEnabled": true,
+  "mailNickname": "SancheTest",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2023-12-05T10:09:48Z"
+}

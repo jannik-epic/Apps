@@ -1,0 +1,65 @@
+{
+  "id": "2e91f1c0-b05c-41ff-9429-1725f5d0daed",
+  "appId": "3dc571c3-8468-4eb1-8086-55ff5db6ed13",
+  "displayName": "SharePoint Reporting",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-07-09T08:13:05Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "d13f72ca-a275-4b96-b789-48ebcc4da984",
+          "type": "Role"
+        },
+        {
+          "id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+          "type": "Role"
+        },
+        {
+          "id": "5b567255-7703-4780-807c-7be8301ae99b",
+          "type": "Role"
+        },
+        {
+          "id": "98830695-27a2-44f7-8c18-0c3ebc9698f6",
+          "type": "Role"
+        },
+        {
+          "id": "230c1aed-a721-4c5d-9cb4-a90514e508ef",
+          "type": "Role"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

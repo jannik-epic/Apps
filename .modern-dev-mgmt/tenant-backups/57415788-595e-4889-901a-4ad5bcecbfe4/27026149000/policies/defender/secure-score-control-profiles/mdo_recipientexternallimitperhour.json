@@ -1,0 +1,35 @@
+{
+  "id": "mdo_recipientexternallimitperhour",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/antispam?tid=57415788-595e-4889-901a-4ad5bcecbfe4",
+  "controlCategory": "Apps",
+  "title": "Set maximum number of external recipients that a user can email per hour",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 128,
+  "remediation": "<p>Ensure that all users have an assigned outbound anti-spam policy by setting the &lsquo;<strong>Restrict sending to external recipients (per hour)</strong>&rsquo; option to a <a href=\"https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide#eop-outbound-spam-policy-settings\">recommended values</a> which is 500 or lower, by either updating your existing policies or creating new ones.</p>",
+  "remediationImpact": "Unknown",
+  "service": "MDO",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

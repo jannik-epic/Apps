@@ -1,0 +1,14 @@
+{
+  "id": "7e0abea2-5c20-405f-9658-bfc9a523fd49",
+  "deletedDateTime": null,
+  "displayName": "Group.Security.Policies",
+  "description": "\n        Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines\n        settings that can be used for Cloud Security Groups at a group level.\n      ",
+  "values": [
+    {
+      "name": "AllowToAddGuests",
+      "type": "System.Boolean",
+      "defaultValue": "true",
+      "description": "Flag indicating if guests are allowed in a specific Cloud Security Group."
+    }
+  ]
+}

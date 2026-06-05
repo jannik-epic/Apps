@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-27T17:20:24Z",
+  "endDateTime": "2026-06-27T17:20:24Z",
+  "lastModifiedDateTime": "2026-05-27T18:00:42.043Z",
+  "title": "Dynamics 365 Contact Center – Update to provide greater granularity to session rejection reasons",
+  "id": "MC1324072",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

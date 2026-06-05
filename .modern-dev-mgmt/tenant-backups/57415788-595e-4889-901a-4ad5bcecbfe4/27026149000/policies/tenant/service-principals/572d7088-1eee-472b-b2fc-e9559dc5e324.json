@@ -1,0 +1,8 @@
+{
+  "id": "572d7088-1eee-472b-b2fc-e9559dc5e324",
+  "appId": "e81c7467-0fc3-4866-b814-c973488361cd",
+  "displayName": "AzureBackup_Fabric_Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

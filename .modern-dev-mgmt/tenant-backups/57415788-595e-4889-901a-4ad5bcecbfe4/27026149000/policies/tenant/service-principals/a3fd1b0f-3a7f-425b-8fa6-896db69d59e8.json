@@ -1,0 +1,12 @@
+{
+  "id": "a3fd1b0f-3a7f-425b-8fa6-896db69d59e8",
+  "appId": "3a3b6b87-84e2-4ad2-aa37-d76c339371a4",
+  "displayName": "Storage Data Management RP Prod FPA",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

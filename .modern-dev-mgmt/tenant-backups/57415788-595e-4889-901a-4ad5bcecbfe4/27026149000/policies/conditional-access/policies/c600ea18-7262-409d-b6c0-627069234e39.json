@@ -1,0 +1,84 @@
+{
+  "id": "c600ea18-7262-409d-b6c0-627069234e39",
+  "templateId": null,
+  "displayName": "FFR_TST_FORCE_MDM",
+  "createdDateTime": "2025-06-03T11:57:37.5195015Z",
+  "modifiedDateTime": "2025-06-03T13:21:48.9993608Z",
+  "state": "enabled",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [
+        "0000000a-0000-0000-c000-000000000000",
+        "d4ebce55-015a-49b5-a083-c84d1797ae8c"
+      ],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [
+        "61e22477-8afd-41e0-885f-a28ba897ba8f"
+      ],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    },
+    "platforms": {
+      "includePlatforms": [
+        "android",
+        "iOS"
+      ],
+      "excludePlatforms": [
+        "windows",
+        "windowsPhone",
+        "macOS",
+        "linux"
+      ]
+    },
+    "devices": {
+      "includeDeviceStates": [],
+      "excludeDeviceStates": [],
+      "includeDevices": [],
+      "excludeDevices": [],
+      "deviceFilter": {
+        "mode": "include",
+        "rule": "device.deviceOwnership -eq \"Personal\" -or device.deviceOwnership -eq \"Company\""
+      }
+    }
+  },
+  "grantControls": {
+    "operator": "AND",
+    "builtInControls": [
+      "compliantDevice",
+      "compliantApplication"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [
+      "68208e77-c670-48ff-ae6d-8cc670baff4c"
+    ],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('c600ea18-7262-409d-b6c0-627069234e39')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

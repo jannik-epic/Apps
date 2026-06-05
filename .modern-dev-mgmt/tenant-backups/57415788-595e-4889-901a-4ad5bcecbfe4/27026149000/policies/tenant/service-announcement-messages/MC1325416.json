@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T21:33:48Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-28T21:34:07.477Z",
+  "title": "Microsoft Teams: Guest invitation emails will be sent from the inviter’s email address",
+  "id": "MC1325416",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

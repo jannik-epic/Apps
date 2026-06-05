@@ -1,0 +1,8 @@
+{
+  "id": "cc295a1b-f2eb-4343-be3b-4eb5a19baf21",
+  "appId": "79d7fb34-4bef-4417-8184-ff713af7a679",
+  "displayName": "Azure Bastion",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

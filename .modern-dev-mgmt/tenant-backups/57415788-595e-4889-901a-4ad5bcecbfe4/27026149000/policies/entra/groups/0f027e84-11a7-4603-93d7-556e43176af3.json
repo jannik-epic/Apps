@@ -1,0 +1,11 @@
+{
+  "id": "0f027e84-11a7-4603-93d7-556e43176af3",
+  "displayName": "MDM-LibreOffice Language Pack-Uninstall",
+  "description": "Modern Dev Mgmt uninstall assignment group for LibreOffice Language Pack.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "mdm-libreoffice-language-pack-uninstall-f4df59",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-05-22T07:43:45Z"
+}

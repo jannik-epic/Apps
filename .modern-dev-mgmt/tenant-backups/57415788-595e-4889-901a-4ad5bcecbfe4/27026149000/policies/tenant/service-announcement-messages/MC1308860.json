@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-12T23:20:42Z",
+  "endDateTime": "2026-06-13T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-12T23:21:39.033Z",
+  "title": "Microsoft Purview Content Explorer and Data Explorer: Data Classification List Viewer role required for data access",
+  "id": "MC1308860",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Purview"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "displayName": "Microsoft Partners",
+  "description": "The Cloud Partner Program helps you build quickly, scale growth, sell worldwide, and stand out.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "a3ad5bb4-0753-455c-a745-15463a6d97e7",
+  "webUrl": "https://partner.microsoft.com/",
+  "lastModifiedDateTime": "2023-04-13T23:39:56Z",
+  "keywords": {
+    "keywords": [
+      "partner"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Das Cloud-Partnerprogramm hilft Ihnen, schnell aufzubauen, Wachstum zu skalieren, weltweit zu verkaufen und sich abzuheben.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Socios de Microsoft",
+      "webUrl": null,
+      "description": "El programa de socios en la nube le ayudará a crear rápidamente, a escalar el crecimiento, a vender en todo el mundo y a destacar.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Partenaires Microsoft",
+      "webUrl": null,
+      "description": "Le programme Cloud Partner vous aide à générer rapidement, à mettre la croissance à l’échelle, à vendre dans le monde entier et à vous distinguer.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Il Cloud Partner Program ti aiuta a creare rapidamente, crescere in modo scalabile, vendere in tutto il mondo ed emergere rispetto alla concorrenza.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "Microsoft パートナー",
+      "webUrl": null,
+      "description": "クラウド パートナー プログラムは、迅速に構築する、成長を拡大する、世界中で販売する、注目を集める上で役立ちます。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Parceiros da Microsoft",
+      "webUrl": null,
+      "description": "O Programa Cloud Partner ajuda você a compilar rapidamente, escalar o crescimento, vender em todo o mundo e se destacar.",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

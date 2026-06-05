@@ -1,0 +1,9 @@
+{
+  "id": "bbd42235-3ff2-4429-b2c8-971c642e74d5",
+  "displayName": "Email",
+  "description": "Mifo Android Email",
+  "versionInfo": "Version 1",
+  "templateType": "deviceConfigurationForOffice365",
+  "platformType": "android",
+  "publishedDateTime": "0001-01-01T00:00:00Z"
+}

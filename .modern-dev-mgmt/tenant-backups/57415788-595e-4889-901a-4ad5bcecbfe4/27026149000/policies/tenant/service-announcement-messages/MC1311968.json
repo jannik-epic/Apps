@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-15T23:09:07Z",
+  "endDateTime": "2026-08-07T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-15T23:09:14.763Z",
+  "title": "Copilot in SharePoint will start rolling out to all tenants as an opt-out preview starting in mid-June 2026",
+  "id": "MC1311968",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

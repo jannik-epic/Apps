@@ -1,0 +1,10 @@
+{
+  "id": "5a16f8f3-df05-4b96-a3a7-195c1c5c54e7",
+  "appId": "919e1f35-95e8-42a0-9d4b-ad71b59417e7",
+  "displayName": "AvePoint Online Services – Delegated App",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

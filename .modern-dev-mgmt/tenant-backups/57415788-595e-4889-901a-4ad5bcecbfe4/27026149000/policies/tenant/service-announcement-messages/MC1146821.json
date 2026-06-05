@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-09-02T23:22:03Z",
+  "endDateTime": "2026-07-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-19T16:35:54.203Z",
+  "title": "(Updated) Rewrite with Microsoft 365 Copilot Chat coming soon to Edge for Business users",
+  "id": "MC1146821",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

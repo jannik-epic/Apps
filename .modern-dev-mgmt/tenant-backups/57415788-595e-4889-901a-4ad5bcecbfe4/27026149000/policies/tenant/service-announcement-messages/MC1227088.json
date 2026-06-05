@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-02-05T00:09:03Z",
+  "endDateTime": "2026-07-06T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-07T16:20:42.493Z",
+  "title": "(Updated) Microsoft 365 Copilot: Business justification for Copilot license requests",
+  "id": "MC1227088",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

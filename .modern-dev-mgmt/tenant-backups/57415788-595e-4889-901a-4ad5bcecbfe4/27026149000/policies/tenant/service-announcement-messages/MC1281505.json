@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-15T23:29:09Z",
+  "endDateTime": "2026-10-05T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-05T20:32:06.803Z",
+  "title": "(Updated) Microsoft Purview: Data Lifecycle Management- Azure PST Import",
+  "id": "MC1281505",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-08T22:41:49Z",
+  "endDateTime": "2026-08-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-08T22:42:04.067Z",
+  "title": "Microsoft Exchange Online: Upcoming secure-by-default changes for Exchange APIs",
+  "id": "MC1304287",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

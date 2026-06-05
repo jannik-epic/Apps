@@ -1,0 +1,13 @@
+{
+  "id": "b89b3176-d539-4233-8a63-481ddecf1458",
+  "displayName": "All Company",
+  "description": "This is the default group for everyone in the network",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "allcompany",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Public",
+  "createdDateTime": "2021-04-03T19:31:16Z"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "6b383257-904d-4d9a-ae94-53f0fea1f388",
+  "appId": "ebe2cbf9-2387-406e-8b7b-52de7ec5b99a",
+  "displayName": "Printix",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

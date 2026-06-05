@@ -1,0 +1,10 @@
+{
+  "id": "35174e82-d26b-4015-adeb-014e9fa7c74f",
+  "appId": "1ef0c1dc-6d96-4e29-b513-1e844fd2d8bc",
+  "displayName": "PnP.PowerShell",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

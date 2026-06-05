@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-08-21T22:47:27.353Z",
+  "endDateTime": "2026-08-21T22:47:27.293Z",
+  "lastModifiedDateTime": "2025-08-21T22:47:28.247Z",
+  "title": "Secure Boot certificate expiration: What Windows IT admins need to know now",
+  "id": "MC1139443",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

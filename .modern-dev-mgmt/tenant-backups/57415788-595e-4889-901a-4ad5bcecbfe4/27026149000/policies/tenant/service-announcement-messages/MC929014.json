@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2024-11-08T23:19:42Z",
+  "endDateTime": "2026-06-26T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-05T22:45:19.26Z",
+  "title": "(Updated) Microsoft Loop – Departed User Content Workflows for User-Owned Loop workspaces",
+  "id": "MC929014",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

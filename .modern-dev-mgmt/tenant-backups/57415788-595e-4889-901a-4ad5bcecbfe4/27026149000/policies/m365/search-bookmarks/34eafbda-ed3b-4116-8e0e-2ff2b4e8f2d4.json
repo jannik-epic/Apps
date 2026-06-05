@@ -1,0 +1,135 @@
+{
+  "displayName": "Expense",
+  "description": "File expense reports and find related policies and information.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "34eafbda-ed3b-4116-8e0e-2ff2b4e8f2d4",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "expense",
+      "expenses app",
+      "expense reimbursement",
+      "expense policy",
+      "global expense policy",
+      "file expense report",
+      "how to file expense report",
+      "expenses portal",
+      "expense report",
+      "expense reports",
+      "ausgaben",
+      "ausgaben app",
+      "ausgabenerstattung",
+      "ausgabenpolitik",
+      "globale ausgabenpolitik",
+      "spesenabrechnung",
+      "wie füllt man eine spesenabrechnung aus",
+      "ausgabenportal",
+      "gastos",
+      "aplicación de gastos",
+      "reembolso de gastos",
+      "política de gastos",
+      "política de gastos globales",
+      "presentar el informe de gastos",
+      "cómo presentar el informe de gastos",
+      "portal de gastos",
+      "dépenses",
+      "application de dépenses",
+      "remboursement de dépenses",
+      "politique de dépenses",
+      "politique de dépenses globale",
+      "rapport de dépenses de dossier",
+      "comment déposer un rapport de dépenses",
+      "portail de dépenses",
+      "spese",
+      "app per le spese",
+      "rimborso spese",
+      "politica delle spese",
+      "politca globale delle spese",
+      "file del report delle spese",
+      "come archiviare il report delle spese",
+      "portale spese",
+      "経費",
+      "経費アプリ",
+      "経費の払戻",
+      "経費規程",
+      "グローバル経費規程",
+      "経費レポートをファイルする",
+      "経費レポートをファイルする方法",
+      "経費ポータル",
+      "despesa",
+      "app de despesas",
+      "reembolso de despesas",
+      "política de despesas",
+      "política global de despesas",
+      "comunicação de despesas",
+      "como comunicar despesas",
+      "portal de despesas"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Kosten",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Gastos",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Frais",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Spese",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "経費",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Despesa",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

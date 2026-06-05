@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-10T22:23:16Z",
+  "endDateTime": "2026-07-25T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-10T22:23:39.133Z",
+  "title": "Complete retirement of the Outlook Lite app",
+  "id": "MC1276508",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

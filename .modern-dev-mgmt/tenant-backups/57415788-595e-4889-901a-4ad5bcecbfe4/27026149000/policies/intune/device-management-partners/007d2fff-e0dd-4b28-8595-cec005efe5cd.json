@@ -1,0 +1,12 @@
+{
+  "id": "007d2fff-e0dd-4b28-8595-cec005efe5cd",
+  "lastHeartbeatDateTime": "0001-01-01T00:00:00Z",
+  "partnerState": "unknown",
+  "partnerAppType": "singleTenantApp",
+  "singleTenantAppId": "",
+  "displayName": "Jamf",
+  "isConfigured": false,
+  "whenPartnerDevicesWillBeRemovedDateTime": null,
+  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": null,
+  "groupsRequiringPartnerEnrollment": []
+}

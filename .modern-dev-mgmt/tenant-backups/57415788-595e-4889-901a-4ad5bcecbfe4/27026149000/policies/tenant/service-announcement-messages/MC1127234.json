@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-08-01T23:23:29Z",
+  "endDateTime": "2027-01-29T08:00:00Z",
+  "lastModifiedDateTime": "2026-02-20T18:00:34.153Z",
+  "title": "(Updated) Enhanced Personalization via Communication Memory in Copilot",
+  "id": "MC1127234",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

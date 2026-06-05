@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-15T23:33:14Z",
+  "endDateTime": "2026-06-08T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-06T22:48:14.077Z",
+  "title": "Microsoft 365 Copilot: Discover Copilot actions in OneDrive/SharePoint file preview",
+  "id": "MC1281507",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

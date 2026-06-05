@@ -1,0 +1,13 @@
+{
+  "id": "25467832-f1df-47a2-8e8b-3560861c8645",
+  "displayName": "Test COE Users",
+  "description": "Test Group for User Persona Center of Excellence",
+  "mailEnabled": true,
+  "securityEnabled": true,
+  "mailNickname": "TestCOEUsers",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2024-10-03T14:20:10Z"
+}

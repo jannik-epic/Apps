@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-22T22:35:35Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-22T22:35:44.397Z",
+  "title": "Microsoft Teams: Let customers book appointments directly from your website using the Customer Connect widget",
+  "id": "MC1288532",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

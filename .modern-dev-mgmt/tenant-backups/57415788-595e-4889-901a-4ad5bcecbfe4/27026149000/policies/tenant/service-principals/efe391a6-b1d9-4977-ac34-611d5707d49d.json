@@ -1,0 +1,11 @@
+{
+  "id": "efe391a6-b1d9-4977-ac34-611d5707d49d",
+  "appId": "880da380-985e-4198-81b9-e05b1cc53158",
+  "displayName": "Azure Cognitive Search",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

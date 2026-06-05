@@ -1,0 +1,7 @@
+{
+  "id": "cf0cf181-4393-4cd5-bf3e-dee5141d1e7c",
+  "deletedDateTime": null,
+  "description": "Can manage the Microsoft Teams service.",
+  "displayName": "Teams Administrator",
+  "roleTemplateId": "69091246-20e8-4a56-aa4d-066075b2a7a8"
+}

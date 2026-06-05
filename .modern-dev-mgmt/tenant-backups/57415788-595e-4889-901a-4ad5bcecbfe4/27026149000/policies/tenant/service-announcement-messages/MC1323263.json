@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-26T22:10:34Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-26T22:10:46.033Z",
+  "title": "Microsoft Defender for Office 365: ZAP expands cleanup to Deleted Items",
+  "id": "MC1323263",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online",
+    "Microsoft Defender XDR"
+  ]
+}

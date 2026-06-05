@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-26T23:33:03Z",
+  "endDateTime": "2026-07-06T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T16:40:43.847Z",
+  "title": "(Updated) Create Excel spreadsheets from Copilot Notebook content",
+  "id": "MC1262567",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

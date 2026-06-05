@@ -1,0 +1,8 @@
+{
+  "id": "fc5587e9-068a-4e4c-8992-76976a742276",
+  "appId": "b4ca0290-4e73-4e31-ade0-c82ecfaabf6a",
+  "displayName": "Azure DNS Managed Resolver",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

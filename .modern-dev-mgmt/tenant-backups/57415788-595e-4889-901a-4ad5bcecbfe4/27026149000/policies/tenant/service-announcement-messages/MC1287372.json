@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-21T22:52:29Z",
+  "endDateTime": "2026-09-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-21T22:52:49.553Z",
+  "title": "Microsoft Entra ID Governance Account Discovery",
+  "id": "MC1287372",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

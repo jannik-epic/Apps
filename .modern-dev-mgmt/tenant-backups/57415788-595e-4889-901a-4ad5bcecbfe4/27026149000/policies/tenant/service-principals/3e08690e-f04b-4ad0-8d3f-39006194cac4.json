@@ -1,0 +1,8 @@
+{
+  "id": "3e08690e-f04b-4ad0-8d3f-39006194cac4",
+  "appId": "d9327919-6775-4843-9037-3fb0fb0473cb",
+  "displayName": "Databricks Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

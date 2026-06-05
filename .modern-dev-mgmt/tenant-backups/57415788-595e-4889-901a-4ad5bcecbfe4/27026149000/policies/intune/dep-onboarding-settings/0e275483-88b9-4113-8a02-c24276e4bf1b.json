@@ -1,0 +1,17 @@
+{
+  "id": "0e275483-88b9-4113-8a02-c24276e4bf1b",
+  "appleIdentifier": "admin.sba@epicfusionlabs.com",
+  "tokenExpirationDateTime": "2024-07-27T07:12:19Z",
+  "lastModifiedDateTime": "2023-07-28T07:12:36.6199328Z",
+  "lastSuccessfulSyncDateTime": "2023-10-24T15:17:15.1195595Z",
+  "lastSyncTriggeredDateTime": "2023-07-28T07:12:37.774187Z",
+  "shareTokenWithSchoolDataSyncService": false,
+  "lastSyncErrorCode": 3,
+  "tokenType": "dep",
+  "tokenName": "Epic Fusion Labs Intune",
+  "syncedDeviceCount": 0,
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "0"
+  ]
+}

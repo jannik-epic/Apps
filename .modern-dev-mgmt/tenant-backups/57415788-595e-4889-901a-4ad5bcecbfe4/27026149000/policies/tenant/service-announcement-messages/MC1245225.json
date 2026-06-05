@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-05T23:36:47Z",
+  "endDateTime": "2026-09-21T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-18T16:44:38.09Z",
+  "title": "(Updated) Microsoft Teams: Ad-hoc room reservation from Teams Rooms on Windows console",
+  "id": "MC1245225",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

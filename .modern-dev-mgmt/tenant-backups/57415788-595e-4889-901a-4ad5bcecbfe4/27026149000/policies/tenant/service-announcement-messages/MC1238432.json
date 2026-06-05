@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-02-25T01:16:32Z",
+  "endDateTime": "2026-07-20T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-04T22:09:56.413Z",
+  "title": "(Updated) Microsoft 365 Copilot app: Branded footer customization",
+  "id": "MC1238432",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

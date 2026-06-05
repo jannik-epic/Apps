@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-16T21:18:27Z",
+  "endDateTime": "2026-07-27T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-15T18:27:40.793Z",
+  "title": "(Updated) Create charts on pages with AI in SharePoint",
+  "id": "MC1282567",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

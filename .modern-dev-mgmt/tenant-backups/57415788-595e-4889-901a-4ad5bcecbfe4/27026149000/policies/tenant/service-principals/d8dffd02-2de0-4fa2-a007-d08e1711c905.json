@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "d8dffd02-2de0-4fa2-a007-d08e1711c905",
+  "appId": "d8dffd02-2de0-4fa2-a007-d08e1711c905",
+  "displayName": "Christa (Change Agent)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

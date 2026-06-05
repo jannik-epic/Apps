@@ -1,0 +1,8 @@
+{
+  "id": "68f0f307-1ec8-4077-8687-219ea8439cbc",
+  "appId": "36e2398c-9dd3-4f29-9a72-d9f2cfc47ad9",
+  "displayName": "CosmosDB Dedicated Instance",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-14T20:17:18Z",
+  "endDateTime": "2026-08-24T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T22:02:53.03Z",
+  "title": "(Updated) OneDrive for Business: Bug fixes to ensure storage quota aligns with license limits",
+  "id": "MC1310684",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

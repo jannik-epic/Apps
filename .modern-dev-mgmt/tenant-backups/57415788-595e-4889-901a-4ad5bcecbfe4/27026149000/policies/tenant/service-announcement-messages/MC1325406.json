@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T21:28:07Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-28T21:28:14.39Z",
+  "title": "Microsoft 365 Apps: Cloud update – simplified channel management (public preview)",
+  "id": "MC1325406",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

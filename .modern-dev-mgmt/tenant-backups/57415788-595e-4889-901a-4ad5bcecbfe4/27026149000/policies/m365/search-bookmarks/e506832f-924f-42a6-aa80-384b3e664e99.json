@@ -1,0 +1,137 @@
+{
+  "displayName": "Office Install Site",
+  "description": "Try or buy Office for Home or Business and view product information",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "e506832f-924f-42a6-aa80-384b3e664e99",
+  "webUrl": "http://aka.ms/getoffice",
+  "lastModifiedDateTime": "2021-12-10T11:25:12Z",
+  "keywords": {
+    "keywords": [
+      "office 365",
+      "install office",
+      "install office 365",
+      "install o365",
+      "install word",
+      "install powerpoint",
+      "install excel",
+      "install onenote",
+      "install outlook",
+      "installieren office",
+      "installieren office 365",
+      "installieren o365",
+      "installieren word",
+      "installieren powerpoint",
+      "installieren excel",
+      "installieren onenote",
+      "installieren outlook",
+      "instalar office",
+      "instalar office 365",
+      "instalar o365",
+      "instalar word",
+      "instalar powerpoint",
+      "instalar excel",
+      "instalar onenote",
+      "instalar outlook",
+      "installer office",
+      "installer office 365",
+      "installer o365",
+      "installer word",
+      "installer powerpoint",
+      "installer excel",
+      "installer onenote",
+      "installer outlook",
+      "installa office",
+      "installa office 365",
+      "installa o365",
+      "installa word",
+      "installa powerpoint",
+      "installa excel",
+      "installa onenote",
+      "installa outlook",
+      "インストール office",
+      "インストール office 365",
+      "インストール o365",
+      "インストール word",
+      "インストール powerpoint",
+      "インストール excel",
+      "インストール onenote",
+      "インストール outlook",
+      "office com setup",
+      "office setup",
+      "setup office com",
+      "www office com setup",
+      "setup office",
+      "https setup office com",
+      "office com setup home student 2019",
+      "office com set up",
+      "office com setup setup",
+      "setup office com 2019",
+      "office com setup 2019"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Office Installations-Website",
+      "webUrl": null,
+      "description": "Probieren oder kaufen Sie Office für private oder geschäftliche Zwecke und sehen Sie sich die Produktinformationen an",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Sitio de instalación Office",
+      "webUrl": null,
+      "description": "Pruebe o compre Office hogar o negocios y vea la información del producto",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Office site d'installation",
+      "webUrl": null,
+      "description": "Essayez ou achetez Office Famille ou Business et consultez les informations sur le produit",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Sito per installazione di Office",
+      "webUrl": null,
+      "description": "Prova o acquista Office per  la casa o per le aziende e visualizza le informazioni sul prodotto",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "Office インストールサイト",
+      "webUrl": null,
+      "description": "自宅用やビジネス用にOfficeを試したり、購入したり、製品情報を見てみましょう。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Office site de instalação",
+      "webUrl": null,
+      "description": "Experimente ou compre Office for Home or Business e veja as informações do produto",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-17T22:46:28Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-30T17:38:00.45Z",
+  "title": "(Updated) Microsoft Teams: New slash command in compose to create workflows",
+  "id": "MC1254553",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

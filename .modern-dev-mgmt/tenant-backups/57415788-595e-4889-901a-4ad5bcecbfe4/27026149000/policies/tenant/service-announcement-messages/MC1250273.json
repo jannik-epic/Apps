@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-12T23:41:19Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-06T16:18:57.797Z",
+  "title": "(Updated) Improved copy and paste support for @mentions and shared contacts in Microsoft Teams",
+  "id": "MC1250273",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

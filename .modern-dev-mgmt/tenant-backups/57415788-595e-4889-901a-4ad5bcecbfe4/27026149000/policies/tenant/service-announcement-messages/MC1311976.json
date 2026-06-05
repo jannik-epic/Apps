@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-15T23:13:14Z",
+  "endDateTime": "2026-06-16T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-15T23:13:18.12Z",
+  "title": "Department billing for Microsoft 365 Backup",
+  "id": "MC1311976",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

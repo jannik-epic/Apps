@@ -1,0 +1,13 @@
+{
+  "id": "c435c0bd-b49d-4f6e-b8c5-39f57fae0099",
+  "appId": "562db366-1b96-45d2-aa4a-f2148cef2240",
+  "displayName": "Diagnostic Services Trusted Storage Access",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient",
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

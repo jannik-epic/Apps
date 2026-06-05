@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-14T20:21:12Z",
+  "endDateTime": "2026-06-14T20:21:12Z",
+  "lastModifiedDateTime": "2026-05-18T17:31:08.453Z",
+  "title": "Power Platform admin center - Information regarding the retirement of Power Platform Security Score (Preview)",
+  "id": "MC1310690",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Power Platform"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-31T17:00:33.707Z",
+  "endDateTime": "2026-07-31T17:00:33.66Z",
+  "lastModifiedDateTime": "2025-07-31T17:00:34.61Z",
+  "title": "Upgrade to Windows 11 with Windows Autopatch groups",
+  "id": "MC1126054",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

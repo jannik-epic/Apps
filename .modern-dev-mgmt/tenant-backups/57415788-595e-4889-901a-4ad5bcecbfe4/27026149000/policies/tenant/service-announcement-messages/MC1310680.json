@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-14T20:15:05Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-27T17:00:54.15Z",
+  "title": "(Updated) New Outlook for Windows: LDAP support for S/MIME certificate lookup",
+  "id": "MC1310680",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "displayName": "HR",
+  "description": "Find information about HR programs, policies, and benefits—or complete your HR tasks.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "c002d465-4b72-478a-b004-3893030325e1",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "human resources",
+      "hr",
+      "w2",
+      "my w-2",
+      "job referrals",
+      "recruitment",
+      "hr portal",
+      "employee handbook",
+      "company policies",
+      "company policy",
+      "personalmanagement",
+      "pm",
+      "stellenvermittlung",
+      "einstellung",
+      "pm-portal",
+      "mitarbeiterhandbuch",
+      "recursos humanos",
+      "rrhh",
+      "190",
+      "mi 190",
+      "referencias de trabajo",
+      "contratación",
+      "portal de rrhh",
+      "manual del empleado",
+      "ressources humaines",
+      "rh",
+      "formulaire nr 2042",
+      "mon formulaire nr 2042",
+      "recommandations d'emploi",
+      "recrutement",
+      "portail rh",
+      "manuel de l'employé",
+      "risorse umane",
+      "tassa sul salario",
+      "le mie tasse",
+      "referenze lavorative",
+      "reclutamento",
+      "portale risorse umane",
+      "guida del dipendente",
+      "人事",
+      "源泉徴収票",
+      "私の源泉徴収票",
+      "職業紹介",
+      "求人",
+      "hrポータル",
+      "従業員ハンドブック",
+      "meu w-2",
+      "referências de emprego",
+      "recrutamento",
+      "portal do rh",
+      "livro de empregados"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Recursos humanos",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Risorse umane",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "人事",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Recursos Humanos",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

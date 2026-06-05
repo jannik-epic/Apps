@@ -1,0 +1,13 @@
+{
+  "id": "5977f02a-f0e0-466e-a79a-43d75d48ae46",
+  "displayName": "EPF-SD-EM01C3CP",
+  "deviceId": "6c96e47f-248f-4fe6-b8ab-5c77c2616e57",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.26200.7781",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2026-02-27T15:11:06Z"
+}

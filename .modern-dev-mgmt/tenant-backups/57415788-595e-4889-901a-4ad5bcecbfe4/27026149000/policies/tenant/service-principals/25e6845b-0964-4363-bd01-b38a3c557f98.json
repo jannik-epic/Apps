@@ -1,0 +1,12 @@
+{
+  "id": "25e6845b-0964-4363-bd01-b38a3c557f98",
+  "appId": "c81c4f54-f70c-49e3-a01d-0a44ed684c5a",
+  "displayName": "Power Policy CM - PROD",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

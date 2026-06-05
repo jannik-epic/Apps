@@ -1,0 +1,89 @@
+{
+  "displayName": "Record your Screen and Camera with Microsoft Stream",
+  "description": "Record your screen, record your web camera, and add effects using Microsoft Stream.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "98311954-110c-4a02-a901-ea9cc0b3e24d",
+  "webUrl": "https://stream.office.com/?from=Stream-Bookmark",
+  "lastModifiedDateTime": "2024-04-04T20:48:20Z",
+  "keywords": {
+    "keywords": [
+      "record screen",
+      "share screen",
+      "screen recorder",
+      "screen capture",
+      "screen recording",
+      "stream screen recording",
+      "webcam recorder",
+      "camera",
+      "camera recording",
+      "video creation",
+      "record video",
+      "stream camera"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Aufzeichnen von Bildschirm und Kamera mit Microsoft Stream",
+      "webUrl": null,
+      "description": "Zeichnen Sie Ihren Bildschirm auf, zeichnen Sie Ihre Webkamera auf, und fügen Sie Effekte mit Microsoft Stream.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Grabar la pantalla y la cámara con Microsoft Stream",
+      "webUrl": null,
+      "description": "Grabe la pantalla, grabe el vídeo de la cámara web y agregue efectos con Microsoft Stream.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Enregistreur d’écran et de caméra Microsoft Stream",
+      "webUrl": null,
+      "description": "Enregistrez votre écran ou votre webcam et ajoutez des effets à l’aide de Microsoft Stream.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Registra schermo e fotocamera con Microsoft Stream",
+      "webUrl": null,
+      "description": "Registra lo schermo, registra la fotocamera Web e aggiungi effetti usando Microsoft Stream.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "Microsoft Stream を使用して画面とカメラを録画する",
+      "webUrl": null,
+      "description": "Microsoft Stream を使用して、画面と Web カメラを記録し、エフェクトを追加します。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Grave a sua tela e a imagem da câmera com o Microsoft Stream",
+      "webUrl": null,
+      "description": "Grave sua tela, grave sua câmera da Web e adicione efeitos usando o Microsoft Stream.",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

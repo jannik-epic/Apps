@@ -1,0 +1,11 @@
+{
+  "id": "6390f1e1-ef85-4c6d-a4f1-27d6c3f7fd94",
+  "displayName": "AAD DC Administrators",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "AADDCAdministrators",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-07-01T07:39:45Z"
+}

@@ -1,0 +1,60 @@
+{
+  "@odata.type": "#microsoft.graph.macOSPkgApp",
+  "id": "fb20dcdb-2114-404e-b0a5-cf84f8004abf",
+  "displayName": "PackageFlow Apps E2E Homebrew Persist Smoke 2026-05-19 0.95",
+  "description": "PackageFlow Apps E2E Homebrew smoke deployment after persistence hardening.",
+  "publisher": "Rectangle",
+  "largeIcon": null,
+  "createdDateTime": "2026-05-19T09:23:37Z",
+  "lastModifiedDateTime": "2026-05-19T09:23:37Z",
+  "isFeatured": false,
+  "privacyInformationUrl": null,
+  "informationUrl": null,
+  "owner": null,
+  "developer": null,
+  "notes": null,
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": false,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "committedContentVersion": "1",
+  "fileName": "Rectangle-0.95.pkg",
+  "size": 3968640,
+  "primaryBundleId": "com.knollsoft.Rectangle",
+  "primaryBundleVersion": "0.95",
+  "ignoreVersionDetection": false,
+  "includedApps": [
+    {
+      "bundleId": "com.knollsoft.Rectangle",
+      "bundleVersion": "0.95"
+    }
+  ],
+  "minimumSupportedOperatingSystem": {
+    "v10_7": false,
+    "v10_8": false,
+    "v10_9": false,
+    "v10_10": false,
+    "v10_11": false,
+    "v10_12": false,
+    "v10_13": false,
+    "v10_14": false,
+    "v10_15": true,
+    "v11_0": false,
+    "v12_0": false,
+    "v13_0": false,
+    "v14_0": false,
+    "v15_0": false,
+    "v26_0": false
+  },
+  "preInstallScript": {
+    "scriptContent": "IyEvYmluL2Jhc2gKZWNobyAiUGFja2FnZUZsb3cgQXBwcyBFMkUgcHJlLWluc3RhbGwgbWFya2VyIDIwMjYtMDUtMTkiCg=="
+  },
+  "postInstallScript": {
+    "scriptContent": "IyEvYmluL2Jhc2gKZWNobyAiUGFja2FnZUZsb3cgQXBwcyBFMkUgcG9zdC1pbnN0YWxsIG1hcmtlciAyMDI2LTA1LTE5Igo="
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('fb20dcdb-2114-404e-b0a5-cf84f8004abf')/microsoft.graph.macOSPkgApp/assignments",
+  "assignments": []
+}

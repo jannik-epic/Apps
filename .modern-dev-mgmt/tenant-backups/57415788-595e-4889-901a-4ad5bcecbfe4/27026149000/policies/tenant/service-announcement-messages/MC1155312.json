@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-09-18T17:08:00Z",
+  "endDateTime": "2028-10-19T07:00:00Z",
+  "lastModifiedDateTime": "2025-10-22T16:36:34.827Z",
+  "title": "(Updated) Introducing Knowledge Agent (preview): AI-powered content optimization for SharePoint and Copilot",
+  "id": "MC1155312",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

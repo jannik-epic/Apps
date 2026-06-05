@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-28T22:12:09Z",
+  "endDateTime": "2026-09-21T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-04T15:55:32.663Z",
+  "title": "(Updated) Microsoft Teams: Enhanced cross-platform join via Session Initiation Protocol (SIP) for Teams Rooms on Android",
+  "id": "MC1294522",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

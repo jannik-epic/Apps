@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-23T00:54:46Z",
+  "endDateTime": "2026-10-05T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-15T16:21:22.387Z",
+  "title": "(Update)Microsoft Entra ID: General Availability of passkey profiles and migration for existing Passkeys (FIDO2) tenants",
+  "id": "MC1221452",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

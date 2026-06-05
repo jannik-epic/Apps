@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T14:10:22Z",
+  "endDateTime": "2026-06-28T14:10:22Z",
+  "lastModifiedDateTime": "2026-05-28T14:11:04.527Z",
+  "title": "Dynamics 365 Customer Insights - Data- Increase agent accuracy by grounding the agent in customer insights",
+  "id": "MC1325027",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

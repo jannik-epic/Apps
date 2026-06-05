@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-03T21:39:31Z",
+  "endDateTime": "2026-07-03T21:39:31Z",
+  "lastModifiedDateTime": "2026-06-03T22:12:00.513Z",
+  "title": "Dynamics 365 Contact Center - Real time coaching with Quality Assurance Agent",
+  "id": "MC1338796",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-27T22:43:54Z",
+  "endDateTime": "2026-07-26T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-27T22:43:59.95Z",
+  "title": "Support for disabling file previews in Microsoft Teams",
+  "id": "MC1324282",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

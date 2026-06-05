@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-09-29T23:04:46Z",
+  "endDateTime": "2026-06-30T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-19T17:43:24.49Z",
+  "title": "(Updated) Product transitions to the cloud.microsoft domain – September 2025",
+  "id": "MC1162275",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams",
+    "Microsoft 365 apps"
+  ]
+}

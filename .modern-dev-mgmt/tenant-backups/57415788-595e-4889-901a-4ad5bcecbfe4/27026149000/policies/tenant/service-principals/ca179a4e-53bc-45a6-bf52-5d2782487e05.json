@@ -1,0 +1,11 @@
+{
+  "id": "ca179a4e-53bc-45a6-bf52-5d2782487e05",
+  "appId": "224beebd-0a84-4a91-9f05-65056e3d7aa6",
+  "displayName": "Powershell Automation",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

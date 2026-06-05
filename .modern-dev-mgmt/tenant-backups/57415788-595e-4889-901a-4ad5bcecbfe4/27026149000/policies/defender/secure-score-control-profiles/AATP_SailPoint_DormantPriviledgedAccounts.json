@@ -1,0 +1,35 @@
+{
+  "id": "AATP_SailPoint_DormantPriviledgedAccounts",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2335323",
+  "controlCategory": "Identity",
+  "title": "Remove stale SailPoint privileged accounts ",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "\r\n    1. Review the list of exposed entities to discover which of your SailPoint privileged user accounts have not been used for an extended period. <br>\r\n    2. If the account is no longer required, deactivate or remove it to eliminate unnecessary exposure. <br>\r\n    ",
+  "remediationImpact": "Stale privileged accounts represent a significant security risk, as they may become targets for unauthorized access or misuse without detection. Deactivating or removing unused privileged accounts ensures that only active, monitored users have access to critical administrative capabilities. ",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Medium",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

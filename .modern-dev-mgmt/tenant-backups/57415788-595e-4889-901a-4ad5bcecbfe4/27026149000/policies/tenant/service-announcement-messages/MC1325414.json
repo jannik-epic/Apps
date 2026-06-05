@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T21:33:16Z",
+  "endDateTime": "2026-10-14T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-28T21:33:29.487Z",
+  "title": "Microsoft Entra ID SSPR will require registered authentication methods starting September 7, 2026",
+  "id": "MC1325414",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

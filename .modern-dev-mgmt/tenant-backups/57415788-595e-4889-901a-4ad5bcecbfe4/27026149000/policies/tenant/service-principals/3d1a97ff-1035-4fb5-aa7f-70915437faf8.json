@@ -1,0 +1,8 @@
+{
+  "id": "3d1a97ff-1035-4fb5-aa7f-70915437faf8",
+  "appId": "1341df96-0b28-43da-ba24-7a6ce39be816",
+  "displayName": "Azure Managed HSM RP",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

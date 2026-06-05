@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-18T21:35:24Z",
+  "endDateTime": "2026-06-18T21:35:24Z",
+  "lastModifiedDateTime": "2026-05-18T21:38:36.047Z",
+  "title": "Dynamics 365 Contact Center – Secondary audio device for notifications in Digital Messaging conversations",
+  "id": "MC1315214",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

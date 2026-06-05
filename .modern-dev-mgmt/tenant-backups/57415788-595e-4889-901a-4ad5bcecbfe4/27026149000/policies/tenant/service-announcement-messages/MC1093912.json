@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-06-13T17:25:44Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-16T16:42:34.417Z",
+  "title": "(Updated) Microsoft Outlook for iOS/Android: Improved Contacts with profile enrichment and duplicate management",
+  "id": "MC1093912",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online",
+    "Microsoft 365 apps"
+  ]
+}

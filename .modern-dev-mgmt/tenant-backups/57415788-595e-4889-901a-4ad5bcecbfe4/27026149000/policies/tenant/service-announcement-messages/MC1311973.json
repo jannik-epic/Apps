@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-15T23:11:59Z",
+  "endDateTime": "2027-02-01T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-15T23:12:03.65Z",
+  "title": "PowerPoint for Mac: Create a presentation with Copilot directly from PowerPoint Home",
+  "id": "MC1311973",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

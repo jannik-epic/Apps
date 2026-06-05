@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-24T21:47:34Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-24T21:47:48.473Z",
+  "title": "Create a line-of-business SharePoint Embedded app on SharePoint admin center",
+  "id": "MC1290827",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

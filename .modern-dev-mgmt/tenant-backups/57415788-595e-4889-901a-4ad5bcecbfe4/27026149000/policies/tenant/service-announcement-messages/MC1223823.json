@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-29T00:39:43Z",
+  "endDateTime": "2026-06-12T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-23T17:01:33.943Z",
+  "title": "(Updated) Open PDFs within Copilot",
+  "id": "MC1223823",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

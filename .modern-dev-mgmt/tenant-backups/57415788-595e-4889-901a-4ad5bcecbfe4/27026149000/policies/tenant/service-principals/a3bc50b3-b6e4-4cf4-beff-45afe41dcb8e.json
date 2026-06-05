@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "a3bc50b3-b6e4-4cf4-beff-45afe41dcb8e",
+  "appId": "a3bc50b3-b6e4-4cf4-beff-45afe41dcb8e",
+  "displayName": "Manuel (Microsoft Specialist)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

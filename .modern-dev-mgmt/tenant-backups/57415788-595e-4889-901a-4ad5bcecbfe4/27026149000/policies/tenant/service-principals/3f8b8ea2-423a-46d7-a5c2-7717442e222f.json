@@ -1,0 +1,12 @@
+{
+  "id": "3f8b8ea2-423a-46d7-a5c2-7717442e222f",
+  "appId": "849933cc-a3cb-4c0d-9626-dfcf22f1677c",
+  "displayName": "PowerPlatform-a365teamsmcp-Connector",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

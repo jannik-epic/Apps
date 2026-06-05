@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-03T05:16:27Z",
+  "endDateTime": "2026-06-19T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-03T05:16:36.807Z",
+  "title": "Outlook for Android and iOS: Support for shareable links beautification and permissions in meeting description",
+  "id": "MC1269216",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

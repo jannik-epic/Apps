@@ -1,0 +1,12 @@
+{
+  "id": "1c5776e1-3296-4e58-b3bc-dfce1bf454d0",
+  "appId": "0e959cba-d60f-49b7-afe3-1b7c34563e37",
+  "displayName": "Microsoft Teams Copilot Aggregator",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

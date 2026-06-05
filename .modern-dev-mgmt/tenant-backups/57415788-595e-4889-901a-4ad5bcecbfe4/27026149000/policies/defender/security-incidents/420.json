@@ -1,0 +1,11 @@
+{
+  "id": "420",
+  "status": "active",
+  "displayName": "Login from an unusual data center involving one user",
+  "createdDateTime": "2026-05-06T09:45:25.74Z",
+  "lastUpdateDateTime": "2026-05-06T11:26:29.0633333Z",
+  "assignedTo": null,
+  "classification": "unknown",
+  "determination": "unknown",
+  "severity": "low"
+}

@@ -1,0 +1,65 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+  "id": "3f2c6ea0-1e56-4fe9-9c08-788fd590e279",
+  "lastModifiedDateTime": "2026-01-21T07:56:59.1094678Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2026-01-21T07:56:59.1094678Z",
+  "description": "This policy is automatically created and updated to include the users scoped in DLP policies targeting unmanaged generative AI apps in the browser. It blocks users from sharing data in browsers where the protections don't apply. Apps that aren't covered by these protections can still be accessed using either Edge or Chrome.",
+  "displayName": "Edge policy to block use of browsers where Purview DLP protections for unmanaged AI apps don’t apply",
+  "version": 1,
+  "omaSettings": [
+    {
+      "@odata.type": "#microsoft.graph.omaSettingStringXml",
+      "displayName": "Microsoft Edge/Purview setting",
+      "description": "This policy was created by Microsoft Edge/Purview",
+      "omaUri": "./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/MicrosoftEdgeManagement1/EXE/Policy",
+      "secretReferenceValueId": "61de1ff5-959b-4764-9251-cdd730ce6b97_3f2c6ea0-1e56-4fe9-9c08-788fd590e279_4a9b1c55-4ed7-46d9-803b-ea9dee9e21a6",
+      "isEncrypted": true,
+      "fileName": "onlyEdgeRuleCollectionExe.xml",
+      "value": "PGEvPg=="
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingStringXml",
+      "displayName": "Microsoft Edge/Purview setting",
+      "description": "This policy was created by Microsoft Edge/Purview",
+      "omaUri": "./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/MicrosoftEdgeManagement2/StoreApps/Policy",
+      "secretReferenceValueId": "61de1ff5-959b-4764-9251-cdd730ce6b97_3f2c6ea0-1e56-4fe9-9c08-788fd590e279_d5a3cccb-e229-46c2-bbd1-e3a6c54f5871",
+      "isEncrypted": true,
+      "fileName": "onlyEdgeRuleCollectionAppx.xml",
+      "value": "PGEvPg=="
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('3f2c6ea0-1e56-4fe9-9c08-788fd590e279')/microsoft.graph.windows10CustomConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "3f2c6ea0-1e56-4fe9-9c08-788fd590e279_f1bee488-9f07-4479-8cad-baa4f666062f",
+      "source": "direct",
+      "sourceId": "3f2c6ea0-1e56-4fe9-9c08-788fd590e279",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "f1bee488-9f07-4479-8cad-baa4f666062f"
+      }
+    },
+    {
+      "id": "3f2c6ea0-1e56-4fe9-9c08-788fd590e279_d2dfdb81-8b42-4e1e-9190-ddc3ee4acc30",
+      "source": "direct",
+      "sourceId": "3f2c6ea0-1e56-4fe9-9c08-788fd590e279",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "d2dfdb81-8b42-4e1e-9190-ddc3ee4acc30"
+      }
+    }
+  ]
+}

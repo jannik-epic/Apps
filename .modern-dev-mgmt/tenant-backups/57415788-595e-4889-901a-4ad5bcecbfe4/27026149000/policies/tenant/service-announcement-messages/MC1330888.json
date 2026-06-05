@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-01T23:24:13Z",
+  "endDateTime": "2026-08-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-01T23:24:30.057Z",
+  "title": "Upcoming change to Microsoft Defender for Endpoint Advanced Hunting: removal of SMB signature data",
+  "id": "MC1330888",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Defender XDR"
+  ]
+}

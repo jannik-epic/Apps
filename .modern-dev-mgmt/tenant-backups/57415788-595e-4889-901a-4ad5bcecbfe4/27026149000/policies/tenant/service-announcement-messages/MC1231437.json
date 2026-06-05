@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-12T23:50:20Z",
+  "endDateTime": "2026-10-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-02-12T23:51:02.27Z",
+  "title": "Update PowerPoint to maintain Captions",
+  "id": "MC1231437",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

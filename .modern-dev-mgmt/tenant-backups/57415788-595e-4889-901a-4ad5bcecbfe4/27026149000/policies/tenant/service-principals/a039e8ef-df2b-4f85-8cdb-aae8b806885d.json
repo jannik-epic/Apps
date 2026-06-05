@@ -1,0 +1,12 @@
+{
+  "id": "a039e8ef-df2b-4f85-8cdb-aae8b806885d",
+  "appId": "45164d96-544d-4a64-a1ca-3fb4bbb6eb18",
+  "displayName": "ScheduledActions",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

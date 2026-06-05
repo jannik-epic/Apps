@@ -1,0 +1,14 @@
+{
+  "startDateTime": "2025-11-25T00:06:23Z",
+  "endDateTime": "2026-07-27T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-27T20:57:13.18Z",
+  "title": "(Updated) Microsoft 365 admin center: Organizational Messages to support email delivery",
+  "id": "MC1189665",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "b168cbea-2ebe-4b93-b0bb-c4294745d0c0",
+  "appId": "9abd8443-d92a-40e6-a9ec-e5b6d29bc724",
+  "displayName": "MTP Unified RBAC",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

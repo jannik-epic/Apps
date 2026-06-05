@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-12T18:01:39.143Z",
+  "endDateTime": "2026-11-12T18:01:39.083Z",
+  "lastModifiedDateTime": "2025-11-12T18:01:40.36Z",
+  "title": "Windows Autopatch for the US government: How to get started",
+  "id": "MC1185309",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

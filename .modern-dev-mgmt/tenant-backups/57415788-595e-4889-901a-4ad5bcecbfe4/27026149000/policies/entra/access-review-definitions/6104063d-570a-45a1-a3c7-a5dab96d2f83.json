@@ -1,0 +1,89 @@
+{
+  "id": "6104063d-570a-45a1-a3c7-a5dab96d2f83",
+  "displayName": "Anually_TwoDayPeriod_AccessReview_ForOneGroupOnly",
+  "createdDateTime": "2024-10-29T08:46:13.4198388Z",
+  "status": "Completed",
+  "descriptionForAdmins": "",
+  "scope": {
+    "@odata.type": "#microsoft.graph.principalResourceMembershipsScope",
+    "principalScopes": [
+      {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/v1.0/users",
+        "queryType": "MicrosoftGraph",
+        "queryRoot": null
+      }
+    ],
+    "resourceScopes": [
+      {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/v1.0/groups/58f7ea36-b169-473e-a5f6-414f67051229/transitiveMembers/microsoft.graph.user",
+        "queryType": "MicrosoftGraph",
+        "queryRoot": null
+      },
+      {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/beta/teams/58f7ea36-b169-473e-a5f6-414f67051229/channels?$filter=membershipType eq 'shared'",
+        "queryType": "MicrosoftGraph",
+        "queryRoot": null
+      }
+    ]
+  },
+  "instanceEnumerationScope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/v1.0/groups/58f7ea36-b169-473e-a5f6-414f67051229",
+    "queryType": "MicrosoftGraph",
+    "queryRoot": null
+  },
+  "reviewers": [
+    {
+      "query": "/v1.0/groups/58f7ea36-b169-473e-a5f6-414f67051229/owners",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": null
+    }
+  ],
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": false,
+    "defaultDecisionEnabled": true,
+    "defaultDecision": "Recommendation",
+    "instanceDurationInDays": 2,
+    "autoApplyDecisionsEnabled": true,
+    "recommendationsEnabled": true,
+    "recommendationLookBackDuration": "P30D",
+    "decisionHistoriesForReviewersEnabled": false,
+    "recurrence": {
+      "pattern": {
+        "type": "absoluteMonthly",
+        "interval": 12,
+        "month": 0,
+        "dayOfMonth": 0,
+        "daysOfWeek": [],
+        "firstDayOfWeek": "sunday",
+        "index": "first"
+      },
+      "range": {
+        "type": "numbered",
+        "numberOfOccurrences": 1,
+        "recurrenceTimeZone": null,
+        "startDate": "2024-10-29",
+        "endDate": "2025-10-29"
+      }
+    },
+    "applyActions": [
+      {
+        "@odata.type": "#microsoft.graph.removeAccessApplyAction"
+      }
+    ],
+    "recommendationInsightSettings": [
+      {
+        "@odata.type": "#microsoft.graph.userLastSignInRecommendationInsightSetting",
+        "recommendationLookBackDuration": "P30D",
+        "signInScope": "tenant"
+      }
+    ]
+  },
+  "instances@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('6104063d-570a-45a1-a3c7-a5dab96d2f83')/instances",
+  "instances": []
+}

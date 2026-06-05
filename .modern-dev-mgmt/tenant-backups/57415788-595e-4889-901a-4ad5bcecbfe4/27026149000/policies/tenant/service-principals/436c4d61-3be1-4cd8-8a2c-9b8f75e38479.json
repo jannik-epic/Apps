@@ -1,0 +1,8 @@
+{
+  "id": "436c4d61-3be1-4cd8-8a2c-9b8f75e38479",
+  "appId": "58ef1dbd-684c-47d6-8ffc-61ea7a197b95",
+  "displayName": "AzNS EventHub Action",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

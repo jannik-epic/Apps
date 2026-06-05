@@ -1,0 +1,39 @@
+{
+  "id": "RoleOverlap",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Behavior",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2095457",
+  "controlCategory": "Identity",
+  "title": "Use least privileged administrative roles",
+  "deprecated": false,
+  "implementationCost": "Low",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 50,
+  "remediation": "<ol><li>Identify the users in your organization with a persistent global administrator role assigned. Go to Microsoft Entra ID&gt; Roles and administrators and select the Global administrator role in the table. Identify the global admins you want to reassign to a different role. <a href=\"https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators\">Go to Roles and administrators in Microsoft Entra ID</a>&nbsp;</li><li>Assign these users to roles where they can complete necessary tasks with the least amount of privilege required. For example, if a user is primarily responsible for Exchange Online administration, they should be assigned that role instead of global administrator. Be sure to have at least two global admins designated to allow for full access to the network if one of the accounts is locked out or compromised. <a href=\"https://docs.microsoft.com/azure/active-directory/roles/delegate-by-task\">Check out this overview of available limited administrative roles</a>&nbsp;</li><li>After these persistent global admins have been reassigned new roles, return to Roles and administrators and select the Global administrator role. Select the users that no longer need persistent access and then click Remove. <a href=\"https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators\">Go to Roles and administrators in Microsoft Entra ID</a>&nbsp;</li><li>Emergency access accounts: If the only other global admin accounts your organization has set up are for \"break-glass\" scenarios, which are ineligible for role reassignment, we recommend that you set the status of this action to &ldquo;Risk accepted&rdquo;. <a href=\"https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access\">Learn more about emergency access accounts</a>&nbsp;</li></ol>",
+  "remediationImpact": " If an admin is assigned a more limited administrator role, they will lose some of the privileges that they had before. Make sure that these users have enough privileges to complete their day-to-day work.",
+  "service": "AzureAD",
+  "threats": [
+    "Account Breach",
+    "Elevation of Privilege",
+    "Malicious Insider"
+  ],
+  "tier": "Defense In Depth",
+  "userImpact": "Low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

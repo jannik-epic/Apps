@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-04T00:47:22Z",
+  "endDateTime": "2026-08-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-03-09T16:32:35.66Z",
+  "title": "(Updated) Microsoft Teams: Channel agent orchestration with GitHub, Asana, and Jira via Model Context Protocol (MCP)",
+  "id": "MC1182703",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

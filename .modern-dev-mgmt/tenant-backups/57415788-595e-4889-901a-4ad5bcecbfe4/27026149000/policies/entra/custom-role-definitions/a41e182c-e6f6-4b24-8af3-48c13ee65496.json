@@ -1,0 +1,23 @@
+{
+  "id": "a41e182c-e6f6-4b24-8af3-48c13ee65496",
+  "description": null,
+  "displayName": "TEST FFR",
+  "isBuiltIn": false,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "a41e182c-e6f6-4b24-8af3-48c13ee65496",
+  "version": null,
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/groups.unified/create",
+        "microsoft.directory/groups.unified/members/update"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('a41e182c-e6f6-4b24-8af3-48c13ee65496')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": []
+}

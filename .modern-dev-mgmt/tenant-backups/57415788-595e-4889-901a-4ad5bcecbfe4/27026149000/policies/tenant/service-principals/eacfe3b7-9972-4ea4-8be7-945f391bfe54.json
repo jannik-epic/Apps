@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "eacfe3b7-9972-4ea4-8be7-945f391bfe54",
+  "appId": "eacfe3b7-9972-4ea4-8be7-945f391bfe54",
+  "displayName": "Logo Test Identity",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

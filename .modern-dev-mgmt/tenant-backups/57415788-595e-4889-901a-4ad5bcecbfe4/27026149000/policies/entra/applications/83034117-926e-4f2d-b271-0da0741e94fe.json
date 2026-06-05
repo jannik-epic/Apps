@@ -1,0 +1,56 @@
+{
+  "id": "83034117-926e-4f2d-b271-0da0741e94fe",
+  "appId": "2e0d1ad4-7e83-4d87-8567-f7a5bcbb2e8f",
+  "displayName": "Rega Sharing App",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2023-06-22T14:36:44Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://oauth.pstmn.io/v1/browser-callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://oauth.pstmn.io/v1/browser-callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "20d37865-089c-4dee-8c41-6967602d4ac8",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "a82116e5-55eb-4c41-a434-62fe8a61c773",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

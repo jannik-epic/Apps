@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2024-11-19T23:41:26Z",
+  "endDateTime": "2026-12-28T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-26T22:17:51.133Z",
+  "title": "Microsoft Purview | Data Loss Prevention: Restrict Access action for semantic models in Microsoft Fabric (preview)",
+  "id": "MC937920",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "904dffcf-66f1-4549-ad6f-f31a2dad8a4c",
+  "appId": "c7ba1303-eaec-4626-a3ab-9cba587b2a39",
+  "displayName": "PnP-Lab-EpicFusion",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

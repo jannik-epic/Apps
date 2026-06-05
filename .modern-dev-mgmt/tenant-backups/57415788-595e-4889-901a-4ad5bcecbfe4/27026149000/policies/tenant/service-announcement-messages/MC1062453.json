@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-04-25T22:57:17Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-01-30T17:41:32.283Z",
+  "title": "(Updated) Changes to how users install Microsoft 365 apps from the Microsoft 365 Copilot app",
+  "id": "MC1062453",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

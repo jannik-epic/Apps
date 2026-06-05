@@ -1,0 +1,10 @@
+{
+  "id": "af094a4d-52c8-4db8-b9d6-f10f46b6771b",
+  "appId": "fe99f541-a67e-4696-91dc-557bb4bb1681",
+  "displayName": "PackageFlow Web Auth Prod",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

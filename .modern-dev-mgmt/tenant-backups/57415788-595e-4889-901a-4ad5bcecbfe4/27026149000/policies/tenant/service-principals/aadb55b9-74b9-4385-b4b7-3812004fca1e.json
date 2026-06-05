@@ -1,0 +1,10 @@
+{
+  "id": "aadb55b9-74b9-4385-b4b7-3812004fca1e",
+  "appId": "ecff17cf-5629-49ba-a629-7f575496aeac",
+  "displayName": "Adobe Acrobat",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

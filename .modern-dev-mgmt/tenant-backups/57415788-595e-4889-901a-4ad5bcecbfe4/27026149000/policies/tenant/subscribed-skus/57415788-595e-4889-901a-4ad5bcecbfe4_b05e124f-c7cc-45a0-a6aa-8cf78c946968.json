@@ -1,0 +1,92 @@
+{
+  "id": "57415788-595e-4889-901a-4ad5bcecbfe4_b05e124f-c7cc-45a0-a6aa-8cf78c946968",
+  "skuId": "b05e124f-c7cc-45a0-a6aa-8cf78c946968",
+  "skuPartNumber": "EMSPREMIUM",
+  "consumedUnits": 1,
+  "capabilityStatus": "Enabled",
+  "prepaidUnits": {
+    "enabled": 1,
+    "suspended": 0,
+    "warning": 0,
+    "lockedOut": 0
+  },
+  "servicePlans": [
+    {
+      "servicePlanId": "f6de4823-28fa-440b-b886-4783fa86ddba",
+      "servicePlanName": "M365_AUDIT_PLATFORM",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318",
+      "servicePlanName": "EXCHANGE_S_FOUNDATION",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "Company"
+    },
+    {
+      "servicePlanId": "14ab5db5-e6c4-4b20-b4bc-13e36fd2227f",
+      "servicePlanName": "ATA",
+      "servicePlanType": "AzureAdvancedThreatAnalytics",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2",
+      "servicePlanName": "ADALLOM_S_STANDALONE",
+      "servicePlanType": "Adallom",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "5689bec4-755d-4753-8b61-40975025187c",
+      "servicePlanName": "RMS_S_PREMIUM2",
+      "servicePlanType": "RMSOnline",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "6c57d4b6-3b23-47a5-9bc9-69f17b4947b3",
+      "servicePlanName": "RMS_S_PREMIUM",
+      "servicePlanType": "RMSOnline",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "bea4c11e-220a-4e6d-8eb8-8ea15d019f90",
+      "servicePlanName": "RMS_S_ENTERPRISE",
+      "servicePlanType": "RMSOnline",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "c1ec4a95-1f05-45b3-a911-aa3fa01094f5",
+      "servicePlanName": "INTUNE_A",
+      "servicePlanType": "SCO",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "eec0eb4f-6444-4f95-aba0-50c24d67f998",
+      "servicePlanName": "AAD_PREMIUM_P2",
+      "servicePlanType": "AADPremiumService",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "8a256a2b-b617-496d-b51b-e76466e88db0",
+      "servicePlanName": "MFA_PREMIUM",
+      "servicePlanType": "MultiFactorService",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "41781fb2-bc02-4b7c-bd55-b576c07bb09d",
+      "servicePlanName": "AAD_PREMIUM",
+      "servicePlanType": "AADPremiumService",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    }
+  ]
+}

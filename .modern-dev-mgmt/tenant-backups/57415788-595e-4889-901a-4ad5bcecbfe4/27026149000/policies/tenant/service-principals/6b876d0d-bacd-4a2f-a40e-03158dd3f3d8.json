@@ -1,0 +1,11 @@
+{
+  "id": "6b876d0d-bacd-4a2f-a40e-03158dd3f3d8",
+  "appId": "69dda2a9-33ca-4ed0-83fb-a9b7b8973ff4",
+  "displayName": "Azure Files",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

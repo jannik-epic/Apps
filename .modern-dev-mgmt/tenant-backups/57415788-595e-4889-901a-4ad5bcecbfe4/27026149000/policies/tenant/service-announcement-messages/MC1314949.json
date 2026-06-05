@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-18T16:24:57Z",
+  "endDateTime": "2026-12-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-19T16:31:22.76Z",
+  "title": "(Updated) Microsoft Viva Copilot Analytics: Daily Copilot usage snapshot with fresh data",
+  "id": "MC1314949",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

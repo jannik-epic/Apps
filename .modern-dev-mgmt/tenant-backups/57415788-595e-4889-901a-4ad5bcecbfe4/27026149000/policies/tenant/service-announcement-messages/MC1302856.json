@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-06T20:52:06Z",
+  "endDateTime": "2026-06-06T20:52:06Z",
+  "lastModifiedDateTime": "2026-05-06T20:53:00.013Z",
+  "title": "Dynamics 365 Commerce - Configure inline actions on transaction line items in Store Commerce",
+  "id": "MC1302856",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

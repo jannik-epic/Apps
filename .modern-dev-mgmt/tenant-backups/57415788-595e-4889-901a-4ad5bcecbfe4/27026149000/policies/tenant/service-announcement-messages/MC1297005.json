@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-01T02:37:56Z",
+  "endDateTime": "2026-06-30T02:37:00Z",
+  "lastModifiedDateTime": "2026-05-01T02:41:04.863Z",
+  "title": "Dynamics 365 Customer Insights - Data - Reduce alert fatigue with noise-free notifications",
+  "id": "MC1297005",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

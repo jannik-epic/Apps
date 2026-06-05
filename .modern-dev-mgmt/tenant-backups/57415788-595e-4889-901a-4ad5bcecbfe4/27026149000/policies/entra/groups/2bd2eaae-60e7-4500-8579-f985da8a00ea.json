@@ -1,0 +1,13 @@
+{
+  "id": "2bd2eaae-60e7-4500-8579-f985da8a00ea",
+  "displayName": "M365 Training",
+  "description": "M365 Training",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "M365Training",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2024-05-23T05:40:41Z"
+}

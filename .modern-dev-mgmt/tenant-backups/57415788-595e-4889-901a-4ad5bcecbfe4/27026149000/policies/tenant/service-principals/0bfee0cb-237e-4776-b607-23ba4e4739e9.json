@@ -1,0 +1,12 @@
+{
+  "id": "0bfee0cb-237e-4776-b607-23ba4e4739e9",
+  "appId": "f5f46cfd-576b-4dd6-b24e-460c84b3793c",
+  "displayName": "PowerPlatform-a365memcp-Connector",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

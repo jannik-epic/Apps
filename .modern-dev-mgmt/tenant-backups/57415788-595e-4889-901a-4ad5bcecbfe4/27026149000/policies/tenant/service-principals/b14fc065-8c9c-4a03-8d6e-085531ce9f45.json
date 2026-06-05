@@ -1,0 +1,10 @@
+{
+  "id": "b14fc065-8c9c-4a03-8d6e-085531ce9f45",
+  "appId": "21086043-57d3-404d-9918-60ee1835a023",
+  "displayName": "Inforcer Integration",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

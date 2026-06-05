@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-10T22:46:28Z",
+  "endDateTime": "2026-11-29T08:00:00Z",
+  "lastModifiedDateTime": "2026-03-31T18:04:06.4Z",
+  "title": "(Updated) Retirement of -Credential parameter when connecting to Exchange Online PowerShell",
+  "id": "MC1248389",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

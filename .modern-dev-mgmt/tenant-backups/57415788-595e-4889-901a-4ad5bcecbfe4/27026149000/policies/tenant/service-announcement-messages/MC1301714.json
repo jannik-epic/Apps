@@ -1,0 +1,14 @@
+{
+  "startDateTime": "2026-05-05T18:50:29Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-13T17:45:03.59Z",
+  "title": "Microsoft Purview | Data Loss Prevention- DLP to restrict processing external emails in M365 Copilot and Copilot Chat",
+  "id": "MC1301714",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft Purview",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-03T17:00:49.66Z",
+  "endDateTime": "2027-04-03T17:00:49.66Z",
+  "lastModifiedDateTime": "2026-04-03T17:00:50.743Z",
+  "title": "Replacement of the Microsoft SaRA command-line utility in Windows",
+  "id": "MC1269727",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

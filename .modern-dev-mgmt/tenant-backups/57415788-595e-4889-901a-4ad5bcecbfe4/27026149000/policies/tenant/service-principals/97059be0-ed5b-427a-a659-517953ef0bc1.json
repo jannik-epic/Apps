@@ -1,0 +1,8 @@
+{
+  "id": "97059be0-ed5b-427a-a659-517953ef0bc1",
+  "appId": "5ed8fe41-c1bc-4c06-a531-d91e1f1c2fac",
+  "displayName": "Azure Database for PostgreSQL Marlin",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

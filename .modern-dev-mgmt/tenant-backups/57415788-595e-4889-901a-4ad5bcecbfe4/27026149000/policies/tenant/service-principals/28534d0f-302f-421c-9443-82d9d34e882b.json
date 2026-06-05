@@ -1,0 +1,8 @@
+{
+  "id": "28534d0f-302f-421c-9443-82d9d34e882b",
+  "appId": "9c8b80bc-6887-42d0-b1af-d0c40f9bf1fa",
+  "displayName": "Azure SQL Managed Instance to Azure AD Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}
