@@ -1,9 +1,9 @@
 {
-  "backupId": "27014925044",
+  "backupId": "27015156551",
   "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
-  "snapshotPath": ".modern-dev-mgmt/tenant-backups/57415788-595e-4889-901a-4ad5bcecbfe4/27014925044",
-  "createdAt": "2026-06-05T12:31:13.9700394Z",
-  "workflowRunId": "27014925044",
+  "snapshotPath": ".modern-dev-mgmt/tenant-backups/57415788-595e-4889-901a-4ad5bcecbfe4/27015156551",
+  "createdAt": "2026-06-05T12:36:19.4739379Z",
+  "workflowRunId": "27015156551",
   "counts": {
     "conditional-access-policies": 0,
     "named-locations": 0,
@@ -136,7 +136,6 @@
     "resource-access-profiles": 0,
     "derived-credentials": 0,
     "ndes-connectors": 1,
-    "certificate-connector-details": 0,
     "device-management-settings": 1,
     "role-assignments": 0,
     "operation-approval-policies": 0,
