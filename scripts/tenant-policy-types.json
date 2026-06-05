@@ -1719,11 +1719,12 @@
     "group": "intune-config",
     "graphBase": "beta",
     "readPath": "deviceManagement/resourceAccessProfiles",
-    "supportsExpandAssignments": true,
+    "supportsExpandAssignments": false,
     "assignsViaAssign": true,
     "singleton": false,
     "restorable": true,
-    "subdir": "intune/resource-access-profiles"
+    "subdir": "intune/resource-access-profiles",
+    "notes": "Base collection does not support $expand=assignments."
   },
   {
     "key": "derived-credentials",
@@ -1751,20 +1752,6 @@
     "restorable": false,
     "subdir": "intune/ndes-connectors",
     "notes": "On-prem self-registering connector; health/inventory evidence."
-  },
-  {
-    "key": "certificate-connector-details",
-    "policyType": "CertificateConnectorDetails",
-    "label": "Certificate connector details",
-    "group": "intune-config",
-    "graphBase": "beta",
-    "readPath": "deviceManagement/certificateConnectorDetails",
-    "supportsExpandAssignments": false,
-    "assignsViaAssign": true,
-    "singleton": false,
-    "restorable": false,
-    "subdir": "intune/certificate-connector-details",
-    "notes": "Connector inventory/health evidence; not a restore target."
   },
   {
     "key": "device-management-settings",
