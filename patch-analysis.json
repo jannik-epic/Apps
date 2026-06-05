@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-06-05T03:44:57.627Z",
+  "scannedAt": "2026-06-05T04:31:04.318Z",
   "results": [
     {
       "appId": 803,
@@ -55,7 +55,7 @@
       "appId": 4128,
       "packageManager": "winget",
       "packageId": "Microsoft.Office",
-      "currentDeployedVersion": "16.0.19929.20172",
+      "currentDeployedVersion": "16.0.20026.20112",
       "latestUpstreamVersion": "16.0.19929.20090",
       "hasUpdate": true,
       "bumpType": null,
