@@ -63,7 +63,7 @@ on:
         type: boolean
         default: false
       request_context_b64:
-        description: 'Base64 encoded Modern Dev Mgmt request context'
+        description: 'Base64 encoded Vanguard request context'
         required: false
         type: string
 
@@ -84,7 +84,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Resolve target Azure tenant from Modern Dev Mgmt context
+      - name: Resolve target Azure tenant from Vanguard context
         shell: bash
         env:
           MODERN_DEVMGMT_CONTEXT_B64: ${{ github.event.inputs.modern_dev_mgmt_context_b64 }}
@@ -96,7 +96,7 @@ jobs:
           # defaults are baked at provisioning time and can only point at one
           # tenant.
           if [[ -z "${MODERN_DEVMGMT_CONTEXT_B64:-}" ]]; then
-            echo "no Modern Dev Mgmt context — keeping default AZURE_TENANT_ID/CLIENT_ID"
+            echo "no Vanguard context — keeping default AZURE_TENANT_ID/CLIENT_ID"
             exit 0
           fi
           decoded="$(printf '%s' "$MODERN_DEVMGMT_CONTEXT_B64" | base64 --decode 2>/dev/null || true)"
@@ -302,7 +302,7 @@ jobs:
           Add-Content -Path $env:GITHUB_OUTPUT -Value "action=$action"
 
           $summary = @(
-            '# Modern Dev Mgmt directory provisioning',
+            '# Vanguard directory provisioning',
             '',
             '| Field | Value |',
             '| --- | --- |',
