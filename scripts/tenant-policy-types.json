@@ -2196,20 +2196,6 @@
     "notes": "Needs TeamTemplates.Read.All consent."
   },
   {
-    "key": "teams-app-settings",
-    "policyType": "TeamsAppSettings",
-    "label": "Teams org-wide app settings",
-    "group": "m365",
-    "graphBase": "v1.0",
-    "readPath": "teamwork/teamsAppSettings",
-    "supportsExpandAssignments": false,
-    "assignsViaAssign": true,
-    "singleton": true,
-    "restorable": true,
-    "subdir": "m365/teams-app-settings",
-    "notes": "Needs TeamworkAppSettings.Read.All consent."
-  },
-  {
     "key": "m365-backup-sharepoint-protection-policies",
     "policyType": "SharePointProtectionPolicy",
     "label": "M365 Backup — SharePoint protection policies",
