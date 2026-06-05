@@ -1,9 +1,18 @@
 {
-  "backupId": "27024594422",
+  "schemaVersion": 1,
+  "source": "modern-dev-mgmt",
   "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
-  "snapshotPath": ".modern-dev-mgmt/tenant-backups/57415788-595e-4889-901a-4ad5bcecbfe4/27024594422",
-  "createdAt": "2026-06-05T15:41:08.8665665Z",
+  "backupId": "27024594422",
   "workflowRunId": "27024594422",
+  "repository": "jannik-epic/Apps",
+  "scope": "full",
+  "includedTypes": [],
+  "label": "post-consent-validation",
+  "includeAssignments": true,
+  "includeGroups": true,
+  "createdAt": "2026-06-05T15:41:08.8665665Z",
+  "graphBase": "https://graph.microsoft.com/v1.0",
+  "graphBetaBase": "https://graph.microsoft.com/beta",
   "counts": {
     "conditional-access-policies": 0,
     "named-locations": 0,
@@ -127,5 +136,7 @@
     "assignments": 0,
     "groups": 0
   },
-  "scope": "full"
+  "warningCount": 0,
+  "limitationCount": 0,
+  "policies": []
 }
