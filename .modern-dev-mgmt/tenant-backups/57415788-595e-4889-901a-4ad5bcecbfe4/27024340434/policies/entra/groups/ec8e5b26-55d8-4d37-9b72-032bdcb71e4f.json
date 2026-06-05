@@ -1,0 +1,13 @@
+{
+  "id": "ec8e5b26-55d8-4d37-9b72-032bdcb71e4f",
+  "displayName": "AAD_SEC_DD_INTUNE-Android Devices Company Owned",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "8cd4211d-0",
+  "groupTypes": [
+    "DynamicMembership"
+  ],
+  "visibility": null,
+  "createdDateTime": "2022-08-22T11:46:52Z"
+}

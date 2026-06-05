@@ -1,0 +1,10 @@
+{
+  "id": "3e339589-7754-4d79-83ac-55d08429230d",
+  "appId": "5da7367f-09c8-493e-8fd4-638089cddec3",
+  "displayName": "CABProvisioning",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

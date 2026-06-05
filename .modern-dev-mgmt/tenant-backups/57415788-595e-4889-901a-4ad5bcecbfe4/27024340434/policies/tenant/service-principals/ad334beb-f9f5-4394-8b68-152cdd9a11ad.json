@@ -1,0 +1,12 @@
+{
+  "id": "ad334beb-f9f5-4394-8b68-152cdd9a11ad",
+  "appId": "3bc14a7e-1847-400d-b02e-54589a0ec7e6",
+  "displayName": "Intune EDU Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

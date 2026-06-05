@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-10-14T17:02:03.763Z",
+  "endDateTime": "2026-10-14T17:02:03.763Z",
+  "lastModifiedDateTime": "2025-10-14T17:02:09.563Z",
+  "title": "Windows 10 has reached end of support",
+  "id": "MC1172447",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-03T22:51:58Z",
+  "endDateTime": "2026-08-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T22:52:45.607Z",
+  "title": "Microsoft Purview | Data Loss Prevention – Block external domain or user access for SharePoint and OneDrive",
+  "id": "MC1338823",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-03T22:48:31Z",
+  "endDateTime": "2026-07-11T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T22:48:39.603Z",
+  "title": "Microsoft Edge: Enterprise WebView2 runtime downgrade via Downgrade Version policy",
+  "id": "MC1338819",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "b8aa4bd6-6834-4a9e-8493-aa7753053fd1",
+  "appId": "37f8ef38-02c3-4936-ade8-95527d835aef",
+  "displayName": "LastPass Provisioning App",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": true,
+  "tags": [
+    "WindowsAzureActiveDirectoryCustomSingleSignOnApplication",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

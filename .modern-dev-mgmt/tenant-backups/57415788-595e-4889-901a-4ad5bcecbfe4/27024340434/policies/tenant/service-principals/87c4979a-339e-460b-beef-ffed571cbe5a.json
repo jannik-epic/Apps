@@ -1,0 +1,11 @@
+{
+  "id": "87c4979a-339e-460b-beef-ffed571cbe5a",
+  "appId": "15103dbc-f067-4ff0-bd16-5355b9327eed",
+  "displayName": "TestPKCSImport",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

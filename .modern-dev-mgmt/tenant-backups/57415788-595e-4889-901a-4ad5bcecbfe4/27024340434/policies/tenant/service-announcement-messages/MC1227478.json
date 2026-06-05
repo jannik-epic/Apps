@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-05T18:00:50.41Z",
+  "endDateTime": "2027-02-05T18:00:50.363Z",
+  "lastModifiedDateTime": "2026-02-05T18:00:52.417Z",
+  "title": "Advancing Windows security: Disabling NTLM by default",
+  "id": "MC1227478",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

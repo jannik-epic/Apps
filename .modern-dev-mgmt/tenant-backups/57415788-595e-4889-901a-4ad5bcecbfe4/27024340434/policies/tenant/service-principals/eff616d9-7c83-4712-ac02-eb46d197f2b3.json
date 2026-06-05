@@ -1,0 +1,10 @@
+{
+  "id": "eff616d9-7c83-4712-ac02-eb46d197f2b3",
+  "appId": "97c60a23-521e-407a-87f8-fe14d7c771d6",
+  "displayName": "APElements Security and Analysis",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

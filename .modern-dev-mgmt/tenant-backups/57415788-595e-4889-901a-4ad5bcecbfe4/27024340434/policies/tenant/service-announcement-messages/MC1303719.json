@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-07T22:39:04Z",
+  "endDateTime": "2026-09-12T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-07T22:39:10.867Z",
+  "title": "Microsoft Entra: Upcoming changes to federatedTokenValidationPolicy default settings",
+  "id": "MC1303719",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

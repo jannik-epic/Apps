@@ -1,0 +1,11 @@
+{
+  "id": "ba5eea3e-49ee-46c3-8a18-4964dc67ec96",
+  "appId": "57c0fc58-a83a-41d0-8ae9-08952659bdfd",
+  "displayName": "Azure Cosmos DB Virtual Network To Network Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

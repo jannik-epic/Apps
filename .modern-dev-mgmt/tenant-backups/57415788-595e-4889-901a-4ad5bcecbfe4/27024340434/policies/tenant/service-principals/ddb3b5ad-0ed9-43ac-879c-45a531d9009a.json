@@ -1,0 +1,10 @@
+{
+  "id": "ddb3b5ad-0ed9-43ac-879c-45a531d9009a",
+  "appId": "35d6529f-ddc6-4bba-8d22-11c136f0f400",
+  "displayName": "App-mgmt",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

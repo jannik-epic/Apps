@@ -1,0 +1,26 @@
+{
+  "id": "04c62d88-b58a-4da5-a8fd-c29714816ba4",
+  "appId": "9f7cc74c-3ce1-4360-987a-10c901e84f62",
+  "displayName": "Chris (IT) (Microsoft Copilot Studio)",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-12-01T07:28:03Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

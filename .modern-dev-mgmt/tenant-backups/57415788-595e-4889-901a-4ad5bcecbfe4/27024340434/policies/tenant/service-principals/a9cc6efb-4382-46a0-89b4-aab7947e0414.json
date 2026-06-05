@@ -1,0 +1,11 @@
+{
+  "id": "a9cc6efb-4382-46a0-89b4-aab7947e0414",
+  "appId": "3550c2c4-696b-45c8-8537-2d627e51b929",
+  "displayName": "External User Manager",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "NoLiveSdkSupport",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

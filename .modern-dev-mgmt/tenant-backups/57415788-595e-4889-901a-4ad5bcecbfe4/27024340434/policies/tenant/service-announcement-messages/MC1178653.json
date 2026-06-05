@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-10-24T02:26:25.157Z",
+  "endDateTime": "2026-10-24T02:26:25.08Z",
+  "lastModifiedDateTime": "2025-10-24T02:26:26.617Z",
+  "title": "Take Action: Out-of-band update to address a vulnerability in Windows Server Update Services (WSUS)",
+  "id": "MC1178653",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "1c87cea3-67fc-4880-8cfa-246fdd8de98e",
+  "appId": "eec53b1f-b9a4-4479-acf5-6b247c6a49f2",
+  "displayName": "Microsoft.HybridCompute Agent Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-12-10T00:21:08Z",
+  "endDateTime": "2026-08-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-06-02T20:40:41.173Z",
+  "title": "(Updated) Microsoft 365: Enrich profile cards with custom properties from third-party systems",
+  "id": "MC1193692",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

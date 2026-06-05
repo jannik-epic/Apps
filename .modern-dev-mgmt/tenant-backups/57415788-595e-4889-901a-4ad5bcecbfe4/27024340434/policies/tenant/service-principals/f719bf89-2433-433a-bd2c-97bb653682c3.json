@@ -1,0 +1,11 @@
+{
+  "id": "f719bf89-2433-433a-bd2c-97bb653682c3",
+  "appId": "3dc571c3-8468-4eb1-8086-55ff5db6ed13",
+  "displayName": "SharePoint Reporting",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

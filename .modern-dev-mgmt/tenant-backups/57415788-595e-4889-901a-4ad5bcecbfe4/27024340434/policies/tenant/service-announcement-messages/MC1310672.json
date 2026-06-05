@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-14T20:10:32Z",
+  "endDateTime": "2026-07-22T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-14T20:10:44.89Z",
+  "title": "Microsoft Purview: Update to ResultCount parameter in the Search-UnifiedAuditLog cmdlet",
+  "id": "MC1310672",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

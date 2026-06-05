@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-05-23T23:15:29Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T20:07:29.933Z",
+  "title": "(Updated) Microsoft Teams: Wifi check-in: automatically update work location by connecting to a Wi-Fi network",
+  "id": "MC1081568",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

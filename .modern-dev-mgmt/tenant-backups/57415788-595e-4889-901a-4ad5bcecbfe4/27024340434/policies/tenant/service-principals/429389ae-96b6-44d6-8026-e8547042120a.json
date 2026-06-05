@@ -1,0 +1,11 @@
+{
+  "id": "429389ae-96b6-44d6-8026-e8547042120a",
+  "appId": "f569b9c7-be15-4e87-86f7-87d30d02090b",
+  "displayName": "O365 LinkedIn Connection",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "9be62e02-c686-49aa-b5f1-6c3b98537e81",
+    "OptIn_Selected"
+  ]
+}

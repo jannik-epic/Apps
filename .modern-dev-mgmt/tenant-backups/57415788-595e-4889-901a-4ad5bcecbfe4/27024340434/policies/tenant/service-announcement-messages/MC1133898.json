@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-08-12T17:01:27.267Z",
+  "endDateTime": "2026-08-12T17:01:27.267Z",
+  "lastModifiedDateTime": "2025-08-12T17:01:29.953Z",
+  "title": "PowerShell 2.0 removal in Windows",
+  "id": "MC1133898",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

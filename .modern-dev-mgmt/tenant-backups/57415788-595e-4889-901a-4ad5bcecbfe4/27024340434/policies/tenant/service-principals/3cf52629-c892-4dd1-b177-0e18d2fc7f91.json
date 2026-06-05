@@ -1,0 +1,8 @@
+{
+  "id": "3cf52629-c892-4dd1-b177-0e18d2fc7f91",
+  "appId": "14452459-6fa6-4ec0-bc50-1528a1a06bf0",
+  "displayName": "Intune CMDeviceService",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

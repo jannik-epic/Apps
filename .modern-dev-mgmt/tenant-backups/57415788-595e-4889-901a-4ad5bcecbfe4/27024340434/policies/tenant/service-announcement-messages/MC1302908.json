@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-06T22:54:41Z",
+  "endDateTime": "2026-07-21T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-27T16:58:33.307Z",
+  "title": "(Updated) Outlook: Support for storing S/MIME certificates in contacts in new Outlook",
+  "id": "MC1302908",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online",
+    "Microsoft 365 apps"
+  ]
+}

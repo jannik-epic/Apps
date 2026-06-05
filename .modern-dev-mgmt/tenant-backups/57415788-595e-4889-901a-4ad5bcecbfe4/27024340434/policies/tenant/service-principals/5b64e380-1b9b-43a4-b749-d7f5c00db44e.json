@@ -1,0 +1,10 @@
+{
+  "id": "5b64e380-1b9b-43a4-b749-d7f5c00db44e",
+  "appId": "a08ec737-8f0e-468c-bba0-75b7714295ad",
+  "displayName": "Device Managment Query App",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

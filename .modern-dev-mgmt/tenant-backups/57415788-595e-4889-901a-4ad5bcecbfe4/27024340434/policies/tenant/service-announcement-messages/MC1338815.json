@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-03T22:43:05Z",
+  "endDateTime": "2027-01-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T22:43:58.407Z",
+  "title": "Microsoft 365 Copilot: Self-service 30-day trial for eligible small and medium businesses",
+  "id": "MC1338815",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

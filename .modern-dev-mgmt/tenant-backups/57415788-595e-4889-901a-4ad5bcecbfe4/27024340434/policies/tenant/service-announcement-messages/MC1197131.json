@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-12-15T20:10:45Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-02T18:20:54.87Z",
+  "title": "(Updated) Retirement of featured links on SharePoint Start Page",
+  "id": "MC1197131",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

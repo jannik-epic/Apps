@@ -1,0 +1,35 @@
+{
+  "id": "meeting_anonymousstartmeeting_v1",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://admin.teams.microsoft.com/policies/meetings",
+  "controlCategory": "Apps",
+  "title": "Restrict anonymous users from starting Teams meetings",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 0,
+  "remediation": "<ol> <li>Log into <a href=\"https://admin.teams.microsoft.com/\" target=\"_blank\">Microsoft Teams admin center</a></li>   <li>In the left navigation, go to <b> Meetings > Meeting Policies </b> </li> <li>Under Manage Policies, select a group/direct policy</li> <li>Under the Participants & guests section, toggle \"Let anonymous people start a meeting\" to <b>Off</b></li> <li>You’ll need to change this setting for each group/direct policy</li> </ol> ",
+  "remediationImpact": "Unknown",
+  "service": "MS Teams",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

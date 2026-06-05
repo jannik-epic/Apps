@@ -1,0 +1,11 @@
+{
+  "id": "44a61ad8-943b-41c3-964a-e71fa0d36722",
+  "displayName": "AAD_SEC_AS_CAC-Exclude from Force compliant Devices Mobile",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "a99eba85-2",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-08-22T11:46:55Z"
+}

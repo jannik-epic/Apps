@@ -1,0 +1,11 @@
+{
+  "id": "0242b11c-9a50-49f0-b075-fc435a12926f",
+  "appId": "9191c4da-09fe-49d9-a5f1-d41cbe92ad95",
+  "displayName": "Azure HDInsight Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

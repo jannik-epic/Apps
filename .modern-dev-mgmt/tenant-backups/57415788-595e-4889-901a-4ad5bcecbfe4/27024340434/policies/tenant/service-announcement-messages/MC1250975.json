@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-13T18:59:56.223Z",
+  "endDateTime": "2027-03-13T18:59:56.173Z",
+  "lastModifiedDateTime": "2026-03-13T18:59:57.46Z",
+  "title": "Out-of-band update released for Windows Enterprise client devices running hotpatch updates",
+  "id": "MC1250975",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

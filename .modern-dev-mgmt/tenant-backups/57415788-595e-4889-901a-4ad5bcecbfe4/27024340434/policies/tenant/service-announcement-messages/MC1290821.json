@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-24T21:43:30Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-24T21:43:43.317Z",
+  "title": "eSignature for Microsoft 365 - Recipient groups",
+  "id": "MC1290821",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "SharePoint Online"
+  ]
+}

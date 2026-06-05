@@ -1,0 +1,38 @@
+{
+  "id": "aad_third_party_apps",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/integrated-apps-and-azure-ads?view=o365-worldwide",
+  "controlCategory": "Identity",
+  "title": "Ensure third party integrated applications are not allowed",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 10,
+  "remediation": "<ol><li>In the <em>Microsoft 365 Admin Center</em> Select <em>Admin Centers </em>and <em>Microsoft Entra ID</em>.</li><li>Select <em>Users </em>from the Azure navigation pane</li><li>Select <em>Users settings</em>.</li><li>Set <em>App registrations </em>is set to <em>No</em>.</li><li>Click <em>Save</em>.</li></ol>",
+  "remediationImpact": "None.",
+  "service": "AzureAD",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": null,
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

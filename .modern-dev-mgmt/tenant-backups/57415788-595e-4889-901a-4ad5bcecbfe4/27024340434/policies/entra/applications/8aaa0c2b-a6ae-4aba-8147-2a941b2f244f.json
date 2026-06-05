@@ -1,0 +1,26 @@
+{
+  "id": "8aaa0c2b-a6ae-4aba-8147-2a941b2f244f",
+  "appId": "9d6ad87f-30e1-40d6-9ba1-6d6475f16a20",
+  "displayName": "Adaptive Card Gallery (Microsoft Copilot Studio)",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-02-02T09:47:56Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

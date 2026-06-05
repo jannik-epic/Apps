@@ -1,0 +1,10 @@
+{
+  "id": "fd5a4069-621b-435f-91b5-fa178efe8730",
+  "appId": "b9a1aaab-e8aa-4b92-b4ce-f13cae74caa7",
+  "displayName": "Teams Manager",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

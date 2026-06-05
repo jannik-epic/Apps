@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-26T00:33:20Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-02-26T00:33:36.08Z",
+  "title": "Defender for Office 365 URL click alerts now include Microsoft Teams",
+  "id": "MC1239187",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Defender XDR"
+  ]
+}

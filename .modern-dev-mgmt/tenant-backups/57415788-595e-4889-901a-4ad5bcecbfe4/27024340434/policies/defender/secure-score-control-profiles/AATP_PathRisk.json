@@ -1,0 +1,35 @@
+{
+  "id": "AATP_PathRisk",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2123182",
+  "controlCategory": "Identity",
+  "title": "Reduce lateral movement path risk to sensitive entities",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 67,
+  "remediation": "Review this security control list of exposed entities displaying sensitive entities with lateral movement paths risk with recommended actions on how to reduce the number of non-sensitive accounts for each path. <br> To achieve a full score, you must remediate all exposed entities.",
+  "remediationImpact": "A user or an application that relies on removed privileges associated with risky lateral movement paths may stop functioning.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

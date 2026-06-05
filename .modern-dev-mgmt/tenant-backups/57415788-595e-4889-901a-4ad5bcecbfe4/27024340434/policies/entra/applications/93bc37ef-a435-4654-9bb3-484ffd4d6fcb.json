@@ -1,0 +1,153 @@
+{
+  "id": "93bc37ef-a435-4654-9bb3-484ffd4d6fcb",
+  "appId": "9cc8db07-4b80-4a68-9896-7b5ffc22717b",
+  "displayName": "Daily Docs Outlook Add-in",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-01-08T08:31:07Z",
+  "identifierUris": [
+    "api://app-dailydocs-dev-we-01.azurewebsites.net/9cc8db07-4b80-4a68-9896-7b5ffc22717b",
+    "api://salmon-smoke-06b72d703.1.azurestaticapps.net/9cc8db07-4b80-4a68-9896-7b5ffc22717b",
+    "api://agreeable-beach-0e1473e03.2.azurestaticapps.net/9cc8db07-4b80-4a68-9896-7b5ffc22717b",
+    "api://agreeable-moss-0e816f903.2.azurestaticapps.net/9cc8db07-4b80-4a68-9896-7b5ffc22717b",
+    "api://black-pebble-0e5023c03.4.azurestaticapps.net/9cc8db07-4b80-4a68-9896-7b5ffc22717b",
+    "api://lemon-sky-072153c03.2.azurestaticapps.net/9cc8db07-4b80-4a68-9896-7b5ffc22717b",
+    "api://purple-rock-0253bbb03.4.azurestaticapps.net/9cc8db07-4b80-4a68-9896-7b5ffc22717b",
+    "api://localhost:3001/9cc8db07-4b80-4a68-9896-7b5ffc22717b",
+    "api://localhost:3000/9cc8db07-4b80-4a68-9896-7b5ffc22717b"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://app-dailydocs-dev-we-01.azurewebsites.net/.auth/login/aad/callback",
+      "https://salmon-smoke-06b72d703.1.azurestaticapps.net/taskpane.html",
+      "https://agreeable-beach-0e1473e03.2.azurestaticapps.net/taskpane.html",
+      "https://agreeable-moss-0e816f903.2.azurestaticapps.net/taskpane.html",
+      "https://lemon-sky-072153c03.2.azurestaticapps.net/taskpane.html",
+      "https://localhost:3001/taskpane.html",
+      "https://localhost:3000/taskpane.html"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": true,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://app-dailydocs-dev-we-01.azurewebsites.net/.auth/login/aad/callback",
+        "index": null
+      },
+      {
+        "uri": "https://salmon-smoke-06b72d703.1.azurestaticapps.net/taskpane.html",
+        "index": null
+      },
+      {
+        "uri": "https://agreeable-beach-0e1473e03.2.azurestaticapps.net/taskpane.html",
+        "index": null
+      },
+      {
+        "uri": "https://agreeable-moss-0e816f903.2.azurestaticapps.net/taskpane.html",
+        "index": null
+      },
+      {
+        "uri": "https://lemon-sky-072153c03.2.azurestaticapps.net/taskpane.html",
+        "index": null
+      },
+      {
+        "uri": "https://localhost:3001/taskpane.html",
+        "index": null
+      },
+      {
+        "uri": "https://localhost:3000/taskpane.html",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": [
+      "https://app-dailydocs-dev-we-01.azurewebsites.net/daily-docs/auth-dialog.html",
+      "https://app-dailydocs-dev-we-01.azurewebsites.net/meeting-viewer/",
+      "https://app-dailydocs-dev-we-01.azurewebsites.net/daily-docs/taskpane.html",
+      "https://app-dailydocs-dev-we-01.azurewebsites.net/daily-docs/save.html",
+      "https://salmon-smoke-06b72d703.1.azurestaticapps.net/auth-callback.html",
+      "https://salmon-smoke-06b72d703.1.azurestaticapps.net",
+      "https://agreeable-beach-0e1473e03.2.azurestaticapps.net/auth-callback.html",
+      "https://agreeable-beach-0e1473e03.2.azurestaticapps.net",
+      "https://agreeable-moss-0e816f903.2.azurestaticapps.net",
+      "https://agreeable-moss-0e816f903.2.azurestaticapps.net/auth-callback.html",
+      "https://localhost:3000",
+      "http://localhost:3001"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "37f7f235-527c-4136-accd-4a02d197296e",
+          "type": "Scope"
+        },
+        {
+          "id": "14dad69e-099b-42c9-810b-d002981feec1",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+          "type": "Scope"
+        },
+        {
+          "id": "465a38f9-76ea-45b9-9f34-9e8b0d4b0b42",
+          "type": "Scope"
+        },
+        {
+          "id": "1ec239c2-d7c9-4623-a91a-a9775856bb36",
+          "type": "Scope"
+        },
+        {
+          "id": "2b9c4092-424d-4249-948d-b43879977640",
+          "type": "Scope"
+        },
+        {
+          "id": "570282fd-fa5c-430d-a7fd-fc8dc98a9dca",
+          "type": "Scope"
+        },
+        {
+          "id": "024d486e-b451-40bb-833d-3e66d98c5c73",
+          "type": "Scope"
+        },
+        {
+          "id": "7b9103a5-4610-446b-9670-80643382c1fa",
+          "type": "Scope"
+        },
+        {
+          "id": "5df07973-7d5d-46ed-9847-1271055cbd51",
+          "type": "Scope"
+        },
+        {
+          "id": "5c28f0bf-8a70-41f1-8ab2-9032436ddb65",
+          "type": "Scope"
+        },
+        {
+          "id": "87f447af-9fa4-4c32-9dfa-4a57a73d18ce",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000002-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "3b5f3d61-589b-4a3c-a359-5dd4b5ee5bd5",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

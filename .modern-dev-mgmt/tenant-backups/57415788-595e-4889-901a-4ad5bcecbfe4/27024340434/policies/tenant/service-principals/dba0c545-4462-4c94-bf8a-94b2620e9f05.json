@@ -1,0 +1,8 @@
+{
+  "id": "dba0c545-4462-4c94-bf8a-94b2620e9f05",
+  "appId": "bf8eb16c-7ba7-4b47-86be-ac5e4b2007a5",
+  "displayName": "Microsoft.CustomProviders RP",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

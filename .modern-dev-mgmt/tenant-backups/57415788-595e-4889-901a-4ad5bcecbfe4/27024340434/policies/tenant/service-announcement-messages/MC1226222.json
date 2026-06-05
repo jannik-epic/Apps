@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-02T23:47:07Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-02-04T17:09:05.853Z",
+  "title": "(Updated) Prevent/Fix: Guidance for On-Premises Connectors Configuration",
+  "id": "MC1226222",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

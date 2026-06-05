@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-10-31T00:10:28Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2025-10-31T00:10:54.49Z",
+  "title": "Introducing the employee self-service agent in Microsoft 365 Copilot Studio",
+  "id": "MC1181770",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

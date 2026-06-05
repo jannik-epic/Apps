@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-01-22T02:03:58Z",
+  "endDateTime": "2027-11-30T07:00:00Z",
+  "lastModifiedDateTime": "2025-01-22T02:05:30.777Z",
+  "title": "Microsoft Graph: New default passcode in the Create Meeting API",
+  "id": "MC985483",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

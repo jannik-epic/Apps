@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T13:44:23Z",
+  "endDateTime": "2026-07-07T13:44:00Z",
+  "lastModifiedDateTime": "2026-05-28T13:47:29.29Z",
+  "title": "Power Automate- Encrypt and decrypt data with PGP",
+  "id": "MC1325004",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Power Automate"
+  ]
+}

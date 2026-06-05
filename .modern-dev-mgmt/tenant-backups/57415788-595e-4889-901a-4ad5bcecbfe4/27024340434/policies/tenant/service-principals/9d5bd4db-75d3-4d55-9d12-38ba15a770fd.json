@@ -1,0 +1,8 @@
+{
+  "id": "9d5bd4db-75d3-4d55-9d12-38ba15a770fd",
+  "appId": "bf26f092-3426-4a99-abfb-97dad74e661a",
+  "displayName": "Azure AD Identity Governance",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-09-09T21:19:19.163Z",
+  "endDateTime": "2026-09-09T21:19:19.117Z",
+  "lastModifiedDateTime": "2025-09-09T21:19:19.987Z",
+  "title": "Hardening changes for Windows Server Update Services in Windows Server 2025",
+  "id": "MC1150625",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

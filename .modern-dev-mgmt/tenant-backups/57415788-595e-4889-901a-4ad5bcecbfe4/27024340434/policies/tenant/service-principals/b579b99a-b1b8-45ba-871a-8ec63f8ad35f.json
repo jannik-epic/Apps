@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "b579b99a-b1b8-45ba-871a-8ec63f8ad35f",
+  "appId": "b579b99a-b1b8-45ba-871a-8ec63f8ad35f",
+  "displayName": "Gerold (Generalist)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-27T22:43:23Z",
+  "endDateTime": "2026-07-13T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-27T22:43:31.49Z",
+  "title": "PowerPoint Live adds the ability to reload updated presentations during meetings",
+  "id": "MC1324281",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

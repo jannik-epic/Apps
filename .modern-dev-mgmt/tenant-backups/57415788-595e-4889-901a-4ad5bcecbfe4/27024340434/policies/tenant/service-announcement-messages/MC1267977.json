@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-02T02:28:50Z",
+  "endDateTime": "2026-07-13T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-18T16:30:45.107Z",
+  "title": "(Updated) Microsoft Teams: AI Interpreter (simultaneous) quality improvements and new Traditional Chinese support",
+  "id": "MC1267977",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

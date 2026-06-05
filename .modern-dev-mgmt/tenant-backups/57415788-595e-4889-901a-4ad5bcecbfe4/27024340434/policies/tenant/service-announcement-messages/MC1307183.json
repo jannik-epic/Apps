@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-11T08:18:05Z",
+  "endDateTime": "2026-06-11T08:18:05Z",
+  "lastModifiedDateTime": "2026-05-11T08:19:28.533Z",
+  "title": "Dynamics 365 Customer Service- Estimate AI credits for agents from forecasted demand",
+  "id": "MC1307183",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

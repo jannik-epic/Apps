@@ -1,0 +1,44 @@
+{
+  "id": "09416047-beb8-4eca-b2d3-0d45c3e67250",
+  "appId": "de0c7b6d-fc10-4104-a5e0-b5cb00f6ef19",
+  "displayName": "TERRAFORM_UPDATE_2669fe33-a95b-082f-34d2-e8bbe733858a",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-11-26T09:06:04Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
+          "type": "Role"
+        },
+        {
+          "id": "06b708a9-e830-4db3-a914-8e69da51d44f",
+          "type": "Role"
+        },
+        {
+          "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

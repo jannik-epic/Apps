@@ -1,0 +1,13 @@
+{
+  "id": "8591a0c7-6de9-453a-bea2-34ddc150f14b",
+  "appId": "a6943a7f-5ba0-4a34-bf91-ab439efdda3f",
+  "displayName": "Azure HDInsight on AKS Client",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient",
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

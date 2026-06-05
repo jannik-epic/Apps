@@ -1,0 +1,13 @@
+{
+  "id": "f83859de-78fe-4531-973e-f6a692a16e05",
+  "displayName": "samsungSM-S901B",
+  "deviceId": "35be54cb-8143-4baa-b126-b75e42127a11",
+  "accountEnabled": true,
+  "operatingSystem": "Android",
+  "operatingSystemVersion": "12",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2025-06-03T13:51:58Z"
+}

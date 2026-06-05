@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-17T02:11:34Z",
+  "endDateTime": "2026-06-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-17T02:21:42.777Z",
+  "title": "Microsoft 365 Copilot Chat – Updates to Copilot in Word, Excel, and PowerPoint",
+  "id": "MC1253863",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

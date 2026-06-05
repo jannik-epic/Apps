@@ -1,0 +1,12 @@
+{
+  "id": "e8447f0e-a1b2-42a8-8d6f-a5e664287864",
+  "appId": "6104ad52-755e-428b-9fb5-5fdf4d2c4d53",
+  "displayName": "Azure ContainerApps Auth",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

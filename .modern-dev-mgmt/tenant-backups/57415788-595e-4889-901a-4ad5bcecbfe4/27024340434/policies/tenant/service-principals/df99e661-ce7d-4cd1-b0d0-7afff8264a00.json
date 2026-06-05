@@ -1,0 +1,10 @@
+{
+  "id": "df99e661-ce7d-4cd1-b0d0-7afff8264a00",
+  "appId": "fc6e8c0d-0316-409c-a5ef-cd4c9ae41331",
+  "displayName": "ShareGate Teams management",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

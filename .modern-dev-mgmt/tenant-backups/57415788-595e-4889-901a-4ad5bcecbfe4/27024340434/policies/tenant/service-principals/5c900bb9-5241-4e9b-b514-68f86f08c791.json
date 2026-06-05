@@ -1,0 +1,8 @@
+{
+  "id": "5c900bb9-5241-4e9b-b514-68f86f08c791",
+  "appId": "fc68d9e5-1f76-45ef-99aa-214805418498",
+  "displayName": "Azure AD Identity Protection",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

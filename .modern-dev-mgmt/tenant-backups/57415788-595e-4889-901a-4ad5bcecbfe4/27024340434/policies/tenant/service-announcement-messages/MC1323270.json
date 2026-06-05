@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-26T22:17:02Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-01T23:07:24.88Z",
+  "title": "(Updated) Microsoft Teams: Secure Reliable Transport (SRT) support for Teams meetings and events",
+  "id": "MC1323270",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

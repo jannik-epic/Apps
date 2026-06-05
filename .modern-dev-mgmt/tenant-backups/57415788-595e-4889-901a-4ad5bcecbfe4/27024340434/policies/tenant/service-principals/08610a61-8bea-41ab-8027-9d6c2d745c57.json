@@ -1,0 +1,8 @@
+{
+  "id": "08610a61-8bea-41ab-8027-9d6c2d745c57",
+  "appId": "0000000a-0000-0000-c000-000000000000",
+  "displayName": "Microsoft Intune",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

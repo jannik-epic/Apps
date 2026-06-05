@@ -1,0 +1,12 @@
+{
+  "id": "1ace1a80-0604-495e-9848-9f2c5cc494cb",
+  "appId": "02f0a7dc-fd55-4624-8d1b-0b15d2536e64",
+  "displayName": "PowerPlatform-a365outlookcalendarmcp-Connector",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "a45ff828-bf10-41fb-aab6-e4fd1bb9fcc8",
+  "displayName": "Test Migration",
+  "userPrincipalName": "test.migration@epicfusionlabs.com",
+  "mail": "test.migration@epicfusionlabs.com",
+  "accountEnabled": true,
+  "userType": "Member",
+  "createdDateTime": "2023-07-19T15:01:49Z",
+  "department": null,
+  "jobTitle": null,
+  "usageLocation": "CH"
+}

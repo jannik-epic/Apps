@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T13:36:16Z",
+  "endDateTime": "2026-07-31T13:36:00Z",
+  "lastModifiedDateTime": "2026-05-28T13:37:01.87Z",
+  "title": "Dynamics 365 Contact Center - Consult, transfer securely for PSTN numbers, and IVR",
+  "id": "MC1324991",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

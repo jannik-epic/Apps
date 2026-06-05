@@ -1,0 +1,11 @@
+{
+  "id": "f5d5e1fc-9f77-4754-bc8f-8104e840a274",
+  "appId": "045d23d7-a462-4fc2-b42c-458f2616acb9",
+  "displayName": "d-app-tool-sps-ai-swn-001/projects/d-app-tool-sps-ai-swn-001-project",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "AgentCreatedBy:Foundry",
+    "AgenticInstance"
+  ]
+}

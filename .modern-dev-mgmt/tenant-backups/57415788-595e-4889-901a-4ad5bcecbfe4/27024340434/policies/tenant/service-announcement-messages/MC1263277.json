@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-27T19:39:22Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-20T23:06:16.253Z",
+  "title": "Microsoft Purview | DLP to safeguard sensitive data from external web search in Microsoft 356 Copilot and Copilot Chat",
+  "id": "MC1263277",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

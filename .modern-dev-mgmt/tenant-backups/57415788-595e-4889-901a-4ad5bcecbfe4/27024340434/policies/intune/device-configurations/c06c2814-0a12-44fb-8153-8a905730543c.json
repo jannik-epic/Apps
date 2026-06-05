@@ -1,0 +1,40 @@
+{
+  "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
+  "id": "c06c2814-0a12-44fb-8153-8a905730543c",
+  "lastModifiedDateTime": "2022-08-22T11:47:22.9007446Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-08-22T11:47:22.9007446Z",
+  "description": "",
+  "displayName": "EPIC_EMM_DEV_IOS-Company Owned Update Policy",
+  "version": 1,
+  "isEnabled": false,
+  "activeHoursStart": "00:00:00.0000000",
+  "activeHoursEnd": "00:00:00.0000000",
+  "desiredOsVersion": null,
+  "scheduledInstallDays": [],
+  "utcTimeOffsetInMinutes": null,
+  "enforcedSoftwareUpdateDelayInDays": null,
+  "updateScheduleType": "alwaysUpdate",
+  "customUpdateTimeWindows": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('c06c2814-0a12-44fb-8153-8a905730543c')/microsoft.graph.iosUpdateConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "c06c2814-0a12-44fb-8153-8a905730543c_b105e976-a780-4694-9717-a4c73f64f421",
+      "source": "direct",
+      "sourceId": "c06c2814-0a12-44fb-8153-8a905730543c",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "b105e976-a780-4694-9717-a4c73f64f421"
+      }
+    }
+  ]
+}

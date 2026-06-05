@@ -1,0 +1,8 @@
+{
+  "id": "e706cc0b-38cd-441c-be76-101d54de6529",
+  "appId": "6f0478d5-61a3-4897-a2f2-de09a5a90c7f",
+  "displayName": "WindowsUpdate-Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

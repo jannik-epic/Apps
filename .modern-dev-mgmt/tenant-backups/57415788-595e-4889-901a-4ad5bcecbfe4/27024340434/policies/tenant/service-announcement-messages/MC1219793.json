@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-21T00:38:47Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-05T16:43:55.74Z",
+  "title": "(Updated) Brand impersonation protection for Teams Calling",
+  "id": "MC1219793",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

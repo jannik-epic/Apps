@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-09T22:24:16Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-18T23:06:48.27Z",
+  "title": "(Updated) Microsoft Entra passkeys on Windows now support phishing-resistant sign-in",
+  "id": "MC1247893",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

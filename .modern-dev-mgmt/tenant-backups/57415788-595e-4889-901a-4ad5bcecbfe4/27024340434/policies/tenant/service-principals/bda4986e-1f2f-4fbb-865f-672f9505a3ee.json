@@ -1,0 +1,12 @@
+{
+  "id": "bda4986e-1f2f-4fbb-865f-672f9505a3ee",
+  "appId": "c476eb34-4c94-43bc-97fc-94ede0534615",
+  "displayName": "AzUpdateCenterBilling",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

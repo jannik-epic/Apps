@@ -1,0 +1,37 @@
+{
+  "id": "aad_admin_consent_workflow",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://aad.portal.azure.com/#view/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/~/UserSettings",
+  "controlCategory": "Identity",
+  "title": "Ensure the admin consent workflow is enabled",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 10,
+  "remediation": "<ol> <li>In the <em>Microsoft 365 Admin Center</em>, Select <em>Admin Centers,</em> and <em>Microsoft Entra ID</em>.</li> <li>Select <em>Enterprise applications </em>from the Azure Navigation pane.</li> <li>Under <em>Security </em>select <em>Consent and permissions</em>.</li> <li>Under <em>Manage</em> select <em>Admin consent settings and s</em>et <em>Users can request admin consent to apps they are unable to consent </em>to&nbsp;<em>Yes</em>.</li> <li>Under the <em>Reviewers </em>choose the Roles, Groups that you would like to review user generated app consent requests.</li> <li>Select <em>Save </em>at the top of the window.</li> </ol>",
+  "remediationImpact": "None.",
+  "service": "AzureAD",
+  "threats": [
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": null,
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

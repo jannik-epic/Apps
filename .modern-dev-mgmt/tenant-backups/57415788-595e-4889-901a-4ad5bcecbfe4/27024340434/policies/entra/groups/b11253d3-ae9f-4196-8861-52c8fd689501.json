@@ -1,0 +1,13 @@
+{
+  "id": "b11253d3-ae9f-4196-8861-52c8fd689501",
+  "displayName": "AAD_SEC_DU_CAC-SharedPasskeys",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "5944236f-3",
+  "groupTypes": [
+    "DynamicMembership"
+  ],
+  "visibility": null,
+  "createdDateTime": "2026-03-12T06:53:27Z"
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-15T23:12:51Z",
+  "endDateTime": "2026-09-14T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-15T23:12:55.033Z",
+  "title": "Microsoft Purview compliance portal: Role groups user interface (UI) enhancements",
+  "id": "MC1311975",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

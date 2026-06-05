@@ -1,0 +1,13 @@
+{
+  "id": "2fe32caf-e774-4013-b3da-275dc50d2f8e",
+  "displayName": "iPhone SE (2nd generation)",
+  "deviceId": "7bdc8e8c-06b5-4442-adb7-0048478a979b",
+  "accountEnabled": true,
+  "operatingSystem": "iOS",
+  "operatingSystemVersion": "26.3",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2026-02-16T10:54:11Z"
+}

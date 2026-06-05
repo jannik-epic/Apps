@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-28T04:03:34Z",
+  "endDateTime": "2026-06-28T04:03:00Z",
+  "lastModifiedDateTime": "2026-05-03T12:01:35.303Z",
+  "title": "Power Platform - PayGo not required with Self-Service Disaster Recovery (SSDR)",
+  "id": "MC1293709",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Power Platform"
+  ]
+}

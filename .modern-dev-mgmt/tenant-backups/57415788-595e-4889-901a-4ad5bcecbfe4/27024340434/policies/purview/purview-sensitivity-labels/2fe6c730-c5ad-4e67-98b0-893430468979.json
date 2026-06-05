@@ -1,0 +1,19 @@
+{
+  "id": "2fe6c730-c5ad-4e67-98b0-893430468979",
+  "name": "Public",
+  "description": "Use this classification to identify data that is explicitly approved for general public consumption.",
+  "color": "",
+  "sensitivity": 1,
+  "tooltip": "Use this classification to identify data that is explicitly approved for general public consumption.",
+  "isActive": true,
+  "isAppliable": true,
+  "contentFormats": [
+    "file",
+    "email",
+    "site",
+    "unifiedgroup"
+  ],
+  "hasProtection": false,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('2fe6c730-c5ad-4e67-98b0-893430468979')/parent/$entity",
+  "parent": null
+}

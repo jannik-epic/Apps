@@ -1,0 +1,8 @@
+{
+  "id": "35c81886-6c77-434e-8e7f-4e14db77eb50",
+  "appId": "ac9dc5fe-b644-4832-9d03-d9f1ab70c5f7",
+  "displayName": "Microsoft.ConnectedVMwarevSphere Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

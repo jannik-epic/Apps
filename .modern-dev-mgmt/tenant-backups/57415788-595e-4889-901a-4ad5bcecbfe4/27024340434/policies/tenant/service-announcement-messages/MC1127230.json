@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-08-01T23:19:24Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T22:17:49.027Z",
+  "title": "(Updated) Microsoft 365 Copilot: Content Sources in Copilot Chat",
+  "id": "MC1127230",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "efefc0f9-8071-420c-8131-36d78051da0d",
+  "lastHeartbeatDateTime": "0001-01-01T00:00:00Z",
+  "partnerState": "unknown",
+  "displayName": "Kandji Device Compliance",
+  "macOsOnboarded": false,
+  "androidOnboarded": false,
+  "iosOnboarded": false,
+  "macOsEnrollmentAssignments": [],
+  "androidEnrollmentAssignments": [],
+  "iosEnrollmentAssignments": []
+}

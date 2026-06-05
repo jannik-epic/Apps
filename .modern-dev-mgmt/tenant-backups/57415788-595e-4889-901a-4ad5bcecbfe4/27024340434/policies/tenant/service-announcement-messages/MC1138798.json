@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-08-20T23:39:49Z",
+  "endDateTime": "2026-06-12T08:00:00Z",
+  "lastModifiedDateTime": "2026-03-17T16:57:50.93Z",
+  "title": "(Updated) Build SharePoint automations with Workflows—now aligned with the Teams experience",
+  "id": "MC1138798",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft Teams"
+  ]
+}

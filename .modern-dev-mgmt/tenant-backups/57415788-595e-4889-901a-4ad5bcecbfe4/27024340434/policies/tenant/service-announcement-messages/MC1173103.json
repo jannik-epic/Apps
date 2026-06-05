@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-10-15T17:10:42.383Z",
+  "endDateTime": "2026-10-15T17:10:42.257Z",
+  "lastModifiedDateTime": "2025-10-15T17:10:43.67Z",
+  "title": "Secure Boot certificate deployment guide and tools",
+  "id": "MC1173103",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

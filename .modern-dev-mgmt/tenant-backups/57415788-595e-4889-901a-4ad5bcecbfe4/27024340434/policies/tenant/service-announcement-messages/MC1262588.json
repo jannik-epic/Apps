@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-26T23:44:28Z",
+  "endDateTime": "2026-10-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-26T23:44:45.117Z",
+  "title": "Microsoft Teams: Retirement of CAPTCHA for meeting join",
+  "id": "MC1262588",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

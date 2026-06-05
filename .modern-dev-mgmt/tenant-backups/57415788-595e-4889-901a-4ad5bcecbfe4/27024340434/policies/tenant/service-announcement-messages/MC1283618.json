@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-17T18:25:05.123Z",
+  "endDateTime": "2027-04-17T18:25:05.123Z",
+  "lastModifiedDateTime": "2026-04-17T18:25:07.423Z",
+  "title": "Interim guidance for Egypt DST changes 2026",
+  "id": "MC1283618",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

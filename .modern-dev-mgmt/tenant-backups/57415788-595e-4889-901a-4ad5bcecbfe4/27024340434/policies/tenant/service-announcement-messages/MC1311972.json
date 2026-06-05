@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-15T23:11:31Z",
+  "endDateTime": "2026-06-30T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-22T20:25:50.33Z",
+  "title": "PowerPoint for the web: Create a presentation with Copilot directly from the PowerPoint web app",
+  "id": "MC1311972",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

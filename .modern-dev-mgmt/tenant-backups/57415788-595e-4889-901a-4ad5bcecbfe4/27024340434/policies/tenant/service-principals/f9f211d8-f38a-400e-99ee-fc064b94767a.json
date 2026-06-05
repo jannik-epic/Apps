@@ -1,0 +1,12 @@
+{
+  "id": "f9f211d8-f38a-400e-99ee-fc064b94767a",
+  "appId": "abc63b55-0325-4305-9e1e-3463b182a6dc",
+  "displayName": "TenantSearchProcessors",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

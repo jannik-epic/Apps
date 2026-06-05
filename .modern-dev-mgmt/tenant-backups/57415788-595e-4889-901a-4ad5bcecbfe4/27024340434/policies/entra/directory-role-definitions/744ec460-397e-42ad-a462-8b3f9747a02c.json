@@ -1,0 +1,36 @@
+{
+  "id": "744ec460-397e-42ad-a462-8b3f9747a02c",
+  "description": "Has access to topic management dashboard and can manage content.",
+  "displayName": "Knowledge Manager",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "744ec460-397e-42ad-a462-8b3f9747a02c",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/groups.security/basic/update",
+        "microsoft.directory/groups.security/create",
+        "microsoft.directory/groups.security/createAsOwner",
+        "microsoft.directory/groups.security/delete",
+        "microsoft.directory/groups.security/members/update",
+        "microsoft.directory/groups.security/owners/update",
+        "microsoft.office365.knowledge/contentUnderstanding/analytics/allProperties/read",
+        "microsoft.office365.knowledge/knowledgeNetwork/topicVisibility/allProperties/allTasks",
+        "microsoft.office365.sharePoint/allEntities/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('744ec460-397e-42ad-a462-8b3f9747a02c')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

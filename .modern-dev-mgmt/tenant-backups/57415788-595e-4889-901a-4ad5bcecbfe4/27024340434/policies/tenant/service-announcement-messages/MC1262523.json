@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-26T21:06:28.443Z",
+  "endDateTime": "2027-03-26T21:06:28.443Z",
+  "lastModifiedDateTime": "2026-03-26T21:06:32.847Z",
+  "title": "New resources to help organizations prepare for Secure Boot certificate expirations",
+  "id": "MC1262523",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

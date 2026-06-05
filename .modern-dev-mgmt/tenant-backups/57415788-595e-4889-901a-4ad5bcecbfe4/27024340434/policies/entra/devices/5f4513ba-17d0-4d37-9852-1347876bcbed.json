@@ -1,0 +1,13 @@
+{
+  "id": "5f4513ba-17d0-4d37-9852-1347876bcbed",
+  "displayName": "Office-0",
+  "deviceId": "aa223aa8-6484-4936-9af7-ff253d892c7c",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.22631.2715",
+  "trustType": "AzureAd",
+  "profileType": "SecureVM",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2023-11-23T05:12:30Z"
+}

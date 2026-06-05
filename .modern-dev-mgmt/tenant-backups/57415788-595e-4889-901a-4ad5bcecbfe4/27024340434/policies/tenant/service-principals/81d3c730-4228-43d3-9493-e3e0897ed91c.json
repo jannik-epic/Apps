@@ -1,0 +1,10 @@
+{
+  "id": "81d3c730-4228-43d3-9493-e3e0897ed91c",
+  "appId": "b4532276-9723-46d6-8698-004567c62a20",
+  "displayName": "CloudCapsule",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

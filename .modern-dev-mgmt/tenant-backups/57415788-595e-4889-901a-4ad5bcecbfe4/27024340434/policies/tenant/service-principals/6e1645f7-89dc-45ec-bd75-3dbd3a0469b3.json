@@ -1,0 +1,8 @@
+{
+  "id": "6e1645f7-89dc-45ec-bd75-3dbd3a0469b3",
+  "appId": "00000002-0000-0ff1-ce00-000000000000",
+  "displayName": "Office 365 Exchange Online",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

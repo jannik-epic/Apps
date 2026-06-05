@@ -1,0 +1,10 @@
+{
+  "@odata.type": "#microsoft.graph.securityBaselineTemplate",
+  "id": "63be6324-e3c9-4c97-948a-e7f4b96f0f20",
+  "displayName": "Application control",
+  "description": "Application control can help mitigate security threats by restricting the applications that users are allowed to run and the code that runs in the System Core (kernel). Application control policies can also block unsigned scripts and MSIs, and restrict Windows PowerShell to run in Constrained Language Mode. ",
+  "versionInfo": "2005",
+  "templateType": "securityTemplate",
+  "platformType": "windows10AndLater",
+  "publishedDateTime": "2019-09-20T00:00:00Z"
+}

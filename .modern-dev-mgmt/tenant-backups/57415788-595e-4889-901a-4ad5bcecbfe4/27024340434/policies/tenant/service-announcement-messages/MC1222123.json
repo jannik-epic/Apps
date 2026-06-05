@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-26T18:54:24.627Z",
+  "endDateTime": "2027-01-26T18:54:24.597Z",
+  "lastModifiedDateTime": "2026-01-26T18:54:26.787Z",
+  "title": "(Updated) Take Action: Out-of-band update to address cloud‑backed storage application issues",
+  "id": "MC1222123",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

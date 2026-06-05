@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-08-01T23:13:08Z",
+  "endDateTime": "2026-12-31T07:00:00Z",
+  "lastModifiedDateTime": "2025-12-12T17:32:32.933Z",
+  "title": "(Updated) Please update Microsoft 365 Office apps to a version higher than 16.0.18827.20202",
+  "id": "MC1127222",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

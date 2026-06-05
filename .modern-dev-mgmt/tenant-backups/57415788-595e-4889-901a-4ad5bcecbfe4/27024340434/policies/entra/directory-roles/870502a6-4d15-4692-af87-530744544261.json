@@ -1,0 +1,7 @@
+{
+  "id": "870502a6-4d15-4692-af87-530744544261",
+  "deletedDateTime": null,
+  "description": "Limited access to manage devices in Microsoft Entra ID.",
+  "displayName": "Cloud Device Administrator",
+  "roleTemplateId": "7698a772-787b-4ac8-901f-60d6b08affd2"
+}

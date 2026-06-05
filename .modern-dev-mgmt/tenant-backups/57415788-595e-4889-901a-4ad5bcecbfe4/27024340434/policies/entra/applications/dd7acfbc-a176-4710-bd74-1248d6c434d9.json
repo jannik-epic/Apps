@@ -1,0 +1,49 @@
+{
+  "id": "dd7acfbc-a176-4710-bd74-1248d6c434d9",
+  "appId": "6c2629cb-06c6-4c37-b2f0-e59a8237d4ec",
+  "displayName": "M365DSC-Pipeline",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-11-12T18:03:18Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
+          "type": "Role"
+        },
+        {
+          "id": "bdd80a03-d9bc-451d-b7c4-ce7c63fe3c8f",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

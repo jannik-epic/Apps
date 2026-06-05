@@ -1,0 +1,28 @@
+{
+  "id": "5f1ca25b-621a-43d6-9f2a-fb7c2a672b9f",
+  "appId": "7f661414-1681-427f-8547-378a45e96370",
+  "displayName": "P2P Server",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2021-05-18T20:30:05Z",
+  "identifierUris": [
+    "urn:p2p_cert"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

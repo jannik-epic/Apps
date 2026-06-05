@@ -1,0 +1,5 @@
+{
+  "service": "Windows Autopatch",
+  "status": "serviceOperational",
+  "id": "Windows_Autopatch"
+}

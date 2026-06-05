@@ -1,0 +1,28 @@
+{
+  "id": "3f1acade-1e04-4fbc-9b69-f0302cd84aef",
+  "description": "Manage all aspects of Microsoft Edge.",
+  "displayName": "Edge Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "3f1acade-1e04-4fbc-9b69-f0302cd84aef",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.edge/allEntities/allProperties/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('3f1acade-1e04-4fbc-9b69-f0302cd84aef')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

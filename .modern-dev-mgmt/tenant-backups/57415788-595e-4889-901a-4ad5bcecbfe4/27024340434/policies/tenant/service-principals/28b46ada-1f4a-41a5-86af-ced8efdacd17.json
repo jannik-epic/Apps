@@ -1,0 +1,11 @@
+{
+  "id": "28b46ada-1f4a-41a5-86af-ced8efdacd17",
+  "appId": "0f6e3730-3c11-439a-87bf-a83c333898e1",
+  "displayName": "BAND Fachservice BI (dev)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "dev",
+    "TOOL-BandPoc"
+  ]
+}

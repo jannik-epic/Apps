@@ -1,0 +1,13 @@
+{
+  "id": "26a44f63-856f-4d74-8862-ac8a8027bb07",
+  "displayName": "Hans [Prj]",
+  "description": "Hans Team",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "HansPrj",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2021-05-28T04:55:56Z"
+}

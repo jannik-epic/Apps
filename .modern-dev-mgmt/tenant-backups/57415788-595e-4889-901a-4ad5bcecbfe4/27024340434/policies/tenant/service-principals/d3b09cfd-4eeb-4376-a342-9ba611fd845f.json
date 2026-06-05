@@ -1,0 +1,10 @@
+{
+  "id": "d3b09cfd-4eeb-4376-a342-9ba611fd845f",
+  "appId": "8a363ebc-c281-4360-bbcc-4b1ee485ef7e",
+  "displayName": "Robopack",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-27T22:42:10Z",
+  "endDateTime": "2026-08-17T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-27T22:42:17.993Z",
+  "title": "Save your event as template to reuse event configurations",
+  "id": "MC1324279",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

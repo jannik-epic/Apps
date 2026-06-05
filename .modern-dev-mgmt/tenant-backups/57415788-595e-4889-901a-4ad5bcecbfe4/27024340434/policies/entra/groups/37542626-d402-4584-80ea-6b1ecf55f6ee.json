@@ -1,0 +1,11 @@
+{
+  "id": "37542626-d402-4584-80ea-6b1ecf55f6ee",
+  "displayName": "AAD_SEC_AS_CAC-Exclude Legacy Protocol Policy",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "64b27e54-2",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-11-21T07:45:36Z"
+}

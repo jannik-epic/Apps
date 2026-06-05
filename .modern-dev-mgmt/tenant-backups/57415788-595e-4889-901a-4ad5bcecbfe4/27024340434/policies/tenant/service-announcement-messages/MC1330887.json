@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-01T23:23:00Z",
+  "endDateTime": "2026-08-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-01T23:23:12.54Z",
+  "title": "Microsoft Teams: Enhanced bookable desk experience with Teams panel based desk devices",
+  "id": "MC1330887",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

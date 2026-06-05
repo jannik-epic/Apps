@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-02-06T00:41:45Z",
+  "endDateTime": "2026-10-17T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-02T16:57:26.94Z",
+  "title": "(Updated) Transitioning Teams Android Device Management from Teams admin Center to the Teams Rooms Pro Management portal",
+  "id": "MC1227622",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams",
+    "Microsoft 365 for the web"
+  ]
+}

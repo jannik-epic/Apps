@@ -1,0 +1,12 @@
+{
+  "id": "20fd11ab-27cc-4053-955e-87e43d998a09",
+  "appId": "43d7b169-1d9e-4d32-8cd8-06c5974ed90c",
+  "displayName": "Security Copilot Agent Management",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

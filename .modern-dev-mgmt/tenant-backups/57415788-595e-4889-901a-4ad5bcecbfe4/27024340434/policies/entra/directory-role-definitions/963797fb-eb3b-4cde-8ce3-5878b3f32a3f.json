@@ -1,0 +1,29 @@
+{
+  "id": "963797fb-eb3b-4cde-8ce3-5878b3f32a3f",
+  "description": "Access and perform all administrative tasks on Dynamics 365 Business Central environments.",
+  "displayName": "Dynamics 365 Business Central Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "963797fb-eb3b-4cde-8ce3-5878b3f32a3f",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.azure.serviceHealth/allEntities/allTasks",
+        "microsoft.directory/domains/standard/read",
+        "microsoft.directory/organization/standard/read",
+        "microsoft.directory/subscribedSkus/standard/read",
+        "microsoft.directory/users/standard/read",
+        "microsoft.dynamics365.businessCentral/allEntities/allProperties/allTasks",
+        "microsoft.office365.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('963797fb-eb3b-4cde-8ce3-5878b3f32a3f')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": []
+}

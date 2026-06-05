@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-16T22:32:26Z",
+  "endDateTime": "2027-05-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-16T22:32:44.913Z",
+  "title": "Microsoft Teams: Manage multiple phone numbers within one Teams account",
+  "id": "MC1253752",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "60c26d78-fe9b-4f4a-a6ab-a8a36538a612",
+  "appId": "60c26d78-fe9b-4f4a-a6ab-a8a36538a612",
+  "displayName": "Sandra (CEO)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

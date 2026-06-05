@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T13:36:10Z",
+  "endDateTime": "2026-07-31T13:36:00Z",
+  "lastModifiedDateTime": "2026-06-04T14:13:43.277Z",
+  "title": "Microsoft Power Automate - Configure notifications for desktop flow checker in admin portal",
+  "id": "MC1324990",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Power Automate"
+  ]
+}

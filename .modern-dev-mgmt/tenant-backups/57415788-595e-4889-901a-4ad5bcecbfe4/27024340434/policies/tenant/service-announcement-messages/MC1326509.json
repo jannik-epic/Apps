@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-29T20:48:37Z",
+  "endDateTime": "2026-10-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T20:49:02.983Z",
+  "title": "Microsoft Purview: Information Protection- File Labeler and File Viewer for MacOS",
+  "id": "MC1326509",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

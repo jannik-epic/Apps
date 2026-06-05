@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-01T23:25:53Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-01T23:26:09.4Z",
+  "title": "Plan for Change: Configure Microsoft 365 Apps policy settings in the Microsoft 365 Apps admin center",
+  "id": "MC1330892",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Intune"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T13:41:07Z",
+  "endDateTime": "2026-09-01T13:41:00Z",
+  "lastModifiedDateTime": "2026-06-01T19:13:17.833Z",
+  "title": "Microsoft Dataverse - Create Dataverse agent users with Microsoft Entra agent identity",
+  "id": "MC1324994",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Dataverse"
+  ]
+}

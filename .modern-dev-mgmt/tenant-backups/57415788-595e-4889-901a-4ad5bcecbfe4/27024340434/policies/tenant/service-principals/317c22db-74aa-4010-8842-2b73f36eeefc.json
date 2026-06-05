@@ -1,0 +1,11 @@
+{
+  "id": "317c22db-74aa-4010-8842-2b73f36eeefc",
+  "appId": "9cdead84-a844-4324-93f2-b2e6bb768d07",
+  "displayName": "Azure Virtual Desktop",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

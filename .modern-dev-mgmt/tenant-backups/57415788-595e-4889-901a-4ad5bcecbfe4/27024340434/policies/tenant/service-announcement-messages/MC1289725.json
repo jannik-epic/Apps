@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-23T22:38:27Z",
+  "endDateTime": "2026-10-26T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-02T16:09:58.217Z",
+  "title": "(Updated) Microsoft Teams: Delete meeting generated content in recap",
+  "id": "MC1289725",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

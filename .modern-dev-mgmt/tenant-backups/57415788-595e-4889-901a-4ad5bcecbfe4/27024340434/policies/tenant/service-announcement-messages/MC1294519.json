@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-28T22:11:30Z",
+  "endDateTime": "2026-06-28T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-28T22:11:39.863Z",
+  "title": "Power Automate trigger and action for forms in SharePoint (Preview)",
+  "id": "MC1294519",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft Power Automate in Microsoft 365"
+  ]
+}

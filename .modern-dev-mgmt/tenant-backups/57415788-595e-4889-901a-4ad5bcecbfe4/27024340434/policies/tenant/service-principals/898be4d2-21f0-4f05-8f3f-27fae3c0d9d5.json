@@ -1,0 +1,12 @@
+{
+  "id": "898be4d2-21f0-4f05-8f3f-27fae3c0d9d5",
+  "appId": "61414a6b-7050-4d69-8e88-d6c5646bab20",
+  "displayName": "ArcGatewayApp",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "92ed04bf-c94a-4b82-9729-b799a7a4c178",
+  "description": "Manage all aspects of organizational branding in a tenant.",
+  "displayName": "Organizational Branding Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "92ed04bf-c94a-4b82-9729-b799a7a4c178",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/loginOrganizationBranding/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('92ed04bf-c94a-4b82-9729-b799a7a4c178')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

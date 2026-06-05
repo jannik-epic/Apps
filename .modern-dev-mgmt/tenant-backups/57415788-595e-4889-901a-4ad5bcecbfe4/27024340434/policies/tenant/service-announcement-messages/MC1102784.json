@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-06-25T00:12:42Z",
+  "endDateTime": "2026-07-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-03-13T18:33:35.69Z",
+  "title": "Microsoft Teams on the web: New Private Preview for Sign in with Apple and Google for consumers may affect enterprise",
+  "id": "MC1102784",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

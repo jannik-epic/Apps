@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-13T23:29:17.763Z",
+  "endDateTime": "2027-01-13T23:29:17.687Z",
+  "lastModifiedDateTime": "2026-01-13T23:29:19.01Z",
+  "title": "Windows Deployment Services (WDS): Hands-free deployment hardening (Phase 1)",
+  "id": "MC1217584",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

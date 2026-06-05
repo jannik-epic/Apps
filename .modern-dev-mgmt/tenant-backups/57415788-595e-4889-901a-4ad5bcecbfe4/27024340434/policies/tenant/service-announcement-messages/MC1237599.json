@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-24T01:12:10.94Z",
+  "endDateTime": "2027-02-24T01:12:10.81Z",
+  "lastModifiedDateTime": "2026-02-24T01:12:13.113Z",
+  "title": "Windows Server Secure Boot playbook for certificates expiring in 2026  ",
+  "id": "MC1237599",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

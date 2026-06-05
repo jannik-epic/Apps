@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-17T22:52:11Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-17T22:52:18.57Z",
+  "title": "New admin control for AI‑generated code previews in Microsoft 365 Copilot Pages",
+  "id": "MC1254560",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T13:34:40Z",
+  "endDateTime": "2026-06-06T13:34:00Z",
+  "lastModifiedDateTime": "2026-04-30T13:36:14.773Z",
+  "title": "Dynamics 365 Contact Center – Average wait time in messaging API channels",
+  "id": "MC1296211",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

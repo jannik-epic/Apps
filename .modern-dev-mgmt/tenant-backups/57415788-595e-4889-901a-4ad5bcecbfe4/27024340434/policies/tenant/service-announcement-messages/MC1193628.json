@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-12-09T19:44:56.29Z",
+  "endDateTime": "2026-12-09T19:44:56.243Z",
+  "lastModifiedDateTime": "2025-12-09T19:44:57.483Z",
+  "title": "The December 2025 Windows security update is now available",
+  "id": "MC1193628",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

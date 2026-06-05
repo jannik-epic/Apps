@@ -1,0 +1,29 @@
+{
+  "@odata.type": "#microsoft.graph.deviceEnrollmentLimitConfiguration",
+  "id": "cda5e7d2-417c-4d39-b1e6-b289e7b9a5c5_Limit",
+  "displayName": "EPIC_EDR_USR_ALL-Enroll Device Limit 15",
+  "description": "",
+  "priority": 1,
+  "createdDateTime": "2023-01-30T07:03:31.347217Z",
+  "lastModifiedDateTime": "2023-01-30T07:03:33.4367041Z",
+  "version": 2,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "deviceEnrollmentConfigurationType": "limit",
+  "limit": 15,
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceEnrollmentConfigurations('cda5e7d2-417c-4d39-b1e6-b289e7b9a5c5_Limit')/microsoft.graph.deviceEnrollmentLimitConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "cda5e7d2-417c-4d39-b1e6-b289e7b9a5c5_9be62e02-c686-49aa-b5f1-6c3b98537e81_cda5e7d2-417c-4d39-b1e6-b289e7b9a5c5",
+      "source": "direct",
+      "sourceId": "cda5e7d2-417c-4d39-b1e6-b289e7b9a5c5",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "9be62e02-c686-49aa-b5f1-6c3b98537e81"
+      }
+    }
+  ]
+}

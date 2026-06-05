@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-30T16:18:01Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-04T21:53:39.787Z",
+  "title": "(Updated) Microsoft 365 Copilot will use private community and event content as grounding sources",
+  "id": "MC1296480",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

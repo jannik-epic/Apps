@@ -1,0 +1,10 @@
+{
+  "id": "dd4e65a3-5c4b-43d0-88c8-dca7b41b03cc",
+  "appId": "2bed6734-1911-40e6-ac44-00d79d70d2bc",
+  "displayName": "MSFT Power Platform - Azure AD",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

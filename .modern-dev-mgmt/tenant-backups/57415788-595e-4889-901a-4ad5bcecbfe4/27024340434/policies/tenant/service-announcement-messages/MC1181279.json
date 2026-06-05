@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-10-29T06:55:30Z",
+  "endDateTime": "2026-06-30T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-04T16:50:05.55Z",
+  "title": "(Updated) Smart Calendar available in Classic Outlook for Microsoft 365 Copilot users",
+  "id": "MC1181279",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

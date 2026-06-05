@@ -1,0 +1,7 @@
+{
+  "id": "18f762d3-b464-454b-b84a-cc65f6f08b2a",
+  "deletedDateTime": null,
+  "description": "Can see only tenant level aggregates in Microsoft 365 Usage Analytics and Productivity Score.",
+  "displayName": "Usage Summary Reports Reader",
+  "roleTemplateId": "75934031-6c7e-415a-99d7-48dbd49e875e"
+}

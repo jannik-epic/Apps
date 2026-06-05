@@ -1,0 +1,11 @@
+{
+  "id": "1058fb7c-7d98-4509-97ab-4866636e5558",
+  "appId": "ef5d5c69-a5df-46bb-acaf-426f161a21a2",
+  "displayName": "Managed Service Identity",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

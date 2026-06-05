@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-20T23:10:54Z",
+  "endDateTime": "2026-07-11T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-20T23:11:18.96Z",
+  "title": "Microsoft Purview | Data Security Investigations: Proactive AI insights in Data Security Posture Management",
+  "id": "MC1317196",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

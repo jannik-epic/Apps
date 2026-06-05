@@ -1,0 +1,62 @@
+[
+  {
+    "id": "7d29105b-6941-41e4-8c4f-8e04a8f9fd91_0_0",
+    "intent": "available",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "7d29105b-6941-41e4-8c4f-8e04a8f9fd91"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+      "notifications": "showAll",
+      "restartSettings": null,
+      "installTimeSettings": null,
+      "deliveryOptimizationPriority": "notConfigured",
+      "autoUpdateSettings": null
+    }
+  },
+  {
+    "id": "2723adf2-1379-416b-883c-1d9de0df6dea_2_0",
+    "intent": "uninstall",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "2723adf2-1379-416b-883c-1d9de0df6dea"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+      "notifications": "showAll",
+      "restartSettings": null,
+      "installTimeSettings": null,
+      "deliveryOptimizationPriority": "notConfigured",
+      "autoUpdateSettings": null
+    }
+  },
+  {
+    "id": "da70d9f6-d908-443b-a5ae-b428c83fad03_1_0",
+    "intent": "required",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "da70d9f6-d908-443b-a5ae-b428c83fad03"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+      "notifications": "showAll",
+      "restartSettings": null,
+      "installTimeSettings": null,
+      "deliveryOptimizationPriority": "notConfigured",
+      "autoUpdateSettings": null
+    }
+  }
+]

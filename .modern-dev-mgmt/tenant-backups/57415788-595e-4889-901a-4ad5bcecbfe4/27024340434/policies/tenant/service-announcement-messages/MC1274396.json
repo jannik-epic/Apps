@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-08T19:58:31.567Z",
+  "endDateTime": "2027-04-08T19:58:31.567Z",
+  "lastModifiedDateTime": "2026-04-08T19:58:32.51Z",
+  "title": "Extended Security Updates (ESU) available for Windows 10 Enterprise LTSB 2016",
+  "id": "MC1274396",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

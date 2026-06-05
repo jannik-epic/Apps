@@ -1,0 +1,8 @@
+{
+  "id": "d50804ab-a661-418f-8174-39e0c6e9375d",
+  "appId": "60e6cd67-9c8c-4951-9b3c-23c25a2169af",
+  "displayName": "Managed Disks Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

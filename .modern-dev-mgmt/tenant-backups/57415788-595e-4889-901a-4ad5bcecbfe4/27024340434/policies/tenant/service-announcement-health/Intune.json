@@ -1,0 +1,5 @@
+{
+  "service": "Microsoft Intune",
+  "status": "serviceOperational",
+  "id": "Intune"
+}

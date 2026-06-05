@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-05T13:40:33Z",
+  "endDateTime": "2026-07-16T23:59:00Z",
+  "lastModifiedDateTime": "2026-05-19T22:01:07.297Z",
+  "title": "Dynamics 365 Commerce - Display distance in kilometers on the Store Commerce app",
+  "id": "MC1301490",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "MDA_GitHub_EmailNotificationRestrictedToVerifiedOrApprovedDomains",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://docs.github.com/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/restricting-email-notifications-for-your-enterprise#restricting-email-notifications-for-your-enterprise",
+  "controlCategory": "Apps",
+  "title": "Enabled 'email notification delivery for this enterprise is restricted to verified or approved domains'",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<ol> <li>In top right corner of GitHub, click your profile photo, then click <strong>Your enterprise</strong><abbr>&nbsp;&gt;&nbsp;</abbr>Next to the organization, <strong>click Settings</strong><abbr><strong>.</strong></abbr></li> <li><strong>Go to Security&nbsp;</strong>&gt; <strong>Verified &amp; approved domains</strong>.</li> <li>Add a new domain and verify it.</li> <li>Check &quot;<strong>Restrict email notifications to only approved or verified domains.</strong>&quot; option.</li> </ol> <p><br></p>",
+  "remediationImpact": "This setting restricts email notifications only to verified or approved domains.",
+  "service": "MDA_GitHub",
+  "threats": [
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

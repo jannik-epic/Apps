@@ -1,0 +1,11 @@
+{
+  "id": "dce39cfb-c8cd-4c4b-8dd3-342b2d1be733",
+  "displayName": "AAD_SEC_AS_PP_DEMO_DEV_Users",
+  "description": "Power Platform Environment Security",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "c6d76113-e",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2024-07-15T15:49:24Z"
+}

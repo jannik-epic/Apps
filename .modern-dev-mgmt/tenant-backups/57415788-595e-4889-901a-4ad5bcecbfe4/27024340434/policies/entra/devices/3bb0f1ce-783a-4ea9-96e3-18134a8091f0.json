@@ -1,0 +1,13 @@
+{
+  "id": "3bb0f1ce-783a-4ea9-96e3-18134a8091f0",
+  "displayName": "EPL-SD-CCF16F18",
+  "deviceId": "a96f33b3-73e8-4979-94ff-288d1ac5e041",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.22000.318",
+  "trustType": "AzureAd",
+  "profileType": "RegisteredDevice",
+  "isCompliant": false,
+  "isManaged": false,
+  "registrationDateTime": "2022-08-22T13:03:27Z"
+}

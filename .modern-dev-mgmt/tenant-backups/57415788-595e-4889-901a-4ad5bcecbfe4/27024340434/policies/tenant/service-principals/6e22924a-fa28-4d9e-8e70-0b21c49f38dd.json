@@ -1,0 +1,14 @@
+{
+  "id": "6e22924a-fa28-4d9e-8e70-0b21c49f38dd",
+  "appId": "c0be6b4c-212d-4ca9-8a35-fd260fe22342",
+  "displayName": "Fabric Identity Management",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp",
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

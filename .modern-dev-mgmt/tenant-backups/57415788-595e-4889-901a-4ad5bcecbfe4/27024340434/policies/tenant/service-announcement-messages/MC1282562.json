@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-16T21:16:06Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-20T16:13:12.357Z",
+  "title": "(Updated) Microsoft Purview eDiscovery: Naming and description fields will restrict certain special characters",
+  "id": "MC1282562",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

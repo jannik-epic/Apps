@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-13T21:33:36Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-13T21:36:12.64Z",
+  "title": "Queues app on Microsoft Teams mobile",
+  "id": "MC1279071",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

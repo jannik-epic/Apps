@@ -1,0 +1,39 @@
+{
+  "id": "mdo_safelinksforOfficeApps",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/safe-links-policies-configure?view=o365-worldwide&tid=57415788-595e-4889-901a-4ad5bcecbfe4",
+  "controlCategory": "Apps",
+  "title": "Ensure Safe Links for Office Applications is Enabled",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p><strong>To create a Safe Links policy:</strong></p> <ol> <li>Navigate to<em> Microsoft 365 Defender</em> <a href=\"https://security.microsoft.com\">https://security.microsoft.com</a></li> <li>Under <em>Email &amp; collaboration</em> select <em>Policies &amp; rules</em></li> <li>Select <em>Threat policies</em> then <em>Safe Links</em></li> <li>Click on <em>+Create</em></li> <li>Name the policy then click <em>Next</em></li> <li>In <em>Domains</em> select all valid domains for the organization and Next</li> <li>Ensure the following <em>URL &amp; click protection settings</em> are defined: <ol> <li>Email<br />o Checked <em>On: Safe Links checks a list of known, malicious links </em><br /><em>when users click links in email. URLs are rewritten by default</em><br />o Checked <em>Apply Safe Links to email messages sent within the </em><br /><em>organization</em><br />o Checked <em>Apply real-time URL scanning for suspicious links and </em><br /><em>links that point to files</em><br />o Checked <em>Wait for URL scanning to complete before delivering the </em><br /><em>message</em><br />o Unchecked <em>Do not rewrite URLs, do checks via Safe Links API only.</em></li> <li>Teams<br />o Checked <em>On: Safe Links checks a list of known, malicious links </em><br /><em>when users click links in Microsoft Teams. URLs are not rewritten</em></li> <li>Office 365 Apps<br />o Checked <em>On: Safe Links checks a list of known, malicious links </em><br /><em>when users click links in Microsoft Office apps. URLs are not </em><br /><em>rewritten</em></li> <li>Click protection settings<br />o Checked <em>Track user clicks</em><br />o Unchecked <em>Let users click through the original URL</em><br />o There is no recommendation for organization branding.</li> </ol> </li> <li>Click <em>Next</em> twice and finally <em>Submit</em></li> </ol> <p>To create a Safe Links policy using the Exchange Online PowerShell Module:</p> <ol> <li>Connect using Connect-ExchangeOnline.</li> <li>Run the following PowerShell script to create a policy at highest priority that will apply to all valid domains on the tenant:</li> </ol> <p>&nbsp;</p> <table style=\"border-collapse: collapse; width: 100%; height: 483px;\" border=\"1\"> <tbody> <tr style=\"height: 447px;\"> <td style=\"width: 100%; padding-left: 40px; height: 447px;\"> <p># Create the Policy<br />$params = @{</p> <p style=\"padding-left: 40px;\">Name = \"CIS SafeLinks Policy\"<br />EnableSafeLinksForEmail = $true<br />EnableSafeLinksForTeams = $true<br />EnableSafeLinksForOffice = $true<br />TrackClicks = $true<br />AllowClickThrough = $false<br />ScanUrls = $true<br />EnableForInternalSenders = $true<br />DeliverMessageAfterScan = $true<br />DisableUrlRewrite = $false</p> <p><br />}</p> <p>New-SafeLinksPolicy @params</p> <p><br /># Create the rule for all users in all valid domains and associate with Policy<br />New-SafeLinksRule -Name \"CIS SafeLinks\" -SafeLinksPolicy \"CIS SafeLinks <br />Policy\" -RecipientDomainIs (Get-AcceptedDomain).Name -Priority 0</p> </td> </tr> </tbody> </table>",
+  "remediationImpact": "User impact associated with this change is minor - users may experience a very short delay when clicking on URLs in Office documents before being directed to the requested site. Users should be informed of the change as, in the event a link is unsafe and blocked, they will receive a message that it has been blocked.",
+  "service": "MDO",
+  "threats": [
+    "Data Exfiltration",
+    "Account breach",
+    "Password Cracking"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

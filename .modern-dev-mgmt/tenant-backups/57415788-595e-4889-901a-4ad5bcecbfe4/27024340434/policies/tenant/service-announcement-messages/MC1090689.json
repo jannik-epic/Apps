@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-06-09T23:13:28Z",
+  "endDateTime": "2026-07-27T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-29T17:34:10.15Z",
+  "title": "(Updated) Microsoft Teams: Enhanced peripheral data in Pro Management portal reports for BYOD spaces",
+  "id": "MC1090689",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "64439288-08ea-4700-a0c2-1f781554f108",
+  "displayName": "EPIC-7A63E62115",
+  "deviceId": "9b568f98-5a28-487d-8e4d-ca8c3ed81b7d",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.19043.928",
+  "trustType": "AzureAd",
+  "profileType": "RegisteredDevice",
+  "isCompliant": false,
+  "isManaged": false,
+  "registrationDateTime": "2021-08-06T07:31:04Z"
+}

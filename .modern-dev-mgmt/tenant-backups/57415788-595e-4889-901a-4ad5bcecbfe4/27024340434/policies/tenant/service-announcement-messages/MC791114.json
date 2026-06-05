@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2024-05-08T00:13:57Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T21:56:24.737Z",
+  "title": "(Updated) Data Loss Prevention: Decoupling policy tips and email notifications for SharePoint and OneDrive",
+  "id": "MC791114",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Purview"
+  ]
+}

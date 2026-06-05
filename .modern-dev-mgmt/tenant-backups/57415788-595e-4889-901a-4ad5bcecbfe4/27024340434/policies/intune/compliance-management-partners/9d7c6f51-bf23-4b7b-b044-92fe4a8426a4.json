@@ -1,0 +1,12 @@
+{
+  "id": "9d7c6f51-bf23-4b7b-b044-92fe4a8426a4",
+  "lastHeartbeatDateTime": "0001-01-01T00:00:00Z",
+  "partnerState": "unknown",
+  "displayName": "7P Conditional Access",
+  "macOsOnboarded": false,
+  "androidOnboarded": false,
+  "iosOnboarded": false,
+  "macOsEnrollmentAssignments": [],
+  "androidEnrollmentAssignments": [],
+  "iosEnrollmentAssignments": []
+}

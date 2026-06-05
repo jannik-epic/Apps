@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-30T16:21:25Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-30T16:21:40.44Z",
+  "title": "Microsoft 365 Copilot: Anthropic models available when editing Word documents",
+  "id": "MC1296489",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

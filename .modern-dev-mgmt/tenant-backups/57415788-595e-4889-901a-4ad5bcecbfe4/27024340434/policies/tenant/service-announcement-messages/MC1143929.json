@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-08-28T20:57:32.153Z",
+  "endDateTime": "2026-09-09T16:30:00Z",
+  "lastModifiedDateTime": "2025-08-28T20:57:32.85Z",
+  "title": "Certificate-based authentication changes on Windows domain controllers - coming September 2025",
+  "id": "MC1143929",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

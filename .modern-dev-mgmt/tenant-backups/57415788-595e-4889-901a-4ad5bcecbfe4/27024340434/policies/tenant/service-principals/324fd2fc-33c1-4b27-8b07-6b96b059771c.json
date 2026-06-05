@@ -1,0 +1,8 @@
+{
+  "id": "324fd2fc-33c1-4b27-8b07-6b96b059771c",
+  "appId": "097d6009-04c9-46fe-bf66-01edf19f5918",
+  "displayName": "kubernetes-https-only",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

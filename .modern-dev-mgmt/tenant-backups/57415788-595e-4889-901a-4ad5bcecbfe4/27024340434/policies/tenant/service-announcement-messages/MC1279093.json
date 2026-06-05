@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-13T22:54:05Z",
+  "endDateTime": "2026-09-18T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-04T21:42:14.47Z",
+  "title": "(Updated) Microsoft Defender for Office 365: Enhancing how we handle promotional mail",
+  "id": "MC1279093",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Defender XDR"
+  ]
+}

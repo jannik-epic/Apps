@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-06-11T17:01:02.787Z",
+  "endDateTime": "2026-06-11T17:01:02.787Z",
+  "lastModifiedDateTime": "2025-06-11T17:01:06.867Z",
+  "title": "How to configure RBAC for Windows Autopatch",
+  "id": "MC1092196",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

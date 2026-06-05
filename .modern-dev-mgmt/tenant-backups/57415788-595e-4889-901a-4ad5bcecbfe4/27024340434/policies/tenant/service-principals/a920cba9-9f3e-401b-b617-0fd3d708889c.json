@@ -1,0 +1,12 @@
+{
+  "id": "a920cba9-9f3e-401b-b617-0fd3d708889c",
+  "appId": "30e5659d-7a97-4c66-8863-497f329ac280",
+  "displayName": "DataAssessments",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

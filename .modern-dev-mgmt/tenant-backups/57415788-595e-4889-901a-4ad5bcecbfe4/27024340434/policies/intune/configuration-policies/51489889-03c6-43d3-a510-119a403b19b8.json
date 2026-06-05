@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2026-01-16T07:12:17.1301226Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2026-01-16T07:12:17.1301226Z",
+  "name": "COOKER-MDE",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 30,
+  "technologies": "mdm,microsoftSense",
+  "id": "51489889-03c6-43d3-a510-119a403b19b8",
+  "templateReference": {
+    "templateId": "804339ad-1553-4478-a742-138fb5807418_1",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Microsoft Defender Antivirus",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('51489889-03c6-43d3-a510-119a403b19b8')/assignments",
+  "assignments": []
+}

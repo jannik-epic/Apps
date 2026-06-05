@@ -1,0 +1,16 @@
+{
+  "id": "09336b0c-1a84-4a6b-a7c1-f8326fbb6ca3",
+  "name": "Vertraulich",
+  "description": "Die Informationssammlung enthält Informationen, die nur für einen bestimmten Personenkreis gedacht sind",
+  "color": "",
+  "sensitivity": 15,
+  "tooltip": "Die Informationssammlung enthält Informationen, die nur für einen bestimmten Personenkreis gedacht sind",
+  "isActive": false,
+  "isAppliable": false,
+  "contentFormats": [
+    "file"
+  ],
+  "hasProtection": false,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('09336b0c-1a84-4a6b-a7c1-f8326fbb6ca3')/parent/$entity",
+  "parent": null
+}

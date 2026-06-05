@@ -1,0 +1,10 @@
+{
+  "id": "4a269dd2-6c1c-448b-97c2-8e1ab809af80",
+  "appId": "0f78653b-2b30-47f2-9d09-3c17709f118a",
+  "displayName": "ShareGate migration tool 2.0",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

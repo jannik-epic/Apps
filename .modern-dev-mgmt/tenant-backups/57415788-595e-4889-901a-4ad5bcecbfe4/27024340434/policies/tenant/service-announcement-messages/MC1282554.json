@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-16T21:05:51Z",
+  "endDateTime": "2026-07-12T23:59:00Z",
+  "lastModifiedDateTime": "2026-04-30T22:26:03.58Z",
+  "title": "Power Platform - Block sending customer data from Dataverse audit events to Purview Activity logging",
+  "id": "MC1282554",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Power Platform"
+  ]
+}

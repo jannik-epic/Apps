@@ -1,0 +1,12 @@
+{
+  "id": "7f121d8a-3212-4f76-a44a-2fa14a6df771",
+  "appId": "3e28acb6-7793-4fff-9fcf-fb14fbaf42a9",
+  "displayName": "SecOps for Security Copilot",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

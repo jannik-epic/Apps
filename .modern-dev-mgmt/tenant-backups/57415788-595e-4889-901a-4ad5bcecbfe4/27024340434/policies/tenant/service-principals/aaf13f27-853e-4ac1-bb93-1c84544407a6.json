@@ -1,0 +1,10 @@
+{
+  "id": "aaf13f27-853e-4ac1-bb93-1c84544407a6",
+  "appId": "c839dd9e-41d7-442e-b1c7-b18c511e50c6",
+  "displayName": "FindTime",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "PrivateCatalogApp"
+  ]
+}

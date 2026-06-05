@@ -1,0 +1,11 @@
+{
+  "attributeSet": "EnterpriseApplicationForCA",
+  "description": null,
+  "id": "EnterpriseApplicationForCA_ApplicationName",
+  "isCollection": false,
+  "isSearchable": true,
+  "name": "ApplicationName",
+  "status": "Deprecated",
+  "type": "String",
+  "usePreDefinedValuesOnly": false
+}

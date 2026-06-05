@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-27T19:42:11Z",
+  "endDateTime": "2026-11-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-27T19:44:53.543Z",
+  "title": "Microsoft Entra: Security hardening to prevent user account takeover in Microsoft Entra Connect Sync",
+  "id": "MC1263280",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

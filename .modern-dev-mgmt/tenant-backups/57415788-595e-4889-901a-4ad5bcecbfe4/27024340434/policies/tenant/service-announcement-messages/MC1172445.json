@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-10-14T17:02:03.763Z",
+  "endDateTime": "2026-10-14T17:02:03.7Z",
+  "lastModifiedDateTime": "2025-10-14T17:02:04.43Z",
+  "title": "The October 2025 Windows security update is now available",
+  "id": "MC1172445",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

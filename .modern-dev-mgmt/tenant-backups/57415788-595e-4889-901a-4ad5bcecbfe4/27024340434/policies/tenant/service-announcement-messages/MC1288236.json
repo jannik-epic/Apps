@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-22T15:49:36Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-29T15:40:04.75Z",
+  "title": "Microsoft Security Exposure Management Secure Now",
+  "id": "MC1288236",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

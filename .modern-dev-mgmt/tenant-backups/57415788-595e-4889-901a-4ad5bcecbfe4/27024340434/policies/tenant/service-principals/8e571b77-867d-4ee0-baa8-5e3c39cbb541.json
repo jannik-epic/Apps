@@ -1,0 +1,11 @@
+{
+  "id": "8e571b77-867d-4ee0-baa8-5e3c39cbb541",
+  "appId": "fe6d5d9e-6c0d-4193-b47d-59cf90a0f37b",
+  "displayName": "Microsoft 365 Management",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

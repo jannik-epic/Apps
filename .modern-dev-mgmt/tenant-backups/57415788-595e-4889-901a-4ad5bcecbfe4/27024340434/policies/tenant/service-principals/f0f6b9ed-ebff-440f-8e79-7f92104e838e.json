@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "f0f6b9ed-ebff-440f-8e79-7f92104e838e",
+  "appId": "f0f6b9ed-ebff-440f-8e79-7f92104e838e",
+  "displayName": "Angi (Ausschreibung)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,8 @@
+{
+  "id": "b75826a3-fae5-41b0-b424-b22360103fd6",
+  "appId": "6ff56ecc-536a-44c0-bf97-e125670bc695",
+  "displayName": "azure-monitor-ama-vms",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

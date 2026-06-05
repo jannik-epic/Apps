@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-08T22:43:11Z",
+  "endDateTime": "2026-07-04T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-08T22:43:19.927Z",
+  "title": "Lock-free coauthoring in Microsoft Word",
+  "id": "MC1304289",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

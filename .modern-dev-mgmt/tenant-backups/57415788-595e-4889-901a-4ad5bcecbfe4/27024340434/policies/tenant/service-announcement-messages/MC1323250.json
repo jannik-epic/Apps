@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-26T21:58:46Z",
+  "endDateTime": "2026-08-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-27T18:13:03.323Z",
+  "title": "[Action Required] Update scripts using Get-MailDetailTransportRuleReport and Get-MailTrafficPolicyReport",
+  "id": "MC1323250",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

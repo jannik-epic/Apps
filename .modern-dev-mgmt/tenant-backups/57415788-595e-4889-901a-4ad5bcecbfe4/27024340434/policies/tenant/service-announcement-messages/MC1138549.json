@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-08-20T17:04:14.42Z",
+  "endDateTime": "2026-08-20T17:04:14.343Z",
+  "lastModifiedDateTime": "2025-08-20T17:04:15.317Z",
+  "title": "Hotpatch readiness: Enable VBS at scale",
+  "id": "MC1138549",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

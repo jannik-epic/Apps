@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-06-27T19:00:58.673Z",
+  "endDateTime": "2026-06-27T19:00:58.597Z",
+  "lastModifiedDateTime": "2025-06-27T19:00:59.48Z",
+  "title": "Get ready for Windows 11, version 25H2",
+  "id": "MC1104915",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

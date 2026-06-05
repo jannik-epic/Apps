@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-23T23:30:56Z",
+  "endDateTime": "2026-06-06T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-23T23:31:05.093Z",
+  "title": "Microsoft Purview: Data Security Investigations – analyze files tied to audit log activities",
+  "id": "MC1259827",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

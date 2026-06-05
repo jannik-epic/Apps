@@ -1,0 +1,9 @@
+{
+  "id": "ba18d499-5314-4a8c-b65b-ff545ecdef50",
+  "displayName": "iOS Compliance policy",
+  "description": "Mifo iOS Compliance policy",
+  "versionInfo": "Version 1",
+  "templateType": "deviceConfigurationForOffice365",
+  "platformType": "iOS",
+  "publishedDateTime": "0001-01-01T00:00:00Z"
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-14T18:07:45.247Z",
+  "endDateTime": "2027-04-14T18:07:45.247Z",
+  "lastModifiedDateTime": "2026-04-14T18:07:47.07Z",
+  "title": "Remote Desktop adds new safeguards for connections opened from RDP files",
+  "id": "MC1279831",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-10T18:04:17.523Z",
+  "endDateTime": "2027-02-10T18:04:17.523Z",
+  "lastModifiedDateTime": "2026-02-10T18:04:26.113Z",
+  "title": "Secure Boot certificate updates: actions required ahead of June 2026 expiration",
+  "id": "MC1230373",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

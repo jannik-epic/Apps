@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-06T22:52:10Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-18T16:47:34.853Z",
+  "title": "(Updated) Viva Engage Communities and Storylines in Teams – Individual enablement controls",
+  "id": "MC1302904",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams",
+    "Microsoft Viva"
+  ]
+}

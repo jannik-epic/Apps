@@ -1,0 +1,5 @@
+{
+  "service": "Microsoft Teams",
+  "status": "serviceDegradation",
+  "id": "microsoftteams"
+}

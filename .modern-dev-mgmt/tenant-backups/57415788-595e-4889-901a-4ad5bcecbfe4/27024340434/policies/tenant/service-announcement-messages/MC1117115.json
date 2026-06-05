@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-18T00:06:36Z",
+  "endDateTime": "2026-11-15T08:00:00Z",
+  "lastModifiedDateTime": "2026-01-29T17:41:22.237Z",
+  "title": "(Updated) Updates to custom scripting in sites and Classic Publishing site creation",
+  "id": "MC1117115",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

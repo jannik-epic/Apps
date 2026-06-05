@@ -1,0 +1,38 @@
+{
+  "id": "MDA_SF_enableMultipleSamlConfigs",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://security.salesforce.com/mfa-requirement-check",
+  "controlCategory": "Identity",
+  "title": "Require identity verification during multi-factor authentication (MFA) registration",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 33,
+  "remediation": "From Setup, in the Quick Find box, enter Identity, and then click Identity Verification. Make sure the field: \"Require identity verification during multi-factor authentication (MFA) registration\" is enabled.",
+  "remediationImpact": "When you register and challenge your users for MFA, they will be prompted to authenticate with a second factor when accessing an application or other resource.",
+  "service": "MDA_SF",
+  "threats": [
+    "Password cracking",
+    "Account breach"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

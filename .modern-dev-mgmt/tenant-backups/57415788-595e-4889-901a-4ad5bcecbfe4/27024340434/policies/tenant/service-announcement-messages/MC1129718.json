@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-08-05T22:58:57Z",
+  "endDateTime": "2026-06-22T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-07T20:12:14.353Z",
+  "title": "(Updated) New Feature: Account Manager in Outlook for Windows",
+  "id": "MC1129718",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online",
+    "Microsoft 365 apps"
+  ]
+}

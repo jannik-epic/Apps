@@ -1,0 +1,52 @@
+{
+  "@odata.type": "#microsoft.graph.androidManagedStoreApp",
+  "id": "b6dfa909-cbdf-4883-8b58-4e185bc0c0a8",
+  "displayName": "Microsoft OneDrive",
+  "description": "Keep photos and files backed up, protected, and in sync everywhere.",
+  "publisher": "Microsoft Corporation",
+  "largeIcon": null,
+  "createdDateTime": "2021-07-09T16:57:08Z",
+  "lastModifiedDateTime": "2026-03-26T18:01:54Z",
+  "isFeatured": false,
+  "privacyInformationUrl": null,
+  "informationUrl": "https://play.google.com/store/apps/details?id=com.microsoft.skydrive",
+  "owner": null,
+  "developer": null,
+  "notes": null,
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "packageId": "com.microsoft.skydrive",
+  "appIdentifier": "com.microsoft.skydrive",
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 0,
+  "appStoreUrl": "https://play.google.com/store/apps/details?id=com.microsoft.skydrive&hl=de-CH",
+  "isPrivate": false,
+  "isSystemApp": false,
+  "supportsOemConfig": false,
+  "appTracks": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('b6dfa909-cbdf-4883-8b58-4e185bc0c0a8')/microsoft.graph.androidManagedStoreApp/assignments",
+  "assignments": [
+    {
+      "id": "cb3ca96c-753a-4c72-b37b-62e99ca86aa4_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "cb3ca96c-753a-4c72-b37b-62e99ca86aa4"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.androidManagedStoreAppAssignmentSettings",
+        "androidManagedStoreAppTrackIds": [],
+        "autoUpdateMode": "default"
+      }
+    }
+  ]
+}

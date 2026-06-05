@@ -1,0 +1,8 @@
+{
+  "clientId": "28b46ada-1f4a-41a5-86af-ced8efdacd17",
+  "consentType": "Principal",
+  "id": "2mq0KEofpUGGr87Y79rNFy1EzykxNSZMiaaO-6My2cnHpzZkzhjbQ6TofOHJZLQ9",
+  "principalId": "6436a7c7-18ce-43db-a4e8-7ce1c964b43d",
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": " openid profile email User.Read"
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-27T22:16:34Z",
+  "endDateTime": "2026-06-27T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-27T22:16:56.257Z",
+  "title": "Excel Desktop update required to connect to Power Platform Analytical Dataflows",
+  "id": "MC1293484",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

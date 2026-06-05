@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-01T23:25:12Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-01T23:25:27.723Z",
+  "title": "Microsoft Teams: Breakout rooms now supported in meetings with up to 1,000 attendees",
+  "id": "MC1330891",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

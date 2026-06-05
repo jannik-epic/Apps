@@ -1,0 +1,11 @@
+{
+  "id": "b0986b30-c8ac-4611-b7a9-f86a176122b5",
+  "appId": "84a0e9dd-6e58-4aad-82af-ebe485acd09d",
+  "displayName": "Hubble Media Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

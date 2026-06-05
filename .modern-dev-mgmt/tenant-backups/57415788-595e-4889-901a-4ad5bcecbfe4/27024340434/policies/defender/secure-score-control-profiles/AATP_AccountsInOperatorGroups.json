@@ -1,0 +1,35 @@
+{
+  "id": "AATP_AccountsInOperatorGroups",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2327310",
+  "controlCategory": "Identity",
+  "title": "Locate accounts in built-in Operator Groups",
+  "deprecated": false,
+  "implementationCost": "High",
+  "lastModifiedDateTime": null,
+  "maxScore": 8.0,
+  "rank": 65,
+  "remediation": "1. Review the exposed accounts and groups with membership in built-in operator groups. <br> 2. Remove them from the Operator group directly in Active Directory. <br> 3. If the membership is through a nested group, either remove the account from the nested group or remove the nested group from the operator group.",
+  "remediationImpact": "Accounts that are members of these built-in operator groups may retain legacy or unnecessary elevated privileges, increasing the risk of privilege escalation or lateral movement within the environment. Attackers who compromise such accounts can perform critical actions like managing user accounts, accessing backups, or controlling domain controllers without needing full Domain Admin rights. This elevated access can lead to significant security breaches if not properly managed.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "high",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

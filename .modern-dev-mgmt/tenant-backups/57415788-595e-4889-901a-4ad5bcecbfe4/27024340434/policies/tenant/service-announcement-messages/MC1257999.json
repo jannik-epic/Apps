@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-21T16:17:49Z",
+  "endDateTime": "2027-01-04T08:00:00Z",
+  "lastModifiedDateTime": "2026-03-21T16:18:19.553Z",
+  "title": "Microsoft Purview DLP: Unmanaged cloud app discovery and protection with Microsoft Purview and Palo Alto Prisma Access",
+  "id": "MC1257999",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

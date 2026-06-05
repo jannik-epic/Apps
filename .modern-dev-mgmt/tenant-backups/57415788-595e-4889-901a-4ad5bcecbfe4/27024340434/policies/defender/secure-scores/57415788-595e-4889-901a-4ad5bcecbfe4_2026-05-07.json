@@ -1,0 +1,2121 @@
+{
+  "id": "57415788-595e-4889-901a-4ad5bcecbfe4_2026-05-07",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "activeUserCount": 61,
+  "createdDateTime": "2026-05-07T00:00:00Z",
+  "currentScore": 928.83,
+  "enabledServices": [
+    "HasAADP1",
+    "HasAADP2",
+    "HasOCAS",
+    "HasMCAS",
+    "HasCASD",
+    "HasAATP",
+    "HasCLB",
+    "HasMDOP1",
+    "HasMDOP2",
+    "HasEXOP2",
+    "HasAIPP1",
+    "HasAIPP2",
+    "HasMDEP2",
+    "HasSPOP2"
+  ],
+  "licensedUserCount": 0,
+  "maxScore": 1478.0,
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "averageComparativeScores": [
+    {
+      "basis": "AllTenants",
+      "averageScore": 51.02,
+      "appsScore": 47.39,
+      "appsScoreMax": 124.37,
+      "dataScore": 0.4,
+      "dataScoreMax": 5.25,
+      "deviceScore": 20.46,
+      "deviceScoreMax": 35.69,
+      "identityScore": 39.53,
+      "identityScoreMax": 63.35,
+      "infrastructureScore": 0.0,
+      "infrastructureScoreMax": 0.0
+    },
+    {
+      "basis": "TotalSeats",
+      "averageScore": 45.87,
+      "SeatSizeRangeLowerValue": "1",
+      "SeatSizeRangeUpperValue": "100",
+      "appsScore": 53.26,
+      "appsScoreMax": 145.5,
+      "dataScore": 0.33,
+      "dataScoreMax": 6.18,
+      "deviceScore": 14.34,
+      "deviceScoreMax": 25.28,
+      "identityScore": 37.83,
+      "identityScoreMax": 62.1,
+      "infrastructureScore": 0.0,
+      "infrastructureScoreMax": 0.0
+    }
+  ],
+  "controlScores": [
+    {
+      "controlCategory": "Apps",
+      "controlName": "McasFirewallLogUpload",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Feature in place: .",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_atpprotection",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_safedocuments",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_zapspam",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_zapphish",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_zapmalware",
+      "description": null,
+      "score": 6.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_safeattachments",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_safelinksforemail",
+      "description": null,
+      "score": 9.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_commonattachmentsfilter",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "exo_individualsharing",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "meeting_restrictanonymousjoin_v1",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "current status: ",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "meeting_pstnusersbypasslobby_v1",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "meeting_externalrequestcontrol_v1",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "meeting_anonymousstartmeeting_v1",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "meeting_autoadmitusers_v1",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 50.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "meeting_designatedpresenter_v1",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_ClearText",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_DormantAccounts",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_KerberosDelegations",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_HoneyToken",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Honeytoken account configured: ",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_PathRisk",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_PrintSpooler",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_PwdLAPS",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_SIDHistory",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_UnsecureAccount",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_Vpn",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "VPN based detection configured: ",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_WeakCipher",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_Sensor",
+      "description": null,
+      "score": 4.0,
+      "implementationStatus": "You have  domain controllers in your environment and Defender for Identity sensor is installed on  of them.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_UnsecureDomain",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "CustomerLockBoxEnabled",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "Feature in place: .",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Data",
+      "controlName": "dlp_datalossprevention",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_connectionfilter",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "There are allowed IP addresses in the connection filter policy",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Data",
+      "controlName": "mip_purviewlabelconsent",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "The setting was not enabled.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Data",
+      "controlName": "mip_sensitivitylabelspolicies",
+      "description": null,
+      "score": 2.0,
+      "implementationStatus": "Policies were published on  of the  users",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Data",
+      "controlName": "mip_autosensitivitylabelspolicies",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Policies were published on  of the  users",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_highconfidencespamaction",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_phisspamacation",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_highconfidencephishaction",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_bulkspamaction",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_quarantineretentionperiod",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_allowedsenderscombined",
+      "description": null,
+      "score": 2.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_bulkthreshold",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_spamaction",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_autoforwardingmode",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_recipientexternallimitperhour",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_recipientinternallimitperhour",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_recipientlimitperday",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_thresholdreachedaction",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_enablemailboxintelligence",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_mailboxintelligenceprotection",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_mailboxintelligenceprotectionaction",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_enabledomainstoprotect",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_phishthresholdlevel",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_similardomainssafetytips",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_similaruserssafetytips",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_targeteddomainprotectionaction",
+      "description": null,
+      "score": 6.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_targeteduserprotectionaction",
+      "description": null,
+      "score": 6.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_targetedusersprotection",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_unusualcharacterssafetytips",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "spo_idle_session_timeout",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "The setting is not compliant.",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mip_DLP_policies_Teams",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "DLP policies in Teams are: ",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "aad_third_party_apps",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "Third party applications integration is: ",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "aad_sign_in_freq_session_timeout",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Setting is: ",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "aad_admin_consent_workflow",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "Admin consent workflow is: ",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mcas_mda_enabled",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "Defender for Cloud Apps is: ",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "IntegratedApps",
+      "description": null,
+      "score": 4.0,
+      "implementationStatus": "You have no user consent policy in place.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "PasswordHashSync",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "You have disabled password hash sync.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "PWAgePolicyNew",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "Your current policy is set to never let passwords expire.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "SelfServicePasswordReset",
+      "description": null,
+      "score": 0.59,
+      "implementationStatus": "You have 0 of 0 users who don't have self-service password reset enabled.",
+      "scoreInPercentage": 59.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "BlockLegacyAuthentication",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "You have 0 of 0 users that don't have legacy authentication blocked.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "MFARegistrationV2",
+      "description": null,
+      "score": 5.74,
+      "implementationStatus": "You have 0 out of 0 users that aren’t registered with MFA.",
+      "scoreInPercentage": 63.78
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AdminMFAV2",
+      "description": null,
+      "score": 7.5,
+      "implementationStatus": "You have 0 out of 0 users with administrative roles that aren’t registered and protected with MFA.",
+      "scoreInPercentage": 75.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "SigninRiskPolicy",
+      "description": null,
+      "score": 7.0,
+      "implementationStatus": "You have 0 of 0 users that don't have the sign-in risky policy turned on.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "UserRiskPolicy",
+      "description": null,
+      "score": 7.0,
+      "implementationStatus": "You have 0 users out of 0 that do not have user risk policy enabled.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "OneAdmin",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "You currently have  global admins.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "RoleOverlap",
+      "description": null,
+      "score": 1.0,
+      "implementationStatus": "You have  users with least privileged administrative roles.",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "spo_legacy_auth",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "The setting is not compliant.",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "exo_transportrulesallowlistdomains",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "Spam confidence level (SCL) is not configured in mail transport rules with specific domain",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_DefenderForIdentityIsNotInstalled",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_AdminSDHolder",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_DomainControllerLocalUsers",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_NonAdminDCSyncAccounts",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "exo_oauth2clientprofileenabled",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "Modern authentication for Exchange Online is enabled",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "exo_mailtipsenabled",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "MailTips for end users are disabled.",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mip_search_auditlog",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "Microsoft 365 audit log search is enabled",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "exo_mailboxaudit",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Mailbox auditing for all users is disabled",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "exo_storageproviderrestricted",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Additional storage providers are restricted in Outlook on the web is not configured correctly. Please follow next steps to correctly configure the control.",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_spam_notifications_only_for_admins",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_safeattachmentpolicy",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_safelinksforOfficeApps",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_antiphishingpolicies",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "mdo_blockmailforward",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "aad_admin_accounts_separate_unassigned_cloud_only",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Administrator accounts are separate, unassigned and cloud-only account: ",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "aad_password_protection",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Microsoft Entra ID Password Protection is not configured",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "aad_linkedin_connection_disables",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "LinkedIn account connections is - Not disabled",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "spo_external_sharing_managed",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Document sharing is being controlled by domains setting is ",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "spo_block_onedrive_sync_unmanaged_devices",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Blocking OneDrive for Business sync from unmanaged devices is: ",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "exo_SPF_records_for_all_domains",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "SPF is: ",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_15",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_16",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_19",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_22",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_23",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_24",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_25",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_26",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_27",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_28",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_29",
+      "description": null,
+      "score": 2.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_30",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_32",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_33",
+      "description": null,
+      "score": 3.75,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 75.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_34",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_35",
+      "description": null,
+      "score": 3.75,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 75.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_36",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_37",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_38",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_39",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_40",
+      "description": null,
+      "score": 2.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_41",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 50.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_42",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 50.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_43",
+      "description": null,
+      "score": 1.5,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 75.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_44",
+      "description": null,
+      "score": 1.5,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_45",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_46",
+      "description": null,
+      "score": 1.5,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 75.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_49",
+      "description": null,
+      "score": 1.5,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 75.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_50",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_51",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_52",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_53",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_54",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_55",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_57",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_58",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_59",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_60",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_61",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_62",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_63",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_64",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_65",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_66",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_67",
+      "description": null,
+      "score": 1.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_68",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_69",
+      "description": null,
+      "score": 2.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_70",
+      "description": null,
+      "score": 2.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_71",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_72",
+      "description": null,
+      "score": 2.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_73",
+      "description": null,
+      "score": 2.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_74",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_80",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_81",
+      "description": null,
+      "score": 1.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_82",
+      "description": null,
+      "score": 1.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_83",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_87",
+      "description": null,
+      "score": 2.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_88",
+      "description": null,
+      "score": 2.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_89",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_90",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_91",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_92",
+      "description": null,
+      "score": 10.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_93",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_94",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_95",
+      "description": null,
+      "score": 1.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_96",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_97",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2000",
+      "description": null,
+      "score": 10.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2001",
+      "description": null,
+      "score": 10.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2002",
+      "description": null,
+      "score": 10.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2003",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2010",
+      "description": null,
+      "score": 10.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2011",
+      "description": null,
+      "score": 9.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2012",
+      "description": null,
+      "score": 10.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2013",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2014",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2016",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2021",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2060",
+      "description": null,
+      "score": 9.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2061",
+      "description": null,
+      "score": 9.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2070",
+      "description": null,
+      "score": 10.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2071",
+      "description": null,
+      "score": 9.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2072",
+      "description": null,
+      "score": 9.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2073",
+      "description": null,
+      "score": 9.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2080",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2090",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2091",
+      "description": null,
+      "score": 9.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2093",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2500",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2501",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2502",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2503",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2504",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2505",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2506",
+      "description": null,
+      "score": 9.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2507",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2508",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2509",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2510",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2511",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2512",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2513",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2514",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2515",
+      "description": null,
+      "score": 2.25,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_3001",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_3002",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_3003",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_3010",
+      "description": null,
+      "score": 4.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 50.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_3011",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_4000",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_4001",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_4002",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_4003",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "exo_outlookaddins",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Installing Outlook add-ins configuration is disabled",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "aad_limited_administrative_roles",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "'Microsoft Azure Management' is limited to administrative roles - ",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "sway_block_sharing_with_outside_users",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Sharing SWAY outside the organization is ",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "forms_phishing_protection",
+      "description": null,
+      "score": 6.0,
+      "implementationStatus": "Internal phishing protection for Forms is: ",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "spo_external_users_sharing",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "Prevent external users from sharing files, folders, and sites that they don’t own is: ",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "aad_phishing_MFA_strength",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "Phishing-resistant MFA strength is ",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "aad_custom_banned_passwords",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "Custom banned passwords lists are: ",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "admincenter_owned_apps_and_services",
+      "description": null,
+      "score": 3.0,
+      "implementationStatus": "'User owned apps and services' is [Not Measured]",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_GroupPolicyAbnormalModificationAssignment",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_GroupPolicyPasswordInPreferences",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_DnsAdminsGroupWithUnsafePermissions",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_GroupPolicyAssignsUnprivilegedIdentitiesToElevatedLocalGroups",
+      "description": null,
+      "score": 7.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_AccountsWithNonDefaultPrimaryGroup",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_BuiltinGuestAccountIsEnabled",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_DomainControllersWithOldPassword",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_BuiltinKrbtgtAccountWithOldPassword",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_BuiltinAdministratorAccountWithOldPassword",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_PrivilegedAccountsWithDelegationAllowed",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_SingleManagedServiceAccountsWithOldPassword",
+      "description": null,
+      "score": 6.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_GroupManagedServiceAccountWithUnrecommendedPasswordChangeInterval",
+      "description": null,
+      "score": 6.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_EntraConnectComputersWithNoMdiSensorInstalled",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "You have  Entra Connect servers in your environment and Defender for Identity sensor is installed on  of them.",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_ExposedPasswordsInADAttributes",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "AppG_unusual_activity_with_priority_account",
+      "description": null,
+      "score": 7.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Apps",
+      "controlName": "AppG_regulate_access_to_sensitive_data",
+      "description": null,
+      "score": 7.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_InactiveServiceAccounts",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_AdAccountWithPotentiallyLeakedCredentials",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_AccountWithLeakedCredentials",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_AccountsInOperatorGroups",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_ServiceAccountsInPrivilegedGroup",
+      "description": null,
+      "score": 7.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_StaleAccounts",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Identity",
+      "controlName": "AATP_PrivilegedEntraIdAndActiveDirectoryAccounts",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2518",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2100",
+      "description": null,
+      "score": 9.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_2517",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_102",
+      "description": null,
+      "score": 8.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_103",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_105",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_106",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_108",
+      "description": null,
+      "score": 2.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_6100",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_109",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_112",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_6101",
+      "description": null,
+      "score": 5.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 100.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_110",
+      "description": null,
+      "score": 1.75,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 25.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_111",
+      "description": null,
+      "score": 6.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 75.0
+    },
+    {
+      "controlCategory": "Device",
+      "controlName": "scid_107",
+      "description": null,
+      "score": 0.0,
+      "implementationStatus": "/ exposed devices",
+      "scoreInPercentage": 0.0
+    }
+  ]
+}

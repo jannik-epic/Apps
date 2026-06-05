@@ -1,0 +1,11 @@
+{
+  "id": "9c0d92ba-a171-4dd7-9bb1-1eb3efe7607c",
+  "appId": "f2537abf-644e-4a0d-9f7b-c91c45c643db",
+  "displayName": "Teams Admin Monitoring Alerting Platform",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

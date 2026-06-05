@@ -1,0 +1,12 @@
+{
+  "id": "d36799bc-eba8-4d3c-a5ea-de99e440f68e",
+  "appId": "3e53edf8-185f-4fb1-b849-97faed43d817",
+  "displayName": "Partner Accounts Graph",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

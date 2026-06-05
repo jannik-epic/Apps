@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T14:38:37Z",
+  "endDateTime": "2026-06-30T14:38:00Z",
+  "lastModifiedDateTime": "2026-04-30T14:39:24.027Z",
+  "title": "Dynamics 365 Customer Service – Add knowledge citations to case resolution",
+  "id": "MC1296260",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

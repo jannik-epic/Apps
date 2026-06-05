@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-15T00:01:30Z",
+  "endDateTime": "2026-06-22T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-11T21:15:48.647Z",
+  "title": "(Updated) Microsoft Teams: Miracast support for Teams Rooms on Windows (Teams Rooms Pro only)",
+  "id": "MC1186374",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

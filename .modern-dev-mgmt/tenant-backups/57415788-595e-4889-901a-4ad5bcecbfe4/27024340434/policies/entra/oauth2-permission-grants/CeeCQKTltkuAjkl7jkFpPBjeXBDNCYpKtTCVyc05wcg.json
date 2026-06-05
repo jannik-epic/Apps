@@ -1,0 +1,8 @@
+{
+  "clientId": "4082e709-e5a4-4bb6-808e-497b8e41693c",
+  "consentType": "AllPrincipals",
+  "id": "CeeCQKTltkuAjkl7jkFpPBjeXBDNCYpKtTCVyc05wcg",
+  "principalId": null,
+  "resourceId": "105cde18-09cd-4a8a-b530-95c9cd39c1c8",
+  "scope": "Governance.CrossTenantConnectionReports.Read PowerAutomate.Flows.Read EnvironmentManagement.Groups.Read PowerApps.Apps.Read EnvironmentManagement.Environments.Read EnvironmentManagement.Settings.Read"
+}

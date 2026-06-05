@@ -1,0 +1,9 @@
+{
+  "id": "ae5ea368-3fd5-4da5-bb33-a7c566effbe2",
+  "deletedDateTime": null,
+  "definition": [
+    "{\"B2BManagementPolicy\":{\"InvitationsAllowedAndBlockedDomainsPolicy\":{\"AllowedDomains\":[]},\"AutoRedeemPolicy\":{\"AdminConsentedForUsersIntoTenantIds\":[],\"NoAADConsentForUsersFromTenantsIds\":[]}}}"
+  ],
+  "displayName": "B2BManagementPolicy",
+  "isOrganizationDefault": true
+}

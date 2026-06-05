@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-08-19T21:25:17.643Z",
+  "endDateTime": "2026-08-19T21:25:17.613Z",
+  "lastModifiedDateTime": "2025-08-19T21:25:19.407Z",
+  "title": "Take Action: Out-of-band update to address an issue affecting reset and recovery operations",
+  "id": "MC1138193",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

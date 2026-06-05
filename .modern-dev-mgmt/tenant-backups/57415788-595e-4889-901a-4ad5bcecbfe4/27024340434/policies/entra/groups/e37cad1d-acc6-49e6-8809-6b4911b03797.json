@@ -1,0 +1,13 @@
+{
+  "id": "e37cad1d-acc6-49e6-8809-6b4911b03797",
+  "displayName": "Remo [Prj]",
+  "description": "Remo's Team",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "RemoPrj",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2021-05-28T04:56:27Z"
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-09T21:24:19.903Z",
+  "endDateTime": "2027-03-09T21:24:19.86Z",
+  "lastModifiedDateTime": "2026-03-09T21:24:21.607Z",
+  "title": "Windows Autopatch is enabling hotpatch updates by default",
+  "id": "MC1247859",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

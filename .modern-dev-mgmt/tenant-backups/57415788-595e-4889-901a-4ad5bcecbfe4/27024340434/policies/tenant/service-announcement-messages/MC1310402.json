@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-14T14:20:27Z",
+  "endDateTime": "2026-06-14T14:20:27Z",
+  "lastModifiedDateTime": "2026-05-14T14:21:30.743Z",
+  "title": "Power Automate - Export object-centric process mining data to Microsoft Fabric semantic model",
+  "id": "MC1310402",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Power Automate"
+  ]
+}

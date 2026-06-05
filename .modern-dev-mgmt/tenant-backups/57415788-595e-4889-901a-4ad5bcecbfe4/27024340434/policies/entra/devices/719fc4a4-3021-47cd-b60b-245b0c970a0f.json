@@ -1,0 +1,13 @@
+{
+  "id": "719fc4a4-3021-47cd-b60b-245b0c970a0f",
+  "displayName": "XYZ-SD-C22483FB",
+  "deviceId": "aa7af440-8472-44fb-be06-d364c353a9e6",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.26100.4349",
+  "trustType": "AzureAd",
+  "profileType": "RegisteredDevice",
+  "isCompliant": false,
+  "isManaged": true,
+  "registrationDateTime": "2025-04-02T20:22:26Z"
+}

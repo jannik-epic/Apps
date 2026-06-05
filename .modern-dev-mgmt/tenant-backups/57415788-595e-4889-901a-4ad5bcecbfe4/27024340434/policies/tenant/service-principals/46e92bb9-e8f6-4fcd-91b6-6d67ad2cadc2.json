@@ -1,0 +1,8 @@
+{
+  "id": "46e92bb9-e8f6-4fcd-91b6-6d67ad2cadc2",
+  "appId": "26a4ae64-5862-427f-a9b0-044e62572a4f",
+  "displayName": "Microsoft Intune Checkin",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

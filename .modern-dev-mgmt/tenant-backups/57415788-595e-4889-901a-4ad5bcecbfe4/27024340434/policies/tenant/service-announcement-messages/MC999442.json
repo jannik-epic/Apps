@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-02-07T00:43:46Z",
+  "endDateTime": "2026-08-28T07:00:00Z",
+  "lastModifiedDateTime": "2026-02-04T18:07:05.16Z",
+  "title": "Microsoft Purview | Data Lifecycle Management: Retention based on “last accessed” for OneDrive and SharePoint files",
+  "id": "MC999442",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

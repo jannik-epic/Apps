@@ -1,0 +1,12 @@
+{
+  "id": "dc502ecf-3eed-46d5-b206-1844ad1a00c2",
+  "displayName": "Serviceaccount Powerplatform",
+  "userPrincipalName": "sa_powerplatform@epicfusionlabs.com",
+  "mail": "sa_powerplatform@epicfusionlabs.com",
+  "accountEnabled": true,
+  "userType": "Member",
+  "createdDateTime": "2024-10-18T13:24:32Z",
+  "department": null,
+  "jobTitle": null,
+  "usageLocation": "US"
+}

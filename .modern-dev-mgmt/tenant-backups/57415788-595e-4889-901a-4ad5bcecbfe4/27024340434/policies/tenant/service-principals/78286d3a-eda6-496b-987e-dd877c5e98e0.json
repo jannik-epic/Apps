@@ -1,0 +1,12 @@
+{
+  "id": "78286d3a-eda6-496b-987e-dd877c5e98e0",
+  "appId": "87e86b91-9ae3-4679-b68a-471fe50be746",
+  "displayName": "Microsoft Managed Policy Manager",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

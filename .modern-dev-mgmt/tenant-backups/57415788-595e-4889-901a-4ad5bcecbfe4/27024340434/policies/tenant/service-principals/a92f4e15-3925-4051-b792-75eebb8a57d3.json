@@ -1,0 +1,8 @@
+{
+  "id": "a92f4e15-3925-4051-b792-75eebb8a57d3",
+  "appId": "b51a99a9-ccaa-4687-aa2c-44d1558295f4",
+  "displayName": "Microsoft Exact Data Match Upload Agent",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

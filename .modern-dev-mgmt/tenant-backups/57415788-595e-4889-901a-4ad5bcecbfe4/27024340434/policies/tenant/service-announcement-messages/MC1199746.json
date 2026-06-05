@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-12-18T22:14:13.07Z",
+  "endDateTime": "2026-12-18T22:14:13.023Z",
+  "lastModifiedDateTime": "2025-12-18T22:14:13.857Z",
+  "title": "Take Action: Out-of-band update to address MSMQ service issues leading to queue operations and resource-related errors",
+  "id": "MC1199746",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

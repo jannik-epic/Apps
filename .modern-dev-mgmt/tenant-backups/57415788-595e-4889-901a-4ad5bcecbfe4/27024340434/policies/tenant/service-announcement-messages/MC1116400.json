@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-16T17:01:21.49Z",
+  "endDateTime": "2026-07-16T17:01:21.427Z",
+  "lastModifiedDateTime": "2025-07-16T17:01:22.307Z",
+  "title": "Inbox Microsoft Store apps update in Windows media",
+  "id": "MC1116400",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

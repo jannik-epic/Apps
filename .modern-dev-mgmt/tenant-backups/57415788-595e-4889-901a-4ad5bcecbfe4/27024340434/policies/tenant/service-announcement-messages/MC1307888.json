@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-11T22:38:37Z",
+  "endDateTime": "2026-10-05T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-18T16:55:28.18Z",
+  "title": "(Updated) Microsoft Teams: AI-powered notes for in-person meetings with Facilitator in Teams Rooms on Android",
+  "id": "MC1307888",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

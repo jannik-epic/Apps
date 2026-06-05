@@ -1,0 +1,11 @@
+{
+  "id": "93443386-cfa1-44a3-bc0a-51ec7b9c7d70",
+  "appId": "7d312290-28c8-473c-a0ed-8e53749b6d6d",
+  "displayName": "Microsoft Cognitive Services",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

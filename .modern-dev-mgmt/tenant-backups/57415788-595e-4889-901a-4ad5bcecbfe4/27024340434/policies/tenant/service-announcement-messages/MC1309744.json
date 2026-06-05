@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-13T23:08:57Z",
+  "endDateTime": "2026-08-17T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-28T20:05:26.067Z",
+  "title": "(Updated) Microsoft Teams: Report external users for security concerns",
+  "id": "MC1309744",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

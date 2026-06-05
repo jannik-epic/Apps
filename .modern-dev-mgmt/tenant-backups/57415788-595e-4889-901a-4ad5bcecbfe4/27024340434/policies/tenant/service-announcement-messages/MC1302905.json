@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-06T22:52:36Z",
+  "endDateTime": "2026-10-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T21:29:43.753Z",
+  "title": "(Updated) Microsoft Purview compliance portal: Purview SDK embedded in Agent Framework SDK",
+  "id": "MC1302905",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

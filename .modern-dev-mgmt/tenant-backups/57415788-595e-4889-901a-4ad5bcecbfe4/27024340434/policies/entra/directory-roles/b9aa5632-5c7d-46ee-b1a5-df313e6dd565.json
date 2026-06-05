@@ -1,0 +1,7 @@
+{
+  "id": "b9aa5632-5c7d-46ee-b1a5-df313e6dd565",
+  "deletedDateTime": null,
+  "description": "Can read everything that a Global Administrator can, but not update anything.",
+  "displayName": "Global Reader",
+  "roleTemplateId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "MDA_SNOW_concourseOnmessageEnforceSameOrigin",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/security/reference/enable-url-whitelist-for-cross-origin-iframe-communication.html",
+  "controlCategory": "Apps",
+  "title": "Enable URL allow list for cross-origin iframe communication",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 6.0,
+  "rank": 10,
+  "remediation": "<p>Set the following property &apos;glide.ui.concourse.onmessage_enforce_same_origin&apos; as true.</p> <p>For setting ServiceNow properties, see <a href='https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/reference-pages/task/t_AddAPropertyUsingSysPropsList.html'>Add system property documentation</a>.</p>",
+  "remediationImpact": "If you do not inclusion list intended domains, the ability to embed other pages within Now Platform instances may be limited.",
+  "service": "MDA_SNOW",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

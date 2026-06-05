@@ -1,0 +1,11 @@
+{
+  "id": "a5b3ef08-3586-4562-ac08-e59742e00030",
+  "appId": "b0e46e0e-c5f3-4a4c-829b-fd6b1eaa9be7",
+  "displayName": "SCEPman_APIEnrollment",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}
