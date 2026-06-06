@@ -68,9 +68,6 @@ jobs:
             @{ n='Auto-labeling rules';        c='Get-AutoSensitivityLabelRule';               d='auto-label-rules';        pt='PurviewAutoSensitivityLabelRule';   r=$true },
             @{ n='Information Barrier policies'; c='Get-InformationBarrierPolicy';             d='ib-policies';             pt='PurviewInformationBarrierPolicy';   r=$true },
             @{ n='Organization segments';      c='Get-OrganizationSegment';                    d='org-segments';            pt='PurviewOrganizationSegment';        r=$true },
-            @{ n='Comm Compliance policies';   c='Get-SupervisoryReviewPolicyV2';              d='comm-compliance-policies'; pt='PurviewSupervisoryReviewPolicy';   r=$true },
-            @{ n='Comm Compliance rules';      c='Get-SupervisoryReviewRule';                  d='comm-compliance-rules';   pt='PurviewSupervisoryReviewRule';      r=$true },
-            @{ n='Audit retention policies';   c='Get-UnifiedAuditLogRetentionPolicy';         d='audit-retention';         pt='PurviewAuditLogRetentionPolicy';    r=$true },
             @{ n='Custom sensitive info types'; c='Get-DlpSensitiveInformationType';           d='sits';                    pt='PurviewSensitiveInformationType';   r=$true },
             @{ n='SIT rule packages';          c='Get-DlpSensitiveInformationTypeRulePackage'; d='sit-rulepackages';        pt='PurviewSITRulePackage';             r=$true },
             @{ n='Adaptive scopes';            c='Get-AdaptiveScope';                          d='adaptive-scopes';         pt='PurviewAdaptiveScope';              r=$true },
@@ -92,7 +89,13 @@ jobs:
                 if (-not $rawId) { continue }
                 $safe = ($rawId -replace '[^a-zA-Z0-9._-]','_')
                 $rel = "policies/purview/scc/$($t.d)/$safe.json"
-                ($it | ConvertTo-Json -Depth 25) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8
+                try {
+                  ($it | ConvertTo-Json -Depth 25) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8
+                } catch {
+                  # Some objects carry non-string-keyed hashtables that break ConvertTo-Json;
+                  # record a resilient projection so the object is still captured.
+                  ([pscustomobject]@{ id=$rawId; name=$it.Name; _serializationError=$_.Exception.Message; raw=($it | Format-List * | Out-String) } | ConvertTo-Json -Depth 6) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8
+                }
                 $disp = if ($it.Name) { [string]$it.Name } elseif ($it.DisplayName) { [string]$it.DisplayName } else { $rawId }
                 $summary = [ordered]@{}
                 foreach ($k in @('Mode','Enabled','Workload','Priority','State')) { if ($it.PSObject.Properties[$k] -and $null -ne $it.$k) { $summary[$k] = $it.$k } }
