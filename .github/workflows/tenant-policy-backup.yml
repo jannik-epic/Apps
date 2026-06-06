@@ -449,6 +449,128 @@ jobs:
           path: ${{ steps.snapshot.outputs.snapshot_dir }}
           if-no-files-found: warn
 
+      - name: Snapshot Purview + Exchange (app-only SCC/EXO PowerShell)
+        if: ${{ steps.snapshot.outputs.snapshot_dir != '' }}
+        shell: pwsh
+        env:
+          SCC_CERT_PFX_B64: ${{ secrets.PURVIEW_CONNECTOR_PFX_B64 }}
+          SCC_CERT_PWD: ${{ secrets.PURVIEW_CONNECTOR_PFX_PWD }}
+          SCC_APP_ID: 'eefa9c93-5548-419d-833c-d04ee78c0293'
+          SCC_ORG: 'epicfusionlabs.onmicrosoft.com'
+          SNAPSHOT_DIR: ${{ steps.snapshot.outputs.snapshot_dir }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          if (-not $env:SCC_CERT_PFX_B64 -or -not $env:SCC_APP_ID -or -not $env:SCC_ORG) {
+            Write-Host 'Purview/Exchange connector not onboarded for this tenant - skipping non-Graph backup.'
+            exit 0
+          }
+          $ProgressPreference = 'SilentlyContinue'
+          Install-Module ExchangeOnlineManagement -RequiredVersion 3.5.0 -Scope CurrentUser -Force -AllowClobber
+          Import-Module ExchangeOnlineManagement
+          $bytes = [Convert]::FromBase64String($env:SCC_CERT_PFX_B64)
+          $cert = [System.Security.Cryptography.X509Certificates.X509Certificate2]::new($bytes, $env:SCC_CERT_PWD)
+          $outDir = $env:SNAPSHOT_DIR
+          $newPolicies = New-Object System.Collections.Generic.List[object]
+          $newCounts = [ordered]@{}
+          $sccWarnings = New-Object System.Collections.Generic.List[string]
+
+          function Backup-CmdSet {
+            param([array]$Targets)
+            foreach ($t in $Targets) {
+              $dir = Join-Path $outDir ('policies/' + $t.d)
+              New-Item -ItemType Directory -Force -Path $dir | Out-Null
+              $n = 0
+              try {
+                $items = & $t.c -ErrorAction Stop
+                foreach ($it in @($items)) {
+                  if ($null -eq $it) { continue }
+                  $rawId = if ($it.Guid) { [string]$it.Guid } elseif ($it.Identity) { [string]$it.Identity } else { [string]$it.Name }
+                  if (-not $rawId) { continue }
+                  $safe = ($rawId -replace '[^a-zA-Z0-9._-]','_')
+                  $rel = 'policies/' + $t.d + '/' + $safe + '.json'
+                  try { ($it | ConvertTo-Json -Depth 25) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8 }
+                  catch { ([pscustomobject]@{ id=$rawId; name=$it.Name; _serializationError=$_.Exception.Message } | ConvertTo-Json -Depth 4) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8 }
+                  $disp = if ($it.Name) { [string]$it.Name } elseif ($it.DisplayName) { [string]$it.DisplayName } else { $rawId }
+                  $newPolicies.Add([ordered]@{ policyType=$t.pt; path=$rel; backupPolicyId=$rawId; displayName=$disp; description=$null; summary=$null; restorable=$true }) | Out-Null
+                  $n++
+                }
+                Write-Host ('{0,-36} {1} captured' -f $t.n, $n)
+              } catch {
+                $sccWarnings.Add(($t.n + ' (' + $t.c + ') unavailable: ' + $_.Exception.Message)) | Out-Null
+                Write-Host ('{0,-36} WARN: {1}' -f $t.n, $_.Exception.Message)
+              }
+              $newCounts[$t.pt] = $n
+            }
+          }
+
+          Write-Host '== Purview (Security & Compliance) =='
+          try {
+            Connect-IPPSSession -AppId $env:SCC_APP_ID -Certificate $cert -Organization $env:SCC_ORG -ShowBanner:$false
+            Backup-CmdSet -Targets @(
+              @{ n='DLP policies';                c='Get-DlpCompliancePolicy';                    d='purview/scc/dlp-policies';            pt='PurviewDlpCompliancePolicy' },
+              @{ n='DLP rules';                   c='Get-DlpComplianceRule';                      d='purview/scc/dlp-rules';               pt='PurviewDlpComplianceRule' },
+              @{ n='Retention policies';          c='Get-RetentionCompliancePolicy';              d='purview/scc/retention-policies';      pt='PurviewRetentionCompliancePolicy' },
+              @{ n='Retention rules';             c='Get-RetentionComplianceRule';                d='purview/scc/retention-rules';         pt='PurviewRetentionComplianceRule' },
+              @{ n='Retention labels';            c='Get-ComplianceTag';                          d='purview/scc/retention-labels';        pt='PurviewComplianceTag' },
+              @{ n='Sensitivity labels';          c='Get-Label';                                  d='purview/scc/sensitivity-labels';      pt='PurviewSensitivityLabel' },
+              @{ n='Label publish policies';      c='Get-LabelPolicy';                            d='purview/scc/label-policies';          pt='PurviewLabelPolicy' },
+              @{ n='Auto-labeling policies';      c='Get-AutoSensitivityLabelPolicy';             d='purview/scc/auto-label-policies';     pt='PurviewAutoSensitivityLabelPolicy' },
+              @{ n='Auto-labeling rules';         c='Get-AutoSensitivityLabelRule';               d='purview/scc/auto-label-rules';        pt='PurviewAutoSensitivityLabelRule' },
+              @{ n='Information Barrier policies'; c='Get-InformationBarrierPolicy';               d='purview/scc/ib-policies';             pt='PurviewInformationBarrierPolicy' },
+              @{ n='Organization segments';       c='Get-OrganizationSegment';                    d='purview/scc/org-segments';            pt='PurviewOrganizationSegment' },
+              @{ n='Custom sensitive info types'; c='Get-DlpSensitiveInformationType';            d='purview/scc/sits';                    pt='PurviewSensitiveInformationType' },
+              @{ n='SIT rule packages';           c='Get-DlpSensitiveInformationTypeRulePackage'; d='purview/scc/sit-rulepackages';        pt='PurviewSITRulePackage' },
+              @{ n='Adaptive scopes';             c='Get-AdaptiveScope';                          d='purview/scc/adaptive-scopes';         pt='PurviewAdaptiveScope' },
+              @{ n='Endpoint DLP settings';       c='Get-PolicyConfig';                           d='purview/scc/endpoint-dlp-settings';   pt='PurviewEndpointDlpSettings' }
+            )
+            Disconnect-ExchangeOnline -Confirm:$false -ErrorAction SilentlyContinue
+          } catch { $sccWarnings.Add('Purview connect failed: ' + $_.Exception.Message) | Out-Null; Write-Host ('Purview connect WARN: ' + $_.Exception.Message) }
+
+          Write-Host '== Exchange Online =='
+          try {
+            Connect-ExchangeOnline -AppId $env:SCC_APP_ID -Certificate $cert -Organization $env:SCC_ORG -ShowBanner:$false
+            Backup-CmdSet -Targets @(
+              @{ n='Transport (mail flow) rules'; c='Get-TransportRule';            d='exchange/transport-rules';        pt='ExchangeTransportRule' },
+              @{ n='Transport config';            c='Get-TransportConfig';          d='exchange/transport-config';       pt='ExchangeTransportConfig' },
+              @{ n='Inbound connectors';          c='Get-InboundConnector';         d='exchange/inbound-connectors';     pt='ExchangeInboundConnector' },
+              @{ n='Outbound connectors';         c='Get-OutboundConnector';        d='exchange/outbound-connectors';    pt='ExchangeOutboundConnector' },
+              @{ n='Accepted domains';            c='Get-AcceptedDomain';           d='exchange/accepted-domains';       pt='ExchangeAcceptedDomain' },
+              @{ n='Remote domains';              c='Get-RemoteDomain';             d='exchange/remote-domains';         pt='ExchangeRemoteDomain' },
+              @{ n='Organization config';         c='Get-OrganizationConfig';       d='exchange/organization-config';    pt='ExchangeOrganizationConfig' },
+              @{ n='OWA mailbox policies';        c='Get-OwaMailboxPolicy';         d='exchange/owa-mailbox-policies';   pt='ExchangeOwaMailboxPolicy' },
+              @{ n='Mobile device mailbox policies'; c='Get-MobileDeviceMailboxPolicy'; d='exchange/mobile-device-policies'; pt='ExchangeMobileDeviceMailboxPolicy' },
+              @{ n='MRM retention policies';      c='Get-RetentionPolicy';          d='exchange/mrm-retention-policies'; pt='ExchangeRetentionPolicy' },
+              @{ n='MRM retention tags';          c='Get-RetentionPolicyTag';       d='exchange/mrm-retention-tags';     pt='ExchangeRetentionPolicyTag' },
+              @{ n='Sharing policies';            c='Get-SharingPolicy';            d='exchange/sharing-policies';       pt='ExchangeSharingPolicy' },
+              @{ n='Organization relationships';  c='Get-OrganizationRelationship'; d='exchange/org-relationships';      pt='ExchangeOrganizationRelationship' },
+              @{ n='Email address policies';      c='Get-EmailAddressPolicy';       d='exchange/email-address-policies'; pt='ExchangeEmailAddressPolicy' },
+              @{ n='Address lists';               c='Get-AddressList';              d='exchange/address-lists';          pt='ExchangeAddressList' },
+              @{ n='DKIM signing config';         c='Get-DkimSigningConfig';        d='exchange/dkim-signing';           pt='ExchangeDkimSigningConfig' },
+              @{ n='RBAC role groups';            c='Get-RoleGroup';                d='exchange/role-groups';            pt='ExchangeRoleGroup' },
+              @{ n='Management roles';            c='Get-ManagementRole';           d='exchange/management-roles';       pt='ExchangeManagementRole' },
+              @{ n='Management role assignments'; c='Get-ManagementRoleAssignment'; d='exchange/role-assignments';       pt='ExchangeManagementRoleAssignment' },
+              @{ n='Management scopes';           c='Get-ManagementScope';          d='exchange/management-scopes';      pt='ExchangeManagementScope' },
+              @{ n='Authentication policies';     c='Get-AuthenticationPolicy';     d='exchange/auth-policies';          pt='ExchangeAuthenticationPolicy' },
+              @{ n='Journal rules';               c='Get-JournalRule';              d='exchange/journal-rules';          pt='ExchangeJournalRule' }
+            )
+            Disconnect-ExchangeOnline -Confirm:$false -ErrorAction SilentlyContinue
+          } catch { $sccWarnings.Add('Exchange connect failed: ' + $_.Exception.Message) | Out-Null; Write-Host ('Exchange connect WARN: ' + $_.Exception.Message) }
+
+          # Merge the non-Graph objects into the shared snapshot manifest so the
+          # app shows ONE backup with Graph + Purview + Exchange.
+          $manifestPath = Join-Path $outDir 'manifest.json'
+          if (Test-Path $manifestPath) {
+            $m = Get-Content $manifestPath -Raw | ConvertFrom-Json
+            $merged = New-Object System.Collections.Generic.List[object]
+            foreach ($p in @($m.policies)) { $merged.Add($p) | Out-Null }
+            foreach ($p in $newPolicies) { $merged.Add($p) | Out-Null }
+            $m.policies = $merged.ToArray()
+            foreach ($k in $newCounts.Keys) { $m.counts | Add-Member -NotePropertyName $k -NotePropertyValue $newCounts[$k] -Force }
+            $m | Add-Member -NotePropertyName 'connectors' -NotePropertyValue @('graph','purview-scc','exchange-online') -Force
+            $m | ConvertTo-Json -Depth 30 | Set-Content -Path $manifestPath -Encoding UTF8
+          }
+          Write-Host ('== Non-Graph snapshot merged: {0} Purview+Exchange objects, {1} warnings ==' -f $newPolicies.Count, $sccWarnings.Count)
+
       - name: Commit backup snapshot
         if: ${{ steps.snapshot.outputs.commit_snapshot == 'True' || steps.snapshot.outputs.commit_snapshot == 'true' }}
         shell: bash
