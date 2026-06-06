@@ -47,7 +47,6 @@ jobs:
 
           $bytes = [Convert]::FromBase64String($env:SCC_CERT_PFX_B64)
           $cert = [System.Security.Cryptography.X509Certificates.X509Certificate2]::new($bytes, $env:SCC_CERT_PWD)
-          $Global:IsWindows = $true
           Write-Host "Connecting app-only to Security & Compliance ($env:SCC_ORG)..."
           Connect-IPPSSession -AppId $env:SCC_APP_ID -Certificate $cert -Organization $env:SCC_ORG -ShowBanner:$false
 
