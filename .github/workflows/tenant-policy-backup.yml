@@ -460,7 +460,18 @@ jobs:
           SNAPSHOT_DIR: ${{ steps.snapshot.outputs.snapshot_dir }}
         run: |
           $ErrorActionPreference = 'Stop'
-          if (-not $env:SCC_CERT_PFX_B64 -or -not $env:SCC_APP_ID -or -not $env:SCC_ORG) {
+          # Connector identity comes from config (baked) or a committed onboarding
+          # file in the tenant repo (scripts/purview-connector.json: { appId, org }).
+          # This keeps per-tenant onboarding to "push one config file + the cert
+          # secret" — no app DB change needed.
+          $appId = $env:SCC_APP_ID
+          $org = $env:SCC_ORG
+          if ((-not $appId -or -not $org) -and (Test-Path 'scripts/purview-connector.json')) {
+            $cfg = Get-Content 'scripts/purview-connector.json' -Raw | ConvertFrom-Json
+            if (-not $appId) { $appId = [string]$cfg.appId }
+            if (-not $org) { $org = [string]$cfg.org }
+          }
+          if (-not $env:SCC_CERT_PFX_B64 -or -not $appId -or -not $org) {
             Write-Host 'Purview/Exchange connector not onboarded for this tenant - skipping non-Graph backup.'
             exit 0
           }
@@ -505,7 +516,7 @@ jobs:
 
           Write-Host '== Purview (Security & Compliance) =='
           try {
-            Connect-IPPSSession -AppId $env:SCC_APP_ID -Certificate $cert -Organization $env:SCC_ORG -ShowBanner:$false
+            Connect-IPPSSession -AppId $appId -Certificate $cert -Organization $org -ShowBanner:$false
             Backup-CmdSet -Targets @(
               @{ n='DLP policies';                c='Get-DlpCompliancePolicy';                    d='purview/scc/dlp-policies';            pt='PurviewDlpCompliancePolicy' },
               @{ n='DLP rules';                   c='Get-DlpComplianceRule';                      d='purview/scc/dlp-rules';               pt='PurviewDlpComplianceRule' },
@@ -528,7 +539,7 @@ jobs:
 
           Write-Host '== Exchange Online =='
           try {
-            Connect-ExchangeOnline -AppId $env:SCC_APP_ID -Certificate $cert -Organization $env:SCC_ORG -ShowBanner:$false
+            Connect-ExchangeOnline -AppId $appId -Certificate $cert -Organization $org -ShowBanner:$false
             Backup-CmdSet -Targets @(
               @{ n='Transport (mail flow) rules'; c='Get-TransportRule';            d='exchange/transport-rules';        pt='ExchangeTransportRule' },
               @{ n='Transport config';            c='Get-TransportConfig';          d='exchange/transport-config';       pt='ExchangeTransportConfig' },
