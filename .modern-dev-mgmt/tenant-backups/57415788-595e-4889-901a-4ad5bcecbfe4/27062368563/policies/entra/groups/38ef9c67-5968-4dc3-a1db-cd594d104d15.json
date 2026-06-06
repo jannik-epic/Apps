@@ -1,0 +1,11 @@
+{
+  "id": "38ef9c67-5968-4dc3-a1db-cd594d104d15",
+  "displayName": "Azure ATP epicfusionlabs Users",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "AzureATPepicfusionlabsUsers",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-06-28T09:27:32Z"
+}

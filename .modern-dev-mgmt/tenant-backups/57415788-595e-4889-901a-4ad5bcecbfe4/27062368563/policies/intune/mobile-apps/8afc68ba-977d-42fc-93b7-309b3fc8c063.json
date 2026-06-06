@@ -1,0 +1,52 @@
+{
+  "@odata.type": "#microsoft.graph.androidManagedStoreApp",
+  "id": "8afc68ba-977d-42fc-93b7-309b3fc8c063",
+  "displayName": "Microsoft Edge",
+  "description": "What starts here, gets done here.",
+  "publisher": "Microsoft Corporation",
+  "largeIcon": null,
+  "createdDateTime": "2021-07-09T16:57:08Z",
+  "lastModifiedDateTime": "2026-05-14T09:18:58Z",
+  "isFeatured": false,
+  "privacyInformationUrl": null,
+  "informationUrl": "https://play.google.com/store/apps/details?id=com.microsoft.emmx",
+  "owner": null,
+  "developer": null,
+  "notes": null,
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "packageId": "com.microsoft.emmx",
+  "appIdentifier": "com.microsoft.emmx",
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 0,
+  "appStoreUrl": "https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=de-CH",
+  "isPrivate": false,
+  "isSystemApp": false,
+  "supportsOemConfig": false,
+  "appTracks": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('8afc68ba-977d-42fc-93b7-309b3fc8c063')/microsoft.graph.androidManagedStoreApp/assignments",
+  "assignments": [
+    {
+      "id": "cb3ca96c-753a-4c72-b37b-62e99ca86aa4_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "cb3ca96c-753a-4c72-b37b-62e99ca86aa4"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.androidManagedStoreAppAssignmentSettings",
+        "androidManagedStoreAppTrackIds": [],
+        "autoUpdateMode": "default"
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "306eb449-918d-48c6-af88-b0592b3fc2a1",
+  "deletedDateTime": null,
+  "description": "Manage access using Microsoft Entra ID for identity governance scenarios.",
+  "displayName": "Identity Governance Administrator",
+  "roleTemplateId": "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e"
+}

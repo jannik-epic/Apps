@@ -1,0 +1,13 @@
+{
+  "id": "12e59aed-3610-40c4-a28d-29bcfa93f966",
+  "displayName": "Testing AVE 01",
+  "description": "Testing AVE 01",
+  "mailEnabled": true,
+  "securityEnabled": true,
+  "mailNickname": "TestingAVE01",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2023-05-04T15:19:00Z"
+}

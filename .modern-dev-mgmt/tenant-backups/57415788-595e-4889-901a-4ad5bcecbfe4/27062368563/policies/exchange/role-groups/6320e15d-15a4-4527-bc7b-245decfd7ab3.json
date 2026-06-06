@@ -1,0 +1,43 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [],
+  "Roles": [],
+  "DisplayName": "Global Reader",
+  "ExternalDirectoryObjectId": "b9aa5632-5c7d-46ee-b1a5-df313e6dd565",
+  "Members": [
+    "a92914fe-87d0-4d17-8410-2714c650539f"
+  ],
+  "SamAccountName": "$6CCQG0-TAG387RFL4OC",
+  "Description": "View reports, alerts, and settings of security and compliance features.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [
+    "Partner_Managed"
+  ],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "GlobalReaders",
+  "Identity": "GlobalReaders_987173049",
+  "Id": "GlobalReaders_987173049",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "GlobalReaders_987173049",
+  "DistinguishedName": "CN=GlobalReaders_987173049,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2025-10-18T21:47:48+00:00",
+  "WhenCreated": "2023-03-13T23:43:26+00:00",
+  "WhenChangedUTC": "2025-10-18T21:47:48Z",
+  "WhenCreatedUTC": "2023-03-13T23:43:26Z",
+  "ExchangeObjectId": "6320e15d-15a4-4527-bc7b-245decfd7ab3",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "6320e15d-15a4-4527-bc7b-245decfd7ab3",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

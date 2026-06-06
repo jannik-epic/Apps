@@ -1,0 +1,13 @@
+{
+  "id": "704b968e-af70-44a8-bf47-a46718097099",
+  "displayName": "Projekt Z - mit Externen",
+  "description": "Projekt Z - mit Externen",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "ProjektZ-mitExternen",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2024-10-15T17:14:50Z"
+}

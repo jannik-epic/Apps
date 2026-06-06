@@ -1,0 +1,36 @@
+{
+  "id": "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+  "description": "Can manage calling and meetings features within the Microsoft Teams service.",
+  "displayName": "Teams Communications Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.azure.serviceHealth/allEntities/allTasks",
+        "microsoft.azure.supportTickets/allEntities/allTasks",
+        "microsoft.directory/authorizationPolicy/standard/read",
+        "microsoft.office365.serviceHealth/allEntities/allTasks",
+        "microsoft.office365.skypeForBusiness/allEntities/allTasks",
+        "microsoft.office365.supportTickets/allEntities/allTasks",
+        "microsoft.office365.usageReports/allEntities/allProperties/read",
+        "microsoft.office365.webPortal/allEntities/standard/read",
+        "microsoft.teams/callQuality/allProperties/read",
+        "microsoft.teams/meetings/allProperties/allTasks",
+        "microsoft.teams/voice/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('baf37b3a-610e-45da-9e62-d9d1e5e8914b')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

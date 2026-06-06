@@ -1,0 +1,11 @@
+{
+  "id": "5abf5416-3667-4360-827f-c9dd8d81b4d6",
+  "displayName": "GG_SCCM_Admins",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "GG_SCCM_Admins",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2021-08-13T15:16:19Z"
+}

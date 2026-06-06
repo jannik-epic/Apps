@@ -1,0 +1,13 @@
+{
+  "id": "cc84a7ab-4c0b-4062-9388-21094ba373b2",
+  "displayName": "Baustelle Bern Trafo [Prj]",
+  "description": "Baustelle der Firma XI in Bern für die neue Trafostation",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "BaustelleBernTrafoPrj",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2021-05-24T16:02:38Z"
+}

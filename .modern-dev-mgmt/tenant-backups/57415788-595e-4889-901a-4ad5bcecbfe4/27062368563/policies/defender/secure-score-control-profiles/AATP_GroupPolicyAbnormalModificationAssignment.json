@@ -1,0 +1,35 @@
+{
+  "id": "AATP_GroupPolicyAbnormalModificationAssignment",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://aka.ms/mdi/ispm-gpoexposed",
+  "controlCategory": "Identity",
+  "title": "GPO can be modified by unprivileged accounts",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "Carefully review each assigned permission, identify any dangerous permission granted, and modify them to remove any unnecessary or excessive user rights.<br><br> For more information, please refer to the security advisory in the \"Learn More\" section.",
+  "remediationImpact": "A user, service or application that relies on these permissions may stop functioning.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "high",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

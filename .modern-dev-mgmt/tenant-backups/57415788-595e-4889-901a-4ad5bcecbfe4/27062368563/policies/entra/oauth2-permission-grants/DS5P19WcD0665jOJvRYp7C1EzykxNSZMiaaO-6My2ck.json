@@ -1,0 +1,8 @@
+{
+  "clientId": "d74f2e0d-9cd5-4e0f-bae6-3389bd1629ec",
+  "consentType": "AllPrincipals",
+  "id": "DS5P19WcD0665jOJvRYp7C1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": " offline_access Mail.ReadWrite Mail.Send Calendars.ReadWrite Calendars.Read"
+}

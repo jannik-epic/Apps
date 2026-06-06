@@ -1,0 +1,46 @@
+{
+  "createdDateTime": "2026-01-21T07:57:05.422353Z",
+  "creationSource": null,
+  "description": "This policy is automatically created and updated to include the users scoped in DLP policies targeting unmanaged generative AI apps in the browser. It blocks users from sharing sensitive marked data to unmanaged generative AI apps through browsers other than Edge. Apps that aren't covered by these protections can still be accessed using either Edge or Chrome.",
+  "lastModifiedDateTime": "2026-01-21T07:57:05.422353Z",
+  "name": "Edge policy to block use of unmanaged GenAI apps in browsers where in-browser protections don’t apply",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm",
+  "id": "621f6c57-7fd2-42a7-bf81-93c206636ca5",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('621f6c57-7fd2-42a7-bf81-93c206636ca5')/assignments",
+  "assignments": [
+    {
+      "id": "621f6c57-7fd2-42a7-bf81-93c206636ca5_f1bee488-9f07-4479-8cad-baa4f666062f",
+      "source": "direct",
+      "sourceId": "621f6c57-7fd2-42a7-bf81-93c206636ca5",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "f1bee488-9f07-4479-8cad-baa4f666062f"
+      }
+    },
+    {
+      "id": "621f6c57-7fd2-42a7-bf81-93c206636ca5_d2dfdb81-8b42-4e1e-9190-ddc3ee4acc30",
+      "source": "direct",
+      "sourceId": "621f6c57-7fd2-42a7-bf81-93c206636ca5",
+      "target": {
+        "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "d2dfdb81-8b42-4e1e-9190-ddc3ee4acc30"
+      }
+    }
+  ]
+}

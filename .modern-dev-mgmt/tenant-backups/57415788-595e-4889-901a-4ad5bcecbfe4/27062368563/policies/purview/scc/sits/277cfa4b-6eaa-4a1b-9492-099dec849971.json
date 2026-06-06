@@ -1,0 +1,5 @@
+{
+  "id": "277cfa4b-6eaa-4a1b-9492-099dec849971",
+  "name": "Swiss Social Security Number AHV",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

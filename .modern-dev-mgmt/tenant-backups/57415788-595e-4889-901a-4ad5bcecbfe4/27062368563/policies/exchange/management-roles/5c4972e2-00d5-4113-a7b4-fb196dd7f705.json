@@ -1,0 +1,41 @@
+{
+  "RoleEntries": [
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Set-OrganizationConfig -SiteMailboxCreationURL"
+  ],
+  "RoleType": "TeamMailboxes",
+  "ImplicitRecipientReadScope": "Organization",
+  "ImplicitRecipientWriteScope": "Organization",
+  "ImplicitConfigReadScope": "OrganizationConfig",
+  "ImplicitConfigWriteScope": "OrganizationConfig",
+  "IsRootRole": true,
+  "IsEndUserRole": false,
+  "MailboxPlanIndex": "",
+  "Description": "This role enables administrators to define one or more site mailbox provisioning policies and manage site mailboxes in the organization. Administrators assigned this role can manage site mailboxes they don't own.",
+  "Parent": null,
+  "RoleState": "Usable",
+  "IsDeprecated": false,
+  "IsServicePrincipalRole": false,
+  "AllowEmptyRole": false,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "0.12 (14.0.451.0)",
+  "Name": "Team Mailboxes",
+  "DistinguishedName": "CN=Team Mailboxes,CN=Roles,CN=RBAC,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "Team Mailboxes",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Role",
+  "ObjectClass": [
+    "top",
+    "msExchRole"
+  ],
+  "WhenChanged": "2025-10-18T16:56:57+00:00",
+  "WhenCreated": "2021-05-29T08:17:34+00:00",
+  "WhenChangedUTC": "2025-10-18T16:56:57Z",
+  "WhenCreatedUTC": "2021-05-29T08:17:34Z",
+  "ExchangeObjectId": "5c4972e2-00d5-4113-a7b4-fb196dd7f705",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "Team Mailboxes",
+  "Guid": "5c4972e2-00d5-4113-a7b4-fb196dd7f705",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Unchanged"
+}

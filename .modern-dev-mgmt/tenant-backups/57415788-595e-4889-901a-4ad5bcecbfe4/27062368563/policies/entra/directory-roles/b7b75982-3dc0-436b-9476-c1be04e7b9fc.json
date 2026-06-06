@@ -1,0 +1,7 @@
+{
+  "id": "b7b75982-3dc0-436b-9476-c1be04e7b9fc",
+  "deletedDateTime": null,
+  "description": "Can approve Microsoft support requests to access customer organizational data.",
+  "displayName": "Customer LockBox Access Approver",
+  "roleTemplateId": "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91"
+}

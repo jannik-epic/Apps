@@ -1,0 +1,5 @@
+{
+  "id": "4cd79172-8da9-4ff5-9188-98b1e7e2eca6",
+  "name": "Italy Fiscal Code",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

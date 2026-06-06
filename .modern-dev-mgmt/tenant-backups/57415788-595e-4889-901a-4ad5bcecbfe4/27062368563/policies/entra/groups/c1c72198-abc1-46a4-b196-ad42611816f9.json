@@ -1,0 +1,13 @@
+{
+  "id": "c1c72198-abc1-46a4-b196-ad42611816f9",
+  "displayName": "TestVerknüpfung",
+  "description": "TestVerknüpfung",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "TestVerknpfung",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2023-09-20T14:52:20Z"
+}

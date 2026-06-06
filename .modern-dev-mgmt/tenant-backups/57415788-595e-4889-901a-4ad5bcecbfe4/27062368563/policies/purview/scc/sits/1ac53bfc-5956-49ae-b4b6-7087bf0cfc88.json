@@ -1,0 +1,5 @@
+{
+  "id": "1ac53bfc-5956-49ae-b4b6-7087bf0cfc88",
+  "name": "Slack Access Token",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

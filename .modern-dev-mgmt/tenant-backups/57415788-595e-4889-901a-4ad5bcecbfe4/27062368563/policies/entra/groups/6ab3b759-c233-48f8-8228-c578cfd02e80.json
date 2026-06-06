@@ -1,0 +1,13 @@
+{
+  "id": "6ab3b759-c233-48f8-8228-c578cfd02e80",
+  "displayName": "AAD_SEC_DD_INTUNE-VirtualMachines",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "b8e1acf7-0",
+  "groupTypes": [
+    "DynamicMembership"
+  ],
+  "visibility": null,
+  "createdDateTime": "2021-06-13T12:29:01Z"
+}

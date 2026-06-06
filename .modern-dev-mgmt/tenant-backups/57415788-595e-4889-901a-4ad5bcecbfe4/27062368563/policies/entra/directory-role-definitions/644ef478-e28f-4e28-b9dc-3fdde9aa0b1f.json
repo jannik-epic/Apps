@@ -1,0 +1,26 @@
+{
+  "id": "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f",
+  "description": "Can manage all aspects of printers and printer connectors.",
+  "displayName": "Printer Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.azure.print/allEntities/allProperties/allTasks"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('644ef478-e28f-4e28-b9dc-3fdde9aa0b1f')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

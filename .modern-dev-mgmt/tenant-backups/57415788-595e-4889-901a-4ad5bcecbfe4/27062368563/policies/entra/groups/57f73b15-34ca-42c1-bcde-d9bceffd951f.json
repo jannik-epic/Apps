@@ -1,0 +1,13 @@
+{
+  "id": "57f73b15-34ca-42c1-bcde-d9bceffd951f",
+  "displayName": "TestmitneuenEinstellungenKarin",
+  "description": "TestmitneuenEinstellungenKarin",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "TestmitneuenEinstellungenKarin",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2023-09-20T15:17:55Z"
+}

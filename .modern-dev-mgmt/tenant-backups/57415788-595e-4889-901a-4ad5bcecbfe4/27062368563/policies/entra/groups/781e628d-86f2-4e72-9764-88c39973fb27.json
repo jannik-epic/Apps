@@ -1,0 +1,11 @@
+{
+  "id": "781e628d-86f2-4e72-9764-88c39973fb27",
+  "displayName": "MDM-Claude Code-Uninstall",
+  "description": "Modern Dev Mgmt uninstall assignment group for Claude Code.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "mdm-claude-code-uninstall-bd4c68",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-05-26T10:56:44Z"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d",
+  "name": "Azure IoT Connection String",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

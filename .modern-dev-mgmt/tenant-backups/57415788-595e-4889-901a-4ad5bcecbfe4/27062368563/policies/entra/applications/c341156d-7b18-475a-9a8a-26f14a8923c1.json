@@ -1,0 +1,97 @@
+{
+  "id": "c341156d-7b18-475a-9a8a-26f14a8923c1",
+  "appId": "fc3d29d0-f9c5-40a5-8cbf-bbcfea79407f",
+  "displayName": "PP Governance Scanner",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-04-06T17:29:47Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": [
+      "http://localhost:5173"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "7df0a125-d3be-4c96-aa54-591f83ff541c",
+      "resourceAccess": [
+        {
+          "id": "e45c5562-459d-4d1b-8148-83eb1b6dcf83",
+          "type": "Scope"
+        },
+        {
+          "id": "44d8c55c-9ffc-4546-883e-9041b5bb0b01",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "8578e004-a5c6-46e7-913e-12f58912df43",
+      "resourceAccess": [
+        {
+          "id": "d92670ac-a2e1-401e-a780-2588db417f04",
+          "type": "Scope"
+        },
+        {
+          "id": "ed141b5c-775b-4ab0-9b28-31191f7d3bf5",
+          "type": "Scope"
+        },
+        {
+          "id": "ea0756b5-f207-46be-9de9-af5156f29187",
+          "type": "Scope"
+        },
+        {
+          "id": "5322d31f-39c1-4756-9c92-ae069c366b70",
+          "type": "Scope"
+        },
+        {
+          "id": "177690ed-85f1-41d9-8dbf-2716e60ff46a",
+          "type": "Scope"
+        },
+        {
+          "id": "7107eb22-bdfb-4e2b-b5f3-8aa114795f6a",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "06da0dbc-49e2-44d2-8312-53f166ab848a",
+          "type": "Scope"
+        },
+        {
+          "id": "a154be20-db9c-4678-8ab7-66f6cc099a59",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "475226c6-020e-4fb2-8a90-7a972cbfc1d4",
+      "resourceAccess": [
+        {
+          "id": "0eb56b90-a7b5-43b5-9402-8137a8083e90",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

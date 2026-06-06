@@ -1,0 +1,5 @@
+{
+  "id": "209902e2-e787-4c1f-9fd3-41943cb02e95",
+  "name": "Azure Machine Learning Web Service API Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

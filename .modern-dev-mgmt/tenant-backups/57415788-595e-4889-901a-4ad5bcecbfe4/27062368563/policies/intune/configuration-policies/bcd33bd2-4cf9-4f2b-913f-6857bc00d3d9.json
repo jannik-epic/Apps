@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2023-11-27T12:15:58.4176261Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-11-27T12:15:58.4176261Z",
+  "name": "EPICLAB_DCP_USR_AVD-OS Cutomize Setting",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm",
+  "id": "bcd33bd2-4cf9-4f2b-913f-6857bc00d3d9",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('bcd33bd2-4cf9-4f2b-913f-6857bc00d3d9')/assignments",
+  "assignments": [
+    {
+      "id": "bcd33bd2-4cf9-4f2b-913f-6857bc00d3d9_13c33d27-e61d-406b-b50b-b10e065d1651",
+      "source": "direct",
+      "sourceId": "bcd33bd2-4cf9-4f2b-913f-6857bc00d3d9",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "e8cc0d3e-943f-4b57-86e6-f3d320c3dced",
+        "deviceAndAppManagementAssignmentFilterType": "include",
+        "groupId": "13c33d27-e61d-406b-b50b-b10e065d1651"
+      }
+    }
+  ]
+}

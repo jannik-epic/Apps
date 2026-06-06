@@ -1,0 +1,35 @@
+{
+  "id": "AATP_GroupPolicyAssignsUnprivilegedIdentitiesToElevatedLocalGroups",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://aka.ms/mdi/ispm-gpolocalgroups",
+  "controlCategory": "Identity",
+  "title": "GPO assigns unprivileged identities to local groups with elevated privileges",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 65,
+  "remediation": "Carefully review each assigned group membership, identify any dangerous group membership granted, and modify the GPO to remove any unnecessary or excessive user rights.",
+  "remediationImpact": "A user, service or application that relies on these local permissions may stop functioning.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "high",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

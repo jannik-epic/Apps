@@ -1,0 +1,35 @@
+{
+  "id": "scid_50",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/security-recommendations?recommendationId=sca-_-scid-50&tid=57415788-595e-4889-901a-4ad5bcecbfe4",
+  "controlCategory": "Device",
+  "title": "Disable merging of local Microsoft Defender Firewall rules with group policy firewall rules for the Public profile",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 57,
+  "remediation": "Within Microsoft 365 security, go to <b> <a href='https://security.microsoft.com/security-recommendations?recommendationId=sca-_-scid-50' target='_blank'>Vulnerability management > Recommendations</a> </b>, read the relevant security recommendation and choose remediation or exception options.",
+  "remediationImpact": "Unknown",
+  "service": "MDATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

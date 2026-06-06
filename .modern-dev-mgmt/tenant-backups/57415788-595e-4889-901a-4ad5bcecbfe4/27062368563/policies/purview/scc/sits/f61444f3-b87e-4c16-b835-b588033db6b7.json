@@ -1,0 +1,5 @@
+{
+  "id": "f61444f3-b87e-4c16-b835-b588033db6b7",
+  "name": "Microsoft Entra Client Access Token",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

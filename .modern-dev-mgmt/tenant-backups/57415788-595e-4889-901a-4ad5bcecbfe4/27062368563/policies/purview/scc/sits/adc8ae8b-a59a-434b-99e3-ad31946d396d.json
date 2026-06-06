@@ -1,0 +1,5 @@
+{
+  "id": "adc8ae8b-a59a-434b-99e3-ad31946d396d",
+  "name": "Test",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

@@ -1,0 +1,5 @@
+{
+  "id": "1daa4ad5-e2dd-4ca4-a788-54722c09efb2",
+  "name": "IP Address",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "288b4dff-49ec-45bc-83fc-b521cc15763d",
+  "displayName": "Marcel [Prj]",
+  "description": "Marcel's Team",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "MarcelPrj",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2021-05-28T04:51:33Z"
+}

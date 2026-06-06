@@ -1,0 +1,7 @@
+{
+  "id": "94726e80-2ba1-424c-a125-f6813e8e753e",
+  "deletedDateTime": null,
+  "description": "Can configure identity providers for use in direct federation.",
+  "displayName": "External Identity Provider Administrator",
+  "roleTemplateId": "be2f45a1-457d-42af-a067-6ec1fa63bc45"
+}

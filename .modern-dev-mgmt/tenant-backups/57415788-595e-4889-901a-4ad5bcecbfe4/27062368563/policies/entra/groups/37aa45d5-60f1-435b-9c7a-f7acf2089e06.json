@@ -1,0 +1,13 @@
+{
+  "id": "37aa45d5-60f1-435b-9c7a-f7acf2089e06",
+  "displayName": "Technik [Org]",
+  "description": "Technik",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "TechnikOrg",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Public",
+  "createdDateTime": "2021-05-28T05:30:30Z"
+}

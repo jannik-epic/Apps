@@ -1,0 +1,5 @@
+{
+  "id": "d820a2f1-46ef-4220-957e-6eb9abc1aadb",
+  "name": "Microsoft Entra Client Secret",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

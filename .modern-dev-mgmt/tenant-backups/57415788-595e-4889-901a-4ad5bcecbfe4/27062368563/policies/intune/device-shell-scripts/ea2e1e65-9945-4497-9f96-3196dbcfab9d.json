@@ -1,0 +1,18 @@
+{
+  "executionFrequency": "PT0S",
+  "retryCount": 3,
+  "blockExecutionNotifications": false,
+  "id": "ea2e1e65-9945-4497-9f96-3196dbcfab9d",
+  "displayName": "Citrix Workspace - Install Shell Script",
+  "description": "14.06.2022 SBA",
+  "scriptContent": null,
+  "createdDateTime": "2022-08-22T11:47:10.8970263Z",
+  "lastModifiedDateTime": "2022-08-22T11:47:10.8970263Z",
+  "runAsAccount": "system",
+  "fileName": "installICitrixWorkspace.sh",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceShellScripts('ea2e1e65-9945-4497-9f96-3196dbcfab9d')/assignments",
+  "assignments": []
+}

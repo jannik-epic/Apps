@@ -1,0 +1,7 @@
+{
+  "id": "2da0133e-1509-4392-b11b-91a28d68a3ef",
+  "deletedDateTime": null,
+  "description": "Can perform common billing related tasks like updating payment information.",
+  "displayName": "Billing Administrator",
+  "roleTemplateId": "b0f54661-2d74-4c50-afa3-1ec803f12efe"
+}

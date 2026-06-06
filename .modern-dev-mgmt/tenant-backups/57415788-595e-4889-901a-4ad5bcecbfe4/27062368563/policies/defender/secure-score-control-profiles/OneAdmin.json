@@ -1,0 +1,38 @@
+{
+  "id": "OneAdmin",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Behavior",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2120000",
+  "controlCategory": "Identity",
+  "title": "Designate more than one global admin",
+  "deprecated": false,
+  "implementationCost": "Low",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 27,
+  "remediation": "<p>Assign more than one user a global administrator role in your organization. Go to Microsoft Entra ID &gt; Roles and administrators and select the Global administrator role in the table. Then click Add assignments. <a href=\"https://go.microsoft.com/fwlink/?linkid=2120000\">Go to the Global administrator role in Microsoft Entra ID</a>&nbsp;</p>",
+  "remediationImpact": "Admins with global admin roles will have access to all administrative features including the ability to assign admin roles to other users. They should have more secure account authentication, like multifactor authentication, to protect these extra privileges from attackers.",
+  "service": "AzureAD",
+  "threats": [
+    "Elevation of Privilege",
+    "Account Breach"
+  ],
+  "tier": "Core",
+  "userImpact": "Low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

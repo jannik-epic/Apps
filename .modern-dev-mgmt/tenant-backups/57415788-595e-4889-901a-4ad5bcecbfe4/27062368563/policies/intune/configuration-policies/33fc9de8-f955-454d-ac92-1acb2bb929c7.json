@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2025-07-29T07:33:58.6030957Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2025-08-13T14:56:45.7682051Z",
+  "name": "BASE-EPICLAB_DCP_DEV_WIN-DeviceLock",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 62,
+  "technologies": "mdm",
+  "id": "33fc9de8-f955-454d-ac92-1acb2bb929c7",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('33fc9de8-f955-454d-ac92-1acb2bb929c7')/assignments",
+  "assignments": []
+}

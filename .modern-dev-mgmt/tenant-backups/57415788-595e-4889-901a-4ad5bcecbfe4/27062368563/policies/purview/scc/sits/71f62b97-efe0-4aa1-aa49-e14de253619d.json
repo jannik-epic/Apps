@@ -1,0 +1,5 @@
+{
+  "id": "71f62b97-efe0-4aa1-aa49-e14de253619d",
+  "name": "France Social Security Number (INSEE)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

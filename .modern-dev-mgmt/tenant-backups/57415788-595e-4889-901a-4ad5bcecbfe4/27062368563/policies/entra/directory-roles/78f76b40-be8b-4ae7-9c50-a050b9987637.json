@@ -1,0 +1,7 @@
+{
+  "id": "78f76b40-be8b-4ae7-9c50-a050b9987637",
+  "deletedDateTime": null,
+  "description": "Manage all aspects of Entra Permissions Management.",
+  "displayName": "Permissions Management Administrator",
+  "roleTemplateId": "af78dc32-cf4d-46f9-ba4e-4428526346b5"
+}

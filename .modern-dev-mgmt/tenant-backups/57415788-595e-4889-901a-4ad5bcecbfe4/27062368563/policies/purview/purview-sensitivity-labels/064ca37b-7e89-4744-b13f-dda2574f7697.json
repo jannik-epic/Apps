@@ -1,0 +1,31 @@
+{
+  "id": "064ca37b-7e89-4744-b13f-dda2574f7697",
+  "name": "Streng Vertraulich – (MB und Partner – Dienstleister)",
+  "description": "Die Informationssammlung enthält Informationen, die nur für einen bestimmten Personenkreis innerhalb der Migros Bank oder von Dienstleistern und Geschäftspartnern der Migros Bank mit unterzeichneter Geheimhaltungserklärung gedacht sind.",
+  "color": "",
+  "sensitivity": 18,
+  "tooltip": "Die Informationssammlung enthält Informationen, die nur für einen bestimmten Personenkreis innerhalb der Migros Bank oder von Dienstleistern und Geschäftspartnern der Migros Bank mit unterzeichneter Geheimhaltungserklärung gedacht sind.",
+  "isActive": true,
+  "isAppliable": true,
+  "contentFormats": [
+    "file"
+  ],
+  "hasProtection": false,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('064ca37b-7e89-4744-b13f-dda2574f7697')/parent/$entity",
+  "parent": {
+    "id": "841c46a4-ce9a-4ea5-a212-a81c3fa74c11",
+    "name": "Streng Vertraulich",
+    "description": "Dokumente mit der Klasse Streng Vertraulich (Geheim) haben bei der Verletzung der Vertraulichkeit eine schwerwiegende nachteilige Auswirkung auf die MB.",
+    "color": "",
+    "sensitivity": 18,
+    "tooltip": "Dokumente mit der Klasse Streng Vertraulich (Geheim) haben bei der Verletzung der Vertraulichkeit eine schwerwiegende nachteilige Auswirkung auf die MB.",
+    "isActive": false,
+    "isAppliable": false,
+    "contentFormats": [
+      "file"
+    ],
+    "hasProtection": false,
+    "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('064ca37b-7e89-4744-b13f-dda2574f7697')/parent/parent/$entity",
+    "parent": null
+  }
+}

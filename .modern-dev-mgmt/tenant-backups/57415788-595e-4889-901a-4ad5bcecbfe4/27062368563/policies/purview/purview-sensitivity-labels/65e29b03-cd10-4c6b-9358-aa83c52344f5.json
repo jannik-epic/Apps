@@ -1,0 +1,19 @@
+{
+  "id": "65e29b03-cd10-4c6b-9358-aa83c52344f5",
+  "name": "General",
+  "description": "Use this label to identify data that belongs to the Organization, but which may be shared as needed.",
+  "color": "",
+  "sensitivity": 2,
+  "tooltip": "Use this label to identify data that belongs to the Organization, but which may be shared as needed.",
+  "isActive": true,
+  "isAppliable": true,
+  "contentFormats": [
+    "file",
+    "email",
+    "site",
+    "unifiedgroup"
+  ],
+  "hasProtection": false,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('65e29b03-cd10-4c6b-9358-aa83c52344f5')/parent/$entity",
+  "parent": null
+}

@@ -1,0 +1,169 @@
+{
+  "Mode": "TestWithoutNotifications",
+  "PendingItemsCount": 0,
+  "CompletedItemsCount": 0,
+  "FailedItemsCount": 0,
+  "CompletedItemsCountInInterval": 0,
+  "PolicyGraderResult": null,
+  "TestModeStatus": null,
+  "TestModeVerdict": null,
+  "ItemsMatchedDuringTestMode": 0,
+  "SimulationRuleMatchBlob": "",
+  "LastSimulationCompletionDate": null,
+  "LabelDisplayName": "Confidential/Anyone (Not Protected)",
+  "Type": "AutoLabeling",
+  "ExchangeLocation": [],
+  "ExchangeLocationException": [],
+  "SharePointLocation": [
+    {
+      "DisplayName": "All",
+      "Name": "All",
+      "ImmutableIdentity": "All",
+      "Type": {
+        "value": 1,
+        "Value": "Tenant"
+      },
+      "Status": {
+        "value": 2,
+        "Value": "Success"
+      },
+      "Workload": {
+        "value": 2,
+        "Value": "SharePoint"
+      },
+      "SourceType": null,
+      "SourceTypeDisplayName": null,
+      "SourceProvider": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SourceEntryType": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SchemaVersion": 2,
+      "Resources": null,
+      "ScopingGroup": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "GroupSet": "Default"
+    }
+  ],
+  "SharePointLocationException": [],
+  "OneDriveLocation": [
+    {
+      "DisplayName": "All",
+      "Name": "All",
+      "ImmutableIdentity": "All",
+      "Type": {
+        "value": 1,
+        "Value": "Tenant"
+      },
+      "Status": {
+        "value": 2,
+        "Value": "Success"
+      },
+      "Workload": {
+        "value": 8,
+        "Value": "OneDriveForBusiness"
+      },
+      "SourceType": null,
+      "SourceTypeDisplayName": null,
+      "SourceProvider": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SourceEntryType": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SchemaVersion": 2,
+      "Resources": null,
+      "ScopingGroup": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "GroupSet": "Default"
+    }
+  ],
+  "OneDriveLocationException": [],
+  "PowerBILocation": [],
+  "PowerBILocationException": [],
+  "ExchangeSender": [],
+  "PolicyTemplateInfo": null,
+  "ExchangeSenderException": [],
+  "ApplySensitivityLabel": "Anyone",
+  "ExternalMailRightsManagementOwner": null,
+  "OverwriteLabel": false,
+  "AutoEnableAfter": null,
+  "ExtendedProperties": null,
+  "isDefaultSPODocLibraryLabelInUse": false,
+  "ApplySensitivityLabelOverwriteWorkloads": "None",
+  "RemoveLabel": false,
+  "IncludeSimulationPolicyGrading": false,
+  "OneDriveSharedBy": [],
+  "ExceptIfOneDriveSharedBy": [],
+  "OneDriveSharedByMemberOf": [],
+  "ExceptIfOneDriveSharedByMemberOf": [],
+  "ExchangeSenderMemberOf": [],
+  "ExchangeSenderMemberOfException": [],
+  "ExchangeAdaptiveScopes": [],
+  "ExchangeAdaptiveScopesException": [],
+  "SharePointAdaptiveScopes": [],
+  "SharePointAdaptiveScopesException": [],
+  "OneDriveAdaptiveScopes": [],
+  "OneDriveAdaptiveScopesException": [],
+  "TeamsAdaptiveScopes": [],
+  "TeamsAdaptiveScopesException": [],
+  "EndpointDlpAdaptiveScopes": [],
+  "EndpointDlpAdaptiveScopesException": [],
+  "ExpectedLocations": 0,
+  "CompletedLocations": 0,
+  "FailedLocations": 0,
+  "ItemStatistics": null,
+  "RuleMatchBlob": null,
+  "ErrorMetadata": null,
+  "UserAdministrativeUnitMembershipMap": null,
+  "ForceValidate": false,
+  "PolicyRulesMetaData": "",
+  "GlobalListType": "None",
+  "Locations": "[]",
+  "PolicyConstraints": "{\"AdministrativeUnit\":[]}",
+  "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications, Azure, AWS",
+  "Priority": 1,
+  "ObjectVersion": "b86665c1-cb5d-4199-2b7e-08dd6c3ef0f4",
+  "CreatedBy": "Admin AVE",
+  "LastModifiedBy": "Admin AVE",
+  "ReadOnly": false,
+  "ExternalIdentity": "",
+  "Comment": "",
+  "Enabled": true,
+  "DistributionStatus": "Pending",
+  "DistributionSyncStatus": "Unknown",
+  "DistributionResults": null,
+  "LastStatusUpdateTime": null,
+  "ModificationTimeUtc": "2025-03-26T08:19:34.28",
+  "CreationTimeUtc": "2025-03-19T12:00:42.937",
+  "PolicyRBACScopes": [],
+  "Identity": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/Internal AVH and Emails",
+  "Id": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/Internal AVH and Emails",
+  "IsValid": true,
+  "ExchangeVersion": "0.20 (15.0.0.0)",
+  "Name": "Internal AVH and Emails",
+  "DistinguishedName": "CN=Internal AVH and Emails,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=FFO,DC=extest,DC=microsoft,DC=com",
+  "ObjectCategory": null,
+  "ObjectClass": [
+    "msExchUnifiedPolicy"
+  ],
+  "WhenChanged": "2025-03-26T08:19:34+00:00",
+  "WhenCreated": "2025-03-19T12:00:42+00:00",
+  "WhenChangedUTC": "2025-03-26T08:19:34Z",
+  "WhenCreatedUTC": "2025-03-19T12:00:42Z",
+  "ExchangeObjectId": "7fc84d32-fbe9-44a6-a0c6-20eceae274bc",
+  "OrganizationalUnitRoot": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "7fc84d32-fbe9-44a6-a0c6-20eceae274bc",
+  "OriginatingServer": "",
+  "ObjectState": "Changed"
+}

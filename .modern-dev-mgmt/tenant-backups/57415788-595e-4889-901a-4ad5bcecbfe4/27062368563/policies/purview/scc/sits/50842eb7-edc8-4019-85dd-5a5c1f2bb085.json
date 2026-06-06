@@ -1,0 +1,5 @@
+{
+  "id": "50842eb7-edc8-4019-85dd-5a5c1f2bb085",
+  "name": "Credit Card Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}
