@@ -455,8 +455,8 @@ jobs:
         env:
           SCC_CERT_PFX_B64: ${{ secrets.PURVIEW_CONNECTOR_PFX_B64 }}
           SCC_CERT_PWD: ${{ secrets.PURVIEW_CONNECTOR_PFX_PWD }}
-          SCC_APP_ID: 'eefa9c93-5548-419d-833c-d04ee78c0293'
-          SCC_ORG: 'epicfusionlabs.onmicrosoft.com'
+          SCC_APP_ID: ''
+          SCC_ORG: ''
           SNAPSHOT_DIR: ${{ steps.snapshot.outputs.snapshot_dir }}
         run: |
           $ErrorActionPreference = 'Stop'
