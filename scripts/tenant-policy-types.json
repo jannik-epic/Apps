@@ -864,7 +864,7 @@
     "label": "PIM role management policies (Entra roles)",
     "group": "entra-governance",
     "graphBase": "v1.0",
-    "readPath": "policies/roleManagementPolicies?$filter=scopeId%20eq%20'/'%20and%20scopeType%20eq%20'DirectoryRole'&$expand=rules",
+    "readPath": "policies/roleManagementPolicies?$filter=scopeId%20eq%20''/''%20and%20scopeType%20eq%20''DirectoryRole''&$expand=rules",
     "supportsExpandAssignments": false,
     "assignsViaAssign": true,
     "singleton": false,
@@ -878,7 +878,7 @@
     "label": "PIM role management policy assignments",
     "group": "entra-governance",
     "graphBase": "v1.0",
-    "readPath": "policies/roleManagementPolicyAssignments?$filter=scopeId%20eq%20'/'%20and%20scopeType%20eq%20'DirectoryRole'",
+    "readPath": "policies/roleManagementPolicyAssignments?$filter=scopeId%20eq%20''/''%20and%20scopeType%20eq%20''DirectoryRole''",
     "supportsExpandAssignments": false,
     "assignsViaAssign": true,
     "singleton": false,
@@ -1436,13 +1436,13 @@
     "label": "Teams App Catalog (org/published apps inventory)",
     "group": "m365",
     "graphBase": "v1.0",
-    "readPath": "appCatalogs/teamsApps?$filter=distributionMethod%20eq%20'organization'&$select=id,externalId,displayName,distributionMethod",
+    "readPath": "appCatalogs/teamsApps?$filter=distributionMethod%20eq%20''organization''&$select=id,externalId,displayName,distributionMethod",
     "supportsExpandAssignments": false,
     "assignsViaAssign": true,
     "singleton": false,
     "restorable": false,
     "subdir": "m365/teams-app-catalog-apps",
-    "notes": "Only the tenant's org-published apps — not Microsoft's global store (avoids backing up thousands of store apps)."
+    "notes": "Only the tenant''s org-published apps — not Microsoft''s global store (avoids backing up thousands of store apps)."
   },
   {
     "key": "sharepoint-tenant-settings",
