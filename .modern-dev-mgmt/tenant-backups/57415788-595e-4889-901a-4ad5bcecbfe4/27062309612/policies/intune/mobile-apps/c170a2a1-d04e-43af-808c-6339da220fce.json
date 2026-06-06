@@ -1,0 +1,114 @@
+{
+  "@odata.type": "#microsoft.graph.win32LobApp",
+  "id": "c170a2a1-d04e-43af-808c-6339da220fce",
+  "displayName": "Notepad++",
+  "description": "Notepad++ is a free (as in “free speech” and also as in “free beer”) source code editor and Notepad replacement that supports several languages.\nRunning in the MS Windows environment, its use is governed by GNU General Public License.",
+  "publisher": "Notepad++ Team",
+  "largeIcon": null,
+  "createdDateTime": "2026-05-28T20:52:21.2621891Z",
+  "lastModifiedDateTime": "2026-05-28T20:52:21.2621891Z",
+  "isFeatured": false,
+  "privacyInformationUrl": null,
+  "informationUrl": "https://notepad-plus-plus.org/",
+  "owner": null,
+  "developer": "robopack.com",
+  "notes": null,
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 0,
+  "committedContentVersion": "1",
+  "fileName": "Notepad++.Notepad++.8.9.6.X64.intunewin",
+  "size": 7519520,
+  "installCommandLine": "Deploy-Application.exe -DeployMode Silent",
+  "uninstallCommandLine": "Deploy-Application.exe Uninstall -DeployMode Silent",
+  "applicableArchitectures": "x86,x64",
+  "allowedArchitectures": null,
+  "minimumFreeDiskSpaceInMB": null,
+  "minimumMemoryInMB": null,
+  "minimumNumberOfProcessors": null,
+  "minimumCpuSpeedInMHz": null,
+  "msiInformation": null,
+  "setupFilePath": "Notepad++.Notepad++.8.9.6.X64.exe",
+  "minimumSupportedWindowsRelease": "1607",
+  "displayVersion": "8.9.6",
+  "allowAvailableUninstall": false,
+  "activeInstallScript": null,
+  "activeUninstallScript": null,
+  "minimumSupportedOperatingSystem": {
+    "v8_0": false,
+    "v8_1": false,
+    "v10_0": false,
+    "v10_1607": true,
+    "v10_1703": false,
+    "v10_1709": false,
+    "v10_1803": false,
+    "v10_1809": false,
+    "v10_1903": false,
+    "v10_1909": false,
+    "v10_2004": false,
+    "v10_2H20": false,
+    "v10_21H1": false
+  },
+  "detectionRules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppRegistryDetection",
+      "check32BitOn64System": false,
+      "keyPath": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Notepad++",
+      "valueName": "DisplayVersion",
+      "detectionType": "version",
+      "operator": "equal",
+      "detectionValue": "8.9.6"
+    }
+  ],
+  "requirementRules": [],
+  "rules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppRegistryRule",
+      "ruleType": "detection",
+      "check32BitOn64System": false,
+      "keyPath": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Notepad++",
+      "valueName": "DisplayVersion",
+      "operationType": "version",
+      "operator": "equal",
+      "comparisonValue": "8.9.6"
+    }
+  ],
+  "installExperience": {
+    "runAsAccount": "system",
+    "maxRunTimeInMinutes": 60,
+    "deviceRestartBehavior": "suppress"
+  },
+  "returnCodes": [
+    {
+      "returnCode": 0,
+      "type": "success"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('c170a2a1-d04e-43af-808c-6339da220fce')/microsoft.graph.win32LobApp/assignments",
+  "assignments": [
+    {
+      "id": "808c22e9-02cc-4939-a553-4ca9c5b11293_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "808c22e9-02cc-4939-a553-4ca9c5b11293"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null,
+        "deliveryOptimizationPriority": "notConfigured",
+        "autoUpdateSettings": null
+      }
+    }
+  ]
+}

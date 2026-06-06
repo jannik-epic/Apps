@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2023-06-30T15:04:05Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-20T15:42:13.477Z",
+  "title": "(Updated) InfoPath 2013 client and InfoPath Forms Services in SharePoint Online will reach end of support in July 2026",
+  "id": "MC616550",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

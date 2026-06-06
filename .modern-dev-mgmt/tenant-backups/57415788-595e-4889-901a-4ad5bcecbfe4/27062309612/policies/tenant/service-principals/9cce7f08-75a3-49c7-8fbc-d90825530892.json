@@ -1,0 +1,11 @@
+{
+  "id": "9cce7f08-75a3-49c7-8fbc-d90825530892",
+  "appId": "e29b5c86-b9ab-4a86-9a20-d10842007599",
+  "displayName": "SharePoint Framework Azure AD Helper",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

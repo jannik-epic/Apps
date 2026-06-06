@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-05T22:46:11Z",
+  "endDateTime": "2026-08-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-05T22:46:22.903Z",
+  "title": "Microsoft Defender XDR: Retirement of in-app OS update notifications in Defender for Endpoint (iOS)",
+  "id": "MC1381122",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Defender XDR"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T18:46:19.793Z",
+  "endDateTime": "2027-04-30T18:46:19.79Z",
+  "lastModifiedDateTime": "2026-04-30T18:46:20.967Z",
+  "title": "Dynamically remove apps from managed Windows 11 devices",
+  "id": "MC1296576",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

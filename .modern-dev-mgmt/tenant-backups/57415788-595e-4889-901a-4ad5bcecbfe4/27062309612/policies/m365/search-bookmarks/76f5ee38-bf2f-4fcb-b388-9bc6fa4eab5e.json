@@ -1,0 +1,42 @@
+{
+  "displayName": "Microsoft Edge",
+  "description": "Find everything you need to get started with Microsoft Edge.",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "76f5ee38-bf2f-4fcb-b388-9bc6fa4eab5e",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-12-10T11:25:12Z",
+  "keywords": {
+    "keywords": [
+      "Edge get started",
+      "Edge training",
+      "browser training",
+      "Edge help",
+      "Edge",
+      "Edge Browser",
+      "work browser' Microsoft Edge",
+      "school browser Microsoft Edge"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

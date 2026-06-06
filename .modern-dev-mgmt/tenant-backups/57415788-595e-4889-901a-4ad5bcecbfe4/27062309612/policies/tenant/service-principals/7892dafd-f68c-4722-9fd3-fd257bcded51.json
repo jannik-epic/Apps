@@ -1,0 +1,11 @@
+{
+  "id": "7892dafd-f68c-4722-9fd3-fd257bcded51",
+  "appId": "e7ae0984-13e0-414c-9139-1c340c680f53",
+  "displayName": "CCE Test",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "Microsoft Fabric Identity",
+    "WorkspaceObjectId:84005305-4539-4ff7-919d-0893b4c70922"
+  ]
+}

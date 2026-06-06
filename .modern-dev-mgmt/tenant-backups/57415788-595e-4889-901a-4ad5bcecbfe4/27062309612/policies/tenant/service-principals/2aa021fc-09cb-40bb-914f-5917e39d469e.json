@@ -1,0 +1,11 @@
+{
+  "id": "2aa021fc-09cb-40bb-914f-5917e39d469e",
+  "appId": "a8b6bf88-1d1a-4626-b040-9a729ea93c65",
+  "displayName": "Compute Artifacts Publishing Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

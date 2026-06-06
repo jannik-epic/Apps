@@ -1,0 +1,10 @@
+{
+  "id": "f58673bb-3d02-4945-b7df-9250a5b1195b",
+  "appId": "e9e7b36d-5d51-4f83-b449-34ffe64c6f4a",
+  "displayName": "Printix Capture OneDrive",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

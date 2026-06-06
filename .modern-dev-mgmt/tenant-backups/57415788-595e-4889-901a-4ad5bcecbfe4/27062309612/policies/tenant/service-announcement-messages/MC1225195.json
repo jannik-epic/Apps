@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-01-30T22:56:11Z",
+  "endDateTime": "2026-06-13T07:00:00Z",
+  "lastModifiedDateTime": "2026-01-30T22:56:26.123Z",
+  "title": "Drawn electronic signatures with eSignature for Microsoft 365",
+  "id": "MC1225195",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft 365 apps"
+  ]
+}

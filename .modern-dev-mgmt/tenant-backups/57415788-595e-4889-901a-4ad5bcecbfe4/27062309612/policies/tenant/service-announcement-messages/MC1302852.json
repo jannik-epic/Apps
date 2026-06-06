@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-06T20:39:38Z",
+  "endDateTime": "2026-06-06T20:39:38Z",
+  "lastModifiedDateTime": "2026-05-06T22:28:08.777Z",
+  "title": "Microsoft Copilot Studio - Create workflows using natural language with the Agentic Workflow Builder",
+  "id": "MC1302852",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Power Platform)"
+  ]
+}

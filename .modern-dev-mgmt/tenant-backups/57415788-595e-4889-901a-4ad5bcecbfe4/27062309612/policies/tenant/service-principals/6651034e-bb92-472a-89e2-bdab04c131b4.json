@@ -1,0 +1,10 @@
+{
+  "id": "6651034e-bb92-472a-89e2-bdab04c131b4",
+  "appId": "f6b60513-f290-450e-a2f3-9930de61c5e7",
+  "displayName": "Microsoft Azure Log Search Alerts",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

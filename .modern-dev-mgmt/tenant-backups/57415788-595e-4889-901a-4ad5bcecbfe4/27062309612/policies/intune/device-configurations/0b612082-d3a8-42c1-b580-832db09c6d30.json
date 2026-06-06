@@ -1,0 +1,40 @@
+{
+  "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
+  "id": "0b612082-d3a8-42c1-b580-832db09c6d30",
+  "lastModifiedDateTime": "2022-08-22T11:47:21.8245365Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-08-22T11:47:21.8245365Z",
+  "description": "",
+  "displayName": "EPIC_EMM_DEV_IOS-BYOD Update Policy",
+  "version": 1,
+  "isEnabled": false,
+  "activeHoursStart": "00:00:00.0000000",
+  "activeHoursEnd": "00:00:00.0000000",
+  "desiredOsVersion": null,
+  "scheduledInstallDays": [],
+  "utcTimeOffsetInMinutes": null,
+  "enforcedSoftwareUpdateDelayInDays": null,
+  "updateScheduleType": "alwaysUpdate",
+  "customUpdateTimeWindows": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('0b612082-d3a8-42c1-b580-832db09c6d30')/microsoft.graph.iosUpdateConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "0b612082-d3a8-42c1-b580-832db09c6d30_67618c9b-8186-4fa0-828b-ca91b8cb6099",
+      "source": "direct",
+      "sourceId": "0b612082-d3a8-42c1-b580-832db09c6d30",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "67618c9b-8186-4fa0-828b-ca91b8cb6099"
+      }
+    }
+  ]
+}

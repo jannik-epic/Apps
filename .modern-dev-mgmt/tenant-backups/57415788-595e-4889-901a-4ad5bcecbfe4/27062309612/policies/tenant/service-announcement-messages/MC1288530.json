@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-22T22:33:40Z",
+  "endDateTime": "2026-08-17T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-05T16:23:16.55Z",
+  "title": "(Updated) Microsoft Teams: Test microphone and speaker before joining a meeting",
+  "id": "MC1288530",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

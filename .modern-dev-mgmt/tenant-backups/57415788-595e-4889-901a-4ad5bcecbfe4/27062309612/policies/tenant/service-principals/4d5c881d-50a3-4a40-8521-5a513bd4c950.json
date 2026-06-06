@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "4d5c881d-50a3-4a40-8521-5a513bd4c950",
+  "appId": "4d5c881d-50a3-4a40-8521-5a513bd4c950",
+  "displayName": "Firebolt (Professional Development)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

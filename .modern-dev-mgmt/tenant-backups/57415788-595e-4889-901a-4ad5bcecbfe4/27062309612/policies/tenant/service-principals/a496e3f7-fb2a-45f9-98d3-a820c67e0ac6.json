@@ -1,0 +1,8 @@
+{
+  "id": "a496e3f7-fb2a-45f9-98d3-a820c67e0ac6",
+  "appId": "ec245c98-4a90-40c2-955a-88b727d97151",
+  "displayName": "Azure AD Identity Governance - Directory Management",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

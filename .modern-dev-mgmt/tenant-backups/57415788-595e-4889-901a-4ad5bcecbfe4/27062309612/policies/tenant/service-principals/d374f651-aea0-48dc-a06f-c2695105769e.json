@@ -1,0 +1,8 @@
+{
+  "id": "d374f651-aea0-48dc-a06f-c2695105769e",
+  "appId": "eb070ea5-bd17-41f1-ad68-5851f6e71774",
+  "displayName": "Service Bus MSI App",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

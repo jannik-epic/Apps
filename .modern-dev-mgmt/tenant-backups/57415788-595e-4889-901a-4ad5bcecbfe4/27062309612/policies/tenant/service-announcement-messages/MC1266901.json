@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-31T22:54:57Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-31T22:55:49.187Z",
+  "title": "Microsoft Teams: Retirement of legacy third‑party meeting and call control APIs",
+  "id": "MC1266901",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

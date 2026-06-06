@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-21T21:36:25Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-21T21:36:37.983Z",
+  "title": "New file download manager in Teams",
+  "id": "MC1318249",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

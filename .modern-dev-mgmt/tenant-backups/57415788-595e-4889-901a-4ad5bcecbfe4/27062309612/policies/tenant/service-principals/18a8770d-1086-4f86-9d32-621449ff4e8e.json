@@ -1,0 +1,11 @@
+{
+  "id": "18a8770d-1086-4f86-9d32-621449ff4e8e",
+  "appId": "ae16e128-c76e-4a38-8e06-0927912b59d9",
+  "displayName": "AvePoint Online Services",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

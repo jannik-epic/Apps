@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-10-01T16:59:18.393Z",
+  "endDateTime": "2026-10-01T16:59:18.33Z",
+  "lastModifiedDateTime": "2025-10-01T16:59:19.313Z",
+  "title": "Hotpatch-enrolled tenants upgrading to Windows 11, version 25H2",
+  "id": "MC1163560",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

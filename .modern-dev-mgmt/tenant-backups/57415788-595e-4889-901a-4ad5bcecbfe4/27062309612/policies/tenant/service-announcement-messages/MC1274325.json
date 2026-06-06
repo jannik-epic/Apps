@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-08T16:33:04Z",
+  "endDateTime": "2026-08-17T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-08T16:33:20.367Z",
+  "title": "Upcoming change: Microsoft 365 Apps SAEC and MEC will unify",
+  "id": "MC1274325",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

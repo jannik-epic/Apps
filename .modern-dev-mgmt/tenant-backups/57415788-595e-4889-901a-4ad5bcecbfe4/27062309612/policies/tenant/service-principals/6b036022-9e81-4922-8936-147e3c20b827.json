@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "6b036022-9e81-4922-8936-147e3c20b827",
+  "appId": "6b036022-9e81-4922-8936-147e3c20b827",
+  "displayName": "Peter (Partner)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

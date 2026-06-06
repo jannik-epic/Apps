@@ -1,0 +1,7 @@
+{
+  "id": "a55eee40-a48d-4ec7-9b72-751a21f52fa0",
+  "deletedDateTime": null,
+  "description": "Define and manage the definition of custom security attributes.",
+  "displayName": "Attribute Definition Administrator",
+  "roleTemplateId": "8424c6f0-a189-499e-bbd0-26c1753c96d4"
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-19T17:01:36.88Z",
+  "endDateTime": "2027-05-19T17:01:36.877Z",
+  "lastModifiedDateTime": "2026-05-19T17:01:37.977Z",
+  "title": "Updated Secure Boot status report in Windows Autopatch",
+  "id": "MC1315905",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

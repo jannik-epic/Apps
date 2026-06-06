@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-28T22:10:59Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-28T22:11:08.347Z",
+  "title": "Generate documents using forms in SharePoint with Power Automate (Preview)",
+  "id": "MC1294518",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft Power Automate in Microsoft 365"
+  ]
+}

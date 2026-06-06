@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-08-14T17:10:54.563Z",
+  "endDateTime": "2026-08-14T17:10:54.563Z",
+  "lastModifiedDateTime": "2025-08-14T17:11:00.71Z",
+  "title": "60-Day Reminder: Windows 11, version 22H2 (Enterprise & Education editions) will reach end of servicing on October 14",
+  "id": "MC1135160",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

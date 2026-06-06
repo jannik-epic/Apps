@@ -1,0 +1,116 @@
+{
+  "displayName": "Office Online",
+  "description": "Collaborate for free with online versions of Microsoft Word, PowerPoint, Excel, and OneNote. Save documents, spreadsheets, and presentations online, in OneDrive.",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "0ca590e4-19d2-43fc-8695-0edbfbaddd55",
+  "webUrl": "https://portal.office.com",
+  "lastModifiedDateTime": "2021-12-10T11:25:12Z",
+  "keywords": {
+    "keywords": [
+      "office online",
+      "office 365 online",
+      "office 365 login",
+      "office login",
+      "office online login office 365 online login",
+      "microsoft 365 login",
+      "365 login",
+      "office365",
+      "outlook 365 login",
+      "office365 サインイン",
+      "portal office 365",
+      "365 office login",
+      "portal office",
+      "office com",
+      "o365",
+      "microsoft 365 sign in",
+      "office365 login",
+      "office365 ログイン",
+      "login 365",
+      "outlook365",
+      "office 365 sign in",
+      "portal office com login",
+      "portal office com",
+      "login office 365",
+      "www office365 com login",
+      "360 login",
+      "o365 login",
+      "microsoft office 365 login",
+      "www office com",
+      "o365 portal login",
+      "office com login",
+      "microsoft online",
+      "portal office 365 login",
+      "office365login",
+      "office portal",
+      "portal 365",
+      "office 365 log in",
+      "オフィス 365",
+      "365 サインイン"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Arbeiten Sie kostenlos mit den Onlineversionen von Microsoft Word, PowerPoint, Excel und OneNote. Speichern Sie Dokumente, Tabellen und Präsentationen online in OneDrive.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Colabore de forma gratuita con las versiones en línea de Microsoft Word, PowerPoint, Excel y OneNote. Guarde documentos, hojas de cálculo y presentaciones en línea en OneDrive.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Collaborez gratuitement avec les versions en ligne de Microsoft Word, PowerPoint, Excel et OneNote. Enregistrez des documents, des feuilles de calcul et des présentations en ligne dans OneDrive.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Collabora gratuitamente con le versioni online di Microsoft Word, PowerPoint, Excel e OneNote. Salva documenti, fogli di lavoro e presentazioni online su OneDrive.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Microsoft Word, PowerPoint, Excel,OneNoteのオンラインバージョンで、無料で共同作業をしましょう。OneDriveに、文書、スプレッドシート、プレゼンテーションをオンラインで保存しましょう。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Colabore gratuitamente com versões on-line do Microsoft Word, PowerPoint, Excel e OneNote. Guarde documentos, planilhas e apresentações on-line, no OneDrive",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-04T18:44:34Z",
+  "endDateTime": "2026-07-04T18:44:34Z",
+  "lastModifiedDateTime": "2026-06-04T18:44:42.61Z",
+  "title": "Upcoming Conditional Access change: Improved enforcement for policies with resource exclusions",
+  "id": "MC1345171",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

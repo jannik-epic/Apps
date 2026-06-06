@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "bf1af4a4-9f61-49d4-acd4-13d87561027e",
+  "appId": "bf1af4a4-9f61-49d4-acd4-13d87561027e",
+  "displayName": "Bea (Big Four)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

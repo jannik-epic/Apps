@@ -1,0 +1,36 @@
+{
+  "id": "57415788-595e-4889-901a-4ad5bcecbfe4_4b74a65c-8b4a-4fc8-9f6b-5177ed11ddfa",
+  "skuId": "4b74a65c-8b4a-4fc8-9f6b-5177ed11ddfa",
+  "skuPartNumber": "VIRTUAL_AGENT_USL",
+  "consumedUnits": 2,
+  "capabilityStatus": "Enabled",
+  "prepaidUnits": {
+    "enabled": 2,
+    "suspended": 0,
+    "warning": 0,
+    "lockedOut": 0
+  },
+  "servicePlans": [
+    {
+      "servicePlanId": "1263586c-59a4-4ad0-85e1-d50bc7149501",
+      "servicePlanName": "VIRTUAL_AGENT_USL",
+      "servicePlanType": "ccibotsprod",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "82f141c9-2e87-4f43-8cb2-12d2701dc6b3",
+      "servicePlanName": "FLOW_VIRTUAL_AGENT_USL",
+      "servicePlanType": "ProcessSimple",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "cb867b3c-7f38-4d0d-99ce-e29cd69812c8",
+      "servicePlanName": "CDS_VIRTUAL_AGENT_USL",
+      "servicePlanType": "CRM",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    }
+  ]
+}

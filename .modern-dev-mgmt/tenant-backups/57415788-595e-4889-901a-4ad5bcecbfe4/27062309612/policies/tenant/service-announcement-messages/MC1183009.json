@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-11-05T00:20:10Z",
+  "endDateTime": "2026-07-06T08:00:00Z",
+  "lastModifiedDateTime": "2026-04-10T16:05:47.877Z",
+  "title": "(Updated) Microsoft 365 Copilot: Podcast voice interactions make audio experiences conversational",
+  "id": "MC1183009",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

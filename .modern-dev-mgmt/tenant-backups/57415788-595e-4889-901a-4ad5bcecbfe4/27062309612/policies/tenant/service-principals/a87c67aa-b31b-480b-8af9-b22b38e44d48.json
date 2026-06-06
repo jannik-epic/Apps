@@ -1,0 +1,12 @@
+{
+  "id": "a87c67aa-b31b-480b-8af9-b22b38e44d48",
+  "appId": "589ce44b-ca13-4384-89e2-dd4e642a4b37",
+  "displayName": "AKS Deployment Safeguards",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

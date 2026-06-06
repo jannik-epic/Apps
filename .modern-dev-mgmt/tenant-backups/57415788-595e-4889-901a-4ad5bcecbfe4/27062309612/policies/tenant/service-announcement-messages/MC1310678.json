@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-14T20:12:51Z",
+  "endDateTime": "2026-06-19T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-14T20:13:00.997Z",
+  "title": "Microsoft 365 Backup management through SharePoint Admin Center",
+  "id": "MC1310678",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft OneDrive"
+  ]
+}

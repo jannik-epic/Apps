@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-03T05:11:53Z",
+  "endDateTime": "2026-08-02T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-01T22:47:53.09Z",
+  "title": "(Updated) Extending AI in SharePoint using custom skills",
+  "id": "MC1269209",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

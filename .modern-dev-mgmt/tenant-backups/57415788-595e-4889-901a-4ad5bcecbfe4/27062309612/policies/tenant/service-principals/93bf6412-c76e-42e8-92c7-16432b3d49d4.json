@@ -1,0 +1,12 @@
+{
+  "id": "93bf6412-c76e-42e8-92c7-16432b3d49d4",
+  "appId": "5f6aefe1-a8d4-4a7d-a461-6c70cb361014",
+  "displayName": "Azure Security Insights Management",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

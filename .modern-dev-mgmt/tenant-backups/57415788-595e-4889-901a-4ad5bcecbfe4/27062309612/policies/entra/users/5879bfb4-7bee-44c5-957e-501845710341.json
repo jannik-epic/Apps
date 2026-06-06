@@ -1,0 +1,12 @@
+{
+  "id": "5879bfb4-7bee-44c5-957e-501845710341",
+  "displayName": "HR Onboarding",
+  "userPrincipalName": "onboarding@epicfusionlabs.com",
+  "mail": "onboarding@epicfusionlabs.com",
+  "accountEnabled": false,
+  "userType": "Member",
+  "createdDateTime": "2026-03-02T10:34:48Z",
+  "department": null,
+  "jobTitle": null,
+  "usageLocation": null
+}

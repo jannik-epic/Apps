@@ -1,0 +1,8 @@
+{
+  "id": "86ece31a-964f-4959-8d9d-c4d125002ed6",
+  "appId": "93efed00-6552-4119-833a-422b297199f9",
+  "displayName": "Azure Database for PostgreSQL Flexible Server Private Network Integration",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,8 @@
+{
+  "id": "78291ffe-940c-4267-9b40-045905879787",
+  "appId": "a3747411-ce7c-4888-9ddc-3a230786ca19",
+  "displayName": "Azure Container Registry - Dataplane",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

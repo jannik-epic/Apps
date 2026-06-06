@@ -1,0 +1,17 @@
+{
+  "id": "07fd9122-fe9d-4639-a536-932bf6d5bef8",
+  "principalId": "61e22477-8afd-41e0-885f-a28ba897ba8f",
+  "roleDefinitionId": "31392ffb-586c-42d1-9346-e59415a2cc4e",
+  "directoryScopeId": "/",
+  "status": "Provisioned",
+  "memberType": "Direct",
+  "scheduleInfo": {
+    "startDateTime": "2025-07-04T13:39:56.567Z",
+    "recurrence": null,
+    "expiration": {
+      "type": "noExpiration",
+      "endDateTime": null,
+      "duration": null
+    }
+  }
+}

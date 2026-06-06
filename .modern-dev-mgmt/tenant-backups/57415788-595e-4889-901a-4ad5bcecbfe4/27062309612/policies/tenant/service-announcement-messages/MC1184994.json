@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-12T00:09:33Z",
+  "endDateTime": "2026-10-12T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-19T16:10:48.25Z",
+  "title": "(Updated) Microsoft Teams frontline BYOD onboarding wizard",
+  "id": "MC1184994",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

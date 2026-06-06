@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-26T23:37:52Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-26T23:38:15.707Z",
+  "title": "Microsoft Purview: Endpoint Data Loss Prevention - Device Health Reporting Dashboard",
+  "id": "MC1262572",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

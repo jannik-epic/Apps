@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "1c386e8e-09cc-4283-a51f-72d408abb781",
+  "appId": "1c386e8e-09cc-4283-a51f-72d408abb781",
+  "displayName": "Ronnie (Robopack)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

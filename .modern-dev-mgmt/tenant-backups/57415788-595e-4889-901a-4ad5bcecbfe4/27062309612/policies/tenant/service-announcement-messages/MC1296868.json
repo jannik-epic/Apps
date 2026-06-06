@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T23:07:37.283Z",
+  "endDateTime": "2027-04-30T23:07:37.283Z",
+  "lastModifiedDateTime": "2026-04-30T23:07:38.223Z",
+  "title": "The April 2026 Windows non-security preview update is now available",
+  "id": "MC1296868",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "startDateTime": "2026-02-19T00:57:46Z",
+  "endDateTime": "2026-06-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-06T21:40:04.643Z",
+  "title": "(Updated) DLP policies will be able to block Copilot processing of sensitivity‑labeled files in all storage locations",
+  "id": "MC1234661",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft 365 apps",
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft Purview"
+  ]
+}

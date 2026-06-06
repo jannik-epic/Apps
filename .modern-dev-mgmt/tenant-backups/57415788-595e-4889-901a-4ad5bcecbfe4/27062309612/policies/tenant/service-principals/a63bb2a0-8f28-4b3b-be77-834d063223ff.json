@@ -1,0 +1,8 @@
+{
+  "id": "a63bb2a0-8f28-4b3b-be77-834d063223ff",
+  "appId": "396e7f4b-41ea-4851-b04d-65de6cf1b4a3",
+  "displayName": "Azure AD Identity Governance - SPO Management",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

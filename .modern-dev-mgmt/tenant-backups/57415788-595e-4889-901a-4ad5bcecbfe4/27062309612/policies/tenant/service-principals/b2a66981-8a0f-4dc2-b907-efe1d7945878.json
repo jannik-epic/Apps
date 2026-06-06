@@ -1,0 +1,11 @@
+{
+  "id": "b2a66981-8a0f-4dc2-b907-efe1d7945878",
+  "appId": "a70c8393-7c0c-4c1e-916a-811bd476ee11",
+  "displayName": "Microsoft Defender for Cloud CIEM",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

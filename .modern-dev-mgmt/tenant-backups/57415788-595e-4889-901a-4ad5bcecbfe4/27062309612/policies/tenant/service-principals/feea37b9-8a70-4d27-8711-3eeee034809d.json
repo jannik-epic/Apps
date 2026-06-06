@@ -1,0 +1,10 @@
+{
+  "id": "feea37b9-8a70-4d27-8711-3eeee034809d",
+  "appId": "c21d796d-56a5-4305-a7df-047371fa9fd7",
+  "displayName": "AvePoint Cloud Backup for Microsoft365 (All Permissions)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

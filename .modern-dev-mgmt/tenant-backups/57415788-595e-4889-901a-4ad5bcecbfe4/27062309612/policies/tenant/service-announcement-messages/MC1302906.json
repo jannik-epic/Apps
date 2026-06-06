@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-06T22:53:25Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-22T18:08:41.2Z",
+  "title": "(Updated) Microsoft 365 Copilot: Schedule prompts in Agent Builder",
+  "id": "MC1302906",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

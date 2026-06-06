@@ -1,0 +1,10 @@
+{
+  "id": "d74f2e0d-9cd5-4e0f-bae6-3389bd1629ec",
+  "appId": "450987b3-a09a-4f14-9b2c-4f301d1e15f5",
+  "displayName": "HubSpot Sales",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

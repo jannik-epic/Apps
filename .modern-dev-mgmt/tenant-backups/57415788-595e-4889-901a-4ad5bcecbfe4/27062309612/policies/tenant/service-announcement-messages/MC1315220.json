@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-18T21:45:39Z",
+  "endDateTime": "2026-07-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-18T21:46:01.37Z",
+  "title": "Outlook on the web: New setting to use data classification services for DLP evaluation",
+  "id": "MC1315220",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

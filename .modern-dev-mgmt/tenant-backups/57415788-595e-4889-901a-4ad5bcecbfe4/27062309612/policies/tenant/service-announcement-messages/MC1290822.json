@@ -1,0 +1,14 @@
+{
+  "startDateTime": "2026-04-24T21:44:10Z",
+  "endDateTime": "2026-07-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-24T21:44:52.023Z",
+  "title": "Microsoft Outlook: Copilot account switcher in the Outlook side pane",
+  "id": "MC1290822",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

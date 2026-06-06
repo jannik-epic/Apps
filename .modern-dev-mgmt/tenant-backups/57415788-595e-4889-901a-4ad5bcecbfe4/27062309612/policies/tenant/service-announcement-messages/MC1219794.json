@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-21T00:39:21Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-13T18:11:29.567Z",
+  "title": "(Updated) Microsoft Teams: External domains anomalies report",
+  "id": "MC1219794",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

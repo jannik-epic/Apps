@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-05T23:35:29Z",
+  "endDateTime": "2026-11-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-04T22:00:22.717Z",
+  "title": "(Updated) Outlook: Share Word, Excel and PowerPoint local files via the new Outlook for Windows",
+  "id": "MC1245222",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

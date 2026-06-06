@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-02T18:00:52.297Z",
+  "endDateTime": "2027-03-02T18:00:52.237Z",
+  "lastModifiedDateTime": "2026-03-02T18:00:53.65Z",
+  "title": "Prepare devices for successful updates with Windows Autopatch update readiness",
+  "id": "MC1242687",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

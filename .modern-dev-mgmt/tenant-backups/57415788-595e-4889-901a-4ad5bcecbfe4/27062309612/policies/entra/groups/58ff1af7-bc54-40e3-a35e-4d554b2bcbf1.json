@@ -1,0 +1,13 @@
+{
+  "id": "58ff1af7-bc54-40e3-a35e-4d554b2bcbf1",
+  "displayName": "t-prj-asd",
+  "description": "t-prj-asd",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "t-prj-asd",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2026-03-02T10:11:24Z"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "99140ea5-62e7-4fe7-a6ee-d89f210df577",
+  "appId": "d1a56703-db22-4104-a26d-53fb7e5a0025",
+  "displayName": "Adobe Document Cloud",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "service": "Microsoft Defender XDR",
+  "status": "serviceDegradation",
+  "id": "Microsoft365Defender"
+}

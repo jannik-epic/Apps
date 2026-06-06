@@ -1,0 +1,13 @@
+{
+  "id": "5ba1be6f-d4e2-40d8-a053-1e395e740fae",
+  "displayName": "(TEL) Playground",
+  "description": "Test Team for Renaming POC",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "msteams_b89342",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2025-11-24T14:09:23Z"
+}

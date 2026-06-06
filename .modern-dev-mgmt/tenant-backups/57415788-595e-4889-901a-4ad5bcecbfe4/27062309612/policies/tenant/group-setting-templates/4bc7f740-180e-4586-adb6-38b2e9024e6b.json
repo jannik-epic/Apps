@@ -1,0 +1,14 @@
+{
+  "id": "4bc7f740-180e-4586-adb6-38b2e9024e6b",
+  "deletedDateTime": null,
+  "displayName": "Application",
+  "description": "\n        Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines\n        settings that can be used for managing tenant-wide application behavior.\n      ",
+  "values": [
+    {
+      "name": "EnableAccessCheckForPrivilegedApplicationUpdates",
+      "type": "System.Boolean",
+      "defaultValue": "false",
+      "description": "Flag indicating if access check for application privileged updates is turned on."
+    }
+  ]
+}

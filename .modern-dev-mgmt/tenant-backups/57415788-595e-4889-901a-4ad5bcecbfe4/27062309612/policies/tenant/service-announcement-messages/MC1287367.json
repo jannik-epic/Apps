@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-21T22:49:46Z",
+  "endDateTime": "2026-06-12T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T20:10:10.047Z",
+  "title": "(Updated) Surveys agent is being renamed to Forms agent",
+  "id": "MC1287367",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

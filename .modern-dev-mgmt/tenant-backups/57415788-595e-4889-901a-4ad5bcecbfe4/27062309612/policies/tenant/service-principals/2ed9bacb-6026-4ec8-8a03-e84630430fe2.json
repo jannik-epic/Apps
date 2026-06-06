@@ -1,0 +1,12 @@
+{
+  "id": "2ed9bacb-6026-4ec8-8a03-e84630430fe2",
+  "appId": "934d626a-1ead-4a36-a77d-12ec63b87a0d",
+  "displayName": "Microsoft Rights Management Services Default",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

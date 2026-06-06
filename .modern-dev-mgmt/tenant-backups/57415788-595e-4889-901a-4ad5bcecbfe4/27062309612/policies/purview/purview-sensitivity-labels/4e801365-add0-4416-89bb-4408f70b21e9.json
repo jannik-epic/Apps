@@ -1,0 +1,16 @@
+{
+  "id": "4e801365-add0-4416-89bb-4408f70b21e9",
+  "name": "Öffentlich",
+  "description": "Die Informationssammlung enthält keine Kunden- oder Interessenteninformationen.",
+  "color": "",
+  "sensitivity": 13,
+  "tooltip": "Die Informationssammlung enthält keine Kunden- oder Interessenteninformationen.",
+  "isActive": true,
+  "isAppliable": true,
+  "contentFormats": [
+    "file"
+  ],
+  "hasProtection": false,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('4e801365-add0-4416-89bb-4408f70b21e9')/parent/$entity",
+  "parent": null
+}

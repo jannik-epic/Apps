@@ -1,0 +1,29 @@
+{
+  "id": "microsoft-all-application-permissions-for-chat",
+  "displayName": "All chat resource-specific application permissions, for any client app",
+  "description": "Includes all chat resoruce-specific application permissions, for all APIs, for any client application.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/includes",
+  "includes": [
+    {
+      "id": "013e8de3-5e79-4b0f-a440-8f7794086460",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    }
+  ],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/excludes",
+  "excludes": []
+}

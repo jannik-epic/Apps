@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2024-11-08T23:21:55Z",
+  "endDateTime": "2026-06-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-11T16:27:32.367Z",
+  "title": "(Updated) Microsoft Loop – Require Existing Microsoft 365 Group for New Loop workspaces",
+  "id": "MC929022",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

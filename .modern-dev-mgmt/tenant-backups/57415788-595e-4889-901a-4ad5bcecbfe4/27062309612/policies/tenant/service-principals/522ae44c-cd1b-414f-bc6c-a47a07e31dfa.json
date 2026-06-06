@@ -1,0 +1,8 @@
+{
+  "id": "522ae44c-cd1b-414f-bc6c-a47a07e31dfa",
+  "appId": "a12e8ccb-0fcd-46f8-b6a1-b9df7a9d7231",
+  "displayName": "Azure Arc Data Processing Services",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

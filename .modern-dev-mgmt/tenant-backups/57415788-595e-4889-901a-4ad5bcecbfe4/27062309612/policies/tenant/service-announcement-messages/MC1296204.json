@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T13:19:19Z",
+  "endDateTime": "2026-06-30T13:19:00Z",
+  "lastModifiedDateTime": "2026-04-30T13:20:36.8Z",
+  "title": "Dynamics 365 Customer Insights - Journeys - Set message expirations to keep communication relevant",
+  "id": "MC1296204",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

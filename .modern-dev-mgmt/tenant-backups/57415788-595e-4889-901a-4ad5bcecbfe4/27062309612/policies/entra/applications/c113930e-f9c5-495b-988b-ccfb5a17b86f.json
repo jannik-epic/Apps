@@ -1,0 +1,36 @@
+{
+  "id": "c113930e-f9c5-495b-988b-ccfb5a17b86f",
+  "appId": "9554fd9b-6edd-4d73-bf29-330bb57bd713",
+  "displayName": "frontier-local-dev",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-12-17T08:46:31Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "ebf0f66e-9fb1-49e4-a278-222f76911cf4",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

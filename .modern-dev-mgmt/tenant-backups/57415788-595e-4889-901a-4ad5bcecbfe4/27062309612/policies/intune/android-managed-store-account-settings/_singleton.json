@@ -1,0 +1,17 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/androidManagedStoreAccountEnterpriseSettings/$entity",
+  "id": "androidManagedStoreAccountEnterpriseSettings",
+  "bindStatus": "boundAndValidated",
+  "managedGooglePlayEnterpriseType": "managedGooglePlayAccountsEnterprise",
+  "lastAppSyncDateTime": "2026-06-05T23:12:48.2938004Z",
+  "lastAppSyncStatus": "success",
+  "ownerUserPrincipalName": "epicfusionlabs@gmail.com",
+  "ownerOrganizationName": "Epic Fusion Labs",
+  "lastModifiedDateTime": "2021-05-19T19:34:47.2961548Z",
+  "enrollmentTarget": "targetedAsEnrollmentRestrictions",
+  "targetGroupIds": [],
+  "deviceOwnerManagementEnabled": true,
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": false,
+  "managedGooglePlayInitialScopeTagIds": [],
+  "companyCodes": []
+}

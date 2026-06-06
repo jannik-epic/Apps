@@ -1,0 +1,10 @@
+{
+  "id": "4d3a19af-f084-41ea-a671-70bb8c8f160f",
+  "appId": "e3335adb-5ca0-40dc-b8d3-bedc094e523b",
+  "displayName": "SubscriptionRP",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

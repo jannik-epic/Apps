@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-10-27T22:46:42Z",
+  "endDateTime": "2026-07-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-04-30T22:50:43.723Z",
+  "title": "(Updated) Microsoft Viva Insights: Retirement of Export via Microsoft Graph Data Connect (MGDC)",
+  "id": "MC1180889",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

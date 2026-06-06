@@ -1,0 +1,32 @@
+{
+  "id": "dffd5d46-495d-40a9-8e21-954ff55e198a",
+  "deletedDateTime": null,
+  "displayName": "Consent Policy Settings",
+  "description": "\n       Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines\n       settings that can be used for managing tenant-wide consent policy.\n      ",
+  "values": [
+    {
+      "name": "EnableGroupSpecificConsent",
+      "type": "System.Nullable`1[System.Boolean]",
+      "defaultValue": "",
+      "description": "Flag indicating if groups owners are allowed to grant group specific permissions."
+    },
+    {
+      "name": "BlockUserConsentForRiskyApps",
+      "type": "System.Boolean",
+      "defaultValue": "true",
+      "description": "Flag indicating if user consent will be blocked when a risky request is detected. Administrators will still be able to consent to apps considered risky."
+    },
+    {
+      "name": "EnableAdminConsentRequests",
+      "type": "System.Boolean",
+      "defaultValue": "false",
+      "description": "Flag indicating if users will be able to request admin consent when they are unable to grant consent to an app themselves."
+    },
+    {
+      "name": "ConstrainGroupSpecificConsentToMembersOfGroupId",
+      "type": "System.Guid",
+      "defaultValue": "",
+      "description": "If EnableGroupSpecificConsent is set to “True” and this is set to a security group object ID, members (both direct and transitive) of the group identified will be authorized to grant group-specific permissions to the groups they own."
+    }
+  ]
+}

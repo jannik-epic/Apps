@@ -1,0 +1,8 @@
+{
+  "id": "ad9489e2-f874-4054-829b-83252a69a262",
+  "appId": "ccf4d8df-75ce-4107-8ea5-7afd618d4d8a",
+  "displayName": "Microsoft Intune AAD BitLocker Recovery Key Integration",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

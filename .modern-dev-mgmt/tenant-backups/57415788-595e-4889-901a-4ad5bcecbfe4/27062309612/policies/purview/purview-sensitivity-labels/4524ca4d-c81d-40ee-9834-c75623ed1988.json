@@ -1,0 +1,16 @@
+{
+  "id": "4524ca4d-c81d-40ee-9834-c75623ed1988",
+  "name": "Unverschlüsselte Kundenkommunikation (Kunde mit Zustimmung)",
+  "description": "Dieses Label wird nur für Mails vergeben, die an Kunden gesendet werden, die einem Versand von Daten per Mail explizit zugestimmt haben. Die Mail darf niemals Kundendaten von mehr als einem Kunden enthalten und auch nur die Kundendaten des betreffenden Empfängers.",
+  "color": "",
+  "sensitivity": 21,
+  "tooltip": "Dieses Label wird nur für Mails vergeben, die an Kunden gesendet werden, die einem Versand von Daten per Mail explizit zugestimmt haben. Die Mail darf niemals Kundendaten von mehr als einem Kunden enthalten und auch nur die Kundendaten des betreffenden Empfängers.",
+  "isActive": true,
+  "isAppliable": true,
+  "contentFormats": [
+    "email"
+  ],
+  "hasProtection": false,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('4524ca4d-c81d-40ee-9834-c75623ed1988')/parent/$entity",
+  "parent": null
+}

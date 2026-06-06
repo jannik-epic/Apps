@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-05-13T16:32:40Z",
+  "endDateTime": "2026-09-28T07:00:00Z",
+  "lastModifiedDateTime": "2025-10-22T16:02:48.457Z",
+  "title": "(Updated) SharePoint Alerts retirement",
+  "id": "MC1072889",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-31T21:01:02.86Z",
+  "endDateTime": "2026-07-31T21:01:02.797Z",
+  "lastModifiedDateTime": "2025-07-31T21:01:04.397Z",
+  "title": "Windows 11 cloud-native migration with Microsoft Intune",
+  "id": "MC1126219",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

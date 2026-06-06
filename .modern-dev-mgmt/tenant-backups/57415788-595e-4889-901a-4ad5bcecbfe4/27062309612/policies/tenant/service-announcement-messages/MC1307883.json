@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-11T22:34:42Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-11T22:35:11.217Z",
+  "title": "HTML formatting now supported for Message center posts synced to Planner",
+  "id": "MC1307883",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

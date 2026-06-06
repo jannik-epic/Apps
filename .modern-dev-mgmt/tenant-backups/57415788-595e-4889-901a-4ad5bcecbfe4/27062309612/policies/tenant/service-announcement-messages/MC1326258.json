@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-29T16:57:47Z",
+  "endDateTime": "2026-07-18T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T16:58:03.037Z",
+  "title": "Microsoft Teams: Information Barriers enforcement for same‑tenant users in external group chats",
+  "id": "MC1326258",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

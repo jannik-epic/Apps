@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-04-21T23:46:08Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-05T21:03:10.763Z",
+  "title": "(Updated) Microsoft Purview | Insider Risk Management: Policy tuning analysis for priority content only policies",
+  "id": "MC1059679",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

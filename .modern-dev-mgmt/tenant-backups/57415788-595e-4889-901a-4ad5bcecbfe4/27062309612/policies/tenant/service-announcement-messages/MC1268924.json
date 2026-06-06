@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-02T20:58:01Z",
+  "endDateTime": "2026-06-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-02T20:58:10.897Z",
+  "title": "Microsoft Defender XDR: Email summary powered by Security Copilot on the email entity page",
+  "id": "MC1268924",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Defender XDR"
+  ]
+}

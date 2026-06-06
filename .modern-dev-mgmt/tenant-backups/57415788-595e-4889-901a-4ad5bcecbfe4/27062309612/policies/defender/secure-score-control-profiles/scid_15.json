@@ -1,0 +1,189 @@
+{
+  "id": "scid_15",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/security-recommendations?recommendationId=sca-_-scid-15&tid=57415788-595e-4889-901a-4ad5bcecbfe4",
+  "controlCategory": "Device",
+  "title": "Enable Automatic Updates",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 33,
+  "remediation": "Within Microsoft 365 security, go to <b> <a href='https://security.microsoft.com/security-recommendations?recommendationId=sca-_-scid-15' target='_blank'>Vulnerability management > Recommendations</a> </b>, read the relevant security recommendation and choose remediation or exception options.",
+  "remediationImpact": "Unknown",
+  "service": "MDATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    },
+    {
+      "assignedTo": null,
+      "comment": "Aktuell unser Remote Support Tool. Wird auf disabled gesetzt, sobald ein neues evaluiert wirrd",
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": "2021-09-03T10:16:52.0412434Z"
+    }
+  ]
+}

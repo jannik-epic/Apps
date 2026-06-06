@@ -1,0 +1,26 @@
+{
+  "id": "86a28cd2-6d4d-4995-a069-38d3cdf95cbd",
+  "appId": "5662cc9d-fc79-4788-beb2-4a0a788eda11",
+  "displayName": "IsoCheck Bot - dev",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-02-12T19:40:29Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

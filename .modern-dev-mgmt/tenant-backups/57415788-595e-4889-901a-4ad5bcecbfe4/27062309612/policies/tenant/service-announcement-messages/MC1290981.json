@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-25T02:02:23Z",
+  "endDateTime": "2026-06-22T02:02:00Z",
+  "lastModifiedDateTime": "2026-04-25T02:03:01.44Z",
+  "title": "Dynamics 365 Contact Center - Use Service Operations Agent to simplify setup tasks",
+  "id": "MC1290981",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

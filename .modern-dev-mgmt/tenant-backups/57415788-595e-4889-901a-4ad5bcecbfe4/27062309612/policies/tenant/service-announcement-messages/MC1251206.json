@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-13T22:52:25Z",
+  "endDateTime": "2026-07-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-13T22:52:43.807Z",
+  "title": "Microsoft Teams: Identify external bots joining your Teams meetings",
+  "id": "MC1251206",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

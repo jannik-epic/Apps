@@ -1,0 +1,8 @@
+{
+  "id": "049d02ac-35a0-4d47-8e6e-8ffcde39cf10",
+  "appId": "bd11ca0f-4fd6-4bb7-a259-4a36693b6e13",
+  "displayName": "MCAPI AAD Bridge Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-09T22:10:47Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-09T22:12:43.317Z",
+  "title": "Microsoft Purview: DLP diagnostics enabled for all roles with DLP policy access",
+  "id": "MC1275563",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

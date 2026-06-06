@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-30T22:56:46Z",
+  "endDateTime": "2026-06-12T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-23T16:59:12.25Z",
+  "title": "(Updated) Open Word, Excel, and PowerPoint Files in Microsoft 365 Copilot Chat",
+  "id": "MC1225199",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

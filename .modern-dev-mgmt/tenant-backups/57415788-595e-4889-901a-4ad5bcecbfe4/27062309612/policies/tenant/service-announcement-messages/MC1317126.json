@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-20T21:03:50Z",
+  "endDateTime": "2026-06-20T21:03:50Z",
+  "lastModifiedDateTime": "2026-05-20T21:05:25.103Z",
+  "title": "Dynamics 365 Contact Center – Enable AI-assisted time-off and swap requests",
+  "id": "MC1317126",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

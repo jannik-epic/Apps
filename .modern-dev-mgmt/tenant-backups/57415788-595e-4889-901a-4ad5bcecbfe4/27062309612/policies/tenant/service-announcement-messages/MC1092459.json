@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-06-11T23:29:57Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-23T20:37:19.887Z",
+  "title": "(Updated) Microsoft Viva Insights: New prompt categories in the Microsoft Copilot Dashboard",
+  "id": "MC1092459",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-01T22:48:57Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T23:16:16.823Z",
+  "title": "(Updated) Use sensitivity labels to block all connected experiences that analyze content in Word, Excel, and PowerPoint",
+  "id": "MC1297982",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft 365 apps"
+  ]
+}

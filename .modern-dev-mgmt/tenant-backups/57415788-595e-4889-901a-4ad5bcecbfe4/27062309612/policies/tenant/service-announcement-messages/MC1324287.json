@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-27T22:48:10Z",
+  "endDateTime": "2026-07-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-27T22:48:15.92Z",
+  "title": "Microsoft Teams: Teams Rooms Builder in the Pro Management portal",
+  "id": "MC1324287",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

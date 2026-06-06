@@ -1,0 +1,41 @@
+{
+  "id": "8dee0355-f159-48d6-99a3-5f39d84ae34b",
+  "publisher": "Simon Hofmann",
+  "version": "1",
+  "displayName": "Patch WinRE Safe OS KB",
+  "description": "",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2023-05-23T12:05:19.6976337Z",
+  "lastModifiedDateTime": "2023-05-23T12:05:19.6976337Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('8dee0355-f159-48d6-99a3-5f39d84ae34b')/assignments",
+  "assignments": [
+    {
+      "id": "8dee0355-f159-48d6-99a3-5f39d84ae34b:62cc56c0-5761-4af8-a3c4-e0e2c667a9ce",
+      "runRemediationScript": false,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "62cc56c0-5761-4af8-a3c4-e0e2c667a9ce"
+      },
+      "runSchedule": {
+        "@odata.type": "#microsoft.graph.deviceHealthScriptDailySchedule",
+        "interval": 7,
+        "useUtc": false,
+        "time": "01:00:00.0000000"
+      }
+    }
+  ]
+}

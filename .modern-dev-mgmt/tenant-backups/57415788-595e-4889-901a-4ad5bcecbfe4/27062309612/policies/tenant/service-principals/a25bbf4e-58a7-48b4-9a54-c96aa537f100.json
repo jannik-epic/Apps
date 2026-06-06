@@ -1,0 +1,13 @@
+{
+  "id": "a25bbf4e-58a7-48b4-9a54-c96aa537f100",
+  "appId": "abfa0a7c-a6b6-4736-8310-5855508787cd",
+  "displayName": "Microsoft Azure App Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens",
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

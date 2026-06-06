@@ -1,0 +1,11 @@
+{
+  "id": "27c9245e-4681-4fd9-bc44-311086d1ca1f",
+  "appId": "96636591-1bce-4eef-b8f9-939c0713889f",
+  "displayName": "MRMaps PPE",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

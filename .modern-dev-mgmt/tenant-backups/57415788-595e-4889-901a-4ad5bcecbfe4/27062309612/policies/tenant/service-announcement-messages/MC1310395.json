@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-14T14:12:40Z",
+  "endDateTime": "2026-06-14T14:12:40Z",
+  "lastModifiedDateTime": "2026-05-14T14:13:18.873Z",
+  "title": "Dynamics 365 Customer Insights - Data - Use Microsoft Fabric OneLake as a data source",
+  "id": "MC1310395",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "dd9d8e43-fbbe-4735-bafe-23bacdb44753",
+  "appId": "fc03f97a-9db0-4627-a216-ec98ce54e018",
+  "displayName": "Azure AD Notification",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

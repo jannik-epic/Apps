@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-08-29T00:27:42Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2025-08-29T00:28:07.82Z",
+  "title": "Limiting onmicrosoft domain usage for sending emails",
+  "id": "MC1143991",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

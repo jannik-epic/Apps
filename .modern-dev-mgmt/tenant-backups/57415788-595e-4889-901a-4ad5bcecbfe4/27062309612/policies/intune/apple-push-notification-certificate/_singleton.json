@@ -1,0 +1,12 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceManagement/applePushNotificationCertificate/$entity",
+  "id": "7d6374cd-8a6c-4fdd-9283-23f879b3ba94",
+  "appleIdentifier": "admin.sba@epicfusionlabs.com",
+  "topicIdentifier": "com.apple.mgmt.External.6bdc9b17-b66b-4ee6-bd4c-691b219b8770",
+  "lastModifiedDateTime": "2026-06-05T21:09:08Z",
+  "expirationDateTime": "2024-07-27T07:00:57Z",
+  "certificateUploadStatus": null,
+  "certificateUploadFailureReason": null,
+  "certificateSerialNumber": "4F071D98DA9C3279",
+  "certificate": null
+}

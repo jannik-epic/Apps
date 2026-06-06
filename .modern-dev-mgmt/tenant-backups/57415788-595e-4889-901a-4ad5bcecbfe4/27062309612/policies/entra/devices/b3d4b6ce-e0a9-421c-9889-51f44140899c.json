@@ -1,0 +1,13 @@
+{
+  "id": "b3d4b6ce-e0a9-421c-9889-51f44140899c",
+  "displayName": "avd-sap-0",
+  "deviceId": "82dadaf5-a6f0-4020-8c97-61a96763ced9",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.22631.3737",
+  "trustType": "AzureAd",
+  "profileType": "SecureVM",
+  "isCompliant": false,
+  "isManaged": true,
+  "registrationDateTime": "2023-11-28T10:06:36Z"
+}

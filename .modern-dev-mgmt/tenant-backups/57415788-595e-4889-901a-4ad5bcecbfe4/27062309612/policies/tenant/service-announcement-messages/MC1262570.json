@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-26T23:36:28Z",
+  "endDateTime": "2026-08-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-24T16:18:31.16Z",
+  "title": "(Updated) Microsoft 365 Copilot: Updates to license request custom flow",
+  "id": "MC1262570",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

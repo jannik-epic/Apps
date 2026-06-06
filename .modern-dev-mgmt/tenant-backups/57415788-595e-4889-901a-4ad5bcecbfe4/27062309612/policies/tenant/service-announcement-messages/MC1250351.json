@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-13T03:42:00Z",
+  "endDateTime": "2026-09-30T03:37:00Z",
+  "lastModifiedDateTime": "2026-03-13T04:06:18.5Z",
+  "title": "Power Platform – New Continuous Access Evaluation (CAE) announcement",
+  "id": "MC1250351",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Dataverse",
+    "Power Platform"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "displayName": "Microsoft Project",
+  "description": "Simple yet powerful tool to manage work from quick projects to complex initiatives.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "d46b4112-0f40-4279-9e94-25cdcbb21739",
+  "webUrl": "https://project.microsoft.com/",
+  "lastModifiedDateTime": "2023-04-13T23:39:56Z",
+  "keywords": {
+    "keywords": [
+      "microsoft project",
+      "project",
+      "ms project"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Einfaches, aber leistungsstarkes Tool zur Verwaltung der Arbeit von schnellen Projekten bis hin zu komplexen Vorhaben.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Herramienta sencilla pero eficaz para administrar el trabajo desde proyectos rápidos hasta iniciativas complejas.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Outil simple mais puissant pour gérer le travail des projets rapides aux initiatives complexes.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Uno strumento semplice ma efficace per gestire il tuo lavoro, da rapidi progetti a iniziative complesse.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "クイック プロジェクトから複雑なイニシアチブまで、作業を管理するためのシンプルで強力なツールです。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Ferramenta simples, mas poderosa, para gerenciar o trabalho de projetos rápidos a iniciativas complexas.",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

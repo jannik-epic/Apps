@@ -1,0 +1,13 @@
+{
+  "id": "0d96bb9e-8b3a-43cc-82ee-d4279e1105d6",
+  "displayName": "iPhone 14",
+  "deviceId": "167854e0-28e7-4781-a027-df104835669f",
+  "accountEnabled": true,
+  "operatingSystem": "iOS",
+  "operatingSystemVersion": "18.4.1",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2025-06-03T12:31:25Z"
+}

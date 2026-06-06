@@ -1,0 +1,7 @@
+{
+  "id": "f8648416-7cb5-4fa1-93d5-d691699e24ff",
+  "deletedDateTime": null,
+  "description": "Can manage Azure DevOps organization policy and settings.",
+  "displayName": "Azure DevOps Administrator",
+  "roleTemplateId": "e3973bdf-4987-49ae-837a-ba8e231c7286"
+}

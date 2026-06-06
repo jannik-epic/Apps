@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-05T23:07:03.087Z",
+  "endDateTime": "2027-05-05T23:07:03.087Z",
+  "lastModifiedDateTime": "2026-05-05T23:07:04.043Z",
+  "title": "Upgrade to Windows Server 2025, now via Windows Update",
+  "id": "MC1301827",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

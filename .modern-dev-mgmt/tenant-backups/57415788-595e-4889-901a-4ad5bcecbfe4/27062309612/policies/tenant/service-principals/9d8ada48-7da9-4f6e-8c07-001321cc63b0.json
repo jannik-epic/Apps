@@ -1,0 +1,8 @@
+{
+  "id": "9d8ada48-7da9-4f6e-8c07-001321cc63b0",
+  "appId": "b8066b99-6e67-41be-abfa-75db1a2c8809",
+  "displayName": "Microsoft Intune IW Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

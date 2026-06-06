@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-01T01:17:49Z",
+  "endDateTime": "2026-06-30T01:17:00Z",
+  "lastModifiedDateTime": "2026-05-01T01:19:04.053Z",
+  "title": "Power Platform – Please hard refresh your active long-running browser tab(s)",
+  "id": "MC1296939",
+  "category": "preventOrFixIssue",
+  "severity": "high",
+  "services": [
+    "Power Platform"
+  ]
+}

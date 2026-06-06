@@ -1,0 +1,13 @@
+{
+  "id": "2694b277-0f61-437b-9b2d-22a58b05692e",
+  "appId": "f3a218b7-5c8f-460b-93af-56b072788c15",
+  "displayName": "Microsoft Workplace Search Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient",
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

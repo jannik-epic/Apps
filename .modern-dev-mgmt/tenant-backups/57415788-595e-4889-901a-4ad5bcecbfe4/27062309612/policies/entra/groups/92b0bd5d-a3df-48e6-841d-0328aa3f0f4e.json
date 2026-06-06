@@ -1,0 +1,13 @@
+{
+  "id": "92b0bd5d-a3df-48e6-841d-0328aa3f0f4e",
+  "displayName": "(ORG) Customer Support",
+  "description": "Test Team for Renaming POC",
+  "mailEnabled": true,
+  "securityEnabled": true,
+  "mailNickname": "msteams_5cac55",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2025-11-24T14:10:51Z"
+}

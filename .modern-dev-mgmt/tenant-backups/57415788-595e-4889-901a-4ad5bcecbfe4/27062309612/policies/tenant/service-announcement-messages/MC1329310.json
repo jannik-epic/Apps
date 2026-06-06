@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-01T10:23:59Z",
+  "endDateTime": "2026-07-01T10:23:59Z",
+  "lastModifiedDateTime": "2026-06-01T10:24:47.127Z",
+  "title": "Microsoft 365 Copilot for Sales - Configure Sales agent starter prompts across applications",
+  "id": "MC1329310",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Power Platform)"
+  ]
+}

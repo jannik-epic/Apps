@@ -1,0 +1,11 @@
+{
+  "id": "e4cec898-6412-4610-9b79-0a5c8db346cb",
+  "appId": "a882f5bd-2492-44fe-bb55-a811aab59451",
+  "displayName": "Intune Compliance Client Prod",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

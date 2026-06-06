@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-26T00:20:37Z",
+  "endDateTime": "2026-08-10T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-02T22:33:33.107Z",
+  "title": "(Updated) Outlook: Delimiter setting admin policy",
+  "id": "MC1239176",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

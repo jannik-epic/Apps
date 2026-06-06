@@ -1,0 +1,67 @@
+{
+  "id": "2603ad02-7407-46b1-89a9-2912e7fd0be7",
+  "templateId": null,
+  "displayName": "CLOUD APPS: All | LOCATION: Any | DEVICE: ALL | CLIENT: All | Force Complianct Device for MFA registration",
+  "createdDateTime": "2021-05-18T15:30:48.9902285Z",
+  "modifiedDateTime": null,
+  "state": "disabled",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "platforms": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [],
+      "excludeApplications": [],
+      "includeUserActions": [
+        "urn:user:registersecurityinfo"
+      ],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [
+        "d8e78037-e88c-4c90-8144-5d6d91ff42e6"
+      ],
+      "includeGroups": [],
+      "excludeGroups": [
+        "de4b449b-cf85-4be5-9050-daf02929ae12"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    },
+    "locations": {
+      "includeLocations": [
+        "All"
+      ],
+      "excludeLocations": [
+        "AllTrusted"
+      ]
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "mfa"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('2603ad02-7407-46b1-89a9-2912e7fd0be7')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

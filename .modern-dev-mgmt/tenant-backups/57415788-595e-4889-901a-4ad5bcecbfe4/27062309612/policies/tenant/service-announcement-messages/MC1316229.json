@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-19T22:02:21Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-19T22:02:27.997Z",
+  "title": "Microsoft Purview Data Security Investigations: Notifications and enhanced search",
+  "id": "MC1316229",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

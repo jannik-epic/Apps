@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "aba592ce-4fe9-4fff-9401-ed7f39be7dcf",
+  "appId": "aba592ce-4fe9-4fff-9401-ed7f39be7dcf",
+  "displayName": "Achim (Architekt)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

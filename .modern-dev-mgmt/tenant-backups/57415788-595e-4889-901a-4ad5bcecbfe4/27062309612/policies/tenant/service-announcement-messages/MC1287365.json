@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-21T22:49:21Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-02T16:27:34.73Z",
+  "title": "(Updated) Microsoft 365 Copilot: Change in accessing additional agents in Excel",
+  "id": "MC1287365",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

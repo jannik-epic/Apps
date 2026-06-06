@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2023-01-30T07:03:30.5021781Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-03-17T15:56:38.4381058Z",
+  "name": "EPIC_SEC_DEV_WIN-Windows Defender Antivirus Settings",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 28,
+  "technologies": "mdm,microsoftSense",
+  "id": "ef5dcb78-88c0-4749-962b-5b19da253147",
+  "templateReference": {
+    "templateId": "804339ad-1553-4478-a742-138fb5807418_1",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Microsoft Defender Antivirus",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('ef5dcb78-88c0-4749-962b-5b19da253147')/assignments",
+  "assignments": [
+    {
+      "id": "ef5dcb78-88c0-4749-962b-5b19da253147_62cc56c0-5761-4af8-a3c4-e0e2c667a9ce",
+      "source": "direct",
+      "sourceId": "ef5dcb78-88c0-4749-962b-5b19da253147",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "62cc56c0-5761-4af8-a3c4-e0e2c667a9ce"
+      }
+    }
+  ]
+}

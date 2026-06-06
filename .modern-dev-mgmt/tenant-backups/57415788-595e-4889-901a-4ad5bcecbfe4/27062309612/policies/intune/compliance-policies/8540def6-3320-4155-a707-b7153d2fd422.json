@@ -1,0 +1,58 @@
+{
+  "@odata.type": "#microsoft.graph.androidWorkProfileCompliancePolicy",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "id": "8540def6-3320-4155-a707-b7153d2fd422",
+  "createdDateTime": "2023-01-30T07:03:29.6269713Z",
+  "description": null,
+  "lastModifiedDateTime": "2025-07-11T12:37:33.7434855Z",
+  "displayName": "EPIC_EMM_USR_AOS-Android Device Compliance",
+  "version": 3,
+  "passwordRequired": false,
+  "passwordMinimumLength": null,
+  "passwordRequiredType": "deviceDefault",
+  "requiredPasswordComplexity": "none",
+  "passwordMinutesOfInactivityBeforeLock": null,
+  "passwordExpirationDays": null,
+  "passwordPreviousPasswordBlockCount": null,
+  "passwordSignInFailureCountBeforeFactoryReset": null,
+  "workProfilePasswordExpirationInDays": null,
+  "workProfilePasswordMinimumLength": null,
+  "workProfileInactiveBeforeScreenLockInMinutes": null,
+  "workProfilePreviousPasswordBlockCount": null,
+  "workProfilePasswordRequiredType": "deviceDefault",
+  "workProfileRequiredPasswordComplexity": "none",
+  "workProfileRequirePassword": false,
+  "securityPreventInstallAppsFromUnknownSources": false,
+  "securityDisableUsbDebugging": false,
+  "securityRequireVerifyApps": false,
+  "deviceThreatProtectionEnabled": false,
+  "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+  "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
+  "securityBlockJailbrokenDevices": false,
+  "osMinimumVersion": "10.0",
+  "osMaximumVersion": null,
+  "minAndroidSecurityPatchLevel": null,
+  "storageRequireEncryption": false,
+  "securityRequireSafetyNetAttestationBasicIntegrity": false,
+  "securityRequireSafetyNetAttestationCertifiedDevice": false,
+  "securityRequireGooglePlayServices": false,
+  "securityRequireUpToDateSecurityProviders": false,
+  "securityRequireCompanyPortalAppIntegrity": false,
+  "securityRequiredAndroidSafetyNetEvaluationType": "basic",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceCompliancePolicies('8540def6-3320-4155-a707-b7153d2fd422')/microsoft.graph.androidWorkProfileCompliancePolicy/assignments",
+  "assignments": [
+    {
+      "id": "8540def6-3320-4155-a707-b7153d2fd422_9be62e02-c686-49aa-b5f1-6c3b98537e81",
+      "source": "direct",
+      "sourceId": "8540def6-3320-4155-a707-b7153d2fd422",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "9be62e02-c686-49aa-b5f1-6c3b98537e81"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "f8d13601-06ad-4fc6-b336-2a8f7b369edb",
+  "appId": "5a8800f2-f31d-4654-9bed-f5b368c703f8",
+  "displayName": "Gatekeeper PPE App",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

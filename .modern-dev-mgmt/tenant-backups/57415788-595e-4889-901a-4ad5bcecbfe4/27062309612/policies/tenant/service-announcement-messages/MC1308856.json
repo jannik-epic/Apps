@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-12T23:17:28Z",
+  "endDateTime": "2026-06-12T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-13T18:32:30.46Z",
+  "title": "(Updated) Microsoft 365 Copilot Mobile App: Capability to drive awareness via Notifications on M365 Admin Center",
+  "id": "MC1308856",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

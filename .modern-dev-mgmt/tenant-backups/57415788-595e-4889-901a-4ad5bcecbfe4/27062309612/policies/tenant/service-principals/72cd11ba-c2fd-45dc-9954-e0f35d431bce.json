@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "72cd11ba-c2fd-45dc-9954-e0f35d431bce",
+  "appId": "72cd11ba-c2fd-45dc-9954-e0f35d431bce",
+  "displayName": "Max (Marketing)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

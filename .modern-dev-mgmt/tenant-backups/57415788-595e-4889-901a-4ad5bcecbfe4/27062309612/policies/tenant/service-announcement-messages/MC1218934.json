@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-17T22:22:12.703Z",
+  "endDateTime": "2027-01-17T22:22:12.643Z",
+  "lastModifiedDateTime": "2026-01-17T22:22:14.75Z",
+  "title": "Take Action: Out-of-band update to address issues observed with the January 2026 Windows security update",
+  "id": "MC1218934",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

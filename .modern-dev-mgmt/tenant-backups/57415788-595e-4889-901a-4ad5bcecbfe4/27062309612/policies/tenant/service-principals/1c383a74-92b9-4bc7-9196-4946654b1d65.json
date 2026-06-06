@@ -1,0 +1,10 @@
+{
+  "id": "1c383a74-92b9-4bc7-9196-4946654b1d65",
+  "appId": "fc67d51f-bf39-4530-8155-3714f897281b",
+  "displayName": "Apple Business Manager",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "fffe0632-6b65-4588-81d7-9299ec833015",
+  "appId": "a7d8f84e-510b-46d6-8f59-77e581db63bc",
+  "displayName": "Azure Static Web Apps",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

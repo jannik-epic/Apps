@@ -1,0 +1,7 @@
+{
+  "id": "6004696a-593d-4685-8cb2-dbb3991a3867",
+  "deletedDateTime": null,
+  "description": "Can read basic directory information. Commonly used to grant directory read access to applications and guests.",
+  "displayName": "Directory Readers",
+  "roleTemplateId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+}

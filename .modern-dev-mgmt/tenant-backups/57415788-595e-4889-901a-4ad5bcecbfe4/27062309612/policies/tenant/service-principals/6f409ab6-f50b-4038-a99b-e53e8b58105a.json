@@ -1,0 +1,12 @@
+{
+  "id": "6f409ab6-f50b-4038-a99b-e53e8b58105a",
+  "appId": "63723724-9638-4104-bad5-3591f1aafccc",
+  "displayName": "Arc Data Billing Worker",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

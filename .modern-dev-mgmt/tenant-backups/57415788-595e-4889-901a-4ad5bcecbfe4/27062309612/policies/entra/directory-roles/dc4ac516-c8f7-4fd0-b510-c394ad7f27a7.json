@@ -1,0 +1,7 @@
+{
+  "id": "dc4ac516-c8f7-4fd0-b510-c394ad7f27a7",
+  "deletedDateTime": null,
+  "description": "Can perform management related tasks on Teams certified devices.",
+  "displayName": "Teams Devices Administrator",
+  "roleTemplateId": "3d762c5a-1b6c-493f-843e-55a3b42923d4"
+}

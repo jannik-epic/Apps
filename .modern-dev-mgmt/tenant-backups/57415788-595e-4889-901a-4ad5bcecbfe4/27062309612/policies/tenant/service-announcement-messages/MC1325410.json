@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T21:29:42Z",
+  "endDateTime": "2027-03-02T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-28T21:29:56.61Z",
+  "title": "Microsoft Copilot Studio: Mistral Medium 3.5 will be available (admin opt-in required)",
+  "id": "MC1325410",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

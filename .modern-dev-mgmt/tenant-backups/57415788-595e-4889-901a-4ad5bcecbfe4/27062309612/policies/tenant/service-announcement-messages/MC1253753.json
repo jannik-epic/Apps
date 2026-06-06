@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-16T22:34:52Z",
+  "endDateTime": "2027-04-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-16T22:35:34.51Z",
+  "title": "Whiteboards created in Teams channels will now be stored in SharePoint",
+  "id": "MC1253753",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

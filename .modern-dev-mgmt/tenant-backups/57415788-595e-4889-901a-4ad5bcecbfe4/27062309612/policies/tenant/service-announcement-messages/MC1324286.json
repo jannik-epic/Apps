@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-27T22:47:42Z",
+  "endDateTime": "2026-07-26T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-27T22:47:49Z",
+  "title": "Microsoft Teams: Profanity filter disabled by default for live captions",
+  "id": "MC1324286",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

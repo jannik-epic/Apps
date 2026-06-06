@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-27T20:01:32.677Z",
+  "endDateTime": "2027-04-27T20:01:32.673Z",
+  "lastModifiedDateTime": "2026-04-27T20:01:33.86Z",
+  "title": "Assess Secure Boot certificate status with Microsoft Defender",
+  "id": "MC1293341",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

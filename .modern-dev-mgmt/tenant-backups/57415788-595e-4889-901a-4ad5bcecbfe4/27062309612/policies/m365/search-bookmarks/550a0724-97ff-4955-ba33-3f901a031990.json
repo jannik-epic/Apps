@@ -1,0 +1,106 @@
+{
+  "displayName": "Transportation",
+  "description": null,
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "550a0724-97ff-4955-ba33-3f901a031990",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "inter-office shuttle",
+      "bus routes",
+      "bus schedule",
+      "shuttle schedule",
+      "order a ride",
+      "company transportation",
+      "transporte entre oficinas",
+      "rutas de autobuses",
+      "horario de autobuses",
+      "horario de transporte",
+      "pedir un viaje",
+      "transporte de la compañía",
+      "navette inter-bureaux",
+      "itinéraires d'autobus",
+      "horaire d'autobus",
+      "horaire de navette",
+      "commander un tour",
+      "transport d'entreprise",
+      "navetta fra gli uffici",
+      "linee di autobus",
+      "orari degli autobus",
+      "orari delle navette",
+      "ordina una gita",
+      "trasporto aziendale",
+      "オフィス間シャトル",
+      "バスルート",
+      "バス運行表",
+      "シャトル運行表",
+      "乗り物を頼む",
+      "会社の移動手段",
+      "ônibus inter-escritório",
+      "rotas de ônibus",
+      "horário de ônibus",
+      "horário de transporte",
+      "ordem de viagem",
+      "transporte da empresa"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Transporte",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Transport",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Trasporto",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "交通",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Transporte",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

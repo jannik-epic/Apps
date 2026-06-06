@@ -1,0 +1,5 @@
+{
+  "service": "Exchange Online",
+  "status": "serviceDegradation",
+  "id": "Exchange"
+}

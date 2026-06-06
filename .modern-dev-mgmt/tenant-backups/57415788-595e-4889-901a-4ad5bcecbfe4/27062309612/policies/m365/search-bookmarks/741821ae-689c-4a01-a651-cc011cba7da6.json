@@ -1,0 +1,101 @@
+{
+  "displayName": "Office 365 Help",
+  "description": "Get help for all Office apps. Find how-to articles and video tutorials. Contact our Answer Techs for assisted support.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "741821ae-689c-4a01-a651-cc011cba7da6",
+  "webUrl": "https://support.office.com/",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "office 365 support",
+      "office 365 help",
+      "office help",
+      "office support",
+      "o365 support",
+      "o365 help",
+      "office 365 hilfe",
+      "office hilfe",
+      "o365 hilfe",
+      "office 365 ayuda",
+      "office ayuda",
+      "o365 ayuda",
+      "office 365 aide",
+      "office aide",
+      "o365 aide",
+      "guida di office 365",
+      "guida di office",
+      "guida di o365",
+      "office 365 ヘルプ",
+      "office ヘルプ",
+      "o365 ヘルプ",
+      "office 365 ajuda",
+      "office ajuda",
+      "o365 ajuda"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Office 365 Hilfe",
+      "webUrl": null,
+      "description": "Holen Sie sich Hilfe für alle Office-Apps. Hier finden Sie Anleitungen und Video-Tutorials. Kontaktieren Sie für Unterstützung unsere Techniker.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Ayuda Office 365",
+      "webUrl": null,
+      "description": "Obtén ayuda para todas las aplicaciones de Office. Encuentra artículos instructivos y vídeos tutoriales. Ponte en contacto con nuestro centro de respuestas para obtener asistencia técnica.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Office 365 aide",
+      "webUrl": null,
+      "description": "Obtenez de l'aide pour toutes les applications Office. Recherchez des articles pratiques et des didacticiels vidéo. Contactez nos techniciens pour obtenir de l'aide.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Guida di Office 365",
+      "webUrl": null,
+      "description": "Ricevi aiuto per tutte le app di Office. Trova articoli su come fare e video guide.Contatta i nostri Tecnici per il supporto in assistenza.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "Office 365 ヘルプ",
+      "webUrl": null,
+      "description": "全てのOfficeアプリのヘルプを入手しましょう。ハウツー記事やビデオ解説を見つけましょう。役立つサポートを得るために我々の技術担当に連絡しましょう。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Office 365 ajuda",
+      "webUrl": null,
+      "description": "Obter ajuda para todos os aplicativos do Office. Encontre artigos técnicos e tutoriais em vídeo. Entre em contato com nossos Techs de Resposta para suporte assistido",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

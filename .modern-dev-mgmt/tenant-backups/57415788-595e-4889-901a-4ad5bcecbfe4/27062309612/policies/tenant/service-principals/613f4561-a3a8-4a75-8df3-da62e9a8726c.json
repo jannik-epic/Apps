@@ -1,0 +1,8 @@
+{
+  "id": "613f4561-a3a8-4a75-8df3-da62e9a8726c",
+  "appId": "6e482061-b26e-4e6e-8f58-7f88dace4449",
+  "displayName": "aks-policy-addon",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

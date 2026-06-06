@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-30T21:50:36Z",
+  "endDateTime": "2026-08-03T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-30T21:50:41.42Z",
+  "title": "One-time email passcodes for external presenters in Teams events",
+  "id": "MC1266026",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

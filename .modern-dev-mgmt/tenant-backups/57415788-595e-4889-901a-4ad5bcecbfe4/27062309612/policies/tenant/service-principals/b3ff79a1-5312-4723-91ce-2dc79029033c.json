@@ -1,0 +1,12 @@
+{
+  "id": "b3ff79a1-5312-4723-91ce-2dc79029033c",
+  "appId": "e74a9aae-ce66-426d-b197-ef43a773faa8",
+  "displayName": "Microsoft.Defender.Incident",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "822247ef-0632-4912-8293-1564e0aadcd5_9be62e02-c686-49aa-b5f1-6c3b98537e81",
+    "source": "direct",
+    "sourceId": "822247ef-0632-4912-8293-1564e0aadcd5",
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "9be62e02-c686-49aa-b5f1-6c3b98537e81"
+    }
+  }
+]

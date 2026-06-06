@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-03T05:12:41Z",
+  "endDateTime": "2026-09-07T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-04T16:36:10.34Z",
+  "title": "(Updated) Classic Outlook: Retirement of people card expanded view",
+  "id": "MC1269210",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

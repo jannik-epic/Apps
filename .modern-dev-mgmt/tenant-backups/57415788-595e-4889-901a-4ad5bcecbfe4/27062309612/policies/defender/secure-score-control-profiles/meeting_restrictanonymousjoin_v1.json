@@ -1,0 +1,38 @@
+{
+  "id": "meeting_restrictanonymousjoin_v1",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://admin.teams.microsoft.com/meetings/settings",
+  "controlCategory": "Apps",
+  "title": "Restrict anonymous users from joining meetings",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 0,
+  "remediation": "1. Log into <a href='https://admin.teams.microsoft.com' target='_blank'>Microsoft Teams admin center</a><br> 2. In the left navigation, go to <b>Meetings</b> > <b>Meeting Settings</b><br> 3. Under the Participants section, toggle “Anonymous users can join a meeting” to <b>Off</b></b>\r\n    ",
+  "remediationImpact": "Unknown",
+  "service": "MS Teams",
+  "threats": [
+    "Data Exfiltration",
+    "Account Breach"
+  ],
+  "tier": "Core",
+  "userImpact": "low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

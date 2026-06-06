@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T16:16:55Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-30T16:17:17Z",
+  "title": "Microsoft Teams: Retirement of Together mode",
+  "id": "MC1296478",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "17d7946d-52cc-44f2-848e-0fe8bfce1cf4",
+  "appId": "8daa0d71-1863-48c1-b771-a89a3f86d76f",
+  "displayName": "Agent (Microsoft Copilot Studio)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "AgenticApp",
+    "AIAgentBuilder",
+    "AgentCreatedBy:CopilotStudio",
+    "AgenticInstance",
+    "power-virtual-agents-ee9c5d08-fcd0-0340-01f4-5b7f558463fb"
+  ]
+}

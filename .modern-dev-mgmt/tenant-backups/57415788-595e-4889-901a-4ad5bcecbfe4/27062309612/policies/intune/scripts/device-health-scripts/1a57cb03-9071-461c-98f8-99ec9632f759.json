@@ -1,0 +1,24 @@
+{
+  "id": "1a57cb03-9071-461c-98f8-99ec9632f759",
+  "publisher": "Simon Hofmann",
+  "version": "1",
+  "displayName": "LeanLAPS",
+  "description": "Change PW From Local Admin",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2021-08-17T12:40:31.3236423Z",
+  "lastModifiedDateTime": "2021-08-17T12:40:31.3236423Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('1a57cb03-9071-461c-98f8-99ec9632f759')/assignments",
+  "assignments": []
+}

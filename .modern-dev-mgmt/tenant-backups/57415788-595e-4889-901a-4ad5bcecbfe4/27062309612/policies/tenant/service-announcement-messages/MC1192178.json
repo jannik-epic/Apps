@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-12-04T18:02:05.66Z",
+  "endDateTime": "2026-12-04T18:02:05.597Z",
+  "lastModifiedDateTime": "2025-12-04T18:02:06.55Z",
+  "title": "New Windows Autopatch reports on CVEs",
+  "id": "MC1192178",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-21T00:45:14.487Z",
+  "endDateTime": "2027-01-21T00:45:14.423Z",
+  "lastModifiedDateTime": "2026-01-21T00:45:15.77Z",
+  "title": "Ask Microsoft Anything: Secure Boot - February 5",
+  "id": "MC1219801",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-19T23:33:48Z",
+  "endDateTime": "2027-12-31T08:00:00Z",
+  "lastModifiedDateTime": "2025-11-19T23:34:30.66Z",
+  "title": "Microsoft Entra ID: Retirement of duplicative properties in passkey (FIDO2) authentication methods policy",
+  "id": "MC1188230",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

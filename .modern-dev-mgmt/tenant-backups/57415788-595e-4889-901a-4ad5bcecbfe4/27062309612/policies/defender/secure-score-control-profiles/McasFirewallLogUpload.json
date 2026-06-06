@@ -1,0 +1,37 @@
+{
+  "id": "McasFirewallLogUpload",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/cloudapps/settings?tabid=discovery-autoUpload",
+  "controlCategory": "Apps",
+  "title": "Deploy a log collector to discover shadow IT activity",
+  "deprecated": false,
+  "implementationCost": "Moderate",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 82,
+  "remediation": " <ol> <li>In the Defender for Cloud Apps portal, go to the Automatic log upload page.</li>   <li>In the <b>Data sources</b> tab, select <b>Add data source</b> to create a data source for your appliance.</li> <li>In the <b>Log collector</b> tab, select <b>Add log collector</b> to add a new one.</li> <li>Follow the instructions provided to <a href=\"https://docs.microsoft.com/cloud-app-security/discovery-docker\" target=\"_blank\">deploy Docker</a> and the log collector container. </li> </ol>  </ul>",
+  "remediationImpact": "This change has no known impact on your users.",
+  "service": "MCAS",
+  "threats": [
+    "Data Exfiltration"
+  ],
+  "tier": "Advanced",
+  "userImpact": "Low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-03T23:33:19Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2025-07-03T23:33:28.603Z",
+  "title": "Product transitions to the cloud.microsoft domain – June 2025",
+  "id": "MC1108835",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 for the web"
+  ]
+}

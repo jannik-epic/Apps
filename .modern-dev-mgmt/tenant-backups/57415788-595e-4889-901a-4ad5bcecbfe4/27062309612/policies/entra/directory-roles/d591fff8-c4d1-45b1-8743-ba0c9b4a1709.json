@@ -1,0 +1,7 @@
+{
+  "id": "d591fff8-c4d1-45b1-8743-ba0c9b4a1709",
+  "deletedDateTime": null,
+  "description": "Users assigned to this role are added to the local administrators group on Microsoft Entra joined devices.",
+  "displayName": "Azure AD Joined Device Local Administrator",
+  "roleTemplateId": "9f06204d-73c1-4d4c-880a-6edb90606fd8"
+}

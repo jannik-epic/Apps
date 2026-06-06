@@ -1,0 +1,43 @@
+{
+  "id": "57415788-595e-4889-901a-4ad5bcecbfe4_5b631642-bd26-49fe-bd20-1daaa972ef80",
+  "skuId": "5b631642-bd26-49fe-bd20-1daaa972ef80",
+  "skuPartNumber": "POWERAPPS_DEV",
+  "consumedUnits": 9,
+  "capabilityStatus": "Enabled",
+  "prepaidUnits": {
+    "enabled": 10000,
+    "suspended": 0,
+    "warning": 0,
+    "lockedOut": 0
+  },
+  "servicePlans": [
+    {
+      "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318",
+      "servicePlanName": "EXCHANGE_S_FOUNDATION",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "Company"
+    },
+    {
+      "servicePlanId": "d8c638e2-9508-40e3-9877-feb87603837b",
+      "servicePlanName": "DYN365_CDS_DEV_VIRAL",
+      "servicePlanType": "CRM",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "c7ce3f26-564d-4d3a-878d-d8ab868c85fe",
+      "servicePlanName": "FLOW_DEV_VIRAL",
+      "servicePlanType": "ProcessSimple",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "a2729df7-25f8-4e63-984b-8a8484121554",
+      "servicePlanName": "POWERAPPS_DEV_VIRAL",
+      "servicePlanType": "PowerAppsService",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-29T21:07:25Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T21:07:34.747Z",
+  "title": "Notebooks in Microsoft 365 Copilot: Organize work across conversations",
+  "id": "MC1326520",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "4f939c49-f19e-40d7-9658-83f47294741e",
+  "appId": "b36d967c-7f72-4e3f-8062-f39d6d4ec853",
+  "displayName": "PurviewAPI POC",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-01-16T13:13:29Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "19da66cb-0fb0-4390-b071-ebc76a349482",
+          "type": "Role"
+        },
+        {
+          "id": "4ad84827-5578-4e18-ad7a-86530b12f884",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        },
+        {
+          "id": "5ad511bf-571c-4ef6-8c3c-85b94b85df98",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

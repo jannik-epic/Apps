@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-14T13:57:03Z",
+  "endDateTime": "2026-06-14T13:57:03Z",
+  "lastModifiedDateTime": "2026-05-14T13:57:46.36Z",
+  "title": "Dynamics 365 Sales - Get lead research and next best actions in Sales Home",
+  "id": "MC1310377",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

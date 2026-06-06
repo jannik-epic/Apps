@@ -1,0 +1,11 @@
+{
+  "id": "d224a06e-c1ff-4634-98f8-4e7bf9da6094",
+  "appId": "2e0d1ad4-7e83-4d87-8567-f7a5bcbb2e8f",
+  "displayName": "Rega Sharing App",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

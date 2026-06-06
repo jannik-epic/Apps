@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-19T23:26:22Z",
+  "endDateTime": "2026-09-28T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T16:26:28.203Z",
+  "title": "(Updated) Microsoft Teams: Private chat for organizers and presenters in structured meetings, webinars, and town halls",
+  "id": "MC1188222",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-14T20:18:19Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T18:43:09.393Z",
+  "title": "(Updated) Authoritative Sites for SharePoint in Microsoft Copilot",
+  "id": "MC1310687",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

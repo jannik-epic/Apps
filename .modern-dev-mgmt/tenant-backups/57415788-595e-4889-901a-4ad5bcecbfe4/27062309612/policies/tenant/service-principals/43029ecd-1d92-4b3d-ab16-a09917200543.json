@@ -1,0 +1,10 @@
+{
+  "id": "43029ecd-1d92-4b3d-ab16-a09917200543",
+  "appId": "338d3e76-f802-4016-aa20-4919a1285159",
+  "displayName": "Daily Docs Shared Test",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "PrivateCatalogApp"
+  ]
+}

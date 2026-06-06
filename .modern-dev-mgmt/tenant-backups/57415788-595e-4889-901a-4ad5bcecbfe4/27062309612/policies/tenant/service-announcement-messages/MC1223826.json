@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-01-29T00:40:18Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-29T22:09:55.793Z",
+  "title": "(Updated) Open Outlook emails directly in Copilot chat",
+  "id": "MC1223826",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

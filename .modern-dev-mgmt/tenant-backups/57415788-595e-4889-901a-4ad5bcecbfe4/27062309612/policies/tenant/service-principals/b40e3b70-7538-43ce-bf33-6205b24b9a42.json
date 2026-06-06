@@ -1,0 +1,10 @@
+{
+  "id": "b40e3b70-7538-43ce-bf33-6205b24b9a42",
+  "appId": "1064f7e4-a9e2-467d-8d42-f45cc59f145d",
+  "displayName": "Decisions",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

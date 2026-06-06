@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "89e096ca-ca3f-4f1b-af2b-3a9d47bdc02b",
+  "appId": "89e096ca-ca3f-4f1b-af2b-3a9d47bdc02b",
+  "displayName": "Bernd (BauPilot)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

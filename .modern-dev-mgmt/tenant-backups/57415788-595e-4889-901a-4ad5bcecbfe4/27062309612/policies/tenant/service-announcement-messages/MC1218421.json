@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-16T00:15:07Z",
+  "endDateTime": "2027-01-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-01-16T00:15:39.09Z",
+  "title": "Retirement of Power BI Q&A",
+  "id": "MC1218421",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Power BI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "f0521427-1fad-4721-9ef7-43e4b37401a1",
+  "displayName": "EPL-SD-0C66247C",
+  "deviceId": "866a4204-57ee-4021-a087-849ffd089dba",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.22000.856",
+  "trustType": "AzureAd",
+  "profileType": "RegisteredDevice",
+  "isCompliant": false,
+  "isManaged": false,
+  "registrationDateTime": "2022-08-23T07:38:52Z"
+}

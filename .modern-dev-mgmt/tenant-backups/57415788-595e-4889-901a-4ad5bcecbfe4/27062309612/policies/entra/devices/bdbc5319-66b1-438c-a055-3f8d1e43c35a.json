@@ -1,0 +1,13 @@
+{
+  "id": "bdbc5319-66b1-438c-a055-3f8d1e43c35a",
+  "displayName": "vmavdring1szn-1",
+  "deviceId": "a2e31c97-35ff-46bc-bf7e-5237c5045531",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.26100.6584",
+  "trustType": "AzureAd",
+  "profileType": "SecureVM",
+  "isCompliant": false,
+  "isManaged": true,
+  "registrationDateTime": "2025-08-21T09:47:43Z"
+}

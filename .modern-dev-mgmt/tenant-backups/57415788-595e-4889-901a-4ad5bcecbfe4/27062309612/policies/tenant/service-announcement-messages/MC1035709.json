@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-03-19T00:18:14Z",
+  "endDateTime": "2026-06-08T07:00:00Z",
+  "lastModifiedDateTime": "2025-04-28T18:58:26.707Z",
+  "title": "(Updated) Microsoft Teams: Control when shared content is visible to attendees in \"Manage what attendees see\"",
+  "id": "MC1035709",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

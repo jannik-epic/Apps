@@ -1,0 +1,7 @@
+{
+  "id": "292ea693-162b-4563-abed-98bf142c3b95",
+  "deletedDateTime": null,
+  "description": "Manage profile photos of users and people settings for all users in the organization.",
+  "displayName": "People Administrator",
+  "roleTemplateId": "024906de-61e5-49c8-8572-40335f1e0e10"
+}

@@ -1,0 +1,106 @@
+{
+  "displayName": "Microsoft Search in Bing Help",
+  "description": "Learn more about Microsoft Search in Bing, including information about signing in, searching, sending feedback, and how Microsoft Search in Bing helps keep your info secure.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "8cbf4964-a4b3-4b01-861b-9e123bc3981f",
+  "webUrl": "https://go.microsoft.com/fwlink/?linkid=866551",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "bing for business help",
+      "bing help",
+      "bingforbusiness help",
+      "b4b help",
+      "microsoft search in bing help",
+      "bing for business hilfe",
+      "bing hilfe",
+      "bingforbusiness hilfe",
+      "b4b hilfe",
+      "bing for business ayuda",
+      "bing ayuda",
+      "bingforbusiness ayuda",
+      "b4b ayuda",
+      "bing for business aide",
+      "bing aide",
+      "bingforbusiness aide",
+      "b4b aide",
+      "guida bing for business",
+      "guida bing",
+      "guida bingforbusiness",
+      "guida b4b",
+      "bing for business ヘルプ",
+      "bing ヘルプ",
+      "bingforbusiness ヘルプ",
+      "b4b ヘルプ",
+      "bing for business ajuda",
+      "bing ajuda",
+      "bingforbusiness ajuda",
+      "b4b ajuda"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Bing for business Hilfe",
+      "webUrl": null,
+      "description": "Erfahren Sie mehr über Bing for business, einschließlich Informationen über Anmeldung, Suche, Feedback senden und wie Bing for business Ihre Information sicher hält.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Ayuda Bing for business",
+      "webUrl": null,
+      "description": "Obtenga más información acerca de Bing for business, incluida información sobre cómo iniciar sesión, buscar, enviar comentarios y cómo Bing for business ayuda a mantener segura su información.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Bing for business aide",
+      "webUrl": null,
+      "description": "Apprenez plus sur Bing for business, y compris des informations sur la connexion, la recherche, l'envoi de commentaires et comment Bing for business aide à garder vos informations en sécurité",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Guida di Bing for business",
+      "webUrl": null,
+      "description": "Impara di più su Bing for business, comprese le informazioni su accesso, ricerca, invio di feedack e su come Bing for business aiuta a proteggere i tuoi dati.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "Bing for business ヘルプ",
+      "webUrl": null,
+      "description": "Bing for businessをもっと学びましょう。サインイン、検索、フィードバック送信などの情報を含め、 Bing for business があなたの情報を安全に保つのにどれほど役立つかを。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Bing for business ajuda",
+      "webUrl": null,
+      "description": "Saiba mais sobre Bing for business, incluindo informações sobre como iniciar sessão, pesquisar, enviar comentários e como o Bing for business ajuda a manter suas informações seguras",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

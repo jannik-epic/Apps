@@ -1,0 +1,8 @@
+{
+  "id": "843b7046-ab77-4c35-a778-a0c758f47090",
+  "appId": "123cd850-d9df-40bd-94d5-c9f07b7fa203",
+  "displayName": "Azure OSSRDBMS Database",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

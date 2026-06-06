@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-03-31T22:38:16Z",
+  "endDateTime": "2026-06-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-01-06T17:16:03.24Z",
+  "title": "(Updated) Microsoft Teams: New user setting to view incoming calls in a small window",
+  "id": "MC1045221",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

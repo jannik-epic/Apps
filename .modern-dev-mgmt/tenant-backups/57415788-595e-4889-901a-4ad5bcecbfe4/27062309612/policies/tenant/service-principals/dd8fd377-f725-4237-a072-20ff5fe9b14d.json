@@ -1,0 +1,11 @@
+{
+  "id": "dd8fd377-f725-4237-a072-20ff5fe9b14d",
+  "appId": "9bdab391-7bbe-42e8-8132-e4491dc29cc0",
+  "displayName": "Azure Backup NRP Application",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-05-15T23:00:10Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-02-24T17:17:21.52Z",
+  "title": "(Updated) Microsoft SharePoint: New web part for FAQs powered by Microsoft 365 Copilot",
+  "id": "MC1074972",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

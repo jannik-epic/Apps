@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-10T22:50:11Z",
+  "endDateTime": "2026-08-24T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-13T21:23:06.68Z",
+  "title": "(Updated) Outlook Mobile: Follow a meeting option",
+  "id": "MC1248393",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

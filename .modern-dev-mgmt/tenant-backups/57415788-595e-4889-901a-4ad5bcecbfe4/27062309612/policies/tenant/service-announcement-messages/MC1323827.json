@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-27T12:09:39Z",
+  "endDateTime": "2026-06-27T12:09:39Z",
+  "lastModifiedDateTime": "2026-05-27T12:10:19.613Z",
+  "title": "Dynamics 365 Contact Center - Automatically handle waiting conversations when queues close or become unstaffed",
+  "id": "MC1323827",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

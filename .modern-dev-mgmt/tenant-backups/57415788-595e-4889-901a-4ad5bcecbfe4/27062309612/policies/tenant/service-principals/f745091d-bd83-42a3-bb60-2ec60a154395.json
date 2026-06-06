@@ -1,0 +1,12 @@
+{
+  "id": "f745091d-bd83-42a3-bb60-2ec60a154395",
+  "appId": "229c0a71-0789-4652-8054-3f547fcc66f0",
+  "displayName": "Microsoft Threat Protection Bicep Extension",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

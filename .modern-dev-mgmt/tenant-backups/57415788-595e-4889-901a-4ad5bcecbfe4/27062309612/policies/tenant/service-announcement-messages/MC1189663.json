@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-25T00:05:43Z",
+  "endDateTime": "2026-07-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-21T17:04:16.13Z",
+  "title": "(Updated) Retirement of external access token for actionable messages – moving to Microsoft Entra authentication",
+  "id": "MC1189663",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-24T22:48:18Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-30T15:39:17.437Z",
+  "title": "Microsoft Teams: Copilot PSTN audio announcements",
+  "id": "MC1260709",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

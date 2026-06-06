@@ -1,0 +1,13 @@
+{
+  "id": "c88dcf1e-29be-4578-96c1-ec2bee57f1d4",
+  "displayName": "DESKTOP-BFD567A",
+  "deviceId": "6313490d-cf8d-48d7-a349-1e745c95e797",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.19043.1237",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2021-09-20T19:14:58Z"
+}

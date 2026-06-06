@@ -1,0 +1,39 @@
+{
+  "id": "MDA_Zendesk_SSO",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://support.zendesk.com/hc/en-us/articles/4408846853274",
+  "controlCategory": "Identity",
+  "title": "Enable external Authentication (google or microsoft or SSO)",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 10,
+  "remediation": "<p><strong>To enable Zendesk authentication</strong></p> <ol> <li dir=\"ltr\">Open&nbsp;<a href=\"https://support.zendesk.com/hc/en-us/articles/4581766374554#topic_hfg_dyz_1hb\" target=\"_blank\" rel=\"noopener\">Admin Center</a>, click&nbsp;<strong>Account</strong>&nbsp;in the sidebar, then select&nbsp;<strong>Security &gt; Team member authentication</strong>.</li> <li>Make sure <strong>External authentication</strong>&nbsp;is selected.</li> <li>follow the authentication&nbsp;steps.</li> <li>Click&nbsp;<strong>Save</strong>.</li> </ol>",
+  "remediationImpact": "See in learn more link.",
+  "service": "MDA_Zendesk",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration",
+    "Password Cracking"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

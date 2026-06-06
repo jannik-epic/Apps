@@ -1,0 +1,82 @@
+{
+  "displayName": "Microsoft Stream",
+  "description": "Upload and share videos across the company.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "2c6fbe2e-91d8-436f-926d-6d03e2e2f3a5",
+  "webUrl": "https://web.microsoftstream.com/",
+  "lastModifiedDateTime": "2023-04-13T23:39:56Z",
+  "keywords": {
+    "keywords": [
+      "stream",
+      "stream login",
+      "microsoft stream",
+      "ms stream",
+      "stream online"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Hochladen und Freigeben von Videos im gesamten Unternehmen.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Cargue y comparta vídeos en toda la empresa.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Chargez et partagez des vidéos au sein de l’entreprise.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Consente di caricare e condividere video in tutta l'azienda.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "Microsoft ストリーム",
+      "webUrl": null,
+      "description": "会社全体でビデオをアップロードして共有します。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Carregue e compartilhe vídeos em toda a empresa.",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

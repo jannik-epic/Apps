@@ -1,0 +1,10 @@
+{
+  "id": "99b31a74-bbf5-404d-8e41-8f90dd363ff1",
+  "appId": "de321b42-113a-4187-bd15-f13098412fbd",
+  "displayName": "SysKit 365 Subscriptions",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-01T22:14:17Z",
+  "endDateTime": "2026-06-19T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-01T22:14:25.03Z",
+  "title": "Outlook for iOS: New attachment actions and updates to previewer experience",
+  "id": "MC1267870",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

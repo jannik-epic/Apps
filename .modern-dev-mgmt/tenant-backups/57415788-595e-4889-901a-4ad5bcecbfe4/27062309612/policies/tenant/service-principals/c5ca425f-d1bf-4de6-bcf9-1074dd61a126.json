@@ -1,0 +1,8 @@
+{
+  "id": "c5ca425f-d1bf-4de6-bcf9-1074dd61a126",
+  "appId": "b5a60e17-278b-4c92-a4e2-b9262e66bb28",
+  "displayName": "Azure MFA StrongAuthenticationService",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

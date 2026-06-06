@@ -1,0 +1,118 @@
+{
+  "displayName": "Paycheck",
+  "description": null,
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "d21ccfd9-bbdb-482d-b840-716f76d97bad",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "timesheet",
+      "paycheck",
+      "pay day",
+      "direct deposit",
+      "payroll",
+      "pay slip",
+      "pay stub",
+      "my paycheck",
+      "salary",
+      "my salary",
+      "payday",
+      "pay date",
+      "planilla de horas trabajadas",
+      "cheque de pago",
+      "día de pago",
+      "depósito directo",
+      "nómina",
+      "comprobante de pago",
+      "recibo de sueldo",
+      "mi cheque de pago",
+      "feuille de temps",
+      "chèque de paie",
+      "jour de paie",
+      "dépôt direct",
+      "paie",
+      "fiche de paie",
+      "bordereau de paye",
+      "mon salaire",
+      "schede di attività",
+      "stipendio",
+      "giorno di paga",
+      "deposito diretto",
+      "libro paga",
+      "busta paga",
+      "il mio stipendio",
+      "タイムカード",
+      "給与",
+      "給料日",
+      "給与振込",
+      "給料支払い簿",
+      "給与明細",
+      "私の給料",
+      "folha de ponto",
+      "contracheque",
+      "dia de pagamento",
+      "depósito direto",
+      "sequência de pagamento",
+      "meu contracheque"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Gehaltsscheck",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Cheque de pago",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Chéque de salaire",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "給与",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Pagamentos",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

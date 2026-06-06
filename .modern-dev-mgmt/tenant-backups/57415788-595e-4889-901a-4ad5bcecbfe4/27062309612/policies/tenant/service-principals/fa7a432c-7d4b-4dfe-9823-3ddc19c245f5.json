@@ -1,0 +1,10 @@
+{
+  "id": "fa7a432c-7d4b-4dfe-9823-3ddc19c245f5",
+  "appId": "79f159bf-10ef-461d-9eb4-06780f07f80e",
+  "displayName": "Decisions Meeting Secretary",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "PrivateCatalogApp"
+  ]
+}

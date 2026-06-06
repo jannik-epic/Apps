@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-08T19:04:18.74Z",
+  "endDateTime": "2027-01-08T19:04:18.693Z",
+  "lastModifiedDateTime": "2026-01-08T19:04:19.657Z",
+  "title": "Windows Office Hours: January 15, 2026",
+  "id": "MC1215830",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "49ae467b-2fa2-41c6-be9f-58bca13f776d",
+  "deletedDateTime": null,
+  "description": "Can manage Active Directory to Microsoft Entra cloud provisioning, Microsoft Entra Connect, and federation settings.",
+  "displayName": "Hybrid Identity Administrator",
+  "roleTemplateId": "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2"
+}

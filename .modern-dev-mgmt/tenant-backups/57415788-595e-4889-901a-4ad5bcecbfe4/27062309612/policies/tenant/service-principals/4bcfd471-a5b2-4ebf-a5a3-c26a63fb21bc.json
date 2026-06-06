@@ -1,0 +1,8 @@
+{
+  "id": "4bcfd471-a5b2-4ebf-a5a3-c26a63fb21bc",
+  "appId": "00000002-0000-0000-c000-000000000000",
+  "displayName": "Windows Azure Active Directory",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

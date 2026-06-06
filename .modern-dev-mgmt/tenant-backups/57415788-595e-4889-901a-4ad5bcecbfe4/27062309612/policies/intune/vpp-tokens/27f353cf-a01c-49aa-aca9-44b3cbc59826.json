@@ -1,0 +1,22 @@
+{
+  "id": "27f353cf-a01c-49aa-aca9-44b3cbc59826",
+  "organizationName": "Epic Fusion GmbH + Testing",
+  "vppTokenAccountType": "business",
+  "appleId": "admin.sba@epicfusionlabs.com",
+  "expirationDateTime": "2024-07-27T07:12:11Z",
+  "lastSyncDateTime": "2026-06-06T02:56:54.42043Z",
+  "token": null,
+  "lastModifiedDateTime": "2026-06-06T09:15:10.9275043Z",
+  "state": "expired",
+  "lastSyncStatus": "completed",
+  "automaticallyUpdateApps": false,
+  "countryOrRegion": "ch",
+  "dataSharingConsentGranted": true,
+  "displayName": "Business Manager",
+  "locationName": "Epic Fusion GmbH + Testing",
+  "claimTokenManagementFromExternalMdm": false,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "tokenActionResults": []
+}

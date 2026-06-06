@@ -1,0 +1,10 @@
+{
+  "id": "f10f7cd6-9fac-4f25-8dee-212eb08af024",
+  "appId": "a4c95b9e-3994-40cc-8953-5dc66d48348d",
+  "displayName": "Microsoft Container Registry",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

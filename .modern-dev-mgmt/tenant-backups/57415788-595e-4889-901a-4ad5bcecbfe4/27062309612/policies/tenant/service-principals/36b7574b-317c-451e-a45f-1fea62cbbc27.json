@@ -1,0 +1,8 @@
+{
+  "id": "36b7574b-317c-451e-a45f-1fea62cbbc27",
+  "appId": "6dae42f8-4368-4678-94ff-3960e28e3630",
+  "displayName": "Azure Kubernetes Service AAD Server",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

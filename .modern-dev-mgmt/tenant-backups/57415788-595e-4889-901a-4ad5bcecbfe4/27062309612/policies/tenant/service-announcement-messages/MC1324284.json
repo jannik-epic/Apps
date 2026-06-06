@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-27T22:46:41Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-02T16:25:08.177Z",
+  "title": "(Updated) New entry point for \"Create pages with Copilot in SharePoint\"",
+  "id": "MC1324284",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

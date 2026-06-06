@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-14T13:32:11Z",
+  "endDateTime": "2026-06-14T13:32:11Z",
+  "lastModifiedDateTime": "2026-05-14T13:33:34.77Z",
+  "title": "Power Automate - Schedule desktop flows without a cloud flow requirement",
+  "id": "MC1310358",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Power Automate"
+  ]
+}

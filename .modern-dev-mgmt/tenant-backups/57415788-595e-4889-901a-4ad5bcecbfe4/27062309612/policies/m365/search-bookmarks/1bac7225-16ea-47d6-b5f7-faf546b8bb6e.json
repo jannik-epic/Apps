@@ -1,0 +1,84 @@
+{
+  "displayName": "SharePoint",
+  "description": "Share and manage content, knowledge, and applications to empower teamwork, quickly find information, and seamlessly collaborate across the organization.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "1bac7225-16ea-47d6-b5f7-faf546b8bb6e",
+  "webUrl": "https://products.office.com/sharepoint/collaboration",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "sharepoint online",
+      "sharepoint login",
+      "sharepoint sites",
+      "sharepoint seiten",
+      "sharepoint sitios",
+      "sites sharepoint",
+      "sharepoint サイト"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Teilen und verwalten Sie Inhalte, Wissen und Anwendungen, um Teamarbeit zu ermöglichen, Informationen schnell zu finden und nahtlos im gesamten Unternehmen zusammenzuarbeiten.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Comparta y administre contenido, conocimiento y aplicaciones para potenciar el trabajo en equipo, encontrar información rápidamente y colaborar de manera transparente en toda la organización.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Partagez et gérez le contenu, les connaissances et les applications pour renforcer le travail d'équipe, trouver rapidement des informations et collaborer de manière transparente à travers l'organisation.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Condividi e gestisci contenuti, conoscenza e applicazioni per potenziare il lavoro di squadra, trovare rapidamente informazioni e collaborare senza problemi all'interno dell'organizzazione.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "コンテンツの共有と管理、ナレッジ、チームワークを強化するアプリケーション、素早く見つかる情報、そして組織全体のシームレな共同作業。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Compartilhe e gerencie conteúdo, conhecimento e aplicativos para capacitar o trabalho em equipe, encontrar informações rapidamente e colaborar perfeitamente em toda a organização",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

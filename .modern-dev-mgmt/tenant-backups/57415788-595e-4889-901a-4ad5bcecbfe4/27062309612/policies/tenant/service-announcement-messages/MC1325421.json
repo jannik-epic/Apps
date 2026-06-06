@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T21:35:00Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-28T21:35:08.703Z",
+  "title": "Microsoft 365 Copilot: Support for real-time screen sharing in Copilot voice sessions",
+  "id": "MC1325421",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

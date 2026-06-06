@@ -1,0 +1,8 @@
+{
+  "id": "352d0e6e-f2d3-4a70-bc6a-6a9d79d8ac38",
+  "appId": "894b1496-c6e0-4001-b69c-81b327564ca4",
+  "displayName": "Azure Healthcare APIs Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

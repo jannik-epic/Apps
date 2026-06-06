@@ -1,0 +1,8 @@
+{
+  "id": "9ba2eaae-e550-4222-b4f1-ef0029538b24",
+  "appId": "8cae6e77-e04e-42ce-b5cb-50d82bce26b1",
+  "displayName": "Microsoft Policy Insights Provider Data Plane",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

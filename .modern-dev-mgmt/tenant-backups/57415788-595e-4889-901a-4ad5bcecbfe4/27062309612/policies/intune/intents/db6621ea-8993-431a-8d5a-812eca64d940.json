@@ -1,0 +1,14 @@
+{
+  "id": "db6621ea-8993-431a-8d5a-812eca64d940",
+  "displayName": "EPIC_SEC_DEV_WIN-MDM Security Baseline",
+  "description": null,
+  "isAssigned": true,
+  "isMigratingToConfigurationPolicy": null,
+  "lastModifiedDateTime": "2023-09-23T11:45:52.1384313Z",
+  "templateId": "034ccd46-190c-4afc-adf1-ad7cc11262eb",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('db6621ea-8993-431a-8d5a-812eca64d940')/assignments",
+  "assignments": []
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-21T19:00:13Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-21T19:00:20.563Z",
+  "title": "Microsoft Teams: Quick Share for images",
+  "id": "MC1318125",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

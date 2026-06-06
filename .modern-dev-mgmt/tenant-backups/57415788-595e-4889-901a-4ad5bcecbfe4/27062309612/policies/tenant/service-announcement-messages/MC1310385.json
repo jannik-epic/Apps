@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-14T14:05:12Z",
+  "endDateTime": "2026-06-14T14:05:12Z",
+  "lastModifiedDateTime": "2026-05-14T14:07:11.003Z",
+  "title": "Microsoft Dataverse - Chat and reason over Dataverse business data in Microsoft 365 Copilot (preview)",
+  "id": "MC1310385",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Dataverse"
+  ]
+}

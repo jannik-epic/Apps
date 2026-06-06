@@ -1,0 +1,11 @@
+{
+  "id": "7d29105b-6941-41e4-8c4f-8e04a8f9fd91",
+  "displayName": "MDM-Claude-Available",
+  "description": "Modern Dev Mgmt available assignment group for Claude.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "mdm-claude-available-500ac0",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-05-22T07:18:06Z"
+}

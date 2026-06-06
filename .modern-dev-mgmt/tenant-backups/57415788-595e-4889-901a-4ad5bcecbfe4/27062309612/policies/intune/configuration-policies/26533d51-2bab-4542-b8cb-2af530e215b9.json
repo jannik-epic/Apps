@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2023-11-14T09:51:04.1884089Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-11-16T12:24:47.3167116Z",
+  "name": "EPICLAB_DCP__DEV_AVD-Remote Desktop Session Host",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 12,
+  "technologies": "mdm",
+  "id": "26533d51-2bab-4542-b8cb-2af530e215b9",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('26533d51-2bab-4542-b8cb-2af530e215b9')/assignments",
+  "assignments": [
+    {
+      "id": "26533d51-2bab-4542-b8cb-2af530e215b9_18d5aa14-61e0-477f-b056-0b8f637702a2",
+      "source": "direct",
+      "sourceId": "26533d51-2bab-4542-b8cb-2af530e215b9",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "18d5aa14-61e0-477f-b056-0b8f637702a2"
+      }
+    }
+  ]
+}

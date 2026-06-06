@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-08T17:16:01.437Z",
+  "endDateTime": "2027-04-08T17:16:01.437Z",
+  "lastModifiedDateTime": "2026-04-08T17:16:02.43Z",
+  "title": "ESR management is moving to Windows Backup for Organizations",
+  "id": "MC1274349",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

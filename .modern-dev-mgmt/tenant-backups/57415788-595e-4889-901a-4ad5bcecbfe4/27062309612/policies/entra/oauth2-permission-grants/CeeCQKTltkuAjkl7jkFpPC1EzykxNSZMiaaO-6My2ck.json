@@ -1,0 +1,8 @@
+{
+  "clientId": "4082e709-e5a4-4bb6-808e-497b8e41693c",
+  "consentType": "AllPrincipals",
+  "id": "CeeCQKTltkuAjkl7jkFpPC1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": "Directory.Read.All User.Read.All User.Read"
+}

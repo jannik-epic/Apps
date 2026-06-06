@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-20T22:15:26.307Z",
+  "endDateTime": "2026-11-20T22:15:26.307Z",
+  "lastModifiedDateTime": "2025-11-20T22:15:30.45Z",
+  "title": "Take Action: Out-of-band update to address November 2025 hotpatch update being reoffered after Windows update scan",
+  "id": "MC1188558",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

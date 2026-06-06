@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-06T22:48:30Z",
+  "endDateTime": "2026-07-20T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-15T16:26:26.923Z",
+  "title": "(Updated) Purview Communication Compliance: Temporary delays in processing due to planned infrastructure migration",
+  "id": "MC1214183",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

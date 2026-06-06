@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-27T12:19:26Z",
+  "endDateTime": "2026-06-27T12:19:26Z",
+  "lastModifiedDateTime": "2026-05-27T12:21:28.79Z",
+  "title": "Dynamics 365 Project Operations - Enable Project Revenue recognition using cost estimate instead of EAC",
+  "id": "MC1323835",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

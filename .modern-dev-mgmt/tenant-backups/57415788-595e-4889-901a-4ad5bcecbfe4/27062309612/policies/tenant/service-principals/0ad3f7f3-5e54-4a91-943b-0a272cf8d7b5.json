@@ -1,0 +1,10 @@
+{
+  "id": "0ad3f7f3-5e54-4a91-943b-0a272cf8d7b5",
+  "appId": "3900ac91-6e46-4c7a-9a3a-da271e14f1f0",
+  "displayName": "AzureArcOnboarding",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "AzureArcSPN"
+  ]
+}

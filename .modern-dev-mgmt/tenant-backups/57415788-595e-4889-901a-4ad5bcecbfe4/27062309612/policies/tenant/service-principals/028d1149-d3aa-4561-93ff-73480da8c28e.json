@@ -1,0 +1,8 @@
+{
+  "id": "028d1149-d3aa-4561-93ff-73480da8c28e",
+  "appId": "6b3368c6-61d2-4a72-854c-42d1c4e71fed",
+  "displayName": "Azure Cost Management Scheduled Actions",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

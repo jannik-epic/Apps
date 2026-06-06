@@ -1,0 +1,45 @@
+{
+  "displayName": "Power BI",
+  "description": "Turn data into opportunity with Microsoft Power BI data visualization tools. Drive better business decisions by analyzing your enterprise data for insights.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "559b19d9-68df-4e1f-82c0-cdd74753c540",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "powerbi",
+      "power bi",
+      "powerbi reports",
+      "power bi reports",
+      "power reports",
+      "ms powerbi",
+      "micrososft powerbi",
+      "powerbi dashboard",
+      "power bi dashboard",
+      "powerbi download",
+      "powerbi setup"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-12T00:12:03Z",
+  "endDateTime": "2026-06-30T08:00:00Z",
+  "lastModifiedDateTime": "2026-04-24T16:24:09.043Z",
+  "title": "(Updated) Copilot can now automatically reschedule 1:1 meetings and personal events based on your preferences",
+  "id": "MC1184999",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "e7a1f4f8-1e9b-41a2-8da4-0a4913c81bd0",
+  "appId": "324bf60b-f868-4bf7-bf82-f487a774c545",
+  "displayName": "AvePoint Online Services Tenant Registration for Microsoft365",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

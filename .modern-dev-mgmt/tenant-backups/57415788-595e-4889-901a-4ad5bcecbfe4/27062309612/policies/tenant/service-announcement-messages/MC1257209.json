@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-20T10:00:00Z",
+  "endDateTime": "2027-03-31T23:59:59Z",
+  "lastModifiedDateTime": "2026-03-20T20:11:38.96Z",
+  "title": "Action Required: Update active Exchange Web Services Applications",
+  "id": "MC1257209",
+  "category": "preventOrFixIssue",
+  "severity": "high",
+  "services": [
+    "Exchange Online"
+  ]
+}

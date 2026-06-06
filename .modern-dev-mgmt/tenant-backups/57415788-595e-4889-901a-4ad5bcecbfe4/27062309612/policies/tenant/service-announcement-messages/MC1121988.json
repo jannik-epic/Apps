@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-25T21:24:21.787Z",
+  "endDateTime": "2026-07-25T21:24:21.693Z",
+  "lastModifiedDateTime": "2025-07-25T21:24:22.69Z",
+  "title": "Reminder: Windows 11, version 22H2 Enterprise and Education editions will reach end of servicing on October 14, 2025",
+  "id": "MC1121988",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

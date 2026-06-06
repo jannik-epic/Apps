@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-08T22:47:34Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-08T22:49:36.673Z",
+  "title": "Updates to SharePoint home sites",
+  "id": "MC1304293",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

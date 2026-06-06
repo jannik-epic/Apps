@@ -1,0 +1,35 @@
+{
+  "id": "3a7ef968-86e8-4690-bd84-90c81f174465",
+  "name": "Internal",
+  "description": "Use this classification to identify and protect Confidential data that should not be shared outside the Organization.",
+  "color": "",
+  "sensitivity": 3,
+  "tooltip": "This is the internal label",
+  "isActive": true,
+  "isAppliable": true,
+  "contentFormats": [
+    "file",
+    "email"
+  ],
+  "hasProtection": true,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('3a7ef968-86e8-4690-bd84-90c81f174465')/parent/$entity",
+  "parent": {
+    "id": "a7ad2310-1588-4b99-9e27-8014dc662cf9",
+    "name": "Confidential",
+    "description": "Use this classification to identify and protect data which is sensitive, and which should be shared more carefully.",
+    "color": "",
+    "sensitivity": 3,
+    "tooltip": "Use this classification to identify and protect data which is sensitive, and which should be shared more carefully.",
+    "isActive": false,
+    "isAppliable": false,
+    "contentFormats": [
+      "file",
+      "email",
+      "site",
+      "unifiedgroup"
+    ],
+    "hasProtection": false,
+    "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('3a7ef968-86e8-4690-bd84-90c81f174465')/parent/parent/$entity",
+    "parent": null
+  }
+}

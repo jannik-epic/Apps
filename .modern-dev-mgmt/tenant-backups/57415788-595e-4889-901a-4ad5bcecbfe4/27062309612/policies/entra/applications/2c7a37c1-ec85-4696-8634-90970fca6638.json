@@ -1,0 +1,26 @@
+{
+  "id": "2c7a37c1-ec85-4696-8634-90970fca6638",
+  "appId": "b1ae2b4a-b35f-4f40-a36c-4081c6a3dbce",
+  "displayName": "Syskit Point Power Platform",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-02T13:00:57Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": "https://www.syskit.com/_app-links/point/",
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

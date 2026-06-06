@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-20T22:50:25.293Z",
+  "endDateTime": "2027-02-20T22:50:25.243Z",
+  "lastModifiedDateTime": "2026-02-20T22:50:27.257Z",
+  "title": "Plan for Windows Server 2016 and Windows 10 2016 LTSB end of support",
+  "id": "MC1235720",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

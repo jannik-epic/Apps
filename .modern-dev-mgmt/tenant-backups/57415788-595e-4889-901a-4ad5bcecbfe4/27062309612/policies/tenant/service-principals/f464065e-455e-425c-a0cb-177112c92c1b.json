@@ -1,0 +1,11 @@
+{
+  "id": "f464065e-455e-425c-a0cb-177112c92c1b",
+  "appId": "918d0db8-4a38-4938-93c1-9313bdfe0272",
+  "displayName": "asmcontainerimagescanner",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

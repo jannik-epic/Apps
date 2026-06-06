@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T21:34:31Z",
+  "endDateTime": "2026-07-10T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-28T21:34:41.503Z",
+  "title": "Microsoft Clipchamp: Licensing SKU and service plan naming update",
+  "id": "MC1325419",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Clipchamp "
+  ]
+}

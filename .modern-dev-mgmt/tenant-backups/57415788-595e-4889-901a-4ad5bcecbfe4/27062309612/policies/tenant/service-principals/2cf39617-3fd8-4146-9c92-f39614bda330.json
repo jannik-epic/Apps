@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "2cf39617-3fd8-4146-9c92-f39614bda330",
+  "appId": "2cf39617-3fd8-4146-9c92-f39614bda330",
+  "displayName": "Copilot in Power Apps - Learning App (Microsoft Copilot Studio)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

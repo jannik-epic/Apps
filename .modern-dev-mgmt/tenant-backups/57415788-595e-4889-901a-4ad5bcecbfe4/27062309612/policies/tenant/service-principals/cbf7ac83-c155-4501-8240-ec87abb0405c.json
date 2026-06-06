@@ -1,0 +1,10 @@
+{
+  "id": "cbf7ac83-c155-4501-8240-ec87abb0405c",
+  "appId": "035f9e1d-4f00-4419-bf50-bf2d87eb4878",
+  "displayName": "Azure Monitor Restricted",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient"
+  ]
+}

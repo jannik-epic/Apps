@@ -1,0 +1,11 @@
+{
+  "id": "da0386dc-08bf-4c0b-8216-a38b575e4ebf",
+  "appId": "80a10ef9-8168-493d-abf9-3297c4ef6e3c",
+  "displayName": "Microsoft.ServiceBus",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

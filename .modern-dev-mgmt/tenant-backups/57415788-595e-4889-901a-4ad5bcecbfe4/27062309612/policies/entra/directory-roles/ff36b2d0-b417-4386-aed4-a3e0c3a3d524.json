@@ -1,0 +1,7 @@
+{
+  "id": "ff36b2d0-b417-4386-aed4-a3e0c3a3d524",
+  "deletedDateTime": null,
+  "description": "Can create and manage all aspects of Windows Update deployments through the Windows Update for Business deployment service.",
+  "displayName": "Windows Update Deployment Administrator",
+  "roleTemplateId": "32696413-001a-46ae-978c-ce0f6b3620d2"
+}

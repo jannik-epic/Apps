@@ -1,0 +1,11 @@
+{
+  "id": "6f30767b-6a49-4701-9bbc-1534e74f5d66",
+  "appId": "2a7c3d84-8263-430c-8754-ffaa0421811b",
+  "displayName": "Teams Manager High",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "NoLiveSdkSupport",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

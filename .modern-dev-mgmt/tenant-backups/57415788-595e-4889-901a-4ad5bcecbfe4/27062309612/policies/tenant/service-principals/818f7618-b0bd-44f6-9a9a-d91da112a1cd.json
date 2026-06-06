@@ -1,0 +1,11 @@
+{
+  "id": "818f7618-b0bd-44f6-9a9a-d91da112a1cd",
+  "appId": "76c7f279-7959-468f-8943-3954880e0d8c",
+  "displayName": "Azure SQL Managed Instance to Microsoft.Network",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

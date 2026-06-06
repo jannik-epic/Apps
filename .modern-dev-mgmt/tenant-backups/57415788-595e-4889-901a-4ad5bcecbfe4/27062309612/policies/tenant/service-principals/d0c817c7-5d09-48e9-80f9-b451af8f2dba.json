@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "d0c817c7-5d09-48e9-80f9-b451af8f2dba",
+  "appId": "d0c817c7-5d09-48e9-80f9-b451af8f2dba",
+  "displayName": "Rhea (Research)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

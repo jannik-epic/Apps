@@ -1,0 +1,13 @@
+{
+  "id": "e5580e86-7ee5-462e-b52f-fad549022b17",
+  "displayName": "DESKTOP-AVMTT7M",
+  "deviceId": "20474ca2-b47a-4fa6-8100-6759a0a6d93e",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.19043.928",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2021-06-11T06:36:25Z"
+}

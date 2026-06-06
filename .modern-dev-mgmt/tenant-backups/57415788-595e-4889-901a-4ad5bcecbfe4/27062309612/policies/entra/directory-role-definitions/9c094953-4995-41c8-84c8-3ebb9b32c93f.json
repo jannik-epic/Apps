@@ -1,0 +1,15 @@
+{
+  "id": "9c094953-4995-41c8-84c8-3ebb9b32c93f",
+  "description": "Deprecated - Do Not Use.",
+  "displayName": "Device Join",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "9c094953-4995-41c8-84c8-3ebb9b32c93f",
+  "version": "1",
+  "rolePermissions": [],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('9c094953-4995-41c8-84c8-3ebb9b32c93f')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": []
+}

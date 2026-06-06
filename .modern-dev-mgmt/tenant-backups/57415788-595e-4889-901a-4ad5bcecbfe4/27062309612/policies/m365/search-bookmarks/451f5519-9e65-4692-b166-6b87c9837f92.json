@@ -1,0 +1,83 @@
+{
+  "displayName": "MSX Insights",
+  "description": "Find role-based business insights for sales team members, managers, and leaders.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "451f5519-9e65-4692-b166-6b87c9837f92",
+  "webUrl": "https://msxinsights.microsoft.com/",
+  "lastModifiedDateTime": "2023-04-13T23:39:56Z",
+  "keywords": {
+    "keywords": [
+      "msx",
+      "microsoft sales",
+      "microsoft sales experience",
+      "msxinsights",
+      "ms sales",
+      "sales tool"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Hier finden Sie rollenbasierte Geschäftseinblicke für Mitglieder von Vertriebsteams, Manager und Führungskräfte.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Información de MSX",
+      "webUrl": null,
+      "description": "Busque información empresarial basada en roles para miembros del equipo de ventas, administradores y líderes.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Insights MSX",
+      "webUrl": null,
+      "description": "Recherchez des informations basées sur les rôles des membres de l’équipe commerciale, des responsables et des gestionnaires.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Consente di trovare dati analitici aziendali in base al ruolo per i membri del team di vendita, i manager e i leader.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "MSX インサイト",
+      "webUrl": null,
+      "description": "営業チームのメンバー、マネージャー、リーダー向けのロールベースのビジネス インサイトを見つけます。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Encontre insights de negócios baseados em função para membros, gerentes e líderes da equipe de vendas",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

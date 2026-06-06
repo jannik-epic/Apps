@@ -1,0 +1,12 @@
+{
+  "id": "912ee351-163b-411e-9b4e-3ef6569c1255",
+  "appId": "67a22a09-a89e-4845-95da-28a8e6f7069d",
+  "displayName": "PowerPlatform-a365outlookmailmcp-Connector",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

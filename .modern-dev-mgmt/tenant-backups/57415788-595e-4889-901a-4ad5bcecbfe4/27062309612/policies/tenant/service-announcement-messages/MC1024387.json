@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-03-05T23:44:49Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2025-03-05T23:45:13.257Z",
+  "title": "Microsoft Purview | Data Loss Prevention: New predicates for email DLP to detect number of domains or recipients",
+  "id": "MC1024387",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

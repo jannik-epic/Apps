@@ -1,0 +1,14 @@
+{
+  "startDateTime": "2026-03-30T21:48:55Z",
+  "endDateTime": "2026-10-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-07T16:17:53.903Z",
+  "title": "(Updated) Microsoft 365 Copilot: New chat-first design for the Copilot mobile app",
+  "id": "MC1266021",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

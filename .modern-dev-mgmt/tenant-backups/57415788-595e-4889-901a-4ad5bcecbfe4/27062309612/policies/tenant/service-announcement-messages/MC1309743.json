@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-13T23:08:18Z",
+  "endDateTime": "2026-09-03T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-13T23:08:25.52Z",
+  "title": "Viva Engage: Email updates for frontline users without an active Exchange mailbox",
+  "id": "MC1309743",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva"
+  ]
+}

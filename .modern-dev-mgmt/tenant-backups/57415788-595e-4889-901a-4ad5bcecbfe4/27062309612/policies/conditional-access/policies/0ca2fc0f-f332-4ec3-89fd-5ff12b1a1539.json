@@ -1,0 +1,72 @@
+{
+  "id": "0ca2fc0f-f332-4ec3-89fd-5ff12b1a1539",
+  "templateId": null,
+  "displayName": "CLOUD APPS: All | LOCATION: Any | DEVICE: All | CLIENT: All | Force MFA for Admins Roles",
+  "createdDateTime": "2022-05-04T16:16:52.2438144Z",
+  "modifiedDateTime": null,
+  "state": "disabled",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "browser",
+      "mobileAppsAndDesktopClients"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "dbfaab1d-36ba-4b86-990c-ce591706a880"
+      ],
+      "includeRoles": [
+        "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+        "fe930be7-5e62-47db-91af-98c3a49a38b1",
+        "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+        "e8611ab8-c189-46e8-94e1-60213ab1f814",
+        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+        "966707d0-3269-4727-9be2-8c3a10f19b9d",
+        "3a2c62db-5318-420d-8d74-23affee5d9d5",
+        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+        "62e90394-69f5-4237-9190-012177145e10",
+        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+        "b0f54661-2d74-4c50-afa3-1ec803f12efe"
+      ],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "mfa"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('0ca2fc0f-f332-4ec3-89fd-5ff12b1a1539')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

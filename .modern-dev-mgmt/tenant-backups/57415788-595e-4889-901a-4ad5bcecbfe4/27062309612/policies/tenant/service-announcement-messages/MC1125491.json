@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-07-30T23:48:11Z",
+  "endDateTime": "2026-07-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-06-05T21:41:55.027Z",
+  "title": "(Updated) Microsoft Outlook for Windows: Add attachments while offline",
+  "id": "MC1125491",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online",
+    "Microsoft 365 apps"
+  ]
+}

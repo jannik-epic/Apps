@@ -1,0 +1,8 @@
+{
+  "id": "cbc2efb3-b9d3-4845-98db-dbac97e6a4b4",
+  "appId": "01cb2876-7ebd-4aa4-9cc9-d28bd4d359a9",
+  "displayName": "Device Registration Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

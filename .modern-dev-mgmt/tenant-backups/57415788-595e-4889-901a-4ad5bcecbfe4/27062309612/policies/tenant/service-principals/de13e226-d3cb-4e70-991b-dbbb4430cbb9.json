@@ -1,0 +1,13 @@
+{
+  "id": "de13e226-d3cb-4e70-991b-dbbb4430cbb9",
+  "appId": "e03a13ee-9730-4cae-8525-47559c8cf18a",
+  "displayName": "Office Online Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient",
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

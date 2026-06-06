@@ -1,0 +1,13 @@
+{
+  "id": "fae6af89-3861-4b61-a6ce-6078468937cd",
+  "appId": "c1f33bc0-bdb4-4248-ba9b-096807ddb43e",
+  "displayName": "Office Online Unused API",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient",
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}
