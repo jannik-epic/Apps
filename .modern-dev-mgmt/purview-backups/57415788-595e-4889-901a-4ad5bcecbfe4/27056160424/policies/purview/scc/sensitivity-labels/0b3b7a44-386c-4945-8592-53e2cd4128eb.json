@@ -1,0 +1,72 @@
+{
+  "Settings": [
+    "[parentid, a7ad2310-1588-4b99-9e27-8014dc662cf9]",
+    "[contenttype, File, Email]",
+    "[tooltip, Use this classification to identify Confidential data that can be shared with approved parties outside the Organization; no encryption is applied.]",
+    "[isparent, False]",
+    "[displayname, Anyone (Not Protected)]"
+  ],
+  "LabelActions": [
+    "{\"Type\":\"applycontentmarking\",\"SubType\":\"header\",\"Settings\":[{\"Key\":\"alignment\",\"Value\":\"Left\"},{\"Key\":\"disabled\",\"Value\":\"false\"},{\"Key\":\"fontcolor\",\"Value\":\"#000000\"},{\"Key\":\"fontsize\",\"Value\":\"10\"},{\"Key\":\"margin\",\"Value\":\"5\"},{\"Key\":\"placement\",\"Value\":\"Header\"},{\"Key\":\"text\",\"Value\":\"Confidential (Not Protected)\"}]}",
+    "{\"Type\":\"encrypt\",\"SubType\":null,\"Settings\":[{\"Key\":\"disabled\",\"Value\":\"true\"},{\"Key\":\"protectiontype\",\"Value\":\"removeprotection\"}]}"
+  ],
+  "Conditions": [
+    "{\"And\":[{\"Or\":[{\"Key\":\"CCSI\",\"Value\":\"277cfa4b-6eaa-4a1b-9492-099dec849971\",\"Properties\":null,\"Settings\":[{\"Key\":\"mincount\",\"Value\":\"1\"},{\"Key\":\"maxconfidence\",\"Value\":\"100\"},{\"Key\":\"groupname\",\"Value\":\"Default\"},{\"Key\":\"rulepackage\",\"Value\":\"00000000-0000-0000-0000-000000000000\"},{\"Key\":\"name\",\"Value\":\"Swiss Social Security Number AHV\"},{\"Key\":\"minconfidence\",\"Value\":\"85\"},{\"Key\":\"maxcount\",\"Value\":\"-1\"},{\"Key\":\"confidencelevel\",\"Value\":\"High\"},{\"Key\":\"autoapplytype\",\"Value\":\"Recommend\"}]}]}]}"
+  ],
+  "ColumnAssetCondition": null,
+  "SchematizedDataCondition": null,
+  "LocaleSettings": [
+    "{\"LocaleKey\":\"displayName\",\"Settings\":[{\"Key\":\"default\",\"Value\":\"Anyone (Not Protected)\"}]}",
+    "{\"LocaleKey\":\"tooltip\",\"Settings\":[{\"Key\":\"default\",\"Value\":\"Use this classification to identify Confidential data that can be shared with approved parties outside the Organization; no encryption is applied.\"}]}"
+  ],
+  "ContentTypeRemovalViolations": null,
+  "DisplayName": "Anyone (Not Protected)",
+  "ParentId": "a7ad2310-1588-4b99-9e27-8014dc662cf9",
+  "AbacEnabled": null,
+  "InformationProtectionAttributeRequired": null,
+  "IsParent": false,
+  "IsLabelGroup": false,
+  "Tooltip": "Use this classification to identify Confidential data that can be shared with approved parties outside the Organization; no encryption is applied.",
+  "DefaultContentLabel": null,
+  "ContentType": "File, Email",
+  "InheritToChildItems": null,
+  "Capabilities": [
+    "AutoLabel"
+  ],
+  "ParentLabelDisplayName": "Confidential",
+  "MTOOwnerLabelId": null,
+  "MTOOwnerTenantId": null,
+  "CanonicalLabelId": null,
+  "ReadOnly": false,
+  "ExternalIdentity": "",
+  "ImmutableId": "0b3b7a44-386c-4945-8592-53e2cd4128eb",
+  "Priority": 4,
+  "Workload": "Exchange, SharePoint",
+  "Policy": "190c5c60-5372-4426-94ef-1d854951a3a0",
+  "Comment": "Use this classification to identify Confidential data that can be shared with approved parties outside the Organization; no encryption is applied.",
+  "Disabled": false,
+  "Mode": "Enforce",
+  "ObjectVersion": "710e6c9d-5c60-4296-1ee4-08dd66def919",
+  "CreatedBy": "Sanche Baskaran (Admin)",
+  "LastModifiedBy": "Admin AVE",
+  "Guid": "0b3b7a44-386c-4945-8592-53e2cd4128eb",
+  "Identity": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/Anyone",
+  "Id": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/Anyone",
+  "IsValid": true,
+  "ExchangeVersion": "0.20 (15.0.0.0)",
+  "Name": "Anyone",
+  "DistinguishedName": "CN=Anyone,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=FFO,DC=extest,DC=microsoft,DC=com",
+  "ObjectCategory": null,
+  "ObjectClass": [
+    "msExchUnifiedRule"
+  ],
+  "WhenChanged": "2025-03-19T12:10:00+00:00",
+  "WhenCreated": "2022-01-29T09:31:02+00:00",
+  "WhenChangedUTC": "2025-03-19T12:10:00Z",
+  "WhenCreatedUTC": "2022-01-29T09:31:02Z",
+  "ExchangeObjectId": "0b3b7a44-386c-4945-8592-53e2cd4128eb",
+  "OrganizationalUnitRoot": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration",
+  "OriginatingServer": "",
+  "ObjectState": "Unchanged"
+}

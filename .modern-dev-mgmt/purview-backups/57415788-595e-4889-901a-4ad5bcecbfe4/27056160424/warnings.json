@@ -1,0 +1,6 @@
+[
+  "Comm Compliance policies (Get-SupervisoryReviewPolicyV2) unavailable: The term 'Get-SupervisoryReviewPolicyV2' is not recognized as a name of a cmdlet, function, script file, or executable program.\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+  "Comm Compliance rules (Get-SupervisoryReviewRule) unavailable: The term 'Get-SupervisoryReviewRule' is not recognized as a name of a cmdlet, function, script file, or executable program.\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+  "Audit retention policies (Get-UnifiedAuditLogRetentionPolicy) unavailable: The term 'Get-UnifiedAuditLogRetentionPolicy' is not recognized as a name of a cmdlet, function, script file, or executable program.\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+  "Custom sensitive info types (Get-DlpSensitiveInformationType) unavailable: The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+]

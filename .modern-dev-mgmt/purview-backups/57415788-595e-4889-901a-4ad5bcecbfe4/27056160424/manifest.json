@@ -1,0 +1,1035 @@
+{
+  "schemaVersion": 1,
+  "source": "modern-dev-mgmt",
+  "connector": "purview-scc-powershell",
+  "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "backupId": "27056160424",
+  "createdAt": "2026-06-06T07:27:24.8160731+00:00",
+  "label": "purview-e2e-2",
+  "counts": {
+    "PurviewDlpCompliancePolicy": 14,
+    "PurviewDlpComplianceRule": 22,
+    "PurviewRetentionCompliancePolicy": 0,
+    "PurviewRetentionComplianceRule": 0,
+    "PurviewComplianceTag": 1,
+    "PurviewSensitivityLabel": 23,
+    "PurviewLabelPolicy": 6,
+    "PurviewAutoSensitivityLabelPolicy": 3,
+    "PurviewAutoSensitivityLabelRule": 5,
+    "PurviewInformationBarrierPolicy": 0,
+    "PurviewOrganizationSegment": 0,
+    "PurviewSupervisoryReviewPolicy": 0,
+    "PurviewSupervisoryReviewRule": 0,
+    "PurviewAuditLogRetentionPolicy": 0,
+    "PurviewSensitiveInformationType": 0,
+    "PurviewSITRulePackage": 1,
+    "PurviewAdaptiveScope": 0,
+    "PurviewEndpointDlpSettings": 1
+  },
+  "warningCount": 4,
+  "policies": [
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/cdff0a32-fa36-4094-ba87-4eef0f99269b.json",
+      "backupPolicyId": "cdff0a32-fa36-4094-ba87-4eef0f99269b",
+      "displayName": "Default policy for Teams",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Teams",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/3a198334-4b68-45bf-bfa6-da9ec312fbbc.json",
+      "backupPolicyId": "3a198334-4b68-45bf-bfa6-da9ec312fbbc",
+      "displayName": "Default policy for devices",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/9f408398-03bf-4dd0-9535-f3eaaecde1e7.json",
+      "backupPolicyId": "9f408398-03bf-4dd0-9535-f3eaaecde1e7",
+      "displayName": "EPF_TST_PUBLIC-LABEL_NOTIFICATION",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 2
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/ecaaf69a-bfde-45d2-be84-c6d48c5ec376.json",
+      "backupPolicyId": "ecaaf69a-bfde-45d2-be84-c6d48c5ec376",
+      "displayName": "EPF_TST_-DLP_for_Endpoint",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, EndpointDevices",
+        "Priority": 3
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/0f6ecc47-59ec-42ed-a4be-601d9944d6a8.json",
+      "backupPolicyId": "0f6ecc47-59ec-42ed-a4be-601d9944d6a8",
+      "displayName": "DLP Policy Block Internal Files",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 4
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/572a9627-ffda-4811-aa48-76154ff636cd.json",
+      "backupPolicyId": "572a9627-ffda-4811-aa48-76154ff636cd",
+      "displayName": "EFL AI App DLP Policy",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 5
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/3d47320d-4668-4b8b-8381-f0acac6d65c7.json",
+      "backupPolicyId": "3d47320d-4668-4b8b-8381-f0acac6d65c7",
+      "displayName": "RTBF - MM",
+      "description": null,
+      "summary": {
+        "Mode": "Disable",
+        "Enabled": false,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 6
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/af9f2318-2802-4561-aa6c-3317bfd8913a.json",
+      "backupPolicyId": "af9f2318-2802-4561-aa6c-3317bfd8913a",
+      "displayName": "EPF_OP-EX-IRM-NOLABEL-EXT-SHARING_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "TestWithoutNotifications",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 7
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/0cf2d3e3-d6fb-4208-b023-13656b54e1ae.json",
+      "backupPolicyId": "0cf2d3e3-d6fb-4208-b023-13656b54e1ae",
+      "displayName": "EPF_OP-EX-IRM-INTERNALONLY-EXT-SHARING_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "TestWithoutNotifications",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 8
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/f64f7523-5a1a-492f-a06c-facc71d6f7f3.json",
+      "backupPolicyId": "f64f7523-5a1a-492f-a06c-facc71d6f7f3",
+      "displayName": "EPF_PC-TEAMS-CID-EXT-SHARING_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "TestWithoutNotifications",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Teams",
+        "Priority": 9
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/b99d5040-2b27-4f17-a413-709911bbd06a.json",
+      "backupPolicyId": "b99d5040-2b27-4f17-a413-709911bbd06a",
+      "displayName": "EPF_HR-TEAMS-PID-EMPLOYEE-EXT-SHARING_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "TestWithoutNotifications",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Teams",
+        "Priority": 10
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/10675e4e-aab2-4088-b238-96f9a504f5ea.json",
+      "backupPolicyId": "10675e4e-aab2-4088-b238-96f9a504f5ea",
+      "displayName": "Multi-App DLP Policy",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 11
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/b24c9956-0d03-4025-b86d-7b9ca1cc1a26.json",
+      "backupPolicyId": "b24c9956-0d03-4025-b86d-7b9ca1cc1a26",
+      "displayName": "TST-SP-Only",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 12
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/15c796d4-6aa8-4a4b-ace5-1f9b1ae53201.json",
+      "backupPolicyId": "15c796d4-6aa8-4a4b-ace5-1f9b1ae53201",
+      "displayName": "Demo E-Mail Waiver",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 13
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/08217974-a53d-4bba-8601-d2f5a27649c8.json",
+      "backupPolicyId": "08217974-a53d-4bba-8601-d2f5a27649c8",
+      "displayName": "DLPRULE_CONTENT-INTERNALONLY-OFFICE-PDF_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/d732ff24-86c4-402c-a1f0-2df8300638b2.json",
+      "backupPolicyId": "d732ff24-86c4-402c-a1f0-2df8300638b2",
+      "displayName": "Block Internal",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/811d3e33-6315-4d60-8b2a-33446db8b64d.json",
+      "backupPolicyId": "811d3e33-6315-4d60-8b2a-33446db8b64d",
+      "displayName": "Confidential SREM",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/406d8ad3-166c-4774-a907-da8242808495.json",
+      "backupPolicyId": "406d8ad3-166c-4774-a907-da8242808495",
+      "displayName": "Block Credit Cards",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/f5c8f356-5e6d-40ae-a1c4-ee5eaf0f276b.json",
+      "backupPolicyId": "f5c8f356-5e6d-40ae-a1c4-ee5eaf0f276b",
+      "displayName": "Demo E-Mail-Waiver",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/c79a33fa-b57e-486f-ab53-79498357bd1d.json",
+      "backupPolicyId": "c79a33fa-b57e-486f-ab53-79498357bd1d",
+      "displayName": "Default Endpoint DLP Policy Rule - Low Volume",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/d9f63ce9-d27e-49c5-9a4f-ae54f4b63de4.json",
+      "backupPolicyId": "d9f63ce9-d27e-49c5-9a4f-ae54f4b63de4",
+      "displayName": "Default Endpoint DLP Policy Rule - High Volume",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/adcd20bd-ac44-4bd6-a59a-893d862954a1.json",
+      "backupPolicyId": "adcd20bd-ac44-4bd6-a59a-893d862954a1",
+      "displayName": "sdfgasdf",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/f4e1d95f-c74b-404a-8aaf-e32b5ce9ee7f.json",
+      "backupPolicyId": "f4e1d95f-c74b-404a-8aaf-e32b5ce9ee7f",
+      "displayName": "EFL Block US SSN",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/f6838d8f-93dd-40b9-a3f1-2e689a708fa3.json",
+      "backupPolicyId": "f6838d8f-93dd-40b9-a3f1-2e689a708fa3",
+      "displayName": "EFL Block Credit Cards",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/fe2b902b-e647-4cc9-a85a-1a5e9469c729.json",
+      "backupPolicyId": "fe2b902b-e647-4cc9-a85a-1a5e9469c729",
+      "displayName": "EFL Block IBAN",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 2
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/29699706-d551-4df7-a72d-7b1c13a2d04b.json",
+      "backupPolicyId": "29699706-d551-4df7-a72d-7b1c13a2d04b",
+      "displayName": "EFL Block German ID",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 3
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/ccc6f234-2656-40ac-be10-9217bcec8e41.json",
+      "backupPolicyId": "ccc6f234-2656-40ac-be10-9217bcec8e41",
+      "displayName": "EFL Block User Credentials",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 4
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/ba22faba-2753-472a-bcae-4f9c081e127e.json",
+      "backupPolicyId": "ba22faba-2753-472a-bcae-4f9c081e127e",
+      "displayName": "EFL Block API Keys",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 5
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/2291a06e-716c-4aac-a667-ef90f9480408.json",
+      "backupPolicyId": "2291a06e-716c-4aac-a667-ef90f9480408",
+      "displayName": "EFL Block General Passwords",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 6
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/2a111337-8715-4d0e-a1ea-07f15e1ac9c2.json",
+      "backupPolicyId": "2a111337-8715-4d0e-a1ea-07f15e1ac9c2",
+      "displayName": "PUBLIC-LABEL_NOTIFICATION",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/4617a0ad-6e3a-4476-a89d-c125c22bddee.json",
+      "backupPolicyId": "4617a0ad-6e3a-4476-a89d-c125c22bddee",
+      "displayName": "DLPRULE_CONTENT-NOLABEL-OFFICE-PDF_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/6b540c51-e33b-4f17-98b0-4972aaf28394.json",
+      "backupPolicyId": "6b540c51-e33b-4f17-98b0-4972aaf28394",
+      "displayName": "TST-SSN-CreatedByMemberOf",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/16f2ee2c-5bd1-4767-9b0e-7641ede5e48b.json",
+      "backupPolicyId": "16f2ee2c-5bd1-4767-9b0e-7641ede5e48b",
+      "displayName": "DLPRULE_CONTAINS-PII-SHARING-OUTSIDE_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Teams",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/396f666d-7bda-462b-9cfb-be7f360c11a1.json",
+      "backupPolicyId": "396f666d-7bda-462b-9cfb-be7f360c11a1",
+      "displayName": "Default Teams DLP policy rule",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Teams",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/eb9b08d6-88c2-4e84-a450-ad7b56c9bd07.json",
+      "backupPolicyId": "eb9b08d6-88c2-4e84-a450-ad7b56c9bd07",
+      "displayName": "Test AI DLP for Endpoint",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, EndpointDevices",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/87d35d79-bd36-41e1-8831-69f03abb115e.json",
+      "backupPolicyId": "87d35d79-bd36-41e1-8831-69f03abb115e",
+      "displayName": "DLPRULE_CONTAINS-CID-SHARING-OUTSIDE_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Teams",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewComplianceTag",
+      "path": "policies/purview/scc/retention-labels/bbcae8e3-69d4-4d5c-ab02-c0940758ed1b.json",
+      "backupPolicyId": "bbcae8e3-69d4-4d5c-ab02-c0940758ed1b",
+      "displayName": "Test right to be forgotten",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/2516de01-0e51-4f0b-9811-5ac515e9fbf3.json",
+      "backupPolicyId": "2516de01-0e51-4f0b-9811-5ac515e9fbf3",
+      "displayName": "Non-Business",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/2fe6c730-c5ad-4e67-98b0-893430468979.json",
+      "backupPolicyId": "2fe6c730-c5ad-4e67-98b0-893430468979",
+      "displayName": "Public",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/65e29b03-cd10-4c6b-9358-aa83c52344f5.json",
+      "backupPolicyId": "65e29b03-cd10-4c6b-9358-aa83c52344f5",
+      "displayName": "General",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 2
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/a7ad2310-1588-4b99-9e27-8014dc662cf9.json",
+      "backupPolicyId": "a7ad2310-1588-4b99-9e27-8014dc662cf9",
+      "displayName": "Confidential",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 3
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/0b3b7a44-386c-4945-8592-53e2cd4128eb.json",
+      "backupPolicyId": "0b3b7a44-386c-4945-8592-53e2cd4128eb",
+      "displayName": "Anyone",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 4
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/f7e24733-0b26-4ab1-b1ff-e44dd258d738.json",
+      "backupPolicyId": "f7e24733-0b26-4ab1-b1ff-e44dd258d738",
+      "displayName": "External",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 5
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/3a7ef968-86e8-4690-bd84-90c81f174465.json",
+      "backupPolicyId": "3a7ef968-86e8-4690-bd84-90c81f174465",
+      "displayName": "Internal",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 6
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/1ec3de7a-5edd-4f88-91fc-8ee7f3661122.json",
+      "backupPolicyId": "1ec3de7a-5edd-4f88-91fc-8ee7f3661122",
+      "displayName": "Recipients Only",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 7
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/9dafac21-a335-4ed5-b9ed-962cf2fa354e.json",
+      "backupPolicyId": "9dafac21-a335-4ed5-b9ed-962cf2fa354e",
+      "displayName": "Collaboration-Public",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 8
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/6baf1559-1627-4dd3-a858-0080edc2faa0.json",
+      "backupPolicyId": "6baf1559-1627-4dd3-a858-0080edc2faa0",
+      "displayName": "Collaboration",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 9
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/999d0182-7680-4cfa-b7a0-9581cd9d4111.json",
+      "backupPolicyId": "999d0182-7680-4cfa-b7a0-9581cd9d4111",
+      "displayName": "Collaboration-Public-Specific-People",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 10
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/eaff771e-d9a9-4693-a5ae-d37da5db9884.json",
+      "backupPolicyId": "eaff771e-d9a9-4693-a5ae-d37da5db9884",
+      "displayName": "Collaboration Public 2",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 11
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/231d4608-52ef-4673-aee1-f4388b3ea87c.json",
+      "backupPolicyId": "231d4608-52ef-4673-aee1-f4388b3ea87c",
+      "displayName": "Collaboration Internal",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 12
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/4e801365-add0-4416-89bb-4408f70b21e9.json",
+      "backupPolicyId": "4e801365-add0-4416-89bb-4408f70b21e9",
+      "displayName": "Öffentlich",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 13
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/fb1ac1a0-74a4-4618-97f6-27150e4d8bd2.json",
+      "backupPolicyId": "fb1ac1a0-74a4-4618-97f6-27150e4d8bd2",
+      "displayName": "Intern",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 14
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/09336b0c-1a84-4a6b-a7c1-f8326fbb6ca3.json",
+      "backupPolicyId": "09336b0c-1a84-4a6b-a7c1-f8326fbb6ca3",
+      "displayName": "Vertraulich – (MB und Partner Dienstleister)",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 15
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/724b5003-1f75-4650-8e3d-0ab2a75725a6.json",
+      "backupPolicyId": "724b5003-1f75-4650-8e3d-0ab2a75725a6",
+      "displayName": "Vertraulich – (MB und Partner – Dienstleister)",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 16
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/1ec7205b-7676-403b-89f4-08a2392ea3ad.json",
+      "backupPolicyId": "1ec7205b-7676-403b-89f4-08a2392ea3ad",
+      "displayName": "Vertraulich – (MB intern)",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 17
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/841c46a4-ce9a-4ea5-a212-a81c3fa74c11.json",
+      "backupPolicyId": "841c46a4-ce9a-4ea5-a212-a81c3fa74c11",
+      "displayName": "Streng Vertraulich",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 18
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/064ca37b-7e89-4744-b13f-dda2574f7697.json",
+      "backupPolicyId": "064ca37b-7e89-4744-b13f-dda2574f7697",
+      "displayName": "Streng Vertraulich – (MB und Partner – Dienstleister)",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 19
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/5227479b-f341-437d-90c0-47b13efc1c9a.json",
+      "backupPolicyId": "5227479b-f341-437d-90c0-47b13efc1c9a",
+      "displayName": "Streng Vertraulich – (MB intern)",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 20
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/4524ca4d-c81d-40ee-9834-c75623ed1988.json",
+      "backupPolicyId": "4524ca4d-c81d-40ee-9834-c75623ed1988",
+      "displayName": "Unverschlüsselte Kundenkommunikation (Kunde mit Zustimmung)",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 21
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/6daa2b8c-c25f-40b2-9bc3-6f2404405bfe.json",
+      "backupPolicyId": "6daa2b8c-c25f-40b2-9bc3-6f2404405bfe",
+      "displayName": "Highly Sensitive Data",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 22
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewLabelPolicy",
+      "path": "policies/purview/scc/label-policies/45726699-eff9-4317-a319-b67796e0fefb.json",
+      "backupPolicyId": "45726699-eff9-4317-a319-b67796e0fefb",
+      "displayName": "Default classification labels",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewLabelPolicy",
+      "path": "policies/purview/scc/label-policies/b8143066-0d19-4f81-addc-356b843e9193.json",
+      "backupPolicyId": "b8143066-0d19-4f81-addc-356b843e9193",
+      "displayName": "AIP_EPF_TST",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup, Applications",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewLabelPolicy",
+      "path": "policies/purview/scc/label-policies/5ace945b-673c-4749-b6b0-a82c6ce487c1.json",
+      "backupPolicyId": "5ace945b-673c-4749-b6b0-a82c6ce487c1",
+      "displayName": "Collaboration-Public-Specific-People-Policy",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup, Applications",
+        "Priority": 2
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewLabelPolicy",
+      "path": "policies/purview/scc/label-policies/8d89de3c-f45a-446f-bce3-899e890943a1.json",
+      "backupPolicyId": "8d89de3c-f45a-446f-bce3-899e890943a1",
+      "displayName": "test",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup, Applications",
+        "Priority": 3
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewLabelPolicy",
+      "path": "policies/purview/scc/label-policies/732cafd8-71db-4c31-9b79-4300ba51cfa0.json",
+      "backupPolicyId": "732cafd8-71db-4c31-9b79-4300ba51cfa0",
+      "displayName": "Test2",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup, Applications",
+        "Priority": 4
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewLabelPolicy",
+      "path": "policies/purview/scc/label-policies/a0b98274-0012-4eb8-adc8-9a43f4ebff7b.json",
+      "backupPolicyId": "a0b98274-0012-4eb8-adc8-9a43f4ebff7b",
+      "displayName": "MB-Demo",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup, Applications",
+        "Priority": 5
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelPolicy",
+      "path": "policies/purview/scc/auto-label-policies/5c35e9d5-29bc-4d07-988e-e5375d8c2f0a.json",
+      "backupPolicyId": "5c35e9d5-29bc-4d07-988e-e5375d8c2f0a",
+      "displayName": "Auto Label Policy (Policy tip)",
+      "description": null,
+      "summary": {
+        "Mode": "TestWithoutNotifications",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications, Azure, AWS",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelPolicy",
+      "path": "policies/purview/scc/auto-label-policies/7fc84d32-fbe9-44a6-a0c6-20eceae274bc.json",
+      "backupPolicyId": "7fc84d32-fbe9-44a6-a0c6-20eceae274bc",
+      "displayName": "Internal AVH and Emails",
+      "description": null,
+      "summary": {
+        "Mode": "TestWithoutNotifications",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications, Azure, AWS",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelPolicy",
+      "path": "policies/purview/scc/auto-label-policies/611b0470-fa7b-4830-a54b-445795bb1012.json",
+      "backupPolicyId": "611b0470-fa7b-4830-a54b-445795bb1012",
+      "displayName": "Internal AVH and Emails (Excel Only)",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications, Azure, AWS",
+        "Priority": 2
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelRule",
+      "path": "policies/purview/scc/auto-label-rules/3c4af3fa-6325-44d3-af9f-70755187c256.json",
+      "backupPolicyId": "3c4af3fa-6325-44d3-af9f-70755187c256",
+      "displayName": "Emails-SPO",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, PowerBI, Applications, Azure, AWS",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelRule",
+      "path": "policies/purview/scc/auto-label-rules/e4716ba6-68a9-4ae7-81c0-8877c12ff3c1.json",
+      "backupPolicyId": "e4716ba6-68a9-4ae7-81c0-8877c12ff3c1",
+      "displayName": "Emails-ODB",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, PowerBI, Applications, Azure, AWS",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelRule",
+      "path": "policies/purview/scc/auto-label-rules/13843eeb-44b9-4452-94c8-51f422b81aa2.json",
+      "backupPolicyId": "13843eeb-44b9-4452-94c8-51f422b81aa2",
+      "displayName": "Excel search for AHV and Email-SPO",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, PowerBI, Applications, Azure, AWS",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelRule",
+      "path": "policies/purview/scc/auto-label-rules/132af8a7-5e1e-483d-bd9e-168045326c0d.json",
+      "backupPolicyId": "132af8a7-5e1e-483d-bd9e-168045326c0d",
+      "displayName": "Encrypt Internal AVH and Emails Details when shared-SPO",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, PowerBI, Applications, Azure, AWS",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelRule",
+      "path": "policies/purview/scc/auto-label-rules/4d0d6d93-1e2f-425a-b58d-e7764f8efe3f.json",
+      "backupPolicyId": "4d0d6d93-1e2f-425a-b58d-e7764f8efe3f",
+      "displayName": "Encrypt Internal AVH and Emails Details when shared-ODB",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, PowerBI, Applications, Azure, AWS",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSITRulePackage",
+      "path": "policies/purview/scc/sit-rulepackages/FFO.extest.microsoft.com_Microsoft_Exchange_Hosted_Organizations_epicfusionlabs.onmicrosoft.com_Configuration_5DA58D7A-25F1-4205-93D0-BEB10054C503.json",
+      "backupPolicyId": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/5DA58D7A-25F1-4205-93D0-BEB10054C503",
+      "displayName": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/5DA58D7A-25F1-4205-93D0-BEB10054C503",
+      "description": null,
+      "summary": null,
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewEndpointDlpSettings",
+      "path": "policies/purview/scc/endpoint-dlp-settings/95e5b6f0-a2a3-4488-a6c7-ce6ce2757864.json",
+      "backupPolicyId": "95e5b6f0-a2a3-4488-a6c7-ce6ce2757864",
+      "displayName": "Settings",
+      "description": null,
+      "summary": null,
+      "restorable": true
+    }
+  ]
+}
