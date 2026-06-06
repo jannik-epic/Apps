@@ -1,0 +1,144 @@
+name: Tenant Purview Backup
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit_snapshot:
+        description: 'Commit the snapshot'
+        required: false
+        type: boolean
+        default: true
+      backup_label:
+        description: 'Optional label'
+        required: false
+        type: string
+
+env:
+  SCC_APP_ID: 'eefa9c93-5548-419d-833c-d04ee78c0293'
+  SCC_ORG: 'epicfusionlabs.onmicrosoft.com'
+  AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
+
+jobs:
+  purview-backup:
+    name: Snapshot Purview (Security & Compliance) config
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install ExchangeOnlineManagement
+        shell: pwsh
+        run: |
+          $ProgressPreference = 'SilentlyContinue'
+          Install-Module ExchangeOnlineManagement -RequiredVersion 3.5.0 -Scope CurrentUser -Force -AllowClobber
+
+      - name: Snapshot Purview config (app-only)
+        id: snap
+        shell: pwsh
+        env:
+          SCC_CERT_PFX_B64: ${{ secrets.EFL_SCC_CERT_PFX_B64 }}
+          SCC_CERT_PWD: ${{ secrets.EFL_SCC_CERT_PWD }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $ProgressPreference = 'SilentlyContinue'
+          Import-Module ExchangeOnlineManagement
+
+          $bytes = [Convert]::FromBase64String($env:SCC_CERT_PFX_B64)
+          $cert = [System.Security.Cryptography.X509Certificates.X509Certificate2]::new($bytes, $env:SCC_CERT_PWD)
+          $Global:IsWindows = $true
+          Write-Host "Connecting app-only to Security & Compliance ($env:SCC_ORG)..."
+          Connect-IPPSSession -AppId $env:SCC_APP_ID -Certificate $cert -Organization $env:SCC_ORG -ShowBanner:$false
+
+          $backupId = $env:GITHUB_RUN_ID
+          $tenantId = $env:AZURE_TENANT_ID
+          $outDir = ".modern-dev-mgmt/purview-backups/$tenantId/$backupId"
+          New-Item -ItemType Directory -Force -Path $outDir | Out-Null
+          "snapshot_dir=$outDir" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+
+          $targets = @(
+            @{ n='DLP policies';               c='Get-DlpCompliancePolicy';                    d='dlp-policies';            pt='PurviewDlpCompliancePolicy';        r=$true },
+            @{ n='DLP rules';                  c='Get-DlpComplianceRule';                      d='dlp-rules';               pt='PurviewDlpComplianceRule';          r=$true },
+            @{ n='Retention policies';         c='Get-RetentionCompliancePolicy';              d='retention-policies';      pt='PurviewRetentionCompliancePolicy';  r=$true },
+            @{ n='Retention rules';            c='Get-RetentionComplianceRule';                d='retention-rules';         pt='PurviewRetentionComplianceRule';    r=$true },
+            @{ n='Retention labels';           c='Get-ComplianceTag';                          d='retention-labels';        pt='PurviewComplianceTag';              r=$true },
+            @{ n='Sensitivity labels';         c='Get-Label';                                  d='sensitivity-labels';      pt='PurviewSensitivityLabel';           r=$true },
+            @{ n='Label publish policies';     c='Get-LabelPolicy';                            d='label-policies';          pt='PurviewLabelPolicy';                r=$true },
+            @{ n='Auto-labeling policies';     c='Get-AutoSensitivityLabelPolicy';             d='auto-label-policies';     pt='PurviewAutoSensitivityLabelPolicy'; r=$true },
+            @{ n='Auto-labeling rules';        c='Get-AutoSensitivityLabelRule';               d='auto-label-rules';        pt='PurviewAutoSensitivityLabelRule';   r=$true },
+            @{ n='Information Barrier policies'; c='Get-InformationBarrierPolicy';             d='ib-policies';             pt='PurviewInformationBarrierPolicy';   r=$true },
+            @{ n='Organization segments';      c='Get-OrganizationSegment';                    d='org-segments';            pt='PurviewOrganizationSegment';        r=$true },
+            @{ n='Comm Compliance policies';   c='Get-SupervisoryReviewPolicyV2';              d='comm-compliance-policies'; pt='PurviewSupervisoryReviewPolicy';   r=$true },
+            @{ n='Comm Compliance rules';      c='Get-SupervisoryReviewRule';                  d='comm-compliance-rules';   pt='PurviewSupervisoryReviewRule';      r=$true },
+            @{ n='Audit retention policies';   c='Get-UnifiedAuditLogRetentionPolicy';         d='audit-retention';         pt='PurviewAuditLogRetentionPolicy';    r=$true },
+            @{ n='Custom sensitive info types'; c='Get-DlpSensitiveInformationType';           d='sits';                    pt='PurviewSensitiveInformationType';   r=$true },
+            @{ n='SIT rule packages';          c='Get-DlpSensitiveInformationTypeRulePackage'; d='sit-rulepackages';        pt='PurviewSITRulePackage';             r=$true },
+            @{ n='Adaptive scopes';            c='Get-AdaptiveScope';                          d='adaptive-scopes';         pt='PurviewAdaptiveScope';              r=$true },
+            @{ n='Endpoint DLP settings';      c='Get-PolicyConfig';                           d='endpoint-dlp-settings';   pt='PurviewEndpointDlpSettings';        r=$true }
+          )
+
+          $manifestPolicies = New-Object System.Collections.Generic.List[object]
+          $warnings = New-Object System.Collections.Generic.List[string]
+          $counts = [ordered]@{}
+          foreach ($t in $targets) {
+            $dir = Join-Path $outDir ("policies/purview/scc/" + $t.d)
+            New-Item -ItemType Directory -Force -Path $dir | Out-Null
+            $n = 0
+            try {
+              $items = & $t.c -ErrorAction Stop
+              foreach ($it in @($items)) {
+                if ($null -eq $it) { continue }
+                $rawId = if ($it.Guid) { [string]$it.Guid } elseif ($it.Identity) { [string]$it.Identity } else { [string]$it.Name }
+                if (-not $rawId) { continue }
+                $safe = ($rawId -replace '[^a-zA-Z0-9._-]','_')
+                $rel = "policies/purview/scc/$($t.d)/$safe.json"
+                ($it | ConvertTo-Json -Depth 25) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8
+                $disp = if ($it.Name) { [string]$it.Name } elseif ($it.DisplayName) { [string]$it.DisplayName } else { $rawId }
+                $summary = [ordered]@{}
+                foreach ($k in @('Mode','Enabled','Workload','Priority','State')) { if ($it.PSObject.Properties[$k] -and $null -ne $it.$k) { $summary[$k] = $it.$k } }
+                $manifestPolicies.Add([ordered]@{ policyType=$t.pt; path=$rel; backupPolicyId=$rawId; displayName=$disp; description=$null; summary= ($(if($summary.Count){$summary}else{$null})); restorable=$t.r }) | Out-Null
+                $n++
+              }
+              Write-Host ("{0,-32} {1} captured" -f $t.n, $n)
+            } catch {
+              $warnings.Add("$($t.n) ($($t.c)) unavailable: $($_.Exception.Message)") | Out-Null
+              Write-Host ("{0,-32} WARN: {1}" -f $t.n, $_.Exception.Message) -ForegroundColor Yellow
+            }
+            $counts[$t.pt] = $n
+          }
+
+          $manifest = [ordered]@{
+            schemaVersion = 1
+            source = 'modern-dev-mgmt'
+            connector = 'purview-scc-powershell'
+            tenantId = $tenantId
+            backupId = $backupId
+            createdAt = (Get-Date).ToString('o')
+            label = '${{ github.event.inputs.backup_label }}'
+            counts = $counts
+            warningCount = $warnings.Count
+            policies = $manifestPolicies
+          }
+          ($manifest | ConvertTo-Json -Depth 30) | Set-Content -Path (Join-Path $outDir 'manifest.json') -Encoding UTF8
+          ($warnings | ConvertTo-Json -Depth 3) | Set-Content -Path (Join-Path $outDir 'warnings.json') -Encoding UTF8
+          $total = ($manifestPolicies.Count)
+          Write-Host ("== Purview snapshot: {0} objects, {1} warnings ==" -f $total, $warnings.Count) -ForegroundColor Green
+          "captured=$total" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          Disconnect-ExchangeOnline -Confirm:$false -ErrorAction SilentlyContinue
+
+      - name: Commit snapshot
+        if: ${{ github.event.inputs.commit_snapshot != 'false' }}
+        shell: bash
+        run: |
+          set -e
+          git config user.name "modern-dev-mgmt[bot]"
+          git config user.email "modern-dev-mgmt@users.noreply.github.com"
+          git add .modern-dev-mgmt/purview-backups
+          if git diff --cached --quiet; then
+            echo "No Purview snapshot changes to commit."
+          else
+            git commit -m "chore(purview): snapshot ${{ github.run_id }}"
+            git pull --rebase origin "${GITHUB_REF_NAME:-main}"
+            git push
+          fi
