@@ -1,0 +1,38 @@
+{
+  "id": "admincenter_owned_apps_and_services",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-addins-in-the-admin-center?view=o365-worldwide",
+  "controlCategory": "Identity",
+  "title": "Ensure 'User owned apps and services' is restricted",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p>To prohibit users installing Office Store add-ins and starting 365 trials:</p> <ol> <li>Navigate to <em>Microsoft 365 admin center</em> <a href=\"https://admin.microsoft.com\">https://admin.microsoft.com</a>.</li> <li>Click to expand <em>Settings</em> Select <em>Org settings</em>.<br />3. Under <em>Services</em> select <em>User owned apps and services</em>.<br />4. Uncheck <em>Let users access the Office Store</em> and <em>Let users start trials on </em><em>behalf of your organization</em>.<br />5. Click <em>Save</em>.</li> </ol> <p><strong>Note</strong> - Due to temporary limitations, only \"<em>Let users access the Office Store</em>\" will be taken into account in scoring this control. It is suggested to uncheck both settings for the sake of better posture.</p>",
+  "remediationImpact": "Implementation of this change will impact both end users and administrators. End users will not be able to install add-ins that they may want to install.",
+  "service": "Admincenter",
+  "threats": [
+    "Data Exfiltration",
+    "Account breach"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

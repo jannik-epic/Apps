@@ -1,0 +1,11 @@
+{
+  "id": "18d5aa14-61e0-477f-b056-0b8f637702a2",
+  "displayName": "AAD_SEC_AS_Intune-AVD VMs",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "a9b65824-d",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2023-11-14T13:40:55Z"
+}

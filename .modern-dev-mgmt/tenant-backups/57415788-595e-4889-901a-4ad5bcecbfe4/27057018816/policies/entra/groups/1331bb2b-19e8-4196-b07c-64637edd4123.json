@@ -1,0 +1,11 @@
+{
+  "id": "1331bb2b-19e8-4196-b07c-64637edd4123",
+  "displayName": "AAD_SEC_AS_ROL-Az Global Reader Bicep",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "AAD_SEC_AS_ROL-AzGlobalReader",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2024-05-31T08:08:14Z"
+}

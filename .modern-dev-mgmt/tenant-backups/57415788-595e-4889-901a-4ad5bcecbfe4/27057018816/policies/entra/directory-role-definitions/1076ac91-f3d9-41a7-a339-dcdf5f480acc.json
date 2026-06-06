@@ -1,0 +1,27 @@
+{
+  "id": "1076ac91-f3d9-41a7-a339-dcdf5f480acc",
+  "description": "Read everything in the Teams admin center, but not update anything.",
+  "displayName": "Teams Reader",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "1076ac91-f3d9-41a7-a339-dcdf5f480acc",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.office365.webPortal/allEntities/standard/read",
+        "microsoft.teams/allEntities/allProperties/read"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('1076ac91-f3d9-41a7-a339-dcdf5f480acc')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

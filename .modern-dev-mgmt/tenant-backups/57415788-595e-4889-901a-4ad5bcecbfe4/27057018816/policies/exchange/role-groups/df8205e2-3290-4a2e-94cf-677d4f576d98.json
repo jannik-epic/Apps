@@ -1,0 +1,45 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [
+    "Mailbox Search-Discovery Management",
+    "Legal Hold-Discovery Management"
+  ],
+  "Roles": [
+    "Mailbox Search",
+    "Legal Hold"
+  ],
+  "DisplayName": "",
+  "ExternalDirectoryObjectId": "",
+  "Members": [],
+  "SamAccountName": "Discovery Management{59cd0c1a26a54f54aab70e2f3950cf09}",
+  "Description": "Members of this management role group can perform searches of mailboxes in the Exchange organization for data that meets specific criteria.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "",
+  "Identity": "Discovery Management",
+  "Id": "Discovery Management",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "Discovery Management",
+  "DistinguishedName": "CN=Discovery Management,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2025-10-18T13:12:53+00:00",
+  "WhenCreated": "2021-03-23T22:17:31+00:00",
+  "WhenChangedUTC": "2025-10-18T13:12:53Z",
+  "WhenCreatedUTC": "2021-03-23T22:17:31Z",
+  "ExchangeObjectId": "df8205e2-3290-4a2e-94cf-677d4f576d98",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "df8205e2-3290-4a2e-94cf-677d4f576d98",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

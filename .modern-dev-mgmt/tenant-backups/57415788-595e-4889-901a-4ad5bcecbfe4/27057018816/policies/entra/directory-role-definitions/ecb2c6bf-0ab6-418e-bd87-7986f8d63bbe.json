@@ -1,0 +1,27 @@
+{
+  "id": "ecb2c6bf-0ab6-418e-bd87-7986f8d63bbe",
+  "description": "Read and edit the provisioning configuration of all active custom security attributes for an application.",
+  "displayName": "Attribute Provisioning Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "ecb2c6bf-0ab6-418e-bd87-7986f8d63bbe",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/servicePrincipals/synchronization.customSecurityAttributes/schema/read",
+        "microsoft.directory/servicePrincipals/synchronization.customSecurityAttributes/schema/update"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('ecb2c6bf-0ab6-418e-bd87-7986f8d63bbe')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

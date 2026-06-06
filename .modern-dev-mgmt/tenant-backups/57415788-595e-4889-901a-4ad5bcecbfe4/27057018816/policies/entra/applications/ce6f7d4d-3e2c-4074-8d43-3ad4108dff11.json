@@ -1,0 +1,26 @@
+{
+  "id": "ce6f7d4d-3e2c-4074-8d43-3ad4108dff11",
+  "appId": "338d3e76-f802-4016-aa20-4919a1285159",
+  "displayName": "Daily Docs Shared Test",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-05-27T09:58:43Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

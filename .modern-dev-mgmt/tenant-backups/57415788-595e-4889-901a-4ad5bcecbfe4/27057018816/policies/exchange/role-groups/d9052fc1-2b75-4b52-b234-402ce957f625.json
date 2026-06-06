@@ -1,0 +1,43 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [
+    "Privacy Management Investigation-Privacy Management Investigator"
+  ],
+  "Roles": [
+    "Privacy Management Investigation"
+  ],
+  "DisplayName": "",
+  "ExternalDirectoryObjectId": "",
+  "Members": [],
+  "SamAccountName": "$R4QKH0-FOKJHIU1CEIF",
+  "Description": "Administrators of privacy management solution that can create/edit policies and define global settings.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "",
+  "Identity": "Privacy Management Investigators",
+  "Id": "Privacy Management Investigators",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "Privacy Management Investigators",
+  "DistinguishedName": "CN=Privacy Management Investigators,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2025-10-18T22:39:13+00:00",
+  "WhenCreated": "2023-04-07T11:51:43+00:00",
+  "WhenChangedUTC": "2025-10-18T22:39:13Z",
+  "WhenCreatedUTC": "2023-04-07T11:51:43Z",
+  "ExchangeObjectId": "d9052fc1-2b75-4b52-b234-402ce957f625",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "d9052fc1-2b75-4b52-b234-402ce957f625",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

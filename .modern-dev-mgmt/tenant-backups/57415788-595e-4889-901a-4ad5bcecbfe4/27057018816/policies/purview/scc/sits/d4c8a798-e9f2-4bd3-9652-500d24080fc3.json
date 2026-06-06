@@ -1,0 +1,5 @@
+{
+  "id": "d4c8a798-e9f2-4bd3-9652-500d24080fc3",
+  "name": "Norway Identity Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

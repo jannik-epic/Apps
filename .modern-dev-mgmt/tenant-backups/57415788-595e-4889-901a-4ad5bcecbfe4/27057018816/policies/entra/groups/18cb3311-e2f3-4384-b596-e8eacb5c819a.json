@@ -1,0 +1,11 @@
+{
+  "id": "18cb3311-e2f3-4384-b596-e8eacb5c819a",
+  "displayName": "EPIC-MozillaFirefox-MozillaFirefox-Required",
+  "description": "Automatically created by Robopack for flow 'Mozilla Firefox'.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "4E9CB94436787CBD3A55A585A86D5F575A519C5DCA89D0740041F3D7D52E69CB",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-06-11T05:56:16Z"
+}

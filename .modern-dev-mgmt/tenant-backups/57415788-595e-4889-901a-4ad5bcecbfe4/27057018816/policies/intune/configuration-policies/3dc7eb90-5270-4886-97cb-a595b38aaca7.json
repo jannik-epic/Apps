@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2022-08-22T11:47:14.9126676Z",
+  "creationSource": null,
+  "description": "Settings to change after import:\n- Tennant ID",
+  "lastModifiedDateTime": "2022-08-22T12:04:36.3765182Z",
+  "name": "EPICLABS_DCP_DEV_WIN-OneDrive Settings",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 4,
+  "technologies": "mdm",
+  "id": "3dc7eb90-5270-4886-97cb-a595b38aaca7",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('3dc7eb90-5270-4886-97cb-a595b38aaca7')/assignments",
+  "assignments": [
+    {
+      "id": "3dc7eb90-5270-4886-97cb-a595b38aaca7_62cc56c0-5761-4af8-a3c4-e0e2c667a9ce",
+      "source": "direct",
+      "sourceId": "3dc7eb90-5270-4886-97cb-a595b38aaca7",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "62cc56c0-5761-4af8-a3c4-e0e2c667a9ce"
+      }
+    }
+  ]
+}

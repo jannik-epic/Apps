@@ -1,0 +1,5 @@
+{
+  "id": "91704742-2d51-4c3e-928b-f0600b55edb6",
+  "name": "Azure Cognitive Service Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

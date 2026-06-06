@@ -1,0 +1,114 @@
+{
+  "@odata.type": "#microsoft.graph.win32LobApp",
+  "id": "3d03c0d9-e5aa-4b71-991b-18ed7a3b4c5c",
+  "displayName": "Omnissa Horizon Client",
+  "description": "Omnissa Horizon Clients for Windows, Mac, iOS, Linux, Chrome and Android allow you to connect to your Omnissa Horizon virtual desktop from your device of choice giving you on-the-go access from any location.",
+  "publisher": "Omnissa, LLC",
+  "largeIcon": null,
+  "createdDateTime": "2026-04-15T10:30:52Z",
+  "lastModifiedDateTime": "2026-04-15T10:30:52Z",
+  "isFeatured": false,
+  "privacyInformationUrl": "https://www.omnissa.com/trust-center/#privacy-notices",
+  "informationUrl": "https://customerconnect.omnissa.com/downloads/info/slug/desktop_end_user_computing/omnissa_horizon_clients/8",
+  "owner": null,
+  "developer": "robopack.com",
+  "notes": null,
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 3,
+  "committedContentVersion": "1",
+  "fileName": "Omnissa.HorizonClient.8.18.0.51429.X64.intunewin",
+  "size": 359049664,
+  "installCommandLine": "Deploy-Application.exe -DeployMode Silent",
+  "uninstallCommandLine": "Deploy-Application.exe Uninstall -DeployMode Silent",
+  "applicableArchitectures": "x86,x64",
+  "allowedArchitectures": null,
+  "minimumFreeDiskSpaceInMB": null,
+  "minimumMemoryInMB": null,
+  "minimumNumberOfProcessors": null,
+  "minimumCpuSpeedInMHz": null,
+  "msiInformation": null,
+  "setupFilePath": "Omnissa.HorizonClient.8.18.0.51429.X64.exe",
+  "minimumSupportedWindowsRelease": "1607",
+  "displayVersion": "8.18.0.51429",
+  "allowAvailableUninstall": false,
+  "activeInstallScript": null,
+  "activeUninstallScript": null,
+  "minimumSupportedOperatingSystem": {
+    "v8_0": false,
+    "v8_1": false,
+    "v10_0": false,
+    "v10_1607": true,
+    "v10_1703": false,
+    "v10_1709": false,
+    "v10_1803": false,
+    "v10_1809": false,
+    "v10_1903": false,
+    "v10_1909": false,
+    "v10_2004": false,
+    "v10_2H20": false,
+    "v10_21H1": false
+  },
+  "detectionRules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppRegistryDetection",
+      "check32BitOn64System": true,
+      "keyPath": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{c4c663a4-51a0-4c97-8176-8b573489579a}",
+      "valueName": "DisplayVersion",
+      "detectionType": "version",
+      "operator": "equal",
+      "detectionValue": "8.18.0.51429"
+    }
+  ],
+  "requirementRules": [],
+  "rules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppRegistryRule",
+      "ruleType": "detection",
+      "check32BitOn64System": true,
+      "keyPath": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{c4c663a4-51a0-4c97-8176-8b573489579a}",
+      "valueName": "DisplayVersion",
+      "operationType": "version",
+      "operator": "equal",
+      "comparisonValue": "8.18.0.51429"
+    }
+  ],
+  "installExperience": {
+    "runAsAccount": "system",
+    "maxRunTimeInMinutes": 60,
+    "deviceRestartBehavior": "suppress"
+  },
+  "returnCodes": [
+    {
+      "returnCode": 0,
+      "type": "success"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('3d03c0d9-e5aa-4b71-991b-18ed7a3b4c5c')/microsoft.graph.win32LobApp/assignments",
+  "assignments": [
+    {
+      "id": "b232f57c-5d49-4610-bb2c-e2c14a0b5c6d_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "b232f57c-5d49-4610-bb2c-e2c14a0b5c6d"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
+        "notifications": "showAll",
+        "restartSettings": null,
+        "installTimeSettings": null,
+        "deliveryOptimizationPriority": "notConfigured",
+        "autoUpdateSettings": null
+      }
+    }
+  ]
+}

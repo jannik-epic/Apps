@@ -1,0 +1,11 @@
+{
+  "id": "8b9a6d6c-2399-40b9-8f0b-fc9f298ac534",
+  "displayName": "AAD_SEC_AS_CAC-Exclude from MFA enforcement on Browers",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "af79d8b3-a",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-08-22T11:46:54Z"
+}

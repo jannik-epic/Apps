@@ -1,0 +1,34 @@
+{
+  "RetentionId": "cf19b8c0-5b0a-4964-93ca-0bec2a5b589b",
+  "RetentionPolicyTagLinks": [
+    "Never Delete",
+    "AsyncOperationNotification",
+    "ModeratedRecipients",
+    "AutoGroup"
+  ],
+  "IsDefault": false,
+  "IsDefaultArbitrationMailbox": true,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "1.0 (14.0.100.0)",
+  "Name": "ArbitrationMailbox",
+  "DistinguishedName": "CN=ArbitrationMailbox,CN=Retention Policies Container,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "ArbitrationMailbox",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Mailbox-Recipient-Template",
+  "ObjectClass": [
+    "top",
+    "msExchRecipientTemplate",
+    "msExchMailboxRecipientTemplate"
+  ],
+  "WhenChanged": "2025-10-18T14:15:06+00:00",
+  "WhenCreated": "2021-05-29T08:17:45+00:00",
+  "WhenChangedUTC": "2025-10-18T14:15:06Z",
+  "WhenCreatedUTC": "2021-05-29T08:17:45Z",
+  "ExchangeObjectId": "cf19b8c0-5b0a-4964-93ca-0bec2a5b589b",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "ArbitrationMailbox",
+  "Guid": "cf19b8c0-5b0a-4964-93ca-0bec2a5b589b",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Unchanged"
+}

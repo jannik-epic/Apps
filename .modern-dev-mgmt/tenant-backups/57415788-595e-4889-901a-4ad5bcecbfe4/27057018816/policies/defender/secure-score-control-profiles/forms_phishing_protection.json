@@ -1,0 +1,38 @@
+{
+  "id": "forms_phishing_protection",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-US/microsoft-forms/review-unblock-forms-users-detected-blocked-potential-phishing",
+  "controlCategory": "Apps",
+  "title": "Ensure internal phishing protection for Forms is enabled",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 6.0,
+  "rank": 10,
+  "remediation": "<p>To enable internal phishing protection for Forms:</p> <ol> <li>Navigate to <em>Microsoft 365 admin center</em> <a href=\"https://admin.microsoft.com\">https://admin.microsoft.com</a>.</li> <li>2. Click to expand <em>Settings</em> then select <em>Org settings</em>.<br />3. Under Services select <em>Microsoft Forms</em>.<br />4. Click the checkbox labeled Add internal phishing protection under <em>Phishing protection</em>.<br />5. Click Save.</li> </ol>",
+  "remediationImpact": "If potential phishing was detected, the form will be temporarily blocked and cannot be distributed and response collection will not happen until it is unblocked by the administrator or keywords were removed by the creator.",
+  "service": "FORMS",
+  "threats": [
+    "Data Exfiltration",
+    "Account breach"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

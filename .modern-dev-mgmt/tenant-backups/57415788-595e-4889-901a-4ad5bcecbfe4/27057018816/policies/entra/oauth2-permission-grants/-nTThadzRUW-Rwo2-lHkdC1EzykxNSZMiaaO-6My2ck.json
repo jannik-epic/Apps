@@ -1,0 +1,8 @@
+{
+  "clientId": "85d374fa-73a7-4545-be47-0a36fa51e474",
+  "consentType": "AllPrincipals",
+  "id": "-nTThadzRUW-Rwo2-lHkdC1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": "RecordsManagement.ReadWrite.All ExternalConnection.ReadWrite.All ServiceMessageViewpoint.Write Place.Read.All Chat.Read Chat.ReadWrite Policy.Read.All AppCatalog.ReadWrite.All AuditLog.Read.All SecurityEvents.Read.All Notes.Read.All User.Invite.All Reports.Read.All Mail.Read.Shared Group.ReadWrite.All Directory.ReadWrite.All Directory.AccessAsUser.All Mail.ReadWrite Mail.Send IdentityProvider.ReadWrite.All Bookings.Read.All ChannelMessage.Send TeamsTab.ReadWrite.All ChannelSettings.ReadWrite.All TeamSettings.ReadWrite.All TeamMember.ReadWrite.All ChannelMember.ReadWrite.All ChannelMessage.Read.All TeamsAppInstallation.ReadWriteForUser Team.Create ServiceMessage.Read.All ServiceHealth.Read.All Tasks.ReadWrite"
+}

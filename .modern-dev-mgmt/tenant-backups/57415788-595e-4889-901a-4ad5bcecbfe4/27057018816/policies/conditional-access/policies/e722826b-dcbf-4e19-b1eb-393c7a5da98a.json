@@ -1,0 +1,92 @@
+{
+  "id": "e722826b-dcbf-4e19-b1eb-393c7a5da98a",
+  "templateId": null,
+  "displayName": "CA010: Require MFA for Smartphones",
+  "createdDateTime": "2021-12-07T14:50:10.4939349Z",
+  "modifiedDateTime": "2025-06-26T08:46:29.9089921Z",
+  "state": "disabled",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "browser",
+      "mobileAppsAndDesktopClients"
+    ],
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [
+        "00000012-0000-0000-c000-000000000000",
+        "05a65629-4c1b-48c1-a78b-804c4abdd4af",
+        "0000000a-0000-0000-c000-000000000000",
+        "d1ddf0e4-d672-4dae-b554-9d5bdfd93547"
+      ],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "d15bce43-afce-4244-9609-4dadf43e9d88"
+      ],
+      "excludeUsers": [
+        "25e60f39-e209-497e-849c-cea2144add26"
+      ],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    },
+    "platforms": {
+      "includePlatforms": [
+        "all"
+      ],
+      "excludePlatforms": []
+    },
+    "locations": {
+      "includeLocations": [
+        "All"
+      ],
+      "excludeLocations": [
+        "AllTrusted"
+      ]
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "mfa",
+      "compliantApplication"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('e722826b-dcbf-4e19-b1eb-393c7a5da98a')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  },
+  "sessionControls": {
+    "disableResilienceDefaults": null,
+    "applicationEnforcedRestrictions": null,
+    "cloudAppSecurity": null,
+    "persistentBrowser": null,
+    "continuousAccessEvaluation": null,
+    "secureSignInSession": null,
+    "blockSensitiveActions": null,
+    "signInFrequency": {
+      "value": 1,
+      "type": "hours",
+      "authenticationType": "primaryAndSecondaryAuthentication",
+      "frequencyInterval": "timeBased",
+      "isEnabled": true
+    }
+  }
+}

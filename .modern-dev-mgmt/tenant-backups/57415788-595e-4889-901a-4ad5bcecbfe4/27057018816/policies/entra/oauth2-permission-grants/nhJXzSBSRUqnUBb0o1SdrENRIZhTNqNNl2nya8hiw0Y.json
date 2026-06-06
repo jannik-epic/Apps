@@ -1,0 +1,8 @@
+{
+  "clientId": "cd57129e-5220-4a45-a750-16f4a3549dac",
+  "consentType": "AllPrincipals",
+  "id": "nhJXzSBSRUqnUBb0o1SdrENRIZhTNqNNl2nya8hiw0Y",
+  "principalId": null,
+  "resourceId": "98215143-3653-4da3-9769-f26bc862c346",
+  "scope": "MLModel.Execute.All Report.Read.All UserState.ReadWrite.All Dataset.Read.All"
+}

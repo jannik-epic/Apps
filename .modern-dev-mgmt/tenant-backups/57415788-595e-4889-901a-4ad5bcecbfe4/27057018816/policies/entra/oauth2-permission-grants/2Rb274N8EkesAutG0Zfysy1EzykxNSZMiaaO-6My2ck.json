@@ -1,0 +1,8 @@
+{
+  "clientId": "eff616d9-7c83-4712-ac02-eb46d197f2b3",
+  "consentType": "AllPrincipals",
+  "id": "2Rb274N8EkesAutG0Zfysy1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": "AppCatalog.ReadWrite.All ChannelMessage.Send Directory.AccessAsUser.All TeamSettings.ReadWrite.All"
+}

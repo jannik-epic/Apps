@@ -1,0 +1,16 @@
+{
+  "id": "841c46a4-ce9a-4ea5-a212-a81c3fa74c11",
+  "name": "Streng Vertraulich",
+  "description": "Dokumente mit der Klasse Streng Vertraulich (Geheim) haben bei der Verletzung der Vertraulichkeit eine schwerwiegende nachteilige Auswirkung auf die MB.",
+  "color": "",
+  "sensitivity": 18,
+  "tooltip": "Dokumente mit der Klasse Streng Vertraulich (Geheim) haben bei der Verletzung der Vertraulichkeit eine schwerwiegende nachteilige Auswirkung auf die MB.",
+  "isActive": false,
+  "isAppliable": false,
+  "contentFormats": [
+    "file"
+  ],
+  "hasProtection": false,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('841c46a4-ce9a-4ea5-a212-a81c3fa74c11')/parent/$entity",
+  "parent": null
+}

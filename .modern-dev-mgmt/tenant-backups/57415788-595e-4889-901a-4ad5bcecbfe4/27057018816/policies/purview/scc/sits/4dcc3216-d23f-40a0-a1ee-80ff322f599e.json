@@ -1,0 +1,5 @@
+{
+  "id": "4dcc3216-d23f-40a0-a1ee-80ff322f599e",
+  "name": "Hungary Physical Addresses",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

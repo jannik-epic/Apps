@@ -1,0 +1,13 @@
+{
+  "id": "67b9fdb1-5303-4ed0-845c-fa8beb39364b",
+  "displayName": "73201072.00 Ruchackerstrasse 2-16, 4542 Luterbach-PRJ",
+  "description": "Projekt A",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "ProjektA",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2024-06-27T08:40:49Z"
+}

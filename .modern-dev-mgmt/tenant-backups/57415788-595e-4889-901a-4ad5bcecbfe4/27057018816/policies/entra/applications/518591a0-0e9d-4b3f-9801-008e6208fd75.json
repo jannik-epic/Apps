@@ -1,0 +1,41 @@
+{
+  "id": "518591a0-0e9d-4b3f-9801-008e6208fd75",
+  "appId": "02405757-9696-40ff-8378-cbaf78f9dfba",
+  "displayName": "Frontier-Local-Frontend",
+  "signInAudience": "AzureADMultipleOrgs",
+  "createdDateTime": "2026-01-15T16:02:04Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": [
+      "http://127.0.0.1:3000/",
+      "http://127.0.0.1:3000",
+      "http://localhost:3000/",
+      "http://localhost:3000"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "c835f39a-fce9-4946-8382-57d047e3e947",
+  "createdDateTime": "2023-09-23T11:46:13.2365878Z",
+  "lastModifiedDateTime": "2023-09-23T11:46:13.2365878Z",
+  "displayName": "All 2vCPU/8GB RAM Cloud PCs",
+  "description": "A filter containing all Cloud PCs with the 2vCPU/8GB RAM configuratio",
+  "platform": "windows10AndLater",
+  "rule": "(device.model -contains \"2vCPU/8GB\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

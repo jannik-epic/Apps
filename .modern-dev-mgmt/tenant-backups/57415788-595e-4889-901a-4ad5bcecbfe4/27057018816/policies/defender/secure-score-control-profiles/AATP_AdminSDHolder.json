@@ -1,0 +1,35 @@
+{
+  "id": "AATP_AdminSDHolder",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://aka.ms/ispmsdholder",
+  "controlCategory": "Identity",
+  "title": "Remove access rights on suspicious accounts with the Admin SDHolder permission",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 67,
+  "remediation": "1. Review the list of exposed entities to discover which of your non-sensitive accounts have the Admin SDHolder permission.<br> 2. Take appropriate action on those entities by removing their privileged access rights. To achieve the full score, remediate all exposed entities.",
+  "remediationImpact": "Having non-sensitive accounts with Admin SDholder (security descriptor holder) permissions can have significant security implications. It can lead to unauthorized privilege escalation, where attackers can exploit these accounts to gain administrative access and compromise sensitive systems or data. Additionally, it increases the attack surface and makes it harder to track and mitigate security incidents, potentially exposing the organization to greater risks.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

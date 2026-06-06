@@ -1,0 +1,42 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+  "id": "7022350f-9fe5-4828-a302-84bd42685b99",
+  "lastModifiedDateTime": "2022-08-22T11:54:37.3037981Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-08-22T11:47:49.3682569Z",
+  "description": null,
+  "displayName": "EPICLAB_DCP_DEV_WIN-Disable User ESP",
+  "version": 2,
+  "omaSettings": [
+    {
+      "@odata.type": "#microsoft.graph.omaSettingBoolean",
+      "displayName": "SkipUserStatusPage",
+      "description": null,
+      "omaUri": "./Device/Vendor/MSFT/DMClient/Provider/MS DM Server/FirstSyncStatus/SkipUserStatusPage",
+      "secretReferenceValueId": null,
+      "isEncrypted": false,
+      "value": true
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('7022350f-9fe5-4828-a302-84bd42685b99')/microsoft.graph.windows10CustomConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "7022350f-9fe5-4828-a302-84bd42685b99_62cc56c0-5761-4af8-a3c4-e0e2c667a9ce",
+      "source": "direct",
+      "sourceId": "7022350f-9fe5-4828-a302-84bd42685b99",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "62cc56c0-5761-4af8-a3c4-e0e2c667a9ce"
+      }
+    }
+  ]
+}

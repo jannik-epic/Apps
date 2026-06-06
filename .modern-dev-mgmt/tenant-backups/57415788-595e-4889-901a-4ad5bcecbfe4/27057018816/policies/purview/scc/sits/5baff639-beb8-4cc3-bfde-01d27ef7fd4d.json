@@ -1,0 +1,5 @@
+{
+  "id": "5baff639-beb8-4cc3-bfde-01d27ef7fd4d",
+  "name": "Vontobel Test",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

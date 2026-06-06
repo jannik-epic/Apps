@@ -1,0 +1,5 @@
+{
+  "id": "5df987c0-8eae-4bce-ace7-b316347f3070",
+  "name": "Spain Social Security Number (SSN)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

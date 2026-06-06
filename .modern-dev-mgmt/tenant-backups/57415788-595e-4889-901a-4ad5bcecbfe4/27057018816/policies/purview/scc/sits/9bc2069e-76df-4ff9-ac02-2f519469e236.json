@@ -1,0 +1,5 @@
+{
+  "id": "9bc2069e-76df-4ff9-ac02-2f519469e236",
+  "name": "France Health Insurance Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

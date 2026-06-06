@@ -1,0 +1,177 @@
+{
+  "Mode": "Enable",
+  "DisplayName": "DLP Policy Block Internal Files",
+  "Type": "Dlp",
+  "ExchangeLocation": [],
+  "SharePointLocation": [
+    {
+      "DisplayName": "All",
+      "Name": "All",
+      "ImmutableIdentity": "All",
+      "Type": {
+        "value": 1,
+        "Value": "Tenant"
+      },
+      "Status": {
+        "value": 2,
+        "Value": "Success"
+      },
+      "Workload": {
+        "value": 2,
+        "Value": "SharePoint"
+      },
+      "SourceType": null,
+      "SourceTypeDisplayName": null,
+      "SourceProvider": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SourceEntryType": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SchemaVersion": 2,
+      "Resources": null,
+      "ScopingGroup": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "GroupSet": "Default"
+    }
+  ],
+  "SharePointLocationException": [],
+  "OneDriveLocation": [
+    {
+      "DisplayName": "All",
+      "Name": "All",
+      "ImmutableIdentity": "All",
+      "Type": {
+        "value": 1,
+        "Value": "Tenant"
+      },
+      "Status": {
+        "value": 2,
+        "Value": "Success"
+      },
+      "Workload": {
+        "value": 8,
+        "Value": "OneDriveForBusiness"
+      },
+      "SourceType": null,
+      "SourceTypeDisplayName": null,
+      "SourceProvider": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SourceEntryType": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SchemaVersion": 2,
+      "Resources": null,
+      "ScopingGroup": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "GroupSet": "Default"
+    }
+  ],
+  "OneDriveLocationException": [],
+  "ExchangeOnPremisesLocation": [],
+  "SharePointOnPremisesLocation": [],
+  "SharePointOnPremisesLocationException": [],
+  "TeamsLocation": [],
+  "TeamsLocationException": [],
+  "EndpointDlpLocation": [],
+  "EndpointDlpLocationException": [],
+  "ThirdPartyAppDlpLocation": [],
+  "ThirdPartyAppDlpLocationException": [],
+  "OnPremisesScannerDlpLocation": [],
+  "OnPremisesScannerDlpLocationException": [],
+  "PowerBIDlpLocation": [],
+  "PowerBIDlpLocationException": [],
+  "Locations": "[]",
+  "LocationInclusions": [],
+  "LocationExclusions": [],
+  "EndpointDlpExtendedLocations": "",
+  "ExchangeSender": [],
+  "ExchangeSenderException": [],
+  "PolicyTemplateInfo": null,
+  "PolicyCategory": "Unknown",
+  "MatchedItemsCount": null,
+  "TotalItemsCount": null,
+  "TopNLocationStatistics": null,
+  "WorkloadStatistics": null,
+  "IsSimulationPolicy": false,
+  "SimulationStatus": null,
+  "AutoEnableAfter": null,
+  "IsFromSmartInsights": null,
+  "IsColdDataSimulationPolicy": false,
+  "ExtendedProperties": null,
+  "Summary": false,
+  "EnforcementPlanes": null,
+  "LogicalWorkload": null,
+  "OneDriveSharedBy": [],
+  "ExceptIfOneDriveSharedBy": [],
+  "OneDriveSharedByMemberOf": [],
+  "ExceptIfOneDriveSharedByMemberOf": [],
+  "ExchangeSenderMemberOf": [],
+  "ExchangeSenderMemberOfException": [],
+  "ExchangeAdaptiveScopes": [],
+  "ExchangeAdaptiveScopesException": [],
+  "SharePointAdaptiveScopes": [],
+  "SharePointAdaptiveScopesException": [],
+  "OneDriveAdaptiveScopes": [],
+  "OneDriveAdaptiveScopesException": [],
+  "TeamsAdaptiveScopes": [],
+  "TeamsAdaptiveScopesException": [],
+  "EndpointDlpAdaptiveScopes": [],
+  "EndpointDlpAdaptiveScopesException": [],
+  "ExpectedLocations": 0,
+  "CompletedLocations": 0,
+  "FailedLocations": 0,
+  "ItemStatistics": null,
+  "RuleMatchBlob": null,
+  "ErrorMetadata": null,
+  "UserAdministrativeUnitMembershipMap": null,
+  "ForceValidate": false,
+  "PolicyRulesMetaData": "{\"WhenRulesChangedUtc\":\"2025-11-21T09:55:06.6510039Z\"}",
+  "GlobalListType": "None",
+  "PolicyConstraints": "{\"AdministrativeUnit\":[],\"DynamicRiskPrevention\":[]}",
+  "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+  "Priority": 4,
+  "ObjectVersion": "6984a64c-3422-42c7-ced7-08de28e40cda",
+  "CreatedBy": "Admin AVE",
+  "LastModifiedBy": "Admin AVE",
+  "ReadOnly": false,
+  "ExternalIdentity": "",
+  "Comment": "",
+  "Enabled": true,
+  "DistributionStatus": "Pending",
+  "DistributionSyncStatus": "Success",
+  "DistributionResults": null,
+  "LastStatusUpdateTime": null,
+  "ModificationTimeUtc": "2025-11-21T09:55:06.65",
+  "CreationTimeUtc": "2025-11-21T09:53:40.807",
+  "PolicyRBACScopes": [],
+  "Identity": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/DLP Policy Block Internal Files",
+  "Id": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/DLP Policy Block Internal Files",
+  "IsValid": true,
+  "ExchangeVersion": "0.20 (15.0.0.0)",
+  "Name": "DLP Policy Block Internal Files",
+  "DistinguishedName": "CN=DLP Policy Block Internal Files,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=FFO,DC=extest,DC=microsoft,DC=com",
+  "ObjectCategory": null,
+  "ObjectClass": [
+    "msExchUnifiedPolicy"
+  ],
+  "WhenChanged": "2025-11-21T09:55:06+00:00",
+  "WhenCreated": "2025-11-21T09:53:40+00:00",
+  "WhenChangedUTC": "2025-11-21T09:55:06Z",
+  "WhenCreatedUTC": "2025-11-21T09:53:40Z",
+  "ExchangeObjectId": "0f6ecc47-59ec-42ed-a4be-601d9944d6a8",
+  "OrganizationalUnitRoot": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "0f6ecc47-59ec-42ed-a4be-601d9944d6a8",
+  "OriginatingServer": "",
+  "ObjectState": "Changed"
+}

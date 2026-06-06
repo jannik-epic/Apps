@@ -1,0 +1,7 @@
+{
+  "id": "ddf0036a-0fb0-4a6e-b72a-bfe6a7d0afbd",
+  "deletedDateTime": null,
+  "description": "Can manage all aspects of the Intune product.",
+  "displayName": "Intune Administrator",
+  "roleTemplateId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "98da3da1-9199-4571-b7c4-b6522980b507",
+  "name": "Argentina Unique Tax Identification Key (CUIT/CUIL)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

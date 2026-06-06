@@ -1,0 +1,11 @@
+{
+  "id": "c746c34b-cb25-488e-b4ed-062ff4b06e87",
+  "displayName": "MDM-LibreOffice Language Pack-Available",
+  "description": "Modern Dev Mgmt available assignment group for LibreOffice Language Pack.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "mdm-libreoffice-language-pack-available-47ba9e",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-05-22T07:43:44Z"
+}

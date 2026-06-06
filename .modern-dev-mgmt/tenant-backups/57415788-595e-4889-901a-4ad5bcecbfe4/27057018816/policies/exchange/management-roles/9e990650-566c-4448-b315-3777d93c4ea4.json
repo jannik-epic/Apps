@@ -1,0 +1,41 @@
+{
+  "RoleEntries": [
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Set-LabelProperties -ApplyToUsers -GrantAccessToAllCompanyDomainUsers -GrantAccessToAllUsers -GrantAccessToNoUsers -Identity -Verbose"
+  ],
+  "RoleType": "SensitivityLabelAdministrator",
+  "ImplicitRecipientReadScope": "Organization",
+  "ImplicitRecipientWriteScope": "Organization",
+  "ImplicitConfigReadScope": "None",
+  "ImplicitConfigWriteScope": "None",
+  "IsRootRole": true,
+  "IsEndUserRole": false,
+  "MailboxPlanIndex": "",
+  "Description": "Lets people create, edit, delete, and view usage of sensitivity labels and their policies.",
+  "Parent": null,
+  "RoleState": "Usable",
+  "IsDeprecated": false,
+  "IsServicePrincipalRole": false,
+  "AllowEmptyRole": false,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "0.12 (14.0.451.0)",
+  "Name": "SensitivityLabelAdministrator",
+  "DistinguishedName": "CN=SensitivityLabelAdministrator,CN=Roles,CN=RBAC,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "SensitivityLabelAdministrator",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Role",
+  "ObjectClass": [
+    "top",
+    "msExchRole"
+  ],
+  "WhenChanged": "2025-10-18T18:48:22+00:00",
+  "WhenCreated": "2021-05-29T08:17:34+00:00",
+  "WhenChangedUTC": "2025-10-18T18:48:22Z",
+  "WhenCreatedUTC": "2021-05-29T08:17:34Z",
+  "ExchangeObjectId": "9e990650-566c-4448-b315-3777d93c4ea4",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "SensitivityLabelAdministrator",
+  "Guid": "9e990650-566c-4448-b315-3777d93c4ea4",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Unchanged"
+}

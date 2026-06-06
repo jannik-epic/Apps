@@ -1,0 +1,5 @@
+{
+  "id": "ed59e77e-171d-442c-9ec1-88e2ebcb5b0a",
+  "name": "France Tax Identification Number (numéro SPI.)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

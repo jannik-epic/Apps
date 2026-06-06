@@ -1,0 +1,31 @@
+{
+  "id": "b6d2d632-fbe5-495d-aaa8-7308acd921ef",
+  "appId": "df8b764a-e2c4-483b-93b8-7506c80f4796",
+  "displayName": "Frontier Admin Portal - Dev",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-01-14T09:27:59Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": true,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": [
+      "http://127.0.0.1:3001/login",
+      "http://127.0.0.1:3001/",
+      "http://localhost:3001/login",
+      "http://localhost:3001/"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

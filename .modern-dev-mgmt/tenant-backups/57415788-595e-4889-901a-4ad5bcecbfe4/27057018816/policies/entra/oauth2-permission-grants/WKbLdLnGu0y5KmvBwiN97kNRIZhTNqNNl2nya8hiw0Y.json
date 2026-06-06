@@ -1,0 +1,8 @@
+{
+  "clientId": "74cba658-c6b9-4cbb-b92a-6bc1c2237dee",
+  "consentType": "AllPrincipals",
+  "id": "WKbLdLnGu0y5KmvBwiN97kNRIZhTNqNNl2nya8hiw0Y",
+  "principalId": null,
+  "resourceId": "98215143-3653-4da3-9769-f26bc862c346",
+  "scope": "Tenant.ReadWrite.All"
+}

@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2025-07-29T07:33:55.170363Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2025-08-13T08:42:48.6523534Z",
+  "name": "BASE-EPICLAB_DCP_DEV_WIN-SecBaseline Administrative Template",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 260,
+  "technologies": "mdm",
+  "id": "9fba8d56-6115-492e-abda-ece3876a246e",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('9fba8d56-6115-492e-abda-ece3876a246e')/assignments",
+  "assignments": []
+}

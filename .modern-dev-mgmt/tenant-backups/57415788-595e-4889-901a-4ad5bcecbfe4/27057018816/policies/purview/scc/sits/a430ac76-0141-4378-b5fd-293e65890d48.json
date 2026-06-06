@@ -1,0 +1,5 @@
+{
+  "id": "a430ac76-0141-4378-b5fd-293e65890d48",
+  "name": "Medical Specialties",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

@@ -1,0 +1,5 @@
+{
+  "id": "3ba8afe5-7a6c-4929-8247-0001b6878438",
+  "name": "Cyprus Identity Card",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

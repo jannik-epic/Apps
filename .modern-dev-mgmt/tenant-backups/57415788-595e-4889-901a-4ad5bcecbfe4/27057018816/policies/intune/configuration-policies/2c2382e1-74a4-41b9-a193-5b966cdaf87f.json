@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2023-11-17T07:39:35.8031337Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-11-17T07:39:35.8031337Z",
+  "name": "EPICLAB_DCP_DEV_AVD-Security Baseline",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 49,
+  "technologies": "mdm",
+  "id": "2c2382e1-74a4-41b9-a193-5b966cdaf87f",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('2c2382e1-74a4-41b9-a193-5b966cdaf87f')/assignments",
+  "assignments": [
+    {
+      "id": "2c2382e1-74a4-41b9-a193-5b966cdaf87f_18d5aa14-61e0-477f-b056-0b8f637702a2",
+      "source": "direct",
+      "sourceId": "2c2382e1-74a4-41b9-a193-5b966cdaf87f",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "18d5aa14-61e0-477f-b056-0b8f637702a2"
+      }
+    }
+  ]
+}

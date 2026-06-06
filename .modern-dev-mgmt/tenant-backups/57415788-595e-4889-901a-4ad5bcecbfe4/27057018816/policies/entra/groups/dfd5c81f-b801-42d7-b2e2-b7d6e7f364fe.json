@@ -1,0 +1,11 @@
+{
+  "id": "dfd5c81f-b801-42d7-b2e2-b7d6e7f364fe",
+  "displayName": "Azure ATP epicfusionlabs Viewers",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "AzureATPepicfusionlabsViewers",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-06-28T09:27:32Z"
+}

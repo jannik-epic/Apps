@@ -1,0 +1,35 @@
+{
+  "id": "mdo_safelinksforemail",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/safelinksv2?tid=57415788-595e-4889-901a-4ad5bcecbfe4",
+  "controlCategory": "Apps",
+  "title": "Create Safe Links policies for email messages",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 9.0,
+  "rank": 128,
+  "remediation": "<p>Ensure that all users have an assigned <strong>Safe Links</strong> policy, by either updating your existing policies or creating new ones, with the following settings configured:</p>\r\n<ul>\r\n<li><strong>Select the action for unknown potentially malicious URLs in messages:&nbsp;</strong>On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link.</li>\r\n<li><strong>Apply Safe Links to email messages sent within the organization</strong>: Select this setting to apply the Safe Links policy to messages between internal senders and internal recipients.</li>\r\n</ul>\r\n<p>For detailed implementation instructions, see:</p>\r\n<ul>\r\n<li><a href=\"https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-safe-links-policies?view=o365-worldwide#use-the-microsoft-365-defender-portal-to-create-safe-links-policies\">Use the Microsoft 365 Defender portal to create Safe Links policies | Microsoft Docs</a></li>\r\n<li><a href=\"https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-safe-links-policies?view=o365-worldwide#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies\">Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Links policies | Microsoft Docs</a></li>\r\n</ul>\r\n<p>&nbsp;</p>",
+  "remediationImpact": "Unknown",
+  "service": "MDO",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

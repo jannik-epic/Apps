@@ -1,0 +1,13 @@
+{
+  "id": "2abca86f-0d2b-4ed3-a707-3ca0f52bc67d",
+  "displayName": "Verwaltung und Support [Org]",
+  "description": "Verwaltung",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "VerwaltungundSupportOrg",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Public",
+  "createdDateTime": "2021-05-28T05:30:15Z"
+}

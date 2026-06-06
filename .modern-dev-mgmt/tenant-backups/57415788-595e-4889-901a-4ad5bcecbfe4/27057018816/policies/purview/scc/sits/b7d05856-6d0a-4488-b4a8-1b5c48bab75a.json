@@ -1,0 +1,5 @@
+{
+  "id": "b7d05856-6d0a-4488-b4a8-1b5c48bab75a",
+  "name": "Microsoft Entra User Credentials",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

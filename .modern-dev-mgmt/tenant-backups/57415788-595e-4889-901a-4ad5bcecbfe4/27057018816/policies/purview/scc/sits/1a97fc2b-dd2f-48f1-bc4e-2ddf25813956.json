@@ -1,0 +1,5 @@
+{
+  "id": "1a97fc2b-dd2f-48f1-bc4e-2ddf25813956",
+  "name": "New Zealand bank account number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

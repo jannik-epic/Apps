@@ -1,0 +1,5 @@
+{
+  "id": "552e814c-cb50-4d94-bbaa-bb1d1ffb34de",
+  "name": "Canada Bank Account Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

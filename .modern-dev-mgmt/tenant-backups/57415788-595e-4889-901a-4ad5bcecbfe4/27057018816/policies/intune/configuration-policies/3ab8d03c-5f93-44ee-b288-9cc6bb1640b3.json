@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2022-08-22T11:47:14.1053553Z",
+  "creationSource": null,
+  "description": "Settings to change after import:\n- Trusted Locations\n- Workgroup Templates Path",
+  "lastModifiedDateTime": "2022-08-22T12:03:43.1306999Z",
+  "name": "EPICLABS_DCP_DEV_WIN-Office 365 Settings",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 13,
+  "technologies": "mdm",
+  "id": "3ab8d03c-5f93-44ee-b288-9cc6bb1640b3",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('3ab8d03c-5f93-44ee-b288-9cc6bb1640b3')/assignments",
+  "assignments": [
+    {
+      "id": "3ab8d03c-5f93-44ee-b288-9cc6bb1640b3_62cc56c0-5761-4af8-a3c4-e0e2c667a9ce",
+      "source": "direct",
+      "sourceId": "3ab8d03c-5f93-44ee-b288-9cc6bb1640b3",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "62cc56c0-5761-4af8-a3c4-e0e2c667a9ce"
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "aad_limited_administrative_roles",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps",
+  "controlCategory": "Identity",
+  "title": "Ensure 'Microsoft Azure Management' is limited to administrative roles",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p><strong>To enable Microsoft Azure Management restrictions:</strong></p> <ol> <li>Navigate to the <strong>Microsoft Entra ID admin center</strong> <a href=\"https://entra.microsoft.com\">https://entra.microsoft.com</a>.</li> <li>Click expand <strong>Protection</strong> &gt; <strong>Conditional Access</strong> select <strong>Policies</strong>.</li> <li>Click <strong>New Policy</strong> and then name the policy.</li> <li>Select <strong>Users</strong> &gt; <strong>Include</strong> &gt; <strong>All Users</strong></li> <li>Select <strong>Users</strong> &gt; <strong>Exclude</strong> &gt; <strong>Directory roles</strong> and select only administrative roles (See below).</li> <li>Select <strong>Cloud apps or actions</strong> &gt; <strong>Select apps</strong> &gt; <strong>Select</strong> then click the box next to <strong>Windows Azure Service Management API</strong>.</li> <li>Click <strong>Select</strong>.</li> <li>Select <strong>Grant</strong> &gt; <strong>Block access</strong> and click <strong>Select</strong>.</li> <li>Ensure <strong>Enable Policy</strong> is <strong>On</strong> then click <strong>Create</strong>.</li> </ol> <p><strong>WARNING</strong>: <span style=\"color: #ff0000;\"><strong>Exclude Global Administrator at a minimum to avoid being locked out</strong></span>. Report-only is a good option to use when testing any Conditional Access policy for the first time.</p> <p><strong>Below is the list of administrative roles that can be excluded:</strong></p> <ul> <li>Application administrator</li> <li>Authentication administrator</li> <li>Billing administrator</li> <li>Cloud application administrator</li> <li>Conditional Access administrator</li> <li>Exchange administrator</li> <li>Global administrator</li> <li>Global reader</li> <li>Helpdesk administrator</li> <li>Password administrator</li> <li>Privileged authentication administrator</li> <li>Privileged role administrator</li> <li>Security administrator</li> <li>SharePoint administrator</li> <li>User administrator</li> </ul> <p><strong>Default Value</strong>:</p> <p>No - Non-administrators can access the Microsoft Entra ID administration portal.</p>",
+  "remediationImpact": "<p>Because the policy is applied to the Azure management portal and API, services, or clients with an Azure API service dependency, can indirectly be impacted. For example:</p> <ul> <li>Classic deployment model APIs</li> <li>Azure PowerShell</li> <li>Azure CLI</li> <li>Azure DevOps</li> <li>Azure Data Factory portal</li> <li>Azure Event Hubs</li> <li>Azure Service Bus</li> <li>Azure SQL Database</li> <li>SQL Managed Instance</li> <li>Azure Synapse</li> <li>Visual Studio subscriptions administrator portal</li> <li>Microsoft IoT Central</li> </ul>",
+  "service": "AzureAD",
+  "threats": [
+    "Data Exfiltration",
+    "Account breach"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

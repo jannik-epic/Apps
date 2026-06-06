@@ -1,0 +1,5 @@
+{
+  "id": "f6dc2d17-3549-41e2-af29-ae1846ae9542",
+  "name": "Types Of Medication",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

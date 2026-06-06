@@ -1,0 +1,5 @@
+{
+  "id": "c840e719-0896-45bb-84fd-1ed5c95e45ff",
+  "name": "Japan Social Insurance Number (SIN)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

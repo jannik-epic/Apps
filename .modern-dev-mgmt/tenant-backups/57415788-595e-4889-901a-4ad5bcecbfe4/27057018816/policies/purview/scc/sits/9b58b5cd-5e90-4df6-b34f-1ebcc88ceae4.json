@@ -1,0 +1,5 @@
+{
+  "id": "9b58b5cd-5e90-4df6-b34f-1ebcc88ceae4",
+  "name": "Brazil Legal Entity Number (CNPJ)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

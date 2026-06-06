@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2023-11-16T12:08:59.0621974Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-11-16T14:57:37.7186425Z",
+  "name": "EPICLAB_DCP_DEV_AVD-OneDriveSetting",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 6,
+  "technologies": "mdm",
+  "id": "eb0162c2-f50a-4caf-9fe3-4a5e3cfcd64a",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('eb0162c2-f50a-4caf-9fe3-4a5e3cfcd64a')/assignments",
+  "assignments": [
+    {
+      "id": "eb0162c2-f50a-4caf-9fe3-4a5e3cfcd64a_18d5aa14-61e0-477f-b056-0b8f637702a2",
+      "source": "direct",
+      "sourceId": "eb0162c2-f50a-4caf-9fe3-4a5e3cfcd64a",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "18d5aa14-61e0-477f-b056-0b8f637702a2"
+      }
+    }
+  ]
+}

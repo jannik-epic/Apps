@@ -1,0 +1,64 @@
+{
+  "id": "ed1dce24-3cd7-475e-bf76-0e56df205b94",
+  "appId": "f1afb284-73cb-4497-b3d7-f1103eda6862",
+  "displayName": "d-spn-mocoreport-teams-01",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-11-17T05:57:08Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://d-func-moco-report-swi-001.azurewebsites.net/api/auth/end",
+      "https://d-func-moco-report-swi-001.azurewebsites.net/.auth/login/aad/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": true,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://d-func-moco-report-swi-001.azurewebsites.net/api/auth/end",
+        "index": null
+      },
+      {
+        "uri": "https://d-func-moco-report-swi-001.azurewebsites.net/.auth/login/aad/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+          "type": "Scope"
+        },
+        {
+          "id": "a154be20-db9c-4678-8ab7-66f6cc099a59",
+          "type": "Scope"
+        },
+        {
+          "id": "14dad69e-099b-42c9-810b-d002981feec1",
+          "type": "Scope"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

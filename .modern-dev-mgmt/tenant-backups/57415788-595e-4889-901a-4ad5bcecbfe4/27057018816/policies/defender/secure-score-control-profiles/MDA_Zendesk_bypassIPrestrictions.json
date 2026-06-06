@@ -1,0 +1,38 @@
+{
+  "id": "MDA_Zendesk_bypassIPrestrictions",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://support.zendesk.com/hc/en-us/articles/4408846853274",
+  "controlCategory": "Identity",
+  "title": "Block customers to bypass IP restrictions",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p>To Block customers to bypass IP restrictions</p> <ol> <li>In&nbsp;Admin Center, click&nbsp;<strong>Account</strong>&nbsp;in the sidebar, then select&nbsp;<strong>Security &gt; Advanced</strong>.</li> <li>In&nbsp;<strong>IP Restrictions</strong> tab, verify&nbsp;<strong>Allowed IP Ranges </strong>is <strong>Enabled</strong>.</li> <li>Verify&nbsp;<strong>Allow customers to bypass IP restrictions</strong> is not checked.</li> <li>Click <strong>Save</strong>.</li> </ol>",
+  "remediationImpact": "Enabling IP-based access restrictions can break third-party integrations that access your account. Make sure to create an allowlist for all external IPs that access your account through the Zendesk APIs. Some integrations use variable IP addresses that can't be included in an allowlist. If you want to use these integrations, you must disable IP restrictions.",
+  "service": "MDA_Zendesk",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "id": "e577372f-c42e-47a0-9d85-bebed1c237d4",
+  "name": "Germany Identity Card Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

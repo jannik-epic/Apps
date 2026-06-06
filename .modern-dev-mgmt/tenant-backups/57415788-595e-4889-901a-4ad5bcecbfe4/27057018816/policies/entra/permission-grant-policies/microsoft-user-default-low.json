@@ -1,0 +1,48 @@
+{
+  "id": "microsoft-user-default-low",
+  "displayName": "Default User Low Risk Policy",
+  "description": "All low risk permissions are consentable by member type users by default.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-user-default-low')/includes",
+  "includes": [
+    {
+      "id": "9c72ced4-50c7-4486-933e-6756d554b199",
+      "permissionClassification": "low",
+      "permissionType": "delegated",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "57415788-595e-4889-901a-4ad5bcecbfe4"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    },
+    {
+      "id": "8ce99f96-730c-4ebd-8397-07ee65942b97",
+      "permissionClassification": "low",
+      "permissionType": "delegated",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": true
+    }
+  ],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-user-default-low')/excludes",
+  "excludes": []
+}
