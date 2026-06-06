@@ -1,0 +1,137 @@
+{
+  "EndpointDlpGlobalSettingsPsws": [
+    {
+      "Value": "Block",
+      "Setting": "CloudAppMode"
+    },
+    {
+      "Value": "gemini.google.com",
+      "Setting": "CloudAppRestrictionList"
+    },
+    {
+      "Setting": "UnallowedBrowser",
+      "Value": "Google Chrome",
+      "Executable": "chrome.exe"
+    },
+    {
+      "Value": "true",
+      "Setting": "DefaultPathExclusionsEnabled"
+    },
+    {
+      "Value": "true",
+      "Setting": "MacDefaultPathExclusionsEnabled"
+    },
+    {
+      "Value": "true",
+      "Setting": "AdvancedClassificationEnabled"
+    },
+    {
+      "Value": "true",
+      "Setting": "BandwidthLimitEnabled"
+    },
+    {
+      "Value": "1000",
+      "Setting": "DailyBandwidthLimitInMB"
+    },
+    {},
+    {
+      "Value": "true",
+      "Setting": "TraceEventMonitoringEnabled"
+    },
+    {
+      "Value": "90",
+      "Setting": "TraceFileRetentionInDays"
+    },
+    {
+      "Value": "1024",
+      "Setting": "TraceFolderSizeLimitInMB"
+    },
+    {},
+    {
+      "Value": "{\r\n  \"Store\": \"CustomerManaged\",\r\n  \"NumberOfDaysToRetain\": 60,\r\n  \"FileEvidenceIsEnabled\": true\r\n}",
+      "Setting": "EvidenceStoreSettings"
+    },
+    {},
+    {
+      "Value": "true",
+      "Setting": "FileCopiedToCloudFullUrlEnabled"
+    }
+  ],
+  "DlpAppGroupsPsws": [],
+  "SiteGroupsPsws": [],
+  "DlpPrinterGroupsPsws": [],
+  "DlpRemovableMediaGroupsPsws": [],
+  "DlpNetworkShareGroupsPsws": [],
+  "DlpExtensionGroupsPsws": [],
+  "EnableSpoAipMigration": false,
+  "ReservedForFutureUse": true,
+  "PurviewLabelConsent": true,
+  "PurviewLabelConsentCaller": "e7132c16-22a5-406c-9a12-b3144f018a07",
+  "PurviewLabelConsentTime": "6/8/2021 11:47:19 AM",
+  "ExtendTeamsDlpToSpoOdbConsent": false,
+  "ExtendTeamsDlpToSpoOdbConsentCaller": null,
+  "ExtendTeamsDlpToSpoOdbConsentTime": null,
+  "MaxClassificationCountLimit": 500,
+  "LabelScheme": "Legacy",
+  "EndpointDlpGlobalSettings": "[{\"Value\":\"Block\",\"Setting\":\"CloudAppMode\"},{\"Value\":\"gemini.google.com\",\"Setting\":\"CloudAppRestrictionList\"},{\"Value\":\"Google Chrome\",\"Executable\":\"chrome.exe\",\"Setting\":\"UnallowedBrowser\"},{\"Value\":\"true\",\"Setting\":\"DefaultPathExclusionsEnabled\"},{\"Value\":\"true\",\"Setting\":\"MacDefaultPathExclusionsEnabled\"},{\"Value\":\"true\",\"Setting\":\"AdvancedClassificationEnabled\"},{\"Value\":\"true\",\"Setting\":\"BandwidthLimitEnabled\"},{\"Value\":\"1000\",\"Setting\":\"DailyBandwidthLimitInMB\"},{},{\"Value\":\"true\",\"Setting\":\"TraceEventMonitoringEnabled\"},{\"Value\":\"90\",\"Setting\":\"TraceFileRetentionInDays\"},{\"Value\":\"1024\",\"Setting\":\"TraceFolderSizeLimitInMB\"},{},{\"Value\":\"{\\u000d\\u000a  \\\"Store\\\": \\\"CustomerManaged\\\",\\u000d\\u000a  \\\"NumberOfDaysToRetain\\\": 60,\\u000d\\u000a  \\\"FileEvidenceIsEnabled\\\": true\\u000d\\u000a}\",\"Setting\":\"EvidenceStoreSettings\"},{},{\"Value\":\"true\",\"Setting\":\"FileCopiedToCloudFullUrlEnabled\"}]",
+  "ComplianceUrl": "",
+  "CustomClassificationMigrationStatus": "",
+  "OnPremisesWorkload": "None",
+  "RuleErrorAction": "Ignore",
+  "ProcessingLimitExceededSeverity": "None",
+  "DocumentIsUnsupportedSeverity": "None",
+  "SenderAddressLocation": "Header",
+  "CaseHoldPolicyLimit": 10000,
+  "RetentionForwardCrawl": false,
+  "SensitiveInformationScanTimeWindowExo": null,
+  "DlpAppGroups": "[]",
+  "MessageHeadersToRetainInOutlook": "",
+  "SiteGroups": "[]",
+  "DlpPrinterGroups": "{\"groups\":[]}",
+  "DlpRemovableMediaGroups": "{\"groups\":[]}",
+  "DlpNetworkShareGroups": "{\"groups\":[]}",
+  "JitEnforcementSettings": "",
+  "DlpExtensionGroups": "{\"groups\":[]}",
+  "EnableLabelCoauth": true,
+  "EnableAdvancedRuleBuilder": true,
+  "HasAdvancedRuleBuilderConfigBeenSet": false,
+  "IsDlpSimulationOptedIn": false,
+  "IsEventFoldingOnDlpAlertsOptedOut": false,
+  "IsUserBaseDlpAlertAggregationEnabled": false,
+  "AggregationTimeWindowForDlpAlerts": null,
+  "EnableSensitivityLabelingForPdf": false,
+  "SpoPdfLastSyncTimestamp": "",
+  "ClassificationScheme": "V1_DetailedResults",
+  "InformationBarrierMode": "SingleSegment",
+  "InformationBarrierPeopleSearchRestriction": "Enabled",
+  "PurviewLabelConsentDetails": "{\"Consent\":true,\"Caller\":\"e7132c16-22a5-406c-9a12-b3144f018a07\",\"Time\":\"6/8/2021 11:47:19 AM\"}",
+  "ExtendTeamsDlpToSpoOdbConsentDetails": "",
+  "IsDefaultMlDlpPoliciesOptedOut": false,
+  "TextExtractionConfig": "{\"OcrEnabled\": false}",
+  "DlpErrorHandlingConfig": "",
+  "LabelSchemeMigrationConfig": "",
+  "SpoQuarantineFileSettings": "",
+  "DlpAlertFoldingConfiguration": "None",
+  "EnableAbacFeature": false,
+  "AdminDisplayName": "Settings",
+  "ExchangeVersion": "0.20 (15.0.0.0)",
+  "Name": "Settings",
+  "DistinguishedName": "CN=Settings,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=FFO,DC=extest,DC=microsoft,DC=com",
+  "Identity": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/Settings",
+  "ObjectCategory": null,
+  "ObjectClass": [
+    "msExchSenderReputation"
+  ],
+  "WhenChanged": null,
+  "WhenCreated": null,
+  "WhenChangedUTC": null,
+  "WhenCreatedUTC": null,
+  "ExchangeObjectId": "95e5b6f0-a2a3-4488-a6c7-ce6ce2757864",
+  "OrganizationalUnitRoot": null,
+  "OrganizationId": "",
+  "Id": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/Settings",
+  "Guid": "95e5b6f0-a2a3-4488-a6c7-ce6ce2757864",
+  "OriginatingServer": "",
+  "IsValid": true,
+  "ObjectState": "New"
+}

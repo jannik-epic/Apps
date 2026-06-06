@@ -1,0 +1,4662 @@
+{
+  "schemaVersion": 1,
+  "source": "modern-dev-mgmt",
+  "connector": "purview-scc-powershell",
+  "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "backupId": "27056250927",
+  "createdAt": "2026-06-06T07:32:23.4679748+00:00",
+  "label": "purview-e2e-3",
+  "counts": {
+    "PurviewDlpCompliancePolicy": 14,
+    "PurviewDlpComplianceRule": 22,
+    "PurviewRetentionCompliancePolicy": 0,
+    "PurviewRetentionComplianceRule": 0,
+    "PurviewComplianceTag": 1,
+    "PurviewSensitivityLabel": 23,
+    "PurviewLabelPolicy": 6,
+    "PurviewAutoSensitivityLabelPolicy": 3,
+    "PurviewAutoSensitivityLabelRule": 5,
+    "PurviewInformationBarrierPolicy": 0,
+    "PurviewOrganizationSegment": 0,
+    "PurviewSensitiveInformationType": 330,
+    "PurviewSITRulePackage": 1,
+    "PurviewAdaptiveScope": 0,
+    "PurviewEndpointDlpSettings": 1
+  },
+  "warningCount": 0,
+  "policies": [
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/cdff0a32-fa36-4094-ba87-4eef0f99269b.json",
+      "backupPolicyId": "cdff0a32-fa36-4094-ba87-4eef0f99269b",
+      "displayName": "Default policy for Teams",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Teams",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/3a198334-4b68-45bf-bfa6-da9ec312fbbc.json",
+      "backupPolicyId": "3a198334-4b68-45bf-bfa6-da9ec312fbbc",
+      "displayName": "Default policy for devices",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/9f408398-03bf-4dd0-9535-f3eaaecde1e7.json",
+      "backupPolicyId": "9f408398-03bf-4dd0-9535-f3eaaecde1e7",
+      "displayName": "EPF_TST_PUBLIC-LABEL_NOTIFICATION",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 2
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/ecaaf69a-bfde-45d2-be84-c6d48c5ec376.json",
+      "backupPolicyId": "ecaaf69a-bfde-45d2-be84-c6d48c5ec376",
+      "displayName": "EPF_TST_-DLP_for_Endpoint",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, EndpointDevices",
+        "Priority": 3
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/0f6ecc47-59ec-42ed-a4be-601d9944d6a8.json",
+      "backupPolicyId": "0f6ecc47-59ec-42ed-a4be-601d9944d6a8",
+      "displayName": "DLP Policy Block Internal Files",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 4
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/572a9627-ffda-4811-aa48-76154ff636cd.json",
+      "backupPolicyId": "572a9627-ffda-4811-aa48-76154ff636cd",
+      "displayName": "EFL AI App DLP Policy",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 5
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/3d47320d-4668-4b8b-8381-f0acac6d65c7.json",
+      "backupPolicyId": "3d47320d-4668-4b8b-8381-f0acac6d65c7",
+      "displayName": "RTBF - MM",
+      "description": null,
+      "summary": {
+        "Mode": "Disable",
+        "Enabled": false,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 6
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/af9f2318-2802-4561-aa6c-3317bfd8913a.json",
+      "backupPolicyId": "af9f2318-2802-4561-aa6c-3317bfd8913a",
+      "displayName": "EPF_OP-EX-IRM-NOLABEL-EXT-SHARING_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "TestWithoutNotifications",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 7
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/0cf2d3e3-d6fb-4208-b023-13656b54e1ae.json",
+      "backupPolicyId": "0cf2d3e3-d6fb-4208-b023-13656b54e1ae",
+      "displayName": "EPF_OP-EX-IRM-INTERNALONLY-EXT-SHARING_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "TestWithoutNotifications",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 8
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/f64f7523-5a1a-492f-a06c-facc71d6f7f3.json",
+      "backupPolicyId": "f64f7523-5a1a-492f-a06c-facc71d6f7f3",
+      "displayName": "EPF_PC-TEAMS-CID-EXT-SHARING_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "TestWithoutNotifications",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Teams",
+        "Priority": 9
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/b99d5040-2b27-4f17-a413-709911bbd06a.json",
+      "backupPolicyId": "b99d5040-2b27-4f17-a413-709911bbd06a",
+      "displayName": "EPF_HR-TEAMS-PID-EMPLOYEE-EXT-SHARING_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "TestWithoutNotifications",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Teams",
+        "Priority": 10
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/10675e4e-aab2-4088-b238-96f9a504f5ea.json",
+      "backupPolicyId": "10675e4e-aab2-4088-b238-96f9a504f5ea",
+      "displayName": "Multi-App DLP Policy",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 11
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/b24c9956-0d03-4025-b86d-7b9ca1cc1a26.json",
+      "backupPolicyId": "b24c9956-0d03-4025-b86d-7b9ca1cc1a26",
+      "displayName": "TST-SP-Only",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 12
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "path": "policies/purview/scc/dlp-policies/15c796d4-6aa8-4a4b-ace5-1f9b1ae53201.json",
+      "backupPolicyId": "15c796d4-6aa8-4a4b-ace5-1f9b1ae53201",
+      "displayName": "Demo E-Mail Waiver",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 13
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/08217974-a53d-4bba-8601-d2f5a27649c8.json",
+      "backupPolicyId": "08217974-a53d-4bba-8601-d2f5a27649c8",
+      "displayName": "DLPRULE_CONTENT-INTERNALONLY-OFFICE-PDF_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/d732ff24-86c4-402c-a1f0-2df8300638b2.json",
+      "backupPolicyId": "d732ff24-86c4-402c-a1f0-2df8300638b2",
+      "displayName": "Block Internal",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/811d3e33-6315-4d60-8b2a-33446db8b64d.json",
+      "backupPolicyId": "811d3e33-6315-4d60-8b2a-33446db8b64d",
+      "displayName": "Confidential SREM",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/406d8ad3-166c-4774-a907-da8242808495.json",
+      "backupPolicyId": "406d8ad3-166c-4774-a907-da8242808495",
+      "displayName": "Block Credit Cards",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/f5c8f356-5e6d-40ae-a1c4-ee5eaf0f276b.json",
+      "backupPolicyId": "f5c8f356-5e6d-40ae-a1c4-ee5eaf0f276b",
+      "displayName": "Demo E-Mail-Waiver",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/c79a33fa-b57e-486f-ab53-79498357bd1d.json",
+      "backupPolicyId": "c79a33fa-b57e-486f-ab53-79498357bd1d",
+      "displayName": "Default Endpoint DLP Policy Rule - Low Volume",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/d9f63ce9-d27e-49c5-9a4f-ae54f4b63de4.json",
+      "backupPolicyId": "d9f63ce9-d27e-49c5-9a4f-ae54f4b63de4",
+      "displayName": "Default Endpoint DLP Policy Rule - High Volume",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/adcd20bd-ac44-4bd6-a59a-893d862954a1.json",
+      "backupPolicyId": "adcd20bd-ac44-4bd6-a59a-893d862954a1",
+      "displayName": "sdfgasdf",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/f4e1d95f-c74b-404a-8aaf-e32b5ce9ee7f.json",
+      "backupPolicyId": "f4e1d95f-c74b-404a-8aaf-e32b5ce9ee7f",
+      "displayName": "EFL Block US SSN",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/f6838d8f-93dd-40b9-a3f1-2e689a708fa3.json",
+      "backupPolicyId": "f6838d8f-93dd-40b9-a3f1-2e689a708fa3",
+      "displayName": "EFL Block Credit Cards",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/fe2b902b-e647-4cc9-a85a-1a5e9469c729.json",
+      "backupPolicyId": "fe2b902b-e647-4cc9-a85a-1a5e9469c729",
+      "displayName": "EFL Block IBAN",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 2
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/29699706-d551-4df7-a72d-7b1c13a2d04b.json",
+      "backupPolicyId": "29699706-d551-4df7-a72d-7b1c13a2d04b",
+      "displayName": "EFL Block German ID",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 3
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/ccc6f234-2656-40ac-be10-9217bcec8e41.json",
+      "backupPolicyId": "ccc6f234-2656-40ac-be10-9217bcec8e41",
+      "displayName": "EFL Block User Credentials",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 4
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/ba22faba-2753-472a-bcae-4f9c081e127e.json",
+      "backupPolicyId": "ba22faba-2753-472a-bcae-4f9c081e127e",
+      "displayName": "EFL Block API Keys",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 5
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/2291a06e-716c-4aac-a667-ef90f9480408.json",
+      "backupPolicyId": "2291a06e-716c-4aac-a667-ef90f9480408",
+      "displayName": "EFL Block General Passwords",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications",
+        "Priority": 6
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/2a111337-8715-4d0e-a1ea-07f15e1ac9c2.json",
+      "backupPolicyId": "2a111337-8715-4d0e-a1ea-07f15e1ac9c2",
+      "displayName": "PUBLIC-LABEL_NOTIFICATION",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/4617a0ad-6e3a-4476-a89d-c125c22bddee.json",
+      "backupPolicyId": "4617a0ad-6e3a-4476-a89d-c125c22bddee",
+      "displayName": "DLPRULE_CONTENT-NOLABEL-OFFICE-PDF_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/6b540c51-e33b-4f17-98b0-4972aaf28394.json",
+      "backupPolicyId": "6b540c51-e33b-4f17-98b0-4972aaf28394",
+      "displayName": "TST-SSN-CreatedByMemberOf",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/16f2ee2c-5bd1-4767-9b0e-7641ede5e48b.json",
+      "backupPolicyId": "16f2ee2c-5bd1-4767-9b0e-7641ede5e48b",
+      "displayName": "DLPRULE_CONTAINS-PII-SHARING-OUTSIDE_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Teams",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/396f666d-7bda-462b-9cfb-be7f360c11a1.json",
+      "backupPolicyId": "396f666d-7bda-462b-9cfb-be7f360c11a1",
+      "displayName": "Default Teams DLP policy rule",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Teams",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/eb9b08d6-88c2-4e84-a450-ad7b56c9bd07.json",
+      "backupPolicyId": "eb9b08d6-88c2-4e84-a450-ad7b56c9bd07",
+      "displayName": "Test AI DLP for Endpoint",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, EndpointDevices",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewDlpComplianceRule",
+      "path": "policies/purview/scc/dlp-rules/87d35d79-bd36-41e1-8831-69f03abb115e.json",
+      "backupPolicyId": "87d35d79-bd36-41e1-8831-69f03abb115e",
+      "displayName": "DLPRULE_CONTAINS-CID-SHARING-OUTSIDE_BLOCK",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Teams",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewComplianceTag",
+      "path": "policies/purview/scc/retention-labels/bbcae8e3-69d4-4d5c-ab02-c0940758ed1b.json",
+      "backupPolicyId": "bbcae8e3-69d4-4d5c-ab02-c0940758ed1b",
+      "displayName": "Test right to be forgotten",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/2516de01-0e51-4f0b-9811-5ac515e9fbf3.json",
+      "backupPolicyId": "2516de01-0e51-4f0b-9811-5ac515e9fbf3",
+      "displayName": "Non-Business",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/2fe6c730-c5ad-4e67-98b0-893430468979.json",
+      "backupPolicyId": "2fe6c730-c5ad-4e67-98b0-893430468979",
+      "displayName": "Public",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/65e29b03-cd10-4c6b-9358-aa83c52344f5.json",
+      "backupPolicyId": "65e29b03-cd10-4c6b-9358-aa83c52344f5",
+      "displayName": "General",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 2
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/a7ad2310-1588-4b99-9e27-8014dc662cf9.json",
+      "backupPolicyId": "a7ad2310-1588-4b99-9e27-8014dc662cf9",
+      "displayName": "Confidential",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 3
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/0b3b7a44-386c-4945-8592-53e2cd4128eb.json",
+      "backupPolicyId": "0b3b7a44-386c-4945-8592-53e2cd4128eb",
+      "displayName": "Anyone",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 4
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/f7e24733-0b26-4ab1-b1ff-e44dd258d738.json",
+      "backupPolicyId": "f7e24733-0b26-4ab1-b1ff-e44dd258d738",
+      "displayName": "External",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 5
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/3a7ef968-86e8-4690-bd84-90c81f174465.json",
+      "backupPolicyId": "3a7ef968-86e8-4690-bd84-90c81f174465",
+      "displayName": "Internal",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 6
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/1ec3de7a-5edd-4f88-91fc-8ee7f3661122.json",
+      "backupPolicyId": "1ec3de7a-5edd-4f88-91fc-8ee7f3661122",
+      "displayName": "Recipients Only",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 7
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/9dafac21-a335-4ed5-b9ed-962cf2fa354e.json",
+      "backupPolicyId": "9dafac21-a335-4ed5-b9ed-962cf2fa354e",
+      "displayName": "Collaboration-Public",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 8
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/6baf1559-1627-4dd3-a858-0080edc2faa0.json",
+      "backupPolicyId": "6baf1559-1627-4dd3-a858-0080edc2faa0",
+      "displayName": "Collaboration",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 9
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/999d0182-7680-4cfa-b7a0-9581cd9d4111.json",
+      "backupPolicyId": "999d0182-7680-4cfa-b7a0-9581cd9d4111",
+      "displayName": "Collaboration-Public-Specific-People",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 10
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/eaff771e-d9a9-4693-a5ae-d37da5db9884.json",
+      "backupPolicyId": "eaff771e-d9a9-4693-a5ae-d37da5db9884",
+      "displayName": "Collaboration Public 2",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 11
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/231d4608-52ef-4673-aee1-f4388b3ea87c.json",
+      "backupPolicyId": "231d4608-52ef-4673-aee1-f4388b3ea87c",
+      "displayName": "Collaboration Internal",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 12
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/4e801365-add0-4416-89bb-4408f70b21e9.json",
+      "backupPolicyId": "4e801365-add0-4416-89bb-4408f70b21e9",
+      "displayName": "Öffentlich",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 13
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/fb1ac1a0-74a4-4618-97f6-27150e4d8bd2.json",
+      "backupPolicyId": "fb1ac1a0-74a4-4618-97f6-27150e4d8bd2",
+      "displayName": "Intern",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 14
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/09336b0c-1a84-4a6b-a7c1-f8326fbb6ca3.json",
+      "backupPolicyId": "09336b0c-1a84-4a6b-a7c1-f8326fbb6ca3",
+      "displayName": "Vertraulich – (MB und Partner Dienstleister)",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 15
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/724b5003-1f75-4650-8e3d-0ab2a75725a6.json",
+      "backupPolicyId": "724b5003-1f75-4650-8e3d-0ab2a75725a6",
+      "displayName": "Vertraulich – (MB und Partner – Dienstleister)",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 16
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/1ec7205b-7676-403b-89f4-08a2392ea3ad.json",
+      "backupPolicyId": "1ec7205b-7676-403b-89f4-08a2392ea3ad",
+      "displayName": "Vertraulich – (MB intern)",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 17
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/841c46a4-ce9a-4ea5-a212-a81c3fa74c11.json",
+      "backupPolicyId": "841c46a4-ce9a-4ea5-a212-a81c3fa74c11",
+      "displayName": "Streng Vertraulich",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 18
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/064ca37b-7e89-4744-b13f-dda2574f7697.json",
+      "backupPolicyId": "064ca37b-7e89-4744-b13f-dda2574f7697",
+      "displayName": "Streng Vertraulich – (MB und Partner – Dienstleister)",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 19
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/5227479b-f341-437d-90c0-47b13efc1c9a.json",
+      "backupPolicyId": "5227479b-f341-437d-90c0-47b13efc1c9a",
+      "displayName": "Streng Vertraulich – (MB intern)",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 20
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/4524ca4d-c81d-40ee-9834-c75623ed1988.json",
+      "backupPolicyId": "4524ca4d-c81d-40ee-9834-c75623ed1988",
+      "displayName": "Unverschlüsselte Kundenkommunikation (Kunde mit Zustimmung)",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 21
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitivityLabel",
+      "path": "policies/purview/scc/sensitivity-labels/6daa2b8c-c25f-40b2-9bc3-6f2404405bfe.json",
+      "backupPolicyId": "6daa2b8c-c25f-40b2-9bc3-6f2404405bfe",
+      "displayName": "Highly Sensitive Data",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint",
+        "Priority": 22
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewLabelPolicy",
+      "path": "policies/purview/scc/label-policies/45726699-eff9-4317-a319-b67796e0fefb.json",
+      "backupPolicyId": "45726699-eff9-4317-a319-b67796e0fefb",
+      "displayName": "Default classification labels",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewLabelPolicy",
+      "path": "policies/purview/scc/label-policies/b8143066-0d19-4f81-addc-356b843e9193.json",
+      "backupPolicyId": "b8143066-0d19-4f81-addc-356b843e9193",
+      "displayName": "AIP_EPF_TST",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup, Applications",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewLabelPolicy",
+      "path": "policies/purview/scc/label-policies/5ace945b-673c-4749-b6b0-a82c6ce487c1.json",
+      "backupPolicyId": "5ace945b-673c-4749-b6b0-a82c6ce487c1",
+      "displayName": "Collaboration-Public-Specific-People-Policy",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup, Applications",
+        "Priority": 2
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewLabelPolicy",
+      "path": "policies/purview/scc/label-policies/8d89de3c-f45a-446f-bce3-899e890943a1.json",
+      "backupPolicyId": "8d89de3c-f45a-446f-bce3-899e890943a1",
+      "displayName": "test",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup, Applications",
+        "Priority": 3
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewLabelPolicy",
+      "path": "policies/purview/scc/label-policies/732cafd8-71db-4c31-9b79-4300ba51cfa0.json",
+      "backupPolicyId": "732cafd8-71db-4c31-9b79-4300ba51cfa0",
+      "displayName": "Test2",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup, Applications",
+        "Priority": 4
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewLabelPolicy",
+      "path": "policies/purview/scc/label-policies/a0b98274-0012-4eb8-adc8-9a43f4ebff7b.json",
+      "backupPolicyId": "a0b98274-0012-4eb8-adc8-9a43f4ebff7b",
+      "displayName": "MB-Demo",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup, Applications",
+        "Priority": 5
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelPolicy",
+      "path": "policies/purview/scc/auto-label-policies/5c35e9d5-29bc-4d07-988e-e5375d8c2f0a.json",
+      "backupPolicyId": "5c35e9d5-29bc-4d07-988e-e5375d8c2f0a",
+      "displayName": "Auto Label Policy (Policy tip)",
+      "description": null,
+      "summary": {
+        "Mode": "TestWithoutNotifications",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications, Azure, AWS",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelPolicy",
+      "path": "policies/purview/scc/auto-label-policies/7fc84d32-fbe9-44a6-a0c6-20eceae274bc.json",
+      "backupPolicyId": "7fc84d32-fbe9-44a6-a0c6-20eceae274bc",
+      "displayName": "Internal AVH and Emails",
+      "description": null,
+      "summary": {
+        "Mode": "TestWithoutNotifications",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications, Azure, AWS",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelPolicy",
+      "path": "policies/purview/scc/auto-label-policies/611b0470-fa7b-4830-a54b-445795bb1012.json",
+      "backupPolicyId": "611b0470-fa7b-4830-a54b-445795bb1012",
+      "displayName": "Internal AVH and Emails (Excel Only)",
+      "description": null,
+      "summary": {
+        "Mode": "Enable",
+        "Enabled": true,
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, Applications, Azure, AWS",
+        "Priority": 2
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelRule",
+      "path": "policies/purview/scc/auto-label-rules/3c4af3fa-6325-44d3-af9f-70755187c256.json",
+      "backupPolicyId": "3c4af3fa-6325-44d3-af9f-70755187c256",
+      "displayName": "Emails-SPO",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, PowerBI, Applications, Azure, AWS",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelRule",
+      "path": "policies/purview/scc/auto-label-rules/e4716ba6-68a9-4ae7-81c0-8877c12ff3c1.json",
+      "backupPolicyId": "e4716ba6-68a9-4ae7-81c0-8877c12ff3c1",
+      "displayName": "Emails-ODB",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, PowerBI, Applications, Azure, AWS",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelRule",
+      "path": "policies/purview/scc/auto-label-rules/13843eeb-44b9-4452-94c8-51f422b81aa2.json",
+      "backupPolicyId": "13843eeb-44b9-4452-94c8-51f422b81aa2",
+      "displayName": "Excel search for AHV and Email-SPO",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, PowerBI, Applications, Azure, AWS",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelRule",
+      "path": "policies/purview/scc/auto-label-rules/132af8a7-5e1e-483d-bd9e-168045326c0d.json",
+      "backupPolicyId": "132af8a7-5e1e-483d-bd9e-168045326c0d",
+      "displayName": "Encrypt Internal AVH and Emails Details when shared-SPO",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, PowerBI, Applications, Azure, AWS",
+        "Priority": 0
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewAutoSensitivityLabelRule",
+      "path": "policies/purview/scc/auto-label-rules/4d0d6d93-1e2f-425a-b58d-e7764f8efe3f.json",
+      "backupPolicyId": "4d0d6d93-1e2f-425a-b58d-e7764f8efe3f",
+      "displayName": "Encrypt Internal AVH and Emails Details when shared-ODB",
+      "description": null,
+      "summary": {
+        "Mode": "Enforce",
+        "Workload": "Exchange, SharePoint, OneDriveForBusiness, PowerBI, Applications, Azure, AWS",
+        "Priority": 1
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/cb353f78-2b72-4c3c-8827-92ebe4f69fdf.json",
+      "backupPolicyId": "cb353f78-2b72-4c3c-8827-92ebe4f69fdf",
+      "displayName": "ABA Routing Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/eefbb00e-8282-433c-8620-8f1da3bffdb2.json",
+      "backupPolicyId": "eefbb00e-8282-433c-8620-8f1da3bffdb2",
+      "displayName": "Argentina National Identity (DNI) Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/98da3da1-9199-4571-b7c4-b6522980b507.json",
+      "backupPolicyId": "98da3da1-9199-4571-b7c4-b6522980b507",
+      "displayName": "Argentina Unique Tax Identification Key (CUIT/CUIL)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/74a54de9-2a30-4aa0-a8aa-3d9327fc07c7.json",
+      "backupPolicyId": "74a54de9-2a30-4aa0-a8aa-3d9327fc07c7",
+      "displayName": "Australia Bank Account Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1cbbc8f5-9216-4392-9eb5-5ac2298d1356.json",
+      "backupPolicyId": "1cbbc8f5-9216-4392-9eb5-5ac2298d1356",
+      "displayName": "Australia Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/104a99a0-3d3b-4542-a40d-ab0b9e1efe63.json",
+      "backupPolicyId": "104a99a0-3d3b-4542-a40d-ab0b9e1efe63",
+      "displayName": "Australia Medical Account Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/29869db6-602d-4853-ab93-3484f905df50.json",
+      "backupPolicyId": "29869db6-602d-4853-ab93-3484f905df50",
+      "displayName": "Australia Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e29bc95f-ff70-4a37-aa01-04d17360a4c5.json",
+      "backupPolicyId": "e29bc95f-ff70-4a37-aa01-04d17360a4c5",
+      "displayName": "Australia Tax File Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/76e83b3b-01ee-4530-aced-e667a6609f49.json",
+      "backupPolicyId": "76e83b3b-01ee-4530-aced-e667a6609f49",
+      "displayName": "Australian Business Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/b1fba4f7-7b3e-4bb9-8f9a-9366df604dbb.json",
+      "backupPolicyId": "b1fba4f7-7b3e-4bb9-8f9a-9366df604dbb",
+      "displayName": "Australian Company Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/682f18ce-44eb-482b-8198-2bcb96a0761e.json",
+      "backupPolicyId": "682f18ce-44eb-482b-8198-2bcb96a0761e",
+      "displayName": "Austria Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/5ec06c3b-007e-4820-8343-7ff73b889735.json",
+      "backupPolicyId": "5ec06c3b-007e-4820-8343-7ff73b889735",
+      "displayName": "Austria Identity Card",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1c96ae4e-303b-447d-86c7-77113ac266bf.json",
+      "backupPolicyId": "1c96ae4e-303b-447d-86c7-77113ac266bf",
+      "displayName": "Austria Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/6896a906-86c9-4d19-a2da-6e43ccd19b7b.json",
+      "backupPolicyId": "6896a906-86c9-4d19-a2da-6e43ccd19b7b",
+      "displayName": "Austria Social Security Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/4fd58d22-af28-4451-b18a-6f722430a56d.json",
+      "backupPolicyId": "4fd58d22-af28-4451-b18a-6f722430a56d",
+      "displayName": "Austria Tax Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/b6a3eda2-c56c-4b69-a5f7-dca34db00f48.json",
+      "backupPolicyId": "b6a3eda2-c56c-4b69-a5f7-dca34db00f48",
+      "displayName": "Austria Value Added Tax (VAT) Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/0f587d92-eb28-44a9-bd1c-90f2892b47aa.json",
+      "backupPolicyId": "0f587d92-eb28-44a9-bd1c-90f2892b47aa",
+      "displayName": "Azure DocumentDB Auth Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ce1a126d-186f-4700-8c0c-486157b953fd.json",
+      "backupPolicyId": "ce1a126d-186f-4700-8c0c-486157b953fd",
+      "displayName": "Azure IAAS Database Connection String and Azure SQL Connection String",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d.json",
+      "backupPolicyId": "0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d",
+      "displayName": "Azure IoT Connection String",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/75f4cc8a-a68e-49e5-89ce-fa8f03d286a5.json",
+      "backupPolicyId": "75f4cc8a-a68e-49e5-89ce-fa8f03d286a5",
+      "displayName": "Azure Publish Setting Password",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/095a7e6c-efd8-46d5-af7b-5298d53a49fc.json",
+      "backupPolicyId": "095a7e6c-efd8-46d5-af7b-5298d53a49fc",
+      "displayName": "Azure Redis Cache Connection String",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/4d235014-e564-47f4-a6fb-6ebb4a826834.json",
+      "backupPolicyId": "4d235014-e564-47f4-a6fb-6ebb4a826834",
+      "displayName": "Azure SAS",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/b9a6578f-a83f-4fcd-bf44-2130bae49a6f.json",
+      "backupPolicyId": "b9a6578f-a83f-4fcd-bf44-2130bae49a6f",
+      "displayName": "Azure Service Bus Connection String",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/c7bc98e8-551a-4c35-a92d-d2c8cda714a7.json",
+      "backupPolicyId": "c7bc98e8-551a-4c35-a92d-d2c8cda714a7",
+      "displayName": "Azure Storage Account Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/7ff41bd0-5419-4523-91d6-383b3a37f084.json",
+      "backupPolicyId": "7ff41bd0-5419-4523-91d6-383b3a37f084",
+      "displayName": "Azure Storage Account Key (Generic)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d89fd329-9324-433c-b687-2c37bd5166f3.json",
+      "backupPolicyId": "d89fd329-9324-433c-b687-2c37bd5166f3",
+      "displayName": "Belgium Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/fb969c9e-0fd1-4b18-8091-a2123c5e6a54.json",
+      "backupPolicyId": "fb969c9e-0fd1-4b18-8091-a2123c5e6a54",
+      "displayName": "Belgium National Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d7b1315b-21ca-4774-a32a-596010ff78fd.json",
+      "backupPolicyId": "d7b1315b-21ca-4774-a32a-596010ff78fd",
+      "displayName": "Belgium Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/85b5b3c3-f2de-4ae8-ac46-fd3cb38bf9ed.json",
+      "backupPolicyId": "85b5b3c3-f2de-4ae8-ac46-fd3cb38bf9ed",
+      "displayName": "Belgium Value Added Tax Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/78e09124-f2c3-4656-b32a-c1a132cd2711.json",
+      "backupPolicyId": "78e09124-f2c3-4656-b32a-c1a132cd2711",
+      "displayName": "Brazil CPF Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/9b58b5cd-5e90-4df6-b34f-1ebcc88ceae4.json",
+      "backupPolicyId": "9b58b5cd-5e90-4df6-b34f-1ebcc88ceae4",
+      "displayName": "Brazil Legal Entity Number (CNPJ)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/486de900-db70-41b3-a886-abdf25af119c.json",
+      "backupPolicyId": "486de900-db70-41b3-a886-abdf25af119c",
+      "displayName": "Brazil National ID Card (RG)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/66d39258-94c2-43b2-804b-aa312258e54b.json",
+      "backupPolicyId": "66d39258-94c2-43b2-804b-aa312258e54b",
+      "displayName": "Bulgaria Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/f7172b82-c588-4216-845e-4e54e397f29a.json",
+      "backupPolicyId": "f7172b82-c588-4216-845e-4e54e397f29a",
+      "displayName": "Bulgaria Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/100d58b1-0a35-4fb1-aa89-e4a86fb53fcc.json",
+      "backupPolicyId": "100d58b1-0a35-4fb1-aa89-e4a86fb53fcc",
+      "displayName": "Bulgaria Uniform Civil Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/552e814c-cb50-4d94-bbaa-bb1d1ffb34de.json",
+      "backupPolicyId": "552e814c-cb50-4d94-bbaa-bb1d1ffb34de",
+      "displayName": "Canada Bank Account Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/37186abb-8e48-4800-ad3c-e3d1610b3db0.json",
+      "backupPolicyId": "37186abb-8e48-4800-ad3c-e3d1610b3db0",
+      "displayName": "Canada Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/59c0bf39-7fab-482c-af25-00faa4384c94.json",
+      "backupPolicyId": "59c0bf39-7fab-482c-af25-00faa4384c94",
+      "displayName": "Canada Health Service Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/14d0db8b-498a-43ed-9fca-f6097ae687eb.json",
+      "backupPolicyId": "14d0db8b-498a-43ed-9fca-f6097ae687eb",
+      "displayName": "Canada Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/722e12ac-c89a-4ec8-a1b7-fea3469f89db.json",
+      "backupPolicyId": "722e12ac-c89a-4ec8-a1b7-fea3469f89db",
+      "displayName": "Canada Personal Health Identification Number (PHIN)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/a2f29c85-ecb8-4514-a610-364790c0773e.json",
+      "backupPolicyId": "a2f29c85-ecb8-4514-a610-364790c0773e",
+      "displayName": "Canada Social Insurance Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/4e979794-49a0-407e-a0b9-2c536937b925.json",
+      "backupPolicyId": "4e979794-49a0-407e-a0b9-2c536937b925",
+      "displayName": "Chile Identity Card Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/c92daa86-2d16-4871-901f-816b3f554fc1.json",
+      "backupPolicyId": "c92daa86-2d16-4871-901f-816b3f554fc1",
+      "displayName": "China Resident Identity Card (PRC) Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/060c591a-0fd7-4598-a715-8a94b283dfcf.json",
+      "backupPolicyId": "060c591a-0fd7-4598-a715-8a94b283dfcf",
+      "displayName": "Colombia National ID",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/df275e7b-40d0-4519-b668-59cee178df65.json",
+      "backupPolicyId": "df275e7b-40d0-4519-b668-59cee178df65",
+      "displayName": "Colombia Tax Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/50842eb7-edc8-4019-85dd-5a5c1f2bb085.json",
+      "backupPolicyId": "50842eb7-edc8-4019-85dd-5a5c1f2bb085",
+      "displayName": "Credit Card Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/005b3ef1-47dd-4e68-bb02-c6db484d00f2.json",
+      "backupPolicyId": "005b3ef1-47dd-4e68-bb02-c6db484d00f2",
+      "displayName": "Croatia Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ff12f884-c20a-4189-b185-34c8e7258d47.json",
+      "backupPolicyId": "ff12f884-c20a-4189-b185-34c8e7258d47",
+      "displayName": "Croatia Identity Card Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/7d7a729d-32d8-4204-8d01-d5e6a6c25581.json",
+      "backupPolicyId": "7d7a729d-32d8-4204-8d01-d5e6a6c25581",
+      "displayName": "Croatia Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/31983b6d-db95-4eb2-a630-b44bd091968d.json",
+      "backupPolicyId": "31983b6d-db95-4eb2-a630-b44bd091968d",
+      "displayName": "Croatia Personal Identification (OIB) Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/356fa104-f9ac-4aff-a0e4-2e6e65ea06c4.json",
+      "backupPolicyId": "356fa104-f9ac-4aff-a0e4-2e6e65ea06c4",
+      "displayName": "Cyprus Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/3ba8afe5-7a6c-4929-8247-0001b6878438.json",
+      "backupPolicyId": "3ba8afe5-7a6c-4929-8247-0001b6878438",
+      "displayName": "Cyprus Identity Card",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/9193e2e8-7f8c-43c1-a274-ac40d651936f.json",
+      "backupPolicyId": "9193e2e8-7f8c-43c1-a274-ac40d651936f",
+      "displayName": "Cyprus Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/40e64bd9-55f3-4a09-9bd6-1db18dced9dd.json",
+      "backupPolicyId": "40e64bd9-55f3-4a09-9bd6-1db18dced9dd",
+      "displayName": "Cyprus Tax Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/86b40d3b-d8ea-4c36-aab0-ef9416a6769c.json",
+      "backupPolicyId": "86b40d3b-d8ea-4c36-aab0-ef9416a6769c",
+      "displayName": "Czech Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/60c0725a-4eb6-455b-9dda-05d8a7396497.json",
+      "backupPolicyId": "60c0725a-4eb6-455b-9dda-05d8a7396497",
+      "displayName": "Czech Personal Identity Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/7bcd8ce8-5e92-4bbe-bc92-fa669f0369fa.json",
+      "backupPolicyId": "7bcd8ce8-5e92-4bbe-bc92-fa669f0369fa",
+      "displayName": "Czech Republic Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/98a95812-6203-451a-a220-d39870ebef0e.json",
+      "backupPolicyId": "98a95812-6203-451a-a220-d39870ebef0e",
+      "displayName": "Denmark Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/25e8c47e-e6fe-4884-a211-74898f8c0196.json",
+      "backupPolicyId": "25e8c47e-e6fe-4884-a211-74898f8c0196",
+      "displayName": "Denmark Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/6c4f2fef-56e1-4c00-8093-88d7a01cf460.json",
+      "backupPolicyId": "6c4f2fef-56e1-4c00-8093-88d7a01cf460",
+      "displayName": "Denmark Personal Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/9a5445ad-406e-43eb-8bd7-cac17ab6d0e4.json",
+      "backupPolicyId": "9a5445ad-406e-43eb-8bd7-cac17ab6d0e4",
+      "displayName": "Drug Enforcement Agency (DEA) Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/bc99c8a0-95ea-410e-9b7c-05e51b02e469.json",
+      "backupPolicyId": "bc99c8a0-95ea-410e-9b7c-05e51b02e469",
+      "displayName": "Ecuador Unique Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/51da8171-da70-4cc1-9d65-055a59ca4f83.json",
+      "backupPolicyId": "51da8171-da70-4cc1-9d65-055a59ca4f83",
+      "displayName": "Estonia Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/61f7073a-509e-425b-a754-bc01bb5d5b8c.json",
+      "backupPolicyId": "61f7073a-509e-425b-a754-bc01bb5d5b8c",
+      "displayName": "Estonia Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/bfb26de6-dad5-4d48-ab72-4789cdd0654c.json",
+      "backupPolicyId": "bfb26de6-dad5-4d48-ab72-4789cdd0654c",
+      "displayName": "Estonia Personal Identification Code",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/0e9b3178-9678-47dd-a509-37222ca96b42.json",
+      "backupPolicyId": "0e9b3178-9678-47dd-a509-37222ca96b42",
+      "displayName": "EU Debit Card Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/b8fe86d1-c056-453b-bfaa-9fe698699ecc.json",
+      "backupPolicyId": "b8fe86d1-c056-453b-bfaa-9fe698699ecc",
+      "displayName": "EU Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/419f449f-6d9d-4be1-a154-b531f7a91b41.json",
+      "backupPolicyId": "419f449f-6d9d-4be1-a154-b531f7a91b41",
+      "displayName": "EU National Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/21883626-6245-4f3d-9b61-5cbb43e625ee.json",
+      "backupPolicyId": "21883626-6245-4f3d-9b61-5cbb43e625ee",
+      "displayName": "EU Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d24e32a4-c0bb-4ba8-899d-6303b95742d9.json",
+      "backupPolicyId": "d24e32a4-c0bb-4ba8-899d-6303b95742d9",
+      "displayName": "EU Social Security Number (SSN) or Equivalent ID",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e09c07d3-66e5-4783-989d-49ac62748f5f.json",
+      "backupPolicyId": "e09c07d3-66e5-4783-989d-49ac62748f5f",
+      "displayName": "EU Tax Identification Number (TIN)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/bb3b27a3-79bd-4ac4-81a7-f9fca3c7d1a7.json",
+      "backupPolicyId": "bb3b27a3-79bd-4ac4-81a7-f9fca3c7d1a7",
+      "displayName": "Finland Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/60f75aed-81bf-4625-89b0-0846b9248ee7.json",
+      "backupPolicyId": "60f75aed-81bf-4625-89b0-0846b9248ee7",
+      "displayName": "Finland European Health Insurance Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/338FD995-4CB5-4F87-AD35-79BD1DD926C1.json",
+      "backupPolicyId": "338FD995-4CB5-4F87-AD35-79BD1DD926C1",
+      "displayName": "Finland National ID",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d1685ac3-1d3a-40f8-8198-32ef5669c7a5.json",
+      "backupPolicyId": "d1685ac3-1d3a-40f8-8198-32ef5669c7a5",
+      "displayName": "Finland Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/18e55a36-a01b-4b0f-943d-dc10282a1824.json",
+      "backupPolicyId": "18e55a36-a01b-4b0f-943d-dc10282a1824",
+      "displayName": "France Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/9bc2069e-76df-4ff9-ac02-2f519469e236.json",
+      "backupPolicyId": "9bc2069e-76df-4ff9-ac02-2f519469e236",
+      "displayName": "France Health Insurance Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/f741ac74-1bc0-4665-b69b-f0c7f927c0c4.json",
+      "backupPolicyId": "f741ac74-1bc0-4665-b69b-f0c7f927c0c4",
+      "displayName": "France National ID Card (CNI)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/3008b884-8c8c-4cd8-a289-99f34fc7ff5d.json",
+      "backupPolicyId": "3008b884-8c8c-4cd8-a289-99f34fc7ff5d",
+      "displayName": "France Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/71f62b97-efe0-4aa1-aa49-e14de253619d.json",
+      "backupPolicyId": "71f62b97-efe0-4aa1-aa49-e14de253619d",
+      "displayName": "France Social Security Number (INSEE)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ed59e77e-171d-442c-9ec1-88e2ebcb5b0a.json",
+      "backupPolicyId": "ed59e77e-171d-442c-9ec1-88e2ebcb5b0a",
+      "displayName": "France Tax Identification Number (numéro SPI.)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/949121e6-ad9f-4379-8731-710342baea78.json",
+      "backupPolicyId": "949121e6-ad9f-4379-8731-710342baea78",
+      "displayName": "France Value Added Tax Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/91da9335-1edb-45b7-a95f-5fe41a16c63c.json",
+      "backupPolicyId": "91da9335-1edb-45b7-a95f-5fe41a16c63c",
+      "displayName": "German Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/2e3da144-d42b-47ed-b123-fbf78604e52c.json",
+      "backupPolicyId": "2e3da144-d42b-47ed-b123-fbf78604e52c",
+      "displayName": "German Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e577372f-c42e-47a0-9d85-bebed1c237d4.json",
+      "backupPolicyId": "e577372f-c42e-47a0-9d85-bebed1c237d4",
+      "displayName": "Germany Identity Card Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/43316a89-9880-40cf-b980-04bc7eefcec5.json",
+      "backupPolicyId": "43316a89-9880-40cf-b980-04bc7eefcec5",
+      "displayName": "Germany Tax Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/db177eb2-8811-4842-bffc-128c14aa219f.json",
+      "backupPolicyId": "db177eb2-8811-4842-bffc-128c14aa219f",
+      "displayName": "Germany Value Added Tax Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/7a2200b5-aacf-4e3c-ab36-136d3e68b7da.json",
+      "backupPolicyId": "7a2200b5-aacf-4e3c-ab36-136d3e68b7da",
+      "displayName": "Greece Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/82568215-1da1-46d3-874a-d2294d81b5ac.json",
+      "backupPolicyId": "82568215-1da1-46d3-874a-d2294d81b5ac",
+      "displayName": "Greece National ID Card",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/7e65eb47-cdf9-4f52-8f90-2a27d5ee67e3.json",
+      "backupPolicyId": "7e65eb47-cdf9-4f52-8f90-2a27d5ee67e3",
+      "displayName": "Greece Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e39b03f4-50ea-41ae-af7a-a4b9539596ad.json",
+      "backupPolicyId": "e39b03f4-50ea-41ae-af7a-a4b9539596ad",
+      "displayName": "Greece Social Security Number (AMKA)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/15a54a5a-53d4-4080-ad43-a2a4fe1d3bf7.json",
+      "backupPolicyId": "15a54a5a-53d4-4080-ad43-a2a4fe1d3bf7",
+      "displayName": "Greek Tax identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e63c28a7-ad29-4c17-a41a-3d2a0b70fd9c.json",
+      "backupPolicyId": "e63c28a7-ad29-4c17-a41a-3d2a0b70fd9c",
+      "displayName": "Hong Kong Identity Card (HKID) Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/0de78315-9537-47f5-95ab-b3e77eba3993.json",
+      "backupPolicyId": "0de78315-9537-47f5-95ab-b3e77eba3993",
+      "displayName": "Hungarian Social Security Number (TAJ)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/976349a0-683b-477a-90f8-ff0a220d5592.json",
+      "backupPolicyId": "976349a0-683b-477a-90f8-ff0a220d5592",
+      "displayName": "Hungarian Value Added Tax Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/9d31c46b-6e6b-444c-aeb1-6dd7e604bb24.json",
+      "backupPolicyId": "9d31c46b-6e6b-444c-aeb1-6dd7e604bb24",
+      "displayName": "Hungary Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/5b483910-9aa7-4c99-9917-f4001464bda7.json",
+      "backupPolicyId": "5b483910-9aa7-4c99-9917-f4001464bda7",
+      "displayName": "Hungary Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/7b5cc218-7046-47d9-80c9-f325b50896ca.json",
+      "backupPolicyId": "7b5cc218-7046-47d9-80c9-f325b50896ca",
+      "displayName": "Hungary Personal Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ede42eb4-59d9-49eb-9603-d7853fbda91d.json",
+      "backupPolicyId": "ede42eb4-59d9-49eb-9603-d7853fbda91d",
+      "displayName": "Hungary Tax identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/680788a3-53b6-455a-b891-c38cd76dc917.json",
+      "backupPolicyId": "680788a3-53b6-455a-b891-c38cd76dc917",
+      "displayName": "India Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/9f5a721c-2fd2-446a-a27e-0c02fbe4630c.json",
+      "backupPolicyId": "9f5a721c-2fd2-446a-a27e-0c02fbe4630c",
+      "displayName": "India GST Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/2602bfee-9bb0-47a5-a7a6-2bf3053e2804.json",
+      "backupPolicyId": "2602bfee-9bb0-47a5-a7a6-2bf3053e2804",
+      "displayName": "India Permanent Account Number (PAN)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1ca46b29-76f5-4f46-9383-cfa15e91048f.json",
+      "backupPolicyId": "1ca46b29-76f5-4f46-9383-cfa15e91048f",
+      "displayName": "India Unique Identification (Aadhaar) Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/646d643f-5228-4408-acc8-f2e81a6df897.json",
+      "backupPolicyId": "646d643f-5228-4408-acc8-f2e81a6df897",
+      "displayName": "India Voter Id Card",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/67d902ee-c3ce-44a2-81ac-e9746e7d60a1.json",
+      "backupPolicyId": "67d902ee-c3ce-44a2-81ac-e9746e7d60a1",
+      "displayName": "Indonesia Drivers License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/da68fdb0-f383-4981-8c86-82689d3b7d55.json",
+      "backupPolicyId": "da68fdb0-f383-4981-8c86-82689d3b7d55",
+      "displayName": "Indonesia Identity Card (KTP) Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d0001c83-e72f-4360-98d3-f5a41dc5a380.json",
+      "backupPolicyId": "d0001c83-e72f-4360-98d3-f5a41dc5a380",
+      "displayName": "Indonesia Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e7dc4711-11b7-4cb0-b88b-2c394a771f0e.json",
+      "backupPolicyId": "e7dc4711-11b7-4cb0-b88b-2c394a771f0e",
+      "displayName": "International Banking Account Number (IBAN)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/3356946c-6bb7-449b-b253-6ffa419c0ce7.json",
+      "backupPolicyId": "3356946c-6bb7-449b-b253-6ffa419c0ce7",
+      "displayName": "International Classification of Diseases (ICD-10-CM)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4.json",
+      "backupPolicyId": "fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4",
+      "displayName": "International Classification of Diseases (ICD-9-CM)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1daa4ad5-e2dd-4ca4-a788-54722c09efb2.json",
+      "backupPolicyId": "1daa4ad5-e2dd-4ca4-a788-54722c09efb2",
+      "displayName": "IP Address",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/a7dd5e5f-e7f9-4626-a2c6-86a8cb6830d2.json",
+      "backupPolicyId": "a7dd5e5f-e7f9-4626-a2c6-86a8cb6830d2",
+      "displayName": "IP Address v4",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/3f691089-7413-4926-ab3b-3c5ea8a1c17e.json",
+      "backupPolicyId": "3f691089-7413-4926-ab3b-3c5ea8a1c17e",
+      "displayName": "IP Address v6",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e01bccd9-eb4d-414f-ace1-e9b6a4c4a2ca.json",
+      "backupPolicyId": "e01bccd9-eb4d-414f-ace1-e9b6a4c4a2ca",
+      "displayName": "Ireland Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/a2130f27-9ee2-4103-84f9-a6b1ee7d0cbf.json",
+      "backupPolicyId": "a2130f27-9ee2-4103-84f9-a6b1ee7d0cbf",
+      "displayName": "Ireland Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1cdb674d-c19a-4fcf-9f4b-7f56cc87345a.json",
+      "backupPolicyId": "1cdb674d-c19a-4fcf-9f4b-7f56cc87345a",
+      "displayName": "Ireland Personal Public Service (PPS) Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/7d08b2ff-a0b9-437f-957c-aeddbf9b2b25.json",
+      "backupPolicyId": "7d08b2ff-a0b9-437f-957c-aeddbf9b2b25",
+      "displayName": "Israel Bank Account Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e05881f5-1db1-418c-89aa-a3ac5c5277ee.json",
+      "backupPolicyId": "e05881f5-1db1-418c-89aa-a3ac5c5277ee",
+      "displayName": "Israel National ID",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/97d6244f-9157-41bd-8e0c-9d669a5c4d71.json",
+      "backupPolicyId": "97d6244f-9157-41bd-8e0c-9d669a5c4d71",
+      "displayName": "Italy Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/4cd79172-8da9-4ff5-9188-98b1e7e2eca6.json",
+      "backupPolicyId": "4cd79172-8da9-4ff5-9188-98b1e7e2eca6",
+      "displayName": "Italy Fiscal Code",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/39811019-4750-445f-b26d-4c0e6c431544.json",
+      "backupPolicyId": "39811019-4750-445f-b26d-4c0e6c431544",
+      "displayName": "Italy Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/26a8cc07-2283-4a2a-ab1d-4ab643c4c67f.json",
+      "backupPolicyId": "26a8cc07-2283-4a2a-ab1d-4ab643c4c67f",
+      "displayName": "Italy Value Added Tax Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d354f95b-96ee-4b80-80bc-4377312b55bc.json",
+      "backupPolicyId": "d354f95b-96ee-4b80-80bc-4377312b55bc",
+      "displayName": "Japan Bank Account Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/c6011143-d087-451c-8313-7f6d4aed2270.json",
+      "backupPolicyId": "c6011143-d087-451c-8313-7f6d4aed2270",
+      "displayName": "Japan Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/75177310-1a09-4613-bf6d-833aae3743f8.json",
+      "backupPolicyId": "75177310-1a09-4613-bf6d-833aae3743f8",
+      "displayName": "Japan Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/01c1209b-6389-4faf-a5f8-3f7e13899652.json",
+      "backupPolicyId": "01c1209b-6389-4faf-a5f8-3f7e13899652",
+      "displayName": "Japan Resident Registration Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/c840e719-0896-45bb-84fd-1ed5c95e45ff.json",
+      "backupPolicyId": "c840e719-0896-45bb-84fd-1ed5c95e45ff",
+      "displayName": "Japan Social Insurance Number (SIN)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/9e0eaf79-ff20-4ffb-b3e4-e7368d5db6ff.json",
+      "backupPolicyId": "9e0eaf79-ff20-4ffb-b3e4-e7368d5db6ff",
+      "displayName": "Japanese My Number Corporate",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/98da8e66-7299-4ebd-9f82-c871ab37d3ef.json",
+      "backupPolicyId": "98da8e66-7299-4ebd-9f82-c871ab37d3ef",
+      "displayName": "Japanese My Number Personal",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ac36fef2-a289-4e2c-bb48-b02366e89fc0.json",
+      "backupPolicyId": "ac36fef2-a289-4e2c-bb48-b02366e89fc0",
+      "displayName": "Japanese Residence Card Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ec996de0-30f2-46b1-b192-4d2ff8805fa7.json",
+      "backupPolicyId": "ec996de0-30f2-46b1-b192-4d2ff8805fa7",
+      "displayName": "Latvia Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/23ae25ec-cc28-421b-b77a-3054eadf1ede.json",
+      "backupPolicyId": "23ae25ec-cc28-421b-b77a-3054eadf1ede",
+      "displayName": "Latvia Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/03fcf763-27c2-49ed-9422-2641c6c895c9.json",
+      "backupPolicyId": "03fcf763-27c2-49ed-9422-2641c6c895c9",
+      "displayName": "Latvia Personal Code",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/86f7628b-e0f4-4dc3-9fbc-e4300e4c7d78.json",
+      "backupPolicyId": "86f7628b-e0f4-4dc3-9fbc-e4300e4c7d78",
+      "displayName": "Lithuania Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1b79900f-047b-4c3f-846f-7d73b5534bce.json",
+      "backupPolicyId": "1b79900f-047b-4c3f-846f-7d73b5534bce",
+      "displayName": "Lithuania Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/cd6d3786-8ec3-4524-a2cf-1e0095379171.json",
+      "backupPolicyId": "cd6d3786-8ec3-4524-a2cf-1e0095379171",
+      "displayName": "Lithuania Personal Code",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/89daf717-1544-4860-9a2e-fc9166dd8852.json",
+      "backupPolicyId": "89daf717-1544-4860-9a2e-fc9166dd8852",
+      "displayName": "Luxembourg Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/aaf661ed-29ec-426d-8bf9-880cad298ebb.json",
+      "backupPolicyId": "aaf661ed-29ec-426d-8bf9-880cad298ebb",
+      "displayName": "Luxembourg National Identification Number (Natural persons)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/84bffa3a-d805-4788-a613-b1e4df3804cf.json",
+      "backupPolicyId": "84bffa3a-d805-4788-a613-b1e4df3804cf",
+      "displayName": "Luxembourg National Identification Number (Non-natural persons)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/81d5c027-bed9-4421-91a0-3b2e55b3eb85.json",
+      "backupPolicyId": "81d5c027-bed9-4421-91a0-3b2e55b3eb85",
+      "displayName": "Luxembourg Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/7f0e921c-9677-435b-aba2-bb8f1013c749.json",
+      "backupPolicyId": "7f0e921c-9677-435b-aba2-bb8f1013c749",
+      "displayName": "Malaysia Identity Card Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/62ea2a27-798e-4de3-a31f-a54c5d02ff37.json",
+      "backupPolicyId": "62ea2a27-798e-4de3-a31f-a54c5d02ff37",
+      "displayName": "Malaysia Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/a3bdaa4a-8371-4735-8fa5-56ee0fb4afc4.json",
+      "backupPolicyId": "a3bdaa4a-8371-4735-8fa5-56ee0fb4afc4",
+      "displayName": "Malta Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/854b36b3-a388-4ac8-a4ec-677c2b5e4356.json",
+      "backupPolicyId": "854b36b3-a388-4ac8-a4ec-677c2b5e4356",
+      "displayName": "Malta Identity Card Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/b2b21198-48f9-4d13-b2a5-03969bff0fb8.json",
+      "backupPolicyId": "b2b21198-48f9-4d13-b2a5-03969bff0fb8",
+      "displayName": "Malta Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ec830c63-65f4-45d0-9d8c-910dc8334b20.json",
+      "backupPolicyId": "ec830c63-65f4-45d0-9d8c-910dc8334b20",
+      "displayName": "Malta Tax ID Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/f753a286-f5cc-47e6-a592-4be25fd02591.json",
+      "backupPolicyId": "f753a286-f5cc-47e6-a592-4be25fd02591",
+      "displayName": "Medicare Beneficiary Identifier (MBI) card",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e905ad4d-5a74-406d-bf36-b1efca798af4.json",
+      "backupPolicyId": "e905ad4d-5a74-406d-bf36-b1efca798af4",
+      "displayName": "Mexico Unique Population Registry Code (CURP)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/c5f54253-ef7e-44f6-a578-440ed67e946d.json",
+      "backupPolicyId": "c5f54253-ef7e-44f6-a578-440ed67e946d",
+      "displayName": "Netherlands Citizen's Service (BSN) Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/6247fbea-ab80-4be5-8233-308b7c031401.json",
+      "backupPolicyId": "6247fbea-ab80-4be5-8233-308b7c031401",
+      "displayName": "Netherlands Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/61786727-bafd-45f6-94d9-888d815e228e.json",
+      "backupPolicyId": "61786727-bafd-45f6-94d9-888d815e228e",
+      "displayName": "Netherlands Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/01f42a64-eba7-4892-a67b-398237e4ade2.json",
+      "backupPolicyId": "01f42a64-eba7-4892-a67b-398237e4ade2",
+      "displayName": "Netherlands Tax Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/4f320d9b-4972-41ae-b337-88d499bb1ade.json",
+      "backupPolicyId": "4f320d9b-4972-41ae-b337-88d499bb1ade",
+      "displayName": "Netherlands Value Added Tax Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1a97fc2b-dd2f-48f1-bc4e-2ddf25813956.json",
+      "backupPolicyId": "1a97fc2b-dd2f-48f1-bc4e-2ddf25813956",
+      "displayName": "New Zealand bank account number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1924b377-d287-49c9-a737-cfe7a8a2615a.json",
+      "backupPolicyId": "1924b377-d287-49c9-a737-cfe7a8a2615a",
+      "displayName": "New Zealand Driver License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/dd0fe2bc-7bcf-455f-bac1-83b1e3eb25fd.json",
+      "backupPolicyId": "dd0fe2bc-7bcf-455f-bac1-83b1e3eb25fd",
+      "displayName": "New Zealand Inland Revenue number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7.json",
+      "backupPolicyId": "2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7",
+      "displayName": "New Zealand Ministry of Health Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/20f3c48d-4ac1-4cd2-86bd-34ecc1826e9d.json",
+      "backupPolicyId": "20f3c48d-4ac1-4cd2-86bd-34ecc1826e9d",
+      "displayName": "New Zealand Social Welfare Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d4c8a798-e9f2-4bd3-9652-500d24080fc3.json",
+      "backupPolicyId": "d4c8a798-e9f2-4bd3-9652-500d24080fc3",
+      "displayName": "Norway Identity Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/3257da62-3d98-44ca-a923-6f8b0cd94b7f.json",
+      "backupPolicyId": "3257da62-3d98-44ca-a923-6f8b0cd94b7f",
+      "displayName": "Philippines National ID",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/6fa57f91-314a-4561-8248-7ab921957448.json",
+      "backupPolicyId": "6fa57f91-314a-4561-8248-7ab921957448",
+      "displayName": "Philippines Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/019b39dd-8c25-4765-91a3-d9c6baf3c3b3.json",
+      "backupPolicyId": "019b39dd-8c25-4765-91a3-d9c6baf3c3b3",
+      "displayName": "Philippines Unified Multi-Purpose ID Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/24d51f99-ee9e-4060-a077-cae58cab1ee4.json",
+      "backupPolicyId": "24d51f99-ee9e-4060-a077-cae58cab1ee4",
+      "displayName": "Poland Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/25E64989-ED5D-40CA-A939-6C14183BB7BF.json",
+      "backupPolicyId": "25E64989-ED5D-40CA-A939-6C14183BB7BF",
+      "displayName": "Poland Identity Card",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/E3AAF206-4297-412F-9E06-BA8487E22456.json",
+      "backupPolicyId": "E3AAF206-4297-412F-9E06-BA8487E22456",
+      "displayName": "Poland National ID (PESEL)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/03937FB5-D2B6-4487-B61F-0F8BFF7C3517.json",
+      "backupPolicyId": "03937FB5-D2B6-4487-B61F-0F8BFF7C3517",
+      "displayName": "Poland Passport",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1ff28b4d-40f2-49e9-b677-9606a88e2bca.json",
+      "backupPolicyId": "1ff28b4d-40f2-49e9-b677-9606a88e2bca",
+      "displayName": "Poland Tax Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/fc87b421-f437-4f8b-b739-29a735ead0d9.json",
+      "backupPolicyId": "fc87b421-f437-4f8b-b739-29a735ead0d9",
+      "displayName": "Polish REGON Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/91a7ece2-add4-4986-9a15-c84544d81ecd.json",
+      "backupPolicyId": "91a7ece2-add4-4986-9a15-c84544d81ecd",
+      "displayName": "Portugal Citizen Card Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/977f1e5a-2c33-4bcc-b516-95bb275cff23.json",
+      "backupPolicyId": "977f1e5a-2c33-4bcc-b516-95bb275cff23",
+      "displayName": "Portugal Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/080a52fd-a7bc-431e-b54d-51f08f59db11.json",
+      "backupPolicyId": "080a52fd-a7bc-431e-b54d-51f08f59db11",
+      "displayName": "Portugal Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/65372402-3131-4f1e-9983-4439841d1f15.json",
+      "backupPolicyId": "65372402-3131-4f1e-9983-4439841d1f15",
+      "displayName": "Portugal Tax Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/52b1b60e-a4be-4b5a-a67b-6f9bbb7811da.json",
+      "backupPolicyId": "52b1b60e-a4be-4b5a-a67b-6f9bbb7811da",
+      "displayName": "Qatari ID Card Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/b5511ace-2fd8-4ae4-b6fc-c7c6e4689e3c.json",
+      "backupPolicyId": "b5511ace-2fd8-4ae4-b6fc-c7c6e4689e3c",
+      "displayName": "Romania Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/5d31b90c-7fe2-4a76-a14b-767b8fd19d6c.json",
+      "backupPolicyId": "5d31b90c-7fe2-4a76-a14b-767b8fd19d6c",
+      "displayName": "Romania Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/eb5fa399-fe28-4c67-8188-d63a616ed89c.json",
+      "backupPolicyId": "eb5fa399-fe28-4c67-8188-d63a616ed89c",
+      "displayName": "Romania Personal Numerical Code (CNP)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/76ec2f5d-cedb-48e1-8070-1998794af445.json",
+      "backupPolicyId": "76ec2f5d-cedb-48e1-8070-1998794af445",
+      "displayName": "Russian Passport Number (Domestic)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ac5f4878-75e4-4b82-af2d-02e13ea9f411.json",
+      "backupPolicyId": "ac5f4878-75e4-4b82-af2d-02e13ea9f411",
+      "displayName": "Russian Passport Number (International)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/81145f47-868a-464c-956a-eed7696fdcdf.json",
+      "backupPolicyId": "81145f47-868a-464c-956a-eed7696fdcdf",
+      "displayName": "Russian Taxpayer Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/8c5a0ba8-404a-41a3-8871-746aa21ee6c0.json",
+      "backupPolicyId": "8c5a0ba8-404a-41a3-8871-746aa21ee6c0",
+      "displayName": "Saudi Arabia National ID",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/beaa54d7-ec6a-4160-a37b-f3916b68934b.json",
+      "backupPolicyId": "beaa54d7-ec6a-4160-a37b-f3916b68934b",
+      "displayName": "Singapore Driving License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/cead390a-dd83-4856-9751-fb6dc98c34da.json",
+      "backupPolicyId": "cead390a-dd83-4856-9751-fb6dc98c34da",
+      "displayName": "Singapore National Registration Identity Card (NRIC) Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/4081ae73-c4ec-405d-932c-8b36ae35b20c.json",
+      "backupPolicyId": "4081ae73-c4ec-405d-932c-8b36ae35b20c",
+      "displayName": "Singapore Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/14240c22-b6de-4ce5-a90b-137f74252513.json",
+      "backupPolicyId": "14240c22-b6de-4ce5-a90b-137f74252513",
+      "displayName": "Slovakia Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/238e1f08-d80e-4793-af33-9b57918335b7.json",
+      "backupPolicyId": "238e1f08-d80e-4793-af33-9b57918335b7",
+      "displayName": "Slovakia Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/951c26b7-3b35-4f73-924b-15dd599cb9ab.json",
+      "backupPolicyId": "951c26b7-3b35-4f73-924b-15dd599cb9ab",
+      "displayName": "Slovakia Personal Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d5bc089a-f2ee-433d-a6b1-5c253051d6f2.json",
+      "backupPolicyId": "d5bc089a-f2ee-433d-a6b1-5c253051d6f2",
+      "displayName": "Slovenia Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/235b7976-7bbe-4df5-bb40-08678e749d1a.json",
+      "backupPolicyId": "235b7976-7bbe-4df5-bb40-08678e749d1a",
+      "displayName": "Slovenia Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e47b071e-c352-4d70-8241-8c215ad65505.json",
+      "backupPolicyId": "e47b071e-c352-4d70-8241-8c215ad65505",
+      "displayName": "Slovenia Tax Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/68948b27-803d-41e4-adf1-13e05eb541bb.json",
+      "backupPolicyId": "68948b27-803d-41e4-adf1-13e05eb541bb",
+      "displayName": "Slovenia Unique Master Citizen Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e2adf7cb-8ea6-4048-a2ed-d89eb65f2780.json",
+      "backupPolicyId": "e2adf7cb-8ea6-4048-a2ed-d89eb65f2780",
+      "displayName": "South Africa Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/3da0b024-4c08-406b-9f9e-de96accd0209.json",
+      "backupPolicyId": "3da0b024-4c08-406b-9f9e-de96accd0209",
+      "displayName": "South Korea Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/cb725748-0f69-4282-8a03-e9b222a10a18.json",
+      "backupPolicyId": "cb725748-0f69-4282-8a03-e9b222a10a18",
+      "displayName": "South Korea Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/5b802e18-ba80-44c4-bc83-bf2ad36ae36a.json",
+      "backupPolicyId": "5b802e18-ba80-44c4-bc83-bf2ad36ae36a",
+      "displayName": "South Korea Resident Registration Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/8e6251b9-47b4-40e8-a42b-0f80876be192.json",
+      "backupPolicyId": "8e6251b9-47b4-40e8-a42b-0f80876be192",
+      "displayName": "Spain DNI",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d5a82922-b501-4f40-8868-341321146aa2.json",
+      "backupPolicyId": "d5a82922-b501-4f40-8868-341321146aa2",
+      "displayName": "Spain Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d17a57de-9fa5-4e9f-85d3-85c26d89686e.json",
+      "backupPolicyId": "d17a57de-9fa5-4e9f-85d3-85c26d89686e",
+      "displayName": "Spain Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/5df987c0-8eae-4bce-ace7-b316347f3070.json",
+      "backupPolicyId": "5df987c0-8eae-4bce-ace7-b316347f3070",
+      "displayName": "Spain Social Security Number (SSN)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/10f0d113-b0e1-47dc-872a-a4f45b9376a3.json",
+      "backupPolicyId": "10f0d113-b0e1-47dc-872a-a4f45b9376a3",
+      "displayName": "Spain Tax Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e76b6205-d3cb-46f2-bd63-c90153f2f97d.json",
+      "backupPolicyId": "e76b6205-d3cb-46f2-bd63-c90153f2f97d",
+      "displayName": "SQL Server Connection String",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/70088720-90dd-47f5-805e-5525f3567391.json",
+      "backupPolicyId": "70088720-90dd-47f5-805e-5525f3567391",
+      "displayName": "Sweden Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/f69aaf40-79be-4fac-8f05-fd1910d272c8.json",
+      "backupPolicyId": "f69aaf40-79be-4fac-8f05-fd1910d272c8",
+      "displayName": "Sweden National ID",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ba4e7456-55a9-4d89-9140-c33673553526.json",
+      "backupPolicyId": "ba4e7456-55a9-4d89-9140-c33673553526",
+      "displayName": "Sweden Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/139acba0-a5bc-4fbb-876d-f7a493ae8a40.json",
+      "backupPolicyId": "139acba0-a5bc-4fbb-876d-f7a493ae8a40",
+      "displayName": "Sweden Tax Identification Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/cb2ab58c-9cb8-4c81-baf8-a4e106791df4.json",
+      "backupPolicyId": "cb2ab58c-9cb8-4c81-baf8-a4e106791df4",
+      "displayName": "SWIFT Code",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/277cfa4b-6eaa-4a1b-9492-099dec849971.json",
+      "backupPolicyId": "277cfa4b-6eaa-4a1b-9492-099dec849971",
+      "displayName": "Swiss Social Security Number AHV",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03.json",
+      "backupPolicyId": "4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03",
+      "displayName": "Taiwan National ID",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e7251cb4-4c2c-41df-963e-924eb3dae04a.json",
+      "backupPolicyId": "e7251cb4-4c2c-41df-963e-924eb3dae04a",
+      "displayName": "Taiwan Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/48269fec-05ea-46ea-b326-f5623a58c6e9.json",
+      "backupPolicyId": "48269fec-05ea-46ea-b326-f5623a58c6e9",
+      "displayName": "Taiwan Resident Certificate (ARC/TARC)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/44ca9e86-ead7-4c5d-884a-e2eaa401515e.json",
+      "backupPolicyId": "44ca9e86-ead7-4c5d-884a-e2eaa401515e",
+      "displayName": "Thai Population Identification Code",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/fb621f20-3876-4cfc-acec-8c8e73ca32c7.json",
+      "backupPolicyId": "fb621f20-3876-4cfc-acec-8c8e73ca32c7",
+      "displayName": "Turkish National Identification number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/f93de4be-d94c-40df-a8be-461738047551.json",
+      "backupPolicyId": "f93de4be-d94c-40df-a8be-461738047551",
+      "displayName": "U.K. Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/a3eea206-dc0c-4f06-9e22-aa1be3059963.json",
+      "backupPolicyId": "a3eea206-dc0c-4f06-9e22-aa1be3059963",
+      "displayName": "U.K. Electoral Roll Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/3192014e-2a16-44e9-aa69-4b20375c9a78.json",
+      "backupPolicyId": "3192014e-2a16-44e9-aa69-4b20375c9a78",
+      "displayName": "U.K. National Health Service Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/16c07343-c26f-49d2-a987-3daf717e94cc.json",
+      "backupPolicyId": "16c07343-c26f-49d2-a987-3daf717e94cc",
+      "displayName": "U.K. National Insurance Number (NINO)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ad4a8116-0db8-439a-b545-6d967642f0ec.json",
+      "backupPolicyId": "ad4a8116-0db8-439a-b545-6d967642f0ec",
+      "displayName": "U.K. Unique Taxpayer Reference Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/178ec42a-18b4-47cc-85c7-d62c92fd67f8.json",
+      "backupPolicyId": "178ec42a-18b4-47cc-85c7-d62c92fd67f8",
+      "displayName": "U.S. / U.K. Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/a2ce32a8-f935-4bb6-8e96-2a5157672e2c.json",
+      "backupPolicyId": "a2ce32a8-f935-4bb6-8e96-2a5157672e2c",
+      "displayName": "U.S. Bank Account Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/dfeb356f-61cd-459e-bf0f-7c6d28b458c6.json",
+      "backupPolicyId": "dfeb356f-61cd-459e-bf0f-7c6d28b458c6",
+      "displayName": "U.S. Driver's License Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e55e2a32-f92d-4985-a35d-a0b269eb687b.json",
+      "backupPolicyId": "e55e2a32-f92d-4985-a35d-a0b269eb687b",
+      "displayName": "U.S. Individual Taxpayer Identification Number (ITIN)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/a44669fe-0d48-453d-a9b1-2cc83f2cba77.json",
+      "backupPolicyId": "a44669fe-0d48-453d-a9b1-2cc83f2cba77",
+      "displayName": "U.S. Social Security Number (SSN)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/853a8051-ad90-417c-9345-c73ac0adc1c3.json",
+      "backupPolicyId": "853a8051-ad90-417c-9345-c73ac0adc1c3",
+      "displayName": "UAE Identity Card Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/111b5e63-6f4e-47c6-99bc-dd95625a5acf.json",
+      "backupPolicyId": "111b5e63-6f4e-47c6-99bc-dd95625a5acf",
+      "displayName": "UAE Passport Number",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1817a540-221f-4459-9202-3bd78b81d803.json",
+      "backupPolicyId": "1817a540-221f-4459-9202-3bd78b81d803",
+      "displayName": "Ukraine Passport Number (Domestic)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/cfbe032d-22e0-4f28-ab68-d66e9641f1e2.json",
+      "backupPolicyId": "cfbe032d-22e0-4f28-ab68-d66e9641f1e2",
+      "displayName": "Ukraine Passport Number (International)",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/50b8b56b-4ef8-44c2-a924-03374f5831ce.json",
+      "backupPolicyId": "50b8b56b-4ef8-44c2-a924-03374f5831ce",
+      "displayName": "All Full Names",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/065bdd91-ef07-40d3-b8a4-0aea722eaa49.json",
+      "backupPolicyId": "065bdd91-ef07-40d3-b8a4-0aea722eaa49",
+      "displayName": "All Medical Terms And Conditions",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/8548332d-6d71-41f8-97db-cc3b5fa544e6.json",
+      "backupPolicyId": "8548332d-6d71-41f8-97db-cc3b5fa544e6",
+      "displayName": "All Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d1d18c85-1203-46f5-b32f-2d6309de4e5b.json",
+      "backupPolicyId": "d1d18c85-1203-46f5-b32f-2d6309de4e5b",
+      "displayName": "Australia Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/286d9b20-eb7a-4ad8-a7fa-b7eccc0eade5.json",
+      "backupPolicyId": "286d9b20-eb7a-4ad8-a7fa-b7eccc0eade5",
+      "displayName": "Austria Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/08e0fc0e-def1-49c3-bc4f-f432650d9138.json",
+      "backupPolicyId": "08e0fc0e-def1-49c3-bc4f-f432650d9138",
+      "displayName": "Belgium Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/fc564df4-201b-4405-b6da-54a2501c198f.json",
+      "backupPolicyId": "fc564df4-201b-4405-b6da-54a2501c198f",
+      "displayName": "Blood Test Terms",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/321c43ef-82f4-4b68-be93-179f54b42dab.json",
+      "backupPolicyId": "321c43ef-82f4-4b68-be93-179f54b42dab",
+      "displayName": "Brand Medication Names",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/b37568b5-499c-416b-8785-f72b791fcc5a.json",
+      "backupPolicyId": "b37568b5-499c-416b-8785-f72b791fcc5a",
+      "displayName": "Brazil Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/a6fc6e44-c29b-49cf-814f-75178ef9ac30.json",
+      "backupPolicyId": "a6fc6e44-c29b-49cf-814f-75178ef9ac30",
+      "displayName": "Bulgaria Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/4de48f8f-afc8-438d-9e7f-787188178d8c.json",
+      "backupPolicyId": "4de48f8f-afc8-438d-9e7f-787188178d8c",
+      "displayName": "Canada Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/c37d5e84-bc2e-458a-be24-6a69b23562f7.json",
+      "backupPolicyId": "c37d5e84-bc2e-458a-be24-6a69b23562f7",
+      "displayName": "China Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/34cf4670-97df-4752-97bc-f6a7b144f774.json",
+      "backupPolicyId": "34cf4670-97df-4752-97bc-f6a7b144f774",
+      "displayName": "Croatia Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1e87347d-47f8-40e7-9d9c-d54097d2f598.json",
+      "backupPolicyId": "1e87347d-47f8-40e7-9d9c-d54097d2f598",
+      "displayName": "Cyprus Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/75571732-c941-4cf3-8edc-db5a7bbc5e03.json",
+      "backupPolicyId": "75571732-c941-4cf3-8edc-db5a7bbc5e03",
+      "displayName": "Czech Republic Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/06f4c2d4-77c2-415f-8495-75127051a61c.json",
+      "backupPolicyId": "06f4c2d4-77c2-415f-8495-75127051a61c",
+      "displayName": "Denmark Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/17066377-466d-43ff-997f-c9240414021c.json",
+      "backupPolicyId": "17066377-466d-43ff-997f-c9240414021c",
+      "displayName": "Diseases",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/026cadfb-df9c-4633-8949-6dd9f9f4eb01.json",
+      "backupPolicyId": "026cadfb-df9c-4633-8949-6dd9f9f4eb01",
+      "displayName": "Estonia Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/a7417d1f-eee9-4f88-8f43-e94e35677ff8.json",
+      "backupPolicyId": "a7417d1f-eee9-4f88-8f43-e94e35677ff8",
+      "displayName": "Finland Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/674c3b99-2a5f-4698-ab29-81828328da9b.json",
+      "backupPolicyId": "674c3b99-2a5f-4698-ab29-81828328da9b",
+      "displayName": "France Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d82f1c56-8eb9-4cf2-b279-43872774c7f6.json",
+      "backupPolicyId": "d82f1c56-8eb9-4cf2-b279-43872774c7f6",
+      "displayName": "Generic Medication Names",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d703beef-45ec-497f-bdcb-74e220e764b7.json",
+      "backupPolicyId": "d703beef-45ec-497f-bdcb-74e220e764b7",
+      "displayName": "Germany Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ec2e5fea-da77-4fb5-bc6f-75cd7642bac3.json",
+      "backupPolicyId": "ec2e5fea-da77-4fb5-bc6f-75cd7642bac3",
+      "displayName": "Greece Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/9135827f-a27c-4d6d-ba8c-69e166414b87.json",
+      "backupPolicyId": "9135827f-a27c-4d6d-ba8c-69e166414b87",
+      "displayName": "Greenland Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/4dcc3216-d23f-40a0-a1ee-80ff322f599e.json",
+      "backupPolicyId": "4dcc3216-d23f-40a0-a1ee-80ff322f599e",
+      "displayName": "Hungary Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/dfb6646c-d21b-4318-8def-e55af142d881.json",
+      "backupPolicyId": "dfb6646c-d21b-4318-8def-e55af142d881",
+      "displayName": "Iceland Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/88fd9212-9d63-451d-9c74-05a13ac6732a.json",
+      "backupPolicyId": "88fd9212-9d63-451d-9c74-05a13ac6732a",
+      "displayName": "Impairments Listed In The U.S. Disability Evaluation Under Social Security",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/651646de-f4dd-4e7c-91ad-8679d8049bfa.json",
+      "backupPolicyId": "651646de-f4dd-4e7c-91ad-8679d8049bfa",
+      "displayName": "Ireland Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/3270dbe0-d63b-4dde-8aa4-bc6f19f8a802.json",
+      "backupPolicyId": "3270dbe0-d63b-4dde-8aa4-bc6f19f8a802",
+      "displayName": "Italy Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/19289d79-b636-40b3-a92b-817ec7133531.json",
+      "backupPolicyId": "19289d79-b636-40b3-a92b-817ec7133531",
+      "displayName": "Japan Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/56967ee6-421b-412a-8076-653d97164620.json",
+      "backupPolicyId": "56967ee6-421b-412a-8076-653d97164620",
+      "displayName": "Korea Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ee05bb9c-7b87-42e1-9987-446b243245d5.json",
+      "backupPolicyId": "ee05bb9c-7b87-42e1-9987-446b243245d5",
+      "displayName": "Lab Test Terms",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/92a71ddd-1acc-4aca-ac8e-94db01841e1c.json",
+      "backupPolicyId": "92a71ddd-1acc-4aca-ac8e-94db01841e1c",
+      "displayName": "Latvia Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/83127ddf-b7c7-4938-8c81-8b08d65bbb5f.json",
+      "backupPolicyId": "83127ddf-b7c7-4938-8c81-8b08d65bbb5f",
+      "displayName": "Liechtenstein Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/7740d4dd-4f07-452b-b039-6c8dab0ba5bc.json",
+      "backupPolicyId": "7740d4dd-4f07-452b-b039-6c8dab0ba5bc",
+      "displayName": "Lifestyles That Relate To Medical Conditions",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/cdde1960-c72b-4705-b56f-606570fc33bc.json",
+      "backupPolicyId": "cdde1960-c72b-4705-b56f-606570fc33bc",
+      "displayName": "Lithuania Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1626e616-84a4-401b-b062-d12f6ad470a6.json",
+      "backupPolicyId": "1626e616-84a4-401b-b062-d12f6ad470a6",
+      "displayName": "Luxembourg Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e18f8702-ef56-4db5-be2b-98c205dc2e3e.json",
+      "backupPolicyId": "e18f8702-ef56-4db5-be2b-98c205dc2e3e",
+      "displayName": "Malta Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/a430ac76-0141-4378-b5fd-293e65890d48.json",
+      "backupPolicyId": "a430ac76-0141-4378-b5fd-293e65890d48",
+      "displayName": "Medical Specialties",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/b3650e47-f2dc-4d29-a4fc-1b9154005c07.json",
+      "backupPolicyId": "b3650e47-f2dc-4d29-a4fc-1b9154005c07",
+      "displayName": "Netherlands Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/0fe7f6b1-b287-421c-9286-3a5fb7bc208c.json",
+      "backupPolicyId": "0fe7f6b1-b287-421c-9286-3a5fb7bc208c",
+      "displayName": "New Zealand Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/8751dcac-e02a-490a-bdf2-aff90ce09f84.json",
+      "backupPolicyId": "8751dcac-e02a-490a-bdf2-aff90ce09f84",
+      "displayName": "Norway Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ed728544-c58d-470d-9bde-ee6ec901f38d.json",
+      "backupPolicyId": "ed728544-c58d-470d-9bde-ee6ec901f38d",
+      "displayName": "Poland Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/eda085a4-1f9b-46ca-8f1f-885ef394a476.json",
+      "backupPolicyId": "eda085a4-1f9b-46ca-8f1f-885ef394a476",
+      "displayName": "Portuguese Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/e3a1f6fc-92f9-4b1c-b3fb-94b182cdc3ed.json",
+      "backupPolicyId": "e3a1f6fc-92f9-4b1c-b3fb-94b182cdc3ed",
+      "displayName": "Romania Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/515c522b-ce04-4a40-816b-8226f26c65e7.json",
+      "backupPolicyId": "515c522b-ce04-4a40-816b-8226f26c65e7",
+      "displayName": "Russia Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/6dee3dcd-0946-48a8-b49e-e3596b671fc5.json",
+      "backupPolicyId": "6dee3dcd-0946-48a8-b49e-e3596b671fc5",
+      "displayName": "Singapore Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1b342635-f7dc-4e15-a288-3f7e02c93169.json",
+      "backupPolicyId": "1b342635-f7dc-4e15-a288-3f7e02c93169",
+      "displayName": "Slovakia Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/0b76dc4d-cf09-4174-b334-fc72e1b38bb9.json",
+      "backupPolicyId": "0b76dc4d-cf09-4174-b334-fc72e1b38bb9",
+      "displayName": "Slovenia Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/0311f67f-d239-4f57-bde7-bd76253576eb.json",
+      "backupPolicyId": "0311f67f-d239-4f57-bde7-bd76253576eb",
+      "displayName": "South Africa Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/36c81f62-73f6-4f62-8350-2a809cb27ff6.json",
+      "backupPolicyId": "36c81f62-73f6-4f62-8350-2a809cb27ff6",
+      "displayName": "Spain Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/daee7349-84f5-48ec-81c9-f6fafc7c976f.json",
+      "backupPolicyId": "daee7349-84f5-48ec-81c9-f6fafc7c976f",
+      "displayName": "Surgical Procedures",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/99d64fe7-8168-4cb8-9e8f-882444b4375a.json",
+      "backupPolicyId": "99d64fe7-8168-4cb8-9e8f-882444b4375a",
+      "displayName": "Sweden Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/0741710b-c0b5-400c-98a7-864942ac89be.json",
+      "backupPolicyId": "0741710b-c0b5-400c-98a7-864942ac89be",
+      "displayName": "Switzerland Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/7964a3bf-18fd-4e6c-a04e-d72f0cf4941c.json",
+      "backupPolicyId": "7964a3bf-18fd-4e6c-a04e-d72f0cf4941c",
+      "displayName": "Taiwan Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/cf1d79ec-3162-49a8-9bcd-3cbeda2a3439.json",
+      "backupPolicyId": "cf1d79ec-3162-49a8-9bcd-3cbeda2a3439",
+      "displayName": "Turkey Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/f6dc2d17-3549-41e2-af29-ae1846ae9542.json",
+      "backupPolicyId": "f6dc2d17-3549-41e2-af29-ae1846ae9542",
+      "displayName": "Types Of Medication",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/accaf4c2-fb54-40f7-aea8-db0e36a2e9eb.json",
+      "backupPolicyId": "accaf4c2-fb54-40f7-aea8-db0e36a2e9eb",
+      "displayName": "U.K. Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/44aa44f2-63d1-41df-af0d-970283ac41e2.json",
+      "backupPolicyId": "44aa44f2-63d1-41df-af0d-970283ac41e2",
+      "displayName": "U.S. Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/97bbd986-e9a8-47e9-91d0-3eb20fdb978f.json",
+      "backupPolicyId": "97bbd986-e9a8-47e9-91d0-3eb20fdb978f",
+      "displayName": "Ukraine Physical Addresses",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ba147552-2ed1-4a8f-a441-981e94ab1895.json",
+      "backupPolicyId": "ba147552-2ed1-4a8f-a441-981e94ab1895",
+      "displayName": "All Credential Types",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/881b8266-702b-4ebc-9c27-ea38c3765ab5.json",
+      "backupPolicyId": "881b8266-702b-4ebc-9c27-ea38c3765ab5",
+      "displayName": "Amazon S3 Client Secret Access Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/55e47f22-402c-486f-9779-f82430d2eee4.json",
+      "backupPolicyId": "55e47f22-402c-486f-9779-f82430d2eee4",
+      "displayName": "ASP.NET Machine Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ad0a2311-d91f-468c-bd00-925f8991d3e1.json",
+      "backupPolicyId": "ad0a2311-d91f-468c-bd00-925f8991d3e1",
+      "displayName": "Azure App Service Deployment Password",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/933284b2-12cf-4bd1-86df-c5300681ab79.json",
+      "backupPolicyId": "933284b2-12cf-4bd1-86df-c5300681ab79",
+      "displayName": "Azure Batch Shared Access Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/37e2bc99-1346-4a68-bd16-267e784711d1.json",
+      "backupPolicyId": "37e2bc99-1346-4a68-bd16-267e784711d1",
+      "displayName": "Azure Bot Framework Secret Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/03ffa580-cd25-4df2-9a3e-fb9622cdeac1.json",
+      "backupPolicyId": "03ffa580-cd25-4df2-9a3e-fb9622cdeac1",
+      "displayName": "Azure Bot Service App Secret",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/954d61cd-e0d0-4466-9bfe-f54b4e9714df.json",
+      "backupPolicyId": "954d61cd-e0d0-4466-9bfe-f54b4e9714df",
+      "displayName": "Azure Cognitive Search API Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/91704742-2d51-4c3e-928b-f0600b55edb6.json",
+      "backupPolicyId": "91704742-2d51-4c3e-928b-f0600b55edb6",
+      "displayName": "Azure Cognitive Service Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/c5dcd46a-068f-4e19-a093-c91b4e19055a.json",
+      "backupPolicyId": "c5dcd46a-068f-4e19-a093-c91b4e19055a",
+      "displayName": "Azure Container Registry Access Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/aa9b9abb-0c21-4e27-8393-cc1a8c9c407f.json",
+      "backupPolicyId": "aa9b9abb-0c21-4e27-8393-cc1a8c9c407f",
+      "displayName": "Azure COSMOS DB Account Access Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/b70cb1d1-3c98-436f-b63e-f61f3503e407.json",
+      "backupPolicyId": "b70cb1d1-3c98-436f-b63e-f61f3503e407",
+      "displayName": "Azure Databricks Personal Access Token",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/2d9471ab-72e3-4512-99ee-652482362107.json",
+      "backupPolicyId": "2d9471ab-72e3-4512-99ee-652482362107",
+      "displayName": "Azure DevOps App Secret",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/04749030-d045-4a81-905a-dd4e48f880a2.json",
+      "backupPolicyId": "04749030-d045-4a81-905a-dd4e48f880a2",
+      "displayName": "Azure DevOps Personal Access Token",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/ccb6a7c2-1693-487b-8912-90788d74b906.json",
+      "backupPolicyId": "ccb6a7c2-1693-487b-8912-90788d74b906",
+      "displayName": "Azure EventGrid Access Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/f03131f9-b7f2-4ec7-856d-39e814614334.json",
+      "backupPolicyId": "f03131f9-b7f2-4ec7-856d-39e814614334",
+      "displayName": "Azure Function Master / API Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/a24bd725-5c89-4705-a406-6c3cf7535e45.json",
+      "backupPolicyId": "a24bd725-5c89-4705-a406-6c3cf7535e45",
+      "displayName": "Azure IoT Shared Access Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/04a87f1b-b1fe-4f2f-8898-4d32d968372a.json",
+      "backupPolicyId": "04a87f1b-b1fe-4f2f-8898-4d32d968372a",
+      "displayName": "Azure Logic App Shared Access Signature",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/209902e2-e787-4c1f-9fd3-41943cb02e95.json",
+      "backupPolicyId": "209902e2-e787-4c1f-9fd3-41943cb02e95",
+      "displayName": "Azure Machine Learning Web Service API Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/93e77273-df14-4d35-ab29-77c606b6589f.json",
+      "backupPolicyId": "93e77273-df14-4d35-ab29-77c606b6589f",
+      "displayName": "Azure Maps Subscription Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/b96e960c-b899-4fbf-9a38-5b8e91c1179a.json",
+      "backupPolicyId": "b96e960c-b899-4fbf-9a38-5b8e91c1179a",
+      "displayName": "Azure Redis Cache Connection String Password",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/f4ac21a7-a3d9-4291-9094-f54eb94bff5c.json",
+      "backupPolicyId": "f4ac21a7-a3d9-4291-9094-f54eb94bff5c",
+      "displayName": "Azure Service Bus Shared Access Signature",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/287cbe68-26fb-42cf-993a-78890b46a1fa.json",
+      "backupPolicyId": "287cbe68-26fb-42cf-993a-78890b46a1fa",
+      "displayName": "Azure Shared Access Key / Web Hook Token",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/158bc166-89fe-44ff-bb4c-0704f8b3f2dd.json",
+      "backupPolicyId": "158bc166-89fe-44ff-bb4c-0704f8b3f2dd",
+      "displayName": "Azure SignalR Access Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/52974858-9b9c-47bb-99d0-67fa1968c3c5.json",
+      "backupPolicyId": "52974858-9b9c-47bb-99d0-67fa1968c3c5",
+      "displayName": "Azure SQL Connection String",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/5500fb81-47f7-471d-9de3-2b781487342d.json",
+      "backupPolicyId": "5500fb81-47f7-471d-9de3-2b781487342d",
+      "displayName": "Azure Storage Account Access Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/7a47fadd-6969-4e19-af75-33e6d584d1be.json",
+      "backupPolicyId": "7a47fadd-6969-4e19-af75-33e6d584d1be",
+      "displayName": "Azure Storage Account Shared Access Signature",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/f522138f-ba06-4c00-8db0-dea5c22f6f58.json",
+      "backupPolicyId": "f522138f-ba06-4c00-8db0-dea5c22f6f58",
+      "displayName": "Azure Storage Account Shared Access Signature for High Risk Resources",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/9b9c114b-1ee1-4ce2-a712-d0117d57dbeb.json",
+      "backupPolicyId": "9b9c114b-1ee1-4ce2-a712-d0117d57dbeb",
+      "displayName": "Azure Subscription Management Certificate",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/64ab8b8c-cb50-4e2c-97e5-2a1699a850e2.json",
+      "backupPolicyId": "64ab8b8c-cb50-4e2c-97e5-2a1699a850e2",
+      "displayName": "Client Secret / Api Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/24a90d49-519b-4689-aa13-f35c47cc40c3.json",
+      "backupPolicyId": "24a90d49-519b-4689-aa13-f35c47cc40c3",
+      "displayName": "General Password",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/664cfcd3-afdb-4fe2-b417-c2040ddd960d.json",
+      "backupPolicyId": "664cfcd3-afdb-4fe2-b417-c2040ddd960d",
+      "displayName": "General Symmetric Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/927cd1e7-8377-4df3-9bc3-fabdaef94787.json",
+      "backupPolicyId": "927cd1e7-8377-4df3-9bc3-fabdaef94787",
+      "displayName": "GitHub Personal Access Token",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/9bea20ec-764d-4987-88a1-093bbbacadd2.json",
+      "backupPolicyId": "9bea20ec-764d-4987-88a1-093bbbacadd2",
+      "displayName": "Google API key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/193c16a6-58cb-4d8a-adf0-7cbad55e0734.json",
+      "backupPolicyId": "193c16a6-58cb-4d8a-adf0-7cbad55e0734",
+      "displayName": "Http Authorization Header",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/c1ce0e56-014f-40c0-a268-e702117a60e3.json",
+      "backupPolicyId": "c1ce0e56-014f-40c0-a268-e702117a60e3",
+      "displayName": "Microsoft Bing Maps Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/f61444f3-b87e-4c16-b835-b588033db6b7.json",
+      "backupPolicyId": "f61444f3-b87e-4c16-b835-b588033db6b7",
+      "displayName": "Microsoft Entra Client Access Token",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/d820a2f1-46ef-4220-957e-6eb9abc1aadb.json",
+      "backupPolicyId": "d820a2f1-46ef-4220-957e-6eb9abc1aadb",
+      "displayName": "Microsoft Entra Client Secret",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/b7d05856-6d0a-4488-b4a8-1b5c48bab75a.json",
+      "backupPolicyId": "b7d05856-6d0a-4488-b4a8-1b5c48bab75a",
+      "displayName": "Microsoft Entra User Credentials",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/1ac53bfc-5956-49ae-b4b6-7087bf0cfc88.json",
+      "backupPolicyId": "1ac53bfc-5956-49ae-b4b6-7087bf0cfc88",
+      "displayName": "Slack Access Token",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/2de77d45-9d47-4ce2-990d-18e26b487194.json",
+      "backupPolicyId": "2de77d45-9d47-4ce2-990d-18e26b487194",
+      "displayName": "User Login Credentials",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/417b111d-1909-4457-b686-d6470b29a7ec.json",
+      "backupPolicyId": "417b111d-1909-4457-b686-d6470b29a7ec",
+      "displayName": "X.509 Certificate Private Key",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/adc8ae8b-a59a-434b-99e3-ad31946d396d.json",
+      "backupPolicyId": "adc8ae8b-a59a-434b-99e3-ad31946d396d",
+      "displayName": "Test",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/9dabeafa-db03-4c99-bb9c-694f7845789e.json",
+      "backupPolicyId": "9dabeafa-db03-4c99-bb9c-694f7845789e",
+      "displayName": "Test Typ for AI",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSensitiveInformationType",
+      "path": "policies/purview/scc/sits/5baff639-beb8-4cc3-bfde-01d27ef7fd4d.json",
+      "backupPolicyId": "5baff639-beb8-4cc3-bfde-01d27ef7fd4d",
+      "displayName": "Vontobel Test",
+      "description": null,
+      "summary": {
+        "State": "Production"
+      },
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewSITRulePackage",
+      "path": "policies/purview/scc/sit-rulepackages/FFO.extest.microsoft.com_Microsoft_Exchange_Hosted_Organizations_epicfusionlabs.onmicrosoft.com_Configuration_5DA58D7A-25F1-4205-93D0-BEB10054C503.json",
+      "backupPolicyId": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/5DA58D7A-25F1-4205-93D0-BEB10054C503",
+      "displayName": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/5DA58D7A-25F1-4205-93D0-BEB10054C503",
+      "description": null,
+      "summary": null,
+      "restorable": true
+    },
+    {
+      "policyType": "PurviewEndpointDlpSettings",
+      "path": "policies/purview/scc/endpoint-dlp-settings/95e5b6f0-a2a3-4488-a6c7-ce6ce2757864.json",
+      "backupPolicyId": "95e5b6f0-a2a3-4488-a6c7-ce6ce2757864",
+      "displayName": "Settings",
+      "description": null,
+      "summary": null,
+      "restorable": true
+    }
+  ]
+}
