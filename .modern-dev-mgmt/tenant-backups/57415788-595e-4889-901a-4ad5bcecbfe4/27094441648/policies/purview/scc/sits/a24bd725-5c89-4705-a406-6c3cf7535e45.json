@@ -1,0 +1,5 @@
+{
+  "id": "a24bd725-5c89-4705-a406-6c3cf7535e45",
+  "name": "Azure IoT Shared Access Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

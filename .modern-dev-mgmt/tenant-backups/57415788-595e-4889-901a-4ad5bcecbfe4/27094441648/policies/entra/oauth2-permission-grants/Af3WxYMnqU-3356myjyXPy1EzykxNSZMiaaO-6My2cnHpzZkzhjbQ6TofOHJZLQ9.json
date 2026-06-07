@@ -1,0 +1,8 @@
+{
+  "clientId": "c5d6fd01-2783-4fa9-b7df-9ea6ca3c973f",
+  "consentType": "Principal",
+  "id": "Af3WxYMnqU-3356myjyXPy1EzykxNSZMiaaO-6My2cnHpzZkzhjbQ6TofOHJZLQ9",
+  "principalId": "6436a7c7-18ce-43db-a4e8-7ce1c964b43d",
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": " openid profile email offline_access User.Read Calendars.Read Calendars.ReadWrite Mail.Read MailboxSettings.Read ServiceHealth.Read.All ServiceMessage.Read.All Files.Read.All Files.ReadWrite.All Sites.Read.All Sites.ReadWrite.All User.ReadBasic.All Team.ReadBasic.All Channel.ReadBasic.All Tasks.Read Tasks.ReadWrite Mail.Send Mail.ReadWrite Contacts.Read Chat.Read DeviceManagementManagedDevices.Read.All DeviceManagementManagedDevices.ReadWrite.All DeviceManagementConfiguration.Read.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementApps.Read.All DeviceManagementApps.ReadWrite.All DeviceManagementServiceConfig.Read.All DeviceManagementServiceConfig.ReadWrite.All DeviceManagementRBAC.Read.All Group.Read.All Device.Read.All Mail.Read.Shared Mail.ReadWrite.Shared Mail.Send.Shared"
+}

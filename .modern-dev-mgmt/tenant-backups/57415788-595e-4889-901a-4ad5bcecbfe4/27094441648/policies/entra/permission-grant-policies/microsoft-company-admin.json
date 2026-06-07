@@ -1,0 +1,48 @@
+{
+  "id": "microsoft-company-admin",
+  "displayName": "Company Admin Policy",
+  "description": "Permissions consentable by Company Administrators.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-company-admin')/includes",
+  "includes": [
+    {
+      "id": "1f06f3a1-42d3-4243-8fbc-5d0c30d4de4c",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    },
+    {
+      "id": "08619a19-ae6f-406c-b9a0-ea6af1f1558d",
+      "permissionClassification": "all",
+      "permissionType": "delegated",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    }
+  ],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-company-admin')/excludes",
+  "excludes": []
+}

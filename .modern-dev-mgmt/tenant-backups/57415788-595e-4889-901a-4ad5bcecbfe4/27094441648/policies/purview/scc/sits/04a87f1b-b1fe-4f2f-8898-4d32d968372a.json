@@ -1,0 +1,5 @@
+{
+  "id": "04a87f1b-b1fe-4f2f-8898-4d32d968372a",
+  "name": "Azure Logic App Shared Access Signature",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

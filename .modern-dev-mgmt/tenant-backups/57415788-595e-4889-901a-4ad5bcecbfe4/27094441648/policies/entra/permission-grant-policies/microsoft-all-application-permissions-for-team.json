@@ -1,0 +1,29 @@
+{
+  "id": "microsoft-all-application-permissions-for-team",
+  "displayName": "All team resource-specific application permissions, for any client app",
+  "description": "(Deprecated) Includes all team resource-specific application permissions, for all APIs, for any client application.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-team')/includes",
+  "includes": [
+    {
+      "id": "1cf43e54-f240-4e19-8436-8d4fc4c97ab6",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    }
+  ],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-team')/excludes",
+  "excludes": []
+}

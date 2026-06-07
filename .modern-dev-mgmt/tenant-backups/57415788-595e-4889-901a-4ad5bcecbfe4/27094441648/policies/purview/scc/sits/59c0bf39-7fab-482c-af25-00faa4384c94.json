@@ -1,0 +1,5 @@
+{
+  "id": "59c0bf39-7fab-482c-af25-00faa4384c94",
+  "name": "Canada Health Service Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

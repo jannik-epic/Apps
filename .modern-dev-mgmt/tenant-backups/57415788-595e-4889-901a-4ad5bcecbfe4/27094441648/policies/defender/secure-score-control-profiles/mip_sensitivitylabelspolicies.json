@@ -1,0 +1,35 @@
+{
+  "id": "mip_sensitivitylabelspolicies",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies&tid=57415788-595e-4889-901a-4ad5bcecbfe4",
+  "controlCategory": "Data",
+  "title": "Publish M365 sensitivity label data classification policies",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 2.0,
+  "rank": 129,
+  "remediation": "\r\n        <ol>\r\n  <li> Open Microsoft Purview compliance portal </li>\r\n  <li> Under Solutions click Information protection </li>\r\n  <li> Ensure Labels exist </li>\r\n  <li>Click on Label policies tab </li>\r\n  <li>Ensure that a Label policy exists and is published accordingly </li>\r\n  <li>Make sure Labels are published on all of your licensed users and groups </li>\r\n</ol>\r\n    ",
+  "remediationImpact": "Unknown",
+  "service": "MIP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

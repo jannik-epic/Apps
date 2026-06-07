@@ -1,0 +1,14 @@
+{
+  "id": "e8cc0d3e-943f-4b57-86e6-f3d320c3dced",
+  "createdDateTime": "2023-11-16T14:54:18.6073449Z",
+  "lastModifiedDateTime": "2023-11-16T14:54:18.6073449Z",
+  "displayName": "All AVD Multisession VMs",
+  "description": "",
+  "platform": "windows10AndLater",
+  "rule": "(device.deviceName -startsWith \"avd-\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

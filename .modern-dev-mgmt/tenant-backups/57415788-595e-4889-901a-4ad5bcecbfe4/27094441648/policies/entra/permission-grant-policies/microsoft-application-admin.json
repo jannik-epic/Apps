@@ -1,0 +1,87 @@
+{
+  "id": "microsoft-application-admin",
+  "displayName": "Application Admin Policy",
+  "description": "Permissions consentable by Application Administrators.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-application-admin')/includes",
+  "includes": [
+    {
+      "id": "811d2da7-443c-43da-96e7-28d285b234e9",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    },
+    {
+      "id": "60461179-740e-4d8b-9e00-1456a338c44b",
+      "permissionClassification": "all",
+      "permissionType": "delegated",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    }
+  ],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-application-admin')/excludes",
+  "excludes": [
+    {
+      "id": "c85b029f-4abf-47d8-ae61-d2a38299033a",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "00000003-0000-0000-c000-000000000000",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    },
+    {
+      "id": "2a1fbb36-9d9a-42d8-8804-de2aa45aca80",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "00000002-0000-0000-c000-000000000000",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    }
+  ]
+}

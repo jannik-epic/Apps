@@ -1,0 +1,5 @@
+{
+  "id": "8e6251b9-47b4-40e8-a42b-0f80876be192",
+  "name": "Spain DNI",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

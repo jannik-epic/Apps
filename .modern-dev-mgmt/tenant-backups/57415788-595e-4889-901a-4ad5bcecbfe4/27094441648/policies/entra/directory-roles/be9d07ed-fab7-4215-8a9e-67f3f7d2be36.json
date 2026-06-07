@@ -1,0 +1,7 @@
+{
+  "id": "be9d07ed-fab7-4215-8a9e-67f3f7d2be36",
+  "deletedDateTime": null,
+  "description": "Can create and manage all aspects of app registrations and enterprise apps except App Proxy.",
+  "displayName": "Cloud Application Administrator",
+  "roleTemplateId": "158c047a-c907-4556-b7ef-446551a6b5f7"
+}

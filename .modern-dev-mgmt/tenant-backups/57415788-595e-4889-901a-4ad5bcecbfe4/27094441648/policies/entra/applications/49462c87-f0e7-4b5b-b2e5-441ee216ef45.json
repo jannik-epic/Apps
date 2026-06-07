@@ -1,0 +1,53 @@
+{
+  "id": "49462c87-f0e7-4b5b-b2e5-441ee216ef45",
+  "appId": "3537bfe2-a663-4abf-a8a0-315b73c37366",
+  "displayName": "Meeting Viewer",
+  "signInAudience": "AzureADMultipleOrgs",
+  "createdDateTime": "2026-01-08T14:27:29Z",
+  "identifierUris": [
+    "api://localhost:3001/3537bfe2-a663-4abf-a8a0-315b73c37366"
+  ],
+  "web": {
+    "homePageUrl": "https://localhost:3001",
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://localhost:3001"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://localhost:3001",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "465a38f9-76ea-45b9-9f34-9e8b0d4b0b42",
+          "type": "Scope"
+        },
+        {
+          "id": "5df07973-7d5d-46ed-9847-1271055cbd51",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

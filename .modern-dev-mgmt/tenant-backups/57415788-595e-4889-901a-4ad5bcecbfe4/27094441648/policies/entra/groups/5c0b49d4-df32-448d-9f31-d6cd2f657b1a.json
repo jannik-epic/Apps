@@ -1,0 +1,13 @@
+{
+  "id": "5c0b49d4-df32-448d-9f31-d6cd2f657b1a",
+  "displayName": "Test Use Case 1 Vontobel",
+  "description": "Test Use Case 1 Vontobel",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "TestUseCase1Vontobel",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2025-03-19T12:04:15Z"
+}

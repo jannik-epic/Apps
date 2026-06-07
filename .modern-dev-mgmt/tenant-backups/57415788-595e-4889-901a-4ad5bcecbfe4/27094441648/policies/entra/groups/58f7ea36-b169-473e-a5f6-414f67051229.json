@@ -1,0 +1,13 @@
+{
+  "id": "58f7ea36-b169-473e-a5f6-414f67051229",
+  "displayName": "Access Review Beispiel Team 1",
+  "description": " ",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "AccessReviewBeispielTeam1",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2024-10-29T07:52:31Z"
+}

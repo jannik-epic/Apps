@@ -1,0 +1,28 @@
+{
+  "id": "f3b6be9c-71a1-43ae-8869-abdb90a2c1f3",
+  "appId": "0cdb4d99-3ca8-4688-bb8b-201e1a710f3d",
+  "displayName": "Decisions Meeting Documents Manager",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2021-09-20T19:19:56Z",
+  "identifierUris": [
+    "https://epicfusionlabs.com/7ab5069c-6201-4e5e-8441-b343d3629d22"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

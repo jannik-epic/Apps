@@ -1,0 +1,35 @@
+{
+  "id": "AATP_Okta_SensitiveApiToken",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2304737",
+  "controlCategory": "Identity",
+  "title": "Highly Privileged Okta Api Token",
+  "deprecated": false,
+  "implementationCost": "medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "1. Review the list of privileged Okta API tokens.<br> 2. Remove unused API tokens.",
+  "remediationImpact": "API tokens inherit the permissions of the user who created them. If an API token is created by a user with sensitive permissions, it will inherit those permissions. If stolen, the token can provide the attacker with access equivalent to that of the user. ",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

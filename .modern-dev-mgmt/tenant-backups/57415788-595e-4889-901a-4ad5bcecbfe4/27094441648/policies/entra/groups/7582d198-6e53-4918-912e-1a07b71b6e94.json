@@ -1,0 +1,13 @@
+{
+  "id": "7582d198-6e53-4918-912e-1a07b71b6e94",
+  "displayName": "Nachhaltigkeitsprogramm 2025",
+  "description": "Nachhaltigkeitsprogramm 2025",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "Nachhaltigkeitsprogramm2025",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2024-10-20T16:36:25Z"
+}

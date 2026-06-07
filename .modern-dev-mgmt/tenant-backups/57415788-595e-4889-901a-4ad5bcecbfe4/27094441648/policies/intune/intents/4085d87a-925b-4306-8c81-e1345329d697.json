@@ -1,0 +1,14 @@
+{
+  "id": "4085d87a-925b-4306-8c81-e1345329d697",
+  "displayName": "EPIC_SEC_DEV_WIN-Account Protection",
+  "description": null,
+  "isAssigned": true,
+  "isMigratingToConfigurationPolicy": null,
+  "lastModifiedDateTime": "2023-01-30T07:03:32.3662864Z",
+  "templateId": "0f2b5d70-d4e9-4156-8c16-1397eb6c54a5",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('4085d87a-925b-4306-8c81-e1345329d697')/assignments",
+  "assignments": []
+}

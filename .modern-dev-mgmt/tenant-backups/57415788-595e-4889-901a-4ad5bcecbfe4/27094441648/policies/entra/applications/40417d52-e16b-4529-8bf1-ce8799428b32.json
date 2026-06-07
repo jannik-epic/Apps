@@ -1,0 +1,26 @@
+{
+  "id": "40417d52-e16b-4529-8bf1-ce8799428b32",
+  "appId": "20fd3b77-5d82-4334-a449-5e121dc5fd46",
+  "displayName": "iac-sp",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2022-03-19T15:12:35Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

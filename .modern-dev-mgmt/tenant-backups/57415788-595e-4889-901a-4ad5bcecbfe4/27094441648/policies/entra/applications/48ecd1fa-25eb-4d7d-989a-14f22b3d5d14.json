@@ -1,0 +1,85 @@
+{
+  "id": "48ecd1fa-25eb-4d7d-989a-14f22b3d5d14",
+  "appId": "1ef0c1dc-6d96-4e29-b513-1e844fd2d8bc",
+  "displayName": "PnP.PowerShell",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-03-02T09:14:35Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": [
+      "ms-appx-web://microsoft.aad.brokerplugin/1ef0c1dc-6d96-4e29-b513-1e844fd2d8bc",
+      "http://localhost",
+      "https://login.microsoftonline.com/common/oauth2/nativeclient"
+    ]
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "4e46008b-f24c-477d-8fff-7bb4ec7aafe0",
+          "type": "Scope"
+        },
+        {
+          "id": "204e0828-b5ca-4ad8-b9f3-f32a958e7cc4",
+          "type": "Scope"
+        },
+        {
+          "id": "62a82d76-70ea-41e2-9197-370581804d09",
+          "type": "Role"
+        },
+        {
+          "id": "19da66cb-0fb0-4390-b071-ebc76a349482",
+          "type": "Role"
+        },
+        {
+          "id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "56680e0d-d2a3-4ae1-80d8-3c4f2100e3d0",
+          "type": "Scope"
+        },
+        {
+          "id": "59a198b5-0420-45a8-ae59-6da1cb640505",
+          "type": "Scope"
+        },
+        {
+          "id": "82866913-39a9-4be7-8091-f4fa781088ae",
+          "type": "Scope"
+        },
+        {
+          "id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+          "type": "Role"
+        },
+        {
+          "id": "c8e3537c-ec53-43b9-bed3-b2bd3617ae97",
+          "type": "Role"
+        },
+        {
+          "id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

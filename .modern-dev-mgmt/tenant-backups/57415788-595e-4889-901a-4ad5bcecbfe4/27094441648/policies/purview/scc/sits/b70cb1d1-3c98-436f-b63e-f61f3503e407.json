@@ -1,0 +1,5 @@
+{
+  "id": "b70cb1d1-3c98-436f-b63e-f61f3503e407",
+  "name": "Azure Databricks Personal Access Token",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

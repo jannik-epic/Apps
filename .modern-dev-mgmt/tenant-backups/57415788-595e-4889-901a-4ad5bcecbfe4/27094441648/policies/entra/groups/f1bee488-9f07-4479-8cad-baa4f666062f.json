@@ -1,0 +1,11 @@
+{
+  "id": "f1bee488-9f07-4479-8cad-baa4f666062f",
+  "displayName": "Purview DLP browser protection - included users",
+  "description": "This group is automatically created and updated to include the users scoped in DLP policies targeting unmanaged generative AI apps in the browser. This group is used in the scope of the Edge configuration policy that applies the DLP policy in Edge.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "nonCompliantBrowserBlockedUsers",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-01-21T07:56:47Z"
+}

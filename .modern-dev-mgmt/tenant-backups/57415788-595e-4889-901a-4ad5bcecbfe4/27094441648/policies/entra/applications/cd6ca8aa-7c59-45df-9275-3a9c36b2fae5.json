@@ -1,0 +1,189 @@
+{
+  "id": "cd6ca8aa-7c59-45df-9275-3a9c36b2fae5",
+  "appId": "327842ad-cde0-4343-be11-5ebcdd2e4c66",
+  "displayName": "SCEPman-CertMaster",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-26T15:32:13Z",
+  "identifierUris": [
+    "api://327842ad-cde0-4343-be11-5ebcdd2e4c66"
+  ],
+  "web": {
+    "homePageUrl": "https://app-scepman-epicflab-cm.azurewebsites.net",
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://app-scepman-epicflab-cm.azurewebsites.net/signin-oidc"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://app-scepman-epicflab-cm.azurewebsites.net/signin-oidc",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": [
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Request TLS server certificates",
+      "displayName": "Request Server",
+      "id": "1956fb2e-c303-4074-9f65-61d28b234f5f",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Request.Server"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Request Subordinate CA certificates for Firewalls",
+      "displayName": "Request Subordinate CA",
+      "id": "33678ead-b085-420d-a4bd-f8c4b24ca09b",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Request.SubCa"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Request code signing certificates",
+      "displayName": "Request Code Signing",
+      "id": "2a166422-fcac-4c82-8e0b-90b846989ecc",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Request.CodeSigning"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Request user certificates",
+      "displayName": "Request User",
+      "id": "669f46b0-df01-4e07-b30b-cf8787f53fc0",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Request.User"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Request client certificates",
+      "displayName": "Request Client",
+      "id": "fc689776-bdd6-41d6-8277-2e47769eaab3",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Request.Client"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Request certificates of all types",
+      "displayName": "Request All",
+      "id": "8364d375-6346-491f-b0cb-6c2558185489",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Request.All"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "See certificates enrolled via Intune",
+      "displayName": "Manage Intune Certificates Readonly",
+      "id": "4e6112e6-7307-49bf-93f0-8c7f9c15acc5",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Manage.Intune.Read"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "See and revoke certificates enrolled via Intune",
+      "displayName": "Manage Intune Certificates",
+      "id": "9cae8193-7e5e-4be1-8cdb-c95a6b6c5b3f",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Manage.Intune"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "See certificates listed in the Azure Storage Account",
+      "displayName": "Manage Storage Certificates Readonly",
+      "id": "a1883b6b-9b63-4946-b575-500dda2c462f",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Manage.Storage.Read"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "See and revoke certificates listed in the Azure Storage Account",
+      "displayName": "Manage Storage Certificates",
+      "id": "3e109cb3-03f5-4a2b-9435-1e7d3dff25e6",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Manage.Storage"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "See all issued certificates",
+      "displayName": "Manage All Readonly",
+      "id": "21c335dd-712f-4f5b-aa51-86358143b85b",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Manage.All.Read"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "See and revoke all issued certificates",
+      "displayName": "Manage All",
+      "id": "575092d4-2839-400f-8812-c682c5274231",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Manage.All"
+    },
+    {
+      "allowedMemberTypes": [
+        "User"
+      ],
+      "description": "Full access to all SCEPman CertMaster functions like requesting and managing certificates",
+      "displayName": "Full Admin",
+      "id": "0d04a282-c2cb-49d6-9efc-b5f0d750325e",
+      "isEnabled": true,
+      "origin": "Application",
+      "value": "Admin.Full"
+    }
+  ]
+}

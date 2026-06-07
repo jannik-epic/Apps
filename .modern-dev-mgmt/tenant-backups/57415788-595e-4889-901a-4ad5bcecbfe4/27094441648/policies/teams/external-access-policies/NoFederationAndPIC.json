@@ -1,0 +1,14 @@
+{
+  "Identity": "NoFederationAndPIC",
+  "Description": null,
+  "EnableFederationAccess": false,
+  "EnableXmppAccess": false,
+  "EnablePublicCloudAccess": null,
+  "EnablePublicCloudAudioVideoAccess": false,
+  "EnableTeamsSmsAccess": true,
+  "EnableOutsideAccess": true,
+  "EnableAcsFederationAccess": true,
+  "EnableTeamsConsumerAccess": true,
+  "EnableTeamsConsumerInbound": true,
+  "RestrictTeamsConsumerAccessToExternalUserProfiles": false
+}

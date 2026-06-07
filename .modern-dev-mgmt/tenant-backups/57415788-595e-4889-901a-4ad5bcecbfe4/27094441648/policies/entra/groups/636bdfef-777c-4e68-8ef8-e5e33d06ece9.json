@@ -1,0 +1,11 @@
+{
+  "id": "636bdfef-777c-4e68-8ef8-e5e33d06ece9",
+  "displayName": "EPIC-RemoteDesktop-RemoteDesktop-Required",
+  "description": "Automatically created by Robopack for flow 'Remote Desktop'.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "D6DFB82ADE49908696D9CD06182A595FC770FB072F02A2C1D43500AF54AD8C7C",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-10-21T06:38:24Z"
+}

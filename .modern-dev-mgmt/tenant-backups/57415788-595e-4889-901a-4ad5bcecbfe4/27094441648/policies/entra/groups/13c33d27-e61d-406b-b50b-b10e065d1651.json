@@ -1,0 +1,11 @@
+{
+  "id": "13c33d27-e61d-406b-b50b-b10e065d1651",
+  "displayName": "AAD_SEC_AS_PER-VM User Login",
+  "description": "Access on rg-avd-lap-001 with Role Virtual Machine User Login",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "aa1fda2d-a",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2023-11-09T13:52:32Z"
+}

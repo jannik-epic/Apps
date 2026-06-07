@@ -1,0 +1,18 @@
+{
+  "executionFrequency": "PT0S",
+  "retryCount": 3,
+  "blockExecutionNotifications": false,
+  "id": "e48e9495-cbb3-4363-87e7-e1c2089afd36",
+  "displayName": "VS Code - Install Shell Script",
+  "description": "13.06.2022 SBA",
+  "scriptContent": null,
+  "createdDateTime": "2022-08-22T11:47:12.2845958Z",
+  "lastModifiedDateTime": "2022-08-22T11:47:12.2845958Z",
+  "runAsAccount": "system",
+  "fileName": "installVSCode.sh",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceShellScripts('e48e9495-cbb3-4363-87e7-e1c2089afd36')/assignments",
+  "assignments": []
+}

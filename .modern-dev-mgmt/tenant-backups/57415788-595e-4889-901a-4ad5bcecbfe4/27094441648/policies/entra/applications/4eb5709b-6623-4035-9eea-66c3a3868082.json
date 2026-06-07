@@ -1,0 +1,36 @@
+{
+  "id": "4eb5709b-6623-4035-9eea-66c3a3868082",
+  "appId": "eefa9c93-5548-419d-833c-d04ee78c0293",
+  "displayName": "EFL Purview Backup Connector",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-06-06T07:21:27Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000002-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "dc50a0fb-09a3-484d-be87-e023b12c6440",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

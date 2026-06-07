@@ -1,0 +1,14 @@
+{
+  "Identity": "Global",
+  "Description": null,
+  "EnableFederationAccess": true,
+  "EnableXmppAccess": false,
+  "EnablePublicCloudAccess": null,
+  "EnablePublicCloudAudioVideoAccess": true,
+  "EnableTeamsSmsAccess": true,
+  "EnableOutsideAccess": true,
+  "EnableAcsFederationAccess": true,
+  "EnableTeamsConsumerAccess": true,
+  "EnableTeamsConsumerInbound": true,
+  "RestrictTeamsConsumerAccessToExternalUserProfiles": false
+}

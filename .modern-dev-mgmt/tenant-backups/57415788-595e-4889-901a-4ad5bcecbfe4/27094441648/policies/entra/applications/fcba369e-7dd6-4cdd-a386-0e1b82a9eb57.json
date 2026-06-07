@@ -1,0 +1,36 @@
+{
+  "id": "fcba369e-7dd6-4cdd-a386-0e1b82a9eb57",
+  "appId": "8027e497-964f-4d03-a3a7-3f9c672515df",
+  "displayName": "SCEPman-EpicFuison-SC",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-26T10:39:47Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

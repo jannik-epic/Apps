@@ -1,0 +1,11 @@
+{
+  "id": "4a699af0-8f3b-457c-885e-45d1a834eaec",
+  "displayName": "HR-Admins",
+  "description": "HR administrators with access to admin portal",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "b18d75e4-f",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-02-17T08:16:29Z"
+}

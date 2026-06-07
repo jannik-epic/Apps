@@ -1,0 +1,5 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/people/itemInsights/$entity",
+  "isEnabledInOrganization": true,
+  "disabledForGroup": null
+}

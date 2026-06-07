@@ -1,0 +1,46 @@
+{
+  "id": "a7146da9-d875-4418-aeea-4a01eb4eaad4",
+  "appId": "15103dbc-f067-4ff0-bd16-5355b9327eed",
+  "displayName": "TestPKCSImport",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2024-12-16T15:39:32Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": [
+      "https://login.microsoftonline.com/common/oauth2/nativeclient"
+    ]
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "9241abd9-d0e6-425a-bd4f-47ba86e767a4",
+          "type": "Role"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

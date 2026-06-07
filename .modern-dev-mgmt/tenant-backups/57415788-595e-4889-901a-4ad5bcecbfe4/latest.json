@@ -1,9 +1,9 @@
 {
-  "backupId": "27062368563",
+  "backupId": "27094441648",
   "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
-  "snapshotPath": ".modern-dev-mgmt/tenant-backups/57415788-595e-4889-901a-4ad5bcecbfe4/27062368563",
-  "createdAt": "2026-06-06T12:33:13.7700877Z",
-  "workflowRunId": "27062368563",
+  "snapshotPath": ".modern-dev-mgmt/tenant-backups/57415788-595e-4889-901a-4ad5bcecbfe4/27094441648",
+  "createdAt": "2026-06-07T13:53:15.1671330Z",
+  "workflowRunId": "27094441648",
   "counts": {
     "conditional-access-policies": 44,
     "named-locations": 2,
@@ -22,7 +22,7 @@
     "app-management-policies": 0,
     "entra-directory-roles": 66,
     "entra-directory-role-definitions": 144,
-    "entra-directory-role-assignments": 49,
+    "entra-directory-role-assignments": 52,
     "authentication-methods-policy": 1,
     "defender-secure-score-control-profiles": 446,
     "defender-secure-scores": 0,

@@ -1,0 +1,11 @@
+{
+  "id": "3720c485-9c36-442f-9e85-f043738b491c",
+  "displayName": "AAD_SEC_AS_CAC-Exclude from MFA",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "cdbe5a09-6",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-11-21T07:45:37Z"
+}

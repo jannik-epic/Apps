@@ -1,0 +1,50 @@
+{
+  "id": "57415788-595e-4889-901a-4ad5bcecbfe4_84a661c4-e949-4bd2-a560-ed7766fcaf2b",
+  "skuId": "84a661c4-e949-4bd2-a560-ed7766fcaf2b",
+  "skuPartNumber": "AAD_PREMIUM_P2",
+  "consumedUnits": 1,
+  "capabilityStatus": "Enabled",
+  "prepaidUnits": {
+    "enabled": 1,
+    "suspended": 0,
+    "warning": 0,
+    "lockedOut": 0
+  },
+  "servicePlans": [
+    {
+      "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318",
+      "servicePlanName": "EXCHANGE_S_FOUNDATION",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "Company"
+    },
+    {
+      "servicePlanId": "932ad362-64a8-4783-9106-97849a1a30b9",
+      "servicePlanName": "ADALLOM_S_DISCOVERY",
+      "servicePlanType": "Adallom",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "8a256a2b-b617-496d-b51b-e76466e88db0",
+      "servicePlanName": "MFA_PREMIUM",
+      "servicePlanType": "MultiFactorService",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "41781fb2-bc02-4b7c-bd55-b576c07bb09d",
+      "servicePlanName": "AAD_PREMIUM",
+      "servicePlanType": "AADPremiumService",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "eec0eb4f-6444-4f95-aba0-50c24d67f998",
+      "servicePlanName": "AAD_PREMIUM_P2",
+      "servicePlanType": "AADPremiumService",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    }
+  ]
+}

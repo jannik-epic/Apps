@@ -1,0 +1,41 @@
+{
+  "RoleEntries": [
+    "MailboxFolder.Read"
+  ],
+  "RoleType": "ApplicationMailboxFolderRead",
+  "ImplicitRecipientReadScope": "Organization",
+  "ImplicitRecipientWriteScope": "Organization",
+  "ImplicitConfigReadScope": "None",
+  "ImplicitConfigWriteScope": "None",
+  "IsRootRole": true,
+  "IsEndUserRole": false,
+  "MailboxPlanIndex": "",
+  "Description": "Allows the app to read mailbox folder without a signed-in user",
+  "Parent": null,
+  "RoleState": "Usable",
+  "IsDeprecated": false,
+  "IsServicePrincipalRole": true,
+  "AllowEmptyRole": false,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "0.12 (14.0.451.0)",
+  "Name": "Application MailboxFolder.Read",
+  "DistinguishedName": "CN=Application MailboxFolder.Read,CN=Roles,CN=RBAC,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "Application MailboxFolder.Read",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Role",
+  "ObjectClass": [
+    "top",
+    "msExchRole"
+  ],
+  "WhenChanged": "2025-10-20T18:33:49+00:00",
+  "WhenCreated": "2025-10-03T14:46:37+00:00",
+  "WhenChangedUTC": "2025-10-20T18:33:49Z",
+  "WhenCreatedUTC": "2025-10-03T14:46:37Z",
+  "ExchangeObjectId": "048c775e-3993-41ff-bd3a-190f49f4b7ba",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "Application MailboxFolder.Read",
+  "Guid": "048c775e-3993-41ff-bd3a-190f49f4b7ba",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Unchanged"
+}

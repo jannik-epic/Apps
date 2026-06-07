@@ -1,0 +1,23 @@
+{
+  "id": "fc8ad4e2-40e4-4724-8317-bcda7503ecbf",
+  "description": "Manage all aspects of granular delegated admin privileges (GDAP) relationships in a customer tenant.",
+  "displayName": "Customer Delegated Admin Relationship Administrator",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "fc8ad4e2-40e4-4724-8317-bcda7503ecbf",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.commerce.tenantRelationships/customerDelegatedAdminPrivileges/allProperties/allTasks",
+        "microsoft.office365.webPortal/allEntities/standard/read"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('fc8ad4e2-40e4-4724-8317-bcda7503ecbf')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": []
+}

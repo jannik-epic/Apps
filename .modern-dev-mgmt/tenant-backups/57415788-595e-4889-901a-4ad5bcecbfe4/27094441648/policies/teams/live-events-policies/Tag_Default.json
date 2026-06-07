@@ -1,0 +1,45 @@
+{
+  "Description": null,
+  "AllowBroadcastScheduling": true,
+  "AllowBroadcastTranscription": false,
+  "BroadcastAttendeeVisibilityMode": "EveryoneInCompany",
+  "BroadcastRecordingMode": "AlwaysEnabled",
+  "Key": {
+    "ScopeClass": "Tag",
+    "SchemaId": {
+      "XName": {
+        "name": "{urn:schema:Microsoft.Rtc.Management.Policy.Teams.2017}TeamsMeetingBroadcastPolicy"
+      }
+    },
+    "AuthorityId": {
+      "Class": "Host",
+      "InstanceId": "00000000-0000-0000-0000-000000000000",
+      "XmlRoot": {
+        "name": "{urn:schema:Microsoft.Rtc.Management.ScopeFramework.2008}AuthorityId"
+      }
+    },
+    "DefaultXml": {
+      "SchemaId": {
+        "XName": {
+          "name": "{urn:schema:Microsoft.Rtc.Management.Policy.Teams.2017}TeamsMeetingBroadcastPolicy"
+        }
+      },
+      "Data": {
+        "TeamsMeetingBroadcastPolicy": {
+          "@xmlns": "urn:schema:Microsoft.Rtc.Management.Policy.Teams.2017"
+        }
+      },
+      "ConfigObject": null,
+      "Signature": "00000000-0000-0000-0000-000000000000",
+      "IsModified": true
+    },
+    "XmlRoot": {
+      "name": "{urn:schema:Microsoft.Rtc.Management.ScopeFramework.2008}AnchoredXmlKey"
+    }
+  },
+  "Identity": "Tag:Default",
+  "ConfigMetadata": {
+    "Authority": "Host"
+  },
+  "ConfigId": "nypeLX04KOHQHrU13bs1Ovd3CuWLFqDLO1Togz6l5YA"
+}

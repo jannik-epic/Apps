@@ -1,0 +1,35 @@
+{
+  "@odata.type": "#microsoft.graph.macOSCustomConfiguration",
+  "id": "6d1e6c3d-0975-4add-a3d5-2dd5ff031350",
+  "lastModifiedDateTime": "2022-08-22T11:47:43.3436405Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-08-22T11:47:43.3436405Z",
+  "description": "Legacy kernel extension permission for Catalina and older for Defender ATP",
+  "displayName": "EPIC_DCP_DEV_MAC-MDATP Kernel Extension",
+  "version": 1,
+  "payloadName": "macOS MDATP Kernel Extension",
+  "payloadFileName": "kext.xml",
+  "payload": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBwbGlzdCBQVUJMSUMgIi0vL0FwcGxlLy9EVEQgUExJU1QgMS4wLy9FTiIgImh0dHA6Ly93d3cuYXBwbGUuY29tL0RURHMvUHJvcGVydHlMaXN0LTEuMC5kdGQiPg0KPHBsaXN0IHZlcnNpb249IjEiPg0KICAgIDxkaWN0Pg0KICAgICAgICA8a2V5PlBheWxvYWRVVUlEPC9rZXk+DQogICAgICAgIDxzdHJpbmc+NTA1REI4NDAtMUY0NC00OTg0LUI4RTYtMkVGRjBCNDVCNjdBPC9zdHJpbmc+DQogICAgICAgIDxrZXk+UGF5bG9hZFR5cGU8L2tleT4NCiAgICAgICAgPHN0cmluZz5Db25maWd1cmF0aW9uPC9zdHJpbmc+DQogICAgICAgIDxrZXk+UGF5bG9hZE9yZ2FuaXphdGlvbjwva2V5Pg0KICAgICAgICA8c3RyaW5nPk1pY3Jvc29mdDwvc3RyaW5nPg0KICAgICAgICA8a2V5PlBheWxvYWRJZGVudGlmaWVyPC9rZXk+DQogICAgICAgIDxzdHJpbmc+NTA1REI4NDAtMUY0NC00OTg0LUI4RTYtMkVGRjBCNDVCNjdBPC9zdHJpbmc+DQogICAgICAgIDxrZXk+UGF5bG9hZERpc3BsYXlOYW1lPC9rZXk+DQogICAgICAgIDxzdHJpbmc+QXBwcm92ZWQgS2VybmVsIEV4dGVuc2lvbnM8L3N0cmluZz4NCiAgICAgICAgPGtleT5QYXlsb2FkRGVzY3JpcHRpb248L2tleT4NCiAgICAgICAgPHN0cmluZz5UaGlzIHByb2ZpbGUgY29uZmlndXJlcyB5b3VyIE1hYyB0byBhdXRvbWF0aWNhbGx5IGVuYWJsZSB0aGlyZC1wYXJ0eSBrZXJuZWwgZXh0ZW5zaW9ucyBmcm9tIHNwZWNpZmllZCB2ZW5kb3JzLjwvc3RyaW5nPg0KICAgICAgICA8a2V5PlBheWxvYWRWZXJzaW9uPC9rZXk+DQogICAgICAgIDxpbnRlZ2VyPjE8L2ludGVnZXI+DQogICAgICAgIDxrZXk+UGF5bG9hZEVuYWJsZWQ8L2tleT4NCiAgICAgICAgPHRydWUvPg0KICAgICAgICA8a2V5PlBheWxvYWRSZW1vdmFsRGlzYWxsb3dlZDwva2V5Pg0KICAgICAgICA8dHJ1ZS8+DQogICAgICAgIDxrZXk+UGF5bG9hZFNjb3BlPC9rZXk+DQogICAgICAgIDxzdHJpbmc+U3lzdGVtPC9zdHJpbmc+DQogICAgICAgIDxrZXk+UGF5bG9hZENvbnRlbnQ8L2tleT4NCiAgICAgICAgPGFycmF5Pg0KICAgICAgICAgICAgPGRpY3Q+DQogICAgICAgICAgICAgICAgPGtleT5QYXlsb2FkVVVJRDwva2V5Pg0KICAgICAgICAgICAgICAgIDxzdHJpbmc+MzdDNjI0NDItNURENy00Q0Y1LThGRDktRjkwQ0Y2QzRGMUJCPC9zdHJpbmc+DQogICAgICAgICAgICAgICAgPGtleT5QYXlsb2FkVHlwZTwva2V5Pg0KICAgICAgICAgICAgICAgIDxzdHJpbmc+Y29tLmFwcGxlLnN5c3BvbGljeS5rZXJuZWwtZXh0ZW5zaW9uLXBvbGljeTwvc3RyaW5nPg0KICAgICAgICAgICAgICAgIDxrZXk+UGF5bG9hZE9yZ2FuaXphdGlvbjwva2V5Pg0KICAgICAgICAgICAgICAgIDxzdHJpbmc+TWljcm9zb2Z0PC9zdHJpbmc+DQogICAgICAgICAgICAgICAgPGtleT5QYXlsb2FkSWRlbnRpZmllcjwva2V5Pg0KICAgICAgICAgICAgICAgIDxzdHJpbmc+MzdDNjI0NDItNURENy00Q0Y1LThGRDktRjkwQ0Y2QzRGMUJCPC9zdHJpbmc+DQogICAgICAgICAgICAgICAgPGtleT5QYXlsb2FkRGlzcGxheU5hbWU8L2tleT4NCiAgICAgICAgICAgICAgICA8c3RyaW5nPkFwcHJvdmVkIEtlcm5lbCBFeHRlbnNpb25zPC9zdHJpbmc+DQogICAgICAgICAgICAgICAgPGtleT5QYXlsb2FkRGVzY3JpcHRpb248L2tleT4NCiAgICAgICAgICAgICAgICA8c3RyaW5nLz4NCiAgICAgICAgICAgICAgICA8a2V5PlBheWxvYWRWZXJzaW9uPC9rZXk+DQogICAgICAgICAgICAgICAgPGludGVnZXI+MTwvaW50ZWdlcj4NCiAgICAgICAgICAgICAgICA8a2V5PlBheWxvYWRFbmFibGVkPC9rZXk+DQogICAgICAgICAgICAgICAgPHRydWUvPg0KICAgICAgICAgICAgICAgIDxrZXk+QWxsb3dVc2VyT3ZlcnJpZGVzPC9rZXk+DQogICAgICAgICAgICAgICAgPHRydWUvPg0KICAgICAgICAgICAgICAgIDxrZXk+QWxsb3dlZFRlYW1JZGVudGlmaWVyczwva2V5Pg0KICAgICAgICAgICAgICAgIDxhcnJheT4NCiAgICAgICAgICAgICAgICAgICAgPHN0cmluZz5VQkY4VDM0Nkc5PC9zdHJpbmc+DQogICAgICAgICAgICAgICAgPC9hcnJheT4NCiAgICAgICAgICAgIDwvZGljdD4NCiAgICAgICAgPC9hcnJheT4NCiAgICA8L2RpY3Q+DQo8L3BsaXN0Pg==",
+  "deploymentChannel": "deviceChannel",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('6d1e6c3d-0975-4add-a3d5-2dd5ff031350')/microsoft.graph.macOSCustomConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "6d1e6c3d-0975-4add-a3d5-2dd5ff031350_f4a3ca36-380c-47ae-bbd7-a38fc8722e3d",
+      "source": "direct",
+      "sourceId": "6d1e6c3d-0975-4add-a3d5-2dd5ff031350",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "f4a3ca36-380c-47ae-bbd7-a38fc8722e3d"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "RoleEntries": [
+    "SMTP.SendAsApp"
+  ],
+  "RoleType": "ApplicationSMTPSendAsApp",
+  "ImplicitRecipientReadScope": "Organization",
+  "ImplicitRecipientWriteScope": "Organization",
+  "ImplicitConfigReadScope": "None",
+  "ImplicitConfigWriteScope": "None",
+  "IsRootRole": true,
+  "IsEndUserRole": false,
+  "MailboxPlanIndex": "",
+  "Description": "Allows the app to use SMTP protocol to submit mail in all mailboxes without a signed-in user",
+  "Parent": null,
+  "RoleState": "Usable",
+  "IsDeprecated": false,
+  "IsServicePrincipalRole": true,
+  "AllowEmptyRole": false,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "0.12 (14.0.451.0)",
+  "Name": "Application SMTP.SendAsApp",
+  "DistinguishedName": "CN=Application SMTP.SendAsApp,CN=Roles,CN=RBAC,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "Application SMTP.SendAsApp",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Role",
+  "ObjectClass": [
+    "top",
+    "msExchRole"
+  ],
+  "WhenChanged": "2025-10-19T15:34:30+00:00",
+  "WhenCreated": "2024-12-25T13:34:18+00:00",
+  "WhenChangedUTC": "2025-10-19T15:34:30Z",
+  "WhenCreatedUTC": "2024-12-25T13:34:18Z",
+  "ExchangeObjectId": "5561fa0c-1441-4b9b-aba5-c5d60df85e21",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "Application SMTP.SendAsApp",
+  "Guid": "5561fa0c-1441-4b9b-aba5-c5d60df85e21",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Unchanged"
+}

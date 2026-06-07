@@ -1,0 +1,7 @@
+{
+  "id": "1433af2b-d2eb-4089-a0ab-2b1b6d66f5b3",
+  "deletedDateTime": null,
+  "description": "Can read service health information and manage support tickets.",
+  "displayName": "Service Support Administrator",
+  "roleTemplateId": "f023fd81-a637-4b56-95fd-791ac0226033"
+}

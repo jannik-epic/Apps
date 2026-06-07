@@ -1,0 +1,5 @@
+{
+  "id": "3356946c-6bb7-449b-b253-6ffa419c0ce7",
+  "name": "International Classification of Diseases (ICD-10-CM)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

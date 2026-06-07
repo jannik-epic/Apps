@@ -1,0 +1,38 @@
+{
+  "id": "MDA_Zoom_MeetingE2eEncryption",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://support.zoom.us/hc/en-us/articles/360048660871-End-to-end-E2EE-encryption-for-meetings",
+  "controlCategory": "Apps",
+  "title": "Enforce end to end encryption in all Zoom meetings",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<ol><li>Sign in to the Zoom web portal as an admin with the privilege to edit account settings.</li><li>In the navigation panel, click&nbsp;<strong>Account Management</strong> then&nbsp;<strong>Account Settings</strong>.</li><li>Click the <strong>Meeting</strong> tab.</li><li>Under <strong>Security</strong>, enable <strong>Allow use of end-to-end encryption</strong> and then click <strong style='text-align: inherit;''>Turn On</strong><span style='text-align: inherit;''>&nbsp;to verify the change.</span></li><li>For making this setting mandatory for all users in your account, click the lock icon, and then click <strong>Lock</strong> to confirm the setting.</li><li>Under <strong>Security</strong>, choose the <strong>Default encryption type</strong>.</li><li>Click&nbsp;<strong>Save</strong>.</li></ol>",
+  "remediationImpact": "This setting enforce end to end encryption in all Zoom meetings.",
+  "service": "MDA_Zoom",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "3282e71d-73ba-4d94-b74e-f88b04415a71",
+  "displayName": "MA-Managers",
+  "description": "Managers with access to manager functions in MA Portal",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "844c56dd-e",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-02-17T13:14:55Z"
+}

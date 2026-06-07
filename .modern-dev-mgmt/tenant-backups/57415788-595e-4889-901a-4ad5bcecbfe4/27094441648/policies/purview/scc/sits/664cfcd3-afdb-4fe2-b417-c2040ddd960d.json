@@ -1,0 +1,5 @@
+{
+  "id": "664cfcd3-afdb-4fe2-b417-c2040ddd960d",
+  "name": "General Symmetric Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

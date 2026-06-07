@@ -1,0 +1,87 @@
+{
+  "id": "9d24886c-9211-4eb7-acb5-2b04a306069e",
+  "templateId": null,
+  "displayName": "CLOUD APPS: Office 365 | LOCATION: Any | DEVICE: Notebooks | CLIENT: Client Apps | Block Not Compliant Devices",
+  "createdDateTime": "2021-05-18T15:30:51.4086688Z",
+  "modifiedDateTime": "2022-08-22T12:27:37.9616797Z",
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "exchangeActiveSync",
+      "mobileAppsAndDesktopClients",
+      "other"
+    ],
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "d43713bc-9d9e-42bb-bd2e-57065cd374bf",
+        "Office365"
+      ],
+      "excludeApplications": [
+        "d1ddf0e4-d672-4dae-b554-9d5bdfd93547"
+      ],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "d15bce43-afce-4244-9609-4dadf43e9d88"
+      ],
+      "excludeUsers": [
+        "d15bce43-afce-4244-9609-4dadf43e9d88",
+        "GuestsOrExternalUsers"
+      ],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": [
+        "3a2c62db-5318-420d-8d74-23affee5d9d5",
+        "62e90394-69f5-4237-9190-012177145e10",
+        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+        "69091246-20e8-4a56-aa4d-066075b2a7a8"
+      ],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    },
+    "platforms": {
+      "includePlatforms": [
+        "windows",
+        "macOS"
+      ],
+      "excludePlatforms": []
+    },
+    "devices": {
+      "includeDeviceStates": [],
+      "excludeDeviceStates": [],
+      "includeDevices": [
+        "All"
+      ],
+      "excludeDevices": [
+        "Compliant",
+        "DomainJoined"
+      ],
+      "deviceFilter": null
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('9d24886c-9211-4eb7-acb5-2b04a306069e')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

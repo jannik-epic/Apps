@@ -1,0 +1,9 @@
+{
+  "id": "microsoft-pre-approval-apps-for-team",
+  "displayName": "Includes apps that have been pre-approved by permission grant pre-approval policy for team",
+  "description": "Includes apps that have been pre-approved by permission grant pre-approval policy for team resource specific consent.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-pre-approval-apps-for-team')/includes",
+  "includes": [],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-pre-approval-apps-for-team')/excludes",
+  "excludes": []
+}
