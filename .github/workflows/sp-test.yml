@@ -1,0 +1,32 @@
+name: SP Connector Test
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install PnP
+        shell: pwsh
+        run: |
+          $ProgressPreference='SilentlyContinue'
+          Install-Module PnP.PowerShell -RequiredVersion 2.12.0 -Scope CurrentUser -Force -AllowClobber
+      - name: SharePoint app-only (corrected)
+        shell: pwsh
+        env:
+          PFX_B64: ${{ secrets.PURVIEW_CONNECTOR_PFX_B64 }}
+          PFX_PWD: ${{ secrets.PURVIEW_CONNECTOR_PFX_PWD }}
+          APP_ID: 'eefa9c93-5548-419d-833c-d04ee78c0293'
+          ORG: 'epicfusionlabs.onmicrosoft.com'
+        run: |
+          $ErrorActionPreference='Stop'; $ProgressPreference='SilentlyContinue'
+          Import-Module PnP.PowerShell
+          $pwd = ConvertTo-SecureString $env:PFX_PWD -AsPlainText -Force
+          try {
+            Connect-PnPOnline -Url 'https://epicfusionlabs-admin.sharepoint.com' -ClientId $env:APP_ID -Tenant $env:ORG -CertificateBase64Encoded $env:PFX_B64 -CertificatePassword $pwd | Out-Null
+            Write-Host 'PnP connected'
+            foreach ($c in 'Get-PnPTenant','Get-PnPTenantSite','Get-PnPHomeSite','Get-PnPOrgAssetsLibrary','Get-PnPTenantCdnEnabled') {
+              try { $r=& $c -ErrorAction Stop; $n=@($r).Count; Write-Host ("{0,-36} {1}" -f $c,$n) } catch { Write-Host ("{0,-36} ERR: {1}" -f $c, $_.Exception.Message.Substring(0,[Math]::Min(70,$_.Exception.Message.Length))) }
+            }
+            Disconnect-PnPOnline -ErrorAction SilentlyContinue
+          } catch { Write-Host ('SP connect FAILED: ' + $_.Exception.Message) }
+          Write-Host '== SP TEST DONE =='
