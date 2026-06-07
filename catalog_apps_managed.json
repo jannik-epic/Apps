@@ -1,6 +1,6 @@
 [
   {
-    "id": 6450,
+    "id": 803,
     "source": "winget",
     "package_id": "Canva.Canva",
     "name": "Canva",
@@ -9,7 +9,34 @@
     "pin_version": null
   },
   {
-    "id": 8522,
+    "id": 2395,
+    "source": "winget",
+    "package_id": "Git.Git",
+    "name": "Git",
+    "os": "windows",
+    "version_deployed": "2.39.2",
+    "pin_version": null
+  },
+  {
+    "id": 2409,
+    "source": "winget",
+    "package_id": "GitHub.cli",
+    "name": "GitHub CLI",
+    "os": "windows",
+    "version_deployed": "2.24.3",
+    "pin_version": null
+  },
+  {
+    "id": 2411,
+    "source": "winget",
+    "package_id": "GitHub.GitHubDesktop",
+    "name": "GitHub Desktop",
+    "os": "windows",
+    "version_deployed": "3.2.0",
+    "pin_version": null
+  },
+  {
+    "id": 2564,
     "source": "winget",
     "package_id": "Greenshot.Greenshot",
     "name": "Greenshot",
@@ -18,142 +45,25 @@
     "pin_version": null
   },
   {
-    "id": 9410,
-    "source": "winget",
-    "package_id": "JetBrains.dotPeek",
-    "name": "JetBrains dotPeek",
-    "os": "windows",
-    "version_deployed": "2024.2.3",
-    "pin_version": null
-  },
-  {
-    "id": 10517,
-    "source": "winget",
-    "package_id": "Microsoft.Edge",
-    "name": "Microsoft Edge",
-    "os": "windows",
-    "version_deployed": "148.0.3967.96",
-    "pin_version": null
-  },
-  {
-    "id": 10551,
-    "source": "winget",
-    "package_id": "Microsoft.MakeBingYourSearchEngine",
-    "name": "Make Bing Your Search Engine",
-    "os": "windows",
-    "version_deployed": "2022.1.43.0",
-    "pin_version": null
-  },
-  {
-    "id": 10563,
-    "source": "winget",
-    "package_id": "Microsoft.OneDrive",
-    "name": "Microsoft OneDrive",
-    "os": "windows",
-    "version_deployed": "26074.420.1.0",
-    "pin_version": null
-  },
-  {
-    "id": 10584,
-    "source": "winget",
-    "package_id": "Microsoft.PurviewInformationProtection",
-    "name": "Microsoft Purview Information Protection",
-    "os": "windows",
-    "version_deployed": "3.2.57.0",
-    "pin_version": null
-  },
-  {
-    "id": 10606,
-    "source": "winget",
-    "package_id": "Microsoft.Teams",
-    "name": "Microsoft Teams",
-    "os": "windows",
-    "version_deployed": "1.6.00.4472",
-    "pin_version": null
-  },
-  {
-    "id": 10616,
-    "source": "winget",
-    "package_id": "Microsoft.VisualStudioCode",
-    "name": "Microsoft Visual Studio Code",
-    "os": "windows",
-    "version_deployed": "1.87.2",
-    "pin_version": null
-  },
-  {
-    "id": 11280,
-    "source": "winget",
-    "package_id": "Notion.Notion",
-    "name": "Notion",
-    "os": "windows",
-    "version_deployed": "2.0.39",
-    "pin_version": null
-  },
-  {
-    "id": 11400,
-    "source": "winget",
-    "package_id": "OBSProject.OBSStudio",
-    "name": "OBS Studio",
-    "os": "windows",
-    "version_deployed": "32.0.1",
-    "pin_version": null
-  },
-  {
-    "id": 12065,
-    "source": "winget",
-    "package_id": "Python.Launcher",
-    "name": "Python Launcher",
-    "os": "windows",
-    "version_deployed": "3.11.8150.0",
-    "pin_version": null
-  },
-  {
-    "id": 12962,
-    "source": "winget",
-    "package_id": "SlackTechnologies.Slack",
-    "name": "Slack",
-    "os": "windows",
-    "version_deployed": "4.28.184",
-    "pin_version": null
-  },
-  {
-    "id": 13184,
-    "source": "winget",
-    "package_id": "Spice.SpiceWebDAVd",
-    "name": "Spice webdavd",
-    "os": "windows",
-    "version_deployed": "2.5.0",
-    "pin_version": null
-  },
-  {
-    "id": 14331,
-    "source": "winget",
-    "package_id": "VMware.SpringToolSuite",
-    "name": "Spring Tools for Eclipse",
-    "os": "windows",
-    "version_deployed": "13.0.1.0",
-    "pin_version": null
-  },
-  {
-    "id": 15226,
-    "source": "winget",
-    "package_id": "Zoom.Zoom",
-    "name": "Zoom",
-    "os": "windows",
-    "version_deployed": "5.13.11835",
-    "pin_version": null
-  },
-  {
-    "id": 22097,
+    "id": 4128,
     "source": "winget",
     "package_id": "Microsoft.Office",
     "name": "Microsoft 365 Apps for enterprise",
     "os": "windows",
-    "version_deployed": "16.0.19929.20172",
+    "version_deployed": "16.0.20026.20112",
     "pin_version": null
   },
   {
-    "id": 22120,
+    "id": 4171,
+    "source": "winget",
+    "package_id": "Microsoft.Edge",
+    "name": "Microsoft Edge",
+    "os": "windows",
+    "version_deployed": "147.0.3912.98",
+    "pin_version": null
+  },
+  {
+    "id": 4173,
     "source": "winget",
     "package_id": "Microsoft.Edge.Beta",
     "name": "Microsoft Edge Beta",
@@ -162,7 +72,16 @@
     "pin_version": null
   },
   {
-    "id": 22163,
+    "id": 4191,
+    "source": "winget",
+    "package_id": "Microsoft.OneDrive",
+    "name": "Microsoft OneDrive",
+    "os": "windows",
+    "version_deployed": "26.063.0405.0002",
+    "pin_version": null
+  },
+  {
+    "id": 4379,
     "source": "winget",
     "package_id": "Microsoft.VCRedist.2015+.x64",
     "name": "Microsoft Visual C++ 2015-2022 Redistributable (x64)",
@@ -171,7 +90,7 @@
     "pin_version": null
   },
   {
-    "id": 22164,
+    "id": 4381,
     "source": "winget",
     "package_id": "Microsoft.VCRedist.2015+.x86",
     "name": "Microsoft Visual C++ 2015-2022 Redistributable (x86)",
@@ -180,106 +99,133 @@
     "pin_version": null
   },
   {
-    "id": 29084,
+    "id": 4387,
+    "source": "winget",
+    "package_id": "Microsoft.VisualStudioCode",
+    "name": "Microsoft Visual Studio Code",
+    "os": "windows",
+    "version_deployed": "1.87.2",
+    "pin_version": null
+  },
+  {
+    "id": 4972,
+    "source": "winget",
+    "package_id": "OBSProject.OBSStudio",
+    "name": "OBS Studio",
+    "os": "windows",
+    "version_deployed": "32.0.1",
+    "pin_version": null
+  },
+  {
+    "id": 5631,
+    "source": "winget",
+    "package_id": "Microsoft.PowerShell",
+    "name": "PowerShell",
+    "os": "windows",
+    "version_deployed": "7.3.3.0",
+    "pin_version": null
+  },
+  {
+    "id": 5933,
+    "source": "winget",
+    "package_id": "VinaySajip.PythonLauncher",
+    "name": "Python Launcher",
+    "os": "windows",
+    "version_deployed": "3.11.8150.0",
+    "pin_version": null
+  },
+  {
+    "id": 6991,
+    "source": "winget",
+    "package_id": "Spice.SpiceWebDAVd",
+    "name": "Spice webdavd",
+    "os": "windows",
+    "version_deployed": "2.5.0",
+    "pin_version": null
+  },
+  {
+    "id": 64080,
     "source": "msstore",
     "package_id": "9N0DX20HK701",
     "name": "Windows Terminal",
     "os": "windows",
-    "version_deployed": "3001.18.10301.0",
+    "version_deployed": "3001.24.10921.0",
     "pin_version": null
   },
   {
-    "id": 29091,
+    "id": 64084,
     "source": "msstore",
     "package_id": "XPDP273C0XHQH2",
     "name": "Adobe Acrobat Reader DC",
     "os": "windows",
-    "version_deployed": "26.0.0.1",
+    "version_deployed": "26.001.21563",
     "pin_version": null
   },
   {
-    "id": 36100,
+    "id": 76090,
+    "source": "msstore",
+    "package_id": "9NFTCH6J7FHV",
+    "name": "Power Automate",
+    "os": "windows",
+    "version_deployed": "11.2604.143.0",
+    "pin_version": null
+  },
+  {
+    "id": 113049,
+    "source": "winget",
+    "package_id": "JetBrains.dotPeek",
+    "name": "JetBrains dotPeek",
+    "os": "windows",
+    "version_deployed": "2024.2.3",
+    "pin_version": null
+  },
+  {
+    "id": 114158,
+    "source": "winget",
+    "package_id": "Microsoft.Gaming.GDK",
+    "name": "April 2026 GDK Update 1",
+    "os": "windows",
+    "version_deployed": "2505.900.9.0",
+    "pin_version": null
+  },
+  {
+    "id": 114190,
+    "source": "winget",
+    "package_id": "Microsoft.MakeBingYourSearchEngine",
+    "name": "Make Bing Your Search Engine",
+    "os": "windows",
+    "version_deployed": "2022.1.43.0",
+    "pin_version": null
+  },
+  {
+    "id": 114227,
+    "source": "winget",
+    "package_id": "Microsoft.PurviewInformationProtection",
+    "name": "Microsoft Purview Information Protection",
+    "os": "windows",
+    "version_deployed": "3.2.57.0",
+    "pin_version": null
+  },
+  {
+    "id": 114306,
     "source": "winget",
     "package_id": "Microsoft.VCRedist.2015+.arm64",
-    "name": "Microsoft Visual C++ 2015-2022 Redistributable",
+    "name": "Microsoft Visual C++ 2022 Redistributable (Arm64)",
     "os": "windows",
     "version_deployed": "14.30.30704.0",
     "pin_version": null
   },
   {
-    "id": 36124,
-    "source": "msstore",
-    "package_id": "9NBLGGH4QGHW",
-    "name": "Microsoft Sticky Notes",
+    "id": 118346,
+    "source": "winget",
+    "package_id": "VMware.SpringToolSuite",
+    "name": "Spring Tools for Eclipse",
     "os": "windows",
-    "version_deployed": "6.1.5.0",
+    "version_deployed": "13.0.1.0",
     "pin_version": null
   },
   {
-    "id": 36125,
-    "source": "msstore",
-    "package_id": "9MZ95KL8MR0L",
-    "name": "Snipping Tool",
-    "os": "windows",
-    "version_deployed": "2022.2602.47.0",
-    "pin_version": null
-  },
-  {
-    "id": 36142,
-    "source": "msstore",
-    "package_id": "9PCFS5B6T72H",
-    "name": "Paint",
-    "os": "windows",
-    "version_deployed": "11.2603.251.0",
-    "pin_version": null
-  },
-  {
-    "id": 36201,
-    "source": "msstore",
-    "package_id": "9WZDNCRFHWD2",
-    "name": "Microsoft Solitaire Collection",
-    "os": "windows",
-    "version_deployed": "4.24.12040.0",
-    "pin_version": null
-  },
-  {
-    "id": 36202,
-    "source": "msstore",
-    "package_id": "9N95Q1ZZPMH4",
-    "name": "MPEG-2 Video Extension",
-    "os": "windows",
-    "version_deployed": "1.2.13.0",
-    "pin_version": null
-  },
-  {
-    "id": 36203,
-    "source": "msstore",
-    "package_id": "9NCTDW2W1BH8",
-    "name": "Raw Image Extension",
-    "os": "windows",
-    "version_deployed": "2.5.7.0",
-    "pin_version": null
-  },
-  {
-    "id": 36206,
-    "source": "msstore",
-    "package_id": "9NRX63209R7B",
-    "name": "Outlook for Windows",
-    "os": "windows",
-    "version_deployed": "1.2026.428.200",
-    "pin_version": null
-  },
-  {
-    "id": 36207,
-    "source": "msstore",
-    "package_id": "9NFTCH6J7FHV",
-    "name": "Power Automate",
-    "os": "windows",
-    "version_deployed": "11.2511.178.0",
-    "pin_version": null
-  },
-  {
-    "id": 44203,
+    "id": 184768,
     "source": "msstore",
     "package_id": "9WZDNCRFHVN5",
     "name": "Windows Calculator",
@@ -288,7 +234,7 @@
     "pin_version": null
   },
   {
-    "id": 44204,
+    "id": 184769,
     "source": "msstore",
     "package_id": "9MSMLRH6LZF3",
     "name": "Windows Notepad",
@@ -297,7 +243,7 @@
     "pin_version": null
   },
   {
-    "id": 44207,
+    "id": 184772,
     "source": "msstore",
     "package_id": "9WZDNCRFJBH4",
     "name": "Microsoft Photos",
@@ -306,7 +252,7 @@
     "pin_version": null
   },
   {
-    "id": 44208,
+    "id": 184773,
     "source": "msstore",
     "package_id": "9WZDNCRFJBBG",
     "name": "Windows Camera",
@@ -315,7 +261,7 @@
     "pin_version": null
   },
   {
-    "id": 44209,
+    "id": 184774,
     "source": "msstore",
     "package_id": "9WZDNCRFHWKN",
     "name": "Windows Sound Recorder",
@@ -324,7 +270,52 @@
     "pin_version": null
   },
   {
-    "id": 44233,
+    "id": 184775,
+    "source": "msstore",
+    "package_id": "9NBLGGH4QGHW",
+    "name": "Microsoft Sticky Notes",
+    "os": "windows",
+    "version_deployed": "6.1.5.0",
+    "pin_version": null
+  },
+  {
+    "id": 184776,
+    "source": "msstore",
+    "package_id": "9N95Q1ZZPMH4",
+    "name": "MPEG-2 Video Extension",
+    "os": "windows",
+    "version_deployed": "1.2.13.0",
+    "pin_version": null
+  },
+  {
+    "id": 184777,
+    "source": "msstore",
+    "package_id": "9NCTDW2W1BH8",
+    "name": "Raw Image Extension",
+    "os": "windows",
+    "version_deployed": "2.5.7.0",
+    "pin_version": null
+  },
+  {
+    "id": 184778,
+    "source": "msstore",
+    "package_id": "9MZ95KL8MR0L",
+    "name": "Snipping Tool",
+    "os": "windows",
+    "version_deployed": "2022.2602.47.0",
+    "pin_version": null
+  },
+  {
+    "id": 184784,
+    "source": "msstore",
+    "package_id": "9PCFS5B6T72H",
+    "name": "Paint",
+    "os": "windows",
+    "version_deployed": "11.2603.251.0",
+    "pin_version": null
+  },
+  {
+    "id": 184798,
     "source": "msstore",
     "package_id": "9NBLGGH5R558",
     "name": "Microsoft To Do: Lists, Tasks & Reminders",
@@ -333,7 +324,7 @@
     "pin_version": null
   },
   {
-    "id": 44234,
+    "id": 184799,
     "source": "msstore",
     "package_id": "9WZDNCRFJ3PT",
     "name": "Windows Media Player",
@@ -342,7 +333,7 @@
     "pin_version": null
   },
   {
-    "id": 44242,
+    "id": 184806,
     "source": "msstore",
     "package_id": "9WZDNCRFJ3Q2",
     "name": "MSN Weather",
@@ -351,12 +342,21 @@
     "pin_version": null
   },
   {
-    "id": 44244,
+    "id": 184808,
     "source": "msstore",
     "package_id": "9P1J8S7CCWWT",
     "name": "Microsoft Clipchamp",
     "os": "windows",
     "version_deployed": "4.4.10720.0",
+    "pin_version": null
+  },
+  {
+    "id": 184809,
+    "source": "msstore",
+    "package_id": "9NRX63209R7B",
+    "name": "Outlook for Windows",
+    "os": "windows",
+    "version_deployed": "1.2026.428.200",
     "pin_version": null
   }
 ]
