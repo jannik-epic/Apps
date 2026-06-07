@@ -1,0 +1,5 @@
+{
+  "id": "fc87b421-f437-4f8b-b739-29a735ead0d9",
+  "name": "Polish REGON Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

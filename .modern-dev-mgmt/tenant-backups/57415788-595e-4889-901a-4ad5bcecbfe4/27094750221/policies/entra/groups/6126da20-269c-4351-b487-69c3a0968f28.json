@@ -1,0 +1,13 @@
+{
+  "id": "6126da20-269c-4351-b487-69c3a0968f28",
+  "displayName": "(TEL) HR & Recruiting",
+  "description": "Test Team for Renaming POC",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "msteams_6b053c",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2025-11-24T14:10:18Z"
+}

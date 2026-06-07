@@ -1,0 +1,5 @@
+{
+  "id": "16c07343-c26f-49d2-a987-3daf717e94cc",
+  "name": "U.K. National Insurance Number (NINO)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

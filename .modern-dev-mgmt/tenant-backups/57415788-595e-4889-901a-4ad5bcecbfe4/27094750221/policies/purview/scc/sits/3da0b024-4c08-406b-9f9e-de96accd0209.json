@@ -1,0 +1,5 @@
+{
+  "id": "3da0b024-4c08-406b-9f9e-de96accd0209",
+  "name": "South Korea Driver's License Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

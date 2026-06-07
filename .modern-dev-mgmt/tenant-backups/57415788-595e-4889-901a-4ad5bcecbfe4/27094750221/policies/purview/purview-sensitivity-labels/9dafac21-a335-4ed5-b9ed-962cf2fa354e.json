@@ -1,0 +1,17 @@
+{
+  "id": "9dafac21-a335-4ed5-b9ed-962cf2fa354e",
+  "name": "Collaboration Public",
+  "description": "",
+  "color": "#7160E8",
+  "sensitivity": 8,
+  "tooltip": "Daten mit Container wo Anyone erlaubt ist",
+  "isActive": true,
+  "isAppliable": true,
+  "contentFormats": [
+    "site",
+    "unifiedgroup"
+  ],
+  "hasProtection": false,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('9dafac21-a335-4ed5-b9ed-962cf2fa354e')/parent/$entity",
+  "parent": null
+}

@@ -1,0 +1,5 @@
+{
+  "id": "55e47f22-402c-486f-9779-f82430d2eee4",
+  "name": "ASP.NET Machine Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "b7fb8ef3-cc82-4c34-90f3-094870d5fdce",
+  "appId": "d67e3b63-ca41-4324-b3bf-e17180e8f245",
+  "displayName": "Daily Docs",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-05-27T10:45:48Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

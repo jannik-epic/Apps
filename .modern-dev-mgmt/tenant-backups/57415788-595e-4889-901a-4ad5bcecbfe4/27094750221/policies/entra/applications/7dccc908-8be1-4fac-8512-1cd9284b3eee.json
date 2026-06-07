@@ -1,0 +1,51 @@
+{
+  "id": "7dccc908-8be1-4fac-8512-1cd9284b3eee",
+  "appId": "8b37575a-95da-490a-a537-1794715736f7",
+  "displayName": "[Storage Account] pstavdfslogix001.file.core.windows.net",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2023-11-14T12:39:50Z",
+  "identifierUris": [
+    "api://57415788-595e-4889-901a-4ad5bcecbfe4/HOST/pstavdfslogix001.file.core.windows.net",
+    "api://57415788-595e-4889-901a-4ad5bcecbfe4/CIFS/pstavdfslogix001.file.core.windows.net",
+    "api://57415788-595e-4889-901a-4ad5bcecbfe4/HTTP/pstavdfslogix001.file.core.windows.net",
+    "HOST/pstavdfslogix001.file.core.windows.net",
+    "CIFS/pstavdfslogix001.file.core.windows.net",
+    "HTTP/pstavdfslogix001.file.core.windows.net"
+  ],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "37f7f235-527c-4136-accd-4a02d197296e",
+          "type": "Scope"
+        },
+        {
+          "id": "14dad69e-099b-42c9-810b-d002981feec1",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

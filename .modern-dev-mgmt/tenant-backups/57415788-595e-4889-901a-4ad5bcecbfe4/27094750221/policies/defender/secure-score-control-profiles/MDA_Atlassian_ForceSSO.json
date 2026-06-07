@@ -1,0 +1,38 @@
+{
+  "id": "MDA_Atlassian_ForceSSO",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://support.atlassian.com/security-and-access-policies/docs/configure-saml-single-sign-on/",
+  "controlCategory": "Identity",
+  "title": "Enable Single Sing On (SSO)",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 10,
+  "remediation": "<p>Copy details from your identity provider to your Atlassian organization</p> <ol> <li> <p>Go to <a title=\"http://admin.atlassian.com/\" href=\"http://admin.atlassian.com/\">admin.atlassian.com</a>. Select your organization if you have more than one.</p> </li> <li> <p>Select <strong>Security</strong> &gt; <strong>Identity providers</strong>.</p> </li> <li> <p>Select your identity provider <strong>Directory.</strong></p> </li> <li> <p>Select&nbsp;<strong>Set up SAML single sign-on</strong>.</p> </li> <li> <p>Add <strong>SAML details.</strong></p> </li> <li> <p><strong>Save SAML configuration</strong>.</p> </li> </ol>",
+  "remediationImpact": "This setting enforce Single Sing On (SSO) for all Atlassian users.",
+  "service": "MDA_Atlassian",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

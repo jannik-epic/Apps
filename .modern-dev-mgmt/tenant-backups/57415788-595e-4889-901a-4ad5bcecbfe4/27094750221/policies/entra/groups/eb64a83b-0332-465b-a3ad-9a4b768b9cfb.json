@@ -1,0 +1,13 @@
+{
+  "id": "eb64a83b-0332-465b-a3ad-9a4b768b9cfb",
+  "displayName": "T-prj-test12354",
+  "description": "T-prj-test12354",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "T-prj-test12354",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Public",
+  "createdDateTime": "2026-03-02T10:12:20Z"
+}

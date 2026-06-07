@@ -1,0 +1,11 @@
+{
+  "id": "c1b4345e-637b-483e-8142-d048b93b6b7f",
+  "displayName": "AAD_SEC_AS_INTUNE-First Ring Devices",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "9afa1f8f-7",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-11-21T07:45:38Z"
+}

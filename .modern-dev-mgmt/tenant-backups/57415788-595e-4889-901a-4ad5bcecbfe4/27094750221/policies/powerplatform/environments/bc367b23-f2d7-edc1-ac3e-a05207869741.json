@@ -1,0 +1,330 @@
+{
+  "id": "/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments/bc367b23-f2d7-edc1-ac3e-a05207869741",
+  "type": "Microsoft.BusinessAppPlatform/scopes/environments",
+  "location": "switzerland",
+  "name": "bc367b23-f2d7-edc1-ac3e-a05207869741",
+  "properties": {
+    "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+    "azureRegion": "switzerlandwest",
+    "displayName": "sa_flow_provisioning's Umgebung",
+    "createdTime": "2025-03-31T14:16:40.7416226Z",
+    "createdBy": {
+      "id": "b9c016f0-c9af-452f-a36b-5531a40bf80e",
+      "displayName": "",
+      "email": "",
+      "type": "User",
+      "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+      "userPrincipalName": ""
+    },
+    "usedBy": {
+      "id": "b9c016f0-c9af-452f-a36b-5531a40bf80e",
+      "displayName": "",
+      "email": "",
+      "type": "User",
+      "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+      "userPrincipalName": ""
+    },
+    "lastModifiedTime": "2025-03-31T14:29:05.8519513Z",
+    "provisioningState": "Succeeded",
+    "creationType": "User",
+    "environmentSku": "Developer",
+    "isDefault": false,
+    "clientUris": {
+      "admin": "https://admin.powerplatform.microsoft.com/environments/environment/bc367b23-f2d7-edc1-ac3e-a05207869741/hub",
+      "maker": "https://make.powerapps.com/environments/bc367b23-f2d7-edc1-ac3e-a05207869741/home"
+    },
+    "runtimeEndpoints": {
+      "microsoft.BusinessAppPlatform": "https://switzerland.api.bap.microsoft.com",
+      "microsoft.CommonDataModel": "https://switzerland.api.cds.microsoft.com",
+      "microsoft.PowerApps": "https://switzerland.api.powerapps.com",
+      "microsoft.PowerAppsAdvisor": "https://switzerland.api.advisor.powerapps.com",
+      "microsoft.PowerVirtualAgents": "https://powervamg.ch-il101.gateway.prod.island.powerapps.com",
+      "microsoft.ApiManagement": "https://management.switzerland.azure-apihub.net",
+      "microsoft.Flow": "https://switzerland.api.flow.microsoft.com"
+    },
+    "databaseType": "CommonDataService",
+    "linkedEnvironmentMetadata": {
+      "resourceId": "d7101501-380e-f011-b016-0022486f7072",
+      "friendlyName": "sa_flow_provisioning's Umgebung",
+      "uniqueName": "unqd7101501380ef011b0160022486f7",
+      "domainName": "orge15693c9",
+      "version": "9.2.26054.132",
+      "instanceUrl": "https://orge15693c9.crm17.dynamics.com/",
+      "instanceApiUrl": "https://orge15693c9.api.crm17.dynamics.com",
+      "baseLanguage": 1033,
+      "instanceState": "Ready",
+      "createdTime": "2025-03-31T14:16:45.243Z",
+      "backgroundOperationsState": "Enabled",
+      "scaleGroup": "CHECRMLIVESG602",
+      "crmGeo": "CHE",
+      "platformSku": "Standard",
+      "schemaType": "Standard",
+      "isDormant": false
+    },
+    "trialScenarioType": "None",
+    "notificationMetadata": {
+      "state": "NotSpecified",
+      "branding": "NotSpecific"
+    },
+    "retentionPeriod": "P7D",
+    "states": {
+      "management": {
+        "id": "Ready"
+      },
+      "runtime": {
+        "runtimeReasonCode": "NotSpecified",
+        "requestedBy": {
+          "displayName": "SYSTEM",
+          "type": "NotSpecified"
+        },
+        "id": "Enabled"
+      },
+      "disasterRecovery": {
+        "copyLocation": "NearCopy",
+        "id": "Unavailable"
+      }
+    },
+    "updateCadence": {
+      "id": "Frequent"
+    },
+    "retentionDetails": {
+      "retentionPeriod": "P7D",
+      "backupsAvailableFromDateTime": "2026-05-31T14:08:54.5614513Z"
+    },
+    "protectionStatus": {
+      "keyManagedBy": "Microsoft"
+    },
+    "cluster": {
+      "category": "Prod",
+      "number": "101",
+      "uriSuffix": "ch-il101.gateway.prod.island",
+      "geoShortName": "CH",
+      "environment": "Prod",
+      "scaleGroupId": "543eed62-0602-0000-0602-000000000000"
+    },
+    "connectedGroups": [],
+    "lifecycleOperationsEnforcement": {
+      "allowedOperations": [
+        {
+          "type": {
+            "id": "Move"
+          }
+        },
+        {
+          "type": {
+            "id": "Backup"
+          }
+        },
+        {
+          "type": {
+            "id": "Copy"
+          }
+        },
+        {
+          "type": {
+            "id": "Delete"
+          }
+        },
+        {
+          "type": {
+            "id": "Edit"
+          }
+        },
+        {
+          "type": {
+            "id": "Recover"
+          }
+        },
+        {
+          "type": {
+            "id": "Reset"
+          }
+        },
+        {
+          "type": {
+            "id": "Restore"
+          }
+        },
+        {
+          "type": {
+            "id": "NewCustomerManagedKey"
+          }
+        },
+        {
+          "type": {
+            "id": "NewNetworkInjection"
+          }
+        },
+        {
+          "type": {
+            "id": "SwapNetworkInjection"
+          }
+        },
+        {
+          "type": {
+            "id": "RevertNetworkInjection"
+          }
+        },
+        {
+          "type": {
+            "id": "NewIdentity"
+          }
+        },
+        {
+          "type": {
+            "id": "SwapIdentity"
+          }
+        },
+        {
+          "type": {
+            "id": "RevertIdentity"
+          }
+        },
+        {
+          "type": {
+            "id": "Enable"
+          }
+        },
+        {
+          "type": {
+            "id": "Disable"
+          }
+        },
+        {
+          "type": {
+            "id": "DisableGovernanceConfiguration"
+          }
+        },
+        {
+          "type": {
+            "id": "UpdateGovernanceConfiguration"
+          }
+        },
+        {
+          "type": {
+            "id": "PrepareTenantToTenant"
+          }
+        },
+        {
+          "type": {
+            "id": "MigrateTenantToTenant"
+          }
+        }
+      ],
+      "disallowedOperations": [
+        {
+          "type": {
+            "id": "Provision"
+          },
+          "reason": {
+            "message": "Provision cannot be performed because there is no linked CDS instance or the CDS instance version is not supported.",
+            "type": "CdsLink"
+          }
+        },
+        {
+          "type": {
+            "id": "Unlock"
+          },
+          "reason": {
+            "message": "Unlock cannot be performed because there is no linked CDS instance or the CDS instance version is not supported.",
+            "type": "CdsLink"
+          }
+        },
+        {
+          "type": {
+            "id": "Convert"
+          },
+          "reason": {
+            "message": "Convert cannot be performed on environment of type Developer.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "Promote"
+          },
+          "reason": {
+            "message": "Promote cannot be performed on environment of type Developer.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "UpdateProtectionStatus"
+          },
+          "reason": {
+            "message": "UpdateProtectionStatus cannot be performed on environment of type Developer.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "ForceFailover"
+          },
+          "reason": {
+            "message": "ForceFailover cannot be performed on environment of type Developer.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "DisasterRecoveryDrill"
+          },
+          "reason": {
+            "message": "DisasterRecoveryDrill cannot be performed on environment of type Developer.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "FailbackToNearCopy"
+          },
+          "reason": {
+            "message": "FailbackToNearCopy cannot be performed on environment of type Developer.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "RotateCustomerManagedKey"
+          },
+          "reason": {
+            "type": "EnvironmentCmkLinked"
+          }
+        },
+        {
+          "type": {
+            "id": "RevertToMicrosoftKey"
+          },
+          "reason": {
+            "type": "EnvironmentCmkLinked"
+          }
+        },
+        {
+          "type": {
+            "id": "EnableGovernanceConfiguration"
+          },
+          "reason": {
+            "message": "EnableGovernanceConfiguration cannot be performed on Power Platform environment because of the governance configuration.",
+            "type": "GovernanceConfig"
+          }
+        }
+      ]
+    },
+    "governanceConfiguration": {
+      "protectionLevel": "Standard",
+      "settings": {
+        "extendedSettings": {
+          "powerPolicyLastModified": "2025-03-31T14:29:03.812Z"
+        }
+      }
+    },
+    "bingChatEnabled": true,
+    "m365Enabled": true,
+    "parentEnvironmentGroup": {
+      "id": "68c29165-f37d-4891-ae47-93db9f148e73"
+    },
+    "appDraftingCopilotEnabled": true,
+    "enableAnalyticsForMakers": true
+  }
+}

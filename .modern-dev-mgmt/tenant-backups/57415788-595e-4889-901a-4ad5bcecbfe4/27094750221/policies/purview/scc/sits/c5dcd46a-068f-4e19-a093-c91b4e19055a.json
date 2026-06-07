@@ -1,0 +1,5 @@
+{
+  "id": "c5dcd46a-068f-4e19-a093-c91b4e19055a",
+  "name": "Azure Container Registry Access Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

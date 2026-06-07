@@ -1,0 +1,5 @@
+{
+  "id": "93e77273-df14-4d35-ab29-77c606b6589f",
+  "name": "Azure Maps Subscription Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

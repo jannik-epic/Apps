@@ -1,0 +1,15 @@
+{
+  "@odata.type": "#microsoft.graph.ipNamedLocation",
+  "id": "0b270738-823d-4894-8bbf-201facdec921",
+  "displayName": "Client Netz",
+  "modifiedDateTime": "2021-05-18T15:29:23.7857479Z",
+  "createdDateTime": "2021-05-18T15:29:23.7857479Z",
+  "deletedDateTime": null,
+  "isTrusted": true,
+  "ipRanges": [
+    {
+      "@odata.type": "#microsoft.graph.iPv4CidrRange",
+      "cidrAddress": "172.16.0.0/15"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "ec0c803a-649c-4443-9692-cf6382769e8c",
+  "appId": "2d4eac8d-7bcd-4b60-990e-46df837ca065",
+  "displayName": "Simeon Cloud Power BI Reporting",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2023-04-06T06:21:50Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": "https://app.simeoncloud.com/",
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000009-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "d594897b-76e7-4b2b-984b-b4adff35e109",
+          "type": "Scope"
+        },
+        {
+          "id": "28379fa9-8596-4fd9-869e-cb60a93b5d84",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

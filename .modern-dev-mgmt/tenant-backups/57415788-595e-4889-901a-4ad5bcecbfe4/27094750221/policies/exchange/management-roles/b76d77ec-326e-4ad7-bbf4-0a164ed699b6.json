@@ -1,0 +1,41 @@
+{
+  "RoleEntries": [
+    "Calendars.Read"
+  ],
+  "RoleType": "ApplicationCalendarsRead",
+  "ImplicitRecipientReadScope": "Organization",
+  "ImplicitRecipientWriteScope": "Organization",
+  "ImplicitConfigReadScope": "None",
+  "ImplicitConfigWriteScope": "None",
+  "IsRootRole": true,
+  "IsEndUserRole": false,
+  "MailboxPlanIndex": "",
+  "Description": "Allows the app to read events of all calendars without a signed-in user",
+  "Parent": null,
+  "RoleState": "Usable",
+  "IsDeprecated": false,
+  "IsServicePrincipalRole": true,
+  "AllowEmptyRole": false,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "0.12 (14.0.451.0)",
+  "Name": "Application Calendars.Read",
+  "DistinguishedName": "CN=Application Calendars.Read,CN=Roles,CN=RBAC,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "Application Calendars.Read",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Role",
+  "ObjectClass": [
+    "top",
+    "msExchRole"
+  ],
+  "WhenChanged": "2025-10-18T16:35:34+00:00",
+  "WhenCreated": "2022-03-10T16:44:13+00:00",
+  "WhenChangedUTC": "2025-10-18T16:35:34Z",
+  "WhenCreatedUTC": "2022-03-10T16:44:13Z",
+  "ExchangeObjectId": "b76d77ec-326e-4ad7-bbf4-0a164ed699b6",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "Application Calendars.Read",
+  "Guid": "b76d77ec-326e-4ad7-bbf4-0a164ed699b6",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Unchanged"
+}

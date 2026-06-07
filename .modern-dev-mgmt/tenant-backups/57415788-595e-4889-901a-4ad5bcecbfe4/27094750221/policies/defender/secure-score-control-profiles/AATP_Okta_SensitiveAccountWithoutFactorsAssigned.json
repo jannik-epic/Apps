@@ -1,0 +1,35 @@
+{
+  "id": "AATP_Okta_SensitiveAccountWithoutFactorsAssigned",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2299755",
+  "controlCategory": "Identity",
+  "title": "Assign multi-factor authentication for Okta privileged user accounts",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 65,
+  "remediation": "1. Review the list of exposed entities to discover which of your Okta privileged user accounts do not have any MFA method assigned.<br> 2. Assign and enforce a multi-factor authentication (MFA) method to the privileged accounts.",
+  "remediationImpact": "All privileged accounts must have multi-factor authentication (MFA) enabled to enhance security. By ensuring that privileged accounts such as Super Admin or Org Admin roles are protected with MFA, organizations can significantly reduce the risk of unauthorized access due to compromised credentials. This approach mitigates the potential for attackers to gain elevated access, thereby protecting sensitive resources and preventing misuse of critical administrative capabilities.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

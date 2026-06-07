@@ -1,0 +1,13 @@
+{
+  "id": "3c40d569-c106-49f7-a797-3c0bbba40035",
+  "displayName": "Daniel [Prj]",
+  "description": "Daniel's Team",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "DanielPrj",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2021-05-28T04:56:21Z"
+}

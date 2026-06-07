@@ -1,0 +1,36 @@
+{
+  "id": "16c783b1-4776-4eff-ab85-6a4f71c618ec",
+  "appId": "88c13d60-d81c-44d1-af22-5aef5b2fb5bb",
+  "displayName": "Site24x7",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2024-02-01T09:57:45Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

@@ -1,0 +1,42 @@
+{
+  "RoleEntries": [
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Search-UnifiedAuditLog -Debug -EndDate -ErrorAction -ErrorVariable -Formatted -FreeText -HighCompleteness -IPAddresses -LegacyFlow -LongerRetentionEnabled -ObjectIds -Operations -OutBuffer -OutVariable -RecordType -ResultSize -SessionCommand -SessionId -SiteIds -StartDate -SyncSearch -UserIds -Verbose -WarningAction -WarningVariable",
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Test-TextExtraction -Confirm -Debug -DomainController -ErrorAction -ErrorVariable -FileData -OutBuffer -OutVariable -Verbose -WarningAction -WarningVariable"
+  ],
+  "RoleType": "InformationProtectionInvestigator",
+  "ImplicitRecipientReadScope": "Organization",
+  "ImplicitRecipientWriteScope": "Organization",
+  "ImplicitConfigReadScope": "None",
+  "ImplicitConfigWriteScope": "None",
+  "IsRootRole": true,
+  "IsEndUserRole": false,
+  "MailboxPlanIndex": "",
+  "Description": null,
+  "Parent": null,
+  "RoleState": "Usable",
+  "IsDeprecated": false,
+  "IsServicePrincipalRole": false,
+  "AllowEmptyRole": false,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "0.12 (14.0.451.0)",
+  "Name": "Information Protection Investigator",
+  "DistinguishedName": "CN=Information Protection Investigator,CN=Roles,CN=RBAC,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "Information Protection Investigator",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Role",
+  "ObjectClass": [
+    "top",
+    "msExchRole"
+  ],
+  "WhenChanged": "2025-12-04T14:01:20+00:00",
+  "WhenCreated": "2023-04-07T11:51:45+00:00",
+  "WhenChangedUTC": "2025-12-04T14:01:20Z",
+  "WhenCreatedUTC": "2023-04-07T11:51:45Z",
+  "ExchangeObjectId": "a0e89b03-8f78-4eb9-a587-22e043a13473",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "Information Protection Investigator",
+  "Guid": "a0e89b03-8f78-4eb9-a587-22e043a13473",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Unchanged"
+}

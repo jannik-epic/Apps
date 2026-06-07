@@ -1,0 +1,5 @@
+{
+  "id": "78e09124-f2c3-4656-b32a-c1a132cd2711",
+  "name": "Brazil CPF Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

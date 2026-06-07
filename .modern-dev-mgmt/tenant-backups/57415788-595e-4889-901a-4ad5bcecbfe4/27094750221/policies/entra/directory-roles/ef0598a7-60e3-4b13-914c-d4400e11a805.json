@@ -1,0 +1,7 @@
+{
+  "id": "ef0598a7-60e3-4b13-914c-d4400e11a805",
+  "deletedDateTime": null,
+  "description": "Assign custom security attribute keys and values to supported Microsoft Entra objects.",
+  "displayName": "Attribute Assignment Administrator",
+  "roleTemplateId": "58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d"
+}

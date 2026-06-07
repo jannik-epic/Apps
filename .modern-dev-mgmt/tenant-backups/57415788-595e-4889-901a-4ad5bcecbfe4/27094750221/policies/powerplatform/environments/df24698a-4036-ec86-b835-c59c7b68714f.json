@@ -1,0 +1,362 @@
+{
+  "id": "/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments/df24698a-4036-ec86-b835-c59c7b68714f",
+  "type": "Microsoft.BusinessAppPlatform/scopes/environments",
+  "location": "switzerland",
+  "name": "df24698a-4036-ec86-b835-c59c7b68714f",
+  "properties": {
+    "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+    "azureRegion": "switzerlandwest",
+    "displayName": "(ORG) Customer Support",
+    "description": "Test Team for Renaming POC",
+    "createdTime": "2026-05-21T09:32:46.3006357Z",
+    "createdBy": {
+      "id": "19fa0adf-6469-429c-aecd-5632c2ebd486",
+      "displayName": "",
+      "email": "",
+      "type": "User",
+      "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+      "userPrincipalName": ""
+    },
+    "lastModifiedTime": "2026-05-21T09:32:57.3833671Z",
+    "provisioningState": "Succeeded",
+    "creationType": "User",
+    "environmentSku": "Teams",
+    "isDefault": false,
+    "clientUris": {
+      "admin": "https://admin.powerplatform.microsoft.com/environments/environment/df24698a-4036-ec86-b835-c59c7b68714f/hub",
+      "maker": "https://make.powerapps.com/environments/df24698a-4036-ec86-b835-c59c7b68714f/home"
+    },
+    "runtimeEndpoints": {
+      "microsoft.BusinessAppPlatform": "https://switzerland.api.bap.microsoft.com",
+      "microsoft.CommonDataModel": "https://switzerland.api.cds.microsoft.com",
+      "microsoft.PowerApps": "https://switzerland.api.powerapps.com",
+      "microsoft.PowerAppsAdvisor": "https://switzerland.api.advisor.powerapps.com",
+      "microsoft.PowerVirtualAgents": "https://powervamg.ch-il101.gateway.prod.island.powerapps.com",
+      "microsoft.ApiManagement": "https://management.switzerland.azure-apihub.net",
+      "microsoft.Flow": "https://switzerland.api.flow.microsoft.com"
+    },
+    "databaseType": "CommonDataService",
+    "linkedEnvironmentMetadata": {
+      "resourceId": "cfa3f8d2-ee54-f111-b31d-002248db4850",
+      "friendlyName": "(ORG) Customer Support",
+      "uniqueName": "unqcfa3f8d2ee54f111b31d002248db4",
+      "domainName": "org4fd99256",
+      "version": "9.2.26054.132",
+      "instanceUrl": "https://org4fd99256.crm17.dynamics.com/",
+      "instanceApiUrl": "https://org4fd99256.api.crm17.dynamics.com",
+      "baseLanguage": 1033,
+      "instanceState": "Ready",
+      "createdTime": "2026-05-21T09:32:47.35Z",
+      "securityGroupId": "92b0bd5d-a3df-48e6-841d-0328aa3f0f4e",
+      "backgroundOperationsState": "Enabled",
+      "scaleGroup": "CHECRMLIVESG602",
+      "crmGeo": "CHE",
+      "platformSku": "Lite",
+      "schemaType": "Core",
+      "isDormant": false
+    },
+    "trialScenarioType": "None",
+    "notificationMetadata": {
+      "state": "NotSpecified",
+      "branding": "NotSpecific"
+    },
+    "retentionPeriod": "P7D",
+    "states": {
+      "management": {
+        "id": "Ready"
+      },
+      "runtime": {
+        "runtimeReasonCode": "NotSpecified",
+        "requestedBy": {
+          "displayName": "SYSTEM",
+          "type": "NotSpecified"
+        },
+        "id": "Enabled"
+      },
+      "disasterRecovery": {
+        "copyLocation": "NearCopy",
+        "id": "Unavailable"
+      }
+    },
+    "updateCadence": {
+      "id": "Frequent"
+    },
+    "retentionDetails": {
+      "retentionPeriod": "P7D",
+      "backupsAvailableFromDateTime": "2026-05-31T14:08:54.5614513Z"
+    },
+    "protectionStatus": {
+      "keyManagedBy": "Microsoft"
+    },
+    "cluster": {
+      "category": "Prod",
+      "number": "101",
+      "uriSuffix": "ch-il101.gateway.prod.island",
+      "geoShortName": "CH",
+      "environment": "Prod",
+      "scaleGroupId": "543eed62-0602-0000-0602-000000000000"
+    },
+    "connectedGroups": [
+      {
+        "id": "92b0bd5d-a3df-48e6-841d-0328aa3f0f4e",
+        "displayName": "(ORG) Customer Support",
+        "state": "Created",
+        "resources": [
+          {
+            "type": "Team",
+            "id": "92b0bd5d-a3df-48e6-841d-0328aa3f0f4e"
+          }
+        ]
+      }
+    ],
+    "lifecycleOperationsEnforcement": {
+      "allowedOperations": [
+        {
+          "type": {
+            "id": "Move"
+          }
+        },
+        {
+          "type": {
+            "id": "Backup"
+          }
+        },
+        {
+          "type": {
+            "id": "Delete"
+          }
+        },
+        {
+          "type": {
+            "id": "Edit"
+          }
+        },
+        {
+          "type": {
+            "id": "Promote"
+          }
+        },
+        {
+          "type": {
+            "id": "Recover"
+          }
+        },
+        {
+          "type": {
+            "id": "Restore"
+          }
+        },
+        {
+          "type": {
+            "id": "NewIdentity"
+          }
+        },
+        {
+          "type": {
+            "id": "SwapIdentity"
+          }
+        },
+        {
+          "type": {
+            "id": "RevertIdentity"
+          }
+        },
+        {
+          "type": {
+            "id": "Enable"
+          }
+        },
+        {
+          "type": {
+            "id": "Disable"
+          }
+        },
+        {
+          "type": {
+            "id": "EnableGovernanceConfiguration"
+          }
+        }
+      ],
+      "disallowedOperations": [
+        {
+          "type": {
+            "id": "Provision"
+          },
+          "reason": {
+            "message": "Provision cannot be performed because there is no linked CDS instance or the CDS instance version is not supported.",
+            "type": "CdsLink"
+          }
+        },
+        {
+          "type": {
+            "id": "Unlock"
+          },
+          "reason": {
+            "message": "Unlock cannot be performed because there is no linked CDS instance or the CDS instance version is not supported.",
+            "type": "CdsLink"
+          }
+        },
+        {
+          "type": {
+            "id": "Convert"
+          },
+          "reason": {
+            "message": "Convert cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "Copy"
+          },
+          "reason": {
+            "message": "Copy cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "Reset"
+          },
+          "reason": {
+            "message": "Reset cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "UpdateProtectionStatus"
+          },
+          "reason": {
+            "message": "UpdateProtectionStatus cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "NewCustomerManagedKey"
+          },
+          "reason": {
+            "message": "NewCustomerManagedKey cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "RotateCustomerManagedKey"
+          },
+          "reason": {
+            "message": "RotateCustomerManagedKey cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "RevertToMicrosoftKey"
+          },
+          "reason": {
+            "message": "RevertToMicrosoftKey cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "NewNetworkInjection"
+          },
+          "reason": {
+            "message": "NewNetworkInjection cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "SwapNetworkInjection"
+          },
+          "reason": {
+            "message": "SwapNetworkInjection cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "RevertNetworkInjection"
+          },
+          "reason": {
+            "message": "RevertNetworkInjection cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "PrepareTenantToTenant"
+          },
+          "reason": {
+            "message": "PrepareTenantToTenant cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "MigrateTenantToTenant"
+          },
+          "reason": {
+            "message": "MigrateTenantToTenant cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "ForceFailover"
+          },
+          "reason": {
+            "message": "ForceFailover cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "DisasterRecoveryDrill"
+          },
+          "reason": {
+            "message": "DisasterRecoveryDrill cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "FailbackToNearCopy"
+          },
+          "reason": {
+            "message": "FailbackToNearCopy cannot be performed on environment of type Teams.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "DisableGovernanceConfiguration"
+          },
+          "reason": {
+            "message": "DisableGovernanceConfiguration cannot be performed on Power Platform environment because of the governance configuration.",
+            "type": "GovernanceConfig"
+          }
+        },
+        {
+          "type": {
+            "id": "UpdateGovernanceConfiguration"
+          },
+          "reason": {
+            "message": "UpdateGovernanceConfiguration cannot be performed on Power Platform environment because of the governance configuration.",
+            "type": "GovernanceConfig"
+          }
+        }
+      ]
+    },
+    "governanceConfiguration": {
+      "protectionLevel": "Basic"
+    },
+    "bingChatEnabled": true,
+    "m365Enabled": true,
+    "appDraftingCopilotEnabled": true,
+    "enableAnalyticsForMakers": true
+  }
+}

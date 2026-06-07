@@ -1,0 +1,119 @@
+{
+  "Type": "PublishedSensitivityLabel",
+  "Settings": [
+    "[powerbimandatory, false]",
+    "[requiredowngradejustification, false]",
+    "[siteandgroupmandatory, false]",
+    "[mandatory, false]"
+  ],
+  "Labels": [
+    "Collaboration"
+  ],
+  "ScopedLabels": [
+    "6baf1559-1627-4dd3-a858-0080edc2faa0"
+  ],
+  "PolicySettingsBlob": "<settings>\r\n  <setting key=\"powerbimandatory\" value=\"false\" />\r\n  <setting key=\"requiredowngradejustification\" value=\"false\" />\r\n  <setting key=\"siteandgroupmandatory\" value=\"false\" />\r\n  <setting key=\"mandatory\" value=\"false\" />\r\n</settings>",
+  "UPELabelRules": [
+    "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/lptr-8588774a-ab3c-42bc-ae3c-cd46518404c3"
+  ],
+  "SharePointLocation": [],
+  "SharePointLocationException": [],
+  "ExchangeLocation": [
+    {
+      "DisplayName": "All",
+      "Name": "All",
+      "ImmutableIdentity": "All",
+      "Type": {
+        "value": 1,
+        "Value": "Tenant"
+      },
+      "Status": {
+        "value": 2,
+        "Value": "Success"
+      },
+      "Workload": {
+        "value": 1,
+        "Value": "Exchange"
+      },
+      "SourceType": null,
+      "SourceTypeDisplayName": null,
+      "SourceProvider": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SourceEntryType": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SchemaVersion": 2,
+      "Resources": null,
+      "ScopingGroup": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "GroupSet": "Default"
+    }
+  ],
+  "ExchangeLocationException": [],
+  "PublicFolderLocation": [],
+  "SkypeLocation": [],
+  "SkypeLocationException": [],
+  "ModernGroupLocation": [],
+  "ModernGroupLocationException": [],
+  "OneDriveLocation": [],
+  "OneDriveLocationException": [],
+  "ExchangeAdaptiveScopes": [],
+  "ExchangeAdaptiveScopesException": [],
+  "SharePointAdaptiveScopes": [],
+  "SharePointAdaptiveScopesException": [],
+  "OneDriveAdaptiveScopes": [],
+  "OneDriveAdaptiveScopesException": [],
+  "TeamsAdaptiveScopes": [],
+  "TeamsAdaptiveScopesException": [],
+  "EndpointDlpAdaptiveScopes": null,
+  "EndpointDlpAdaptiveScopesException": null,
+  "ErrorMetadata": null,
+  "UserAdministrativeUnitMembershipMap": null,
+  "ForceValidate": false,
+  "PolicyRulesMetaData": "",
+  "GlobalListType": "None",
+  "Locations": "",
+  "PolicyConstraints": "{\"AdministrativeUnit\":[]}",
+  "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup, Applications",
+  "Priority": 4,
+  "ObjectVersion": "89dbfefc-8cb2-4d2e-eb38-08de4d285143",
+  "CreatedBy": "Pascal Aeschlimann (Admin)",
+  "LastModifiedBy": "Pascal Aeschlimann (Admin)",
+  "ReadOnly": false,
+  "ExternalIdentity": "",
+  "Comment": "",
+  "Enabled": true,
+  "Mode": "Enforce",
+  "DistributionStatus": "Pending",
+  "DistributionSyncStatus": "Success",
+  "DistributionResults": null,
+  "LastStatusUpdateTime": null,
+  "ModificationTimeUtc": "2026-01-06T13:34:29.067",
+  "CreationTimeUtc": "2026-01-06T13:34:29.067",
+  "PolicyRBACScopes": [],
+  "Identity": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/Test2",
+  "Id": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/Test2",
+  "IsValid": true,
+  "ExchangeVersion": "0.20 (15.0.0.0)",
+  "Name": "Test2",
+  "DistinguishedName": "CN=Test2,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=FFO,DC=extest,DC=microsoft,DC=com",
+  "ObjectCategory": null,
+  "ObjectClass": [
+    "msExchUnifiedPolicy"
+  ],
+  "WhenChanged": "2026-01-06T13:34:29+00:00",
+  "WhenCreated": "2026-01-06T13:34:29+00:00",
+  "WhenChangedUTC": "2026-01-06T13:34:29Z",
+  "WhenCreatedUTC": "2026-01-06T13:34:29Z",
+  "ExchangeObjectId": "732cafd8-71db-4c31-9b79-4300ba51cfa0",
+  "OrganizationalUnitRoot": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "732cafd8-71db-4c31-9b79-4300ba51cfa0",
+  "OriginatingServer": "",
+  "ObjectState": "Changed"
+}

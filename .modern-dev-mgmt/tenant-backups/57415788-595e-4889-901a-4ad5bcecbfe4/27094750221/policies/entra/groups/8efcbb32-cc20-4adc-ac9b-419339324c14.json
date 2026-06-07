@@ -1,0 +1,13 @@
+{
+  "id": "8efcbb32-cc20-4adc-ac9b-419339324c14",
+  "displayName": "AAD_SEC_AS_ROL-SuperAdmin",
+  "description": "Diese Gruppe steuert den Zugriff auf AIP Super User Rechte via PIM. \nMitglieder können verschlüsselte Dateien (Sensitivity Labels) entschlüsseln. \nZugriff nur nach Approval über PIM – zeitlich begrenzt.",
+  "mailEnabled": true,
+  "securityEnabled": true,
+  "mailNickname": "AAD_SEC_AS_ROL-SuperAdmin",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2026-05-04T09:48:59Z"
+}

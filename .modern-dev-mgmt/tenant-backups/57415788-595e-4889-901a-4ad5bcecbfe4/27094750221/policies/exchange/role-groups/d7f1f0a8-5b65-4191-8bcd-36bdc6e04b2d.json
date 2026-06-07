@@ -1,0 +1,43 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [
+    "Communication Compliance Admin-Communication Compliance Administ"
+  ],
+  "Roles": [
+    "Communication Compliance Admin"
+  ],
+  "DisplayName": "",
+  "ExternalDirectoryObjectId": "",
+  "Members": [],
+  "SamAccountName": "$N4QKH0-E5JE3V5EEITH",
+  "Description": "Analysts of insider risk management that can triage alerts, investigate and action on cases (but cannot explore content).",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "",
+  "Identity": "Communication Compliance Administrators",
+  "Id": "Communication Compliance Administrators",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "Communication Compliance Administrators",
+  "DistinguishedName": "CN=Communication Compliance Administrators,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2025-10-18T22:39:13+00:00",
+  "WhenCreated": "2023-04-07T11:51:43+00:00",
+  "WhenChangedUTC": "2025-10-18T22:39:13Z",
+  "WhenCreatedUTC": "2023-04-07T11:51:43Z",
+  "ExchangeObjectId": "d7f1f0a8-5b65-4191-8bcd-36bdc6e04b2d",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "d7f1f0a8-5b65-4191-8bcd-36bdc6e04b2d",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

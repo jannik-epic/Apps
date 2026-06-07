@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2022-08-22T11:47:15.8836768Z",
+  "creationSource": null,
+  "description": "Settings to change after import:\n- AAD Tennant Domain Name\n- Default File Assosications (if required)\n- Trusted Site Zones\n- CommercialID (Admin Templates)",
+  "lastModifiedDateTime": "2025-08-13T15:11:40.6663449Z",
+  "name": "BASE-EPICLAB_DCP_DEV_WIN-OS Settings",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 51,
+  "technologies": "mdm",
+  "id": "16360bf3-fa7c-4ac5-b0bc-9244f5fb96d5",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('16360bf3-fa7c-4ac5-b0bc-9244f5fb96d5')/assignments",
+  "assignments": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "6baf1559-1627-4dd3-a858-0080edc2faa0",
+  "name": "Collaboration",
+  "description": "",
+  "color": "",
+  "sensitivity": 9,
+  "tooltip": "Container Parent",
+  "isActive": true,
+  "isAppliable": true,
+  "contentFormats": [
+    "site",
+    "unifiedgroup"
+  ],
+  "hasProtection": false,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('6baf1559-1627-4dd3-a858-0080edc2faa0')/parent/$entity",
+  "parent": null
+}

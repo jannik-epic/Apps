@@ -1,0 +1,10 @@
+{
+  "Identity": "Global",
+  "Description": null,
+  "AllowOrgWideTeamCreation": true,
+  "EnablePrivateTeamDiscovery": false,
+  "AllowPrivateChannelCreation": true,
+  "AllowSharedChannelCreation": true,
+  "AllowChannelSharingToExternalUser": true,
+  "AllowUserToParticipateInExternalSharedChannel": true
+}

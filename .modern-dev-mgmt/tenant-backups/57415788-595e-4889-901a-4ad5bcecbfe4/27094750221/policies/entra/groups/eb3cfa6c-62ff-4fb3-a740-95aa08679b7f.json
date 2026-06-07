@@ -1,0 +1,13 @@
+{
+  "id": "eb3cfa6c-62ff-4fb3-a740-95aa08679b7f",
+  "displayName": "Marketing Projekte Intern",
+  "description": "Projekte Intern",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "ProjekteIntern",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2024-10-15T17:10:36Z"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "c5f54253-ef7e-44f6-a578-440ed67e946d",
+  "name": "Netherlands Citizen's Service (BSN) Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

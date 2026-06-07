@@ -1,0 +1,11 @@
+{
+  "id": "d8f7c7d7-3558-4384-88a8-79ee73014fff",
+  "displayName": "SG_TeamsManager_Pilot",
+  "description": "Teams Manager Pilot User",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "d5fdec3e-2",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2021-05-24T14:36:28Z"
+}

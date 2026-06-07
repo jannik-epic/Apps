@@ -1,0 +1,27 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentityBlueprint",
+  "id": "c123f1f3-d9cf-46bd-ac7c-3b4e91beca64",
+  "appId": "c123f1f3-d9cf-46bd-ac7c-3b4e91beca64",
+  "displayName": "Frontier Engine Blueprint",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-04-30T10:37:10Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

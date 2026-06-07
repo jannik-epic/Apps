@@ -1,0 +1,35 @@
+{
+  "id": "MDA_SF_requireHttpOnly",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://help.salesforce.com/s/articleView?id=sf.admin_sessions.htm&type=5",
+  "controlCategory": "Apps",
+  "title": "Require HttpOnly attribute",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "1. From <b>Setup</b>, in the <b>Quick Find</b> box, enter <b>Session Settings</b>, then select <b>Session Settings</b>.<br>2. Select <b>Require HttpOnly attribut.</b>.",
+  "remediationImpact": "If you have a custom or packaged application that uses JavaScript to access session ID cookies, selecting Require HttpOnly attribute breaks your application. It denies the application access to the cookie. Also if you select this setting, the AJAX Toolkit debugging window isn’t available.",
+  "service": "MDA_SF",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

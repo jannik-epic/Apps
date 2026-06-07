@@ -1,0 +1,13 @@
+{
+  "id": "e8a44b22-9bde-4fc1-b209-6828ddd43ae5",
+  "displayName": "Dominik [Prj]",
+  "description": "Dominik's Team",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "DominikPrj",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2021-05-28T04:56:14Z"
+}

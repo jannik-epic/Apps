@@ -1,0 +1,9 @@
+{
+  "id": "microsoft-pre-approval-apps-for-chat",
+  "displayName": "Includes apps that have been pre-approved by permission grant pre-approval policy for chat",
+  "description": "Includes apps that have been pre-approved by permission grant pre-approval policy for chat resource specific consent.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-pre-approval-apps-for-chat')/includes",
+  "includes": [],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-pre-approval-apps-for-chat')/excludes",
+  "excludes": []
+}

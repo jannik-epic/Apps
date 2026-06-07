@@ -1,0 +1,15 @@
+{
+  "id": "1e558043-feec-441d-b9b4-c8551c68994d",
+  "displayName": "Consent Policy Settings",
+  "templateId": "dffd5d46-495d-40a9-8e21-954ff55e198a",
+  "values": [
+    {
+      "name": "BlockUserConsentForRiskyApps",
+      "value": "true"
+    },
+    {
+      "name": "EnableAdminConsentRequests",
+      "value": "true"
+    }
+  ]
+}

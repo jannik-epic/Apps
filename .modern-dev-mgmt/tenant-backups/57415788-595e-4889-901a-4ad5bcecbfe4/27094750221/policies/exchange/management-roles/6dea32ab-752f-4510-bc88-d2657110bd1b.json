@@ -1,0 +1,43 @@
+{
+  "RoleEntries": [
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Search-UnifiedAuditLog -Debug -EndDate -ErrorAction -ErrorVariable -Formatted -FreeText -HighCompleteness -IPAddresses -LegacyFlow -LongerRetentionEnabled -ObjectIds -Operations -OutBuffer -OutVariable -RecordType -ResultSize -SessionCommand -SessionId -SiteIds -StartDate -SyncSearch -UserIds -Verbose -WarningAction -WarningVariable",
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Get-ServiceDomainGroupStorage -ErrorAction",
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Enable-ServiceDomainGroupStorage -ErrorAction"
+  ],
+  "RoleType": "InformationProtectionAnalyst",
+  "ImplicitRecipientReadScope": "Organization",
+  "ImplicitRecipientWriteScope": "Organization",
+  "ImplicitConfigReadScope": "None",
+  "ImplicitConfigWriteScope": "None",
+  "IsRootRole": true,
+  "IsEndUserRole": false,
+  "MailboxPlanIndex": "",
+  "Description": null,
+  "Parent": null,
+  "RoleState": "Usable",
+  "IsDeprecated": false,
+  "IsServicePrincipalRole": false,
+  "AllowEmptyRole": false,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "0.12 (14.0.451.0)",
+  "Name": "Information Protection Analyst",
+  "DistinguishedName": "CN=Information Protection Analyst,CN=Roles,CN=RBAC,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "Information Protection Analyst",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Role",
+  "ObjectClass": [
+    "top",
+    "msExchRole"
+  ],
+  "WhenChanged": "2025-12-04T14:01:20+00:00",
+  "WhenCreated": "2023-09-03T23:31:38+00:00",
+  "WhenChangedUTC": "2025-12-04T14:01:20Z",
+  "WhenCreatedUTC": "2023-09-03T23:31:38Z",
+  "ExchangeObjectId": "6dea32ab-752f-4510-bc88-d2657110bd1b",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "Information Protection Analyst",
+  "Guid": "6dea32ab-752f-4510-bc88-d2657110bd1b",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Unchanged"
+}

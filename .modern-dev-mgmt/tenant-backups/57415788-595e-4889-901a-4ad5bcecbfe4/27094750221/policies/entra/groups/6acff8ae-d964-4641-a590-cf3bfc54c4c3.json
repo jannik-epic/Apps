@@ -1,0 +1,11 @@
+{
+  "id": "6acff8ae-d964-4641-a590-cf3bfc54c4c3",
+  "displayName": "Power BI Group",
+  "description": "Syskit Power BI data collection group",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "445b7282-0",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-06-02T13:55:48Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "cbaaf0ba-b8b6-46df-9903-8b89d8663993",
+  "displayName": "Conditional Access: Risky sign-in multifactor authentication (a4ea6c0f-b8fb-4d29-91f1-9f8cf0601e98)",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "ConditionalAccessRiskySignInMfaGroup",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-02-12T18:58:43Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "999d0182-7680-4cfa-b7a0-9581cd9d4111",
+  "name": "Collaboration Public Specific People",
+  "description": "",
+  "color": "",
+  "sensitivity": 10,
+  "tooltip": "Container label for only specific people",
+  "isActive": true,
+  "isAppliable": true,
+  "contentFormats": [
+    "site",
+    "unifiedgroup"
+  ],
+  "hasProtection": false,
+  "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#security/informationProtection/sensitivityLabels('999d0182-7680-4cfa-b7a0-9581cd9d4111')/parent/$entity",
+  "parent": null
+}

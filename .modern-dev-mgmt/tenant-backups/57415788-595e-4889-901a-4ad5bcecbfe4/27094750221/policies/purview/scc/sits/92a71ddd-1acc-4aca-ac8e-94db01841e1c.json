@@ -1,0 +1,5 @@
+{
+  "id": "92a71ddd-1acc-4aca-ac8e-94db01841e1c",
+  "name": "Latvia Physical Addresses",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

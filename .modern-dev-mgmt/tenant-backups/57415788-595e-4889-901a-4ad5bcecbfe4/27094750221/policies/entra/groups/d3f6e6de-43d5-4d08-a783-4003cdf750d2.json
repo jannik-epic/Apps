@@ -1,0 +1,13 @@
+{
+  "id": "d3f6e6de-43d5-4d08-a783-4003cdf750d2",
+  "displayName": "[EXT]-Test-External",
+  "description": "[EXT]-Test-External",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "EXT-Test-External",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2023-05-31T19:19:42Z"
+}

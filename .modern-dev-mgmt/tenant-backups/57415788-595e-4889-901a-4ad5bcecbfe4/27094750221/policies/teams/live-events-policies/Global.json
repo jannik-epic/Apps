@@ -1,0 +1,45 @@
+{
+  "Description": null,
+  "AllowBroadcastScheduling": true,
+  "AllowBroadcastTranscription": false,
+  "BroadcastAttendeeVisibilityMode": "EveryoneInCompany",
+  "BroadcastRecordingMode": "AlwaysEnabled",
+  "Key": {
+    "ScopeClass": "Global",
+    "SchemaId": {
+      "XName": {
+        "name": "{urn:schema:Microsoft.Rtc.Management.Policy.Teams.2017}TeamsMeetingBroadcastPolicy"
+      }
+    },
+    "AuthorityId": {
+      "Class": "Tenant",
+      "InstanceId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+      "XmlRoot": {
+        "name": "{urn:schema:Microsoft.Rtc.Management.ScopeFramework.2008}AuthorityId"
+      }
+    },
+    "DefaultXml": {
+      "SchemaId": {
+        "XName": {
+          "name": "{urn:schema:Microsoft.Rtc.Management.Policy.Teams.2017}TeamsMeetingBroadcastPolicy"
+        }
+      },
+      "Data": {
+        "TeamsMeetingBroadcastPolicy": {
+          "@xmlns": "urn:schema:Microsoft.Rtc.Management.Policy.Teams.2017"
+        }
+      },
+      "ConfigObject": null,
+      "Signature": "00000000-0000-0000-0000-000000000000",
+      "IsModified": true
+    },
+    "XmlRoot": {
+      "name": "{urn:schema:Microsoft.Rtc.Management.ScopeFramework.2008}AnchoredXmlKey"
+    }
+  },
+  "Identity": "Global",
+  "ConfigMetadata": {
+    "Authority": "Tenant"
+  },
+  "ConfigId": "Global"
+}

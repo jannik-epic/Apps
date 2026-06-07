@@ -1,0 +1,81 @@
+{
+  "id": "f058f0a7-7978-42c8-adbf-8086d2158e88",
+  "templateId": null,
+  "displayName": "FFR_TST_FORCE_MAM",
+  "createdDateTime": "2025-06-03T12:03:18.3144748Z",
+  "modifiedDateTime": "2025-06-03T13:22:18.3285366Z",
+  "state": "enabled",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [
+        "0000000a-0000-0000-c000-000000000000",
+        "d4ebce55-015a-49b5-a083-c84d1797ae8c"
+      ],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    },
+    "platforms": {
+      "includePlatforms": [
+        "android",
+        "iOS"
+      ],
+      "excludePlatforms": [
+        "windows",
+        "windowsPhone",
+        "macOS",
+        "linux"
+      ]
+    },
+    "devices": {
+      "includeDeviceStates": [],
+      "excludeDeviceStates": [],
+      "includeDevices": [],
+      "excludeDevices": [],
+      "deviceFilter": {
+        "mode": "exclude",
+        "rule": "device.deviceOwnership -eq \"Personal\" -or device.deviceOwnership -eq \"Company\""
+      }
+    }
+  },
+  "grantControls": {
+    "operator": "AND",
+    "builtInControls": [
+      "compliantApplication"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [
+      "68208e77-c670-48ff-ae6d-8cc670baff4c"
+    ],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('f058f0a7-7978-42c8-adbf-8086d2158e88')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

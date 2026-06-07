@@ -1,0 +1,7 @@
+{
+  "id": "427a629b-afc6-49a3-acce-3fd718210c10",
+  "deletedDateTime": null,
+  "description": "Can manage product licenses on users and groups.",
+  "displayName": "License Administrator",
+  "roleTemplateId": "4d6ac14f-3453-41d0-bef9-a3e0c569773a"
+}

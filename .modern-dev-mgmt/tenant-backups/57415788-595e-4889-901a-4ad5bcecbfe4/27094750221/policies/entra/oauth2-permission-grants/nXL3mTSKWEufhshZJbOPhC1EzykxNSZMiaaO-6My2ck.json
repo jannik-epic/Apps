@@ -1,0 +1,8 @@
+{
+  "clientId": "99f7729d-8a34-4b58-9f86-c85925b38f84",
+  "consentType": "AllPrincipals",
+  "id": "nXL3mTSKWEufhshZJbOPhC1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": "DeviceManagementConfiguration.ReadWrite.All DeviceManagementServiceConfig.ReadWrite.All Directory.AccessAsUser.All Group.ReadWrite.All PeopleSettings.ReadWrite.All Policy.ReadWrite.DeviceConfiguration Policy.ReadWrite.MobilityManagement"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "1e9c56bc-83ce-49ec-9453-ec21515ba050",
+  "displayName": "E-Mail Waiver Demo",
+  "description": "Leandro & Nicole",
+  "mailEnabled": true,
+  "securityEnabled": true,
+  "mailNickname": "emailwaiverdemo",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-04-24T07:08:46Z"
+}

@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2023-01-30T07:03:30.4591687Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-01-30T07:03:30.4591687Z",
+  "name": "EPIC_SEC_DEV_WIN-Firewall Settings",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 4,
+  "technologies": "mdm,microsoftSense",
+  "id": "6b5aa336-fbfe-4269-93c4-3c33a89b082f",
+  "templateReference": {
+    "templateId": "6078910e-d808-4a9f-a51d-1b8a7bacb7c0_1",
+    "templateFamily": "endpointSecurityFirewall",
+    "templateDisplayName": "Windows Firewall",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('6b5aa336-fbfe-4269-93c4-3c33a89b082f')/assignments",
+  "assignments": [
+    {
+      "id": "6b5aa336-fbfe-4269-93c4-3c33a89b082f_62cc56c0-5761-4af8-a3c4-e0e2c667a9ce",
+      "source": "direct",
+      "sourceId": "6b5aa336-fbfe-4269-93c4-3c33a89b082f",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "62cc56c0-5761-4af8-a3c4-e0e2c667a9ce"
+      }
+    }
+  ]
+}

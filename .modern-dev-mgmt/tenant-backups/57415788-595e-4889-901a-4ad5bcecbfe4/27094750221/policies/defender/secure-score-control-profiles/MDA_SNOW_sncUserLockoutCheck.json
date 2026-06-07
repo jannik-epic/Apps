@@ -1,0 +1,38 @@
+{
+  "id": "MDA_SNOW_sncUserLockoutCheck",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/security/reference/managing-failed-login-attempts.html",
+  "controlCategory": "Identity",
+  "title": "Enable managing failed login attempts",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 4.0,
+  "rank": 10,
+  "remediation": "<ol><li>Navigate to&nbsp;<strong>System Policy</strong><abbr>&nbsp;&gt;&nbsp;</abbr><strong>Script Actions</strong>.</li><li>Search for the name&nbsp;*<em>SNC User</em>.</li><li>To enable management of failed login attempts, change the Active state of either the <em>SNC User Lockout Check with Auto Unlock</em> or <em>SNC User Lockout Check</em> scripts actions from <em>false </em>to <em>true</em>.</li><li>To reset the failed login counter after a successful login, you can activate the <em>SNC User Clear</em> script action.</li></ol>",
+  "remediationImpact": "This remediation would enable administrator of the instance to monitor and report any malicious user access.",
+  "service": "MDA_SNOW",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

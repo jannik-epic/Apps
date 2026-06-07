@@ -1,0 +1,13 @@
+{
+  "id": "cd5e043a-7c94-4230-b58f-2b7d3a501be6",
+  "displayName": "AAD_SEC_DD_INTUNE-Android Devices BYOD",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "e2b31b9a-9",
+  "groupTypes": [
+    "DynamicMembership"
+  ],
+  "visibility": null,
+  "createdDateTime": "2022-08-22T11:46:51Z"
+}

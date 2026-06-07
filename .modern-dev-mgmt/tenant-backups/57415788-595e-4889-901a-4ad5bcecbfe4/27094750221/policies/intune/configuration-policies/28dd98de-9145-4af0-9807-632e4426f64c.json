@@ -1,0 +1,35 @@
+{
+  "createdDateTime": "2023-01-30T07:03:30.6094816Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-03-17T15:56:38.0644818Z",
+  "name": "EPIC_SEC_DEV_WIN-Attack Surface Reduction Rules",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm,microsoftSense",
+  "id": "28dd98de-9145-4af0-9807-632e4426f64c",
+  "templateReference": {
+    "templateId": "e8c053d6-9f95-42b1-a7f1-ebfd71c67a4b_1",
+    "templateFamily": "endpointSecurityAttackSurfaceReduction",
+    "templateDisplayName": "Attack Surface Reduction Rules",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('28dd98de-9145-4af0-9807-632e4426f64c')/assignments",
+  "assignments": [
+    {
+      "id": "28dd98de-9145-4af0-9807-632e4426f64c_62cc56c0-5761-4af8-a3c4-e0e2c667a9ce",
+      "source": "direct",
+      "sourceId": "28dd98de-9145-4af0-9807-632e4426f64c",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "62cc56c0-5761-4af8-a3c4-e0e2c667a9ce"
+      }
+    }
+  ]
+}

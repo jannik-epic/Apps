@@ -1,0 +1,35 @@
+{
+  "id": "mdo_targeteduserprotectionaction",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/antiphishing?tid=57415788-595e-4889-901a-4ad5bcecbfe4",
+  "controlCategory": "Apps",
+  "title": "Quarantine messages that are detected from impersonated users",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 6.0,
+  "rank": 128,
+  "remediation": "\r\n    Ensure that all users have an assigned anti-phishing policy with the &lsquo;<strong>Enable users to protect&rsquo;</strong> option selected, and the &lsquo;<strong>If message is detected as an impersonated user&rsquo;</strong> option set to &lsquo;<strong>Quarantine the message&rsquo;</strong>, by either updating your existing policies or creating new ones. \r\n    ",
+  "remediationImpact": "Unknown",
+  "service": "MDO",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

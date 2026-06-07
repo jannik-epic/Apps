@@ -1,0 +1,107 @@
+{
+  "id": "3558d8d1-90a7-4ac2-8cc2-4a56e183ca86",
+  "templateId": null,
+  "displayName": "CA101: Require MFA for admin users",
+  "createdDateTime": "2023-03-13T23:43:15.0304404Z",
+  "modifiedDateTime": null,
+  "state": "disabled",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "38691173-0809-4f1e-ab10-75d05bae4225"
+      ],
+      "includeRoles": [
+        "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+        "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+        "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+        "11451d60-acb2-45eb-a7d6-43d0f0125c13",
+        "158c047a-c907-4556-b7ef-446551a6b5f7",
+        "17315797-102d-40b4-93e0-432062caca18",
+        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+        "2b745bdf-0803-4d80-aa65-822c4493daac",
+        "31392ffb-586c-42d1-9346-e59415a2cc4e",
+        "32696413-001a-46ae-978c-ce0f6b3620d2",
+        "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+        "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e",
+        "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+        "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91",
+        "5d6b6bb7-de71-4623-b4af-96380a352509",
+        "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+        "62e90394-69f5-4237-9190-012177145e10",
+        "69091246-20e8-4a56-aa4d-066075b2a7a8",
+        "6e591065-9bad-43ed-90f3-e9424366d2f0",
+        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+        "7495fdc4-34c4-4d15-a289-98788ce399fd",
+        "75934031-6c7e-415a-99d7-48dbd49e875e",
+        "7698a772-787b-4ac8-901f-60d6b08affd2",
+        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+        "810a2642-a034-447f-a5e8-41beaa378541",
+        "8329153b-31d0-4727-b945-745eb3bc5f31",
+        "892c5842-a9a6-463a-8041-72aa08ca3cf6",
+        "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+        "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+        "966707d0-3269-4727-9be2-8c3a10f19b9d",
+        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+        "a9ea8996-122f-4c74-9520-8edcd192826c",
+        "af78dc32-cf4d-46f9-ba4e-4428526346b5",
+        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+        "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+        "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+        "c430b396-e693-46cc-96f3-db01bf8bb62a",
+        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+        "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+        "e3973bdf-4987-49ae-837a-ba8e231c7286",
+        "e6d1a23a-da11-4be4-9570-befc86d067a7",
+        "e8611ab8-c189-46e8-94e1-60213ab1f814",
+        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+        "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+        "f70938a0-fc10-4177-9e90-2178f8765737",
+        "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+        "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+        "fe930be7-5e62-47db-91af-98c3a49a38b1"
+      ],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "mfa"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('3558d8d1-90a7-4ac2-8cc2-4a56e183ca86')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "RoleEntries": [
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Get-ScopeAdmins -ScopeIds",
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Set-User -City -CountryOrRegion -Fax -GeoCoordinates -Identity -Office -Phone -PostalCode -PostOfficeBox -StateOrProvince -StreetAddress"
+  ],
+  "RoleType": "MyContactInformation",
+  "ImplicitRecipientReadScope": "Self",
+  "ImplicitRecipientWriteScope": "Self",
+  "ImplicitConfigReadScope": "OrganizationConfig",
+  "ImplicitConfigWriteScope": "OrganizationConfig",
+  "IsRootRole": false,
+  "IsEndUserRole": true,
+  "MailboxPlanIndex": "",
+  "Description": "",
+  "Parent": "epicfusionlabs.onmicrosoft.com\\MyContactInformation",
+  "RoleState": "Usable",
+  "IsDeprecated": false,
+  "IsServicePrincipalRole": false,
+  "AllowEmptyRole": false,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "0.12 (14.0.451.0)",
+  "Name": "MyAddressInformation",
+  "DistinguishedName": "CN=MyAddressInformation,CN=MyContactInformation,CN=Roles,CN=RBAC,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "MyAddressInformation",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Role",
+  "ObjectClass": [
+    "top",
+    "msExchRole"
+  ],
+  "WhenChanged": "2025-10-18T19:49:31+00:00",
+  "WhenCreated": "2021-05-29T08:17:35+00:00",
+  "WhenChangedUTC": "2025-10-18T19:49:31Z",
+  "WhenCreatedUTC": "2021-05-29T08:17:35Z",
+  "ExchangeObjectId": "71354d60-e6bd-4295-af65-35c3aaa3c88e",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "MyAddressInformation",
+  "Guid": "71354d60-e6bd-4295-af65-35c3aaa3c88e",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Unchanged"
+}

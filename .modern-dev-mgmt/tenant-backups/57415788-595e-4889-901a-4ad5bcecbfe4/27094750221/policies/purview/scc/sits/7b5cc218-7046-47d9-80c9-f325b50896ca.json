@@ -1,0 +1,5 @@
+{
+  "id": "7b5cc218-7046-47d9-80c9-f325b50896ca",
+  "name": "Hungary Personal Identification Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

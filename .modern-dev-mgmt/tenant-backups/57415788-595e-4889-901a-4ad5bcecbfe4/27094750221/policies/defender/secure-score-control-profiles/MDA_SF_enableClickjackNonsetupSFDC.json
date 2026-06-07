@@ -1,0 +1,35 @@
+{
+  "id": "MDA_SF_enableClickjackNonsetupSFDC",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://help.salesforce.com/s/articleView?id=sf.admin_sessions.htm&type=5",
+  "controlCategory": "Apps",
+  "title": "Enable clickjack protection for non-Setup for Salesforce pages",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "1. From <b>Setup</b>, in the <b>Quick Find</b> box, enter <b>Session Settings</b>, then select <b>Session Settings</b>.<br>2. Under <b>Clickjack Protection, select Enable clickjack protection for non-Setup pages</b>.",
+  "remediationImpact": "Your users will not be impacted by this setting.",
+  "service": "MDA_SF",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}
