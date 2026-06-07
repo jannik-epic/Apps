@@ -299,9 +299,9 @@ jobs:
               status = 'pending'
             }
 
-            if ($policyType -like 'Purview*' -or $policyType -like 'Exchange*') {
+            if ($policyType -like 'Purview*' -or $policyType -like 'Exchange*' -or $policyType -like 'Teams*' -or $policyType -like 'SharePoint*') {
               $logEntry.status = 'deferred'
-              $logEntry.reason = 'Routed to the non-Graph (SCC/EXO) restore step.'
+              $logEntry.reason = 'Routed to the non-Graph (SCC/EXO/Teams/PnP) restore step.'
               $logEntry.displayName = [string]$entry.displayName
               $nonGraphDeferred.Add($logEntry) | Out-Null
               continue
@@ -476,6 +476,7 @@ jobs:
           SCC_CERT_PFX_B64: ${{ secrets.PURVIEW_CONNECTOR_PFX_B64 }}
           SCC_CERT_PWD: ${{ secrets.PURVIEW_CONNECTOR_PFX_PWD }}
           OUT_DIR: ${{ steps.restore.outputs.out_dir }}
+          TENANT_GUID: ${{ env.AZURE_TENANT_ID }}
         run: |
           $ErrorActionPreference = 'Stop'
           # Connector identity from the committed onboarding file (same as backup).
@@ -532,19 +533,39 @@ jobs:
             'ExchangeManagementScope'           = @{ c='exo'; set='Set-ManagementScope';            new='New-ManagementScope' }
             'ExchangeAuthenticationPolicy'      = @{ c='exo'; set='Set-AuthenticationPolicy';       new='New-AuthenticationPolicy' }
             'ExchangeJournalRule'               = @{ c='exo'; set='Set-JournalRule';                new='New-JournalRule' }
+            'TeamsMeetingPolicy'                = @{ c='teams'; set='Set-CsTeamsMeetingPolicy';          new='New-CsTeamsMeetingPolicy' }
+            'TeamsMessagingPolicy'              = @{ c='teams'; set='Set-CsTeamsMessagingPolicy';        new='New-CsTeamsMessagingPolicy' }
+            'TeamsAppPermissionPolicy'          = @{ c='teams'; set='Set-CsTeamsAppPermissionPolicy';    new='New-CsTeamsAppPermissionPolicy' }
+            'TeamsAppSetupPolicy'               = @{ c='teams'; set='Set-CsTeamsAppSetupPolicy';         new='New-CsTeamsAppSetupPolicy' }
+            'TeamsCallingPolicy'                = @{ c='teams'; set='Set-CsTeamsCallingPolicy';          new='New-CsTeamsCallingPolicy' }
+            'TeamsChannelsPolicy'               = @{ c='teams'; set='Set-CsTeamsChannelsPolicy';         new='New-CsTeamsChannelsPolicy' }
+            'TeamsMeetingBroadcastPolicy'       = @{ c='teams'; set='Set-CsTeamsMeetingBroadcastPolicy'; new='New-CsTeamsMeetingBroadcastPolicy' }
+            'TeamsUpdateManagementPolicy'       = @{ c='teams'; set='Set-CsTeamsUpdateManagementPolicy'; new='New-CsTeamsUpdateManagementPolicy' }
+            'TeamsExternalAccessPolicy'         = @{ c='teams'; set='Set-CsExternalAccessPolicy';        new='New-CsExternalAccessPolicy' }
+            'TeamsFederationConfiguration'      = @{ c='teams'; set='Set-CsTenantFederationConfiguration'; singleton=$true }
+            'TeamsClientConfiguration'          = @{ c='teams'; set='Set-CsTeamsClientConfiguration';    singleton=$true }
+            'TeamsGuestMessagingConfiguration'  = @{ c='teams'; set='Set-CsTeamsGuestMessagingConfiguration'; singleton=$true }
+            'SharePointTenantSettings'          = @{ c='pnp'; set='Set-PnPTenant';                       singleton=$true }
           }
           $readonly = @('Identity','Guid','ObjectId','Id','WhenCreated','WhenChanged','WhenChangedUTC','WhenCreatedUTC','OrganizationId','ExchangeVersion','ExchangeObjectId','DistinguishedName','ObjectCategory','ObjectClass','OriginatingServer','ExoErrorObject','RunspaceId','PSComputerName','PSShowComputerName','ImmutableId','ExternalDirectoryObjectId','IsValid','Success','ChangeType')
 
-          $needScc = $false; $needExo = $false
-          foreach ($p in $items) { $s=$spec[[string]$p.policyType]; if ($s){ if($s.c -eq 'scc'){$needScc=$true}else{$needExo=$true} } }
+          $needScc = $false; $needExo = $false; $needTeams = $false; $needPnp = $false
+          foreach ($p in $items) { $s=$spec[[string]$p.policyType]; if ($s){ switch ($s.c) { 'scc' {$needScc=$true} 'exo' {$needExo=$true} 'teams' {$needTeams=$true} 'pnp' {$needPnp=$true} } } }
           if ($mode -ne 'dry_run') {
             $ProgressPreference='SilentlyContinue'
-            Install-Module ExchangeOnlineManagement -RequiredVersion 3.5.0 -Scope CurrentUser -Force -AllowClobber
-            Import-Module ExchangeOnlineManagement
             $bytes = [Convert]::FromBase64String($env:SCC_CERT_PFX_B64)
             $cert = [System.Security.Cryptography.X509Certificates.X509Certificate2]::new($bytes, $env:SCC_CERT_PWD)
-            if ($needScc) { try { Connect-IPPSSession -AppId $appId -Certificate $cert -Organization $org -ShowBanner:$false } catch { Write-Host ('SCC connect WARN: ' + $_.Exception.Message) } }
-            if ($needExo) { try { Connect-ExchangeOnline -AppId $appId -Certificate $cert -Organization $org -ShowBanner:$false } catch { Write-Host ('EXO connect WARN: ' + $_.Exception.Message) } }
+            if ($needScc -or $needExo) {
+              Install-Module ExchangeOnlineManagement -RequiredVersion 3.5.0 -Scope CurrentUser -Force -AllowClobber
+              Import-Module ExchangeOnlineManagement
+              if ($needScc) { try { Connect-IPPSSession -AppId $appId -Certificate $cert -Organization $org -ShowBanner:$false } catch { Write-Host ('SCC connect WARN: ' + $_.Exception.Message) } }
+              if ($needExo) { try { Connect-ExchangeOnline -AppId $appId -Certificate $cert -Organization $org -ShowBanner:$false } catch { Write-Host ('EXO connect WARN: ' + $_.Exception.Message) } }
+            }
+            if ($needTeams) {
+              try { Install-Module MicrosoftTeams -RequiredVersion 6.5.0 -Scope CurrentUser -Force -AllowClobber; Import-Module MicrosoftTeams; Connect-MicrosoftTeams -ApplicationId $appId -Certificate $cert -TenantId $env:TENANT_GUID | Out-Null } catch { Write-Host ('Teams connect WARN: ' + $_.Exception.Message) }
+            }
+            if ($needPnp) {
+              try { Install-Module PnP.PowerShell -RequiredVersion 2.12.0 -Scope CurrentUser -Force -AllowClobber; Import-Module PnP.PowerShell; $spTenant=$org.Split('.')[0]; $pwd=ConvertTo-SecureString $env:SCC_CERT_PWD -AsPlainText -Force; Connect-PnPOnline -Url ('https://'+$spTenant+'-admin.sharepoint.com') -ClientId $appId -Tenant $org -CertificateBase64Encoded $env:SCC_CERT_PFX_B64 -CertificatePassword $pwd | Out-Null } catch { Write-Host ('PnP connect WARN: ' + $_.Exception.Message) } }
           }
 
           function Build-Splat { param($obj, $validKeys, $ro)
@@ -601,7 +622,11 @@ jobs:
               } else { $r.status='failed'; $r.reason=$_.Exception.Message; $results.Add($r)|Out-Null }
             }
           }
-          if ($mode -ne 'dry_run') { Disconnect-ExchangeOnline -Confirm:$false -ErrorAction SilentlyContinue }
+          if ($mode -ne 'dry_run') {
+            try { Disconnect-ExchangeOnline -Confirm:$false -ErrorAction SilentlyContinue } catch {}
+            if ($needTeams) { try { Disconnect-MicrosoftTeams -ErrorAction SilentlyContinue } catch {} }
+            if ($needPnp) { try { Disconnect-PnPOnline -ErrorAction SilentlyContinue } catch {} }
+          }
           $results | ConvertTo-Json -Depth 12 | Set-Content -Path (Join-Path $env:OUT_DIR 'nongraph-result.json') -Encoding UTF8
           $ap=@($results | Where-Object { $_.status -eq 'applied' }).Count
           $pl=@($results | Where-Object { $_.status -eq 'planned' }).Count
