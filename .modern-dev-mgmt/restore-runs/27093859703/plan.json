@@ -1,0 +1,23 @@
+{
+  "mode": "apply_enabled",
+  "policies": [
+    {
+      "policyType": "PurviewDlpCompliancePolicy",
+      "backupPolicyId": "cdff0a32-fa36-4094-ba87-4eef0f99269b",
+      "path": "policies/purview/scc/dlp-policies/cdff0a32-fa36-4094-ba87-4eef0f99269b.json",
+      "displayName": "Default policy for Teams"
+    },
+    {
+      "policyType": "ExchangeTransportRule",
+      "backupPolicyId": "674cc7b0-582d-4032-8d15-549f2a150c06",
+      "path": "policies/exchange/transport-rules/674cc7b0-582d-4032-8d15-549f2a150c06.json",
+      "displayName": "Delete SPO Sharing Reminder Mails"
+    },
+    {
+      "policyType": "PurviewComplianceTag",
+      "backupPolicyId": "bbcae8e3-69d4-4d5c-ab02-c0940758ed1b",
+      "path": "policies/purview/scc/retention-labels/bbcae8e3-69d4-4d5c-ab02-c0940758ed1b.json",
+      "displayName": "Test right to be forgotten"
+    }
+  ]
+}

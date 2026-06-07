@@ -1,0 +1,25 @@
+[
+  {
+    "policyType": "PurviewDlpCompliancePolicy",
+    "backupPolicyId": "cdff0a32-fa36-4094-ba87-4eef0f99269b",
+    "displayName": "Default policy for Teams",
+    "status": "applied",
+    "cmdlet": "Set-DlpCompliancePolicy",
+    "paramCount": 25
+  },
+  {
+    "policyType": "ExchangeTransportRule",
+    "backupPolicyId": "674cc7b0-582d-4032-8d15-549f2a150c06",
+    "displayName": "Delete SPO Sharing Reminder Mails",
+    "status": "failed",
+    "reason": "You can't create or update DLP-related mail flow rules. See https://aka.ms/NoDLPinETRs."
+  },
+  {
+    "policyType": "PurviewComplianceTag",
+    "backupPolicyId": "bbcae8e3-69d4-4d5c-ab02-c0940758ed1b",
+    "displayName": "Test right to be forgotten",
+    "status": "applied",
+    "cmdlet": "Set-ComplianceTag",
+    "paramCount": 7
+  }
+]
