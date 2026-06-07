@@ -284,6 +284,10 @@ jobs:
             }
           }
 
+          # Non-Graph objects (Purview SCC / Exchange Online) are restored by a
+          # dedicated app-only PowerShell step that runs after this one. Collect
+          # them here so that step has a precise plan to act on.
+          $nonGraphDeferred = New-Object System.Collections.Generic.List[object]
           foreach ($entry in @($plan.policies)) {
             $policyType = [string]$entry.policyType
             $endpoint = Endpoint-For -Type $policyType
@@ -295,6 +299,13 @@ jobs:
               status = 'pending'
             }
 
+            if ($policyType -like 'Purview*' -or $policyType -like 'Exchange*') {
+              $logEntry.status = 'deferred'
+              $logEntry.reason = 'Routed to the non-Graph (SCC/EXO) restore step.'
+              $logEntry.displayName = [string]$entry.displayName
+              $nonGraphDeferred.Add($logEntry) | Out-Null
+              continue
+            }
             if (-not $endpoint) {
               $logEntry.status = 'skipped'
               $logEntry.reason = "PolicyType '$policyType' is not yet supported by the restore engine."
@@ -424,7 +435,10 @@ jobs:
 
           $manifest | ConvertTo-Json -Depth 30 | Set-Content -Path (Join-Path $outDir 'manifest.json') -Encoding UTF8
           $plan | ConvertTo-Json -Depth 30 | Set-Content -Path (Join-Path $outDir 'plan.json') -Encoding UTF8
-          @{ applied = @($applied.ToArray()); skipped = @($skipped.ToArray()); failed = @($failed.ToArray()); warnings = @($warnings.ToArray()) } | ConvertTo-Json -Depth 30 | Set-Content -Path (Join-Path $outDir 'result.json') -Encoding UTF8
+          @{ applied = @($applied.ToArray()); skipped = @($skipped.ToArray()); failed = @($failed.ToArray()); warnings = @($warnings.ToArray()); deferred = @($nonGraphDeferred.ToArray()) } | ConvertTo-Json -Depth 30 | Set-Content -Path (Join-Path $outDir 'result.json') -Encoding UTF8
+          # Hand the non-Graph (Purview/Exchange) items to the SCC/EXO restore step.
+          @{ mode = $mode; conflict = $conflict; backupRef = $backupRef; policies = @($nonGraphDeferred.ToArray()) } | ConvertTo-Json -Depth 30 | Set-Content -Path (Join-Path $outDir 'nongraph-plan.json') -Encoding UTF8
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "deferred=$($nonGraphDeferred.Count)"
 
           Add-Content -Path $env:GITHUB_OUTPUT -Value "applied=$($applied.Count)"
           Add-Content -Path $env:GITHUB_OUTPUT -Value "skipped=$($skipped.Count)"
@@ -454,6 +468,137 @@ jobs:
           if ($failed.Count -gt 0 -and $mode -ne 'dry_run') {
             throw "$($failed.Count) policy restore operations failed; see result.json"
           }
+
+      - name: Apply non-Graph restore (Purview/Exchange SCC/EXO)
+        if: ${{ always() && steps.restore.outputs.deferred != '0' && steps.restore.outputs.deferred != '' }}
+        shell: pwsh
+        env:
+          SCC_CERT_PFX_B64: ${{ secrets.PURVIEW_CONNECTOR_PFX_B64 }}
+          SCC_CERT_PWD: ${{ secrets.PURVIEW_CONNECTOR_PFX_PWD }}
+          OUT_DIR: ${{ steps.restore.outputs.out_dir }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          # Connector identity from the committed onboarding file (same as backup).
+          $appId = ''; $org = ''
+          if (Test-Path 'scripts/purview-connector.json') {
+            $cfg = Get-Content 'scripts/purview-connector.json' -Raw | ConvertFrom-Json
+            $appId = [string]$cfg.appId; $org = [string]$cfg.org
+          }
+          $planPath = Join-Path $env:OUT_DIR 'nongraph-plan.json'
+          if (-not (Test-Path $planPath)) { Write-Host 'No non-Graph restore plan.'; exit 0 }
+          $ng = Get-Content $planPath -Raw | ConvertFrom-Json
+          $items = @($ng.policies)
+          if ($items.Count -eq 0) { Write-Host 'No non-Graph items to restore.'; exit 0 }
+          $mode = [string]$ng.mode
+          $backupRef = [string]$ng.backupRef
+          $results = New-Object System.Collections.Generic.List[object]
+
+          if (-not $env:SCC_CERT_PFX_B64 -or -not $appId -or -not $org) {
+            foreach ($p in $items) { $results.Add([ordered]@{ policyType=[string]$p.policyType; backupPolicyId=$p.backupPolicyId; displayName=$p.displayName; status='skipped'; reason='Purview/Exchange connector not onboarded (cert/appId/org missing).' }) | Out-Null }
+            $results | ConvertTo-Json -Depth 10 | Set-Content -Path (Join-Path $env:OUT_DIR 'nongraph-result.json') -Encoding UTF8
+            Write-Host 'Connector not onboarded - non-Graph restore reported as skipped.'
+            exit 0
+          }
+
+          # policyType -> restore cmdlets. Types not listed are reported as
+          # "manual restore required" (no safe automated mapping yet).
+          $spec = @{
+            'PurviewDlpCompliancePolicy'        = @{ c='scc'; set='Set-DlpCompliancePolicy';        new='New-DlpCompliancePolicy' }
+            'PurviewDlpComplianceRule'          = @{ c='scc'; set='Set-DlpComplianceRule';          new='New-DlpComplianceRule' }
+            'PurviewRetentionCompliancePolicy'  = @{ c='scc'; set='Set-RetentionCompliancePolicy';  new='New-RetentionCompliancePolicy' }
+            'PurviewRetentionComplianceRule'    = @{ c='scc'; set='Set-RetentionComplianceRule';    new='New-RetentionComplianceRule' }
+            'PurviewComplianceTag'              = @{ c='scc'; set='Set-ComplianceTag';              new='New-ComplianceTag' }
+            'PurviewSensitivityLabel'           = @{ c='scc'; set='Set-Label';                      new='New-Label' }
+            'PurviewLabelPolicy'                = @{ c='scc'; set='Set-LabelPolicy';                new='New-LabelPolicy' }
+            'PurviewAutoSensitivityLabelPolicy' = @{ c='scc'; set='Set-AutoSensitivityLabelPolicy'; new='New-AutoSensitivityLabelPolicy' }
+            'PurviewAutoSensitivityLabelRule'   = @{ c='scc'; set='Set-AutoSensitivityLabelRule';   new='New-AutoSensitivityLabelRule' }
+            'PurviewInformationBarrierPolicy'   = @{ c='scc'; set='Set-InformationBarrierPolicy';   new='New-InformationBarrierPolicy' }
+            'PurviewAdaptiveScope'              = @{ c='scc'; set='Set-AdaptiveScope';              new='New-AdaptiveScope' }
+            'ExchangeTransportRule'             = @{ c='exo'; set='Set-TransportRule';              new='New-TransportRule' }
+            'ExchangeTransportConfig'           = @{ c='exo'; set='Set-TransportConfig';            singleton=$true }
+            'ExchangeInboundConnector'          = @{ c='exo'; set='Set-InboundConnector';           new='New-InboundConnector' }
+            'ExchangeOutboundConnector'         = @{ c='exo'; set='Set-OutboundConnector';          new='New-OutboundConnector' }
+            'ExchangeRemoteDomain'              = @{ c='exo'; set='Set-RemoteDomain';               new='New-RemoteDomain' }
+            'ExchangeOrganizationConfig'        = @{ c='exo'; set='Set-OrganizationConfig';         singleton=$true }
+            'ExchangeOwaMailboxPolicy'          = @{ c='exo'; set='Set-OwaMailboxPolicy';           new='New-OwaMailboxPolicy' }
+            'ExchangeMobileDeviceMailboxPolicy' = @{ c='exo'; set='Set-MobileDeviceMailboxPolicy';  new='New-MobileDeviceMailboxPolicy' }
+            'ExchangeRetentionPolicy'           = @{ c='exo'; set='Set-RetentionPolicy';            new='New-RetentionPolicy' }
+            'ExchangeRetentionPolicyTag'        = @{ c='exo'; set='Set-RetentionPolicyTag';         new='New-RetentionPolicyTag' }
+            'ExchangeSharingPolicy'             = @{ c='exo'; set='Set-SharingPolicy';              new='New-SharingPolicy' }
+            'ExchangeOrganizationRelationship'  = @{ c='exo'; set='Set-OrganizationRelationship';   new='New-OrganizationRelationship' }
+            'ExchangeAddressList'               = @{ c='exo'; set='Set-AddressList';                new='New-AddressList' }
+            'ExchangeDkimSigningConfig'         = @{ c='exo'; set='Set-DkimSigningConfig';          new='New-DkimSigningConfig' }
+            'ExchangeRoleGroup'                 = @{ c='exo'; set='Set-RoleGroup';                  new='New-RoleGroup' }
+            'ExchangeManagementScope'           = @{ c='exo'; set='Set-ManagementScope';            new='New-ManagementScope' }
+            'ExchangeAuthenticationPolicy'      = @{ c='exo'; set='Set-AuthenticationPolicy';       new='New-AuthenticationPolicy' }
+            'ExchangeJournalRule'               = @{ c='exo'; set='Set-JournalRule';                new='New-JournalRule' }
+          }
+          $readonly = @('Identity','Guid','ObjectId','Id','WhenCreated','WhenChanged','WhenChangedUTC','WhenCreatedUTC','OrganizationId','ExchangeVersion','ExchangeObjectId','DistinguishedName','ObjectCategory','ObjectClass','OriginatingServer','ExoErrorObject','RunspaceId','PSComputerName','PSShowComputerName','ImmutableId','ExternalDirectoryObjectId','IsValid','Success','ChangeType')
+
+          $needScc = $false; $needExo = $false
+          foreach ($p in $items) { $s=$spec[[string]$p.policyType]; if ($s){ if($s.c -eq 'scc'){$needScc=$true}else{$needExo=$true} } }
+          if ($mode -ne 'dry_run') {
+            $ProgressPreference='SilentlyContinue'
+            Install-Module ExchangeOnlineManagement -RequiredVersion 3.5.0 -Scope CurrentUser -Force -AllowClobber
+            Import-Module ExchangeOnlineManagement
+            $bytes = [Convert]::FromBase64String($env:SCC_CERT_PFX_B64)
+            $cert = [System.Security.Cryptography.X509Certificates.X509Certificate2]::new($bytes, $env:SCC_CERT_PWD)
+            if ($needScc) { try { Connect-IPPSSession -AppId $appId -Certificate $cert -Organization $org -ShowBanner:$false } catch { Write-Host ('SCC connect WARN: ' + $_.Exception.Message) } }
+            if ($needExo) { try { Connect-ExchangeOnline -AppId $appId -Certificate $cert -Organization $org -ShowBanner:$false } catch { Write-Host ('EXO connect WARN: ' + $_.Exception.Message) } }
+          }
+
+          function Build-Splat { param($obj, $validKeys, $ro)
+            $splat = @{}
+            foreach ($prop in $obj.PSObject.Properties) {
+              if ($prop.Name -in $ro) { continue }
+              if ($validKeys -notcontains $prop.Name) { continue }
+              if ($null -eq $prop.Value) { continue }
+              $splat[$prop.Name] = $prop.Value
+            }
+            return $splat
+          }
+
+          foreach ($p in $items) {
+            $pt = [string]$p.policyType
+            $r = [ordered]@{ policyType=$pt; backupPolicyId=$p.backupPolicyId; displayName=$p.displayName; status='pending' }
+            $s = $spec[$pt]
+            if (-not $s) { $r.status='skipped'; $r.reason='No automated restore mapping for this type yet (manual restore required).'; $results.Add($r)|Out-Null; continue }
+            $fp = Join-Path $backupRef ([string]$p.path)
+            if (-not (Test-Path $fp)) { $r.status='failed'; $r.reason="Snapshot file not found: $($p.path)"; $results.Add($r)|Out-Null; continue }
+            $obj = Get-Content $fp -Raw | ConvertFrom-Json
+            $id = [string]$p.backupPolicyId
+            $setCmd = [string]$s.set
+            if ($mode -eq 'dry_run') {
+              $r.status='planned'; $r.cmdlet=$setCmd; $r.singleton=[bool]$s.singleton; $results.Add($r)|Out-Null; continue
+            }
+            $valid = @()
+            try { $valid = (Get-Command $setCmd -ErrorAction Stop).Parameters.Keys } catch { $r.status='skipped'; $r.reason="Cmdlet $setCmd unavailable (insufficient role or module)."; $results.Add($r)|Out-Null; continue }
+            $splat = Build-Splat -obj $obj -validKeys $valid -ro $readonly
+            try {
+              if ($s.singleton) { & $setCmd @splat -ErrorAction Stop | Out-Null }
+              else { & $setCmd -Identity $id @splat -ErrorAction Stop | Out-Null }
+              $r.status='applied'; $r.cmdlet=$setCmd; $r.paramCount=$splat.Keys.Count; $results.Add($r)|Out-Null
+            } catch {
+              $newCmd = [string]$s.new
+              if ($newCmd) {
+                try {
+                  $nvalid = (Get-Command $newCmd -ErrorAction Stop).Parameters.Keys
+                  $nsplat = Build-Splat -obj $obj -validKeys $nvalid -ro $readonly
+                  if ($nvalid -contains 'Name' -and -not $nsplat.ContainsKey('Name')) { $nsplat['Name'] = [string]$p.displayName }
+                  & $newCmd @nsplat -ErrorAction Stop | Out-Null
+                  $r.status='applied'; $r.cmdlet=$newCmd; $r.created=$true; $results.Add($r)|Out-Null
+                } catch { $r.status='failed'; $r.reason=$_.Exception.Message; $results.Add($r)|Out-Null }
+              } else { $r.status='failed'; $r.reason=$_.Exception.Message; $results.Add($r)|Out-Null }
+            }
+          }
+          if ($mode -ne 'dry_run') { Disconnect-ExchangeOnline -Confirm:$false -ErrorAction SilentlyContinue }
+          $results | ConvertTo-Json -Depth 12 | Set-Content -Path (Join-Path $env:OUT_DIR 'nongraph-result.json') -Encoding UTF8
+          $ap=@($results | Where-Object { $_.status -eq 'applied' }).Count
+          $pl=@($results | Where-Object { $_.status -eq 'planned' }).Count
+          $sk=@($results | Where-Object { $_.status -eq 'skipped' }).Count
+          $fa=@($results | Where-Object { $_.status -eq 'failed' }).Count
+          Write-Host ("== Non-Graph restore ($mode): applied=$ap planned=$pl skipped=$sk failed=$fa ==")
+          @('', "## Non-Graph restore (Purview/Exchange) - $mode", "applied=$ap planned=$pl skipped=$sk failed=$fa") | Add-Content -Path $env:GITHUB_STEP_SUMMARY
 
       - name: Upload restore evidence
         if: always()
