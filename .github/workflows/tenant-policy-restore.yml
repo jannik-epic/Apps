@@ -549,7 +549,10 @@ jobs:
 
           function Build-Splat { param($obj, $validKeys, $ro)
             $splat = @{}
-            foreach ($prop in $obj.PSObject.Properties) {
+            $pairs = if ($obj -is [System.Collections.IDictionary]) {
+              $obj.GetEnumerator() | ForEach-Object { [pscustomobject]@{ Name = $_.Key; Value = $_.Value } }
+            } else { $obj.PSObject.Properties }
+            foreach ($prop in $pairs) {
               if ($prop.Name -in $ro) { continue }
               if ($validKeys -notcontains $prop.Name) { continue }
               if ($null -eq $prop.Value) { continue }
@@ -565,11 +568,18 @@ jobs:
             if (-not $s) { $r.status='skipped'; $r.reason='No automated restore mapping for this type yet (manual restore required).'; $results.Add($r)|Out-Null; continue }
             $fp = Join-Path $backupRef ([string]$p.path)
             if (-not (Test-Path $fp)) { $r.status='failed'; $r.reason="Snapshot file not found: $($p.path)"; $results.Add($r)|Out-Null; continue }
-            $obj = Get-Content $fp -Raw | ConvertFrom-Json
             $id = [string]$p.backupPolicyId
             $setCmd = [string]$s.set
             if ($mode -eq 'dry_run') {
+              # Preview only — no parse/connect/write. Safe and cannot fail on
+              # objects with case-variant duplicate JSON keys.
               $r.status='planned'; $r.cmdlet=$setCmd; $r.singleton=[bool]$s.singleton; $results.Add($r)|Out-Null; continue
+            }
+            $obj = $null
+            try { $obj = Get-Content $fp -Raw | ConvertFrom-Json -ErrorAction Stop }
+            catch {
+              try { $obj = Get-Content $fp -Raw | ConvertFrom-Json -AsHashtable -ErrorAction Stop }
+              catch { $r.status='failed'; $r.reason="Could not parse snapshot: $($_.Exception.Message)"; $results.Add($r)|Out-Null; continue }
             }
             $valid = @()
             try { $valid = (Get-Command $setCmd -ErrorAction Stop).Parameters.Keys } catch { $r.status='skipped'; $r.reason="Cmdlet $setCmd unavailable (insufficient role or module)."; $results.Add($r)|Out-Null; continue }
