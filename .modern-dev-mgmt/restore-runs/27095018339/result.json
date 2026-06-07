@@ -1,0 +1,48 @@
+{
+  "failed": [],
+  "deferred": [
+    {
+      "backupPolicyId": "Global",
+      "policyType": "TeamsMeetingPolicy",
+      "path": "policies/teams/meeting-policies/Global.json",
+      "status": "deferred",
+      "reason": "Routed to the non-Graph (SCC/EXO/Teams/PnP) restore step.",
+      "displayName": "Global"
+    },
+    {
+      "backupPolicyId": "Global",
+      "policyType": "TeamsMessagingPolicy",
+      "path": "policies/teams/messaging-policies/Global.json",
+      "status": "deferred",
+      "reason": "Routed to the non-Graph (SCC/EXO/Teams/PnP) restore step.",
+      "displayName": "Global"
+    },
+    {
+      "backupPolicyId": "SharePointTenantSettings",
+      "policyType": "SharePointTenantSettings",
+      "path": "policies/sharepoint/tenant-settings/SharePointTenantSettings.json",
+      "status": "deferred",
+      "reason": "Routed to the non-Graph (SCC/EXO/Teams/PnP) restore step.",
+      "displayName": "SharePointTenantSettings"
+    },
+    {
+      "backupPolicyId": "https://epicfusionlabs-my.sharepoint.com/",
+      "policyType": "SharePointSite",
+      "path": "policies/sharepoint/sites/https___epicfusionlabs-my.sharepoint.com_.json",
+      "status": "deferred",
+      "reason": "Routed to the non-Graph (SCC/EXO/Teams/PnP) restore step.",
+      "displayName": "https://epicfusionlabs-my.sharepoint.com/"
+    }
+  ],
+  "applied": [],
+  "warnings": [],
+  "skipped": [
+    {
+      "backupPolicyId": "70eabe2f-566e-ee7b-a485-e80a9f7a1d5a",
+      "policyType": "PowerPlatformEnvironment",
+      "path": "policies/powerplatform/environments/70eabe2f-566e-ee7b-a485-e80a9f7a1d5a.json",
+      "status": "skipped",
+      "reason": "PolicyType 'PowerPlatformEnvironment' is not yet supported by the restore engine."
+    }
+  ]
+}

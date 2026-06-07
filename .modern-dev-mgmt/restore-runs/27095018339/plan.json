@@ -1,0 +1,35 @@
+{
+  "mode": "dry_run",
+  "policies": [
+    {
+      "policyType": "TeamsMeetingPolicy",
+      "backupPolicyId": "Global",
+      "path": "policies/teams/meeting-policies/Global.json",
+      "displayName": "Global"
+    },
+    {
+      "policyType": "TeamsMessagingPolicy",
+      "backupPolicyId": "Global",
+      "path": "policies/teams/messaging-policies/Global.json",
+      "displayName": "Global"
+    },
+    {
+      "policyType": "SharePointTenantSettings",
+      "backupPolicyId": "SharePointTenantSettings",
+      "path": "policies/sharepoint/tenant-settings/SharePointTenantSettings.json",
+      "displayName": "SharePointTenantSettings"
+    },
+    {
+      "policyType": "SharePointSite",
+      "backupPolicyId": "https://epicfusionlabs-my.sharepoint.com/",
+      "path": "policies/sharepoint/sites/https___epicfusionlabs-my.sharepoint.com_.json",
+      "displayName": "https://epicfusionlabs-my.sharepoint.com/"
+    },
+    {
+      "policyType": "PowerPlatformEnvironment",
+      "backupPolicyId": "70eabe2f-566e-ee7b-a485-e80a9f7a1d5a",
+      "path": "policies/powerplatform/environments/70eabe2f-566e-ee7b-a485-e80a9f7a1d5a.json",
+      "displayName": "HR_DEV"
+    }
+  ]
+}

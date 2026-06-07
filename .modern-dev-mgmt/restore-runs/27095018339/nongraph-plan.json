@@ -1,0 +1,39 @@
+{
+  "policies": [
+    {
+      "backupPolicyId": "Global",
+      "policyType": "TeamsMeetingPolicy",
+      "path": "policies/teams/meeting-policies/Global.json",
+      "status": "deferred",
+      "reason": "Routed to the non-Graph (SCC/EXO/Teams/PnP) restore step.",
+      "displayName": "Global"
+    },
+    {
+      "backupPolicyId": "Global",
+      "policyType": "TeamsMessagingPolicy",
+      "path": "policies/teams/messaging-policies/Global.json",
+      "status": "deferred",
+      "reason": "Routed to the non-Graph (SCC/EXO/Teams/PnP) restore step.",
+      "displayName": "Global"
+    },
+    {
+      "backupPolicyId": "SharePointTenantSettings",
+      "policyType": "SharePointTenantSettings",
+      "path": "policies/sharepoint/tenant-settings/SharePointTenantSettings.json",
+      "status": "deferred",
+      "reason": "Routed to the non-Graph (SCC/EXO/Teams/PnP) restore step.",
+      "displayName": "SharePointTenantSettings"
+    },
+    {
+      "backupPolicyId": "https://epicfusionlabs-my.sharepoint.com/",
+      "policyType": "SharePointSite",
+      "path": "policies/sharepoint/sites/https___epicfusionlabs-my.sharepoint.com_.json",
+      "status": "deferred",
+      "reason": "Routed to the non-Graph (SCC/EXO/Teams/PnP) restore step.",
+      "displayName": "https://epicfusionlabs-my.sharepoint.com/"
+    }
+  ],
+  "backupRef": ".modern-dev-mgmt/tenant-backups/57415788-595e-4889-901a-4ad5bcecbfe4/27094750221",
+  "conflict": "skip_existing",
+  "mode": "dry_run"
+}

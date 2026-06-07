@@ -1,0 +1,33 @@
+[
+  {
+    "policyType": "TeamsMeetingPolicy",
+    "backupPolicyId": "Global",
+    "displayName": "Global",
+    "status": "planned",
+    "cmdlet": "Set-CsTeamsMeetingPolicy",
+    "singleton": false
+  },
+  {
+    "policyType": "TeamsMessagingPolicy",
+    "backupPolicyId": "Global",
+    "displayName": "Global",
+    "status": "planned",
+    "cmdlet": "Set-CsTeamsMessagingPolicy",
+    "singleton": false
+  },
+  {
+    "policyType": "SharePointTenantSettings",
+    "backupPolicyId": "SharePointTenantSettings",
+    "displayName": "SharePointTenantSettings",
+    "status": "planned",
+    "cmdlet": "Set-PnPTenant",
+    "singleton": true
+  },
+  {
+    "policyType": "SharePointSite",
+    "backupPolicyId": "https://epicfusionlabs-my.sharepoint.com/",
+    "displayName": "https://epicfusionlabs-my.sharepoint.com/",
+    "status": "skipped",
+    "reason": "No automated restore mapping for this type yet (manual restore required)."
+  }
+]
