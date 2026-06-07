@@ -15,7 +15,10 @@ jobs:
         run: |
           $ErrorActionPreference='Stop'
           $bytes=[Convert]::FromBase64String($env:PFX_B64)
-          $cert=[System.Security.Cryptography.X509Certificates.X509Certificate2]::new($bytes,$env:PFX_PWD)
+          $flags=[System.Security.Cryptography.X509Certificates.X509KeyStorageFlags]::EphemeralKeySet
+          $cert=[System.Security.Cryptography.X509Certificates.X509Certificate2]::new($bytes,$env:PFX_PWD,$flags)
+          $rsa=[System.Security.Cryptography.X509Certificates.RSACertificateExtensions]::GetRSAPrivateKey($cert)
+          Write-Host ("private key present: {0}" -f ($null -ne $rsa))
           function b64url($b){([Convert]::ToBase64String($b) -replace '\+','-' -replace '/','_').TrimEnd('=')}
           $tokenEp="https://login.microsoftonline.com/$($env:TENANT)/oauth2/v2.0/token"
           $now=[DateTimeOffset]::UtcNow.ToUnixTimeSeconds()
@@ -23,7 +26,7 @@ jobs:
           $header=@{alg='RS256';typ='JWT';x5t=$x5t}|ConvertTo-Json -Compress
           $payload=@{aud=$tokenEp;iss=$env:APP_ID;sub=$env:APP_ID;jti=[guid]::NewGuid().ToString();nbf=$now;exp=$now+600}|ConvertTo-Json -Compress
           $u=(b64url([Text.Encoding]::UTF8.GetBytes($header)))+'.'+(b64url([Text.Encoding]::UTF8.GetBytes($payload)))
-          $sig=$cert.GetRSAPrivateKey().SignData([Text.Encoding]::UTF8.GetBytes($u),[Security.Cryptography.HashAlgorithmName]::SHA256,[Security.Cryptography.RSASignaturePadding]::Pkcs1)
+          $sig=$rsa.SignData([Text.Encoding]::UTF8.GetBytes($u),[Security.Cryptography.HashAlgorithmName]::SHA256,[Security.Cryptography.RSASignaturePadding]::Pkcs1)
           $assertion="$u."+(b64url $sig)
           $body=@{client_id=$env:APP_ID;client_assertion_type='urn:ietf:params:oauth:client-assertion-type:jwt-bearer';client_assertion=$assertion;scope='https://api.bap.microsoft.com/.default';grant_type='client_credentials'}
           try {
@@ -32,11 +35,11 @@ jobs:
             $h=@{Authorization="Bearer $tok"}
             foreach ($api in @(
               @{n='Environments'; u='https://api.bap.microsoft.com/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments?api-version=2021-04-01'},
-              @{n='DLP policies (v2)'; u='https://api.bap.microsoft.com/providers/PowerPlatform.Governance/v2/policies?api-version=2021-04-01'},
+              @{n='DLP policies v2'; u='https://api.bap.microsoft.com/providers/PowerPlatform.Governance/v2/policies?api-version=2021-04-01'},
               @{n='Tenant settings'; u='https://api.bap.microsoft.com/providers/Microsoft.BusinessAppPlatform/scopes/admin/tenantSettings?api-version=2020-10-01'}
             )) {
-              try { $r=Invoke-RestMethod -Uri $api.u -Headers $h; $c=if($r.value){@($r.value).Count}else{1}; Write-Host ("{0,-22} {1}" -f $api.n,$c) }
-              catch { Write-Host ("{0,-22} ERR: {1}" -f $api.n, $_.Exception.Message.Substring(0,[Math]::Min(80,$_.Exception.Message.Length))) }
+              try { $r=Invoke-RestMethod -Method ($(if($api.n -like '*settings*'){'POST'}else{'GET'})) -Uri $api.u -Headers $h; $c=if($r.value){@($r.value).Count}else{1}; Write-Host ("{0,-18} {1}" -f $api.n,$c) }
+              catch { Write-Host ("{0,-18} ERR: {1}" -f $api.n, $_.Exception.Message.Substring(0,[Math]::Min(90,$_.Exception.Message.Length))) }
             }
           } catch { Write-Host ('PP token FAILED: ' + $_.Exception.Message) }
           Write-Host '== PP TEST DONE =='
