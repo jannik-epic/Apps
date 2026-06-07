@@ -690,6 +690,80 @@ jobs:
           }
           Write-Host ('== Teams + SharePoint snapshot merged: {0} objects, {1} warnings ==' -f $newPolicies.Count, $tsWarnings.Count)
 
+      - name: Snapshot Power Platform (app-only BAP API)
+        if: ${{ steps.snapshot.outputs.snapshot_dir != '' }}
+        shell: pwsh
+        env:
+          SCC_CERT_PFX_B64: ${{ secrets.PURVIEW_CONNECTOR_PFX_B64 }}
+          SCC_CERT_PWD: ${{ secrets.PURVIEW_CONNECTOR_PFX_PWD }}
+          SNAPSHOT_DIR: ${{ steps.snapshot.outputs.snapshot_dir }}
+          TENANT_GUID: ${{ env.AZURE_TENANT_ID }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $appId = ''
+          if (Test-Path 'scripts/purview-connector.json') { $appId = [string](Get-Content 'scripts/purview-connector.json' -Raw | ConvertFrom-Json).appId }
+          if (-not $env:SCC_CERT_PFX_B64 -or -not $appId -or -not $env:TENANT_GUID) { Write-Host 'Power Platform connector not onboarded - skipping.'; exit 0 }
+          $bytes = [Convert]::FromBase64String($env:SCC_CERT_PFX_B64)
+          $flags = [System.Security.Cryptography.X509Certificates.X509KeyStorageFlags]::EphemeralKeySet
+          $cert = [System.Security.Cryptography.X509Certificates.X509Certificate2]::new($bytes, $env:SCC_CERT_PWD, $flags)
+          $rsa = [System.Security.Cryptography.X509Certificates.RSACertificateExtensions]::GetRSAPrivateKey($cert)
+          function B64Url($b) { ([Convert]::ToBase64String($b) -replace '\+','-' -replace '/','_').TrimEnd('=') }
+          $tokenEp = "https://login.microsoftonline.com/$($env:TENANT_GUID)/oauth2/v2.0/token"
+          $now = [DateTimeOffset]::UtcNow.ToUnixTimeSeconds()
+          $x5t = B64Url($cert.GetCertHash())
+          $hdr = @{ alg='RS256'; typ='JWT'; x5t=$x5t } | ConvertTo-Json -Compress
+          $pl = @{ aud=$tokenEp; iss=$appId; sub=$appId; jti=[guid]::NewGuid().ToString(); nbf=$now; exp=$now+600 } | ConvertTo-Json -Compress
+          $u = (B64Url([Text.Encoding]::UTF8.GetBytes($hdr))) + '.' + (B64Url([Text.Encoding]::UTF8.GetBytes($pl)))
+          $sig = $rsa.SignData([Text.Encoding]::UTF8.GetBytes($u), [Security.Cryptography.HashAlgorithmName]::SHA256, [Security.Cryptography.RSASignaturePadding]::Pkcs1)
+          $assertion = "$u." + (B64Url $sig)
+          $outDir = $env:SNAPSHOT_DIR
+          $newPolicies = New-Object System.Collections.Generic.List[object]
+          $newCounts = [ordered]@{}
+          $ppWarnings = New-Object System.Collections.Generic.List[string]
+          try {
+            $body = @{ client_id=$appId; client_assertion_type='urn:ietf:params:oauth:client-assertion-type:jwt-bearer'; client_assertion=$assertion; scope='https://api.bap.microsoft.com/.default'; grant_type='client_credentials' }
+            $tok = (Invoke-RestMethod -Method POST -Uri $tokenEp -Body $body -ContentType 'application/x-www-form-urlencoded').access_token
+            $h = @{ Authorization = "Bearer $tok" }
+            $targets = @(
+              @{ n='Power Platform environments'; u='https://api.bap.microsoft.com/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments?api-version=2021-04-01'; d='powerplatform/environments'; pt='PowerPlatformEnvironment'; idp='name' },
+              @{ n='Power Platform DLP policies';  u='https://api.bap.microsoft.com/providers/PowerPlatform.Governance/v2/policies?api-version=2021-04-01'; d='powerplatform/dlp-policies'; pt='PowerPlatformDlpPolicy'; idp='id' }
+            )
+            foreach ($t in $targets) {
+              $dir = Join-Path $outDir ('policies/' + $t.d); New-Item -ItemType Directory -Force -Path $dir | Out-Null
+              $n = 0
+              try {
+                $resp = Invoke-RestMethod -Uri $t.u -Headers $h
+                $items = if ($resp.value) { $resp.value } else { @($resp) }
+                foreach ($it in @($items)) {
+                  if ($null -eq $it) { continue }
+                  $rawId = if ($it.($t.idp)) { [string]$it.($t.idp) } elseif ($it.name) { [string]$it.name } else { [string]$it.id }
+                  if (-not $rawId) { continue }
+                  $safe = ($rawId -replace '[^a-zA-Z0-9._-]','_'); if ($safe.Length -gt 120) { $safe = $safe.Substring(0,120) }
+                  $rel = 'policies/' + $t.d + '/' + $safe + '.json'
+                  ($it | ConvertTo-Json -Depth 20) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8
+                  $disp = if ($it.properties.displayName) { [string]$it.properties.displayName } elseif ($it.displayName) { [string]$it.displayName } else { $rawId }
+                  $newPolicies.Add([ordered]@{ policyType=$t.pt; path=$rel; backupPolicyId=$rawId; displayName=$disp; description=$null; summary=$null; restorable=$true }) | Out-Null
+                  $n++
+                }
+                Write-Host ('{0,-34} {1} captured' -f $t.n, $n)
+              } catch { $ppWarnings.Add($t.n + ': ' + $_.Exception.Message) | Out-Null; Write-Host ('{0,-34} WARN: {1}' -f $t.n, $_.Exception.Message) }
+              $newCounts[$t.pt] = $n
+            }
+          } catch { $ppWarnings.Add('Power Platform token failed: ' + $_.Exception.Message) | Out-Null; Write-Host ('Power Platform WARN: ' + $_.Exception.Message) }
+
+          $manifestPath = Join-Path $outDir 'manifest.json'
+          if (Test-Path $manifestPath) {
+            $m = Get-Content $manifestPath -Raw | ConvertFrom-Json
+            $merged = New-Object System.Collections.Generic.List[object]
+            foreach ($p in @($m.policies)) { $merged.Add($p) | Out-Null }
+            foreach ($p in $newPolicies) { $merged.Add($p) | Out-Null }
+            $m.policies = $merged.ToArray()
+            foreach ($k in $newCounts.Keys) { $m.counts | Add-Member -NotePropertyName $k -NotePropertyValue $newCounts[$k] -Force }
+            if ($m.PSObject.Properties['connectors']) { $m.connectors = @($m.connectors + @('power-platform')) } else { $m | Add-Member -NotePropertyName 'connectors' -NotePropertyValue @('power-platform') -Force }
+            $m | ConvertTo-Json -Depth 30 | Set-Content -Path $manifestPath -Encoding UTF8
+          }
+          Write-Host ('== Power Platform snapshot merged: {0} objects, {1} warnings ==' -f $newPolicies.Count, $ppWarnings.Count)
+
       - name: Commit backup snapshot
         if: ${{ steps.snapshot.outputs.commit_snapshot == 'True' || steps.snapshot.outputs.commit_snapshot == 'true' }}
         shell: bash
