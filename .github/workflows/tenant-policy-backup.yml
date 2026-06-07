@@ -582,6 +582,114 @@ jobs:
           }
           Write-Host ('== Non-Graph snapshot merged: {0} Purview+Exchange objects, {1} warnings ==' -f $newPolicies.Count, $sccWarnings.Count)
 
+      - name: Snapshot Teams + SharePoint (app-only)
+        if: ${{ steps.snapshot.outputs.snapshot_dir != '' }}
+        shell: pwsh
+        env:
+          SCC_CERT_PFX_B64: ${{ secrets.PURVIEW_CONNECTOR_PFX_B64 }}
+          SCC_CERT_PWD: ${{ secrets.PURVIEW_CONNECTOR_PFX_PWD }}
+          SNAPSHOT_DIR: ${{ steps.snapshot.outputs.snapshot_dir }}
+          TENANT_GUID: ${{ env.AZURE_TENANT_ID }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $appId = ''; $org = ''
+          if (Test-Path 'scripts/purview-connector.json') {
+            $cfg = Get-Content 'scripts/purview-connector.json' -Raw | ConvertFrom-Json
+            $appId = [string]$cfg.appId; $org = [string]$cfg.org
+          }
+          if (-not $env:SCC_CERT_PFX_B64 -or -not $appId -or -not $org) {
+            Write-Host 'Teams/SharePoint connector not onboarded - skipping.'; exit 0
+          }
+          $ProgressPreference = 'SilentlyContinue'
+          $bytes = [Convert]::FromBase64String($env:SCC_CERT_PFX_B64)
+          $cert = [System.Security.Cryptography.X509Certificates.X509Certificate2]::new($bytes, $env:SCC_CERT_PWD)
+          $outDir = $env:SNAPSHOT_DIR
+          $newPolicies = New-Object System.Collections.Generic.List[object]
+          $newCounts = [ordered]@{}
+          $tsWarnings = New-Object System.Collections.Generic.List[string]
+
+          function Save-TsSet {
+            param([array]$Targets)
+            foreach ($t in $Targets) {
+              $dir = Join-Path $outDir ('policies/' + $t.d)
+              New-Item -ItemType Directory -Force -Path $dir | Out-Null
+              $n = 0
+              try {
+                $items = & $t.c -ErrorAction Stop
+                foreach ($it in @($items)) {
+                  if ($null -eq $it) { continue }
+                  $rawId = if ($it.Identity) { [string]$it.Identity } elseif ($it.Url) { [string]$it.Url } elseif ($it.Id) { [string]$it.Id } elseif ($it.Name) { [string]$it.Name } else { $t.pt }
+                  if (-not $rawId) { $rawId = $t.pt }
+                  $safe = ($rawId -replace '[^a-zA-Z0-9._-]','_'); if ($safe.Length -gt 120) { $safe = $safe.Substring(0,120) }
+                  $rel = 'policies/' + $t.d + '/' + $safe + '.json'
+                  try { ($it | ConvertTo-Json -Depth 20) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8 }
+                  catch { ([pscustomobject]@{ id=$rawId; _serializationError=$_.Exception.Message } | ConvertTo-Json -Depth 4) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8 }
+                  $disp = if ($it.DisplayName) { [string]$it.DisplayName } elseif ($it.Title) { [string]$it.Title } elseif ($it.Identity) { [string]$it.Identity } else { $rawId }
+                  $newPolicies.Add([ordered]@{ policyType=$t.pt; path=$rel; backupPolicyId=$rawId; displayName=$disp; description=$null; summary=$null; restorable=$t.r }) | Out-Null
+                  $n++
+                }
+                Write-Host ('{0,-40} {1} captured' -f $t.n, $n)
+              } catch {
+                $tsWarnings.Add(($t.n + ': ' + $_.Exception.Message)) | Out-Null
+                Write-Host ('{0,-40} WARN: {1}' -f $t.n, $_.Exception.Message)
+              }
+              $newCounts[$t.pt] = $n
+            }
+          }
+
+          Write-Host '== Microsoft Teams =='
+          try {
+            Install-Module MicrosoftTeams -RequiredVersion 6.5.0 -Scope CurrentUser -Force -AllowClobber
+            Import-Module MicrosoftTeams
+            Connect-MicrosoftTeams -ApplicationId $appId -Certificate $cert -TenantId $env:TENANT_GUID | Out-Null
+            Save-TsSet -Targets @(
+              @{ n='Teams meeting policies';       c='Get-CsTeamsMeetingPolicy';            d='teams/meeting-policies';        pt='TeamsMeetingPolicy';            r=$true },
+              @{ n='Teams messaging policies';     c='Get-CsTeamsMessagingPolicy';          d='teams/messaging-policies';      pt='TeamsMessagingPolicy';          r=$true },
+              @{ n='Teams app permission policies'; c='Get-CsTeamsAppPermissionPolicy';     d='teams/app-permission-policies'; pt='TeamsAppPermissionPolicy';       r=$true },
+              @{ n='Teams app setup policies';     c='Get-CsTeamsAppSetupPolicy';           d='teams/app-setup-policies';      pt='TeamsAppSetupPolicy';           r=$true },
+              @{ n='Teams calling policies';       c='Get-CsTeamsCallingPolicy';            d='teams/calling-policies';        pt='TeamsCallingPolicy';            r=$true },
+              @{ n='Teams channels policies';      c='Get-CsTeamsChannelsPolicy';           d='teams/channels-policies';       pt='TeamsChannelsPolicy';           r=$true },
+              @{ n='Teams live events policies';   c='Get-CsTeamsMeetingBroadcastPolicy';   d='teams/live-events-policies';    pt='TeamsMeetingBroadcastPolicy';   r=$true },
+              @{ n='Teams update mgmt policies';   c='Get-CsTeamsUpdateManagementPolicy';   d='teams/update-mgmt-policies';    pt='TeamsUpdateManagementPolicy';   r=$true },
+              @{ n='Teams external access policy'; c='Get-CsExternalAccessPolicy';          d='teams/external-access-policies'; pt='TeamsExternalAccessPolicy';     r=$true },
+              @{ n='Teams federation config';      c='Get-CsTenantFederationConfiguration'; d='teams/federation-config';       pt='TeamsFederationConfiguration';  r=$true },
+              @{ n='Teams client config';          c='Get-CsTeamsClientConfiguration';      d='teams/client-config';           pt='TeamsClientConfiguration';      r=$true },
+              @{ n='Teams guest messaging config'; c='Get-CsTeamsGuestMessagingConfiguration'; d='teams/guest-messaging-config'; pt='TeamsGuestMessagingConfiguration'; r=$true }
+            )
+            Disconnect-MicrosoftTeams -ErrorAction SilentlyContinue
+          } catch { $tsWarnings.Add('Teams connect failed: ' + $_.Exception.Message) | Out-Null; Write-Host ('Teams connect WARN: ' + $_.Exception.Message) }
+
+          Write-Host '== SharePoint Online (PnP) =='
+          try {
+            Install-Module PnP.PowerShell -RequiredVersion 2.12.0 -Scope CurrentUser -Force -AllowClobber
+            Import-Module PnP.PowerShell
+            $spTenant = $org.Split('.')[0]
+            $adminUrl = 'https://' + $spTenant + '-admin.sharepoint.com'
+            $pwd = ConvertTo-SecureString $env:SCC_CERT_PWD -AsPlainText -Force
+            Connect-PnPOnline -Url $adminUrl -ClientId $appId -Tenant $org -CertificateBase64Encoded $env:SCC_CERT_PFX_B64 -CertificatePassword $pwd | Out-Null
+            Save-TsSet -Targets @(
+              @{ n='SharePoint tenant settings';   c='Get-PnPTenant';            d='sharepoint/tenant-settings'; pt='SharePointTenantSettings'; r=$true },
+              @{ n='SharePoint sites';             c='Get-PnPTenantSite';        d='sharepoint/sites';           pt='SharePointSite';           r=$true },
+              @{ n='SharePoint home site';         c='Get-PnPHomeSite';          d='sharepoint/home-site';       pt='SharePointHomeSite';       r=$true },
+              @{ n='SharePoint org assets';        c='Get-PnPOrgAssetsLibrary';  d='sharepoint/org-assets';      pt='SharePointOrgAssets';      r=$true }
+            )
+            Disconnect-PnPOnline -ErrorAction SilentlyContinue
+          } catch { $tsWarnings.Add('SharePoint connect failed: ' + $_.Exception.Message) | Out-Null; Write-Host ('SharePoint connect WARN: ' + $_.Exception.Message) }
+
+          # Merge into the shared snapshot manifest.
+          $manifestPath = Join-Path $outDir 'manifest.json'
+          if (Test-Path $manifestPath) {
+            $m = Get-Content $manifestPath -Raw | ConvertFrom-Json
+            $merged = New-Object System.Collections.Generic.List[object]
+            foreach ($p in @($m.policies)) { $merged.Add($p) | Out-Null }
+            foreach ($p in $newPolicies) { $merged.Add($p) | Out-Null }
+            $m.policies = $merged.ToArray()
+            foreach ($k in $newCounts.Keys) { $m.counts | Add-Member -NotePropertyName $k -NotePropertyValue $newCounts[$k] -Force }
+            if ($m.PSObject.Properties['connectors']) { $m.connectors = @($m.connectors + @('teams','sharepoint-pnp')) } else { $m | Add-Member -NotePropertyName 'connectors' -NotePropertyValue @('teams','sharepoint-pnp') -Force }
+            $m | ConvertTo-Json -Depth 30 | Set-Content -Path $manifestPath -Encoding UTF8
+          }
+          Write-Host ('== Teams + SharePoint snapshot merged: {0} objects, {1} warnings ==' -f $newPolicies.Count, $tsWarnings.Count)
+
       - name: Commit backup snapshot
         if: ${{ steps.snapshot.outputs.commit_snapshot == 'True' || steps.snapshot.outputs.commit_snapshot == 'true' }}
         shell: bash
