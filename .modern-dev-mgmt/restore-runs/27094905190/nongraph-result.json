@@ -1,0 +1,7 @@
+{
+  "policyType": "TeamsMeetingPolicy",
+  "backupPolicyId": "Global",
+  "displayName": "Global",
+  "status": "failed",
+  "reason": "Cannot process command because of one or more missing mandatory parameters: Identity."
+}

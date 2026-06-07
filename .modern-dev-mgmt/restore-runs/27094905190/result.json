@@ -1,0 +1,16 @@
+{
+  "failed": [],
+  "applied": [],
+  "warnings": [],
+  "skipped": [],
+  "deferred": [
+    {
+      "backupPolicyId": "Global",
+      "policyType": "TeamsMeetingPolicy",
+      "path": "policies/teams/meeting-policies/Global.json",
+      "status": "deferred",
+      "reason": "Routed to the non-Graph (SCC/EXO/Teams/PnP) restore step.",
+      "displayName": "Global"
+    }
+  ]
+}

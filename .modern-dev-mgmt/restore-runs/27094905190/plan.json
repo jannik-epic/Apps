@@ -1,0 +1,11 @@
+{
+  "mode": "apply_enabled",
+  "policies": [
+    {
+      "policyType": "TeamsMeetingPolicy",
+      "backupPolicyId": "Global",
+      "path": "policies/teams/meeting-policies/Global.json",
+      "displayName": "Global"
+    }
+  ]
+}

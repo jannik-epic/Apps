@@ -1,0 +1,15 @@
+{
+  "mode": "apply_enabled",
+  "backupRef": ".modern-dev-mgmt/tenant-backups/57415788-595e-4889-901a-4ad5bcecbfe4/27094750221",
+  "conflict": "skip_existing",
+  "policies": [
+    {
+      "backupPolicyId": "Global",
+      "policyType": "TeamsMeetingPolicy",
+      "path": "policies/teams/meeting-policies/Global.json",
+      "status": "deferred",
+      "reason": "Routed to the non-Graph (SCC/EXO/Teams/PnP) restore step.",
+      "displayName": "Global"
+    }
+  ]
+}
