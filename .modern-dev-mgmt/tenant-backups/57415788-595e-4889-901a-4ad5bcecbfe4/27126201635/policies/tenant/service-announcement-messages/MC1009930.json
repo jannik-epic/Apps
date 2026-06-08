@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-02-19T00:45:30Z",
+  "endDateTime": "2026-09-28T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-21T19:27:47.11Z",
+  "title": "(Updated) Microsoft Teams: Distinguish invites among Attendee, Presenter, and Co-organizer emails",
+  "id": "MC1009930",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

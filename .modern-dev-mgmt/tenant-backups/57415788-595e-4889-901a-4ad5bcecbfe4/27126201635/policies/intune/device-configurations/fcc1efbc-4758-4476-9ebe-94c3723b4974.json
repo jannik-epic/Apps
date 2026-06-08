@@ -1,0 +1,47 @@
+{
+  "@odata.type": "#microsoft.graph.macOSExtensionsConfiguration",
+  "id": "fcc1efbc-4758-4476-9ebe-94c3723b4974",
+  "lastModifiedDateTime": "2022-08-22T11:47:45.8278532Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-08-22T11:47:45.8278532Z",
+  "description": "macOS System Extension Configuration",
+  "displayName": "EPIC_DCP_DEV_MAC-MDATP System Extension",
+  "version": 1,
+  "kernelExtensionOverridesAllowed": false,
+  "kernelExtensionAllowedTeamIdentifiers": [],
+  "systemExtensionsBlockOverride": false,
+  "systemExtensionsAllowedTeamIdentifiers": [],
+  "kernelExtensionsAllowed": [],
+  "systemExtensionsAllowed": [
+    {
+      "teamIdentifier": "UBF8T346G9",
+      "bundleId": "com.microsoft.wdav.epsext"
+    },
+    {
+      "teamIdentifier": "UBF8T346G9",
+      "bundleId": "com.microsoft.wdav.netext"
+    }
+  ],
+  "systemExtensionsAllowedTypes": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('fcc1efbc-4758-4476-9ebe-94c3723b4974')/microsoft.graph.macOSExtensionsConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "fcc1efbc-4758-4476-9ebe-94c3723b4974_f4a3ca36-380c-47ae-bbd7-a38fc8722e3d",
+      "source": "direct",
+      "sourceId": "fcc1efbc-4758-4476-9ebe-94c3723b4974",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "f4a3ca36-380c-47ae-bbd7-a38fc8722e3d"
+      }
+    }
+  ]
+}

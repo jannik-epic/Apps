@@ -1,0 +1,126 @@
+{
+  "Type": "PublishedSensitivityLabel",
+  "Settings": [
+    "[mandatory, true]",
+    "[requiredowngradejustification, false]",
+    "[powerbimandatory, false]",
+    "[siteandgroupmandatory, false]",
+    "[teamworkmandatory, false]",
+    "[disablemandatoryinoutlook, false]"
+  ],
+  "Labels": [
+    "Confidential",
+    "Public"
+  ],
+  "ScopedLabels": [
+    "a7ad2310-1588-4b99-9e27-8014dc662cf9",
+    "2fe6c730-c5ad-4e67-98b0-893430468979"
+  ],
+  "PolicySettingsBlob": "<settings>\r\n  <setting key=\"mandatory\" value=\"true\" />\r\n  <setting key=\"requiredowngradejustification\" value=\"false\" />\r\n  <setting key=\"powerbimandatory\" value=\"false\" />\r\n  <setting key=\"siteandgroupmandatory\" value=\"false\" />\r\n  <setting key=\"teamworkmandatory\" value=\"false\" />\r\n  <setting key=\"disablemandatoryinoutlook\" value=\"false\" />\r\n</settings>",
+  "UPELabelRules": [
+    "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/lptr-968eafec-b3dc-4aff-bcb7-274512261658",
+    "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/lptr-1eb27a56-bd7c-4a74-ac80-a72b23999d48",
+    "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/lptr-29c095ed-e4be-4d3b-a4fd-51a7c598cd6d",
+    "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/lptr-35bff101-13d1-4e62-8b9e-9d8671e6e990"
+  ],
+  "SharePointLocation": [],
+  "SharePointLocationException": [],
+  "ExchangeLocation": [
+    {
+      "DisplayName": "Admin FFR",
+      "Name": "admin.ffr@epicfusionlabs.com",
+      "ImmutableIdentity": "61e22477-8afd-41e0-885f-a28ba897ba8f",
+      "Type": {
+        "value": 0,
+        "Value": "IndividualResource"
+      },
+      "Status": {
+        "value": 2,
+        "Value": "Success"
+      },
+      "Workload": {
+        "value": 1,
+        "Value": "Exchange"
+      },
+      "SourceType": null,
+      "SourceTypeDisplayName": null,
+      "SourceProvider": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SourceEntryType": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SchemaVersion": 2,
+      "Resources": null,
+      "ScopingGroup": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "GroupSet": "Default"
+    }
+  ],
+  "ExchangeLocationException": [],
+  "PublicFolderLocation": [],
+  "SkypeLocation": [],
+  "SkypeLocationException": [],
+  "ModernGroupLocation": [],
+  "ModernGroupLocationException": [],
+  "OneDriveLocation": [],
+  "OneDriveLocationException": [],
+  "ExchangeAdaptiveScopes": [],
+  "ExchangeAdaptiveScopesException": [],
+  "SharePointAdaptiveScopes": [],
+  "SharePointAdaptiveScopesException": [],
+  "OneDriveAdaptiveScopes": [],
+  "OneDriveAdaptiveScopesException": [],
+  "TeamsAdaptiveScopes": [],
+  "TeamsAdaptiveScopesException": [],
+  "EndpointDlpAdaptiveScopes": null,
+  "EndpointDlpAdaptiveScopesException": null,
+  "ErrorMetadata": null,
+  "UserAdministrativeUnitMembershipMap": null,
+  "ForceValidate": false,
+  "PolicyRulesMetaData": "",
+  "GlobalListType": "None",
+  "Locations": "",
+  "PolicyConstraints": "{\"AdministrativeUnit\":[]}",
+  "Workload": "Exchange, SharePoint, OneDriveForBusiness, Skype, ModernGroup, Applications",
+  "Priority": 1,
+  "ObjectVersion": "ab89c4c6-213f-47ff-8cfa-08dd66de15d3",
+  "CreatedBy": "Admin FFR",
+  "LastModifiedBy": "Admin FFR",
+  "ReadOnly": false,
+  "ExternalIdentity": "",
+  "Comment": "Test policy for EPF",
+  "Enabled": true,
+  "Mode": "Enforce",
+  "DistributionStatus": "Pending",
+  "DistributionSyncStatus": "Success",
+  "DistributionResults": null,
+  "LastStatusUpdateTime": null,
+  "ModificationTimeUtc": "2025-03-19T12:03:39.16",
+  "CreationTimeUtc": "2025-03-19T12:03:39.16",
+  "PolicyRBACScopes": [],
+  "Identity": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/AIP_EPF_TST",
+  "Id": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/AIP_EPF_TST",
+  "IsValid": true,
+  "ExchangeVersion": "0.20 (15.0.0.0)",
+  "Name": "AIP_EPF_TST",
+  "DistinguishedName": "CN=AIP_EPF_TST,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=FFO,DC=extest,DC=microsoft,DC=com",
+  "ObjectCategory": null,
+  "ObjectClass": [
+    "msExchUnifiedPolicy"
+  ],
+  "WhenChanged": "2025-03-19T12:03:39+00:00",
+  "WhenCreated": "2025-03-19T12:03:39+00:00",
+  "WhenChangedUTC": "2025-03-19T12:03:39Z",
+  "WhenCreatedUTC": "2025-03-19T12:03:39Z",
+  "ExchangeObjectId": "b8143066-0d19-4f81-addc-356b843e9193",
+  "OrganizationalUnitRoot": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "b8143066-0d19-4f81-addc-356b843e9193",
+  "OriginatingServer": "",
+  "ObjectState": "Changed"
+}

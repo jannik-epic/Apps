@@ -1,0 +1,11 @@
+{
+  "id": "e8d232b6-cc62-40da-9f21-777431ee907e",
+  "appId": "00000003-0000-0ff1-ce00-000000000000",
+  "displayName": "Office 365 SharePoint Online",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

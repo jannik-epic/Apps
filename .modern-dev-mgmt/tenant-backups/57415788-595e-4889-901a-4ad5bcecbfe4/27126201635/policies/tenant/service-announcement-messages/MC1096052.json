@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-02T19:36:41.207Z",
+  "endDateTime": "2026-07-02T19:36:41.143Z",
+  "lastModifiedDateTime": "2025-07-02T19:36:42.667Z",
+  "title": "Windows add support for the new certificate authority handling logic in Application Control for Business",
+  "id": "MC1096052",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

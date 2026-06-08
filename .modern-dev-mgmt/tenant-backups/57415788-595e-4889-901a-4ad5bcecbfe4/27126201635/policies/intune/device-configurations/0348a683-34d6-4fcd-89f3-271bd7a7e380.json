@@ -1,0 +1,94 @@
+{
+  "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
+  "id": "0348a683-34d6-4fcd-89f3-271bd7a7e380",
+  "lastModifiedDateTime": "2023-09-23T11:45:55.2645732Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-08-22T11:47:39.80626Z",
+  "description": null,
+  "displayName": "EPIC_DCP_DEV_MAC-Device Features",
+  "version": 2,
+  "adminShowHostInfo": false,
+  "loginWindowText": null,
+  "authorizedUsersListHidden": false,
+  "authorizedUsersListHideLocalUsers": false,
+  "authorizedUsersListHideMobileAccounts": false,
+  "authorizedUsersListIncludeNetworkUsers": false,
+  "authorizedUsersListHideAdminUsers": false,
+  "authorizedUsersListShowOtherManagedUsers": false,
+  "shutDownDisabled": false,
+  "restartDisabled": false,
+  "sleepDisabled": false,
+  "consoleAccessDisabled": false,
+  "shutDownDisabledWhileLoggedIn": false,
+  "restartDisabledWhileLoggedIn": false,
+  "powerOffDisabledWhileLoggedIn": false,
+  "logOutDisabledWhileLoggedIn": false,
+  "screenLockDisableImmediate": false,
+  "singleSignOnExtension": null,
+  "contentCachingEnabled": false,
+  "contentCachingType": "notConfigured",
+  "contentCachingMaxSizeBytes": null,
+  "contentCachingDataPath": null,
+  "contentCachingDisableConnectionSharing": false,
+  "contentCachingForceConnectionSharing": false,
+  "contentCachingClientPolicy": "notConfigured",
+  "contentCachingPeerPolicy": "notConfigured",
+  "contentCachingParentSelectionPolicy": "notConfigured",
+  "contentCachingParents": [],
+  "contentCachingLogClientIdentities": false,
+  "contentCachingBlockDeletion": false,
+  "contentCachingShowAlerts": false,
+  "contentCachingKeepAwake": false,
+  "contentCachingPort": null,
+  "airPrintDestinations": [],
+  "autoLaunchItems": [],
+  "associatedDomains": [],
+  "appAssociatedDomains": [],
+  "macOSSingleSignOnExtension": {
+    "@odata.type": "#microsoft.graph.macOSAzureAdSingleSignOnExtension",
+    "enableSharedDeviceMode": false,
+    "bundleIdAccessControlList": [],
+    "configurations": [
+      {
+        "@odata.type": "#microsoft.graph.keyIntegerValuePair",
+        "key": "browser_sso_interaction_enabled",
+        "value": 1
+      },
+      {
+        "@odata.type": "#microsoft.graph.keyIntegerValuePair",
+        "key": "disable_explicit_app_prompt",
+        "value": 1
+      },
+      {
+        "@odata.type": "#microsoft.graph.keyStringValuePair",
+        "key": "AppPrefixAllowList\t",
+        "value": "com.microsoft.,com.apple."
+      }
+    ]
+  },
+  "contentCachingClientListenRanges": [],
+  "contentCachingPeerListenRanges": [],
+  "contentCachingPeerFilterRanges": [],
+  "contentCachingPublicRanges": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('0348a683-34d6-4fcd-89f3-271bd7a7e380')/microsoft.graph.macOSDeviceFeaturesConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "0348a683-34d6-4fcd-89f3-271bd7a7e380_f4a3ca36-380c-47ae-bbd7-a38fc8722e3d",
+      "source": "direct",
+      "sourceId": "0348a683-34d6-4fcd-89f3-271bd7a7e380",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "f4a3ca36-380c-47ae-bbd7-a38fc8722e3d"
+      }
+    }
+  ]
+}

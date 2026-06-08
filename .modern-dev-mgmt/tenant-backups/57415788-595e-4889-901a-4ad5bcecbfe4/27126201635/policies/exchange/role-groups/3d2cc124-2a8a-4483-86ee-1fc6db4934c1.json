@@ -1,0 +1,39 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [],
+  "Roles": [],
+  "DisplayName": "",
+  "ExternalDirectoryObjectId": "",
+  "Members": [],
+  "SamAccountName": "$IARL81-0J01V41EL3HD",
+  "Description": "Analysts of communication compliance that can investigate policy matches, view messages meta data, and take remediation actions.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "",
+  "Identity": "Communication Compliance Investigators",
+  "Id": "Communication Compliance Investigators",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "Communication Compliance Investigators",
+  "DistinguishedName": "CN=Communication Compliance Investigators,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2025-10-19T23:23:24+00:00",
+  "WhenCreated": "2025-05-29T19:20:40+00:00",
+  "WhenChangedUTC": "2025-10-19T23:23:24Z",
+  "WhenCreatedUTC": "2025-05-29T19:20:40Z",
+  "ExchangeObjectId": "3d2cc124-2a8a-4483-86ee-1fc6db4934c1",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "3d2cc124-2a8a-4483-86ee-1fc6db4934c1",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

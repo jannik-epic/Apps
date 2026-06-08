@@ -1,0 +1,12 @@
+{
+  "id": "990298a1-106b-42ac-9994-7665a6606f4a",
+  "appId": "270efc09-cd0d-444b-a71f-39af4910ec45",
+  "displayName": "Windows Cloud Login",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

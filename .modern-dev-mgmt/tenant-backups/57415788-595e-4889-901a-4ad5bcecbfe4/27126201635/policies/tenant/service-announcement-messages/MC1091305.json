@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-06-11T17:32:20.81Z",
+  "endDateTime": "2026-06-11T17:32:20.75Z",
+  "lastModifiedDateTime": "2025-06-11T17:32:22.14Z",
+  "title": "(Updated) The June 2025 Windows security update is now available",
+  "id": "MC1091305",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

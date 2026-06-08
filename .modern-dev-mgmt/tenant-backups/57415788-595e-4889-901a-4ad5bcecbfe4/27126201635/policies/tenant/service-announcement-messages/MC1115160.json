@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-14T17:09:14.973Z",
+  "endDateTime": "2026-07-14T17:09:14.91Z",
+  "lastModifiedDateTime": "2025-07-14T17:09:16.157Z",
+  "title": "90-Day Reminder: Windows 10, version 22H2 end of servicing and Windows 10 2015 LTSB end of support",
+  "id": "MC1115160",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

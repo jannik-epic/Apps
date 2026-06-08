@@ -1,0 +1,14 @@
+{
+  "id": "e5bed1b6-0dae-48f2-bccf-07064f958317",
+  "displayName": "EPICLABS_SEC_DEV_WIN-Device Control",
+  "description": null,
+  "isAssigned": true,
+  "isMigratingToConfigurationPolicy": null,
+  "lastModifiedDateTime": "2022-08-22T12:21:28.983129Z",
+  "templateId": "4648b50e-d3ef-4ba0-848e-b0ef561b3aa5",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('e5bed1b6-0dae-48f2-bccf-07064f958317')/assignments",
+  "assignments": []
+}

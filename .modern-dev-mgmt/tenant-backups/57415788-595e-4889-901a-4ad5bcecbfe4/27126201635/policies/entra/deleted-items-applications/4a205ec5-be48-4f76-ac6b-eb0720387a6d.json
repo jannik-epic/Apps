@@ -1,0 +1,129 @@
+{
+  "id": "4a205ec5-be48-4f76-ac6b-eb0720387a6d",
+  "deletedDateTime": "2026-05-27T07:32:23Z",
+  "appId": "5d0017a3-3cc3-4ee2-8f5e-f54ea9e2b417",
+  "applicationTemplateId": null,
+  "disabledByMicrosoftStatus": null,
+  "createdByAppId": "00000006-0000-0ff1-ce00-000000000000",
+  "createdDateTime": "2026-03-10T18:14:43Z",
+  "displayName": "Daily Docs",
+  "description": null,
+  "groupMembershipClaims": null,
+  "identifierUris": [],
+  "isDeviceOnlyAuthSupported": null,
+  "isDisabled": null,
+  "isFallbackPublicClient": null,
+  "nativeAuthenticationApisEnabled": null,
+  "notes": null,
+  "publisherDomain": "epicfusionlabs.com",
+  "serviceManagementReference": null,
+  "signInAudience": "AzureADMyOrg",
+  "tags": [],
+  "tokenEncryptionKeyId": null,
+  "uniqueName": null,
+  "samlMetadataUrl": null,
+  "defaultRedirectUri": null,
+  "certification": null,
+  "optionalClaims": null,
+  "servicePrincipalLockConfiguration": null,
+  "requestSignatureVerification": null,
+  "addIns": [
+    {
+      "id": "9cc8db07-4b80-4a68-9896-7b5ffc22717b",
+      "type": "PrivateCatalogAddIn",
+      "properties": [
+        {
+          "key": "AppId",
+          "value": "9cc8db07-4b80-4a68-9896-7b5ffc22717b"
+        },
+        {
+          "key": "Capabilities",
+          "value": "ReadWriteMailbox;SendReceiveData;ProfileAccess"
+        },
+        {
+          "key": "DefaultDisplayName",
+          "value": "Daily Docs"
+        },
+        {
+          "key": "DefaultDescription",
+          "value": "E-Mails und Anhänge nach Meeting in OneDrive speichern"
+        },
+        {
+          "key": "DefaultIconUrl",
+          "value": "https://app-dailydocs-dev-we-01.azurewebsites.net/daily-docs/assets/icon-64.png"
+        },
+        {
+          "key": "ProviderName",
+          "value": "Epic Fusion AG"
+        },
+        {
+          "key": "Scopes",
+          "value": "openid;profile;User.Read;User.ReadBasic.All;Calendars.Read;Calendars.ReadWrite;Calendars.Read.Shared;Mail.Read;Mail.ReadWrite;Mail.Read.Shared;Mail.ReadWrite.Shared;Files.ReadWrite;MailboxSettings.Read"
+        },
+        {
+          "key": "Version",
+          "value": "1.0.2.0"
+        },
+        {
+          "key": "AddInState",
+          "value": "Ok"
+        },
+        {
+          "key": "DefaultStateForUser",
+          "value": "Mandatory"
+        },
+        {
+          "key": "InstallTimeAll",
+          "value": "2026-03-10T18:14:43.5097252Z"
+        },
+        {
+          "key": "Supportedclients",
+          "value": "Win32_Outlook;15.20.6226.0,Mac_Outlook;15.20.6226.0,IOS_Outlook;15.1.990.0,And_Outlook;16.0.8414.0,WAC_Outlook;15.20.6226.0"
+        }
+      ]
+    }
+  ],
+  "api": {
+    "acceptMappedClaims": null,
+    "knownClientApplications": [],
+    "requestedAccessTokenVersion": null,
+    "oauth2PermissionScopes": [],
+    "preAuthorizedApplications": []
+  },
+  "appRoles": [],
+  "info": {
+    "logoUrl": null,
+    "marketingUrl": null,
+    "privacyStatementUrl": null,
+    "supportUrl": null,
+    "termsOfServiceUrl": null
+  },
+  "keyCredentials": [],
+  "parentalControlSettings": {
+    "countriesBlockedForMinors": [],
+    "legalAgeGroupRule": "Allow"
+  },
+  "passwordCredentials": [],
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "verifiedPublisher": {
+    "displayName": null,
+    "verifiedPublisherId": null,
+    "addedDateTime": null
+  },
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  }
+}

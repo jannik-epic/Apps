@@ -1,0 +1,11 @@
+{
+  "id": "cd57129e-5220-4a45-a750-16f4a3549dac",
+  "appId": "08e18876-6177-487e-b8b5-cf950c1e598c",
+  "displayName": "SharePoint Online Web Client Extensibility",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

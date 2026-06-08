@@ -1,0 +1,8 @@
+{
+  "id": "8c1abd8a-884d-4458-90a2-764433e8bd98",
+  "appId": "c8f5141d-83e0-4e9a-84d0-bb6677e26f64",
+  "displayName": "Azure Guest Container Update Manager",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

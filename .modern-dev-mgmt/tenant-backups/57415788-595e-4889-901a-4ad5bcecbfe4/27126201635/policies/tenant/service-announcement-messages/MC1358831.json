@@ -1,0 +1,14 @@
+{
+  "startDateTime": "2026-06-04T23:09:24Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-04T23:09:36.557Z",
+  "title": "Copilot settings in classic Outlook for Windows",
+  "id": "MC1358831",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

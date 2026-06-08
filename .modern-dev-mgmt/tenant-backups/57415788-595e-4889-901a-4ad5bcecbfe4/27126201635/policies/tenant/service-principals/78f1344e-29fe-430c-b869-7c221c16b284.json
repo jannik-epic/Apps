@@ -1,0 +1,14 @@
+{
+  "id": "78f1344e-29fe-430c-b869-7c221c16b284",
+  "appId": "6d5e0704-f8c3-4e59-8552-6e3a8963a11a",
+  "displayName": "SharePoint Bibliothekshelfer RHB (Microsoft Copilot Studio)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "AgenticApp",
+    "AIAgentBuilder",
+    "AgentCreatedBy:CopilotStudio",
+    "AgenticInstance",
+    "power-virtual-agents-2171667c-b3e0-184e-769e-8600ec513a0f"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "af036da9-4e5f-40cc-8d1d-b8243405f129",
+  "appId": "af036da9-4e5f-40cc-8d1d-b8243405f129",
+  "displayName": "Sophie (Finance)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-09-02T23:21:30Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2025-09-02T23:21:41.753Z",
+  "title": "Microsoft SharePoint Online: Tenant rename General Availability (GA) for tenants with up to 500K sites",
+  "id": "MC1146820",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online",
+    "Microsoft OneDrive"
+  ]
+}

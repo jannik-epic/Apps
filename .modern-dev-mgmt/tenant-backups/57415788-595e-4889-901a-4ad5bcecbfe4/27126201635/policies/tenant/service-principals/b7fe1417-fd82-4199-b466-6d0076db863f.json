@@ -1,0 +1,11 @@
+{
+  "id": "b7fe1417-fd82-4199-b466-6d0076db863f",
+  "appId": "789e8929-0390-42a2-8934-0f9dafb8ec89",
+  "displayName": "Exchange Rbac",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

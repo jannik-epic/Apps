@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-08-25T17:04:14.37Z",
+  "endDateTime": "2026-08-25T17:04:14.323Z",
+  "lastModifiedDateTime": "2025-08-25T17:04:15.203Z",
+  "title": "Get ready for Windows quality updates out of the box",
+  "id": "MC1141830",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

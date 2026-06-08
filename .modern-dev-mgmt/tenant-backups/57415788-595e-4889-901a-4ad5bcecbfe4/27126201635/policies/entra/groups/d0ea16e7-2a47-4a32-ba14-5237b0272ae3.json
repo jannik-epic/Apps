@@ -1,0 +1,13 @@
+{
+  "id": "d0ea16e7-2a47-4a32-ba14-5237b0272ae3",
+  "displayName": "Produktion [Org]",
+  "description": "Produktion",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "ProduktionOrg",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Public",
+  "createdDateTime": "2021-05-28T05:30:25Z"
+}

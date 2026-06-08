@@ -1,0 +1,11 @@
+{
+  "id": "38691173-0809-4f1e-ab10-75d05bae4225",
+  "displayName": "AAD_SEC_AS_CAC-Emergency Accounts",
+  "description": "Emergency Account Exclude from CA",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "01d05a36-c",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-11-21T07:45:36Z"
+}

@@ -1,0 +1,32 @@
+{
+  "Identity": "Tag:FirstLineWorker",
+  "AppPresetList": [],
+  "PinnedAppBarApps": [
+    {
+      "Identity": null,
+      "Id": "14d6962d-6eeb-4f48-8890-de55454bb136",
+      "Order": 1
+    },
+    {
+      "Identity": null,
+      "Id": "42f6c1da-a241-483a-a3cc-4f5be9185951",
+      "Order": 2
+    },
+    {
+      "Identity": null,
+      "Id": "86fcd49b-61a2-4701-b771-54728cd291fb",
+      "Order": 3
+    },
+    {
+      "Identity": null,
+      "Id": "20c3440d-c67e-4420-9f80-0e50c39693df",
+      "Order": 4
+    }
+  ],
+  "PinnedMessageBarApps": [],
+  "AppPresetMeetingList": [],
+  "AdditionalCustomizationApps": [],
+  "Description": "This is a default app setup policy for Firstline workers. This policy cannot be customized.",
+  "AllowSideLoading": false,
+  "AllowUserPinning": true
+}

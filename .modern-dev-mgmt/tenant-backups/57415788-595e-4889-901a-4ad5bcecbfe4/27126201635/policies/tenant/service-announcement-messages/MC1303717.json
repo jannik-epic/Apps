@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-07T22:37:53Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-07T22:38:06.393Z",
+  "title": "Default compose font: Administrators can allow users to change the default font in Outlook for iOS and Android",
+  "id": "MC1303717",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

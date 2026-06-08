@@ -1,0 +1,12 @@
+{
+  "id": "42054bf4-2b1c-4403-93d9-079fe4163044",
+  "appId": "81172f0f-5d81-47c7-96f6-49c58b60d192",
+  "displayName": "Microsoft Defender for Cloud MultiCloud Onboarding",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "b2a3e372-5caf-4608-abe7-4ae05bd2d180",
+  "appId": "fb9de05a-fecc-4642-b3ca-66b9d4434d4d",
+  "displayName": "Azure Machine Learning Authorization App 1",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

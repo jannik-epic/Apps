@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-06T00:36:23Z",
+  "endDateTime": "2026-07-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-02-06T00:36:55.973Z",
+  "title": "Microsoft Purview | Insider Risk Management - Ability to create cases without content in IRM",
+  "id": "MC1227618",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

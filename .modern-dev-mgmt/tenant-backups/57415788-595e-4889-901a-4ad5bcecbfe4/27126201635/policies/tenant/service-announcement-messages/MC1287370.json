@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-21T22:51:16Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-06T16:27:55.857Z",
+  "title": "(Updated) Auto upgrade of shared calendars from legacy MAPI model to modern REST model",
+  "id": "MC1287370",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

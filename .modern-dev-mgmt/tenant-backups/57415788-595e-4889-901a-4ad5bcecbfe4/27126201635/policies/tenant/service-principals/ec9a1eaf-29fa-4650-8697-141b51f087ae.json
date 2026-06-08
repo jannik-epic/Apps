@@ -1,0 +1,12 @@
+{
+  "id": "ec9a1eaf-29fa-4650-8697-141b51f087ae",
+  "appId": "b8c6afb3-f3a7-4ee4-9b1b-75e72ab1d4c9",
+  "displayName": "Standard Approvals Connector",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

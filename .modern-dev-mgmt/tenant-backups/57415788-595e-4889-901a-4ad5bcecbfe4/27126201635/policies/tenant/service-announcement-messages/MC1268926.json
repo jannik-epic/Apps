@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-02T20:59:02Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-02T20:59:13.51Z",
+  "title": "Microsoft AutoUpdate (MAU) CDN Endpoint Update for Mac",
+  "id": "MC1268926",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

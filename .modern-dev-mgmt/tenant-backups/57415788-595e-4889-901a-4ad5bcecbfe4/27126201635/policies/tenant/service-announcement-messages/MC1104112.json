@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-08T23:35:41.853Z",
+  "endDateTime": "2026-07-08T23:35:41.777Z",
+  "lastModifiedDateTime": "2025-07-08T23:35:43.123Z",
+  "title": "(Updated) Act now: Secure Boot certificates expire in June 2026",
+  "id": "MC1104112",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "96622fcd-88c1-4537-8a0b-20b2f621ab46",
+  "appId": "b6350f1d-1c35-45d9-8d84-8a187a96b2d5",
+  "displayName": "SPS Asset Workspace - SharePoint Connector",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-03-31T06:09:01Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "332a536c-c7ef-4017-ab91-336970924f0d",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

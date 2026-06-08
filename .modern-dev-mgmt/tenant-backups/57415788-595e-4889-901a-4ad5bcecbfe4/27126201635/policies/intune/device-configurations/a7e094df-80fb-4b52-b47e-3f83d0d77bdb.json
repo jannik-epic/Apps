@@ -1,0 +1,107 @@
+{
+  "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
+  "id": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb",
+  "lastModifiedDateTime": "2023-03-13T23:42:59.4481791Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-08-22T11:47:24.6432621Z",
+  "description": "",
+  "displayName": "EPIC_UPD_DEV_WIN-Update Ring Broad",
+  "version": 2,
+  "deliveryOptimizationMode": "userDefined",
+  "prereleaseFeatures": "userDefined",
+  "automaticUpdateMode": "autoInstallAndRebootAtMaintenanceTime",
+  "microsoftUpdateServiceAllowed": true,
+  "driversExcluded": false,
+  "qualityUpdatesDeferralPeriodInDays": 7,
+  "featureUpdatesDeferralPeriodInDays": 0,
+  "qualityUpdatesPaused": false,
+  "featureUpdatesPaused": false,
+  "qualityUpdatesPauseExpiryDateTime": "0001-01-01T00:00:00Z",
+  "featureUpdatesPauseExpiryDateTime": "0001-01-01T00:00:00Z",
+  "businessReadyUpdatesOnly": "userDefined",
+  "skipChecksBeforeRestart": false,
+  "updateWeeks": null,
+  "qualityUpdatesPauseStartDate": null,
+  "featureUpdatesPauseStartDate": null,
+  "featureUpdatesRollbackWindowInDays": 30,
+  "qualityUpdatesWillBeRolledBack": false,
+  "featureUpdatesWillBeRolledBack": false,
+  "qualityUpdatesRollbackStartDateTime": "0001-01-01T00:00:00Z",
+  "featureUpdatesRollbackStartDateTime": "0001-01-01T00:00:00Z",
+  "engagedRestartDeadlineInDays": null,
+  "engagedRestartSnoozeScheduleInDays": null,
+  "engagedRestartTransitionScheduleInDays": null,
+  "deadlineForFeatureUpdatesInDays": 7,
+  "deadlineForQualityUpdatesInDays": 3,
+  "deadlineGracePeriodInDays": null,
+  "postponeRebootUntilAfterDeadline": false,
+  "autoRestartNotificationDismissal": "notConfigured",
+  "scheduleRestartWarningInHours": null,
+  "scheduleImminentRestartWarningInMinutes": null,
+  "userPauseAccess": "disabled",
+  "userWindowsUpdateScanAccess": "enabled",
+  "updateNotificationLevel": "defaultNotifications",
+  "allowWindows11Upgrade": false,
+  "installationSchedule": {
+    "@odata.type": "#microsoft.graph.windowsUpdateActiveHoursInstall",
+    "activeHoursStart": "08:00:00.0000000",
+    "activeHoursEnd": "17:00:00.0000000"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('a7e094df-80fb-4b52-b47e-3f83d0d77bdb')/microsoft.graph.windowsUpdateForBusinessConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb_48e4171a-75a1-47da-9323-230c4928016e",
+      "source": "direct",
+      "sourceId": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "48e4171a-75a1-47da-9323-230c4928016e"
+      }
+    },
+    {
+      "id": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb_4fa262e0-6e8a-4afe-a86b-147899c1359c",
+      "source": "direct",
+      "sourceId": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "4fa262e0-6e8a-4afe-a86b-147899c1359c"
+      }
+    },
+    {
+      "id": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb_c1b4345e-637b-483e-8142-d048b93b6b7f",
+      "source": "direct",
+      "sourceId": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "c1b4345e-637b-483e-8142-d048b93b6b7f"
+      }
+    },
+    {
+      "id": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb_01a74918-503f-424e-a04e-daedea8ed318",
+      "source": "direct",
+      "sourceId": "a7e094df-80fb-4b52-b47e-3f83d0d77bdb",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "01a74918-503f-424e-a04e-daedea8ed318"
+      }
+    }
+  ]
+}

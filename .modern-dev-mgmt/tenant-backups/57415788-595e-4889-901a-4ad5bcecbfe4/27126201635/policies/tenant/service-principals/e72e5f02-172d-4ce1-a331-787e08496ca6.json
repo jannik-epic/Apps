@@ -1,0 +1,8 @@
+{
+  "id": "e72e5f02-172d-4ce1-a331-787e08496ca6",
+  "appId": "5657e26c-cc92-45d9-bc47-9da6cfdb4ed9",
+  "displayName": "Azure OSSRDBMS PostgreSQL Flexible Server AAD Authentication",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

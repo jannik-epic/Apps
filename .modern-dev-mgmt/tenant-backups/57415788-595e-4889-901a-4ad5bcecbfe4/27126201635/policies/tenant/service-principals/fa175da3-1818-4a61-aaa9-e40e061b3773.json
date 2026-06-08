@@ -1,0 +1,12 @@
+{
+  "id": "fa175da3-1818-4a61-aaa9-e40e061b3773",
+  "appId": "b6a1fec6-8029-456b-81ed-de7754615362",
+  "displayName": "TI-1P-APP",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

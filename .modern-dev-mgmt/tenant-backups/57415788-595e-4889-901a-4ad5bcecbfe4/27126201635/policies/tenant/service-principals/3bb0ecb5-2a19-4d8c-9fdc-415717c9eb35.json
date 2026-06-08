@@ -1,0 +1,8 @@
+{
+  "id": "3bb0ecb5-2a19-4d8c-9fdc-415717c9eb35",
+  "appId": "ea890292-c8c8-4433-b5ea-b09d0668e1a6",
+  "displayName": "Azure Credential Configuration Endpoint Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

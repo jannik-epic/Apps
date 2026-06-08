@@ -1,0 +1,8 @@
+{
+  "id": "a92b4306-c516-4c43-9a06-d5896c6469c6",
+  "appId": "18a4ad1e-427c-4cad-8416-ef674e801d32",
+  "displayName": "Intune DeviceActionService",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

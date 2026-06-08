@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-03T22:22:02Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-03T22:22:15.91Z",
+  "title": "OneDrive: Files deleted from the cloud will no longer appear in the local Recycle Bin or Trash",
+  "id": "MC1269861",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft OneDrive"
+  ]
+}

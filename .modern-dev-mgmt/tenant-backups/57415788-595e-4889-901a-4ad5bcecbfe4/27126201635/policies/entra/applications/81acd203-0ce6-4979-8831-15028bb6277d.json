@@ -1,0 +1,26 @@
+{
+  "id": "81acd203-0ce6-4979-8831-15028bb6277d",
+  "appId": "6d5e0704-f8c3-4e59-8552-6e3a8963a11a",
+  "displayName": "SharePoint Bibliothekshelfer RHB (Microsoft Copilot Studio)",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-17T12:00:43Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

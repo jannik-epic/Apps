@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-08T00:44:13.573Z",
+  "endDateTime": "2026-11-11T17:00:00Z",
+  "lastModifiedDateTime": "2025-11-08T00:44:14.887Z",
+  "title": "Action Required to Enable Extended Security Update for local devices accessing Windows 365",
+  "id": "MC1183612",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

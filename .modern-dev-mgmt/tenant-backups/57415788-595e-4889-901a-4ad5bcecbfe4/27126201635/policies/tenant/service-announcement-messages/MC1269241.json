@@ -1,0 +1,14 @@
+{
+  "startDateTime": "2026-04-03T05:56:39Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-03T06:41:00.28Z",
+  "title": "Anthropic Models for Copilot in Word, Excel, and PowerPoint on by Default",
+  "id": "MC1269241",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

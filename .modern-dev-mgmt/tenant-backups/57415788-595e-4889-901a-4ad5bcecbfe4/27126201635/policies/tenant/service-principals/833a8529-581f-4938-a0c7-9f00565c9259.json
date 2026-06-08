@@ -1,0 +1,11 @@
+{
+  "id": "833a8529-581f-4938-a0c7-9f00565c9259",
+  "appId": "c2b53357-32b6-4799-8197-b767a624cc4c",
+  "displayName": "hrapp-stage-hrapp",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

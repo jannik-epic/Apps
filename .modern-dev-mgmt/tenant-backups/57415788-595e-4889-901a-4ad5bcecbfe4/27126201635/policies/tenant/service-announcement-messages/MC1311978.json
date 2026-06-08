@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-15T23:14:11Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-15T23:14:18.087Z",
+  "title": "Classic Outlook for Windows: User-initiated insights with Copilot",
+  "id": "MC1311978",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 Copilot Chat"
+  ]
+}

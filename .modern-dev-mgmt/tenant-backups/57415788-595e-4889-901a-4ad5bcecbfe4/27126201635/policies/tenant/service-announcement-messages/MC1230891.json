@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-11T23:18:38Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-20T15:43:06.583Z",
+  "title": "(Updated) SharePoint Designer 2013 reaches end of support on July 14, 2026",
+  "id": "MC1230891",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

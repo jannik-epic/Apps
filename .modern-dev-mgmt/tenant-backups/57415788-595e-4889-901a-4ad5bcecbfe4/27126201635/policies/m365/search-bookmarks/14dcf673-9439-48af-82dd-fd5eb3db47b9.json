@@ -1,0 +1,74 @@
+{
+  "displayName": "Intranet",
+  "description": null,
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "14dcf673-9439-48af-82dd-fd5eb3db47b9",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "intranet",
+      "company portal",
+      "company homepage",
+      "company network",
+      "internal portal",
+      "internal network",
+      "firmenportal",
+      "firmenhomepage",
+      "firmennetzwerk",
+      "portal de la compañía",
+      "página de inicio de la compañía",
+      "red de la compañía",
+      "portail d'entreprise",
+      "page d'accueil de l'entreprise",
+      "réseau d'entreprise",
+      "portale dell'azienda",
+      "homepage dell'azienda",
+      "rete aziendale",
+      "イントラネット",
+      "会社ポータル",
+      "会社ホームページ",
+      "会社ネットワーク",
+      "portal da companhia",
+      "homepage da companhia",
+      "rede da companhia"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "イントラネット",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "intranet, portal da companhia, homepage da companhia, rede da companhia",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

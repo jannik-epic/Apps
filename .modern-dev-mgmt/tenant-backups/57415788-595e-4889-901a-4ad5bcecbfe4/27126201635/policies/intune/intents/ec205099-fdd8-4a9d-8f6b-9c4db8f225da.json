@@ -1,0 +1,14 @@
+{
+  "id": "ec205099-fdd8-4a9d-8f6b-9c4db8f225da",
+  "displayName": "EPICLABS_SEC_DEV_AVD - Security Baseline",
+  "description": null,
+  "isAssigned": true,
+  "isMigratingToConfigurationPolicy": null,
+  "lastModifiedDateTime": "2023-11-17T06:59:20.8309156Z",
+  "templateId": "034ccd46-190c-4afc-adf1-ad7cc11262eb",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents('ec205099-fdd8-4a9d-8f6b-9c4db8f225da')/assignments",
+  "assignments": []
+}

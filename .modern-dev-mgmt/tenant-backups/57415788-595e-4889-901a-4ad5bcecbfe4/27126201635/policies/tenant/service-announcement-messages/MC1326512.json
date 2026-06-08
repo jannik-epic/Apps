@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-29T20:49:23Z",
+  "endDateTime": "2026-08-24T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T20:49:40.437Z",
+  "title": "Microsoft Viva Glint: Export Heat Map reports as editable PowerPoint slides",
+  "id": "MC1326512",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva"
+  ]
+}

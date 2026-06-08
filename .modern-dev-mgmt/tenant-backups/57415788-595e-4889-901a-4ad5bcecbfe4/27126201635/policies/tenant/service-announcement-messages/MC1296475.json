@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T16:11:29Z",
+  "endDateTime": "2026-07-04T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-30T16:11:58.323Z",
+  "title": "New dedicated License Requests page in Microsoft 365 Admin Center",
+  "id": "MC1296475",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

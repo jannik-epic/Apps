@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-11T17:00:06.11Z",
+  "endDateTime": "2026-07-11T17:00:06.063Z",
+  "lastModifiedDateTime": "2025-07-11T17:00:06.89Z",
+  "title": "Your Windows release information toolbox",
+  "id": "MC1113571",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

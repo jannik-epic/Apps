@@ -1,0 +1,14 @@
+{
+  "startDateTime": "2026-05-18T21:43:57Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-18T21:44:17.503Z",
+  "title": "Microsoft Copilot Studio – Classic agent creation moves from Teams to web experience, retiring June 30, 2026",
+  "id": "MC1315217",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Teams",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "78ed1b33-6664-46e3-8a55-c006961d9cbf",
+  "appId": "b541e4b4-d868-4a00-b5b9-42fc1876fb94",
+  "displayName": "Neapac-Agent (Microsoft Copilot Studio)",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-13T09:24:49Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

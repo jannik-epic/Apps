@@ -1,0 +1,8 @@
+{
+  "clientId": "99140ea5-62e7-4fe7-a6ee-d89f210df577",
+  "consentType": "AllPrincipals",
+  "id": "pQ4Umedi50-m7tifIQ31dy1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": "User.Read Files.ReadWrite.All"
+}

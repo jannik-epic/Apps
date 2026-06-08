@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-05T00:24:20Z",
+  "endDateTime": "2026-08-10T08:00:00Z",
+  "lastModifiedDateTime": "2025-11-19T19:18:28.307Z",
+  "title": "Fix/Update Microsoft Sentinel Account Entity Naming to avoid inconsistent account identification in incidents and alerts",
+  "id": "MC1183015",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Microsoft Defender XDR"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-01T22:14:51Z",
+  "endDateTime": "2026-06-18T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-14T16:26:43.833Z",
+  "title": "(Updated) Outlook for Android: Unified user interface in text, image and zip previewers",
+  "id": "MC1267871",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

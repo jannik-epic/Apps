@@ -1,0 +1,26 @@
+{
+  "id": "e7a1e965-b9a1-49d6-8945-0c14c974f845",
+  "appId": "ff91b48f-2b85-473d-9156-5e03edd0178b",
+  "displayName": "Agent (Microsoft Copilot Studio)",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-17T06:47:47Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

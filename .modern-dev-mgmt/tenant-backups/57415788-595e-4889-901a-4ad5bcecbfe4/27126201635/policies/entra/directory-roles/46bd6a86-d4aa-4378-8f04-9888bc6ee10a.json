@@ -1,0 +1,7 @@
+{
+  "id": "46bd6a86-d4aa-4378-8f04-9888bc6ee10a",
+  "deletedDateTime": null,
+  "description": "Customize sign in and sign up experiences for users by creating and managing custom authentication extensions.",
+  "displayName": "Authentication Extensibility Administrator",
+  "roleTemplateId": "25a516ed-2fa0-40ea-a2d0-12923a21473a"
+}

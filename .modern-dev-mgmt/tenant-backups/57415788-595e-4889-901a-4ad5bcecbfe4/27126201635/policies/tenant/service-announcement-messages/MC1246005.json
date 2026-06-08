@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-06T21:23:53Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-06T21:24:22.177Z",
+  "title": "Microsoft Purview | Insider Risk Management – Enhancements to the Data Security Triage Agent",
+  "id": "MC1246005",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

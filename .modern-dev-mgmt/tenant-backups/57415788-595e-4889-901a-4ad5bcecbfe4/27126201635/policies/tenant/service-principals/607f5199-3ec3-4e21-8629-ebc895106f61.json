@@ -1,0 +1,8 @@
+{
+  "id": "607f5199-3ec3-4e21-8629-ebc895106f61",
+  "appId": "765fe668-04e7-42ba-aec0-2c96f1d8b652",
+  "displayName": "Exchange Office Graph Client for AAD - Noninteractive",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

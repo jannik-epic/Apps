@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-22T00:38:12Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-01-22T00:38:47.407Z",
+  "title": "Reminder: \"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in June 2026",
+  "id": "MC1220751",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Intune"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "4e2de0e0-5e77-4b9c-8faf-d1239729801b",
+  "displayName": "VMware-56 4d 96 28 a3 ec 79 1a-ca 32 12 73 4d c8 c2 e6",
+  "deviceId": "30461919-3937-4f54-af39-1c3252067507",
+  "accountEnabled": false,
+  "operatingSystem": "Unknown",
+  "operatingSystemVersion": "Unknown",
+  "trustType": "AzureAd",
+  "profileType": "RegisteredDevice",
+  "isCompliant": false,
+  "isManaged": false,
+  "registrationDateTime": "2025-05-19T05:41:31Z"
+}

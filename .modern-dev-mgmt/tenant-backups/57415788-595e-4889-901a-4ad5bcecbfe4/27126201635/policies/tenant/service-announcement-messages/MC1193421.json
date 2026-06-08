@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-12-09T00:22:56Z",
+  "endDateTime": "2027-04-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-02-19T20:35:28.737Z",
+  "title": "(Updated) Retirement of several Microsoft Planner features in early 2026 as part of a Planner update",
+  "id": "MC1193421",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Planner"
+  ]
+}

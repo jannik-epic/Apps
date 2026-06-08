@@ -1,0 +1,30 @@
+{
+  "id": "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477",
+  "description": "Can register and unregister printers and update printer status.",
+  "displayName": "Printer Technician",
+  "isBuiltIn": true,
+  "isEnabled": true,
+  "resourceScopes": [
+    "/"
+  ],
+  "templateId": "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477",
+  "version": "1",
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.azure.print/connectors/allProperties/read",
+        "microsoft.azure.print/printers/allProperties/read",
+        "microsoft.azure.print/printers/basic/update",
+        "microsoft.azure.print/printers/register",
+        "microsoft.azure.print/printers/unregister"
+      ],
+      "condition": null
+    }
+  ],
+  "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477')/inheritsPermissionsFrom",
+  "inheritsPermissionsFrom": [
+    {
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+  ]
+}

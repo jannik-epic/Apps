@@ -1,0 +1,10 @@
+{
+  "id": "a839e1d0-1572-432a-b0cb-dba0f1f795ad",
+  "appId": "155c56ca-bd61-4694-89b6-ecc5a92e92e7",
+  "displayName": "EpicFusion Frontier Admin - Development",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

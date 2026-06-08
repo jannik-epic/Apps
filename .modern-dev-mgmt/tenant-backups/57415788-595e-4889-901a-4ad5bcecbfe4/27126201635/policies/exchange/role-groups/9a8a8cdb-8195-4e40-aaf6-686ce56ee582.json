@@ -1,0 +1,47 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [
+    "View-Only Configuration-Hygiene Management",
+    "Transport Hygiene-Hygiene Management",
+    "View-Only Recipients-Hygiene Management"
+  ],
+  "Roles": [
+    "View-Only Configuration",
+    "Transport Hygiene",
+    "View-Only Recipients"
+  ],
+  "DisplayName": "",
+  "ExternalDirectoryObjectId": "",
+  "Members": [],
+  "SamAccountName": "Hygiene Management{f46bfad5bb4045b382228e5304f6a253}",
+  "Description": "Members of this management role group can manage Exchange anti-spam features and grant permissions for antivirus products to integrate with Exchange.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "",
+  "Identity": "Hygiene Management",
+  "Id": "Hygiene Management",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "Hygiene Management",
+  "DistinguishedName": "CN=Hygiene Management,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2025-10-18T13:12:53+00:00",
+  "WhenCreated": "2021-03-23T22:17:31+00:00",
+  "WhenChangedUTC": "2025-10-18T13:12:53Z",
+  "WhenCreatedUTC": "2021-03-23T22:17:31Z",
+  "ExchangeObjectId": "9a8a8cdb-8195-4e40-aaf6-686ce56ee582",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "9a8a8cdb-8195-4e40-aaf6-686ce56ee582",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

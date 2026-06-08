@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-27T22:14:41Z",
+  "endDateTime": "2027-01-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-04-27T22:15:07.99Z",
+  "title": "Exchange Online: Retirement of legacy TLS versions for POP and IMAP connections",
+  "id": "MC1293480",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

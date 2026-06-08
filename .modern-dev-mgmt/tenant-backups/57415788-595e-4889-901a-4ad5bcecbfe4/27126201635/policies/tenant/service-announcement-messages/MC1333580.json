@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-03T15:55:57Z",
+  "endDateTime": "2026-07-03T15:55:57Z",
+  "lastModifiedDateTime": "2026-06-03T15:57:31.587Z",
+  "title": "Dynamics 365 Project Operations – Recover an invoice stuck in a workflow",
+  "id": "MC1333580",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

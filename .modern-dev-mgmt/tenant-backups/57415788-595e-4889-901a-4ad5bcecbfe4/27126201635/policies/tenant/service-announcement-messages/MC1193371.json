@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-12-08T21:59:19.803Z",
+  "endDateTime": "2026-12-08T21:59:19.757Z",
+  "lastModifiedDateTime": "2025-12-08T21:59:20.727Z",
+  "title": "How to use Microsoft Intune to update expiring Secure Boot certificates",
+  "id": "MC1193371",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

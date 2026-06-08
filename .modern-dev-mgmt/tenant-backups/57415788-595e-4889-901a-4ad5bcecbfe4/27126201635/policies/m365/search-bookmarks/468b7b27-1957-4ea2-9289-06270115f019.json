@@ -1,0 +1,132 @@
+{
+  "displayName": "Careers",
+  "description": "Resources to help with your career development, find your next role, or learn about our internal transfer process.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "468b7b27-1957-4ea2-9289-06270115f019",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "my performance",
+      "careers",
+      "my careers",
+      "promotion",
+      "promotion guidelines",
+      "career development",
+      "career training",
+      "performance review",
+      "career portal",
+      "meine leistungen",
+      "karrieren",
+      "meine karrieren",
+      "promotionsrichtlinien",
+      "karriereentwicklung",
+      "karrieretraining",
+      "leistungsrückblick",
+      "karriereportal",
+      "mi desempeño",
+      "carreras",
+      "mis carreras",
+      "promoción",
+      "pautas de promoción",
+      "desarrollo profesional",
+      "capacitación profesional",
+      "revisión del desempeño",
+      "portal de carrera",
+      "mes performances",
+      "carrières",
+      "mes carrières",
+      "la promotion",
+      "les consignes de promotion",
+      "le développement de carrière",
+      "la formation professionnelle",
+      "la revue de performance",
+      "le portail carrière",
+      "le mie prestazioni",
+      "professioni",
+      "le mie professioni",
+      "promozione",
+      "linee guida della promozione",
+      "sviluppo della carriera",
+      "formazione professionale",
+      "anteprima delle prstazioni",
+      "portale carriera lavorativa",
+      "私の実績",
+      "履歴",
+      "私の履歴",
+      "昇進",
+      "昇進の指標",
+      "キャリア開発",
+      "専門的職業訓練",
+      "実績評価",
+      "キャリアポータル",
+      "minha performance",
+      "carreiras",
+      "minhas carreiras",
+      "promoção",
+      "guias de promoção",
+      "desenvolvimento de carreira",
+      "treinamento de carreira",
+      "avaliação de performance",
+      "portal de carreira"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Karrieren",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Carreras",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Carrières",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "履歴",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Carreiras",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

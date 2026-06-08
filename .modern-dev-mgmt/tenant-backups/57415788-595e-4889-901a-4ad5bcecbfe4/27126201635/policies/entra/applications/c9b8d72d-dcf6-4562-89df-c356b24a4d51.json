@@ -1,0 +1,209 @@
+{
+  "id": "c9b8d72d-dcf6-4562-89df-c356b24a4d51",
+  "appId": "5ecf04d5-d34f-4772-beb5-386dc153346a",
+  "displayName": "EpicFusion Frontier - Development",
+  "signInAudience": "AzureADMultipleOrgs",
+  "createdDateTime": "2025-11-26T10:10:57Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": "https://dstfrontierwebswn002.z1.web.core.windows.net/",
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://global.consent.azure-apim.net/redirect/cr269-5ffrontier-20engine-20api-5f9f86338a2e00186e",
+      "https://global.consent.azure-apim.net/redirect/cr269-5ffrontier-20enginenew-5f9f86338a2e00186e"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": true,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://global.consent.azure-apim.net/redirect/cr269-5ffrontier-20engine-20api-5f9f86338a2e00186e",
+        "index": null
+      },
+      {
+        "uri": "https://global.consent.azure-apim.net/redirect/cr269-5ffrontier-20enginenew-5f9f86338a2e00186e",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": [
+      "http://127.0.0.1:3000/",
+      "http://127.0.0.1:3000/login",
+      "http://127.0.0.1:3001/",
+      "http://127.0.0.1:3001/login",
+      "http://localhost:3001/login",
+      "http://localhost:3001/",
+      "http://localhost:5173/login",
+      "http://localhost:5173/",
+      "http://localhost:3000/login",
+      "http://localhost:3000/",
+      "https://d-app-frontier-swn-002.azurewebsites.net/login",
+      "https://d-app-frontier-swn-002.azurewebsites.net/",
+      "https://dstfrontierwebswn002.z1.web.core.windows.net/login",
+      "https://dstfrontierwebswn002.z1.web.core.windows.net/"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "570282fd-fa5c-430d-a7fd-fc8dc98a9dca",
+          "type": "Scope"
+        },
+        {
+          "id": "e383f46e-2787-4529-855e-0e479a3ffac0",
+          "type": "Scope"
+        },
+        {
+          "id": "024d486e-b451-40bb-833d-3e66d98c5c73",
+          "type": "Scope"
+        },
+        {
+          "id": "465a38f9-76ea-45b9-9f34-9e8b0d4b0b42",
+          "type": "Scope"
+        },
+        {
+          "id": "1ec239c2-d7c9-4623-a91a-a9775856bb36",
+          "type": "Scope"
+        },
+        {
+          "id": "ff74d97f-43af-4b68-9f2a-b77ee6968c5d",
+          "type": "Scope"
+        },
+        {
+          "id": "2219042f-cab5-40cc-b0d2-16b1540b4c5f",
+          "type": "Scope"
+        },
+        {
+          "id": "df85f4d6-205c-4ac5-a5ea-6bf408dba283",
+          "type": "Scope"
+        },
+        {
+          "id": "205e70e5-aba6-4c52-a976-6d2d46c48043",
+          "type": "Scope"
+        },
+        {
+          "id": "f501c180-9344-439a-bca0-6cbf209fd270",
+          "type": "Scope"
+        },
+        {
+          "id": "314874da-47d6-4978-88dc-cf0d37f0bb82",
+          "type": "Scope"
+        },
+        {
+          "id": "44642bfe-8385-4adc-8fc6-fe3cb2c375c3",
+          "type": "Scope"
+        },
+        {
+          "id": "4edf5f54-4666-44af-9de9-0144fb4b6e8c",
+          "type": "Scope"
+        },
+        {
+          "id": "7b3f05d5-f68c-4b8d-8c59-a2ecd12f24af",
+          "type": "Scope"
+        },
+        {
+          "id": "8696daa5-bce5-4b2e-83f9-51b6defc4e1e",
+          "type": "Scope"
+        },
+        {
+          "id": "662ed50a-ac44-4eef-ad86-62eed9be2a29",
+          "type": "Scope"
+        },
+        {
+          "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
+          "type": "Scope"
+        },
+        {
+          "id": "37f7f235-527c-4136-accd-4a02d197296e",
+          "type": "Scope"
+        },
+        {
+          "id": "14dad69e-099b-42c9-810b-d002981feec1",
+          "type": "Scope"
+        },
+        {
+          "id": "64a6cdd6-aab1-4aaf-94b8-3cc8405e90d0",
+          "type": "Scope"
+        },
+        {
+          "id": "7427e0e9-2fba-42fe-b0c0-848c9e6a8182",
+          "type": "Scope"
+        },
+        {
+          "id": "87f447af-9fa4-4c32-9dfa-4a57a73d18ce",
+          "type": "Scope"
+        },
+        {
+          "id": "863451e7-0667-486c-a5d6-d135439485f0",
+          "type": "Scope"
+        },
+        {
+          "id": "89fe6a52-be36-487e-b7d8-d061c450a026",
+          "type": "Scope"
+        },
+        {
+          "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+          "type": "Scope"
+        },
+        {
+          "id": "485be79e-c497-4b35-9400-0e3fa7f2a5d4",
+          "type": "Scope"
+        },
+        {
+          "id": "9d8982ae-4365-4f57-95e9-d6032a4c0b87",
+          "type": "Scope"
+        },
+        {
+          "id": "f45671fb-e0fe-4b4b-be20-3d3ce43f1bcb",
+          "type": "Scope"
+        },
+        {
+          "id": "55896846-df78-47a7-aa94-8d3d4442ca7f",
+          "type": "Scope"
+        },
+        {
+          "id": "eda39fa6-f8cf-4c3c-a909-432c683e4c9b",
+          "type": "Scope"
+        },
+        {
+          "id": "cac88765-0581-4025-9725-5ebc13f729ee",
+          "type": "Role"
+        },
+        {
+          "id": "ebf0f66e-9fb1-49e4-a278-222f76911cf4",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "5ecf04d5-d34f-4772-beb5-386dc153346a",
+      "resourceAccess": [
+        {
+          "id": "33155c97-da11-4c21-98ec-664ba029837a",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "499b84ac-1321-427f-aa17-267ca6975798",
+      "resourceAccess": [
+        {
+          "id": "ee69721e-6c3a-468f-a9ec-302d16a4c599",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

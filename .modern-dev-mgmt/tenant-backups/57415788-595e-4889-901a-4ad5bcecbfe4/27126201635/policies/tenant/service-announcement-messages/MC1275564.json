@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-09T22:13:19Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-09T22:13:27.977Z",
+  "title": "Microsoft 365 Copilot: Updated Copilot Notebooks overview page experience",
+  "id": "MC1275564",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

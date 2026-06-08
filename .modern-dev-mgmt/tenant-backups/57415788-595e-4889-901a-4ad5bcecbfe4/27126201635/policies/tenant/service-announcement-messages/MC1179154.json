@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-10-24T22:08:24Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-02-24T21:53:25.713Z",
+  "title": "(Updated) Microsoft Authenticator app: Upcoming changes to jailbreak and root detection",
+  "id": "MC1179154",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

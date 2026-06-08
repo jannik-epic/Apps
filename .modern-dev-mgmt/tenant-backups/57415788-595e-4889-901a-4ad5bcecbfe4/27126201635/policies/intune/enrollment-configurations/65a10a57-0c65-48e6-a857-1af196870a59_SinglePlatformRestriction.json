@@ -1,0 +1,37 @@
+{
+  "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+  "id": "65a10a57-0c65-48e6-a857-1af196870a59_SinglePlatformRestriction",
+  "displayName": "EPIC_EDR_USR_MAC-Allow personally owned devices",
+  "description": "",
+  "priority": 1,
+  "createdDateTime": "2022-05-04T16:17:54.190991Z",
+  "lastModifiedDateTime": "2023-09-23T11:45:52.6913463Z",
+  "version": 6,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "deviceEnrollmentConfigurationType": "singlePlatformRestriction",
+  "platformType": "mac",
+  "platformRestriction": {
+    "platformBlocked": false,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": null,
+    "osMaximumVersion": null,
+    "blockedManufacturers": [],
+    "blockedSkus": []
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceEnrollmentConfigurations('65a10a57-0c65-48e6-a857-1af196870a59_SinglePlatformRestriction')/microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "65a10a57-0c65-48e6-a857-1af196870a59_9be62e02-c686-49aa-b5f1-6c3b98537e81_65a10a57-0c65-48e6-a857-1af196870a59",
+      "source": "direct",
+      "sourceId": "65a10a57-0c65-48e6-a857-1af196870a59",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "9be62e02-c686-49aa-b5f1-6c3b98537e81"
+      }
+    }
+  ]
+}

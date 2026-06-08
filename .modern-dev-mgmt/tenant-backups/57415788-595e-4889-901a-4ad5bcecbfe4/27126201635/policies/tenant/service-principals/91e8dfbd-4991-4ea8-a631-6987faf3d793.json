@@ -1,0 +1,12 @@
+{
+  "id": "91e8dfbd-4991-4ea8-a631-6987faf3d793",
+  "appId": "972bb84a-1d27-4bd3-8306-6b8e57679e8c",
+  "displayName": "API Connectors 1st Party",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

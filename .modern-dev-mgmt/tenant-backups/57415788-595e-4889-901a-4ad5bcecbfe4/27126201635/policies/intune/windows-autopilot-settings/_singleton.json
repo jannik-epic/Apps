@@ -1,0 +1,7 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/windowsAutopilotSettings/$entity",
+  "id": "61de1ff5-959b-4764-9251-cdd730ce6b97",
+  "lastSyncDateTime": "2026-06-08T03:12:21.3321881Z",
+  "lastManualSyncTriggerDateTime": "2026-06-08T03:12:21.050921Z",
+  "syncStatus": "completed"
+}

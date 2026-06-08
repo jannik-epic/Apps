@@ -1,0 +1,85 @@
+{
+  "id": "cf074134-873f-4afc-bee0-859a7d29d5d4",
+  "deletedDateTime": "2026-05-26T18:35:17Z",
+  "appId": "5ee97d09-4987-449c-8161-f85f4058ee92",
+  "applicationTemplateId": null,
+  "disabledByMicrosoftStatus": null,
+  "createdByAppId": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+  "createdDateTime": "2026-05-26T18:34:13Z",
+  "displayName": "DailyDocs Temporary SPO Filter Scan 20260526183412",
+  "description": null,
+  "groupMembershipClaims": null,
+  "identifierUris": [],
+  "isDeviceOnlyAuthSupported": null,
+  "isDisabled": null,
+  "isFallbackPublicClient": null,
+  "nativeAuthenticationApisEnabled": null,
+  "notes": null,
+  "publisherDomain": "epicfusionlabs.com",
+  "serviceManagementReference": null,
+  "signInAudience": "AzureADMyOrg",
+  "tags": [],
+  "tokenEncryptionKeyId": null,
+  "uniqueName": null,
+  "samlMetadataUrl": null,
+  "defaultRedirectUri": null,
+  "certification": null,
+  "optionalClaims": null,
+  "servicePrincipalLockConfiguration": null,
+  "requestSignatureVerification": null,
+  "addIns": [],
+  "api": {
+    "acceptMappedClaims": null,
+    "knownClientApplications": [],
+    "requestedAccessTokenVersion": null,
+    "oauth2PermissionScopes": [],
+    "preAuthorizedApplications": []
+  },
+  "appRoles": [],
+  "info": {
+    "logoUrl": null,
+    "marketingUrl": null,
+    "privacyStatementUrl": null,
+    "supportUrl": null,
+    "termsOfServiceUrl": null
+  },
+  "keyCredentials": [
+    {
+      "customKeyIdentifier": "1B0FB9A174431FB2100941578CAC1CC08B2B4C76",
+      "displayName": "CN=DailyDocsTempFilterScan",
+      "endDateTime": "2026-05-27T18:34:11Z",
+      "key": null,
+      "keyId": "c2138bdd-8fff-4dfb-b151-6afd9a5ccdaf",
+      "startDateTime": "2026-05-26T18:34:15Z",
+      "type": "AsymmetricX509Cert",
+      "usage": "Verify"
+    }
+  ],
+  "parentalControlSettings": {
+    "countriesBlockedForMinors": [],
+    "legalAgeGroupRule": "Allow"
+  },
+  "passwordCredentials": [],
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "verifiedPublisher": {
+    "displayName": null,
+    "verifiedPublisherId": null,
+    "addedDateTime": null
+  },
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  }
+}

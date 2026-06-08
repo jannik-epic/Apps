@@ -1,0 +1,6 @@
+{
+  "@odata.type": "#microsoft.graph.builtInIdentityProvider",
+  "id": "EmailOtpSignup-OAUTH",
+  "displayName": "Email One Time Passcode",
+  "identityProviderType": "EmailOTP"
+}

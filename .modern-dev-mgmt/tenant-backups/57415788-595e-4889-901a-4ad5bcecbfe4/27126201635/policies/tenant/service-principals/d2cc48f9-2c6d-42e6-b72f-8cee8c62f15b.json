@@ -1,0 +1,8 @@
+{
+  "id": "d2cc48f9-2c6d-42e6-b72f-8cee8c62f15b",
+  "appId": "c728155f-7b2a-4502-a08b-b8af9b269319",
+  "displayName": "AAD Request Verification Service - PROD",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-28T13:29:15Z",
+  "endDateTime": "2026-07-31T13:29:00Z",
+  "lastModifiedDateTime": "2026-05-28T13:30:08.157Z",
+  "title": "Power Platform - View sensitivity labels in connectors",
+  "id": "MC1324869",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Power Platform"
+  ]
+}

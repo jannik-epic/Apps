@@ -1,0 +1,67 @@
+{
+  "displayName": "Adoption Kit",
+  "description": "Get info about using Microsoft Search, including what you can find, searching work from any device, and much more with these short, visual explainers created for easy sharing on Teams, Yammer, and SharePoint.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "6a29fbe4-cdb9-47b7-be32-489e37b3e4de",
+  "webUrl": "https://resources.techcommunity.microsoft.com/microsoft-search/#adoption",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "search adoption",
+      "search training",
+      "search onboarding",
+      "learn about search",
+      "search how to",
+      "search how-to",
+      "new to search",
+      "search noob",
+      "search newbie",
+      "how do i search",
+      "how do i search work",
+      "can i search work",
+      "about work search",
+      "how do i search school",
+      "can i search school",
+      "about school search",
+      "get started with work search",
+      "get started with school search",
+      "onboarding search",
+      "search learn about",
+      "how to search work",
+      "how to search school",
+      "work search help",
+      "microsoft search adoption",
+      "microsoft search adoption kit",
+      "microsoft search how to",
+      "enterprise search help",
+      "microsoft search in bing adoption",
+      "microsoft search bing adoption",
+      "microsoft search in bing adoption kit",
+      "microsoft search in bing how to",
+      "microsoft search bing how to",
+      "microsoft search bing adoption kit"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "MDA_Atlassian_InactiveTimeoutMins",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://support.atlassian.com/security-and-access-policies/docs/update-idle-session-duration/",
+  "controlCategory": "Identity",
+  "title": "Enable session timeout for web users",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 6.0,
+  "rank": 10,
+  "remediation": "<p>To select an idle session duration from an authentication policy:</p> <ol> <li> <p>Go to <a title=\"http://admin.atlassian.com/\" href=\"http://admin.atlassian.com/\">admin.atlassian.com</a>. Select your organization if you have more than one.</p> </li> <li> <p>Select <strong>Security</strong> &gt; <strong>Authentication policies</strong>.</p> </li> <li> <p>Select <strong>Edit </strong>for the policy you want to modify.</p> </li> <li> <p>On the <strong>Settings</strong> page, select length of time for <strong>Idle session duration.</strong></p> </li> <li>The value should be equal to or lower than <strong>2 hours</strong>.</li> </ol>",
+  "remediationImpact": "When you save changes to the session duration, users don't get logged out of their accounts. The new idle session duration will apply the next time a user logs in.",
+  "service": "MDA_Atlassian",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

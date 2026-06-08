@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-19T21:13:15.637Z",
+  "endDateTime": "2027-04-19T21:13:15.633Z",
+  "lastModifiedDateTime": "2026-04-19T21:13:16.607Z",
+  "title": "Take action: Out-of-band updates released for Windows Server to address two issues",
+  "id": "MC1285472",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

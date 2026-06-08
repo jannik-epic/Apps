@@ -1,0 +1,12 @@
+{
+  "id": "cd158617-56cc-4241-96ae-6fc0130a1643",
+  "appId": "2ae9fdf0-b40f-4e38-9c49-bfb7b1b4ed78",
+  "displayName": "Defender for AI Inventory",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-05T22:41:45Z",
+  "endDateTime": "2026-08-24T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-05T22:41:52.16Z",
+  "title": "Microsoft 365 Archive: File-level archiving General Availability",
+  "id": "MC1381114",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

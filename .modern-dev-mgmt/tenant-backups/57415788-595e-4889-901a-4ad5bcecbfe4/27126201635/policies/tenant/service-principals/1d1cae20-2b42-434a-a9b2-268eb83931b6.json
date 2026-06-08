@@ -1,0 +1,11 @@
+{
+  "id": "1d1cae20-2b42-434a-a9b2-268eb83931b6",
+  "appId": "b8566c1c-2b37-4f6b-97ad-9aaf1fc20560",
+  "displayName": "Intune MonoDeviceService ConfidentialClient",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

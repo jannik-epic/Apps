@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-02T19:39:05Z",
+  "endDateTime": "2026-07-16T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-02T19:39:11.85Z",
+  "title": "General availability of the Work IQ API with Copilot Credits billing",
+  "id": "MC1332672",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

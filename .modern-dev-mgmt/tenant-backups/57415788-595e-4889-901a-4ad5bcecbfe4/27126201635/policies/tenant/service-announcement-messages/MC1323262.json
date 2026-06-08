@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-26T22:09:24Z",
+  "endDateTime": "2026-08-03T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-26T22:10:07.423Z",
+  "title": "Microsoft Purview | eDiscovery: Enhancement of Loop and Copilot Pages in review and export",
+  "id": "MC1323262",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft Purview"
+  ]
+}

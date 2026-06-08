@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-26T21:23:21Z",
+  "endDateTime": "2026-06-26T21:23:21Z",
+  "lastModifiedDateTime": "2026-05-26T21:24:39.81Z",
+  "title": "Microsoft Copilot Studio - Automate web and desktop apps with computer use",
+  "id": "MC1323229",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Power Platform)"
+  ]
+}

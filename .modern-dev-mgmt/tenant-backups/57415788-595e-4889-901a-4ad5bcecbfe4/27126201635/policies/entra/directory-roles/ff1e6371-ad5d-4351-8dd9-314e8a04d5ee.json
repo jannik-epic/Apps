@@ -1,0 +1,7 @@
+{
+  "id": "ff1e6371-ad5d-4351-8dd9-314e8a04d5ee",
+  "deletedDateTime": null,
+  "description": "Can manage Office apps cloud services, including policy and settings management, and manage the ability to select, unselect and publish 'what's new' feature content to end-user's devices.",
+  "displayName": "Office Apps Administrator",
+  "roleTemplateId": "2b745bdf-0803-4d80-aa65-822c4493daac"
+}

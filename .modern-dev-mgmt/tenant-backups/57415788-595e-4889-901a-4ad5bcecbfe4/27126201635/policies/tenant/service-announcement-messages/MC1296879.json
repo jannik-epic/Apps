@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T23:03:27Z",
+  "endDateTime": "2026-06-30T23:03:00Z",
+  "lastModifiedDateTime": "2026-04-30T23:17:10.923Z",
+  "title": "Dynamics 365 Sales - Chat with your deal insights using ask-and-refine experience in Sales Close Agent (preview)",
+  "id": "MC1296879",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Dynamics 365 Apps"
+  ]
+}

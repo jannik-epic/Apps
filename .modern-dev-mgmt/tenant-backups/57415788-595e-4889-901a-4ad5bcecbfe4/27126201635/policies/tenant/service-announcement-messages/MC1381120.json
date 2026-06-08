@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-05T22:44:22Z",
+  "endDateTime": "2026-08-07T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-05T22:44:30.04Z",
+  "title": "Microsoft Teams: Improved app and agent access request flows for admin‑blocked apps",
+  "id": "MC1381120",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

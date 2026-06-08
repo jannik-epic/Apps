@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-09T16:06:04Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-09T17:58:06.513Z",
+  "title": "(Updated) Simplifying agent management with Agent 365",
+  "id": "MC1275311",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "MDA_Zendesk_enableapp",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://support.zendesk.com/hc/en-us/articles/4408846407066-About-the-Zendesk-Support-mobile-app",
+  "controlCategory": "Apps",
+  "title": "Admins and agents can use the Zendesk Support mobile app",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p><strong>Allow admins and agents can use the Zendesk Support mobile app</strong></p> <ol> <li>In&nbsp;Admin Center, click <strong>Account</strong>&nbsp;in the sidebar, then select&nbsp;<strong>Security &gt; More settings</strong>.</li> <li>On the <strong>Zendesk Support</strong> tab, Check <strong>Mobile app</strong>.</li> <li>Click&nbsp;<strong>Save</strong>.</li> </ol>",
+  "remediationImpact": "See in learn more link.",
+  "service": "MDA_Zendesk",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

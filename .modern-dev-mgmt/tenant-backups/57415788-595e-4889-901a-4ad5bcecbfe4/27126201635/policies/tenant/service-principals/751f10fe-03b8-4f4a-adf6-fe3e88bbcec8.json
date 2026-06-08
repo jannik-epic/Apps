@@ -1,0 +1,12 @@
+{
+  "id": "751f10fe-03b8-4f4a-adf6-fe3e88bbcec8",
+  "appId": "6bf85cfa-ac8a-4be5-b5de-425a0d0dc016",
+  "displayName": "Microsoft Entra AD Synchronization Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

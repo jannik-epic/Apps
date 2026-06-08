@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-09T22:23:37Z",
+  "endDateTime": "2026-07-06T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-12T16:23:58.807Z",
+  "title": "(Updated) Outlook: Support for recommended and automatically applied sensitivity labels in Outlook for iOS and Android",
+  "id": "MC1247891",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

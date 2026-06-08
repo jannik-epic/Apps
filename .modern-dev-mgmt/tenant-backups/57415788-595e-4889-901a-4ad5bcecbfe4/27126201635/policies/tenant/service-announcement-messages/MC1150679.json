@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-09-09T23:18:53Z",
+  "endDateTime": "2026-08-27T07:00:00Z",
+  "lastModifiedDateTime": "2025-09-09T23:20:55.693Z",
+  "title": "Additional Domain Whitelisting Required for Microsoft Whiteboard",
+  "id": "MC1150679",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 for the web"
+  ]
+}

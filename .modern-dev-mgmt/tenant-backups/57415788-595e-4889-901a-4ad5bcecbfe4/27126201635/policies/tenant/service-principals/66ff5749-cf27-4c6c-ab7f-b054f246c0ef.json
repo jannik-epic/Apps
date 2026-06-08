@@ -1,0 +1,11 @@
+{
+  "id": "66ff5749-cf27-4c6c-ab7f-b054f246c0ef",
+  "appId": "00000007-0000-0000-c000-000000000000",
+  "displayName": "Dataverse",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

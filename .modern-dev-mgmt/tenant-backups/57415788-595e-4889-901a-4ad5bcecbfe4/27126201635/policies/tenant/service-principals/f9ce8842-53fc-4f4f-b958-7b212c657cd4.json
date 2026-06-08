@@ -1,0 +1,11 @@
+{
+  "id": "f9ce8842-53fc-4f4f-b958-7b212c657cd4",
+  "appId": "3aae04e9-edf1-408e-bfa8-87b479dce23a",
+  "displayName": "test-ai-foundary-agents/projects/proj-default",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "AgentCreatedBy:Foundry",
+    "AgenticInstance"
+  ]
+}

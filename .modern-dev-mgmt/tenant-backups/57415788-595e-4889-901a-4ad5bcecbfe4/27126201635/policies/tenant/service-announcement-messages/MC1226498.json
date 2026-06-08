@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-02-03T18:08:55Z",
+  "endDateTime": "2026-08-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-02-03T18:09:05.47Z",
+  "title": "Retirement of the isBroadcast property for Teams Live Events in Microsoft Graph",
+  "id": "MC1226498",
+  "category": "planForChange",
+  "severity": "high",
+  "services": [
+    "Microsoft Teams",
+    "Microsoft 365 apps"
+  ]
+}

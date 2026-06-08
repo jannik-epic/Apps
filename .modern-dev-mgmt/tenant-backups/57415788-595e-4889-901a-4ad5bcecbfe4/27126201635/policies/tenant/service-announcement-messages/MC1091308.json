@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-06-10T17:21:47.797Z",
+  "endDateTime": "2026-06-10T17:21:47.717Z",
+  "lastModifiedDateTime": "2025-06-10T17:21:48.607Z",
+  "title": "Notice: The June 2025 Scan Cab for Microsoft updates is delayed",
+  "id": "MC1091308",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

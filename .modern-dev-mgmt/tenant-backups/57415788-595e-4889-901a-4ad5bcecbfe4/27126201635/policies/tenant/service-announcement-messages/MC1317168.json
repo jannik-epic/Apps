@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-20T22:27:17Z",
+  "endDateTime": "2026-06-30T22:27:00Z",
+  "lastModifiedDateTime": "2026-05-20T22:28:11.93Z",
+  "title": "Microsoft Copilot Studio – See evaluation results in real time",
+  "id": "MC1317168",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Power Platform)"
+  ]
+}

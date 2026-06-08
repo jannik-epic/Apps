@@ -1,0 +1,351 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodsPolicy",
+  "id": "authenticationMethodsPolicy",
+  "displayName": "Authentication Methods Policy",
+  "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
+  "lastModifiedDateTime": "2026-05-28T22:51:54.5177237Z",
+  "policyVersion": "1.5",
+  "policyMigrationState": "preMigration",
+  "registrationEnforcement": {
+    "authenticationMethodsRegistrationCampaign": {
+      "snoozeDurationInDays": 1,
+      "enforceRegistrationAfterAllowedSnoozes": false,
+      "state": "default",
+      "excludeTargets": [],
+      "includeTargets": [
+        {
+          "id": "all_users",
+          "targetType": "group",
+          "targetedAuthenticationMethod": "FIDO2"
+        }
+      ]
+    }
+  },
+  "systemCredentialPreferences": {
+    "state": "default",
+    "excludeTargets": [],
+    "includeTargets": [
+      {
+        "id": "all_users",
+        "targetType": "group"
+      }
+    ]
+  },
+  "reportSuspiciousActivitySettings": {
+    "state": "default",
+    "voiceReportingCode": 0,
+    "includeTarget": {
+      "id": "all_users",
+      "targetType": "group"
+    }
+  },
+  "authenticationMethodConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations",
+  "authenticationMethodConfigurations": [
+    {
+      "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
+      "id": "Fido2",
+      "state": "enabled",
+      "isSelfServiceRegistrationAllowed": true,
+      "isAttestationEnforced": false,
+      "defaultPasskeyProfile": "00000000-0000-0000-0000-000000000001",
+      "excludeTargets": [],
+      "keyRestrictions": {
+        "isEnforced": false,
+        "enforcementType": "block",
+        "aaGuids": []
+      },
+      "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Fido2')/microsoft.graph.fido2AuthenticationMethodConfiguration/includeTargets",
+      "includeTargets": [
+        {
+          "targetType": "group",
+          "id": "ee331122-6610-49b3-8742-00f58b717171",
+          "isRegistrationRequired": false,
+          "allowedPasskeyProfiles": [
+            "1027a60c-6461-49c9-81f4-d21416b0fb62"
+          ]
+        },
+        {
+          "targetType": "group",
+          "id": "b11253d3-ae9f-4196-8861-52c8fd689501",
+          "isRegistrationRequired": false,
+          "allowedPasskeyProfiles": [
+            "2616a03a-4895-4f32-9278-d32269ff5756"
+          ]
+        }
+      ],
+      "passkeyProfiles": [
+        {
+          "id": "00000000-0000-0000-0000-000000000001",
+          "name": "Default passkey profile",
+          "passkeyTypes": "deviceBound,synced",
+          "attestationEnforcement": "disabled",
+          "keyRestrictions": {
+            "isEnforced": false,
+            "enforcementType": "block",
+            "aaGuids": []
+          }
+        },
+        {
+          "id": "2616a03a-4895-4f32-9278-d32269ff5756",
+          "name": "SharedPasskeys",
+          "passkeyTypes": "deviceBound,synced",
+          "attestationEnforcement": "disabled",
+          "keyRestrictions": {
+            "isEnforced": false,
+            "enforcementType": "block",
+            "aaGuids": []
+          }
+        },
+        {
+          "id": "1027a60c-6461-49c9-81f4-d21416b0fb62",
+          "name": "DeviceBound",
+          "passkeyTypes": "deviceBound",
+          "attestationEnforcement": "disabled",
+          "keyRestrictions": {
+            "isEnforced": false,
+            "enforcementType": "block",
+            "aaGuids": []
+          }
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
+      "id": "MicrosoftAuthenticator",
+      "state": "enabled",
+      "isSoftwareOathEnabled": true,
+      "excludeTargets": [],
+      "featureSettings": {
+        "companionAppAllowedState": {
+          "state": "default",
+          "includeTarget": {
+            "targetType": "group",
+            "id": "all_users"
+          },
+          "excludeTarget": {
+            "targetType": "group",
+            "id": "00000000-0000-0000-0000-000000000000"
+          }
+        },
+        "numberMatchingRequiredState": {
+          "state": "enabled",
+          "includeTarget": {
+            "targetType": "group",
+            "id": "all_users"
+          },
+          "excludeTarget": {
+            "targetType": "group",
+            "id": "00000000-0000-0000-0000-000000000000"
+          }
+        },
+        "displayAppInformationRequiredState": {
+          "state": "enabled",
+          "includeTarget": {
+            "targetType": "group",
+            "id": "all_users"
+          },
+          "excludeTarget": {
+            "targetType": "group",
+            "id": "00000000-0000-0000-0000-000000000000"
+          }
+        },
+        "displayLocationInformationRequiredState": {
+          "state": "enabled",
+          "includeTarget": {
+            "targetType": "group",
+            "id": "all_users"
+          },
+          "excludeTarget": {
+            "targetType": "group",
+            "id": "00000000-0000-0000-0000-000000000000"
+          }
+        }
+      },
+      "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets",
+      "includeTargets": [
+        {
+          "targetType": "group",
+          "id": "all_users",
+          "isRegistrationRequired": false,
+          "authenticationMode": "deviceBasedPush"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
+      "id": "Sms",
+      "state": "enabled",
+      "excludeTargets": [],
+      "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Sms')/microsoft.graph.smsAuthenticationMethodConfiguration/includeTargets",
+      "includeTargets": [
+        {
+          "targetType": "group",
+          "id": "all_users",
+          "isRegistrationRequired": false,
+          "isUsableForSignIn": true
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
+      "id": "TemporaryAccessPass",
+      "state": "disabled",
+      "defaultLifetimeInMinutes": 60,
+      "defaultLength": 8,
+      "minimumLifetimeInMinutes": 60,
+      "maximumLifetimeInMinutes": 480,
+      "isUsableOnce": false,
+      "excludeTargets": [],
+      "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
+      "includeTargets": [
+        {
+          "targetType": "group",
+          "id": "all_users",
+          "isRegistrationRequired": false
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.hardwareOathAuthenticationMethodConfiguration",
+      "id": "HardwareOath",
+      "state": "disabled",
+      "excludeTargets": [],
+      "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('HardwareOath')/microsoft.graph.hardwareOathAuthenticationMethodConfiguration/includeTargets",
+      "includeTargets": [
+        {
+          "targetType": "group",
+          "id": "all_users",
+          "isRegistrationRequired": false
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.softwareOathAuthenticationMethodConfiguration",
+      "id": "SoftwareOath",
+      "state": "disabled",
+      "excludeTargets": [],
+      "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('SoftwareOath')/microsoft.graph.softwareOathAuthenticationMethodConfiguration/includeTargets",
+      "includeTargets": [
+        {
+          "targetType": "group",
+          "id": "all_users",
+          "isRegistrationRequired": false
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.voiceAuthenticationMethodConfiguration",
+      "id": "Voice",
+      "state": "disabled",
+      "isOfficePhoneAllowed": false,
+      "callerIdNumber": null,
+      "isCustomGreetingEnabled": false,
+      "excludeTargets": [],
+      "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Voice')/microsoft.graph.voiceAuthenticationMethodConfiguration/includeTargets",
+      "includeTargets": [
+        {
+          "targetType": "group",
+          "id": "all_users",
+          "isRegistrationRequired": false
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
+      "id": "Email",
+      "state": "enabled",
+      "allowExternalIdToUseEmailOtp": "default",
+      "excludeTargets": [],
+      "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
+      "includeTargets": []
+    },
+    {
+      "@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
+      "id": "X509Certificate",
+      "state": "disabled",
+      "excludeTargets": [],
+      "certificateUserBindings": [
+        {
+          "x509CertificateField": "PrincipalName",
+          "userProperty": "userPrincipalName",
+          "priority": 1,
+          "trustAffinityLevel": "low"
+        },
+        {
+          "x509CertificateField": "RFC822Name",
+          "userProperty": "userPrincipalName",
+          "priority": 2,
+          "trustAffinityLevel": "low"
+        }
+      ],
+      "authenticationModeConfiguration": {
+        "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
+        "x509CertificateDefaultRequiredAffinityLevel": "low",
+        "rules": []
+      },
+      "issuerHintsConfiguration": {
+        "state": "disabled"
+      },
+      "certificateAuthorityScopes": [],
+      "crlValidationConfiguration": {
+        "state": "disabled",
+        "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": []
+      },
+      "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('X509Certificate')/microsoft.graph.x509CertificateAuthenticationMethodConfiguration/includeTargets",
+      "includeTargets": [
+        {
+          "targetType": "group",
+          "id": "all_users",
+          "isRegistrationRequired": false
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.verifiableCredentialsAuthenticationMethodConfiguration",
+      "id": "VerifiableCredentials",
+      "state": "disabled",
+      "excludeTargets": [],
+      "includeTargets": [
+        {
+          "targetType": "group",
+          "id": "all_users",
+          "isRegistrationRequired": false,
+          "verifiedIdProfiles": []
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.qrCodePinAuthenticationMethodConfiguration",
+      "id": "QRCodePin",
+      "state": "disabled",
+      "standardQRCodeLifetimeInDays": 365,
+      "pinLength": 8,
+      "excludeTargets": [],
+      "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('QRCodePin')/microsoft.graph.qrCodePinAuthenticationMethodConfiguration/includeTargets",
+      "includeTargets": [
+        {
+          "targetType": "group",
+          "id": "all_users",
+          "isRegistrationRequired": false
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.federatedIdentityCredentialAuthenticationMethodConfiguration",
+      "id": "FederatedIdentityCredential",
+      "state": "disabled",
+      "excludeTargets": [],
+      "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('FederatedIdentityCredential')/microsoft.graph.federatedIdentityCredentialAuthenticationMethodConfiguration/includeTargets",
+      "includeTargets": [
+        {
+          "targetType": "group",
+          "id": "all_users",
+          "isRegistrationRequired": false,
+          "allowedProfiles": []
+        }
+      ],
+      "profiles@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('FederatedIdentityCredential')/microsoft.graph.federatedIdentityCredentialAuthenticationMethodConfiguration/profiles",
+      "profiles": []
+    }
+  ]
+}

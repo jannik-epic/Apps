@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-04T23:04:56.18Z",
+  "endDateTime": "2026-11-04T23:04:56.133Z",
+  "lastModifiedDateTime": "2025-11-04T23:04:59.083Z",
+  "title": "Preparing commercial Windows 10 devices for ESUs",
+  "id": "MC1182993",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

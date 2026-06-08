@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-28T22:12:47Z",
+  "endDateTime": "2026-06-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-28T22:12:53.387Z",
+  "title": "Microsoft Edge: M365 Copilot Search relevance using work browsing history",
+  "id": "MC1294523",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

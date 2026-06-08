@@ -1,0 +1,67 @@
+{
+  "id": "7d474c26-0780-491e-9872-0de3a4675b0b",
+  "templateId": null,
+  "displayName": "CA204: Require managed devices for desktop client access (Office 365)",
+  "createdDateTime": "2023-03-13T23:43:02.7451913Z",
+  "modifiedDateTime": null,
+  "state": "disabled",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "mobileAppsAndDesktopClients"
+    ],
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "Office365"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [
+        "GuestsOrExternalUsers"
+      ],
+      "includeGroups": [],
+      "excludeGroups": [
+        "38691173-0809-4f1e-ab10-75d05bae4225"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    },
+    "platforms": {
+      "includePlatforms": [
+        "macOS",
+        "windows"
+      ],
+      "excludePlatforms": []
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "compliantDevice",
+      "domainJoinedDevice"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('7d474c26-0780-491e-9872-0de3a4675b0b')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

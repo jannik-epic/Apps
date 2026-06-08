@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-07T00:50:44Z",
+  "endDateTime": "2026-12-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-18T16:26:06.32Z",
+  "title": "(Updated) Consult and merge into a meeting or group call via Dual-Tone Multi-Frequency (DTMF)",
+  "id": "MC1183611",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

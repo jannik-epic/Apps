@@ -1,0 +1,10 @@
+{
+  "id": "275fee07-2bcd-4b8f-9b23-53b172909976",
+  "appId": "b8574bb9-c5c3-435e-8b66-25129b622ec9",
+  "displayName": "Modern Dev Mgmt Backup — epicfusionlabs.com",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

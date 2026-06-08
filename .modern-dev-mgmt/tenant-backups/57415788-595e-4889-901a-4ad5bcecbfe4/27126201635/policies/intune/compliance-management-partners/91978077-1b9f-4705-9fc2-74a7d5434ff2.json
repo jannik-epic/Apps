@@ -1,0 +1,12 @@
+{
+  "id": "91978077-1b9f-4705-9fc2-74a7d5434ff2",
+  "lastHeartbeatDateTime": "0001-01-01T00:00:00Z",
+  "partnerState": "unknown",
+  "displayName": "Jamf Device Compliance",
+  "macOsOnboarded": false,
+  "androidOnboarded": false,
+  "iosOnboarded": false,
+  "macOsEnrollmentAssignments": [],
+  "androidEnrollmentAssignments": [],
+  "iosEnrollmentAssignments": []
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-12T17:12:02.43Z",
+  "endDateTime": "2027-05-12T17:12:02.43Z",
+  "lastModifiedDateTime": "2026-05-12T17:12:03.427Z",
+  "title": "The May 2026 Windows security update is now available",
+  "id": "MC1308634",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

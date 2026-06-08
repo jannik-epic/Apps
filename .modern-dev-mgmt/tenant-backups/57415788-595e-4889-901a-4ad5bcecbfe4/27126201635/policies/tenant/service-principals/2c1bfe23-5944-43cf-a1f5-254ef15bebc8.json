@@ -1,0 +1,8 @@
+{
+  "id": "2c1bfe23-5944-43cf-a1f5-254ef15bebc8",
+  "appId": "e4ab13ed-33cb-41b4-9140-6e264582cf85",
+  "displayName": "Azure SQL Database Backup To Azure Backup Vault",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-09-12T17:14:23.94Z",
+  "endDateTime": "2026-09-12T17:14:23.94Z",
+  "lastModifiedDateTime": "2025-09-12T17:14:28.407Z",
+  "title": "30-Day Reminder: Windows 10, version 22H2 will reach end of servicing on October 14, 2025",
+  "id": "MC1152188",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

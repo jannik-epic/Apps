@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-30T23:12:42Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-30T23:13:27.387Z",
+  "title": "Microsoft 365 Copilot: Claude Sonnet 4.5 retiring for Copilot Studio (automatic migration to Claude Sonnet 4.6)",
+  "id": "MC1296875",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

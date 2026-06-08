@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-11T08:02:14Z",
+  "endDateTime": "2026-06-11T08:02:14Z",
+  "lastModifiedDateTime": "2026-05-11T08:05:26.2Z",
+  "title": "Microsoft Power Automate - Automate administrator-level desktop applications in unattended runs",
+  "id": "MC1307177",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Power Automate"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "08206731-efc4-4ba4-85d8-544d82ea357e",
+  "appId": "59534ab2-0027-4a45-b9ec-61d1b6b871c9",
+  "displayName": "Power Platform Connector Management Service - PROD",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

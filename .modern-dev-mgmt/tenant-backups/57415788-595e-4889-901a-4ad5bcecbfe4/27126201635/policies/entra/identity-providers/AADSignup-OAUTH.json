@@ -1,0 +1,6 @@
+{
+  "@odata.type": "#microsoft.graph.builtInIdentityProvider",
+  "id": "AADSignup-OAUTH",
+  "displayName": "Azure Active Directory Sign up",
+  "identityProviderType": "AADSignup"
+}

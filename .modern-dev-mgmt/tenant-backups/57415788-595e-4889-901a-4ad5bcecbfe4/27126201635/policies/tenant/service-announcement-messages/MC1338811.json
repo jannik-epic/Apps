@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-03T22:39:19Z",
+  "endDateTime": "2026-08-17T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T22:39:56.19Z",
+  "title": "Microsoft 365 admin center: Retirement of “Add Note” option in support tickets",
+  "id": "MC1338811",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite"
+  ]
+}

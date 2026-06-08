@@ -1,0 +1,44 @@
+{
+  "id": "67d6137e-1d1a-47ae-8c5b-636dc37808f0",
+  "appId": "bd41ecf1-bd8d-4c4a-a9b1-b7b80a57ceb4",
+  "displayName": "Get-Intune-Clients-Script-ASC",
+  "signInAudience": "AzureADMultipleOrgs",
+  "createdDateTime": "2024-05-18T16:52:45Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "2f51be20-0bb4-4fed-bf7b-db946066c75e",
+          "type": "Role"
+        },
+        {
+          "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

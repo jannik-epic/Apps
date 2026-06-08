@@ -1,0 +1,10 @@
+{
+  "id": "f13c8b3a-0fcb-4ced-a106-367a01eb1b21",
+  "appId": "2cee05de-2b8f-45a2-8289-2a06ca32c4c8",
+  "displayName": "Gmail",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

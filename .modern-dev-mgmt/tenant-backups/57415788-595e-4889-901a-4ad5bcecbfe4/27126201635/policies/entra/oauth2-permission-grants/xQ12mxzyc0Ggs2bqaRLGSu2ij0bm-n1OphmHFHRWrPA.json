@@ -1,0 +1,8 @@
+{
+  "clientId": "9b760dc5-f21c-4173-a0b3-66ea6912c64a",
+  "consentType": "AllPrincipals",
+  "id": "xQ12mxzyc0Ggs2bqaRLGSu2ij0bm-n1OphmHFHRWrPA",
+  "principalId": null,
+  "resourceId": "468fa2ed-fae6-4e7d-a619-87147456acf0",
+  "scope": "ActivityFeed.Read ServiceHealth.Read"
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-24T22:47:47Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-01T22:50:54.963Z",
+  "title": "(Updated) Microsoft Entra ID: Improved readability for Authentication Methods Policy Update audit logs",
+  "id": "MC1260708",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

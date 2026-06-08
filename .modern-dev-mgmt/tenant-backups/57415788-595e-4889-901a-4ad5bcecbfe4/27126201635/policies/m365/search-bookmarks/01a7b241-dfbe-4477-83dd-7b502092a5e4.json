@@ -1,0 +1,83 @@
+{
+  "displayName": "Microsoft To Do",
+  "description": "One place for all your tasks to give you focus from work to play.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "01a7b241-dfbe-4477-83dd-7b502092a5e4",
+  "webUrl": "https://to-do.office.com/",
+  "lastModifiedDateTime": "2023-04-13T23:39:56Z",
+  "keywords": {
+    "keywords": [
+      "task list",
+      "to-do list",
+      "to do tool",
+      "to do",
+      "to do list",
+      "to-do"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Ein Ort für alle Ihre Aufgaben, damit Sie sich von der Arbeit bis zum Spielen konzentrieren können.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Un lugar desde el que centrarse todas sus tareas, desde el trabajo hasta el juego.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Microsoft To-Do",
+      "webUrl": null,
+      "description": "Conserver toutes vos tâches en un seul emplacement vous permet de vous concentrer du travail au jeu.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Un'unica posizione per tutte le tue attività, dal lavoro al tempo libero.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "作業からプレイまで、すべてのタスクに 1 か所で集中できます。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Um lugar para todas as suas tarefas para lhe dar foco do trabalho ao jogo.",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "b14cf01e-e12b-4393-ae82-ee386c430a2e",
+  "appId": "ff846ae4-7ec9-42f4-8576-eb14198ad5e1",
+  "displayName": "Microsoft Edge management service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

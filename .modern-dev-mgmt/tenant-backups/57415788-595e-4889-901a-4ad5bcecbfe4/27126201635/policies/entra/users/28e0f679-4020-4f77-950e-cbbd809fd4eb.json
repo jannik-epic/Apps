@@ -1,0 +1,12 @@
+{
+  "id": "28e0f679-4020-4f77-950e-cbbd809fd4eb",
+  "displayName": "Admin DGA",
+  "userPrincipalName": "admin.dga@epicfusionlabs.com",
+  "mail": "admin.dga@epicfusionlabs.com",
+  "accountEnabled": true,
+  "userType": "Member",
+  "createdDateTime": "2026-01-14T13:59:50Z",
+  "department": null,
+  "jobTitle": null,
+  "usageLocation": "CH"
+}

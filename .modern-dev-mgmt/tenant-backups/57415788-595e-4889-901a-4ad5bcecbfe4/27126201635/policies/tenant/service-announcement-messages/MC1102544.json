@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-06-24T17:01:10.15Z",
+  "endDateTime": "2026-06-24T17:01:10.087Z",
+  "lastModifiedDateTime": "2025-06-24T17:01:10.843Z",
+  "title": "The June 2025 Windows non-security preview update is now available for Windows 10, version 22H2",
+  "id": "MC1102544",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

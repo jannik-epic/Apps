@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-06-23T20:59:19.927Z",
+  "endDateTime": "2026-06-23T20:59:19.863Z",
+  "lastModifiedDateTime": "2025-06-23T20:59:21.083Z",
+  "title": "The Microsoft 365 Feed widget is no longer available with the Microsoft 365 Feed app",
+  "id": "MC1101825",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

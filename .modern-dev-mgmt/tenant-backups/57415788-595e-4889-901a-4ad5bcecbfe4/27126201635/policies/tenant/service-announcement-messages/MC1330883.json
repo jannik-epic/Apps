@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-01T23:21:23Z",
+  "endDateTime": "2026-08-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-01T23:21:37.12Z",
+  "title": "Viva Learning: Academy support on mobile",
+  "id": "MC1330883",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva"
+  ]
+}

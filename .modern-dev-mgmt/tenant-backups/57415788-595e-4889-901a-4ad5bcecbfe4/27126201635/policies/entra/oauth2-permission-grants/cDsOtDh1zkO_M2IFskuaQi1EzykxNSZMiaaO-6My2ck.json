@@ -1,0 +1,8 @@
+{
+  "clientId": "b40e3b70-7538-43ce-bf33-6205b24b9a42",
+  "consentType": "AllPrincipals",
+  "id": "cDsOtDh1zkO_M2IFskuaQi1EzykxNSZMiaaO-6My2ck",
+  "principalId": null,
+  "resourceId": "29cf442d-3531-4c26-89a6-8efba332d9c9",
+  "scope": "Chat.ReadWrite Notes.ReadWrite.All MailboxSettings.Read User.Read User.ReadBasic.All Group.ReadWrite.All Mail.Send Calendars.ReadWrite Files.ReadWrite Files.Read.All TeamsTab.Create TeamsTab.Read.All TeamsAppInstallation.ReadWriteForChat Tasks.ReadWrite TeamsTab.ReadWriteForChat Sites.ReadWrite.All"
+}

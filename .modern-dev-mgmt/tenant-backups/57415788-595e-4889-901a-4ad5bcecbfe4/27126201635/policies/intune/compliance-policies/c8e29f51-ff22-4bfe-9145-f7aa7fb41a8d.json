@@ -1,0 +1,48 @@
+{
+  "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "id": "c8e29f51-ff22-4bfe-9145-f7aa7fb41a8d",
+  "createdDateTime": "2023-01-30T07:03:29.6079717Z",
+  "description": null,
+  "lastModifiedDateTime": "2023-01-30T07:03:29.6079717Z",
+  "displayName": "EPIC_EMM_USR_MAC-Apple macOS Compliance",
+  "version": 1,
+  "passwordRequired": true,
+  "passwordBlockSimple": true,
+  "passwordExpirationDays": 65535,
+  "passwordMinimumLength": 6,
+  "passwordMinutesOfInactivityBeforeLock": null,
+  "passwordPreviousPasswordBlockCount": null,
+  "passwordMinimumCharacterSetCount": null,
+  "passwordRequiredType": "deviceDefault",
+  "osMinimumVersion": "10.13",
+  "osMaximumVersion": null,
+  "osMinimumBuildVersion": null,
+  "osMaximumBuildVersion": null,
+  "systemIntegrityProtectionEnabled": true,
+  "deviceThreatProtectionEnabled": false,
+  "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+  "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
+  "storageRequireEncryption": true,
+  "gatekeeperAllowedAppSource": "notConfigured",
+  "firewallEnabled": true,
+  "firewallBlockAllIncoming": false,
+  "firewallEnableStealthMode": false,
+  "deviceCompliancePolicyScript": null,
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceCompliancePolicies('c8e29f51-ff22-4bfe-9145-f7aa7fb41a8d')/microsoft.graph.macOSCompliancePolicy/assignments",
+  "assignments": [
+    {
+      "id": "c8e29f51-ff22-4bfe-9145-f7aa7fb41a8d_9be62e02-c686-49aa-b5f1-6c3b98537e81",
+      "source": "direct",
+      "sourceId": "c8e29f51-ff22-4bfe-9145-f7aa7fb41a8d",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "9be62e02-c686-49aa-b5f1-6c3b98537e81"
+      }
+    }
+  ]
+}

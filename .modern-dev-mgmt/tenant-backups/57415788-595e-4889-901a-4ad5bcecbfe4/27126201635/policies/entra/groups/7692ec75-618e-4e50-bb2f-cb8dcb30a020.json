@@ -1,0 +1,13 @@
+{
+  "id": "7692ec75-618e-4e50-bb2f-cb8dcb30a020",
+  "displayName": "Org Team Creation Template",
+  "description": "Template for Org Teams",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "OrgTeamCreationTemplate",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2021-05-18T19:29:23Z"
+}

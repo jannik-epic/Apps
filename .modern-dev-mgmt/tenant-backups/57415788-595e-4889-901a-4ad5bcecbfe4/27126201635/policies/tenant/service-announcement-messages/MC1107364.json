@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-07-01T16:59:27.243Z",
+  "endDateTime": "2026-07-01T16:59:27.133Z",
+  "lastModifiedDateTime": "2025-07-01T16:59:27.91Z",
+  "title": "Hotpatching now enabled by default for new Windows quality update policies",
+  "id": "MC1107364",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "e57f5e2e-3975-4440-bce7-d5d1fbeb11c2",
+  "appId": "8027e497-964f-4d03-a3a7-3f9c672515df",
+  "displayName": "SCEPman-EpicFuison-SC",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

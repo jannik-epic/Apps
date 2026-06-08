@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-01-16T00:15:58Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T23:18:12.667Z",
+  "title": "(Updated) Microsoft Teams: Viva Engage communities in Teams",
+  "id": "MC1218423",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams",
+    "Microsoft Viva"
+  ]
+}

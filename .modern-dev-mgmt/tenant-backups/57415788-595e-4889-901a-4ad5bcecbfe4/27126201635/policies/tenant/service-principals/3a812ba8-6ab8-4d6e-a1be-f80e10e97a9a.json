@@ -1,0 +1,12 @@
+{
+  "id": "3a812ba8-6ab8-4d6e-a1be-f80e10e97a9a",
+  "appId": "bceea168-88ac-4736-95dc-4ce488ffe324",
+  "displayName": "Microsoft Defender for Cloud",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

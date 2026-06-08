@@ -1,0 +1,357 @@
+{
+  "id": "/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments/Default-57415788-595e-4889-901a-4ad5bcecbfe4",
+  "type": "Microsoft.BusinessAppPlatform/scopes/environments",
+  "location": "switzerland",
+  "name": "Default-57415788-595e-4889-901a-4ad5bcecbfe4",
+  "properties": {
+    "tenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+    "azureRegion": "switzerlandnorth",
+    "displayName": "Personal Productivity",
+    "createdTime": "2021-05-28T09:27:58.2263073Z",
+    "createdBy": {
+      "id": "SYSTEM",
+      "displayName": "",
+      "email": "",
+      "type": "NotSpecified",
+      "userPrincipalName": ""
+    },
+    "lastModifiedTime": "2025-12-10T17:43:37.7320753Z",
+    "provisioningState": "Succeeded",
+    "creationType": "DefaultTenant",
+    "environmentSku": "Default",
+    "isDefault": true,
+    "clientUris": {
+      "admin": "https://admin.powerplatform.microsoft.com/environments/environment/Default-57415788-595e-4889-901a-4ad5bcecbfe4/hub",
+      "maker": "https://make.powerapps.com/environments/Default-57415788-595e-4889-901a-4ad5bcecbfe4/home"
+    },
+    "runtimeEndpoints": {
+      "microsoft.BusinessAppPlatform": "https://switzerland.api.bap.microsoft.com",
+      "microsoft.CommonDataModel": "https://switzerland.api.cds.microsoft.com",
+      "microsoft.PowerApps": "https://switzerland.api.powerapps.com",
+      "microsoft.PowerAppsAdvisor": "https://switzerland.api.advisor.powerapps.com",
+      "microsoft.PowerVirtualAgents": "https://powervamg.ch-il101.gateway.prod.island.powerapps.com",
+      "microsoft.ApiManagement": "https://management.switzerland.azure-apihub.net",
+      "microsoft.Flow": "https://switzerland.api.flow.microsoft.com"
+    },
+    "databaseType": "CommonDataService",
+    "linkedEnvironmentMetadata": {
+      "resourceId": "5044226a-5f6b-44a4-b7d6-f1532bfa66dc",
+      "friendlyName": "Personal Productivity",
+      "uniqueName": "unq5044226a5f6b44a4b7d6f1532bfa6",
+      "domainName": "orgde2c08e2",
+      "version": "9.2.26054.132",
+      "instanceUrl": "https://orgde2c08e2.crm17.dynamics.com/",
+      "instanceApiUrl": "https://orgde2c08e2.api.crm17.dynamics.com",
+      "baseLanguage": 1033,
+      "instanceState": "Ready",
+      "createdTime": "2023-02-02T09:40:29.333Z",
+      "backgroundOperationsState": "Enabled",
+      "scaleGroup": "CHECRMLIVESG602",
+      "crmGeo": "CHE",
+      "platformSku": "Standard",
+      "schemaType": "Standard",
+      "isDormant": false
+    },
+    "trialScenarioType": "None",
+    "retentionPeriod": "P7D",
+    "states": {
+      "management": {
+        "id": "Ready"
+      },
+      "runtime": {
+        "runtimeReasonCode": "NotSpecified",
+        "requestedBy": {
+          "displayName": "SYSTEM",
+          "type": "NotSpecified"
+        },
+        "id": "Enabled"
+      },
+      "disasterRecovery": {
+        "copyLocation": "NearCopy",
+        "id": "Unavailable"
+      }
+    },
+    "updateCadence": {
+      "id": "Frequent"
+    },
+    "retentionDetails": {
+      "retentionPeriod": "P7D",
+      "backupsAvailableFromDateTime": "2026-06-01T08:52:04.2222888Z"
+    },
+    "protectionStatus": {
+      "keyManagedBy": "Microsoft"
+    },
+    "cluster": {
+      "category": "Prod",
+      "number": "101",
+      "uriSuffix": "ch-il101.gateway.prod.island",
+      "geoShortName": "CH",
+      "environment": "Prod",
+      "scaleGroupId": "543eed62-0602-0000-0602-000000000000"
+    },
+    "connectedGroups": [],
+    "lifecycleOperationsEnforcement": {
+      "allowedOperations": [
+        {
+          "type": {
+            "id": "Move"
+          }
+        },
+        {
+          "type": {
+            "id": "Backup"
+          }
+        },
+        {
+          "type": {
+            "id": "Edit"
+          }
+        },
+        {
+          "type": {
+            "id": "Restore"
+          }
+        },
+        {
+          "type": {
+            "id": "SwapNetworkInjection"
+          }
+        },
+        {
+          "type": {
+            "id": "RevertNetworkInjection"
+          }
+        },
+        {
+          "type": {
+            "id": "Enable"
+          }
+        },
+        {
+          "type": {
+            "id": "Disable"
+          }
+        },
+        {
+          "type": {
+            "id": "EnableGovernanceConfiguration"
+          }
+        }
+      ],
+      "disallowedOperations": [
+        {
+          "type": {
+            "id": "Provision"
+          },
+          "reason": {
+            "message": "Provision cannot be performed because there is no linked CDS instance or the CDS instance version is not supported.",
+            "type": "CdsLink"
+          }
+        },
+        {
+          "type": {
+            "id": "Unlock"
+          },
+          "reason": {
+            "message": "Unlock cannot be performed because there is no linked CDS instance or the CDS instance version is not supported.",
+            "type": "CdsLink"
+          }
+        },
+        {
+          "type": {
+            "id": "Convert"
+          },
+          "reason": {
+            "message": "Convert cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "Copy"
+          },
+          "reason": {
+            "message": "Copy cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "Delete"
+          },
+          "reason": {
+            "message": "Delete cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "Promote"
+          },
+          "reason": {
+            "message": "Promote cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "Recover"
+          },
+          "reason": {
+            "message": "Recover cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "Reset"
+          },
+          "reason": {
+            "message": "Reset cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "UpdateProtectionStatus"
+          },
+          "reason": {
+            "message": "UpdateProtectionStatus cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "NewIdentity"
+          },
+          "reason": {
+            "message": "NewIdentity cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "SwapIdentity"
+          },
+          "reason": {
+            "message": "SwapIdentity cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "RevertIdentity"
+          },
+          "reason": {
+            "message": "RevertIdentity cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "PrepareTenantToTenant"
+          },
+          "reason": {
+            "message": "PrepareTenantToTenant cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "MigrateTenantToTenant"
+          },
+          "reason": {
+            "message": "MigrateTenantToTenant cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "ForceFailover"
+          },
+          "reason": {
+            "message": "ForceFailover cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "DisasterRecoveryDrill"
+          },
+          "reason": {
+            "message": "DisasterRecoveryDrill cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "FailbackToNearCopy"
+          },
+          "reason": {
+            "message": "FailbackToNearCopy cannot be performed on environment of type Default.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "RotateCustomerManagedKey"
+          },
+          "reason": {
+            "type": "EnvironmentCmkLinked"
+          }
+        },
+        {
+          "type": {
+            "id": "RevertToMicrosoftKey"
+          },
+          "reason": {
+            "type": "EnvironmentCmkLinked"
+          }
+        },
+        {
+          "type": {
+            "id": "NewCustomerManagedKey"
+          },
+          "reason": {
+            "message": "NewCustomerManagedKey cannot be performed on Power Platform environment because of the governance configuration.",
+            "type": "GovernanceConfig"
+          }
+        },
+        {
+          "type": {
+            "id": "NewNetworkInjection"
+          },
+          "reason": {
+            "message": "NewNetworkInjection cannot be performed on Power Platform environment because of the governance configuration.",
+            "type": "GovernanceConfig"
+          }
+        },
+        {
+          "type": {
+            "id": "DisableGovernanceConfiguration"
+          },
+          "reason": {
+            "message": "DisableGovernanceConfiguration cannot be performed on Power Platform environment because of the governance configuration.",
+            "type": "GovernanceConfig"
+          }
+        },
+        {
+          "type": {
+            "id": "UpdateGovernanceConfiguration"
+          },
+          "reason": {
+            "message": "UpdateGovernanceConfiguration cannot be performed on Power Platform environment because of the governance configuration.",
+            "type": "GovernanceConfig"
+          }
+        }
+      ]
+    },
+    "governanceConfiguration": {
+      "protectionLevel": "Basic"
+    },
+    "bingChatEnabled": true,
+    "m365Enabled": true,
+    "appDraftingCopilotEnabled": true,
+    "enableAnalyticsForMakers": true
+  }
+}

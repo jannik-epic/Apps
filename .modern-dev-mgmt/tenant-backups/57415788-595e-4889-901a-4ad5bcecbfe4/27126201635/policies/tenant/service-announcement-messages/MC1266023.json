@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-03-30T21:49:45Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T19:58:05.217Z",
+  "title": "(Updated) Microsoft 365 Copilot: Comprehensive Copilot metrics in Copilot Analytics",
+  "id": "MC1266023",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

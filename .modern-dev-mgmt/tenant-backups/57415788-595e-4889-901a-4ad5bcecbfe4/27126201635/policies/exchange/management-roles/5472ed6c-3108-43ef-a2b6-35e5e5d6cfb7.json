@@ -1,0 +1,43 @@
+{
+  "RoleEntries": [
+    "SetHoldOnMailboxes",
+    "GetHoldOnMailboxes",
+    "GetDiscoverySearchConfiguration"
+  ],
+  "RoleType": "LegalHoldApplication",
+  "ImplicitRecipientReadScope": "Organization",
+  "ImplicitRecipientWriteScope": "Organization",
+  "ImplicitConfigReadScope": "OrganizationConfig",
+  "ImplicitConfigWriteScope": "OrganizationConfig",
+  "IsRootRole": true,
+  "IsEndUserRole": false,
+  "MailboxPlanIndex": "",
+  "Description": "This role allows partner applications to query legal hold status.",
+  "Parent": null,
+  "RoleState": "Usable",
+  "IsDeprecated": false,
+  "IsServicePrincipalRole": false,
+  "AllowEmptyRole": false,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "0.12 (14.0.451.0)",
+  "Name": "LegalHoldApplication",
+  "DistinguishedName": "CN=LegalHoldApplication,CN=Roles,CN=RBAC,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "LegalHoldApplication",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Role",
+  "ObjectClass": [
+    "top",
+    "msExchRole"
+  ],
+  "WhenChanged": "2025-10-18T14:15:06+00:00",
+  "WhenCreated": "2021-05-29T08:17:34+00:00",
+  "WhenChangedUTC": "2025-10-18T14:15:06Z",
+  "WhenCreatedUTC": "2021-05-29T08:17:34Z",
+  "ExchangeObjectId": "5472ed6c-3108-43ef-a2b6-35e5e5d6cfb7",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "LegalHoldApplication",
+  "Guid": "5472ed6c-3108-43ef-a2b6-35e5e5d6cfb7",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Unchanged"
+}

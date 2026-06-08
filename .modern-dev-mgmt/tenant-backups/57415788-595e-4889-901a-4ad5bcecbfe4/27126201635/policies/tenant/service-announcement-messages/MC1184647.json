@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-11-11T00:36:32Z",
+  "endDateTime": "2026-08-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-01-05T21:46:12.697Z",
+  "title": "(Updated) Retirement of Assignments and Courses adaptive card extensions (ACE) in Viva Connections and SharePoint",
+  "id": "MC1184647",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Viva"
+  ]
+}

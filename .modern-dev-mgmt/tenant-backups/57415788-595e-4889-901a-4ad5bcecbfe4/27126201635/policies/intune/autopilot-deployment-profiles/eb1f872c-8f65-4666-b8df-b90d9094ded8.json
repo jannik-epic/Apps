@@ -1,0 +1,51 @@
+{
+  "@odata.type": "#microsoft.graph.azureADWindowsAutopilotDeploymentProfile",
+  "id": "eb1f872c-8f65-4666-b8df-b90d9094ded8",
+  "displayName": "EPIC_AEP_DEV_WIN_AAD Standard SharedDevice",
+  "description": "",
+  "language": "de-CH",
+  "locale": "de-CH",
+  "createdDateTime": "2022-08-22T11:47:27.662972Z",
+  "lastModifiedDateTime": "2023-03-13T23:43:00.1310807Z",
+  "enrollmentStatusScreenSettings": null,
+  "extractHardwareHash": true,
+  "hardwareHashExtractionEnabled": true,
+  "deviceNameTemplate": "XYZ-SH-%SERIAL%",
+  "deviceType": "windowsPc",
+  "enableWhiteGlove": false,
+  "preprovisioningAllowed": false,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "managementServiceAppId": null,
+  "outOfBoxExperienceSettings": {
+    "hidePrivacySettings": true,
+    "hideEULA": true,
+    "userType": "standard",
+    "deviceUsageType": "shared",
+    "skipKeyboardSelectionPage": false,
+    "hideEscapeLink": true
+  },
+  "outOfBoxExperienceSetting": {
+    "privacySettingsHidden": true,
+    "eulaHidden": true,
+    "userType": "standard",
+    "deviceUsageType": "shared",
+    "keyboardSelectionPageSkipped": false,
+    "escapeLinkHidden": true
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/windowsAutopilotDeploymentProfiles('eb1f872c-8f65-4666-b8df-b90d9094ded8')/microsoft.graph.azureADWindowsAutopilotDeploymentProfile/assignments",
+  "assignments": [
+    {
+      "id": "eb1f872c-8f65-4666-b8df-b90d9094ded8_748dfcd9-66cc-4516-b536-0820e29b700d_0",
+      "source": "direct",
+      "sourceId": "eb1f872c-8f65-4666-b8df-b90d9094ded8",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "748dfcd9-66cc-4516-b536-0820e29b700d"
+      }
+    }
+  ]
+}

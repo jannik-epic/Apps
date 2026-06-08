@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-04T15:35:37Z",
+  "endDateTime": "2026-07-23T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-04T15:35:57.877Z",
+  "title": "Microsoft Entra: App Instance Lock enabled by default for new applications",
+  "id": "MC1300584",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

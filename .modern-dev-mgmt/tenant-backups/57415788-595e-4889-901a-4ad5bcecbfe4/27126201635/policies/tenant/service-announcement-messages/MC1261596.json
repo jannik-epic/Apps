@@ -1,0 +1,15 @@
+{
+  "startDateTime": "2026-03-25T23:21:44Z",
+  "endDateTime": "2026-07-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-25T23:22:14.81Z",
+  "title": "Notice: Security Copilot will be included as part of your Microsoft 365 E5 plan soon",
+  "id": "MC1261596",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra",
+    "Microsoft Intune",
+    "Microsoft Defender XDR",
+    "Microsoft Purview"
+  ]
+}

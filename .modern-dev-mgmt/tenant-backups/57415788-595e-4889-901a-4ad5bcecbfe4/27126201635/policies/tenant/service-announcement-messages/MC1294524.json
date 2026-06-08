@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-28T22:13:13Z",
+  "endDateTime": "2026-07-01T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-29T18:46:35.227Z",
+  "title": "Microsoft Exchange Online: Dynamic distribution groups will populate membership faster on creation and modification",
+  "id": "MC1294524",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

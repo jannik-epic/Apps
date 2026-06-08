@@ -1,0 +1,82 @@
+{
+  "displayName": "Microsoft Whiteboard",
+  "description": "Collaborative digital canvas for effective meetings and engaged learning.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "7ef25a38-477a-4820-9a2b-da6494d3bc9c",
+  "webUrl": "https://whiteboard.office.com/",
+  "lastModifiedDateTime": "2023-04-13T23:39:56Z",
+  "keywords": {
+    "keywords": [
+      "online whiteboard",
+      "whiteboard microsoft",
+      "white board microsoft",
+      "whiteboard app",
+      "whiteboard online"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Gemeinsame digitale Leinwand für effektive Besprechungen und engagiertes Lernen.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Lienzo digital colaborativo para reuniones eficaces y aprendizaje comprometido.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Canevas numérique collaboratif pour des réunions efficaces et un apprentissage engagé.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Un'area di disegno digitale per riunioni efficaci e un'esperienza di apprendimento coinvolgente.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "効果的な会議と積極的な学習のための共同作業用デジタル キャンバス。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Tela digital colaborativa para reuniões eficazes e aprendizado envolvido.",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "ab871e53-384a-4e1a-a466-ab9e82ad743a",
+  "appId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+  "displayName": "Graph Explorer",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "7eb1f74d-d4a9-4bd2-9c52-769ce534229d",
+  "displayName": "Device restrictions",
+  "description": "Mifo Windows 10 and later Device restrictions",
+  "versionInfo": "Version 1",
+  "templateType": "deviceConfigurationForOffice365",
+  "platformType": "windows10AndLater",
+  "publishedDateTime": "2001-01-01T00:00:00Z"
+}

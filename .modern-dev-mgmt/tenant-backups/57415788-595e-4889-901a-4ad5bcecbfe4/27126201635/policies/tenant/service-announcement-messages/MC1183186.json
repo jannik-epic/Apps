@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-05T18:01:03.593Z",
+  "endDateTime": "2026-11-05T18:01:03.53Z",
+  "lastModifiedDateTime": "2025-11-05T18:01:04.48Z",
+  "title": "New resource on Known Issue Rollback (KIR) for Windows update management",
+  "id": "MC1183186",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

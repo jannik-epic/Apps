@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-19T22:23:38Z",
+  "endDateTime": "2026-06-22T07:00:00Z",
+  "lastModifiedDateTime": "2026-03-19T22:23:58.713Z",
+  "title": "Microsoft Teams for Mac: Improved access to account management",
+  "id": "MC1256301",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-06T21:04:20.437Z",
+  "endDateTime": "2027-03-06T21:04:20.387Z",
+  "lastModifiedDateTime": "2026-03-06T21:04:21.637Z",
+  "title": "Upcoming events to help with Secure Boot updates",
+  "id": "MC1245992",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

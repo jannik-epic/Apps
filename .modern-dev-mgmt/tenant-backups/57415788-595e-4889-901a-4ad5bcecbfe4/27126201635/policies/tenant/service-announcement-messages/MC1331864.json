@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-02T15:36:48Z",
+  "endDateTime": "2026-07-02T15:36:48Z",
+  "lastModifiedDateTime": "2026-06-02T15:38:46.473Z",
+  "title": "Power Platform admin center - Inventory now includes connector details for apps, flows, and agents",
+  "id": "MC1331864",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Power Platform"
+  ]
+}

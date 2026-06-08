@@ -1,0 +1,12 @@
+{
+  "id": "0ce6c588-da91-4002-940a-d8efdec9ebd3",
+  "appId": "8ad61c39-5b6e-447c-b26a-a64eee436502",
+  "displayName": "M365AdminAgent",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

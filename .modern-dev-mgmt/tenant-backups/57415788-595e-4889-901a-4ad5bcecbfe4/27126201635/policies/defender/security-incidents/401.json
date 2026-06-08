@@ -1,0 +1,11 @@
+{
+  "id": "401",
+  "status": "redirected",
+  "displayName": "Suspicious incoming RDP network activity",
+  "createdDateTime": "2026-05-01T01:26:52.86Z",
+  "lastUpdateDateTime": "2026-05-01T01:31:24.2066667Z",
+  "assignedTo": null,
+  "classification": "unknown",
+  "determination": "unknown",
+  "severity": "low"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "AATP_HoneyToken",
+  "azureTenantId": "57415788-595e-4889-901a-4ad5bcecbfe4",
+  "actionType": "Config",
+  "actionUrl": "https://security.microsoft.com/settings/identities?tabid=entityTags",
+  "controlCategory": "Identity",
+  "title": "Set a honeytoken account",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 61,
+  "remediation": "Go to the <a href='https://security.microsoft.com/settings/identities?tabid=entityTags' target='_blank'> Honeytoken Settings page</a> and set at least one honeytoken account.​",
+  "remediationImpact": "Unknown",
+  "service": "Azure ATP",
+  "threats": [
+    "Account Breach",
+    "Elevation of Privilege",
+    "Malicious Insider"
+  ],
+  "tier": "Core",
+  "userImpact": "low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "8892371c-3404-4724-8281-ba567953de14",
+  "appId": "9ec59623-ce40-4dc8-a635-ed0275b5d58a",
+  "displayName": "Purview Ecosystem",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

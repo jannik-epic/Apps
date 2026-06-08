@@ -1,0 +1,146 @@
+{
+  "id": "e7334c39-1678-45c5-8732-c92f785be0b7",
+  "appId": "2189435f-7f82-473a-8ca7-b6f14606fdb3",
+  "displayName": "Syskit Point Configuration Inventory",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-02T13:00:48Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": "https://www.syskit.com/_app-links/point/",
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "134fd756-38ce-4afd-ba33-e9623dbe66c2",
+          "type": "Role"
+        },
+        {
+          "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+          "type": "Role"
+        },
+        {
+          "id": "5b567255-7703-4780-807c-7be8301ae99b",
+          "type": "Role"
+        },
+        {
+          "id": "98830695-27a2-44f7-8c18-0c3ebc9698f6",
+          "type": "Role"
+        },
+        {
+          "id": "a82116e5-55eb-4c41-a434-62fe8a61c773",
+          "type": "Role"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        },
+        {
+          "id": "7a6ee1e7-141e-4cec-ae74-d9db155731ff",
+          "type": "Role"
+        },
+        {
+          "id": "dc377aa6-52d8-4e23-b271-2a7ae04cedf3",
+          "type": "Role"
+        },
+        {
+          "id": "2f51be20-0bb4-4fed-bf7b-db946066c75e",
+          "type": "Role"
+        },
+        {
+          "id": "06a5fe6d-c49d-46a7-b082-56b1b14103c7",
+          "type": "Role"
+        },
+        {
+          "id": "246dd0d5-5bd0-4def-940b-0421030a5b68",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000002-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "dc50a0fb-09a3-484d-be87-e023b12c6440",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+      "resourceAccess": [
+        {
+          "id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+          "type": "Role"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000002-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "5778995a-e1bf-45b8-affa-663a9f3f4d04",
+          "type": "Role"
+        },
+        {
+          "id": "9728c0c4-a06b-4e0e-8d1b-3d694e8ec207",
+          "type": "Role"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "resourceAccess": [
+        {
+          "id": "41094075-9dad-400e-a0bd-54e686782033",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "48ac35b8-9aa8-4d74-927d-1f4a14a0b239",
+      "resourceAccess": [
+        {
+          "id": "e60370c1-e451-437e-aa6e-d76df38e5f15",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "475226c6-020e-4fb2-8a90-7a972cbfc1d4",
+      "resourceAccess": [
+        {
+          "id": "0eb56b90-a7b5-43b5-9402-8137a8083e90",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

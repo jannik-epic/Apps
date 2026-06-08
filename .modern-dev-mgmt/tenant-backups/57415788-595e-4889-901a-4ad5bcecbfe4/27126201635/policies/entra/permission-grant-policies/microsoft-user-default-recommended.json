@@ -1,0 +1,98 @@
+{
+  "id": "microsoft-user-default-recommended",
+  "displayName": "Microsoft User Default Recommended Policy",
+  "description": "Permissions consentable based on Microsoft's current recommendations.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-user-default-recommended')/includes",
+  "includes": [
+    {
+      "id": "939e5649-d754-4aa4-90df-8bfb027d11cc",
+      "permissionClassification": "all",
+      "permissionType": "delegated",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    }
+  ],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-user-default-recommended')/excludes",
+  "excludes": [
+    {
+      "id": "716520dc-e24e-4bb8-880d-de5811827dcc",
+      "permissionClassification": "all",
+      "permissionType": "delegated",
+      "resourceApplication": "00000003-0000-0000-c000-000000000000",
+      "permissions": [
+        "89fe6a52-be36-487e-b7d8-d061c450a026",
+        "205e70e5-aba6-4c52-a976-6d2d46c48043",
+        "863451e7-0667-486c-a5d6-d135439485f0",
+        "df85f4d6-205c-4ac5-a5ea-6bf408dba283",
+        "570282fd-fa5c-430d-a7fd-fc8dc98a9dca",
+        "024d486e-b451-40bb-833d-3e66d98c5c73",
+        "a4b8392a-d8d1-4954-a029-8e668a39a170",
+        "7b9103a5-4610-446b-9670-80643382c1fa",
+        "b11fa0e7-fdb7-4dc9-b1f1-59facd463480",
+        "5df07973-7d5d-46ed-9847-1271055cbd51",
+        "82305458-296d-4edd-8b0b-74dd74c34526",
+        "465a38f9-76ea-45b9-9f34-9e8b0d4b0b42",
+        "662d75ba-a364-42ad-adee-f5f880ea4878",
+        "1ec239c2-d7c9-4623-a91a-a9775856bb36",
+        "2b9c4092-424d-4249-948d-b43879977640",
+        "12466101-c9b8-439a-8589-dd09ee67e8e9",
+        "f501c180-9344-439a-bca0-6cbf209fd270",
+        "9ff7295e-131b-4d94-90e1-69fde507ac11",
+        "9be106e1-f4e3-4df5-bdff-e4bc531cbe43",
+        "a65f2972-a4f8-4f5e-afd7-69ccb046d5dc",
+        "52dc2051-4958-4636-8f2a-281d39c6981c",
+        "077fde41-7e0b-4c5b-bcd1-e9d743a30c80",
+        "87f447af-9fa4-4c32-9dfa-4a57a73d18ce",
+        "818c620a-27a9-40bd-a6a5-d96f7d610b4b",
+        "ff91d191-45a0-43fd-b837-bd682c4a0b0f",
+        "9769c687-087d-48ac-9cb3-c37dde652038",
+        "652390e4-393a-48de-9484-05f9b1212954",
+        "d7b7f2d9-0f45-4ea1-9d42-e50810c06991"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    },
+    {
+      "id": "006933a0-a3ce-463e-8ffa-6f53a88d1a7a",
+      "permissionClassification": "all",
+      "permissionType": "delegated",
+      "resourceApplication": "00000002-0000-0ff1-ce00-000000000000",
+      "permissions": [
+        "266d2589-20b5-4f91-9a03-89247d1be8da",
+        "3b5f3d61-589b-4a3c-a359-5dd4b5ee5bd5",
+        "fb698133-92fa-453e-a9ed-688e10f2e5ac",
+        "195adc35-e27b-454b-a7ed-1ecdffa1c09f"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    }
+  ]
+}

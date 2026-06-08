@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-29T16:55:15Z",
+  "endDateTime": "2026-08-13T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T16:56:51.79Z",
+  "title": "Conditional Access policies now apply to Windows Hello for Business and macOS Platform SSO registration",
+  "id": "MC1326253",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

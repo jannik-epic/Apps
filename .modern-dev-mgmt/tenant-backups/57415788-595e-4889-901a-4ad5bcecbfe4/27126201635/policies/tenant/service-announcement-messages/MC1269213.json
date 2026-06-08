@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-03T05:14:37Z",
+  "endDateTime": "2026-06-12T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-03T05:14:47.41Z",
+  "title": "New meeting response option: decline and propose a new time in Outlook Mobile",
+  "id": "MC1269213",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

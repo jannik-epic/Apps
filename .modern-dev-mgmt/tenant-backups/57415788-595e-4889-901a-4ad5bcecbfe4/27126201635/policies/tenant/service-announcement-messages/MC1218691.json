@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-16T20:05:33.24Z",
+  "endDateTime": "2027-01-16T20:05:33.177Z",
+  "lastModifiedDateTime": "2026-01-16T20:05:34.623Z",
+  "title": "Initial deployment phase for Kerberos RC4 hardening begins with the January 2026 Windows security update",
+  "id": "MC1218691",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

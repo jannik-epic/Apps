@@ -1,0 +1,13 @@
+{
+  "id": "8c940d63-1420-49a6-99d0-20fb4fefee55",
+  "displayName": "EPF-SD-6S73832B",
+  "deviceId": "fdae7b4e-adb2-43f0-aec9-deef6e3af2bc",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.26200.8246",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2026-05-07T08:08:55Z"
+}

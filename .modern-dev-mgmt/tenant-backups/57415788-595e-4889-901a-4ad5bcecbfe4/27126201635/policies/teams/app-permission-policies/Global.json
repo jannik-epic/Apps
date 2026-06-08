@@ -1,0 +1,10 @@
+{
+  "Identity": "Global",
+  "DefaultCatalogApps": [],
+  "GlobalCatalogApps": [],
+  "PrivateCatalogApps": [],
+  "Description": null,
+  "DefaultCatalogAppsType": "BlockedAppList",
+  "GlobalCatalogAppsType": "BlockedAppList",
+  "PrivateCatalogAppsType": "BlockedAppList"
+}

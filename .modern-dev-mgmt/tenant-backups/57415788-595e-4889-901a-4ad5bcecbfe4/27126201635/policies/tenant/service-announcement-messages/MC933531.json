@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2024-11-13T23:14:19Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-20T17:25:55.957Z",
+  "title": "(Updated) Microsoft Purview | Information Protection: Auto-labeling for Microsoft Azure Storage and Azure SQL",
+  "id": "MC933531",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Purview"
+  ]
+}

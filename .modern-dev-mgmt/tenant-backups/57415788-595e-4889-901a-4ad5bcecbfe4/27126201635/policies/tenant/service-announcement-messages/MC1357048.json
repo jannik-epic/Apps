@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-06-04T21:36:03Z",
+  "endDateTime": "2026-07-22T21:36:00Z",
+  "lastModifiedDateTime": "2026-06-04T21:37:23.3Z",
+  "title": "Microsoft 365 Copilot for Sales - View Sales Development agent metrics in Sales agent",
+  "id": "MC1357048",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Power Platform)"
+  ]
+}

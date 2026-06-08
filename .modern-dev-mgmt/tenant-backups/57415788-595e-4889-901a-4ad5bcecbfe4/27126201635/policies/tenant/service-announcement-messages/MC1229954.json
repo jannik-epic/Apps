@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-09T23:19:49Z",
+  "endDateTime": "2026-07-13T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-22T16:18:10.053Z",
+  "title": "(Updated) Introducing Surveys Agent and Copilot Chat in Microsoft Forms",
+  "id": "MC1229954",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

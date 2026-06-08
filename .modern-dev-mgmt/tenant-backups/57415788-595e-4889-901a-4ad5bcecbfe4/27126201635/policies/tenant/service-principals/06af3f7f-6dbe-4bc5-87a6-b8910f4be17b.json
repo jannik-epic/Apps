@@ -1,0 +1,8 @@
+{
+  "id": "06af3f7f-6dbe-4bc5-87a6-b8910f4be17b",
+  "appId": "7f0d9978-eb2a-4974-88bd-f22a3006fe17",
+  "displayName": "Intune DiagnosticService",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

@@ -1,0 +1,18 @@
+{
+  "executionFrequency": "PT0S",
+  "retryCount": 3,
+  "blockExecutionNotifications": false,
+  "id": "c0056313-aa65-445d-bd66-fdf073d24445",
+  "displayName": "MS Teams - Install Shell Script",
+  "description": "13.06.2022",
+  "scriptContent": null,
+  "createdDateTime": "2022-08-22T11:47:11.9822797Z",
+  "lastModifiedDateTime": "2022-08-22T11:47:11.9822797Z",
+  "runAsAccount": "system",
+  "fileName": "installTeams.sh",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceShellScripts('c0056313-aa65-445d-bd66-fdf073d24445')/assignments",
+  "assignments": []
+}

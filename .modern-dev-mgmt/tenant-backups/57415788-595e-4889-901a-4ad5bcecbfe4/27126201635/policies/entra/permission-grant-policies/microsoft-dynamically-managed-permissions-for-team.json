@@ -1,0 +1,29 @@
+{
+  "id": "microsoft-dynamically-managed-permissions-for-team",
+  "displayName": "Dynamically managed Microsoft policy for team resource-specific consent",
+  "description": "Includes dynamically managed permissions allowed for team resource-specific consent.",
+  "includes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-dynamically-managed-permissions-for-team')/includes",
+  "includes": [
+    {
+      "id": "9cc16611-4f55-4405-ac32-3138bd0be516",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "any",
+      "permissions": [
+        "all"
+      ],
+      "clientApplicationIds": [
+        "all"
+      ],
+      "clientApplicationTenantIds": [
+        "all"
+      ],
+      "clientApplicationPublisherIds": [
+        "all"
+      ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    }
+  ],
+  "excludes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('microsoft-dynamically-managed-permissions-for-team')/excludes",
+  "excludes": []
+}

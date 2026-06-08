@@ -1,0 +1,11 @@
+{
+  "id": "6652727b-349a-45d2-b94e-d8434d487c35",
+  "appId": "6b650392-d446-472e-a422-e47047790237",
+  "displayName": "Power Platform Insights and Recommendations Prod",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "f70d748e-fbc2-4b56-a0e4-68482247f906",
+  "displayName": "Simon Project",
+  "description": " ",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "SimonProject",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2022-01-26T12:12:45Z"
+}

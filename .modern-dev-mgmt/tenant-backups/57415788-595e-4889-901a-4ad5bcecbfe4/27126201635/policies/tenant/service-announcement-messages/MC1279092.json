@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-13T22:52:56Z",
+  "endDateTime": "2026-06-18T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-23T19:57:04.747Z",
+  "title": "(Updated) Microsoft Entra: Passkeys in registration campaigns update",
+  "id": "MC1279092",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

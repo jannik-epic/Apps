@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-04-03T22:24:39Z",
+  "endDateTime": "2026-06-28T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-03T22:24:48.263Z",
+  "title": "Update to Copilot navigation pane chat history filtering",
+  "id": "MC1269870",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

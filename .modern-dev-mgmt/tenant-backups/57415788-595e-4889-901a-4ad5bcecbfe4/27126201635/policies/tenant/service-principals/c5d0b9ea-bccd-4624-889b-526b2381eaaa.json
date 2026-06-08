@@ -1,0 +1,10 @@
+{
+  "id": "c5d0b9ea-bccd-4624-889b-526b2381eaaa",
+  "appId": "b5635ae2-8abc-46b7-a8ce-2f49b5f614ed",
+  "displayName": "Modern Workplace Invoicing",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

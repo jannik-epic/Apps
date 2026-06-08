@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-13T22:45:08Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-02T23:29:50.213Z",
+  "title": "(Updated) Microsoft Viva Engage | Email sender domain migration from @yammer.com to @engage.mail.microsoft",
+  "id": "MC1251200",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva"
+  ]
+}

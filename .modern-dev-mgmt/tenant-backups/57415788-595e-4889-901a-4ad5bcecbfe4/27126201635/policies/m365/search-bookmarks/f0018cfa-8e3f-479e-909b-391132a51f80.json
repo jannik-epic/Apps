@@ -1,0 +1,82 @@
+{
+  "displayName": "Microsoft Defender",
+  "description": "Respond to threats and manage security across your identities, data, devices, apps, and infrastructure.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "f0018cfa-8e3f-479e-909b-391132a51f80",
+  "webUrl": "https://security.microsoft.com/",
+  "lastModifiedDateTime": "2023-04-13T23:39:56Z",
+  "keywords": {
+    "keywords": [
+      "defender microsoft",
+      "microsoft security",
+      "defender",
+      "microsoft defender",
+      "security microsoft"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Reagieren Sie auf Bedrohungen und verwalten Sie die Sicherheit für Ihre Identitäten, Daten, Geräte, Anwendungen und Infrastruktur.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Responda a amenazas y gestione la seguridad en todas sus identidades, datos, dispositivos, aplicaciones e infraestructura.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Répondez aux menaces et gérez la sécurité de vos identités, de vos données, de vos appareils, de vos applications et de votre infrastructure.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Consente di rispondere alle minacce e gestire la sicurezza tra identità, dati, dispositivi, app e infrastruttura.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "脅威に対応し、ID、データ、デバイス、アプリ、インフラストラクチャにわたるセキュリティを管理します。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Reaja às ameaças e gerencie a segurança em todos os seus dados, identidades, dispositivos, aplicativos e infraestrutura.",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

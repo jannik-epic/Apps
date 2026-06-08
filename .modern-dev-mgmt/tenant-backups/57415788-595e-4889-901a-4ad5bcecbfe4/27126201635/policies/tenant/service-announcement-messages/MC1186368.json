@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-14T23:59:31Z",
+  "endDateTime": "2026-06-15T07:00:00Z",
+  "lastModifiedDateTime": "2025-11-15T00:00:07.4Z",
+  "title": "Microsoft SharePoint: Update to custom scripting governance in App Catalog site",
+  "id": "MC1186368",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

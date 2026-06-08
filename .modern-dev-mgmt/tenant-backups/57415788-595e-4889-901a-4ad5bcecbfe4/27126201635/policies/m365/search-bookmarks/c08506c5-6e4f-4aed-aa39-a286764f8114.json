@@ -1,0 +1,79 @@
+{
+  "displayName": "My Account",
+  "description": "Manage your Microsoft account and profile.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "c08506c5-6e4f-4aed-aa39-a286764f8114",
+  "webUrl": "https://myaccount.microsoft.com/",
+  "lastModifiedDateTime": "2023-04-13T23:39:56Z",
+  "keywords": {
+    "keywords": [
+      "my account",
+      "my access"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Mein Konto",
+      "webUrl": null,
+      "description": "Verwalten Sie Ihr Microsoft-Konto und -Profil.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Mi cuenta",
+      "webUrl": null,
+      "description": "Administrar su cuenta y perfil de Microsoft.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Mon compte",
+      "webUrl": null,
+      "description": "Gérer votre profil et votre compte Microsoft.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Account personale",
+      "webUrl": null,
+      "description": "Consente di gestire l'account Microsoft.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "マイ アカウント",
+      "webUrl": null,
+      "description": "Microsoft アカウントおよびプロフィールを管理します。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Minha Conta",
+      "webUrl": null,
+      "description": "Gerenciar o perfil e a conta Microsoft.",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

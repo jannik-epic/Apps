@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-15T05:59:56Z",
+  "endDateTime": "2026-07-27T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-06T16:24:34.627Z",
+  "title": "(Updated) Assign participants to breakout rooms using CSV import in Microsoft Teams meetings",
+  "id": "MC1280561",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

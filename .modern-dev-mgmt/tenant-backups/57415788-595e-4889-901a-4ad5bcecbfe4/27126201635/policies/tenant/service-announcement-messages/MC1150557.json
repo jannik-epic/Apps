@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-09-09T17:07:03.357Z",
+  "endDateTime": "2026-09-09T17:07:03.31Z",
+  "lastModifiedDateTime": "2025-09-09T17:07:04.093Z",
+  "title": "Certificate-based authentication changes following installation of Windows updates released September 9, 2025",
+  "id": "MC1150557",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

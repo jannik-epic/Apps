@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-10T22:24:55Z",
+  "endDateTime": "2026-06-16T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-10T22:25:21.91Z",
+  "title": "Upcoming retirement of older Microsoft Defender for Endpoint mobile app versions (iOS and Android)",
+  "id": "MC1276511",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Defender XDR"
+  ]
+}

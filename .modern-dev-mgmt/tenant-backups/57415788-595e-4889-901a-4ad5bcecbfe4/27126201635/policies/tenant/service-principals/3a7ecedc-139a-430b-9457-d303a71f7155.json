@@ -1,0 +1,10 @@
+{
+  "id": "3a7ecedc-139a-430b-9457-d303a71f7155",
+  "appId": "3537bfe2-a663-4abf-a8a0-315b73c37366",
+  "displayName": "Meeting Viewer",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-10-31T23:03:55Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-15T18:51:40.427Z",
+  "title": "(Updated) Migration update for Office 365 connectors retirement in Teams – webhook URL support",
+  "id": "MC1181996",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

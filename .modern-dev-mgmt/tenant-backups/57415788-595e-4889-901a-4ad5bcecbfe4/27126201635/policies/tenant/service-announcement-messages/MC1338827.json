@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-06-03T22:55:01Z",
+  "endDateTime": "2026-07-25T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-03T22:55:08.087Z",
+  "title": "Microsoft Teams: Voicemail transcription service migration and new languages",
+  "id": "MC1338827",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Exchange Online",
+    "Microsoft Teams"
+  ]
+}

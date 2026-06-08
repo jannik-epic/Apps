@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-12T23:47:46Z",
+  "endDateTime": "2026-09-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-01T16:35:05.51Z",
+  "title": "Microsoft Purview compliance portal: Purview Information Protection | Classifier Simulation Mode (Health Monitoring)",
+  "id": "MC1185445",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

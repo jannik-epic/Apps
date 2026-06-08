@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-05T23:32:03Z",
+  "endDateTime": "2026-08-27T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-05T23:32:21.857Z",
+  "title": "Microsoft Purview: Data Security Investigations – Introducing optical character recognition (OCR) support",
+  "id": "MC1301831",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

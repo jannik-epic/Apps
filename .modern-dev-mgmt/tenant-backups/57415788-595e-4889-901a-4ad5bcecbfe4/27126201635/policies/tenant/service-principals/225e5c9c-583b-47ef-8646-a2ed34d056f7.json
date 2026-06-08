@@ -1,0 +1,8 @@
+{
+  "id": "225e5c9c-583b-47ef-8646-a2ed34d056f7",
+  "appId": "ce6ff14a-7fdc-4685-bbe0-f6afdfcfa8e0",
+  "displayName": "Azure Linux VM Sign-In",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

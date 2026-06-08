@@ -1,0 +1,79 @@
+{
+  "displayName": "Yammer",
+  "description": "Yammer is a collaboration tool that helps you connect and engage across the company. Start conversations, share knowledge, and build communities.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "a015d870-bbd1-4df1-86ce-3f64c1bed746",
+  "webUrl": "https://www.yammer.com/office365",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "yammer online",
+      "yammer login"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Yammer ist ein Kollaborationswerkzeug mit dem Sie sich im gesamten Unternehmen vernetzen und miteinander interagieren können. Starten Sie Gespräche, teilen Sie Wissen und richten Sie Gruppen ein.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Yammer es una herramienta de colaboración que lo ayuda a conectarse y participar en toda la compañía. Comience conversaciones, comparta conocimientos y cree comunidades.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Yammer est un outil de collaboration qui vous aide à vous connecter et à vous impliquer dans l'ensemble de l'entreprise. Démarrez des conversations, partagez des connaissances et créez des communautés.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Yammer è uno strumento di collaborazione che ti aiuta a connetterti e coinvolgerti in tutta l'azienda. Avviare conversazioni, condividere conoscenze e costruire comunità.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Yammerは、企業全体を結び付きとエンゲージを手助けする共同作業ツールです。会話を始めましょう、 ナレッジを共有しましょう、 コミュニティを作りましょう。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "A Yammer é uma ferramenta de colaboração que ajuda você a se conectar e se envolver em toda a empresa. Comece conversas, compartilhe conhecimento e crie comunidades",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

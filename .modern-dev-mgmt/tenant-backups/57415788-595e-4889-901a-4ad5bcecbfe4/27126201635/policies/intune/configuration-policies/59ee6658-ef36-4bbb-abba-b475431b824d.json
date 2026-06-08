@@ -1,0 +1,23 @@
+{
+  "createdDateTime": "2025-07-29T07:33:55.6933327Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2025-08-13T08:50:25.4721075Z",
+  "name": "BASE-EPICLAB_SEC_DEV_WIN-Auditing",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 27,
+  "technologies": "mdm",
+  "id": "59ee6658-ef36-4bbb-abba-b475431b824d",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('59ee6658-ef36-4bbb-abba-b475431b824d')/assignments",
+  "assignments": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "fbdf0f05-1469-483c-83ee-ee16142b8741",
+  "appId": "88c13d60-d81c-44d1-af22-5aef5b2fb5bb",
+  "displayName": "Site24x7",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "HideApp",
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "d209f6fa-3839-4d70-b83f-60b1c64d0e8f",
+  "deletedDateTime": null,
+  "displayName": "Group.Security",
+  "description": "\n        Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines\n        settings that can be used for Cloud Security Groups tenant-wide.\n      ",
+  "values": [
+    {
+      "name": "AllowToAddGuests",
+      "type": "System.Boolean",
+      "defaultValue": "true",
+      "description": "Flag indicating if guests are allowed in any Cloud Security Group."
+    },
+    {
+      "name": "EnableMIPLabels",
+      "type": "System.Boolean",
+      "defaultValue": "false",
+      "description": "Flag indicating whether Microsoft Information Protection labels can be assigned to Cloud Security Groups."
+    }
+  ]
+}

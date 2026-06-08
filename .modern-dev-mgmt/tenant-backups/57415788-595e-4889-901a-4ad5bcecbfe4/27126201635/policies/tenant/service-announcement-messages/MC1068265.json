@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-05-05T23:16:17Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2025-05-05T23:16:33.85Z",
+  "title": "Microsoft Viva Engage: Updated email subscription management",
+  "id": "MC1068265",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva"
+  ]
+}

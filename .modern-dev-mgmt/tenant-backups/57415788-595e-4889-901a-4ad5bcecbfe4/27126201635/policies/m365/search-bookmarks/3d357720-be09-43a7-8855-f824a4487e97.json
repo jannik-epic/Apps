@@ -1,0 +1,95 @@
+{
+  "displayName": "Facilities",
+  "description": null,
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": true,
+  "groupIds": [],
+  "id": "3d357720-be09-43a7-8855-f824a4487e97",
+  "webUrl": "",
+  "lastModifiedDateTime": "2021-04-04T22:59:24Z",
+  "keywords": {
+    "keywords": [
+      "facilities",
+      "facilities request",
+      "a/v repairs",
+      "instalaciones",
+      "solicitud de instalaciones",
+      "reparaciones de audio/vídeo",
+      "installations",
+      "demande d'installations",
+      "réparations audio / vidéo",
+      "strutture",
+      "richiesta di strutture",
+      "riparazioni audio/video",
+      "設備",
+      "設備の依頼",
+      "av修理",
+      "instalações",
+      "solicitação de instalações",
+      "reparos a / v"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": "Einrichtungen",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Instalaciones",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Installations",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Agevolazioni",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "ファシリティ",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Instalações",
+      "webUrl": null,
+      "description": null,
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

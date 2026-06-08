@@ -1,0 +1,10 @@
+{
+  "id": "ef468b37-1dfd-4b53-9ce0-c469738abbe9",
+  "appId": "f8968dbc-e867-4f51-b66d-5b36c3a91e4d",
+  "displayName": "printix-cloud-sync",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

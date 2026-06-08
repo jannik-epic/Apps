@@ -1,0 +1,66 @@
+{
+  "id": "bb2e56eb-7a28-405f-adf7-73eaef9355aa",
+  "templateId": null,
+  "displayName": "CLOUD APPS: All | LOCATION: External | DEVICE: Any | CLIENT: Browser | Force MFA",
+  "createdDateTime": "2021-05-18T15:30:50.1852302Z",
+  "modifiedDateTime": "2025-06-26T14:48:26.4355753Z",
+  "state": "enabled",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "browser"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [
+        "8b37575a-95da-490a-a537-1794715736f7"
+      ],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [
+        "a45ff828-bf10-41fb-aab6-e4fd1bb9fcc8"
+      ],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": {
+        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+        "externalTenants": {
+          "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+          "membershipKind": "all"
+        }
+      }
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "mfa"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('bb2e56eb-7a28-405f-adf7-73eaef9355aa')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "9ed2f865-6f01-4874-8fde-909e08c0cac7",
+  "lastHeartbeatDateTime": "0001-01-01T00:00:00Z",
+  "partnerState": "unknown",
+  "displayName": "IBM MaaS360",
+  "macOsOnboarded": false,
+  "androidOnboarded": false,
+  "iosOnboarded": false,
+  "macOsEnrollmentAssignments": [],
+  "androidEnrollmentAssignments": [],
+  "iosEnrollmentAssignments": []
+}

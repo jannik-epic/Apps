@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-15T06:02:52Z",
+  "endDateTime": "2026-08-06T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-15T06:03:01.65Z",
+  "title": "Microsoft Purview: Migration tool in Unified Catalog to migrate classic glossary terms",
+  "id": "MC1280564",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Purview"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "4d7967d5-25bd-4aab-ba3d-e5e976eb0d70",
+  "appId": "3603eff4-9141-41d5-ba8f-02fb3a439cd6",
+  "displayName": "Diagnostic Services Data Access",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

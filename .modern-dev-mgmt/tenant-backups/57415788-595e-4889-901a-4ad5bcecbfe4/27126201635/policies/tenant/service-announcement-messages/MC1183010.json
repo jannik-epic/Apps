@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-11-05T00:20:45Z",
+  "endDateTime": "2026-08-10T08:00:00Z",
+  "lastModifiedDateTime": "2026-03-16T17:12:58.167Z",
+  "title": "(Updated) Microsoft 365 Copilot: Q&A in Read Aloud enables real-time voice interactions",
+  "id": "MC1183010",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Copilot (Microsoft 365)",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

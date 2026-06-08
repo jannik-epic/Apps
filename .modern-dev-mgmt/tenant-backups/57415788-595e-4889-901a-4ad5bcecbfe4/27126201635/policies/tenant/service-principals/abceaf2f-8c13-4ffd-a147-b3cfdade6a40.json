@@ -1,0 +1,12 @@
+{
+  "id": "abceaf2f-8c13-4ffd-a147-b3cfdade6a40",
+  "appId": "2c7dd73f-7a21-485b-b97d-a2508fa152c3",
+  "displayName": "Azure ContainerApps Sessions",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

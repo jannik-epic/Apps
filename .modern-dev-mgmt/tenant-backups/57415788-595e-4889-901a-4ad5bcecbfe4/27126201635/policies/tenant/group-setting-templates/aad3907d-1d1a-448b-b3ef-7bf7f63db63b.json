@@ -1,0 +1,26 @@
+{
+  "id": "aad3907d-1d1a-448b-b3ef-7bf7f63db63b",
+  "deletedDateTime": null,
+  "displayName": "Prohibited Names Restricted Settings",
+  "description": "\n        Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines\n        settings that can be used for managing tenant-wide prohibited names restricted settings.\n      ",
+  "values": [
+    {
+      "name": "CustomAllowedSubStringsList",
+      "type": "System.String",
+      "defaultValue": "",
+      "description": "A comma delimited list of substring reserved words to allow for application display names."
+    },
+    {
+      "name": "CustomAllowedWholeWordsList",
+      "type": "System.String",
+      "defaultValue": "",
+      "description": "A comma delimited list of whole reserved words to allow for application display names."
+    },
+    {
+      "name": "DoNotValidateAgainstTrademark",
+      "type": "System.Boolean",
+      "defaultValue": "false",
+      "description": "Flag indicating if prohibited names validation against trademark global list is disabled."
+    }
+  ]
+}

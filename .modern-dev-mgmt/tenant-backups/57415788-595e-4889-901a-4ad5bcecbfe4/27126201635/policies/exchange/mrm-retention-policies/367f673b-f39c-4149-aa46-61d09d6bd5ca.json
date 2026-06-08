@@ -1,0 +1,42 @@
+{
+  "RetentionId": "367f673b-f39c-4149-aa46-61d09d6bd5ca",
+  "RetentionPolicyTagLinks": [
+    "5 Year Delete",
+    "1 Year Delete",
+    "6 Month Delete",
+    "Personal 5 year move to archive",
+    "1 Month Delete",
+    "1 Week Delete",
+    "Personal never move to archive",
+    "Personal 1 year move to archive",
+    "Default 2 year move to archive",
+    "Junk Email",
+    "Recoverable Items 14 days move to archive",
+    "Never Delete"
+  ],
+  "IsDefault": true,
+  "IsDefaultArbitrationMailbox": false,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "1.0 (14.0.100.0)",
+  "Name": "Default MRM Policy",
+  "DistinguishedName": "CN=Default MRM Policy,CN=Retention Policies Container,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "Default MRM Policy",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Mailbox-Recipient-Template",
+  "ObjectClass": [
+    "top",
+    "msExchRecipientTemplate",
+    "msExchMailboxRecipientTemplate"
+  ],
+  "WhenChanged": "2025-10-18T14:15:06+00:00",
+  "WhenCreated": "2021-05-29T08:20:10+00:00",
+  "WhenChangedUTC": "2025-10-18T14:15:06Z",
+  "WhenCreatedUTC": "2021-05-29T08:20:10Z",
+  "ExchangeObjectId": "367f673b-f39c-4149-aa46-61d09d6bd5ca",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "Default MRM Policy",
+  "Guid": "367f673b-f39c-4149-aa46-61d09d6bd5ca",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Changed"
+}

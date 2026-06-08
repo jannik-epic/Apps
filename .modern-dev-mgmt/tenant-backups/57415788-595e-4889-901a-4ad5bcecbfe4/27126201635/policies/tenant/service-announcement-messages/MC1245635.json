@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-06T15:46:01Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-05T22:32:41.77Z",
+  "title": "(Updated) Upcoming change: disabling Teams meeting recording expiration notification emails",
+  "id": "MC1245635",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

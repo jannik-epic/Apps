@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-22T18:43:11.49Z",
+  "endDateTime": "2027-04-22T18:43:11.49Z",
+  "lastModifiedDateTime": "2026-04-22T18:43:13.487Z",
+  "title": "Ask Microsoft Anything about Secure Boot certificate updates",
+  "id": "MC1288264",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

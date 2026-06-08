@@ -1,0 +1,11 @@
+{
+  "id": "421",
+  "status": "redirected",
+  "displayName": "Login from an unusual data center involving one user",
+  "createdDateTime": "2026-05-06T10:18:02.4Z",
+  "lastUpdateDateTime": "2026-05-06T10:19:18.3566667Z",
+  "assignedTo": null,
+  "classification": "unknown",
+  "determination": "unknown",
+  "severity": "low"
+}

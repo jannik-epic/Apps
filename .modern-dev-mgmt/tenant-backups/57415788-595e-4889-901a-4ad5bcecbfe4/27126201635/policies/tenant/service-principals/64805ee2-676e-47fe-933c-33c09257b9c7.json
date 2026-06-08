@@ -1,0 +1,12 @@
+{
+  "id": "64805ee2-676e-47fe-933c-33c09257b9c7",
+  "appId": "6d81daa3-fdfe-4d42-a619-5b89358c3838",
+  "displayName": "Defender for Cloud Apps - Microsoft Copilot Collector",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

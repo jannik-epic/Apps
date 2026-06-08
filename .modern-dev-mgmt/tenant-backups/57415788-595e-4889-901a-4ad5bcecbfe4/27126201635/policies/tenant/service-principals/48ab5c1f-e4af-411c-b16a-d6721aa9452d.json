@@ -1,0 +1,12 @@
+{
+  "id": "48ab5c1f-e4af-411c-b16a-d6721aa9452d",
+  "appId": "a665538c-5b51-48a1-b3a5-cf20f42c3785",
+  "displayName": "Prod-DPS-vNext-1P",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

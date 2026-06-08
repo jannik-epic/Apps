@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "1f694cad-6954-416d-b9a3-617dc0906657",
+  "appId": "1f694cad-6954-416d-b9a3-617dc0906657",
+  "displayName": "Adriana (Learn)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

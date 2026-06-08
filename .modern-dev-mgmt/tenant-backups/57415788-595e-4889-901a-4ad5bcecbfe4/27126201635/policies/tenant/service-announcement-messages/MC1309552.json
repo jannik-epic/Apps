@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-13T17:05:11.413Z",
+  "endDateTime": "2027-05-13T17:05:11.413Z",
+  "lastModifiedDateTime": "2026-05-13T17:05:12.467Z",
+  "title": "Tune in May 18 to ask Microsoft anything about Secure Boot",
+  "id": "MC1309552",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

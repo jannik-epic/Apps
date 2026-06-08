@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "f3c5e126-1fb2-4b2e-bc56-10efb52affed",
+  "appId": "f3c5e126-1fb2-4b2e-bc56-10efb52affed",
+  "displayName": "Nicole (News)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

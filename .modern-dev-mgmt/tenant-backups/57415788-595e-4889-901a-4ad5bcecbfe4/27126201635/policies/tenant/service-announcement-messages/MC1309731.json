@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2026-05-13T22:56:41Z",
+  "endDateTime": "2026-06-15T07:00:00Z",
+  "lastModifiedDateTime": "2026-06-04T16:50:02.097Z",
+  "title": "(Updated) PowerPoint for Windows desktop: “Visualize this slide” skill in Copilot",
+  "id": "MC1309731",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps",
+    "Microsoft 365 Copilot Chat"
+  ]
+}

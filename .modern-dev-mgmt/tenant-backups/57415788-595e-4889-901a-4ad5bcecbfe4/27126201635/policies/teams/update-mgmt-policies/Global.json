@@ -1,0 +1,14 @@
+{
+  "Identity": "Global",
+  "DisabledInProductMessages": [],
+  "Description": null,
+  "AllowManagedUpdates": false,
+  "AllowPreview": false,
+  "UpdateDayOfWeek": 1,
+  "UpdateTime": "18:00",
+  "UpdateTimeOfDay": "2026-06-08T18:00:00",
+  "AllowPublicPreview": "Enabled",
+  "AllowPrivatePreview": null,
+  "UseNewTeamsClient": "MicrosoftChoice",
+  "BlockLegacyAuthorization": false
+}

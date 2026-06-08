@@ -1,0 +1,7 @@
+{
+  "id": "1f02d669-00e9-4c75-92ba-4ce900c3b207",
+  "deletedDateTime": null,
+  "description": "Can create and manage the attribute schema available to all user flows.",
+  "displayName": "External ID User Flow Attribute Administrator",
+  "roleTemplateId": "0f971eea-41eb-4569-a71e-57bb8a3eff1e"
+}

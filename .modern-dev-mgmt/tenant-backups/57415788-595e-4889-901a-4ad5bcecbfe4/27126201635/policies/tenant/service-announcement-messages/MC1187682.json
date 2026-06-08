@@ -1,0 +1,13 @@
+{
+  "startDateTime": "2025-11-18T16:21:30Z",
+  "endDateTime": "2026-07-15T08:00:00Z",
+  "lastModifiedDateTime": "2026-05-18T22:58:20.787Z",
+  "title": "(Updated) Microsoft Edge: Microsoft 365 Copilot will support summarization and contextual grounding",
+  "id": "MC1187682",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 suite",
+    "Microsoft Copilot (Microsoft 365)"
+  ]
+}

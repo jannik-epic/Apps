@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-11-11T18:02:07.663Z",
+  "endDateTime": "2026-11-11T18:02:07.663Z",
+  "lastModifiedDateTime": "2025-11-11T18:02:13.367Z",
+  "title": "Windows 11, version 23H2 (Home and Pro editions) has reached end of servicing",
+  "id": "MC1184891",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "clientId": "f3cbfbcd-d3a6-4b56-a1d8-709fa9e58c0c",
+  "consentType": "AllPrincipals",
+  "id": "zfvL86bTVkuh2HCfqeWMDPdFFm7ciexFvXU9vToEabM",
+  "principalId": null,
+  "resourceId": "6e1645f7-89dc-45ec-bd75-3dbd3a0469b3",
+  "scope": "EWS.AccessAsUser.All"
+}

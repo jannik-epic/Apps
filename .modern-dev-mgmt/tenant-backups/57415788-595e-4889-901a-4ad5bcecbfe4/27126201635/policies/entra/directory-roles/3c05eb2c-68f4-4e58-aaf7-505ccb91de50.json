@@ -1,0 +1,7 @@
+{
+  "id": "3c05eb2c-68f4-4e58-aaf7-505ccb91de50",
+  "deletedDateTime": null,
+  "description": "Can create or update Exchange Online recipients within the Exchange Online organization.",
+  "displayName": "Exchange Recipient Administrator",
+  "roleTemplateId": "31392ffb-586c-42d1-9346-e59415a2cc4e"
+}

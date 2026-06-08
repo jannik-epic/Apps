@@ -1,0 +1,93 @@
+{
+  "displayName": "Office 365 Admin Center",
+  "description": "Manage your Office 365 features and users. Only authorized administrators can access this site.",
+  "categories": [
+    "Microsoft suggests",
+    "Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "b256147f-6cc0-42bf-98da-dc5d251a0345",
+  "webUrl": "https://portal.office.com/adminportal/home",
+  "lastModifiedDateTime": "2021-12-10T11:25:12Z",
+  "keywords": {
+    "keywords": [
+      "office admin portal",
+      "o365 admin portal",
+      "office admin",
+      "o365 admin",
+      "office admin center",
+      "o365 admin center",
+      "office admin centro",
+      "o365 admin centro",
+      "office admin centre",
+      "o365 admin centre",
+      "centro dioffice admin",
+      "centro di o365 admin",
+      "office admin センター",
+      "o365 admin センター",
+      "office 365 admin portal",
+      "admin office 365"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Verwalten Sie Ihre Office 365-Funktionen und -Benutzer. Nur autorisierte Administratoren können auf diese Site zugreifen.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": "Centro de Admin Office 365",
+      "webUrl": null,
+      "description": "Gestione los resultados y permisos de Bing for business. Solo los administradores autorizados pueden acceder a este sitio.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Office 365 Admin Centre",
+      "webUrl": null,
+      "description": "\"Gèrez les caractéristiques et les utilisateurs de Office 365. Seuls les administrateurs autorisés peuvent accéder à ce site.\"",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": "Pannello Admin di Office 365",
+      "webUrl": null,
+      "description": "Gestisci le funzioni e gli utenti del tuo Office 365. Solo gli amministratori autorizzati possono accedere a questo sito.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "Office 365 Admin センター",
+      "webUrl": null,
+      "description": "あなたのOffice 365 の設定とユーザーを管理しましょう。権限のある管理者だけが、このサイトにアクセスできます",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": "Office 365 admin centro",
+      "webUrl": null,
+      "description": "Gerencie seus recursos e usuários do Office 365. Somente administradores autorizados podem acessar este site",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

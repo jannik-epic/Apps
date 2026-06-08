@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-03T05:13:55Z",
+  "endDateTime": "2026-06-12T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-03T05:14:04.577Z",
+  "title": "New option to keep or delete meeting invitations after responding",
+  "id": "MC1269212",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Exchange Online"
+  ]
+}

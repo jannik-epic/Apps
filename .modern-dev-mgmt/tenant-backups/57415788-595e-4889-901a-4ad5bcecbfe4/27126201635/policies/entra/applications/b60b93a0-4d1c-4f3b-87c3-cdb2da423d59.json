@@ -1,0 +1,52 @@
+{
+  "id": "b60b93a0-4d1c-4f3b-87c3-cdb2da423d59",
+  "appId": "8b3d5136-99f8-46d0-93be-20f53a632ff3",
+  "displayName": "Purview DLP Policy Export",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-02-26T04:27:51Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e321f0bb-e7f7-481e-bb28-e3b0b32d4bd0",
+          "type": "Role"
+        },
+        {
+          "id": "b633e1c5-b582-4048-a93e-9f11b44c7e96",
+          "type": "Role"
+        },
+        {
+          "id": "19da66cb-0571-4a25-9088-ea24ba585c01",
+          "type": "Role"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        },
+        {
+          "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

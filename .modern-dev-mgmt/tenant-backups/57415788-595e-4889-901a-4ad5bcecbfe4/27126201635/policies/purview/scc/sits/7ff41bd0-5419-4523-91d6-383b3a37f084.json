@@ -1,0 +1,5 @@
+{
+  "id": "7ff41bd0-5419-4523-91d6-383b3a37f084",
+  "name": "Azure Storage Account Key (Generic)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

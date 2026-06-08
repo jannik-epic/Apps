@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-13T22:06:22.503Z",
+  "endDateTime": "2027-01-13T22:06:22.457Z",
+  "lastModifiedDateTime": "2026-01-13T22:06:24.537Z",
+  "title": "The January 2026 Windows security update is now available",
+  "id": "MC1217507",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

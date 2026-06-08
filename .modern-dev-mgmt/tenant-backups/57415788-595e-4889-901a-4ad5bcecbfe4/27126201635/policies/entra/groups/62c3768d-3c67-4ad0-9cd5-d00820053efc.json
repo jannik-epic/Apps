@@ -1,0 +1,13 @@
+{
+  "id": "62c3768d-3c67-4ad0-9cd5-d00820053efc",
+  "displayName": "Andreas [Prj]",
+  "description": "Andreas Team",
+  "mailEnabled": true,
+  "securityEnabled": false,
+  "mailNickname": "AndreasPrj",
+  "groupTypes": [
+    "Unified"
+  ],
+  "visibility": "Private",
+  "createdDateTime": "2021-05-28T04:56:33Z"
+}

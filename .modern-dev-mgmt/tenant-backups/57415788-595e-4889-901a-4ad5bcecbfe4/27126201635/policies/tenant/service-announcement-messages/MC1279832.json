@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-14T17:03:33.14Z",
+  "endDateTime": "2027-04-14T17:03:33.14Z",
+  "lastModifiedDateTime": "2026-04-14T17:03:44.817Z",
+  "title": "Notice: The April 2026 Scan Cab for Microsoft updates is delayed",
+  "id": "MC1279832",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

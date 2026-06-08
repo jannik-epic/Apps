@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-08-15T16:24:14.69Z",
+  "endDateTime": "2026-08-15T16:24:14.613Z",
+  "lastModifiedDateTime": "2025-08-15T16:24:15.947Z",
+  "title": "An updated version of the August 2025 Scan Cab is available\t",
+  "id": "MC1135775",
+  "category": "preventOrFixIssue",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2025-12-16T23:40:03Z",
+  "endDateTime": "2026-07-06T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-22T21:27:56.103Z",
+  "title": "(Updated) Microsoft Entra: Cross-tenant security group synchronization",
+  "id": "MC1198077",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

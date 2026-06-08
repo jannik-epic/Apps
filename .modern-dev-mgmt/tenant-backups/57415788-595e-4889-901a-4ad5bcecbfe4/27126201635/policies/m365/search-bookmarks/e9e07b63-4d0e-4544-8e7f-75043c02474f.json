@@ -1,0 +1,80 @@
+{
+  "displayName": "Microsoft Community",
+  "description": "Need help? We've got answers! Search, browse, or ask a question.",
+  "categories": [
+    "Microsoft suggests",
+    " Microsoft Recommends"
+  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "languageTags": [],
+  "platforms": [],
+  "powerAppIds": [],
+  "state": "published",
+  "isSuggested": false,
+  "groupIds": [],
+  "id": "e9e07b63-4d0e-4544-8e7f-75043c02474f",
+  "webUrl": "https://answers.microsoft.com/",
+  "lastModifiedDateTime": "2023-04-13T23:39:56Z",
+  "keywords": {
+    "keywords": [
+      "microsoft answers",
+      "microsoft help",
+      "help microsoft"
+    ],
+    "reservedKeywords": [],
+    "matchSimilarKeywords": true
+  },
+  "targetedVariations": [
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Benötigen Sie Hilfe? Wir haben die Antworten! Suchen, durchsuchen oder stellen Sie eine Frage.",
+      "languageTag": "de-de",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "¿Necesita ayuda? Tenemos las respuestas. Busque, explore o formule una pregunta.",
+      "languageTag": "es-es",
+      "platform": null
+    },
+    {
+      "displayName": "Communauté Microsoft",
+      "webUrl": null,
+      "description": "Vous avez besoin d’aide ? Nous avons des réponses ! Recherchez, parcourez, ou posez une question.",
+      "languageTag": "fr-fr",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Serve aiuto? Siamo qui per te! Cerca, esplora o poni una domanda.",
+      "languageTag": "it-it",
+      "platform": null
+    },
+    {
+      "displayName": "Microsoft コミュニティ",
+      "webUrl": null,
+      "description": "サポートが必要ですか?答えをお教えします。検索、参照、または質問します。",
+      "languageTag": "ja-jp",
+      "platform": null
+    },
+    {
+      "displayName": null,
+      "webUrl": null,
+      "description": "Precisa de ajuda? Temos respostas! Pesquise, navegue ou faça uma pergunta.",
+      "languageTag": "pt-br",
+      "platform": null
+    }
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "",
+      "id": ""
+    }
+  }
+}

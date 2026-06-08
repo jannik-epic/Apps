@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-19T22:01:56Z",
+  "endDateTime": "2026-07-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-26T17:52:58.543Z",
+  "title": "(Updated) Keyboard shortcut dialog has search functionality",
+  "id": "MC1316228",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Teams"
+  ]
+}

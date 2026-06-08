@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "b8aec2e0-3111-424c-b0b7-5cc47e125b64",
+  "appId": "b8aec2e0-3111-424c-b0b7-5cc47e125b64",
+  "displayName": "Agent Lead",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

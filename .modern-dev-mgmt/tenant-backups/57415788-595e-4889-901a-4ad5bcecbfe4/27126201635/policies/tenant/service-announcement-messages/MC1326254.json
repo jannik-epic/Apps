@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-05-29T16:57:16Z",
+  "endDateTime": "2026-08-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-05-29T16:57:25.75Z",
+  "title": "Microsoft 365 Archive: file-level archiving public preview",
+  "id": "MC1326254",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "SharePoint Online"
+  ]
+}

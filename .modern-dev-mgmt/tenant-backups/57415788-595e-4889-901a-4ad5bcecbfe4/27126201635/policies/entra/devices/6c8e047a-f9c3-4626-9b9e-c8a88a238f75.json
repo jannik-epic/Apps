@@ -1,0 +1,13 @@
+{
+  "id": "6c8e047a-f9c3-4626-9b9e-c8a88a238f75",
+  "displayName": "templ-1",
+  "deviceId": "d7b9998f-0f84-470d-bb64-464b0552be6a",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.22631.2715",
+  "trustType": "AzureAd",
+  "profileType": "SecureVM",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2023-11-22T10:35:20Z"
+}

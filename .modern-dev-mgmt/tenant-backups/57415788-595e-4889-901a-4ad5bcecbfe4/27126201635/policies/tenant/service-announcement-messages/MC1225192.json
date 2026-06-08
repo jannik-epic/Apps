@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-01-30T22:53:31Z",
+  "endDateTime": "2026-12-31T08:00:00Z",
+  "lastModifiedDateTime": "2026-04-16T17:18:52.797Z",
+  "title": "Microsoft Entra ID Governance: Azure subscription required to continue using guest governance features",
+  "id": "MC1225192",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Entra"
+  ]
+}

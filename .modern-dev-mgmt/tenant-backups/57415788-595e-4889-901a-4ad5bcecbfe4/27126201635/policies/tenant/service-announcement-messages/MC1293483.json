@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-04-27T22:16:09Z",
+  "endDateTime": "2026-06-30T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-27T22:16:15.98Z",
+  "title": "Microsoft Secure Score: New recommendation for Secure Boot 2023 certificate readiness in Microsoft Defender for Endpoint",
+  "id": "MC1293483",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Microsoft Defender XDR"
+  ]
+}

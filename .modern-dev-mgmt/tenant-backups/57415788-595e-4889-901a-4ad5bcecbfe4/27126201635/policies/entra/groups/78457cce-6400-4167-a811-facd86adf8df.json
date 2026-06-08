@@ -1,0 +1,11 @@
+{
+  "id": "78457cce-6400-4167-a811-facd86adf8df",
+  "displayName": "PackageFlow Apps E2E Provision Smoke 20260519-1045",
+  "description": "PackageFlow Apps E2E smoke group created by workflow test on 2026-05-19",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "packageflow-apps-e2e-20260519-1045",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-05-19T08:45:27Z"
+}

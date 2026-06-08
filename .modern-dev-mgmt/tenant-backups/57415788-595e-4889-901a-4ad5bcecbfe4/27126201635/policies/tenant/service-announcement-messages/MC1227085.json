@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-02-05T00:07:04Z",
+  "endDateTime": "2026-06-29T07:00:00Z",
+  "lastModifiedDateTime": "2026-04-30T21:35:06.703Z",
+  "title": "(Updated) Engage is retiring live events powered by Teams Live Events effective May 4th, 2026",
+  "id": "MC1227085",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft Viva"
+  ]
+}

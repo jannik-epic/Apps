@@ -1,0 +1,5 @@
+{
+  "id": "417b111d-1909-4457-b686-d6470b29a7ec",
+  "name": "X.509 Certificate Private Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dc98b79a-cc96-4299-9e74-36ee3b9a1ac7",
+  "displayName": "UFUK-TEST2",
+  "deviceId": "5b8867af-c60f-4e77-98fa-96f02113c160",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.22000.318",
+  "trustType": "AzureAd",
+  "profileType": "RegisteredDevice",
+  "isCompliant": false,
+  "isManaged": true,
+  "registrationDateTime": "2022-02-11T13:09:39Z"
+}

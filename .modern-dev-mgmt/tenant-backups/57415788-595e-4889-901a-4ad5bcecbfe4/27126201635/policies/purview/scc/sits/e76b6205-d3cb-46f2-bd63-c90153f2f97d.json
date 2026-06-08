@@ -1,0 +1,5 @@
+{
+  "id": "e76b6205-d3cb-46f2-bd63-c90153f2f97d",
+  "name": "SQL Server Connection String",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

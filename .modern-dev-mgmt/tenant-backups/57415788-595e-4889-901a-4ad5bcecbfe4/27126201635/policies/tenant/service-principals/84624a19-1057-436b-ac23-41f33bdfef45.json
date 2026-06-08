@@ -1,0 +1,14 @@
+{
+  "id": "84624a19-1057-436b-ac23-41f33bdfef45",
+  "appId": "b541e4b4-d868-4a00-b5b9-42fc1876fb94",
+  "displayName": "Neapac-Agent (Microsoft Copilot Studio)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "AgenticApp",
+    "AIAgentBuilder",
+    "AgentCreatedBy:CopilotStudio",
+    "AgenticInstance",
+    "power-virtual-agents-8213f2e8-9e90-58b5-50f5-d2b9af4ab4a8"
+  ]
+}

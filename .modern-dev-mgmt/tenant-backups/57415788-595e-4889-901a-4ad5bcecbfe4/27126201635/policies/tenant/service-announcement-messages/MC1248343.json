@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2026-03-10T20:01:06.917Z",
+  "endDateTime": "2027-03-10T20:01:06.823Z",
+  "lastModifiedDateTime": "2026-03-10T20:01:08.163Z",
+  "title": "RSAT capabilities arrive on Arm-based Windows 11 PCs",
+  "id": "MC1248343",
+  "category": "stayInformed",
+  "severity": "normal",
+  "services": [
+    "Windows"
+  ]
+}

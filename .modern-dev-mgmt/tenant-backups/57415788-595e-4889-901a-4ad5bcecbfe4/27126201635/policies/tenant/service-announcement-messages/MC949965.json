@@ -1,0 +1,12 @@
+{
+  "startDateTime": "2024-12-06T01:09:13Z",
+  "endDateTime": "2028-03-31T07:00:00Z",
+  "lastModifiedDateTime": "2026-02-20T20:05:23.45Z",
+  "title": "(Updated) Toggle to new Outlook",
+  "id": "MC949965",
+  "category": "planForChange",
+  "severity": "normal",
+  "services": [
+    "Microsoft 365 apps"
+  ]
+}
