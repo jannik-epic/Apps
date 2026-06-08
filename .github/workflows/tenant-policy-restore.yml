@@ -616,7 +616,9 @@ jobs:
                   $nvalid = (Get-Command $newCmd -ErrorAction Stop).Parameters.Keys
                   $nsplat = Build-Splat -obj $obj -validKeys $nvalid -ro $readonly
                   if ($nvalid -contains 'Name' -and -not $nsplat.ContainsKey('Name')) { $nsplat['Name'] = [string]$p.displayName }
-                  & $newCmd @nsplat -ErrorAction Stop | Out-Null
+                  # Cmdlets like New-CsTeams*Policy / New-DlpCompliancePolicy take -Identity (not -Name).
+                  if ($nvalid -contains 'Identity') { & $newCmd -Identity $id @nsplat -ErrorAction Stop | Out-Null }
+                  else { & $newCmd @nsplat -ErrorAction Stop | Out-Null }
                   $r.status='applied'; $r.cmdlet=$newCmd; $r.created=$true; $results.Add($r)|Out-Null
                 } catch { $r.status='failed'; $r.reason=$_.Exception.Message; $results.Add($r)|Out-Null }
               } else { $r.status='failed'; $r.reason=$_.Exception.Message; $results.Add($r)|Out-Null }
