@@ -28,7 +28,7 @@ jobs:
             exit 0
           fi
           node - <<'NODE'
-          const { execSync } = require('child_process');
+          const { execFileSync } = require('child_process');
           const fs = require('fs');
           const os = process.platform === 'win32' ? 'windows' : 'macos';
           const apps = JSON.parse(fs.readFileSync('catalog_apps_managed.json','utf8'));
@@ -49,13 +49,13 @@ jobs:
             try {
               if (a.source === 'winget' || a.source === 'msstore') {
                 const wingetSource = a.source === 'msstore' ? 'msstore' : 'winget';
-                const out = execSync('winget show "' + a.package_id + '" --source ' + wingetSource + ' --accept-source-agreements', { encoding: 'utf8' });
+                const out = execFileSync('winget', ['show', '--id', String(a.package_id), '--exact', '--source', wingetSource, '--accept-source-agreements'], { encoding: 'utf8' });
                 const m = out.match(/Version[^:]*:\s*(\S+)/);
                 latest = m ? m[1] : null;
                 const h = out.match(/Homepage[^:]*:\s*(\S+)/);
                 notes = h ? h[1] : null;
               } else {
-                const out = execSync('brew info --json=v2 --cask ' + a.package_id, { encoding: 'utf8' });
+                const out = execFileSync('brew', ['info', '--json=v2', '--cask', '--', String(a.package_id)], { encoding: 'utf8' });
                 const j = JSON.parse(out);
                 const c = (j.casks || [])[0] || (j.formulae || [])[0];
                 latest = c ? c.version : null;
