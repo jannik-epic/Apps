@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T05:52:59.831Z",
+  "generatedAt": "2026-06-09T04:00:23.632Z",
   "detectedInScope": 90,
   "managedCovered": 11,
   "unmanaged": [
@@ -699,7 +699,7 @@
       "publisher": "Microsoft Corporation",
       "platform": "windows",
       "deviceCount": 2,
-      "managedIntuneAppId": "6396f957-09a5-46b7-93ff-a53e71540181",
+      "managedIntuneAppId": "ba70ccf5-a0b5-4c22-a092-3fa74fbf4fac",
       "managedDisplayName": "Microsoft Visual C++ 2015-2022 Redistributable (x86)",
       "confidence": 1
     },
@@ -710,7 +710,7 @@
       "publisher": "Microsoft Corporation",
       "platform": "windows",
       "deviceCount": 2,
-      "managedIntuneAppId": "6396f957-09a5-46b7-93ff-a53e71540181",
+      "managedIntuneAppId": "ba70ccf5-a0b5-4c22-a092-3fa74fbf4fac",
       "managedDisplayName": "Microsoft Visual C++ 2015-2022 Redistributable (x86)",
       "confidence": 1.1
     },
