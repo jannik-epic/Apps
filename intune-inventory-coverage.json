@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-29T05:52:44.631Z",
-  "detectedInScope": 90,
+  "generatedAt": "2026-06-30T05:39:31.326Z",
+  "detectedInScope": 89,
   "managedCovered": 11,
   "unmanaged": [
     {
@@ -52,10 +52,10 @@
       "deviceCount": 1
     },
     {
-      "id": "00003fe67e2736c81f9f9decb057b8de80880000ffff",
+      "id": "0000ac6f5ef3ab4486af8c04604a9807472c0000ffff",
       "displayName": "Microsoft 365 Apps for Enterprise - de-de",
       "publisher": "Microsoft Corporation",
-      "version": "16.0.20026.20112",
+      "version": "16.0.20131.20090",
       "platform": "windows",
       "deviceCount": 1
     },
@@ -68,18 +68,18 @@
       "deviceCount": 1
     },
     {
-      "id": "000076dc5c02c42b24c3f02cb2b4f30a53990000ffff",
-      "displayName": "Microsoft 365 Apps for enterprise - en-us",
-      "publisher": "Microsoft Corporation",
-      "version": "16.0.20026.20112",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
       "id": "00008d252d5d1d0f0991b3c7e2576bc854870000ffff",
       "displayName": "Microsoft 365 Apps for enterprise - en-us",
       "publisher": "Microsoft Corporation",
       "version": "16.0.19929.20172",
+      "platform": "windows",
+      "deviceCount": 1
+    },
+    {
+      "id": "0000cb9bce008116319085eb8619acd20a0d0000ffff",
+      "displayName": "Microsoft 365 Apps for enterprise - en-us",
+      "publisher": "Microsoft Corporation",
+      "version": "16.0.20131.20090",
       "platform": "windows",
       "deviceCount": 1
     },
@@ -92,10 +92,10 @@
       "deviceCount": 1
     },
     {
-      "id": "000037d950c5c6ee448da30cac1e49e09df10000ffff",
+      "id": "000086517861035056cb999ab69cd5bb64ba0000ffff",
       "displayName": "Microsoft 365 Apps for enterprise - fr-fr",
       "publisher": "Microsoft Corporation",
-      "version": "16.0.20026.20112",
+      "version": "16.0.20131.20090",
       "platform": "windows",
       "deviceCount": 1
     },
@@ -108,18 +108,10 @@
       "deviceCount": 1
     },
     {
-      "id": "00007d558a64e855990e77eb10c1ef784aa00000ffff",
+      "id": "0000e0c0ec9cf26a1ad8492909acea729a560000ffff",
       "displayName": "Microsoft 365 Apps for enterprise - it-it",
       "publisher": "Microsoft Corporation",
-      "version": "16.0.20026.20112",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "000092a38f68abeb50c76a9069ed3e864a9d0000ffff",
-      "displayName": "Microsoft Edge Update",
-      "publisher": null,
-      "version": "1.3.237.7",
+      "version": "16.0.20131.20090",
       "platform": "windows",
       "deviceCount": 1
     },
@@ -660,9 +652,9 @@
       "confidence": 1.1
     },
     {
-      "id": "0000a22d6be0079d0f5edb2f7d932b114f5c0000ffff",
+      "id": "0000a4a6694240ed2d9d78cb03827d3942b80000ffff",
       "displayName": "Microsoft OneDrive",
-      "version": "26.084.0504.0007",
+      "version": "26.098.0524.0004",
       "publisher": "Microsoft Corporation",
       "platform": "windows",
       "deviceCount": 1,
