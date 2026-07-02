@@ -15,10 +15,10 @@ param(
     [string]$StagingDir,
 
     [Parameter(Mandatory = $false)]
-    [string]$Version = '4.0.6',
+    [string]$Version = '4.1.8',
 
     [Parameter(Mandatory = $false)]
-    [string]$ReleaseAssetName = 'PSAppDeployToolkit_Template_v4.0.6.zip'
+    [string]$ReleaseAssetName = 'PSAppDeployToolkit_Template_v4.1.8.zip'
 )
 
 $ErrorActionPreference = 'Stop'
