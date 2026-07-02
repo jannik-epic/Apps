@@ -1,0 +1,5 @@
+{
+  "id": "04749030-d045-4a81-905a-dd4e48f880a2",
+  "name": "Azure DevOps Personal Access Token",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

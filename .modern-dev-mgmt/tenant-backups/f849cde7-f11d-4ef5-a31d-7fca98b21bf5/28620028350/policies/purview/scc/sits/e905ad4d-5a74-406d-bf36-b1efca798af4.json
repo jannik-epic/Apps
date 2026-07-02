@@ -1,0 +1,5 @@
+{
+  "id": "e905ad4d-5a74-406d-bf36-b1efca798af4",
+  "name": "Mexico Unique Population Registry Code (CURP)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

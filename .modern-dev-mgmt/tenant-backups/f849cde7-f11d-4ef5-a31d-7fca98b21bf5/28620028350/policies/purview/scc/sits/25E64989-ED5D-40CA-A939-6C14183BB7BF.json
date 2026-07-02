@@ -1,0 +1,5 @@
+{
+  "id": "25E64989-ED5D-40CA-A939-6C14183BB7BF",
+  "name": "Poland Identity Card",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

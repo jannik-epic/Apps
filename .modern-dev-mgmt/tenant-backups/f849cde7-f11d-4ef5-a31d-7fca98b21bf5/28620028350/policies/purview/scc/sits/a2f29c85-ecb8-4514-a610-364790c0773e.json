@@ -1,0 +1,5 @@
+{
+  "id": "a2f29c85-ecb8-4514-a610-364790c0773e",
+  "name": "Canada Social Insurance Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

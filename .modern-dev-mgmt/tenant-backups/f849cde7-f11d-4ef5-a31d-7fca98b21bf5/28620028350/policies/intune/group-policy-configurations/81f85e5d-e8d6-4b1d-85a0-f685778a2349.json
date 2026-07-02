@@ -1,0 +1,71 @@
+{
+  "createdDateTime": "2026-07-02T20:36:32.9422305Z",
+  "displayName": "WIN_Default_InstallWebViewer2",
+  "description": "",
+  "roleScopeTagIds": [],
+  "policyConfigurationIngestionType": "builtIn",
+  "id": "81f85e5d-e8d6-4b1d-85a0-f685778a2349",
+  "lastModifiedDateTime": "2026-07-02T20:36:33.8308755Z",
+  "definitionValues": [
+    {
+      "createdDateTime": "2026-07-02T20:36:33.776326Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "91399119-6d99-46d1-9c10-3c6c7ea62b20",
+      "lastModifiedDateTime": "2026-07-02T20:36:33.8308755Z",
+      "definition": {
+        "classType": "machine",
+        "displayName": "Allow installation",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": true,
+        "groupPolicyCategoryId": "5f1aca7e-eef7-427f-8a51-f445eb60d716",
+        "minDeviceCspVersion": "5.0",
+        "minUserCspVersion": null,
+        "version": "2.0",
+        "id": "34360db8-db70-4316-9cec-bf014d0d0d36",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2026-07-02T20:36:33.8308755Z",
+          "createdDateTime": "2026-07-02T20:36:33.8397348Z",
+          "id": "fdeae8c4-a1d6-4409-acf7-75e7769d8a3d",
+          "value": "1",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "Install Policy",
+            "id": "e3dac2f0-cdd6-4699-97b1-f1fb275e1089",
+            "lastModifiedDateTime": "2022-03-15T22:39:00.25Z",
+            "required": true,
+            "defaultItem": {
+              "displayName": "Always allow Installs (recommended)",
+              "value": "1"
+            },
+            "items": [
+              {
+                "displayName": "Always allow Installs (recommended)",
+                "value": "1"
+              },
+              {
+                "displayName": "Installs disabled",
+                "value": "0"
+              },
+              {
+                "displayName": "Force Installs (Machine-Wide)",
+                "value": "5"
+              },
+              {
+                "displayName": "Always allow Machine-Wide Installs, but not Per-User Installs",
+                "value": "4"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

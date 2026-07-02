@@ -1,0 +1,36 @@
+{
+  "createdDateTime": "2022-07-26T18:58:42.6066666Z",
+  "displayName": "WIN_Default_OfficeActivateOutlookSSO",
+  "description": "",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "policyConfigurationIngestionType": "builtIn",
+  "id": "187267a2-92d8-47c3-9a36-8b3de39e9876",
+  "lastModifiedDateTime": "2022-07-27T07:44:59.5444369Z",
+  "definitionValues": [
+    {
+      "createdDateTime": "2022-07-26T18:58:43.0333333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "c3a1a7e4-ce51-4c93-a015-66a2204b5dfb",
+      "lastModifiedDateTime": "2022-07-26T18:58:43.0298387Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Automatically configure profile based on Active Directory Primary SMTP address (one-time only)",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "250be471-a800-4ae2-8caf-43d1ba8fcd27",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "7ab3839d-2ea4-413c-93bd-ed0143133b70",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    }
+  ]
+}

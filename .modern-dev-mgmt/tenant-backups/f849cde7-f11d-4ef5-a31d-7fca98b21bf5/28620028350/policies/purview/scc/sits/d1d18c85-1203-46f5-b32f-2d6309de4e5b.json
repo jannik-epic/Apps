@@ -1,0 +1,5 @@
+{
+  "id": "d1d18c85-1203-46f5-b32f-2d6309de4e5b",
+  "name": "Australia Physical Addresses",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

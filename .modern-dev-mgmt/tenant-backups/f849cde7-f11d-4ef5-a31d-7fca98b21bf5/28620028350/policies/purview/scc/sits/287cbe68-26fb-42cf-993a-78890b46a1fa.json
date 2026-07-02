@@ -1,0 +1,5 @@
+{
+  "id": "287cbe68-26fb-42cf-993a-78890b46a1fa",
+  "name": "Azure Shared Access Key / Web Hook Token",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

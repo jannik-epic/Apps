@@ -1,0 +1,5 @@
+{
+  "id": "881b8266-702b-4ebc-9c27-ea38c3765ab5",
+  "name": "Amazon S3 Client Secret Access Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

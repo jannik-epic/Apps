@@ -1,0 +1,5 @@
+{
+  "id": "ac36fef2-a289-4e2c-bb48-b02366e89fc0",
+  "name": "Japanese Residence Card Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

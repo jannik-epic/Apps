@@ -1,0 +1,66 @@
+{
+  "createdDateTime": "2023-11-18T11:56:08.252317Z",
+  "creationSource": null,
+  "description": "Elevation Settings Policy",
+  "lastModifiedDateTime": "2023-11-18T11:56:08.252317Z",
+  "name": "Elevation Settings Policy",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm,endpointPrivilegeManagement",
+  "id": "333ea185-af37-4cf3-8849-121c4dcb0bd1",
+  "templateReference": {
+    "templateId": "e7dcaba4-959b-46ed-88f0-16ba39b14fd8_1",
+    "templateFamily": "endpointSecurityEndpointPrivilegeManagement",
+    "templateDisplayName": "Elevation settings policy",
+    "templateDisplayVersion": "Version 1"
+  },
+  "settings": [
+    {
+      "id": "0",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "settingDefinitionId": "device_vendor_msft_policy_elevationclientsettings_enableepm",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "58a79a4b-ba9b-4923-a7a5-6dc1a9f638a4"
+        },
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_elevationclientsettings_enableepm_1",
+          "settingValueTemplateReference": {
+            "settingValueTemplateId": "a13cc55c-307a-4962-aaec-20b832bf75c7",
+            "useTemplateDefault": false
+          },
+          "children": [
+            {
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+              "settingDefinitionId": "device_vendor_msft_policy_elevationclientsettings_senddata",
+              "settingInstanceTemplateReference": null,
+              "auditRuleInformation": null,
+              "choiceSettingValue": {
+                "settingValueTemplateReference": null,
+                "value": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
+                "children": [
+                  {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_elevationclientsettings_reportingscope",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                      "settingValueTemplateReference": null,
+                      "value": "device_vendor_msft_policy_elevationclientsettings_reportingscope_2",
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

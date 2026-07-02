@@ -1,0 +1,43 @@
+{
+  "RoleEntries": [
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Get-PlaceMailbox -PlaceMailboxId",
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Set-CalendarProcessing -AllowRecurringMeetings -BookingWindowInDays -BookInPolicy -EnableAutoRelease -EnforceCapacity -EnforceSchedulingHorizon -Identity -MaximumDurationInMinutes -MinimumDurationInMinutes -PostReservationMaxClaimTimeInMinutes",
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Get-CalendarProcessing -Identity"
+  ],
+  "RoleType": "PlacesBuildingManagement",
+  "ImplicitRecipientReadScope": "Organization",
+  "ImplicitRecipientWriteScope": "Organization",
+  "ImplicitConfigReadScope": "OrganizationConfig",
+  "ImplicitConfigWriteScope": "OrganizationConfig",
+  "IsRootRole": true,
+  "IsEndUserRole": false,
+  "MailboxPlanIndex": "",
+  "Description": null,
+  "Parent": null,
+  "RoleState": "Usable",
+  "IsDeprecated": false,
+  "IsServicePrincipalRole": false,
+  "AllowEmptyRole": false,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "0.12 (14.0.451.0)",
+  "Name": "PlacesBuildingManagement",
+  "DistinguishedName": "CN=PlacesBuildingManagement,CN=Roles,CN=RBAC,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "PlacesBuildingManagement",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Role",
+  "ObjectClass": [
+    "top",
+    "msExchRole"
+  ],
+  "WhenChanged": "2025-10-20T09:56:50+00:00",
+  "WhenCreated": "2025-06-20T10:05:51+00:00",
+  "WhenChangedUTC": "2025-10-20T09:56:50Z",
+  "WhenCreatedUTC": "2025-06-20T10:05:51Z",
+  "ExchangeObjectId": "31d7ea9b-d15d-46bc-aa6a-65436f88c673",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "PlacesBuildingManagement",
+  "Guid": "31d7ea9b-d15d-46bc-aa6a-65436f88c673",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Unchanged"
+}

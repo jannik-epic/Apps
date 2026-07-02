@@ -1,0 +1,5 @@
+{
+  "id": "f69aaf40-79be-4fac-8f05-fd1910d272c8",
+  "name": "Sweden National ID",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

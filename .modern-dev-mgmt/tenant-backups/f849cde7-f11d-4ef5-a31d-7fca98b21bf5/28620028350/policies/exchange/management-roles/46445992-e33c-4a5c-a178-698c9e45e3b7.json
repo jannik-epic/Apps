@@ -1,0 +1,42 @@
+{
+  "RoleEntries": [
+    "InstallApp",
+    "(Microsoft.Exchange.Management.PowerShell.E2010) New-App -FileData -FileStream -Url"
+  ],
+  "RoleType": "MyCustomApps",
+  "ImplicitRecipientReadScope": "Self",
+  "ImplicitRecipientWriteScope": "Self",
+  "ImplicitConfigReadScope": "OrganizationConfig",
+  "ImplicitConfigWriteScope": "OrganizationConfig",
+  "IsRootRole": true,
+  "IsEndUserRole": true,
+  "MailboxPlanIndex": "",
+  "Description": "This role will allow users to view and modify their custom apps.",
+  "Parent": null,
+  "RoleState": "Usable",
+  "IsDeprecated": false,
+  "IsServicePrincipalRole": false,
+  "AllowEmptyRole": false,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "0.12 (14.0.451.0)",
+  "Name": "My Custom Apps",
+  "DistinguishedName": "CN=My Custom Apps,CN=Roles,CN=RBAC,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "My Custom Apps",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Role",
+  "ObjectClass": [
+    "top",
+    "msExchRole"
+  ],
+  "WhenChanged": "2025-10-18T14:15:06+00:00",
+  "WhenCreated": "2021-05-29T08:17:33+00:00",
+  "WhenChangedUTC": "2025-10-18T14:15:06Z",
+  "WhenCreatedUTC": "2021-05-29T08:17:33Z",
+  "ExchangeObjectId": "46445992-e33c-4a5c-a178-698c9e45e3b7",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "My Custom Apps",
+  "Guid": "46445992-e33c-4a5c-a178-698c9e45e3b7",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Unchanged"
+}

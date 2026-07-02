@@ -1,0 +1,37 @@
+{
+  "createdDateTime": "2022-11-20T10:58:52.917533Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-03-03T17:13:17.6550392Z",
+  "name": "z_WIN_Allow_OrganizationalMessages",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm",
+  "id": "1cf62902-c672-46e4-8c0f-6117db40dfbf",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "settings": [
+    {
+      "id": "0",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "settingDefinitionId": "user_vendor_msft_policy_config_experience_enableorganizationalmessages",
+        "settingInstanceTemplateReference": null,
+        "auditRuleInformation": null,
+        "choiceSettingValue": {
+          "settingValueTemplateReference": null,
+          "value": "user_vendor_msft_policy_config_experience_enableorganizationalmessages_0",
+          "children": []
+        }
+      }
+    }
+  ]
+}

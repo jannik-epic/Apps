@@ -1,0 +1,65 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [
+    "Retention Management-Compliance Management",
+    "Data Loss Prevention-Compliance Management",
+    "Message Tracking-Compliance Management",
+    "View-Only Audit Logs-Compliance Management",
+    "View-Only Configuration-Compliance Management",
+    "View-Only Recipients-Compliance Management",
+    "Compliance Admin-Compliance Management",
+    "Information Rights Management-Compliance Management",
+    "Transport Rules-Compliance Management",
+    "Journaling-Compliance Management",
+    "Audit Logs-Compliance Management"
+  ],
+  "Roles": [
+    "Retention Management",
+    "Data Loss Prevention",
+    "Message Tracking",
+    "View-Only Audit Logs",
+    "View-Only Configuration",
+    "View-Only Recipients",
+    "Compliance Admin",
+    "Information Rights Management",
+    "Transport Rules",
+    "Journaling",
+    "Audit Logs"
+  ],
+  "DisplayName": "",
+  "ExternalDirectoryObjectId": "",
+  "Members": [
+    "ComplianceAdmins_1625445805"
+  ],
+  "SamAccountName": "Compliance Management{c34c400b65694d198a26379a0981a512}",
+  "Description": "This role group will allow a specified user, responsible for compliance, to properly configure and manage compliance settings within Exchange in accordance with their policy.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "",
+  "Identity": "Compliance Management",
+  "Id": "Compliance Management",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "Compliance Management",
+  "DistinguishedName": "CN=Compliance Management,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2025-10-18T21:47:48+00:00",
+  "WhenCreated": "2021-03-23T22:17:31+00:00",
+  "WhenChangedUTC": "2025-10-18T21:47:48Z",
+  "WhenCreatedUTC": "2021-03-23T22:17:31Z",
+  "ExchangeObjectId": "142a0b97-55bc-447c-80f2-fa17121b2e22",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "142a0b97-55bc-447c-80f2-fa17121b2e22",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

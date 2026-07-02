@@ -1,0 +1,5 @@
+{
+  "id": "aaf661ed-29ec-426d-8bf9-880cad298ebb",
+  "name": "Luxembourg National Identification Number (Natural persons)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

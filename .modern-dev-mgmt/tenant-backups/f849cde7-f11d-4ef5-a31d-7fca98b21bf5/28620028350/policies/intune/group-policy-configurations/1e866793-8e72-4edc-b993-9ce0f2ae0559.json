@@ -1,0 +1,2595 @@
+{
+  "createdDateTime": "2022-07-26T18:58:43.7933333Z",
+  "displayName": "WIN_Default_OfficeSecurity",
+  "description": "",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "policyConfigurationIngestionType": "builtIn",
+  "id": "1e866793-8e72-4edc-b993-9ce0f2ae0559",
+  "lastModifiedDateTime": "2022-07-27T07:45:10.0756726Z",
+  "definitionValues": [
+    {
+      "createdDateTime": "2022-07-26T18:58:56.86Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "40d83f41-ff31-4dcf-aa3d-c489a0f4fdff",
+      "lastModifiedDateTime": "2022-07-26T18:58:56.8735641Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Web pages and Excel 2003 XML spreadsheets",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "115c0206-3952-47a8-a0fe-05455b0a93e4",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:56.8735641Z",
+          "createdDateTime": "2022-07-26T18:58:56.8666666Z",
+          "id": "4a091f83-9c1b-4ef0-9d92-4f798234369b",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "fb6ad578-11ce-42db-abd4-4d7eb5247db6",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Save blocked",
+                "value": "1"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:01.1833333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "104da0e3-0d6e-4f39-b79c-37f3f6629385",
+      "lastModifiedDateTime": "2022-07-26T18:59:01.2016817Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Macro Notification Settings",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "10c8d25b-095e-44a1-b84c-1a50e8dbca6e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "6769129c-b98c-4ddb-8cb2-0b4c55f9ebeb",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:01.2016817Z",
+          "createdDateTime": "2022-07-26T18:59:01.1966666Z",
+          "id": "4af54158-9cd8-4e69-9f61-cce87b95c7ad",
+          "value": "3",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "",
+            "id": "9f2c5355-b699-401c-818e-ffb83507245a",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Disable VBA macros with notification",
+              "value": "2"
+            },
+            "items": [
+              {
+                "displayName": "Disable VBA macros with notification",
+                "value": "2"
+              },
+              {
+                "displayName": "Disable VBA macros except digitally signed macros",
+                "value": "3"
+              },
+              {
+                "displayName": "Disable VBA macros without notification",
+                "value": "4"
+              },
+              {
+                "displayName": "Enable VBA macros (not recommended)",
+                "value": "1"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:13.81Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "6a54a9b6-1df9-4779-85b3-82e7bf9388df",
+      "lastModifiedDateTime": "2022-07-26T18:59:13.8110345Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Word 2000 binary documents and templates",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "fb861a67-4845-4bfa-97d9-544363aeb93e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "097c6a0b-d0ee-4664-9d11-179eb42dc7da",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:13.8110345Z",
+          "createdDateTime": "2022-07-26T18:59:13.82Z",
+          "id": "0dce401b-7ad0-4753-a756-84489f1fe8aa",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "e60ef3aa-0fb6-44dc-bbe0-e9ca307b3dff",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:47.0433333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "d14b81b3-743c-44d8-b6be-9faf8237c44e",
+      "lastModifiedDateTime": "2022-07-26T18:58:47.0610856Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "dBase III / IV files",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "af226178-7706-4463-8279-195d057da473",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:47.0610856Z",
+          "createdDateTime": "2022-07-26T18:58:47.0566666Z",
+          "id": "dbfbf4c3-d49d-4810-95bb-7dc56c920afb",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "44f83e1d-ec41-401f-8663-fa49bf9d42c9",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:47.7466666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "5337a7c0-64ab-4ee1-a3e5-fb303f1a04c8",
+      "lastModifiedDateTime": "2022-07-26T18:58:47.7642053Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Dif and Sylk files",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "7bce0994-f770-4759-801b-1ba596f56901",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:47.7642053Z",
+          "createdDateTime": "2022-07-26T18:58:47.7533333Z",
+          "id": "36882a3c-bad2-4a95-a37d-dbf3235722d0",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "d2553a0f-c2e6-46fc-9894-4490554c59c5",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Save blocked",
+                "value": "1"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:01.8033333Z",
+      "enabled": false,
+      "configurationType": "policy",
+      "id": "a0209b0a-7948-4386-b717-099bbb4a5446",
+      "lastModifiedDateTime": "2022-07-26T18:59:01.7954299Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Turn off file validation",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "f9da24f0-3392-48d0-b090-6ab95d5fe2e1",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "3bf9f9df-ee3a-446f-b53e-243798b20b5b",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:03.08Z",
+      "enabled": false,
+      "configurationType": "policy",
+      "id": "1cf0d653-821a-467d-973c-b5ba809d378a",
+      "lastModifiedDateTime": "2022-07-26T18:59:03.0923034Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Allow hyperlinks in suspected phishing e-mail messages",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "9c4afc86-d2f6-4ef0-a071-651cf8774af4",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "eaca8635-cefd-4f22-8a04-26a3007b2336",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:49.2166666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "8fbe41b9-3a03-4185-acb5-4429922ac79f",
+      "lastModifiedDateTime": "2022-07-26T18:58:49.2329522Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Excel 2 worksheets",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "63f5fb57-4740-4019-83a9-28d6c06c58e4",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:49.2329522Z",
+          "createdDateTime": "2022-07-26T18:58:49.2266666Z",
+          "id": "bb2f94b0-befe-40f6-a27a-eb2d222384b1",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "e768431c-fe29-472d-b3ea-b707c405ec19",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:12.5733333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "fac2021a-4180-43a3-9eb3-ee5261b3a0ee",
+      "lastModifiedDateTime": "2022-07-26T18:59:12.5766625Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Set default file block behavior",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "fb861a67-4845-4bfa-97d9-544363aeb93e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "435352ce-9db0-41de-a3fc-2c9cac5ec435",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:12.5766625Z",
+          "createdDateTime": "2022-07-26T18:59:12.58Z",
+          "id": "4cbb65ae-8128-48bf-a47f-38886afe7e36",
+          "value": "0",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "",
+            "id": "ec01185d-07ab-41e2-b950-58ce66e8321c",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Blocked files are not opened",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Blocked files are not opened",
+                "value": "0"
+              },
+              {
+                "displayName": "Blocked files open in Protected View and can not be edited",
+                "value": "1"
+              },
+              {
+                "displayName": "Blocked files open in Protected View and can be edited",
+                "value": "2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:57.5133333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "c46ff28c-652a-4ea8-989e-da2df84f3fdf",
+      "lastModifiedDateTime": "2022-07-26T18:58:57.5141888Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Do not open files from the internet zone in Protected View",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "63688a47-113f-4bc1-85a2-89c8a94b9ade",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "a7df08c0-4e3e-40a0-bd4a-321579eb05ba",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:03.8233333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "7db42b12-814e-4ca8-869e-b623718b9fea",
+      "lastModifiedDateTime": "2022-07-26T18:59:03.8266764Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Make hidden markup visible",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "9d0c580b-3633-4f87-9d88-d360aabedefb",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "30162fb6-600d-467d-9dbd-40cea95ecb5b",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:49.9066666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "9cf077dc-b039-4b6e-8f35-25988824f22e",
+      "lastModifiedDateTime": "2022-07-26T18:58:49.9204511Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Excel 3 macrosheets and add-in files",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "df930f9b-5805-4462-8479-416bfb69da0b",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:49.9204511Z",
+          "createdDateTime": "2022-07-26T18:58:49.9133333Z",
+          "id": "52c64ee0-4bc6-4d0c-83df-ae97c5e78e0b",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "c091d69c-e0c1-43aa-a2b7-07b245eafcab",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:09.45Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "b15a6710-426b-4036-94cc-b934ea48ba3a",
+      "lastModifiedDateTime": "2022-07-26T18:59:09.4672933Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Visio 2000-2002 Binary Drawings, Templates and Stencils",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "7d6d4890-816c-4fa0-b773-e86a53111881",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "e5445c75-65be-4066-b80e-42b213463c66",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:09.4672933Z",
+          "createdDateTime": "2022-07-26T18:59:09.46Z",
+          "id": "2ae4fcfb-14af-4a54-a1a9-94d052674c1a",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "27b2e6d4-15f5-4f18-9637-ba5cc0071408",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Open/Save blocked",
+              "value": "2"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked",
+                "value": "2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:56.2166666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "7502cb73-0ce2-4436-a939-adceb9fd5aa4",
+      "lastModifiedDateTime": "2022-07-26T18:58:56.2329403Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Set default file block behavior",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "705795de-23e0-45af-bb36-575a2d880ee2",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:56.2329403Z",
+          "createdDateTime": "2022-07-26T18:58:56.2266666Z",
+          "id": "b6e55d34-ef03-47fe-88f0-3cea263af0c7",
+          "value": "0",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "",
+            "id": "893ae763-f785-4f74-ba49-64c759911e1a",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Blocked files are not opened",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Blocked files are not opened",
+                "value": "0"
+              },
+              {
+                "displayName": "Blocked files open in Protected View and can not be edited",
+                "value": "1"
+              },
+              {
+                "displayName": "Blocked files open in Protected View and can be edited",
+                "value": "2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:18.2633333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "023a4f66-3425-48da-8888-972587d73c14",
+      "lastModifiedDateTime": "2022-07-26T18:59:18.2797778Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Word XP binary documents and templates",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "fb861a67-4845-4bfa-97d9-544363aeb93e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "2fe179a6-2d0f-4354-8469-5daf324db2db",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:18.2797778Z",
+          "createdDateTime": "2022-07-26T18:59:18.27Z",
+          "id": "d6a92050-1632-4659-947c-6d1aa772b2f2",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "20241533-5b33-4d02-ac79-8bacb8eec4fb",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:54.13Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "6069d194-6921-4d17-bff1-a2faee35a168",
+      "lastModifiedDateTime": "2022-07-26T18:58:54.2329446Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Excel 95 workbooks",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "e289061c-539c-47e7-bba4-609bfccc5be7",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:54.2329446Z",
+          "createdDateTime": "2022-07-26T18:58:54.23Z",
+          "id": "e0dc4d38-e491-4683-9fa2-27cff104c28b",
+          "value": "5",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "75f83dbf-8ec0-4dab-ac9d-45cb395c35fd",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Save blocked",
+                "value": "1"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:11.3733333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "1b66a933-b351-4e59-aa6e-f517dc68ea35",
+      "lastModifiedDateTime": "2022-07-26T18:59:11.373539Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Make hidden markup visible",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "db99ed0d-58af-4938-b102-89226c2dde8b",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "7bd6026e-db6e-4993-a127-6249bdc59a4d",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:10.7933333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "d50657bf-b468-4f06-a947-f381c21703aa",
+      "lastModifiedDateTime": "2022-07-26T18:59:10.7954153Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Default file format",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "f20878e2-defe-4f07-86e5-312107d07b79",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "ed2a5416-d394-4310-a143-63ad0ab42147",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:51.4Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "e606303a-ad15-4f6c-abde-06d4a3e5088a",
+      "lastModifiedDateTime": "2022-07-26T18:58:51.5141983Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Excel 4 macrosheets and add-in files",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "1211efcc-3987-4d49-912c-6f218f74b611",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:51.5141983Z",
+          "createdDateTime": "2022-07-26T18:58:51.51Z",
+          "id": "693158d3-5f9e-4cb8-bb79-779dc2b5581f",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "52efb481-14ba-4d1b-8b03-73b933919059",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:44.21Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "c3facd46-8543-4e64-8d5c-f9ba3773b413",
+      "lastModifiedDateTime": "2022-07-26T18:58:44.2329607Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Default file format",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "a60a15b3-fa58-48b6-8a75-7f9c90703387",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "f2ac971b-e0bf-46b0-bf45-72715e8d9f5e",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:44.2329607Z",
+          "createdDateTime": "2022-07-26T18:58:44.22Z",
+          "id": "9b7eafc3-3581-465a-add5-a758182c761b",
+          "value": "51",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "Save Excel files as",
+            "id": "c82dd53b-8380-4dcf-b84b-4241098bcea1",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Excel Workbook (*.xlsx)",
+              "value": "51"
+            },
+            "items": [
+              {
+                "displayName": "Excel Workbook (*.xlsx)",
+                "value": "51"
+              },
+              {
+                "displayName": "Excel Macro-Enabled Workbook (*.xlsm)",
+                "value": "52"
+              },
+              {
+                "displayName": "Excel Binary Workbook (*.xlsb)",
+                "value": "50"
+              },
+              {
+                "displayName": "Web Page (*.htm; *.html)",
+                "value": "44"
+              },
+              {
+                "displayName": "Excel 97-2003 Workbook (*.xls)",
+                "value": "56"
+              },
+              {
+                "displayName": "Excel 5.0/95 Workbook (*.xls)",
+                "value": "39"
+              },
+              {
+                "displayName": "OpenDocument Spreadsheet (*.ods)",
+                "value": "60"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:50.56Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "f58e36f6-f1ef-4e7d-b6ea-7491f8f5d03e",
+      "lastModifiedDateTime": "2022-07-26T18:58:50.7173251Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Excel 3 worksheets",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "f28e75e1-fed9-4da4-964f-771e7befd004",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:50.7173251Z",
+          "createdDateTime": "2022-07-26T18:58:50.7166666Z",
+          "id": "c70a06c9-bad3-4f51-844e-e9a3c596994b",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "7b66d90d-7306-4cfc-af89-af9cf7b3e210",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:55.62Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "f2693994-c936-437a-8d05-a99a16e6b37d",
+      "lastModifiedDateTime": "2022-07-26T18:58:55.6235673Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Microsoft Office query files",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "613f015c-6cca-4bb2-bc6d-772a89eccdc5",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:55.6235673Z",
+          "createdDateTime": "2022-07-26T18:58:55.6333333Z",
+          "id": "2f424789-0afe-4685-8af8-ccbdcaff4769",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "b2d505b3-f4ba-441e-98ab-3d1034d0ecc7",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Save blocked",
+                "value": "1"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:02.45Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "7e676974-dab2-41ce-b543-424c5e942a3f",
+      "lastModifiedDateTime": "2022-07-26T18:59:02.4516788Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Disable VBA for Office applications",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "028acda7-eecb-4b69-8419-1a984838144e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "3aab9919-b73b-4f2b-8a60-77c2c348e825",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:15.08Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "496a8e1d-611c-4f5a-add1-33b11eccf899",
+      "lastModifiedDateTime": "2022-07-26T18:59:15.092283Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Word 2003 binary documents and templates",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "fb861a67-4845-4bfa-97d9-544363aeb93e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "b26ecded-1043-45e6-a05d-792240b00d91",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:15.092283Z",
+          "createdDateTime": "2022-07-26T18:59:15.0866666Z",
+          "id": "a3a0ab69-f620-4c9c-9242-371f183a2e92",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "d1c4898f-54e8-4c89-8698-3b3fc4fa833f",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:20.0633333Z",
+      "enabled": false,
+      "configurationType": "policy",
+      "id": "1ff16f14-87d5-45df-a290-7abd058a21a8",
+      "lastModifiedDateTime": "2022-07-26T18:59:20.0610242Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Turn off file validation",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "db99ed0d-58af-4938-b102-89226c2dde8b",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "268af92f-8689-455e-b177-7dd2bc97fd43",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:44.8866666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "fb75c455-3f0d-4b39-a147-b58c79aa4856",
+      "lastModifiedDateTime": "2022-07-26T18:58:44.8892095Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Force file extension to match file type",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "f9da24f0-3392-48d0-b090-6ab95d5fe2e1",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "38de8259-2314-491b-9b8e-8c9cccb36d73",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:44.8892095Z",
+          "createdDateTime": "2022-07-26T18:58:44.8966666Z",
+          "id": "24d57fc0-09ce-450c-acfb-ddbfe3d4845c",
+          "value": "1",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "",
+            "id": "ca5bc481-a497-439c-b87b-0cea7ceec5bf",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Allow different, but warn",
+              "value": "1"
+            },
+            "items": [
+              {
+                "displayName": "Allow different",
+                "value": "0"
+              },
+              {
+                "displayName": "Allow different, but warn",
+                "value": "1"
+              },
+              {
+                "displayName": "Always match file type",
+                "value": "2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:12.0133333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "d0f2adb7-8184-463a-9f05-bc464bcec7c6",
+      "lastModifiedDateTime": "2022-07-26T18:59:12.0141626Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Block macros from running in Office files from the internet",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "a8843a63-2d13-4a84-8b96-2e062dea5081",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "3894d7d1-f892-4bff-b3ab-910e8c81b6d5",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:59.81Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "28f73956-a761-4724-8b26-21dfa8a26d6f",
+      "lastModifiedDateTime": "2022-07-26T18:58:59.8110582Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Require that application add-ins are signed by Trusted Publisher",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "10c8d25b-095e-44a1-b84c-1a50e8dbca6e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "4f9a7958-5466-47ec-a76d-a7dd0e43f6f0",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:16.4233333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "8527f1a2-6c78-48c0-8ee9-3b6ff72a6dce",
+      "lastModifiedDateTime": "2022-07-26T18:59:16.4360309Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Word 6.0 binary documents and templates",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "fb861a67-4845-4bfa-97d9-544363aeb93e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "a23ee300-d990-48af-a795-abb935d172a3",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:16.4360309Z",
+          "createdDateTime": "2022-07-26T18:59:16.4366666Z",
+          "id": "cab5447c-6004-41d1-b092-fa3f9671f86b",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "2d42bc12-b367-4a11-a73b-3e19f690a1df",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:17.6766666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "4ec3a591-5088-4fef-a7e2-4a2d8fa2e69c",
+      "lastModifiedDateTime": "2022-07-26T18:59:17.6860281Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Word 97 binary documents and templates",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "fb861a67-4845-4bfa-97d9-544363aeb93e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "480a31af-b36a-48a6-b590-c2b918360380",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:17.6860281Z",
+          "createdDateTime": "2022-07-26T18:59:17.6833333Z",
+          "id": "f76eadde-613d-4db9-8680-d84baf101ad7",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting: ",
+            "id": "c57e1883-25da-44e3-a810-90e983ddd8dd",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:59.2266666Z",
+      "enabled": false,
+      "configurationType": "policy",
+      "id": "3fb4ece2-45f7-400e-a4a0-b74dfeae4ce5",
+      "lastModifiedDateTime": "2022-07-26T18:58:59.2173094Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Turn off Protected View for attachments opened from Outlook",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "63688a47-113f-4bc1-85a2-89c8a94b9ade",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "73d52afc-3218-4933-8072-c33bf5d1bb84",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:08.1833333Z",
+      "enabled": false,
+      "configurationType": "policy",
+      "id": "6a080e7a-2fcd-4efa-9ba1-27636893b3d5",
+      "lastModifiedDateTime": "2022-07-26T18:59:08.1860451Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Trust access to Visual Basic Project",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "7c1433cd-0b99-4e2b-bd8c-f81b11a93cb8",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "9a744c46-d4fa-49aa-acf5-c674b79719b2",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:48.3966666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "dcacabd3-5295-4465-b93c-7f63d3b69395",
+      "lastModifiedDateTime": "2022-07-26T18:58:48.4204539Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Excel 2 macrosheets and add-in files",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "6a4c8d66-139f-4fc8-be10-c6e6a8d90dd8",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:48.4204539Z",
+          "createdDateTime": "2022-07-26T18:58:48.41Z",
+          "id": "fa099ec4-71f4-4808-a86c-098006bad136",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "f9413893-eeec-42fa-a09c-a854d67dddd3",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:04.5433333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "a346a4ee-9601-497a-bebd-43f3f352a9aa",
+      "lastModifiedDateTime": "2022-07-26T18:59:04.6079261Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Run Programs",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "9d0c580b-3633-4f87-9d88-d360aabedefb",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "aa6eca64-45f5-4abf-97da-c76a78563600",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:04.6079261Z",
+          "createdDateTime": "2022-07-26T18:59:04.6066666Z",
+          "id": "9e05ae6b-2e34-497b-ae93-60562646b526",
+          "value": "0",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "",
+            "id": "afb344b3-2512-4e9d-b1cd-68854f4e8638",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "disable (don't run any programs)",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "disable (don't run any programs)",
+                "value": "0"
+              },
+              {
+                "displayName": "enable (prompt user before running)",
+                "value": "1"
+              },
+              {
+                "displayName": "enable all (run without prompting)",
+                "value": "2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:54.9666666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "2b98aae8-6d9b-40b0-acbe-ce168e8ecb32",
+      "lastModifiedDateTime": "2022-07-26T18:58:54.9673265Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Excel 95-97 workbooks and templates",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "dbc94d34-6c08-4459-ba14-c91e5ed20184",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:54.9673265Z",
+          "createdDateTime": "2022-07-26T18:58:54.9733333Z",
+          "id": "15405363-bd8c-496c-9bce-d7d6d307f825",
+          "value": "5",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "1ec7cf4b-5cff-429c-ae81-3d19d372d094",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:17.0733333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "f5cdbe9f-0ec4-4554-97e5-def123fdf7c7",
+      "lastModifiedDateTime": "2022-07-26T18:59:17.0766553Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Word 95 binary documents and templates",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "fb861a67-4845-4bfa-97d9-544363aeb93e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "668b1418-6eec-4b53-83dd-ca1261ee0906",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:17.0766553Z",
+          "createdDateTime": "2022-07-26T18:59:17.08Z",
+          "id": "6eea1de4-10d7-4f20-b238-9c5bbcccf35b",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "20633dc2-f608-4eaa-848c-bf183d2c8eba",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:53.2466666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "5544cac7-3902-47b6-9121-a72872852b28",
+      "lastModifiedDateTime": "2022-07-26T18:58:53.3735702Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Excel 4 worksheets",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "74ad65e8-6df4-4194-98a5-cd1c66e461e5",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:53.3735702Z",
+          "createdDateTime": "2022-07-26T18:58:53.3633333Z",
+          "id": "3c731475-efca-4f45-8570-afb1e48ef4b9",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "e607ed2f-e3b9-4478-8bd3-335233d758ff",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:18.9066666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "fe207bb9-9835-44b0-9319-0f1a85dbb6f4",
+      "lastModifiedDateTime": "2022-07-26T18:59:18.9204006Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Trust access to Visual Basic Project",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "a8843a63-2d13-4a84-8b96-2e062dea5081",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "9b3b3720-08eb-4a60-b7a5-ce2330e8eb78",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:14.4333333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "0640d6ad-f9c7-4234-8669-478e7c16d0be",
+      "lastModifiedDateTime": "2022-07-26T18:59:14.451659Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Word 2003 and plain XML documents",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "fb861a67-4845-4bfa-97d9-544363aeb93e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "775dae9b-b762-42e0-b14e-d082bbe4c87a",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:14.451659Z",
+          "createdDateTime": "2022-07-26T18:59:14.4466666Z",
+          "id": "9ef08e5d-99a5-4392-8d0e-45e25fc3f6d6",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "b9c1a5ab-8531-4096-809d-1c5263bcfe33",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Save blocked",
+                "value": "1"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:08.81Z",
+      "enabled": false,
+      "configurationType": "policy",
+      "id": "b91cb907-96a9-43d1-a926-644546053886",
+      "lastModifiedDateTime": "2022-07-26T18:59:08.8110439Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Turn off file validation",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "9d0c580b-3633-4f87-9d88-d360aabedefb",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "9cf92212-f1b2-4966-b1b4-d094e6818982",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:13.2Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "c319956a-558f-4b70-8c27-7be869965b21",
+      "lastModifiedDateTime": "2022-07-26T18:59:13.2016612Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Word 2 and earlier binary documents and templates",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "fb861a67-4845-4bfa-97d9-544363aeb93e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "d95e9464-5f1c-4008-9fe7-d8f78641a18c",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:13.2016612Z",
+          "createdDateTime": "2022-07-26T18:59:13.21Z",
+          "id": "4c58fccd-6e20-4f15-937d-2bed3abd02a5",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "02523e21-292e-493b-a712-eb7dffc20a4f",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:46.37Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "0a848f48-f2d1-48c8-bfb8-7d025658389d",
+      "lastModifiedDateTime": "2022-07-26T18:58:46.3735825Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Block macros from running in Office files from the internet",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "10c8d25b-095e-44a1-b84c-1a50e8dbca6e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "614bb3e1-f51b-4622-baa5-dbfd257818d1",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:10.1633333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "eae18609-e02f-4f1f-8a40-a5a412e6c722",
+      "lastModifiedDateTime": "2022-07-26T18:59:10.1704168Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Visio 2003-2010 Binary Drawings, Templates and Stencils",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "7d6d4890-816c-4fa0-b773-e86a53111881",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "bd3551d6-c190-42af-8246-dcadc4466b7b",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:10.1704168Z",
+          "createdDateTime": "2022-07-26T18:59:10.1766666Z",
+          "id": "a01bbd5f-e62a-4da2-975f-684d74f966dd",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "2bb94a14-cb54-47a0-9fb5-99ecf17e3e2c",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Save blocked",
+                "value": "1"
+              },
+              {
+                "displayName": "Open/Save blocked",
+                "value": "2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:19.48Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "7330b4ba-54f8-470f-8a48-d7d2c318b749",
+      "lastModifiedDateTime": "2022-07-26T18:59:19.4985251Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "VBA Macro Notification Settings",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "a8843a63-2d13-4a84-8b96-2e062dea5081",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "e92ea21b-8d97-4cc3-80c9-dd396c3d61e4",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:19.4985251Z",
+          "createdDateTime": "2022-07-26T18:59:19.49Z",
+          "id": "4ed55337-e4b4-4a04-8029-61a748ccfbfa",
+          "value": "3",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "",
+            "id": "e3040ad3-0f64-4b3b-8a39-20cca3793183",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Disable all with notification",
+              "value": "2"
+            },
+            "items": [
+              {
+                "displayName": "Disable all with notification",
+                "value": "2"
+              },
+              {
+                "displayName": "Disable all except digitally signed macros",
+                "value": "3"
+              },
+              {
+                "displayName": "Disable all without notification",
+                "value": "4"
+              },
+              {
+                "displayName": "Enable all macros (not recommended)",
+                "value": "1"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:05.31Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "dbf7fbbd-fe42-4fe6-b021-ba5aba4601b6",
+      "lastModifiedDateTime": "2022-07-26T18:59:05.3110489Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Block macros from running in Office files from the internet",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "7c1433cd-0b99-4e2b-bd8c-f81b11a93cb8",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "cd880aae-d675-4484-9e37-ddfe518352cf",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:58.0966666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "61c74c98-56ee-4334-9c54-7747bf0c754a",
+      "lastModifiedDateTime": "2022-07-26T18:58:58.0923118Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Do not open files in unsafe locations in Protected View",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "63688a47-113f-4bc1-85a2-89c8a94b9ade",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "686f6f27-ca3e-49c1-a622-debf103e4c85",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:00.4766666Z",
+      "enabled": false,
+      "configurationType": "policy",
+      "id": "38f682e1-d853-4c97-a1e9-8af2d2cdc0a7",
+      "lastModifiedDateTime": "2022-07-26T18:59:00.4829358Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Trust access to Visual Basic Project",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "10c8d25b-095e-44a1-b84c-1a50e8dbca6e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "28970d0e-7673-45f7-999c-e564d58e2d64",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:05.9666666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "9210c033-7116-439b-bd1b-00d84fe888b9",
+      "lastModifiedDateTime": "2022-07-26T18:59:06.0454226Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "PowerPoint 97-2003 presentations, shows, templates and add-in files",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "6c65d18a-b6f4-4c3b-a935-67471f15e5d0",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "d2514b82-0147-4efb-ad17-ebd261a1a201",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:06.0454226Z",
+          "createdDateTime": "2022-07-26T18:59:06.0466666Z",
+          "id": "d8e8ee35-7e44-4b2a-ad6a-78f49b79f426",
+          "value": "4",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "cf3a43ee-4545-4132-ad0d-84ddd7022ec1",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Save blocked",
+                "value": "1"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:58.6533333Z",
+      "enabled": false,
+      "configurationType": "policy",
+      "id": "3658eb12-9fa1-4769-87fb-c3355de5f1fa",
+      "lastModifiedDateTime": "2022-07-26T18:58:58.6548107Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Set document behavior if file validation fails",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "63688a47-113f-4bc1-85a2-89c8a94b9ade",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "17162938-080e-4dad-973a-f040636346d5",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:07.61Z",
+      "enabled": false,
+      "configurationType": "policy",
+      "id": "5379ed98-4f28-43b4-8c24-3a40ea05c34e",
+      "lastModifiedDateTime": "2022-07-26T18:59:07.6079207Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Turn off Protected View for attachments opened from Outlook",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "37f6ca32-d418-4d9e-812b-5c23c911eb68",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "ba45be03-e632-408a-bc4d-f2df8f7caa37",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:15.7633333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "fe643172-1a28-43d3-b387-b8f3cb36e290",
+      "lastModifiedDateTime": "2022-07-26T18:59:15.779781Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Word 2007 and later binary documents and templates",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "fb861a67-4845-4bfa-97d9-544363aeb93e",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "55e70618-bb12-42f1-ad3e-f4c7a2869f83",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:15.779781Z",
+          "createdDateTime": "2022-07-26T18:59:15.7733333Z",
+          "id": "34f70478-56b3-4450-9308-daa06386bb52",
+          "value": "4",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "9dc627f4-5cff-4a24-ab06-e07e3ce2015f",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Save blocked",
+                "value": "1"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:52.23Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "bcdcba43-c2b0-4b5f-a4b5-fa9c2228cad8",
+      "lastModifiedDateTime": "2022-07-26T18:58:52.2954488Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Excel 4 workbooks",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "cfad7512-e226-4d73-84c9-6b2c59618edc",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "49741913-dc82-472e-a831-f8b9cebcfb3b",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:52.2954488Z",
+          "createdDateTime": "2022-07-26T18:58:52.2933333Z",
+          "id": "40aee257-21a9-4bba-8690-4a11bb9f8e78",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "File block setting:",
+            "id": "2efec34c-2a2c-4926-8a37-40e0538e2d39",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Do not block",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Do not block",
+                "value": "0"
+              },
+              {
+                "displayName": "Open/Save blocked, use open policy",
+                "value": "2"
+              },
+              {
+                "displayName": "Block",
+                "value": "3"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "4"
+              },
+              {
+                "displayName": "Allow editing and open in Protected View",
+                "value": "5"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:58:45.6533333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "d5e3407e-668f-471a-af42-3c4ef93c7284",
+      "lastModifiedDateTime": "2022-07-26T18:58:45.6548327Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Scan encrypted macros in Excel Open XML workbooks",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "f9da24f0-3392-48d0-b090-6ab95d5fe2e1",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "b84e93f5-187a-441e-b63e-fdddf2bdd780",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:58:45.6548327Z",
+          "createdDateTime": "2022-07-26T18:58:45.6633333Z",
+          "id": "602856d6-fd34-4af7-9463-36dede35bdf3",
+          "value": "0",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "",
+            "id": "b6733f16-0416-4107-b5d3-7b8556f23415",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Scan encrypted macros (default)",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Scan encrypted macros (default)",
+                "value": "0"
+              },
+              {
+                "displayName": "Scan if anti-virus software available",
+                "value": "1"
+              },
+              {
+                "displayName": "Load macros without scanning",
+                "value": "2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:06.7933333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "7fe87bc8-c654-4819-85f7-ed2412c823d2",
+      "lastModifiedDateTime": "2022-07-26T18:59:06.9985555Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Set document behavior if file validation fails",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "37f6ca32-d418-4d9e-812b-5c23c911eb68",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "c2fcfa44-294e-4641-a9c2-fee770c626b6",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueBoolean",
+          "lastModifiedDateTime": "2022-07-26T18:59:06.9516715Z",
+          "createdDateTime": "2022-07-26T18:59:06.95Z",
+          "id": "d82d6e1f-13d2-47fc-8722-87292ee4f1f1",
+          "value": false,
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationCheckBox",
+            "label": "Checked: Allow edit.  Unchecked: Do not allow edit.",
+            "id": "339e9b46-d360-4036-89f5-3545289e3015",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "defaultChecked": false
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:06.9985555Z",
+          "createdDateTime": "2022-07-26T18:59:07.0066666Z",
+          "id": "262a0613-98be-4022-a6fe-ce93a9089f9a",
+          "value": "0",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "",
+            "id": "450eb463-ca98-4cd4-8ff1-c1d42426cc7d",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Open in Protected View",
+              "value": "1"
+            },
+            "items": [
+              {
+                "displayName": "Block files",
+                "value": "0"
+              },
+              {
+                "displayName": "Open in Protected View",
+                "value": "1"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

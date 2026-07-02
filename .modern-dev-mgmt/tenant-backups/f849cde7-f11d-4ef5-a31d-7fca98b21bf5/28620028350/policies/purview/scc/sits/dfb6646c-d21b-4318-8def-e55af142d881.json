@@ -1,0 +1,5 @@
+{
+  "id": "dfb6646c-d21b-4318-8def-e55af142d881",
+  "name": "Iceland Physical Addresses",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

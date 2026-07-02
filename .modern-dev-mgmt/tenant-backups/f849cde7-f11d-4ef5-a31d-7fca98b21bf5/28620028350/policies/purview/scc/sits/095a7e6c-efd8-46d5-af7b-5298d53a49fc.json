@@ -1,0 +1,5 @@
+{
+  "id": "095a7e6c-efd8-46d5-af7b-5298d53a49fc",
+  "name": "Azure Redis Cache Connection String",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

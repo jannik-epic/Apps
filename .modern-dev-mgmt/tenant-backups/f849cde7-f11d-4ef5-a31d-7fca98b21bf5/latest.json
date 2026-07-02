@@ -1,11 +1,11 @@
 {
-  "backupId": "28619470332",
+  "backupId": "28620028350",
   "tenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
-  "snapshotPath": ".modern-dev-mgmt/tenant-backups/f849cde7-f11d-4ef5-a31d-7fca98b21bf5/28619470332",
-  "createdAt": "2026-07-02T20:29:51.1045886Z",
-  "workflowRunId": "28619470332",
+  "snapshotPath": ".modern-dev-mgmt/tenant-backups/f849cde7-f11d-4ef5-a31d-7fca98b21bf5/28620028350",
+  "createdAt": "2026-07-02T20:39:26.3247682Z",
+  "workflowRunId": "28620028350",
   "counts": {
-    "conditional-access-policies": 1,
+    "conditional-access-policies": 0,
     "named-locations": 0,
     "authentication-strengths": 0,
     "authentication-contexts": 0,
@@ -26,10 +26,10 @@
     "authentication-methods-policy": 0,
     "defender-secure-score-control-profiles": 0,
     "defender-secure-scores": 0,
-    "configuration-policies": 14,
+    "configuration-policies": 15,
     "device-configurations": 0,
-    "group-policy-configurations": 6,
-    "device-management-intents": 7,
+    "group-policy-configurations": 7,
+    "device-management-intents": 8,
     "compliance-policies": 0,
     "mobile-apps": 0,
     "managed-app-policies": 0,
@@ -161,7 +161,7 @@
     "lifecycle-workflow-task-extensions": 0,
     "terms-of-use-agreements": 0,
     "identity-providers": 0,
-    "entra-company-branding": 1,
+    "entra-company-branding": 0,
     "delegated-admin-relationships": 0,
     "bitlocker-recovery-keys": 0,
     "laps-device-local-credentials": 0,
@@ -179,8 +179,8 @@
     "network-access-filtering-policies": 0,
     "network-access-remote-networks": 0,
     "network-access-branches": 0,
-    "assignments": 13,
-    "groups": 3
+    "assignments": 0,
+    "groups": 0
   },
   "scope": "custom"
 }

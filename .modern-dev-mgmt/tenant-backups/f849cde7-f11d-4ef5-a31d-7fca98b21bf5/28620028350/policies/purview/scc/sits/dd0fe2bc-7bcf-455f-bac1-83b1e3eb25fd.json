@@ -1,0 +1,5 @@
+{
+  "id": "dd0fe2bc-7bcf-455f-bac1-83b1e3eb25fd",
+  "name": "New Zealand Inland Revenue number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

@@ -1,0 +1,5 @@
+{
+  "id": "0e9b3178-9678-47dd-a509-37222ca96b42",
+  "name": "EU Debit Card Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

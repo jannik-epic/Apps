@@ -1,0 +1,5 @@
+{
+  "id": "d354f95b-96ee-4b80-80bc-4377312b55bc",
+  "name": "Japan Bank Account Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

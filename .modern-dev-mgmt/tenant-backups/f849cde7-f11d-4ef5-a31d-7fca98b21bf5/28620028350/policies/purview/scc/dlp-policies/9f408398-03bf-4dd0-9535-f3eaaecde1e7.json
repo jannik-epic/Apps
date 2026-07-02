@@ -1,0 +1,177 @@
+{
+  "Mode": "Enable",
+  "DisplayName": "EPF_TST_PUBLIC-LABEL_NOTIFICATION",
+  "Type": "Dlp",
+  "ExchangeLocation": [],
+  "SharePointLocation": [
+    {
+      "DisplayName": "All",
+      "Name": "All",
+      "ImmutableIdentity": "All",
+      "Type": {
+        "value": 1,
+        "Value": "Tenant"
+      },
+      "Status": {
+        "value": 2,
+        "Value": "Success"
+      },
+      "Workload": {
+        "value": 2,
+        "Value": "SharePoint"
+      },
+      "SourceType": null,
+      "SourceTypeDisplayName": null,
+      "SourceProvider": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SourceEntryType": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SchemaVersion": 2,
+      "Resources": null,
+      "ScopingGroup": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "GroupSet": "Default"
+    }
+  ],
+  "SharePointLocationException": [],
+  "OneDriveLocation": [
+    {
+      "DisplayName": "All",
+      "Name": "All",
+      "ImmutableIdentity": "All",
+      "Type": {
+        "value": 1,
+        "Value": "Tenant"
+      },
+      "Status": {
+        "value": 2,
+        "Value": "Success"
+      },
+      "Workload": {
+        "value": 8,
+        "Value": "OneDriveForBusiness"
+      },
+      "SourceType": null,
+      "SourceTypeDisplayName": null,
+      "SourceProvider": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SourceEntryType": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "SchemaVersion": 2,
+      "Resources": null,
+      "ScopingGroup": {
+        "value": 0,
+        "Value": "Unknown"
+      },
+      "GroupSet": "Default"
+    }
+  ],
+  "OneDriveLocationException": [],
+  "ExchangeOnPremisesLocation": [],
+  "SharePointOnPremisesLocation": [],
+  "SharePointOnPremisesLocationException": [],
+  "TeamsLocation": [],
+  "TeamsLocationException": [],
+  "EndpointDlpLocation": [],
+  "EndpointDlpLocationException": [],
+  "ThirdPartyAppDlpLocation": [],
+  "ThirdPartyAppDlpLocationException": [],
+  "OnPremisesScannerDlpLocation": [],
+  "OnPremisesScannerDlpLocationException": [],
+  "PowerBIDlpLocation": [],
+  "PowerBIDlpLocationException": [],
+  "Locations": "[]",
+  "LocationInclusions": [],
+  "LocationExclusions": [],
+  "EndpointDlpExtendedLocations": "",
+  "ExchangeSender": [],
+  "ExchangeSenderException": [],
+  "PolicyTemplateInfo": null,
+  "PolicyCategory": "Unknown",
+  "MatchedItemsCount": null,
+  "TotalItemsCount": null,
+  "TopNLocationStatistics": null,
+  "WorkloadStatistics": null,
+  "IsSimulationPolicy": false,
+  "SimulationStatus": null,
+  "AutoEnableAfter": null,
+  "IsFromSmartInsights": null,
+  "IsColdDataSimulationPolicy": false,
+  "ExtendedProperties": null,
+  "Summary": false,
+  "EnforcementPlanes": null,
+  "LogicalWorkload": null,
+  "OneDriveSharedBy": [],
+  "ExceptIfOneDriveSharedBy": [],
+  "OneDriveSharedByMemberOf": [],
+  "ExceptIfOneDriveSharedByMemberOf": [],
+  "ExchangeSenderMemberOf": [],
+  "ExchangeSenderMemberOfException": [],
+  "ExchangeAdaptiveScopes": [],
+  "ExchangeAdaptiveScopesException": [],
+  "SharePointAdaptiveScopes": [],
+  "SharePointAdaptiveScopesException": [],
+  "OneDriveAdaptiveScopes": [],
+  "OneDriveAdaptiveScopesException": [],
+  "TeamsAdaptiveScopes": [],
+  "TeamsAdaptiveScopesException": [],
+  "EndpointDlpAdaptiveScopes": [],
+  "EndpointDlpAdaptiveScopesException": [],
+  "ExpectedLocations": 0,
+  "CompletedLocations": 0,
+  "FailedLocations": 0,
+  "ItemStatistics": null,
+  "RuleMatchBlob": null,
+  "ErrorMetadata": null,
+  "UserAdministrativeUnitMembershipMap": null,
+  "ForceValidate": false,
+  "PolicyRulesMetaData": "{\"WhenRulesChangedUtc\":\"2025-03-24T14:28:00.7024791Z\"}",
+  "GlobalListType": "None",
+  "PolicyConstraints": "{\"AdministrativeUnit\":[],\"DynamicRiskPrevention\":[]}",
+  "Workload": "Exchange, SharePoint, OneDriveForBusiness",
+  "Priority": 2,
+  "ObjectVersion": "6f5f59f4-01b9-4efc-4897-08dd6ae01495",
+  "CreatedBy": "Admin FFR",
+  "LastModifiedBy": "Admin FFR",
+  "ReadOnly": false,
+  "ExternalIdentity": "",
+  "Comment": "This DLP system generates notifications when a file is incorrectly labeled as public based on the sensitive info types.",
+  "Enabled": true,
+  "DistributionStatus": "Pending",
+  "DistributionSyncStatus": "Success",
+  "DistributionResults": null,
+  "LastStatusUpdateTime": null,
+  "ModificationTimeUtc": "2025-03-24T14:28:00.703",
+  "CreationTimeUtc": "2025-03-19T11:56:11.567",
+  "PolicyRBACScopes": [],
+  "Identity": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/EPF_TST_PUBLIC-LABEL_NOTIFICATION",
+  "Id": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/EPF_TST_PUBLIC-LABEL_NOTIFICATION",
+  "IsValid": true,
+  "ExchangeVersion": "0.20 (15.0.0.0)",
+  "Name": "EPF_TST_PUBLIC-LABEL_NOTIFICATION",
+  "DistinguishedName": "CN=EPF_TST_PUBLIC-LABEL_NOTIFICATION,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=FFO,DC=extest,DC=microsoft,DC=com",
+  "ObjectCategory": null,
+  "ObjectClass": [
+    "msExchUnifiedPolicy"
+  ],
+  "WhenChanged": "2025-03-24T14:28:00+00:00",
+  "WhenCreated": "2025-03-19T11:56:11+00:00",
+  "WhenChangedUTC": "2025-03-24T14:28:00Z",
+  "WhenCreatedUTC": "2025-03-19T11:56:11Z",
+  "ExchangeObjectId": "9f408398-03bf-4dd0-9535-f3eaaecde1e7",
+  "OrganizationalUnitRoot": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "9f408398-03bf-4dd0-9535-f3eaaecde1e7",
+  "OriginatingServer": "",
+  "ObjectState": "Changed"
+}

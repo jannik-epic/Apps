@@ -1,0 +1,5 @@
+{
+  "id": "52974858-9b9c-47bb-99d0-67fa1968c3c5",
+  "name": "Azure SQL Connection String",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

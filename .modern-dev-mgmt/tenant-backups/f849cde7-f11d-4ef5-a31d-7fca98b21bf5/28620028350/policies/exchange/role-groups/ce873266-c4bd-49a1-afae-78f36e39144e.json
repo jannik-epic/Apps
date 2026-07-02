@@ -1,0 +1,41 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [],
+  "Roles": [],
+  "DisplayName": "Helpdesk Administrator",
+  "ExternalDirectoryObjectId": "2adf2769-df26-402f-a895-bddbf8b95815",
+  "Members": [],
+  "SamAccountName": "HelpdeskAdmins_1224304467",
+  "Description": "Membership in this role group is synchronized across services and managed centrally. This role group is not manageable through Microsoft Exchange. Members of this role group may include cross-service helpdesk or password administrators, as well as external partner groups and Microsoft Support. By default, this group is not assigned any roles. However, it will be a member of the View-Only Organization Management role group and will inherit the rights of that group.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [
+    "Partner_Managed"
+  ],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "HelpdeskAdmins",
+  "Identity": "HelpdeskAdmins_1224304467",
+  "Id": "HelpdeskAdmins_1224304467",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "HelpdeskAdmins_1224304467",
+  "DistinguishedName": "CN=HelpdeskAdmins_1224304467,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2026-06-02T17:12:21+00:00",
+  "WhenCreated": "2021-05-18T12:01:10+00:00",
+  "WhenChangedUTC": "2026-06-02T17:12:21Z",
+  "WhenCreatedUTC": "2021-05-18T12:01:10Z",
+  "ExchangeObjectId": "ce873266-c4bd-49a1-afae-78f36e39144e",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "ce873266-c4bd-49a1-afae-78f36e39144e",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

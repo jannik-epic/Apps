@@ -1,0 +1,5 @@
+{
+  "id": "ba147552-2ed1-4a8f-a441-981e94ab1895",
+  "name": "All Credential Types",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

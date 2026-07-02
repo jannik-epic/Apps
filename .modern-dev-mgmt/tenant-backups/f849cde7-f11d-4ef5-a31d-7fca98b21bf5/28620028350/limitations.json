@@ -1,0 +1,7 @@
+[
+  {
+    "area": "groups",
+    "reason": "include_groups was set to false; assignments referencing groups will not have rawJson on restore.",
+    "followUp": "Re-run backup with include_groups=true to recover full restore fidelity."
+  }
+]
