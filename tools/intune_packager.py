@@ -79,6 +79,76 @@ def normalize_base64(value: Optional[str]) -> Optional[str]:
     return raw
 
 
+def compute_sha256(path: Path) -> str:
+    """Streamed SHA256 of a file (artifacts can be hundreds of MB)."""
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def verify_sha256(path: Path, expected: Optional[str], *, allow_mismatch: bool = False) -> None:
+    """Supply-chain integrity gate for direct (non-Homebrew) downloads.
+
+    Homebrew already verifies cask sha256 at `brew install` time, so this guards
+    the --pkg-file / --dmg-file path where we accept a vendor/direct-URL artifact.
+    Aborts on mismatch unless explicitly overridden, so a swapped upstream build
+    can never be silently packaged and pushed to a fleet.
+    """
+    if not expected:
+        LOGGER.info("Keine erwartete SHA256 angegeben - Integritätsprüfung übersprungen für %s", path.name)
+        return
+    expected_norm = expected.strip().lower()
+    if expected_norm in ("", "no_check"):
+        return
+    actual = compute_sha256(path).lower()
+    if actual == expected_norm:
+        LOGGER.info("SHA256 verifiziert für %s (%s)", path.name, actual[:16])
+        return
+    message = (
+        f"SHA256-Mismatch für {path.name}: erwartet {expected_norm[:16]}…, "
+        f"berechnet {actual[:16]}… - Upload abgebrochen (Supply-Chain-Schutz)."
+    )
+    if allow_mismatch:
+        LOGGER.warning("%s --allow-sha-mismatch gesetzt, fahre dennoch fort.", message)
+        return
+    raise RuntimeError(message)
+
+
+def normalize_version_for_compare(value: Optional[str]) -> Optional[tuple]:
+    """Tolerant version tuple for Homebrew/macOS-style strings.
+
+    Strips a leading 'v', everything from the first '-' (e.g. '-beta'),
+    parenthetical build tags '(1234)', and treats commas as separators so
+    '1.2.3,4567' compares cleanly. Returns None when nothing numeric is left.
+    """
+    if not value:
+        return None
+    raw = str(value).strip().lower().lstrip("v")
+    raw = raw.split("-", 1)[0]
+    raw = raw.split("(", 1)[0]
+    raw = raw.replace(",", ".")
+    parts = [p for p in raw.replace("_", ".").split(".") if p != ""]
+    nums: list[int] = []
+    for part in parts:
+        digits = "".join(ch for ch in part if ch.isdigit())
+        if digits == "":
+            break
+        nums.append(int(digits))
+    return tuple(nums) if nums else None
+
+
+def is_strictly_newer(candidate: Optional[str], existing: Optional[str]) -> bool:
+    """True when `candidate` is a strictly newer version than `existing`."""
+    c = normalize_version_for_compare(candidate)
+    e = normalize_version_for_compare(existing)
+    if c is None or e is None:
+        # Unknown either side: cannot prove it's not newer, so allow the upload.
+        return True
+    return c > e
+
+
 def run(cmd: Iterable[str], *, cwd: Optional[Path] = None, check: bool = True) -> subprocess.CompletedProcess:
     LOGGER.debug("Running command: %s", " ".join(cmd))
     result = subprocess.run(
@@ -551,6 +621,41 @@ class IntuneClient:
             return json.loads(body)
         return {}
 
+    def find_existing_mac_version(self, bundle_id: str, base_name: str) -> Optional[str]:
+        """Highest primaryBundleVersion of an existing macOS app for this bundle.
+
+        Matches on primaryBundleId (stable) and, as a fallback, a displayName
+        prefix. Returns None when no comparable app exists. Best-effort: a Graph
+        error returns None so packaging still proceeds.
+        """
+        try:
+            response = self._graph_request(
+                "GET",
+                "/deviceAppManagement/mobileApps?$filter="
+                + parse.quote(
+                    "isof('microsoft.graph.macOSPkgApp') or isof('microsoft.graph.macOSDmgApp')"
+                )
+                + "&$select=id,displayName,primaryBundleId,primaryBundleVersion&$top=200",
+            )
+        except Exception as exc:  # noqa: BLE001 - best effort
+            LOGGER.warning("Konnte existierende macOS-Apps nicht abfragen: %s", exc)
+            return None
+        best: Optional[str] = None
+        wanted_bundle = (bundle_id or "").strip().lower()
+        wanted_name = (base_name or "").strip().lower()
+        for app in response.get("value", []) or []:
+            app_bundle = str(app.get("primaryBundleId") or "").strip().lower()
+            app_name = str(app.get("displayName") or "").strip().lower()
+            matches = bool(wanted_bundle) and app_bundle == wanted_bundle
+            if not matches and wanted_name:
+                matches = app_name.startswith(wanted_name)
+            if not matches:
+                continue
+            candidate = app.get("primaryBundleVersion")
+            if candidate and (best is None or is_strictly_newer(str(candidate), best)):
+                best = str(candidate)
+        return best
+
     def create_mac_app(self, metadata: BundleMetadata, params: dict, file_name: str) -> str:
         LOGGER.info("Erzeuge Platzhalter in Intune für %s", metadata.bundle_name)
         payload = {
@@ -804,6 +909,21 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--bundle-id", default=None, help="Primary bundle id for uploaded custom PKG packages")
     parser.add_argument("--bundle-name", default=None, help="Primary bundle name for uploaded custom PKG packages")
     parser.add_argument("--icon-file", default=None, help="Pfad zu einem PNG/JPG Icon")
+    parser.add_argument(
+        "--expected-sha256",
+        default=None,
+        help="Erwartete SHA256 des Quell-Artefakts (--pkg-file/--dmg-file). Bei Mismatch wird abgebrochen.",
+    )
+    parser.add_argument(
+        "--allow-sha-mismatch",
+        action="store_true",
+        help="SHA256-Mismatch nur warnen statt abbrechen (explizites Override).",
+    )
+    parser.add_argument(
+        "--skip-if-current",
+        action="store_true",
+        help="Upload überspringen, wenn in Intune bereits eine gleiche/neuere Version dieser App existiert.",
+    )
     parser.add_argument("--pre-install-script-b64", default=None, help="Base64-kodiertes Pre-Install-Script")
     parser.add_argument("--post-install-script-b64", default=None, help="Base64-kodiertes Post-Install-Script")
     parser.add_argument(
@@ -932,10 +1052,14 @@ def resolve_package_source(args: argparse.Namespace) -> tuple[Path, BundleMetada
 
     if args.pkg_file:
         source = Path(args.pkg_file)
+        # Supply-chain gate: brew verifies cask hashes itself, but a direct
+        # .pkg upload is unverified — check it before we package/upload.
+        verify_sha256(source, args.expected_sha256, allow_mismatch=args.allow_sha_mismatch)
         metadata = metadata_from_args(args, source)
         return copy_pkg_for_upload(source, output_dir / metadata.bundle_id), metadata, None
 
     source = Path(args.dmg_file)
+    verify_sha256(source, args.expected_sha256, allow_mismatch=args.allow_sha_mismatch)
     metadata = metadata_from_args(args, source)
     pkg_path, resolved_metadata = first_payload_from_dmg(source, output_dir / metadata.bundle_id, metadata)
     return pkg_path, resolved_metadata, None
@@ -1007,6 +1131,24 @@ def main(argv: list[str]) -> int:
     if post_install_script:
         app_params["postInstallScript"] = post_install_script
 
+    # Skip-if-current: avoid creating a duplicate app object (and burning runner
+    # minutes) when Intune already has this app at the same or a newer version.
+    if args.skip_if_current:
+        existing_version = client.find_existing_mac_version(metadata.bundle_id, metadata.bundle_name)
+        if existing_version and not is_strictly_newer(metadata.version, existing_version):
+            LOGGER.info(
+                "Intune hat bereits %s in Version %s (>= %s) - Upload übersprungen (--skip-if-current).",
+                metadata.bundle_name,
+                existing_version,
+                metadata.version,
+            )
+            github_output = os.environ.get("GITHUB_OUTPUT")
+            if github_output:
+                with open(github_output, "a", encoding="utf-8") as handle:
+                    handle.write("skipped=true\n")
+                    handle.write(f"skip_reason=existing version {existing_version} >= {metadata.version}\n")
+            return 0
+
     app_id = client.create_mac_app(
         metadata,
         app_params,
@@ -1076,6 +1218,11 @@ def main(argv: list[str]) -> int:
         with open(github_output, "a", encoding="utf-8") as handle:
             handle.write(f"app_id={app_id}\n")
             handle.write(f"app_name={display_name}\n")
+            # Real CFBundleIdentifier (read from Info.plist for cask/dmg). The
+            # control plane persists this onto the catalog row so macOS
+            # update-only detection (`defaults read <bundleId>`) can be generated.
+            handle.write(f"bundle_id={metadata.bundle_id}\n")
+            handle.write(f"bundle_version={metadata.version}\n")
     return 0
 
 
