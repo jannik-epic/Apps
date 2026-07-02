@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "restorePlanId": "27c4e165-209a-4c21-b5b3-75f277f75570",
+  "tenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "backupId": "28619470332",
+  "backupRef": ".modern-dev-mgmt/tenant-backups/f849cde7-f11d-4ef5-a31d-7fca98b21bf5/28619470332",
+  "mode": "apply_disabled",
+  "conflictStrategy": "create_new",
+  "includeAssignments": false,
+  "includeGroups": false,
+  "policies": [
+    {
+      "backupPolicyId": "0fc3530a-7427-40c8-97e3-829476fa5103",
+      "policyType": "DeviceManagementConfigurationPolicy",
+      "path": "policies/intune/configuration-policies/0fc3530a-7427-40c8-97e3-829476fa5103.json",
+      "assignments": "none",
+      "groups": "map-or-create"
+    },
+    {
+      "backupPolicyId": "4d803c5c-8bbc-473a-b977-7e817c17e3b4",
+      "policyType": "GroupPolicyConfiguration",
+      "path": "policies/intune/group-policy-configurations/4d803c5c-8bbc-473a-b977-7e817c17e3b4.json",
+      "assignments": "none",
+      "groups": "map-or-create"
+    },
+    {
+      "backupPolicyId": "efc458b1-1242-4bae-8fed-11a07bb3de3d",
+      "policyType": "DeviceManagementIntent",
+      "path": "policies/intune/intents/efc458b1-1242-4bae-8fed-11a07bb3de3d.json",
+      "assignments": "none",
+      "groups": "map-or-create"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "failed": [],
+  "warnings": [],
+  "skipped": [],
+  "applied": [
+    {
+      "backupPolicyId": "0fc3530a-7427-40c8-97e3-829476fa5103",
+      "policyType": "DeviceManagementConfigurationPolicy",
+      "path": "policies/intune/configuration-policies/0fc3530a-7427-40c8-97e3-829476fa5103.json",
+      "status": "applied",
+      "targetId": "972d5a71-9962-43ba-abfa-41cd6e4c4bc9",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies"
+    },
+    {
+      "backupPolicyId": "4d803c5c-8bbc-473a-b977-7e817c17e3b4",
+      "policyType": "GroupPolicyConfiguration",
+      "path": "policies/intune/group-policy-configurations/4d803c5c-8bbc-473a-b977-7e817c17e3b4.json",
+      "status": "applied",
+      "targetId": "81f85e5d-e8d6-4b1d-85a0-f685778a2349",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations"
+    },
+    {
+      "backupPolicyId": "efc458b1-1242-4bae-8fed-11a07bb3de3d",
+      "policyType": "DeviceManagementIntent",
+      "path": "policies/intune/intents/efc458b1-1242-4bae-8fed-11a07bb3de3d.json",
+      "status": "applied",
+      "targetId": "4d2f1993-3fd6-4f37-ba76-6386a2b3c962",
+      "targetEndpoint": "https://graph.microsoft.com/beta/deviceManagement/intents"
+    }
+  ],
+  "deferred": []
+}
