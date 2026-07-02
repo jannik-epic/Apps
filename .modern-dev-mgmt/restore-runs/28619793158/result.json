@@ -1,0 +1,40 @@
+{
+  "failed": [],
+  "warnings": [],
+  "deferred": [],
+  "applied": [],
+  "skipped": [
+    {
+      "backupPolicyId": "81d36ad2-4e01-4065-97e2-f933177b1473",
+      "policyType": "ConditionalAccessPolicy",
+      "path": "policies/conditional-access/policies/81d36ad2-4e01-4065-97e2-f933177b1473.json",
+      "status": "skipped",
+      "reason": "Existing object with displayName 'test' already exists in target tenant (id 81d36ad2-4e01-4065-97e2-f933177b1473).",
+      "targetId": "81d36ad2-4e01-4065-97e2-f933177b1473"
+    },
+    {
+      "backupPolicyId": "371271e9-4b52-4311-9563-09d46a224379",
+      "policyType": "DeviceManagementConfigurationPolicy",
+      "path": "policies/intune/configuration-policies/371271e9-4b52-4311-9563-09d46a224379.json",
+      "status": "skipped",
+      "reason": "Existing object with displayName 'Application Control' already exists in target tenant (id 371271e9-4b52-4311-9563-09d46a224379).",
+      "targetId": "371271e9-4b52-4311-9563-09d46a224379"
+    },
+    {
+      "backupPolicyId": "1e866793-8e72-4edc-b993-9ce0f2ae0559",
+      "policyType": "GroupPolicyConfiguration",
+      "path": "policies/intune/group-policy-configurations/1e866793-8e72-4edc-b993-9ce0f2ae0559.json",
+      "status": "skipped",
+      "reason": "Existing object with displayName 'WIN_Default_OfficeSecurity' already exists in target tenant (id 1e866793-8e72-4edc-b993-9ce0f2ae0559).",
+      "targetId": "1e866793-8e72-4edc-b993-9ce0f2ae0559"
+    },
+    {
+      "backupPolicyId": "efc458b1-1242-4bae-8fed-11a07bb3de3d",
+      "policyType": "DeviceManagementIntent",
+      "path": "policies/intune/intents/efc458b1-1242-4bae-8fed-11a07bb3de3d.json",
+      "status": "skipped",
+      "reason": "Existing object with displayName 'Users_EnableSecurityKeysSign-in ' already exists in target tenant (id efc458b1-1242-4bae-8fed-11a07bb3de3d).",
+      "targetId": "efc458b1-1242-4bae-8fed-11a07bb3de3d"
+    }
+  ]
+}
