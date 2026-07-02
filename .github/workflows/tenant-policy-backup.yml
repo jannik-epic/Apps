@@ -43,8 +43,8 @@ on:
         type: string
 
 env:
-  AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
-  AZURE_BACKUP_CLIENT_ID: 'b8574bb9-c5c3-435e-8b66-25129b622ec9'
+  AZURE_TENANT_ID: 'f849cde7-f11d-4ef5-a31d-7fca98b21bf5'
+  AZURE_BACKUP_CLIENT_ID: '4743e56d-572f-4993-895a-38797244b41f'
   GRAPH_BASE: 'https://graph.microsoft.com/v1.0'
   GRAPH_BETA_BASE: 'https://graph.microsoft.com/beta'
 
@@ -175,29 +175,55 @@ jobs:
               [switch]$NotFoundAsLimitation,
               [string]$LimitationArea = 'graph'
             )
-            try {
-              $params = @{ Method = $Method; Uri = $Uri; Headers = $headers; TimeoutSec = 120 }
-              if ($null -ne $Body) { $params.Body = ($Body | ConvertTo-Json -Depth 30) }
-              return Invoke-RestMethod @params
-            } catch {
-              $message = Graph-ErrorMessage $_
-              $code = Graph-ErrorCode $_
-              if ($NotFoundAsLimitation -and $code -eq 'Request_ResourceNotFound') {
-                $limitations.Add([ordered]@{ area = $LimitationArea; reason = "$Label does not exist or is no longer resolvable."; followUp = 'Review stale assignment targets in the source tenant.' }) | Out-Null
-              } else {
-                $warnings.Add("$Label unavailable: $message") | Out-Null
+            $maxAttempts = 5
+            for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
+              try {
+                $params = @{ Method = $Method; Uri = $Uri; Headers = $headers; TimeoutSec = 120 }
+                if ($null -ne $Body) { $params.Body = ($Body | ConvertTo-Json -Depth 30) }
+                return Invoke-RestMethod @params
+              } catch {
+                $status = 0
+                try { $status = [int]$_.Exception.Response.StatusCode } catch {}
+                if ($attempt -lt $maxAttempts -and ($status -eq 429 -or $status -ge 500)) {
+                  $delay = 0
+                  try {
+                    $ra = $_.Exception.Response.Headers.RetryAfter
+                    if ($ra -and $ra.Delta) { $delay = [int]$ra.Delta.TotalSeconds }
+                  } catch {}
+                  if ($delay -lt 1) { $delay = [Math]::Min(60, [int][Math]::Pow(2, $attempt) * 2) }
+                  Write-Host "Graph throttled/unavailable ($status) for $Label — retrying in $($delay)s (attempt $attempt/$maxAttempts)"
+                  Start-Sleep -Seconds $delay
+                  continue
+                }
+                $message = Graph-ErrorMessage $_
+                $code = Graph-ErrorCode $_
+                if ($NotFoundAsLimitation -and $code -eq 'Request_ResourceNotFound') {
+                  $limitations.Add([ordered]@{ area = $LimitationArea; reason = "$Label does not exist or is no longer resolvable."; followUp = 'Review stale assignment targets in the source tenant.' }) | Out-Null
+                } else {
+                  $warnings.Add("$Label unavailable: $message") | Out-Null
+                }
+                return $null
               }
-              return $null
             }
+            return $null
           }
 
+          $truncatedCollections = New-Object System.Collections.Generic.List[string]
           function Invoke-GraphCollection {
             param([string]$Uri, [string]$Label)
             $items = New-Object System.Collections.Generic.List[object]
             $next = $Uri
             while ($next) {
               $response = Invoke-GraphJson -Uri $next -Label $Label
-              if ($null -eq $response) { break }
+              if ($null -eq $response) {
+                # A mid-pagination failure must not masquerade as a complete
+                # collection: record it so the manifest reports a partial type.
+                if ($next -ne $Uri) {
+                  $truncatedCollections.Add($Label) | Out-Null
+                  $warnings.Add("$Label collection truncated after $($items.Count) items: a page fetch failed; this type's snapshot is partial.") | Out-Null
+                }
+                break
+              }
               if ($response.value -is [array]) {
                 foreach ($item in $response.value) { $items.Add($item) | Out-Null }
               } elseif ($response.value) {
@@ -223,7 +249,15 @@ jobs:
           function Sanitize-Id {
             param([string]$Value)
             if (-not $Value) { return 'unknown' }
-            return ($Value -replace '[^a-zA-Z0-9._-]', '_')
+            $safe = ($Value -replace '[^a-zA-Z0-9._-]', '_')
+            if ($safe.Length -le 80) { return $safe }
+            # Cap the file name so committed snapshot paths stay well under the
+            # Windows 260-char MAX_PATH — otherwise every windows-latest job in
+            # this repo fails at checkout with "Filename too long". A short
+            # content hash keeps truncated names collision-free.
+            $sha = [System.Security.Cryptography.SHA256]::Create()
+            $hashHex = -join ($sha.ComputeHash([Text.Encoding]::UTF8.GetBytes($Value)) | ForEach-Object { $_.ToString('x2') })
+            return $safe.Substring(0, 64) + '-' + $hashHex.Substring(0, 10)
           }
 
           function Get-PolicyDisplayName {
@@ -308,6 +342,39 @@ jobs:
             $base = if ($spec.graphBase -eq 'beta') { $GraphBetaBase } else { $GraphBase }
             $restorable = $true
             if ($spec.PSObject.Properties.Match('restorable').Count -gt 0) { $restorable = [bool]$spec.restorable }
+            # Types that need nested enumeration instead of a flat readPath.
+            if ($spec.key -eq 'dep-enrollment-profiles') {
+              $depSettings = Invoke-GraphCollection -Uri "$base/deviceManagement/depOnboardingSettings" -Label 'DEP onboarding settings'
+              $depProfiles = New-Object System.Collections.Generic.List[object]
+              foreach ($dep in @($depSettings)) {
+                if ($null -eq $dep -or -not $dep.id) { continue }
+                $profiles = Invoke-GraphCollection -Uri ("$base/deviceManagement/depOnboardingSettings/" + $dep.id + '/enrollmentProfiles') -Label "DEP enrollment profiles ($($dep.id))"
+                foreach ($p in @($profiles)) {
+                  if ($null -eq $p) { continue }
+                  $p | Add-Member -NotePropertyName depOnboardingSettingId -NotePropertyValue $dep.id -Force
+                  $depProfiles.Add($p) | Out-Null
+                }
+              }
+              $result = Save-PolicyArray -Subdir $spec.subdir -PolicyType $spec.policyType -Label $spec.label -Items @($depProfiles.ToArray()) -ExpandAssignments $false -Restorable $restorable
+              $manifestCounts[$spec.key] = $result.count
+              continue
+            }
+            if ($spec.key -eq 'entra-company-branding') {
+              $orgs = Invoke-GraphCollection -Uri "$base/organization" -Label 'Organization'
+              $brandings = New-Object System.Collections.Generic.List[object]
+              foreach ($o in @($orgs)) {
+                if ($null -eq $o -or -not $o.id) { continue }
+                $branding = Invoke-GraphJson -Uri ("$base/organization/" + $o.id + '/branding') -Label "Company branding ($($o.id))" -NotFoundAsLimitation -LimitationArea 'entra-company-branding'
+                if ($null -eq $branding) { continue }
+                $locs = Invoke-GraphCollection -Uri ("$base/organization/" + $o.id + '/branding/localizations') -Label "Company branding localizations ($($o.id))"
+                $branding | Add-Member -NotePropertyName localizations -NotePropertyValue @($locs) -Force
+                $branding | Add-Member -NotePropertyName id -NotePropertyValue $o.id -Force
+                $brandings.Add($branding) | Out-Null
+              }
+              $result = Save-PolicyArray -Subdir $spec.subdir -PolicyType $spec.policyType -Label $spec.label -Items @($brandings.ToArray()) -ExpandAssignments $false -Restorable $restorable
+              $manifestCounts[$spec.key] = $result.count
+              continue
+            }
             $expand = if ($includeAssignments -and $spec.supportsExpandAssignments) { '?$expand=assignments' } else { '' }
             $uri = "$base/$($spec.readPath)$expand"
             if ($spec.singleton) {
@@ -329,6 +396,29 @@ jobs:
               continue
             }
             $items = Invoke-GraphCollection -Uri $uri -Label $spec.label
+            # The list endpoints for settings catalog, endpoint security intents
+            # and ADMX return metadata only — without the per-object bodies a
+            # restore would create empty shells. Pull the full content per item.
+            if ($spec.key -eq 'configuration-policies') {
+              foreach ($item in @($items)) {
+                if ($null -eq $item -or -not $item.id) { continue }
+                $settings = Invoke-GraphCollection -Uri ("$base/deviceManagement/configurationPolicies/" + $item.id + '/settings') -Label "$($spec.label) settings ($($item.id))"
+                $item | Add-Member -NotePropertyName settings -NotePropertyValue @($settings) -Force
+              }
+            } elseif ($spec.key -eq 'device-management-intents') {
+              foreach ($item in @($items)) {
+                if ($null -eq $item -or -not $item.id) { continue }
+                $intentSettings = Invoke-GraphCollection -Uri ("$base/deviceManagement/intents/" + $item.id + '/settings') -Label "$($spec.label) settings ($($item.id))"
+                $item | Add-Member -NotePropertyName settingsDelta -NotePropertyValue @($intentSettings) -Force
+              }
+            } elseif ($spec.key -eq 'group-policy-configurations') {
+              foreach ($item in @($items)) {
+                if ($null -eq $item -or -not $item.id) { continue }
+                $dvUri = "$base/deviceManagement/groupPolicyConfigurations/" + $item.id + '/definitionValues?$expand=definition,presentationValues($expand=presentation)'
+                $definitionValues = Invoke-GraphCollection -Uri $dvUri -Label "$($spec.label) definitionValues ($($item.id))"
+                $item | Add-Member -NotePropertyName definitionValues -NotePropertyValue @($definitionValues) -Force
+              }
+            }
             $result = Save-PolicyArray -Subdir $spec.subdir -PolicyType $spec.policyType -Label $spec.label -Items $items -ExpandAssignments ($includeAssignments -and $spec.supportsExpandAssignments) -Restorable $restorable
             $manifestCounts[$spec.key] = $result.count
             $manifestCounts['assignments'] = [int]$manifestCounts['assignments'] + [int]$result.assignments
@@ -389,6 +479,8 @@ jobs:
             counts = $manifestCounts
             warningCount = $warnings.Count
             limitationCount = $limitations.Count
+            truncatedCollections = @($truncatedCollections.ToArray())
+            partial = ($truncatedCollections.Count -gt 0)
             policies = @($manifestPolicies.ToArray())
           }
           if ($env:INPUT_REQUEST_CONTEXT_B64) { $manifest.requestContextProvided = $true }
@@ -441,14 +533,6 @@ jobs:
           }
           $summary | Add-Content -Path $env:GITHUB_STEP_SUMMARY
 
-      - name: Upload backup artifact
-        if: always()
-        uses: actions/upload-artifact@v7
-        with:
-          name: tenant-policy-backup-${{ github.run_id }}
-          path: ${{ steps.snapshot.outputs.snapshot_dir }}
-          if-no-files-found: warn
-
       - name: Snapshot Purview + Exchange (app-only SCC/EXO PowerShell)
         if: ${{ steps.snapshot.outputs.snapshot_dir != '' }}
         shell: pwsh
@@ -460,6 +544,27 @@ jobs:
           SNAPSHOT_DIR: ${{ steps.snapshot.outputs.snapshot_dir }}
         run: |
           $ErrorActionPreference = 'Stop'
+          function Add-SnapshotWarnings {
+            param([array]$Messages)
+            if (-not $Messages -or -not $Messages.Count) { return }
+            $warningsPath = Join-Path $env:SNAPSHOT_DIR 'warnings.json'
+            $warnings = @()
+            if (Test-Path $warningsPath) {
+              try { $warnings = @(Get-Content $warningsPath -Raw | ConvertFrom-Json) } catch { $warnings = @() }
+            }
+            foreach ($msg in @($Messages)) {
+              if ($msg) { $warnings += [string]$msg }
+            }
+            $warnings | ConvertTo-Json -Depth 8 | Set-Content -Path $warningsPath -Encoding UTF8
+            $manifestPath = Join-Path $env:SNAPSHOT_DIR 'manifest.json'
+            if (Test-Path $manifestPath) {
+              try {
+                $m = Get-Content $manifestPath -Raw | ConvertFrom-Json
+                $m.warningCount = @($warnings).Count
+                $m | ConvertTo-Json -Depth 30 | Set-Content -Path $manifestPath -Encoding UTF8
+              } catch {}
+            }
+          }
           # Connector identity comes from config (baked) or a committed onboarding
           # file in the tenant repo (scripts/purview-connector.json: { appId, org }).
           # This keeps per-tenant onboarding to "push one config file + the cert
@@ -472,6 +577,7 @@ jobs:
             if (-not $org) { $org = [string]$cfg.org }
           }
           if (-not $env:SCC_CERT_PFX_B64 -or -not $appId -or -not $org) {
+            Add-SnapshotWarnings -Messages @('Purview/Exchange connector not onboarded for this tenant; Exchange Online and Security & Compliance PowerShell objects were not captured.')
             Write-Host 'Purview/Exchange connector not onboarded for this tenant - skipping non-Graph backup.'
             exit 0
           }
@@ -485,6 +591,18 @@ jobs:
           $newCounts = [ordered]@{}
           $sccWarnings = New-Object System.Collections.Generic.List[string]
 
+          # Keep committed paths under the Windows 260-char MAX_PATH (see the
+          # main snapshot step): overlong names break checkout on windows-latest.
+          function Get-SafeFileName {
+            param([string]$Value)
+            if (-not $Value) { return 'unknown' }
+            $safe = ($Value -replace '[^a-zA-Z0-9._-]','_')
+            if ($safe.Length -le 80) { return $safe }
+            $sha = [System.Security.Cryptography.SHA256]::Create()
+            $hashHex = -join ($sha.ComputeHash([Text.Encoding]::UTF8.GetBytes($Value)) | ForEach-Object { $_.ToString('x2') })
+            return $safe.Substring(0, 64) + '-' + $hashHex.Substring(0, 10)
+          }
+
           function Backup-CmdSet {
             param([array]$Targets)
             foreach ($t in $Targets) {
@@ -497,7 +615,7 @@ jobs:
                   if ($null -eq $it) { continue }
                   $rawId = if ($it.Guid) { [string]$it.Guid } elseif ($it.Identity) { [string]$it.Identity } else { [string]$it.Name }
                   if (-not $rawId) { continue }
-                  $safe = ($rawId -replace '[^a-zA-Z0-9._-]','_')
+                  $safe = Get-SafeFileName $rawId
                   $rel = 'policies/' + $t.d + '/' + $safe + '.json'
                   try { ($it | ConvertTo-Json -Depth 25) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8 }
                   catch { ([pscustomobject]@{ id=$rawId; name=$it.Name; _serializationError=$_.Exception.Message } | ConvertTo-Json -Depth 4) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8 }
@@ -580,6 +698,7 @@ jobs:
             $m | Add-Member -NotePropertyName 'connectors' -NotePropertyValue @('graph','purview-scc','exchange-online') -Force
             $m | ConvertTo-Json -Depth 30 | Set-Content -Path $manifestPath -Encoding UTF8
           }
+          Add-SnapshotWarnings -Messages @($sccWarnings.ToArray())
           Write-Host ('== Non-Graph snapshot merged: {0} Purview+Exchange objects, {1} warnings ==' -f $newPolicies.Count, $sccWarnings.Count)
 
       - name: Snapshot Teams + SharePoint (app-only)
@@ -592,12 +711,34 @@ jobs:
           TENANT_GUID: ${{ env.AZURE_TENANT_ID }}
         run: |
           $ErrorActionPreference = 'Stop'
+          function Add-SnapshotWarnings {
+            param([array]$Messages)
+            if (-not $Messages -or -not $Messages.Count) { return }
+            $warningsPath = Join-Path $env:SNAPSHOT_DIR 'warnings.json'
+            $warnings = @()
+            if (Test-Path $warningsPath) {
+              try { $warnings = @(Get-Content $warningsPath -Raw | ConvertFrom-Json) } catch { $warnings = @() }
+            }
+            foreach ($msg in @($Messages)) {
+              if ($msg) { $warnings += [string]$msg }
+            }
+            $warnings | ConvertTo-Json -Depth 8 | Set-Content -Path $warningsPath -Encoding UTF8
+            $manifestPath = Join-Path $env:SNAPSHOT_DIR 'manifest.json'
+            if (Test-Path $manifestPath) {
+              try {
+                $m = Get-Content $manifestPath -Raw | ConvertFrom-Json
+                $m.warningCount = @($warnings).Count
+                $m | ConvertTo-Json -Depth 30 | Set-Content -Path $manifestPath -Encoding UTF8
+              } catch {}
+            }
+          }
           $appId = ''; $org = ''
           if (Test-Path 'scripts/purview-connector.json') {
             $cfg = Get-Content 'scripts/purview-connector.json' -Raw | ConvertFrom-Json
             $appId = [string]$cfg.appId; $org = [string]$cfg.org
           }
           if (-not $env:SCC_CERT_PFX_B64 -or -not $appId -or -not $org) {
+            Add-SnapshotWarnings -Messages @('Teams/SharePoint connector not onboarded for this tenant; Teams PowerShell and SharePoint PnP objects were not captured.')
             Write-Host 'Teams/SharePoint connector not onboarded - skipping.'; exit 0
           }
           $ProgressPreference = 'SilentlyContinue'
@@ -607,6 +748,16 @@ jobs:
           $newPolicies = New-Object System.Collections.Generic.List[object]
           $newCounts = [ordered]@{}
           $tsWarnings = New-Object System.Collections.Generic.List[string]
+
+          function Get-SafeFileName {
+            param([string]$Value)
+            if (-not $Value) { return 'unknown' }
+            $safe = ($Value -replace '[^a-zA-Z0-9._-]','_')
+            if ($safe.Length -le 80) { return $safe }
+            $sha = [System.Security.Cryptography.SHA256]::Create()
+            $hashHex = -join ($sha.ComputeHash([Text.Encoding]::UTF8.GetBytes($Value)) | ForEach-Object { $_.ToString('x2') })
+            return $safe.Substring(0, 64) + '-' + $hashHex.Substring(0, 10)
+          }
 
           function Save-TsSet {
             param([array]$Targets)
@@ -620,7 +771,7 @@ jobs:
                   if ($null -eq $it) { continue }
                   $rawId = if ($it.Identity) { [string]$it.Identity } elseif ($it.Url) { [string]$it.Url } elseif ($it.Id) { [string]$it.Id } elseif ($it.Name) { [string]$it.Name } else { $t.pt }
                   if (-not $rawId) { $rawId = $t.pt }
-                  $safe = ($rawId -replace '[^a-zA-Z0-9._-]','_'); if ($safe.Length -gt 120) { $safe = $safe.Substring(0,120) }
+                  $safe = Get-SafeFileName $rawId
                   $rel = 'policies/' + $t.d + '/' + $safe + '.json'
                   try { ($it | ConvertTo-Json -Depth 20) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8 }
                   catch { ([pscustomobject]@{ id=$rawId; _serializationError=$_.Exception.Message } | ConvertTo-Json -Depth 4) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8 }
@@ -688,6 +839,7 @@ jobs:
             if ($m.PSObject.Properties['connectors']) { $m.connectors = @($m.connectors + @('teams','sharepoint-pnp')) } else { $m | Add-Member -NotePropertyName 'connectors' -NotePropertyValue @('teams','sharepoint-pnp') -Force }
             $m | ConvertTo-Json -Depth 30 | Set-Content -Path $manifestPath -Encoding UTF8
           }
+          Add-SnapshotWarnings -Messages @($tsWarnings.ToArray())
           Write-Host ('== Teams + SharePoint snapshot merged: {0} objects, {1} warnings ==' -f $newPolicies.Count, $tsWarnings.Count)
 
       - name: Snapshot Power Platform (app-only BAP API)
@@ -700,9 +852,34 @@ jobs:
           TENANT_GUID: ${{ env.AZURE_TENANT_ID }}
         run: |
           $ErrorActionPreference = 'Stop'
+          function Add-SnapshotWarnings {
+            param([array]$Messages)
+            if (-not $Messages -or -not $Messages.Count) { return }
+            $warningsPath = Join-Path $env:SNAPSHOT_DIR 'warnings.json'
+            $warnings = @()
+            if (Test-Path $warningsPath) {
+              try { $warnings = @(Get-Content $warningsPath -Raw | ConvertFrom-Json) } catch { $warnings = @() }
+            }
+            foreach ($msg in @($Messages)) {
+              if ($msg) { $warnings += [string]$msg }
+            }
+            $warnings | ConvertTo-Json -Depth 8 | Set-Content -Path $warningsPath -Encoding UTF8
+            $manifestPath = Join-Path $env:SNAPSHOT_DIR 'manifest.json'
+            if (Test-Path $manifestPath) {
+              try {
+                $m = Get-Content $manifestPath -Raw | ConvertFrom-Json
+                $m.warningCount = @($warnings).Count
+                $m | ConvertTo-Json -Depth 30 | Set-Content -Path $manifestPath -Encoding UTF8
+              } catch {}
+            }
+          }
           $appId = ''
           if (Test-Path 'scripts/purview-connector.json') { $appId = [string](Get-Content 'scripts/purview-connector.json' -Raw | ConvertFrom-Json).appId }
-          if (-not $env:SCC_CERT_PFX_B64 -or -not $appId -or -not $env:TENANT_GUID) { Write-Host 'Power Platform connector not onboarded - skipping.'; exit 0 }
+          if (-not $env:SCC_CERT_PFX_B64 -or -not $appId -or -not $env:TENANT_GUID) {
+            Add-SnapshotWarnings -Messages @('Power Platform connector not onboarded for this tenant; Power Platform environment and DLP objects were not captured.')
+            Write-Host 'Power Platform connector not onboarded - skipping.'
+            exit 0
+          }
           $bytes = [Convert]::FromBase64String($env:SCC_CERT_PFX_B64)
           $flags = [System.Security.Cryptography.X509Certificates.X509KeyStorageFlags]::EphemeralKeySet
           $cert = [System.Security.Cryptography.X509Certificates.X509Certificate2]::new($bytes, $env:SCC_CERT_PWD, $flags)
@@ -720,6 +897,15 @@ jobs:
           $newPolicies = New-Object System.Collections.Generic.List[object]
           $newCounts = [ordered]@{}
           $ppWarnings = New-Object System.Collections.Generic.List[string]
+          function Get-SafeFileName {
+            param([string]$Value)
+            if (-not $Value) { return 'unknown' }
+            $safe = ($Value -replace '[^a-zA-Z0-9._-]','_')
+            if ($safe.Length -le 80) { return $safe }
+            $sha = [System.Security.Cryptography.SHA256]::Create()
+            $hashHex = -join ($sha.ComputeHash([Text.Encoding]::UTF8.GetBytes($Value)) | ForEach-Object { $_.ToString('x2') })
+            return $safe.Substring(0, 64) + '-' + $hashHex.Substring(0, 10)
+          }
           try {
             $body = @{ client_id=$appId; client_assertion_type='urn:ietf:params:oauth:client-assertion-type:jwt-bearer'; client_assertion=$assertion; scope='https://api.bap.microsoft.com/.default'; grant_type='client_credentials' }
             $tok = (Invoke-RestMethod -Method POST -Uri $tokenEp -Body $body -ContentType 'application/x-www-form-urlencoded').access_token
@@ -738,7 +924,7 @@ jobs:
                   if ($null -eq $it) { continue }
                   $rawId = if ($it.($t.idp)) { [string]$it.($t.idp) } elseif ($it.name) { [string]$it.name } else { [string]$it.id }
                   if (-not $rawId) { continue }
-                  $safe = ($rawId -replace '[^a-zA-Z0-9._-]','_'); if ($safe.Length -gt 120) { $safe = $safe.Substring(0,120) }
+                  $safe = Get-SafeFileName $rawId
                   $rel = 'policies/' + $t.d + '/' + $safe + '.json'
                   ($it | ConvertTo-Json -Depth 20) | Set-Content -Path (Join-Path $outDir $rel) -Encoding UTF8
                   $disp = if ($it.properties.displayName) { [string]$it.properties.displayName } elseif ($it.displayName) { [string]$it.displayName } else { $rawId }
@@ -762,7 +948,16 @@ jobs:
             if ($m.PSObject.Properties['connectors']) { $m.connectors = @($m.connectors + @('power-platform')) } else { $m | Add-Member -NotePropertyName 'connectors' -NotePropertyValue @('power-platform') -Force }
             $m | ConvertTo-Json -Depth 30 | Set-Content -Path $manifestPath -Encoding UTF8
           }
+          Add-SnapshotWarnings -Messages @($ppWarnings.ToArray())
           Write-Host ('== Power Platform snapshot merged: {0} objects, {1} warnings ==' -f $newPolicies.Count, $ppWarnings.Count)
+
+      - name: Upload backup artifact
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: tenant-policy-backup-${{ github.run_id }}
+          path: ${{ steps.snapshot.outputs.snapshot_dir }}
+          if-no-files-found: warn
 
       - name: Commit backup snapshot
         if: ${{ steps.snapshot.outputs.commit_snapshot == 'True' || steps.snapshot.outputs.commit_snapshot == 'true' }}
