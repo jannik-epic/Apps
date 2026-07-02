@@ -97,6 +97,18 @@ if ($offlineMetadata -and $offlineMetadata.fileName) {
     $isMsi    = ($installerTypeLc -eq 'msi') -or ($installerTypeLc -eq 'wix') -or ($installerTypeLc -eq 'burn')
     $isMsix   = ($installerTypeLc -eq 'msix') -or ($installerTypeLc -eq 'appx')
 
+    # Deterministic version marker for EXE-family installers (NSIS/Inno/generic).
+    # MSI detects on its ProductCode and MSIX on its package family; EXE-family
+    # otherwise only had an unversioned DisplayName heuristic, so an out-of-date
+    # install was never flagged as "needs update" and same-named apps false-matched.
+    # We write a versioned registry marker after a VERIFIED install and detect on
+    # it with a >= comparison; Create-IntuneApplication.ps1 emits the matching
+    # win32LobAppRegistryRule for the same key/value.
+    $useMarkerDetection = (-not $isMsi) -and (-not $isMsix)
+    $markerLeaf = ($PackageId -replace '[^A-Za-z0-9_.-]', '_')
+    $markerKeyPath = "HKLM:\SOFTWARE\Vanguard\Detection\$markerLeaf"
+    $markerVersion = if ($Version) { $Version } elseif ($offlineMetadata.version) { [string]$offlineMetadata.version } else { '0.0.0' }
+
     # The Intune client extracts the .intunewin into a working directory and
     # invokes our scripts with that directory as the working directory; $PSScriptRoot
     # is the same directory as install_script.ps1, so Files/ is reliably colocated.
@@ -133,6 +145,10 @@ if ($offlineMetadata -and $offlineMetadata.fileName) {
     if (`$process.ExitCode -notin @(0,1641,3010)) {
         throw "Installer exited with code `$(`$process.ExitCode)"
     }
+    # verify-then-mark: only write the deterministic version marker after the
+    # installer reported success (we are past the throw above).
+    New-Item -Path '$markerKeyPath' -Force | Out-Null
+    New-ItemProperty -Path '$markerKeyPath' -Name 'Version' -Value '$markerVersion' -PropertyType String -Force | Out-Null
 "@
     }
 
@@ -174,7 +190,9 @@ try {
                 `$cmd = if (`$props.QuietUninstallString) { `$props.QuietUninstallString } else { `$props.UninstallString }
                 if (`$cmd) {
                     cmd.exe /c `$cmd '$silentUninstallArgs' | Out-Null
-                    exit `$LASTEXITCODE
+                    `$rc = `$LASTEXITCODE
+                    if (`$rc -eq 0) { Remove-Item -Path '$markerKeyPath' -Recurse -Force -ErrorAction SilentlyContinue }
+                    exit `$rc
                 }
             }
         }
@@ -242,6 +260,33 @@ try {
         exit 0
     }
     Write-Output "$AppName is not installed"
+    exit 1
+} catch {
+    Write-Error `$_.Exception.Message
+    exit 1
+}
+"@
+    } elseif ($useMarkerDetection) {
+        # Deterministic, versioned detection on the marker written post-install.
+        # `>=` means an older installed version is correctly reported as absent
+        # (i.e. "needs update"), which the DisplayName heuristic could never do.
+        @"
+try {
+    `$markerPath = '$markerKeyPath'
+    `$needed = '$markerVersion'
+    if (Test-Path `$markerPath) {
+        `$installed = (Get-ItemProperty -Path `$markerPath -Name 'Version' -ErrorAction SilentlyContinue).Version
+        if (`$installed) {
+            `$have = `$null; `$want = `$null
+            try { `$have = [version]`$installed } catch { `$have = `$null }
+            try { `$want = [version]`$needed } catch { `$want = `$null }
+            if ((`$have -ne `$null -and `$want -ne `$null -and `$have -ge `$want) -or (`$have -eq `$null -and `$installed -eq `$needed)) {
+                Write-Output "$AppName `$installed is installed"
+                exit 0
+            }
+        }
+    }
+    Write-Output "$AppName >= $markerVersion is not installed"
     exit 1
 } catch {
     Write-Error `$_.Exception.Message
