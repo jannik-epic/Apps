@@ -1,0 +1,5 @@
+{
+  "id": "158bc166-89fe-44ff-bb4c-0704f8b3f2dd",
+  "name": "Azure SignalR Access Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

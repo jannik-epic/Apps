@@ -1,0 +1,123 @@
+{
+  "createdDateTime": "2023-03-04T11:09:13.5849062Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-08-02T16:28:50.3694968Z",
+  "name": "Users_WIN_CreateLocalAdmin",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm",
+  "id": "76baa39a-51d8-4183-bf10-14e17cf90a64",
+  "templateReference": {
+    "templateId": "22968f54-45fa-486c-848e-f8224aa69772_1",
+    "templateFamily": "endpointSecurityAccountProtection",
+    "templateDisplayName": "Local user group membership",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('76baa39a-51d8-4183-bf10-14e17cf90a64')/assignments",
+  "assignments": [
+    {
+      "id": "76baa39a-51d8-4183-bf10-14e17cf90a64_adadadad-808e-44e2-905a-0b7873a8a531",
+      "source": "direct",
+      "sourceId": "76baa39a-51d8-4183-bf10-14e17cf90a64",
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    }
+  ],
+  "settings": [
+    {
+      "id": "0",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "de06bec1-4852-48a0-9799-cf7b85992d45"
+        },
+        "groupSettingCollectionValue": [
+          {
+            "settingValueTemplateReference": null,
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": {
+                  "settingInstanceTemplateId": "76fa254e-cbdb-4718-8bdd-cd41e57caa02"
+                },
+                "groupSettingCollectionValue": [
+                  {
+                    "settingValueTemplateReference": null,
+                    "children": [
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                        "settingDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_userselectiontype",
+                        "settingInstanceTemplateReference": null,
+                        "auditRuleInformation": null,
+                        "choiceSettingValue": {
+                          "settingValueTemplateReference": null,
+                          "value": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_userselectiontype_users",
+                          "children": [
+                            {
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                              "settingDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_users",
+                              "settingInstanceTemplateReference": null,
+                              "auditRuleInformation": null,
+                              "simpleSettingCollectionValue": [
+                                {
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                  "settingValueTemplateReference": null,
+                                  "value": "AzureAD\\Jannik@ModernDevMgmt.onmicrosoft.com"
+                                },
+                                {
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                  "settingValueTemplateReference": null,
+                                  "value": "AzureAD\\Mercedes@moderndevmgmt.onmicrosoft.com"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                        "settingDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_action",
+                        "settingInstanceTemplateReference": null,
+                        "auditRuleInformation": null,
+                        "choiceSettingValue": {
+                          "settingValueTemplateReference": null,
+                          "value": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_action_add_update",
+                          "children": []
+                        }
+                      },
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance",
+                        "settingDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_desc",
+                        "settingInstanceTemplateReference": null,
+                        "auditRuleInformation": null,
+                        "choiceSettingCollectionValue": [
+                          {
+                            "settingValueTemplateReference": null,
+                            "value": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_desc_administrators",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

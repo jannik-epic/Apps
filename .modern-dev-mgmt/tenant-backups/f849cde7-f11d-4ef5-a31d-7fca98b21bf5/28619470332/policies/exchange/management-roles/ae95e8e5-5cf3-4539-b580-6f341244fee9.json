@@ -1,0 +1,42 @@
+{
+  "RoleEntries": [
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Get-PlaceMailbox -PlaceMailboxId",
+    "(Microsoft.Exchange.Management.PowerShell.E2010) Get-PlacesSettings -Identity"
+  ],
+  "RoleType": "PlacesDeskManagement",
+  "ImplicitRecipientReadScope": "Organization",
+  "ImplicitRecipientWriteScope": "Organization",
+  "ImplicitConfigReadScope": "OrganizationConfig",
+  "ImplicitConfigWriteScope": "OrganizationConfig",
+  "IsRootRole": true,
+  "IsEndUserRole": false,
+  "MailboxPlanIndex": "",
+  "Description": null,
+  "Parent": null,
+  "RoleState": "Usable",
+  "IsDeprecated": false,
+  "IsServicePrincipalRole": false,
+  "AllowEmptyRole": false,
+  "AdminDisplayName": "",
+  "ExchangeVersion": "0.12 (14.0.451.0)",
+  "Name": "PlacesDeskManagement",
+  "DistinguishedName": "CN=PlacesDeskManagement,CN=Roles,CN=RBAC,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,CN=ConfigurationUnits,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "Identity": "PlacesDeskManagement",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Role",
+  "ObjectClass": [
+    "top",
+    "msExchRole"
+  ],
+  "WhenChanged": "2025-10-20T09:56:50+00:00",
+  "WhenCreated": "2025-06-20T10:05:51+00:00",
+  "WhenChangedUTC": "2025-10-20T09:56:50Z",
+  "WhenCreatedUTC": "2025-06-20T10:05:51Z",
+  "ExchangeObjectId": "ae95e8e5-5cf3-4539-b580-6f341244fee9",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Id": "PlacesDeskManagement",
+  "Guid": "ae95e8e5-5cf3-4539-b580-6f341244fee9",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "IsValid": true,
+  "ObjectState": "Unchanged"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "193c16a6-58cb-4d8a-adf0-7cbad55e0734",
+  "name": "Http Authorization Header",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

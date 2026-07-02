@@ -1,0 +1,5 @@
+{
+  "id": "aa9b9abb-0c21-4e27-8393-cc1a8c9c407f",
+  "name": "Azure COSMOS DB Account Access Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

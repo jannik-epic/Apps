@@ -1,0 +1,155 @@
+{
+  "createdDateTime": "2022-07-26T18:59:29.2166666Z",
+  "displayName": "WIN_Default_EventlogSize",
+  "description": "",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "policyConfigurationIngestionType": "builtIn",
+  "id": "200ccbb3-f92d-4c79-b1b4-3b5316ae08a8",
+  "lastModifiedDateTime": "2022-07-27T07:44:47.450695Z",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/groupPolicyConfigurations('200ccbb3-f92d-4c79-b1b4-3b5316ae08a8')/assignments",
+  "assignments": [
+    {
+      "id": "200ccbb3-f92d-4c79-b1b4-3b5316ae08a8_8913e9df-f718-40fc-97d5-c5af3876444f",
+      "lastModifiedDateTime": "2022-07-27T07:44:47.7472734Z",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "8913e9df-f718-40fc-97d5-c5af3876444f"
+      }
+    }
+  ],
+  "definitionValues": [
+    {
+      "createdDateTime": "2022-07-26T18:59:29.51Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "609a5cc0-c2ac-43b9-b4d6-3e8cfcca7694",
+      "lastModifiedDateTime": "2022-07-26T18:59:29.5141356Z",
+      "definition": {
+        "classType": "machine",
+        "displayName": "Specify the maximum log file size (KB)",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxBacked",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "83c073da-9d88-4d3b-b3b9-b976d4c29772",
+        "minDeviceCspVersion": "5.0",
+        "minUserCspVersion": null,
+        "version": "1.0",
+        "id": "9c9f7914-04b2-4fd0-9d45-0ce4005fd681",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueDecimal",
+          "lastModifiedDateTime": "2022-07-26T18:59:29.5141356Z",
+          "createdDateTime": "2022-07-26T18:59:29.5166666Z",
+          "id": "3424d017-58d2-4e37-ad2d-73692b5809b6",
+          "value": 500480,
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDecimalTextBox",
+            "label": "Maximum Log Size (KB)",
+            "id": "f64d5399-b62c-41c2-9a1c-05f8826bb225",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "defaultValue": 1024,
+            "spin": true,
+            "spinStep": 1,
+            "required": true,
+            "minValue": 1024,
+            "maxValue": 2147483647
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:29.98Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "0c189901-4e9d-44b2-8295-bea30eb77de6",
+      "lastModifiedDateTime": "2022-07-26T18:59:29.9985099Z",
+      "definition": {
+        "classType": "machine",
+        "displayName": "Specify the maximum log file size (KB)",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxBacked",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "2a7685fa-1e4d-4b89-95c6-441b29921eff",
+        "minDeviceCspVersion": "5.0",
+        "minUserCspVersion": null,
+        "version": "1.0",
+        "id": "2aab8c95-553b-4534-94ef-a0b5f6fe8156",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueDecimal",
+          "lastModifiedDateTime": "2022-07-26T18:59:29.9985099Z",
+          "createdDateTime": "2022-07-26T18:59:29.99Z",
+          "id": "94253d61-5876-437f-bf2a-870eb9d8c6f2",
+          "value": 500480,
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDecimalTextBox",
+            "label": "Maximum Log Size (KB)",
+            "id": "c8c0ee63-bb3a-4fa3-b34d-ab4212ae07ed",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "defaultValue": 20480,
+            "spin": true,
+            "spinStep": 1,
+            "required": true,
+            "minValue": 20480,
+            "maxValue": 2147483647
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:30.4666666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "51234504-a2dc-4b74-a473-60b638f4b107",
+      "lastModifiedDateTime": "2022-07-26T18:59:30.4672589Z",
+      "definition": {
+        "classType": "machine",
+        "displayName": "Specify the maximum log file size (KB)",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxBacked",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "50d38bd0-f8d7-4e96-9c13-2f4271886afe",
+        "minDeviceCspVersion": "5.0",
+        "minUserCspVersion": null,
+        "version": "1.0",
+        "id": "98d69f26-2201-4aed-8927-d20c29b24ed5",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueDecimal",
+          "lastModifiedDateTime": "2022-07-26T18:59:30.4672589Z",
+          "createdDateTime": "2022-07-26T18:59:30.4733333Z",
+          "id": "7727325a-1eb8-436f-b747-68ea2a79ad1f",
+          "value": 500480,
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDecimalTextBox",
+            "label": "Maximum Log Size (KB)",
+            "id": "5c8d10ad-8a28-4fe2-bd16-170d88dceb82",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "defaultValue": 1024,
+            "spin": true,
+            "spinStep": 1,
+            "required": true,
+            "minValue": 1024,
+            "maxValue": 2147483647
+          }
+        }
+      ]
+    }
+  ]
+}

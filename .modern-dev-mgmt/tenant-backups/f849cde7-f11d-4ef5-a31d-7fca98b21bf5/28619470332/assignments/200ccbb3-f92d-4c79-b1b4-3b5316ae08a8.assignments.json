@@ -1,0 +1,12 @@
+[
+  {
+    "id": "200ccbb3-f92d-4c79-b1b4-3b5316ae08a8_8913e9df-f718-40fc-97d5-c5af3876444f",
+    "lastModifiedDateTime": "2022-07-27T07:44:47.7472734Z",
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "8913e9df-f718-40fc-97d5-c5af3876444f"
+    }
+  }
+]

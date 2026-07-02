@@ -1,0 +1,5 @@
+{
+  "id": "ec996de0-30f2-46b1-b192-4d2ff8805fa7",
+  "name": "Latvia Driver's License Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

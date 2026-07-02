@@ -1,0 +1,5 @@
+{
+  "id": "c37d5e84-bc2e-458a-be24-6a69b23562f7",
+  "name": "China Physical Addresses",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

@@ -1,0 +1,5 @@
+{
+  "id": "03ffa580-cd25-4df2-9a3e-fb9622cdeac1",
+  "name": "Azure Bot Service App Secret",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

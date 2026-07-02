@@ -1,0 +1,597 @@
+{
+  "createdDateTime": "2022-07-26T18:59:20.81Z",
+  "displayName": "WIN_Default_EdgeSettings",
+  "description": "",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "policyConfigurationIngestionType": "builtIn",
+  "id": "7ef11450-84be-420d-a32b-d7a2cda47f90",
+  "lastModifiedDateTime": "2022-07-27T07:44:10.3257323Z",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/groupPolicyConfigurations('7ef11450-84be-420d-a32b-d7a2cda47f90')/assignments",
+  "assignments": [
+    {
+      "id": "7ef11450-84be-420d-a32b-d7a2cda47f90_8913e9df-f718-40fc-97d5-c5af3876444f",
+      "lastModifiedDateTime": "2022-07-27T07:44:10.6299411Z",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "8913e9df-f718-40fc-97d5-c5af3876444f"
+      }
+    }
+  ],
+  "definitionValues": [
+    {
+      "createdDateTime": "2022-07-26T18:59:25.62Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "b9eaee01-990b-421d-bf38-edfbd03f31d4",
+      "lastModifiedDateTime": "2022-07-26T18:59:25.6235169Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Force synchronization of browser data and do not show the sync consent prompt",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "726b6553-7fc2-4ed3-836e-5575789c664b",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "c8cf2942-4a84-475d-a967-021a98a026a1",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:25.1266666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "c9e0fde6-d452-411c-9f5b-39cd55ce6ff1",
+      "lastModifiedDateTime": "2022-07-26T18:59:25.1235162Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Enable site isolation for every site",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "954b11b3-216b-4dfc-8417-d6b557b884a7",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "eefc04b9-c246-4c3d-83fd-0c2bb7376be9",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:27.6366666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "306f22d1-1985-4dc7-a6c3-4de438f1a440",
+      "lastModifiedDateTime": "2022-07-26T18:59:27.6391381Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Enable saving passwords to the password manager",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "ea646851-88e9-4a47-814a-37ec59014557",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "2eea8708-ab5c-47ae-b91a-142a071013a5",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:24.56Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "b6b66aef-7726-49b5-a443-cb4e66dfc228",
+      "lastModifiedDateTime": "2022-07-26T18:59:24.5610183Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Enable the default search provider",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "f37c10c3-c3dc-4840-8e3a-d7e75457db5c",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "51cbefd5-a214-4b1f-8163-1473dbcf41ef",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:26.0866666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "bd8acd32-5831-4610-88f0-29e010f5f90c",
+      "lastModifiedDateTime": "2022-07-26T18:59:26.0766436Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Hide the First-run experience and splash screen",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "24f984b6-e612-48dc-af6a-2d25fd4de698",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "50dfaaa3-c402-4dde-ae57-22e691e24906",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:23.1533333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "d70f02a5-2b36-42e5-a177-02280f805959",
+      "lastModifiedDateTime": "2022-07-26T18:59:23.1547708Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Browser sign-in settings",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "954b11b3-216b-4dfc-8417-d6b557b884a7",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "871d5363-4bc6-478a-9f75-2a38e4f44cd6",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:23.1547708Z",
+          "createdDateTime": "2022-07-26T18:59:23.16Z",
+          "id": "c9b3c6ff-b97c-4b4d-97a6-c1680bfab436",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "Browser sign-in settings",
+            "id": "74b35a93-4b39-4584-b386-47b9951f31bf",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Disable browser sign-in",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Disable browser sign-in",
+                "value": "0"
+              },
+              {
+                "displayName": "Enable browser sign-in",
+                "value": "1"
+              },
+              {
+                "displayName": "Force users to sign-in to use the browser (all profiles)",
+                "value": "2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:27.1066666Z",
+      "enabled": false,
+      "configurationType": "policy",
+      "id": "9831ad60-60db-4c6e-a38d-4604f936b80c",
+      "lastModifiedDateTime": "2022-07-26T18:59:27.1078898Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Allow user-level native messaging hosts (installed without admin permissions)",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "e70c16b1-0546-4bce-bee6-67fbcbda673f",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "74b526f5-8ec5-46d0-ba8c-35e453608ee1",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:26.54Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "9d8acd18-0470-4ac3-8ef9-1e571d1e002b",
+      "lastModifiedDateTime": "2022-07-26T18:59:26.5453902Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Minimum TLS version enabled (obsolete)",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "954b11b3-216b-4dfc-8417-d6b557b884a7",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "9e4c321f-1e99-4d06-a34f-514b6cf81d6f",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:26.5453902Z",
+          "createdDateTime": "2022-07-26T18:59:26.55Z",
+          "id": "bb730791-cec3-4cea-b701-e0ae1dc70a57",
+          "value": "tls1.2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "Minimum SSL version enabled",
+            "id": "7b5221d6-d817-4b02-8a1d-cc04d61f49e5",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "TLS 1.0",
+              "value": "tls1"
+            },
+            "items": [
+              {
+                "displayName": "TLS 1.0",
+                "value": "tls1"
+              },
+              {
+                "displayName": "TLS 1.1",
+                "value": "tls1.1"
+              },
+              {
+                "displayName": "TLS 1.2",
+                "value": "tls1.2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:21.6166666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "adeb294b-9378-40e6-bfa5-fd33ac903ef4",
+      "lastModifiedDateTime": "2022-07-26T18:59:21.6391472Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Default search provider search URL",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "c718cfe9-ecfe-441f-98b0-e5c9bc0f77f7",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "2b2fd6a8-1846-451f-89cd-5bcf6cd6359a",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:21.6391472Z",
+          "createdDateTime": "2022-07-26T18:59:21.6266666Z",
+          "id": "edb05915-5133-4a16-aadd-395e8735df9a",
+          "value": "{google:baseURL}search?q={searchTerms}&{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}ie={inputEncoding}",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationTextBox",
+            "label": "Default search provider search URL",
+            "id": "c40aca27-bdc8-43a1-831f-5620acb8025f",
+            "lastModifiedDateTime": "2020-07-09T19:56:09.4813438Z",
+            "defaultValue": "",
+            "required": false,
+            "maxLength": 1000000
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:23.66Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "0fae1031-08b6-440d-b4c1-085dbf7a9bec",
+      "lastModifiedDateTime": "2022-07-26T18:59:23.6860204Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Default Adobe Flash setting (obsolete)",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "105dc005-73b3-4a45-a035-3a3b0bdf7af4",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "2c83dff3-5232-4dd9-976e-a1320e4e05b7",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:23.6860204Z",
+          "createdDateTime": "2022-07-26T18:59:23.6833333Z",
+          "id": "be258350-40dd-4f90-afb2-72dba9e80372",
+          "value": "3",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "Default Adobe Flash setting",
+            "id": "7af61699-62f2-4aa4-8ebe-94a0f3a78e60",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Block the Adobe Flash plugin",
+              "value": "2"
+            },
+            "items": [
+              {
+                "displayName": "Block the Adobe Flash plugin",
+                "value": "2"
+              },
+              {
+                "displayName": "Click to play",
+                "value": "3"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:28.1533333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "90c878b9-3dc9-44bb-b328-78cea0e0501f",
+      "lastModifiedDateTime": "2022-07-26T18:59:28.1547634Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Configure Microsoft Defender SmartScreen to block potentially unwanted apps",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "acff54d7-1a70-411c-a5df-2de4f516fdb8",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "c406f8cd-1937-4c9c-95af-acbea4309a91",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:22.1366666Z",
+      "enabled": false,
+      "configurationType": "policy",
+      "id": "1be7124f-81c7-47ad-b720-5de3b28e7665",
+      "lastModifiedDateTime": "2022-07-26T18:59:22.1391467Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Allow users to proceed from the HTTPS warning page",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "954b11b3-216b-4dfc-8417-d6b557b884a7",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "3d8b4372-f547-44c9-bfd0-c61b39f830cf",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:24.12Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "da9c62fc-d446-4947-8b92-b69258827f9b",
+      "lastModifiedDateTime": "2022-07-26T18:59:24.1235188Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Default notification setting",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "105dc005-73b3-4a45-a035-3a3b0bdf7af4",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "bf2be6ff-9820-4815-8e4e-dfffef518a04",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:24.1235188Z",
+          "createdDateTime": "2022-07-26T18:59:24.1266666Z",
+          "id": "3152ec58-9bb1-47d1-af9d-cfb88bb5a1c3",
+          "value": "2",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "Default notification setting",
+            "id": "f03ca5da-054b-49bd-847c-be5ef4061e5b",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Allow sites to show desktop notifications",
+              "value": "1"
+            },
+            "items": [
+              {
+                "displayName": "Allow sites to show desktop notifications",
+                "value": "1"
+              },
+              {
+                "displayName": "Don't allow any site to show desktop notifications",
+                "value": "2"
+              },
+              {
+                "displayName": "Ask every time a site wants to show desktop notifications",
+                "value": "3"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:28.61Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "5ad23238-0125-41b4-940b-f9b2f8ef862a",
+      "lastModifiedDateTime": "2022-07-26T18:59:28.6078875Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Prevent bypassing Microsoft Defender SmartScreen prompts for sites",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "177328b2-6597-4c06-a985-ff758a41b9a3",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "a6d684c3-a656-4515-bec3-eee2e5c903c2",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:22.6766666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "aff3ffe8-e32f-4ccf-99f5-e3c4704cffc6",
+      "lastModifiedDateTime": "2022-07-26T18:59:22.6860204Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Automatically import another browser's data and settings at first run",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "954b11b3-216b-4dfc-8417-d6b557b884a7",
+        "minDeviceCspVersion": "",
+        "minUserCspVersion": "5.0",
+        "version": "1",
+        "id": "b8d52fe3-72e5-45cb-806b-f748e6f5a3d7",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:22.6860204Z",
+          "createdDateTime": "2022-07-26T18:59:22.6833333Z",
+          "id": "f31db347-05e7-41d8-9e61-4212b1ad39b2",
+          "value": "0",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "Automatically import another browser's data and settings at first run",
+            "id": "112c452a-d8d1-4f0f-bbcf-0dbce06a4bf0",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Automatically imports all supported datatypes and settings from the default browser",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Automatically imports all supported datatypes and settings from the default browser",
+                "value": "0"
+              },
+              {
+                "displayName": "Automatically imports all supported datatypes and settings from Internet Explorer",
+                "value": "1"
+              },
+              {
+                "displayName": "Automatically imports all supported datatypes and settings from Google Chrome",
+                "value": "2"
+              },
+              {
+                "displayName": "Automatically imports all supported datatypes and settings from Safari",
+                "value": "3"
+              },
+              {
+                "displayName": "Disables automatic import, and the import section of the first-run experience is skipped",
+                "value": "4"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:21.11Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "24a424b4-97eb-4622-83b1-f7179f53bf97",
+      "lastModifiedDateTime": "2022-07-26T18:59:21.1391472Z",
+      "definition": {
+        "classType": "machine",
+        "displayName": "Default search provider name",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "c718cfe9-ecfe-441f-98b0-e5c9bc0f77f7",
+        "minDeviceCspVersion": "5.0",
+        "minUserCspVersion": "",
+        "version": "1",
+        "id": "2e7068be-919a-4f6f-8f65-f9b0ec7a92ef",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:21.1391472Z",
+          "createdDateTime": "2022-07-26T18:59:21.13Z",
+          "id": "b74841f5-feea-4c40-a86b-9afca5d8f74d",
+          "value": "Google",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationTextBox",
+            "label": "Default search provider name",
+            "id": "0b60bb93-8648-4997-b9e1-5ca4bedfac9c",
+            "lastModifiedDateTime": "2020-07-09T19:56:09.4813438Z",
+            "defaultValue": "",
+            "required": false,
+            "maxLength": 1000000
+          }
+        }
+      ]
+    }
+  ]
+}

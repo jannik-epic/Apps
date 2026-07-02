@@ -1,0 +1,71 @@
+{
+  "Settings": [
+    "[isparent, False]",
+    "[contenttype, File, Email, Site, UnifiedGroup]",
+    "[tooltip, Use this label to identify data that belongs to the Organization, but which may be shared as needed.]",
+    "[displayname, General]"
+  ],
+  "LabelActions": [
+    "{\"Type\":\"protectgroup\",\"SubType\":null,\"Settings\":[{\"Key\":\"allowaccesstoguestusers\",\"Value\":\"true\"},{\"Key\":\"allowemailfromguestusers\",\"Value\":\"true\"},{\"Key\":\"disabled\",\"Value\":\"false\"},{\"Key\":\"privacy\",\"Value\":\"unspecified\"}]}",
+    "{\"Type\":\"protectsite\",\"SubType\":null,\"Settings\":[{\"Key\":\"allowfullaccess\",\"Value\":\"false\"},{\"Key\":\"allowlimitedaccess\",\"Value\":\"false\"},{\"Key\":\"blockaccess\",\"Value\":\"false\"},{\"Key\":\"disabled\",\"Value\":\"false\"}]}"
+  ],
+  "Conditions": [
+    "{\"And\":[{\"Or\":[{\"Key\":\"CCSI\",\"Value\":\"5baff639-beb8-4cc3-bfde-01d27ef7fd4d\",\"Properties\":null,\"Settings\":[{\"Key\":\"mincount\",\"Value\":\"3\"},{\"Key\":\"maxconfidence\",\"Value\":\"100\"},{\"Key\":\"groupname\",\"Value\":\"Default\"},{\"Key\":\"rulepackage\",\"Value\":\"5DA58D7A-25F1-4205-93D0-BEB10054C503\"},{\"Key\":\"name\",\"Value\":\"Vontobel Test\"},{\"Key\":\"minconfidence\",\"Value\":\"85\"},{\"Key\":\"maxcount\",\"Value\":\"9\"},{\"Key\":\"confidencelevel\",\"Value\":\"High\"},{\"Key\":\"autoapplytype\",\"Value\":\"Recommend\"}]}]}]}"
+  ],
+  "ColumnAssetCondition": null,
+  "SchematizedDataCondition": null,
+  "LocaleSettings": [
+    "{\"LocaleKey\":\"displayName\",\"Settings\":[{\"Key\":\"default\",\"Value\":\"General\"}]}",
+    "{\"LocaleKey\":\"tooltip\",\"Settings\":[{\"Key\":\"default\",\"Value\":\"Use this label to identify data that belongs to the Organization, but which may be shared as needed.\"}]}"
+  ],
+  "ContentTypeRemovalViolations": null,
+  "DisplayName": "General",
+  "ParentId": null,
+  "AbacEnabled": null,
+  "InformationProtectionAttributeRequired": null,
+  "IsParent": false,
+  "IsLabelGroup": false,
+  "Tooltip": "Use this label to identify data that belongs to the Organization, but which may be shared as needed.",
+  "DefaultContentLabel": null,
+  "ContentType": "File, Email, Site, UnifiedGroup",
+  "InheritToChildItems": null,
+  "Capabilities": [
+    "AutoLabel"
+  ],
+  "ParentLabelDisplayName": null,
+  "MTOOwnerLabelId": null,
+  "MTOOwnerTenantId": null,
+  "CanonicalLabelId": null,
+  "ReadOnly": false,
+  "ExternalIdentity": "",
+  "ImmutableId": "65e29b03-cd10-4c6b-9358-aa83c52344f5",
+  "Priority": 2,
+  "Workload": "Exchange, SharePoint",
+  "Policy": "190c5c60-5372-4426-94ef-1d854951a3a0",
+  "Comment": "Use this label to identify data that belongs to the Organization, but which may be shared as needed.",
+  "Disabled": false,
+  "Mode": "Enforce",
+  "ObjectVersion": "6bf56ad1-16ee-419b-b51c-08dd66cc24f3",
+  "CreatedBy": "Sanche Baskaran (Admin)",
+  "LastModifiedBy": "Admin AVE",
+  "Guid": "65e29b03-cd10-4c6b-9358-aa83c52344f5",
+  "Identity": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/General",
+  "Id": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/General",
+  "IsValid": true,
+  "ExchangeVersion": "0.20 (15.0.0.0)",
+  "Name": "General",
+  "DistinguishedName": "CN=General,CN=Configuration,CN=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=FFO,DC=extest,DC=microsoft,DC=com",
+  "ObjectCategory": null,
+  "ObjectClass": [
+    "msExchUnifiedRule"
+  ],
+  "WhenChanged": "2025-03-19T09:55:13+00:00",
+  "WhenCreated": "2022-01-29T09:31:00+00:00",
+  "WhenChangedUTC": "2025-03-19T09:55:13Z",
+  "WhenCreatedUTC": "2022-01-29T09:31:00Z",
+  "ExchangeObjectId": "65e29b03-cd10-4c6b-9358-aa83c52344f5",
+  "OrganizationalUnitRoot": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration",
+  "OriginatingServer": "",
+  "ObjectState": "Unchanged"
+}

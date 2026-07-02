@@ -1,0 +1,5 @@
+{
+  "id": "f741ac74-1bc0-4665-b69b-f0c7f927c0c4",
+  "name": "France National ID Card (CNI)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

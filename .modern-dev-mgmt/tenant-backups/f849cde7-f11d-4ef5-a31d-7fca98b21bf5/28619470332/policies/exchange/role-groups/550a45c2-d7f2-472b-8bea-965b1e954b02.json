@@ -1,0 +1,51 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [
+    "Audit Logs-Records Management",
+    "Journaling-Records Management",
+    "Retention Management-Records Management",
+    "Transport Rules-Records Management",
+    "Message Tracking-Records Management"
+  ],
+  "Roles": [
+    "Audit Logs",
+    "Journaling",
+    "Retention Management",
+    "Transport Rules",
+    "Message Tracking"
+  ],
+  "DisplayName": "",
+  "ExternalDirectoryObjectId": "",
+  "Members": [],
+  "SamAccountName": "Records Management{027d5a2e3cf248f8bff6b28403cd8910}",
+  "Description": "Members of this management role group have permissions to manage and dispose record content.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "",
+  "Identity": "Records Management",
+  "Id": "Records Management",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "Records Management",
+  "DistinguishedName": "CN=Records Management,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2025-10-18T13:12:53+00:00",
+  "WhenCreated": "2021-03-23T22:17:31+00:00",
+  "WhenChangedUTC": "2025-10-18T13:12:53Z",
+  "WhenCreatedUTC": "2021-03-23T22:17:31Z",
+  "ExchangeObjectId": "550a45c2-d7f2-472b-8bea-965b1e954b02",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "550a45c2-d7f2-472b-8bea-965b1e954b02",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

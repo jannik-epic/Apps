@@ -1,0 +1,5 @@
+{
+  "id": "b9a6578f-a83f-4fcd-bf44-2130bae49a6f",
+  "name": "Azure Service Bus Connection String",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

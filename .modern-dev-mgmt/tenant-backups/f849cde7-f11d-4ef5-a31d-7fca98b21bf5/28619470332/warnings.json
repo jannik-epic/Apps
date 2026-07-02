@@ -1,0 +1,5 @@
+[
+  "Address lists (Get-AddressList) unavailable: The term 'Get-AddressList' is not recognized as a name of a cmdlet, function, script file, or executable program.\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+  "Teams connect failed: One or more errors occurred. (AADSTS700016: Application with identifier 'eefa9c93-5548-419d-833c-d04ee78c0293' was not found in the directory 'Modern Device Management'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant. Trace ID: 900222bc-347e-4395-aebd-239b77b32700 Correlation ID: bbe12b5a-ec97-4678-aef3-7a5ca3c3e366 Timestamp: 2026-07-02 20:31:36Z)",
+  "Power Platform token failed: Response status code does not indicate success: 400 (Bad Request)."
+]

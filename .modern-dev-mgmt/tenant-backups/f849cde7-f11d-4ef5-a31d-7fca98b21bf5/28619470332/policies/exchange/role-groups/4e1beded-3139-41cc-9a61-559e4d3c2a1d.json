@@ -1,0 +1,47 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [
+    "SensitivityLabelAdministrator-Security Administrator",
+    "Security Admin-Security Administrator"
+  ],
+  "Roles": [
+    "SensitivityLabelAdministrator",
+    "Security Admin"
+  ],
+  "DisplayName": "",
+  "ExternalDirectoryObjectId": "",
+  "Members": [
+    "SecurityAdmins_1576242593"
+  ],
+  "SamAccountName": "Security Administrator{135ec436925e45d78285efdb885bb5ac}",
+  "Description": "Membership in this role group is synchronized across services and managed centrally. This role group is not manageable through the administrator portals. Members of this role group may include cross-service administrators, as well as external partner groups and Microsoft Support. By default, this group may not be assigned any roles. However, it will be a member of the Security Administrators role groups and will inherit the capabilities of that role group.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "",
+  "Identity": "Security Administrator",
+  "Id": "Security Administrator",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "Security Administrator",
+  "DistinguishedName": "CN=Security Administrator,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2025-10-18T21:47:48+00:00",
+  "WhenCreated": "2021-03-23T22:17:32+00:00",
+  "WhenChangedUTC": "2025-10-18T21:47:48Z",
+  "WhenCreatedUTC": "2021-03-23T22:17:32Z",
+  "ExchangeObjectId": "4e1beded-3139-41cc-9a61-559e4d3c2a1d",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "4e1beded-3139-41cc-9a61-559e4d3c2a1d",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "0fe7f6b1-b287-421c-9286-3a5fb7bc208c",
+  "name": "New Zealand Physical Addresses",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

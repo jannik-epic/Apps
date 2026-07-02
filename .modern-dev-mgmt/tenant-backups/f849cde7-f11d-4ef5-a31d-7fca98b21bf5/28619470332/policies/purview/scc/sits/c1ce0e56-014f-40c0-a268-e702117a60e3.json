@@ -1,0 +1,5 @@
+{
+  "id": "c1ce0e56-014f-40c0-a268-e702117a60e3",
+  "name": "Microsoft Bing Maps Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

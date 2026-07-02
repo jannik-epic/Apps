@@ -1,0 +1,311 @@
+{
+  "createdDateTime": "2022-07-26T18:59:31.0533333Z",
+  "displayName": "WIN_Default_ActivateOnedrive",
+  "description": "",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "policyConfigurationIngestionType": "builtIn",
+  "id": "86bd5f36-f5be-4d0e-a4e5-14bb7d8c7b24",
+  "lastModifiedDateTime": "2022-07-27T07:42:38.4664365Z",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/groupPolicyConfigurations('86bd5f36-f5be-4d0e-a4e5-14bb7d8c7b24')/assignments",
+  "assignments": [
+    {
+      "id": "86bd5f36-f5be-4d0e-a4e5-14bb7d8c7b24_8913e9df-f718-40fc-97d5-c5af3876444f",
+      "lastModifiedDateTime": "2022-07-27T07:42:38.8355375Z",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "8913e9df-f718-40fc-97d5-c5af3876444f"
+      }
+    }
+  ],
+  "definitionValues": [
+    {
+      "createdDateTime": "2022-07-26T18:59:34.94Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "562fa590-5cf7-4f79-9507-3610ffaf16e9",
+      "lastModifiedDateTime": "2022-07-26T18:59:34.9516281Z",
+      "definition": {
+        "classType": "machine",
+        "displayName": "Silently sign in users to the OneDrive sync app with their Windows credentials",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "0de8c88e-9535-4d96-b6f7-52f56beaa2c5",
+        "minDeviceCspVersion": "5.0",
+        "minUserCspVersion": null,
+        "version": "1.0",
+        "id": "81c07ba0-7512-402d-b1f6-00856975cfab",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:34.3233333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "f8a0a04c-be90-43d2-80b5-9a7dd43fea71",
+      "lastModifiedDateTime": "2022-07-26T18:59:34.4047531Z",
+      "definition": {
+        "classType": "machine",
+        "displayName": "Silently move Windows known folders to OneDrive",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": true,
+        "groupPolicyCategoryId": "0de8c88e-9535-4d96-b6f7-52f56beaa2c5",
+        "minDeviceCspVersion": "5.0",
+        "minUserCspVersion": null,
+        "version": "1.0",
+        "id": "39147fa2-6c5e-437b-8264-19b50b891709",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:34.342254Z",
+          "createdDateTime": "2022-07-26T18:59:34.3333333Z",
+          "id": "e8620a7a-6e8f-4155-bf32-eccfa524dfc1",
+          "value": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationTextBox",
+            "label": "Tenant ID:",
+            "id": "fbefbbdf-5382-477c-8b6c-71f4a06e2805",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "defaultValue": "",
+            "required": true,
+            "maxLength": 2000
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:34.4047531Z",
+          "createdDateTime": "2022-07-26T18:59:34.39Z",
+          "id": "880fb487-3d73-49b9-91fe-1860442224f0",
+          "value": "0",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "Show notification to users after folders have been redirected:",
+            "id": "35c82072-a93b-4022-be14-8684c2f6fcc2",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "No",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "No",
+                "value": "0"
+              },
+              {
+                "displayName": "Yes",
+                "value": "1"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:33.3433333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "44045ba5-bf08-41c8-809f-7fab48665501",
+      "lastModifiedDateTime": "2022-07-26T18:59:33.3422556Z",
+      "definition": {
+        "classType": "machine",
+        "displayName": "Require users to confirm large delete operations",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "0de8c88e-9535-4d96-b6f7-52f56beaa2c5",
+        "minDeviceCspVersion": "5.0",
+        "minUserCspVersion": null,
+        "version": "1.0",
+        "id": "8cbfae18-90d8-467f-8b46-8180010bbece",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:31.3066666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "f3be8760-1024-44ee-86e7-cfaaa3a5d0da",
+      "lastModifiedDateTime": "2022-07-26T18:59:31.2953827Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Coauthor and share in Office desktop apps",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "0de8c88e-9535-4d96-b6f7-52f56beaa2c5",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "2daec783-9596-4947-8592-87deff63d3fa",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:32.3633333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "37b6cbd9-8a83-4ab7-aaa6-8eacc33956da",
+      "lastModifiedDateTime": "2022-07-26T18:59:32.3735068Z",
+      "definition": {
+        "classType": "user",
+        "displayName": "Disable the tutorial that appears at the end of OneDrive Setup",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "0de8c88e-9535-4d96-b6f7-52f56beaa2c5",
+        "minDeviceCspVersion": null,
+        "minUserCspVersion": "5.0",
+        "version": "1.0",
+        "id": "9a4db949-29e4-4e31-a129-bf2b88d8fa1b",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:33.8133333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "746daed2-8b2a-4a04-9d2e-6378a97162c3",
+      "lastModifiedDateTime": "2022-07-26T18:59:33.8266295Z",
+      "definition": {
+        "classType": "machine",
+        "displayName": "Set the sync app update ring",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "0de8c88e-9535-4d96-b6f7-52f56beaa2c5",
+        "minDeviceCspVersion": "5.0",
+        "minUserCspVersion": null,
+        "version": "1.0",
+        "id": "120400ba-f245-46c6-9f84-c91b1500d706",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "lastModifiedDateTime": "2022-07-26T18:59:33.8266295Z",
+          "createdDateTime": "2022-07-26T18:59:33.82Z",
+          "id": "19d89785-c0c3-4b34-a0b2-b541bc86ed0b",
+          "value": "0",
+          "presentation": {
+            "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownList",
+            "label": "Update ring:",
+            "id": "03081a27-07d6-4982-b31d-0937259d64a0",
+            "lastModifiedDateTime": "2020-04-03T04:51:57.9973428Z",
+            "required": false,
+            "defaultItem": {
+              "displayName": "Deferred",
+              "value": "0"
+            },
+            "items": [
+              {
+                "displayName": "Deferred",
+                "value": "0"
+              },
+              {
+                "displayName": "Production",
+                "value": "5"
+              },
+              {
+                "displayName": "Insiders",
+                "value": "4"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:32.8566666Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "1889d0ac-e607-42be-a00e-931e77317a9f",
+      "lastModifiedDateTime": "2022-07-26T18:59:32.8578808Z",
+      "definition": {
+        "classType": "machine",
+        "displayName": "Prevent users from redirecting their Windows known folders to their PC",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "0de8c88e-9535-4d96-b6f7-52f56beaa2c5",
+        "minDeviceCspVersion": "5.0",
+        "minUserCspVersion": null,
+        "version": "1.0",
+        "id": "2ce2f507-aae8-49a1-98ce-dc3faafcd331",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:31.7933333Z",
+      "enabled": false,
+      "configurationType": "policy",
+      "id": "af4eaacd-6f32-4b22-8ef0-e4677d2b4cf1",
+      "lastModifiedDateTime": "2022-07-26T18:59:31.7953821Z",
+      "definition": {
+        "classType": "machine",
+        "displayName": "Configure team site libraries to sync automatically",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "0de8c88e-9535-4d96-b6f7-52f56beaa2c5",
+        "minDeviceCspVersion": "5.0",
+        "minUserCspVersion": null,
+        "version": "1.0",
+        "id": "f2e9d965-39e3-4efa-8d25-e11e8ff5ef57",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    },
+    {
+      "createdDateTime": "2022-07-26T18:59:35.5133333Z",
+      "enabled": true,
+      "configurationType": "policy",
+      "id": "c9091441-fb6c-4697-aff3-ccfe9e078fda",
+      "lastModifiedDateTime": "2022-07-26T18:59:35.5141274Z",
+      "definition": {
+        "classType": "machine",
+        "displayName": "Use OneDrive Files On-Demand",
+        "explainText": null,
+        "categoryPath": null,
+        "supportedOn": null,
+        "policyType": "admxIngested",
+        "hasRelatedDefinitions": false,
+        "groupPolicyCategoryId": "0de8c88e-9535-4d96-b6f7-52f56beaa2c5",
+        "minDeviceCspVersion": "5.0",
+        "minUserCspVersion": null,
+        "version": "1.0",
+        "id": "61b07a01-7e60-4127-b086-f6b32458a5c5",
+        "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+      },
+      "presentationValues": []
+    }
+  ]
+}
