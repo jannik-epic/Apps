@@ -1,8 +1,8 @@
 {
-  "scannedAt": "2026-06-06T06:37:45.241Z",
+  "scannedAt": "2026-07-02T20:11:56.307Z",
   "results": [
     {
-      "appId": 803,
+      "appId": 6450,
       "packageManager": "winget",
       "packageId": "Canva.Canva",
       "currentDeployedVersion": "1.101.0",
@@ -12,37 +12,7 @@
       "releaseNotesUrl": null
     },
     {
-      "appId": 2395,
-      "packageManager": "winget",
-      "packageId": "Git.Git",
-      "currentDeployedVersion": "2.39.2",
-      "latestUpstreamVersion": "2.54.0",
-      "hasUpdate": true,
-      "bumpType": "minor",
-      "releaseNotesUrl": "https://gitforwindows.org/"
-    },
-    {
-      "appId": 2409,
-      "packageManager": "winget",
-      "packageId": "GitHub.cli",
-      "currentDeployedVersion": "2.24.3",
-      "latestUpstreamVersion": "2.93.0",
-      "hasUpdate": true,
-      "bumpType": "minor",
-      "releaseNotesUrl": "https://cli.github.com/"
-    },
-    {
-      "appId": 2411,
-      "packageManager": "winget",
-      "packageId": "GitHub.GitHubDesktop",
-      "currentDeployedVersion": "3.2.0",
-      "latestUpstreamVersion": "3.5.12",
-      "hasUpdate": true,
-      "bumpType": "minor",
-      "releaseNotesUrl": "https://github.com/apps/desktop"
-    },
-    {
-      "appId": 2564,
+      "appId": 8522,
       "packageManager": "winget",
       "packageId": "Greenshot.Greenshot",
       "currentDeployedVersion": "1.2.10.6",
@@ -52,167 +22,27 @@
       "releaseNotesUrl": "https://getgreenshot.org/"
     },
     {
-      "appId": 4128,
-      "packageManager": "winget",
-      "packageId": "Microsoft.Office",
-      "currentDeployedVersion": "16.0.20026.20112",
-      "latestUpstreamVersion": "16.0.19929.20090",
-      "hasUpdate": true,
-      "bumpType": null,
-      "releaseNotesUrl": "https://www.office.com/"
-    },
-    {
-      "appId": 4171,
-      "packageManager": "winget",
-      "packageId": "Microsoft.Edge",
-      "currentDeployedVersion": "147.0.3912.98",
-      "latestUpstreamVersion": "148.0.3967.96",
-      "hasUpdate": true,
-      "bumpType": "major",
-      "releaseNotesUrl": "https://www.microsoft.com/en-us/edge"
-    },
-    {
-      "appId": 4173,
-      "packageManager": "winget",
-      "packageId": "Microsoft.Edge.Beta",
-      "currentDeployedVersion": "134.0.3124.8",
-      "latestUpstreamVersion": "141.0.3537.44",
-      "hasUpdate": true,
-      "bumpType": "major",
-      "releaseNotesUrl": "https://www.microsoft.com/en-us/edge"
-    },
-    {
-      "appId": 4191,
-      "packageManager": "winget",
-      "packageId": "Microsoft.OneDrive",
-      "currentDeployedVersion": "26.063.0405.0002",
-      "latestUpstreamVersion": "26.078.0426.0002",
-      "hasUpdate": true,
-      "bumpType": "minor",
-      "releaseNotesUrl": "https://www.microsoft.com/microsoft-365/onedrive/download"
-    },
-    {
-      "appId": 4379,
-      "packageManager": "winget",
-      "packageId": "Microsoft.VCRedist.2015+.x64",
-      "currentDeployedVersion": "14.44.35211.0",
-      "latestUpstreamVersion": "14.51.36231.0",
-      "hasUpdate": true,
-      "bumpType": "minor",
-      "releaseNotesUrl": "https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist"
-    },
-    {
-      "appId": 4381,
-      "packageManager": "winget",
-      "packageId": "Microsoft.VCRedist.2015+.x86",
-      "currentDeployedVersion": "14.44.35211.0",
-      "latestUpstreamVersion": "14.51.36231.0",
-      "hasUpdate": true,
-      "bumpType": "minor",
-      "releaseNotesUrl": "https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist"
-    },
-    {
-      "appId": 4387,
-      "packageManager": "winget",
-      "packageId": "Microsoft.VisualStudioCode",
-      "currentDeployedVersion": "1.87.2",
-      "latestUpstreamVersion": "1.123.0",
-      "hasUpdate": true,
-      "bumpType": "minor",
-      "releaseNotesUrl": "https://code.visualstudio.com"
-    },
-    {
-      "appId": 4972,
-      "packageManager": "winget",
-      "packageId": "OBSProject.OBSStudio",
-      "currentDeployedVersion": "32.0.1",
-      "latestUpstreamVersion": "32.1.2",
-      "hasUpdate": true,
-      "bumpType": "minor",
-      "releaseNotesUrl": "https://obsproject.com/"
-    },
-    {
-      "appId": 5631,
-      "packageManager": "winget",
-      "packageId": "Microsoft.PowerShell",
-      "currentDeployedVersion": "7.3.3.0",
-      "latestUpstreamVersion": "7.6.2.0",
-      "hasUpdate": true,
-      "bumpType": "minor",
-      "releaseNotesUrl": "https://microsoft.com/PowerShell"
-    },
-    {
-      "appId": 5933,
-      "packageManager": "winget",
-      "packageId": "VinaySajip.PythonLauncher",
-      "currentDeployedVersion": "3.11.8150.0",
-      "latestUpstreamVersion": "1.0.1.6",
-      "hasUpdate": true,
-      "bumpType": null,
-      "releaseNotesUrl": null
-    },
-    {
-      "appId": 6991,
-      "packageManager": "winget",
-      "packageId": "Spice.SpiceWebDAVd",
-      "currentDeployedVersion": "2.5.0",
-      "latestUpstreamVersion": "2.4.0",
-      "hasUpdate": true,
-      "bumpType": null,
-      "releaseNotesUrl": "https://gitlab.gnome.org/GNOME/phodav/"
-    },
-    {
-      "appId": 64080,
-      "packageManager": "msstore",
-      "packageId": "9N0DX20HK701",
-      "currentDeployedVersion": "3001.24.10921.0",
-      "latestUpstreamVersion": "Unknown",
-      "hasUpdate": true,
-      "bumpType": null,
-      "releaseNotesUrl": null
-    },
-    {
-      "appId": 64084,
-      "packageManager": "msstore",
-      "packageId": "XPDP273C0XHQH2",
-      "currentDeployedVersion": "26.001.21563",
-      "latestUpstreamVersion": "26.001.21563",
-      "hasUpdate": false,
-      "bumpType": null,
-      "releaseNotesUrl": null
-    },
-    {
-      "appId": 76090,
-      "packageManager": "msstore",
-      "packageId": "9NFTCH6J7FHV",
-      "currentDeployedVersion": "11.2604.143.0",
-      "latestUpstreamVersion": "Unknown",
-      "hasUpdate": true,
-      "bumpType": null,
-      "releaseNotesUrl": null
-    },
-    {
-      "appId": 113049,
+      "appId": 9410,
       "packageManager": "winget",
       "packageId": "JetBrains.dotPeek",
       "currentDeployedVersion": "2024.2.3",
-      "latestUpstreamVersion": "2026.1.2",
+      "latestUpstreamVersion": "2026.1.4",
       "hasUpdate": true,
       "bumpType": "major",
       "releaseNotesUrl": "https://www.jetbrains.com/profiler/"
     },
     {
-      "appId": 114158,
+      "appId": 10517,
       "packageManager": "winget",
-      "packageId": "Microsoft.Gaming.GDK",
-      "currentDeployedVersion": "2505.900.9.0",
-      "latestUpstreamVersion": "2604.1.7839",
+      "packageId": "Microsoft.Edge",
+      "currentDeployedVersion": "148.0.3967.96",
+      "latestUpstreamVersion": "149.0.4022.98",
       "hasUpdate": true,
       "bumpType": "major",
-      "releaseNotesUrl": "https://github.com/microsoft/GDK/releases"
+      "releaseNotesUrl": "https://www.microsoft.com/en-us/edge"
     },
     {
-      "appId": 114190,
+      "appId": 10551,
       "packageManager": "winget",
       "packageId": "Microsoft.MakeBingYourSearchEngine",
       "currentDeployedVersion": "2022.1.43.0",
@@ -222,7 +52,17 @@
       "releaseNotesUrl": "https://www.microsoft.com/en-gb/download/details.aspx?id=41702"
     },
     {
-      "appId": 114227,
+      "appId": 10563,
+      "packageManager": "winget",
+      "packageId": "Microsoft.OneDrive",
+      "currentDeployedVersion": "26074.420.1.0",
+      "latestUpstreamVersion": "26.098.0524.0004",
+      "hasUpdate": true,
+      "bumpType": "patch",
+      "releaseNotesUrl": "https://www.microsoft.com/microsoft-365/onedrive/download"
+    },
+    {
+      "appId": 10584,
       "packageManager": "winget",
       "packageId": "Microsoft.PurviewInformationProtection",
       "currentDeployedVersion": "3.2.57.0",
@@ -232,17 +72,77 @@
       "releaseNotesUrl": "https://www.microsoft.com/en-us/download/details.aspx?id=53018"
     },
     {
-      "appId": 114306,
+      "appId": 10606,
       "packageManager": "winget",
-      "packageId": "Microsoft.VCRedist.2015+.arm64",
-      "currentDeployedVersion": "14.30.30704.0",
-      "latestUpstreamVersion": "14.51.36231.0",
+      "packageId": "Microsoft.Teams",
+      "currentDeployedVersion": "1.6.00.4472",
+      "latestUpstreamVersion": "26149.1205.4798.6437",
       "hasUpdate": true,
-      "bumpType": "minor",
-      "releaseNotesUrl": "https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist"
+      "bumpType": "major",
+      "releaseNotesUrl": "https://www.microsoft.com/microsoft-teams/group-chat-software"
     },
     {
-      "appId": 118346,
+      "appId": 10616,
+      "packageManager": "winget",
+      "packageId": "Microsoft.VisualStudioCode",
+      "currentDeployedVersion": "1.87.2",
+      "latestUpstreamVersion": "1.126.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://code.visualstudio.com"
+    },
+    {
+      "appId": 11280,
+      "packageManager": "winget",
+      "packageId": "Notion.Notion",
+      "currentDeployedVersion": "2.0.39",
+      "latestUpstreamVersion": "7.24.0",
+      "hasUpdate": true,
+      "bumpType": "major",
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 11400,
+      "packageManager": "winget",
+      "packageId": "OBSProject.OBSStudio",
+      "currentDeployedVersion": "32.0.1",
+      "latestUpstreamVersion": "32.1.2",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://obsproject.com/"
+    },
+    {
+      "appId": 12065,
+      "packageManager": "winget",
+      "packageId": "Python.Launcher",
+      "currentDeployedVersion": "3.11.8150.0",
+      "latestUpstreamVersion": "3.13.5",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://www.python.org/"
+    },
+    {
+      "appId": 12962,
+      "packageManager": "winget",
+      "packageId": "SlackTechnologies.Slack",
+      "currentDeployedVersion": "4.28.184",
+      "latestUpstreamVersion": "4.50.143",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://slack.com/"
+    },
+    {
+      "appId": 13184,
+      "packageManager": "winget",
+      "packageId": "Spice.SpiceWebDAVd",
+      "currentDeployedVersion": "2.5.0",
+      "latestUpstreamVersion": "2.4.0",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": "https://gitlab.gnome.org/GNOME/phodav/"
+    },
+    {
+      "appId": 14331,
       "packageManager": "winget",
       "packageId": "VMware.SpringToolSuite",
       "currentDeployedVersion": "13.0.1.0",
@@ -252,57 +152,87 @@
       "releaseNotesUrl": null
     },
     {
-      "appId": 184768,
+      "appId": 15226,
+      "packageManager": "winget",
+      "packageId": "Zoom.Zoom",
+      "currentDeployedVersion": "5.13.11835",
+      "latestUpstreamVersion": "7.1.41345",
+      "hasUpdate": true,
+      "bumpType": "major",
+      "releaseNotesUrl": "https://zoom.us/"
+    },
+    {
+      "appId": 22097,
+      "packageManager": "winget",
+      "packageId": "Microsoft.Office",
+      "currentDeployedVersion": "16.0.19929.20172",
+      "latestUpstreamVersion": "16.0.20026.20112",
+      "hasUpdate": true,
+      "bumpType": "patch",
+      "releaseNotesUrl": "https://www.office.com/"
+    },
+    {
+      "appId": 22120,
+      "packageManager": "winget",
+      "packageId": "Microsoft.Edge.Beta",
+      "currentDeployedVersion": "134.0.3124.8",
+      "latestUpstreamVersion": "141.0.3537.44",
+      "hasUpdate": true,
+      "bumpType": "major",
+      "releaseNotesUrl": "https://www.microsoft.com/en-us/edge"
+    },
+    {
+      "appId": 22163,
+      "packageManager": "winget",
+      "packageId": "Microsoft.VCRedist.2015+.x64",
+      "currentDeployedVersion": "14.44.35211.0",
+      "latestUpstreamVersion": "14.51.36247.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist"
+    },
+    {
+      "appId": 22164,
+      "packageManager": "winget",
+      "packageId": "Microsoft.VCRedist.2015+.x86",
+      "currentDeployedVersion": "14.44.35211.0",
+      "latestUpstreamVersion": "14.51.36247.0",
+      "hasUpdate": true,
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist"
+    },
+    {
+      "appId": 29084,
       "packageManager": "msstore",
-      "packageId": "9WZDNCRFHVN5",
-      "currentDeployedVersion": "2021.2502.2.0",
+      "packageId": "9N0DX20HK701",
+      "currentDeployedVersion": "3001.18.10301.0",
       "latestUpstreamVersion": "Unknown",
       "hasUpdate": true,
       "bumpType": null,
       "releaseNotesUrl": null
     },
     {
-      "appId": 184769,
+      "appId": 29091,
       "packageManager": "msstore",
-      "packageId": "9MSMLRH6LZF3",
-      "currentDeployedVersion": "11.2604.5.0",
-      "latestUpstreamVersion": "Unknown",
+      "packageId": "XPDP273C0XHQH2",
+      "currentDeployedVersion": "26.0.0.1",
+      "latestUpstreamVersion": "26.001.21691",
       "hasUpdate": true,
-      "bumpType": null,
+      "bumpType": "minor",
       "releaseNotesUrl": null
     },
     {
-      "appId": 184772,
-      "packageManager": "msstore",
-      "packageId": "9WZDNCRFJBH4",
-      "currentDeployedVersion": "24.24070.23002.0",
-      "latestUpstreamVersion": "Unknown",
+      "appId": 36100,
+      "packageManager": "winget",
+      "packageId": "Microsoft.VCRedist.2015+.arm64",
+      "currentDeployedVersion": "14.30.30704.0",
+      "latestUpstreamVersion": "14.51.36247.0",
       "hasUpdate": true,
-      "bumpType": null,
-      "releaseNotesUrl": null
+      "bumpType": "minor",
+      "releaseNotesUrl": "https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist"
     },
     {
-      "appId": 184773,
-      "packageManager": "msstore",
-      "packageId": "9WZDNCRFJBBG",
-      "currentDeployedVersion": "2025.2510.2.0",
-      "latestUpstreamVersion": "Unknown",
-      "hasUpdate": true,
-      "bumpType": null,
-      "releaseNotesUrl": null
-    },
-    {
-      "appId": 184774,
-      "packageManager": "msstore",
-      "packageId": "9WZDNCRFHWKN",
-      "currentDeployedVersion": "2021.2510.0.0",
-      "latestUpstreamVersion": "Unknown",
-      "hasUpdate": true,
-      "bumpType": null,
-      "releaseNotesUrl": null
-    },
-    {
-      "appId": 184775,
+      "appId": 36124,
       "packageManager": "msstore",
       "packageId": "9NBLGGH4QGHW",
       "currentDeployedVersion": "6.1.5.0",
@@ -312,27 +242,7 @@
       "releaseNotesUrl": null
     },
     {
-      "appId": 184776,
-      "packageManager": "msstore",
-      "packageId": "9N95Q1ZZPMH4",
-      "currentDeployedVersion": "1.2.13.0",
-      "latestUpstreamVersion": "Unknown",
-      "hasUpdate": true,
-      "bumpType": null,
-      "releaseNotesUrl": null
-    },
-    {
-      "appId": 184777,
-      "packageManager": "msstore",
-      "packageId": "9NCTDW2W1BH8",
-      "currentDeployedVersion": "2.5.7.0",
-      "latestUpstreamVersion": "Unknown",
-      "hasUpdate": true,
-      "bumpType": null,
-      "releaseNotesUrl": null
-    },
-    {
-      "appId": 184778,
+      "appId": 36125,
       "packageManager": "msstore",
       "packageId": "9MZ95KL8MR0L",
       "currentDeployedVersion": "2022.2602.47.0",
@@ -342,7 +252,7 @@
       "releaseNotesUrl": null
     },
     {
-      "appId": 184784,
+      "appId": 36142,
       "packageManager": "msstore",
       "packageId": "9PCFS5B6T72H",
       "currentDeployedVersion": "11.2603.251.0",
@@ -352,7 +262,107 @@
       "releaseNotesUrl": null
     },
     {
-      "appId": 184798,
+      "appId": 36201,
+      "packageManager": "msstore",
+      "packageId": "9WZDNCRFHWD2",
+      "currentDeployedVersion": "4.24.12040.0",
+      "latestUpstreamVersion": null,
+      "hasUpdate": false,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 36202,
+      "packageManager": "msstore",
+      "packageId": "9N95Q1ZZPMH4",
+      "currentDeployedVersion": "1.2.13.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 36203,
+      "packageManager": "msstore",
+      "packageId": "9NCTDW2W1BH8",
+      "currentDeployedVersion": "2.5.7.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 36206,
+      "packageManager": "msstore",
+      "packageId": "9NRX63209R7B",
+      "currentDeployedVersion": "1.2026.428.200",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 36207,
+      "packageManager": "msstore",
+      "packageId": "9NFTCH6J7FHV",
+      "currentDeployedVersion": "11.2511.178.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 44203,
+      "packageManager": "msstore",
+      "packageId": "9WZDNCRFHVN5",
+      "currentDeployedVersion": "2021.2502.2.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 44204,
+      "packageManager": "msstore",
+      "packageId": "9MSMLRH6LZF3",
+      "currentDeployedVersion": "11.2604.5.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 44207,
+      "packageManager": "msstore",
+      "packageId": "9WZDNCRFJBH4",
+      "currentDeployedVersion": "24.24070.23002.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 44208,
+      "packageManager": "msstore",
+      "packageId": "9WZDNCRFJBBG",
+      "currentDeployedVersion": "2025.2510.2.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 44209,
+      "packageManager": "msstore",
+      "packageId": "9WZDNCRFHWKN",
+      "currentDeployedVersion": "2021.2510.0.0",
+      "latestUpstreamVersion": "Unknown",
+      "hasUpdate": true,
+      "bumpType": null,
+      "releaseNotesUrl": null
+    },
+    {
+      "appId": 44233,
       "packageManager": "msstore",
       "packageId": "9NBLGGH5R558",
       "currentDeployedVersion": "2.153.5851.0",
@@ -362,7 +372,7 @@
       "releaseNotesUrl": null
     },
     {
-      "appId": 184799,
+      "appId": 44234,
       "packageManager": "msstore",
       "packageId": "9WZDNCRFJ3PT",
       "currentDeployedVersion": "11.2510.7.0",
@@ -372,7 +382,7 @@
       "releaseNotesUrl": null
     },
     {
-      "appId": 184806,
+      "appId": 44242,
       "packageManager": "msstore",
       "packageId": "9WZDNCRFJ3Q2",
       "currentDeployedVersion": "4.54.63017.0",
@@ -382,20 +392,10 @@
       "releaseNotesUrl": null
     },
     {
-      "appId": 184808,
+      "appId": 44244,
       "packageManager": "msstore",
       "packageId": "9P1J8S7CCWWT",
       "currentDeployedVersion": "4.4.10720.0",
-      "latestUpstreamVersion": "Unknown",
-      "hasUpdate": true,
-      "bumpType": null,
-      "releaseNotesUrl": null
-    },
-    {
-      "appId": 184809,
-      "packageManager": "msstore",
-      "packageId": "9NRX63209R7B",
-      "currentDeployedVersion": "1.2026.428.200",
       "latestUpstreamVersion": "Unknown",
       "hasUpdate": true,
       "bumpType": null,
