@@ -414,8 +414,16 @@ jobs:
             } elseif ($spec.key -eq 'group-policy-configurations') {
               foreach ($item in @($items)) {
                 if ($null -eq $item -or -not $item.id) { continue }
-                $dvUri = "$base/deviceManagement/groupPolicyConfigurations/" + $item.id + '/definitionValues?$expand=definition,presentationValues($expand=presentation)'
-                $definitionValues = Invoke-GraphCollection -Uri $dvUri -Label "$($spec.label) definitionValues ($($item.id))"
+                # Graph caps $expand depth at 1, so presentationValues (which
+                # need their own $expand=presentation) are fetched per value.
+                $dvUri = "$base/deviceManagement/groupPolicyConfigurations/" + $item.id + '/definitionValues?$expand=definition'
+                $definitionValues = @(Invoke-GraphCollection -Uri $dvUri -Label "$($spec.label) definitionValues ($($item.id))")
+                foreach ($dv in $definitionValues) {
+                  if ($null -eq $dv -or -not $dv.id) { continue }
+                  $pvUri = "$base/deviceManagement/groupPolicyConfigurations/" + $item.id + '/definitionValues/' + $dv.id + '/presentationValues?$expand=presentation'
+                  $presentationValues = Invoke-GraphCollection -Uri $pvUri -Label "$($spec.label) presentationValues ($($dv.id))"
+                  $dv | Add-Member -NotePropertyName presentationValues -NotePropertyValue @($presentationValues) -Force
+                }
                 $item | Add-Member -NotePropertyName definitionValues -NotePropertyValue @($definitionValues) -Force
               }
             }
