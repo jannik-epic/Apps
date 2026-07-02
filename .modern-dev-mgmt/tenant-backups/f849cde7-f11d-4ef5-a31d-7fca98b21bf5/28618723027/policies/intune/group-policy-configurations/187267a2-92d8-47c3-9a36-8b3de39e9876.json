@@ -1,0 +1,14 @@
+{
+  "createdDateTime": "2022-07-26T18:58:42.6066666Z",
+  "displayName": "WIN_Default_OfficeActivateOutlookSSO",
+  "description": "",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "policyConfigurationIngestionType": "builtIn",
+  "id": "187267a2-92d8-47c3-9a36-8b3de39e9876",
+  "lastModifiedDateTime": "2022-07-27T07:44:59.5444369Z",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/groupPolicyConfigurations('187267a2-92d8-47c3-9a36-8b3de39e9876')/assignments",
+  "assignments": [],
+  "definitionValues": []
+}

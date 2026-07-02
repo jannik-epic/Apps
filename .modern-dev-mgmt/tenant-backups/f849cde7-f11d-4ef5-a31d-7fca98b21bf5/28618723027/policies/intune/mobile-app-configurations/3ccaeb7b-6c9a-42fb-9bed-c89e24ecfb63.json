@@ -1,0 +1,22 @@
+{
+  "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+  "id": "3ccaeb7b-6c9a-42fb-9bed-c89e24ecfb63",
+  "targetedMobileApps": [
+    "316a1547-1659-437a-a565-03a50166dc14"
+  ],
+  "createdDateTime": "2022-07-26T19:02:43.3171173Z",
+  "description": "",
+  "lastModifiedDateTime": "2022-07-26T19:02:43.3171173Z",
+  "displayName": "IOS_IntuneMAMUpn_Onedrive",
+  "version": 1,
+  "encodedSettingXml": null,
+  "settings": [
+    {
+      "appConfigKey": "IntuneMAMUPN",
+      "appConfigKeyType": "stringType",
+      "appConfigKeyValue": "{{UserPrincipalName}}"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceAppManagement/mobileAppConfigurations('3ccaeb7b-6c9a-42fb-9bed-c89e24ecfb63')/microsoft.graph.iosMobileAppConfiguration/assignments",
+  "assignments": []
+}

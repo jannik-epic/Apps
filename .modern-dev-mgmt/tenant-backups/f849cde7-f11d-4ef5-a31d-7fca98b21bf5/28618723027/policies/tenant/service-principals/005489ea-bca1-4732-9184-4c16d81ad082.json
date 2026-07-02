@@ -1,0 +1,12 @@
+{
+  "id": "005489ea-bca1-4732-9184-4c16d81ad082",
+  "appId": "abbab087-6193-40ef-a96c-6be85a5f43a0",
+  "displayName": "Azure Vmware Solutions RP Internal",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

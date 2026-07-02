@@ -1,0 +1,12 @@
+{
+  "id": "f1b44112-f3c2-4c02-acb4-4decb8605a34",
+  "appId": "db44d869-9bce-4198-809b-a806756b0d31",
+  "displayName": "ExchangeRevocationSync",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

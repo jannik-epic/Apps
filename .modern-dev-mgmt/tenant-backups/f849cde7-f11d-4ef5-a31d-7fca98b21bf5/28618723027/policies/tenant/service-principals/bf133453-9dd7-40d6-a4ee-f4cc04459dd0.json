@@ -1,0 +1,11 @@
+{
+  "id": "bf133453-9dd7-40d6-a4ee-f4cc04459dd0",
+  "appId": "7e9f2fca-0cd8-4a6c-a1a0-7ffe48aec7c6",
+  "displayName": "Intune Remote Help",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

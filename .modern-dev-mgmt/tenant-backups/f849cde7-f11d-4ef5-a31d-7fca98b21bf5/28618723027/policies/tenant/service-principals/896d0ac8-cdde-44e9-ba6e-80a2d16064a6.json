@@ -1,0 +1,11 @@
+{
+  "id": "896d0ac8-cdde-44e9-ba6e-80a2d16064a6",
+  "appId": "b8066b99-6e67-41be-abfa-75db1a2c8809",
+  "displayName": "Microsoft Intune IW Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

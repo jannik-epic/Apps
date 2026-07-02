@@ -1,0 +1,20 @@
+{
+  "id": "MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-m365-g2",
+  "publisherName": "MicrosoftWindowsDesktop",
+  "publisher": "MicrosoftWindowsDesktop",
+  "offerName": "windows-ent-cpc",
+  "offer": "windows-ent-cpc",
+  "skuName": "19h2-ent-cpc-m365-g2",
+  "sku": "19h2-ent-cpc-m365-g2",
+  "offerDisplayName": "Windows 10 Enterprise + Microsoft 365 Apps",
+  "skuDisplayName": "1909",
+  "displayName": "Windows 10 Enterprise + Microsoft 365 Apps 1909",
+  "recommendedSku": "heavy",
+  "sizeInGB": 64,
+  "status": "notSupported",
+  "startDate": "2019-11-12",
+  "endDate": "2022-05-10",
+  "expirationDate": "2022-11-10",
+  "osVersionNumber": null,
+  "osArchitecture": "x64"
+}

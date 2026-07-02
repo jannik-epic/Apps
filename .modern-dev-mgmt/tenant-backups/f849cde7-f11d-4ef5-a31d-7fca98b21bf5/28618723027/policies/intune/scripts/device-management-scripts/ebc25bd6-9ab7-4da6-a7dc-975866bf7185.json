@@ -1,0 +1,17 @@
+{
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "id": "ebc25bd6-9ab7-4da6-a7dc-975866bf7185",
+  "displayName": "WIN_Default_ChangeWin11ContextMenu",
+  "description": "",
+  "scriptContent": null,
+  "createdDateTime": "2022-08-01T12:28:01.9316467Z",
+  "lastModifiedDateTime": "2023-07-30T14:21:35.0238942Z",
+  "runAsAccount": "user",
+  "fileName": "Change-Windows11ContextMenu.ps1",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceManagementScripts('ebc25bd6-9ab7-4da6-a7dc-975866bf7185')/assignments",
+  "assignments": []
+}

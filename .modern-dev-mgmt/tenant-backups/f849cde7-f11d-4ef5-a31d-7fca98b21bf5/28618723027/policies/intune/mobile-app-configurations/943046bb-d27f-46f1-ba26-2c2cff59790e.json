@@ -1,0 +1,22 @@
+{
+  "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+  "id": "943046bb-d27f-46f1-ba26-2c2cff59790e",
+  "targetedMobileApps": [
+    "a178c27f-16f0-4aa6-94cc-637fde284d8a"
+  ],
+  "createdDateTime": "2022-07-26T19:02:44.8973699Z",
+  "description": "",
+  "lastModifiedDateTime": "2022-07-26T19:02:44.8973699Z",
+  "displayName": "IOS_IntuneMAMUpn_Office",
+  "version": 1,
+  "encodedSettingXml": null,
+  "settings": [
+    {
+      "appConfigKey": "IntuneMAMUPN",
+      "appConfigKeyType": "stringType",
+      "appConfigKeyValue": "{{UserPrincipalName}}"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceAppManagement/mobileAppConfigurations('943046bb-d27f-46f1-ba26-2c2cff59790e')/microsoft.graph.iosMobileAppConfiguration/assignments",
+  "assignments": []
+}

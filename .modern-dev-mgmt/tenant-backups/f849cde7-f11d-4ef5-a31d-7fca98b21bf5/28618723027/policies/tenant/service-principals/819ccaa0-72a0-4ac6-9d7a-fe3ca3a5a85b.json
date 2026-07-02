@@ -1,0 +1,10 @@
+{
+  "id": "819ccaa0-72a0-4ac6-9d7a-fe3ca3a5a85b",
+  "appId": "a2f22ccd-8ec2-4496-b9d5-687c5694db3c",
+  "displayName": "testwebappgpt1",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

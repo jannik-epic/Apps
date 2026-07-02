@@ -1,0 +1,38 @@
+{
+  "id": "a8f42f52-2049-4891-8a5f-e03c7251aa1e",
+  "appId": "57c03486-2540-499a-b9b9-8b8ecf8df3d9",
+  "displayName": "GPT Device Troubleshooter",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2023-09-01T16:29:10Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": [
+      "https://GPTDeviceTroubleshooter.azurewebsites.net/login/callback"
+    ]
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

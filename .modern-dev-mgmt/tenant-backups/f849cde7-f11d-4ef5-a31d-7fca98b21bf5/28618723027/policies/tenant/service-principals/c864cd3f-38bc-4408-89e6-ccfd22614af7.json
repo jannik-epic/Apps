@@ -1,0 +1,10 @@
+{
+  "id": "c864cd3f-38bc-4408-89e6-ccfd22614af7",
+  "appId": "86359da4-f677-4c01-9a37-644af2642f73",
+  "displayName": "testwebappjrai",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

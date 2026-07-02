@@ -1,0 +1,5 @@
+{
+  "id": "933284b2-12cf-4bd1-86df-c5300681ab79",
+  "name": "Azure Batch Shared Access Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

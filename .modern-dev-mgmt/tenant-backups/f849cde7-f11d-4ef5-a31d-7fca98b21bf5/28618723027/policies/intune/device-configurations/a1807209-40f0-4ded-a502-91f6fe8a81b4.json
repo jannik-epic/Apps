@@ -1,0 +1,42 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+  "id": "a1807209-40f0-4ded-a502-91f6fe8a81b4",
+  "lastModifiedDateTime": "2022-07-27T07:49:02.1442844Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-27T07:33:57.5897198Z",
+  "description": "",
+  "displayName": "WIN_Default_TrustedPublisherCertificate",
+  "version": 3,
+  "omaSettings": [
+    {
+      "@odata.type": "#microsoft.graph.omaSettingString",
+      "displayName": "test12.cer",
+      "description": "",
+      "omaUri": "./Device/Vendor/MSFT/RootCATrustedCertificates/TrustedPublisher/906CC149415780CFB79F39E1CF449F87CA6D4D16/EncodedCertificate",
+      "secretReferenceValueId": "9e3c3837-3799-48c9-a33a-29bbad054d12_a1807209-40f0-4ded-a502-91f6fe8a81b4_dbe59217-c704-4026-893e-2d390e833132",
+      "isEncrypted": true,
+      "value": "****"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('a1807209-40f0-4ded-a502-91f6fe8a81b4')/microsoft.graph.windows10CustomConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "a1807209-40f0-4ded-a502-91f6fe8a81b4_8913e9df-f718-40fc-97d5-c5af3876444f",
+      "source": "direct",
+      "sourceId": "a1807209-40f0-4ded-a502-91f6fe8a81b4",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "8913e9df-f718-40fc-97d5-c5af3876444f"
+      }
+    }
+  ]
+}

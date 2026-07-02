@@ -1,0 +1,36 @@
+{
+  "id": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5_606b54a9-78d8-4298-ad8b-df6ef4481c80",
+  "skuId": "606b54a9-78d8-4298-ad8b-df6ef4481c80",
+  "skuPartNumber": "CCIBOTS_PRIVPREV_VIRAL",
+  "consumedUnits": 1,
+  "capabilityStatus": "Enabled",
+  "prepaidUnits": {
+    "enabled": 10000,
+    "suspended": 0,
+    "warning": 0,
+    "lockedOut": 0
+  },
+  "servicePlans": [
+    {
+      "servicePlanId": "5d798708-6473-48ad-9776-3acc301c40af",
+      "servicePlanName": "FLOW_CCI_BOTS",
+      "servicePlanType": "ProcessSimple",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "ce312d15-8fdf-44c0-9974-a25a177125ee",
+      "servicePlanName": "CCIBOTS_PRIVPREV_VIRAL",
+      "servicePlanType": "ccibotsprod",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    },
+    {
+      "servicePlanId": "cf7034ed-348f-42eb-8bbd-dddeea43ee81",
+      "servicePlanName": "DYN365_CDS_CCI_BOTS",
+      "servicePlanType": "CRM",
+      "provisioningStatus": "Success",
+      "appliesTo": "User"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "executionFrequency": "P1D",
+  "retryCount": 3,
+  "blockExecutionNotifications": true,
+  "id": "702d57ff-55de-4d2a-9913-f7c60d179d71",
+  "displayName": "Download Wallpaper Background",
+  "description": "Downloads the wallpaper background to be used with Custom Profile",
+  "scriptContent": null,
+  "createdDateTime": "2023-11-26T16:53:28.4790067Z",
+  "lastModifiedDateTime": "2023-11-26T16:53:28.4790067Z",
+  "runAsAccount": "system",
+  "fileName": "downloadwallpaper.sh",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceShellScripts('702d57ff-55de-4d2a-9913-f7c60d179d71')/assignments",
+  "assignments": [
+    {
+      "id": "702d57ff-55de-4d2a-9913-f7c60d179d71:ae1dd731-811f-4344-8980-37faff3d7c72",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "ae1dd731-811f-4344-8980-37faff3d7c72"
+      }
+    }
+  ]
+}

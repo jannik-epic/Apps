@@ -1,0 +1,35 @@
+{
+  "id": "AATP_EntraConnectSensitiveAccountsWithUnsafePermissions",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2293705",
+  "controlCategory": "Identity",
+  "title": "Remove unsafe permissions on sensitive Entra Connect accounts",
+  "deprecated": false,
+  "implementationCost": "low",
+  "lastModifiedDateTime": null,
+  "maxScore": 9.0,
+  "rank": 65,
+  "remediation": "1. Review the list of exposed entities to identify accounts with unsafe permissions.<br> 2. Remove problematic permissions that allows unprivileged accounts to takeover critical hybrid assets. <br><br>To achieve the full score, remediate all exposed entities.",
+  "remediationImpact": "Granting unsafe permissions to sensitive accounts like MSOL and AzureSSO poses serious risks, as it allows unprivileged accounts to access and manipulate critical hybrid infrastructure. This could lead to privilege escalation, unauthorized changes to user identities.",
+  "service": "Azure ATP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "Low",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

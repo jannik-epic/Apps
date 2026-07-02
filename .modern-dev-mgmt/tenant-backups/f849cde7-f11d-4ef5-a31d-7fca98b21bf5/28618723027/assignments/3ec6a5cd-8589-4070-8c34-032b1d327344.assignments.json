@@ -1,0 +1,21 @@
+[
+  {
+    "id": "56f9f04b-50bf-49ee-9f1f-d9e7fc59f722_1_0",
+    "intent": "required",
+    "source": "direct",
+    "sourceId": null,
+    "target": {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": null,
+      "deviceAndAppManagementAssignmentFilterType": "none",
+      "groupId": "56f9f04b-50bf-49ee-9f1f-d9e7fc59f722"
+    },
+    "settings": {
+      "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+      "vpnConfigurationId": null,
+      "uninstallOnDeviceRemoval": null,
+      "isRemovable": null,
+      "preventManagedAppBackup": null
+    }
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "54dd8d4d-f159-4da0-9d8f-40f44aef5608",
+  "displayName": "Email",
+  "description": "Mifo Windows 10 and later Email",
+  "versionInfo": "Version 1",
+  "templateType": "deviceConfigurationForOffice365",
+  "platformType": "windows10AndLater",
+  "publishedDateTime": "2001-01-01T00:00:00Z"
+}

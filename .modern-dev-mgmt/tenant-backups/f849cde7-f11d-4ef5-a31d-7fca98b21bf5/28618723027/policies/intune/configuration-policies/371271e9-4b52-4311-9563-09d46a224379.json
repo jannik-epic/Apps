@@ -1,0 +1,69 @@
+{
+  "createdDateTime": "2023-11-11T16:36:51.1154214Z",
+  "creationSource": null,
+  "description": "Purpose: Enforce silent BitLocker encryption on all corporate Windows 11 devices to meet ISO 27001 data-at-rest requirements\nScope: Windows Kios devices\nOwner: Jannik Reinhard — Epic Fusion, reviewed quarterly\nLast reviewed: 2025-01-15 — JIRA-4521 — changed min PIN length from 4 to 6 digits",
+  "lastModifiedDateTime": "2026-03-07T08:04:38.0197608Z",
+  "name": "Application Control",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm",
+  "id": "371271e9-4b52-4311-9563-09d46a224379",
+  "templateReference": {
+    "templateId": "4321b946-b76b-4450-8afd-769c08b16ffc_1",
+    "templateFamily": "endpointSecurityApplicationControl",
+    "templateDisplayName": "App Control for Business",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('371271e9-4b52-4311-9563-09d46a224379')/assignments",
+  "assignments": [],
+  "settings": [
+    {
+      "id": "0",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "settingDefinitionId": "device_vendor_msft_policy_config_applicationcontrol_policies_{policyguid}_policiesoptions",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "1de98212-6949-42dc-a89c-e0ff6e5da04b"
+        },
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_applicationcontrol_built_in_controls_selected",
+          "settingValueTemplateReference": {
+            "settingValueTemplateId": "b28c7dc4-c7b2-4ce2-8f51-6ebfd3ea69d3",
+            "useTemplateDefault": false
+          },
+          "children": [
+            {
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+              "settingDefinitionId": "device_vendor_msft_policy_config_applicationcontrol_built_in_controls",
+              "settingInstanceTemplateReference": null,
+              "auditRuleInformation": null,
+              "groupSettingCollectionValue": [
+                {
+                  "settingValueTemplateReference": null,
+                  "children": [
+                    {
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                      "settingDefinitionId": "device_vendor_msft_policy_config_applicationcontrol_built_in_controls_enable_app_control",
+                      "settingInstanceTemplateReference": null,
+                      "auditRuleInformation": null,
+                      "choiceSettingValue": {
+                        "settingValueTemplateReference": null,
+                        "value": "device_vendor_msft_policy_config_applicationcontrol_built_in_controls_enable_app_control_0",
+                        "children": []
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

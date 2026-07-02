@@ -1,0 +1,20 @@
+{
+  "id": "microsoftwindowsdesktop_windows-ent-cpc_win11-25h2-ent-cpc-m365",
+  "publisherName": "microsoftwindowsdesktop",
+  "publisher": "microsoftwindowsdesktop",
+  "offerName": "windows-ent-cpc",
+  "offer": "windows-ent-cpc",
+  "skuName": "win11-25h2-ent-cpc-m365",
+  "sku": "win11-25h2-ent-cpc-m365",
+  "offerDisplayName": "Windows 11 Enterprise + Microsoft 365 Apps",
+  "skuDisplayName": "25H2",
+  "displayName": "Windows 11 Enterprise + Microsoft 365 Apps 25H2",
+  "recommendedSku": "heavy",
+  "sizeInGB": 64,
+  "status": "supported",
+  "startDate": "2025-10-01",
+  "endDate": "2028-10-12",
+  "expirationDate": "2029-04-12",
+  "osVersionNumber": "10.0.26200.8655",
+  "osArchitecture": "x64"
+}

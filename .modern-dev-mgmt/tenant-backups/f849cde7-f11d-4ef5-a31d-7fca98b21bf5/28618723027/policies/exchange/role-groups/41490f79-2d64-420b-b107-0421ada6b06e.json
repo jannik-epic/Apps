@@ -1,0 +1,43 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [
+    "Insider Risk Management Admin-Insider Risk Management Admins"
+  ],
+  "Roles": [
+    "Insider Risk Management Admin"
+  ],
+  "DisplayName": "",
+  "ExternalDirectoryObjectId": "",
+  "Members": [],
+  "SamAccountName": "$L4QKH0-G80E01KROEMS",
+  "Description": "Provides the ability to view the contents of the files.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "",
+  "Identity": "Insider Risk Management Admins",
+  "Id": "Insider Risk Management Admins",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "Insider Risk Management Admins",
+  "DistinguishedName": "CN=Insider Risk Management Admins,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2025-10-18T22:39:11+00:00",
+  "WhenCreated": "2023-04-07T11:51:43+00:00",
+  "WhenChangedUTC": "2025-10-18T22:39:11Z",
+  "WhenCreatedUTC": "2023-04-07T11:51:43Z",
+  "ExchangeObjectId": "41490f79-2d64-420b-b107-0421ada6b06e",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "41490f79-2d64-420b-b107-0421ada6b06e",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

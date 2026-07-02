@@ -1,0 +1,9 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "638fab01-0628-4164-ada3-f2fb34730946",
+  "appId": "638fab01-0628-4164-ada3-f2fb34730946",
+  "displayName": "packageflow-ai-intuneAgent-AgentIdentity",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

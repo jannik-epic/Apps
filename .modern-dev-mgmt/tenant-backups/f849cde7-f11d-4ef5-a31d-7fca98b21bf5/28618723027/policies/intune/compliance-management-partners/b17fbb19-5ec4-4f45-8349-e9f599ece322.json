@@ -1,0 +1,12 @@
+{
+  "id": "b17fbb19-5ec4-4f45-8349-e9f599ece322",
+  "lastHeartbeatDateTime": "0001-01-01T00:00:00Z",
+  "partnerState": "unknown",
+  "displayName": "AppTec360 Endpoint Manager",
+  "macOsOnboarded": false,
+  "androidOnboarded": false,
+  "iosOnboarded": false,
+  "macOsEnrollmentAssignments": [],
+  "androidEnrollmentAssignments": [],
+  "iosEnrollmentAssignments": []
+}

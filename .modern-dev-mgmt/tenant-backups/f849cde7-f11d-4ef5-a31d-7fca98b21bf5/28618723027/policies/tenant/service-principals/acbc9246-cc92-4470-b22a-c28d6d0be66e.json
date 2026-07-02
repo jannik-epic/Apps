@@ -1,0 +1,11 @@
+{
+  "id": "acbc9246-cc92-4470-b22a-c28d6d0be66e",
+  "appId": "b4fa09d8-5da5-4352-83d9-05c2a44cf431",
+  "displayName": "Azure CosmosDB for PostgreSQL AAD Authentication",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

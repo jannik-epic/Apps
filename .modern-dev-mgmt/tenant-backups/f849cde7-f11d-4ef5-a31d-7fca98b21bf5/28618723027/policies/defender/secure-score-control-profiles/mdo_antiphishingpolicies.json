@@ -1,0 +1,39 @@
+{
+  "id": "mdo_antiphishingpolicies",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-phishing-policies-about?view=o365-worldwide&tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Apps",
+  "title": "Ensure that an anti-phishing policy has been created",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p><strong>Note</strong>: Audit and Remediation guidance may focus on the Default policy however, if a <br />Custom Policy exists in the organization's tenant then ensure the setting is set as <br />outlined in the highest priority policy listed.</p> <p><br /><strong>To set the anti-phishing policy -</strong></p> <ol> <li>Navigate to<em> Microsoft 365 Defender</em> <a href=\"https://security.microsoft.com\">https://security.microsoft.com</a>.</li> <li>Click to expand <em>Email &amp; collaboration</em> select <em>Policies &amp; rules</em></li> <li>Select <em>Threat policies</em>.</li> <li>Under <em>Policies</em> select <em>Anti-phishing</em>.</li> <li>Select the <em>Office365 AntiPhish Default (Default)</em> policy and click <em>Edit </em><br /><em>protection settings</em>.</li> <li>Set the Phishing email threshold to at least 2 - Aggressive. <ol> <li>Under <strong>Impersonation</strong><br />&bull; Check <em>Enable mailbox intelligence (Recommended)</em>.<br />&bull; Check <em>Enable Intelligence for impersonation protection (Recommended)</em>.</li> <li>Under <strong>Spoof</strong><br />&bull; Check <em>Enable spoof intelligence (Recommended)</em>.</li> </ol> </li> <li>Click Save.</li> </ol> <p><strong>To create an anti-phishing policy using PowerShell:</strong></p> <ol> <li>Connect to Exchange Online service using <em>Connect-ExchangeOnline</em>.</li> <li>Run the following Exchange Online PowerShell command:</li> </ol> <p><br />New-AntiPhishPolicy -Name \"Office365 AntiPhish Policy\"</p>",
+  "remediationImpact": "Turning on Anti-Phishing should not cause an impact, messages will be displayed when applicable",
+  "service": "MDO",
+  "threats": [
+    "Data Exfiltration",
+    "Account breach",
+    "Password Cracking"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

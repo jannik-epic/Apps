@@ -1,0 +1,11 @@
+{
+  "id": "c94f7ecc-809f-4800-b2e0-76e7704e08bf",
+  "displayName": "All_Licenses_E5 - Wave 3",
+  "description": "Wave 3 deployment group for All_Licenses_E5",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "wave-3-1752931994597",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-07-19T13:33:14Z"
+}

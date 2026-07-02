@@ -1,0 +1,10 @@
+{
+  "@odata.type": "#microsoft.graph.securityBaselineTemplate",
+  "id": "cef15778-c3b9-4d53-a00a-042929f0aad0",
+  "displayName": "Windows 365 Security Baseline",
+  "description": "Windows 365 settings as recommended by Microsoft",
+  "versionInfo": "November 2021",
+  "templateType": "cloudPC",
+  "platformType": "windows10AndLater",
+  "publishedDateTime": "2021-10-21T00:00:00Z"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "d83df3dc-df5c-491a-b966-b684e089c814",
+  "appId": "0000001a-0000-0000-c000-000000000000",
+  "displayName": "MicrosoftAzureActiveAuthn",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

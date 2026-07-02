@@ -1,0 +1,37 @@
+{
+  "id": "MDA_GitHub_PrivateRepositoryForkingSetting",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://docs.github.com/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-for-forking-private-or-internal-repositories",
+  "controlCategory": "Apps",
+  "title": "Disable private repository forking",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 7.0,
+  "rank": 10,
+  "remediation": "<ol> <li>In top right corner of GitHub, click your profile photo, then click <strong>Your enterprise</strong><abbr>&nbsp;&gt;&nbsp;</abbr>Next to the organization, <strong>click Settings</strong><abbr><strong>.</strong></abbr></li> <li>Go to <strong>Access</strong> &gt; <strong>Member privileges</strong>.</li> <li>Disable &quot;<strong>Allow forking of private and internal repositories</strong>&quot; option.</li> </ol> <p><br></p>",
+  "remediationImpact": "This setting disable users to fork private repositories.",
+  "service": "MDA_GitHub",
+  "threats": [
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "86c8d194-498a-444d-b2cc-3b6626332b3b",
+  "appId": "ec52d13d-2e85-410e-a89a-8c79fb6a32ac",
+  "displayName": "Azure Synapse Studio",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

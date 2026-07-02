@@ -1,0 +1,69 @@
+{
+  "@odata.type": "#microsoft.graph.officeSuiteApp",
+  "id": "65de16c7-ad23-4d06-8cdb-e12e27ba9636",
+  "displayName": "Microsoft 365 Apps for Windows 10 and later",
+  "description": "Microsoft 365 Apps for Windows 10 and later",
+  "publisher": "Microsoft",
+  "largeIcon": null,
+  "createdDateTime": "2022-07-26T17:56:04Z",
+  "lastModifiedDateTime": "2022-07-26T17:56:04Z",
+  "isFeatured": false,
+  "privacyInformationUrl": "https://privacy.microsoft.com/en-US/privacystatement",
+  "informationUrl": "https://products.office.com/en-us/explore-office-for-home",
+  "owner": "Microsoft",
+  "developer": "Microsoft",
+  "notes": "",
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "autoAcceptEula": true,
+  "productIds": [
+    "o365ProPlusRetail"
+  ],
+  "useSharedComputerActivation": false,
+  "updateChannel": "deferred",
+  "officeSuiteAppDefaultFileFormat": "notConfigured",
+  "officePlatformArchitecture": "x64",
+  "localesToInstall": [],
+  "installProgressDisplayLevel": "none",
+  "shouldUninstallOlderVersionsOfOffice": true,
+  "targetVersion": "",
+  "updateVersion": "",
+  "officeConfigurationXml": null,
+  "excludedApps": {
+    "access": false,
+    "bing": false,
+    "excel": false,
+    "groove": true,
+    "infoPath": true,
+    "lync": true,
+    "oneDrive": false,
+    "oneNote": false,
+    "outlook": false,
+    "powerPoint": false,
+    "publisher": false,
+    "sharePointDesigner": true,
+    "teams": false,
+    "visio": false,
+    "word": false
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('65de16c7-ad23-4d06-8cdb-e12e27ba9636')/microsoft.graph.officeSuiteApp/assignments",
+  "assignments": [
+    {
+      "id": "acacacac-9df4-4c7d-9d50-4ef0226f57a9_0_0",
+      "intent": "available",
+      "settings": null,
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    }
+  ]
+}

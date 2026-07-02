@@ -1,0 +1,27 @@
+{
+  "@odata.type": "#microsoft.graph.agentIdentityBlueprint",
+  "id": "29875dae-1c4f-4f5c-8935-4b9b2fcdfcd5",
+  "appId": "29875dae-1c4f-4f5c-8935-4b9b2fcdfcd5",
+  "displayName": "packageflow-ai-intuneAgent-AgentIdentityBlueprint",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-05-14T19:11:55Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

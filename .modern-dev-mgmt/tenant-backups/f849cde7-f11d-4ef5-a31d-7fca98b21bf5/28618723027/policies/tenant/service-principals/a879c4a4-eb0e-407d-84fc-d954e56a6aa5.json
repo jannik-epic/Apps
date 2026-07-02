@@ -1,0 +1,12 @@
+{
+  "id": "a879c4a4-eb0e-407d-84fc-d954e56a6aa5",
+  "appId": "67e3df25-268a-4324-a550-0de1c7f97287",
+  "displayName": "Microsoft Office Web Apps Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

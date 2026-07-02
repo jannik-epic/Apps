@@ -1,0 +1,11 @@
+{
+  "id": "7f622d0f-1bef-4111-b1d7-1421b2bd8782",
+  "appId": "6f0478d5-61a3-4897-a2f2-de09a5a90c7f",
+  "displayName": "WindowsUpdate-Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

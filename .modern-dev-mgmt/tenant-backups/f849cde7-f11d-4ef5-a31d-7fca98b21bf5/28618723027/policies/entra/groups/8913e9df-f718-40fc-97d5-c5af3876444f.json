@@ -1,0 +1,13 @@
+{
+  "id": "8913e9df-f718-40fc-97d5-c5af3876444f",
+  "displayName": "Windows_All_Devices",
+  "description": "All Windows Devices",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "Win",
+  "groupTypes": [
+    "DynamicMembership"
+  ],
+  "visibility": null,
+  "createdDateTime": "2022-07-26T17:17:03Z"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "0ced6b30-dc9d-4fa6-b31f-9b6b6924cfe3",
+  "appId": "87223343-80b1-4097-be13-2332ffa1d666",
+  "displayName": "Outlook Web App Widgets",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens",
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

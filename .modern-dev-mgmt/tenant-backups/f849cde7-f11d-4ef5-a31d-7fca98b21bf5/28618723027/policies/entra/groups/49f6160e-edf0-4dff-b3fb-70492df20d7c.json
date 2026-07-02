@@ -1,0 +1,11 @@
+{
+  "id": "49f6160e-edf0-4dff-b3fb-70492df20d7c",
+  "displayName": "All_Devices_Custom - Wave 1",
+  "description": "Wave 1 deployment group for All_Devices_Custom",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "wave-1-1751948659188",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-07-08T04:24:19Z"
+}

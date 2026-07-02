@@ -1,0 +1,11 @@
+{
+  "id": "6e7dbe40-b28e-4188-99b0-66cb2253ba30",
+  "displayName": "Azure ATP moderndevmgmt Administrators",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "AzureATPmoderndevmgmtAdministrators",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2022-08-16T18:28:39Z"
+}

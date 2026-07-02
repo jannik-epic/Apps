@@ -1,0 +1,11 @@
+{
+  "id": "a6f7c8ff-97a1-459e-bd50-94db89f0ed64",
+  "appId": "18a4ad1e-427c-4cad-8416-ef674e801d32",
+  "displayName": "Intune DeviceActionService",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

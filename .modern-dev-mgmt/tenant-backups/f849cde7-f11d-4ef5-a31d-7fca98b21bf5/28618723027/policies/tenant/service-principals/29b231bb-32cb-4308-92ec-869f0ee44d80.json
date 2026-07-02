@@ -1,0 +1,10 @@
+{
+  "id": "29b231bb-32cb-4308-92ec-869f0ee44d80",
+  "appId": "0de78ff7-f059-4356-b505-8a64981f2e4d",
+  "displayName": "DeviceTroubleshooter (Power Virtual Agents)",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "power-virtual-agents-2b7fefc3-ff40-48d8-8c90-03d8ec312a62"
+  ]
+}

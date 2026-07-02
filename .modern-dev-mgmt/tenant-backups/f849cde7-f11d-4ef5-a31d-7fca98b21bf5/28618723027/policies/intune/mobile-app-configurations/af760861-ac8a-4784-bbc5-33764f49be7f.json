@@ -1,0 +1,22 @@
+{
+  "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+  "id": "af760861-ac8a-4784-bbc5-33764f49be7f",
+  "targetedMobileApps": [
+    "6954153a-81dd-4be6-8457-ec3b722d4c06"
+  ],
+  "createdDateTime": "2022-07-26T19:02:45.7246358Z",
+  "description": "",
+  "lastModifiedDateTime": "2022-07-26T19:02:45.7246358Z",
+  "displayName": "IOS_IntuneMAMUpn_Word",
+  "version": 1,
+  "encodedSettingXml": null,
+  "settings": [
+    {
+      "appConfigKey": "IntuneMAMUpn",
+      "appConfigKeyType": "stringType",
+      "appConfigKeyValue": "{{UserPrincipalName}}"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceAppManagement/mobileAppConfigurations('af760861-ac8a-4784-bbc5-33764f49be7f')/microsoft.graph.iosMobileAppConfiguration/assignments",
+  "assignments": []
+}

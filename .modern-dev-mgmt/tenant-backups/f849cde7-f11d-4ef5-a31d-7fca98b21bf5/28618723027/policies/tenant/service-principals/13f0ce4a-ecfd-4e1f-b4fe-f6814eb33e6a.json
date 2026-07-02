@@ -1,0 +1,12 @@
+{
+  "id": "13f0ce4a-ecfd-4e1f-b4fe-f6814eb33e6a",
+  "appId": "2d4e7d66-4baf-4714-bf99-7e03dc377fdb",
+  "displayName": "Workload Identity Control Plane",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

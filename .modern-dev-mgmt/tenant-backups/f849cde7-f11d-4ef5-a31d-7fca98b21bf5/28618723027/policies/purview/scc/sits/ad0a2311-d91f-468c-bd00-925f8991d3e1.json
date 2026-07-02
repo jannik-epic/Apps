@@ -1,0 +1,5 @@
+{
+  "id": "ad0a2311-d91f-468c-bd00-925f8991d3e1",
+  "name": "Azure App Service Deployment Password",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

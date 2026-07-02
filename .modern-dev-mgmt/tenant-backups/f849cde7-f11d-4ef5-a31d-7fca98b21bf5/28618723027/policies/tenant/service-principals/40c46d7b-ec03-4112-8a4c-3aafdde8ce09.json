@@ -1,0 +1,12 @@
+{
+  "id": "40c46d7b-ec03-4112-8a4c-3aafdde8ce09",
+  "appId": "7cb67f16-9174-4dfc-989a-0d02aed8d3c3",
+  "displayName": "MDA LCNC Power Platform Security Webhooks",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "e6bde23a-bae8-4777-8557-8a04f5309641",
+  "appId": "3503d09b-494b-4158-bcb0-28e0b06cd175",
+  "displayName": "myproject-oidc-prod",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-04-20T09:13:39Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

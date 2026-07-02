@@ -1,0 +1,12 @@
+{
+  "id": "5dc9b605-1f84-4bd6-b21d-8d1ee1cba3df",
+  "appId": "89b757f8-1e01-4f41-8c72-75e191b11b8c",
+  "displayName": "Azure Context Cache RP Prod Identity",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

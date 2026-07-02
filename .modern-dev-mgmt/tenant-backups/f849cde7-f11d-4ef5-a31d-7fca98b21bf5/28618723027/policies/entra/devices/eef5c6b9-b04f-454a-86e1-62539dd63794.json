@@ -1,0 +1,13 @@
+{
+  "id": "eef5c6b9-b04f-454a-86e1-62539dd63794",
+  "displayName": "MacBook Pro von Jannik",
+  "deviceId": "7da8ac4d-df98-4c18-b8de-0b2838dbabf1",
+  "accountEnabled": false,
+  "operatingSystem": "MacMDM",
+  "operatingSystemVersion": "12.3.1 (21E258)",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": false,
+  "isManaged": false,
+  "registrationDateTime": "2022-07-28T17:24:06Z"
+}

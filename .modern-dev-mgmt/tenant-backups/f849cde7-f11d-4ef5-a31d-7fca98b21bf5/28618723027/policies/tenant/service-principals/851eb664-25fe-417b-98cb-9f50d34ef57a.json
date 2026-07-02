@@ -1,0 +1,11 @@
+{
+  "id": "851eb664-25fe-417b-98cb-9f50d34ef57a",
+  "appId": "d32c68ad-72d2-4acb-a0c7-46bb2cf93873",
+  "displayName": "Microsoft Activity Feed Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

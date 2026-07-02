@@ -1,0 +1,17 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/androidManagedStoreAccountEnterpriseSettings/$entity",
+  "id": "androidManagedStoreAccountEnterpriseSettings",
+  "bindStatus": "boundAndValidated",
+  "managedGooglePlayEnterpriseType": "managedGooglePlayAccountsEnterprise",
+  "lastAppSyncDateTime": "2026-07-01T22:42:53.2197054Z",
+  "lastAppSyncStatus": "success",
+  "ownerUserPrincipalName": "Jannik.Reinhard1@gmail.com",
+  "ownerOrganizationName": "JannikR",
+  "lastModifiedDateTime": "2022-07-26T16:00:46.2970238Z",
+  "enrollmentTarget": "targetedAsEnrollmentRestrictions",
+  "targetGroupIds": [],
+  "deviceOwnerManagementEnabled": true,
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": false,
+  "managedGooglePlayInitialScopeTagIds": [],
+  "companyCodes": []
+}

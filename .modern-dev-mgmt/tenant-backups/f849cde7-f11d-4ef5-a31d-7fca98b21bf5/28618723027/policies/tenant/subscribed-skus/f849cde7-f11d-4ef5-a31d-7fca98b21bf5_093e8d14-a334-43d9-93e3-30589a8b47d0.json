@@ -1,0 +1,29 @@
+{
+  "id": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5_093e8d14-a334-43d9-93e3-30589a8b47d0",
+  "skuId": "093e8d14-a334-43d9-93e3-30589a8b47d0",
+  "skuPartNumber": "RMSBASIC",
+  "consumedUnits": 0,
+  "capabilityStatus": "Enabled",
+  "prepaidUnits": {
+    "enabled": 1,
+    "suspended": 0,
+    "warning": 0,
+    "lockedOut": 0
+  },
+  "servicePlans": [
+    {
+      "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318",
+      "servicePlanName": "EXCHANGE_S_FOUNDATION",
+      "servicePlanType": "Exchange",
+      "provisioningStatus": "Success",
+      "appliesTo": "Company"
+    },
+    {
+      "servicePlanId": "31cf2cfc-6b0d-4adc-a336-88b724ed8122",
+      "servicePlanName": "RMS_S_BASIC",
+      "servicePlanType": "RMSOnline",
+      "provisioningStatus": "Success",
+      "appliesTo": "Company"
+    }
+  ]
+}

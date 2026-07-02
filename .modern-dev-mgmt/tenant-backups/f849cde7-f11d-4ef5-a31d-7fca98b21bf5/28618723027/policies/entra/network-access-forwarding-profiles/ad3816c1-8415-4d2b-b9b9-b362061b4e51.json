@@ -1,0 +1,18 @@
+{
+  "id": "ad3816c1-8415-4d2b-b9b9-b362061b4e51",
+  "name": "Private access traffic forwarding profile",
+  "description": "Default traffic forwarding profile for Private access traffic acquisition. Assign the profile to client or branch offices to acquire Private access traffic for Zero Trust Network Access.",
+  "state": "disabled",
+  "version": "1.0.0",
+  "lastModifiedDateTime": "2026-05-18T08:54:44.3868944Z",
+  "trafficForwardingType": "private",
+  "priority": 200,
+  "isCustomProfile": false,
+  "localNetworkSettings": null,
+  "assignmentRules": null,
+  "associations": [],
+  "servicePrincipal": {
+    "appId": "fd9e00e8-fe42-4e7d-a759-ea3016c8d79e",
+    "id": "1c16d1fa-2bd3-4559-9b5f-34ec43b0481d"
+  }
+}

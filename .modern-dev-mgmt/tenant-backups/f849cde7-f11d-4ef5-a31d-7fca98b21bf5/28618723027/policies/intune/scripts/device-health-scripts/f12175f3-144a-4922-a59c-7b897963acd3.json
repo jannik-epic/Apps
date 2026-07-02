@@ -1,0 +1,41 @@
+{
+  "id": "f12175f3-144a-4922-a59c-7b897963acd3",
+  "publisher": "Jannik Reinhard",
+  "version": "1",
+  "displayName": "WIN_Det_GetConnectedDevcies",
+  "description": "",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2022-09-02T14:25:54.2354522Z",
+  "lastModifiedDateTime": "2022-09-02T14:25:54.2354522Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('f12175f3-144a-4922-a59c-7b897963acd3')/assignments",
+  "assignments": [
+    {
+      "id": "f12175f3-144a-4922-a59c-7b897963acd3:ae1dd731-811f-4344-8980-37faff3d7c72",
+      "runRemediationScript": false,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "ae1dd731-811f-4344-8980-37faff3d7c72"
+      },
+      "runSchedule": {
+        "@odata.type": "#microsoft.graph.deviceHealthScriptDailySchedule",
+        "interval": 1,
+        "useUtc": false,
+        "time": "01:00:00.0000000"
+      }
+    }
+  ]
+}

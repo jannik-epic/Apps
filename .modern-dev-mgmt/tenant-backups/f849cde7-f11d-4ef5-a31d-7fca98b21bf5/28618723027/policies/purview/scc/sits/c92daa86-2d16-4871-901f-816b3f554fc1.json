@@ -1,0 +1,5 @@
+{
+  "id": "c92daa86-2d16-4871-901f-816b3f554fc1",
+  "name": "China Resident Identity Card (PRC) Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

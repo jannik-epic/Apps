@@ -1,0 +1,18 @@
+{
+  "authenticationType": "Managed",
+  "availabilityStatus": null,
+  "id": "ModernDevMgmt.onmicrosoft.com",
+  "isAdminManaged": true,
+  "isDefault": true,
+  "isInitial": true,
+  "isRoot": true,
+  "isVerified": true,
+  "supportedServices": [
+    "Email",
+    "OfficeCommunicationsOnline",
+    "MoeraDomain"
+  ],
+  "passwordValidityPeriodInDays": 2147483647,
+  "passwordNotificationWindowInDays": 14,
+  "state": null
+}

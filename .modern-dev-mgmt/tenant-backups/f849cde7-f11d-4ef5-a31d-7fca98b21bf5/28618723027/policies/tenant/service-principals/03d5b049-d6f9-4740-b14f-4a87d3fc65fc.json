@@ -1,0 +1,13 @@
+{
+  "id": "03d5b049-d6f9-4740-b14f-4a87d3fc65fc",
+  "appId": "db7de2b5-2149-435e-8043-e080dd50afae",
+  "displayName": "Skype for Business Voicemail",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient",
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

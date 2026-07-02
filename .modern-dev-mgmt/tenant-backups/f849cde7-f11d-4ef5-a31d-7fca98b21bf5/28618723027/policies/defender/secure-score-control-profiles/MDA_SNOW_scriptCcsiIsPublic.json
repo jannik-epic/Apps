@@ -1,0 +1,38 @@
+{
+  "id": "MDA_SNOW_scriptCcsiIsPublic",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/security/reference/privacy-on-client-callable-script-includes.html",
+  "controlCategory": "Apps",
+  "title": "Set client-callable script includes to private",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 4.0,
+  "rank": 10,
+  "remediation": "<p>Set the following property &apos;glide.script.ccsi.ispublic&apos; as false.</p> <p>For setting ServiceNow properties, see <a href='https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/reference-pages/task/t_AddAPropertyUsingSysPropsList.html'>Add system property documentation</a>.</p>",
+  "remediationImpact": "Privacy on client-callable script includes.",
+  "service": "MDA_SNOW",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

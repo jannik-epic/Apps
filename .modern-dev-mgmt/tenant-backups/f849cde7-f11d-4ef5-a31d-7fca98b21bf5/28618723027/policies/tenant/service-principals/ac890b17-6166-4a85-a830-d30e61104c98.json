@@ -1,0 +1,10 @@
+{
+  "id": "ac890b17-6166-4a85-a830-d30e61104c98",
+  "appId": "1ac05c7e-12d2-4605-bf9d-549d7041c6b3",
+  "displayName": "Microsoft Azure Synapse Gateway",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource"
+  ]
+}

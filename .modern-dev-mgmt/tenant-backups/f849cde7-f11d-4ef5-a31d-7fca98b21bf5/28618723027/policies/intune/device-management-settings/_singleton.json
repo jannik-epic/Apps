@@ -1,0 +1,11 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement",
+  "id": "deviceManagement",
+  "settings": null,
+  "maximumDepTokens": 100,
+  "intuneAccountId": "9e3c3837-3799-48c9-a33a-29bbad054d12",
+  "lastReportAggregationDateTime": "0001-01-01T00:00:00Z",
+  "deviceComplianceReportSummarizationDateTime": "0001-01-01T00:00:00Z",
+  "legacyPcManangementEnabled": false,
+  "unlicensedAdminstratorsEnabled": true
+}

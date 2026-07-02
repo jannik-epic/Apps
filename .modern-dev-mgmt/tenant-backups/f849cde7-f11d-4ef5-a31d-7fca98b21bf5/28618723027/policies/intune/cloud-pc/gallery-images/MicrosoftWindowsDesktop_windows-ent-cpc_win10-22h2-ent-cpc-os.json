@@ -1,0 +1,20 @@
+{
+  "id": "MicrosoftWindowsDesktop_windows-ent-cpc_win10-22h2-ent-cpc-os",
+  "publisherName": "MicrosoftWindowsDesktop",
+  "publisher": "MicrosoftWindowsDesktop",
+  "offerName": "windows-ent-cpc",
+  "offer": "windows-ent-cpc",
+  "skuName": "win10-22h2-ent-cpc-os",
+  "sku": "win10-22h2-ent-cpc-os",
+  "offerDisplayName": "Windows 10 Enterprise + OS Optimizations",
+  "skuDisplayName": "22H2",
+  "displayName": "Windows 10 Enterprise + OS Optimizations 22H2",
+  "recommendedSku": "light",
+  "sizeInGB": 64,
+  "status": "notSupported",
+  "startDate": "2022-10-18",
+  "endDate": "2025-05-13",
+  "expirationDate": "2025-11-13",
+  "osVersionNumber": "10.0.19045.4894",
+  "osArchitecture": "x64"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "f4d640e1-2d45-4d34-9c90-07f14bec3186",
+  "appId": "5a543d7c-9c4a-4f90-8cc7-6ae082a5b65b",
+  "displayName": "Azure HDInsight Surrogate Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

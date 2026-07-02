@@ -1,0 +1,77 @@
+{
+  "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
+  "id": "d6efa27f-9788-439b-bc36-30afa02376aa",
+  "lastModifiedDateTime": "2022-07-27T07:47:11.7916566Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-27T07:33:58.6890492Z",
+  "description": null,
+  "displayName": "WIN_Kiosk_MultiAppMode",
+  "version": 3,
+  "kioskBrowserDefaultUrl": "http://jannikreinhard.com",
+  "kioskBrowserEnableHomeButton": false,
+  "kioskBrowserEnableNavigationButtons": false,
+  "kioskBrowserEnableEndSessionButton": true,
+  "kioskBrowserRestartOnIdleTimeInMinutes": null,
+  "kioskBrowserBlockedURLs": [],
+  "kioskBrowserBlockedUrlExceptions": [],
+  "edgeKioskEnablePublicBrowsing": false,
+  "windowsKioskForceUpdateSchedule": null,
+  "kioskProfiles": [
+    {
+      "profileId": "440b8dd7-ee75-42ea-ae2c-84840ecd69ad",
+      "profileName": "profile",
+      "appConfiguration": {
+        "@odata.type": "#microsoft.graph.windowsKioskMultipleApps",
+        "showTaskBar": false,
+        "allowAccessToDownloadsFolder": false,
+        "disallowDesktopApps": false,
+        "startMenuLayoutXml": null,
+        "apps": [
+          {
+            "@odata.type": "#microsoft.graph.windowsKioskUWPApp",
+            "startLayoutTileSize": "medium",
+            "name": "OneNote for Windows 10",
+            "appType": "store",
+            "autoLaunch": false,
+            "appUserModelId": "Microsoft.Office.OneNote_8wekyb3d8bbwe!microsoft.onenoteim",
+            "appId": "e2a70146-cbda-4ec0-802d-0f557d9fd2c1",
+            "containedAppId": "b734b71d-02a3-49c4-ae63-3495c32fba7a"
+          },
+          {
+            "@odata.type": "#microsoft.graph.windowsKioskUWPApp",
+            "startLayoutTileSize": "medium",
+            "name": "Kiosk Browser",
+            "appType": "store",
+            "autoLaunch": false,
+            "appUserModelId": "Microsoft.KioskBrowser_8wekyb3d8bbwe!App",
+            "appId": null,
+            "containedAppId": null
+          },
+          {
+            "@odata.type": "#microsoft.graph.windowsKioskUWPApp",
+            "startLayoutTileSize": "medium",
+            "name": "Calendar",
+            "appType": "aumId",
+            "autoLaunch": false,
+            "appUserModelId": "microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.calendar",
+            "appId": null,
+            "containedAppId": null
+          }
+        ]
+      },
+      "userAccountsConfiguration": [
+        {
+          "@odata.type": "#microsoft.graph.windowsKioskAutologon"
+        }
+      ]
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('d6efa27f-9788-439b-bc36-30afa02376aa')/microsoft.graph.windowsKioskConfiguration/assignments",
+  "assignments": []
+}

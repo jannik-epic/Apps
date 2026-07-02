@@ -1,0 +1,13 @@
+{
+  "id": "7f9bab21-e0f3-4f3b-a0fb-0b5fccb2a8fd",
+  "displayName": "iPhone",
+  "deviceId": "4b47ffae-81b4-4057-a99d-c9145f878155",
+  "accountEnabled": true,
+  "operatingSystem": "iOS",
+  "operatingSystemVersion": "26.5.1",
+  "trustType": "Workplace",
+  "profileType": "RegisteredDevice",
+  "isCompliant": null,
+  "isManaged": null,
+  "registrationDateTime": "2025-10-06T06:07:27Z"
+}

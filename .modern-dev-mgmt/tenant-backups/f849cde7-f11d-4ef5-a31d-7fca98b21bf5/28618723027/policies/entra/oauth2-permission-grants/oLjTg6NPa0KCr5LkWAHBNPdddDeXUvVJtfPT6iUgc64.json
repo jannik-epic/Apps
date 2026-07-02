@@ -1,0 +1,8 @@
+{
+  "clientId": "83d3b8a0-4fa3-426b-82af-92e45801c134",
+  "consentType": "AllPrincipals",
+  "id": "oLjTg6NPa0KCr5LkWAHBNPdddDeXUvVJtfPT6iUgc64",
+  "principalId": null,
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": "User.Read DeviceManagementApps.ReadWrite.All DeviceManagementConfiguration.ReadWrite.All DeviceManagementManagedDevices.Read.All Directory.Read.All Application.ReadWrite.All openid profile email offline_access DeviceManagementServiceConfig.Read.All DeviceManagementScripts.Read.All ThreatHunting.Read.All Group.Read.All Group.ReadWrite.All User.ReadWrite.All AppRoleAssignment.ReadWrite.All CloudPC.ReadWrite.All DeviceManagementServiceConfig.ReadWrite.All Policy.Read.All Policy.ReadWrite.ConditionalAccess User.Read.All"
+}

@@ -1,0 +1,22 @@
+{
+  "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+  "id": "c8293be1-3b0e-45fd-b235-bdd7ae1bd1c3",
+  "targetedMobileApps": [
+    "10eb6c8e-cf0b-4afd-b6a9-071fdf91081f"
+  ],
+  "createdDateTime": "2022-07-26T19:02:44.1361317Z",
+  "description": "",
+  "lastModifiedDateTime": "2022-07-26T19:02:44.1361317Z",
+  "displayName": "IOS_IntuneMAMUpn_Excel",
+  "version": 1,
+  "encodedSettingXml": null,
+  "settings": [
+    {
+      "appConfigKey": "IntuneMAMUpn",
+      "appConfigKeyType": "stringType",
+      "appConfigKeyValue": "{{UserPrincipalName}}"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceAppManagement/mobileAppConfigurations('c8293be1-3b0e-45fd-b235-bdd7ae1bd1c3')/microsoft.graph.iosMobileAppConfiguration/assignments",
+  "assignments": []
+}

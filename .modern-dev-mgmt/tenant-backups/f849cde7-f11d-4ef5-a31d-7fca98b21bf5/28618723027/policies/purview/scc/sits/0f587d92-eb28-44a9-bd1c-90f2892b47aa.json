@@ -1,0 +1,5 @@
+{
+  "id": "0f587d92-eb28-44a9-bd1c-90f2892b47aa",
+  "name": "Azure DocumentDB Auth Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

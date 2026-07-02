@@ -1,0 +1,14 @@
+{
+  "id": "895af7e6-df82-4ea6-9ecf-b89c3ba0bd13",
+  "createdDateTime": "2022-07-27T07:57:42.1102201Z",
+  "lastModifiedDateTime": "2022-07-27T07:57:42.1102201Z",
+  "displayName": "Filter_CategoryHRDepartment",
+  "description": "All device with category HR department",
+  "platform": "windows10AndLater",
+  "rule": "(device.deviceCategory  -eq \"HR department\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

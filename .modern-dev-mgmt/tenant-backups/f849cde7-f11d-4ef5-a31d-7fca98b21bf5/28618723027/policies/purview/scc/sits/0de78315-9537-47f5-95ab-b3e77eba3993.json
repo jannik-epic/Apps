@@ -1,0 +1,5 @@
+{
+  "id": "0de78315-9537-47f5-95ab-b3e77eba3993",
+  "name": "Hungarian Social Security Number (TAJ)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "e105be58-7877-4f60-b08c-edabc7533ca8",
+  "appId": "a6aa9161-5291-40bb-8c5c-923b567bee3b",
+  "displayName": "Storage Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

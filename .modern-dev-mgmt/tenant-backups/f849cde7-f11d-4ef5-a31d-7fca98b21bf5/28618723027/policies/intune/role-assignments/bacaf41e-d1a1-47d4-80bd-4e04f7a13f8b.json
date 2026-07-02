@@ -1,0 +1,16 @@
+{
+  "id": "bacaf41e-d1a1-47d4-80bd-4e04f7a13f8b",
+  "displayName": "Role-HelpDeskOperator",
+  "description": "",
+  "scopeMembers": [
+    "8147d441-acef-4c5d-a0e5-f49e7d16b34e"
+  ],
+  "scopeType": "resourceScope",
+  "resourceScopes": [
+    "8147d441-acef-4c5d-a0e5-f49e7d16b34e"
+  ],
+  "members": [
+    "64628107-6e86-4e3a-b6d9-deefdd89e25d"
+  ],
+  "roleScopeTagIds": []
+}

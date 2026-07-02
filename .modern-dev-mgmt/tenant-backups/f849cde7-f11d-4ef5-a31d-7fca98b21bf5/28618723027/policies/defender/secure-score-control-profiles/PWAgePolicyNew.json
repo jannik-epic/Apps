@@ -1,0 +1,38 @@
+{
+  "id": "PWAgePolicyNew",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://go.microsoft.com/fwlink/?linkid=2095515",
+  "controlCategory": "Identity",
+  "title": "Ensure the 'Password expiration policy' is set to 'Set passwords to never expire (recommended)'",
+  "deprecated": false,
+  "implementationCost": "Low",
+  "lastModifiedDateTime": null,
+  "maxScore": 8.0,
+  "rank": 33,
+  "remediation": "<ol> <li>In the Microsoft 365 admin center, go to Settings > Org Settings > Security & privacy > Password expiration policy. Then check the box \"Set passwords to never expire (recommended)\". You must be a global admin to edit the password policy. <a href=\"https://admin.microsoft.com/#/Settings/SecurityPrivacy/:/Settings/L1/PasswordPolicy\">Go to Password expiration policy in Microsoft 365</a>&nbsp;</li> <li>If your organization has an on-premises implementation, we recommend that you set the status for this action to &ldquo;Resolved through alternate mitigation&rdquo;.&nbsp;</li> </ol>",
+  "remediationImpact": "Your users will no longer need to periodically create new passwords.",
+  "service": "AzureAD",
+  "threats": [
+    "Password Cracking",
+    "Account Breach"
+  ],
+  "tier": "Defense In Depth",
+  "userImpact": "Moderate",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

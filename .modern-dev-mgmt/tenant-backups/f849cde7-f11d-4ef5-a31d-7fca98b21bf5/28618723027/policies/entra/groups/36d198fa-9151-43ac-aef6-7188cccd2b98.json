@@ -1,0 +1,13 @@
+{
+  "id": "36d198fa-9151-43ac-aef6-7188cccd2b98",
+  "displayName": "Windows_Autopilot_Standard_dyn",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "e18fd457-d",
+  "groupTypes": [
+    "DynamicMembership"
+  ],
+  "visibility": null,
+  "createdDateTime": "2022-07-27T05:51:03Z"
+}

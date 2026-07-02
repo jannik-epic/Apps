@@ -1,0 +1,324 @@
+{
+  "id": "08af0518-e5cd-4f18-b868-7bd6cc995bd5",
+  "appId": "4743e56d-572f-4993-895a-38797244b41f",
+  "displayName": "Modern Dev Mgmt Backup — ModernDevMgmt.onmicrosoft.com",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-05-19T12:57:25Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "http://localhost:5175/",
+      "http://localhost:5174/"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "http://localhost:5175/",
+        "index": null
+      },
+      {
+        "uri": "http://localhost:5174/",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "78145de6-330d-4800-a6ce-494ff2d33d07",
+          "type": "Role"
+        },
+        {
+          "id": "9241abd9-d0e6-425a-bd4f-47ba86e767a4",
+          "type": "Role"
+        },
+        {
+          "id": "5ac13192-7ace-4fcf-b828-1a26f28068ee",
+          "type": "Role"
+        },
+        {
+          "id": "2f51be20-0bb4-4fed-bf7b-db946066c75e",
+          "type": "Role"
+        },
+        {
+          "id": "c7a5be92-2b3d-4540-8a67-c96dcaae8b43",
+          "type": "Role"
+        },
+        {
+          "id": "58ca0d9a-1575-47e1-a3cb-007ef2e4583b",
+          "type": "Role"
+        },
+        {
+          "id": "7438b122-aefc-4978-80ed-43db9fcc7715",
+          "type": "Role"
+        },
+        {
+          "id": "246dd0d5-5bd0-4def-940b-0421030a5b68",
+          "type": "Role"
+        },
+        {
+          "id": "01c0a623-fc9b-48e9-b794-0756f8e8f067",
+          "type": "Role"
+        },
+        {
+          "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+          "type": "Role"
+        },
+        {
+          "id": "62a82d76-70ea-41e2-9197-370581804d09",
+          "type": "Role"
+        },
+        {
+          "id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
+          "type": "Role"
+        },
+        {
+          "id": "483bed4a-2ad3-4361-a73b-c83ccdbdc53c",
+          "type": "Role"
+        },
+        {
+          "id": "3b4349e1-8cf5-45a3-95b7-69d1751d3e6a",
+          "type": "Role"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        },
+        {
+          "id": "bf394140-e372-4bf9-a898-299cfc7564e5",
+          "type": "Role"
+        },
+        {
+          "id": "dd98c7f5-2d42-42d3-a0e4-633161547251",
+          "type": "Role"
+        },
+        {
+          "id": "9e640839-a198-48fb-8b9a-013fd6f6cbcd",
+          "type": "Role"
+        },
+        {
+          "id": "227900ff-df89-40f8-90e2-8157cf6995d5",
+          "type": "Role"
+        },
+        {
+          "id": "be74164b-cff1-491c-8741-e671cb536e13",
+          "type": "Role"
+        },
+        {
+          "id": "88bb2658-5d9e-454f-aacd-a3933e079526",
+          "type": "Role"
+        },
+        {
+          "id": "c74fd47d-ed3c-45c3-9a9e-b8676de685d2",
+          "type": "Role"
+        },
+        {
+          "id": "d07a8cc0-3d51-4b77-b3b0-32704d1f69fa",
+          "type": "Role"
+        },
+        {
+          "id": "fdc4c997-9942-4479-bfcb-75a36d1138df",
+          "type": "Role"
+        },
+        {
+          "id": "b185aa14-d8d2-42c1-a685-0f5596613624",
+          "type": "Role"
+        },
+        {
+          "id": "f3c4f514-c65a-43f5-bfce-1735872258dd",
+          "type": "Role"
+        },
+        {
+          "id": "472e4a4d-bb4a-4026-98d1-0b0d74cb74a5",
+          "type": "Role"
+        },
+        {
+          "id": "45cc0394-e837-488b-a098-1918f48d186c",
+          "type": "Role"
+        },
+        {
+          "id": "21792b6c-c986-4ffc-85de-df9da54b52fa",
+          "type": "Role"
+        },
+        {
+          "id": "e0fd9c8d-a12e-4cc9-9827-20c8c3cd6fb8",
+          "type": "Role"
+        },
+        {
+          "id": "e0b77adb-e790-44a3-b0a0-257d06303687",
+          "type": "Role"
+        },
+        {
+          "id": "dc377aa6-52d8-4e23-b271-2a7ae04cedf3",
+          "type": "Role"
+        },
+        {
+          "id": "19da66cb-0fb0-4390-b071-ebc76a349482",
+          "type": "Role"
+        },
+        {
+          "id": "50180013-6191-4d1e-a373-e590ff4e66af",
+          "type": "Role"
+        },
+        {
+          "id": "ac3a2b8e-03a3-4da9-9ce0-cbe28bf1accd",
+          "type": "Role"
+        },
+        {
+          "id": "9255e99d-faf5-445e-bbf7-cb71482737c4",
+          "type": "Role"
+        },
+        {
+          "id": "06a5fe6d-c49d-46a7-b082-56b1b14103c7",
+          "type": "Role"
+        },
+        {
+          "id": "7a6ee1e7-141e-4cec-ae74-d9db155731ff",
+          "type": "Role"
+        },
+        {
+          "id": "75bcfbce-a647-4fba-ad51-b63d73b210f4",
+          "type": "Role"
+        },
+        {
+          "id": "e12dae10-5a57-4817-b79d-dfbec5348930",
+          "type": "Role"
+        },
+        {
+          "id": "83d4163d-a2d8-4d3b-9695-4ae3ca98f888",
+          "type": "Role"
+        },
+        {
+          "id": "6cdf1fb1-b46f-424f-9493-07247caa22e2",
+          "type": "Role"
+        },
+        {
+          "id": "546168c3-1183-4281-9491-fafb24dea37e",
+          "type": "Role"
+        },
+        {
+          "id": "eb76ac34-0d62-4454-b97c-185e4250dc20",
+          "type": "Role"
+        },
+        {
+          "id": "ef02f2e7-e22d-4c77-8614-8f765683b86e",
+          "type": "Role"
+        },
+        {
+          "id": "b6890674-9dd5-4e42-bb15-5af07f541ae1",
+          "type": "Role"
+        },
+        {
+          "id": "c5ee1f21-fc7f-4937-9af0-c91648ff9597",
+          "type": "Role"
+        },
+        {
+          "id": "1b620472-6534-4fe6-9df2-4680e8aa28ec",
+          "type": "Role"
+        },
+        {
+          "id": "79c261e0-fe76-4144-aad5-bdc68fbe4037",
+          "type": "Role"
+        },
+        {
+          "id": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
+          "type": "Role"
+        },
+        {
+          "id": "7c67316a-232a-4b84-be22-cea2c0906404",
+          "type": "Role"
+        },
+        {
+          "id": "2f3e6f8c-093b-4c57-a58b-ba5ce494a169",
+          "type": "Role"
+        },
+        {
+          "id": "e321f0bb-e7f7-481e-bb28-e3b0b32d4bd0",
+          "type": "Role"
+        },
+        {
+          "id": "f6e9e124-4586-492f-adc0-c6f96e4823fd",
+          "type": "Role"
+        },
+        {
+          "id": "57f1cf28-c0c4-4ec3-9a30-19a2eaaf2f6e",
+          "type": "Role"
+        },
+        {
+          "id": "884b599e-4d48-43a5-ba94-15c414d00588",
+          "type": "Role"
+        },
+        {
+          "id": "ada977a5-b8b1-493b-9a91-66c206d76ecf",
+          "type": "Role"
+        },
+        {
+          "id": "6e98f277-b046-4193-a4f2-6bf6a78cd491",
+          "type": "Role"
+        },
+        {
+          "id": "6323133e-1f6e-46d4-9372-ac33a0870636",
+          "type": "Role"
+        },
+        {
+          "id": "5fbb5982-3230-4882-93c0-2167523ce0c2",
+          "type": "Role"
+        },
+        {
+          "id": "b5991872-94cf-4652-9765-29535087c6d8",
+          "type": "Role"
+        },
+        {
+          "id": "9709bb33-4549-49d4-8ed9-a8f65e45bb0f",
+          "type": "Role"
+        },
+        {
+          "id": "e30060de-caa5-4331-99d3-6ac6c966a9a4",
+          "type": "Role"
+        },
+        {
+          "id": "ff278e11-4a33-4d0c-83d2-d01dc58929a5",
+          "type": "Role"
+        },
+        {
+          "id": "d5fe8ce8-684c-4c83-a52c-46e882ce4be1",
+          "type": "Role"
+        },
+        {
+          "id": "edb419d6-7edc-42a3-9345-509bfdf5d87c",
+          "type": "Role"
+        },
+        {
+          "id": "01e37dc9-c035-40bd-b438-b2879c4870a6",
+          "type": "Role"
+        },
+        {
+          "id": "4f994bc0-31bb-44bb-b480-7a7c1be8c02e",
+          "type": "Role"
+        },
+        {
+          "id": "dbb9058a-0e50-45d7-ae91-66909b5d4664",
+          "type": "Role"
+        },
+        {
+          "id": "332a536c-c7ef-4017-ab91-336970924f0d",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "f689b425-56f0-463d-8d5d-07c7848ad151",
+  "appId": "2634dd23-5e5a-431c-81ca-11710d9079f4",
+  "displayName": "Microsoft Stream Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

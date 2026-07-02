@@ -1,0 +1,11 @@
+{
+  "id": "31056128-3936-4cff-9069-b789748571f2",
+  "displayName": "Patch-my-pc_OnDemand",
+  "description": "On-demand group for Patch-my-pc",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "patchmypcondemand",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-06-27T14:54:07Z"
+}

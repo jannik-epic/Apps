@@ -1,0 +1,9 @@
+{
+  "id": "dac89fdc-35b9-4782-84ff-f25ef483e0fd",
+  "displayName": "Email",
+  "description": "Mifo iOS Email",
+  "versionInfo": "Version 1",
+  "templateType": "deviceConfigurationForOffice365",
+  "platformType": "iOS",
+  "publishedDateTime": "0001-01-01T00:00:00Z"
+}

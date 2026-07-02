@@ -1,0 +1,8 @@
+{
+  "id": "8399eee1-a2e2-499e-bb89-e19867d0d6a6",
+  "appId": "6201d19e-14fb-4472-a2d6-5634a5c97568",
+  "displayName": "Event Hub MSI App",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

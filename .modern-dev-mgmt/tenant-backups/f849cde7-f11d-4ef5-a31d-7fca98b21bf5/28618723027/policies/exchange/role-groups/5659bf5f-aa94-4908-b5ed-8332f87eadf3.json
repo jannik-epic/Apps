@@ -1,0 +1,48 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [
+    "View-Only Recipients-View-Only Organization Management",
+    "View-Only Configuration-View-Only Organization Management"
+  ],
+  "Roles": [
+    "View-Only Recipients",
+    "View-Only Configuration"
+  ],
+  "DisplayName": "",
+  "ExternalDirectoryObjectId": "",
+  "Members": [
+    "GlobalReaders_987173049",
+    "HelpdeskAdmins_1224304467"
+  ],
+  "SamAccountName": "View-Only Organization Management{d4f1c31303b047b4b5fb9a99500ba3c3}",
+  "Description": "Members of this management role group can view recipient and configuration objects and their properties in the Exchange organization.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "",
+  "Identity": "View-Only Organization Management",
+  "Id": "View-Only Organization Management",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "View-Only Organization Management",
+  "DistinguishedName": "CN=View-Only Organization Management,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2025-10-18T21:47:48+00:00",
+  "WhenCreated": "2021-03-23T22:17:31+00:00",
+  "WhenChangedUTC": "2025-10-18T21:47:48Z",
+  "WhenCreatedUTC": "2021-03-23T22:17:31Z",
+  "ExchangeObjectId": "5659bf5f-aa94-4908-b5ed-8332f87eadf3",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "5659bf5f-aa94-4908-b5ed-8332f87eadf3",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

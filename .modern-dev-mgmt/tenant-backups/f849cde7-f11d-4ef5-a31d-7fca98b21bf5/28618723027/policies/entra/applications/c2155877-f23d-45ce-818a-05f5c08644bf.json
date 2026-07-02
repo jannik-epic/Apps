@@ -1,0 +1,64 @@
+{
+  "id": "c2155877-f23d-45ce-818a-05f5c08644bf",
+  "appId": "6b4ca80b-9ebd-4ea7-a96d-476e1cd63681",
+  "displayName": "Intune Automation - prod",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-06-15T07:04:02Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "7438b122-aefc-4978-80ed-43db9fcc7715",
+          "type": "Role"
+        },
+        {
+          "id": "5b567255-7703-4780-807c-7be8301ae99b",
+          "type": "Role"
+        },
+        {
+          "id": "df021288-bdef-4463-88db-98f22de89214",
+          "type": "Role"
+        },
+        {
+          "id": "9241abd9-d0e6-425a-bd4f-47ba86e767a4",
+          "type": "Role"
+        },
+        {
+          "id": "62a82d76-70ea-41e2-9197-370581804d09",
+          "type": "Role"
+        },
+        {
+          "id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+          "type": "Role"
+        },
+        {
+          "id": "0c458cef-11f3-48c2-a568-c66751c238c0",
+          "type": "Role"
+        },
+        {
+          "id": "7b3f05d5-f68c-4b8d-8c59-a2ecd12f24af",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

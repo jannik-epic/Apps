@@ -1,0 +1,64 @@
+{
+  "id": "b5c62112-484a-4a5d-8b7d-fac0a827c377",
+  "appId": "cec4c71f-4d5c-4e20-92e5-880586260021",
+  "displayName": "N8N",
+  "signInAudience": "AzureADandPersonalMicrosoftAccount",
+  "createdDateTime": "2025-11-02T10:06:48Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://n8n.srv1233652.hstgr.cloud/rest/oauth2-credential/callback",
+      "http://localhost:5678/rest/oauth2-credential/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://n8n.srv1233652.hstgr.cloud/rest/oauth2-credential/callback",
+        "index": null
+      },
+      {
+        "uri": "http://localhost:5678/rest/oauth2-credential/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "116b7235-7cc6-461e-b163-8e55691d839e",
+          "type": "Scope"
+        },
+        {
+          "id": "9ff7295e-131b-4d94-90e1-69fde507ac11",
+          "type": "Scope"
+        },
+        {
+          "id": "7427e0e9-2fba-42fe-b0c0-848c9e6a8182",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

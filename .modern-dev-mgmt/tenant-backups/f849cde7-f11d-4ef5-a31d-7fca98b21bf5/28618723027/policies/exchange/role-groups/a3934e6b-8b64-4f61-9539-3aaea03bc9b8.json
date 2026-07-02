@@ -1,0 +1,43 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [],
+  "Roles": [],
+  "DisplayName": "Security Reader",
+  "ExternalDirectoryObjectId": "5b79912b-af6e-4fd8-bc89-e24e7ded25e6",
+  "Members": [
+    "a92914fe-87d0-4d17-8410-2714c650539f"
+  ],
+  "SamAccountName": "$1DCQG0-CE69IJPFLD98",
+  "Description": "Membership in this role group is synchronized across services and managed centrally. This role group is not manageable through Microsoft Exchange or Unified Compliance Center(UCC). By default, this group is not assigned any roles. However, it will be a member of the ‘Records Management’ and ‘Compliance Management’ role groups in Exchange and ‘Conmpliance Administrator’ role group in UCC. It will inherit the rights of these groups.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [
+    "Partner_Managed"
+  ],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "SecurityReaders",
+  "Identity": "SecurityReaders_370662933",
+  "Id": "SecurityReaders_370662933",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "SecurityReaders_370662933",
+  "DistinguishedName": "CN=SecurityReaders_370662933,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2025-10-18T21:47:48+00:00",
+  "WhenCreated": "2023-03-13T23:43:26+00:00",
+  "WhenChangedUTC": "2025-10-18T21:47:48Z",
+  "WhenCreatedUTC": "2023-03-13T23:43:26Z",
+  "ExchangeObjectId": "a3934e6b-8b64-4f61-9539-3aaea03bc9b8",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "a3934e6b-8b64-4f61-9539-3aaea03bc9b8",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

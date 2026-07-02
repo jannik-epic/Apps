@@ -1,0 +1,46 @@
+{
+  "@odata.type": "#microsoft.graph.macOSScepCertificateProfile",
+  "id": "e62a32a0-6109-4599-8960-bfdad571d30e",
+  "lastModifiedDateTime": "2022-07-27T07:41:28.9837376Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-27T07:33:45.2431248Z",
+  "description": null,
+  "displayName": "MacOS_Default_SCEPman_DeviceCertificate",
+  "version": 3,
+  "renewalThresholdPercentage": 20,
+  "subjectNameFormat": "custom",
+  "subjectAlternativeNameType": null,
+  "certificateValidityPeriodValue": 6,
+  "certificateValidityPeriodScale": "months",
+  "scepServerUrls": [
+    "https://scepman-app-cepx277jr73ui.azurewebsites.net/certsrv/mscep/mscep.dll"
+  ],
+  "subjectNameFormatString": "CN={{AAD_Device_ID}}",
+  "keyUsage": "keyEncipherment,digitalSignature",
+  "keySize": "size2048",
+  "hashAlgorithm": null,
+  "subjectAlternativeNameFormatString": null,
+  "certificateStore": "machine",
+  "allowAllAppsAccess": false,
+  "deploymentChannel": null,
+  "extendedKeyUsages": [
+    {
+      "name": "Client Authentication",
+      "objectIdentifier": "1.3.6.1.5.5.7.3.2"
+    }
+  ],
+  "customSubjectAlternativeNames": [
+    {
+      "sanType": "universalResourceIdentifier",
+      "name": "IntuneDeviceId://{{DeviceId}}"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('e62a32a0-6109-4599-8960-bfdad571d30e')/microsoft.graph.macOSScepCertificateProfile/assignments",
+  "assignments": []
+}

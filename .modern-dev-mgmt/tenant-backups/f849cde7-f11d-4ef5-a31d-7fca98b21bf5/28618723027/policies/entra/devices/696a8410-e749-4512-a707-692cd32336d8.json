@@ -1,0 +1,13 @@
+{
+  "id": "696a8410-e749-4512-a707-692cd32336d8",
+  "displayName": "JANNIK",
+  "deviceId": "4216223c-6411-41a8-abe9-ec9b8f5faade",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.22631.2338",
+  "trustType": "AzureAd",
+  "profileType": "Shared",
+  "isCompliant": false,
+  "isManaged": true,
+  "registrationDateTime": "2023-11-02T22:44:37Z"
+}

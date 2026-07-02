@@ -1,0 +1,8 @@
+{
+  "clientId": "0b766ca7-6b5d-4331-a647-718562b6193d",
+  "consentType": "Principal",
+  "id": "p2x2C11rMUOmR3GFYrYZPfdddDeXUvVJtfPT6iUgc66EC5UTjiEnQrTbdE80C0Wo",
+  "principalId": "13950b84-218e-4227-b4db-744f340b45a8",
+  "resourceId": "37745df7-5297-49f5-b5f3-d3ea252073ae",
+  "scope": " User.Read Directory.Read.All Organization.Read.All Group.Read.All DeviceManagementManagedDevices.Read.All DeviceManagementConfiguration.Read.All DeviceManagementApps.Read.All DeviceManagementServiceConfig.Read.All IdentityRiskyUser.Read.All AuditLog.Read.All Policy.Read.All SecurityEvents.Read.All RoleManagement.Read.Directory SharePointTenantSettings.Read.All openid profile offline_access DeviceManagementRBAC.Read.All RoleManagement.Read.All RoleManagementPolicy.Read.Directory Reports.Read.All DelegatedAdminRelationship.Read.All CrossTenantInformation.ReadBasic.All"
+}

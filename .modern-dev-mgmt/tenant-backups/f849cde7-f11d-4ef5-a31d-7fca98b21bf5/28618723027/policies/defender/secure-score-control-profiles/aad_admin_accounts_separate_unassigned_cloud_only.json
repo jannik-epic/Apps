@@ -1,0 +1,37 @@
+{
+  "id": "aad_admin_accounts_separate_unassigned_cloud_only",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/add-users?view=o365-worldwide",
+  "controlCategory": "Identity",
+  "title": "Ensure Administrative accounts are separate and cloud-only",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": " <p>1. Navigate to Microsoft 365 admin center <br />2. Click to expand Users select Active users.<br />3. Sort by the Licenses column.<br />4. For each user account in an administrative role verify the following:<br /> The account is Cloud only (not synced)<br /> The account is assigned a license that is not associated with applications i.e. (Microsoft Entra ID P1, Microsoft Entra ID P2)</p>",
+  "remediationImpact": "Administrative users will have to switch accounts and utilizing login/logout functionality when performing Administrative tasks, as well as not benefiting from SSO.",
+  "service": "AzureAD",
+  "threats": [
+    "Account breach"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

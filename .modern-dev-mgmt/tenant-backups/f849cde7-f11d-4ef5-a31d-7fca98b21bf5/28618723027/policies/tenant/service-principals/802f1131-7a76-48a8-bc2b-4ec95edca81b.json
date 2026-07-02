@@ -1,0 +1,8 @@
+{
+  "id": "802f1131-7a76-48a8-bc2b-4ec95edca81b",
+  "appId": "a9c35caf-69f7-4b01-88d9-359dd4a13925",
+  "displayName": "Intune AI Chat - prod",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

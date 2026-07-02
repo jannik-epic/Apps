@@ -1,0 +1,43 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [
+    "Information Protection Admin-Information Protection Admins"
+  ],
+  "Roles": [
+    "Information Protection Admin"
+  ],
+  "DisplayName": "",
+  "ExternalDirectoryObjectId": "",
+  "Members": [],
+  "SamAccountName": "$T4QKH0-3PK782DQGHGT",
+  "Description": "For internal approval use only.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "",
+  "Identity": "Information Protection Admins",
+  "Id": "Information Protection Admins",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "Information Protection Admins",
+  "DistinguishedName": "CN=Information Protection Admins,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2025-10-18T22:39:11+00:00",
+  "WhenCreated": "2023-04-07T11:51:43+00:00",
+  "WhenChangedUTC": "2025-10-18T22:39:11Z",
+  "WhenCreatedUTC": "2023-04-07T11:51:43Z",
+  "ExchangeObjectId": "06ec5d3c-7655-4d57-90d5-2afe3b3f351b",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "06ec5d3c-7655-4d57-90d5-2afe3b3f351b",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

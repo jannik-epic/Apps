@@ -1,0 +1,26 @@
+{
+  "id": "861e15ac-5c6b-4fd9-81c6-8295c521bf70",
+  "appId": "fcbd59c4-bcc5-4763-b56f-72b8ee26cb14",
+  "displayName": "momentum-github-oidc-runner",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-06-28T11:55:23Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

@@ -1,0 +1,100 @@
+{
+  "createdDateTime": "2023-03-25T10:28:24.8644437Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2023-03-26T06:36:33.3311824Z",
+  "name": "WIN-EPM-ElevationSettings",
+  "platforms": "windows10",
+  "priorityMetaData": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 1,
+  "technologies": "mdm,endpointPrivilegeManagement",
+  "id": "6f78ee95-ef1d-40c7-b5b8-d9cb58b2035f",
+  "templateReference": {
+    "templateId": "e7dcaba4-959b-46ed-88f0-16ba39b14fd8_1",
+    "templateFamily": "endpointSecurityEndpointPrivilegeManagement",
+    "templateDisplayName": "Elevation settings policy",
+    "templateDisplayVersion": "Version 1"
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('6f78ee95-ef1d-40c7-b5b8-d9cb58b2035f')/assignments",
+  "assignments": [
+    {
+      "id": "6f78ee95-ef1d-40c7-b5b8-d9cb58b2035f_acacacac-9df4-4c7d-9d50-4ef0226f57a9",
+      "source": "direct",
+      "sourceId": "6f78ee95-ef1d-40c7-b5b8-d9cb58b2035f",
+      "target": {
+        "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    },
+    {
+      "id": "6f78ee95-ef1d-40c7-b5b8-d9cb58b2035f_adadadad-808e-44e2-905a-0b7873a8a531",
+      "source": "direct",
+      "sourceId": "6f78ee95-ef1d-40c7-b5b8-d9cb58b2035f",
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    }
+  ],
+  "settings": [
+    {
+      "id": "0",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "settingDefinitionId": "device_vendor_msft_policy_elevationclientsettings_enableepm",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "58a79a4b-ba9b-4923-a7a5-6dc1a9f638a4"
+        },
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_elevationclientsettings_enableepm_1",
+          "settingValueTemplateReference": {
+            "settingValueTemplateId": "a13cc55c-307a-4962-aaec-20b832bf75c7",
+            "useTemplateDefault": false
+          },
+          "children": [
+            {
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+              "settingDefinitionId": "device_vendor_msft_policy_elevationclientsettings_senddata",
+              "settingInstanceTemplateReference": null,
+              "auditRuleInformation": null,
+              "choiceSettingValue": {
+                "settingValueTemplateReference": null,
+                "value": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
+                "children": [
+                  {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "device_vendor_msft_policy_elevationclientsettings_reportingscope",
+                    "settingInstanceTemplateReference": null,
+                    "auditRuleInformation": null,
+                    "choiceSettingValue": {
+                      "settingValueTemplateReference": null,
+                      "value": "device_vendor_msft_policy_elevationclientsettings_reportingscope_2",
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+              "settingDefinitionId": "device_vendor_msft_policy_elevationclientsettings_defaultelevationresponse",
+              "settingInstanceTemplateReference": null,
+              "auditRuleInformation": null,
+              "choiceSettingValue": {
+                "settingValueTemplateReference": null,
+                "value": "device_vendor_msft_policy_elevationclientsettings_defaultelevationresponse_0",
+                "children": []
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

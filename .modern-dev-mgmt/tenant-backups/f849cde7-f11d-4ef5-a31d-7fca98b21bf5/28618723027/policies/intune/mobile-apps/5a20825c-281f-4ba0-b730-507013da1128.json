@@ -1,0 +1,52 @@
+{
+  "@odata.type": "#microsoft.graph.androidManagedStoreApp",
+  "id": "5a20825c-281f-4ba0-b730-507013da1128",
+  "displayName": "Microsoft Edge",
+  "description": "Fast and private browser with Copilot built-in, PDF reader, and password sync.",
+  "publisher": "Microsoft Corporation",
+  "largeIcon": null,
+  "createdDateTime": "2022-07-26T16:00:48Z",
+  "lastModifiedDateTime": "2026-06-19T09:13:25Z",
+  "isFeatured": false,
+  "privacyInformationUrl": null,
+  "informationUrl": "https://play.google.com/store/apps/details?id=com.microsoft.emmx",
+  "owner": null,
+  "developer": null,
+  "notes": null,
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": true,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "packageId": "com.microsoft.emmx",
+  "appIdentifier": "com.microsoft.emmx",
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 0,
+  "appStoreUrl": "https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en-IE",
+  "isPrivate": false,
+  "isSystemApp": false,
+  "supportsOemConfig": false,
+  "appTracks": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('5a20825c-281f-4ba0-b730-507013da1128')/microsoft.graph.androidManagedStoreApp/assignments",
+  "assignments": [
+    {
+      "id": "1e26c223-796b-4e5c-a050-f04fce7067b6_1_0",
+      "intent": "required",
+      "source": "direct",
+      "sourceId": null,
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "1e26c223-796b-4e5c-a050-f04fce7067b6"
+      },
+      "settings": {
+        "@odata.type": "#microsoft.graph.androidManagedStoreAppAssignmentSettings",
+        "androidManagedStoreAppTrackIds": [],
+        "autoUpdateMode": "default"
+      }
+    }
+  ]
+}

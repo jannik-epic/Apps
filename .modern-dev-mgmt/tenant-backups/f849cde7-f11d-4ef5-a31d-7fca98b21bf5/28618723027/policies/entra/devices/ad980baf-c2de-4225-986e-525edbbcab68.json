@@ -1,0 +1,13 @@
+{
+  "id": "ad980baf-c2de-4225-986e-525edbbcab68",
+  "displayName": "VMSH-0",
+  "deviceId": "c6ae3ced-fec8-4718-b919-af93c8841437",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.22621.2428",
+  "trustType": "AzureAd",
+  "profileType": "SecureVM",
+  "isCompliant": false,
+  "isManaged": true,
+  "registrationDateTime": "2023-11-14T17:48:17Z"
+}

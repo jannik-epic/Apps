@@ -1,0 +1,10 @@
+{
+  "@odata.type": "#microsoft.graph.securityBaselineTemplate",
+  "id": "0f2b5d70-d4e9-4156-8c16-1397eb6c54a5",
+  "displayName": "Account protection (Preview)",
+  "description": "Account protection policies help protect user credential by using technology such as Windows Hello for Business and Credential Guard.",
+  "versionInfo": "2005",
+  "templateType": "securityTemplate",
+  "platformType": "windows10AndLater",
+  "publishedDateTime": "2019-09-26T00:00:00Z"
+}

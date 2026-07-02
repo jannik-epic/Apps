@@ -1,0 +1,11 @@
+{
+  "id": "b67faa30-7739-47f3-8acd-cc92931ca386",
+  "appId": "f416c5fc-9ac4-4f66-a8e5-cb203139cbe4",
+  "displayName": "OCPS Admin Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

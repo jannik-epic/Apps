@@ -1,0 +1,12 @@
+{
+  "id": "7bba7a1a-fdd9-44b2-a917-2d6b25d6b7e5",
+  "appId": "992136bc-5b57-425f-8d95-ac65975722cd",
+  "displayName": "Microsoft Defender Hunting",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

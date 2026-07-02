@@ -1,0 +1,24 @@
+{
+  "id": "c7238fa4-ca07-48ec-90f4-33f4ab1fb64e",
+  "publisher": "Jannik Reinhard",
+  "version": "1",
+  "displayName": "WIN_Rem_CompanyPortalSystemTrayIconV1",
+  "description": "",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2022-07-27T08:00:14.350374Z",
+  "lastModifiedDateTime": "2022-07-27T08:01:39.1217215Z",
+  "runAsAccount": "user",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": true,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('c7238fa4-ca07-48ec-90f4-33f4ab1fb64e')/assignments",
+  "assignments": []
+}

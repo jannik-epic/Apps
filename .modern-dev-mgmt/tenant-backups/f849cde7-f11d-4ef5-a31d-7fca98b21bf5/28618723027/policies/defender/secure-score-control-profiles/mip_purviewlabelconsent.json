@@ -1,0 +1,35 @@
+{
+  "id": "mip_purviewlabelconsent",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels&tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Data",
+  "title": "Extend M365 sensitivity labeling to assets in Microsoft Purview data map",
+  "deprecated": false,
+  "implementationCost": "Medium",
+  "lastModifiedDateTime": null,
+  "maxScore": 1.0,
+  "rank": 129,
+  "remediation": "\r\n        <ol>\r\n            <li> In the Microsoft Purview compliance portal, navigate to the  <strong> Information Protection </strong> page. </li>\r\n            <li> If you've recently provisioned your subscription for Information Protection, it may take a few hours for the Information Protection page to display. </li>\r\n            <li> In the Microsoft Purview data map area, turn on  <strong> Extend labeling to assets  </strong> and then select Yes in the confirmation dialog that appears. </li>\r\n        </ol>\r\n    ",
+  "remediationImpact": "Unknown",
+  "service": "MIP",
+  "threats": [],
+  "tier": "Core",
+  "userImpact": "High",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

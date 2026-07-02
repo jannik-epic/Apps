@@ -1,0 +1,11 @@
+{
+  "id": "025aaafa-77e2-421b-983e-0f4f508cfa19",
+  "displayName": "All_Devices_Custom-user",
+  "description": "User group converted from device group: All_Devices_Custom",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "AllDevicesCustomuser",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-07-30T18:48:13Z"
+}

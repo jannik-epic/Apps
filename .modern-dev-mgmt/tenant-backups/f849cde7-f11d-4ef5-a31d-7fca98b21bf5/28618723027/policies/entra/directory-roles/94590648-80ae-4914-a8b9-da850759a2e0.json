@@ -1,0 +1,7 @@
+{
+  "id": "94590648-80ae-4914-a8b9-da850759a2e0",
+  "deletedDateTime": null,
+  "description": "Can manage all aspects of Microsoft Entra ID and Microsoft services that use Microsoft Entra identities.",
+  "displayName": "Global Administrator",
+  "roleTemplateId": "62e90394-69f5-4237-9190-012177145e10"
+}

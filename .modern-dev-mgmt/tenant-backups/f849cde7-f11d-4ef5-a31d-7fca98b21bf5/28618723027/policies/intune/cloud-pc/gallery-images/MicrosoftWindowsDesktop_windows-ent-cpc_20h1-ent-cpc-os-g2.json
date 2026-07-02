@@ -1,0 +1,20 @@
+{
+  "id": "MicrosoftWindowsDesktop_windows-ent-cpc_20h1-ent-cpc-os-g2",
+  "publisherName": "MicrosoftWindowsDesktop",
+  "publisher": "MicrosoftWindowsDesktop",
+  "offerName": "windows-ent-cpc",
+  "offer": "windows-ent-cpc",
+  "skuName": "20h1-ent-cpc-os-g2",
+  "sku": "20h1-ent-cpc-os-g2",
+  "offerDisplayName": "Windows 10 Enterprise + OS Optimizations",
+  "skuDisplayName": "2004",
+  "displayName": "Windows 10 Enterprise + OS Optimizations 2004",
+  "recommendedSku": "light",
+  "sizeInGB": 64,
+  "status": "notSupported",
+  "startDate": "2020-05-27",
+  "endDate": "2021-12-14",
+  "expirationDate": "2022-06-14",
+  "osVersionNumber": null,
+  "osArchitecture": "x64"
+}

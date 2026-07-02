@@ -1,0 +1,9 @@
+{
+  "id": "b9f5914e-47fc-495b-af53-e7a0b3104f64",
+  "displayName": "Device restrictions",
+  "description": "Mifo iOS Device restrictions",
+  "versionInfo": "Version 1",
+  "templateType": "deviceConfigurationForOffice365",
+  "platformType": "iOS",
+  "publishedDateTime": "2001-01-01T00:00:00Z"
+}

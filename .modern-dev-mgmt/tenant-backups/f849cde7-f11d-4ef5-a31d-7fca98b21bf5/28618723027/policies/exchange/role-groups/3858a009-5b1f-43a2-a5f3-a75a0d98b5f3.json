@@ -1,0 +1,41 @@
+{
+  "ManagedBy": [
+    "Organization Management"
+  ],
+  "RoleAssignments": [],
+  "Roles": [],
+  "DisplayName": "Compliance Administrator",
+  "ExternalDirectoryObjectId": "f5d41097-3e36-4594-a4a6-abe02c5dacae",
+  "Members": [],
+  "SamAccountName": "$9CCQG0-JN919JS3I49J",
+  "Description": "Members of this management role group can perform Outlook.com support Partners tier 9 activities.",
+  "RoleGroupType": "Standard",
+  "LinkedGroup": "",
+  "Capabilities": [
+    "Partner_Managed"
+  ],
+  "LinkedPartnerGroupId": "",
+  "LinkedPartnerOrganizationId": "",
+  "WellKnownObject": "ComplianceAdmins",
+  "Identity": "ComplianceAdmins_1625445805",
+  "Id": "ComplianceAdmins_1625445805",
+  "IsValid": true,
+  "ExchangeVersion": "0.10 (14.0.100.0)",
+  "Name": "ComplianceAdmins_1625445805",
+  "DistinguishedName": "CN=ComplianceAdmins_1625445805,OU=epicfusionlabs.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=CHEP278A001,DC=PROD,DC=OUTLOOK,DC=COM",
+  "ObjectCategory": "CHEP278A001.PROD.OUTLOOK.COM/Configuration/Schema/Group",
+  "ObjectClass": [
+    "top",
+    "group"
+  ],
+  "WhenChanged": "2026-06-08T15:22:11+00:00",
+  "WhenCreated": "2023-03-13T23:43:26+00:00",
+  "WhenChangedUTC": "2026-06-08T15:22:11Z",
+  "WhenCreatedUTC": "2023-03-13T23:43:26Z",
+  "ExchangeObjectId": "3858a009-5b1f-43a2-a5f3-a75a0d98b5f3",
+  "OrganizationalUnitRoot": "epicfusionlabs.onmicrosoft.com",
+  "OrganizationId": "CHEP278A001.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com - CHEP278A001.PROD.OUTLOOK.COM/ConfigurationUnits/epicfusionlabs.onmicrosoft.com/Configuration",
+  "Guid": "3858a009-5b1f-43a2-a5f3-a75a0d98b5f3",
+  "OriginatingServer": "GVAP278A01DC005.CHEP278A001.PROD.OUTLOOK.COM",
+  "ObjectState": "Changed"
+}

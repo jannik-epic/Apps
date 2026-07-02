@@ -1,0 +1,20 @@
+{
+  "id": "microsoftwindowsdesktop_windows-ent-cpc_win11-22h2-ent-cpc",
+  "publisherName": "microsoftwindowsdesktop",
+  "publisher": "microsoftwindowsdesktop",
+  "offerName": "windows-ent-cpc",
+  "offer": "windows-ent-cpc",
+  "skuName": "win11-22h2-ent-cpc",
+  "sku": "win11-22h2-ent-cpc",
+  "offerDisplayName": "Windows 11 Enterprise",
+  "skuDisplayName": "22H2",
+  "displayName": "Windows 11 Enterprise 22H2",
+  "recommendedSku": "heavy",
+  "sizeInGB": 64,
+  "status": "notSupported",
+  "startDate": "2022-09-20",
+  "endDate": "2025-10-14",
+  "expirationDate": "2026-04-14",
+  "osVersionNumber": "10.0.22621.6060",
+  "osArchitecture": "x64"
+}

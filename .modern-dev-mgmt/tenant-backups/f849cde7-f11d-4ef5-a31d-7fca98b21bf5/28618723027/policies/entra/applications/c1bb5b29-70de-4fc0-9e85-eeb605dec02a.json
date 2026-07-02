@@ -1,0 +1,33 @@
+{
+  "id": "c1bb5b29-70de-4fc0-9e85-eeb605dec02a",
+  "appId": "f737ec7e-2a5e-474e-97cd-962a1563e9b6",
+  "displayName": "testwebappgt",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2023-08-05T13:04:59Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": "https://testwebappgt.azurewebsites.net",
+    "logoutUrl": null,
+    "redirectUris": [
+      "https://testwebappgt.azurewebsites.net/.auth/login/aad/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": true
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "https://testwebappgt.azurewebsites.net/.auth/login/aad/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [],
+  "appRoles": []
+}

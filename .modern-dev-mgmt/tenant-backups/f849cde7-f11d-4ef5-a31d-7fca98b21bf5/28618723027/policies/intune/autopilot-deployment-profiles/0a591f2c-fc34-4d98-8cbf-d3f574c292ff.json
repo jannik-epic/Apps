@@ -1,0 +1,39 @@
+{
+  "@odata.type": "#microsoft.graph.azureADWindowsAutopilotDeploymentProfile",
+  "id": "0a591f2c-fc34-4d98-8cbf-d3f574c292ff",
+  "displayName": "Kiosk_Enrollment_Profile",
+  "description": "",
+  "language": "os-default",
+  "locale": "os-default",
+  "createdDateTime": "2022-07-27T07:19:50.518129Z",
+  "lastModifiedDateTime": "2022-07-27T07:20:28.3253606Z",
+  "enrollmentStatusScreenSettings": null,
+  "extractHardwareHash": false,
+  "hardwareHashExtractionEnabled": false,
+  "deviceNameTemplate": "K%SERIAL%",
+  "deviceType": "windowsPc",
+  "enableWhiteGlove": false,
+  "preprovisioningAllowed": false,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "managementServiceAppId": null,
+  "outOfBoxExperienceSettings": {
+    "hidePrivacySettings": true,
+    "hideEULA": true,
+    "userType": "standard",
+    "deviceUsageType": "shared",
+    "skipKeyboardSelectionPage": true,
+    "hideEscapeLink": true
+  },
+  "outOfBoxExperienceSetting": {
+    "privacySettingsHidden": true,
+    "eulaHidden": true,
+    "userType": "standard",
+    "deviceUsageType": "shared",
+    "keyboardSelectionPageSkipped": true,
+    "escapeLinkHidden": true
+  },
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/windowsAutopilotDeploymentProfiles('0a591f2c-fc34-4d98-8cbf-d3f574c292ff')/microsoft.graph.azureADWindowsAutopilotDeploymentProfile/assignments",
+  "assignments": []
+}

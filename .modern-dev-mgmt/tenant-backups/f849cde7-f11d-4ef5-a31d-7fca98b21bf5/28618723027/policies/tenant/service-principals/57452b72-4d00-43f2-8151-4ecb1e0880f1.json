@@ -1,0 +1,11 @@
+{
+  "id": "57452b72-4d00-43f2-8151-4ecb1e0880f1",
+  "appId": "bc59ab01-8403-45c6-8796-ac3ef710b3e3",
+  "displayName": "Outlook Online Add-in App",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

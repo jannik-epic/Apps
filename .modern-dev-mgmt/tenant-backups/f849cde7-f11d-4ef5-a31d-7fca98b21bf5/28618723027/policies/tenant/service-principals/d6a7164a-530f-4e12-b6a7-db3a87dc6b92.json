@@ -1,0 +1,11 @@
+{
+  "id": "d6a7164a-530f-4e12-b6a7-db3a87dc6b92",
+  "appId": "c066d759-24ae-40e7-a56f-027002b5d3e4",
+  "displayName": "M365DataAtRestEncryption",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

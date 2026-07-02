@@ -1,0 +1,11 @@
+{
+  "id": "14cd5ec1-61da-4f45-ab61-db78f96d49b0",
+  "appId": "63e61dc2-f593-4a6f-92b9-92e4d2c03d4f",
+  "displayName": "Microsoft Intune SCCM Connector",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

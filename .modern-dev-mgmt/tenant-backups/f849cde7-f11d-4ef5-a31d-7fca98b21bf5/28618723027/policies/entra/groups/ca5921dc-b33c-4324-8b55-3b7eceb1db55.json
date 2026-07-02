@@ -1,0 +1,11 @@
+{
+  "id": "ca5921dc-b33c-4324-8b55-3b7eceb1db55",
+  "displayName": "All-Users - Wave 1",
+  "description": "Wave 1 deployment group for All-Users",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "wave-1-1755940428363",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-08-23T09:13:48Z"
+}

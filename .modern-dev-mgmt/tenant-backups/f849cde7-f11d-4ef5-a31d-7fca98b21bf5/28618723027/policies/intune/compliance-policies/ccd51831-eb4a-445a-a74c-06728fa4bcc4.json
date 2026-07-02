@@ -1,0 +1,66 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "id": "ccd51831-eb4a-445a-a74c-06728fa4bcc4",
+  "createdDateTime": "2023-08-11T09:42:24.530057Z",
+  "description": null,
+  "lastModifiedDateTime": "2023-08-11T09:42:24.530057Z",
+  "displayName": "WIN-CheckAvAndStroage",
+  "version": 1,
+  "passwordRequired": false,
+  "passwordBlockSimple": false,
+  "passwordRequiredToUnlockFromIdle": false,
+  "passwordMinutesOfInactivityBeforeLock": null,
+  "passwordExpirationDays": null,
+  "passwordMinimumLength": null,
+  "passwordMinimumCharacterSetCount": null,
+  "passwordRequiredType": "deviceDefault",
+  "passwordPreviousPasswordBlockCount": null,
+  "requireHealthyDeviceReport": false,
+  "osMinimumVersion": null,
+  "osMaximumVersion": null,
+  "mobileOsMinimumVersion": null,
+  "mobileOsMaximumVersion": null,
+  "earlyLaunchAntiMalwareDriverEnabled": false,
+  "bitLockerEnabled": false,
+  "secureBootEnabled": false,
+  "codeIntegrityEnabled": false,
+  "memoryIntegrityEnabled": false,
+  "kernelDmaProtectionEnabled": false,
+  "virtualizationBasedSecurityEnabled": false,
+  "firmwareProtectionEnabled": false,
+  "storageRequireEncryption": false,
+  "activeFirewallRequired": false,
+  "defenderEnabled": false,
+  "defenderVersion": null,
+  "signatureOutOfDate": false,
+  "rtpEnabled": false,
+  "antivirusRequired": false,
+  "antiSpywareRequired": false,
+  "deviceThreatProtectionEnabled": false,
+  "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+  "configurationManagerComplianceRequired": false,
+  "tpmRequired": false,
+  "validOperatingSystemBuildRanges": [],
+  "deviceCompliancePolicyScript": {
+    "deviceComplianceScriptId": "7fc94f5b-9004-4a4e-a20b-e738764923c6",
+    "rulesContent": "ew0KICAgICJSdWxlcyI6IFsNCiAgICAgICAgew0KICAgICAgICAgICAgIlNldHRpbmdOYW1lIjogIkF2QWN0aXZlIiwNCiAgICAgICAgICAgICJPcGVyYXRvciI6ICJJc0VxdWFscyIsDQogICAgICAgICAgICAiRGF0YVR5cGUiOiAiQm9vbGVhbiIsDQogICAgICAgICAgICAiT3BlcmFuZCI6IHRydWUsDQogICAgICAgICAgICAiTW9yZUluZm9VcmwiOiAiaHR0cHM6Ly9nb29nbGUuY29tIiwNCiAgICAgICAgICAgICJSZW1lZGlhdGlvblN0cmluZ3MiOiBbDQogICAgICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgICAgICAiTGFuZ3VhZ2UiOiAiZW5fVVMiLA0KICAgICAgICAgICAgICAgICAgICAiVGl0bGUiOiAiVGhpcyBtYWNoaW5lIGhhcyBubyBhY3RpdmUgYW50aXZpcnVzIHNvbHV0aW9uLiIsDQogICAgICAgICAgICAgICAgICAgICJEZXNjcmlwdGlvbiI6ICJUbyBjb250aW51ZSB0byB1c2UgdGhpcyBkZXZpY2UgeW91IGhhdmUgdG8gaW5zdGFsbCBhIEFudGl2aXJ1cyBTb2x1dGlvbiINCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICBdDQogICAgICAgIH0sDQogICAgICAgIHsNCiAgICAgICAgICAgICJTZXR0aW5nTmFtZSI6ICJGcmVlU3RvcmFnZSIsDQogICAgICAgICAgICAiT3BlcmF0b3IiOiAiR3JlYXRlckVxdWFscyIsDQogICAgICAgICAgICAiRGF0YVR5cGUiOiAiaW50NjQiLA0KICAgICAgICAgICAgIk9wZXJhbmQiOiAxMCwNCiAgICAgICAgICAgICJNb3JlSW5mb1VybCI6ICJodHRwczovL2dvb2dsZS5jb20iLA0KICAgICAgICAgICAgIlJlbWVkaWF0aW9uU3RyaW5ncyI6IFsNCiAgICAgICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgICAgICJMYW5ndWFnZSI6ICJlbl9VUyIsDQogICAgICAgICAgICAgICAgICAgICJUaXRsZSI6ICJObyBzdG9yYWdlIGZyZWUuIiwNCiAgICAgICAgICAgICAgICAgICAgIkRlc2NyaXB0aW9uIjogIlRoZSBkZXZpY2UgaGFzIGxlc3MgdGhhbiAxMEdCIHN0b3JhZ2UgZnJlZS4gUGxlYXNlIHJ1biBhIGNsZWFudXAiDQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgXQ0KICAgICAgICB9DQogICAgXQ0KfQ==",
+    "runIntervalInMinutes": null
+  },
+  "wslDistributions": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceCompliancePolicies('ccd51831-eb4a-445a-a74c-06728fa4bcc4')/microsoft.graph.windows10CompliancePolicy/assignments",
+  "assignments": [
+    {
+      "id": "ccd51831-eb4a-445a-a74c-06728fa4bcc4_adadadad-808e-44e2-905a-0b7873a8a531",
+      "source": "direct",
+      "sourceId": "ccd51831-eb4a-445a-a74c-06728fa4bcc4",
+      "target": {
+        "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    }
+  ]
+}

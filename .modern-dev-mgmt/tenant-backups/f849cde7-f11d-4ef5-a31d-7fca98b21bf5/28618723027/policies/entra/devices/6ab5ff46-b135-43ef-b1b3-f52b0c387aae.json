@@ -1,0 +1,13 @@
+{
+  "id": "6ab5ff46-b135-43ef-b1b3-f52b0c387aae",
+  "displayName": "TMACTESTLAB",
+  "deviceId": "eda5d837-d492-4aa0-b3b4-63acabe59fe6",
+  "accountEnabled": true,
+  "operatingSystem": "Windows",
+  "operatingSystemVersion": "10.0.26100.3194",
+  "trustType": "AzureAd",
+  "profileType": "RegisteredDevice",
+  "isCompliant": false,
+  "isManaged": false,
+  "registrationDateTime": "2024-09-07T13:49:40Z"
+}

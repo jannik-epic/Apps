@@ -1,0 +1,5 @@
+{
+  "id": "976349a0-683b-477a-90f8-ff0a220d5592",
+  "name": "Hungarian Value Added Tax Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

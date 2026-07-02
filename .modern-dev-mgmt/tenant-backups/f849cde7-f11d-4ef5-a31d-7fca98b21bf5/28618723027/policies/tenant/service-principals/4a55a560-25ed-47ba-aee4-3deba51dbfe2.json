@@ -1,0 +1,8 @@
+{
+  "id": "4a55a560-25ed-47ba-aee4-3deba51dbfe2",
+  "appId": "b15f3d14-f6d1-4c0d-93da-d4136c97f006",
+  "displayName": "Azure Storage Insights Resource Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

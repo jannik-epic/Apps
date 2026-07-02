@@ -1,0 +1,37 @@
+{
+  "id": "spo_block_onedrive_sync_unmanaged_devices",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-US/sharepoint/allow-syncing-only-on-specific-domains?WT.mc_id=365AdminCSH_spo",
+  "controlCategory": "Apps",
+  "title": "Block OneDrive for Business sync from unmanaged devices",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 3.0,
+  "rank": 10,
+  "remediation": "<p>To block the sync client on unmanaged devices, use the <strong>Microsoft 365 Admin Center</strong>:</p><ol><li>Navigate to <strong>Microsoft 365 administration portal</strong> (https://admin.microsoft.com), Click on <strong>All Admin Centers&nbsp;</strong>and then <strong>Show All</strong>, then <strong>SharePoint</strong>.&nbsp;</li><li>Now click <strong>Settings&nbsp;</strong>followed by <strong>OneDrive - Sync</strong>&nbsp;</li><li>Check the <strong>Allow syncing only on computers joined to specific domains&nbsp;</strong></li><li>Use the <strong>Get-ADDomain</strong> PowerShell command to obtain the GUID from each domain then add them to the box.&nbsp;</li><li>Click <strong>Save&nbsp;</strong></li></ol>",
+  "remediationImpact": "Enabling this feature will prevent users from using the OneDrive for Business Sync client on devices that are not joined to the domains that were defined",
+  "service": "SPO",
+  "threats": [
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

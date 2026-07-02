@@ -1,0 +1,31 @@
+{
+  "id": "33ad0f29-6280-4461-b073-842f0a9ec91c",
+  "publisher": "",
+  "version": "1",
+  "displayName": "AVAndStorgeCheck",
+  "description": "",
+  "detectionScriptContent": null,
+  "createdDateTime": "2024-11-17T09:02:58.8640125Z",
+  "lastModifiedDateTime": "2024-11-17T09:02:58.8640125Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": false,
+  "platform": "windows10",
+  "roleScopeTagIds": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceComplianceScripts('33ad0f29-6280-4461-b073-842f0a9ec91c')/assignments",
+  "assignments": [
+    {
+      "id": "33ad0f29-6280-4461-b073-842f0a9ec91c:acacacac-9df4-4c7d-9d50-4ef0226f57a9",
+      "runRemediationScript": false,
+      "target": {
+        "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "00000000-0000-0000-0000-000000000000",
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      },
+      "runSchedule": {
+        "@odata.type": "#microsoft.graph.deviceHealthScriptHourlySchedule",
+        "interval": 8
+      }
+    }
+  ]
+}

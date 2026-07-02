@@ -1,0 +1,13 @@
+{
+  "id": "94c3ddbc-6029-454e-b10c-6bc139da5efb",
+  "appId": "262044b1-e2ce-469f-a196-69ab7ada62d3",
+  "displayName": "Backup Management Service",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens",
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

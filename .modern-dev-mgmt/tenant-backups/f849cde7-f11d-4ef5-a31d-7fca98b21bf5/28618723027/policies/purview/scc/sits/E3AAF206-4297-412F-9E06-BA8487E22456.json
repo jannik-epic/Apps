@@ -1,0 +1,5 @@
+{
+  "id": "E3AAF206-4297-412F-9E06-BA8487E22456",
+  "name": "Poland National ID (PESEL)",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

@@ -1,0 +1,37 @@
+{
+  "id": "MDA_GitHub_RepoTransferOrDeletion",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": " https://docs.github.com/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-for-repository-deletion-and-transfer",
+  "controlCategory": "Identity",
+  "title": "Disable 'members with admin permissions for repositories can delete or transfer repositories'",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 6.0,
+  "rank": 10,
+  "remediation": "<ol> <li>In top right corner of GitHub, click your profile photo, then click <strong>Your enterprise</strong><abbr>&nbsp;&gt;&nbsp;</abbr>Next to the organization, <strong>click Settings</strong><abbr><strong>.</strong></abbr></li> <li><strong>Go to Access</strong> &gt; <strong>Member privileges</strong>.</li> <li>Disable &quot;<strong>Allow members to delete or transfer repositories for this organization</strong>&quot; option in the &quot;Admin repository permissions&quot; section.</li> </ol> <p><br></p>",
+  "remediationImpact": "This setting blocks repositories transferring and deletion.",
+  "service": "MDA_GitHub",
+  "threats": [
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

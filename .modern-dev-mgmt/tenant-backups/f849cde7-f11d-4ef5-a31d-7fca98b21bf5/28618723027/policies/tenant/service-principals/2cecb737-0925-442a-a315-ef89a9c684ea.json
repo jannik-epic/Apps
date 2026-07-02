@@ -1,0 +1,11 @@
+{
+  "id": "2cecb737-0925-442a-a315-ef89a9c684ea",
+  "appId": "a303894e-f1d8-4a37-bf10-67aa654a0596",
+  "displayName": "Compute Usage Provider",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

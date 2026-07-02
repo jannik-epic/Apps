@@ -1,0 +1,11 @@
+{
+  "id": "b54a4872-7add-47f5-8ac4-fc3dfdc53c65",
+  "appId": "95de633a-083e-42f5-b444-a4295d8e9314",
+  "displayName": "Microsoft Whiteboard Services",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "id": "13da2127-6872-4c86-bb51-b524bf3d07e3",
+  "appId": "965dab12-b5f4-4d65-8480-8dcd7ffc1b87",
+  "displayName": "IntuneManager-80f63c",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2025-07-01T14:51:23Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [
+      "http://localhost:3003/api/auth/callback",
+      "http://localhost:3000/api/auth/callback",
+      "http://localhost:5002/api/auth/callback",
+      "http://localhost:5001/api/auth/callback",
+      "http://localhost:5000/api/auth/callback",
+      "https://intunemanager-80f63c.azurewebsites.net/api/auth/callback",
+      "https://intunemanager-80f63c.azurewebsites.net/auth/callback"
+    ],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": [
+      {
+        "uri": "http://localhost:3003/api/auth/callback",
+        "index": null
+      },
+      {
+        "uri": "http://localhost:3000/api/auth/callback",
+        "index": null
+      },
+      {
+        "uri": "http://localhost:5002/api/auth/callback",
+        "index": null
+      },
+      {
+        "uri": "http://localhost:5001/api/auth/callback",
+        "index": null
+      },
+      {
+        "uri": "http://localhost:5000/api/auth/callback",
+        "index": null
+      },
+      {
+        "uri": "https://intunemanager-80f63c.azurewebsites.net/api/auth/callback",
+        "index": null
+      },
+      {
+        "uri": "https://intunemanager-80f63c.azurewebsites.net/auth/callback",
+        "index": null
+      }
+    ]
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "resourceAccess": [
+        {
+          "id": "41094075-9dad-400e-a0bd-54e686782033",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        },
+        {
+          "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+          "type": "Scope"
+        },
+        {
+          "id": "78145de6-330d-4800-a6ce-494ff2d33d07",
+          "type": "Role"
+        },
+        {
+          "id": "9241abd9-d0e6-425a-bd4f-47ba86e767a4",
+          "type": "Role"
+        },
+        {
+          "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+          "type": "Role"
+        },
+        {
+          "id": "06b708a9-e830-4db3-a914-8e69da51d44f",
+          "type": "Role"
+        },
+        {
+          "id": "5b567255-7703-4780-807c-7be8301ae99b",
+          "type": "Role"
+        },
+        {
+          "id": "7b3f05d5-f68c-4b8d-8c59-a2ecd12f24af",
+          "type": "Scope"
+        },
+        {
+          "id": "0883f392-0a7a-443d-8c76-16a6d39c7b63",
+          "type": "Scope"
+        },
+        {
+          "id": "44642bfe-8385-4adc-8fc6-fe3cb2c375c3",
+          "type": "Scope"
+        },
+        {
+          "id": "662ed50a-ac44-4eef-ad86-62eed9be2a29",
+          "type": "Scope"
+        },
+        {
+          "id": "0c5e8a55-87a6-4556-93ab-adc52c4d862d",
+          "type": "Scope"
+        },
+        {
+          "id": "06da0dbc-49e2-44d2-8312-53f166ab848a",
+          "type": "Scope"
+        },
+        {
+          "id": "4e46008b-f24c-477d-8fff-7bb4ec7aafe0",
+          "type": "Scope"
+        },
+        {
+          "id": "64733abd-851e-478a-bffb-e47a14b18235",
+          "type": "Scope"
+        },
+        {
+          "id": "bc257fb8-46b4-4b15-8713-01e91bfbe4ea",
+          "type": "Scope"
+        },
+        {
+          "id": "b9abcc4f-94fc-4457-9141-d20ce80ec952",
+          "type": "Scope"
+        },
+        {
+          "id": "1638cddf-07a4-4de2-8645-69c96cacad73",
+          "type": "Scope"
+        },
+        {
+          "id": "91e7d36d-022a-490f-a748-f8e011357b42",
+          "type": "Scope"
+        },
+        {
+          "id": "e383f46e-2787-4529-855e-0e479a3ffac0",
+          "type": "Scope"
+        },
+        {
+          "id": "ebf0f66e-9fb1-49e4-a278-222f76911cf4",
+          "type": "Scope"
+        },
+        {
+          "id": "37f7f235-527c-4136-accd-4a02d197296e",
+          "type": "Scope"
+        },
+        {
+          "id": "14dad69e-099b-42c9-810b-d002981feec1",
+          "type": "Scope"
+        },
+        {
+          "id": "7427e0e9-2fba-42fe-b0c0-848c9e6a8182",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

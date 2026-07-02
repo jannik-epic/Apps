@@ -1,0 +1,11 @@
+{
+  "id": "efdb0247-cad7-4222-b7e5-a48680554150",
+  "displayName": "MDM-1Password CLI-Uninstall",
+  "description": "Modern Dev Mgmt uninstall assignment group for 1Password CLI.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "mdm-1password-cli-uninstall-fa19cf",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-05-13T12:59:37Z"
+}

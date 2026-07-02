@@ -1,0 +1,20 @@
+{
+  "id": "microsoftwindowsdesktop_windows-ent-cpc_win10-22h2-ent-cpc",
+  "publisherName": "microsoftwindowsdesktop",
+  "publisher": "microsoftwindowsdesktop",
+  "offerName": "windows-ent-cpc",
+  "offer": "windows-ent-cpc",
+  "skuName": "win10-22h2-ent-cpc",
+  "sku": "win10-22h2-ent-cpc",
+  "offerDisplayName": "Windows 10 Enterprise",
+  "skuDisplayName": "22H2",
+  "displayName": "Windows 10 Enterprise 22H2",
+  "recommendedSku": "heavy",
+  "sizeInGB": 64,
+  "status": "supportedWithWarning",
+  "startDate": "2022-10-17",
+  "endDate": "2026-01-16",
+  "expirationDate": "2026-07-16",
+  "osVersionNumber": "10.0.19045.6456",
+  "osArchitecture": "x64"
+}

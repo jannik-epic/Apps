@@ -1,0 +1,12 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceManagement/applePushNotificationCertificate/$entity",
+  "id": "1f9f0f5a-63ed-4013-b61b-406c545266d2",
+  "appleIdentifier": "Jannik.Reinhard@icloud.com",
+  "topicIdentifier": "com.apple.mgmt.External.e95cfebb-029d-4c0a-9c50-922a83c0c2be",
+  "lastModifiedDateTime": "2026-07-02T20:18:20Z",
+  "expirationDateTime": "2023-07-26T15:49:35Z",
+  "certificateUploadStatus": null,
+  "certificateUploadFailureReason": null,
+  "certificateSerialNumber": "7BA2CB12D4023519",
+  "certificate": null
+}

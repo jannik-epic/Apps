@@ -1,0 +1,10 @@
+{
+  "id": "e2178eed-0f7e-449d-b3c2-8e3e886334c4",
+  "appId": "a56a525c-aa0a-4698-8cf2-703f64485c5d",
+  "displayName": "TenantManager",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

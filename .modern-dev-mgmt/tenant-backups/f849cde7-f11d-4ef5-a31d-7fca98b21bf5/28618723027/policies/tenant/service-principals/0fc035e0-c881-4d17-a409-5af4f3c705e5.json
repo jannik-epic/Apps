@@ -1,0 +1,8 @@
+{
+  "id": "0fc035e0-c881-4d17-a409-5af4f3c705e5",
+  "appId": "461e8683-5575-4561-ac7f-899cc907d62a",
+  "displayName": "Azns AAD Webhook",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

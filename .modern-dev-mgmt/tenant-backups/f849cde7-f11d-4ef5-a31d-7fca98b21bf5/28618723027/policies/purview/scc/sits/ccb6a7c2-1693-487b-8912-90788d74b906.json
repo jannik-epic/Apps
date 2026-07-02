@@ -1,0 +1,5 @@
+{
+  "id": "ccb6a7c2-1693-487b-8912-90788d74b906",
+  "name": "Azure EventGrid Access Key",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

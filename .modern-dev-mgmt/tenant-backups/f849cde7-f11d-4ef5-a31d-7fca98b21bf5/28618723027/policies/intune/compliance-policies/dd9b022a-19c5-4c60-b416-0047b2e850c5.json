@@ -1,0 +1,66 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "id": "dd9b022a-19c5-4c60-b416-0047b2e850c5",
+  "createdDateTime": "2024-11-17T09:04:09.0778664Z",
+  "description": null,
+  "lastModifiedDateTime": "2024-11-17T09:04:09.0778664Z",
+  "displayName": "WIN-CustomCompliance",
+  "version": 1,
+  "passwordRequired": false,
+  "passwordBlockSimple": false,
+  "passwordRequiredToUnlockFromIdle": false,
+  "passwordMinutesOfInactivityBeforeLock": null,
+  "passwordExpirationDays": null,
+  "passwordMinimumLength": null,
+  "passwordMinimumCharacterSetCount": null,
+  "passwordRequiredType": "deviceDefault",
+  "passwordPreviousPasswordBlockCount": null,
+  "requireHealthyDeviceReport": false,
+  "osMinimumVersion": null,
+  "osMaximumVersion": null,
+  "mobileOsMinimumVersion": null,
+  "mobileOsMaximumVersion": null,
+  "earlyLaunchAntiMalwareDriverEnabled": false,
+  "bitLockerEnabled": false,
+  "secureBootEnabled": false,
+  "codeIntegrityEnabled": false,
+  "memoryIntegrityEnabled": false,
+  "kernelDmaProtectionEnabled": false,
+  "virtualizationBasedSecurityEnabled": false,
+  "firmwareProtectionEnabled": false,
+  "storageRequireEncryption": false,
+  "activeFirewallRequired": false,
+  "defenderEnabled": false,
+  "defenderVersion": null,
+  "signatureOutOfDate": false,
+  "rtpEnabled": false,
+  "antivirusRequired": false,
+  "antiSpywareRequired": false,
+  "deviceThreatProtectionEnabled": false,
+  "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+  "configurationManagerComplianceRequired": false,
+  "tpmRequired": false,
+  "validOperatingSystemBuildRanges": [],
+  "deviceCompliancePolicyScript": {
+    "deviceComplianceScriptId": "33ad0f29-6280-4461-b073-842f0a9ec91c",
+    "rulesContent": "ewogICAgIlJ1bGVzIjogWwogICAgICAgIHsKICAgICAgICAgICAgIlNldHRpbmdOYW1lIjogIkF2QWN0aXZlIiwKICAgICAgICAgICAgIk9wZXJhdG9yIjogIklzRXF1YWxzIiwKICAgICAgICAgICAgIkRhdGFUeXBlIjogIkJvb2xlYW4iLAogICAgICAgICAgICAiT3BlcmFuZCI6IHRydWUsCiAgICAgICAgICAgICJNb3JlSW5mb1VybCI6ICJodHRwczovL2xlYXJuLm1pY3Jvc29mdC5jb20vZW4tdXMvbWVtL2ludHVuZS91c2VyLWhlbHAvdHVybi1vbi1kZWZlbmRlci13aW5kb3dzIiwKICAgICAgICAgICAgIlJlbWVkaWF0aW9uU3RyaW5ncyI6IFsKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAiTGFuZ3VhZ2UiOiAiZW5fVVMiLAogICAgICAgICAgICAgICAgICAgICJUaXRsZSI6ICJUaGlzIG1hY2hpbmUgaGFzIG5vIGFjdGl2ZSBhbnRpdmlydXMgc29sdXRpb24uIiwKICAgICAgICAgICAgICAgICAgICAiRGVzY3JpcHRpb24iOiAiVG8gY29udGludWUgdG8gdXNlIHRoaXMgZGV2aWNlIHlvdSBoYXZlIHRvIGluc3RhbGwgYSBBbnRpdmlydXMgU29sdXRpb24iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIF0KICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgIlNldHRpbmdOYW1lIjogIkZyZWVTdG9yYWdlIiwKICAgICAgICAgICAgIk9wZXJhdG9yIjogIkdyZWF0ZXJFcXVhbHMiLAogICAgICAgICAgICAiRGF0YVR5cGUiOiAiaW50NjQiLAogICAgICAgICAgICAiT3BlcmFuZCI6IDEwLAogICAgICAgICAgICAiTW9yZUluZm9VcmwiOiAiaHR0cHM6Ly9zdXBwb3J0Lm1pY3Jvc29mdC5jb20vZW4tdXMvd2luZG93cy9mcmVlLXVwLWRyaXZlLXNwYWNlLWluLXdpbmRvd3MtYTE4ZmFlMDItYTBmYS04ZGY5LTk4MzgtODk3MGY5OTM5ZGU0IiwKICAgICAgICAgICAgIlJlbWVkaWF0aW9uU3RyaW5ncyI6IFsKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAiTGFuZ3VhZ2UiOiAiZW5fVVMiLAogICAgICAgICAgICAgICAgICAgICJUaXRsZSI6ICJObyBzdG9yYWdlIGZyZWUuIiwKICAgICAgICAgICAgICAgICAgICAiRGVzY3JpcHRpb24iOiAiVGhlIGRldmljZSBoYXMgbGVzcyB0aGFuIDEwR0Igc3RvcmFnZSBmcmVlLiBQbGVhc2UgcnVuIGEgY2xlYW51cCIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgXQogICAgICAgIH0KICAgIF0KfQ==",
+    "runIntervalInMinutes": null
+  },
+  "wslDistributions": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceCompliancePolicies('dd9b022a-19c5-4c60-b416-0047b2e850c5')/microsoft.graph.windows10CompliancePolicy/assignments",
+  "assignments": [
+    {
+      "id": "dd9b022a-19c5-4c60-b416-0047b2e850c5_acacacac-9df4-4c7d-9d50-4ef0226f57a9",
+      "source": "direct",
+      "sourceId": "dd9b022a-19c5-4c60-b416-0047b2e850c5",
+      "target": {
+        "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none"
+      }
+    }
+  ]
+}

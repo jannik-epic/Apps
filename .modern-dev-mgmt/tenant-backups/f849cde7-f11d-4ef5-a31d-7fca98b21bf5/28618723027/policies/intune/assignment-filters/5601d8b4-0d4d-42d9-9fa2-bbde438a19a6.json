@@ -1,0 +1,14 @@
+{
+  "id": "5601d8b4-0d4d-42d9-9fa2-bbde438a19a6",
+  "createdDateTime": "2022-07-27T07:58:01.6671415Z",
+  "lastModifiedDateTime": "2022-07-27T07:58:01.6671415Z",
+  "displayName": "Filter_CategoryPurchasingDepartment",
+  "description": "All device with category Purchasing department",
+  "platform": "windows10AndLater",
+  "rule": "(device.deviceCategory  -eq \"Purchasing department\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "d798710b-6fa0-406d-a05b-474c8ef1027c",
+  "displayName": "MDM-1Password CLI-Available",
+  "description": "Modern Dev Mgmt available assignment group for 1Password CLI.",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "mdm-1password-cli-available-03bc28",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2026-05-13T12:59:37Z"
+}

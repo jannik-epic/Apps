@@ -1,0 +1,10 @@
+{
+  "id": "ad59c412-a7a0-4845-875b-a584350954bc",
+  "appId": "14d82eec-204b-4c2f-b7e8-296a70dab67e",
+  "displayName": "Microsoft Graph PowerShell",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp"
+  ]
+}

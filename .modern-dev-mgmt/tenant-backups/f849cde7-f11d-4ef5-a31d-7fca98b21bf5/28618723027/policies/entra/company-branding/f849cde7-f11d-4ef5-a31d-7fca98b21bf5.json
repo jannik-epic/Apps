@@ -1,0 +1,95 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#organization('f849cde7-f11d-4ef5-a31d-7fca98b21bf5')/branding/$entity",
+  "backgroundColor": "#0af0ba",
+  "backgroundImageRelativeUrl": "c1c6b6c8-dcqlssgipnbafy6fo6g3ewbw9wivo-gb-tzvefdcsyk/logintenantbranding/0/illustration?ts=637944467472762490",
+  "bannerLogoRelativeUrl": "c1c6b6c8-dcqlssgipnbafy6fo6g3ewbw9wivo-gb-tzvefdcsyk/logintenantbranding/0/bannerlogo?ts=637944478250409368",
+  "cdnList": [
+    "aadcdn.msftauthimages.net",
+    "aadcdn.msauthimages.net"
+  ],
+  "customAccountResetCredentialsUrl": null,
+  "customCannotAccessYourAccountText": null,
+  "customCannotAccessYourAccountUrl": null,
+  "customForgotMyPasswordText": null,
+  "customPrivacyAndCookiesText": "Privacy",
+  "customPrivacyAndCookiesUrl": "http://google.com",
+  "customResetItNowText": null,
+  "customTermsOfUseText": "TOU",
+  "customTermsOfUseUrl": "http://google.com",
+  "faviconRelativeUrl": null,
+  "customCSSRelativeUrl": null,
+  "headerBackgroundColor": null,
+  "signInPageText": "Welcome to the tenant of Modern Device Management the center of madness",
+  "squareLogoRelativeUrl": "c1c6b6c8-dcqlssgipnbafy6fo6g3ewbw9wivo-gb-tzvefdcsyk/logintenantbranding/0/tilelogo?ts=637944478025564327",
+  "squareLogoDarkRelativeUrl": "c1c6b6c8-dcqlssgipnbafy6fo6g3ewbw9wivo-gb-tzvefdcsyk/logintenantbranding/0/squarelogodark?ts=637944478030251323",
+  "usernameHintText": "Modern Device Management",
+  "headerLogoRelativeUrl": null,
+  "loginPageTextVisibilitySettings": {
+    "hideCannotAccessYourAccount": null,
+    "hideAccountResetCredentials": null,
+    "hideTermsOfUse": null,
+    "hidePrivacyAndCookies": null,
+    "hideForgotMyPassword": null,
+    "hideResetItNow": null
+  },
+  "contentCustomization": {
+    "attributeCollectionRelativeUrl": null,
+    "registrationCampaignRelativeUrl": null,
+    "attributeCollection": [],
+    "registrationCampaign": []
+  },
+  "loginPageLayoutConfiguration": {
+    "layoutTemplateType": "default",
+    "isHeaderShown": true,
+    "isFooterShown": true
+  },
+  "localizations": [
+    {
+      "id": "0",
+      "backgroundColor": "#0af0ba",
+      "backgroundImageRelativeUrl": "c1c6b6c8-dcqlssgipnbafy6fo6g3ewbw9wivo-gb-tzvefdcsyk/logintenantbranding/0/illustration?ts=637944467472762490",
+      "bannerLogoRelativeUrl": "c1c6b6c8-dcqlssgipnbafy6fo6g3ewbw9wivo-gb-tzvefdcsyk/logintenantbranding/0/bannerlogo?ts=637944478250409368",
+      "cdnList": [
+        "aadcdn.msftauthimages.net",
+        "aadcdn.msauthimages.net"
+      ],
+      "customAccountResetCredentialsUrl": null,
+      "customCannotAccessYourAccountText": null,
+      "customCannotAccessYourAccountUrl": null,
+      "customForgotMyPasswordText": null,
+      "customPrivacyAndCookiesText": "Privacy",
+      "customPrivacyAndCookiesUrl": "http://google.com",
+      "customResetItNowText": null,
+      "customTermsOfUseText": "TOU",
+      "customTermsOfUseUrl": "http://google.com",
+      "faviconRelativeUrl": null,
+      "customCSSRelativeUrl": null,
+      "headerBackgroundColor": null,
+      "signInPageText": "Welcome to the tenant of Modern Device Management the center of madness",
+      "squareLogoRelativeUrl": "c1c6b6c8-dcqlssgipnbafy6fo6g3ewbw9wivo-gb-tzvefdcsyk/logintenantbranding/0/tilelogo?ts=637944478025564327",
+      "squareLogoDarkRelativeUrl": "c1c6b6c8-dcqlssgipnbafy6fo6g3ewbw9wivo-gb-tzvefdcsyk/logintenantbranding/0/squarelogodark?ts=637944478030251323",
+      "usernameHintText": "Modern Device Management",
+      "headerLogoRelativeUrl": null,
+      "loginPageTextVisibilitySettings": {
+        "hideCannotAccessYourAccount": null,
+        "hideAccountResetCredentials": null,
+        "hideTermsOfUse": null,
+        "hidePrivacyAndCookies": null,
+        "hideForgotMyPassword": null,
+        "hideResetItNow": null
+      },
+      "contentCustomization": {
+        "attributeCollectionRelativeUrl": null,
+        "registrationCampaignRelativeUrl": null,
+        "attributeCollection": [],
+        "registrationCampaign": []
+      },
+      "loginPageLayoutConfiguration": {
+        "layoutTemplateType": "default",
+        "isHeaderShown": true,
+        "isFooterShown": true
+      }
+    }
+  ],
+  "id": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5"
+}

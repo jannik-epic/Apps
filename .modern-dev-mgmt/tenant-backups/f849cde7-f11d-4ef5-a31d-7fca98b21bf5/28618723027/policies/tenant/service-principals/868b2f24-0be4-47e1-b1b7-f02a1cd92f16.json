@@ -1,0 +1,12 @@
+{
+  "id": "868b2f24-0be4-47e1-b1b7-f02a1cd92f16",
+  "appId": "e3a3c6d7-bd80-4be5-88da-c2226a5d9328",
+  "displayName": "Microsoft Defender For Cloud Billing",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

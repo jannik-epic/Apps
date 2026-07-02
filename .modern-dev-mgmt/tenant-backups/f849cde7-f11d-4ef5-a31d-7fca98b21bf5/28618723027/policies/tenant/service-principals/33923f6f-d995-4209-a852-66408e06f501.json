@@ -1,0 +1,11 @@
+{
+  "id": "33923f6f-d995-4209-a852-66408e06f501",
+  "appId": "7e313d81-57dd-4bdd-906e-337963583de3",
+  "displayName": "Intune DeviceDirectory ConfidentialClient",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource"
+  ]
+}

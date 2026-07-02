@@ -1,0 +1,11 @@
+{
+  "id": "2a954d8a-276b-47f0-84bc-b17a54f9add7",
+  "appId": "794ded15-70c6-4bcd-a0bb-9b7ad530a01a",
+  "displayName": "Microsoft Intune Advanced Threat Protection Integration",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "0f66d371-94bc-4062-962f-a6ae7a4dd43d",
+  "deletedDateTime": "2026-06-28T13:44:17Z",
+  "classification": null,
+  "createdDateTime": "2026-06-28T13:43:22Z",
+  "creationOptions": [],
+  "description": "UC-M10 governance pilot test group — automated live test",
+  "displayName": "Momentum-GovernanceTest-UCM10",
+  "expirationDateTime": null,
+  "groupTypes": [
+    "Unified"
+  ],
+  "infoCatalogs": [],
+  "isAssignableToRole": null,
+  "mail": "momentum-govtest-ucm10@ModernDevMgmt.onmicrosoft.com",
+  "mailEnabled": true,
+  "mailNickname": "momentum-govtest-ucm10",
+  "membershipRule": null,
+  "membershipRuleProcessingState": null,
+  "onPremisesDomainName": null,
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesNetBiosName": null,
+  "onPremisesSamAccountName": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": null,
+  "preferredLanguage": null,
+  "proxyAddresses": [
+    "SPO:SPO_390efa80-a922-4e27-96a7-787af85bbfbe@SPO_f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+    "SMTP:momentum-govtest-ucm10@ModernDevMgmt.onmicrosoft.com"
+  ],
+  "renewedDateTime": "2026-06-28T13:43:22Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": false,
+  "securityIdentifier": "S-1-12-1-258397041-1080202428-2930126742-1037323642",
+  "theme": null,
+  "uniqueName": null,
+  "visibility": "Private",
+  "onPremisesProvisioningErrors": [],
+  "serviceProvisioningErrors": []
+}

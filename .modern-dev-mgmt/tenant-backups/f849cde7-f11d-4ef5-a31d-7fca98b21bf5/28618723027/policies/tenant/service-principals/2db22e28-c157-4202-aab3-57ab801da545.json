@@ -1,0 +1,11 @@
+{
+  "id": "2db22e28-c157-4202-aab3-57ab801da545",
+  "appId": "bb8f18b0-9c38-48c9-a847-e1ef3af0602d",
+  "displayName": "Microsoft.Azure.ActiveDirectoryIUX",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

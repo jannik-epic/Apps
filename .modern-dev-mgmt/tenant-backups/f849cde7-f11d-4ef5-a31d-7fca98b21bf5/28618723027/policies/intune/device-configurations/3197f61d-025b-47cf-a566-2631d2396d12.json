@@ -1,0 +1,21 @@
+{
+  "@odata.type": "#microsoft.graph.windowsHealthMonitoringConfiguration",
+  "id": "3197f61d-025b-47cf-a566-2631d2396d12",
+  "lastModifiedDateTime": "2022-07-27T07:46:22.4101544Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-27T07:33:51.0835223Z",
+  "description": null,
+  "displayName": "WIN_Default_ActivateEndpointAnalytics",
+  "version": 3,
+  "allowDeviceHealthMonitoring": "enabled",
+  "configDeviceHealthMonitoringScope": "bootPerformance",
+  "configDeviceHealthMonitoringCustomScope": null,
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('3197f61d-025b-47cf-a566-2631d2396d12')/microsoft.graph.windowsHealthMonitoringConfiguration/assignments",
+  "assignments": []
+}

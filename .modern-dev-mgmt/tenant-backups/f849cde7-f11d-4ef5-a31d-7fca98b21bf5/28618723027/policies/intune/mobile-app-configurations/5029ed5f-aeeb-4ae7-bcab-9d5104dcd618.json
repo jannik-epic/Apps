@@ -1,0 +1,22 @@
+{
+  "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+  "id": "5029ed5f-aeeb-4ae7-bcab-9d5104dcd618",
+  "targetedMobileApps": [
+    "3ec6a5cd-8589-4070-8c34-032b1d327344"
+  ],
+  "createdDateTime": "2022-07-26T19:02:41.4236301Z",
+  "description": "",
+  "lastModifiedDateTime": "2022-07-26T19:02:41.4236301Z",
+  "displayName": "IOS_IntuneMAMUpn_Teams",
+  "version": 1,
+  "encodedSettingXml": null,
+  "settings": [
+    {
+      "appConfigKey": "IntuneMAMUPN",
+      "appConfigKeyType": "stringType",
+      "appConfigKeyValue": "{{UserPrincipalName}}"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceAppManagement/mobileAppConfigurations('5029ed5f-aeeb-4ae7-bcab-9d5104dcd618')/microsoft.graph.iosMobileAppConfiguration/assignments",
+  "assignments": []
+}

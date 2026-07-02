@@ -1,0 +1,7 @@
+{
+  "id": "DirectoryRole_f849cde7-f11d-4ef5-a31d-7fca98b21bf5_65b82018-71de-4eef-9a13-d480cf17dbbc_7495fdc4-34c4-4d15-a289-98788ce399fd",
+  "policyId": "DirectoryRole_f849cde7-f11d-4ef5-a31d-7fca98b21bf5_65b82018-71de-4eef-9a13-d480cf17dbbc",
+  "scopeId": "/",
+  "scopeType": "DirectoryRole",
+  "roleDefinitionId": "7495fdc4-34c4-4d15-a289-98788ce399fd"
+}

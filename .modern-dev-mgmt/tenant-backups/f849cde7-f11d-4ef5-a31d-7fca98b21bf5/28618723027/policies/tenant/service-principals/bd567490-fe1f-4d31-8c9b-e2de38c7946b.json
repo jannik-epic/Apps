@@ -1,0 +1,11 @@
+{
+  "id": "bd567490-fe1f-4d31-8c9b-e2de38c7946b",
+  "appId": "14452459-6fa6-4ec0-bc50-1528a1a06bf0",
+  "displayName": "Intune CMDeviceService",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

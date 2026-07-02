@@ -1,0 +1,12 @@
+{
+  "id": "4a2ba548-798f-4383-b1d9-ff062542c9eb",
+  "appId": "e95a6071-4f90-4971-84e2-492d9323345b",
+  "displayName": "CosmosDBMongoClusterPrivateEndpoint",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

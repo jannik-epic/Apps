@@ -1,0 +1,27 @@
+{
+  "accountId": "9e3c3837-3799-48c9-a33a-29bbad054d12",
+  "id": "a0b11d96-a00a-4d88-a1fc-99cb61e95205",
+  "displayName": "Android_Kiosk_EnrollmentToken",
+  "description": "",
+  "enrollmentMode": "corporateOwnedDedicatedDevice",
+  "enrollmentTokenType": "default",
+  "createdDateTime": "2022-07-26T17:38:00.760968Z",
+  "lastModifiedDateTime": "2022-07-27T07:08:56Z",
+  "tokenValue": null,
+  "tokenCreationDateTime": "2022-07-26T17:38:01.0928123Z",
+  "tokenExpirationDateTime": "2022-10-24T17:37:22.072735Z",
+  "enrolledDeviceCount": 1,
+  "enrollmentTokenUsageCount": 0,
+  "qrCodeContent": null,
+  "qrCodeImage": null,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "configureWifi": true,
+  "wifiSsid": null,
+  "wifiPassword": null,
+  "wifiSecurityType": "none",
+  "wifiHidden": false,
+  "isTeamsDeviceProfile": false,
+  "deviceNameTemplate": null
+}

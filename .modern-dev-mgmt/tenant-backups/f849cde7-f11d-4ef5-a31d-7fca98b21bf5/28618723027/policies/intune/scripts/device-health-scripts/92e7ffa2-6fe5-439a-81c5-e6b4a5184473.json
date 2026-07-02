@@ -1,0 +1,24 @@
+{
+  "id": "92e7ffa2-6fe5-439a-81c5-e6b4a5184473",
+  "publisher": null,
+  "version": "1",
+  "displayName": "Generated: clear teams cache...",
+  "description": "clear teams cache",
+  "detectionScriptContent": "",
+  "remediationScriptContent": "",
+  "createdDateTime": "2025-07-01T15:34:15.5021357Z",
+  "lastModifiedDateTime": "2025-07-01T15:34:15.5021357Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "isGlobalScript": false,
+  "highestAvailableVersion": null,
+  "deviceHealthScriptType": "deviceHealthScript",
+  "detectionScriptParameters": [],
+  "remediationScriptParameters": [],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceHealthScripts('92e7ffa2-6fe5-439a-81c5-e6b4a5184473')/assignments",
+  "assignments": []
+}

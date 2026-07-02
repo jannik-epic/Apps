@@ -1,0 +1,9 @@
+{
+  "id": "edf761b6-a2ae-43f7-a9f0-edb79bca77ec",
+  "name": "All websites",
+  "description": "All internet access traffic",
+  "version": "1.0.0",
+  "lastModifiedDateTime": "2024-08-13T18:18:35.9261218Z",
+  "createdDateTime": "2024-02-14T10:12:42Z",
+  "action": "allow"
+}

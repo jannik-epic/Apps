@@ -1,0 +1,38 @@
+{
+  "id": "MDA_GitHub_IPallowListConfigurationForOrgResources",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://docs.github.com/en/enterprise-cloud@latest/admin/configuring-settings/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list#allowing-access-by-github-apps",
+  "controlCategory": "Identity",
+  "title": "Enforce IP allow list configuration for org resources",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 4.0,
+  "rank": 10,
+  "remediation": "<ol> <li>In top right corner of GitHub, click your profile photo, then click <strong>Your enterprise</strong><abbr>&nbsp;&gt;&nbsp;</abbr>Next to the organization, <strong>click Settings</strong><abbr><strong>.</strong></abbr></li> <li>Go to <strong>Security</strong> &gt; <strong>Authentication security</strong>.</li> <li>Check &quot;<strong>Enable IP allow list configuration for installed GitHub Apps</strong>&quot; option.</li> </ol> <p><br></p>",
+  "remediationImpact": "This setting blocks users to login from specific IP addresses.",
+  "service": "MDA_GitHub",
+  "threats": [
+    "Account breach",
+    "Data Exfiltration"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

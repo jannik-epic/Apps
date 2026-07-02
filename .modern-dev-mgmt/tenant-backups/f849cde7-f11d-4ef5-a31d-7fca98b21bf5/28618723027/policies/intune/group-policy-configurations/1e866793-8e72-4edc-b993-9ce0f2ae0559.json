@@ -1,0 +1,14 @@
+{
+  "createdDateTime": "2022-07-26T18:58:43.7933333Z",
+  "displayName": "WIN_Default_OfficeSecurity",
+  "description": "",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "policyConfigurationIngestionType": "builtIn",
+  "id": "1e866793-8e72-4edc-b993-9ce0f2ae0559",
+  "lastModifiedDateTime": "2022-07-27T07:45:10.0756726Z",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/groupPolicyConfigurations('1e866793-8e72-4edc-b993-9ce0f2ae0559')/assignments",
+  "assignments": [],
+  "definitionValues": []
+}

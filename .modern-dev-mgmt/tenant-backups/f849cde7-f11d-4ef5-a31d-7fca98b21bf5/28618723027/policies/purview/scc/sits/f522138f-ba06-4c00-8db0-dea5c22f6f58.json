@@ -1,0 +1,5 @@
+{
+  "id": "f522138f-ba06-4c00-8db0-dea5c22f6f58",
+  "name": "Azure Storage Account Shared Access Signature for High Risk Resources",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}

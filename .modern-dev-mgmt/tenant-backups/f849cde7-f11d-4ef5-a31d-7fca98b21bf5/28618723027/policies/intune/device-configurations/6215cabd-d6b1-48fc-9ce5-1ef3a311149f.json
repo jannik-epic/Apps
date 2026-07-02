@@ -1,0 +1,52 @@
+{
+  "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
+  "id": "6215cabd-d6b1-48fc-9ce5-1ef3a311149f",
+  "lastModifiedDateTime": "2022-07-27T07:47:22.3289052Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-27T07:33:59.126248Z",
+  "description": null,
+  "displayName": "WIN_KioskPC_SingelAppMode",
+  "version": 3,
+  "kioskBrowserDefaultUrl": "http://bing.com",
+  "kioskBrowserEnableHomeButton": false,
+  "kioskBrowserEnableNavigationButtons": false,
+  "kioskBrowserEnableEndSessionButton": false,
+  "kioskBrowserRestartOnIdleTimeInMinutes": null,
+  "kioskBrowserBlockedURLs": [],
+  "kioskBrowserBlockedUrlExceptions": [],
+  "edgeKioskEnablePublicBrowsing": false,
+  "windowsKioskForceUpdateSchedule": null,
+  "kioskProfiles": [
+    {
+      "profileId": "9ba84d49-3271-438a-8d89-e0495e9618b8",
+      "profileName": "profile",
+      "appConfiguration": {
+        "@odata.type": "#microsoft.graph.windowsKioskSingleWin32App",
+        "win32App": {
+          "startLayoutTileSize": "hidden",
+          "name": null,
+          "appType": "unknown",
+          "autoLaunch": false,
+          "classicAppPath": "msedge.exe",
+          "edgeNoFirstRun": true,
+          "edgeKioskIdleTimeoutMinutes": null,
+          "edgeKioskType": "fullScreen",
+          "edgeKiosk": "https://jannikreinhard.com"
+        }
+      },
+      "userAccountsConfiguration": [
+        {
+          "@odata.type": "#microsoft.graph.windowsKioskAutologon"
+        }
+      ]
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('6215cabd-d6b1-48fc-9ce5-1ef3a311149f')/microsoft.graph.windowsKioskConfiguration/assignments",
+  "assignments": []
+}

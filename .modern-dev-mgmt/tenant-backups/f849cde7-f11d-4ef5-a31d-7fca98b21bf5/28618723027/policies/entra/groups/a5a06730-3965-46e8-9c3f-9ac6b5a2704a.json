@@ -1,0 +1,11 @@
+{
+  "id": "a5a06730-3965-46e8-9c3f-9ac6b5a2704a",
+  "displayName": "Windows_All_Devices - Wave 2",
+  "description": "Wave 2 deployment group for Windows_All_Devices",
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "wave-2-1755940411097",
+  "groupTypes": [],
+  "visibility": null,
+  "createdDateTime": "2025-08-23T09:13:31Z"
+}

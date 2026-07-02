@@ -1,0 +1,109 @@
+{
+  "@odata.type": "#microsoft.graph.win32LobApp",
+  "id": "b333220c-0fff-4190-8911-a5e9bacd7b4e",
+  "displayName": "Microsoft OneDrive",
+  "description": "Auto patch detected by catalog-scan: 24.221.1103.0003 -> 26.088.0510.0004\r\nApp setting: 1Password Machine-wide. Created from App config repo (92859)",
+  "publisher": "Microsoft Corporation",
+  "largeIcon": null,
+  "createdDateTime": "2026-06-06T19:01:19Z",
+  "lastModifiedDateTime": "2026-06-06T19:01:19Z",
+  "isFeatured": false,
+  "privacyInformationUrl": null,
+  "informationUrl": null,
+  "owner": null,
+  "developer": null,
+  "notes": "Package ID: Microsoft.OneDrive\nInstalled via: WinGet\nInstall Method: system\nUsing PSADT-compatible script hooks: True\nDeployed via: GitHub Actions",
+  "uploadState": 1,
+  "publishingState": "published",
+  "isAssigned": false,
+  "roleScopeTagIds": [],
+  "dependentAppCount": 0,
+  "supersedingAppCount": 0,
+  "supersededAppCount": 0,
+  "committedContentVersion": "1",
+  "fileName": "IntunePackage.intunewin",
+  "size": 1264,
+  "installCommandLine": "powershell.exe -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -File .\\install_script.ps1",
+  "uninstallCommandLine": "powershell.exe -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -File .\\uninstall_script.ps1",
+  "applicableArchitectures": "x64",
+  "allowedArchitectures": "x64,arm64",
+  "minimumFreeDiskSpaceInMB": null,
+  "minimumMemoryInMB": null,
+  "minimumNumberOfProcessors": null,
+  "minimumCpuSpeedInMHz": null,
+  "msiInformation": null,
+  "setupFilePath": "install_script.ps1",
+  "minimumSupportedWindowsRelease": "1607",
+  "displayVersion": null,
+  "allowAvailableUninstall": false,
+  "activeInstallScript": null,
+  "activeUninstallScript": null,
+  "minimumSupportedOperatingSystem": {
+    "v8_0": false,
+    "v8_1": false,
+    "v10_0": false,
+    "v10_1607": true,
+    "v10_1703": false,
+    "v10_1709": false,
+    "v10_1803": false,
+    "v10_1809": false,
+    "v10_1903": false,
+    "v10_1909": false,
+    "v10_2004": false,
+    "v10_2H20": false,
+    "v10_21H1": false
+  },
+  "detectionRules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppPowerShellScriptDetection",
+      "enforceSignatureCheck": false,
+      "runAs32Bit": false,
+      "scriptContent": "IyBEZXRlY3Rpb24gc2NyaXB0IGZvciBNaWNyb3NvZnQgT25lRHJpdmUNCnRyeSB7DQogICAgJHdpbmdldExpc3QgPSB3aW5nZXQgbGlzdCAtLWlkIE1pY3Jvc29mdC5PbmVEcml2ZSAtLWV4YWN0IC0tYWNjZXB0LXNvdXJjZS1hZ3JlZW1lbnRzIDI+JG51bGwNCg0KICAgIGlmICgkd2luZ2V0TGlzdCAtbWF0Y2ggIk1pY3Jvc29mdC5PbmVEcml2ZSIpIHsNCiAgICAgICAgV3JpdGUtT3V0cHV0ICJNaWNyb3NvZnQgT25lRHJpdmUgaXMgaW5zdGFsbGVkIg0KICAgICAgICBleGl0IDANCiAgICB9DQoNCiAgICAjIEFsdGVybmF0aXZlIHJlZ2lzdHJ5IGRldGVjdGlvbg0KICAgICR1bmluc3RhbGxLZXlzID0gQCgNCiAgICAgICAgIkhLTE06XFNPRlRXQVJFXE1pY3Jvc29mdFxXaW5kb3dzXEN1cnJlbnRWZXJzaW9uXFVuaW5zdGFsbCIsDQogICAgICAgICJIS0xNOlxTT0ZUV0FSRVxXT1c2NDMyTm9kZVxNaWNyb3NvZnRcV2luZG93c1xDdXJyZW50VmVyc2lvblxVbmluc3RhbGwiLA0KICAgICAgICAiSEtDVTpcU09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3NcQ3VycmVudFZlcnNpb25cVW5pbnN0YWxsIg0KICAgICkNCg0KICAgIGZvcmVhY2ggKCRrZXkgaW4gJHVuaW5zdGFsbEtleXMpIHsNCiAgICAgICAgJGFwcHMgPSBHZXQtQ2hpbGRJdGVtIC1QYXRoICRrZXkgLUVycm9yQWN0aW9uIFNpbGVudGx5Q29udGludWUNCiAgICAgICAgZm9yZWFjaCAoJGFwcCBpbiAkYXBwcykgew0KICAgICAgICAgICAgJHByb3BlcnRpZXMgPSBHZXQtSXRlbVByb3BlcnR5IC1QYXRoICRhcHAuUFNQYXRoIC1FcnJvckFjdGlvbiBTaWxlbnRseUNvbnRpbnVlDQogICAgICAgICAgICBpZiAoJHByb3BlcnRpZXMuRGlzcGxheU5hbWUgLWxpa2UgIipNaWNyb3NvZnQgT25lRHJpdmUqIiAtYW5kICRwcm9wZXJ0aWVzLlB1Ymxpc2hlciAtbGlrZSAiKk1pY3Jvc29mdCBDb3Jwb3JhdGlvbioiKSB7DQogICAgICAgICAgICAgICAgV3JpdGUtT3V0cHV0ICJNaWNyb3NvZnQgT25lRHJpdmUgaXMgaW5zdGFsbGVkIChSZWdpc3RyeSkiDQogICAgICAgICAgICAgICAgZXhpdCAwDQogICAgICAgICAgICB9DQogICAgICAgIH0NCiAgICB9DQoNCiAgICBXcml0ZS1PdXRwdXQgIk1pY3Jvc29mdCBPbmVEcml2ZSBpcyBub3QgaW5zdGFsbGVkIg0KICAgIGV4aXQgMQ0KfQ0KY2F0Y2ggew0KICAgIFdyaXRlLUVycm9yICJEZXRlY3Rpb24gc2NyaXB0IGZhaWxlZDogJF8iDQogICAgZXhpdCAxDQp9DQo="
+    }
+  ],
+  "requirementRules": [],
+  "rules": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobAppPowerShellScriptRule",
+      "ruleType": "detection",
+      "displayName": null,
+      "enforceSignatureCheck": false,
+      "runAs32Bit": false,
+      "runAsAccount": null,
+      "scriptContent": "IyBEZXRlY3Rpb24gc2NyaXB0IGZvciBNaWNyb3NvZnQgT25lRHJpdmUNCnRyeSB7DQogICAgJHdpbmdldExpc3QgPSB3aW5nZXQgbGlzdCAtLWlkIE1pY3Jvc29mdC5PbmVEcml2ZSAtLWV4YWN0IC0tYWNjZXB0LXNvdXJjZS1hZ3JlZW1lbnRzIDI+JG51bGwNCg0KICAgIGlmICgkd2luZ2V0TGlzdCAtbWF0Y2ggIk1pY3Jvc29mdC5PbmVEcml2ZSIpIHsNCiAgICAgICAgV3JpdGUtT3V0cHV0ICJNaWNyb3NvZnQgT25lRHJpdmUgaXMgaW5zdGFsbGVkIg0KICAgICAgICBleGl0IDANCiAgICB9DQoNCiAgICAjIEFsdGVybmF0aXZlIHJlZ2lzdHJ5IGRldGVjdGlvbg0KICAgICR1bmluc3RhbGxLZXlzID0gQCgNCiAgICAgICAgIkhLTE06XFNPRlRXQVJFXE1pY3Jvc29mdFxXaW5kb3dzXEN1cnJlbnRWZXJzaW9uXFVuaW5zdGFsbCIsDQogICAgICAgICJIS0xNOlxTT0ZUV0FSRVxXT1c2NDMyTm9kZVxNaWNyb3NvZnRcV2luZG93c1xDdXJyZW50VmVyc2lvblxVbmluc3RhbGwiLA0KICAgICAgICAiSEtDVTpcU09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3NcQ3VycmVudFZlcnNpb25cVW5pbnN0YWxsIg0KICAgICkNCg0KICAgIGZvcmVhY2ggKCRrZXkgaW4gJHVuaW5zdGFsbEtleXMpIHsNCiAgICAgICAgJGFwcHMgPSBHZXQtQ2hpbGRJdGVtIC1QYXRoICRrZXkgLUVycm9yQWN0aW9uIFNpbGVudGx5Q29udGludWUNCiAgICAgICAgZm9yZWFjaCAoJGFwcCBpbiAkYXBwcykgew0KICAgICAgICAgICAgJHByb3BlcnRpZXMgPSBHZXQtSXRlbVByb3BlcnR5IC1QYXRoICRhcHAuUFNQYXRoIC1FcnJvckFjdGlvbiBTaWxlbnRseUNvbnRpbnVlDQogICAgICAgICAgICBpZiAoJHByb3BlcnRpZXMuRGlzcGxheU5hbWUgLWxpa2UgIipNaWNyb3NvZnQgT25lRHJpdmUqIiAtYW5kICRwcm9wZXJ0aWVzLlB1Ymxpc2hlciAtbGlrZSAiKk1pY3Jvc29mdCBDb3Jwb3JhdGlvbioiKSB7DQogICAgICAgICAgICAgICAgV3JpdGUtT3V0cHV0ICJNaWNyb3NvZnQgT25lRHJpdmUgaXMgaW5zdGFsbGVkIChSZWdpc3RyeSkiDQogICAgICAgICAgICAgICAgZXhpdCAwDQogICAgICAgICAgICB9DQogICAgICAgIH0NCiAgICB9DQoNCiAgICBXcml0ZS1PdXRwdXQgIk1pY3Jvc29mdCBPbmVEcml2ZSBpcyBub3QgaW5zdGFsbGVkIg0KICAgIGV4aXQgMQ0KfQ0KY2F0Y2ggew0KICAgIFdyaXRlLUVycm9yICJEZXRlY3Rpb24gc2NyaXB0IGZhaWxlZDogJF8iDQogICAgZXhpdCAxDQp9DQo=",
+      "operationType": "notConfigured",
+      "operator": "notConfigured",
+      "comparisonValue": null
+    }
+  ],
+  "installExperience": {
+    "runAsAccount": "system",
+    "maxRunTimeInMinutes": 60,
+    "deviceRestartBehavior": "basedOnReturnCode",
+    "inUseBehavior": null
+  },
+  "returnCodes": [
+    {
+      "returnCode": 0,
+      "type": "success"
+    },
+    {
+      "returnCode": 1707,
+      "type": "success"
+    },
+    {
+      "returnCode": 1641,
+      "type": "hardReboot"
+    },
+    {
+      "returnCode": 3010,
+      "type": "softReboot"
+    },
+    {
+      "returnCode": 1618,
+      "type": "retry"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps('b333220c-0fff-4190-8911-a5e9bacd7b4e')/microsoft.graph.win32LobApp/assignments",
+  "assignments": []
+}

@@ -1,0 +1,52 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
+  "id": "849cb84b-fed4-4d5d-929b-8bfedd2e95a8",
+  "lastModifiedDateTime": "2022-09-06T12:58:40.0764188Z",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": null,
+  "deviceManagementApplicabilityRuleOsVersion": null,
+  "deviceManagementApplicabilityRuleDeviceMode": null,
+  "createdDateTime": "2022-07-26T19:05:25.3295051Z",
+  "description": "",
+  "displayName": "WIN_Default_CreateAdminUser",
+  "version": 6,
+  "omaSettings": [
+    {
+      "@odata.type": "#microsoft.graph.omaSettingString",
+      "displayName": "Password",
+      "description": "Create user and password",
+      "omaUri": "./Device/Vendor/MSFT/Accounts/Users/admin/Password",
+      "secretReferenceValueId": "9e3c3837-3799-48c9-a33a-29bbad054d12_849cb84b-fed4-4d5d-929b-8bfedd2e95a8_31f2968d-b5e8-4189-88b9-dd601455ccd3",
+      "isEncrypted": true,
+      "value": "****"
+    },
+    {
+      "@odata.type": "#microsoft.graph.omaSettingInteger",
+      "displayName": "AccountType",
+      "description": "AuthType",
+      "omaUri": "./Device/Vendor/MSFT/Accounts/Users/admin/LocalUserGroup",
+      "secretReferenceValueId": null,
+      "isEncrypted": false,
+      "value": 2,
+      "isReadOnly": false
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations('849cb84b-fed4-4d5d-929b-8bfedd2e95a8')/microsoft.graph.windows10CustomConfiguration/assignments",
+  "assignments": [
+    {
+      "id": "849cb84b-fed4-4d5d-929b-8bfedd2e95a8_8913e9df-f718-40fc-97d5-c5af3876444f",
+      "source": "direct",
+      "sourceId": "849cb84b-fed4-4d5d-929b-8bfedd2e95a8",
+      "intent": "apply",
+      "target": {
+        "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": null,
+        "deviceAndAppManagementAssignmentFilterType": "none",
+        "groupId": "8913e9df-f718-40fc-97d5-c5af3876444f"
+      }
+    }
+  ]
+}

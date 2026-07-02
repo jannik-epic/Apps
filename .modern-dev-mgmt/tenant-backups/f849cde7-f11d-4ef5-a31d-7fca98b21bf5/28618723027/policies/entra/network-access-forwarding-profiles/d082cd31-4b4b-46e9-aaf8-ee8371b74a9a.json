@@ -1,0 +1,18 @@
+{
+  "id": "d082cd31-4b4b-46e9-aaf8-ee8371b74a9a",
+  "name": "Internet traffic forwarding profile",
+  "description": "Default traffic forwarding profile for Internet traffic acquisition. Assign the profile to client or branch offices to acquire Internet traffic for Zero Trust Network Access.Internet traffic forwarding profile will exclude all endpoints defined in Microsoft 365 traffic forwarding profile.",
+  "state": "disabled",
+  "version": "1.0.0",
+  "lastModifiedDateTime": "2026-06-24T09:59:21.4248374Z",
+  "trafficForwardingType": "internet",
+  "priority": 300,
+  "isCustomProfile": false,
+  "localNetworkSettings": null,
+  "assignmentRules": null,
+  "associations": [],
+  "servicePrincipal": {
+    "appId": "464bc7cc-8a2f-469d-bc7a-bee9cc31c107",
+    "id": "fa5e166b-36b3-424b-a852-ff3eee1281ce"
+  }
+}

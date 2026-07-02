@@ -1,0 +1,36 @@
+{
+  "id": "89664982-8e3e-4e33-acaa-e624f72208e5",
+  "appId": "7f60bcb1-e056-4df9-9f4d-8fb058c70e8c",
+  "displayName": "MCD – Message Center reader",
+  "signInAudience": "AzureADMyOrg",
+  "createdDateTime": "2026-06-15T10:53:06Z",
+  "identifierUris": [],
+  "web": {
+    "homePageUrl": null,
+    "logoutUrl": null,
+    "redirectUris": [],
+    "implicitGrantSettings": {
+      "enableAccessTokenIssuance": false,
+      "enableIdTokenIssuance": false
+    },
+    "redirectUriSettings": []
+  },
+  "spa": {
+    "redirectUris": []
+  },
+  "publicClient": {
+    "redirectUris": []
+  },
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000003-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "1b620472-6534-4fe6-9df2-4680e8aa28ec",
+          "type": "Role"
+        }
+      ]
+    }
+  ],
+  "appRoles": []
+}

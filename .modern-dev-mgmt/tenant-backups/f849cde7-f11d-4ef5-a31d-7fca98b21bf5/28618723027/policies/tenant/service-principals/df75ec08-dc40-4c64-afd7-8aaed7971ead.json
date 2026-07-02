@@ -1,0 +1,8 @@
+{
+  "id": "df75ec08-dc40-4c64-afd7-8aaed7971ead",
+  "appId": "3274406e-4e0a-4852-ba4f-d7226630abb7",
+  "displayName": "Azure Healthcare APIs RBAC",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

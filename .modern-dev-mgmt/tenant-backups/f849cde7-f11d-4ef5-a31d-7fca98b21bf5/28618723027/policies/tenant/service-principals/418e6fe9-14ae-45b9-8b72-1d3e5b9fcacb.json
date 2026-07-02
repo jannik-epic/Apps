@@ -1,0 +1,12 @@
+{
+  "id": "418e6fe9-14ae-45b9-8b72-1d3e5b9fcacb",
+  "appId": "e92b9b37-1b47-4c01-9fbc-91d84450870e",
+  "displayName": "All private resources with Global Secure Access",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

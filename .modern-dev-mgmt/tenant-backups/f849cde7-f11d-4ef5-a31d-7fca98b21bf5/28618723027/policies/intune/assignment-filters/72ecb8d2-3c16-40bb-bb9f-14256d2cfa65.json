@@ -1,0 +1,14 @@
+{
+  "id": "72ecb8d2-3c16-40bb-bb9f-14256d2cfa65",
+  "createdDateTime": "2022-11-23T08:00:01.2684644Z",
+  "lastModifiedDateTime": "2022-11-23T08:00:01.2684644Z",
+  "displayName": "Test",
+  "description": "",
+  "platform": "windows10AndLater",
+  "rule": "(device.enrollmentProfileName -eq \" Standard_Enrollment_Profile\")",
+  "roleScopeTags": [
+    "0"
+  ],
+  "assignmentFilterManagementType": "devices",
+  "payloads": []
+}

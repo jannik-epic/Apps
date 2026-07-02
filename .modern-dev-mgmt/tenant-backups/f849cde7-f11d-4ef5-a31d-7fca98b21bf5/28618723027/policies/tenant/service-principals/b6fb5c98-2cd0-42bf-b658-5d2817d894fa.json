@@ -1,0 +1,11 @@
+{
+  "id": "b6fb5c98-2cd0-42bf-b658-5d2817d894fa",
+  "appId": "26a4ae64-5862-427f-a9b0-044e62572a4f",
+  "displayName": "Microsoft Intune Checkin",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

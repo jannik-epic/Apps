@@ -1,0 +1,11 @@
+{
+  "id": "95ff03d6-2f22-4f96-a36d-825bafa6e5c3",
+  "appId": "65d91a3d-ab74-42e6-8a2f-0add61688c74",
+  "displayName": "Microsoft Approval Management",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

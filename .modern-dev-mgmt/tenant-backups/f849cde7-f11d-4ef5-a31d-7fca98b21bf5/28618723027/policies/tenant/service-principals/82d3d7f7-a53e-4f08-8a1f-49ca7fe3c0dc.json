@@ -1,0 +1,12 @@
+{
+  "id": "82d3d7f7-a53e-4f08-8a1f-49ca7fe3c0dc",
+  "appId": "e9c3020c-b976-40a7-b6c2-0d56abaa82f8",
+  "displayName": "CosmosDB-Garnet-Cache",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationClient",
+    "disableLegacyUserImpersonationResource",
+    "GitCreatedApp"
+  ]
+}

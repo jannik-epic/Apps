@@ -1,0 +1,10 @@
+{
+  "@odata.type": "#microsoft.graph.securityBaselineTemplate",
+  "id": "0e237410-1367-4844-bd7f-15fb0f08943b",
+  "displayName": "Attack surface reduction rules",
+  "description": "Attack surface reduction rules target behaviors that malware and malicious apps typically use to infect computers, including:\r\n    Executable files and scripts used in Office apps or web mail that attempt to download or run files\r\n    Obfuscated or otherwise suspicious scripts\r\n    Behaviors that apps don't usually initiate during normal day-to-day work",
+  "versionInfo": "2009",
+  "templateType": "securityTemplate",
+  "platformType": "windows10AndLater",
+  "publishedDateTime": "2020-08-05T00:00:00Z"
+}

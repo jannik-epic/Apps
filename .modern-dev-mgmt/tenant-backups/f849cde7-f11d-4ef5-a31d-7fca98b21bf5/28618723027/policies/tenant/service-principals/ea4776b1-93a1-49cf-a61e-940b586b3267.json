@@ -1,0 +1,11 @@
+{
+  "id": "ea4776b1-93a1-49cf-a61e-940b586b3267",
+  "appId": "06dd8193-75af-46d0-84bb-9b9bcaa89e8b",
+  "displayName": "SubstrateActionsService",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableLegacyUserImpersonationResource",
+    "disableLegacyUserImpersonationClient"
+  ]
+}

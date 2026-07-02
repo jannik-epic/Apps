@@ -1,0 +1,8 @@
+{
+  "id": "5ade206c-312f-4138-ad56-2c23a010d64b",
+  "appId": "27a762be-14e7-4f92-899c-151877d6d497",
+  "displayName": "Bot Service CMEK Prod",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": []
+}

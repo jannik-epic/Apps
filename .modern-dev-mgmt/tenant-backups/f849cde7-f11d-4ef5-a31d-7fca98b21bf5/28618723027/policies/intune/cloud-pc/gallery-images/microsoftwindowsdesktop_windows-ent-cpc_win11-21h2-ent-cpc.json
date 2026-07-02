@@ -1,0 +1,20 @@
+{
+  "id": "microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc",
+  "publisherName": "microsoftwindowsdesktop",
+  "publisher": "microsoftwindowsdesktop",
+  "offerName": "windows-ent-cpc",
+  "offer": "windows-ent-cpc",
+  "skuName": "win11-21h2-ent-cpc",
+  "sku": "win11-21h2-ent-cpc",
+  "offerDisplayName": "Windows 11 Enterprise",
+  "skuDisplayName": "21H2",
+  "displayName": "Windows 11 Enterprise 21H2",
+  "recommendedSku": "heavy",
+  "sizeInGB": 64,
+  "status": "notSupported",
+  "startDate": "2021-10-04",
+  "endDate": "2024-10-08",
+  "expirationDate": "2025-04-08",
+  "osVersionNumber": "10.0.22000.3260",
+  "osArchitecture": "x64"
+}

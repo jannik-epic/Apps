@@ -1,0 +1,13 @@
+{
+  "id": "2d62c320-0471-4c4a-b009-e423e0dc284d",
+  "displayName": "All-Users",
+  "description": null,
+  "mailEnabled": false,
+  "securityEnabled": true,
+  "mailNickname": "c0b4fee2-6",
+  "groupTypes": [
+    "DynamicMembership"
+  ],
+  "visibility": null,
+  "createdDateTime": "2022-07-27T17:05:56Z"
+}

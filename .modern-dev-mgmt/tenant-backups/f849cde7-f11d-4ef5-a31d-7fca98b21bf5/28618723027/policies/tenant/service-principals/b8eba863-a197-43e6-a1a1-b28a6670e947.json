@@ -1,0 +1,11 @@
+{
+  "id": "b8eba863-a197-43e6-a1a1-b28a6670e947",
+  "appId": "74bcdadc-2fdc-4bb3-8459-76d06952a0e9",
+  "displayName": "Microsoft Intune Web Company Portal",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

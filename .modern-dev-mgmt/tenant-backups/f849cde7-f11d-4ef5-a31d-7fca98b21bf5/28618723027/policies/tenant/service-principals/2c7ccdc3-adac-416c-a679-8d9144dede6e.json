@@ -1,0 +1,11 @@
+{
+  "id": "2c7ccdc3-adac-416c-a679-8d9144dede6e",
+  "appId": "d52792f4-ba38-424d-8140-ada5b883f293",
+  "displayName": "AAD Terms Of Use",
+  "accountEnabled": true,
+  "appRoleAssignmentRequired": false,
+  "tags": [
+    "disableAcceptingTenantedPassthroughTokens",
+    "disableRequestingTenantedPassthroughTokens"
+  ]
+}

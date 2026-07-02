@@ -1,0 +1,38 @@
+{
+  "id": "mdo_safeattachmentpolicy",
+  "azureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "actionType": "Config",
+  "actionUrl": "https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/safe-attachments-policies-configure?view=o365-worldwide&tid=f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+  "controlCategory": "Apps",
+  "title": "Ensure Safe Attachments policy is enabled",
+  "deprecated": false,
+  "implementationCost": "Unknown",
+  "lastModifiedDateTime": null,
+  "maxScore": 5.0,
+  "rank": 10,
+  "remediation": "<p>To enable the Safe Attachments policy:</p> <ol> <li>Navigate to <em>Microsoft 365 Defender</em> <a href=\"https://security.microsoft.com\">https://security.microsoft.com</a>.</li> <li>Click to expand <em>E-mail &amp; Collaboration</em> select <em>Policies &amp; rules</em>.</li> <li>On the Policies &amp; rules page select <em>Threat policies</em>.</li> <li>Under <em>Policies</em> select <em>Safe Attachments</em>.</li> <li>Click <em>+ Create</em>.</li> <li>Create a Policy Name and Description, and then click <em>Next</em>.</li> <li>Select all valid domains and click <em>Next</em>.</li> <li>Select <em>Block</em>.</li> <li>Quarantine policy is <em>AdminOnlyAccessPolicy</em>.</li> <li>Leave <em>Enable redirect</em> unchecked.</li> <li>Click <em>Next</em> and finally <em>Submit</em>.</li> </ol>",
+  "remediationImpact": "Delivery of email with attachments may be delayed while scanning is occurring.",
+  "service": "MDO",
+  "threats": [
+    "Data Exfiltration",
+    "Account breach"
+  ],
+  "tier": "Core",
+  "userImpact": "Unknown",
+  "vendorInformation": {
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
+  },
+  "complianceInformation": [],
+  "controlStateUpdates": [
+    {
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
+    }
+  ]
+}

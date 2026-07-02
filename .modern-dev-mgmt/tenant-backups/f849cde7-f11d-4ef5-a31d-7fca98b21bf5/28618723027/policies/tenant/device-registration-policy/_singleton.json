@@ -1,0 +1,29 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/deviceRegistrationPolicy/$entity",
+  "id": "deviceRegistrationPolicy",
+  "displayName": "Device Registration Policy",
+  "description": "Tenant-wide policy that manages initial provisioning controls using quota restrictions, additional authentication and authorization checks",
+  "userDeviceQuota": 50,
+  "multiFactorAuthConfiguration": "notRequired",
+  "localAdminPassword": {
+    "isEnabled": false
+  },
+  "azureADRegistration": {
+    "isAdminConfigurable": false,
+    "allowedToRegister": {
+      "@odata.type": "#microsoft.graph.allDeviceRegistrationMembership"
+    }
+  },
+  "azureADJoin": {
+    "isAdminConfigurable": true,
+    "allowedToJoin": {
+      "@odata.type": "#microsoft.graph.allDeviceRegistrationMembership"
+    },
+    "localAdmins": {
+      "enableGlobalAdmins": true,
+      "registeringUsers": {
+        "@odata.type": "#microsoft.graph.allDeviceRegistrationMembership"
+      }
+    }
+  }
+}

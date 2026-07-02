@@ -1,0 +1,5 @@
+{
+  "id": "6896a906-86c9-4d19-a2da-6e43ccd19b7b",
+  "name": "Austria Social Security Number",
+  "_serializationError": "The type 'System.Collections.Hashtable' is not supported for serialization or deserialization of a dictionary. Keys must be strings."
+}
