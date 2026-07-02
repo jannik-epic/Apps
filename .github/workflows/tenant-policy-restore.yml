@@ -159,7 +159,11 @@ jobs:
           $plan = $planJson | ConvertFrom-Json
           if (-not $plan.policies) { throw 'Restore plan has no policies array.' }
 
-          $runId = "${{ github.run_id }}"
+          # Env vars instead of inline GitHub expressions: any expression
+          # syntax inside this large run block would count it against GitHub's
+          # 21000-char expression length limit (actions/runner#2347) and break
+          # workflow parsing with HTTP 422 on dispatch.
+          $runId = $env:GITHUB_RUN_ID
           $outDir = ".modern-dev-mgmt/restore-runs/$runId"
           New-Item -ItemType Directory -Force -Path $outDir | Out-Null
           Add-Content -Path $env:GITHUB_OUTPUT -Value "out_dir=$outDir"
@@ -533,7 +537,7 @@ jobs:
             includeGroups = $includeGroups
             startedAt = (Get-Date).ToUniversalTime().ToString('o')
             workflowRunId = $runId
-            repository = '${{ github.repository }}'
+            repository = $env:GITHUB_REPOSITORY
             counts = [ordered]@{
               total = @($plan.policies).Count
               applied = $applied.Count
