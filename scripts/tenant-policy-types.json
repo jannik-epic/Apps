@@ -781,13 +781,13 @@
     "label": "Entitlement: access packages",
     "group": "entra-governance",
     "graphBase": "v1.0",
-    "readPath": "identityGovernance/entitlementManagement/accessPackages?$expand=accessPackageResourceRoleScopes",
+    "readPath": "identityGovernance/entitlementManagement/accessPackages",
     "supportsExpandAssignments": false,
     "assignsViaAssign": true,
     "singleton": false,
     "restorable": false,
     "subdir": "entra/entitlement-access-packages",
-    "notes": "Backup/drift/audit evidence; not a restore target."
+    "notes": "Backup/drift/audit evidence; not a restore target. Resource role scopes are exposed through assignment policies, not as an accessPackage expand."
   },
   {
     "key": "entitlement-catalogs",
@@ -864,7 +864,7 @@
     "label": "PIM role management policies (Entra roles)",
     "group": "entra-governance",
     "graphBase": "v1.0",
-    "readPath": "policies/roleManagementPolicies?$filter=scopeId%20eq%20''/''%20and%20scopeType%20eq%20''DirectoryRole''&$expand=rules",
+    "readPath": "policies/roleManagementPolicies?$filter=scopeId%20eq%20'/'%20and%20scopeType%20eq%20'DirectoryRole'&$expand=rules",
     "supportsExpandAssignments": false,
     "assignsViaAssign": true,
     "singleton": false,
@@ -878,7 +878,7 @@
     "label": "PIM role management policy assignments",
     "group": "entra-governance",
     "graphBase": "v1.0",
-    "readPath": "policies/roleManagementPolicyAssignments?$filter=scopeId%20eq%20''/''%20and%20scopeType%20eq%20''DirectoryRole''",
+    "readPath": "policies/roleManagementPolicyAssignments?$filter=scopeId%20eq%20'/'%20and%20scopeType%20eq%20'DirectoryRole'",
     "supportsExpandAssignments": false,
     "assignsViaAssign": true,
     "singleton": false,
@@ -1436,13 +1436,13 @@
     "label": "Teams App Catalog (org/published apps inventory)",
     "group": "m365",
     "graphBase": "v1.0",
-    "readPath": "appCatalogs/teamsApps?$filter=distributionMethod%20eq%20''organization''&$select=id,externalId,displayName,distributionMethod",
+    "readPath": "appCatalogs/teamsApps?$filter=distributionMethod%20eq%20'organization'&$select=id,externalId,displayName,distributionMethod",
     "supportsExpandAssignments": false,
     "assignsViaAssign": true,
     "singleton": false,
     "restorable": false,
     "subdir": "m365/teams-app-catalog-apps",
-    "notes": "Only the tenant''s org-published apps — not Microsoft''s global store (avoids backing up thousands of store apps)."
+    "notes": "Only the tenant's org-published apps — not Microsoft's global store (avoids backing up thousands of store apps)."
   },
   {
     "key": "sharepoint-tenant-settings",
@@ -1822,6 +1822,20 @@
     "notes": "ABM token shells; binding re-established out-of-band. Evidence."
   },
   {
+    "key": "dep-enrollment-profiles",
+    "policyType": "DepEnrollmentProfile",
+    "label": "Apple ABM/DEP enrollment profiles",
+    "group": "intune-enrollment",
+    "graphBase": "beta",
+    "readPath": "deviceManagement/depOnboardingSettings",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "intune/dep-enrollment-profiles",
+    "notes": "Per-token Apple enrollment profiles; restore requires an active ABM token binding. Evidence."
+  },
+  {
     "key": "windows-autopilot-settings",
     "policyType": "WindowsAutopilotSettings",
     "label": "Windows Autopilot tenant settings",
@@ -2084,6 +2098,20 @@
     "notes": "Client secrets are masked. Needs IdentityProvider.Read.All consent."
   },
   {
+    "key": "entra-company-branding",
+    "policyType": "OrganizationalBranding",
+    "label": "Company branding (sign-in page)",
+    "group": "tenant",
+    "graphBase": "v1.0",
+    "readPath": "organization",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/company-branding",
+    "notes": "Text settings and image URLs; binary logo/background assets round-trip out-of-band. Needs Organization.Read.All consent. Evidence."
+  },
+  {
     "key": "delegated-admin-relationships",
     "policyType": "DelegatedAdminRelationship",
     "label": "GDAP delegated admin relationships",
@@ -2291,6 +2319,34 @@
     "singleton": false,
     "restorable": false,
     "subdir": "entra/network-access-filtering-policies",
+    "notes": "Needs NetworkAccess.Read.All consent + GSA licensing."
+  },
+  {
+    "key": "network-access-remote-networks",
+    "policyType": "NetworkAccessRemoteNetwork",
+    "label": "Global Secure Access — remote networks",
+    "group": "entra-protection",
+    "graphBase": "beta",
+    "readPath": "networkAccess/connectivity/remoteNetworks",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/network-access-remote-networks",
+    "notes": "Needs NetworkAccess.Read.All consent + GSA licensing."
+  },
+  {
+    "key": "network-access-branches",
+    "policyType": "NetworkAccessBranchSite",
+    "label": "Global Secure Access — branch sites",
+    "group": "entra-protection",
+    "graphBase": "beta",
+    "readPath": "networkAccess/connectivity/branches",
+    "supportsExpandAssignments": false,
+    "assignsViaAssign": true,
+    "singleton": false,
+    "restorable": false,
+    "subdir": "entra/network-access-branches",
     "notes": "Needs NetworkAccess.Read.All consent + GSA licensing."
   }
 ]
