@@ -19639,7 +19639,7 @@
     },
     {
       "policyType": "PurviewSITRulePackage",
-      "path": "policies/purview/scc/sit-rulepackages/FFO.extest.microsoft.com_Microsoft_Exchange_Hosted_Organizations_epicfusionlabs.onmicrosoft.com_Configuration_5DA58D7A-25F1-4205-93D0-BEB10054C503.json",
+      "path": "policies/purview/scc/sit-rulepackages/FFO.extest.microsoft.com_Microsoft_Exchange_Hosted_Organizations-cf2b5c5a96.json",
       "backupPolicyId": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/5DA58D7A-25F1-4205-93D0-BEB10054C503",
       "displayName": "FFO.extest.microsoft.com/Microsoft Exchange Hosted Organizations/epicfusionlabs.onmicrosoft.com/Configuration/5DA58D7A-25F1-4205-93D0-BEB10054C503",
       "description": null,
