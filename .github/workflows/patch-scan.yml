@@ -16,6 +16,13 @@ jobs:
         os: [windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
+      # Backup snapshots in this repo can exceed Windows MAX_PATH — enable
+      # long paths so checkout does not fail with "Filename too long".
+      - name: Enable Git long paths
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: git config --system core.longpaths true
+
       - uses: actions/checkout@v6
 
       - name: Scan upstream versions
@@ -43,7 +50,9 @@ jobs:
             return null;
           }
           for (const a of apps) {
-            const wantOs = a.source === 'homebrew' ? 'macos' : 'windows';
+            const SOURCE_OS = { winget: 'windows', msstore: 'windows', homebrew: 'macos' };
+            const wantOs = SOURCE_OS[a.source];
+            if (!wantOs) { console.error('unsupported catalog source, skipping', a.package_id, a.source); continue; }
             if (wantOs !== os) continue;
             let latest = null, notes = null;
             try {
