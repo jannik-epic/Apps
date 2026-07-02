@@ -155,8 +155,12 @@ function Ensure-IntuneWinAppUtil {
     New-Item -ItemType Directory -Force -Path $toolsDir | Out-Null
     $utilPath = Join-Path $toolsDir "IntuneWinAppUtil.exe"
     if (-not (Test-Path -LiteralPath $utilPath -PathType Leaf)) {
-        $url = "https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool/raw/master/IntuneWinAppUtil.exe"
-        Write-Host "Downloading IntuneWinAppUtil.exe..."
+        # Pin the Microsoft Win32 Content Prep Tool to a tagged release instead of
+        # `master` so builds are reproducible and auditable. Bump deliberately by
+        # changing the tag (or override at dispatch time with INTUNEWIN_TOOL_REF).
+        $ref = if ($env:INTUNEWIN_TOOL_REF) { $env:INTUNEWIN_TOOL_REF } else { "v1.8.6" }
+        $url = "https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool/raw/$ref/IntuneWinAppUtil.exe"
+        Write-Host "Downloading IntuneWinAppUtil.exe (pinned ref: $ref)..."
         Invoke-WebRequest -Uri $url -OutFile $utilPath -UseBasicParsing
     }
     $utilPath
@@ -425,14 +429,33 @@ try {
 
     # Precompute the detection rule so Windows PowerShell 5.1 doesn't have to
     # parse a nested `if/else` inside the hash literal (legal in PS7 but flaky
-    # in 5.1). Prefer the native MSI ProductCode rule when we have a code;
-    # otherwise fall back to the embedded detection script.
-    if ($offlineMetadata -and $offlineMetadata.productCode -and (@('msi','wix','burn') -contains $offlineMetadata.installerType)) {
+    # in 5.1). Detection precedence:
+    #   1. native MSI ProductCode rule (msi/wix/burn with a product code)
+    #   2. native versioned Registry rule on the marker we write post-install for
+    #      EXE-family installers (deterministic >= comparison; mirrors
+    #      Generate-InstallationScripts.ps1 marker key)
+    #   3. embedded PowerShell detection script (fallback / MSIX)
+    $ciInstallerType = if ($offlineMetadata) { ([string]$offlineMetadata.installerType).ToLowerInvariant() } else { '' }
+    $ciIsMsi  = @('msi','wix','burn') -contains $ciInstallerType
+    $ciIsMsix = @('msix','appx') -contains $ciInstallerType
+    $ciMarkerLeaf = ($PackageId -replace '[^A-Za-z0-9_.-]', '_')
+    if ($offlineMetadata -and $offlineMetadata.productCode -and $ciIsMsi) {
         $detectionRule = @{
             '@odata.type' = '#microsoft.graph.win32LobAppProductCodeRule'
             ruleType = 'detection'
             productCode = [string]$offlineMetadata.productCode
             productVersionOperator = 'notConfigured'
+        }
+    } elseif ($offlineMetadata -and $Version -and (-not $ciIsMsi) -and (-not $ciIsMsix)) {
+        $detectionRule = @{
+            '@odata.type' = '#microsoft.graph.win32LobAppRegistryRule'
+            ruleType = 'detection'
+            keyPath = "HKEY_LOCAL_MACHINE\SOFTWARE\Vanguard\Detection\$ciMarkerLeaf"
+            valueName = 'Version'
+            operationType = 'version'
+            operator = 'greaterThanOrEqual'
+            comparisonValue = [string]$Version
+            check32BitOn64System = $false
         }
     } else {
         $detectionRule = @{
