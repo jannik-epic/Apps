@@ -49,8 +49,8 @@ on:
         type: string
 
 env:
-  AZURE_TENANT_ID: '57415788-595e-4889-901a-4ad5bcecbfe4'
-  AZURE_BACKUP_CLIENT_ID: 'b8574bb9-c5c3-435e-8b66-25129b622ec9'
+  AZURE_TENANT_ID: 'f849cde7-f11d-4ef5-a31d-7fca98b21bf5'
+  AZURE_BACKUP_CLIENT_ID: '4743e56d-572f-4993-895a-38797244b41f'
   GRAPH_BASE: 'https://graph.microsoft.com/v1.0'
   GRAPH_BETA_BASE: 'https://graph.microsoft.com/beta'
 
@@ -195,9 +195,9 @@ jobs:
             $endpointMap[$spec.policyType] = "$base/$cleanPath"
             if ($spec.singleton) { $singletonMap[$spec.policyType] = $true }
             $restorableMap[$spec.policyType] = if ($spec.PSObject.Properties.Match('restorable').Count -gt 0) { [bool]$spec.restorable } else { $true }
-            # Default to using {id}/assign for write-back of assignments — matches
-            # softwareCentral's default. Specific types can override per-spec.
-            $assignViaAssignMap[$spec.policyType] = $true
+            # Default to {id}/assign for write-back of assignments; a spec can
+            # opt out via assignsViaAssign=false to POST {id}/assignments rows.
+            $assignViaAssignMap[$spec.policyType] = if ($spec.PSObject.Properties.Match('assignsViaAssign').Count -gt 0) { [bool]$spec.assignsViaAssign } else { $true }
           }
           function Endpoint-For {
             param([string]$Type)
@@ -208,7 +208,10 @@ jobs:
           function Normalize-Policy {
             param([object]$Raw, [string]$Type)
             $copy = $Raw | ConvertTo-Json -Depth 40 | ConvertFrom-Json
-            foreach ($prop in @('id','createdDateTime','lastModifiedDateTime','version','modifiedDateTime','@odata.context','@odata.id','@odata.type','@odata.etag','isAssigned','roleScopeTagIds','assignmentStatus','deviceStatusOverview','userStatusOverview','platformType')) {
+            # NOTE: '@odata.type' is deliberately KEPT — POSTs to abstract Graph
+            # collections (deviceConfigurations, deviceCompliancePolicies,
+            # mobileApps, …) fail without the concrete type discriminator.
+            foreach ($prop in @('id','createdDateTime','lastModifiedDateTime','version','modifiedDateTime','@odata.context','@odata.id','@odata.etag','isAssigned','roleScopeTagIds','assignmentStatus','deviceStatusOverview','userStatusOverview','platformType','settingCount','supportsScopeTags','priorityMetaData','creationSource','assignments')) {
               if ($null -ne $copy.PSObject.Properties[$prop]) {
                 try { $copy.PSObject.Properties.Remove($prop) | Out-Null } catch {}
               }
@@ -225,6 +228,28 @@ jobs:
             return $copy
           }
 
+          # Mirrors the backup workflow's Sanitize-Id (truncate + hash) so
+          # snapshot file lookups line up; Resolve-SnapshotFile also accepts the
+          # pre-truncation legacy names of older snapshots.
+          function Get-SafeFileName {
+            param([string]$Value)
+            if (-not $Value) { return 'unknown' }
+            $safe = ($Value -replace '[^a-zA-Z0-9._-]','_')
+            if ($safe.Length -le 80) { return $safe }
+            $sha = [System.Security.Cryptography.SHA256]::Create()
+            $hashHex = -join ($sha.ComputeHash([Text.Encoding]::UTF8.GetBytes($Value)) | ForEach-Object { $_.ToString('x2') })
+            return $safe.Substring(0, 64) + '-' + $hashHex.Substring(0, 10)
+          }
+
+          function Resolve-SnapshotFile {
+            param([string]$Dir, [string]$RawId, [string]$Suffix)
+            $primary = Join-Path $Dir ((Get-SafeFileName $RawId) + $Suffix)
+            if (Test-Path $primary) { return $primary }
+            $legacy = Join-Path $Dir (($RawId -replace '[^a-zA-Z0-9._-]','_') + $Suffix)
+            if (Test-Path $legacy) { return $legacy }
+            return $primary
+          }
+
           function Find-Existing-ByName {
             param([string]$Endpoint, [string]$DisplayName)
             if (-not $DisplayName) { return $null }
@@ -232,6 +257,26 @@ jobs:
               $escaped = $DisplayName.Replace("'", "''")
               $resp = Invoke-RestMethod -Method GET -Uri "$Endpoint?$filter=displayName eq '$escaped'&$top=1" -Headers $headers -TimeoutSec 60
               if ($resp.value -and @($resp.value).Count -gt 0) { return $resp.value[0] }
+              return $null
+            } catch {}
+            # Many beta endpoints reject $filter on displayName (and settings
+            # catalog uses 'name'). Fall back to a client-side scan so
+            # skip_existing cannot silently degrade into create-duplicate.
+            try {
+              $next = $Endpoint
+              $wanted = $DisplayName.Trim().ToLowerInvariant()
+              $pages = 0
+              while ($next -and $pages -lt 50) {
+                $resp = Invoke-RestMethod -Method GET -Uri $next -Headers $headers -TimeoutSec 120
+                foreach ($row in @($resp.value)) {
+                  $candidate = $null
+                  if ($row.PSObject.Properties['displayName'] -and $row.displayName) { $candidate = [string]$row.displayName }
+                  elseif ($row.PSObject.Properties['name'] -and $row.name) { $candidate = [string]$row.name }
+                  if ($candidate -and $candidate.Trim().ToLowerInvariant() -eq $wanted) { return $row }
+                }
+                $next = $resp.'@odata.nextLink'
+                $pages++
+              }
             } catch {}
             return $null
           }
@@ -248,7 +293,7 @@ jobs:
               }
             } catch {}
 
-            $groupPath = Join-Path $backupRef "groups/$($OriginalId -replace '[^a-zA-Z0-9._-]','_').json"
+            $groupPath = Resolve-SnapshotFile -Dir (Join-Path $backupRef 'groups') -RawId $OriginalId -Suffix '.json'
             if (-not (Test-Path $groupPath)) {
               $warnings.Add("Group $OriginalId referenced by an assignment is not in the snapshot. Skipping.") | Out-Null
               $groupMapping[$OriginalId] = $null
@@ -276,6 +321,21 @@ jobs:
             try {
               $created = Invoke-RestMethod -Method POST -Uri "$GraphBase/groups" -Headers $headers -Body ($createBody | ConvertTo-Json -Depth 10) -TimeoutSec 60
               $groupMapping[$OriginalId] = $created.id
+              # Re-add the members captured at backup time — an assignment
+              # pointing at an empty recreated group would silently deploy to
+              # nobody. Members that no longer exist in the destination tenant
+              # are skipped with a warning.
+              $memberFails = 0
+              foreach ($mid in @($groupRecord.memberIds)) {
+                if (-not $mid) { continue }
+                try {
+                  $refBody = @{ '@odata.id' = ("$GraphBase/directoryObjects/" + $mid) } | ConvertTo-Json
+                  Invoke-RestMethod -Method POST -Uri ("$GraphBase/groups/" + $created.id + '/members/$ref') -Headers $headers -Body $refBody -TimeoutSec 60 | Out-Null
+                } catch { $memberFails++ }
+              }
+              if ($memberFails -gt 0) {
+                $warnings.Add("Recreated group $($groupRecord.name): $memberFails of $(@($groupRecord.memberIds).Count) members could not be re-added (missing in destination tenant?).") | Out-Null
+              }
               return $created.id
             } catch {
               $warnings.Add("Failed to recreate group $OriginalId ($($groupRecord.name)): $($_.Exception.Message)") | Out-Null
@@ -328,11 +388,12 @@ jobs:
             $raw = Get-Content -Path $fullPath -Raw | ConvertFrom-Json
             $normalized = Normalize-Policy -Raw $raw -Type $policyType
 
+            $conflictName = if ($normalized.PSObject.Properties['displayName'] -and $normalized.displayName) { [string]$normalized.displayName } elseif ($normalized.PSObject.Properties['name'] -and $normalized.name) { [string]$normalized.name } else { $null }
             if ($conflict -eq 'skip_existing') {
-              $duplicate = Find-Existing-ByName -Endpoint $endpoint -DisplayName $normalized.displayName
+              $duplicate = Find-Existing-ByName -Endpoint $endpoint -DisplayName $conflictName
               if ($duplicate) {
                 $logEntry.status = 'skipped'
-                $logEntry.reason = "Existing object with displayName '$($normalized.displayName)' already exists in target tenant (id $($duplicate.id))."
+                $logEntry.reason = "Existing object with displayName '$conflictName' already exists in target tenant (id $($duplicate.id))."
                 $logEntry.targetId = $duplicate.id
                 $skipped.Add($logEntry) | Out-Null
                 continue
@@ -359,7 +420,57 @@ jobs:
                 $applied.Add($logEntry) | Out-Null
                 continue
               }
-              $created = Invoke-RestMethod -Method POST -Uri $endpoint -Headers $headers -Body ($normalized | ConvertTo-Json -Depth 40) -TimeoutSec 120
+              $created = $null
+              if ($policyType -eq 'DeviceManagementConfigurationPolicy') {
+                # Settings catalog: the POST body carries the full settings
+                # array captured at backup; per-setting read ids must go.
+                foreach ($s in @($normalized.settings)) {
+                  if ($s -and $null -ne $s.PSObject.Properties['id']) { try { $s.PSObject.Properties.Remove('id') | Out-Null } catch {} }
+                }
+                $created = Invoke-RestMethod -Method POST -Uri $endpoint -Headers $headers -Body ($normalized | ConvertTo-Json -Depth 40) -TimeoutSec 120
+              } elseif ($policyType -eq 'DeviceManagementIntent') {
+                # Endpoint security intents must be created from their template
+                # via createInstance — a bare POST to /intents yields a shell.
+                $templateId = [string]$raw.templateId
+                if (-not $templateId) { throw 'Intent snapshot has no templateId; cannot restore via createInstance.' }
+                $delta = New-Object System.Collections.Generic.List[object]
+                foreach ($s in @($raw.settingsDelta)) {
+                  if ($null -eq $s) { continue }
+                  $sc = $s | ConvertTo-Json -Depth 30 | ConvertFrom-Json
+                  if ($null -ne $sc.PSObject.Properties['id']) { try { $sc.PSObject.Properties.Remove('id') | Out-Null } catch {} }
+                  $delta.Add($sc) | Out-Null
+                }
+                $instBody = @{ displayName = $normalized.displayName; description = $normalized.description; settingsDelta = @($delta.ToArray()) }
+                $created = Invoke-RestMethod -Method POST -Uri ("$GraphBetaBase/deviceManagement/templates/" + $templateId + '/createInstance') -Headers $headers -Body ($instBody | ConvertTo-Json -Depth 40) -TimeoutSec 120
+              } elseif ($policyType -eq 'GroupPolicyConfiguration') {
+                # ADMX: create the shell, then replay every definitionValue with
+                # its presentation values via @odata.bind references.
+                $dvs = @($normalized.definitionValues)
+                if ($null -ne $normalized.PSObject.Properties['definitionValues']) { try { $normalized.PSObject.Properties.Remove('definitionValues') | Out-Null } catch {} }
+                $created = Invoke-RestMethod -Method POST -Uri $endpoint -Headers $headers -Body ($normalized | ConvertTo-Json -Depth 40) -TimeoutSec 120
+                $dvFails = 0
+                foreach ($dv in $dvs) {
+                  if ($null -eq $dv -or -not $dv.definition -or -not $dv.definition.id) { continue }
+                  $defId = [string]$dv.definition.id
+                  $pvs = New-Object System.Collections.Generic.List[object]
+                  foreach ($pv in @($dv.presentationValues)) {
+                    if ($null -eq $pv -or -not $pv.presentation -or -not $pv.presentation.id) { continue }
+                    $pvc = $pv | ConvertTo-Json -Depth 30 | ConvertFrom-Json
+                    foreach ($p in @('id','createdDateTime','lastModifiedDateTime','presentation','definitionValue')) {
+                      if ($null -ne $pvc.PSObject.Properties[$p]) { try { $pvc.PSObject.Properties.Remove($p) | Out-Null } catch {} }
+                    }
+                    $pvc | Add-Member -NotePropertyName 'presentation@odata.bind' -NotePropertyValue ("$GraphBetaBase/deviceManagement/groupPolicyDefinitions('" + $defId + "')/presentations('" + $pv.presentation.id + "')") -Force
+                    $pvs.Add($pvc) | Out-Null
+                  }
+                  $dvBody = @{ enabled = [bool]$dv.enabled; 'definition@odata.bind' = ("$GraphBetaBase/deviceManagement/groupPolicyDefinitions('" + $defId + "')"); presentationValues = @($pvs.ToArray()) }
+                  try {
+                    Invoke-RestMethod -Method POST -Uri ($endpoint + '/' + $created.id + '/definitionValues') -Headers $headers -Body ($dvBody | ConvertTo-Json -Depth 40) -TimeoutSec 120 | Out-Null
+                  } catch { $dvFails++ }
+                }
+                if ($dvFails -gt 0) { $warnings.Add("GroupPolicyConfiguration '$conflictName': $dvFails definition value(s) failed to restore.") | Out-Null }
+              } else {
+                $created = Invoke-RestMethod -Method POST -Uri $endpoint -Headers $headers -Body ($normalized | ConvertTo-Json -Depth 40) -TimeoutSec 120
+              }
               $logEntry.status = 'applied'
               $logEntry.targetId = $created.id
               $logEntry.targetEndpoint = $endpoint
@@ -369,7 +480,7 @@ jobs:
               $applied.Add($logEntry) | Out-Null
 
               if ($includeAssignments) {
-                $assignmentsPath = Join-Path $backupRef ("assignments/" + ($entry.backupPolicyId -replace '[^a-zA-Z0-9._-]','_') + '.assignments.json')
+                $assignmentsPath = Resolve-SnapshotFile -Dir (Join-Path $backupRef 'assignments') -RawId ([string]$entry.backupPolicyId) -Suffix '.assignments.json'
                 if (Test-Path $assignmentsPath) {
                   $assignments = Get-Content -Path $assignmentsPath -Raw | ConvertFrom-Json
                   $remapped = New-Object System.Collections.Generic.List[object]
