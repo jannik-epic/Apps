@@ -1,0 +1,42 @@
+{
+  "workflowRunId": "28639606483",
+  "workflow": "deploy-winget-app.yml",
+  "packageManager": "winget",
+  "packageId": "JetBrains.dotPeek",
+  "appId": "be67d23d-be42-467a-9101-2d8a5f30b2cc",
+  "updateOnlyAppId": "",
+  "appName": "JetBrains dotPeek",
+  "status": "success",
+  "createdAt": "2026-07-03T05:04:15.6213119Z",
+  "context": {
+    "source": "patch.trigger",
+    "patchRunId": 330,
+    "targetTenantId": 289,
+    "targetTenantName": "ModernDevMgmt.onmicrosoft.com",
+    "targetAzureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+    "targetAzureClientId": "a34f2806-b6f7-4d11-98f6-b32894396ca8",
+    "repo": "jannik-epic/Apps",
+    "workflowFile": "deploy-winget-app.yml",
+    "catalog": {
+      "catalogAppId": 9410,
+      "source": "winget",
+      "packageId": "JetBrains.dotPeek",
+      "name": "JetBrains dotPeek",
+      "publisher": "JetBrains s.r.o.",
+      "fromVersion": "2026.1.4",
+      "toVersion": "2026.1.4"
+    },
+    "architecture": "x64",
+    "wave": null,
+    "runSandbox": false,
+    "dryRun": false,
+    "assignmentTemplate": null,
+    "appSetting": null,
+    "changeNote": "Auto patch detected by catalog-scan: 2024.2.3 -> 2026.1.4",
+    "createdAt": "2026-07-03T05:03:17.548Z"
+  },
+  "validation": null,
+  "footprint": null,
+  "leftovers": null,
+  "installer": null
+}
