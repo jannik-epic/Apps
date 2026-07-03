@@ -3,6 +3,19 @@
   "displayName": "Adobe Acrobat Reader DC",
   "versions": [
     {
+      "version": "26.001.21691",
+      "runs": [
+        {
+          "workflowRunId": "28639603831",
+          "createdAt": "2026-07-03T05:12:31.2268821Z",
+          "intuneAppId": "7cba5916-bd62-44dd-91f6-984e74e995b9",
+          "catalogAppId": null,
+          "patchRunId": 328,
+          "status": "success"
+        }
+      ]
+    },
+    {
       "version": "26.001.21563",
       "runs": [
         {
@@ -16,5 +29,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-05-29T08:40:41.0808061Z"
+  "updatedAt": "2026-07-03T05:12:31.8960939Z"
 }
