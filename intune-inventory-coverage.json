@@ -1,871 +1,131 @@
 {
-  "generatedAt": "2026-07-02T05:36:38.960Z",
-  "detectedInScope": 103,
-  "managedCovered": 13,
+  "generatedAt": "2026-07-03T05:34:05.368Z",
+  "detectedInScope": 12,
+  "managedCovered": 9,
   "unmanaged": [
     {
-      "id": "000020a43c3b6c8a4ba6262e0b82dd117e9700000904",
-      "displayName": "Adobe Acrobat (64-bit)",
-      "publisher": "Adobe",
-      "version": "26.001.21563",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "dc30b3072421639bab31a4474c5f79832006012dc1f57590c80bb38a215aa30f",
-      "displayName": "AdobeAcrobatReaderCoreApp",
-      "publisher": "CN=Adobe Inc., OU=Adobe Inc., O=Adobe Inc., L=San Jose, S=ca, C=US, SERIALNUMBER=2748129, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Delaware, OID.1.3.6.1.4.1.311.60.2.1.3=US",
-      "version": "26.0.0.1",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "f09ae076e673c7d9c50e64ccb32a4c6df52dde73d595975216a12a5b49c305b4",
-      "displayName": "AdobeSystemsIncorporated.AdobePhotoshopExpress",
-      "publisher": "CN=Adobe Inc., OU=\"Lightroom, Camera RAW\", O=Adobe Inc., L=San Jose, S=ca, C=US, SERIALNUMBER=2748129, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Delaware, OID.1.3.6.1.4.1.311.60.2.1.3=US",
-      "version": "2026.505.951.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "8515169b50a1eb9c8155dac4ef5e82e32bb21ba5305ce6e57249f709b5535118",
-      "displayName": "Clipchamp.Clipchamp",
-      "publisher": "CN=33F0F141-36F3-4EC2-A77D-51B53D0BA0E4",
-      "version": "4.5.10620.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "66d7bfc4eae57374d199ab2cc94e81cd63258daf8fb504629108f7bb391fd9d7",
-      "displayName": "MSTeams",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "26120.3106.4722.3411",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "b637c5a37fdff6eeca13a95d329bf1b44a0dc9905002067331f2ee78daeec0a3",
-      "displayName": "MSTeams",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "26043.2016.4478.2773",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "000000747547f2db41ab6574a2fe8aaa9c8f0000ffff",
-      "displayName": "Microsoft 365 Apps for Enterprise - de-de",
-      "publisher": "Microsoft Corporation",
-      "version": "16.0.19929.20172",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "0000ac6f5ef3ab4486af8c04604a9807472c0000ffff",
-      "displayName": "Microsoft 365 Apps for Enterprise - de-de",
-      "publisher": "Microsoft Corporation",
-      "version": "16.0.20131.20090",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "00005d16e973150a53062397e9dbb4367c620000ffff",
-      "displayName": "Microsoft 365 Apps for enterprise - en-gb",
-      "publisher": "Microsoft Corporation",
-      "version": "16.0.19929.20172",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "00008d252d5d1d0f0991b3c7e2576bc854870000ffff",
-      "displayName": "Microsoft 365 Apps for enterprise - en-us",
-      "publisher": "Microsoft Corporation",
-      "version": "16.0.19929.20172",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "0000cb9bce008116319085eb8619acd20a0d0000ffff",
-      "displayName": "Microsoft 365 Apps for enterprise - en-us",
-      "publisher": "Microsoft Corporation",
-      "version": "16.0.20131.20090",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "0000127c2f312b57699d00d6625e8d1e63800000ffff",
-      "displayName": "Microsoft 365 Apps for enterprise - fr-fr",
-      "publisher": "Microsoft Corporation",
-      "version": "16.0.19929.20172",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "000086517861035056cb999ab69cd5bb64ba0000ffff",
-      "displayName": "Microsoft 365 Apps for enterprise - fr-fr",
-      "publisher": "Microsoft Corporation",
-      "version": "16.0.20131.20090",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "00001772c59429e8eb1b221f9505b58e40480000ffff",
-      "displayName": "Microsoft 365 Apps for enterprise - it-it",
-      "publisher": "Microsoft Corporation",
-      "version": "16.0.19929.20172",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "0000e0c0ec9cf26a1ad8492909acea729a560000ffff",
-      "displayName": "Microsoft 365 Apps for enterprise - it-it",
-      "publisher": "Microsoft Corporation",
-      "version": "16.0.20131.20090",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "0000a15952fe64e1fe0bdf57d820f9f1d9d20000ffff",
-      "displayName": "Microsoft Edge WebView2 Runtime",
-      "publisher": null,
-      "version": "148.0.3967.96",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "000000b6aaf98958c59c3ab2a65cd68196df00000904",
+      "id": "0000b58087597ff1d073067a88733472ed9000000904",
       "displayName": "Microsoft Intune Management Extension",
       "publisher": "Microsoft Corporation",
-      "version": "1.101.111.0",
+      "version": "1.91.102.0",
       "platform": "windows",
       "deviceCount": 1
     },
     {
-      "id": "0000ac229cad48f954f6e38162b64e6aeacd00000904",
-      "displayName": "Microsoft Intune Management Extension",
-      "publisher": "Microsoft Corporation",
-      "version": "1.101.109.0",
+      "id": "0000f7fdd19940e11455a7d72bb91326eef800000904",
+      "displayName": "Spice webdavd 2.5 (ARM64)",
+      "publisher": "The Spice Project",
+      "version": "2.5.0",
       "platform": "windows",
       "deviceCount": 1
     },
     {
-      "id": "00005db15c6254ae809b7f9191f3cc7dbe460000ffff",
-      "displayName": "Microsoft Purview Information Protection",
-      "publisher": "Microsoft Corporation",
-      "version": "3.2.57.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "014ed0d1d9237308969e10ff32d189c2396862f875e627c1e954a494cec88678",
-      "displayName": "Microsoft.AV1VideoExtension",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2.0.7.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "4beb078bbe9d34af1fe24d229f7a485a83d722567b4274316725c322d4908e54",
-      "displayName": "Microsoft.AVCEncoderVideoExtension",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "1.1.23.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "79b7b63043a345e23dd92867bda0d35481538b59b2aee7688fe6d5c55e5251a8",
-      "displayName": "Microsoft.ApplicationCompatibilityEnhancements",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "1.2511.9.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "4b3be5df2c89e2cabac707e5228aa4adfd82fa4c0771fb24f2f0ef832d7fa0ec",
-      "displayName": "Microsoft.BingNews",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "4.55.62231.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "c5cef80c5c45854a8612865c2290bb8837ce260ae76fc13fe557ef88d97974cf",
-      "displayName": "Microsoft.BingSearch",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2022.1.43.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "839d441562fe690dbf99c0adb1938734a635680a4ebc304156cee330b3e30610",
-      "displayName": "Microsoft.BingWeather",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "4.54.63040.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "029fdc93c256892f266a30167f0f414a6668b3f805dbe94a4767a36d43b644b3",
-      "displayName": "Microsoft.CompanyPortal",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "11.2.1787.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "9a445a3cbdf7caf7c881129d4ccfeab61defde338474f8ea304e5c7061a51ed6",
-      "displayName": "Microsoft.DesktopAppInstaller",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2026.409.2145.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "8b01d761be6cadb67ce63cd9b13b55d4251d8241e04155fbb4cbb6b213b5653b",
-      "displayName": "Microsoft.Edge.GameAssist",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "1.0.4019.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "b89bbfb49345d7e4dbe8c69cb2d7a7078d104cc106cb64305b8defd87c4ce268",
-      "displayName": "Microsoft.GamingApp",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2605.1001.14.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "c89abdde97dc8102bd6cf291f29628c6e115f1d76e0bca9e81eb46e01ed4f13d",
-      "displayName": "Microsoft.GetHelp",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "10.2409.41132.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "1c3c6dd25fc02b7c3eead3b8ca5c510451aedb1e388a9493faed484b12af364a",
-      "displayName": "Microsoft.HEIFImageExtension",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "1.2.30.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "9562ff4cba222152f57c4a5166f7e91cd2ddaf356e72a9b8a1ef92444ceaafe1",
-      "displayName": "Microsoft.HEVCVideoExtension",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2.5.10.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "102afd79ebdfd43206a4d3b1992229f9df13d26c92c091abc9bd292f7acbf18c",
-      "displayName": "Microsoft.Ink.Handwriting.Main.de-DE.1.0",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "0.1248.2215.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "2c2b3d6dab0e57a524a0921f018a8fa4e1808290b6d1d39aaa721935cbdb2cc6",
-      "displayName": "Microsoft.Ink.Handwriting.de-DE.1.0",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "0.1248.2215.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "a49020905e58fc2cb8ba213bf139e8663b5ae1de0826f6bcb643b7ea00f6de53",
-      "displayName": "Microsoft.LanguageExperiencePackde-DE",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "26100.167.264.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "eb6c0de48863fb1a5cdc76a474864d1b2aaddf92d7aff92c9182eea2f40888e7",
-      "displayName": "Microsoft.M365Companions",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2.2603.10000.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "624eb5af63d5ad560e9dabf23ea6a2971ff7dece6658a2a56bef2941b9b8c84c",
-      "displayName": "Microsoft.MPEG2VideoExtension",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "1.2.13.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "50b055014809938e0d58e8bc8a8f2c8f3ffd16cc0281a0377534e7a63b81eaae",
-      "displayName": "Microsoft.MicrosoftEdge.Stable",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "148.0.3967.96",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "e4346164b7aaeee2ed14456a9741c015e13f1dc44a5fd30d62d84049c79b50ea",
-      "displayName": "Microsoft.MicrosoftEdge.Stable",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "147.0.3912.98",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "a5fb85ad7b2fa6c1b496243fa42be53e66fa7c921a3e460f5ad405c7a99eb102",
-      "displayName": "Microsoft.MicrosoftSolitaireCollection",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "4.25.4290.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "dc4d0c35958dc9b52943ec014d6a53a8d450ecd2bc97a05edd8ecc562999cc62",
-      "displayName": "Microsoft.MicrosoftStickyNotes",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "6.1.4.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "877f73549bf1d953263d912ba450766fd11782e714843e0c2052ea2330a4d560",
-      "displayName": "Microsoft.NET.Native.Framework.2.2",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2.2.29512.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "e99b7c56e72b4f143643710ac88b48c46bc762444323b0e3bb76e39ca7521c82",
-      "displayName": "Microsoft.NET.Native.Runtime.2.2",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2.2.28604.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "5974bfa3a371e90c619afe337c83c63cb221126b00337827dfd3065b3aae36f1",
-      "displayName": "Microsoft.Office.ActionsServer",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "16.0.20131.20090",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "732640ba788f97f2d14de285f12a9b8bb96e6ec11e6f190664fb75fda7dc4e0a",
-      "displayName": "Microsoft.Office.ActionsServer",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "16.0.19929.20172",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "817b741aa1ccf8d96f110afba1c9d123538efa830aa3c3c07e5d68caa0d5a998",
-      "displayName": "Microsoft.OfficePushNotificationUtility",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "16.0.19929.20172",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "b5adc05552118d4d8e63ecc1c89252089503c795ba5563279cbe469b7d93b1c6",
-      "displayName": "Microsoft.OfficePushNotificationUtility",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "16.0.20131.20090",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "dfce5882d9e11b72989f97c48645b8dc99ccedbffca2d6961a5aa0e8e5a7b47d",
-      "displayName": "Microsoft.Paint",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "11.2603.251.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "1e581e24aefdddb866f5b5a5d7fe56b85fd17437f04f0f7fd8e4406643d36620",
-      "displayName": "Microsoft.RawImageExtension",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2.5.7.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "350754cb34ffe05a8c4899db5a00bd3821728cd24225b3145962e879ac3f22bb",
-      "displayName": "Microsoft.ScreenSketch",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2022.2602.49.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "d2da61669b07b821e41ea95a4f2643806fa4b11d2ac3721c31858ecbfd79aa70",
-      "displayName": "Microsoft.SecHealthUI",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "1000.29554.1001.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "3b8522cc736c4505f62c417f1df6b6e34b0205b3fb7020efbc6d3c11b8ae9e8e",
-      "displayName": "Microsoft.Services.Store.Engagement",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "10.0.23012.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "3efe0c0580442f06668b4acc872527dc4765557d87569e76eace9549160a644b",
-      "displayName": "Microsoft.StartExperiencesApp",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2021.264.3.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "60773283f72e0fd49d5dd4572c623e1b1694242f86eed3c5688d3d3744d384ad",
-      "displayName": "Microsoft.StorePurchaseApp",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "22604.1401.3.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "86da0384d30064386b7258b454e21aac40ef9eb66b97f789554b97cd868f4091",
-      "displayName": "Microsoft.Todos",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2.175.6901.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "1e8481df68995ee203d33afa5966223c0ed99409874815301fe4e08c8ac0886f",
-      "displayName": "Microsoft.UI.Xaml.2.7",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "7.2409.9001.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "0d1e94d34a05720ef16fe93062234665627ccdaee719a98d776d463ec6ab4b00",
-      "displayName": "Microsoft.UI.Xaml.2.8",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "8.2511.26001.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "2a6421f9547896ca091bfd39139cd02f14a9c4cc136e85202d7ee222ff81bbe8",
-      "displayName": "Microsoft.VCLibs.140.00",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "14.0.33519.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "15e130c26ecf9fd018776924518e6d1570bbac0ed44dbe17c06ede8b4518f564",
-      "displayName": "Microsoft.VCLibs.140.00.UWPDesktop",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "14.0.33728.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "7ad0f45bacc10594ef497567aa8b440d6dd650ee3fe6315dcafdaf8f90bcba9c",
-      "displayName": "Microsoft.VP9VideoExtensions",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "1.2.13.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "bad5a724444d7014f626fd7cd2d470b70c839ef5a8d16cf0cb3df56a3cca8fdd",
-      "displayName": "Microsoft.WebMediaExtensions",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2.1.26.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "5f2690c32941760b4791fcaf32582e5a36c6f1272729c548d38c39bf783166b8",
-      "displayName": "Microsoft.WebpImageExtension",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "1.2.14.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "4f9e5853bad34ec0745f90c15736a73ee08aa65704aa4b8db25cbee7b8ed5650",
-      "displayName": "Microsoft.WidgetsPlatformRuntime",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "1.6.18.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "c4fc287a6d0df68ddb4b84c69c8aea7467a5c8782eb5b059d9adb61525d2439e",
-      "displayName": "Microsoft.Windows.DevHome",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "0.1701.597.0",
-      "platform": "windows",
-      "deviceCount": 2
-    },
-    {
-      "id": "e09f9b991db130be9d98c4394df9eeecc22d2da9d49eb4a3c58c872a631a6394",
-      "displayName": "Microsoft.Windows.Photos",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2026.11050.1001.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "51795399ac57cd123e96b033a8006cf8921edd02d0b97ef12fb84e9b7c2ab0cc",
-      "displayName": "Microsoft.WindowsAlarms",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2021.2512.0.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "d18f609fb27e578f8861b71429799e5f6508ff29b75fe8d55d1ad5d06dc07a29",
-      "displayName": "Microsoft.WindowsAppRuntime.1.6",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "6000.519.329.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "9a8f74a6b49a586f6370536400bdad536b9785b36abedd606976b46016694d79",
-      "displayName": "Microsoft.WindowsAppRuntime.1.7",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "7000.785.2325.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "86354077af4376bd4c8b360d4658d0e61bf45e279a30aca52e97d456f68958be",
-      "displayName": "Microsoft.WindowsAppRuntime.1.8",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "8000.879.2017.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "77dda977ee395c8aa93845c85c79b1ff1548943de3c018ff86d4e91ed336db00",
-      "displayName": "Microsoft.WindowsAppRuntime.2",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2.2.0.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "dc4ead7fab0e40327ca8ac301f081db72d8c07882cce2de9002e0be335639fa2",
-      "displayName": "Microsoft.WindowsCalculator",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2021.2508.4.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "4a823b0b6dadafdc78c435393e1f233ffd4fef1c231d91121e255df4181e7d9e",
-      "displayName": "Microsoft.WindowsCamera",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2025.2510.2.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "3bac02d7c60b066ce7bb419fa8cda33392b12d48199ef4070c7f0408ca97f701",
-      "displayName": "Microsoft.WindowsFeedbackHub",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2026.213.1621.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "3d22ddede36c0b6b93271daca688b83b6450f1d6483134f5be30282e4b65264c",
-      "displayName": "Microsoft.WindowsNotepad",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "11.2604.5.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "1b31e6dd3f489a141dae02bc50060d820ae0cd236b6970290757e56f413a9ef3",
-      "displayName": "Microsoft.WindowsSoundRecorder",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2021.2512.0.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "92cc58ab0268dd363cebb07868ab9d7638f4365de13fc5ab51793f4df521f3b3",
-      "displayName": "Microsoft.WindowsStore",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "22604.1401.8.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "cebdd8f3b4aaefcc8233937511feca28f4a7f5954b83adb6aa930bf1b8dbb4a3",
-      "displayName": "Microsoft.WindowsTerminal",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "3001.24.11321.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "2779780e9ddec2fb8ab405654ac8b7765a67a3e2039f86d17316633f6f5b74b5",
-      "displayName": "Microsoft.Xbox.TCUI",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "1.24.10001.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "0bac598cf12ee3221bdb2ba89538bdea63063a677222192d149e79dc5af110af",
-      "displayName": "Microsoft.XboxGamingOverlay",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "7.326.5041.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "380bd3687db4e1cdef74446019fd2bf3eaa9a3a612445c97253e450f3209075e",
-      "displayName": "Microsoft.XboxIdentityProvider",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "12.130.16001.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "7930ea32138e36a29ff15bfcbe5f0cad4535824a34a0799cdf5954d065c27eb8",
-      "displayName": "Microsoft.XboxSpeechToTextOverlay",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "1.117.15001.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "2894e196c9575712bd747dbfe78c8868e9e293cf62dc6a962ec0d4a4b06fe625",
-      "displayName": "Microsoft.YourPhone",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "1.26032.102.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "b48058e7baf95f0438983464317eebfa6de7a369da7e3de47d4db577df575d57",
-      "displayName": "Microsoft.ZuneMusic",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "11.2604.9.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "bda98d5e509e45f158db29688f3ea82b5ea32bcf92460bf0b0ac0a267d027515",
-      "displayName": "MicrosoftCorporationII.QuickAssist",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "2025.331.2057.0",
-      "platform": "windows",
-      "deviceCount": 2
-    },
-    {
-      "id": "330845b8fd3bdf97a8435b1d34093ae12772009a2af3725e7aa91c434d93ee8e",
-      "displayName": "MicrosoftCorporationII.WinAppRuntime.Main.1.8",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "8000.836.2153.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "b8b79cdc35ec5662b46b5b4dec85467b8b72d06f9c13db44e14f668f0f484a9e",
-      "displayName": "MicrosoftWindows.Client.WebExperience",
-      "publisher": "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "526.15201.50.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "3a19c4d400f24bc90f5a8e77310f075b1ffa4305c12a4466856f73b97b71dc3e",
-      "displayName": "MicrosoftWindows.CrossDevice",
-      "publisher": "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "1.26032.83.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "0000918cba1f5d007ca7b732760eec30372f00000904",
-      "displayName": "VMware Tools",
-      "publisher": "Broadcom Inc.",
-      "version": "13.0.1.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "ed4c3f1ddb96bd3862f16e40160088441560ad719bc115ff458729174d9d2bba",
-      "displayName": "aimgr",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "0.20.47.0",
-      "platform": "windows",
-      "deviceCount": 1
-    },
-    {
-      "id": "f69ce41f2c92cfb97a396f18ec935611d950e0bcc7c72768e1bfb5982db94e05",
-      "displayName": "aimgr",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "version": "0.20.55.0",
+      "id": "00008131c9b7f859f0d59f9aa6e26c255bf30000ffff",
+      "displayName": "UTM Guest Tools 0.229",
+      "publisher": "Turing Software, LLC",
+      "version": "0.229",
       "platform": "windows",
       "deviceCount": 1
     }
   ],
   "managed": [
     {
-      "id": "0000a7682cb141fc552b93e4342b3eab7b2f0000ffff",
+      "id": "0000a1e4e19b8a12c64d127b40418678bd400000ffff",
+      "displayName": "Canva",
+      "version": "1.101.0",
+      "publisher": "Canva Pty Ltd",
+      "platform": "windows",
+      "deviceCount": 1,
+      "managedIntuneAppId": "94ee32e1-c66d-45ab-b23f-3ed5f0feee3e",
+      "managedDisplayName": "Canva",
+      "confidence": 1
+    },
+    {
+      "id": "0000e3e7177c6cee3ba0c9c0c59df0aadca10000ffff",
+      "displayName": "Greenshot 1.2.10.6",
+      "version": "1.2.10.6",
+      "publisher": "Greenshot",
+      "platform": "windows",
+      "deviceCount": 1,
+      "managedIntuneAppId": "f7da4a83-91a4-48c9-bf10-42fda56e3df9",
+      "managedDisplayName": "Greenshot",
+      "confidence": 1.1
+    },
+    {
+      "id": "000040760a1da722241e02c2691a39a658330000ffff",
+      "displayName": "JetBrains dotPeek 2024.2.3",
+      "version": "2024.2.3",
+      "publisher": "JetBrains s.r.o.",
+      "platform": "windows",
+      "deviceCount": 1,
+      "managedIntuneAppId": "be67d23d-be42-467a-9101-2d8a5f30b2cc",
+      "managedDisplayName": "JetBrains dotPeek",
+      "confidence": 1.1
+    },
+    {
+      "id": "0000000eae80474011f801ca0a8eee90fd350000ffff",
       "displayName": "Microsoft Edge",
-      "version": "148.0.3967.70",
+      "version": "133.0.3065.69",
       "publisher": "Microsoft Corporation",
       "platform": "windows",
       "deviceCount": 1,
-      "managedIntuneAppId": "73f49c82-1902-438f-a988-77357a0bc8ea",
-      "managedDisplayName": "Microsoft Edge: KI-Browser",
+      "managedIntuneAppId": "829ba40f-096a-4b17-8457-f5d9e7ccc2c6",
+      "managedDisplayName": "Microsoft Edge: Web Browser",
       "confidence": 1.1
     },
     {
-      "id": "0000d222e891695bb46381dff738b672f9120000ffff",
-      "displayName": "Microsoft Edge",
-      "version": "148.0.3967.96",
+      "id": "0000563a2d7ae813b2bfa8b4147a3a7f7ca90000ffff",
+      "displayName": "Microsoft Edge Beta",
+      "version": "134.0.3124.8",
       "publisher": "Microsoft Corporation",
       "platform": "windows",
       "deviceCount": 1,
-      "managedIntuneAppId": "73f49c82-1902-438f-a988-77357a0bc8ea",
-      "managedDisplayName": "Microsoft Edge: KI-Browser",
+      "managedIntuneAppId": "1d2f4e2e-01ce-4407-8544-360fdc758106",
+      "managedDisplayName": "Microsoft Edge",
       "confidence": 1.1
     },
     {
-      "id": "0000a4a6694240ed2d9d78cb03827d3942b80000ffff",
+      "id": "0000dfd251fd955b213ae88757f2eb39cc310000ffff",
       "displayName": "Microsoft OneDrive",
-      "version": "26.098.0524.0004",
+      "version": "24.221.1103.0003",
       "publisher": "Microsoft Corporation",
       "platform": "windows",
       "deviceCount": 1,
-      "managedIntuneAppId": "e83dd7ab-b6d2-48e8-a5bc-68b584fd3b62",
+      "managedIntuneAppId": "316a1547-1659-437a-a565-03a50166dc14",
       "managedDisplayName": "Microsoft OneDrive",
       "confidence": 1
     },
     {
-      "id": "0000cf87afadccbf05903c1988fd3a74081e0000ffff",
-      "displayName": "Microsoft OneDrive",
-      "version": "26.074.0420.0001",
+      "id": "0000807901b5f8bfa2ab6712dfbfae7558080000ffff",
+      "displayName": "Microsoft Visual C++ 2022 Redistributable (Arm64) - 14.30.30704",
+      "version": "14.30.30704.0",
       "publisher": "Microsoft Corporation",
       "platform": "windows",
       "deviceCount": 1,
-      "managedIntuneAppId": "e83dd7ab-b6d2-48e8-a5bc-68b584fd3b62",
-      "managedDisplayName": "Microsoft OneDrive",
+      "managedIntuneAppId": "13ab35e3-f706-4ba9-a63d-82f65ab99dbd",
+      "managedDisplayName": "Microsoft Visual C++ 2022 Redistributable (Arm64)",
+      "confidence": 0.9
+    },
+    {
+      "id": "00004149217d06b98a76ed65044b1509737e0000ffff",
+      "displayName": "Microsoft Visual Studio Code",
+      "version": "1.87.2",
+      "publisher": "Microsoft Corporation",
+      "platform": "windows",
+      "deviceCount": 1,
+      "managedIntuneAppId": "706c54a2-95d2-419a-b0fd-ad78a3cf0f32",
+      "managedDisplayName": "Microsoft Visual Studio Code",
       "confidence": 1
     },
     {
-      "id": "00004b81d48221e7becb4de15e640592cb4a00000904",
-      "displayName": "Microsoft Teams Meeting Add-in for Microsoft Office",
-      "version": "1.26.02603",
-      "publisher": "Microsoft",
+      "id": "0000e7387a04d8dd77217062900a6109109300000904",
+      "displayName": "Python Launcher",
+      "version": "3.11.8150.0",
+      "publisher": "Python Software Foundation",
       "platform": "windows",
       "deviceCount": 1,
-      "managedIntuneAppId": "090e75af-b620-40e8-b26a-9486bde32a62",
-      "managedDisplayName": "Microsoft Teams",
-      "confidence": 0.9
-    },
-    {
-      "id": "00002e96ac03ed3ce3b16fbcb7f0627e67f90000ffff",
-      "displayName": "Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.44.35211",
-      "version": "14.44.35211.0",
-      "publisher": "Microsoft Corporation",
-      "platform": "windows",
-      "deviceCount": 2,
-      "managedIntuneAppId": "ba70ccf5-a0b5-4c22-a092-3fa74fbf4fac",
-      "managedDisplayName": "Microsoft Visual C++ 2015-2022 Redistributable (x86)",
-      "confidence": 1
-    },
-    {
-      "id": "0000ea448545d03145f01134afdf9efa72e60000ffff",
-      "displayName": "Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.44.35211",
-      "version": "14.44.35211.0",
-      "publisher": "Microsoft Corporation",
-      "platform": "windows",
-      "deviceCount": 2,
-      "managedIntuneAppId": "ba70ccf5-a0b5-4c22-a092-3fa74fbf4fac",
-      "managedDisplayName": "Microsoft Visual C++ 2015-2022 Redistributable (x86)",
-      "confidence": 1.1
-    },
-    {
-      "id": "117add566c0b88a45bc5f6643e4f0187884e26889b67153a9f00c2858655e726",
-      "displayName": "Microsoft.OneDriveSync",
-      "version": "26074.420.1.0",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "platform": "windows",
-      "deviceCount": 1,
-      "managedIntuneAppId": "e83dd7ab-b6d2-48e8-a5bc-68b584fd3b62",
-      "managedDisplayName": "Microsoft OneDrive",
-      "confidence": 0.9
-    },
-    {
-      "id": "218f69eaeca01c659413398cad4f57acafd1f760be7264487248b05fd7dc3dc7",
-      "displayName": "Microsoft.OneDriveSync",
-      "version": "26098.524.4.0",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "platform": "windows",
-      "deviceCount": 1,
-      "managedIntuneAppId": "e83dd7ab-b6d2-48e8-a5bc-68b584fd3b62",
-      "managedDisplayName": "Microsoft OneDrive",
-      "confidence": 0.9
-    },
-    {
-      "id": "152d068bad1fcd9a16133e5c32d3f162a22d32c981e1d2587c49987204cf6b37",
-      "displayName": "Microsoft.OutlookForWindows",
-      "version": "1.2026.520.400",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "platform": "windows",
-      "deviceCount": 1,
-      "managedIntuneAppId": "c0bc0101-6369-4b59-9b48-789df42f4118",
-      "managedDisplayName": "Microsoft Outlook",
-      "confidence": 0.9
-    },
-    {
-      "id": "d74eb3b64886b7974f7851944f2ec52ad777072c48dbfb91d65aaaddbe9f6304",
-      "displayName": "Microsoft.OutlookForWindows",
-      "version": "1.2026.428.200",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "platform": "windows",
-      "deviceCount": 1,
-      "managedIntuneAppId": "c0bc0101-6369-4b59-9b48-789df42f4118",
-      "managedDisplayName": "Microsoft Outlook",
-      "confidence": 0.9
-    },
-    {
-      "id": "c67df4493b51fd9accc3dd32cf4a37be1bdb532fe0de752920d63e718e006e47",
-      "displayName": "Microsoft.PowerAutomateDesktop",
-      "version": "11.2605.237.0",
-      "publisher": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "platform": "windows",
-      "deviceCount": 1,
-      "managedIntuneAppId": "7e700ce1-82f9-4fde-a73b-1773b48dc1d3",
-      "managedDisplayName": "Power Automate",
-      "confidence": 0.9
-    },
-    {
-      "id": "000082826b56352a7501d6ed28978cafb1e30000ffff",
-      "displayName": "OBS Studio",
-      "version": "32.0.1",
-      "publisher": "OBS Project",
-      "platform": "windows",
-      "deviceCount": 2,
-      "managedIntuneAppId": "51d55366-d6c4-4edc-bd5c-1269a4d4b3b1",
-      "managedDisplayName": "OBS Studio",
+      "managedIntuneAppId": "eff12961-5c7d-4df0-9145-27839a1af4ab",
+      "managedDisplayName": "Python Launcher",
       "confidence": 1
     }
   ]
