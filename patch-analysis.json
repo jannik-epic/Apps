@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-07-03T03:43:52.971Z",
+  "scannedAt": "2026-07-03T05:04:24.299Z",
   "results": [
     {
       "appId": 6450,
@@ -36,7 +36,7 @@
       "packageManager": "winget",
       "packageId": "Microsoft.Edge",
       "currentDeployedVersion": "148.0.3967.96",
-      "latestUpstreamVersion": "149.0.4022.98",
+      "latestUpstreamVersion": "150.0.4078.48",
       "hasUpdate": true,
       "bumpType": "major",
       "releaseNotesUrl": "https://www.microsoft.com/en-us/edge"
@@ -95,10 +95,10 @@
       "appId": 11280,
       "packageManager": "winget",
       "packageId": "Notion.Notion",
-      "currentDeployedVersion": "2.0.39",
+      "currentDeployedVersion": "7.24.0",
       "latestUpstreamVersion": "7.24.0",
-      "hasUpdate": true,
-      "bumpType": "major",
+      "hasUpdate": false,
+      "bumpType": null,
       "releaseNotesUrl": null
     },
     {
