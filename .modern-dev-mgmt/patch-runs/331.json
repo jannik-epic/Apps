@@ -1,0 +1,42 @@
+{
+  "workflowRunId": "28639607459",
+  "workflow": "deploy-winget-app.yml",
+  "packageManager": "winget",
+  "packageId": "Microsoft.Office",
+  "appId": "134cf41f-5618-40df-8e3a-4b1cc6aea8b5",
+  "updateOnlyAppId": "",
+  "appName": "Microsoft 365 Apps for enterprise",
+  "status": "success",
+  "createdAt": "2026-07-03T05:04:22.3586555Z",
+  "context": {
+    "source": "patch.trigger",
+    "patchRunId": 331,
+    "targetTenantId": 289,
+    "targetTenantName": "ModernDevMgmt.onmicrosoft.com",
+    "targetAzureTenantId": "f849cde7-f11d-4ef5-a31d-7fca98b21bf5",
+    "targetAzureClientId": "a34f2806-b6f7-4d11-98f6-b32894396ca8",
+    "repo": "jannik-epic/Apps",
+    "workflowFile": "deploy-winget-app.yml",
+    "catalog": {
+      "catalogAppId": 22097,
+      "source": "winget",
+      "packageId": "Microsoft.Office",
+      "name": "Microsoft 365 Apps for enterprise",
+      "publisher": "Microsoft Corporation",
+      "fromVersion": "16.0.16130.20218",
+      "toVersion": "16.0.20026.20112"
+    },
+    "architecture": "x64",
+    "wave": null,
+    "runSandbox": false,
+    "dryRun": false,
+    "assignmentTemplate": null,
+    "appSetting": null,
+    "changeNote": "Auto patch detected by catalog-scan: 16.0.19929.20172 -> 16.0.20026.20112",
+    "createdAt": "2026-07-03T05:03:19.352Z"
+  },
+  "validation": null,
+  "footprint": null,
+  "leftovers": null,
+  "installer": null
+}
