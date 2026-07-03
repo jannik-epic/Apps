@@ -311,27 +311,37 @@ jobs:
           ./scripts/winget/Generate-InstallationScripts.ps1 @params
         shell: pwsh
 
-      - name: Stage PSADT v4 toolkit
+      - name: Wrap package in PSADT v4
         id: stage_psadt
         if: ${{ github.event.inputs.use_psadt == 'true' && steps.resolve_installer.outputs.offline == 'true' }}
         shell: pwsh
         continue-on-error: true
+        env:
+          APPS_TO_CLOSE: ${{ github.event.inputs.apps_to_close }}
         run: |
           $ErrorActionPreference = 'Continue'
           $stagingDir = "${{ steps.resolve_installer.outputs.staging_dir }}"
           if (-not $stagingDir -or -not (Test-Path -LiteralPath $stagingDir)) {
-            Write-Host "::warning::No offline staging dir; skipping PSADT toolkit stage."
+            Write-Host "::warning::No offline staging dir; skipping PSADT wrap."
             exit 0
           }
           try {
-            ./scripts/common/Stage-PSADTv4.ps1 -StagingDir $stagingDir
-            Add-Content -Path $env:GITHUB_OUTPUT -Value "psadt_staged=true"
+            $appName = "${{ github.event.inputs.app_name }}"
+            if (-not $appName) { $appName = "${{ github.event.inputs.package_id }}".Split('.')[-1] }
+            ./scripts/common/New-PsadtV4Package.ps1 `
+              -AppName $appName `
+              -Publisher "${{ steps.winget_info.outputs.publisher }}" `
+              -Version "${{ steps.winget_info.outputs.version }}" `
+              -PackageRoot $stagingDir `
+              -InstallScriptPath ./install_script.ps1 `
+              -UninstallScriptPath ./uninstall_script.ps1 `
+              -AppsToClose "$env:APPS_TO_CLOSE"
           } catch {
-            Write-Host "::warning::PSADT v4 download failed: $($_.Exception.Message). Falling back to plain Start-Process install."
+            Write-Host "::warning::PSADT v4 wrap failed: $($_.Exception.Message). Falling back to the plain deployment scripts."
           }
 
       - name: Inject Show-ADTInstallationWelcome -CloseApps prologue
-        if: ${{ github.event.inputs.apps_to_close != '' }}
+        if: ${{ github.event.inputs.apps_to_close != '' && steps.stage_psadt.outputs.psadt_wrapped != 'true' }}
         shell: pwsh
         env:
           APPS_TO_CLOSE: ${{ github.event.inputs.apps_to_close }}
@@ -393,9 +403,12 @@ jobs:
           Copy-Item install_script.ps1   "$stageDir/" -Force
           Copy-Item uninstall_script.ps1 "$stageDir/" -Force
           Copy-Item detection_script.ps1 "$stageDir/" -Force
-          $filesSrc = Join-Path "${{ steps.resolve_installer.outputs.staging_dir }}" 'Files'
-          if (Test-Path -LiteralPath $filesSrc) {
-            Copy-Item $filesSrc "$stageDir/" -Recurse -Force
+          # Copy the whole staging dir: Files/ plus (when PSADT-wrapped) the
+          # toolkit, Invoke-AppDeployToolkit.ps1, and logic scripts — the same
+          # layout the .intunewin will have on the device.
+          $stagingSrc = "${{ steps.resolve_installer.outputs.staging_dir }}"
+          if ($stagingSrc -and (Test-Path -LiteralPath $stagingSrc)) {
+            Copy-Item (Join-Path $stagingSrc '*') "$stageDir/" -Recurse -Force
           }
           $installLog = Join-Path $validationDir 'install.log'
           $installScript = Join-Path $stageDir 'install_script.ps1'
@@ -504,13 +517,24 @@ jobs:
             uninstallLogPath   = '.modern-dev-mgmt/validation/uninstall.log'
           }
           $report | ConvertTo-Json -Depth 8 | Set-Content '.modern-dev-mgmt/validation/report.json' -Encoding UTF8
-          # Decide pass/fail: install must succeed. Detection/uninstall failures
-          # are warnings — they get surfaced in the UI but do not block the
-          # Intune upload (the .intunewin is independent of the runner's ability
-          # to uninstall a single-user installer).
-          if ($env:INSTALL_OUTCOME -ne 'success') {
-            Write-Host "::error::Install step failed in validation runner — aborting Intune upload."
+          # Decide pass/fail on the recorded exit codes (the validate steps end
+          # with exit 0 by design, so step outcome is always 'success' and must
+          # not be the gate). Install must succeed; a failing detection after a
+          # successful install means the package would loop on devices.
+          # Uninstall failures are warnings — surfaced in the UI but non-blocking.
+          $installExit = ParseInt $env:INSTALL_EXIT
+          $detectExit = ParseInt $env:DETECT_EXIT
+          if ($null -eq $installExit -or $installExit -notin @(0, 1641, 3010, 1707)) {
+            Write-Host "::error::Install failed in validation runner (exit $installExit) — aborting Intune upload."
             exit 1
+          }
+          if ($null -ne $detectExit -and $detectExit -ne 0) {
+            Write-Host "::error::Detection did not report the app as installed after a successful install (exit $detectExit) — aborting Intune upload."
+            exit 1
+          }
+          $uninstallExit = ParseInt $env:UNINSTALL_EXIT
+          if ($null -ne $uninstallExit -and $uninstallExit -notin @(0, 1641, 3010, 1707, 19)) {
+            Write-Host "::warning::Uninstall failed in validation runner (exit $uninstallExit). Check leftovers.json for residues."
           }
           Write-Host "✅ Validation report assembled at .modern-dev-mgmt/validation/report.json"
 

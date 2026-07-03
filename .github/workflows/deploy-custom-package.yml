@@ -309,6 +309,7 @@ jobs:
             $escapedArgs = Escape-Single $installArgs
             $escapedEngine = Escape-Single $engine
             @"
+          # vanguard:default-logic (install)
           `$ErrorActionPreference = 'Stop'
           `$installerPath = Join-Path `$PSScriptRoot '$escapedAsset'
           if (-not (Test-Path -LiteralPath `$installerPath -PathType Leaf)) { throw "Installer not found: `$installerPath" }
@@ -333,6 +334,7 @@ jobs:
             $escapedEngine = Escape-Single $engine
             $escapedProductCode = Escape-Single $productCode
             @"
+          # vanguard:default-logic (uninstall)
           `$ErrorActionPreference = 'Stop'
           if ('$escapedEngine' -eq 'msi' -and '$escapedProductCode') {
             `$process = Start-Process -FilePath 'msiexec.exe' -ArgumentList "/x $escapedProductCode $escapedArgs" -Wait -PassThru -WindowStyle Hidden
@@ -379,6 +381,101 @@ jobs:
           "@ | Set-Content -Path "detection_script.ps1" -Encoding UTF8
           }
 
+      - name: Resolve packaging instruction (IntuneForge mode)
+        id: resolve_instruction
+        shell: pwsh
+        env:
+          MODERN_DEVMGMT_CONTEXT_B64: ${{ github.event.inputs.modern_dev_mgmt_context_b64 }}
+        run: |
+          # The 25-input workflow_dispatch cap is exhausted, so the AI-packaging
+          # flag and the operator's free-text instruction ride inside the run
+          # context blob (fields: aiPackaging, packagingInstruction).
+          $aiPackaging = 'false'
+          $raw = $env:MODERN_DEVMGMT_CONTEXT_B64
+          if ($raw) {
+            try {
+              $ctx = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String(($raw -replace '\s+', ''))) | ConvertFrom-Json
+              if ($ctx.PSObject.Properties['aiPackaging'] -and ([string]$ctx.aiPackaging) -eq 'true') { $aiPackaging = 'true' }
+              $instruction = if ($ctx.PSObject.Properties['packagingInstruction']) { [string]$ctx.packagingInstruction } else { '' }
+              if ($instruction) {
+                Set-Content -Path 'packaging-instruction.md' -Value $instruction -Encoding UTF8
+                Write-Host "Packaging instruction captured ($($instruction.Length) chars)."
+              }
+            } catch {
+              Write-Host "::warning::Could not parse run context for packaging instruction: $($_.Exception.Message)"
+            }
+          }
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "ai_packaging=$aiPackaging"
+
+      - name: AI packaging agent (installer + instruction -> deployment logic)
+        if: ${{ steps.resolve_instruction.outputs.ai_packaging == 'true' }}
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            You are packaging a Windows application for Intune deployment.
+
+            Installer: custom-files/${{ github.event.inputs.asset_name }} (engine hint: ${{ github.event.inputs.installer_engine }})
+            App: ${{ github.event.inputs.package_name }} ${{ github.event.inputs.app_version }} by ${{ github.event.inputs.app_publisher }}
+            If packaging-instruction.md exists in the working directory, read it — it contains the operator's requirements and MUST be honored.
+
+            Inspect the installer (file header, embedded strings, version resources) to determine its
+            installer technology and the correct silent switches. Then REWRITE these three files in the
+            working directory (they contain generated defaults you should replace where you know better):
+
+            1. install_script.ps1 — silent install. Plain PowerShell, no toolkit imports. The installer
+               sits NEXT TO the script at runtime: resolve it via Join-Path $PSScriptRoot '<asset name>'.
+               Throw on non-zero exit codes (except 1641/3010).
+            2. uninstall_script.ps1 — silent uninstall via the product's registered
+               QuietUninstallString/UninstallString (search HKLM Uninstall + WOW6432Node). After the
+               uninstaller finishes, remove leftover directories (ProgramFiles/ProgramData dirs named
+               after the app) and vendor registry keys so NO residues remain. exit with the uninstaller's
+               exit code.
+            3. detection_script.ps1 — deterministic detection (registry DisplayName + DisplayVersion or
+               file version), exit 0 when installed, exit 1 when not.
+
+            Keep the scripts self-contained (no network access, no toolkit dependency — a PSADT v4
+            wrapper is applied by a later pipeline step). Do not touch any other files. Do not build
+            or install anything.
+          claude_args: "--allowedTools Read,Write,Edit,Glob,Grep,Bash"
+
+      - name: Harden installer logic (engine heuristic)
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Continue'
+          $assetPath = Join-Path 'custom-files' "${{ github.event.inputs.asset_name }}"
+          try {
+            ./scripts/common/New-InstallLogicHeuristic.ps1 `
+              -InstallerPath $assetPath `
+              -AppName "${{ github.event.inputs.package_name }}" `
+              -Publisher "${{ github.event.inputs.app_publisher }}" `
+              -InstallScriptPath ./install_script.ps1 `
+              -UninstallScriptPath ./uninstall_script.ps1 `
+              -InstallArgs "${{ github.event.inputs.install_args }}" `
+              -Engine "${{ github.event.inputs.installer_engine }}"
+          } catch {
+            Write-Host "::warning::Installer heuristic failed: $($_.Exception.Message)"
+          }
+
+      - name: Wrap package in PSADT v4
+        id: wrap_psadt
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          $ErrorActionPreference = 'Continue'
+          try {
+            ./scripts/common/New-PsadtV4Package.ps1 `
+              -AppName "${{ github.event.inputs.package_name }}" `
+              -Publisher "${{ github.event.inputs.app_publisher }}" `
+              -Version "${{ github.event.inputs.app_version }}" `
+              -PackageRoot custom-files `
+              -InstallScriptPath ./install_script.ps1 `
+              -UninstallScriptPath ./uninstall_script.ps1
+          } catch {
+            Write-Host "::warning::PSADT v4 wrap failed: $($_.Exception.Message). Falling back to the plain deployment scripts."
+          }
+
       - name: Sign PSADT scripts and EXE payloads with signtool
         if: ${{ github.event.inputs.signing_cert_thumbprint != '' }}
         shell: pwsh
@@ -421,11 +518,15 @@ jobs:
               throw "Signing certificate thumbprint mismatch. Expected $expectedThumbprint but repo secret contains $actualThumbprint."
             }
             $targets = New-Object System.Collections.Generic.List[string]
-            foreach ($name in @('install_script.ps1', 'uninstall_script.ps1', 'detection_script.ps1', 'Deploy-Application.ps1')) {
+            foreach ($name in @('install_script.ps1', 'uninstall_script.ps1', 'detection_script.ps1')) {
               if (Test-Path -LiteralPath $name -PathType Leaf) { [void]$targets.Add((Resolve-Path -LiteralPath $name).Path) }
             }
             if (Test-Path -LiteralPath 'custom-files' -PathType Container) {
-              Get-ChildItem -LiteralPath 'custom-files' -Recurse -File -Include *.exe, *.ps1, *.dll -ErrorAction SilentlyContinue |
+              # Sign only Vanguard-generated top-level payloads. The staged
+              # PSAppDeployToolkit module tree ships Microsoft/PSADT-signed and
+              # must not be re-signed file by file.
+              Get-ChildItem -LiteralPath 'custom-files' -File -ErrorAction SilentlyContinue |
+                Where-Object { $_.Extension -in @('.exe', '.ps1', '.dll') } |
                 ForEach-Object { [void]$targets.Add($_.FullName) }
             }
             if ($targets.Count -eq 0) {
@@ -464,11 +565,17 @@ jobs:
           New-Item -ItemType Directory -Force -Path $stageDir | Out-Null
           New-Item -ItemType Directory -Force -Path $validationDir | Out-Null
           # Generated scripts live in CWD; the installer asset is under custom-files/.
-          foreach ($f in @('install_script.ps1','uninstall_script.ps1','detection_script.ps1','Deploy-Application.ps1')) {
+          foreach ($f in @('install_script.ps1','uninstall_script.ps1','detection_script.ps1')) {
             if (Test-Path -LiteralPath $f) { Copy-Item $f "$stageDir/" -Force }
           }
+          # Stage the package CONTENTS at the root — the same layout the
+          # .intunewin has on the device (Create-IntuneApplication copies
+          # custom-files/* next to install_script.ps1, and the generated logic
+          # resolves the installer via $PSScriptRoot). A nested Files/ copy
+          # here previously made every custom validation fail on
+          # "Installer not found".
           if (Test-Path -LiteralPath 'custom-files') {
-            Copy-Item 'custom-files' "$stageDir/Files" -Recurse -Force
+            Copy-Item 'custom-files/*' "$stageDir/" -Recurse -Force
           }
           $installLog = Join-Path $validationDir 'install.log'
           $installScript = Join-Path $stageDir 'install_script.ps1'
@@ -567,9 +674,22 @@ jobs:
             leftoversAvailable = (Test-Path '.modern-dev-mgmt/validation/leftovers.json')
           }
           $report | ConvertTo-Json -Depth 8 | Set-Content '.modern-dev-mgmt/validation/report.json' -Encoding UTF8
-          if ($env:INSTALL_OUTCOME -ne 'success') {
-            Write-Host "::error::Custom-package install failed in validation runner — aborting Intune upload."
+          # Gate on the actual exit codes: the validate steps end with exit 0
+          # by design (they record the result via outputs), so step outcome is
+          # always 'success' and must not be the gate.
+          $installExit = ParseInt $env:INSTALL_EXIT
+          $detectExit = ParseInt $env:DETECT_EXIT
+          if ($null -eq $installExit -or $installExit -notin @(0, 1641, 3010, 1707)) {
+            Write-Host "::error::Custom-package install failed in validation runner (exit $installExit) — aborting Intune upload."
             exit 1
+          }
+          if ($null -ne $detectExit -and $detectExit -ne 0) {
+            Write-Host "::error::Detection did not report the app as installed after a successful install (exit $detectExit) — aborting Intune upload."
+            exit 1
+          }
+          $uninstallExit = ParseInt $env:UNINSTALL_EXIT
+          if ($null -ne $uninstallExit -and $uninstallExit -notin @(0, 1641, 3010, 1707, 19)) {
+            Write-Host "::warning::Uninstall failed in validation runner (exit $uninstallExit). Check leftovers.json for residues."
           }
 
       - name: VM validation — upload artifacts
