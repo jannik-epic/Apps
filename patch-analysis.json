@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-07-08T02:59:54.926Z",
+  "scannedAt": "2026-07-08T04:08:19.974Z",
   "results": [
     {
       "appId": 6450,
@@ -96,7 +96,7 @@
       "packageManager": "winget",
       "packageId": "Notion.Notion",
       "currentDeployedVersion": "2.0.39",
-      "latestUpstreamVersion": "7.24.0",
+      "latestUpstreamVersion": "7.25.0",
       "hasUpdate": true,
       "bumpType": "major",
       "releaseNotesUrl": null
