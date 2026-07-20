@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-07-20T15:11:30.190Z",
+  "scannedAt": "2026-07-20T16:51:31.543Z",
   "results": [
     {
       "appId": 6450,
@@ -156,7 +156,7 @@
       "packageManager": "winget",
       "packageId": "Zoom.Zoom",
       "currentDeployedVersion": "5.13.11835",
-      "latestUpstreamVersion": "7.1.41345",
+      "latestUpstreamVersion": "7.1.43453",
       "hasUpdate": true,
       "bumpType": "major",
       "releaseNotesUrl": "https://zoom.us/"
