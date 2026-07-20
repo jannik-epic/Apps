@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-07-20T21:38:15.341Z",
+  "scannedAt": "2026-07-20T22:44:21.521Z",
   "results": [
     {
       "appId": 6450,
@@ -126,7 +126,7 @@
       "packageManager": "winget",
       "packageId": "SlackTechnologies.Slack",
       "currentDeployedVersion": "4.28.184",
-      "latestUpstreamVersion": "4.50.143",
+      "latestUpstreamVersion": "4.51.180",
       "hasUpdate": true,
       "bumpType": "minor",
       "releaseNotesUrl": "https://slack.com/"
