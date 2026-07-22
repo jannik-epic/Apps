@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-07-22T12:54:05.961Z",
+  "scannedAt": "2026-07-22T14:53:11.891Z",
   "results": [
     {
       "appId": 6450,
@@ -76,7 +76,7 @@
       "packageManager": "winget",
       "packageId": "Microsoft.Teams",
       "currentDeployedVersion": "1.6.00.4472",
-      "latestUpstreamVersion": "26163.405.4842.717",
+      "latestUpstreamVersion": "26183.1903.4892.4448",
       "hasUpdate": true,
       "bumpType": "major",
       "releaseNotesUrl": "https://www.microsoft.com/microsoft-teams/group-chat-software"
