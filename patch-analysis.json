@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-07-24T22:51:00.713Z",
+  "scannedAt": "2026-07-24T23:52:57.349Z",
   "results": [
     {
       "appId": 6450,
@@ -86,10 +86,10 @@
       "packageManager": "winget",
       "packageId": "Microsoft.VisualStudioCode",
       "currentDeployedVersion": "1.87.2",
-      "latestUpstreamVersion": "1.126.0",
+      "latestUpstreamVersion": "1.129.0",
       "hasUpdate": true,
       "bumpType": "minor",
-      "releaseNotesUrl": "https://code.visualstudio.com"
+      "releaseNotesUrl": "https://code.visualstudio.com/"
     },
     {
       "appId": 11280,
