@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-07-28T20:39:09.087Z",
+  "scannedAt": "2026-07-28T21:54:24.316Z",
   "results": [
     {
       "appId": 6450,
@@ -66,9 +66,9 @@
       "packageManager": "winget",
       "packageId": "Microsoft.PurviewInformationProtection",
       "currentDeployedVersion": "3.2.57.0",
-      "latestUpstreamVersion": "3.2.57.0",
-      "hasUpdate": false,
-      "bumpType": null,
+      "latestUpstreamVersion": "3.2.92.0",
+      "hasUpdate": true,
+      "bumpType": "patch",
       "releaseNotesUrl": "https://www.microsoft.com/en-us/download/details.aspx?id=53018"
     },
     {
