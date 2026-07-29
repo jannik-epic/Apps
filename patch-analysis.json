@@ -1,12 +1,12 @@
 {
-  "scannedAt": "2026-07-29T07:36:12.703Z",
+  "scannedAt": "2026-07-29T10:25:58.134Z",
   "results": [
     {
       "appId": 6450,
       "packageManager": "winget",
       "packageId": "Canva.Canva",
       "currentDeployedVersion": "1.101.0",
-      "latestUpstreamVersion": "1.123.0",
+      "latestUpstreamVersion": "1.123.1",
       "hasUpdate": true,
       "bumpType": "minor",
       "releaseNotesUrl": null
