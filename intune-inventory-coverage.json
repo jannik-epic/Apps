@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T06:38:56.045Z",
+  "generatedAt": "2026-07-29T06:43:17.324Z",
   "detectedInScope": 12,
   "managedCovered": 9,
   "unmanaged": [
@@ -113,7 +113,7 @@
       "publisher": "Microsoft Corporation",
       "platform": "windows",
       "deviceCount": 1,
-      "managedIntuneAppId": "706c54a2-95d2-419a-b0fd-ad78a3cf0f32",
+      "managedIntuneAppId": "022d8ea9-e917-4b37-bec2-a12b399b5864",
       "managedDisplayName": "Microsoft Visual Studio Code",
       "confidence": 1
     },
