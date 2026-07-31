@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-07-31T07:43:49.877Z",
+  "scannedAt": "2026-07-31T10:26:09.156Z",
   "results": [
     {
       "appId": 6450,
@@ -56,7 +56,7 @@
       "packageManager": "winget",
       "packageId": "Microsoft.OneDrive",
       "currentDeployedVersion": "26074.420.1.0",
-      "latestUpstreamVersion": "26.113.0614.0004",
+      "latestUpstreamVersion": "26.123.0628.0001",
       "hasUpdate": true,
       "bumpType": "patch",
       "releaseNotesUrl": "https://www.microsoft.com/microsoft-365/onedrive/download"
@@ -106,7 +106,7 @@
       "packageManager": "winget",
       "packageId": "OBSProject.OBSStudio",
       "currentDeployedVersion": "32.0.1",
-      "latestUpstreamVersion": "32.2.0",
+      "latestUpstreamVersion": "32.2.1",
       "hasUpdate": true,
       "bumpType": "minor",
       "releaseNotesUrl": "https://obsproject.com/"
