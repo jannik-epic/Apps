@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-07-31T04:52:28.575Z",
+  "scannedAt": "2026-07-31T07:43:49.877Z",
   "results": [
     {
       "appId": 6450,
@@ -106,7 +106,7 @@
       "packageManager": "winget",
       "packageId": "OBSProject.OBSStudio",
       "currentDeployedVersion": "32.0.1",
-      "latestUpstreamVersion": "32.1.2",
+      "latestUpstreamVersion": "32.2.0",
       "hasUpdate": true,
       "bumpType": "minor",
       "releaseNotesUrl": "https://obsproject.com/"
