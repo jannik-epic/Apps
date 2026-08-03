@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-08-03T14:10:16.542Z",
+  "scannedAt": "2026-08-03T16:44:28.149Z",
   "results": [
     {
       "appId": 6450,
@@ -26,7 +26,7 @@
       "packageManager": "winget",
       "packageId": "JetBrains.dotPeek",
       "currentDeployedVersion": "2024.2.3",
-      "latestUpstreamVersion": "2026.2.0.1",
+      "latestUpstreamVersion": "2026.2.0.2",
       "hasUpdate": true,
       "bumpType": "major",
       "releaseNotesUrl": "https://www.jetbrains.com/profiler/"
