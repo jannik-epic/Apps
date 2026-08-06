@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-08-05T23:28:09.556Z",
+  "scannedAt": "2026-08-06T00:50:30.588Z",
   "results": [
     {
       "appId": 6450,
@@ -176,7 +176,7 @@
       "packageManager": "winget",
       "packageId": "Microsoft.Edge.Beta",
       "currentDeployedVersion": "134.0.3124.8",
-      "latestUpstreamVersion": "141.0.3537.44",
+      "latestUpstreamVersion": "151.0.4129.59",
       "hasUpdate": true,
       "bumpType": "major",
       "releaseNotesUrl": "https://www.microsoft.com/en-us/edge"
