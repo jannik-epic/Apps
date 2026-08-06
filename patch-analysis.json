@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-08-06T00:50:30.588Z",
+  "scannedAt": "2026-08-06T03:56:45.392Z",
   "results": [
     {
       "appId": 6450,
@@ -166,7 +166,7 @@
       "packageManager": "winget",
       "packageId": "Microsoft.Office",
       "currentDeployedVersion": "16.0.19929.20172",
-      "latestUpstreamVersion": "16.0.20026.20112",
+      "latestUpstreamVersion": "16.0.20131.20090",
       "hasUpdate": true,
       "bumpType": "patch",
       "releaseNotesUrl": "https://www.office.com/"
